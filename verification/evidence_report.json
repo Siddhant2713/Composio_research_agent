@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-09-27T10:47:53.930716+00:00",
+  "apps": [
+    {
+      "app": "DealCloud",
+      "schema_valid": true,
+      "schema_error": null,
+      "evidence_count": 4,
+      "evidence_urls_not_fetched": [],
+      "dereference": {
+        "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication": "ok",
+        "https://api.docs.dealcloud.com/sdk/python/authentication": "ok",
+        "https://www.intapp.com/dealcloud/": "ok",
+        "https://api.docs.dealcloud.com/": "ok"
+      },
+      "broken_urls": {}
+    },
+    {
+      "app": "Stripe",
+      "schema_valid": true,
+      "schema_error": null,
+      "evidence_count": 4,
+      "evidence_urls_not_fetched": [],
+      "dereference": {
+        "https://docs.stripe.com/api": "ok",
+        "https://dashboard.stripe.com/register": "ok",
+        "https://docs.stripe.com/keys": "ok",
+        "https://docs.stripe.com/sdks": "ok"
+      },
+      "broken_urls": {}
+    },
+    {
+      "app": "Telegram",
+      "schema_valid": true,
+      "schema_error": null,
+      "evidence_count": 5,
+      "evidence_urls_not_fetched": [],
+      "dereference": {
+        "https://core.telegram.org/bots/api": "ok",
+        "https://core.telegram.org/api/obtaining_api_id": "ok",
+        "https://core.telegram.org/bots/webhooks": "ok",
+        "https://core.telegram.org/api": "ok",
+        "https://core.telegram.org/api/auth": "ok"
+      },
+      "broken_urls": {}
+    }
+  ]
+}

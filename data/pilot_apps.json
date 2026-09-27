@@ -1,0 +1,20 @@
+[
+  {
+    "number": 1,
+    "name": "Telegram",
+    "category": "Communication",
+    "hint_url": "https://core.telegram.org/bots/api"
+  },
+  {
+    "number": 2,
+    "name": "Stripe",
+    "category": "Payments",
+    "hint_url": "https://docs.stripe.com/api"
+  },
+  {
+    "number": 3,
+    "name": "DealCloud",
+    "category": "CRM",
+    "hint_url": "https://api.docs.dealcloud.com/"
+  }
+]

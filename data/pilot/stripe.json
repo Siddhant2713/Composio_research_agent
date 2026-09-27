@@ -1,0 +1,211 @@
+{
+  "app": "Stripe",
+  "number": 2,
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T10:39:21.116820+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.stripe.com/api\",\n    \"https://docs.stripe.com/api/authentication\",\n    \"https://stripe.com/docs\",\n    \"https://dashboard.stripe.com/register\",\n    \"https://stripe.com/docs/keys\",\n    \"https://stripe.com/docs/development/quickstart\",\n    \"https://stripe.com/pricing\",\n    \"https://stripe.com/docs/libraries\",\n    \"https://stripe.com/docs/development\",\n    \"https://stripe.com/partners\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3-flash-preview",
+  "candidates_considered": [
+    "https://docs.stripe.com/api",
+    "https://docs.stripe.com/api/authentication",
+    "https://stripe.com/docs",
+    "https://dashboard.stripe.com/register",
+    "https://stripe.com/docs/keys",
+    "https://stripe.com/docs/development/quickstart",
+    "https://stripe.com/pricing",
+    "https://stripe.com/docs/libraries",
+    "https://stripe.com/docs/development",
+    "https://stripe.com/partners",
+    "https://docs.stripe.com/",
+    "https://developer.stripe.com/",
+    "https://developers.stripe.com/",
+    "https://api.stripe.com/",
+    "https://stripe.com/developers",
+    "https://stripe.com/api",
+    "https://stripe.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.stripe.com/api/plans",
+    "https://docs.stripe.com/api/tokens",
+    "https://docs.stripe.com/api/confirmation_tokens",
+    "https://docs.stripe.com/api/v2/core/person-tokens",
+    "https://docs.stripe.com/api/v2/core/account-tokens",
+    "https://docs.stripe.com/api/shared-payment/issued-token",
+    "https://stripe.com/contact/sales",
+    "https://docs.stripe.com/tax",
+    "https://support.stripe.com/",
+    "https://docs.stripe.com/get-started",
+    "https://docs.stripe.com/quickstarts",
+    "https://dashboard.stripe.com/apikeys",
+    "https://docs.stripe.com/keys/restricted-api-keys",
+    "https://docs.stripe.com/stripe-apps/api-authentication/rak",
+    "https://stripe.com/partners/directory",
+    "https://stripe.com/in/contact/sales",
+    "https://stripe.com/in/authorization-boost/",
+    "https://stripe.com/in/tax",
+    "https://stripe.com/au/pricing",
+    "https://stripe.com/at/pricing",
+    "https://docs.stripe.com/sdks/ios",
+    "https://docs.stripe.com/sdks/android"
+  ],
+  "boilerplate_lines_removed": 6,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://docs.stripe.com/api",
+      "requested_url": "https://docs.stripe.com/api",
+      "status": 200,
+      "title": "Stripe API Reference",
+      "chars": 4877,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/api/authentication",
+      "requested_url": "https://docs.stripe.com/api/authentication",
+      "status": 200,
+      "title": "Authentication | Stripe API Reference",
+      "chars": 4865,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com",
+      "requested_url": "https://stripe.com/docs",
+      "status": 200,
+      "title": "Stripe Documentation",
+      "chars": 2896,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dashboard.stripe.com/register",
+      "requested_url": "https://dashboard.stripe.com/register",
+      "status": 200,
+      "title": "Sign up and create a Stripe account | Stripe",
+      "chars": 215,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/keys",
+      "requested_url": "https://stripe.com/docs/keys",
+      "status": 200,
+      "title": "API keys | Stripe Documentation",
+      "chars": 4902,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/get-started/development-environment",
+      "requested_url": "https://stripe.com/docs/development/quickstart",
+      "status": 200,
+      "title": "Set up your development environment | Stripe Documentation",
+      "chars": 4896,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://stripe.com/in/pricing",
+      "requested_url": "https://stripe.com/pricing",
+      "status": 200,
+      "title": "Pricing & Fees",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/sdks",
+      "requested_url": "https://stripe.com/docs/libraries",
+      "status": 200,
+      "title": "Stripe SDKs | Stripe Documentation",
+      "chars": 2142,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/api/plans",
+      "requested_url": "https://docs.stripe.com/api/plans",
+      "status": 200,
+      "title": "Plans | Stripe API Reference",
+      "chars": 4730,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/api/tokens",
+      "requested_url": "https://docs.stripe.com/api/tokens",
+      "status": 200,
+      "title": "Tokens | Stripe API Reference",
+      "chars": 4273,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\"one_liner\":\"A REST-based payments platform that provides a suite of APIs and SDKs for processing payments, managing subscriptions, and financial operations using API key authentication.\",\"auth\":{\"method\":\"api_key\",\"notes\":\"Stripe uses API keys (secret, restricted, or publishable) for authentication, typically passed via HTTP Basic Auth as the username. Bearer token authentication is also supported for cross-origin requests.\"},\"access\":{\"type\":\"self_serve\",\"notes\":\"Users can sign up for an account and obtain API keys immediately via the dashboard without manual approval.\"},\"api_surface\":{\"rest\":true,\"graphql\":null,\"webhooks\":true,\"sdks\":[\"Ruby\",\"Python\",\"PHP\",\"Java\",\"Node.js\",\"Go\",\".NET\",\"iOS\",\"Android\",\"React Native\",\"Stripe.js\"],\"notes\":\"The API is REST-based and supports webhooks and multiple official SDKs for server-side, web, and mobile platforms.\"},\"mcp\":{\"exists\":null,\"notes\":\"Model Context Protocol is listed as a feature under AI tools and Agent plugins, but the provided text contains no substantive description of the capability.\"},\"buildability\":{\"verdict\":\"easy\",\"reasoning\":\"Stripe provides self-serve account registration with immediate access to API keys, comprehensive REST documentation, and official SDKs for many languages.\"},\"evidence\":[{\"url\":\"https://docs.stripe.com/api\",\"claim\":\"The Stripe API is organized around REST and uses API keys for authentication.\"},{\"url\":\"https://dashboard.stripe.com/register\",\"claim\":\"Users can sign up and create a Stripe account.\"},{\"url\":\"https://docs.stripe.com/keys\",\"claim\":\"Stripe creates API keys upon account signup and lists Model Context Protocol as a feature.\"},{\"url\":\"https://docs.stripe.com/sdks\",\"claim\":\"Stripe provides official SDKs for Ruby, Python, Go, Java, Node, PHP, .NET, iOS, Android, and React Native.\"}],\"confidence\":\"high\"}",
+  "extraction_model": "gemini-3-flash-preview",
+  "record": {
+    "number": 2,
+    "name": "Stripe",
+    "category": "Payments",
+    "hint_url": "https://docs.stripe.com/api",
+    "one_liner": "A REST-based payments platform that provides a suite of APIs and SDKs for processing payments, managing subscriptions, and financial operations using API key authentication.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Stripe uses API keys (secret, restricted, or publishable) for authentication, typically passed via HTTP Basic Auth as the username. Bearer token authentication is also supported for cross-origin requests."
+    },
+    "access": {
+      "type": "self_serve",
+      "notes": "Users can sign up for an account and obtain API keys immediately via the dashboard without manual approval."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "Ruby",
+        "Python",
+        "PHP",
+        "Java",
+        "Node.js",
+        "Go",
+        ".NET",
+        "iOS",
+        "Android",
+        "React Native",
+        "Stripe.js"
+      ],
+      "notes": "The API is REST-based and supports webhooks and multiple official SDKs for server-side, web, and mobile platforms."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Model Context Protocol is listed as a feature under AI tools and Agent plugins, but the provided text contains no substantive description of the capability."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Stripe provides self-serve account registration with immediate access to API keys, comprehensive REST documentation, and official SDKs for many languages."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.stripe.com/api",
+        "claim": "The Stripe API is organized around REST and uses API keys for authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://dashboard.stripe.com/register",
+        "claim": "Users can sign up and create a Stripe account.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.stripe.com/keys",
+        "claim": "Stripe creates API keys upon account signup and lists Model Context Protocol as a feature.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.stripe.com/sdks",
+        "claim": "Stripe provides official SDKs for Ruby, Python, Go, Java, Node, PHP, .NET, iOS, Android, and React Native.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T10:44:51.517824+00:00"
+}

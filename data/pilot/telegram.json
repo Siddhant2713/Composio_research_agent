@@ -1,0 +1,199 @@
+{
+  "app": "Telegram",
+  "number": 1,
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T10:34:10.907094+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://core.telegram.org/bots/api\",\n    \"https://core.telegram.org/api\",\n    \"https://core.telegram.org/mtproto\",\n    \"https://core.telegram.org/bots\",\n    \"https://core.telegram.org/api/obtaining_api_id\",\n    \"https://my.telegram.org/apps\",\n    \"https://core.telegram.org/\",\n    \"https://core.telegram.org/api/auth\",\n    \"https://core.telegram.org/bots/features\",\n    \"https://core.telegram.org/api/errors\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3-flash-preview",
+  "candidates_considered": [
+    "https://core.telegram.org/bots/api",
+    "https://core.telegram.org/api",
+    "https://core.telegram.org/mtproto",
+    "https://core.telegram.org/bots",
+    "https://core.telegram.org/api/obtaining_api_id",
+    "https://my.telegram.org/apps",
+    "https://core.telegram.org/",
+    "https://core.telegram.org/api/auth",
+    "https://core.telegram.org/bots/features",
+    "https://core.telegram.org/api/errors",
+    "https://docs.telegram.org/",
+    "https://developer.telegram.org/",
+    "https://developers.telegram.org/",
+    "https://api.telegram.org/",
+    "https://telegram.org/docs",
+    "https://telegram.org/developers",
+    "https://telegram.org/api",
+    "https://telegram.org/developer"
+  ],
+  "second_hop_considered": [
+    "https://core.telegram.org/bots/webhooks",
+    "https://core.telegram.org/api/srp",
+    "https://core.telegram.org/api/contacts",
+    "https://core.telegram.org/api/file-references",
+    "https://core.telegram.org/api/url-authorization",
+    "https://core.telegram.org/mtproto/auth_key",
+    "https://core.telegram.org/mtproto/samples-auth_key",
+    "https://my.telegram.org/auth",
+    "https://core.telegram.org/api/errors",
+    "https://core.telegram.org/method/auth.signUp",
+    "https://core.telegram.org/method/auth.exportLoginToken",
+    "https://core.telegram.org/method/auth.importLoginToken",
+    "https://core.telegram.org/method/auth.importWebTokenAuthorization",
+    "https://core.telegram.org/constructor/auth.authorizationSignUpRequired"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://core.telegram.org/bots/api",
+      "requested_url": "https://core.telegram.org/bots/api",
+      "status": 200,
+      "title": "Telegram Bot API",
+      "chars": 4902,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/api",
+      "requested_url": "https://core.telegram.org/api",
+      "status": 200,
+      "title": "Telegram APIs",
+      "chars": 4988,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/mtproto",
+      "requested_url": "https://core.telegram.org/mtproto",
+      "status": 200,
+      "title": "\ufeffMTProto Mobile Protocol",
+      "chars": 4992,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/bots",
+      "requested_url": "https://core.telegram.org/bots",
+      "status": 200,
+      "title": "Bots: An introduction for developers",
+      "chars": 4966,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/api/obtaining_api_id",
+      "requested_url": "https://core.telegram.org/api/obtaining_api_id",
+      "status": 200,
+      "title": "Creating your Telegram Application",
+      "chars": 2269,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://my.telegram.org/auth?to=apps",
+      "requested_url": "https://my.telegram.org/apps",
+      "status": 200,
+      "title": "Authorization",
+      "chars": 202,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/",
+      "requested_url": "https://core.telegram.org/",
+      "status": 200,
+      "title": "Telegram APIs",
+      "chars": 4988,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/api/auth",
+      "requested_url": "https://core.telegram.org/api/auth",
+      "status": 200,
+      "title": "User Authorization",
+      "chars": 4984,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/bots/webhooks",
+      "requested_url": "https://core.telegram.org/bots/webhooks",
+      "status": 200,
+      "title": "Marvin's Marvellous Guide to All Things Webhook",
+      "chars": 4986,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://core.telegram.org/api/srp",
+      "requested_url": "https://core.telegram.org/api/srp",
+      "status": 200,
+      "title": "Two-factor authentication",
+      "chars": 4978,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Telegram provides the Bot API (an HTTP-based interface for building bots) and the Telegram API/TDLib (for building custom clients using the MTProto protocol).\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The Bot API is accessed via an HTTPS interface (tokens managed via @BotFather), while the Telegram API uses an api_id and api_hash for MTProto-based authorization.\"\n  },\n  \"access\": {\n    \"type\": \"self_serve\",\n    \"notes\": \"Developers can obtain api_id and api_hash by logging into the Telegram core website (my.telegram.org) and filling out a form, or create bots via the @BotFather bot.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"TDLib\"\n    ],\n    \"notes\": \"The Bot API is HTTP-based and supports webhooks for processing updates. The Telegram API uses the MTProto protocol and is supported by the TDLib library, which is compatible with multiple platforms and languages.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"The provided text does not mention the Model Context Protocol (MCP).\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Access to credentials (api_id/hash and bot tokens) is entirely self-serve via the Telegram core site or @BotFather. The APIs are extensively documented, and official libraries like TDLib facilitate development across multiple platforms.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://core.telegram.org/bots/api\",\n      \"claim\": \"The Bot API is an HTTP-based interface created for developers building bots for Telegram.\"\n    },\n    {\n      \"url\": \"https://core.telegram.org/api/obtaining_api_id\",\n      \"claim\": \"Developers can obtain an api_id and api_hash by logging into my.telegram.org and filling out the API development tools form.\"\n    },\n    {\n      \"url\": \"https://core.telegram.org/bots/webhooks\",\n      \"claim\": \"Telegram supports processing bot updates via webhooks (setWebhook).\"\n    },\n    {\n      \"url\": \"https://core.telegram.org/api\",\n      \"claim\": \"TDLib is a tool for third-party developers that makes it easy to build fast, secure and feature-rich Telegram apps and is compatible with virtually any programming language.\"\n    },\n    {\n      \"url\": \"https://core.telegram.org/api/auth\",\n      \"claim\": \"Authorization for the Telegram API requires api_id and api_hash parameters.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3-flash-preview",
+  "record": {
+    "number": 1,
+    "name": "Telegram",
+    "category": "Communication",
+    "hint_url": "https://core.telegram.org/bots/api",
+    "one_liner": "Telegram provides the Bot API (an HTTP-based interface for building bots) and the Telegram API/TDLib (for building custom clients using the MTProto protocol).",
+    "auth": {
+      "method": "api_key",
+      "notes": "The Bot API is accessed via an HTTPS interface (tokens managed via @BotFather), while the Telegram API uses an api_id and api_hash for MTProto-based authorization."
+    },
+    "access": {
+      "type": "self_serve",
+      "notes": "Developers can obtain api_id and api_hash by logging into the Telegram core website (my.telegram.org) and filling out a form, or create bots via the @BotFather bot."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "TDLib"
+      ],
+      "notes": "The Bot API is HTTP-based and supports webhooks for processing updates. The Telegram API uses the MTProto protocol and is supported by the TDLib library, which is compatible with multiple platforms and languages."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "The provided text does not mention the Model Context Protocol (MCP)."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Access to credentials (api_id/hash and bot tokens) is entirely self-serve via the Telegram core site or @BotFather. The APIs are extensively documented, and official libraries like TDLib facilitate development across multiple platforms."
+    },
+    "evidence": [
+      {
+        "url": "https://core.telegram.org/bots/api",
+        "claim": "The Bot API is an HTTP-based interface created for developers building bots for Telegram.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "claim": "Developers can obtain an api_id and api_hash by logging into my.telegram.org and filling out the API development tools form.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://core.telegram.org/bots/webhooks",
+        "claim": "Telegram supports processing bot updates via webhooks (setWebhook).",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://core.telegram.org/api",
+        "claim": "TDLib is a tool for third-party developers that makes it easy to build fast, secure and feature-rich Telegram apps and is compatible with virtually any programming language.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://core.telegram.org/api/auth",
+        "claim": "Authorization for the Telegram API requires api_id and api_hash parameters.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T10:39:21.115514+00:00"
+}

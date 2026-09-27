@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "AppRecord",
-  "description": "Research record for a single Composio app, as produced by the research pipeline.",
+  "description": "Research record for a single Composio app. Any field the fetched pages did not support must be null, with confidence 'low'.",
   "type": "object",
   "required": [
     "number",
@@ -11,6 +11,7 @@
     "auth",
     "access",
     "api_surface",
+    "mcp",
     "buildability",
     "evidence",
     "confidence"
@@ -18,107 +19,93 @@
   "properties": {
     "number": {
       "type": "integer",
-      "description": "1-indexed position in the source 100-app list."
+      "description": "1-indexed position in the source app list."
     },
-    "name": {
-      "type": "string",
-      "description": "App/product name."
-    },
-    "category": {
-      "type": "string",
-      "description": "Category label from the source list (e.g. CRM, Communication, Dev Tools)."
-    },
+    "name": { "type": "string" },
+    "category": { "type": "string" },
     "hint_url": {
-      "type": "string",
-      "description": "Optional starting URL provided by the source list, before research."
+      "type": ["string", "null"],
+      "description": "Optional starting URL from the source list, before research."
     },
     "one_liner": {
-      "type": "string",
+      "type": ["string", "null"],
       "description": "One-sentence summary of what the app does."
     },
     "auth": {
-      "type": "object",
-      "description": "Authentication method(s) supported for API access.",
+      "description": "How an already-registered developer authenticates API calls. Distinct from `access`.",
+      "type": ["object", "null"],
       "required": ["method", "notes"],
       "properties": {
         "method": {
           "type": "string",
-          "enum": ["oauth2", "api_key", "basic_auth", "jwt", "none", "other", "unknown"]
+          "enum": ["oauth2", "api_key", "basic_auth", "jwt", "mtls", "saml", "none", "other", "unknown"]
         },
-        "notes": {
-          "type": "string"
-        }
+        "notes": { "type": ["string", "null"] }
       }
     },
     "access": {
-      "type": "object",
-      "description": "Whether API access is self-serve or gated behind approval/sales.",
+      "description": "How a first-time developer obtains credentials: self-serve signup vs. gated behind sales/partner approval.",
+      "type": ["object", "null"],
       "required": ["type", "notes"],
       "properties": {
         "type": {
           "type": "string",
           "enum": ["self_serve", "gated", "mixed", "unknown"]
         },
-        "notes": {
-          "type": "string"
-        }
+        "notes": { "type": ["string", "null"] }
       }
     },
     "api_surface": {
-      "type": "object",
-      "description": "Shape and breadth of the public API.",
+      "type": ["object", "null"],
       "required": ["rest", "graphql", "webhooks", "sdks", "notes"],
       "properties": {
-        "rest": { "type": "boolean" },
-        "graphql": { "type": "boolean" },
-        "webhooks": { "type": "boolean" },
+        "rest": { "type": ["boolean", "null"] },
+        "graphql": { "type": ["boolean", "null"] },
+        "webhooks": { "type": ["boolean", "null"] },
         "sdks": {
-          "type": "array",
+          "type": ["array", "null"],
           "items": { "type": "string" }
         },
-        "notes": { "type": "string" }
+        "notes": { "type": ["string", "null"] }
       }
     },
     "mcp": {
-      "type": "object",
-      "description": "Whether the app ships or is known to have a Model Context Protocol server.",
+      "description": "Whether a Model Context Protocol server exists for this app.",
+      "type": ["object", "null"],
       "required": ["exists", "notes"],
       "properties": {
-        "exists": { "type": "boolean" },
-        "url": { "type": "string" },
-        "notes": { "type": "string" }
+        "exists": { "type": ["boolean", "null"] },
+        "url": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
       }
     },
     "buildability": {
-      "type": "object",
-      "description": "Verdict on whether an agent integration is realistically buildable.",
+      "type": ["object", "null"],
       "required": ["verdict", "reasoning"],
       "properties": {
         "verdict": {
           "type": "string",
           "enum": ["easy", "moderate", "hard", "blocked", "unknown"]
         },
-        "reasoning": { "type": "string" }
+        "reasoning": { "type": ["string", "null"] }
       }
     },
     "evidence": {
       "type": "array",
-      "description": "Doc URLs backing the claims above. Every non-trivial claim should trace to at least one entry.",
+      "description": "Doc URLs backing the claims above. Every URL here must have been fetched successfully by the pipeline.",
       "items": {
         "type": "object",
         "required": ["url", "claim"],
         "properties": {
           "url": { "type": "string" },
           "claim": { "type": "string" },
-          "accessed_at": { "type": "string" }
+          "accessed_at": { "type": ["string", "null"] }
         }
-      },
-      "minItems": 1
+      }
     },
     "confidence": {
       "type": "string",
-      "enum": ["high", "medium", "low"],
-      "description": "Agent's self-assessed confidence in this record."
+      "enum": ["high", "medium", "low"]
     }
   }
 }
