@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AppRecord",
+  "description": "Research record for a single Composio app, as produced by the research pipeline.",
+  "type": "object",
+  "required": [
+    "number",
+    "name",
+    "category",
+    "one_liner",
+    "auth",
+    "access",
+    "api_surface",
+    "buildability",
+    "evidence",
+    "confidence"
+  ],
+  "properties": {
+    "number": {
+      "type": "integer",
+      "description": "1-indexed position in the source 100-app list."
+    },
+    "name": {
+      "type": "string",
+      "description": "App/product name."
+    },
+    "category": {
+      "type": "string",
+      "description": "Category label from the source list (e.g. CRM, Communication, Dev Tools)."
+    },
+    "hint_url": {
+      "type": "string",
+      "description": "Optional starting URL provided by the source list, before research."
+    },
+    "one_liner": {
+      "type": "string",
+      "description": "One-sentence summary of what the app does."
+    },
+    "auth": {
+      "type": "object",
+      "description": "Authentication method(s) supported for API access.",
+      "required": ["method", "notes"],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["oauth2", "api_key", "basic_auth", "jwt", "none", "other", "unknown"]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "access": {
+      "type": "object",
+      "description": "Whether API access is self-serve or gated behind approval/sales.",
+      "required": ["type", "notes"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["self_serve", "gated", "mixed", "unknown"]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "api_surface": {
+      "type": "object",
+      "description": "Shape and breadth of the public API.",
+      "required": ["rest", "graphql", "webhooks", "sdks", "notes"],
+      "properties": {
+        "rest": { "type": "boolean" },
+        "graphql": { "type": "boolean" },
+        "webhooks": { "type": "boolean" },
+        "sdks": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "mcp": {
+      "type": "object",
+      "description": "Whether the app ships or is known to have a Model Context Protocol server.",
+      "required": ["exists", "notes"],
+      "properties": {
+        "exists": { "type": "boolean" },
+        "url": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "buildability": {
+      "type": "object",
+      "description": "Verdict on whether an agent integration is realistically buildable.",
+      "required": ["verdict", "reasoning"],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["easy", "moderate", "hard", "blocked", "unknown"]
+        },
+        "reasoning": { "type": "string" }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Doc URLs backing the claims above. Every non-trivial claim should trace to at least one entry.",
+      "items": {
+        "type": "object",
+        "required": ["url", "claim"],
+        "properties": {
+          "url": { "type": "string" },
+          "claim": { "type": "string" },
+          "accessed_at": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Agent's self-assessed confidence in this record."
+    }
+  }
+}
