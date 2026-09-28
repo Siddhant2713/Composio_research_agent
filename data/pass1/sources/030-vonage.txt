@@ -1,0 +1,483 @@
+===== https://developer.vonage.com/en/home
+TITLE: Vonage API Developer
+ACCESSED: 2026-09-27
+
+We're excited to announce the beta launch of our new
+Vonage API Developer Portal Learning Center
+! Now you can browse use cases and learning paths and earn professional certificates!
+Vonage Developer Center
+Communication & Network APIs
+Voice
+Video
+Messaging
+Network Features
+Low Code and AI
+Privacy and Security
+Voice
+Vonage Voice APIs allow you to connect people around the world and automate voice interactions using AI technologies.
+Send smart voice notifications
+Create IVRs and Voice Bots
+Speech to text and WebSockets
+Text to Speech with over 50+ languages
+Embed calls in web and mobile apps
+Web & Mobile (iOS, Android) SDKs
+Send smart voice notifications
+Create IVRs and Voice Bots
+Speech to text and WebSockets
+Text to Speech with over 50+ languages
+Embed calls in web and mobile apps
+Web & Mobile (iOS, Android) SDKs
+Getting Started with the Vonage Voice API
+The Vonage Voice API is the easiest way to build high-quality voice applications in the Cloud!
+Voice
+Make an outbound call
+This code snippet demonstrates how to make an outbound call and plays a text-to-speech message when the call is answered.
+Voice
+SIP Trunking
+In-app Voice
+SIP Trunking
+In-app Voice
+Video
+Integrate real-time video into web, desktop, mobile and IoT apps with our powerful Video API or the extremely low-code Meetings API.
+Embed real-time, high-quality video in web and mobile apps
+Client libraries for web, mobile, and desktop platforms
+Server-side SDKs
+Encryption support
+Easy to migrate from Twilio to Vonage
+Embed real-time, high-quality video in web and mobile apps
+Client libraries for web, mobile, and desktop platforms
+Server-side SDKs
+Encryption support
+Easy to migrate from Twilio to Vonage
+Migrate from Twilio to Vonage Unified Video
+Interested in migrating your video solution from Twilio to Vonage? Explore our migration guides.
+Unified Video
+Create a video chat app
+In this tutorial you will learn the basic concepts of the Vonage Video API platform, including how users can communicate through video, voice, and messaging.
+Unified Video
+Video REST API
+Basic API Functionality
+Client SDKs
+Server SDKs
+Reference App
+Video REST API
+Basic API Functionality
+Client SDKs
+Messaging
+Vonage Messaging APIs
+are easy to set up and allow you to engage your customers via a diverse assortment of messaging channels.
+Programmatic features
+Client SDKs
+Signed Callbacks
+Easy set up
+Diverse messaging  channels
+Programmatic features
+Client SDKs
+Signed Callbacks
+Easy set up
+Diverse messaging  channels
+Understanding RCS Messaging
+The Vonage Messages API RCS channel supports both outbound messaging (business to customer) and inbound messaging (customer to business).
+WhatsApp Interactive Messages
+Streamline interactions and improve end user experience with your customers using WhatsApp Interactive Messages.
+SMS
+RCS
+WhatsApp
+10 DLC API
+SMS
+RCS
+Network Features
+Vonage Network Features simplify access to multiple mobile networks, ensuring a seamless customer experience with optimal application portability.
+Leverage mobile networks to unlock a host of new functionality
+Powerful fraud prevention and detection capabilities
+Streamlined registration experience
+Built using CAMARA standards
+Leverage mobile networks to unlock a host of new functionality
+Powerful fraud prevention and detection capabilities
+Streamlined registration experience
+Built using CAMARA standards
+What are Vonage Network Features?
+Vonage Network Features expose new functionalities of communications service providers' (CSPs) networks beyond SMS and Voice, leveraging mobile networks, including 5G, to put new network capabilities into the hands of developers.
+Network Features
+Vonage Identity Insights API
+The Identity Insights API provides real-time access to a broad range of attributes related to the carrier, subscriber, or device associated with a phone number.
+Network Features
+Identity Insights
+Location Retrieval
+Identity Insights
+Location Retrieval
+Low Code and AI
+Vonage AI solutions empower developers to create and deploy customer engagement experiences that operate in natural language.
+Build complex conversational flows
+Easy-to-use drag-and-drop user interfaces to build flows
+End-to-end omni-channel conversational marketing, engagement, and commerce
+Reach customers on their preferred messaging channels
+Build complex conversational flows
+Easy-to-use drag-and-drop user interfaces to build flows
+End-to-end omni-channel conversational marketing, engagement, and commerce
+Reach customers on their preferred messaging channels
+Vonage AI Studio Overview
+Vonage AI Studio is a low-code / no-code solution for building complex conversational flows via an easy-to-use drag-and-drop interface
+Low Code and AI
+Vonage Conversational Commerce Overview
+End-to-end omni-channel conversational marketing SaaS application enabling brands to reach customers on their preferred channel.
+Low Code and AI
+AI Studio
+Conversational Commerce
+AI Studio
+Conversational Com
+
+===== https://developer.vonage.com/en/api
+TITLE: API
+ACCESSED: 2026-09-27
+
+API Reference
+Messaging
+For SMS, MMS, Facebook, WhatsApp, Viber, Email and much more: Messages API allows easy integration with
+ multiple messaging platforms through a single integration. This API is currently in Beta, so
+                    expect some changes before it is production-ready.
+Dispatch API
+Use the Dispatch API for a multichannel messaging solution with failover.
+SMS API
+For applications that only need to send and/or receive SMS, the SMS API is our stable, recommended
+ solution. The SMS API has extensive support in all our client libraries and lots of code examples
+                      and tutorials to help you along your way.
+External Accounts API
+Use this to manage accounts for the Messages and Dispatch APIs across all the various channels
+ that we support.
+WhatsApp Provisioning API
+Use this to manage allocate WhatsApp Numbers to your Vonage API account
+Conversation API
+Add text messaging (and voice, and video) features to your web and mobile applications.
+ Conversation API allows you to create real-time communications channels to use in your apps.
+Alerts API - Subscription
+For subscribing users to event-based alerts with US Short Codes
+Alerts API - Sending
+For sending event-based alerts to users with US Short Codes
+2FA
+For verifying users with US Short Codes
+Voice
+Make and receive telephone calls to or from anywhere in the world. The Voice API lets you dial
+  other phones, answer incoming calls, and control all aspects of the call including conferences,
+  recordings, capturing user input and sending various audio content.
+NCCO: Nexmo Call Control Objects
+Control all aspects of incoming and outgoing calls with NCCO in JSON format
+Voice Webhooks
+Details of the incoming webhooks sent by the Voice API. Learn how to respond to an incoming call
+  and react to events during a call.
+Media API
+Manage media items for use with Vonage APIs. This API allows you to handle media to send and to
+  download recordings.
+Conversation API
+Add voice communication (and video, and text messaging) features to your web and mobile
+ applications, connecting users anywhere in the world.
+Network Features
+Identity Insights API
+Request real-time access to a broad range of attributes related to the carrier, subscriber, or device associated with a phone number.
+Device Location Retrieval API
+Retrieve the last known location of a SIM enabled device using cellular network positioning.
+Core Services
+Application API
+Create and manage the applications you use across Vonage APIs. Create, manage and configure your
+  applications and authentication.
+Conversation API
+Create real-time communications channels for text, voice and video.
+Reports API
+Retrieve and search message, call, and conversation records in JSON format, by ID, or by time
+  period. Request a CSV report of activity for your account.
+Numbers
+Number Management API
+Manage all the numbers you need for your applications. Search for numbers, list and configure your
+  purchased numbers, cancel any number you no longer need.
+Number Pools API
+Manage account-level number pools programmatically as a self-service.
+US Number Deactivation API
+Download number deactivations lists for US numbers.
+Account
+Account API
+Configure account-level settings, check and manage your account balance, and manage your API
+ secrets using the Account API
+External Accounts API
+Use this to manage accounts for the Messages and Dispatch APIs across all the various channels
+  that we support.
+Pricing API
+Query the prices of Vonage services, either by country or by dialling prefix.
+Verify
+Verify API
+Use both SMS and Voice calling to verify that a phone number belongs to a user that registers with
+  it. Helps to protect your organisation against spam and fraudulent registrations.
+Verify API - Custom templates
+You may optionally custom templates to modify the format and wording of messages sent by the
+  Verify API.
+Security and Compliance
+Redact API
+Ensure your organization is compliant with data regulations such as GDPR by redacting individual's
+  data from the Vonage platform.
+Audit API
+Get an audit trail of changes to your account for security and compliance purposes.
+
+===== https://developer.vonage.com/en/documentation
+TITLE: Developer Documentation
+ACCESSED: 2026-09-27
+
+Multi-channel messaging that integrates with:
+SMS
+Messenger
+MMS
+Email
+WhatsApp
+Viber
+RCS
+10 DLC Support
+10DLC APIs allow you to register your brand, register a campaign and many more.
+TFN Registration
+Programmatically register and manage toll-free numbers.
+Channel Manager
+Manage various aspects of the messaging channels supported by the Vonage Messages API.
+SMS API
+Programmatically send and receive SMS messages.
+Vonage Video API Unified (New)
+Build a custom video experience using advanced features.
+Video API (OpenTok)
+Embed high-quality video functionality into your web and mobile applications.
+Make, receive, and control phone calls, with real-time audio streaming and speech synthesis for AI integration.
+SIP Trunking
+Connect your PBX or contact center to the public telephone network via SIP.
+SIM Swap
+Determine whether and when a SIM swap was last performed on an individual mobile phone number.
+Device Swap
+Retrieve information on any recent device change for a SIM paired to a mobile phone.
+Subscriber Match
+Compare end-user data for a phone number with that on file with a network operator.
+Location Verification
+Verify the location of an end-user using cellular network positioning.
+Format
+Validation of a phone number's format and retrieval of information derived from it.
+Original Carrier
+Information about the network was initially assigned. Information based on the numbering plan prefix.
+Current Carrier
+Information about the network the number is currently assigned.
+Roaming
+Check the roaming status and country for a given device on a mobile network.
+Reachability
+Check the connectivity status for a given device, including if it is connected to the network for data, SMS, or both.
+Number Recycling
+Check whether a phone number has changed ownership since a given date.
+Subscriber Tenure
+Verify that a network subscriber has been a customer of their provider for a specified minimum length of time.
+Age Verification
+Verify whether a user is above a given age threshold.
+Scam Signal
+Identify potential scam activity associated with a phone number.
+Advisor
+Receive advice and assessments based on Insights requested and/or available in an Identity Insights request.
+Verify API
+Enable your applications with two-factor authentication.
+Device Location Retrieval
+Retrieve the last known location of a SIM enabled device using cellular network positioning.
+Application API
+Create a record for your application and configure authentication, callbacks, and settings.
+Numbers API
+Provision virtual numbers around the globe to send or receive text messages and phone calls.
+Reports API
+Find historical records and messages by originating or destination phone number, dates and more.
+Redact Services
+Delete data from the Vonage platform.
+Account & Subaccounts
+Create a record for your application and configure authentication, callbacks, and settings.
+Audit API
+Get information about your Vonage account activity.
+Fraud Defender
+Secure your application against fraudulent traffic.
+Opt-Out Assist
+Easily manage all facets of opt-out compliance for SMS and MMS traffic.
+Vonage Business Cloud
+Programmatically access data and manage features on your Vonage Business Communications (VBC) account.
+AI Studio
+Build complex conversational flows via a drag-and-drop interface.
+Vonage Conversational Commerce, powered by Jumper.ai
+Vonage Conversational Commerce, powered by Jumper.ai, brings AI-powered features to drive product consideration, convert sales, and increase revenue.
+MCP Server
+Communicate with tools through a standardized interface that lets AI agents safely use external APIs and capabilities.
+Ask AI
+Ask questions and get answers based on Vonage developer documentation.
+Vonage
+Essentials
+Working with Vonage APIs
+Fundamental concepts and tools for working with Vonage APIs.
+JWT Generator
+Generate JWTs using our online tool.
+SDKs & Tools
+View all of the Vonage SDKs and tools available to help you build with our APIs.
+Vonage API Dashboard
+Learn how to navigate and use the Vonage API Dashboard, your hub for managing Vonage APIs and applications.
+Postman Collections
+Explore, test, and integrate our APIs directly from Postman.
+Regulatory Certifications
+An overview of certifications held by Vonage for specific lines of business.
+Vonage CLI
+Programmatically manage applications, JWTs, and more with the Vonage CLI.
+
+===== https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b
+TITLE: Vonage API Developer
+ACCESSED: 2026-09-27
+
+San Francisco TechWeek | A TechWalk Meetup
+5th Oct 2026
+9am - 11am EST
+San Francisco TechWeek | A TechWalk Meetup
+Create your account below (or sign in if you already have one) to get started with the Vonage Communication APIs. You can then redeem coupon code
+10TWSFV26
+to unlock $10 credit, so copy this code now.
+The registration for this event is currently unavailable as the registration window has not yet opened.
+
+===== https://developer.vonage.com/en/tutorials/silent-authentication/introduction
+TITLE: Vonage API Developer
+ACCESSED: 2026-09-27
+
+Node.js
+Introduction
+Unlike traditional verification methods that rely on SMS or voice calls, silent authentication allows you to verify users through their mobile data connection, without requiring any user interaction. This leads to a faster onboarding experience, improving both security and user experience.
+In this tutorial, you'll learn how to implement silent user verification in a mobile app using the
+Vonage Verify API
+, with a backend written in Node.js and a client built in Android (Kotlin). The demo app implements Silent Authentication verification with SMS as a fallback.
+The tutorial is divided into three main sections:
+the backend, where you'll set up the environment and build a backend,
+the mobile app section, where you'll build a modern Android application, create a mobile UI, and integrate the Vonage SDKs,
+testing the whole project.
+The full source code for this tutorial is available on a
+GitHub repository
+. You can explore the repository directly to see the complete implementation.
+Getting Started with Silent Authentication
+Silent Authentication takes quite a bit to understand. This tutorial shows you how to build an integration from scratch with Nodejs and Kotlin
+Available on:
+Node.js
+Steps
+1
+Introduction
+2
+Backend Prerequisites
+3
+Set Up the Environment
+4
+Set Up Your Vonage Credentials
+5
+Add the Vonage Verify API to the Backend
+6
+Test the Backend
+7
+Mobile App Prerequisites
+8
+Set Up the Environment
+9
+Create a Basic Android Application
+10
+Connect with the Backend
+11
+Use the Vonage Client SDK
+12
+Set Up The Testing Environment
+13
+Test the Implementation
+
+===== https://developer.vonage.com/en/tools
+TITLE: SDKs and Tools | Vonage API Developer
+ACCESSED: 2026-09-27
+
+SDKs and Tools
+Android Client SDK
+Latest release:
+07 Feb 2026
+iOS Client SDK
+Latest release:
+22 May 2026
+JavaScript Client SDK
+Latest release:
+07 Feb 2026
+Video JavaScript SDK
+Latest release:
+19 May 2026
+Video Android SDK
+Latest release:
+06 May 2026
+Video iOS SDK
+Latest release:
+06 May 2026
+Video Linux SDK
+Latest release:
+06 May 2026
+Video macOS SDK
+Latest release:
+01 Nov 2025
+Video React Native SDK
+Latest release:
+28 May 2026
+Video Windows SDK
+Latest release:
+06 May 2026
+Node.js SDK
+Latest release:
+23 Apr 2026
+Python SDK
+Latest release:
+29 May 2026
+Java SDK
+Latest release:
+13 Mar 2026
+Kotlin SDK
+Latest release:
+08 May 2025
+Ruby SDK
+Latest release:
+06 May 2026
+PHP SDK
+Latest release:
+06 Jan 2026
+.NET SDK
+Latest release:
+01 Jun 2026
+Vonage CLI
+Latest release:
+17 Sept 2025
+Laravel Package
+Latest release:
+22 Apr 2026
+Rails Gem
+Latest release:
+04 May 2024
+Spring Boot Sample
+Latest release:
+07 Nov 2024
+vc-keypad
+Latest release:
+26 Mar 2024
+vc-text-input
+Latest release:
+26 Mar 2024
+vc-members
+Latest release:
+07 Feb 2026
+vc-messages
+Latest release:
+26 Mar 2024
+vc-typing-indicator
+Latest release:
+26 Mar 2024
+Android Client Library
+Latest release:
+12 May 2026
+iOS Client Library
+Latest release:
+02 Mar 2026
+MCP Server API Bindings
+Vonage Kiro Power
+MCP Server Documentation
+ML Transformers
+Latest release:
+22 Jan 2025
+Noise Suppression
+Latest release:
+22 May 2026
+Network Test
+Latest release:
+27 Aug 2026

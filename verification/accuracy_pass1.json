@@ -1,0 +1,71 @@
+{
+  "pass": "pass1",
+  "computed_at": "2026-09-28T03:37:42.369773+00:00",
+  "human": {
+    "per_field": {},
+    "overall": null,
+    "marked_rows": 0,
+    "total_rows": 120
+  },
+  "judge": {
+    "per_field": {
+      "auth.method": {
+        "correct": 13,
+        "partial": 4,
+        "incorrect": 3,
+        "n": 20,
+        "accuracy_pct": 75.0,
+        "strict_accuracy_pct": 65.0
+      },
+      "access.tier": {
+        "correct": 7,
+        "partial": 7,
+        "incorrect": 6,
+        "n": 20,
+        "accuracy_pct": 52.5,
+        "strict_accuracy_pct": 35.0
+      },
+      "api_surface": {
+        "correct": 5,
+        "partial": 12,
+        "incorrect": 3,
+        "n": 20,
+        "accuracy_pct": 55.0,
+        "strict_accuracy_pct": 25.0
+      },
+      "mcp.exists": {
+        "correct": 9,
+        "partial": 1,
+        "incorrect": 10,
+        "n": 20,
+        "accuracy_pct": 47.5,
+        "strict_accuracy_pct": 45.0
+      },
+      "buildability.verdict": {
+        "correct": 2,
+        "partial": 6,
+        "incorrect": 12,
+        "n": 20,
+        "accuracy_pct": 25.0,
+        "strict_accuracy_pct": 10.0
+      },
+      "evidence_supports_claims": {
+        "correct": 4,
+        "partial": 4,
+        "incorrect": 12,
+        "n": 20,
+        "accuracy_pct": 30.0,
+        "strict_accuracy_pct": 20.0
+      }
+    },
+    "overall": {
+      "correct": 40,
+      "partial": 34,
+      "incorrect": 46,
+      "n": 120,
+      "accuracy_pct": 47.5,
+      "strict_accuracy_pct": 33.3
+    },
+    "judged_rows": 120
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "app": "Waterfall.io",
+  "number": 59,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:01:22.218114+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://waterfall.io\",\n    \"https://waterfall.io/docs\",\n    \"https://waterfall.io/api\",\n    \"https://waterfall.io/developers\",\n    \"https://waterfall.io/pricing\",\n    \"https://waterfall.io/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://waterfall.io",
+    "https://waterfall.io/docs",
+    "https://waterfall.io/api",
+    "https://waterfall.io/developers",
+    "https://waterfall.io/pricing",
+    "https://waterfall.io/contact",
+    "https://docs.waterfall.io/",
+    "https://developer.waterfall.io/",
+    "https://developers.waterfall.io/",
+    "https://api.waterfall.io/",
+    "https://waterfall.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.waterfall.io/product/prospector",
+    "https://www.waterfall.io/product/contact-enrich",
+    "https://www.waterfall.io/product/contact-search",
+    "https://docs.waterfall.io/v1/authentication",
+    "https://docs.waterfall.io/v1/book-demo",
+    "https://docs.waterfall.io/v1/webhook-jwks",
+    "https://docs.waterfall.io/v1/api-keys-list",
+    "https://docs.waterfall.io/v1/api-keys-create",
+    "https://docs.waterfall.io/v1/api-keys-modify"
+  ],
+  "boilerplate_lines_removed": 15,
+  "fetch_failures": [
+    {
+      "requested_url": "https://waterfall.io/docs",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://waterfall.io/api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://waterfall.io/developers",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://waterfall.io/contact",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.waterfall.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.waterfall.io/",
+      "requested_url": "https://waterfall.io",
+      "status": 200,
+      "title": "Waterfall | One B2B data solution to connect them all",
+      "chars": 4935,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.waterfall.io/pricing",
+      "requested_url": "https://waterfall.io/pricing",
+      "status": 200,
+      "title": "Pricing | How Waterfall.io pricing works",
+      "chars": 2646,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/introduction",
+      "requested_url": "https://docs.waterfall.io/",
+      "status": 200,
+      "title": "Introduction - Waterfall.io API Documentation",
+      "chars": 1795,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.waterfall.io/product/prospector",
+      "requested_url": "https://www.waterfall.io/product/prospector",
+      "status": 200,
+      "title": "Prospector | Find contacts at your target accounts",
+      "chars": 1612,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.waterfall.io/product/contact-enrich",
+      "requested_url": "https://www.waterfall.io/product/contact-enrich",
+      "status": 200,
+      "title": "Contact enrich | Verified emails & profiles, instantly",
+      "chars": 1795,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.waterfall.io/product/contact-search",
+      "requested_url": "https://www.waterfall.io/product/contact-search",
+      "status": 200,
+      "title": "Contact search | Search any contact, at any company",
+      "chars": 2842,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/authentication",
+      "requested_url": "https://docs.waterfall.io/v1/authentication",
+      "status": 200,
+      "title": "Authentication - Waterfall.io API Documentation",
+      "chars": 311,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/book-demo",
+      "requested_url": "https://docs.waterfall.io/v1/book-demo",
+      "status": 200,
+      "title": "Get API & Sales Support - Waterfall.io API Documentation",
+      "chars": 222,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Waterfall.io provides a modular GTM and B2B contact data enrichment API combining 30+ sources.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Requests require an API key passed in the x-api-key header.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Pricing and commercials require talking to the team or founders after running a benchmark on a sample of records.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Provides REST API endpoints for prospector, contact/company enrichment, search, verification, and webhook JWKS.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"The API documentation is available and authentication uses a simple API key header, but getting access/pricing requires talking to the team first.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.waterfall.io/\",\n      \"claim\": \"Shows example curl commands using the x-waterfall-api-key header and mentions contacting founders.\"\n    },\n    {\n      \"url\": \"https://www.waterfall.io/pricing\",\n      \"claim\": \"States that commercial rates require talking to the team or founders to get a quote.\"\n    },\n    {\n      \"url\": \"https://docs.waterfall.io/v1/introduction\",\n      \"claim\": \"Lists REST endpoints including Prospector, Contact Enrichment, and Webhook JWKS.\"\n    },\n    {\n      \"url\": \"https://docs.waterfall.io/v1/authentication\",\n      \"claim\": \"Confirms requests are authenticated using the x-api-key header.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://waterfall.io",
+    "one_liner": "Waterfall.io provides a modular GTM and B2B contact data enrichment API combining 30+ sources.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Requests require an API key passed in the x-api-key header."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "Pricing and commercials require talking to the team or founders after running a benchmark on a sample of records."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Provides REST API endpoints for prospector, contact/company enrichment, search, verification, and webhook JWKS."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "The API documentation is available and authentication uses a simple API key header, but getting access/pricing requires talking to the team first."
+    },
+    "evidence": [
+      {
+        "url": "https://www.waterfall.io/",
+        "claim": "Shows example curl commands using the x-waterfall-api-key header and mentions contacting founders.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.waterfall.io/pricing",
+        "claim": "States that commercial rates require talking to the team or founders to get a quote.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/introduction",
+        "claim": "Lists REST endpoints including Prospector, Contact Enrichment, and Webhook JWKS.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/authentication",
+        "claim": "Confirms requests are authenticated using the x-api-key header.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:01:37.999875+00:00"
+}

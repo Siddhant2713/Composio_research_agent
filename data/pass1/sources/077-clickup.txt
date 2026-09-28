@@ -1,0 +1,770 @@
+===== https://developer.clickup.com
+TITLE: ClickUp
+ACCESSED: 2026-09-27
+
+Develop innovative solutions with the ClickUp API
+Build integrations and apps with our Public API.
+	      Connect your AI with ClickUp using our MCP Server.
+API
+Browse our Public API specification.
+MCP
+Use ClickUp right from your AI assistant.
+Webhooks
+Trigger workflows from ClickUp events.
+OAuth
+Let people sign into their ClickUp account.
+Get started with the API
+Try the API
+Download the spec
+Get started with the MCP
+MCP setup instructions
+MCP tools
+Get support
+Contact ClickUp support
+Share your feedback
+
+===== https://clickup.com/pricing
+TITLE: ClickUp Pricing and Plans
+ACCESSED: 2026-09-27
+
+100% Money-back Guarantee
+The best work solution,
+for the best price.
+100% Money-back Guarantee
+Save up to 30% with yearly
+Monthly
+Yearly
+Key Features:
+60MB Storage
+Unlimited Tasks
+Unlimited Free Plan Members
+Two-Factor Authentication
+Collaborative Docs
+Kanban Boards
+Sprint Management
+Calendar View
+Basic Custom Field Manager
+In-App Video Recording
+24/7 Support
+1 Form
+Everything in Free Forever, plus:
+Unlimited Spaces, Folders, and Forms
+Unlimited Gantt Charts
+Unlimited Integrations
+Unlimited Storage
+Unlimited Custom Fields
+Native Time Tracking
+Goals & Portfolio Management
+Guests With Permission Control
+Resource Management
+ClickUp Chat
+Email in ClickUp
+Integrations like Slack, Hubspot, Google Drive, and more
+and much more...
+Everything in Unlimited, plus:
+Unlimited Dashboards with Advanced Cards
+Unlimited Message History
+Unlimited Activity Views
+Unlimited Timeline Views
+Webhooks & Automation Integrations
+5K Automations Per Month
+$100 in value
+Mind Mapping
+Private Whiteboards
+Custom Exporting
+Sprint Points & Reporting
+Portfolio Workload Management
+Google SSO
+SMS 2-Factor Authentication
+Unlimited Proofing
+and much more...
+Everything in Business, plus:
+Enterprise Permissions and Governance
+Unlimited Custom Roles
+SAML SSO & SCIM Provisioning
+Audit Log
+Session Management
+Enterprise API
+250K Automations Per Month
+$750 in value
+Custom Branding
+Default Personal Views
+MSA & HIPAA Available
+Data Residency
+Enterprise-Scale Automations & Integrations
+Enterprise-Scale API Usage
+Live Onboarding Training
+Customer Success Manager
+Access to Managed Services
+and much more...
+TRUSTED BY THE BEST
+Complete feature list
+Free Forever
+Free
+Free forever
+Get Started
+Unlimited
+$7
+User/Month
+Get started
+Business
+$12
+User/Month
+Get started
+Enterprise
+enterprise
+User/Month
+Contact sales
+Usage
+Tasks
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Spaces
+5 Spaces
+Unlimited
+Unlimited
+Unlimited
+Lists/Space
+40
+200
+400
+1000
+Folders/Space
+100
+200
+400
+Unlimited
+Custom Views
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Essentials
+AI Notetaker Compatible
+AI Compatible
+AI Free Usage
+Limits apply
+Limits apply
+Limits apply
+Limits apply
+Custom Field Manager Basic
+Custom Field Manager Advanced
+File Storage
+60MB
+Unlimited
+Unlimited
+Unlimited
+Privacy and Sharing
+Guests
+Guests must be given full access (no permissions)
+Custom Fields
+Trial
+Pinning Custom Fields
+Template Everything
+Views
+List
+Board
+Calendar
+Team
+Gantt
+Trial
+Activity
+1 day
+7 days
+Timeline
+Trial
+Trial
+Workload
+Trial
+Trial
+Custom capacity & additional groups
+Table (Spreadsheets)
+Map
+Trial
+Mind Map
+Trial
+Whiteboards
+3 Whiteboards
+10 Whiteboards
+Doc
+Form
+1 Form
+Branding & Customization
+Embed
+Trial
+Trial
+Wiki
+1 Wiki
+1 Wiki
+1 Wiki
+Protected View
+Trial
+Default Views
+Trial
+Private Whiteboards
+Chat
+Number of Messages
+Trial
+Unlimited
+Unlimited
+Unlimited
+Message History
+30 days
+Unlimited
+Schedule Send Messages
+Number of Posts
+Trial
+Trial
+Trial
+Customization
+Custom Statuses
+Custom Task Types
+Trial
+Custom Task IDs
+Super Rich Editing
+Automations
+5 Active Rules,
+ 100 Automation executions,
+ Multiple Actions & Conditions
+500 Active Rules,
+ 1,000 Automation executions,
+ Multiple Actions & Conditions
+Unlimited Active Rules,
+ 5,000 Automation executions,
+ Multiple Actions & Conditions
+Unlimited Active Rules,
+ 250,000 Automation executions,
+ Multiple Actions & Conditions
+Advanced Automations
+Webhooks,
+ Email,
+ SMS,
+ Integrations
+Webhooks,
+ Email,
+ SMS,
+ Integrations
+Portfolios
+Trial
+Permission Settings
+Permission Settings + Sharing
+Future Recurring Tasks on Calendar
+Multiple Assignees
+Bulk Action Toolbar
+Task Checklists
+Dependencies
+White Labeling
+Conditional Logic on Forms
+Relationships
+Tags
+Priorities
+Column Calculations
+API Calls
+100/minute
+100/minute
+100/minute
+10,000/minute
+Doc Tags
+Custom Field Manager Basic
+Custom Field Manager Advanced
+Collaboration
+Clips
+Trial
+Trial
+Proofing: Image & PDF Annotation
+Trial
+Trial
+Publicly Share Everything View
+In-App Video Recording
+Email in ClickUp
+Trial
+Schedule Send Emails
+Remove Email Branding
+Teams
+2 Teams
+3 Teams
+10 Teams
+Team Sharing
+Guest Visiblity
+Natural Language Processing
+Smart Notifications
+Assign Comments
+Schedule Send Comments
+Delegate Reminders
+Private Docs
+Cloud Storage
+Tasks in Multiple Lists
+Trial
+Reporting
+Advanced Reporting
+Goals
+Trial
+Goals Folder
+Dashboards
+Trial
+Trial
+Time Tracking
+Trial
+Timesheets
+Trial
+Trial
+Timesheet Approvals
+Granular Time Estimates
+Time in Status
+Sprints
+Sprint Points
+Trial
+Trial
+Sprint Reporting
+Pulse: Live Overview
+1 day
+1 day
+7 days
+30 days
+Home & Scheduling
+Workload Profiles
+Everything
+Work in Progress Limits
+Custom Exporting
+Trial
+Critical Path & Slack Time
+Trial
+Time Tracking Cards
++ Billable Reports & Timesheets
++ Billable Reports & Timesheets
+Advanced Time Tracking
+Trial
+Trial
+Trial
++ Billable Reports & Timesheets
+Integrations
+Salesforce Integration
+50+ Native Integrations
+Time Tracking
+Notes, labels, & billable time
+Notes, labels, & billable time
+Timesheets
+Zapier
+Make (formerly Integromat)
+Google Calendar
+Google Drive
+Dropbox
+Box
+
+===== https://developer.clickup.com/
+TITLE: ClickUp
+ACCESSED: 2026-09-27
+
+Develop innovative solutions with the ClickUp API
+Build integrations and apps with our Public API.
+	      Connect your AI with ClickUp using our MCP Server.
+API
+Browse our Public API specification.
+MCP
+Use ClickUp right from your AI assistant.
+Webhooks
+Trigger workflows from ClickUp events.
+OAuth
+Let people sign into their ClickUp account.
+Get started with the API
+Try the API
+Download the spec
+Get started with the MCP
+MCP setup instructions
+MCP tools
+Get support
+Contact ClickUp support
+Share your feedback
+
+===== https://developers.clickup.com/
+TITLE: ClickUp
+ACCESSED: 2026-09-27
+
+ClickUp
+Message supplied by app.component.ts
+Retry
+ClickUp is best experienced using our mobile app.
+Our web app has features so BIG, they won't fit on a small screen.
+Open in free mobile app
+Continue on web anyway
+ClickUp is best experienced using our mobile app.
+Our web app has features so BIG, they won't fit on a small screen.
+Open in free mobile app
+Continue on web anyway
+
+===== https://developer.clickup.com/docs/authentication
+TITLE: Authentication
+ACCESSED: 2026-09-27
+
+To use the ClickUp API, you must authenticate every request.
+For personal use, authenticate with your
+personal API token
+.
+For apps or integrations that other people use, use the
+OAuth flow
+, allowing users to authorize Workspaces for your app.
+Include the token in the
+Authorization
+header of your requests.
+Both methods ensure that you and your users only have access to the information permitted by ClickUp.
+👍
+Use a personal API token for individual or testing purposes. Personal tokens begin with
+pk_
+.
+Add the token to the header:
+Authorization: {personal_token}
+. This is also needed to use the Try-It feature in the API docs.
+Log in to ClickUp.
+In the upper-right corner, click your avatar.
+Select
+Settings
+.
+In the sidebar, click
+Apps
+. Or click
+here
+to go directly to your settings.
+Under
+API Token
+, click
+Generate
+or
+Regenerate
+.
+👀
+You'll need to sign in to your ClickUp account in order to generate or regenerate a token.
+Click
+Copy
+to copy the personal token to your clipboard. Personal tokens never expire.
+To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources.
+OAuth resources and specs:
+Authentication:
+OAuth 2.0
+Grant Type:
+Authorization Code
+.
+Learn more
+.
+Authorization URL:
+https://app.clickup.com/api
+Access Token URL:
+https://api.clickup.com/api/v2/oauth/token
+👀
+ClickUp uses the
+authorization code
+grant type
+.
+Use your personal API key to use the Try-It feature in the API docs.
+Only
+Workspace
+owners or admins can create OAuth apps.
+Log in to ClickUp.
+In the upper-right corner, click your avatar.
+Select
+Settings
+.
+In the sidebar, click
+Apps
+.
+Click
+Create new app
+.
+Name the app and add a
+redirect URL
+.
+You'll receive a
+client_id
+and
+secret
+.
+Send users to this URL to connect their ClickUp account:
+https://app.clickup.com/api?client_id={client_id}&redirect_uri={redirect_uri}
+You can also add a
+state
+parameter:
+https://app.clickup.com/api?client_id={client_id}&redirect_uri={redirect_uri}&state={state}
+👀
+Non-SSL redirect URIs may not be supported in the future.
+Users will be redirected back to the
+redirect_uri
+with the authorization code after logging in.
+Users can authorize one or more Workspaces. Use the
+Get Authorized Teams (Workspaces)
+endpoint to see which Workspaces are authorized. Redirect users to the authorization URL to modify Workspace permissions.
+Use the
+Get Access Token
+endpoint with
+client_id
+,
+client_secret
+, and
+code
+to get the access token. This token is used in the
+Authorization: Bearer {access_token}
+header for all API requests made on behalf of the user.
+The access token currently does not expire. This is subject to change.
+Learn more about OAuth:
+OAuth.net
+OAuth Simplified
+Digital Ocean Intro to OAuth 2.0
+Updated
+7 months ago
+Did this page help you?
+Yes
+No
+
+===== https://developer.clickup.com/reference/getaccesstoken
+TITLE: Get Access Token
+ACCESSED: 2026-09-27
+
+Time
+Status
+User Agent
+Retrieving recent requests…
+Loading…
+200
+Shell
+Node
+Ruby
+PHP
+Python
+Loading…
+Click
+Try It!
+to start a request and see the response here!
+Or choose an example:
+application/json
+
+===== https://developer.clickup.com/docs/webhooks
+TITLE: Webhooks
+ACCESSED: 2026-09-27
+
+Webhooks allow you to subscribe to events in your
+Workspace
+. You can create a webhook to subscribe to events from a specific location in your
+Workspace
+.
+Webhooks are created using the user's auth token and therefore are tied to the user.
+If the user who created a webhook is disabled, the webhook remains but stops triggering. The system checks if the user is still part of the relevant hierarchy before triggering each webhook.
+ClickUp currently does not support dedicated IP addresses from which webhook events are sent.
+Each webhook event is signed with a shared secret that is unique to the webhook and returned when the webhook is created. This guarantees that the event is coming from ClickUp. More under
+Webhook Signature
+.
+Webhooks registrations are created using the
+Create Webhook endpoint
+. Each registration can be configured to subscribe to one or more events and a destination URL that ClickUp will send the event to. See more under
+Receiving Webhook Events
+further down the page.
+👍
+Use a service like
+https://smee.io/
+to test webhooks easily.
+You can use
+*
+as a wildcard to subscribe to all events.
+The ClickUp API v2 example app shows how to
+subscribe to webhooks
+.
+You can create a webhook to subscribe to events from a specific location in your
+Workspace
+.
+Only one location per Hierarchy level (Space, Folder, List, task) can be specified per webhook. The most specific location applies, so combining
+Space
+,
+Folder
+,
+List
+, or
+Task
+will subscribe to events for the lowest level of the Hierarchy.
+The following example subscribes to events for the
+List
+:
+JSON
+{
+  "space_id": 1234,
+  "list_id": 4567
+}
+The following example subscribes to events for the task:
+JSON
+{
+  "space_id": 1234,
+  "folder_id": 9876,
+  "list_id": 4567,
+  "task_id": "abc1234"
+}
+When an event your webhook is subscribed to occurs, ClickUp sends a
+POST
+request with event details to the URL you provided during webhook creation. If no protocol is specified, the default is
+https
+.
+🚧
+Non-SSL protocols may not be supported in the future. We recommend registering your webhook using
+https
+.
+Requests follow these criteria:
+Sent using the
+POST
+method.
+Content-Type
+is always
+application/json
+.
+Includes
+webhook_id
+,
+event
+name, and
+resource ID
+in the body.
+If available, a
+history_items
+array will describe the event.
+before
+and
+after
+are the values of the resource before and after the event.
+Use
+{{webhook_id}}:{{history_item_id}}
+as an idempotency key.
+POST https://yourdomain.com/webhook
+Content-Type: application/json
+
+Body:
+{
+  "event": "listUpdated",
+  "history_items": [
+    {
+      "id": "8a2f82db-7718-4fdb-9493-4849e67f009d",
+      "type": 6,
+      "date": "1642740510345",
+      ...
+      "source": null,
+      "user": {
+            "id": 183,
+            "username": "John",
+            ...
+      },
+      "before": "webhook payloads 2",
+      "after": "Webhook payloads round 2"
+    }
+  ],
+  "list_id": "162641285",
+  "webhook_id": "7fa3ec74-69a8-4530-a251-8a13730bd204"
+}
+See individual webhook payloads for more details or look at the ClickUp API v2 example app on how to
+process incoming webhook requests
+.
+history_items[x].user.id
+is an integer, not a string.
+Unset boolean values (e.g., Custom Field checkmarks) may be
+NULL
+instead of
+false
+.
+Custom Field values are not normalized; cast to the correct type as needed.
+taskCreated
+- Triggered when a new task is created.
+taskUpdated
+- Triggered when a task is updated. Adding an attachment to a task won't trigger the taskUpdated webhook, but uploading an attachment to a task comment will.
+taskDeleted
+- Triggered when a task is deleted.
+taskPriorityUpdated
+- Triggered when a task's priority is updated.
+taskStatusUpdated
+- Triggered when a task's status is updated.
+taskAssigneeUpdated
+- Triggered when an assignee is added or removed from a task.
+taskDueDateUpdated
+- Triggered when a task's due date is updated.
+taskTagUpdated
+- Triggered when a tag is added or removed from a task.
+taskMoved
+- Triggered when a task is moved to a new
+List
+.
+taskCommentPosted
+- Triggered when a comment is added to a task.
+taskCommentUpdated
+- Triggered when an existing comment on a task is updated.
+taskTimeEstimateUpdated
+- Triggered when a task's time estimate is added or updated.
+taskTimeTrackedUpdated
+- Triggered when time tracked on a task is added, updated, or deleted.
+View example task payloads
+listCreated
+- Triggered when a new List is created.
+listUpdated
+- Triggered when an existing List is updated.
+listDeleted
+- Triggered when a List is deleted.
+View example List payloads
+folderCreated
+- Triggered when a new
+Folder
+is created.
+folderUpdated
+- Triggered when an existing
+Folder
+is updated.
+folderDeleted
+- Triggered when a
+Folder
+is deleted.
+View example Folder payloads
+spaceCreated
+- Triggered when a new
+Space
+is created.
+spaceUpdated
+- Triggered when an existing
+Space
+is updated.
+spaceDeleted
+- Triggered when a
+Space
+is deleted.
+View example Space payloads
+goalCreated
+- Triggered when a new
+Goal
+is created.
+goalUpdated
+- Trig
+
+===== https://clickup.com/features/2fa
+TITLE: Project Management Software with 2FA | ClickUp™
+ACCESSED: 2026-09-27
+
+Project Management Software with 2FA | ClickUp™
+Two-Factor Authentication
+Protect your team with two-factor authentication (2FA). The additional security layer guarantees peace of mind for any sensitive projects.
+Get started
+Free Forever.
+No credit card.
+Free Forever. No credit card.
+25,000+ reviews from
+2FA
+Customize your security options with 2FA
+Set up personal authentication
+Stop the bad actors. Significantly strengthen security on your account by requiring a security code be sent to your mobile device.
+Use 2FA for your whole team
+Prevent confidential information from ending up in the wrong hands with two-factor authentication. Your whole team can set it up fast.
+Who has 2FA?
+Know who’s complied with their team’s requirements with a quick glance at your user management page.
+Download
+AI
+Product
+Compare
+Company
+Help
+SOC 2
+CERTIFIED
+ISO 27001
+CERTIFIED
+GDPR
+COMPLIANT
+HIPAA
+COMPLIANT

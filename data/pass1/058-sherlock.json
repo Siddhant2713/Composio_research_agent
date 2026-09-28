@@ -1,0 +1,178 @@
+{
+  "app": "Sherlock",
+  "number": 58,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:03:58.550090+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://github.com/sherlock-project/sherlock\",\n    \"https://github.com/sherlock-project/sherlock/blob/master/README.md\",\n    \"https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md\",\n    \"https://github.com/sherlock-project/sherlock/wiki\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://github.com/sherlock-project/sherlock",
+    "https://github.com/sherlock-project/sherlock/blob/master/README.md",
+    "https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md",
+    "https://github.com/sherlock-project/sherlock/wiki",
+    "https://docs.github.com/",
+    "https://developer.github.com/",
+    "https://developers.github.com/",
+    "https://api.github.com/",
+    "https://github.com/docs",
+    "https://github.com/developers",
+    "https://github.com/api",
+    "https://github.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+    "https://github.com/pricing",
+    "https://github.com/partners",
+    "https://support.github.com?tags=dotcom-footer",
+    "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fsherlock-project%2Fsherlock&report=sherlock-project+%28user%29",
+    "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=sherlock-project%2Fsherlock",
+    "https://github.com/sherlock-project/sherlock/wiki/Restructure-Notes",
+    "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fwiki%2Findex&source=header-repo&source_repo=sherlock-project%2Fsherlock",
+    "https://docs.github.com/en/authentication",
+    "https://docs.github.com/en/copilot/get-started/plans",
+    "https://support.github.com",
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/graphql"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://github.com/sherlock-project/sherlock/blob/master/README.md",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.github.com/",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://support.github.com?tags=dotcom-footer",
+      "reason": "page too thin (70 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fsherlock-project%2Fsherlock&report=sherlock-project+%28user%29",
+      "reason": "page too thin (86 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "requested_url": "https://github.com/sherlock-project/sherlock",
+      "status": 200,
+      "title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks \u00b7 GitHub",
+      "chars": 4275,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlock/wiki",
+      "requested_url": "https://github.com/sherlock-project/sherlock/wiki",
+      "status": 200,
+      "title": "Home \u00b7 sherlock-project/sherlock Wiki \u00b7 GitHub",
+      "chars": 385,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en",
+      "requested_url": "https://docs.github.com/",
+      "status": 200,
+      "title": "GitHub Docs",
+      "chars": 1116,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.github.com/",
+      "requested_url": "https://api.github.com/",
+      "status": 200,
+      "title": "",
+      "chars": 2395,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+      "requested_url": "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+      "status": 200,
+      "title": "sherlock/LICENSE at master \u00b7 sherlock-project/sherlock \u00b7 GitHub",
+      "chars": 1160,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://github.com/pricing",
+      "requested_url": "https://github.com/pricing",
+      "status": 200,
+      "title": "Pricing \u00b7 Plans for every developer \u00b7 GitHub",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://github.com/partners",
+      "requested_url": "https://github.com/partners",
+      "status": 200,
+      "title": "GitHub Partner Program \u00b7 GitHub",
+      "chars": 1650,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Sherlock is a command-line tool that hunts down social media accounts by username across social networks.\",\n  \"auth\": {\n    \"method\": \"none\",\n    \"notes\": \"Sherlock is an open-source command-line tool and does not expose a hosted API or require API authentication.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The project is open source and freely available on GitHub to download or install.\"\n  },\n  \"api_surface\": {\n    \"rest\": false,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [],\n    \"notes\": \"Sherlock is a CLI tool and Python package, not a web service with a public API surface.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No Model Context Protocol integration or mention exists in the provided pages.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"no\",\n    \"reasoning\": \"Sherlock is a command-line utility for scanning social networks rather than an integrated platform with an API for third-party developer integrations.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://github.com/sherlock-project/sherlock\",\n      \"claim\": \"Sherlock is a command line tool to hunt down social media accounts by username across social networks.\"\n    },\n    {\n      \"url\": \"https://github.com/sherlock-project/sherlock/blob/master/LICENSE\",\n      \"claim\": \"Sherlock is distributed under the MIT License.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://github.com/sherlock-project/sherlock",
+    "one_liner": "Sherlock is a command-line tool that hunts down social media accounts by username across social networks.",
+    "auth": {
+      "method": "none",
+      "notes": "Sherlock is an open-source command-line tool and does not expose a hosted API or require API authentication."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The project is open source and freely available on GitHub to download or install."
+    },
+    "api_surface": {
+      "rest": false,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": [],
+      "notes": "Sherlock is a CLI tool and Python package, not a web service with a public API surface."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "No Model Context Protocol integration or mention exists in the provided pages."
+    },
+    "buildability": {
+      "verdict": "no",
+      "reasoning": "Sherlock is a command-line utility for scanning social networks rather than an integrated platform with an API for third-party developer integrations."
+    },
+    "evidence": [
+      {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "claim": "Sherlock is a command line tool to hunt down social media accounts by username across social networks.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+        "claim": "Sherlock is distributed under the MIT License.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:04:42.876266+00:00"
+}

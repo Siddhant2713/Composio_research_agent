@@ -1,0 +1,198 @@
+{
+  "app": "Attio",
+  "number": 4,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T11:45:43.776575+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://attio.com/developers\",\n    \"https://attio.com/api\",\n    \"https://docs.attio.com\",\n    \"https://attio.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://attio.com",
+    "https://attio.com/developers",
+    "https://attio.com/api",
+    "https://docs.attio.com",
+    "https://attio.com/pricing",
+    "https://developer.attio.com/",
+    "https://developers.attio.com/",
+    "https://api.attio.com/",
+    "https://attio.com/docs",
+    "https://attio.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://attio.com/contact/sales",
+    "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_salesforce",
+    "https://attio.com/partners",
+    "https://attio.com/partners/app-partners",
+    "https://attio.com/help/reference/attio-101",
+    "https://docs.attio.com/sdk/",
+    "https://docs.attio.com/rest-api/guides/authentication",
+    "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth",
+    "https://docs.attio.com/rest-api/guides/webhooks",
+    "https://docs.attio.com/rest-api/endpoint-reference",
+    "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+    "https://docs.attio.com/rest-api/attribute-types/attribute-types-actor-reference",
+    "https://docs.attio.com/sdk/overview",
+    "https://docs.attio.com/changelog/app-sdk",
+    "https://attio.com/partners/expert-partners"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.attio.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    },
+    {
+      "requested_url": "https://api.attio.com/",
+      "reason": "HTTP 404"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://attio.com",
+      "requested_url": "https://attio.com",
+      "status": 200,
+      "title": "Attio: The CRM for agentic revenue",
+      "chars": 3368,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/platform/developers",
+      "requested_url": "https://attio.com/developers",
+      "status": 200,
+      "title": "Developer Platform | Attio",
+      "chars": 4020,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.attio.com/rest-api/overview",
+      "requested_url": "https://attio.com/api",
+      "status": 200,
+      "title": "Overview - Attio Docs",
+      "chars": 681,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.attio.com/docs/overview",
+      "requested_url": "https://docs.attio.com",
+      "status": 200,
+      "title": "Overview - Attio Docs",
+      "chars": 953,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/pricing",
+      "requested_url": "https://attio.com/pricing",
+      "status": 200,
+      "title": "Plans & Pricing | Attio",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/contact/sales",
+      "requested_url": "https://attio.com/contact/sales",
+      "status": 200,
+      "title": "Talk to Sales | Attio",
+      "chars": 369,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/help/reference/imports-exports/migrate-data-from-another-crm?source=footer_salesforce",
+      "requested_url": "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_salesforce",
+      "status": 200,
+      "title": "Migrate data from another CRM | Attio Help Center",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/partners",
+      "requested_url": "https://attio.com/partners",
+      "status": 200,
+      "title": "Partner Programs | Attio",
+      "chars": 1045,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/partners/app-partners",
+      "requested_url": "https://attio.com/partners/app-partners",
+      "status": 200,
+      "title": "App Partner Program | Attio",
+      "chars": 2456,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://attio.com/help/reference/attio-101",
+      "requested_url": "https://attio.com/help/reference/attio-101",
+      "status": 200,
+      "title": "Attio 101 | Attio Help Center",
+      "chars": 785,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Attio is a CRM platform featuring a public REST API, App SDK, and MCP server for building integrations and agentic workflows.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Attio supports OAuth 2.0 for API authentication and developer connections.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign in to the developer console with an Attio account to create apps, and anyone can sign up for a free Attio account.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"App SDK\",\n      \"TypeScript\"\n    ],\n    \"notes\": \"Attio provides a public REST API exchanging JSON over HTTPS, an App SDK for embedding TypeScript React applications, webhooks, and an MCP server.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Attio provides an MCP server (Attio MCP) to connect AI tools like Claude or ChatGPT to search, update, and manage workspaces.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve developer accounts allow anyone to sign in and build apps using documented REST API and OAuth 2.0 mechanisms.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://attio.com/platform/developers\",\n      \"claim\": \"Mentions the REST API, App SDK, Attio MCP, webhooks, and OAuth 2.0.\"\n    },\n    {\n      \"url\": \"https://docs.attio.com/rest-api/overview\",\n      \"claim\": \"Describes the public REST API exchanging JSON over HTTPS and webhook listening.\"\n    },\n    {\n      \"url\": \"https://docs.attio.com/docs/overview\",\n      \"claim\": \"Outlines the App SDK, REST API, MCP, and general developer platform components.\"\n    },\n    {\n      \"url\": \"https://attio.com/partners/app-partners\",\n      \"claim\": \"Explains that developers can sign in to the developer console with an Attio account to create apps and use OAuth.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint_url": "https://attio.com",
+    "one_liner": "Attio is a CRM platform featuring a public REST API, App SDK, and MCP server for building integrations and agentic workflows.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Attio supports OAuth 2.0 for API authentication and developer connections."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign in to the developer console with an Attio account to create apps, and anyone can sign up for a free Attio account."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "App SDK",
+        "TypeScript"
+      ],
+      "notes": "Attio provides a public REST API exchanging JSON over HTTPS, an App SDK for embedding TypeScript React applications, webhooks, and an MCP server."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Attio provides an MCP server (Attio MCP) to connect AI tools like Claude or ChatGPT to search, update, and manage workspaces."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve developer accounts allow anyone to sign in and build apps using documented REST API and OAuth 2.0 mechanisms."
+    },
+    "evidence": [
+      {
+        "url": "https://attio.com/platform/developers",
+        "claim": "Mentions the REST API, App SDK, Attio MCP, webhooks, and OAuth 2.0.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.attio.com/rest-api/overview",
+        "claim": "Describes the public REST API exchanging JSON over HTTPS and webhook listening.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.attio.com/docs/overview",
+        "claim": "Outlines the App SDK, REST API, MCP, and general developer platform components.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://attio.com/partners/app-partners",
+        "claim": "Explains that developers can sign in to the developer console with an Attio account to create apps and use OAuth.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T11:45:58.129625+00:00"
+}

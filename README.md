@@ -7,19 +7,23 @@ presented as one self-contained HTML page.
 
 ## Status
 
-Phase 1 — the extraction loop runs end to end on a 3-app pilot (Telegram, Stripe,
-DealCloud). The 100-app pass is not wired up yet.
+Phase 2 — the pipeline runs over all 100 apps with checkpointing and resume. Results land
+in `data/pass1/` per app and merge into `data/pass1_full.json`.
 
 ## Layout
 
 - `agent/` — pipeline code.
-  - `fetch.py` — HTTP fetch, HTML→text, nav-chrome removal, link harvesting.
+  - `fetch.py` — HTTP fetch with retry, HTML→text, nav-chrome removal, secret redaction,
+    link harvesting.
   - `discover.py` — candidate doc-URL generation.
   - `extract.py` — schema-constrained extraction over fetched text.
   - `gemini.py` — Gemini calls with retry and model fallback.
-  - `pilot.py` — the Phase 1 pilot runner.
+  - `research.py` — **the pipeline**: research one app end to end. Shared by both runners.
+  - `pilot.py` — Phase 1 pilot (3 stress-case apps).
+  - `run.py` — Phase 2 batch over all 100, with checkpointing and resume.
   - `verify.py` — evidence provenance + live-URL verification.
-- `data/` — app list, and `data/pilot/` raw logs (sources, raw model output, records).
+- `data/` — `apps.json` (the 100), `pilot/` (Phase 1 logs), `pass1/` (per-app Phase 2
+  results plus `pass1/sources/` page text), `pass1_full.json` (merged records).
 - `site/` — the self-contained HTML report.
 - `verification/` — evidence report and manual review notes.
 - `schema.json` — the app record schema (mirrored by `agent/models.py`).
@@ -43,10 +47,31 @@ re-checks both properties (provenance and live dereference) after the fact.
 ## Run
 
 ```bash
-python -m agent.pilot              # all 3 pilot apps
-python -m agent.pilot --only Telegram
-python -m agent.verify             # verify evidence URLs
+python -m agent.run                # research all 100; skips apps already done
+python -m agent.run --force        # re-research everything
+python -m agent.run --only Slack Stripe
+python -m agent.run --limit 5      # first 5 outstanding apps
+python -m agent.run --merge-only   # just rebuild data/pass1_full.json
+
+python -m agent.pilot              # the 3 Phase 1 stress cases
+python -m agent.verify             # verify pilot evidence URLs
 ```
+
+The batch is safe to interrupt: each app is written to `data/pass1/<nnn>-<app>.json` as it
+finishes, and rerunning picks up only what is missing. A per-app `SIGALRM` deadline
+(`--timeout`, default 420s) keeps one slow site from stalling the run, and any exception an
+app raises is checkpointed as an error rather than killing the batch.
+
+## Known limits
+
+- **JavaScript-rendered docs.** Some reference docs (Salesforce's, for instance) ship an
+  empty HTML shell, so plain HTTP fetching sees no text. Those apps come out `unknown` with
+  low confidence rather than guessed — correct, but less complete than a browser would get.
+- **Geography.** Fetches run from one location, and sites serve region-specific pages
+  (Stripe showed "invite only in India"). Access verdicts can reflect the fetch location
+  rather than global availability.
+- **Bot blocking.** A few hosts return 403 regardless of headers; those URLs are recorded
+  as fetch failures rather than silently dropped.
 
 ## Setup
 

@@ -1,0 +1,889 @@
+===== https://developers.asana.com
+TITLE: Asana Docs
+ACCESSED: 2026-09-27
+
+Build for Clarity, Connectivity, and Collaboration
+Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.
+Get started
+New to the Asana API? Build your first app with our step by step quick start guide. Learn to create and authorize with a token then create tasks via the API.
+View quick start guide
+Learn to read status updates from Asana and share them in another tool. This step-by-step tutorial, example app, and recipe will help you build an app that can generate a report of status updates.
+View tutorial
+Features
+Automate
+Automate tedious work in powerful, bespoke ways with our platform
+          features like rule actions, webhooks, and our API. Learn about how
+          you can
+automate workflows
+Embed
+Plug your app directly into the Asana UI with
+app components
+. Build app
+          components on the surface of tasks or rules so that customers can
+          use their favorite tools and stay in flow.
+Integrate
+Many apps in our App Directory create Asana tasks and kick start
+          workflow from other tools. Learn about building and publishing apps
+          that
+keep work tools connected
+Stay in touch
+Ask questions, get updates about our Platform, and connect with other developers in the Asana community on our
+developer forum
+Can't find what you're looking for in the forum or documentation? Our Developer Support Team is here to help — reach out to us through the
+Asana Help Center
+!
+
+===== https://developers.asana.com/docs/overview
+TITLE: Build an app with Asana
+ACCESSED: 2026-09-27
+
+An Asana app makes it possible to extend or enhance what’s possible with Asana. Many people build Asana apps to integrate with other tools, add or extract data about the
+Work Graph
+, or automate workflows.
+Apps can be built and then shared with other Asana users or they can be built just for your organization. Apps can be built for individual users, for example
+Google Drive
+which attaches Google files to tasks. Apps can also be built to run org-level processes. For example like onboarding users from
+Okta
+or running custom scripts.
+If you are building an integration with a 3rd party tool and intend for any Asana user to discover it, apps can be published to the
+Asana App Directory
+. The app directory is a great place for users to discover new apps that help them get the most out of Asana. We recommend visiting the app directory and try using an app to learn more about what’s possible to build with Asana.
+If your app is not meant to be used by any Asana user, apps can also be created and then shared with only organizations of your choice. By default, all apps start out private to the developer. You can change the sharing permissions of your app in the Manage distribution tab inside the developer console.
+Asana apps use features like our rest API, app components, and webhooks. Learn more about how these features are used to power our most
+common use cases
+While no two apps are exactly the same. We have a general set of best practices that will help you build a successful app with Asana.
+Here’s an overview of the steps you will need to follow to build an app.
+Before you get started building your Asana app, we recommend you familiarize yourself with the Work Graph, meaning the core Asana objects and their relationships.
+Check out this quick guide on understanding objects
+Next, we recommend planning your app. This step helps you define the exact problem your app is meant to solve and become familiar with features in the Asana platform that will help you build the right solution. Check out our
+library of use cases
+,
+example apps
+, and
+other apps in the directory
+for inspiration.
+The next step is to try using the API to test how it works. The primary feature of Asana’s platform is our rest API, so we recommend getting familiar with how our API works.
+Here’s a brief overview of how to get started:
+Choose your test workspace. You can test in any of your existing workspaces, create a free account, or
+request a developer sandbox
+. The developer sandbox will allow you to test premium features not included in a free account.
+Choose your authentication method
+. Your app may ultimately use OAuth, but most developers test our API by creating a Personal Access Token (PAT) to make their first API calls.
+Create your token or app in the
+developer console
+Use your token to make an API call.
+Visit the API Reference
+and learn about the different types of APIs that are available. Our
+embedded API explorer
+lets you try using the API from the reference. Build your request on the documentation page, press “Try it” and see a response in seconds. If you’d like a step-by-step guide for making your first API call,
+check out our quick start guide
+Once you have your app planned, and have moved beyond testing the API, you’re ready to build your app. If you are building with a PAT or Service Account token, your app can only be used in your organization. If you are building an app for any user to discover, we recommend creating an app and using OAuth. All OAuth apps are created privately by default. You will need to change the app distribution setting to either share the app with just a specific organization or to anyone with the OAuth redirect URL.
+Learn more about the different features you might want to consider like
+webhooks
+for reacting to changes in Asana or
+app components
+for embedding apps directly into Asana.
+Use the API reference to determine what types of API calls will best serve your use case.
+Set-up your authentication method (OAuth recommended).
+Learn more about authentication options
+Write your app code. If you would like to start from an example,
+you can check out our Github repository of example apps
+Deploy your app.
+Locally - For a simple script, creating a
+launchd job
+(or
+Windows task scheduler
+) may be sufficient, whereas more complex apps or those using features like webhooks or app components will have more sophisticated hosting, security, and uptime requirements.
+Hosted - Some developers choose to use their company’s on-prem solution, many use hosting providers. If your company doesn’t already have a hosting provider that you can use, here are some common choices:
+Amazon Web Services (AWS)
+,
+Google Cloud
+,
+Heroku
+,
+Microsoft Azure
+,
+IBM Cloud
+,
+SAP
+,
+Vercel
+Share your app (optional). When your app is ready to use, we recommend checking your distribution settings. In the Developer Console > Manage distribution. There you can share your app with more workspaces or choose to share your app with “any workspace”,
+
+===== https://developers.asana.com/reference/rest-api-reference
+TITLE: Overview
+ACCESSED: 2026-09-27
+
+This is the interface for interacting with the Asana platform. This reference is generated from our
+OpenAPI Specification
+, and contains a comprehensive reference for objects, schemas, and endpoints available in the API.
+For contextual information, guides, and tutorials regarding API usage, visit our
+guides
+To view the API reference for
+app components
+, click
+here
+📘
+To begin making requests against the REST API, see the
+quick start
+guide.
+The Asana API is a
+REST
+ful interface with predictable resource-oriented URLs, accepts
+JSON
+or
+form-encoded
+requests, returns JSON, and uses standard
+HTTP
+features (
+verbs
+,
+response codes
+, etc.)
+API endpoints are relative to the following
+base URL
+:
+https://app.asana.com/api/1.0
+Some requests return
+compact
+representations of objects in order to conserve resources and complete the request more efficiently. See
+input/output options
+to customize your responses.
+Objects (i.e., resources in the API) are ordered alphabetically in the sidebar of this API reference
+Object schemas can be found by selecting the object in the sidebar (e.g.,
+Attachments
+)
+Select an endpoint (e.g.,
+get a task
+) to see code samples, example requests, and responses
+Each API endpoint features a built-in, in-context
+API explorer
+through which you can make requests (and see responses). For notes on enumerated values (i.e., on request properties), see
+this documentation
+Terms & policies
+Developer forum
+Asana support
+Asana status
+Changelog
+
+===== https://developers.asana.com/docs/authentication
+TITLE: Authentication
+ACCESSED: 2026-09-27
+
+Asana’s API has several options for authenticating. The purpose of your app, who uses it, and its features will dictate the method of auth that’s best for your app. Here are the various authentication options and why you might want to use each of them.
+📘
+View only license users have limited access to the API. To check if a user has a view only license, use the
+get a workspace membership
+API endpoint.
+For more information on view only licenses, see this article in the
+Help Center
+A
+personal access token
+(PAT) is the quickest and simplest way to authenticate in the API. PATs are long-lived tokens allowing programmatic authentication to the API and should be stored securely. PATs provide the same authorization (i.e., permissions and level of access to Asana data) through the
+API
+as the user who generated them has in the Asana
+web product
+Using a PAT is a good way to get started quickly with the API regardless of which auth type you end up using in production. If you are building a script or simple app that doesn’t need to support multiple users logging in, then using a PAT with your production app is a sufficient option.
+If your app needs more access to data than you have in Asana, then you should consider using a
+Service Account
+. You will likely want to use
+OAuth
+if your app needs to support multiple users signing in to use the app.
+PATs are generated in the
+developer console
+. See the
+PAT documentation
+for more information.
+If you generate a PAT from your Asana account, any API actions that are authenticated with your PAT will be attributed to you in the Asana web product. For example, if a script uses your PAT to authenticate an API request to comment on a task, the comment will appear to be made by you in the Asana app.
+If you prefer against having your app’s actions to be authored by you, then you should provision a new Asana user (or guest account) and then generate the PAT from this new account. This user will act as a "bot" account. You should give the account a name and photo that will make it clear to Asana users that an app is taking action and not a person. More details on this approach can be found in the
+Bots and scopes
+section of this guide.
+Similar to PATs,
+Service Accounts
+(SAs) are long-lived tokens that provide programmatic access to the API. Service Accounts are an
+Enterprise tier
+feature and can only be created by Asana super admins (see more about
+admin roles at Asana
+).
+Unlike PATs, SAs provide complete access to all data within your Asana account, including private user data. As such, SAs are ideal if your app needs to have org-wide authorization. Some common use cases include:
+Creating periodic data backups
+Automating programmatic management of your Asana account. For example:
+User management and access based on company's policies
+Administrative tasks like team member management
+Cleaning up inactive projects
+Standardizing the structure of objects in your domain (e.g., portfolios, projects, custom fields, etc.)
+Building integrations that require access to all Asana data
+Authenticating Asana API endpoints that require service accounts. For example:
+Audit log
+Organizational exports
+SCIM
+Instructions for Asana super admins to generate Service Accounts:
+Click the
+Apps
+tab from within the admin console
+Click
+Service Accounts
+Click the
+Add Service Account
+button
+📘
+To learn more about how Service Account scopes and how to configure them for your specific use case – check out our
+Service Account Scopes documentation
+OAuth is an open-standard authentication protocol that allows you to approve one application interacting with another on your behalf without providing your username and password. This is the best choice if multiple users need to sign in to your app.
+OAuth is more complex to implement than using token-based auth (i.e., PATs and SAs), but it offers more features and security. To implement OAuth, follow the detailed instructions in our
+OAuth documentation
+OpenID Connect (OIDC) is an open authentication protocol that works on top of the OAuth 2.0. The purpose of OIDC is for users to provide one set of credentials and access multiple sites.
+If you want to allow users to log into your app using their Asana account, the OpenID Connect protocol is a great way to have your apps users authenticate.
+See the
+OpenID Connect documentation
+for more information.
+Updated
+12 months ago
+Did this page help you?
+Yes
+No
+
+===== https://asana.com/developers
+TITLE: Asana Developers - API, Documentation & Community Support • Asana
+ACCESSED: 2026-09-27
+
+Asana Developers - API, Documentation & Community Support • Asana
+FOR DEVELOPERS AND TEAMS
+Build for Clarity, Connectivity, and Collaboration
+Create apps that integrate with Asana to keep teams and work connected.
+Get started
+API Docs
+Start building your own apps in Asana.
+View Docs
+Community
+Get updates, connect, and share feedback in the Asana Community forum.
+Join the community
+App Directory
+Publish your app in our directory of 200+ partners to share it with customers across the world.
+Visit the directory
+Automate work across tools
+Use the Asana API to build apps that automate repeatable processes, like creating follow-up tasks, sending updates, or organizing projects.
+Learn more about the Asana API
+Keep connected work flowing in Asana
+New! Build interactive apps for Asana Tasks and Rules, improving visibility, productivity, and flow to keep projects on track.
+Learn about App Components
+Build custom apps for your business
+Develop solutions that integrate Asana with the tools your company uses every day. Run custom workflows or bring Asana Goals into internal reports and dashboards to extend the power of Asana across your organization.
+Learn more about custom apps
+Gain more control over data security
+Get visibility into how your organization uses Asana, and receive alerts on key security events via the Audit Log API or your preferred SIEM provider.
+Get started with the Audit Log API
+Trusted by developers around the world
+Asana Technology Partners
+Bring value to our shared customers
+The Asana Partners program provides technology companies with a platform to build and publish apps that bring value to our shared customers across the tools they use every day.
+Learn how to become an Asana Partner
+Clockwise sets new records by building with Asana
+Due to the flexibility of Asana App Components, Clockwise completed development quickly and attracted a record setting number of new users.
+Read Case Study
+Integrations
+One platform to manage work
+Bring all your data and processes together in Asana. And create one source of truth for your teams to focus and get work done.
+Slack
+Microsoft Teams
+Zoom
+Google Drive
+Gmail
+Zendesk
+Tableau
+Jira
+Loom
+Zapier
+1
+2
+3
+4
+
+===== https://app.asana.com/-/login
+TITLE: Log in - Asana
+ACCESSED: 2026-09-27
+
+Log in - Asana
+Welcome to Asana
+To get started, please sign in
+Google
+Microsoft
+or
+This site is protected by reCAPTCHA and the Asana
+Privacy Statement
+and
+Terms of Service
+apply.
+
+===== https://developers.asana.com/docs/quick-start
+TITLE: Quick start guide
+ACCESSED: 2026-09-27
+
+The
+Asana API
+helps ensure all of your information is up to date and that your teams stay efficient and in-the-loop. It provides a means for software and scripts to read information from
+inside
+Asana, input information from
+outside
+Asana, and automatically react when things change. This can include:
+Consistently doing repetitive or tedious tasks
+Creating reports on the state of tasks and projects
+Staying in sync with other software used in your organization (e.g., Slack, Salesforce, etc.)
+After following this tutorial, you will be able to leverage the API to perform create, read, update, and delete (i.e.,
+CRUD
+) operations on data in your Asana instance.
+📘
+If you already have a deep understanding of APIs or need a brief review of Asana's API, you may wish to skip ahead to the quick highlights of this guide below:
+The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)
+The
+API reference
+is comprehensive reference for objects, schemas, and endpoints available in the API
+To quickly authorize your API requests, create a
+personal access token
+via the
+developer console
+API endpoints are relative to the following
+base URL
+:
+https://app.asana.com/api/1.0
+Some requests return
+compact
+representations of objects in order to conserve resources and complete the request more efficiently. See
+input/output options
+to customize your responses
+For requests that query for multiple objects,
+pagination
+is strongly recommended
+Beyond cURL, you can make API requests with the
+API explorer
+,
+Postman Collection
+, and
+client libraries
+Asana's API is a RESTful interface, providing programmatic access to much of the data in your workspace. To make sure you are well-prepared to begin building with this guide, you should have experience with
+REST
+principles. The API provides predictable URLs for accessing resources, and uses built-in
+HTTP
+features to receive commands and return
+JSON
+responses.
+Additionally, this guide makes use of
+cURL
+, a command line program for making HTTP requests. MacOS and many Linux distributions have cURL pre-installed, and it is also
+available for download
+on Windows and many other operating systems.
+To begin using the API, you'll first need to complete two brief setup steps:
+Get a personal access token
+Get your workspace GID
+Similar to entering your username/password into a website or logging into Asana with Google, when you access your Asana data via the API, you need to authenticate. The quickest method to do so is by using a
+personal access token
+(PAT), which you can think of as your unique password for accessing the API.
+To create a new personal access token:
+Open the
+developer console
+📘
+Along with link above, the developer console is also accessible by clicking on the
+My apps
+at the top of this page.
+Within the Asana app, you may access the developer console by clicking on your profile photo (on the top right), then selecting
+My Settings
+>
+Apps
+>
+Manage Developer Apps
+For more details on the developer console,
+see its documentation here
+Select
++ Create new token
+Enter a
+Token name
+(e.g., what you’ll use this token for)
+Click
+Create token
+Copy your token and store it securely. You will only see this token displayed one time, but you can always reset this PAT (or create another PAT) later
+❗️
+Treat your PAT like you would treat a password. Do
+not
+share it and do
+not
+display it online.
+Now that you have a personal access token, you'll need to get your workspace GID as well.
+A
+workspace
+is the highest organizational unit in Asana. Since all objects (tasks, projects, teams, etc.) have an associated workspace, you'll need to know your
+g
+lobally unique
+id
+entifier (i.e., workspace GID) in order to perform operations on objects
+in
+your workspace. The quickest way to do so is by
+logging in to Asana
+, then visiting this URL directly in your browser:
+https://app.asana.com/api/1.0/workspaces
+Under the hood, your browser is making a
+GET
+request to
+an API endpoint that retrieves all workspaces visible to the authorized user
+. As a result of the request, Asana returns a
+200
+response similar to the following:
+JSON
+{
+  "data": [
+    {
+      "gid": "67890",
+      "resource_type": "task",
+      "name": "My Company Workspace"
+    }
+  ],
+  "next_page": {
+    "offset": "eyJ0eXAiOJiKV1iQLCJhbGciOiJIUzI1NiJ9",
+    "path": "/tasks/12345/attachments?limit=2&offset=eyJ0eXAiOJiKV1iQLCJhbGciOiJIUzI1NiJ9",
+    "uri": "https://app.asana.com/api/1.0/tasks/12345/attachments?limit=2&offset=eyJ0eXAiOJiKV1iQLCJhbGciOiJIUzI1NiJ9"
+  }
+}
+🚧
+Note that by making API requests against data in your workspace, you will be operating on
+real data
+in that workspace. If you wish to have a separate working environment and instead operate on "test" data, we recommend using a developer sandbox. For additional details and to request your own, see
+developer sandbox
+In the array of individual
+workspace
+objects above, you'
+
+===== https://developers.asana.com/docs/getting-started-with-asana-oauth
+TITLE: OAuth Code Samples / Libraries
+ACCESSED: 2026-09-27
+
+This page has samples you can use to get started with Asana's OAuth and SDKs.
+You can
+explore OAuth client libraries by language here
+There are many client libraries you can use to manage the OAuth grant flow in Node.js or Javascript.
+OAuth2 library
+Examples
+Passport
+(with
+Asana strategy
+)
+Code sample
+oidc-client-ts
+oauth4webapi
+Grant
+Note:
+Asana OAuth currently does not support making token requests from a browser for security reasons.
+To quickly test Asana OAuth with scopes:
+Use
+Asana's Postman Collection
+In the
+developer console
+, set your app's redirect URL to:
+Redirect URI
+https://oauth.pstmn.io/v1/callback
+Under
+Manage Distribution
+on the left sidebar of the developer console, make sure that the Asana workspace for your user can access your app under
+Specific workspaces
+or choose
+Any workspace
+In Postman, select
+Asana
+at the top level of the collection, then select the
+Authorization
+tab. Enter these settings (leave defaults for other settings):
+Auth
+Type
+: OAuth 2.0
+Grant
+Type
+: Authorization Code
+Callback
+URL
+:
+https://oauth.pstmn.io/v1/callback
+Auth
+URL
+:
+https://app.asana.com/-/oauth_authorize
+Access
+Token
+URL
+:
+https://app.asana.com/-/oauth_token
+Client
+ID
+: (enter your test ID)
+Client
+Secret
+: (enter your secret from the Asana developer console)
+Scope
+: (space separated list of scopes from the sheet above) (e.g.,
+tasks:read tasks:write projects:read
+, no quotes)
+State
+: (enter a random string like
+1234
+)
+Select
+Get New Access Token
+The Asana consent screen should load if there is no error. Select
+Allow
+. You should be redirected back to Postman
+If successful, you should have a model with a new access token. You can optionally give the token a name under
+Token Name
+Select
+Use Token
+Select
+Save
+(if you don’t save, the token is there, but not used yet in your collection)
+Now you should be able to use this call in Postman. Be sure that when looking at an endpoint, on the
+Authorization
+tab,
+Auth Type
+is set to
+Inherit auth from parent
+Updated
+about 1 year ago
+Did this page help you?
+Yes
+No
+
+===== https://developers.asana.com/docs/oauth
+TITLE: OAuth
+ACCESSED: 2026-09-27
+
+At its core, OAuth ("Open Authorization") is a mechanism for applications to access the Asana API on behalf of a user, all without the application having access to the user's username and password. Instead, the application gets a
+token
+, which can be used in subsequent API calls through the addition of an
+Authorization header
+:
+Shell
+-H "Authorization: Bearer ACCESS_TOKEN"
+In the above example,
+ACCESS_TOKEN
+should be replaced by the actual token received during the
+token exchange
+Most of the time, OAuth is the preferred method of authentication for developers, users, and Asana as a platform. If you are
+building a custom app
+, you should consider building a secure OAuth flow to authenticate users of your app.
+📘
+If you are already using an
+OAuth library
+and/or have a deep understanding of OAuth, you may wish to skip ahead to the quick reference below:
+Asana supports the
+authorization code grant
+flow
+Applications can be created from the
+developer console
+(i.e., "My apps")
+The endpoint for
+user authorization
+is
+GET
+https://app.asana.com/-/oauth_authorize
+The endpoint for
+token exchange
+is
+POST
+https://app.asana.com/-/oauth_token
+The endpoint for
+revoking a token
+is
+POST
+https://app.asana.com/-/oauth_revoke
+Once an access token (i.e., bearer token) has been obtained, your application can make API requests on behalf of the user
+📘
+You can access an open source examples for OAuth servers, provided in the following languages:
+Node.js
+(Express.js)
+Python
+(Flask)
+Feel free to follow the comments in the server files as you inspect the overall OAuth flow.
+Note: These OAuth servers should only be used for testing and learning purposes.
+In addition to learning about how to use OAuth on the Asana platform (i.e., through this guide), feel free to review the official
+OAuth 2.0 specification
+This section describes the overall OAuth process (i.e., with the
+authorization code grant
+flow, which is the most common).
+📘
+We recommend using a
+library
+(available in your language of choice) to handle the details of OAuth. Along with expediting development time, using a library can help mitigate the risk of security vulnerabilities due to inexperience or oversight.
+As a prerequisite, ensure that you have
+registered an application
+with Asana. Take note of the application's
+client ID
+and the
+client secret
+(which should be protected as a password). Then, to begin:
+A user arrives at your application and clicks a button that says
+Authenticate with Asana
+(or
+Connect with Asana
+, etc.)
+The user is taken to the
+user authorization endpoint
+, which displays a page that asks the user if they would like to grant access to your third-party application
+If the user clicks
+Allow
+, they are redirected back to your application, bringing along a special
+code
+in the
+query string
+The application makes a request to the
+token exchange endpoint
+to exchange that
+code
+, along with the application's
+client secret
+, for two tokens:
+An
+access token
+(i.e., a
+bearer token
+, which lasts an hour)
+A
+refresh token
+(which can be used to fetch a new
+access token
+when the current one expires)
+Using this
+access token
+, the application can now make requests against the Asana API for the next hour
+Once the
+access token
+expires, the application can use the
+token exchange endpoint
+again (i.e., without user intervention) to exchange the
+refresh token
+for a new
+access token
+. This can be repeated for as long as the user has authorized the application
+📘
+For additional details and a diagram of the authorization code grant flow, see
+Authorization Code Grant
+in the OAuth 2.0 specification.
+You must first register your application with Asana to receive a
+client ID
+and
+client secret
+. To do so, first visit the
+developer console
+and select
+Create new app
+, as shown below:
+To build a proper OAuth flow, you must supply your new application with three key details:
+App name
+- The name for your application. Users will see this name when your application requests permission to access their account as well as when they review the list of apps they have authorized.
+The app name can be changed at any time in the
+Basic information
+tab in the sidebar of the
+developer console
+Redirect URL
+- Otherwise known as the
+callback URL
+, this is where the user will be redirected upon successful or failed authentication. Native or command line applications should use the special redirect URL
+urn:ietf:wg:oauth:2.0:oob
+. For security reasons, non-native applications
+must
+supply a "https" URL (
+more on this below
+).
+❗️
+Your client secret is a
+secret
+, and it should never be shared with anyone or added into source code that others could gain access to. If you need to reset your client secret:
+Select your app in the
+developer console
+Navigate to the
+OAuth
+tab in the sidebar
+Select
+Reset
+next to your client secret
+(OAuth) Permission scopes
+: You'll need to specify which
+OAuth scopes
+your app can request during this registration step. Only these pre-approved scopes will be accepted later during user authorization
+
+===== https://developers.asana.com/docs/oauth-scopes
+TITLE: OAuth scopes
+ACCESSED: 2026-09-27
+
+Asana uses OAuth 2.0 for secure user authorization. Scopes allow your app to request only the access it needs, following the
+principle of least privilege
+. That is, OAuth scopes define which parts of the Asana API your app can access. This helps users trust your app and ensures their data is protected.
+📘
+For comprehensive documentation on how to register and use the scopes listed on this page, see
+OAuth scopes
+The following tables show the currently available set of OAuth scopes (subject to revision) and the corresponding API endpoints they enable. Each scope follows the
+documented
+<resource>:<action>
+format. For additional details on each API endpoint, visit the
+API reference
+Scope
+Endpoints
+attachments:delete
+DELETE /attachments/{attachment_gid}
+attachments:read
+GET /attachments/{attachment_gid}
+GET /attachments
+attachments:write
+POST /attachments
+Scope
+Endpoints
+custom_fields:read
+GET /custom_fields/{custom_field_gid}
+GET /workspaces/{workspace_gid}/custom_fields
+custom_fields:write
+POST /custom_fields
+PUT /custom_fields/{custom_field_gid}
+POST /custom_fields/{custom_field_gid}/enum_options
+POST /custom_fields/{custom_field_gid}/enum_options/insert
+PUT /enum_options/{enum_option_gid}
+Scope
+Endpoints
+custom_types:read
+GET /custom_types
+GET /custom_types/{custom_type_gid}
+Scope
+Endpoints
+goals:read
+GET /goals/{goal_gid}/custom_field_settings
+GET /goals/{goal_gid}
+GET /goals
+GET /goals/{goal_gid}/parentGoals
+Scope
+Endpoints
+jobs:read
+GET /jobs/{job_gid}
+Scope
+Endpoints
+ooo_entries:delete
+DELETE /ooo_entries/{ooo_entry_gid}
+ooo_entries:read
+GET /ooo_entries/{ooo_entry_gid}
+GET /ooo_entries
+ooo_entries:write
+PUT /ooo_entries/{ooo_entry_gid}
+POST /ooo_entries
+Scope
+Endpoints
+portfolios:read
+GET /portfolios/{portfolio_gid}/custom_field_settings
+GET /portfolios
+GET /portfolios/{portfolio_gid}
+GET /portfolios/{portfolio_gid}/items
+portfolios:write
+POST /portfolios
+PUT /portfolios/{portfolio_gid}
+POST /portfolios/{portfolio_gid}/addItem
+POST /portfolios/{portfolio_gid}/removeItem
+POST /portfolios/{portfolio_gid}/addCustomFieldSetting
+POST /portfolios/{portfolio_gid}/removeCustomFieldSetting
+POST /portfolios/{portfolio_gid}/duplicate
+Scope
+Endpoints
+project_portfolio_settings:read
+GET /project_portfolio_settings/{project_portfolio_setting_gid}
+GET /projects/{project_gid}/project_portfolio_settings
+GET /portfolios/{portfolio_gid}/project_portfolio_settings
+project_portfolio_settings:write
+PUT /project_portfolio_settings/{project_portfolio_setting_gid}
+Scope
+Endpoints
+project_templates:read
+GET /project_templates/{project_template_gid}
+GET /project_templates
+GET /teams/{team_gid}/project_templates
+Scope
+Endpoints
+projects:delete
+DELETE /projects/{project_gid}
+projects:read
+GET /projects/{project_gid}/custom_field_settings
+GET /projects
+GET /projects/{project_gid}
+GET /tasks/{task_gid}/projects
+GET /teams/{team_gid}/projects
+GET /workspaces/{workspace_gid}/projects
+GET /workspaces/{workspace_gid}/projects/search
+GET /projects/{project_gid}/task_counts
+projects:write
+POST /project_templates/{project_template_gid}/instantiateProject
+POST /projects
+PUT /projects/{project_gid}
+POST /projects/{project_gid}/duplicate
+POST /teams/{team_gid}/projects
+POST /workspaces/{workspace_gid}/projects
+POST /projects/{project_gid}/addCustomFieldSetting
+POST /projects/{project_gid}/removeCustomFieldSetting
+Scope
+Endpoints
+roles:delete
+DELETE /roles/{role_gid}
+roles:read
+GET /roles
+GET /roles/{role_gid}
+roles:write
+POST /roles
+PUT /roles/{role_gid}
+Scope
+Endpoints
+stories:read
+GET /stories/{story_gid}
+GET /tasks/{task_gid}/stories
+GET /goals/{goal_gid}/stories
+stories:write
+PUT /stories/{story_gid}
+POST /tasks/{task_gid}/stories
+POST /goals/{goal_gid}/stories
+Scope
+Endpoints
+tags:read
+GET /tags
+GET /tags/{tag_gid}
+GET /tasks/{task_gid}/tags
+GET /workspaces/{workspace_gid}/tags
+tags:write
+POST /tags
+PUT /tags/{tag_gid}
+POST /workspaces/{workspace_gid}/tags
+Scope
+Endpoints
+task_templates:read
+GET /task_templates
+GET /task_templates/{task_template_gid}
+Scope
+Endpoints
+tasks:delete
+DELETE /tasks/{task_gid}
+tasks:read
+GET /tasks
+GET /tasks/{task_gid}
+GET /projects/{project_gid}/tasks
+GET /sections/{section_gid}/tasks
+GET /tags/{tag_gid}/tasks
+GET /user_task_lists/{user_task_list_gid}/tasks
+GET /tasks/{task_gid}/subtasks
+GET /tasks/{task_gid}/dependencies
+GET /tasks/{task_gid}/dependents
+GET /workspaces/{workspace_gid}/tasks/custom_id/{custom_id}
+GET /workspaces/{workspace_gid}/tasks/search
+GET /user_task_lists/{user_task_list_gid}
+GET /users/{user_gid}/user_task_list
+tasks:write
+POST /sections/{section_gid}/addTask
+POST /tasks
+PUT /tasks/{task_gid}
+POST /tasks/{task_gid}/duplicate
+POST /tasks/{task_gid}/subtasks
+POST /tasks/{task_gid}/setParent
+POST /tasks/{task_gid}/addDependencies
+POST /tasks/{task_gid}/removeDependencies
+POST /tasks/{task_gid}/addDependents
+POST /tasks/{task_gid}/removeDependents
+POST /tasks/{task_gid}/addProject
+POST /tasks/{task_gid}/removeProject
+POST /tasks/{task_gid}/addTag
+POST /tasks/{task_gid}/removeTag
+POST /ta

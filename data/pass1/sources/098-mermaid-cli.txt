@@ -1,0 +1,923 @@
+===== https://github.com/mermaid-js/mermaid-cli
+TITLE: GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub
+ACCESSED: 2026-09-27
+
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+1,198 Commits
+1,198 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.github
+.github
+docs
+docs
+scripts
+scripts
+src-test
+src-test
+src
+src
+test-negative
+test-negative
+test-positive
+test-positive
+.ackrc
+.ackrc
+.editorconfig
+.editorconfig
+.gitattributes
+.gitattributes
+.gitignore
+.gitignore
+.prettierignore
+.prettierignore
+CODE_OF_CONDUCT.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+Dockerfile
+Dockerfile
+DockerfileBuild
+DockerfileBuild
+GitVersion.yml
+GitVersion.yml
+LICENSE
+LICENSE
+README.md
+README.md
+building.md
+building.md
+commander.d.ts
+commander.d.ts
+eslint.config.js
+eslint.config.js
+index.html
+index.html
+install-dependencies.sh
+install-dependencies.sh
+package-lock.json
+package-lock.json
+package.json
+package.json
+puppeteer-config.json
+puppeteer-config.json
+run-tests.sh
+run-tests.sh
+tsconfig.json
+tsconfig.json
+vite.config.ts
+vite.config.ts
+View all files
+Repository files navigation
+mermaid-cli
+This is a command-line interface (CLI) for
+mermaid
+. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output. There's basic support for converting mermaid code blocks embedded within Markdown files.
+Installation
+npm install -g @mermaid-js/mermaid-cli
+Usage
+Convert Mermaid mmd Diagram File To SVG
+mmdc -i input.mmd -o output.svg
+Note
+See
+Alternative installations
+if you don't want to install the package globally.
+Locate how to call the mmdc executable for your preferred method
+i.e. Docker, Yarn, NPM, local install, etc.
+Examples
+Create A PNG With A Dark Theme And Transparent Background
+mmdc -i input.mmd -o output.png -t dark -b transparent
+Adding custom icon packs to Mermaid
+mermaid-cli
+supports two different ways to add
+custom icon packs to mermaid
+:
+Icon packs installed via
+npm install
+, e.g.
+@iconify-json/logos
+. These can be used via the
+--iconPacks @iconify-json/logos
+Icon packs accessible via URI. These can either be URLs or local
+file://
+URIs to local files. For example, to download the above
+@iconify-json/logos
+package from a CDN like
+jsDelivr
+, you can do
+--iconPacksAndUrls logos#https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.14/icons.json
+Animating an SVG file with custom CSS
+The
+--cssFile
+option can be used to inline some custom CSS. It's passed to
+Mermaid's
+themeCSS
+config option
+Please see
+./test-positive/flowchart1.css
+for an example of a CSS file that has animations.
+Warning
+: Inline CSS files may be blocked by your browser, depending on the
+HTTP Content-Security-Policy header
+of the website that hosts your SVG.
+mmdc --input test-positive/flowchart1.mmd --cssFile test-positive/flowchart1.css -o docs/animated-flowchart.svg
+Example output: docs/animated-flowchart.svg
+Selecting the size of the created file
+The
+--size
+value can be used to attempt to create a PNG of the given size,
+by setting a
+max-width
+on the SVG.
+For narrow diagrams, this would decide set the max height,
+and for wide diagrams, this will set the max width.
+For example, the following command will create a PNG of height 4000px:
+mmdc --input test-positive/flowchart1.mmd --size 4000 -o output.png
+![Note]
+This may not work with all diagram types and/or may require
+useMaxWidth: true
+to be set in the diagram's config.
+Transform a markdown file with mermaid diagrams
+mmdc -i readme.template.md -o readme.md
+This command transforms a markdown file itself. The mermaid-cli will find the mermaid diagrams, create SVG files from them and refer to those in the markdown output.
+This:
+###
+Some markdown
+```
+mermaid
+graph
+[....]
+```
+###
+Some more markdown
+```
+mermaid
+sequenceDiagram
+[....]
+```
+###
+Mermaid with custom title/desc
+```
+mermaid
+graph
+accTitle: My title here
+accDescr: My description here
+A-->B
+```
+Becomes:
+###
+Some markdown
+![
+diagram
+]
+(
+./readme-1.svg
+)
+###
+Some more markdown
+![
+diagram
+]
+(
+./readme-2.svg
+)
+###
+Mermaid with custom title/desc
+![
+My description here
+]
+(
+./readme-3.svg
+"
+My title here
+")
+Piping from stdin
+You can easily pipe input from stdin. This example shows how to use a heredoc to
+send a diagram as stdin to mermaid-cli (mmdc).
+cat
+<<
+EOF
+| mmdc --input -
+graph TD
+A[Client] --> B[Load Balancer]
+EOF
+See All Available Options
+mmdc -h
+Alternative installations
+Use Docker/Podman:
+docker pull minlag/mermaid-cli
+or pull from Github Container Registry
+docker pull ghcr.io/mermaid-js/mermaid-cli/mermaid-cli
+or e.g. version 8.8.0
+docker pull minlag/mermaid-cli:8.8.0
+The container looks for input files in
+/data
+. So for example, if you have a
+diagram defined on your system in
+/path/to/diagrams/diagram.mmd
+, you can use
+the container to generate an SVG file as follows:
+docker run --rm -u
+`
+id -u
+`
+:
+`
+id -g
+`
+-v /path/to/diagrams:/data minlag/mermaid-cli -i diagram.mmd
+Or, if using
+Podman
+, instead do:
+podman run --userns keep-id --user
+${UID}
+--rm -v /path/to/diagrams:/data:z ghcr.io/mermaid-js/mermaid-cli/mermaid-cli -i diagram.mmd
+The key differences in the podman command versus the docker comman
+
+===== https://github.com/mermaid-js/mermaid-cli/blob/master/README.md
+TITLE: mermaid-cli/README.md at master · mermaid-js/mermaid-cli · GitHub
+ACCESSED: 2026-09-27
+
+Latest commit
+History
+History
+History
+mermaid-cli
+This is a command-line interface (CLI) for
+mermaid
+. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output. There's basic support for converting mermaid code blocks embedded within Markdown files.
+Installation
+npm install -g @mermaid-js/mermaid-cli
+Usage
+Convert Mermaid mmd Diagram File To SVG
+mmdc -i input.mmd -o output.svg
+Note
+See
+Alternative installations
+if you don't want to install the package globally.
+Locate how to call the mmdc executable for your preferred method
+i.e. Docker, Yarn, NPM, local install, etc.
+Examples
+Create A PNG With A Dark Theme And Transparent Background
+mmdc -i input.mmd -o output.png -t dark -b transparent
+Adding custom icon packs to Mermaid
+mermaid-cli
+supports two different ways to add
+custom icon packs to mermaid
+:
+Icon packs installed via
+npm install
+, e.g.
+@iconify-json/logos
+. These can be used via the
+--iconPacks @iconify-json/logos
+Icon packs accessible via URI. These can either be URLs or local
+file://
+URIs to local files. For example, to download the above
+@iconify-json/logos
+package from a CDN like
+jsDelivr
+, you can do
+--iconPacksAndUrls logos#https://cdn.jsdelivr.net/npm/@iconify-json/logos@1.2.14/icons.json
+Animating an SVG file with custom CSS
+The
+--cssFile
+option can be used to inline some custom CSS. It's passed to
+Mermaid's
+themeCSS
+config option
+Please see
+./test-positive/flowchart1.css
+for an example of a CSS file that has animations.
+Warning
+: Inline CSS files may be blocked by your browser, depending on the
+HTTP Content-Security-Policy header
+of the website that hosts your SVG.
+mmdc --input test-positive/flowchart1.mmd --cssFile test-positive/flowchart1.css -o docs/animated-flowchart.svg
+Example output: docs/animated-flowchart.svg
+Selecting the size of the created file
+The
+--size
+value can be used to attempt to create a PNG of the given size,
+by setting a
+max-width
+on the SVG.
+For narrow diagrams, this would decide set the max height,
+and for wide diagrams, this will set the max width.
+For example, the following command will create a PNG of height 4000px:
+mmdc --input test-positive/flowchart1.mmd --size 4000 -o output.png
+![Note]
+This may not work with all diagram types and/or may require
+useMaxWidth: true
+to be set in the diagram's config.
+Transform a markdown file with mermaid diagrams
+mmdc -i readme.template.md -o readme.md
+This command transforms a markdown file itself. The mermaid-cli will find the mermaid diagrams, create SVG files from them and refer to those in the markdown output.
+This:
+###
+Some markdown
+```
+mermaid
+graph
+[....]
+```
+###
+Some more markdown
+```
+mermaid
+sequenceDiagram
+[....]
+```
+###
+Mermaid with custom title/desc
+```
+mermaid
+graph
+accTitle: My title here
+accDescr: My description here
+A-->B
+```
+Becomes:
+###
+Some markdown
+![
+diagram
+]
+(
+./readme-1.svg
+)
+###
+Some more markdown
+![
+diagram
+]
+(
+./readme-2.svg
+)
+###
+Mermaid with custom title/desc
+![
+My description here
+]
+(
+./readme-3.svg
+"
+My title here
+")
+Piping from stdin
+You can easily pipe input from stdin. This example shows how to use a heredoc to
+send a diagram as stdin to mermaid-cli (mmdc).
+cat
+<<
+EOF
+| mmdc --input -
+graph TD
+A[Client] --> B[Load Balancer]
+EOF
+See All Available Options
+mmdc -h
+Alternative installations
+Use Docker/Podman:
+docker pull minlag/mermaid-cli
+or pull from Github Container Registry
+docker pull ghcr.io/mermaid-js/mermaid-cli/mermaid-cli
+or e.g. version 8.8.0
+docker pull minlag/mermaid-cli:8.8.0
+The container looks for input files in
+/data
+. So for example, if you have a
+diagram defined on your system in
+/path/to/diagrams/diagram.mmd
+, you can use
+the container to generate an SVG file as follows:
+docker run --rm -u
+`
+id -u
+`
+:
+`
+id -g
+`
+-v /path/to/diagrams:/data minlag/mermaid-cli -i diagram.mmd
+Or, if using
+Podman
+, instead do:
+podman run --userns keep-id --user
+${UID}
+--rm -v /path/to/diagrams:/data:z ghcr.io/mermaid-js/mermaid-cli/mermaid-cli -i diagram.mmd
+The key differences in the podman command versus the docker command are:
+The addition of the
+--userns keep-id
+argument. This allows the container to keep the same UID as the current user's UID in the container namespace instead of mapping to a subuid. To learn more, see the
+userns=mode
+documentation
+The addition of
+:z
+to the end of the volume mapping. This instructs podman to relabel the files in the volume with the SELinux label
+container_file_t
+, which allows processes in the container to access the files. See the "Labeling Volume Mounts" section of
+podman-run (1)
+for more info.
+In previous version, the input files were mounted in
+/home/mermaidcli
+. You can
+restore this behaviour with the
+--workdir
+option:
+docker run [...] --workdir=/home/mermaidcli minlag/mermaid-cli [...]
+Use Node.JS API
+It's possible to call
+mermaid-cli
+via a Node.JS API.
+Please be aware that
+the NodeJS API is not covered by semver
+, as
+mermaid-cli
+follows
+mermaid
+'s versioning.
+import
+{
+run
+}
+from
+"@mermaid-js/mermaid-cli"
+;
+await
+run
+(
+
+===== https://docs.github.com/en
+TITLE: GitHub Docs
+ACCESSED: 2026-09-27
+
+GitHub Docs
+Help for wherever you are on your GitHub journey.
+Search for anything...
+/
+All docs
+Get started
+Get started
+Migrations
+Account and profile
+Subscriptions & notifications
+Authentication
+Billing and payments
+Site policy
+Collaborative coding
+Codespaces
+Repositories
+Pull requests
+GitHub Discussions
+Integrations
+GitHub Copilot
+GitHub Copilot
+Plans
+Cloud agent
+Tutorials
+GitHub Copilot Cookbook
+Customization library
+Copilot CLI
+CI/CD and DevOps
+GitHub Actions
+GitHub Packages
+GitHub Pages
+Security and code quality
+Security and code quality
+Secure your secrets
+Find and fix code vulnerabilities
+Secure your supply chain
+Maintain quality code
+Secure at scale
+Client apps
+GitHub CLI
+GitHub Mobile
+GitHub Desktop
+Project management
+GitHub Issues
+Projects
+Search on GitHub
+Enterprise and teams
+Organizations
+Secure at scale
+Enterprise onboarding
+Enterprise administrators
+Developers
+Apps
+REST API
+GraphQL API
+Webhooks
+Community
+Building communities
+GitHub Sponsors
+GitHub Education
+GitHub for Nonprofits
+GitHub Support
+Contribute to GitHub Docs
+More docs
+CodeQL query writing
+Electron
+npm
+GitHub Well-Architected
+
+===== https://api.github.com/
+TITLE: 
+ACCESSED: 2026-09-27
+
+{
+  "current_user_url": "https://api.github.com/user",
+  "current_user_authorizations_html_url": "https://github.com/settings/connections/applications{/client_id}",
+  "authorizations_url": "https://api.github.com/authorizations",
+  "code_search_url": "https://api.github.com/search/code?q={query}{&page,per_page,sort,order}",
+  "commit_search_url": "https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}",
+  "emails_url": "https://api.github.com/user/emails",
+  "emojis_url": "https://api.github.com/emojis",
+  "events_url": "https://api.github.com/events",
+  "feeds_url": "https://api.github.com/feeds",
+  "followers_url": "https://api.github.com/user/followers",
+  "following_url": "https://api.github.com/user/following{/target}",
+  "gists_url": "https://api.github.com/gists{/gist_id}",
+  "hub_url": "https://api.github.com/hub",
+  "issue_search_url": "https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}",
+  "issues_url": "https://api.github.com/issues",
+  "keys_url": "https://api.github.com/user/keys",
+  "label_search_url": "https://api.github.com/search/labels?q={query}&repository_id={repository_id}{&page,per_page}",
+  "notifications_url": "https://api.github.com/notifications",
+  "organization_url": "https://api.github.com/orgs/{org}",
+  "organization_repositories_url": "https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}",
+  "organization_teams_url": "https://api.github.com/orgs/{org}/teams",
+  "public_gists_url": "https://api.github.com/gists/public",
+  "rate_limit_url": "https://api.github.com/rate_limit",
+  "repository_url": "https://api.github.com/repos/{owner}/{repo}",
+  "repository_search_url": "https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}",
+  "current_user_repositories_url": "https://api.github.com/user/repos{?type,page,per_page,sort}",
+  "starred_url": "https://api.github.com/user/starred{/owner}{/repo}",
+  "starred_gists_url": "https://api.github.com/gists/starred",
+  "topic_search_url": "https://api.github.com/search/topics?q={query}{&page,per_page}",
+  "user_url": "https://api.github.com/users/{user}",
+  "user_organizations_url": "https://api.github.com/user/orgs",
+  "user_repositories_url": "https://api.github.com/users/{user}/repos{?type,page,per_page,sort}",
+  "user_search_url": "https://api.github.com/search/users?q={query}{&page,per_page,sort,order}"
+}
+
+===== https://github.com/docs
+TITLE: GitHub Docs · GitHub
+ACCESSED: 2026-09-27
+
+Popular repositories
+Loading
+custom-agents-template
+custom-agents-template
+Public template
+A template repository for enterprise and organization-level Copilot custom agents.
+74
+59
+open-reusables
+open-reusables
+Public
+A VS Code extension to open a reusable or variable file from a help article markdown file
+JavaScript
+52
+33
+version-identifier
+version-identifier
+Public
+A playground repo for experimenting on a new VS Code extension
+TypeScript
+16
+4
+onboarding-actions
+onboarding-actions
+Public
+This repository is used in the Docs team onboarding course for Actions.
+JavaScript
+14
+3
+simple-php-website
+simple-php-website
+Public
+A simple and minimal website built with PHP.
+HTML
+9
+6
+Repositories
+Showing 5 of 5 repositories
+custom-agents-template
+Public template
+A template repository for enterprise and organization-level Copilot custom agents.
+docs/custom-agents-template's past year of commit activity
+74
+MIT
+59
+2
+2
+Updated
+Aug 5, 2026
+simple-php-website
+Public
+A simple and minimal website built with PHP.
+docs/simple-php-website's past year of commit activity
+HTML
+9
+MIT
+6
+1
+0
+Updated
+Sep 24, 2025
+open-reusables
+Public
+A VS Code extension to open a reusable or variable file from a help article markdown file
+docs/open-reusables's past year of commit activity
+JavaScript
+52
+MIT
+33
+2
+1
+Updated
+Sep 22, 2025
+onboarding-actions
+Public
+This repository is used in the Docs team onboarding course for Actions.
+docs/onboarding-actions's past year of commit activity
+JavaScript
+14
+3
+1
+5
+Updated
+Feb 26, 2025
+version-identifier
+Public
+A playground repo for experimenting on a new VS Code extension
+docs/version-identifier's past year of commit activity
+TypeScript
+16
+MIT
+4
+2
+1
+Updated
+Feb 26, 2025
+People
+Top languages
+JavaScript
+TypeScript
+HTML
+Most used topics
+Loading…
+Uh oh!
+There was an error while loading.
+Please reload this page
+
+===== https://github.com/developers
+TITLE: Developers · GitHub
+ACCESSED: 2026-09-27
+
+This organization has no public repositories.
+People
+Top languages
+Loading…
+Uh oh!
+There was an error while loading.
+Please reload this page
+Most used topics
+Loading…
+Uh oh!
+There was an error while loading.
+Please reload this page
+
+===== https://github.com/mermaid-js/mermaid-cli/blob/master/LICENSE
+TITLE: mermaid-cli/LICENSE at master · mermaid-js/mermaid-cli · GitHub
+ACCESSED: 2026-09-27
+
+Latest commit
+History
+History
+History
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+MIT License
+Copyright (c) 2017-2026 Tyler Long, Mindaugas Laganeckas, Alois Klink
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===== https://github.com/pricing
+TITLE: Pricing · Plans for every developer · GitHub
+ACCESSED: 2026-09-27
+
+Try GitHub, the complete developer platform
+We get it, there's a lot you can do with GitHub.
+    That’s why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot,
+    and Advanced Security.
+Start free for 30 days
+Free
+The basics for individuals
+and organizations
+$
+0
+USD
+per month
+$
+0
+USD
+per month
+forever
+Join for free
+Unlimited public/private repositories
+Host open source projects in public GitHub repositories, accessible via web or command line. Public repositories are accessible to anyone at GitHub.com.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Dependabot security and version updates
+Keep projects secure by automatically opening pull requests to update vulnerable dependencies and keep them up to date.
+Uh oh!
+There was an error while loading.
+Please reload this page
+2,000 CI/CD minutes/month
+Free for public repositories
+Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+Uh oh!
+There was an error while loading.
+Please reload this page
+500MB of Packages storage
+Free for public repositories
+Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Issues & Projects
+Give your developers flexible features for project management that adapts to any team, project, and workflow — all alongside your code.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Community support
+Get help with most of your GitHub questions and issues in our Community Forum.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Featured add-ons
+GitHub Codespaces Access
+With
+GitHub Codespaces
+, get an instant dev environment in the cloud, so you can code anywhere on any device.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Show features
+Most popular
+Team
+Advanced collaboration for
+individuals and organizations
+$
+4
+USD
+per user/month
+$
+4
+USD
+per user/month
+for the first 12 months
+*
+Continue with Team
+Everything included in Free, plus...
+Access to GitHub Codespaces
+Blazing fast cloud developer environments with flexible compute and pre-configured containers, developers can code, collaborate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Repository rules
+Enforce restrictions on how code branches and tags are merged across your organization, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Multiple reviewers in pull requests
+Assign multiple users or a team to review a pull request.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Draft pull requests
+Easily discuss and collaborate on pull requests before submitting to formal review.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Code owners
+Automatically request reviews—or require approval—by selected contributors when changes are made to sections of code that they own.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Required reviewers
+Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Pages and Wikis
+Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Environment deployment branches and secrets
+A job cannot access secrets that are defined in an environment unless it is running on the specified branch.
+Uh oh!
+There was an error while loading.
+Please reload this page
+3,000 CI/CD minutes/month
+Free for public repositories
+Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+Uh oh!
+There was an error while loading.
+Please reload this page
+2GB of Packages storage
+Free for public repositories
+Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Web-based support
+GitHub Support can help you troubleshoot issues you run into while using GitHub.
+Uh oh!
+There was an error while loading.
+Please reload this page
+Featured add-ons
+GitHub Secret Protection
+Ensure your secrets stay secure. Mitigate risk associated with exposed secrets in your repositories, while preventing new leaks before they happen with push protection.
+Uh oh!
+There was
+
+===== https://github.com/partners
+TITLE: GitHub Partner Program · GitHub
+ACCESSED: 2026-09-27
+
+GitHub Partner Program
+Building stronger solutions together
+Strengthen your market position, boost differentiation, and get access to specialist guidance across Technology, Service & Channel, Startups, and Education.
+Explore Partner Programs
+Elevate your brand
+Enhance your credibility, gain industry recognition, and expand your market visibility by co-branding and messaging with GitHub.
+Sharpen your skillset
+Leverage powerful training and enablement resources to earn certifications that differentiate you from the competition.
+Optimize your solutions
+Engage GitHub experts and resources to refine, test, and improve performance.
+Why partner with GitHub?
+Partner with GitHub to open doors, accelerate delivery, and win together.
+Technology Partners
+Build innovative integrations and reach 100M+ developers.
+Learn more about Technology Partners
+Services & Channel Partners
+Scale your business, expand customer reach, and unlock co-selling opportunities.
+Learn more about Services & Channel Partners
+Startup Partners
+Grow your portfolio with GitHub’s secure, AI-powered platform.
+Learn more about Startup Partners
+Education Partners
+Empower learners and educators with GitHub tools.
+Learn more about Education Partners
+“
+GitHub’s partner program gave us resources to reach new markets and build stronger solutions. Their AI leadership transformed how we build software. Being named Partner of the Year is a testament to this collaboration—and we’re just getting started.
+Marcel de Vries
+Global Managing Director & CTO at Xebia
+Ready to grow with GitHub?
+Join a global community of innovators to build better together today.
+Explore Partner Programs

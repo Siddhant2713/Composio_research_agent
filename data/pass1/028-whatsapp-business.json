@@ -1,0 +1,175 @@
+{
+  "app": "WhatsApp Business",
+  "number": 28,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:25:00.097473+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.facebook.com/docs/whatsapp\",\n    \"https://developers.facebook.com/docs/whatsapp/cloud-api\",\n    \"https://developers.facebook.com/docs/whatsapp/business-management-api\",\n    \"https://developers.facebook.com/docs/whatsapp/get-started\",\n    \"https://business.whatsapp.com/products/platform-api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.facebook.com/docs/whatsapp",
+    "https://developers.facebook.com/docs/whatsapp/cloud-api",
+    "https://developers.facebook.com/docs/whatsapp/business-management-api",
+    "https://developers.facebook.com/docs/whatsapp/get-started",
+    "https://business.whatsapp.com/products/platform-api",
+    "https://docs.facebook.com/",
+    "https://developer.facebook.com/",
+    "https://developers.facebook.com/",
+    "https://api.facebook.com/",
+    "https://facebook.com/docs",
+    "https://facebook.com/developers",
+    "https://facebook.com/api",
+    "https://facebook.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/contacts/",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/partner_solutions/",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates/",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-customers-as-a-solution-partner/",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/reference/business/whatsapp-business-partner-onboarding-to-mm-lite-api",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/direct-send/api-reference/",
+    "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+    "https://developers.facebook.com/social-technologies/products/?filter-id=authentication-authorization",
+    "https://developers.facebook.com/m/signup/",
+    "https://developers.facebook.com/products/business-sdk/"
+  ],
+  "boilerplate_lines_removed": 10,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.facebook.com/docs/whatsapp/get-started",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://business.whatsapp.com/products/platform-api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.facebook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/reference/business/whatsapp-business-partner-onboarding-to-mm-lite-api",
+      "reason": "page too thin (100 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+      "requested_url": "https://developers.facebook.com/docs/whatsapp",
+      "status": 200,
+      "title": "WhatsApp Business Platform | Meta for Developers",
+      "chars": 3348,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+      "requested_url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "status": 200,
+      "title": "About the WhatsApp Business Platform | Meta for Developers",
+      "chars": 4954,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/",
+      "requested_url": "https://developer.facebook.com/",
+      "status": 200,
+      "title": "Social technologies | Meta for Developers",
+      "chars": 3379,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/contacts/",
+      "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/contacts/",
+      "status": 200,
+      "title": "Contacts messages webhook reference | Meta for Developers",
+      "chars": 4552,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/partner_solutions/",
+      "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/partner_solutions/",
+      "status": 200,
+      "title": "partner_solutions webhook reference | Meta for Developers",
+      "chars": 2544,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates/",
+      "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates/",
+      "status": 200,
+      "title": "Authentication-international rates | Meta for Developers",
+      "chars": 4872,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-customers-as-a-solution-partner/",
+      "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-customers-as-a-solution-partner/",
+      "status": 200,
+      "title": "Onboarding business customers as a Solution Partner | Meta for Developers",
+      "chars": 4832,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The WhatsApp Business Platform provides enterprise-grade APIs (Cloud API, Business Management API, and Marketing Messages API) for businesses to programmatically send messages, manage accounts, and handle customer conversations.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses bearer access tokens (system tokens or business tokens) passed in the Authorization header.\"\n  },\n  \"access\": {\n    \"tier\": \"mixed\",\n    \"notes\": \"Developers can sign up and use developer tools/embedded signup, but certain partner solutions and advanced onboarding require business verification, solution partner processes, or credit line setup.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Python\",\n      \"JavaScript\"\n    ],\n    \"notes\": \"Uses HTTP REST requests built on the Graph API and delivers JSON payloads via webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"WhatsApp Business Tools MCP allows setting up and managing WhatsApp business from an AI agent.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Access requires setting up Meta developer accounts and obtaining system or business access tokens via embedded signup flows, while the Cloud API and webhooks are thoroughly documented.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.facebook.com/documentation/business-messaging/whatsapp/overview\",\n      \"claim\": \"The WhatsApp Business Platform provides Cloud API, Marketing Messages API, and Business Management API for messaging and account management.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform\",\n      \"claim\": \"The platform uses the HTTP protocol and Graph API, relying heavily on webhooks for message updates and delivery statuses.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/\",\n      \"claim\": \"Announced WhatsApp Business Tools MCP for setting up and managing WhatsApp business from an AI agent.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "hint_url": "https://developers.facebook.com/docs/whatsapp",
+    "one_liner": "The WhatsApp Business Platform provides enterprise-grade APIs (Cloud API, Business Management API, and Marketing Messages API) for businesses to programmatically send messages, manage accounts, and handle customer conversations.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses bearer access tokens (system tokens or business tokens) passed in the Authorization header."
+    },
+    "access": {
+      "tier": "mixed",
+      "notes": "Developers can sign up and use developer tools/embedded signup, but certain partner solutions and advanced onboarding require business verification, solution partner processes, or credit line setup."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Python",
+        "JavaScript"
+      ],
+      "notes": "Uses HTTP REST requests built on the Graph API and delivers JSON payloads via webhooks."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "WhatsApp Business Tools MCP allows setting up and managing WhatsApp business from an AI agent."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Access requires setting up Meta developer accounts and obtaining system or business access tokens via embedded signup flows, while the Cloud API and webhooks are thoroughly documented."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "claim": "The WhatsApp Business Platform provides Cloud API, Marketing Messages API, and Business Management API for messaging and account management.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "claim": "The platform uses the HTTP protocol and Graph API, relying heavily on webhooks for message updates and delivery statuses.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/",
+        "claim": "Announced WhatsApp Business Tools MCP for setting up and managing WhatsApp business from an AI agent.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:25:57.351515+00:00"
+}

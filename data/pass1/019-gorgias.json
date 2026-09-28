@@ -1,0 +1,189 @@
+{
+  "app": "Gorgias",
+  "number": 19,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:59:06.181939+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.gorgias.com/\",\n    \"https://docs.gorgias.com/\",\n    \"https://gorgias.com/developers\",\n    \"https://gorgias.com/partners\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://gorgias.com",
+    "https://developers.gorgias.com/",
+    "https://docs.gorgias.com/",
+    "https://gorgias.com/developers",
+    "https://gorgias.com/partners",
+    "https://developer.gorgias.com/",
+    "https://api.gorgias.com/",
+    "https://gorgias.com/docs",
+    "https://gorgias.com/api",
+    "https://gorgias.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.gorgias.com/signup",
+    "https://www.gorgias.com/pricing",
+    "https://www.gorgias.com/onboarding",
+    "https://www.gorgias.com/tech-partner",
+    "https://www.gorgias.com/partner-stories",
+    "https://partners.gorgias.com/signup",
+    "https://partners.gorgias.com/login",
+    "https://developers.gorgias.com/docs",
+    "https://developers.gorgias.com/reference",
+    "https://developers.gorgias.com/reference/introduction",
+    "https://docs.gorgias.com/en-US?gs_open_chat",
+    "https://docs.gorgias.com/en-US/articles/get-started-18363",
+    "https://www.gorgias.com/partner-program?utm_source=help-center&utm_content=link&utm_campaign=footer",
+    "https://developers.gorgias.com/reference/introduction?utm_source=help_center&utm_medium=menu&utm_campaign=footer",
+    "https://www.gorgias.com/partner-referral"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://gorgias.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.gorgias.com/",
+      "reason": "page too thin (2 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.gorgias.com/",
+      "reason": "page too thin (2 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://gorgias.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.gorgias.com/",
+      "requested_url": "https://gorgias.com",
+      "status": 200,
+      "title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "chars": 3082,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.gorgias.com/",
+      "requested_url": "https://developers.gorgias.com/",
+      "status": 200,
+      "title": "gorgias-developers",
+      "chars": 751,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US",
+      "requested_url": "https://docs.gorgias.com/",
+      "status": 200,
+      "title": "Gorgias Help Center",
+      "chars": 164,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gorgias.com/partner-program",
+      "requested_url": "https://gorgias.com/partners",
+      "status": 200,
+      "title": "Gorgias Partner Program",
+      "chars": 1494,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gorgias.com/signup",
+      "requested_url": "https://www.gorgias.com/signup",
+      "status": 200,
+      "title": "Gorgias | Get Started with Free Trial",
+      "chars": 134,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gorgias.com/pricing",
+      "requested_url": "https://www.gorgias.com/pricing",
+      "status": 200,
+      "title": "Gorgias Pricing \u2013\u00a0Build the customer support suite that fits your needs",
+      "chars": 315,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gorgias.com/onboarding",
+      "requested_url": "https://www.gorgias.com/onboarding",
+      "status": 200,
+      "title": "Onboarding",
+      "chars": 4393,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gorgias.com/tech-partner",
+      "requested_url": "https://www.gorgias.com/tech-partner",
+      "status": 200,
+      "title": "Tech Partner - Gorgias",
+      "chars": 940,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gorgias.com/partner-stories",
+      "requested_url": "https://www.gorgias.com/partner-stories",
+      "status": 200,
+      "title": "Gorgias X Partners stories: How we shape the future of CX together",
+      "chars": 1883,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Gorgias provides a conversational AI platform and helpdesk for ecommerce with an open API for integrations.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": null\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": null\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The pages mention an open API and API documentation exist, but do not provide specific substantive details about REST, GraphQL, webhooks, or SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"The fetched pages mention an open API and developer documentation, but do not specify authentication mechanisms or how to obtain credentials.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.gorgias.com/\",\n      \"claim\": \"Refers to API documentation and developer portal for building private or public apps.\"\n    },\n    {\n      \"url\": \"https://www.gorgias.com/onboarding\",\n      \"claim\": \"Mentions an open API to build and customize integrations.\"\n    }\n  ],\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://gorgias.com",
+    "one_liner": "Gorgias provides a conversational AI platform and helpdesk for ecommerce with an open API for integrations.",
+    "auth": {
+      "method": "unknown",
+      "notes": null
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": null
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "The pages mention an open API and API documentation exist, but do not provide specific substantive details about REST, GraphQL, webhooks, or SDKs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages mention an open API and developer documentation, but do not specify authentication mechanisms or how to obtain credentials."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.gorgias.com/",
+        "claim": "Refers to API documentation and developer portal for building private or public apps.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.gorgias.com/onboarding",
+        "claim": "Mentions an open API to build and customize integrations.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T18:00:11.797204+00:00"
+}

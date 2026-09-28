@@ -1,0 +1,193 @@
+{
+  "app": "Klaviyo",
+  "number": 36,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:28:30.923371+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.klaviyo.com\",\n    \"https://developers.klaviyo.com/en/docs\",\n    \"https://developers.klaviyo.com/en/reference/api_overview\",\n    \"https://help.klaviyo.com/hc/en-us/articles/360002513337\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.klaviyo.com",
+    "https://developers.klaviyo.com/en/docs",
+    "https://developers.klaviyo.com/en/reference/api_overview",
+    "https://help.klaviyo.com/hc/en-us/articles/360002513337",
+    "https://docs.klaviyo.com/",
+    "https://developer.klaviyo.com/",
+    "https://api.klaviyo.com/",
+    "https://klaviyo.com/docs",
+    "https://klaviyo.com/developers",
+    "https://klaviyo.com/api",
+    "https://klaviyo.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.klaviyo.com/contact-us",
+    "https://developers.klaviyo.com/en/reference",
+    "https://developers.klaviyo.com/en/docs/get_started",
+    "https://developers.klaviyo.com/en/docs/sdk_overview",
+    "https://developers.klaviyo.com/en/reference/get_lists",
+    "https://developers.klaviyo.com/en/reference/get_flows",
+    "https://developers.klaviyo.com/en/reference/unregister_client_push_token",
+    "https://developers.klaviyo.com/en/docs/migrate_to_oauth_from_private_key_authentication",
+    "https://developers.klaviyo.com/en/docs/set_up_oauth",
+    "https://developers.klaviyo.com/en/docs/oauth_resources",
+    "https://developers.klaviyo.com/en/reference/get_push_token-1",
+    "https://developers.klaviyo.com/en/reference/create_push_token",
+    "https://developers.klaviyo.com/en/reference/get_webhook",
+    "https://developers.klaviyo.com/en/reference/get_webhooks",
+    "https://developers.klaviyo.com/en/reference/get_push_token",
+    "https://developers.klaviyo.com/en/reference/create_webhook",
+    "https://www.klaviyo.com/sign-up",
+    "https://www.klaviyo.com/partners",
+    "https://www.klaviyo.com/industry/restaurants",
+    "https://help.klaviyo.com/hc/en-us/articles/360026474752"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.klaviyo.com/hc/en-us/articles/360002513337",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.klaviyo.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.klaviyo.com/",
+      "reason": "HTTP 404"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "requested_url": "https://developers.klaviyo.com",
+      "status": 200,
+      "title": "API Reference & Technical Guides | Klaviyo Developers",
+      "chars": 3183,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/changelog_",
+      "requested_url": "https://developers.klaviyo.com/en/docs",
+      "status": 200,
+      "title": "Changelog",
+      "chars": 4988,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "requested_url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "status": 200,
+      "title": "API overview",
+      "chars": 4992,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.klaviyo.com/hc/en-us",
+      "requested_url": "https://docs.klaviyo.com/",
+      "status": 200,
+      "title": "Klaviyo Help Center",
+      "chars": 1935,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.klaviyo.com/uk/contact-us",
+      "requested_url": "https://www.klaviyo.com/contact-us",
+      "status": 200,
+      "title": "Contact Klaviyo - Klaviyo UK",
+      "chars": 434,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/get_started",
+      "requested_url": "https://developers.klaviyo.com/en/docs/get_started",
+      "status": 200,
+      "title": "Get started with Klaviyo",
+      "chars": 1915,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/sdk_overview",
+      "requested_url": "https://developers.klaviyo.com/en/docs/sdk_overview",
+      "status": 200,
+      "title": "Web and Mobile SDKs",
+      "chars": 1593,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/reference/get_lists",
+      "requested_url": "https://developers.klaviyo.com/en/reference/get_lists",
+      "status": 200,
+      "title": "Get Lists",
+      "chars": 125,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Klaviyo API allows developers to build personalized marketing experiences, manage customer profiles, events, and campaigns via REST endpoints using private API keys or OAuth.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Server-side endpoints (/api) use private API keys passed via the Authorization header (Authorization: Klaviyo-API-Key your-private-api-key) or OAuth for tech partners. Client-side endpoints (/client) use public API keys via query parameters.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for free and create test accounts to get started immediately.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\",\n      \"PHP\",\n      \"Ruby\",\n      \"Node\",\n      \"iOS Swift\",\n      \"Android\",\n      \"React Native\",\n      \"Flutter\"\n    ],\n    \"notes\": \"Provides JSON:API compliant REST APIs and mobile/web SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve test accounts can be created for free, and the API surface is fully documented with private and public API key methods as well as provided SDKs.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.klaviyo.com/en\",\n      \"claim\": \"Get started for free and install Klaviyo maintained SDKs offered in Python, PHP, Ruby, and Node.\"\n    },\n    {\n      \"url\": \"https://developers.klaviyo.com/en/reference/api_overview\",\n      \"claim\": \"Klaviyo provides 3 methods of authentication including private key authentication and OAuth for server-side APIs and public key authentication for client-side APIs.\"\n    },\n    {\n      \"url\": \"https://developers.klaviyo.com/en/docs/sdk_overview\",\n      \"claim\": \"Mobile SDKs are available for iOS, Android, React Native, and Flutter apps.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://developers.klaviyo.com",
+    "one_liner": "Klaviyo API allows developers to build personalized marketing experiences, manage customer profiles, events, and campaigns via REST endpoints using private API keys or OAuth.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Server-side endpoints (/api) use private API keys passed via the Authorization header (Authorization: Klaviyo-API-Key your-private-api-key) or OAuth for tech partners. Client-side endpoints (/client) use public API keys via query parameters."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for free and create test accounts to get started immediately."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [
+        "Python",
+        "PHP",
+        "Ruby",
+        "Node",
+        "iOS Swift",
+        "Android",
+        "React Native",
+        "Flutter"
+      ],
+      "notes": "Provides JSON:API compliant REST APIs and mobile/web SDKs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve test accounts can be created for free, and the API surface is fully documented with private and public API key methods as well as provided SDKs."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.klaviyo.com/en",
+        "claim": "Get started for free and install Klaviyo maintained SDKs offered in Python, PHP, Ruby, and Node.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/reference/api_overview",
+        "claim": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth for server-side APIs and public key authentication for client-side APIs.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/sdk_overview",
+        "claim": "Mobile SDKs are available for iOS, Android, React Native, and Flutter apps.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:28:51.974870+00:00"
+}

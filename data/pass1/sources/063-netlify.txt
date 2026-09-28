@@ -1,0 +1,890 @@
+===== https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/
+TITLE: Get started with the Netlify API | Netlify Docs
+ACCESSED: 2026-09-27
+
+Get started with the Netlify API
+Copy page
+View as Markdown
+Copy as Markdown
+View as Markdown
+Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS
+DNS
+The system that translates a domain name like yoursite.com into the address computers use to find your site.
+×
+, and so much more.
+This document covers the basics for interacting with the Netlify API, plus instructions for
+deploying sites
+and notes on some
+commonly used endpoints
+You can browse the
+OpenAPI reference for the Netlify API
+to explore available endpoints. Visit our Forums for more tips and conversation about
+understanding and using Netlify’s API
+Additionally, we have two API clients for your convenience:
+Go Client
+JS Client
+If you’d like to interact with the Netlify API using a no-code tool, you can use n8n.io’s
+Netlify node
+. The node currently supports the following operations:
+Create a new deployment
+Get a deployment
+Get all deployments
+Cancel a deployment
+Get a site
+Get all sites
+Delete a site
+Make a request
+Section titled “Make a request”
+All URLs start with
+https://api.netlify.com/api/v1/
+SSL
+SSL
+The technology that enables HTTPS by encrypting the connection to your site.
+×
+only
+. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we’ll bump the version marker and maintain stable support for the old URLs.
+To make a request for all sites you have access to, for example, append the
+sites
+index path to the base URL to form something like
+https://api.netlify.com/api/v1/sites
+. Here’s an example in curl:
+curl
+-H
+"
+User-Agent: MyApp (YOUR_NAME@EXAMPLE.COM)
+"
+\
+-H
+"
+Authorization: Bearer YOUR_OAUTH2_ACCESS_TOKEN
+"
+\
+https://api.netlify.com/api/v1/sites
+Authentication
+Section titled “Authentication”
+Netlify uses OAuth2 for authentication
+authentication
+The process of verifying who someone is before letting them access your site.
+×
+. All requests must use HTTPS
+HTTPS
+The secure protocol, enabled by SSL, that encrypts data transferred between a browser and your site.
+×
+To generate a personal access token
+personal access token
+A credential tied to your personal account that lets tools and scripts act on your behalf without your password.
+×
+(PAT
+PAT
+Short for personal access token, a credential tied to your personal account.
+×
+):
+Go to
+Select
+New access token
+Enter a descriptive name to help you remember what the token will be used for.
+Select
+Allow access to my SAML-based Netlify team
+to authorize access to your SAML-based team data through the API.
+Select an
+Expiration
+date for your token to help keep your information secure.
+Select
+Generate token
+Copy the token to your clipboard and store it in a safe location. Once you navigate away from this page, you won’t be able to access the value again.
+Select
+Done
+Use your PAT for manual authentication in shell scripts or commands that use the Netlify API.
+To authenticate API requests, include the token in the authorization header:
+Authorization: Bearer <YOUR_PERSONAL_ACCESS_TOKEN>
+To authenticate in shell scripts, refer to the
+code sample above
+for an example of how to use this token in a curl request.
+If you’re making a public integration with Netlify for others to enjoy, you must use OAuth2. This allows users to authorize your application to use Netlify on their behalf without having to copy/paste API tokens or touch sensitive login info. You’ll need an application client key and a client secret
+secret
+Sensitive credentials, like passwords and API keys, that must be kept private.
+×
+to integrate with the Netlify API. You can register a new application in your Netlify user settings for
+OAuth applications
+. Visit our blog post on
+integrating with Netlify
+for more information including common grant types and an example project.
+The OAuth2 end-user authorization endpoint is
+https://app.netlify.com/authorize
+Rate limiting
+Section titled “Rate limiting”
+To protect Netlify from getting flooded by automated deploys or misbehaving applications, the Netlify API is rate limited.
+You can make up to 500 requests per minute for most requests.
+Certain operations have their own stricter limits. For example, you can deploy through the Netlify API up to 3 times per minute and up to 100 times per day.
+You can check the returned HTTP headers of any API request to verify your current rate limit status:
+X-RateLimit-Limit:
+500
+X-RateLimit-Remaining:
+56
+X-RateLimit-Reset:
+1372700873
+If you need higher limits, please
+contact us
+Pagination
+Section titled “Pagination”
+All API requests that return over 100 items are paginated by default, with a limit of 100 items per page. You can specify further pages with the
+?page
+parameter. You can also set a custom page size that’s less than 100 with the
+?per_page
+parameter.
+Note that page numbering starts with 1 and that omitting the
+?page
+parameter will return the first page.
+Section titled “Link header”
+The pagination info is included in the
+Link
+
+===== https://www.netlify.com/pricing/
+TITLE: Pricing and Plans | Netlify
+ACCESSED: 2026-09-27
+
+Build free.
+Scale when you need it.
+From side projects to enterprise. Plans to experiment and grow the way you ship today.
+Free
+$0
+forever
+Build and deploy free forever
+Deploy any framework:
+Deploy from AI, Git, or API
+Private by default until you publish
+Unlimited deploy previews
+Build with Agent Runners
+Add Custom domains with SSL
+Functions & AI models
+Store structured data with Netlify Database
+Store files & images with Blob storage
+Firewall Traffic Rules & basic rate limiting
+Global CDN
+300 credit limit
+/ month
+Personal
+$9
+/month
+Ready for real traffic
+Everything in Free, plus:
+Smart secret detection
+1-day observability
+Priority email support
+1,000 credits
+/ month
+Best value
+Pro
+$20
+/month with
+unlimited members
+Ship faster as a team
+Everything in Personal, plus:
+Private organization repos
+Shared env variables
+3+ concurrent builds
+30-day analytics & metrics
+Monthly credits from plan
+Choose a Pro tier:
+3,000 credits/month
+5,000 credits/month
+10,000 credits/month
+15,000 credits/month
+20,000 credits/month
+Enterprise
+Custom
+Scale with confidence
+Everything in Pro, plus:
+99.99% SLA
+Enterprise network tier
+High-performance builds
+SSO & SCIM
+Log drains
+Organization management
+24/7 dedicated support
+Production deploys
+15 credits each
+A production deploy is the version of your project pushed to your main domain. On new credit-based pricing accounts, new projects start private by default and become publicly accessible only when you choose to publish. Also includes: Unlimited Deploy Previews and branch deploys.
+AI inference
+Varies based on
+AI model
+AI inference costs are calculated based on the cost of the AI model used.
+Compute
+10 credits per GB-hour
+Compute metering includes two items:
+
+Functions & Agent compute measures compute usage of serverless functions and Agent Runs.
+
+Database compute measures compute usage by Netlify Database.
+Bandwidth
+20 credits per GB
+Bandwidth metering includes two items: 
+
+Web bandwidth is the amount of data traffic your project sends out to the internet. This includes: Assets and web content served, Image CDN usage, file downloads, function responses, and Large Media (Deprecated).
+
+Database bandwidth is the amount of data transferred out of your Netlify Database.
+Web requests
+2 credits per 10k requests
+Web requests are web traffic requests to your site or app, including requests to your project's main (production) URL, as well as to any active branch deploys and Deploy Previews. This includes: Page views, requests to your functions, asset requests hosted by Netlify, redirects, and Edge functions.
+Use our calculator
+See full feature comparison
+Features
+Free
+Personal
+Pro
+Enterprise
+Usage credits
+Usage credits
+300 credit limit
+1,000 credits included
+Starting with 3,000 credits per month, choose a Pro tier up to 20,000 credits per month.
+Custom
+$5 / 500 additional credits
+$10 / 1,500 additional credits
+Custom
+Build & deploy
+Build & deploy
+1
+1
+(then $40 each)
+3
+(then $40 each)
+Custom
+Basic
+Relaxed
+Advanced
+Custom
+1
+1
+(then $15 each)
+1
+(then $15 each)
+Custom
+99.99% uptime SLA
+Retention policies up to 365 days
+Collaboration & observability
+Collaboration & observability
+1-day history
+1-day history
+7-day history
+30-day history
+1-day retention
+7-day retention
+30-day history
+Custom
+7-day history
+Full history
+Netlify app for Slack
+Members & roles
+Members & roles
+Limited to 1 free member, with free & unlimited
+Git Contributors
+on public repos.
+$9/month for 1 member, with free & unlimited
+Git Contributors
+on public repos.
+$20 /month for unlimited members,
+with free & unlimited
+Git Contributors
+on all repos.
+Custom
+Unlimited
+Unlimited
+Unlimited
+Billing Admin role
+(Add-on)
+(Add-on)
+(Add-on)
+(Add-on)
+Security & compliance
+Security & compliance
+24-hour history
+7-day history
+7-day history
+Full history
+24-hour history
+7-day history
+7-day history
+7-day history
+Code-based rules
+Code-based rules
+Code-based rules
+Code-based rules
+(UI-based rules for Enterprise with HP Edge only)
+Limited
+Limited
+Limited
+Includes custom emails, email templates, audit logs
+Includes custom emails, email templates, audit logs
+(Add-on)
+(Add-on)
+(Add-on)
+Get support
+Get support
+FAQ
+I’m an existing Netlify customer, do I have to change plans?
+No, if you created a Netlify account before September 4, 2025, you can keep your current plan. No changes needed.
+If you want to migrate to the new plans and are a
+Team Owner
+, go to
+Usage & billing > Plan details
+and select the
+Change team plan
+button to choose your new plan.
+I have a legacy pricing plan. Where did the pricing plan table and FAQ information go that I still need?
+We got you. You can check pricing plan details for your current plan from your Netlify team dashboard at
+Usage & billing
+If you have a legacy pricing plan, then you can check out our
+legacy pricing plan FAQ
+Are new projects public as soon as I deploy?
+No. On new credit-based pricing accounts, every new project starts private by default. You can build, review, and refine your work without making it public, then p
+
+===== https://docs.netlify.com/
+TITLE: Netlify Documentation | Netlify Docs
+ACCESSED: 2026-09-27
+
+Netlify Documentation
+Build & deploy faster with any modern frontend stack or AI agent.
+Create a new project
+Start a new project with an AI agent, a Git repository, or drag and drop.
+Build with AI
+Build and ship with AI agents, AI models, and curated prompts.
+Start with a framework
+Choose from our supported frameworks to get started quickly.
+Start the deploy wizard
+Set up domain
+Sep 24, 2026
+New project activity feed
+Read the post
+Sep 22, 2026
+Security Update: Critical Next.js vulnerability in ImageResponse
+Read the post
+Sep 22, 2026
+Claude Opus 5.5 now available in AI Gateway and Agent Runners
+Read the post
+Sep 22, 2026
+GPT-6 Sol and GPT-6 Luna now available in AI Gateway and Agent Runners
+Read the post
+Previews
+Share preview URLs of your in-progress content and code so you can review before launching changes to production.
+Security
+Secure your project at any scale—whether you need the security of a banking site with Netlify Advanced Security or simple password protection for a personal portfolio site.
+Monitoring & Insights
+Track your project's performance with every deployment and understand your Netlify team's behavior and the behavior of visitors to your site or app.
+Netlify DNS
+Simplify domain management for your projects and add unique custom domains for different versions of your project.
+Preview Servers
+Share a customizable preview environment where you and key collaborators can preview content updates alongside code updates in real-time.
+Forms
+Netlify's serverless form handling allows you to customize forms and notifications for form entries.
+Redirects & Rewrites
+Simplify redirects & rewrites management to maintain top performance and keep visitors routed to the latest.
+Netlify Extensions
+Extend Netlify with custom add-ons or integrations to add new capabilities to your project.
+Platform Primitives
+Data & Storage
+Instantly provision a production-grade database with Netlify Database or use Blobs as a simple key/value store or lightweight database.
+Platform Primitives
+Caching
+Control & customize cache behavior, including Stale-While-Revalidate (SWR), on-demand cache invalidation, a programmatic Cache API, and more.
+Platform Primitives
+Image CDN
+Transform images on demand without impacting build times. Handle content negotiation automatically.
+Platform Primitives
+Compute
+Flexible compute ready to customize.
+Netlify Functions for APIs and server-side logic
+Edge Functions for low-latency logic at the edge
+Scheduled, background, and async workloads
+Prompt Templates
+Explore curated Prompt Templates that you can customize and save for your Netlify team's use.
+Agent Runners
+Prompt AI agents to fix, update, and ship code using your unique project context directly from your Netlify dashboard.
+AI Gateway
+Use popular AI models within your project code and connect to them seamlessly without managing API keys.
+Netlify MCP Server
+Share context & connect AI assistants to your Netlify account for seamless deployment workflows.
+Astro
+React
+Next.js
+TanStack
+Vue
+Nuxt
+Svelte
+Angular
+Eleventy
+Gatsby
+Netlify API
+Manage sites, deploys, DNS, and more programmatically with the Netlify REST API—ideal for automating workflows and integrating into your systems.
+Netlify CLI
+Deploy sites, run local dev servers, and manage your Netlify projects right from the terminal with this powerful command-line tool.
+Netlify SDK
+Build extensions and custom integrations with the Netlify SDK to enhance workflows, add UI components, and connect third-party services.
+Ask Netlify AI
+Get information faster from our generative AI chatbot assistant that can quickly answer your questions about Netlify.
+Go to Ask Netlify docs
+Talk with Support
+Still not finding answers? Netlifolk are here to help. If you are having trouble logging in, need a site/DNS transfer, or seeing fraud, contact the support team.
+Contact support
+
+===== https://developers.netlify.com/sdk/
+TITLE: SDK | Netlify Developers
+ACCESSED: 2026-09-27
+
+Netlify SDK
+v5.0.2
+Extend the Netlify platform to customise and streamline your developer workflows. Publish your tooling for
+      developers to easily adopt on sites throughout their teams and projects.
+Documentation
+Explore all of the capabilities of the Netlify SDK. From authentication to syncing data. From triggering actions
+        based on build events to using the extension UI. Find it all in the official docs.
+Explore the SDK Docs
+Ship Faster
+With a focus on great DX, you can use the guided setup flow in the command line and create a new extension with
+        our SDK in just a few steps. It's also simple to share and install extensions across your teams.
+Learn how to create your first extension
+Broad Applicability
+Meet users where they are by creating an interactive surface for your extensions that users can access in the
+        Netlify UI. This allows users to enable and configure everything without leaving the UI they are already
+        familiar with.
+Learn about the extension UI
+
+===== https://developers.netlify.com/
+TITLE: Scale & Ship Faster with a Composable Web Architecture | Netlify Developers
+ACCESSED: 2026-09-27
+
+Netlify Developers
+Resources for developers building with and expanding the Netlify platform
+Latest Guides & Videos
+Video
+AI model comparison using Netlify's AI Gateway
+by
+Sean C Davis
+Netlify's AI Gateway enables you to add AI capabilities into your applications without holding LLM provider accounts or by messing with environment variables.
+AI
+Video
+Build an AI agent to automatically process and summarize form submissions
+by
+Sean C Davis
+With Netlify's AI Gateway, you can build custom agents into your applications without opening accounts with LLM providers, managing multiple spend outlets, or messing with environment variables.
+AI
+Functions
+Blobs
+Video
+Build an AI agent to automatically generate relevant images for blog posts
+by
+Sean C Davis
+With Netlify's AI Gateway, you can build custom agents into your applications without opening accounts with LLM providers, managing multiple spend outlets, or messing with environment variables.
+AI
+Functions
+Blobs
+Video
+Prerendering SPA content pages to enable AI agent access
+by
+Sean C Davis
+Make your content pages within single-page applications (SPAs) accessible to AI agents and other web tools.
+AI
+Admin
+Video
+Identify image optimization opportunities with Netlify Observability
+by
+Sean C Davis
+Netlify's new observability feature enables you to identify the assets that incur the highest bandwidth costs and slow pages down for your users.
+Admin
+Video
+Fix top 404 page not found errors with Netlify Observability
+by
+Sean C Davis
+Use Netlify's new observability feature to pinpoint your most frequently occurring URL paths that throw 404 (page not found) errors.
+Admin
+Video
+Introducing AI Gateway: built-in AI model access on Netlify
+by
+Nahrin Jalal
+Learn how Netlify's AI Gateway lets you use AI models directly in your Netlify apps without creating provider accounts, managing API keys, or setting up environment variables.
+Admin
+AI
+Video
+Introducing Observability: your project insights on Netlify
+by
+Nahrin Jalal
+Learn how Netlify’s Observability feature helps you understand how your site behaves under real traffic.
+Admin
+View all Guides
+View all Videos
+Subscribe to RSS updates
+Follow @Netlify for updates
+
+===== https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/
+TITLE: Get started with Netlify CLI | Netlify Docs
+ACCESSED: 2026-09-27
+
+Get started with Netlify CLI
+Copy page
+View as Markdown
+Copy as Markdown
+View as Markdown
+Netlify’s command line interface (CLI) lets you configure
+continuous deployment
+straight from the command line. You can use Netlify CLI to
+create a new project from a prompt
+,
+run a local development server
+that you can share with others,
+run a local build and plugins
+, and
+deploy your site
+The sections below describe how to perform common tasks with Netlify CLI. You can also access a
+full command reference
+online, or get help
+within Netlify CLI
+Installation
+Section titled “Installation”
+To install Netlify CLI, make sure you have
+Node.js
+version 18.14.0 or later.
+Then, run this command from any directory in your terminal:
+npm
+install
+-g
+netlify-cli
+This installs Netlify CLI globally, so you can run
+netlify
+commands from any directory. You can check the version and find out some basic information about the tool with the following command:
+netlify
+Installation in a CI environment
+Section titled “Installation in a CI environment”
+When using Netlify CLI in a continuous integration (CI) environment such as GitHub Actions, CircleCI, or Travis CI, we recommend installing it locally as a development dependency instead of globally. This binds a specific CLI version to your project repository. To install Netlify CLI locally, run the following command from the root directory of your project:
+npm
+install
+netlify-cli
+--save-dev
+For CI environments, we also recommend using a
+lock file
+to guarantee reproducible builds and relying on an automated tool like
+Renovate
+or
+Dependabot
+to manage Netlify CLI version updates.
+Authentication
+Section titled “Authentication”
+Netlify CLI uses an access token to authenticate with Netlify. You can obtain this token using the command line or in the Netlify UI.
+Obtain a token with the command line
+Section titled “Obtain a token with the command line”
+To authenticate and obtain an access token using the command line, enter the following command from any directory:
+netlify
+login
+This will open a browser window, asking you to log in with Netlify and grant access to
+Netlify CLI
+Once authorized, Netlify CLI stores your access token in a
+config.json
+global configuration file. The Netlify CLI uses the token in this file automatically for all future commands.
+config.json
+location
+Section titled “config.json location”
+You can find the Netlify CLI global configuration file,
+config.json
+, under your user in these OS-specific locations:
+macOS:
+Library/Preferences/netlify/config.json
+Linux:
+.config/netlify/config.json
+Windows:
+AppData\Roaming\netlify\Config\config.json
+Obtain a token in the Netlify UI
+Section titled “Obtain a token in the Netlify UI”
+You can generate a personal access token
+personal access token
+A credential tied to your personal account that lets tools and scripts act on your behalf without your password.
+×
+(PAT
+PAT
+Short for personal access token, a credential tied to your personal account.
+×
+) manually in your Netlify user settings:
+Go to
+Select
+New access token
+Enter a descriptive name to help you remember what the token will be used for.
+Select
+Allow access to my SAML-based Netlify team
+to authorize access to your SAML-based team data through the API.
+Select an
+Expiration
+date for your token to help keep your information secure.
+Select
+Generate token
+Copy the token to your clipboard and store it in a safe location. Once you navigate away from this page, you won’t be able to access the value again.
+Select
+Done
+Save the token as a
+NETLIFY_AUTH_TOKEN
+environment variable
+environment variable
+Named values stored outside your code that your site can read at build time or runtime.
+×
+in your terminal settings or in the UI of a Continuous Integration (CI) tool.
+Cancel access tokens
+Section titled “Cancel access tokens”
+To revoke your user access token for Netlify CLI, go to your Netlify user
+Applications settings
+. The procedure for revoking access depends on how access was granted.
+For access granted using the
+netlify login
+command, scroll to the
+Authorized applications
+section, and find
+Netlify CLI
+. Select
+If you manually created a
+personal access token
+, you can find it in the
+Personal access tokens
+section. Select
+Usage data collection
+Section titled “Usage data collection”
+By default, Netlify collects data on usage of Netlify CLI commands. We do this to improve the reliability and performance of Netlify CLI, and to help drive new features and improvements.
+If you’d like to opt out of sending usage data, you can do so by editing the
+telemetryDisabled
+property in the Netlify CLI
+config.json
+. You can also do this with the command line:
+# opt out of sharing usage data
+netlify
+--telemetry-disable
+# allow your usage to help shape development
+netlify
+--telemetry-enable
+Create a project from a prompt
+Section titled “Create a project from a prompt”
+You can use the
+netlify create
+command to generate, deploy, and download a new Netlify project from a natural language description. This c
+
+===== https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/
+TITLE: Integrating With Netlify: OAuth2 | Netlify
+ACCESSED: 2026-09-27
+
+Netlify has an extensive developer API that enables anybody to build integrations and services on top of our service.
+Since Netlify is an OAuth2 provider, you can use this API to build services that Netlify users can authorize to operate on their behalf, whether they want you to publish projects, add snippets to their sites, install Webhooks or the like.
+The typical OAuth2 flow works like this:
+User clicks a link or button in your app, requesting to do an action on Netlify.
+The user visits a link on Netlify that asks them to authorize your application.
+Netlify sends the user back to your app with an access token tied to their account.
+While the full
+OAuth2 spec
+is long and complex, it’s actually a very simple flow to implement.
+I’ve created a sample
+Netlify integration project
+that shows how to do this kind of integration.
+This example demonstrates the “Implicit Grant Flow” where the main security mechanism is the Redirect URI on file for the OAuth2 Application. This means it can be used from a pure single page app without any server-side code.
+If your app is already using some server-side code, you might want to use the very similar “Authorization Code Grant” to make sure the final access token ends up stored server-side without any exposure to the browser.
+You can play with the example here:
+https://netlify-oauth-example.netlify.com/
+and read through the code in the
+example/app.js
+file.
+We love seeing what people build on top of our platform, and we’re always happy to help any integrator get started, so if you have questions or are working on a project, don’t hesitate to contact us!
+Share
+X (fka Twitter)
+LinkedIn
+Facebook
+Bluesky
+Tags
+Netlify
+APIs
+Integrations
+Keep reading
+How to build a real-time AI chatbot in minutes with Netlify Agent Runners (no backend)
+Nahrin Jalal
+Tracking AI search traffic: how to use Netlify Log Drains to maximize AEO
+Nahrin Jalal
+Recent posts
+How we built Git storage for millions of Netlify projects
+Philippe Serhal
+Cursor Origin repositories build, preview, and deploy on Netlify
+Gehrig Kunz
+Build with Netlify came to Atlanta
+Tania Chakraborty
+How do the best dev and marketing teams work together?
+Access the report
+
+===== https://cli.netlify.com
+TITLE: Netlify CLI command reference | Netlify CLI command reference
+ACCESSED: 2026-09-27
+
+Netlify CLI command reference
+To get a list of commands, run
+netlify help
+To get a list of available sub-commands, arguments & flags run
+netlify [command] help
+Running the CLI from an AI agent
+Section titled “Running the CLI from an AI agent”
+Set
+NETLIFY_AGENT
+to the name of the AI agent or tool running the CLI, such as
+claude-code
+or
+codex
+, optionally with
+a version (
+my-agent@1.2.0
+). Netlify uses it to attribute CLI usage and signups to that agent, and it takes precedence
+over the markers agents set on their own, such as
+AI_AGENT
+Use only a product name and version. Never put a token, session ID, or other sensitive value in it: the value is sent to
+Netlify and can appear in the login URL the CLI prints.
+Commands
+Section titled “Commands”
+agents
+Section titled “agents”
+Manage Netlify AI agent tasks
+Subcommand
+description
+agents:create
+Create and run a new agent task on your site
+agents:list
+List agent tasks for the current site
+agents:show
+Show details of a specific agent task
+agents:stop
+Stop a running agent task
+api
+Section titled “api”
+Run any Netlify API method
+blobs
+Section titled “blobs”
+Manage objects in Netlify Blobs
+Subcommand
+description
+blobs:delete
+Deletes an object with a given key, if it exists, from a Netlify Blobs store
+blobs:get
+Reads an object with a given key from a Netlify Blobs store and, if it exists, prints the content to the terminal or saves it to a file
+blobs:list
+Lists objects in a Netlify Blobs store
+blobs:set
+Writes to a Netlify Blobs store an object with the data provided in the command or the contents of a file defined by the ‘input’ parameter
+build
+Section titled “build”
+Build on your local machine
+claim
+Section titled “claim”
+Claim an anonymously deployed site and link it to your account
+clone
+Section titled “clone”
+Clone a repository and link it to a Netlify project
+completion
+Section titled “completion”
+Generate shell completion script
+Subcommand
+description
+completion:install
+Generates completion script for your preferred shell
+create
+Section titled “create”
+Create a new Netlify project using an AI agent
+database
+Section titled “database”
+Provision a production ready Postgres database with a single command
+Subcommand
+description
+database status
+Check the status of the database, including applied and pending migrations
+database init
+Interactive setup: install the package, scaffold a starter migration, and verify the database
+database connect
+Connect to the database
+database reset
+Reset the local development database, removing all data and tables
+database migrations
+Manage database migrations
+deploy
+Section titled “deploy”
+Deploy your project to Netlify
+dev
+Section titled “dev”
+Local dev server
+Subcommand
+description
+dev:exec
+Runs a command within the netlify dev environment. For example, with environment variables from any installed add-ons
+env
+Section titled “env”
+Control environment variables for the current project
+Subcommand
+description
+env:clone
+Clone environment variables from one project to another
+env:get
+Get resolved value of specified environment variable (includes netlify.toml)
+env:import
+Import and set environment variables from .env file
+env:list
+Lists resolved environment variables for project (includes netlify.toml)
+env:set
+Set value of environment variable
+env:unset
+Unset an environment variable which removes it from the UI
+functions
+Section titled “functions”
+Manage netlify functions
+Subcommand
+description
+functions:build
+Build functions locally
+functions:create
+Create a new function locally
+functions:invoke
+Trigger a function while in netlify dev with simulated data, good for testing function calls including Netlify’s Event Triggered Functions
+functions:list
+List functions that exist locally
+functions:serve
+Serve functions locally
+init
+Section titled “init”
+Configure continuous deployment for a new or existing project. To create a new project without continuous deployment, use
+netlify sites:create
+link
+Section titled “link”
+Link a local repo or project folder to an existing project on Netlify
+login
+Section titled “login”
+Login to your Netlify account
+logs
+Section titled “logs”
+View logs from your project
+open
+Section titled “open”
+Open settings for the project linked to the current folder
+Subcommand
+description
+open:admin
+Opens current project admin UI in Netlify
+open:site
+Opens current project url in browser
+recipes
+Section titled “recipes”
+Create and modify files in a project using pre-defined recipes
+Subcommand
+description
+recipes:list
+List the recipes available to create and modify files in a project
+serve
+Section titled “serve”
+Build the project for production and serve locally. This does not watch the code for changes, so if you need to rebuild your project then you must exit and run
+serve
+again.
+sites
+Section titled “sites”
+Handle various project operations
+Subcommand
+description
+sites:create
+Create an empty project (advanced)
+sites:delete
+Delete a project
+sites:list
+List all projects you have access to
+sites:search
+Search for projects by name

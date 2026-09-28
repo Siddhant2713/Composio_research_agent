@@ -1,0 +1,181 @@
+{
+  "app": "NotebookLM",
+  "number": 91,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:27:48.008254+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://cloud.google.com/gemini\",\n    \"https://developers.google.com\",\n    \"https://cloud.google.com/docs\",\n    \"https://console.cloud.google.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://cloud.google.com/gemini",
+    "https://developers.google.com",
+    "https://cloud.google.com/docs",
+    "https://console.cloud.google.com",
+    "https://docs.google.com/",
+    "https://developer.google.com/",
+    "https://api.google.com/",
+    "https://google.com/docs",
+    "https://google.com/developers",
+    "https://google.com/api",
+    "https://google.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://cloud.google.com/contact/",
+    "https://docs.cloud.google.com/docs/get-started/",
+    "https://cloud.google.com/sdk",
+    "https://cloud.google.com/pricing",
+    "https://cloud.google.com/windows",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+    "https://docs.cloud.google.com/docs/authentication",
+    "https://docs.cloud.google.com/sdk/docs",
+    "https://docs.cloud.google.com/sdk/gcloud"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://api.google.com/",
+      "reason": "HTTP 404"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://cloud.google.com/ai/gemini",
+      "requested_url": "https://cloud.google.com/gemini",
+      "status": 200,
+      "title": "Google AI Studio vs. Gemini Enterprise Agent Platform vs. Gemini Enterprise app | Google Cloud",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com",
+      "requested_url": "https://developers.google.com",
+      "status": 200,
+      "title": "Google for Developers | Build with Gemini",
+      "chars": 4138,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.cloud.google.com/docs",
+      "requested_url": "https://cloud.google.com/docs",
+      "status": 200,
+      "title": "Google Cloud Documentation",
+      "chars": 3778,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://console.cloud.google.com/&followup=https://console.cloud.google.com/&osid=1&passive=1209600&service=cloudconsole&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1075700162:1790530073650518",
+      "requested_url": "https://console.cloud.google.com",
+      "status": 200,
+      "title": "Google Cloud Platform",
+      "chars": 213,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1914810246:1790530074574518",
+      "requested_url": "https://docs.google.com/",
+      "status": 200,
+      "title": "Sign in - Google Accounts",
+      "chars": 234,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/",
+      "requested_url": "https://developer.google.com/",
+      "status": 200,
+      "title": "Google for Developers | Build with Gemini",
+      "chars": 4138,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S303974781:1790530077445292",
+      "requested_url": "https://google.com/docs",
+      "status": 200,
+      "title": "Sign in - Google Accounts",
+      "chars": 234,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://cloud.google.com/contact",
+      "requested_url": "https://cloud.google.com/contact/",
+      "status": 200,
+      "title": "Contact Sales | Google Cloud",
+      "chars": 3798,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.cloud.google.com/docs/get-started/",
+      "requested_url": "https://docs.cloud.google.com/docs/get-started/",
+      "status": 200,
+      "title": "Get started with Google Cloud \u00a0|\u00a0 Google Cloud Documentation",
+      "chars": 3640,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://cloud.google.com/sdk",
+      "requested_url": "https://cloud.google.com/sdk",
+      "status": 200,
+      "title": "Cloud SDK - Libraries and Command Line Tools | Google Cloud",
+      "chars": 3375,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The Gemini Developer API / Google AI Studio provides access to Gemini models via API key authentication.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses an API key passed in headers (e.g. x-goog-api-key) for the Gemini API.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free Google AI Studio / Gemini API key and get started immediately.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\",\n      \"JavaScript\",\n      \"Go\",\n      \"Java\"\n    ],\n    \"notes\": \"Provides REST endpoints and SDKs for Python, JavaScript, Go, and Java.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are available (API key) and the API is thoroughly documented with code examples across multiple languages.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.google.com\",\n      \"claim\": \"Shows curl and code snippets using the Gemini API key in headers and client libraries for Python, JavaScript, Go, and Java.\"\n    },\n    {\n      \"url\": \"https://cloud.google.com/ai/gemini\",\n      \"claim\": \"Describes getting a no cost Gemini API key via Google AI Studio.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://cloud.google.com/gemini",
+    "one_liner": "The Gemini Developer API / Google AI Studio provides access to Gemini models via API key authentication.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses an API key passed in headers (e.g. x-goog-api-key) for the Gemini API."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free Google AI Studio / Gemini API key and get started immediately."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [
+        "Python",
+        "JavaScript",
+        "Go",
+        "Java"
+      ],
+      "notes": "Provides REST endpoints and SDKs for Python, JavaScript, Go, and Java."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are available (API key) and the API is thoroughly documented with code examples across multiple languages."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.google.com",
+        "claim": "Shows curl and code snippets using the Gemini API key in headers and client libraries for Python, JavaScript, Go, and Java.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://cloud.google.com/ai/gemini",
+        "claim": "Describes getting a no cost Gemini API key via Google AI Studio.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:28:05.258737+00:00"
+}

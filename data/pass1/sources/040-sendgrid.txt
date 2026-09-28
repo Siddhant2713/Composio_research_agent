@@ -1,0 +1,1302 @@
+===== https://www.twilio.com/en-us/sendgrid
+TITLE: SendGrid Email API and Email Marketing Campaigns | Twilio
+ACCESSED: 2026-09-27
+
+SendGrid ❤️ Twilio. We're finally moving in together on Twilio.com!
+We're merging our websites to make things simpler. You can now find all our trusted email solutions, plus everything else Twilio offers, over on
+Twilio.com
+Visit Twilio.com
+Same email solutions, new home base.
+Don’t worry—the same SendGrid email products and services, documentation and resources you know and love are available and fully supported on
+Twilio.com
+Log in now
+Email at scale, proven deliverability, and so much more
+Send email on a world-class platform that delivers more than 200 billion emails every month—and explore the rest of the Twilio Platform to build a complete solution for verification and identity, alerts, support and sales, and more.
+Twilio SendGrid Email API and SMTP service
+The trusted SendGrid Email API for delivery at scale.
+Explore SendGrid Email API
+View pricing
+Email campaigns for marketers
+Flexible tools for creating engaging email campaigns.
+Explore Marketing Campaigns
+View pricing
+View all Twilio products
+Explore Twilio Platform
+Resources to learn, build, or troubleshoot
+Use up-to-date documentation to quickly integrate and send with our APIs.
+Chat with our AI assistant to get answers to your questions, troubleshoot, or find helpful information.
+Work with one of our trusted partners to integrate our Email API, optimize deliverability, or get help with a pre-built or custom solution.
+Find guidance and best practices for building with our Email API, improving deliverability, and sending great emails.
+Find strategic guides, insights, and research to sharpen your customer engagement strategy.
+See the status of our products.
+
+===== https://www.twilio.com/docs/sendgrid
+TITLE: Twilio SendGrid | SendGrid Docs | Twilio
+ACCESSED: 2026-09-27
+
+Twilio SendGrid
+Build transactional and marketing email solutions with Twilio SendGrid.
+Let's build
+Take the next steps with
+Twilio SendGrid
+Send your first email
+Do more with email
+Get started with Marketing Campaigns
+1
+Twilio servers
+2
+Your app
+const
+sgMail
+=
+require
+(
+'@sendgrid/mail'
+);
+sgMail.
+setApiKey
+(process.env.
+SENDGRID_API_KEY
+);
+const
+msg
+=
+{
+to:
+'recipient@example.com'
+,
+from:
+'sender@example.com'
+,
+subject:
+'Ahoy!'
+,
+html:
+'Ahoy, World!'
+,
+};
+sgMail
+send
+(msg)
+then
+((
+error
+)
+=>
+console.
+error
+(error));
+View complete examples
+3
+Ahoy, world!
+Take the next steps with
+Twilio SendGrid
+Send your first email
+Do more with email
+Get started with Marketing Campaigns
+Send your first email
+Get started with the Twilio SendGrid Mail Send API and the open-source SDKs.
+To send your first message, use the following sample code in your preferred programming language.
+C#
+Go
+Java
+Node.js
+PHP
+Python
+Ruby
+Copy code block
+1
+using
+System
+;
+2
+using
+System
+Threading
+Tasks
+;
+3
+using
+SendGrid
+;
+4
+using
+SendGrid
+Helpers
+Mail
+;
+5
+6
+class
+Program
+7
+{
+8
+static async
+Task
+Main
+()
+9
+{
+10
+var
+apiKey
+=
+Environment.
+GetEnvironmentVariable
+(
+"SENDGRID_API_KEY"
+);
+11
+var
+client
+= new
+SendGridClient
+(apiKey);
+12
+var
+from
+= new
+EmailAddress
+(
+"test@example.com"
+,
+"Example User"
+);
+13
+var
+subject
+=
+"Sending with Twilio SendGrid is Fun"
+;
+14
+var
+to
+= new
+EmailAddress
+(
+"test@example.com"
+,
+"Example User"
+);
+15
+var
+plainTextContent
+=
+"and easy to do anywhere, even with C#"
+;
+16
+var
+htmlContent
+=
+"<strong>and easy to do anywhere, even with C#</strong>"
+;
+17
+var
+msg
+=
+MailHelper.
+CreateSingleEmail
+(from, to, subject, plainTextContent, htmlContent);
+18
+var
+response
+= await
+client.
+SendEmailAsync
+(msg).
+ConfigureAwait
+(
+false
+);
+19
+}
+20
+}
+Copy code block
+1
+package
+main
+2
+3
+import
+(
+4
+"
+fmt
+"
+5
+"
+log
+"
+6
+"
+os
+"
+7
+8
+"
+github.com/sendgrid/sendgrid-go
+"
+9
+"
+github.com/sendgrid/sendgrid-go/helpers/mail
+"
+10
+)
+11
+12
+func
+main
+() {
+13
+from
+:=
+mail.
+NewEmail
+(
+"Example User"
+,
+"test@example.com"
+)
+14
+subject
+:=
+"Sending with Twilio SendGrid is Fun"
+15
+to
+:=
+mail.
+NewEmail
+(
+"Example User"
+,
+"test@example.com"
+)
+16
+plainTextContent
+:=
+"and easy to do anywhere, even with Go"
+17
+htmlContent
+:=
+"<strong>and easy to do anywhere, even with Go</strong>"
+18
+message
+:=
+mail.
+NewSingleEmail
+(from, subject, to, plainTextContent, htmlContent)
+19
+client
+:=
+sendgrid.
+NewSendClient
+(os.
+Getenv
+(
+"SENDGRID_API_KEY"
+))
+20
+response, err
+:=
+client.
+Send
+(message)
+21
+if
+err
+!=
+nil
+{
+22
+log.
+Println
+(err)
+23
+}
+else
+{
+24
+fmt.
+Println
+(response.StatusCode)
+25
+fmt.
+Println
+(response.Body)
+26
+fmt.
+Println
+(response.Headers)
+27
+}
+28
+}
+Copy code block
+1
+import
+com.sendgrid.
+*
+;
+2
+import
+java.io.IOException;
+3
+4
+public class
+Example
+{
+5
+public static void
+main
+(
+String
+[]
+args
+)
+throws
+IOException {
+6
+Email from
+= new
+Email
+(
+"test@example.com"
+);
+7
+String subject
+=
+"Sending with Twilio SendGrid is Fun"
+;
+8
+Email to
+= new
+Email
+(
+"test@example.com"
+);
+9
+Content content
+= new
+Content
+(
+"text/plain"
+,
+"and easy to do anywhere, even with Java"
+);
+10
+Mail mail
+= new
+Mail
+(from, subject, to, content);
+11
+12
+SendGrid sg
+= new
+SendGrid
+(System.
+getenv
+(
+"SENDGRID_API_KEY"
+));
+13
+Request request
+= new
+Request
+();
+14
+try
+{
+15
+request.
+setMethod
+(Method.POST);
+16
+request.
+setEndpoint
+(
+"mail/send"
+);
+17
+request.
+setBody
+(mail.
+build
+());
+18
+Response response
+=
+sg.
+api
+(request);
+19
+System.out.
+println
+(response.
+getStatusCode
+());
+20
+System.out.
+println
+(response.
+getBody
+());
+21
+System.out.
+println
+(response.
+getHeaders
+());
+22
+}
+catch
+(IOException
+ex
+) {
+23
+throw
+ex;
+24
+}
+25
+}
+26
+}
+Copy code block
+1
+const
+sgMail
+=
+require
+(
+'@sendgrid/mail'
+);
+2
+sgMail.
+setApiKey
+(process.env.
+SENDGRID_API_KEY
+);
+3
+4
+const
+msg
+=
+{
+5
+to:
+'test@example.com'
+,
+6
+from:
+'test@example.com'
+,
+// Use the email address or domain you verified above
+7
+subject:
+'Sending with Twilio SendGrid is Fun'
+,
+8
+text:
+'and easy to do anywhere, even with Node.js'
+,
+9
+html:
+'<strong>and easy to do anywhere, even with Node.js</strong>'
+,
+10
+};
+11
+12
+(
+async
+()
+=>
+{
+13
+try
+{
+14
+await
+sgMail.
+send
+(msg);
+15
+}
+catch
+(error) {
+16
+console.
+error
+(error);
+17
+18
+if
+(error.response) {
+19
+console.
+error
+(error.response.body)
+20
+}
+21
+}
+22
+})();
+Copy code block
+1
+$email
+= new
+\SendGrid\Mail\Mail
+();
+2
+$email
+->
+setFrom
+(
+"test@example.com"
+,
+"Example User"
+);
+3
+$email
+->
+setSubject
+(
+"Sending with Twilio SendGrid is Fun"
+);
+4
+$email
+->
+addTo
+(
+"test@example.com"
+,
+"Example User"
+);
+5
+$email
+->
+addContent
+(
+"text/plain"
+,
+"and easy to do anywhere, even with PHP"
+);
+6
+$email
+->
+addContent
+(
+7
+"text/html"
+,
+"<strong>and easy to do anywhere, even with PHP</strong>"
+8
+);
+9
+$sendgrid
+= new
+\SendGrid
+(
+getenv
+(
+'SENDGRID_API_KEY'
+));
+10
+try
+{
+11
+$response
+=
+$sendgrid
+->
+send
+($email);
+12
+print
+$response
+->
+statusCode
+()
+"
+\n
+"
+;
+13
+print_r
+($response
+->
+headers
+());
+14
+print
+$response
+->
+body
+()
+"
+\n
+"
+;
+15
+}
+catch
+(
+Exception
+$e) {
+16
+echo
+'Caught exception: '
+$e
+->
+getMessage
+()
+"
+\n
+"
+;
+17
+}
+Copy code block
+1
+import
+s
+
+===== https://www.twilio.com/docs/sendgrid/api-reference
+TITLE: SendGrid v3 API reference | SendGrid Docs | Twilio
+ACCESSED: 2026-09-27
+
+Page tools
+Copy as markdown
+Useful for sharing or LLM
+Copy and view
+Copy as markdown
+View as markdown
+Open in assistant
+Open in ChatGPT
+Open in Claude
+Open in Cursor
+Open in Perplexity
+Build with AI
+Connect your AI agent
+Install Twilio Skills
+Accelerate development with AI
+On this page
+Looking for more inspiration?
+Visit the
+Developer Hub
+Copy as markdown
+Copy and view
+Copy as markdown
+View as markdown
+Open in assistant
+Open in ChatGPT
+Open in Claude
+Open in Cursor
+Open in Perplexity
+Build with AI
+Connect your AI agent
+Install Twilio Skills
+SendGrid v3 API reference
+The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.
+The SendGrid API endpoints allow you to integrate with your tech stack to send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics.
+This API reference provides complete documentation for every endpoint and operation. For an overview of using SendGrid APIs, see the
+Getting Started
+section.
+Additional resources
+Onboarding guide
+For a full-featured guide to ensure you build your email program on a solid foundation, see the
+Email API Onboarding guide
+Email API quickstarts
+Jump to an email quickstart in your programming language of choice to implement the Mail Send API.
+C#
+Go
+Java
+Node.js
+PHP
+Python
+Ruby
+SDKs and tools
+See our open-source SDKs and tools to integrate with SendGrid.
+C#
+Go
+Java
+Node.js
+PHP
+Python
+Ruby
+OpenAPI specification
+
+===== https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys
+TITLE: API Keys | SendGrid Docs | Twilio
+ACCESSED: 2026-09-27
+
+Page tools
+Copy as markdown
+Useful for sharing or LLM
+Copy and view
+Copy as markdown
+View as markdown
+Open in assistant
+Open in ChatGPT
+Open in Claude
+Open in Cursor
+Open in Perplexity
+Build with AI
+Connect your AI agent
+Install Twilio Skills
+Accelerate development with AI
+On this page
+Looking for more inspiration?
+Visit the
+Developer Hub
+Copy as markdown
+Copy and view
+Copy as markdown
+View as markdown
+Open in assistant
+Open in ChatGPT
+Open in Claude
+Open in Cursor
+Open in Perplexity
+Build with AI
+Connect your AI agent
+Install Twilio Skills
+API Keys
+(warning)
+Twilio SendGrid API key limitations
+Twilio supports a key longer than 69 characters. No exceptions can be made for third-party infrastructure.
+Twilio limits accounts to 100 API keys.
+You can't give an API key greater permissions than your own.
+The Twilio SendGrid Console displays the API key only once at creation.
+Treat your API key like a password and store it somewhere safe.
+Twilio can't retrieve or restore an unknown or deleted API key.
+To authenticate access to Twilio SendGrid services, use
+Application Programming Interface
+(API) keys.
+They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid's services.
+Manage API keys
+Go to
+Settings
+>
+API Keys
+. The
+API Keys
+page displays your current API keys with the following parameters:
+Parameter
+Purpose
+Name
+The name you defined for your API key.
+API Key ID
+The way you would reference your API key for management through the API.
+Action
+Actions you can perform on your API keys, such as editing or deleting the key.
+Create an API key
+To use the Mail API, you need an API key.
+Go to
+Settings
+>
+API Keys
+. The
+API Keys
+page appears.
+Click
+Create API Key
+. The
+Create API Key
+appears.
+Type a human-readable name for your API key in the
+API Key Name
+box.
+Choose the permissions for your API Key:
+API key permission
+Access details for account
+Full Access
+Grants all API endpoints
+full access
+to your account.
+Custom Access
+Choose both which API endpoints and which access levels each have to your account.
+Billing Access
+Grants all billing API endpoints
+full access
+to your account.
+Email Address Validation Access
+Grants
+read access
+to the reporting console and
+full access
+to validation API endpoints on your account.
+View all access details for custom access
+API Keys
+Alerts
+Category Management
+Deliverability Insights
+Design Library
+Email Activity
+Email Testing
+IP Management
+Inbound Parse
+Mail Send
+Mail Send
+Scheduled Sends
+Mail Settings
+Address Allow List
+BCC
+Bounce Purge
+Event Notification
+Footer
+Forward Bounce
+Forward Spam
+Legacy Email Template
+Mail Settings
+Plain Content
+Spam Checker
+Marketing
+Automation
+Marketing
+Marketing Campaigns
+Partners
+Recipients Data Erasure
+SSO Settings
+Security
+Sender Authentication
+Stats
+Browser Stats
+Category Stats
+Email Clients and Devices
+Geographical
+Global Stats
+Mailbox Provider Stats
+Parse Webhook
+Stats Overview
+Subuser Stats
+Subusers
+Suppressions
+Suppressions
+Unsubscribe Groups
+Teammates
+SSO Teammates
+Teammates
+Template Engine
+Tracking
+Click Tracking
+Google Analytics
+Open Tracking
+Subscription Tracking
+Tracking Settings
+User Account
+Account Profile
+Enforced TLS
+Timezone
+User Profile
+Click
+Create & View
+. The
+API Key Created
+page displays your created API Key.
+To copy the API key, click on it.
+Store this key somewhere not in the public view.
+Never include your API Key in your code or commit it to a public location or repository like GitHub.
+To make billing-related API calls, Twilio requires
+a separate API key
+By providing greater control over who has access to the responsibilities associated with your account, this segmentation improves security.
+Store your API key in an environment variable
+To further improve account security, store your API key in a local environment variable. This limits access to the API to individuals with the API key stored on their local environment. Supported programming languages can read environment variables for the API key values.
+This section stores your key in a local environment variable named
+SENDGRID_API_KEY
+To store your Twilio SendGrid API key, open your command line and run the following command, replacing
+YOUR_API_KEY
+with the API key you created and saved in the
+previous section
+:
+macOS Terminal
+Windows command line
+PowerShell
+Copy code block
+export
+SENDGRID_API_KEY
+=
+YOUR_API_KEY
+Copy code block
+setx
+SENDGRID_API_KEY=YOUR_API_KEY
+Copy code block
+[System.Environment]::SetEnvironmentVariable(
+"SENDGRID_API_KEY",
+"YOUR_API_KEY", "User"
+)
+To access the variable in your app, follow the convention from your programming language.
+Python
+Node.js
+PHP
+C# or .NET
+Java
+Ruby
+Go
+Read the API key in Python
+Copy code block
+api_key
+=
+os.environ.get(
+'SENDGRID_API_KEY'
+)
+Read the API key in Node.js
+Copy code block
+const
+apiKey
+=
+process.env.
+SENDGRID_API_KEY
+;
+Read the API key in PHP
+Copy cod
+
+===== https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup
+TITLE: Lookup API Pricing | Twilio
+ACCESSED: 2026-09-27
+
+Pricing current as of August 2026
+Formatting and validation
+Validate and reformat phone numbers automatically to match national and global dialing standards for optimal deliverability.
+Free
+Inbound caller identification
+Identify inbound callers then personalize outreach using the verified caller or business name to improve conversions, security, and customer experience. Only available in the US.
+$0.01
+per request
+Identity match
+Prevent bots and false account creation. Confirm the ownership of a mobile phone number by comparing user-supplied data against authoritative sources.
+$0.1
+per request*
+* Prices vary per country. More information on
+docs
+Reassigned number risk
+Get a risk assessment for if a number has been reassigned since the user’s last consent date.
+0-1,000
+$0.02
+1,000-10,000
+$0.014
+10,000-50,000
+$0.0125
+50,000-200,000
+$0.0085
+200,000-500,000
+$0.0075
+500,000-2,000,000
+$0.003
+2,000,000-6,000,000
+$0.0025
+6,000,000+
+$0.0015
+Line type intelligence
+Identify the carrier and phone line type from mobile, landline, fixed VoIP, non-fixed VoIP, toll free, and more to mitigate fake accounts, scrub contact lists, and improve deliverability.
+$0.008
+per request
+Line Status
+Validate if the phone number is active or reachable so you can increase engagement and reduce costs on users who will not convert.
+0-100,000
+$0.007
+100,001-500,000
+$0.0063
+500,001-1,000,000
+$0.0056
+1,000,001-2,500,000
+$0.0049
+2,500,001-5,000,000
+$0.00455
+5,000,001-10,000,000
+$0.0042
+>10,000,000
+$0.00385
+SMS Pumping Risk Score
+Powered by advanced machine learning models, SMS Pumping Risk Score can effectively identify and flag malicious behavior associated with phone numbers involved in SMS Pumping Fraud.
+ROW
+$0.025
+per request
+NAMER
+Free
+SIM swap and call forwarding
+Detect SIM swap to stop fraud and account takeovers with timestamps and dates of any SIM changes, plus configurable risk tolerance that enables accurate modeling and metrics.
+Contact sales
+Let's find the right products
+              for you
+Generating your product
+              picks...
+See your product picks
+Expand
+Take a look
+For the best recommendations, tell me your use case, goals, requirements, etc.
+I need to track which ads drive calls
+I want to personalize customer support
+I want to follow up with leads automatically
+Minimize
+Generating...
+Complete
+Thinking...
+Finding the best products for your use case
+R.I.P.
+Something went wrong.
+Retry
+Close modal
+Generating Toolkit...
+See your toolkit
+What's in your toolkit
+Add-ons to enhance your basic toolkit
+Ask about your toolkit
+Ask about Twilio products, features, and
+                  capabilities.
+Thinking...
+We've run into an issue, please try again.
+Looking for inspiration? Ask me one of these!
+Ready, set, build! Resources to get started
+Put the
+toolkit to use
+Contact sales
+Download toolkit
+This product recommendation tool is powered by a hybrid AI system (Twilio and OpenAI) and may generate
+          information that is inaccurate or incomplete. Recommendations are algorithmic, not professional advice. You
+          should independently verify this information before use. By using this tool, you agree that your input is
+          processed by both Twilio's internal systems and external OpenAI models to generate a response. You are
+          responsible for any information you share. Twilio is not responsible for your use of this generated
+          information, and this use does not modify your Twilio agreement if one is in place. Review our Privacy Notice
+          for additional details on how we use data.
+
+===== https://www.twilio.com/en-us/help/sales
+TITLE: Talk to Sales | Twilio
+ACCESSED: 2026-09-27
+
+Contact sales
+Get expert answers, and tailored product guidance, fast.
+Complete this form and within one business day, you'll receive tailored guidance on which Twilio, Segment, or SendGrid products fit your use case. You’ll also get pricing, compliance details, and a clear path to production at your scale.
+Talk to our team
+Fill out the form and we will be in touch within one business day.
+Thank you
+We’ve received your request. A member of the Twilio Sales team will review your information and be in contact within 1 business day to discuss your use case.
+Oops! Something went wrong, please try submitting the form again.
+...Or, start building right away
+No credit card required
+Experiment with SMS, Voice, WhatsApp, Email, Conversations, Connections, and more
+Full API access with generous free usage tiers
+Scale when you are ready with pay-as-you-go pricing
+Get started in minutes.
+Get support
+Visit our Help Center
+Go to the Help Center for support plans, FAQs, billing, etc.
+Report a violation
+Twilio may contact you via call or email if you’ve opted in, but we don’t allow spam. Report any unwanted messages or calls.
+Don’t take our word for it. Over 335,000 companies build with Twilio
+Leverage Twilio’s scalability and reliability
+38B+
+voice calls
+262B+
+messages sent or received
+2.4T+
+emails sent
+271B
+Segment events processed
+
+===== https://www.twilio.com/en-us/user-authentication-identity
+TITLE: User Authentication & Identity | Twilio
+ACCESSED: 2026-09-27
+
+Twilio has acquired Stytch auth.
+Learn more
+Treat your customers to a VIP authentication experience
+Remove the friction from onboarding and transactions with authoritative phone data validation and real-time verification. Validate users automatically at any touchpoint to identify then fast-track real customers into
+no-input verification
+. Utilize our
+Verify
+and
+Lookup
+APIs together to supercharge your authentication solutions and get the most from your investment.
+4.5B+
+verifications each year
+130B
+messages sent and received yearly
+99.95% +
+monthly API uptime
+1500+
+global carrier partner
+New user activation without friction
+Discreetly confirm user identities with carrier signal data and possession factors. With
+Silent Network Authentication
+you can trigger no-input onboarding for real users—or added security to halt fake account creation.
+Repeat authentication in less time
+Fast-track real users into a
+frictionless login flow
+. Use mobile device identity signals like SIM swaps and more to spot real users, apply extra security as needed, and mitigate account takeover.
+Online transaction protection
+Enable effortless online purchasing and payments with automated validation in milliseconds. Step-up
+authentication triggers when risk signals
+are detected for an added layer of fraud protection.
+Multichannel account management
+Reduce tickets and support costs by streamlining user account changes, password resets, and more across preferred
+channels like SMS, voice, email, push, and WhatsApp
+Verify API
+Add effortless two-factor authentication to onboarding and transaction flows with one multichannel, turnkey API.
+Mitigate SMS traffic pumping fraud and improve conversion with Fraud Guard.
+Optimize user verification over SMS, Silent Network Authentication, WhatsApp and more.
+Explore the Verify API
+Lookup API
+Automatically validate users behind-the-scenes with mobile carrier data to reduce fraud and abandonment.
+Boost conversions using mobile identity signals to personalize engagement, streamline onboarding, and optimize deliverability.
+Mitigate fraud by triggering added security as needed with risk signal detection, step-up authentication, and more.
+Explore the Lookup API
+Stytch by Twilio
+Make your application enterprise and agent ready with SSO, device-level risk intelligence, and scoped access for AI agents.
+Offer SSO to enterprise accounts that’s SAML/OIDC-compliant and easily configurable per customer.
+Reduce fraud and abuse with device intelligence that triggers real-time blocks, challenges, or rate limiting.
+Secure AI agent and MCP workflows by granting scoped access to agents acting on behalf of users.
+Explore Stytch by Twilio
+"Secure onboarding and account security is an important focus for us and our customers. We use Twilio to verify phone numbers and to make sure that the right account or right supplier is behind the right phone number...Twilio was a great decision for us."
+Andrew Solomon
+Sr. Software Engineer
+Resources
+5 best practices for seamless and secure user onboarding
+Learn how to build an onboarding process that satisfies customers while keeping both their accounts and your platform secure from day one.
+Read the e-book
+Cut acquisition costs
+Reward customers with a lifecycle of friction-free authentication that drives conversions and lifetime value, plus weeds out fake users to reduce fraud and boost marketing returns.
+Optimize data and decision making
+Collect reliable data from verified end-users only. Our mobile carrier signals confirm user identities at signup, helping you make smart decisions throughout the customer journey.
+Customize multichannel at scale
+Deliver verification experiences that your customers prefer. With easy-to-integrate APIs and developer tools, it’s simple to build, customize, and scale your perfect solution.
+Let's find the right products
+              for you
+Generating your product
+              picks...
+See your product picks
+Expand
+Take a look
+For the best recommendations, tell me your use case, goals, requirements, etc.
+I need to track which ads drive calls
+I want to personalize customer support
+I want to follow up with leads automatically
+Minimize
+Generating...
+Complete
+Thinking...
+Finding the best products for your use case
+R.I.P.
+Something went wrong.
+Retry
+Close modal
+Generating Toolkit...
+See your toolkit
+What's in your toolkit
+Add-ons to enhance your basic toolkit
+Ask about your toolkit
+Ask about Twilio products, features, and
+                  capabilities.
+Thinking...
+We've run into an issue, please try again.
+Looking for inspiration? Ask me one of these!
+Ready, set, build! Resources to get started
+Put the
+toolkit to use
+Contact sales
+Download toolkit
+This product recommendation tool is powered by a hybrid AI system (Twilio and OpenAI) and may generate
+          information that is inaccurate or incomplete. Recommendations are algorithmic, not professional advice. You
+          should independently verify this information before use. By using this 
+
+===== https://www.twilio.com/en-us/user-authentication-identity/verify
+TITLE: Verify API | Twilio
+ACCESSED: 2026-09-27
+
+Verify API at a glance
+Get a short-and-sweet summary of Verify capabilities, use cases, and pricing in our
+Twilio Verify fact sheet.
+Verify is a turnkey API for user verification. Add two-factor authentication across channels like SMS, email,
+WhatsApp
+, and TOTP or implement frictionless verification with Silent Network Authentication (SNA).
+Quickly integrate a one-time password authentication (OTP) solution that handles your connectivity, channels, code generation, fraud monitoring, and prevention.
+And now, you can add Stytch by Twilio
+Device Fingerprinting
+for device-level risk signals that inform when to step up verification.
+Explore docs
+Build verification steps that feel like a feature, not a frustration
+Trusted user verification with a downright delightful user experience.
+Signup verification
+Prevent fake account creation and create a secure signup experience for new users with one-time passwords that can be delivered across channels.
+Intuit set up one-time password (OTP) SMS messages to authenticate new customers across the globe while eliminating any friction along the way.
+94%
+deliverability across the globe
+200+
+countries deployed in 3 months
+Read Intuit's story
+Login protection
+Protect users from account takeovers by sending verification codes upon login as a method of two-factor authentication (2FA).
+Stripe keeps millions of users secure by asking them to verify their identities quickly and easily over phone calls or SMS with Verify.
+~70%
+of user verifications handled by Twilio Verify
+6
+point improvement in login success rates in the US
+Read Stripe's story
+Secure transactions
+Validate users in real-time so you can confidently authorize high-value online transactions and protect customers against fraud.
+Bitso implemented Verify to improve global delivery for verification OTPs. They depend on reliable user verification messages to keep customers’ financial accounts and transactions secure.
+99%
+of users successfully verified
+82%
+of users completed password resets
+Read Bitso's story
+Verify API features
+Global user verification is hard—Verify makes it easy.
+100% Protection from SMS pumping fraud with Fraud Guard
+Fraud Guard has already saved customers over $82 million by blocking 747 million fraud attempts
+1
+. With first-to-market innovation, Fraud Guard offers 100% protection against SMS pumping fraud.
+Learn more about Fraud Guard
+Verify procures and manages short codes, long codes, toll free, and global alpha-sender IDs to accelerate global expansion.
+Improve delivery rates with carrier-approved messages templates that automatically translate across 42 languages.
+Dashboards provide conversion and success rates per region and channel, as well as SMS fraud trends to optimize against fraud.
+Secure authentication to protect end users, accounts, and transactions without requiring users to wait or leave your app.
+Develop compliant healthcare and financial service applications that do not require users to provide personally identifiable information (PII).
+Embed push functionality in your apps easily.
+Verify uses premium telephony routes on Twilio's Super Network to prioritize deliverability and speed.
+Verify's built-in platform protection for service rate limits give you turnkey protections with flexibility.
+OTP delivery via SMS, WhatsApp, voice, and email, all managed through a single API.
+Verify manages the complexity of changing carrier and government regulations in 200+ regions and countries.
+Integrate Verify into your app in as little as one sprint with its developer-first APIs and client libraries for a quick and confident deployment.
+# Download the helper library from https://www.twilio.com/docs/ruby/install
+require 'rubygems'
+require 'twilio-ruby'
+
+# Find your Account SID and Auth Token at twilio.com/console
+# and set the environment variables. See http://twil.io/secure
+account_sid = ENV['TWILIO_ACCOUNT_SID']
+auth_token = ENV['TWILIO_AUTH_TOKEN']
+@client = Twilio::REST::Client.new(account_sid, auth_token)
+
+verification = @client.verify
+                      .v2
+                      .services('VAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+                      .verifications
+                      .create(to: '+15017122661', channel: 'sms')
+
+puts verification.sid
+# Download the helper library from https://www.twilio.com/docs/python/install
+import os
+from twilio.rest import Client
+
+# Find your Account SID and Auth Token at twilio.com/console
+# and set the environment variables. See http://twil.io/secure
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
+client = Client(account_sid, auth_token)
+
+verification = client.verify \
+                     .v2 \
+                     .services('VAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX') \
+                     .verifications \
+                     .create(to='+15017122661', channel='sms')
+
+print(verification.sid)
+<?php
+
+// Update the path below to your autoload.php,
+// see https://getcomposer.org/doc/01-basic-usage.md
+req

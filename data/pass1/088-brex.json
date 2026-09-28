@@ -1,0 +1,169 @@
+{
+  "app": "Brex",
+  "number": 88,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:27:13.585010+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.brex.com\",\n    \"https://developer.brex.com/docs\",\n    \"https://developer.brex.com/reference\",\n    \"https://developer.brex.com/docs/authentication\",\n    \"https://dashboard.brex.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.brex.com",
+    "https://developer.brex.com/docs",
+    "https://developer.brex.com/reference",
+    "https://developer.brex.com/docs/authentication",
+    "https://dashboard.brex.com",
+    "https://docs.brex.com/",
+    "https://developers.brex.com/",
+    "https://api.brex.com/",
+    "https://brex.com/docs",
+    "https://brex.com/developers",
+    "https://brex.com/api",
+    "https://brex.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.brex.com/guides/quickstart",
+    "https://developer.brex.com/openapi/webhooks_api",
+    "https://developer.brex.com/openapi/onboarding_api",
+    "https://developer.brex.com/examples/onboarding_examples",
+    "https://developer.brex.com/_auth/idp-login?idpId=oidc&localePrefix=&redirectTo=",
+    "https://developer.brex.com/guides/partner_authentication",
+    "https://developer.brex.com/guides/authentication.md",
+    "https://developer.brex.com/guides/webhooks"
+  ],
+  "boilerplate_lines_removed": 11,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.brex.com/docs",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.brex.com/reference",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://dashboard.brex.com",
+      "reason": "page too thin (4 chars)"
+    },
+    {
+      "requested_url": "https://docs.brex.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.brex.com/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.brex.com/openapi/webhooks_api",
+      "reason": "page too thin (12 chars)"
+    },
+    {
+      "requested_url": "https://developer.brex.com/openapi/onboarding_api",
+      "reason": "page too thin (14 chars)"
+    },
+    {
+      "requested_url": "https://developer.brex.com/_auth/idp-login?idpId=oidc&localePrefix=&redirectTo=",
+      "reason": "page too thin (7 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.brex.com",
+      "requested_url": "https://developer.brex.com",
+      "status": 200,
+      "title": "Overview",
+      "chars": 1626,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.brex.com/guides/authentication",
+      "requested_url": "https://developer.brex.com/docs/authentication",
+      "status": 200,
+      "title": "Authentication",
+      "chars": 2167,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.brex.com/",
+      "requested_url": "https://developers.brex.com/",
+      "status": 200,
+      "title": "Overview",
+      "chars": 1626,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "requested_url": "https://developer.brex.com/guides/quickstart",
+      "status": 200,
+      "title": "Quickstart",
+      "chars": 2357,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.brex.com/examples/onboarding_examples",
+      "requested_url": "https://developer.brex.com/examples/onboarding_examples",
+      "status": 200,
+      "title": "Onboarding API examples",
+      "chars": 1860,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Brex provides a REST API utilizing Bearer user tokens to manage corporate cards, expenses, travel, accounting data, and custom workflows.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses a user token passed in request headers as 'Authorization: Bearer {{your user_token here}}'.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Requires being a Brex customer with admin access to the Brex dashboard to generate user tokens.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"APIs use REST architecture, are defined using OpenAPI specifications, accept/return JSON, and require HTTPS.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Requires an existing Brex customer account with admin access to generate tokens, but provides straightforward REST endpoints and a quickstart guide.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.brex.com\",\n      \"claim\": \"Brex APIs use the REST architecture, are defined using the OpenAPI specification, and support Webhooks API.\"\n    },\n    {\n      \"url\": \"https://developer.brex.com/guides/authentication\",\n      \"claim\": \"To authenticate, generate a user token from the Brex dashboard and pass it as a Bearer token in headers.\"\n    },\n    {\n      \"url\": \"https://developer.brex.com/guides/quickstart\",\n      \"claim\": \"Quickstart guide assumes you are a Brex customer with admin access to generate your user token.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint_url": "https://developer.brex.com",
+    "one_liner": "Brex provides a REST API utilizing Bearer user tokens to manage corporate cards, expenses, travel, accounting data, and custom workflows.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses a user token passed in request headers as 'Authorization: Bearer {{your user_token here}}'."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "Requires being a Brex customer with admin access to the Brex dashboard to generate user tokens."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "APIs use REST architecture, are defined using OpenAPI specifications, accept/return JSON, and require HTTPS."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Requires an existing Brex customer account with admin access to generate tokens, but provides straightforward REST endpoints and a quickstart guide."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.brex.com",
+        "claim": "Brex APIs use the REST architecture, are defined using the OpenAPI specification, and support Webhooks API.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.brex.com/guides/authentication",
+        "claim": "To authenticate, generate a user token from the Brex dashboard and pass it as a Bearer token in headers.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.brex.com/guides/quickstart",
+        "claim": "Quickstart guide assumes you are a Brex customer with admin access to generate your user token.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:27:31.013756+00:00"
+}

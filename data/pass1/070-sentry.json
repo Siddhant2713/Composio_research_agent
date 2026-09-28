@@ -1,0 +1,219 @@
+{
+  "app": "Sentry",
+  "number": 70,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:17:46.956644+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.sentry.io/api/\",\n    \"https://sentry.io/pricing/\",\n    \"https://sentry.io/signup/\",\n    \"https://docs.sentry.io/\",\n    \"https://docs.sentry.io/product/accounts/auth/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.sentry.io/api",
+    "https://sentry.io/pricing/",
+    "https://sentry.io/signup/",
+    "https://docs.sentry.io/",
+    "https://docs.sentry.io/product/accounts/auth/",
+    "https://developer.sentry.io/",
+    "https://developers.sentry.io/",
+    "https://api.sentry.io/",
+    "https://sentry.io/docs",
+    "https://sentry.io/developers",
+    "https://sentry.io/api",
+    "https://sentry.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.sentry.io/api/guides/create-auth-token/",
+    "https://docs.sentry.io/api/auth/",
+    "https://docs.sentry.io/platforms/",
+    "https://docs.sentry.io/get-started/",
+    "https://sentry.io/demo",
+    "https://sentry.io/platforms/",
+    "https://sentry.io/auth/login/",
+    "https://docs.sentry.io/pricing/",
+    "https://sentry.io/signup/?trial",
+    "https://sentry.io/contact/enterprise/",
+    "https://sentry.io/identity/login/vsts/?href=https%3A%2F%2Fsentry.io%2Fsignup%2F&referrer=web-signup",
+    "https://sentry.io/identity/login/google/?href=https%3A%2F%2Fsentry.io%2Fsignup%2F&referrer=web-signup",
+    "https://docs.sentry.io/platform-redirect/?next=%2Fagent-tracing%2Fopenai%2F",
+    "https://docs.sentry.io/platform-redirect/?next=%2Fagent-tracing%2Fvercelai%2F"
+  ],
+  "boilerplate_lines_removed": 3,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.sentry.io/product/accounts/auth/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.sentry.io/",
+      "reason": "page too thin (90 chars)"
+    },
+    {
+      "requested_url": "https://developers.sentry.io/",
+      "reason": "page too thin (90 chars)"
+    },
+    {
+      "requested_url": "https://api.sentry.io/",
+      "reason": "page too thin (94 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.sentry.io/api/",
+      "requested_url": "https://docs.sentry.io/api",
+      "status": 200,
+      "title": "API Reference | Sentry Docs",
+      "chars": 1427,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://sentry.io/pricing/",
+      "requested_url": "https://sentry.io/pricing/",
+      "status": 200,
+      "title": "Pricing: Free Developer Plan, Pay as You Grow | Sentry",
+      "chars": 4991,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://sentry.io/signup/",
+      "requested_url": "https://sentry.io/signup/",
+      "status": 200,
+      "title": "Start your free trial | Unlimited events 14 days | Sentry",
+      "chars": 916,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.sentry.io/",
+      "requested_url": "https://docs.sentry.io/",
+      "status": 200,
+      "title": "Sentry Docs | Application Performance Monitoring & Error Tracking Software",
+      "chars": 1356,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.sentry.io/api/guides/create-auth-token/",
+      "requested_url": "https://docs.sentry.io/api/guides/create-auth-token/",
+      "status": 200,
+      "title": "Tutorial: Create a Sentry Authentication Token | Sentry Docs",
+      "chars": 1683,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.sentry.io/api/auth/",
+      "requested_url": "https://docs.sentry.io/api/auth/",
+      "status": 200,
+      "title": "API Authentication | Sentry Docs",
+      "chars": 4988,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.sentry.io/platforms/",
+      "requested_url": "https://docs.sentry.io/platforms/",
+      "status": 200,
+      "title": "Platforms",
+      "chars": 2366,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.sentry.io/get-started/",
+      "requested_url": "https://docs.sentry.io/get-started/",
+      "status": 200,
+      "title": "Get Started | Sentry Docs",
+      "chars": 4083,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://sentry.io/demo/?",
+      "requested_url": "https://sentry.io/demo",
+      "status": 200,
+      "title": "Request a Demo | Sentry",
+      "chars": 926,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Sentry web API and OAuth2/Auth tokens for managing Sentry platform resources and data programmatically.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Sentry supports both API authentication tokens (passed via Bearer auth header, created via internal integrations or user personal tokens) and OAuth2 with the authorization code grant type for third-party applications.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can sign up for a free account/developer plan directly on Sentry's website without requiring sales intervention.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Android\",\n      \"Apple\",\n      \"Dart\",\n      \"Elixir\",\n      \"Go\",\n      \"Godot Engine\",\n      \"Java\",\n      \"JavaScript\",\n      \"Kotlin\",\n      \"Native\",\n      \".NET\",\n      \"Nintendo Switch\",\n      \"PHP\",\n      \"PlayStation\",\n      \"PowerShell\",\n      \"Python\",\n      \"React Native\",\n      \"Ruby\",\n      \"Rust\",\n      \"Unity\",\n      \"Unreal Engine\",\n      \"Xbox\"\n    ],\n    \"notes\": \"The public web API is documented under v0, supporting REST-style endpoints accessed via tokens or OAuth2.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Sentry mentions offering a Sentry MCP server and MCP access on pricing and documentation pages.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Sentry offers self-serve account sign-up and thoroughly documented API authentication tokens and OAuth2 flows, making it easy for an outside developer to build an integration.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.sentry.io/api/\",\n      \"claim\": \"The Sentry web API is used to access the Sentry platform programmatically (version v0).\"\n    },\n    {\n      \"url\": \"https://docs.sentry.io/api/auth/\",\n      \"claim\": \"Sentry supports OAuth2 with the authorization code grant type as well as Bearer token authentication.\"\n    },\n    {\n      \"url\": \"https://sentry.io/signup/\",\n      \"claim\": \"Users can sign up for a free account to start using Sentry.\"\n    },\n    {\n      \"url\": \"https://docs.sentry.io/platforms/\",\n      \"claim\": \"Sentry provides and maintains SDKs for various popular languages and frameworks.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.sentry.io/api",
+    "one_liner": "Sentry web API and OAuth2/Auth tokens for managing Sentry platform resources and data programmatically.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Sentry supports both API authentication tokens (passed via Bearer auth header, created via internal integrations or user personal tokens) and OAuth2 with the authorization code grant type for third-party applications."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can sign up for a free account/developer plan directly on Sentry's website without requiring sales intervention."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Android",
+        "Apple",
+        "Dart",
+        "Elixir",
+        "Go",
+        "Godot Engine",
+        "Java",
+        "JavaScript",
+        "Kotlin",
+        "Native",
+        ".NET",
+        "Nintendo Switch",
+        "PHP",
+        "PlayStation",
+        "PowerShell",
+        "Python",
+        "React Native",
+        "Ruby",
+        "Rust",
+        "Unity",
+        "Unreal Engine",
+        "Xbox"
+      ],
+      "notes": "The public web API is documented under v0, supporting REST-style endpoints accessed via tokens or OAuth2."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Sentry mentions offering a Sentry MCP server and MCP access on pricing and documentation pages."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Sentry offers self-serve account sign-up and thoroughly documented API authentication tokens and OAuth2 flows, making it easy for an outside developer to build an integration."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.sentry.io/api/",
+        "claim": "The Sentry web API is used to access the Sentry platform programmatically (version v0).",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.sentry.io/api/auth/",
+        "claim": "Sentry supports OAuth2 with the authorization code grant type as well as Bearer token authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://sentry.io/signup/",
+        "claim": "Users can sign up for a free account to start using Sentry.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.sentry.io/platforms/",
+        "claim": "Sentry provides and maintains SDKs for various popular languages and frameworks.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:18:01.605837+00:00"
+}

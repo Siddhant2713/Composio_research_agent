@@ -1,0 +1,99 @@
+{
+  "app": "PitchBook",
+  "number": 90,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:53:50.367949+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://pitchbook.com\",\n    \"https://pitchbook.com/products/pitchbook-api\",\n    \"https://pitchbook.com/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://pitchbook.com",
+    "https://pitchbook.com/products/pitchbook-api",
+    "https://pitchbook.com/contact",
+    "https://docs.pitchbook.com/",
+    "https://developer.pitchbook.com/",
+    "https://developers.pitchbook.com/",
+    "https://api.pitchbook.com/",
+    "https://pitchbook.com/docs",
+    "https://pitchbook.com/developers",
+    "https://pitchbook.com/api",
+    "https://pitchbook.com/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://pitchbook.com",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pitchbook.com/products/pitchbook-api",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pitchbook.com/contact",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.pitchbook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.pitchbook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.pitchbook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.pitchbook.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pitchbook.com/docs",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint_url": "https://pitchbook.com",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "No public documentation was reachable."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "No public developer documentation could be fetched at all, so there is no self-serve path an outside developer could follow. Tried: https://pitchbook.com (HTTP 403); https://pitchbook.com/products/pitchbook-api (HTTP 403); https://pitchbook.com/contact (HTTP 403); https://docs.pitchbook.com/ (ConnectError: [Errno -2] Name or service not known); https://developer.pitchbook.com/ (ConnectError: [Errno -2] Name or service not known); https://developers.pitchbook.com/ (ConnectError: [Errno -2] Name or service not known)"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "no",
+      "reasoning": "No reachable public API documentation, so an outside developer has no documented way in. Not a judgement about the API's quality \u2014 nothing was readable to judge."
+    },
+    "evidence": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:53:55.657021+00:00"
+}

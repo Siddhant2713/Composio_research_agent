@@ -1,0 +1,324 @@
+===== https://www.usepylon.com/
+TITLE: Pylon: Agentic B2B Support
+ACCESSED: 2026-09-27
+
+Pylon: Agentic B2B Support
+The Agentic Support Platform
+Support at
+Lightspeed
+Pylon lets humans and agents collaborate on customer work —investigating, resolving, and acting on every signal.
+Book a demo
+View walkthrough
+Trusted by 1,500+ B2B customers globally
+Stop doing the work.
+Start directing agents.
+Pylon investigates every issue before your team opens it. Direct agents to dig deeper, check other systems, and handle follow-up work while your team focuses on judgment.
+Assist Agent
+Your personal AI operator. Ask it to investigate, use your tools, take action, or delegate work to external agents.
+Background Agent
+Specialized agents that run skills automatically when triggered, then post their work back into the issue.
+Slack Agent
+Ask questions and take action from Slack using the same customer context, tools, and permissions available in Pylon.
+Support Agent
+Resolve customer questions automatically across every channel, bringing in humans when judgment is needed.
+Skills
+Teach agents how your team works with reusable instructions for investigating, resolving, and taking action.
+Turn raw customer data into usable intelligence.
+Build support, account, and product intelligence across conversations, CRM, product usage, logs, and code, then make it available via MCP to your agents and team.
+Book a demo
+Slack
+Channel
+Microsoft Teams
+Channel
+Phone
+Channel
+Email
+Channel
+Whatsapp
+Channel
+Telegram
+Channel
+Discord
+Channel
+Notion
+Knowledge Base
+Salesforce
+Crm
+Hubspot
+Crm
+Gong
+Call Recorder
+Snowflake
+DATA WAREHOUSE
+BigQuery
+DATA WAREHOUSE
+Linear
+Issue Tracking
+Jira
+Issue Tracking
+Confluence
+Knowledge Base
+Claude
+LLM
+ChatGPT
+LLM
+Cursor
+CODE CONTEXT
+MCP
+MODEL CONTEXT PROTOCOL
+PostHog
+PRODUCT ANALYTICS
+Mixpanel
+PRODUCT ANALYTICS
+LaunchDarkly
+FEATURE FLAGS
+"Pylon’s AI agents handle the repetitive work that used to consume my day, so I can spend more time on the work that actually needs me."
+Mike Sholkov
+Head of Support Engineering at Cognition
+The latest from Pylon
+Guides, playbooks, and product deep dives from the team building Pylon — plus lessons from the teams who use it.
+View Resource Center
+EBOOKS
+How Pylon adopted Agentic Support
+This is some text inside of a div block.
+August 25, 2026
+Reports
+The agent that talks can't look. The agent that looks can't talk.
+Fred Zhao
+September 10, 2026
+Reports
+Categorize what your AI can't do
+Fred Zhao
+September 1, 2026
+Go Agentic.
+Pylon Workforce Management is available now. See it in action with a live demo.
+Pylon is the only agentic support platform purpose-built for B2B.
+Button Text
+
+===== https://docs.usepylon.com/pylon-docs
+TITLE: Introduction | Pylon
+ACCESSED: 2026-09-27
+
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Pylon is the first agentic support platform built for B2B.
+Track customer issues across any channel (Slack Connect, Email, Microsoft Teams, Chat Widget, Forms, ...) and orchestrate agents to investigate and act on your customer issues.
+What is Agentic Support?
+It's a new way of working, where instead of doing the work yourself - finding the right article in the docs, opening a new tab to write a SQL query to check logs, finding an old slack thread with a workaround - you direct agents to do the work for you.
+This means support teams become agent builders and orchestrators - building agents and nudging them along on tickets while the agents learn how it is that you solve ever ticket and get better and faster each interaction. It's your judgement and direction, with the tedious work handed off to agents.
+Assist Agent
+Background Agents
+Skills
+Connectors
+Support Agent
+Omnichannel Support
+Customer Portal
+Chat Widget
+Triggers
+Account Intelligence
+Product Intelligence
+Reporting & Analytics
+Broadcasts
+API
+Next
+Quick Start
+Last updated
+1 month ago
+Was this helpful?
+
+===== https://www.usepylon.com/schedule-demo
+TITLE: Book a Demo | Pylon
+ACCESSED: 2026-09-27
+
+Book a Demo | Pylon
+See how agents handle the investigative work behind B2B support, while your team stays in control.
+Fill in the form and unlock your booking time
+Trusted by 1,500+ customers globally
+The Agentic
+Support Platform
+
+===== https://docs.usepylon.com/pylon-docs/developer/api/api-reference
+TITLE: API reference | Pylon
+ACCESSED: 2026-09-27
+
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Accounts
+Activities
+Attachments
+Audit Logs
+Call Recordings
+Contacts
+Custom Fields
+Custom Objects
+Email
+Feature Requests
+Issues
+Knowledge Base
+Macros
+Me
+Messages
+Surveys
+Tags
+Tasks & Projects
+Teams
+Ticket Forms
+Training Data
+User roles
+Users
+Previous
+Errors
+Next
+Accounts
+Last updated
+3 months ago
+Was this helpful?
+
+===== https://www.usepylon.com/competitors/salesforce
+TITLE: Pylon vs Salesforce Service Cloud for B2B Support
+ACCESSED: 2026-09-27
+
+Pylon vs Salesforce Service Cloud for B2B Support
+Pylon vs. Salesforce
+Salesforce wasn’t built for AI. Pylon was.
+Salesforce Service Cloud gives enterprises a powerful platform for CRM, service, automation, and customer engagement. But Agentforce is only as useful as the data, workflows, and actions your Salesforce team configures around it.
+Pylon gives B2B support teams agents that investigate, coordinate, and act with the customer’s account, product, and support context already loaded. Your team directs the work instead of waiting on another Salesforce project.
+Trusted by 1,500+ B2B customers globally
+300+
+Migrations from other platforms
+100%
+Success rate, with 90% of migrations finished in under two months
+B2B-first
+The only agentic support platform purpose-built for B2B
+‍
+Start with the investigation already done
+Agentforce Service Agent can process cases, answer questions, and take configured actions. Pylon’s Background Agents begin the internal investigation as soon as the right support signal occurs.
+They gather account context, investigate connected systems, find related issues, and run the right Skills before a human opens the ticket. Your team starts with evidence and recommended next steps instead of another case to read and research.
+Give agents context beyond the CRM
+Salesforce has deep CRM context. Companies with mature Salesforce data models can give Agentforce access to accounts, contracts, entitlements, case history, knowledge, and other connected records.
+Pylon combines Salesforce data with conversations, Slack history, product usage, logs, engineering systems, and completed investigations. That raw data builds standing Account, Support, and Product Intelligence that agents use to investigate and act, not just generate a response.
+Turn support processes into Skills your team can own
+Salesforce supports natural-language instructions alongside subagents, actions, Flow, Apex, permissions, and other platform controls. That flexibility is powerful, but production changes can depend on Salesforce admins, RevOps, IT, or developers.
+Pylon Skills combine instructions, context, tools, permissions, and approval steps in plain language. The same Skill can be used by Assist Agent, Background Agents, Support Agent, or a person. The support team can run, review, and improve the process directly.
+Ready to go agentic?
+Join 1,500+ B2B companies who have empraced the new way of working.
+Book a demo
+Autonomous issue resolution
+Human-assist agent
+Pre-investigation before a human arrives
+Customer-facing Slack support
+Reusable agent procedures
+Account context in agent decisions
+Standing B2B Account Intelligence
+Natural-language agent configuration
+Backtest agent configurations before deployment
+Connect agents to custom tools
+Self-improving context store
+Enterprise contact center
+“Maintaining our growth trajectory on Service Cloud would have required doubling our support team. In the age of AI and automation, that doesn’t make sense.”
+Tatiana Meduna
+Head of Business Operations at Findigs
+The next generation runs on Pylon
+How Findigs replaced Salesforce Service Cloud and prevented 2x headcount growth
+Frequently asked questions
+What is the difference between Pylon and Salesforce Service Cloud?
+Salesforce Service Cloud is an enterprise CRM extension that is powerful for teams already deep in the Salesforce ecosystem, but complex to configure, slow to implement, and not built around the channels B2B customers use today like Slack, Teams, and Discord. Pylon is a purpose-built agentic support platform that is live in weeks, not months.
+‍
+Pylon is an agentic support platform built for complex B2B work. Its agents use Support, Account, and Product Intelligence to gather context, investigate issues, coordinate across systems, and act while humans direct and review the work.
+Is Pylon a good fit for teams that use Salesforce?
+Yes. Pylon can use Salesforce as the CRM and system of record while giving the support team a separate system for conversations, investigations, account context, and agent workflows.
+‍
+Relevant Salesforce data becomes part of Account Intelligence alongside context from Slack, email, product usage, logs, engineering systems, and prior support work.
+How does Pylon’s AI compare with Agentforce?
+Both platforms offer customer-facing resolution, interactive assistance, natural-language configuration, testing, and connections to external tools.
+‍
+The difference is the operating model and context behind the agents. Agentforce uses Salesforce data, knowledge, workflows, and configured actions. Pylon’s agents use standing B2B account, product, and support intelligence. Background Agents also begin investigating before a person opens the issue.
+Can Agentforce use data outside Salesforce?
+Yes. Salesforce can connect Agentforce to external data and tools through Data 360, integrations, APIs, MuleSoft, and MCP.
+‍
+Pylo
+
+===== https://www.usepylon.com/integrations/salesforce
+TITLE: Salesforce Integration | Pylon
+ACCESSED: 2026-09-27
+
+Salesforce Integration | Pylon
+Salesforce
+Sync customer context between Salesforce and Pylon automatically.
+Trusted by 1,500+ B2B customers globally
+Why teams use it
+Deploy AI agents that handle questions end-to-end, gather context for your team, and escalate to humans when it matters.
+Keep accounts and contacts in sync automatically
+Pylon matches Salesforce and Pylon accounts by domain and name (or custom fields), and automatically adds new contacts from customer channels to the right Salesforce Account. Synced fields flow both ways, so they're usable in Pylon views, triggers, and macros.
+See the full customer story without switching tabs
+Every day, Pylon summarizes customer conversations with AI and syncs them to the relevant Salesforce Account. Then it surfaces details right in the Issue sidebar while you work.
+Launch customer channels straight from Salesforce
+Click "Create Slack Channel" from Salesforce to spin up a named channel, auto-invite all Opportunity Contact Roles, enable Pylon, and send your configured welcome message to invitees — all in one action.
+Target work and outreach using Salesforce data
+Filter and view Issues by any Salesforce attribute, and filter Broadcasts to reach customers based on data stored in Salesforce.
+How to install
+Step 1
+Open the Salesforce integration
+From the App Directory in your Pylon dashboard, click into the Salesforce integration to view and follow the setup instructions.
+Frequently asked questions
+How do I connect Salesforce to Pylon?
+Navigate to the App Directory from your Pylon dashboard and click on the Salesforce integration to follow the setup instructions. Accounts are mapped using domain and name matching between Salesforce and Pylon by default,  though the integration can also be configured to match on custom Pylon account fields.
+What data syncs between Salesforce and Pylon?
+The Salesforce integration is bidirectional. Pylon scans your customer channels daily and uses AI to summarize conversations, syncing those summaries to the relevant Account in Salesforce. You can also sync fields either from Pylon to Salesforce or from Salesforce to Pylon. Synced fields are then available across all Pylon features like filters in views, triggers, and macros. New contacts who join a channel are also automatically added to Salesforce and linked to the relevant Account.
+Can I create Slack channels for customers directly from Salesforce?
+Yes. Pylon's Salesforce widget lets you click "Create Slack Channel" from within a Salesforce record, name the channel, and Pylon will automatically handle the rest, including channel setup and customer onboarding. You can also send Broadcasts to customer segments based on Salesforce data or filter Pylon issues by any Salesforce attribute
+How often does Pylon sync data with Salesforce?
+Pylon matches accounts using domain and name by default, with account mappings viewable and updatable in the Account Mapping tab. Syncing occurs several times a day, pulling defined attributes from Salesforce into the respective Pylon objects.
+Can I send customer Broadcasts based on Salesforce data?
+Yes. You can send a Broadcast to a set of customers based on data stored in Salesforce, and you can view and filter Pylon Issues by any attributes from Salesforce.  Salesforce fields synced into Pylon are available as filters across Views, Triggers, and Macros throughout the platform.
+Other integrations
+Pylon connects with the tools your team lives in — Slack, email, CRMs, ticketing systems,and more. Meet your customers where they are and streamline every support workflow.
+Telegram
+Receive and respond to customer messages from Telegram
+Slack
+Manage B2B support directly in Slack channels alongside your team.
+Granola
+Connect Pylon to Granola to ingest call recordings
+Outlook Calendar
+Sync Outlook Calendar meetings to customer records in Pylon
+Google Meet
+Automatically capture and log Google Meet call notes to Pylon
+Incident.io
+Automcatically link active incidents to affected customer conversations.
+Redshift
+Enrich customer records with usage data from Amazon Redshift.
+Shortcut
+Create Shortcut stories from customer conversations automatically
+PagerDuty
+Trigger PagerDuty incidents from critical customer-reported issues.
+
+===== https://docs.usepylon.com/pylon-docs/getting-started/pylonboarding
+TITLE: Pylonboarding | Pylon
+ACCESSED: 2026-09-27
+
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Welcome to Pylonboarding!
+We’re excited to help you get up and running with Pylon. Below, you’ll find a series of step-by-step guides grouped by core features and advanced workflows. Whether you’re setting up the basics or exploring automation, you’ll find everything you need to get the most out of Pylon.
+Before you jump into this, be sure you have
+checked the Implementation guide
+to make sure you have all of your channels connected
+Getting Started
+Issue Views
+Teams
+Account Intelligence
+Knowledge Base
+Chat Widget
+SLAs
+Last updated
+7 months ago
+Was this helpful?

@@ -1,0 +1,185 @@
+{
+  "app": "HubSpot",
+  "number": 2,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T11:26:38.415181+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.hubspot.com\",\n    \"https://developers.hubspot.com/docs\",\n    \"https://developers.hubspot.com/docs/api/overview\",\n    \"https://developers.hubspot.com/get-started\",\n    \"https://developers.hubspot.com/docs/api/working-with-oauth\",\n    \"https://developers.hubspot.com/docs/api/oauth-quickstart-guide\",\n    \"https://developers.hubspot.com/docs/api/creating-an-app\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash",
+  "candidates_considered": [
+    "https://hubspot.com",
+    "https://developers.hubspot.com",
+    "https://developers.hubspot.com/docs",
+    "https://developers.hubspot.com/docs/api/overview",
+    "https://developers.hubspot.com/get-started",
+    "https://developers.hubspot.com/docs/api/working-with-oauth",
+    "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+    "https://developers.hubspot.com/docs/api/creating-an-app",
+    "https://docs.hubspot.com/",
+    "https://developer.hubspot.com/",
+    "https://api.hubspot.com/",
+    "https://hubspot.com/docs",
+    "https://hubspot.com/developers",
+    "https://hubspot.com/api",
+    "https://hubspot.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.hubspot.com/products/sales",
+    "https://offers.hubspot.com/contact-sales",
+    "https://www.hubspot.com/partners",
+    "https://www.hubspot.com/partners/app",
+    "https://www.hubspot.com/products/data",
+    "https://www.hubspot.com/company/contact",
+    "https://developers.hubspot.com/developer-content-sign-up",
+    "https://app.hubspot.com/signup-hubspot/crm?intent=developer",
+    "https://developers.hubspot.com/docs/api-reference/2026-03/overview",
+    "https://developers.hubspot.com/docs/api-reference/legacy/authentication/oauth-tokens/v1/guide",
+    "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/scopes",
+    "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+    "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide",
+    "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+    "https://developers.hubspot.com/docs/api-reference/latest/webhooks",
+    "https://developers.hubspot.com/docs/api-reference/legacy/crm/extensions/timeline/guide",
+    "https://developers.hubspot.com/docs/api-reference/legacy/crm/extensions/crm-cards/guide",
+    "https://developers.hubspot.com/docs/api-reference/latest/crm/extensions/crm-cards/guide"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://www.hubspot.com/",
+      "requested_url": "https://hubspot.com",
+      "status": 200,
+      "title": "HubSpot | Software & Tools for your Business - Homepage",
+      "chars": 3804,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com",
+      "requested_url": "https://developers.hubspot.com",
+      "status": 200,
+      "title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "chars": 3665,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs",
+      "requested_url": "https://developers.hubspot.com/docs",
+      "status": 200,
+      "title": "HubSpot Developer Documentation - HubSpot docs",
+      "chars": 866,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "requested_url": "https://developers.hubspot.com/docs/api/overview",
+      "status": 200,
+      "title": "2026-09 API reference - HubSpot docs",
+      "chars": 1043,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com/",
+      "requested_url": "https://developers.hubspot.com/get-started",
+      "status": 200,
+      "title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "chars": 3665,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth",
+      "requested_url": "https://developers.hubspot.com/docs/api/working-with-oauth",
+      "status": 200,
+      "title": "Working with OAuth - HubSpot docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/oauth-quickstart-guide",
+      "requested_url": "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+      "status": 200,
+      "title": "Working with OAuth | OAuth Quickstart Guide - HubSpot docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/public-apps/overview",
+      "requested_url": "https://developers.hubspot.com/docs/api/creating-an-app",
+      "status": 200,
+      "title": "Legacy public apps - HubSpot docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.hubspot.com/products/sales",
+      "requested_url": "https://www.hubspot.com/products/sales",
+      "status": 200,
+      "title": "AI Sales Software for Pipeline & Closed Deals | HubSpot",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://offers.hubspot.com/contact-sales",
+      "requested_url": "https://offers.hubspot.com/contact-sales",
+      "status": 200,
+      "title": "Contact Sales | HubSpot's Software",
+      "chars": 1614,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"HubSpot's public developer platform API, which uses REST endpoints and OAuth2 authentication.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"HubSpot supports the OAuth 2.0 Authorization Code grant type for public apps. Access tokens are used to authenticate API calls, and refresh tokens are used to generate new access tokens.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a developer account, create an app, and use a test account or free HubSpot account to build and test integrations without requiring manual approval or sales contact.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"The API is REST-based with date-based versioning. Webhooks are supported for subscribing to changes.\"\n  },\n  \"mcp\": null,\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"HubSpot offers self-serve developer accounts, free test accounts, and standard OAuth 2.0 REST APIs, making it easy for external developers to build integrations.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.hubspot.com/docs/apps/legacy-apps/authentication/oauth-quickstart-guide\",\n      \"claim\": \"To use OAuth, developers need a developer account, an app, and a HubSpot account (which can be a test account).\"\n    },\n    {\n      \"url\": \"https://developers.hubspot.com/docs/api-reference/latest/overview\",\n      \"claim\": \"HubSpot APIs use REST endpoints with date-based versioning (e.g., GET /crm/objects/2026-09/contacts).\"\n    },\n    {\n      \"url\": \"https://developers.hubspot.com/docs/apps/legacy-apps/public-apps/overview\",\n      \"claim\": \"Public apps require authentication via OAuth and can subscribe to changes using webhooks.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash",
+  "record": {
+    "number": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint_url": "https://hubspot.com",
+    "one_liner": "HubSpot's public developer platform API, which uses REST endpoints and OAuth2 authentication.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "HubSpot supports the OAuth 2.0 Authorization Code grant type for public apps. Access tokens are used to authenticate API calls, and refresh tokens are used to generate new access tokens."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a developer account, create an app, and use a test account or free HubSpot account to build and test integrations without requiring manual approval or sales contact."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "The API is REST-based with date-based versioning. Webhooks are supported for subscribing to changes."
+    },
+    "mcp": null,
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "HubSpot offers self-serve developer accounts, free test accounts, and standard OAuth 2.0 REST APIs, making it easy for external developers to build integrations."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/oauth-quickstart-guide",
+        "claim": "To use OAuth, developers need a developer account, an app, and a HubSpot account (which can be a test account).",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "claim": "HubSpot APIs use REST endpoints with date-based versioning (e.g., GET /crm/objects/2026-09/contacts).",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/public-apps/overview",
+        "claim": "Public apps require authentication via OAuth and can subscribe to changes using webhooks.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T11:29:29.993487+00:00"
+}

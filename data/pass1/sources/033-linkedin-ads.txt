@@ -1,0 +1,913 @@
+===== https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09
+TITLE: LinkedIn Marketing API Program - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+LinkedIn Marketing API Program
+The LinkedIn Marketing Platform helps businesses grow by building technology to reach, engage, and convert professional audiences at scale. The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.
+Quickstart
+Quick Start
+Overview
+Getting API Access
+How-To Guide
+Authentication
+How-To Guide
+API Versioning
+Overview
+Data Storage Requirements
+What's new
+What's New
+LinkedIn Marketing APIs
+Advertising
+With Advertising APIs, streamline your campaign management, audience targeting, and track performance to optimize  advertising efforts.
+Campaign Management
+Integration Requirements - Advertising API
+Reporting and Analytics
+Integration Requirements - Reporting
+Event Management
+Streamline event operations, amplify visibility, and drive meaningful connections within the professional landscape with Events APIs (Management & Ads).
+Overview
+Events
+Event Management API Usecases
+Integration Requirements
+Community Management
+Efficiently manage and engage with their LinkedIn communities, enhancing social media presence and interactions on the platform.
+Overview
+Page Access Management
+Page and Content Analysis
+Shares & Social Stream
+Monitor Mentions of Your Brand
+Mention a Member or a Brand
+Integration Requirements
+Lead Sync
+Seamlessly synchronize lead data captured through LinkedIn Lead Gen Forms with customer relationship management (CRM) systems and simplify lead management and follow-up processes.
+Overview
+Lead Sync
+Lead Sync API Use Cases
+Integration Requirements
+Matched Audiences
+Reach specific audiences by uploading contact lists, website retargeting, or utilizing account targeting for more precise Ad campaigns on the platform.
+Overview
+DMP Segments
+DMP Segment Users
+DMP Segment Destinations
+DMP Segment Companies
+DMP Segment List
+Website Retargeting
+Ad Segments
+Predictive Audiences
+Matched Audiences API Use Cases
+Integration Requirements
+Audience Insights
+Provides valuable data and analytics to advertisers, helping you better understand and target your audience on the platform for more effective and tailored marketing campaigns.
+Overview
+Audience Insights API
+Audience Insights API Use Cases
+Integration Requirements
+Media Planning
+Enables marketers to have a better understanding of investment delivery against valuable audiences and objectives
+Overview
+Media Planning API
+Manage Media Plans
+Media Planning API Use Cases
+Integration Requirements
+Conversions
+Securely and accurately track and measure the impact of their LinkedIn ad campaigns by sending conversion event data directly to LinkedIn, to help optimize your advertising efforts.
+Overview
+Conversions API
+Getting Access to Conversions API
+Deduplication
+Enabling Click IDs
+Google Tag Manager Server-Side Tagging
+Conversions API Payload Builder
+Use Cases - Conversions API
+Integration Requirements
+Company Intelligence
+Gain insights into company level data for all companies reached via LinkedIn with engagement score, paid impressions, paid clicks, leads, organic impressions, and organic engagements.
+Overview
+Company Intelligence API
+Integration Requirements
+Support and Developer Resources
+These resources can help you stay on top of new features, developer portal access, migrations, and deprecations.
+Migrations
+Stay on top of breaking changes related to migration.
+Developer Portal
+Stay on top of the developer offerings though our portal.
+Developer Blog
+Stay on top of the latest feature updates via available on our blog post.
+Support
+Refer to LinkedIn API Partner Support for how to reach Developer Support.
+
+===== https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication
+TITLE: Authenticating with OAuth 2.0 Overview - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+Overview
+The LinkedIn API uses
+OAuth 2.0
+for member (user) authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to LinkedIn member data.
+There are two types of Authorization Flows available:
+Member Authorization (3-legged OAuth)
+Application Authorization (2-legged OAuth)
+Depending on the type of permissions your integration will require, follow one of the authorization flows to get started.
+There are several third-party libraries in the open source community which abstract the OAuth 2.0 authentication process in every major programming language.
+LinkedIn does not support TLS 1.0.
+Member Authorization (3-legged OAuth Flow)
+The Member Authorization grants permissions to your application by a LinkedIn member to access the member’s resources on LinkedIn. Your application has no access to these resources without member approval. The Member Auth uses the 3-legged OAuth code flow. For step-by-step instructions on how to implement 3-legged OAuth, see
+Authorization Code Flow (3-legged OAuth)
+page.
+Tip
+When to use 3-legged OAuth
+Use this flow if you are requesting access to a member's account to use their data and make requests on their behalf. This is the most commonly used permission type across LinkedIn APIs. Open permissions available to all applications are of this type such as
+r_liteprofile
+,
+r_emailaddress
+, and
+w_member_social
+Member Auth Permissions
+Member Authorization Permissions
+are granted by a LinkedIn member to access members resources on LinkedIn. Permissions are authorization consents to access LinkedIn resources. The LinkedIn platform uses permissions to protect and prevent abuse of member data. Your application must have the appropriate permissions before it can access data. To see the list of permissions, descriptions and access details, refer to
+Getting Access to LinkedIn APIs
+page.
+Application Authorization (2-legged OAuth Client Credential Flow)
+Application Authorization or using 2-Legged OAuth grants permissions to your application to access protected LinkedIn resources. If you are accessing APIs that are not member specific, use this flow. Not all APIs support Application Authorization. For example, Marketing APIs you must use Member Authorization explained above. For step-by-step instructions on how to implement 2-legged OAuth, see
+Client Credential Flow (2-legged OAuth)
+page.
+Always request the minimal permission scopes necessary for your use case.
+Application Auth Permissions
+Application Authorization Permissions are granted to applications to access LinkedIn protected resources. To see the list of permissions, descriptions and access details, refer to
+Getting Access to LinkedIn APIs
+page.
+Sample Application
+You can explore the
+OAuth Sample Applications
+that enables you to try out RESTful OAuth calls to the LinkedIn Authentication server. The sample app is available in Java.
+Additionally, you can also explore the
+Marketing Sample Application
+Additional resources
+
+===== https://developer.linkedin.com/
+TITLE: LinkedIn Developer Solutions
+ACCESSED: 2026-09-27
+
+Unlock Trust and Engagement with Verified on LinkedIn
+Unlock powerful verification insights to better understand your users and strengthen trust across your platform with Verified on LinkedIn. Seamlessly integrate our API to authenticate users...
+Learn more
+Q3, 2025 Partner Product Showcase: Measure impact...
+Discover LinkedIn’s latest Q3 API innovation: the Company Intelligence API. Now generally available, it gives partners the ability to surface company-level engagement signals, i...
+Learn more
+Q2, 2025 Partner Product Showcase: Data to Decisions...
+Explore LinkedIn’s latest API innovations from Q2, including enhanced measurement tools, predictive targeting, and new engagement insights—built to help partners deliver smarter...
+Learn more
+dismiss
+
+===== https://learn.microsoft.com/en-us/
+TITLE: Microsoft Learn: Build with answers in reach
+ACCESSED: 2026-09-27
+
+Build with answers in reach
+Dive into official documentation, practical answers, and expert guidance for working and troubleshooting with Microsoft.
+Popular technical resources and training
+Discover AI, Azure, and Copilot essentials
+Develop knowledge and skills faster with the latest resources and expert insights.
+Artificial Intelligence
+Azure
+Microsoft Copilot
+Take in-demand training
+Advance your technical career with training and verified credentials.
+Microsoft Azure Fundamentals
+Fundamentals of Generative AI
+Microsoft Azure Fundamentals: Describe cloud concepts
+Additional resources
+Ask our developer community tech questions or gain applied skills and verified certifications.
+Ask a question
+Join our Q&A tech community to ask questions, share knowledge, and learn together.
+Earn credentials
+Explore credentials including real-world, scenario-based skills and verified, industry-recognized credentials.
+Get student certifications
+Stand out to hiring managers with a Microsoft Certification and take exams at a discounted student price.
+Get started with Microsoft Learn MCP Server
+Create a custom agent that uses Learn MCP Server to answer all its users' questions with trusted Microsoft documentation.
+Start building
+
+===== https://developer.microsoft.com/en-us/
+TITLE: Microsoft Developer
+ACCESSED: 2026-09-27
+
+Azure
+GitHub
+Microsoft 365
+Visual Studio
+Windows
+Previous
+Next
+Build in the Cloud
+Turn your ideas into solutions with Microsoft cloud services. Visit the Azure Developers Hub to learn how to build how you want and deploy where you want.
+Go to the Azure Developer Hub
+Documentation
+Learn how to build and manage powerful applications using Microsoft Azure cloud services.
+Visit docs
+Code samples
+Filter thousands of Azure code samples by language to find what you need.
+Explore code
+Build with the latest from GitHub
+Get product news, engineering insights, and practical guidance from the teams shaping modern software development.
+Read the GitHub blog
+Documentation
+Find guides, tutorials, and best practices to help you build faster, collaborate better, and ship with confidence.
+Visit docs
+GitHub skills
+Learn how to use GitHub with interactive courses designed for beginners and experts.
+Explore courses
+Gain full access to productivity tools
+Get exclusive resources and community support for building people-centric, cross-platform productivity experiences that extend Microsoft 365.
+Go to the Developer Program
+Documentation
+Learn how to build a collaborative app or extend your Microsoft 365 app.
+Visit docs
+Code samples
+Get hands-on with Microsoft 365 code samples and start building applications today.
+Explore code
+Code faster, work smarter with Visual Studio
+Build any type of application. Work together in real time. Diagnose and stop problems before they happen. Use your favorite language to deliver apps and services on any platform, any device.
+Go to the Visual Studio home page
+Documentation
+Learn how to use Visual Studio Code and code faster with AI.
+Visit docs
+Code samples
+Filter thousands of VS Code code samples by language to find what you need.
+Explore code
+Develop for the desktop with Windows
+Build experiences that reach users everywhere. The Windows Dev Center can show you how.
+Go to the Windows Dev Center
+Documentation
+Learn how to design, develop, and deploy apps and solutions for Windows PCs and other devices.
+Visit docs
+Code samples
+Filter thousands of samples by language to find what you need.
+Explore code
+See the changelog
+Skip carousel Discover what's new
+Previous slide
+Next slide
+Stacked pull requests are now in public preview
+Stacked pull requests break large changes into small, reviewable pull requests. With stacks, you can independently review and check each pull request, then merge everything together in one click.
+Read more
+Improving token efficiency for GitHub Copilot in VS Code
+With the recent move to usage-based billing for GitHub Copilot, every token in an agentic session matters. Making the agentic harness more token-efficient is ongoing work, and we'll keep investing, one small win at a time.
+Read more
+Visual Studio July Update — Meet the New Agent, Powered by the GitHub Copilot SDK
+The best AI assistance is the kind you can steer, understand, and rely on. The July update is built around all three. There's a new Agent (Preview) in Copilot Chat and new built-in .NET and Azure skills.
+Read more
+Back to carousel navigation controls
+Skip carousel Communities
+Previous slide
+Next slide
+Microsoft Developer Communities
+Connect with fellow developers, attend a local user group, find resources to get you started, and discover what's happening in the community.
+Connect
+Azure Tech Groups
+Join our Azure tech groups to connect with fellow developers and stay updated on the latest advancements.
+Join
+Cloud advocates
+Engage and learn from Microsoft's Cloud advocates about Microsoft Cloud + AI platform.
+Learn
+Microsoft Reactor
+Microsoft Reactor connects you with the developers and startups that share your goals.
+Explore
+VS Code
+Enhance your coding experience with AI-powered features in Visual Studio Code.
+Create
+.NET
+Connect with millions of developers and stay updated on the latest .NET advancements.
+Connect
+GitHub
+Join the GitHub Community to ask questions, get answers, and share your expertise with fellow developers.
+Join
+Global AI
+Our mission is to empower every person and every organization on the planet to achieve more.
+Participate
+Back to carousel navigation controls
+AI
+From community to hands-on labs, learn your way and skill up for what's next in AI.
+Start today
+Build APIs
+Unlock new development opportunities and resources with APIs.
+Get building
+Game development
+Create bold, immersive game experiences that attract and engage players.
+Game on
+More blogs
+Gregg Cochran
+•
+August 27, 2026
+OpenClaw went viral. Meet the maintainers building and securing it.
+OpenClaw is the fastest-growing project in GitHub history. Some of its maintainers share what they learned in the project's first six months.
+Hannia Valera
+•
+September 25, 2026
+Visual Studio Code CMake Tools 1.24
+Zachary Teutsch
+•
+September 25, 2026
+WinAppCLI v0.7.0 - Windows Sandbox automation, Native AOT support, single-file applications, and more
+Daniel Roth
+•
+September 25, 2026
+AG-UI Protocol now has a first-class .NET SDK
+More community events
+Skip 
+
+===== https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-09&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json
+TITLE: LinkedIn 3-Legged OAuth Flow - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+Authorization Code Flow (3-legged OAuth)
+The Authorization Code Flow is used for applications to request permission from a LinkedIn member to access their account data. The level of access or profile detail is explicitly requested using the
+scope
+parameter during the
+authorization
+process outlined below. This workflow will send a consent prompt to a selected member, and once approved your application may begin making API calls on behalf of that member.
+This approval process ensures that LinkedIn members are aware of what level of detail an application may access or action it may perform on their behalf.
+If multiple scopes are requested, the user must consent to all of them and may not select the individual scopes. For the benefit of your LinkedIn users, please ensure that your application requests the least number of scope permissions.
+Generate a Token Manually Using the LinkedIn Developer Portal
+The LinkedIn Developer Portal has a token generator for manually creating tokens. Visit the
+LinkedIn Developer Portal Token Generator
+or follow the steps outlined in
+LinkedIn Developer Portal Tools.
+Authorization Code Flow
+Configure your application in the Developer Portal to obtain
+Client ID
+and
+Client Secret
+Your application directs the browser to LinkedIn's OAuth 2.0 authorization page where the member authenticates.
+After authentication, LinkedIn's authorization server passes an authorization code to your application.
+Your application sends this code to LinkedIn and LinkedIn returns an access token.
+Your application uses this token to make API calls on behalf of the member.
+How to Implement 3-legged OAuth
+Follow the steps given below to implement the 3-legged OAuth for LinkedIn APIs:
+Prerequisites
+A LinkedIn Developer application to
+create a new application
+select your existing application
+Prior authorization access granted for at least one 3-legged OAuth permission.
+The permission request workflow is outlined in the
+Getting Access
+section.
+Step 1: Configure Your Application
+Select your application in the
+LinkedIn Developer Portal
+Click the
+Auth
+tab to view your application credentials.
+Add the redirect (callback) URL via
+HTTPS
+to your server.
+LinkedIn servers will only communicate with URLs that you have identified as trusted.
+URLs must be absolute:
+https://dev.example.com/auth/linkedin/callback
+not
+/auth/linkedin/callback
+Parameters are ignored:
+https://dev.example.com/auth/linkedin/callback?id=1
+will be
+https://dev.example.com/auth/linkedin/callback
+URLs cannot include a #
+https://dev.example.com/auth/linkedin/callback#linkedin
+is invalid.
+If you are using Postman to test this flow, use
+https://oauth.pstmn.io/v1/callback
+as your redirect URL and enable
+Authorize using browser
+Each application is assigned a unique
+Client ID
+(Consumer key/API key) and
+Client Secret
+. Please make a note of these values as they will be integrated into your application. Your
+Client Secret
+protects your application's security so be sure to keep it secure!
+Warning
+Do not share your
+Client Secret
+value with anyone, and
+do not
+pass it in the URL when making API calls, or URI query-string parameters, or post in support forums, chat, etc.
+Step 2: Request an Authorization Code
+To request an authorization code, you must direct the member's browser to LinkedIn's OAuth 2.0 authorization page, where the member either accepts or denies your application's permission request. The user may first be asked to log in to LinkedIn, either by entering their LinkedIn credentials or by using one of LinkedIn’s supported login methods (such as "Sign in with Google", "Sign in with Apple", or passkey). All authentication is performed securely on LinkedIn's domain.
+Important
+Social login (Google/Apple) and passkey login are currently supported on desktop and Android web browsers only. To enable these login options on other platforms (such as native apps), include the query parameter
+enable_extended_login=true
+while calling
+/oauth/v2/authorization
+. To ensure the login options work seamlessly, please follow the
+standard OAuth specification
+when invoking OAuth. If you want to opt out from the new login option submit a
+Developer Support
+request to the LinkedIn support team.
+Once the request is made, one of the following occurs:
+If it is a first-time request, the permission request timed out, or was manually revoked by the member: the browser is redirected to LinkedIn's authorization consent window.
+If there is an existing permission grant from the member: the authorization screen is bypassed and the member is immediately redirected to the URL provided in the
+redirect_uri
+query parameter.
+When the member completes the authorization process, the browser is redirected to the URL provided in the
+redirect_uri
+query parameter.
+If 
+
+===== https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09
+TITLE: Quick Start - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+Quick Start
+Warning
+Deprecation Notice:
+The Marketing Version 202510 (Marketing October 2025) will be sunset on October 15, 2026. We recommend that you migrate to the latest
+versioned APIs
+to avoid disruptions. For information on all the supported versions, refer to the
+migrations
+documentation.
+If you haven’t yet migrated and have questions, submit a request on the
+LinkedIn Developer Support Portal
+Use this quick start guide to begin working with the LinkedIn APIs. Refer to the following steps to get started:
+Apply
+for API access.
+Get started with the
+Advertising API
+Get started with the
+Community Management
+Get started with the
+Lead Sync API
+Get started with the
+Conversions API
+Get started with the
+Events Management API
+Get started with the
+Matched Audiences API
+Learn about the
+tools
+to manage your app.
+Step 1: Apply for API Access
+Create a
+LinkedIn Page
+Create a
+developer application
+in the Developer Portal.
+Review our
+API and data restrictions
+to ensure your use case is supported and your application is not rejected due to a restricted use case.
+Apply
+to the desired API under the
+Products
+tab of your app.
+Complete the access form.
+Learn more about the application process for the
+Community Management API
+Learn more about the application process for the
+Lead Sync API
+Learn more about the application process for the
+Conversions API
+Learn more about the application process for the
+Matched Audiences API
+Step 2: Get Started with the Advertising API
+Generate an access token to make authenticated API calls for testing, either by using the
+Token Generator tool
+available on the Developer Portal or the
+LinkedIn Marketing Solutions Workspace
+on the Postman Network.
+Ensure you have the right permission based on your use case.
+Review the
+permissions available
+and confirm you have access to the required permissions in the Developer Portal under the Auth tab for your app.
+Validate the ad accounts a user can access.
+The
+/adAccountUsers
+endpoint provides methods to determine which members have access to specific ad accounts. Refer to the following links for specific examples.
+Find ad account users by ad accounts
+Find ad accounts by Authenticated User
+Get ad account user
+Additionally,
+/adAccountUsers
+can be used to grant, update, or revoke access to an ad account. This action must be performed using the token of a member who has either an
+ACCOUNT_BILLING_ADMIN
+ACCOUNT_MANAGER
+role.
+Grant Access
+Update Access
+Revoke Access
+To map the ad account ID(s) to your developer application in the Development tier, refer to the following steps:
+From the
+Campaign Manager
+tool, copy the nine-digit Ad
+Account ID
+Open the
+Developer Portal
+and select your application.
+From the
+Products
+tab, click
+View Ad Accounts
+Choose
+Add Ad Account
+, enter the Ad Account ID, and save the changes.
+Review the
+Tips to Get Started
+Check out the Advertising
+Use Case Guide
+to build your solution.
+After you build and test your application, apply for Standard tier access. To upgrade to
+Advertising API Standard tier
+, submit a tier upgrade request with a video demonstrating how your platform creates, edits, or optimizes LinkedIn campaigns.
+Step 3: Get Started with the Community Management API
+If you have an existing integration and need to migrate to the new API, check out the
+migration guide
+. If you are new to LinkedIn Marketing APIs, refer to the following steps:
+Generate an access token to make authenticated API calls for testing either through
+Token Generator tool
+available on the Developer Portal or the
+LinkedIn Marketing Solutions Workspace
+on the Postman Network.
+Ensure you have the right permission based on your use case.
+Review the
+permissions available
+and confirm access in the Developer Portal under the Auth tab for your app.
+Validate all LinkedIn Pages a user can access.
+The
+/organizationAcls
+endpoint has the following methods to determine which members have access to each company Page. Refer to the following links for specific examples:
+Find an Organization's Members
+Find a Member's Organizations
+Access to a Company Page cannot be granted or updated through the API. Please use the UI tool to grant, update, or remove access.
+Review the
+Tips to Get Started
+Check out the
+Community Management Use Case Guides
+to build your solution.
+Once you have built and tested your application, apply for Standard tier access.
+To upgrade to
+Community Management Standard tier
+, you need to complete a Standard tier access form, submit a screen recording of your app, and share test credentials for your app. Learn more on the
+Community Management App Review page
+Step 4: Get Started with the Lead Sync API
+If you have an existing integration and need to migrate to the new API, check out the migration guide. If you are n
+
+===== https://learn.microsoft.com/en-us/linkedin/marketing/media-planning/media-plan?view=li-lms-2026-09
+TITLE: Manage Media Plans - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+Manage Media Plans
+Warning
+Deprecation Notice:
+The Marketing Version 202510 (Marketing October 2025) will be sunset on October 15, 2026. We recommend that you migrate to the latest
+versioned APIs
+to avoid disruptions. For information on all the supported versions, refer to the
+migrations
+documentation.
+If you haven’t yet migrated and have questions, submit a request on the
+LinkedIn Developer Support Portal
+Overview
+Media Planners can utilize the
+/mediaPlan
+API to save and retrieve media plans within an advertising account, allowing them to reference previously created media plans.
+This is a private API that's available to qualified developers who meet additional criteria for access. To learn more about eligibility qualifications and how to request access, please see the
+FAQ
+. If you wish to apply for access, submit the
+application survey
+Permissions
+Permission
+Description
+rw_media_plans
+Manage an authenticated member's Media Plans. Can manage and read Media Plans. This permission belongs to the Media Planning API program and is not granted automatically as part of the LinkedIn Marketing API Program.
+Schema
+Field
+Type
+Description
+Required
+mediaPlanUrn
+URN
+The URN of the media plan.
+read-only
+Yes
+name
+string
+The name of the media plan.
+Yes
+createdAt
+timestamp
+The timestamp when the media plan was created.
+read-only
+Yes
+creator
+URN
+The URN of the creator of the media plan.
+read-only
+Yes
+sponsoredAccountUrn
+URN
+The sponsored ad account URN where the authenticated user has a valid ad account user role.
+Yes
+targetingCriteria
+targetingCriteria Object
+targetingCriteria Object defines the audience that the desired insights are for. This is a boolean expression of ad targeting facets and entities that identifies the member attributes to be included/excluded in the audience.
+Yes
+currencyCode
+string
+The currency units for the forecasting curve.
+Optional(default=
+USD
+)
+objectiveType
+string (Enum)
+The objective of your marketing campaign. Refer
+objectivetype
+Yes
+optimizationType
+string (Enum)
+The marketing results that you’re optimizing for.
+Optional (default=MAX_REACH for BRAND_AWARENESS objectiveType, default=MAX_VIDEO_VIEW for VIDEO_VIEW objective type, and default=MAX_LEAD for LEAD_GENERATION objective type)
+startDateOn
+Date
+The start date of the media plan.
+Optional (default=today’s date in UTC)
+endDateOn
+Date
+The end date of the media plan.
+Optional (default=
+90 days from today’s date in UTC
+)
+targetBudgetMicros
+long
+A specific budget that the caller is interested in. More metrics will be returned about this point. Note that this budget is represented in micros for precision ($1 USD = 1000000 micros)
+Optional (default=
+none
+)
+enableAudienceNetwork
+boolean
+The LinkedIn Audience Network status. (It’s enabled if true and disabled if false.)
+Optional (default=
+true
+)
+enableAudienceExpansion
+boolean
+The Audience Expansion status. (It’s enabled if true and disabled if false.)
+Optional (default=
+true
+)
+ctvOnly
+boolean
+Forecast for connected TV only campaigns if true. This only be supported if objective is BRAND_AWARENESS and enableAudienceNetwork is set to true.
+Optional (default=
+false
+)
+reachCurve
+ForecastMetrics
+The array of points along the reach curve. Will currently return 100 points and an additional point if an input targetBudget was provided. If we were illustrating the curve, budget would be on the x-axis and reach would be on the y-axis. Optional(returned only when action=REACH). The forecasted results are direction estimates and don’t guarantee the actual performance of campaigns.
+read-only
+Optional
+reachPercentageCurve
+ForecastMetrics
+object
+The array of points along the reach percentage curve. Will currently return 100 points and an additional point if an input targetBudget was provided. If we were illustrating the curve, budget would be on the x-axis and reach would be on the y-axis. Optional(returned only when action=REACH and enableAudienceExpansion=false). The forecasted results are direction estimates and don’t guarantee the actual performance of campaigns.
+read-only
+Optional
+impressionCurve
+ForecastMetrics
+object
+The array of points along the impressions curve. Will currently return 100 points and an additional point if an input targetBudget was provided. If we were illustrating the curve, budget would be on the x-axis and reach would be on the y-axis. Optional(returned only when action=IMPRESSION). The forecasted results are direction estimates and don’t guarantee the actual performance of campaigns.
+read-only
+Optional
+averageFrequency
+ForecastMetrics
+object
+Average Frequency is a single point value calculated by impression/reach assuming the single point budget in the request was used to forecast impression and reach results. It would be returned together with the impression cu
+
+===== https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09
+TITLE: Campaign Management Getting Started - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+Build an Ad Campaign
+Warning
+Deprecation Notice:
+The Marketing Version 202510 (Marketing October 2025) will be sunset on October 15, 2026. We recommend that you migrate to the latest
+versioned APIs
+to avoid disruptions. For information on all the supported versions, refer to the
+migrations
+documentation.
+If you haven’t yet migrated and have questions, submit a request on the
+LinkedIn Developer Support Portal
+OAuth 2.0 and Permission Scopes
+All LinkedIn API endpoints have access limitations called permission "Scopes", which define what your app can do on a user's behalf.
+OAuth 2.0 Scopes
+are a part of the authentication process and define USER ACCESS (r_basicprofile, r_ads, rw_ads) to LinkedIn PRODUCTS (Consumer, Marketing, Learning) and SERVICES (Posts, Ad Accounts, Campaign management.)
+Marketing APIs require the
+rw_ads
+scope. Other APIs require additional permission scopes which are documented in topic-specific pages. To learn more, see
+Marketing-Frequently Asked Questions
+Map Campaign Ad Account ID to Application
+From
+Campaign Manager
+, copy the nine-digit Ad "Account ID".
+Open the
+Developer Portal
+and select your application.
+From the "Products" tab click "View Ad Accounts".
+Click "Add Ad Account" and paste the Ad Account ID, then save.
+This particular Ad Account is now mapped to the selected application. Repeat for any other Ad Accounts you need to add for this or any other applications.
+This step is only required for a developer application with development tier access of the Advertising API. For more information on Advertising API tiers and how to gain access to them, see
+Increasing Access
+Create an Ad Account
+Ad Account
+Sample Request
+POST https://api.linkedin.com/rest/adAccounts
+Sample Request Body
+{
+    "currency": "USD",
+    "name": "Company ABC",
+    "notifiedOnCampaignOptimization": true,
+    "notifiedOnCreativeApproval": true,
+    "notifiedOnCreativeRejection": true,
+    "notifiedOnEndOfCampaign": true,
+    "reference": "urn:li:organization:101202303",
+    "type": "BUSINESS"
+}
+A successful response returns a
+201 Created
+HTTP status code and the ID of the account in the
+x-restli-id
+response header. Also retrieve the Ad Account ID later through the API or UI. To learn more about working with Ad Accounts, see
+Accounts
+Create a Campaign Group
+Campaign Groups give advertisers a way to manage status, budget, and performance across multiple related campaigns. Creating Campaign Groups is optional. Campaigns can still be created on their own without an associated Campaign Group.
+Use the following API to create a Campaign Group:
+Ad Campaign Groups
+Sample request
+This API doesn't support
+ENTERPRISE
+accounts.
+POST https://api.linkedin.com/rest/adAccounts/{adAccountID}/adCampaignGroups
+Sample Response
+{
+    "account": "urn:li:sponsoredAccount:502616245",
+    "name": "CampaignGroup1",
+    "runSchedule": {
+        "end": 9876543210123,
+        "start": 1234567890987
+    },
+    "status": "ACTIVE",
+    "totalBudget": {
+        "amount": "60000.00",
+        "currencyCode": "USD"
+    }
+}
+Find Target Audience
+Before creating a campaign, you must define the right audience by specifying targeting criteria. The targeting criteria can also be updated after the campaign is created.
+LinkedIn offers a collection of APIs to discover audiences for your campaign. For a campaign to run, the target audience must have at least 300 members. This ensures that there's enough impression data for the system to properly assess its effectiveness. To learn more, see
+Audience Counts API
+and
+Ads Targeting
+First, explore the targeting criteria that's available on the LinkedIn Campaign Management platform. The following example uses the
+adTargetingFacets
+API to discover the available ad targeting facets. Facets are targeting types such as industries, locations, or seniority level. Each facet contains entities that reflect the individual values which can be fetched through the
+adTargetingEntities
+API.
+For example, the
+locations
+facet includes entities such as Canada and the United States.
+Ad Targeting Facets
+Sample Request
+GET https://api.linkedin.com/rest/adTargetingFacets
+Response
+The API response shows the available targeting facets. Each facet record contains the name of the facet, the type, and the Finder methods available to query for more information and discover the facet's entities.
+{
+    "elements": [
+        {
+            "facetName": "seniorities",
+            "availableEntityFinders": [
+                "AD_TARGETING_FACET"
+            ],
+            "entityTypes": [
+                "SENIORITY"
+            ],
+            "$URN": "urn:li:adTargetingFacet:seniorities"
+        },
+        {
+            "facetName": "locations",
+            "availableEntityFinders": [
+                "AD_TARGETING_FA
+
+===== https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/getting-started?view=li-lms-2026-09
+TITLE: Getting Started - Reporting - LinkedIn | Microsoft Learn
+ACCESSED: 2026-09-27
+
+Getting Started - Reporting
+Warning
+Deprecation Notice:
+The Marketing Version 202510 (Marketing October 2025) will be sunset on October 15, 2026. We recommend that you migrate to the latest
+versioned APIs
+to avoid disruptions. For information on all the supported versions, refer to the
+migrations
+documentation.
+If you haven’t yet migrated and have questions, submit a request on the
+LinkedIn Developer Support Portal
+LinkedIn's Reporting APIs enable you to leverage LinkedIn marketing data to automate internal reporting and gain valuable insights. Partners can integrate LinkedIn data into their solutions to retrieve performance data, targeting information, audience insights, and much more. This guide provides a brief look at how these APIs can be used to provide valuable insights into audiences, impressions, targeting, and budgeting data.
+Audience Counts
+Ad Budget Pricing
+Ad Supply Forecasts
+Suggested Targeting Options
+Updating a Share with UTM Tracking Parameters
+Reporting
+For a better picture of what the platform fully provides in functionality, read the
+Overview page
+Campaign Management Getting Started
+Permissions
+Permission
+Description
+r_ads
+Read an authenticated member's ad accounts.
+r_ads_reporting
+Retrieve reporting for advertising accounts.
+Audience Counts
+The
+audienceCounts
+API allows you to forecast reach based on targeting criteria.
+Sample Request
+The following request returns estimated audience counts for Canada and USA while excluding members who are in entry-level positions.
+http
+curl
+GET https://api.linkedin.com/rest/audienceCounts?q=targetingCriteria&target.includedTargetingFacets.locations[0]=urn:li:geo:101174742&target.includedTargetingFacets.locations[1]=urn:li:geo:103644278&target.excludingTargetingFacets.seniorities[0]=urn:li:seniority:3
+curl -X GET 'https://api.linkedin.com/rest/audienceCounts?q=targetingCriteria&target.includedTargetingFacets.locations[0]=urn:li:geo:101174742&target.includedTargetingFacets.locations[1]=urn:li:geo:103644278&target.excludingTargetingFacets.seniorities[0]=urn:li:seniority:3' \
+-H 'Authorization: Bearer {INSERT_TOKEN}'
+Sample Response
+{
+    "elements": [
+        {
+            "active": 0,
+            "total": 150000000
+        }
+    ],
+    "paging": {
+        "count": 10,
+        "links": [],
+        "start": 0
+    }
+}
+See the
+targetingFacets reference page
+to learn more about targetingFacets and
+Audience Counts
+for more information on the Audience Counts API.
+Ad Budget Pricing
+With the
+adBudgetPricing
+API, you can get key insights on pricing metrics such as minimum, maximum, and suggested bids based on targeting criteria. The sample request returns pricing for an account based on target market criteria.
+Sample Request
+In the following example, the target market consists of LinkedIn members between the ages of 18 and 24.
+http
+curl
+GET https://api.linkedin.com/rest/adBudgetPricing?account=urn:li:sponsoredAccount:1245678&bidType=CPM&campaignType=SPONSORED_INMAILS&matchType=EXACT&q=criteria&target.includedTargetingFacets.ageRanges[0]=AGE_18_24
+curl -X GET 'https://api.linkedin.com/rest/adBudgetPricing?account=urn:li:sponsoredAccount:1245678&bidType=CPM&campaignType=SPONSORED_INMAILS&matchType=EXACT&q=criteria&target.includedTargetingFacets.ageRanges[0]=AGE_18_24' \
+-H 'Authorization: Bearer {INSERT_TOKEN}'
+Sample Response
+{
+    "elements": [
+        {
+            "maxBid": {
+                "amount": "100.0",
+                "currencyCode": "USD"
+            },
+            "minBid": {
+                "amount": "0.3",
+                "currencyCode": "USD"
+            },
+            "suggestedBid": {
+                "amount": "2.06",
+                "currencyCode": "USD"
+            },
+            "suggestedBidRangeHighEnd": {
+                "amount": "2.11",
+                "currencyCode": "USD"
+            },
+            "suggestedBidRangeLowEnd": {
+                "amount": "2.01",
+                "currencyCode": "USD"
+            }
+        }
+    ],
+    "paging": {
+        "count": 10,
+        "links": [],
+        "start": 0
+    }
+}
+See the
+targetingFacets reference page
+to learn more about targetingFacets and
+Ad Budget Pricing
+for more information on the Ad Budget Pricing API.
+Ad Supply Forecasts
+The
+adSupplyForecasts
+API provides a forecast of the reach, cost, and supply for an ad using specified targeting criteria.
+Sample Request
+The following sample request forecasts the impressions of a sponsored update for Canada and USA while excluding members in entry-level positions.
+http
+curl
+GET https://api.linkedin.com/rest/adSupplyForecasts?q=criteria&timeRange.start=1464804127000&timeRange.end=1465581727000&target.includedTargetingFacets.locations[0]=urn:li:geo:101174742&target.includedTargetingFacets.locations[1]=urn:li:geo:103644278&target.e

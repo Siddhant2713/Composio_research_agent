@@ -1,0 +1,171 @@
+{
+  "app": "Xero",
+  "number": 87,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:26:58.141488+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.xero.com\",\n    \"https://developer.xero.com/documentation\",\n    \"https://developer.xero.com/documentation/api/api-overview\",\n    \"https://developer.xero.com/documentation/getting-started\",\n    \"https://developer.xero.com/documentation/oauth2/overview\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.xero.com",
+    "https://developer.xero.com/documentation",
+    "https://developer.xero.com/documentation/api/api-overview",
+    "https://developer.xero.com/documentation/getting-started",
+    "https://developer.xero.com/documentation/oauth2/overview",
+    "https://docs.xero.com/",
+    "https://developers.xero.com/",
+    "https://api.xero.com/",
+    "https://xero.com/docs",
+    "https://xero.com/developers",
+    "https://xero.com/api",
+    "https://xero.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.xero.com/documentation/guides/oauth2/overview",
+    "https://developer.xero.com/documentation/guides/oauth2/custom-connections/",
+    "https://developer.xero.com/support",
+    "https://www.xero.com/signup/developers/",
+    "https://developer.xero.com/faq/pricing-and-policy-updates",
+    "https://developer.xero.com/documentation/getting-started-guide/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.xero.com/documentation",
+      "reason": "page too thin (38 chars)"
+    },
+    {
+      "requested_url": "https://developer.xero.com/documentation/api/api-overview",
+      "reason": "page too thin (40 chars)"
+    },
+    {
+      "requested_url": "https://developer.xero.com/documentation/getting-started",
+      "reason": "non-text content-type: ''"
+    },
+    {
+      "requested_url": "https://developer.xero.com/documentation/oauth2/overview",
+      "reason": "page too thin (26 chars)"
+    },
+    {
+      "requested_url": "https://docs.xero.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.xero.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.xero.com/",
+      "reason": "HTTP 401"
+    },
+    {
+      "requested_url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+      "reason": "page too thin (26 chars)"
+    },
+    {
+      "requested_url": "https://developer.xero.com/documentation/guides/oauth2/custom-connections/",
+      "reason": "page too thin (35 chars)"
+    },
+    {
+      "requested_url": "https://www.xero.com/signup/developers/",
+      "reason": "page too thin (36 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.xero.com",
+      "requested_url": "https://developer.xero.com",
+      "status": 200,
+      "title": "Xero Developer Platform",
+      "chars": 4693,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.xero.com/support",
+      "requested_url": "https://developer.xero.com/support",
+      "status": 200,
+      "title": "Xero Developer Support \u2014 Xero Developer",
+      "chars": 1849,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+      "requested_url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+      "status": 200,
+      "title": "Pricing and Policy Updates FAQs \u2014 Xero Developer",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Xero provides a developer platform and APIs for building integrations with cloud accounting, finance, and small business tools.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Uses OAuth2 and client credentials grant type for custom connections.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free account to build on the Xero platform.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"C#\",\n      \"Java\",\n      \"NodeJS\",\n      \"PHP\",\n      \"Python\",\n      \"Ruby\"\n    ],\n    \"notes\": \"Provides APIs, SDKs, code samples, and documentation.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Mentions Xero's AI Toolkit including an OpenAI Agents SDK, MCP Server, LangChain, and prompt examples.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Developers can self-serve sign up for a free account to access developer tools, SDKs, and APIs using OAuth2 authentication.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.xero.com\",\n      \"claim\": \"Sign up for a free account to build on the Xero platform and access SDKs.\"\n    },\n    {\n      \"url\": \"https://developer.xero.com\",\n      \"claim\": \"Xero's AI Toolkit includes OpenAI Agents SDK, MCP Server, LangChain and prompt examples.\"\n    },\n    {\n      \"url\": \"https://developer.xero.com\",\n      \"claim\": \"Custom connections utilize the client credentials grant type.\"\n    },\n    {\n      \"url\": \"https://developer.xero.com/support\",\n      \"claim\": \"SDKs are provided for C#, Java, NodeJS, PHP, Python, and Ruby.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint_url": "https://developer.xero.com",
+    "one_liner": "Xero provides a developer platform and APIs for building integrations with cloud accounting, finance, and small business tools.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Uses OAuth2 and client credentials grant type for custom connections."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free account to build on the Xero platform."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "C#",
+        "Java",
+        "NodeJS",
+        "PHP",
+        "Python",
+        "Ruby"
+      ],
+      "notes": "Provides APIs, SDKs, code samples, and documentation."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Mentions Xero's AI Toolkit including an OpenAI Agents SDK, MCP Server, LangChain, and prompt examples."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Developers can self-serve sign up for a free account to access developer tools, SDKs, and APIs using OAuth2 authentication."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.xero.com",
+        "claim": "Sign up for a free account to build on the Xero platform and access SDKs.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.xero.com",
+        "claim": "Xero's AI Toolkit includes OpenAI Agents SDK, MCP Server, LangChain and prompt examples.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.xero.com",
+        "claim": "Custom connections utilize the client credentials grant type.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.xero.com/support",
+        "claim": "SDKs are provided for C#, Java, NodeJS, PHP, Python, and Ruby.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:27:13.584056+00:00"
+}

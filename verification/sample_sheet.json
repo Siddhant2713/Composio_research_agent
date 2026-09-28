@@ -1,0 +1,3260 @@
+{
+  "pass": "pass1",
+  "sample_size": 20,
+  "total_records": 100,
+  "fields": [
+    "auth.method",
+    "access.tier",
+    "api_surface",
+    "mcp.exists",
+    "buildability.verdict",
+    "evidence_supports_claims"
+  ],
+  "strata": {
+    "well_known": 10,
+    "suspect": 10,
+    "clean": 0
+  },
+  "apps": [
+    {
+      "number": 1,
+      "name": "Salesforce",
+      "stratum": "well_known"
+    },
+    {
+      "number": 3,
+      "name": "Pipedrive",
+      "stratum": "suspect"
+    },
+    {
+      "number": 12,
+      "name": "Intercom",
+      "stratum": "well_known"
+    },
+    {
+      "number": 19,
+      "name": "Gorgias",
+      "stratum": "suspect"
+    },
+    {
+      "number": 21,
+      "name": "Slack",
+      "stratum": "well_known"
+    },
+    {
+      "number": 28,
+      "name": "WhatsApp Business",
+      "stratum": "suspect"
+    },
+    {
+      "number": 33,
+      "name": "LinkedIn Ads",
+      "stratum": "suspect"
+    },
+    {
+      "number": 34,
+      "name": "GoHighLevel",
+      "stratum": "suspect"
+    },
+    {
+      "number": 38,
+      "name": "Pinterest",
+      "stratum": "well_known"
+    },
+    {
+      "number": 40,
+      "name": "SendGrid",
+      "stratum": "well_known"
+    },
+    {
+      "number": 42,
+      "name": "WooCommerce",
+      "stratum": "well_known"
+    },
+    {
+      "number": 45,
+      "name": "Magento (Adobe Commerce)",
+      "stratum": "suspect"
+    },
+    {
+      "number": 53,
+      "name": "Ahrefs",
+      "stratum": "suspect"
+    },
+    {
+      "number": 62,
+      "name": "Vercel",
+      "stratum": "well_known"
+    },
+    {
+      "number": 69,
+      "name": "Datadog",
+      "stratum": "well_known"
+    },
+    {
+      "number": 72,
+      "name": "Airtable",
+      "stratum": "well_known"
+    },
+    {
+      "number": 78,
+      "name": "Coda",
+      "stratum": "suspect"
+    },
+    {
+      "number": 81,
+      "name": "Stripe",
+      "stratum": "well_known"
+    },
+    {
+      "number": 85,
+      "name": "iPayX",
+      "stratum": "suspect"
+    },
+    {
+      "number": 91,
+      "name": "NotebookLM",
+      "stratum": "suspect"
+    }
+  ],
+  "rows": [
+    {
+      "app": "Salesforce",
+      "number": 1,
+      "category": "CRM and Sales",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The provided text mentions built-in authentication for React apps on Salesforce but does not explicitly specify the authentication protocol (such as OAuth2 or API keys) used for the public REST APIs.",
+      "evidence_urls": [
+        "https://developer.salesforce.com",
+        "https://www.salesforce.com/in/partners/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Build with React on Salesforce: Multi-Framework Is Now GA. Ship production-ready React apps natively on Salesforce \u2014 with authentication, security, and governance built in.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Salesforce",
+      "number": 1,
+      "category": "CRM and Sales",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can sign up for a free Salesforce Developer Edition directly from the developer portal.",
+      "evidence_urls": [
+        "https://developer.salesforce.com",
+        "https://www.salesforce.com/in/partners/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Sign up now",
+      "suggested_problem": "Self\u2011serve access requires access\u2011docs showing how to obtain credentials; only marketing copy is present.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Salesforce",
+      "number": 1,
+      "category": "CRM and Sales",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": [
+          "Data 360 Code Extension SDK"
+        ],
+        "notes": "The text explicitly mentions the Salesforce REST API, Marketing Cloud REST and SOAP APIs, B2C Commerce API, Metadata API, and the Data 360 Code Extension SDK."
+      },
+      "notes_from_record": "The text explicitly mentions the Salesforce REST API, Marketing Cloud REST and SOAP APIs, B2C Commerce API, Metadata API, and the Data 360 Code Extension SDK.",
+      "evidence_urls": [
+        "https://developer.salesforce.com",
+        "https://www.salesforce.com/in/partners/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Salesforce REST API Integrate Salesforce data into apps and perform complex operations on a large scale. B2C Commerce API Ensure omnichannel flexibility by using a headless API to build custom apps, from full storefronts to merchant tools. Marketing Cloud APIs Create your ideal integration with the Marketing Cloud REST and SOAP APIs. Metadata API Customize, deploy, package, and upgrade application metadata.",
+      "suggested_problem": "Only REST, B2C Commerce, Marketing Cloud (REST & SOAP) and Metadata APIs are mentioned; GraphQL, webhooks, and the Data 360 Code Extension SDK are not covered in this line.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Salesforce",
+      "number": 1,
+      "category": "CRM and Sales",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "Salesforce supports Model Context Protocol (MCP). Developers can expose custom Apex logic as Hosted MCP tools, and connect third-party MCP servers directly to Agentforce or Slack.",
+      "evidence_urls": [
+        "https://developer.salesforce.com",
+        "https://www.salesforce.com/in/partners/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Expose Custom Apex as a Hosted MCP Tool for Agents ... allowing AI agents like Claude or Cursor to discover and invoke your business intelligence directly via the Model Context Protocol.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Salesforce",
+      "number": 1,
+      "category": "CRM and Sales",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Salesforce offers a free Developer Edition that developers can sign up for instantly, providing access to the Salesforce REST API and hosted MCP tools.",
+      "evidence_urls": [
+        "https://developer.salesforce.com",
+        "https://www.salesforce.com/in/partners/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Start for free",
+      "suggested_problem": "The line indicates a free edition but does not directly address how easy it is to build with the platform.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Salesforce",
+      "number": 1,
+      "category": "CRM and Sales",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developer.salesforce.com",
+          "claim": "Mentions the Salesforce REST API, free Developer Edition signup, Data 360 Code Extension SDK, and support for Model Context Protocol (MCP) hosted servers and tools."
+        },
+        {
+          "url": "https://www.salesforce.com/in/partners/",
+          "claim": "Mentions connecting third-party MCP servers directly to Agentforce or Slack."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developer.salesforce.com",
+        "https://www.salesforce.com/in/partners/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Salesforce REST API ... Extend Data 360 with Code Extension ... using the Data 360 Code Extension SDK ... New in Salesforce Developer Edition: ... Hosted MCP Servers \u2013 all free.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Pipedrive",
+      "number": 3,
+      "category": "CRM and Sales",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "The stateless API is validated against an API token obtained manually from the Pipedrive app.",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/",
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "The API is stateless \u2013 all requests are validated against an API token. The API token can be obtained manually from the Pipedrive app.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Pipedrive",
+      "number": 3,
+      "category": "CRM and Sales",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can obtain an API token manually from the Pipedrive app and sign up for a sandbox account.",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/",
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Pipedrive",
+      "number": 3,
+      "category": "CRM and Sales",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": true,
+        "sdks": [
+          "Node.js",
+          "PHP"
+        ],
+        "notes": "Supports a RESTful API with OpenAPI 3 specifications, webhooks, and official Node.js and PHP client libraries."
+      },
+      "notes_from_record": "Supports a RESTful API with OpenAPI 3 specifications, webhooks, and official Node.js and PHP client libraries.",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/",
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "We offer two official Pipedrive API client libraries: Node.js and PHP.",
+      "suggested_problem": "Claim also includes RESTful API and webhooks, which are not covered by this line.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Pipedrive",
+      "number": 3,
+      "category": "CRM and Sales",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/",
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No claim provided to verify.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Pipedrive",
+      "number": 3,
+      "category": "CRM and Sales",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Self-service credential generation (API token obtained manually from the app/sandbox) combined with a well-documented RESTful API and official SDKs makes it easy for outside developers to build.",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/",
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Pipedrive is an amazing tool! Their developer API, well-documented API reference page and easy use of webhooks allow developers to easily build solutions in the Pipedrive Developer Platform.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Pipedrive",
+      "number": 3,
+      "category": "CRM and Sales",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.pipedrive.com/",
+          "claim": "Mentions building integrations with the API and easy use of webhooks."
+        },
+        {
+          "url": "https://developers.pipedrive.com/docs/api/v1",
+          "claim": "Describes the RESTful Pipedrive API which is stateless and validated against an API token obtained manually from the Pipedrive app."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/",
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Easily build integrations with our API and developer platform to reach over 100,000 companies through the Pipedrive Marketplace.",
+      "suggested_problem": "Does not mention the RESTful API token validation claim.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Intercom",
+      "number": 12,
+      "category": "Support and Helpdesk",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "oauth2",
+      "notes_from_record": "Public apps require setting up OAuth, while private apps can use an Access Token.",
+      "evidence_urls": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Public apps (sometimes referred to as integrations) are apps that are available for any customer to install. These apps have access to other peoples' Intercom data, which means there are specific requirements in order to publish them, such as setting up OAuth and submitting to the Intercom team for review.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Intercom",
+      "number": 12,
+      "category": "Support and Helpdesk",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can sign up for a free account to create a development workspace and access the Developer Hub.",
+      "evidence_urls": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "sign up here to create your free account. This will give you access to your Developer Hub.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Intercom",
+      "number": 12,
+      "category": "Support and Helpdesk",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": true,
+        "sdks": null,
+        "notes": "The platform provides REST APIs, webhooks, and SDKs (including mobile SDKs and Canvas Kit)."
+      },
+      "notes_from_record": "The platform provides REST APIs, webhooks, and SDKs (including mobile SDKs and Canvas Kit).",
+      "evidence_urls": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "If you aren't able to find an existing app that solves the problem you're facing, you can build your own using our REST APIs and Canvas Kit framework.",
+      "suggested_problem": "The quoted line mentions REST APIs and SDKs (Canvas Kit) but does not mention webhooks, which are also claimed.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Intercom",
+      "number": 12,
+      "category": "Support and Helpdesk",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No information about an MCP (Marketplace) is present in the provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Intercom",
+      "number": 12,
+      "category": "Support and Helpdesk",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "moderate",
+      "notes_from_record": "Self-serve developer accounts are available to obtain credentials and test integrations, but public apps require OAuth configuration and submission to the Intercom team for review.",
+      "evidence_urls": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The text does not provide an overall assessment of buildability difficulty (e.g., 'moderate').",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Intercom",
+      "number": 12,
+      "category": "Support and Helpdesk",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.intercom.com/docs",
+          "claim": "Public apps require setting up OAuth and submitting to the Intercom team for review, whereas private apps can use an Access Token without review."
+        },
+        {
+          "url": "https://developers.intercom.com/docs",
+          "claim": "Developers can sign up to create a free account and development workspace to access the Developer Hub and configure webhooks and OAuth."
+        },
+        {
+          "url": "https://developers.intercom.com/docs",
+          "claim": "Integrations can be built using REST APIs and the Canvas Kit framework."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The specific claim statements are not directly quoted in the provided text; while related information exists, no single line verifies each listed claim.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Gorgias",
+      "number": 19,
+      "category": "Support and Helpdesk",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "unknown",
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.gorgias.com/",
+        "https://www.gorgias.com/onboarding"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No information about authentication method in the provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Gorgias",
+      "number": 19,
+      "category": "Support and Helpdesk",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "unknown",
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.gorgias.com/",
+        "https://www.gorgias.com/onboarding"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Sign up for our Developer Portal to start our partnership. This step is required only if you plan to build a Public app.",
+      "suggested_problem": "Access tier is described (public apps require sign\u2011up/approval, private apps are self\u2011serve), so claim of unknown is incorrect.",
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Gorgias",
+      "number": 19,
+      "category": "Support and Helpdesk",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": null,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": null,
+        "notes": "The pages mention an open API and API documentation exist, but do not provide specific substantive details about REST, GraphQL, webhooks, or SDKs."
+      },
+      "notes_from_record": "The pages mention an open API and API documentation exist, but do not provide specific substantive details about REST, GraphQL, webhooks, or SDKs.",
+      "evidence_urls": [
+        "https://developers.gorgias.com/",
+        "https://www.gorgias.com/onboarding"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Refer to our API documentation to find all the information you need.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Gorgias",
+      "number": 19,
+      "category": "Support and Helpdesk",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.gorgias.com/",
+        "https://www.gorgias.com/onboarding"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No mention of MCP in the provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Gorgias",
+      "number": 19,
+      "category": "Support and Helpdesk",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The fetched pages mention an open API and developer documentation, but do not specify authentication mechanisms or how to obtain credentials.",
+      "evidence_urls": [
+        "https://developers.gorgias.com/",
+        "https://www.gorgias.com/onboarding"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Open API to build and customize integrations",
+      "suggested_problem": "Text indicates that building integrations is possible via an open API, so claim of unknown is incorrect.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Gorgias",
+      "number": 19,
+      "category": "Support and Helpdesk",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.gorgias.com/",
+          "claim": "Refers to API documentation and developer portal for building private or public apps."
+        },
+        {
+          "url": "https://www.gorgias.com/onboarding",
+          "claim": "Mentions an open API to build and customize integrations."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.gorgias.com/",
+        "https://www.gorgias.com/onboarding"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Slack",
+      "number": 21,
+      "category": "Communications and Messaging",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "oauth2",
+      "notes_from_record": "Slack uses OAuth 2.0 to securely authenticate users and request access tokens (user, bot, and app tokens), which are passed as Bearer tokens in the Authorization header.",
+      "evidence_urls": [
+        "https://docs.slack.dev/apis/web-api/",
+        "https://api.slack.com/apps",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "OAuth 2.0 : Learn how to use OAuth 2.0 to securely authenticate users and request access tokens.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Slack",
+      "number": 21,
+      "category": "Communications and Messaging",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can sign in to their Slack account to create an application, or use the Slack CLI to log in and create a project.",
+      "evidence_urls": [
+        "https://docs.slack.dev/apis/web-api/",
+        "https://api.slack.com/apps",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "You'll need to sign in to your Slack account to create an application.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Slack",
+      "number": 21,
+      "category": "Communications and Messaging",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": false,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": [
+          "Java Slack SDK",
+          "Node Slack SDK",
+          "Python Slack SDK",
+          "Bolt for Java",
+          "Bolt for JavaScript",
+          "Bolt for Python"
+        ],
+        "notes": "The Web API is a collection of HTTP RPC-style methods rather than a REST API, though it uses HTTP foundations. Official SDKs and Bolt frameworks are provided for Java, JavaScript/Node, and Python."
+      },
+      "notes_from_record": "The Web API is a collection of HTTP RPC-style methods rather than a REST API, though it uses HTTP foundations. Official SDKs and Bolt frameworks are provided for Java, JavaScript/Node, and Python.",
+      "evidence_urls": [
+        "https://docs.slack.dev/apis/web-api/",
+        "https://api.slack.com/apps",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Slack",
+      "number": 21,
+      "category": "Communications and Messaging",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.slack.dev/apis/web-api/",
+        "https://api.slack.com/apps",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Slack",
+      "number": 21,
+      "category": "Communications and Messaging",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Slack offers self-serve access where developers can sign in and create apps immediately. The API is well-documented with multiple official SDKs and a CLI to streamline development.",
+      "evidence_urls": [
+        "https://docs.slack.dev/apis/web-api/",
+        "https://api.slack.com/apps",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Slack",
+      "number": 21,
+      "category": "Communications and Messaging",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://docs.slack.dev/apis/web-api/",
+          "claim": "The Slack Web API is an HTTP RPC-style interface (not REST) that accepts OAuth 2.0 Bearer tokens."
+        },
+        {
+          "url": "https://api.slack.com/apps",
+          "claim": "Developers can sign in to their Slack account to create an application."
+        },
+        {
+          "url": "https://docs.slack.dev/authentication/",
+          "claim": "Slack uses OAuth 2.0 to securely authenticate users and request access tokens."
+        },
+        {
+          "url": "https://docs.slack.dev/",
+          "claim": "Slack provides a CLI for quickstart and lists official SDKs for Java, Node.js, and Python."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.slack.dev/apis/web-api/",
+        "https://api.slack.com/apps",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "WhatsApp Business",
+      "number": 28,
+      "category": "Communications and Messaging",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "Uses bearer access tokens (system tokens or business tokens) passed in the Authorization header.",
+      "evidence_urls": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "https://developers.facebook.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "\"Authorization\": \"Bearer <ACCESS_TOKEN>\",",
+      "suggested_problem": "The claim says authentication uses an API key, but the text shows bearer token authentication.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "WhatsApp Business",
+      "number": 28,
+      "category": "Communications and Messaging",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "mixed",
+      "notes_from_record": "Developers can sign up and use developer tools/embedded signup, but certain partner solutions and advanced onboarding require business verification, solution partner processes, or credit line setup.",
+      "evidence_urls": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "https://developers.facebook.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Onboard customers: Learn how to build Embedded Signup; a flow to onboard customers directly from your website.",
+      "suggested_problem": "The text mentions self\u2011serve embedded signup and partner resources, but does not describe the mixed tier details such as business verification or credit\u2011line setup claimed.",
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "WhatsApp Business",
+      "number": 28,
+      "category": "Communications and Messaging",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": false,
+        "webhooks": true,
+        "sdks": [
+          "Python",
+          "JavaScript"
+        ],
+        "notes": "Uses HTTP REST requests built on the Graph API and delivers JSON payloads via webhooks."
+      },
+      "notes_from_record": "Uses HTTP REST requests built on the Graph API and delivers JSON payloads via webhooks.",
+      "evidence_urls": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "https://developers.facebook.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Select language Python JavaScript cURL",
+      "suggested_problem": "The line confirms SDK language options and implies REST/HTTP usage, but the text does not explicitly state that GraphQL is unsupported nor does it list all REST capabilities; therefore the full claim is not completely verified.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "WhatsApp Business",
+      "number": 28,
+      "category": "Communications and Messaging",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "WhatsApp Business Tools MCP allows setting up and managing WhatsApp business from an AI agent.",
+      "evidence_urls": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "https://developers.facebook.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "WhatsApp Business",
+      "number": 28,
+      "category": "Communications and Messaging",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "moderate",
+      "notes_from_record": "Access requires setting up Meta developer accounts and obtaining system or business access tokens via embedded signup flows, while the Cloud API and webhooks are thoroughly documented.",
+      "evidence_urls": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "https://developers.facebook.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The text provides no statement about the overall difficulty (e.g., \"moderate\") of building with the platform.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "WhatsApp Business",
+      "number": 28,
+      "category": "Communications and Messaging",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+          "claim": "The WhatsApp Business Platform provides Cloud API, Marketing Messages API, and Business Management API for messaging and account management."
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "claim": "The platform uses the HTTP protocol and Graph API, relying heavily on webhooks for message updates and delivery statuses."
+        },
+        {
+          "url": "https://developers.facebook.com/",
+          "claim": "Announced WhatsApp Business Tools MCP for setting up and managing WhatsApp business from an AI agent."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "https://developers.facebook.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Cloud API ... Marketing Messages API for WhatsApp ... Business Management API",
+      "suggested_problem": "The quoted line supports the first sub\u2011claim about the three APIs, but does not address the HTTP/Graph API/webhooks claim nor the MCP announcement, so the bundled claim is only partially covered.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "number": 33,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "oauth2",
+      "notes_from_record": "Uses OAuth 2.0 with member authorization (3-legged OAuth code flow) for Marketing APIs.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "number": 33,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "mixed",
+      "notes_from_record": "Developers can create a developer application in the Developer Portal to get development tier access, but upgrading to Standard tier requires application review forms and a video demonstration.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No evidence about tier creation or upgrade process.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "number": 33,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": null,
+        "notes": "Offers REST APIs for campaign management, reporting, community management, and lead sync."
+      },
+      "notes_from_record": "Offers REST APIs for campaign management, reporting, community management, and lead sync.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.",
+      "suggested_problem": "Does not explicitly state that the APIs are REST.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "number": 33,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No mention of MCP in the provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "number": 33,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "moderate",
+      "notes_from_record": "Self-serve development access is available via the Developer Portal with OAuth 2.0 authentication, but APIs require application approval and tier upgrade processes (such as submitting review forms or demonstration videos) for standard access.",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "Text does not confirm self\u2011serve developer portal access or tier\u2011upgrade requirements.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "number": 33,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+          "claim": "The LinkedIn API uses OAuth 2.0 for member authorization and API authentication."
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+          "claim": "Step 1 to get started is to create a developer application in the Developer Portal and apply for API access."
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+          "claim": "After building and testing your application, submit a tier upgrade request to upgrade to the Standard tier."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "GoHighLevel",
+      "number": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "oauth2",
+      "notes_from_record": "API 2.0 uses an OAuth based API.",
+      "evidence_urls": [
+        "https://developers.gohighlevel.com"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "We now have an OAuth based API",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "GoHighLevel",
+      "number": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The pages mention an OAuth based API 2.0 and API 1.0 docs, but do not provide explicit details on how a developer initially registers or obtains credentials.",
+      "evidence_urls": [
+        "https://developers.gohighlevel.com"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "no information on how developers obtain credentials or access tier",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "GoHighLevel",
+      "number": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": null,
+        "notes": "Mentions Public API endpoints, API 1.0, and API 2.0."
+      },
+      "notes_from_record": "Mentions Public API endpoints, API 1.0, and API 2.0.",
+      "evidence_urls": [
+        "https://developers.gohighlevel.com"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Your go-to resource for our Public API endpoints and documentation.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "GoHighLevel",
+      "number": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.gohighlevel.com"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "no mention of MCP in the provided text",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "GoHighLevel",
+      "number": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The pages document APIs and OAuth auth, but do not state how developers obtain access credentials.",
+      "evidence_urls": [
+        "https://developers.gohighlevel.com"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "no information on developer buildability or access",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "GoHighLevel",
+      "number": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.gohighlevel.com",
+          "claim": "The platform offers API 2.0 Docs using an OAuth based API and API 1.0 Docs for public endpoints."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.gohighlevel.com"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "We now have an OAuth based API",
+      "suggested_problem": "does not mention API 1.0 Docs for public endpoints in the same sentence",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Pinterest",
+      "number": 38,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "oauth2",
+      "notes_from_record": "Build a working authentication flow based on OAuth 2. Product limited tokens are also available for testing once approved for trial access.",
+      "evidence_urls": [
+        "https://developers.pinterest.com",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developer.pinterest.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Build a working authentication flow based on OAuth 2",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Pinterest",
+      "number": 38,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "gated",
+      "notes_from_record": "Requires creating a business account, accepting developer terms, and submitting a request for trial access which is reviewed each business day.",
+      "evidence_urls": [
+        "https://developers.pinterest.com",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developer.pinterest.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Application requests are reviewed each business day.",
+      "suggested_problem": "Claim also mentions needing a business account and accepting developer terms, which are not covered by this line.",
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Pinterest",
+      "number": 38,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": null,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": [
+          "Python"
+        ],
+        "notes": "The API supports managing content, ads, shopping catalogs, conversions, and analytics. A Python SDK is mentioned."
+      },
+      "notes_from_record": "The API supports managing content, ads, shopping catalogs, conversions, and analytics. A Python SDK is mentioned.",
+      "evidence_urls": [
+        "https://developers.pinterest.com",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developer.pinterest.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Python SDK : Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.",
+      "suggested_problem": "The claim lists multiple API capabilities (content, ads, catalogs, conversions, analytics) not demonstrated by this line; only the Python SDK is mentioned.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Pinterest",
+      "number": 38,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "Pinterest MCP is mentioned as on the way / build faster with the Pinterest MCP.",
+      "evidence_urls": [
+        "https://developers.pinterest.com",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developer.pinterest.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Pinterest MCP is on the way",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Pinterest",
+      "number": 38,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "moderate",
+      "notes_from_record": "Access requires manual application review for trial access (gated tier), but once approved, authentication uses standard OAuth 2 and there is documentation and a Python SDK.",
+      "evidence_urls": [
+        "https://developers.pinterest.com",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developer.pinterest.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The text does not provide an overall buildability assessment such as 'moderate'.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Pinterest",
+      "number": 38,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.pinterest.com",
+          "claim": "Pinterest API provides use cases for tracking conversions, creating content, building and managing ads, managing product catalogs, and analyzing Pinterest data."
+        },
+        {
+          "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+          "claim": "App creation requires submitting an application request for trial access which is reviewed each business day, and authenticating via OAuth 2."
+        },
+        {
+          "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+          "claim": "The SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling."
+        },
+        {
+          "url": "https://developer.pinterest.com/",
+          "claim": "Pinterest API allows users to securely plan content, manage ads, upload product feeds, and more."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.pinterest.com",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "https://developer.pinterest.com/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The claim aggregates multiple external URL statements; the provided text does not verify each URL's specific claim.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "SendGrid",
+      "number": 40,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "Authentication uses Application Programming Interface (API) keys generated in the console and stored in an environment variable named SENDGRID_API_KEY.",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "https://www.twilio.com/docs/sendgrid"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "This section stores your key in a local environment variable named SENDGRID_API_KEY",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "SendGrid",
+      "number": 40,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can create an account and generate API keys directly in Settings > API Keys without contacting sales.",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "https://www.twilio.com/docs/sendgrid"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Go to Settings > API Keys. The API Keys page displays your current API keys with the following parameters:",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "SendGrid",
+      "number": 40,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": false,
+        "webhooks": null,
+        "sdks": [
+          "C#",
+          "Go",
+          "Java",
+          "Node.js",
+          "PHP",
+          "Python",
+          "Ruby"
+        ],
+        "notes": "The SendGrid v3 Web API provides a REST interface accompanied by open-source SDKs in multiple programming languages."
+      },
+      "notes_from_record": "The SendGrid v3 Web API provides a REST interface accompanied by open-source SDKs in multiple programming languages.",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "https://www.twilio.com/docs/sendgrid"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The SendGrid v3 Web API provides a REST interface to send email at scale",
+      "suggested_problem": "The claim also asserts the presence of SDKs for multiple languages and that GraphQL is not offered; the quoted line only confirms the REST interface.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "SendGrid",
+      "number": 40,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "https://www.twilio.com/docs/sendgrid"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "SendGrid",
+      "number": 40,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Self-serve API keys can be generated immediately in the dashboard, and the REST API is fully documented with official code examples and SDKs in multiple languages.",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "https://www.twilio.com/docs/sendgrid"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Use up-to-date documentation to quickly integrate and send with our APIs.",
+      "suggested_problem": "The text does not explicitly state that building is \"easy\"; it only suggests documentation and examples are available.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "SendGrid",
+      "number": 40,
+      "category": "Marketing, Ads, Email and Social",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+          "claim": "The SendGrid v3 Web API provides a REST interface to send email at scale."
+        },
+        {
+          "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+          "claim": "To authenticate access to Twilio SendGrid services, use Application Programming Interface (API) keys, managed by going to Settings > API Keys."
+        },
+        {
+          "url": "https://www.twilio.com/docs/sendgrid",
+          "claim": "Offers open-source SDKs for C#, Go, Java, Node.js, PHP, Python, and Ruby."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "https://www.twilio.com/docs/sendgrid"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "The SendGrid v3 Web API provides a REST interface to send email at scale",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "WooCommerce",
+      "number": 42,
+      "category": "Ecommerce",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "Integrations use Consumer Key and Consumer Secret credentials generated in the WooCommerce merchant dashboard.",
+      "evidence_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "After generating the key, the screen displays your Consumer Key, Consumer Secret, a QR Code, and a Revoke Key link.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "WooCommerce",
+      "number": 42,
+      "category": "Ecommerce",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Merchants can generate REST API keys directly from their own WordPress dashboard under WooCommerce > Settings > Advanced > REST API without approval.",
+      "evidence_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "To create or manage keys for a specific WordPress user: Go to WooCommerce > Settings > Advanced > REST API Select Create an API key or Add Key.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "WooCommerce",
+      "number": 42,
+      "category": "Ecommerce",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": true,
+        "sdks": null,
+        "notes": "The platform exposes a REST API (integrated via WordPress REST API) and supports webhooks."
+      },
+      "notes_from_record": "The platform exposes a REST API (integrated via WordPress REST API) and supports webhooks.",
+      "evidence_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Webhooks configured to use the legacy REST API also stop working unless you install this plugin.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "WooCommerce",
+      "number": 42,
+      "category": "Ecommerce",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": false,
+      "notes_from_record": "There is a blog mention of testing a WooCommerce MCP Beta, but no production Model Context Protocol server is documented for public developer use.",
+      "evidence_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Call for Testing: WooCommerce MCP Beta",
+      "suggested_problem": "Only a beta is mentioned; no explicit statement that no production server exists.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "WooCommerce",
+      "number": 42,
+      "category": "Ecommerce",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Credentials are self-serve via the WooCommerce store dashboard, and the REST API is fully documented with standard endpoints and error handling.",
+      "evidence_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "To create or manage keys for a specific WordPress user: Go to WooCommerce > Settings > Advanced > REST API Select Create an API key or Add Key.",
+      "suggested_problem": "Line shows self\u2011serve key generation but does not directly address overall ease of building integrations.",
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "WooCommerce",
+      "number": 42,
+      "category": "Ecommerce",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+          "claim": "Explains generating API keys with Consumer Key and Consumer Secret in the WooCommerce dashboard."
+        },
+        {
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+          "claim": "Provides technical documentation for the WooCommerce REST API via the WordPress REST API."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "number": 45,
+      "category": "Ecommerce",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "other",
+      "notes_from_record": "Authentication uses Adobe Identity Management Service (IMS) or reusable patterns provided by Commerce SDKs and libraries.",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce/",
+        "https://developer.adobe.com/commerce/extensibility/",
+        "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "https://developer.adobe.com/graphql-mesh-gateway/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Commerce SDKs and libraries provide reusable patterns for authentication, configuration, event handling, and Commerce integration, including the Admin UI SDK and OOPE modules.",
+      "suggested_problem": "does not mention Adobe Identity Management Service (IMS) as used for authentication",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "number": 45,
+      "category": "Ecommerce",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The fetched developer documentation describes extensibility and building apps, but does not explicitly detail the sign-up or credential acquisition flow for a first-time unaffiliated developer.",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce/",
+        "https://developer.adobe.com/commerce/extensibility/",
+        "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "https://developer.adobe.com/graphql-mesh-gateway/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "no information about sign\u2011up or credential acquisition flow",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "number": 45,
+      "category": "Ecommerce",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": true,
+        "webhooks": true,
+        "sdks": [
+          "Admin UI SDK"
+        ],
+        "notes": "Supports REST endpoints, GraphQL (via API Mesh), webhooks, events, and App Builder SDKs."
+      },
+      "notes_from_record": "Supports REST endpoints, GraphQL (via API Mesh), webhooks, events, and App Builder SDKs.",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce/",
+        "https://developer.adobe.com/commerce/extensibility/",
+        "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "https://developer.adobe.com/graphql-mesh-gateway/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "number": 45,
+      "category": "Ecommerce",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "The pages do not mention the Model Context Protocol.",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce/",
+        "https://developer.adobe.com/commerce/extensibility/",
+        "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "https://developer.adobe.com/graphql-mesh-gateway/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "number": 45,
+      "category": "Ecommerce",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "moderate",
+      "notes_from_record": "Extensive developer documentation and tools (App Builder, SDKs) exist, but access and credential provisioning details are not fully specified on these pages.",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce/",
+        "https://developer.adobe.com/commerce/extensibility/",
+        "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "https://developer.adobe.com/graphql-mesh-gateway/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "number": 45,
+      "category": "Ecommerce",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developer.adobe.com/commerce/",
+          "claim": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce."
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/extensibility/",
+          "claim": "Adobe Commerce supports out-of-process extensibility using App Builder, App Management, APIs, events, and webhooks."
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+          "claim": "Webhooks enable developers to configure synchronous logic to execute calls to external systems when an Adobe Commerce event triggers, using REST endpoints like GET /V1/webhooks/supportedList."
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+          "claim": "Adobe Identity Management Service (IMS) manages authentication for the Admin UI SDK."
+        },
+        {
+          "url": "https://developer.adobe.com/graphql-mesh-gateway/",
+          "claim": "API Mesh allows developers to combine multiple data sources into a single, queryable GraphQL endpoint."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce/",
+        "https://developer.adobe.com/commerce/extensibility/",
+        "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "https://developer.adobe.com/graphql-mesh-gateway/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Ahrefs",
+      "number": 53,
+      "category": "Data, SEO and Scraping",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "API requests require an API key sent in the Authorization header as a Bearer token (Authorization: Bearer YOUR_API_KEY). Ahrefs Connect also uses OAuth 2.0 Authorization Code Flow with PKCE.",
+      "evidence_urls": [
+        "https://docs.ahrefs.com",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "To send requests to Ahrefs API, you'll need an API key.",
+      "suggested_problem": "The text does not specify that the API key is sent in the Authorization header as a Bearer token, and does not mention OAuth 2.0 Authorization Code Flow with PKCE.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Ahrefs",
+      "number": 53,
+      "category": "Data, SEO and Scraping",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "mixed",
+      "notes_from_record": "Ahrefs API is available on eligible paid plans and includes limited free test queries, but joining the Ahrefs Connect integration program requires submitting an application form.",
+      "evidence_urls": [
+        "https://docs.ahrefs.com",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+      "suggested_problem": "No evidence in the text about needing to submit an application form to join the Ahrefs Connect integration program.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Ahrefs",
+      "number": 53,
+      "category": "Data, SEO and Scraping",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": false,
+        "webhooks": false,
+        "sdks": null,
+        "notes": "Provides a REST API (API v3) with an OpenAPI-compatible specification."
+      },
+      "notes_from_record": "Provides a REST API (API v3) with an OpenAPI-compatible specification.",
+      "evidence_urls": [
+        "https://docs.ahrefs.com",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "REST API ... OpenAPI spec Full machine-readable spec for every endpoint.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Ahrefs",
+      "number": 53,
+      "category": "Data, SEO and Scraping",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "Ahrefs documents Model Context Protocol (MCP) support for connecting Ahrefs data to AI assistants and agents such as Claude and ChatGPT.",
+      "evidence_urls": [
+        "https://docs.ahrefs.com",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Ahrefs",
+      "number": 53,
+      "category": "Data, SEO and Scraping",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "moderate",
+      "notes_from_record": "Standard API usage requires an eligible paid plan and an API key from account settings, while third-party apps via Ahrefs Connect require an application review and approval process.",
+      "evidence_urls": [
+        "https://docs.ahrefs.com",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "To send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in Account settings / API keys.",
+      "suggested_problem": "The text does not mention the application review and approval process required for third\u2011party apps via Ahrefs Connect.",
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Ahrefs",
+      "number": 53,
+      "category": "Data, SEO and Scraping",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://docs.ahrefs.com",
+          "claim": "Ahrefs provides APIs and developer tools like REST API and MCP."
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+          "claim": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with PKCE."
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "claim": "Ahrefs API is available on eligible paid plans and free test queries are accessible."
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+          "claim": "Integration program access requires submitting an application form."
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+          "claim": "API requests require an API key passed in the Authorization header as a Bearer token."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.ahrefs.com",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The claim aggregates multiple URL\u2011specific statements, but no single line in the provided text confirms all of them together.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Vercel",
+      "number": 62,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "Vercel Access Tokens are sent via the Authorization: Bearer <TOKEN> header.",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Vercel",
+      "number": 62,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Users can create and manage Access Tokens directly in their account settings.",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Create and manage Access Tokens in your account settings",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Vercel",
+      "number": 62,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": true,
+        "sdks": null,
+        "notes": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL following REST architecture."
+      },
+      "notes_from_record": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL following REST architecture.",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL https://api.vercel.com and follow the REST architecture.",
+      "suggested_problem": "Webhooks are listed separately in the endpoint list but not mentioned in the same sentence as the REST architecture; the claim bundles REST and Webhooks together.",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Vercel",
+      "number": 62,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "Vercel MCP server allows agents to search docs, manage projects and deployments, and query Web Analytics.",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Vercel MCP\nBeta\nLet your agent search the docs, manage projects and deployments, and query Web Analytics through the Vercel MCP server.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Vercel",
+      "number": 62,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Self-serve credentials can be generated in account settings and the REST API is thoroughly documented.",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The text does not state that building or using the API is \"easy\"; it only describes credential creation and API documentation.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Vercel",
+      "number": 62,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://vercel.com/docs/rest-api",
+          "claim": "Vercel Access Tokens are required to authenticate and use the Vercel API via Authorization Bearer header."
+        },
+        {
+          "url": "https://vercel.com/docs/rest-api",
+          "claim": "Create and manage Access Tokens in your account settings."
+        },
+        {
+          "url": "https://vercel.com/docs",
+          "claim": "Connect the Vercel MCP server with npx -y add-mcp https://mcp.vercel.com -g."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Datadog",
+      "number": 69,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "Authenticates using an API key sent via the DD-API-KEY header, and optionally an Application key via DD-APPLICATION-KEY. OAuth2 dynamic client registration is also supported for public clients.",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Authenticate to the API with an API key using the header DD-API-KEY. For some endpoints, you also need an Application key, which uses the header DD-APPLICATION-KEY.",
+      "suggested_problem": "OAuth2 dynamic client registration support not mentioned",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Datadog",
+      "number": 69,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The pages document API endpoints and client libraries, but do not state how a first-time developer obtains initial credentials.",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "no information on how to obtain initial credentials",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Datadog",
+      "number": 69,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": [
+          "java",
+          "python",
+          "ruby",
+          "go",
+          "javascript",
+          "rust"
+        ],
+        "notes": "Provides an HTTP REST API with official client libraries in Java, Python, Ruby, Go, JavaScript/TypeScript, and Rust."
+      },
+      "notes_from_record": "Provides an HTTP REST API with official client libraries in Java, Python, Ruby, Go, JavaScript/TypeScript, and Rust.",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The Datadog API is an HTTP REST API.",
+      "suggested_problem": "does not list all claimed SDK languages explicitly",
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Datadog",
+      "number": 69,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "no mention of MCP existence",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Datadog",
+      "number": 69,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "unknown",
+      "notes_from_record": "While API documentation and client libraries are available, the pages do not describe how credentials are obtained (access tier is unknown), preventing a definitive buildability assessment.",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "cannot determine access tier due to lack of credential acquisition info",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Datadog",
+      "number": 69,
+      "category": "Developer, Infra and Data platforms",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://docs.datadoghq.com/api/latest/",
+          "claim": "The Datadog API is an HTTP REST API, and authenticates with an API key using the header DD-API-KEY and optionally an Application key using DD-APPLICATION-KEY."
+        },
+        {
+          "url": "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/",
+          "claim": "Registers an OAuth2 client using the Dynamic Client Registration protocol defined in RFC 7591."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Airtable",
+      "number": 72,
+      "category": "Productivity and Project Management",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "oauth2",
+      "notes_from_record": "The MCP server supports OAuth (recommended for end-user connections with Dynamic Client Registration) and Personal Access Tokens (PATs for CLI, scripts, and server-side setups).",
+      "evidence_urls": [
+        "https://airtable.com/developers/agents",
+        "https://airtable.com/developers/agents/mcp/tools",
+        "https://airtable.com/developers/agents/mcp/getting-started"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Claude ... Connects in one click via OAuth.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Airtable",
+      "number": 72,
+      "category": "Productivity and Project Management",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "The server is available to all users on all plans, and developers can connect via self-serve OAuth or generate Personal Access Tokens.",
+      "evidence_urls": [
+        "https://airtable.com/developers/agents",
+        "https://airtable.com/developers/agents/mcp/tools",
+        "https://airtable.com/developers/agents/mcp/getting-started"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The server is available to all users on all plans.",
+      "suggested_problem": "Claim of self\u2011serve credential acquisition is not supported by access documentation; only marketing about availability is present.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Airtable",
+      "number": 72,
+      "category": "Productivity and Project Management",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": null,
+        "graphql": null,
+        "webhooks": null,
+        "sdks": [
+          "@airtable/mcp-cli"
+        ],
+        "notes": "The pages describe a Model Context Protocol (MCP) server interface for AI agents rather than a standard REST or GraphQL API surface."
+      },
+      "notes_from_record": "The pages describe a Model Context Protocol (MCP) server interface for AI agents rather than a standard REST or GraphQL API surface.",
+      "evidence_urls": [
+        "https://airtable.com/developers/agents",
+        "https://airtable.com/developers/agents/mcp/tools",
+        "https://airtable.com/developers/agents/mcp/getting-started"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "npm install -g @airtable/mcp-cli",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Airtable",
+      "number": 72,
+      "category": "Productivity and Project Management",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "Airtable exposes a remote MCP server supporting tools for bases, fields, forms, interfaces, and automations.",
+      "evidence_urls": [
+        "https://airtable.com/developers/agents",
+        "https://airtable.com/developers/agents/mcp/tools",
+        "https://airtable.com/developers/agents/mcp/getting-started"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Airtable",
+      "number": 72,
+      "category": "Productivity and Project Management",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Self-serve access to accounts and documentation combined with standard OAuth and PAT authentication makes building integrations straightforward.",
+      "evidence_urls": [
+        "https://airtable.com/developers/agents",
+        "https://airtable.com/developers/agents/mcp/tools",
+        "https://airtable.com/developers/agents/mcp/getting-started"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "If you're new to Airtable, the fastest way to get started is to build something from nothing.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Airtable",
+      "number": 72,
+      "category": "Productivity and Project Management",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://airtable.com/developers/agents",
+          "claim": "Airtable provides an MCP-compatible tool layer for AI agents to read, write, and query bases."
+        },
+        {
+          "url": "https://airtable.com/developers/agents/mcp/tools",
+          "claim": "Airtable's remote MCP server is hosted at https://mcp.airtable.com/mcp."
+        },
+        {
+          "url": "https://airtable.com/developers/agents/mcp/getting-started",
+          "claim": "The MCP server supports OAuth and Personal Access Tokens (PATs) and is available to all users on all plans."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://airtable.com/developers/agents",
+        "https://airtable.com/developers/agents/mcp/tools",
+        "https://airtable.com/developers/agents/mcp/getting-started"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The server is available to all users on all plans.",
+      "suggested_problem": "No line found confirming that the MCP server supports Personal Access Tokens (PATs).",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Coda",
+      "number": 78,
+      "category": "Productivity and Project Management",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The provided pages do not describe how API requests are authenticated (e.g., header format or token type).",
+      "evidence_urls": [
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No information about authentication method in the provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Coda",
+      "number": 78,
+      "category": "Productivity and Project Management",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "unknown",
+      "notes_from_record": "The provided text mentions API documentation and guides, but does not state how a developer obtains credentials.",
+      "evidence_urls": [
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No information on how to obtain credentials.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Coda",
+      "number": 78,
+      "category": "Productivity and Project Management",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": false,
+        "webhooks": false,
+        "sdks": null,
+        "notes": "The API is described as a RESTful API. A Model Context Protocol (MCP) server is also mentioned."
+      },
+      "notes_from_record": "The API is described as a RESTful API. A Model Context Protocol (MCP) server is also mentioned.",
+      "evidence_urls": [
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "suggested_problem": "No evidence regarding GraphQL or webhooks support; claim that they are false is unsupported.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Coda",
+      "number": 78,
+      "category": "Productivity and Project Management",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "The pages mention a Superhuman Docs MCP server optimized for LLM usage patterns.",
+      "evidence_urls": [
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server. It's optimized for LLM usage patterns and often exposes more granular methods for accessing and modifying data.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Coda",
+      "number": 78,
+      "category": "Productivity and Project Management",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "unknown",
+      "notes_from_record": "Buildability cannot be fully determined because the pages do not explain how to obtain credentials or how to authenticate requests.",
+      "evidence_urls": [
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "Insufficient information to assess buildability (no credential or authentication details).",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Coda",
+      "number": 78,
+      "category": "Productivity and Project Management",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://docs.superhuman.com/developers/apis/v1",
+          "claim": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda)."
+        },
+        {
+          "url": "https://docs.superhuman.com/developers/apis/v1",
+          "claim": "Mentions the Superhuman Docs MCP server optimized for LLM usage patterns."
+        },
+        {
+          "url": "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api",
+          "claim": "Provides a getting started guide for using the Superhuman Docs API to read and write data."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/developers/apis/v1",
+        "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Stripe",
+      "number": 81,
+      "category": "Finance and Fintech",
+      "stratum": "well_known",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "API requests are authenticated using API keys provided via HTTP Basic Auth (with the key as the username) or via a Bearer token.",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/development",
+        "https://docs.stripe.com/api/authentication"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "The Stripe API authenticates requests using HTTP Basic Auth.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "Stripe",
+      "number": 81,
+      "category": "Finance and Fintech",
+      "stratum": "well_known",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can create an account and obtain test and live API keys directly through the Stripe Dashboard.",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/development",
+        "https://docs.stripe.com/api/authentication"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "create an account to load your test API keys.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "access_docs"
+    },
+    {
+      "app": "Stripe",
+      "number": 81,
+      "category": "Finance and Fintech",
+      "stratum": "well_known",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": false,
+        "webhooks": true,
+        "sdks": [
+          "Ruby",
+          "Python",
+          "PHP",
+          "Java",
+          "Node.js",
+          "Go",
+          ".NET"
+        ],
+        "notes": "The Stripe API is organized around REST and provides multiple official server-side client libraries and a CLI."
+      },
+      "notes_from_record": "The Stripe API is organized around REST and provides multiple official server-side client libraries and a CLI.",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/development",
+        "https://docs.stripe.com/api/authentication"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "The Stripe API is organized around REST.",
+      "suggested_problem": "Only REST and SDKs are mentioned; the text does not mention GraphQL or webhooks, so the claim about GraphQL=false and webhooks=true is unsupported.",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Stripe",
+      "number": 81,
+      "category": "Finance and Fintech",
+      "stratum": "well_known",
+      "field": "mcp.exists",
+      "pass1_answer": true,
+      "notes_from_record": "Mentioned as part of agent-ready tooling and developer features.",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/development",
+        "https://docs.stripe.com/api/authentication"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "MCP Enable agents to use tools and securely take actions in your Stripe account.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "Stripe",
+      "number": 81,
+      "category": "Finance and Fintech",
+      "stratum": "well_known",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Self-service credentials are automatically available upon account creation, and the REST API is extensively documented with client libraries and a CLI.",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/development",
+        "https://docs.stripe.com/api/authentication"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "The provided text contains no statement about the ease of building with Stripe; the claim is subjective and unsupported.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "Stripe",
+      "number": 81,
+      "category": "Finance and Fintech",
+      "stratum": "well_known",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://docs.stripe.com/api",
+          "claim": "The Stripe API is organized around REST, uses standard HTTP verbs, and authenticates using API keys via HTTP Basic Auth or Bearer auth."
+        },
+        {
+          "url": "https://docs.stripe.com/keys",
+          "claim": "When you sign up for a Stripe account, API keys are created for you and can be managed in the Stripe Dashboard."
+        },
+        {
+          "url": "https://docs.stripe.com/development",
+          "claim": "Lists developer resources including SDKs, APIs, and Model Context Protocol."
+        },
+        {
+          "url": "https://docs.stripe.com/api/authentication",
+          "claim": "The Stripe API authenticates requests using HTTP Basic Auth with the API key as the username or via Bearer auth."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/development",
+        "https://docs.stripe.com/api/authentication"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "The Stripe API is organized around REST.",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "iPayX",
+      "number": 85,
+      "category": "Finance and Fintech",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "unknown",
+      "notes_from_record": "Documentation was reachable but client-rendered; no text to read.",
+      "evidence_urls": [],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No evidence in provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "iPayX",
+      "number": 85,
+      "category": "Finance and Fintech",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "unknown",
+      "notes_from_record": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://ipayx.ai/docs (page too thin (59 chars)); https://ipayx.ai/ (page too thin (59 chars)); https://ipayx.ai/contact (page too thin (59 chars)); https://ipayx.ai/pricing (page too thin (59 chars)); https://docs.ipayx.ai/ (ConnectError: [Errno -2] Name or service not known); https://developer.ipayx.ai/ (ConnectError: [Errno -2] Name or service not known)",
+      "evidence_urls": [],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No evidence in provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "iPayX",
+      "number": 85,
+      "category": "Finance and Fintech",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No claim provided.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "iPayX",
+      "number": 85,
+      "category": "Finance and Fintech",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No claim provided.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "iPayX",
+      "number": 85,
+      "category": "Finance and Fintech",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "unknown",
+      "notes_from_record": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable.",
+      "evidence_urls": [],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No evidence in provided text.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "iPayX",
+      "number": 85,
+      "category": "Finance and Fintech",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [],
+      "notes_from_record": "",
+      "evidence_urls": [],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No claim provided.",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "NotebookLM",
+      "number": 91,
+      "category": "AI, Research and Media-native",
+      "stratum": "suspect",
+      "field": "auth.method",
+      "pass1_answer": "api_key",
+      "notes_from_record": "Uses an API key passed in headers (e.g. x-goog-api-key) for the Gemini API.",
+      "evidence_urls": [
+        "https://developers.google.com",
+        "https://cloud.google.com/ai/gemini"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "yes",
+      "suggested_supporting_line": "curl \"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-5-flash:generateContent\" \\ -H \"x-goog-api-key: $GEMINI_API_KEY\" \\ -H 'Content-Type: application/json' \\ -X POST \\ -d '{\"contents\":[{\"parts\":[{\"text\":\"Explain how AI works in a few words\"}]}]}'",
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "usage_docs"
+    },
+    {
+      "app": "NotebookLM",
+      "number": 91,
+      "category": "AI, Research and Media-native",
+      "stratum": "suspect",
+      "field": "access.tier",
+      "pass1_answer": "self_serve",
+      "notes_from_record": "Developers can sign up for a free Google AI Studio / Gemini API key and get started immediately.",
+      "evidence_urls": [
+        "https://developers.google.com",
+        "https://cloud.google.com/ai/gemini"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Get your no cost Gemini API key",
+      "suggested_problem": "self-serve claim requires access documentation; only marketing mention of a free key is present",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "NotebookLM",
+      "number": 91,
+      "category": "AI, Research and Media-native",
+      "stratum": "suspect",
+      "field": "api_surface",
+      "pass1_answer": {
+        "rest": true,
+        "graphql": false,
+        "webhooks": null,
+        "sdks": [
+          "Python",
+          "JavaScript",
+          "Go",
+          "Java"
+        ],
+        "notes": "Provides REST endpoints and SDKs for Python, JavaScript, Go, and Java."
+      },
+      "notes_from_record": "Provides REST endpoints and SDKs for Python, JavaScript, Go, and Java.",
+      "evidence_urls": [
+        "https://developers.google.com",
+        "https://cloud.google.com/ai/gemini"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Python JavaScript Go Java REST",
+      "suggested_problem": "GraphQL availability is not addressed, so claim that graphql is false cannot be confirmed",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "NotebookLM",
+      "number": 91,
+      "category": "AI, Research and Media-native",
+      "stratum": "suspect",
+      "field": "mcp.exists",
+      "pass1_answer": null,
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.google.com",
+        "https://cloud.google.com/ai/gemini"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": "No claim provided to verify",
+      "evidence_type_seen_by_judge": "none"
+    },
+    {
+      "app": "NotebookLM",
+      "number": 91,
+      "category": "AI, Research and Media-native",
+      "stratum": "suspect",
+      "field": "buildability.verdict",
+      "pass1_answer": "easy",
+      "notes_from_record": "Self-serve credentials are available (API key) and the API is thoroughly documented with code examples across multiple languages.",
+      "evidence_urls": [
+        "https://developers.google.com",
+        "https://cloud.google.com/ai/gemini"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "partial",
+      "suggested_supporting_line": "Google AI Studio is the fast path for developers, students, and researchers who want to try Gemini models and get started building with the Gemini Developer API.",
+      "suggested_problem": "Ease of building is subjective; only marketing language suggests simplicity",
+      "evidence_type_seen_by_judge": "marketing"
+    },
+    {
+      "app": "NotebookLM",
+      "number": 91,
+      "category": "AI, Research and Media-native",
+      "stratum": "suspect",
+      "field": "evidence_supports_claims",
+      "pass1_answer": [
+        {
+          "url": "https://developers.google.com",
+          "claim": "Shows curl and code snippets using the Gemini API key in headers and client libraries for Python, JavaScript, Go, and Java."
+        },
+        {
+          "url": "https://cloud.google.com/ai/gemini",
+          "claim": "Describes getting a no cost Gemini API key via Google AI Studio."
+        }
+      ],
+      "notes_from_record": "",
+      "evidence_urls": [
+        "https://developers.google.com",
+        "https://cloud.google.com/ai/gemini"
+      ],
+      "correct": null,
+      "incorrect": null,
+      "partial": null,
+      "marked_by": null,
+      "human_note": "",
+      "suggested_verdict": "no",
+      "suggested_supporting_line": null,
+      "suggested_problem": null,
+      "evidence_type_seen_by_judge": "none"
+    }
+  ],
+  "generated_at": "2026-09-28T03:38:55.552018+00:00",
+  "how_to_mark": "For each row set exactly one of correct/incorrect/partial to true, and set marked_by to your name. suggested_* fields are the adversarial pass's opinion, not ground truth \u2014 overrule them freely."
+}

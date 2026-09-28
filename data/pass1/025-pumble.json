@@ -1,0 +1,169 @@
+{
+  "app": "Pumble",
+  "number": 25,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:24:15.811893+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://pumble.com\",\n    \"https://help.pumble.com\",\n    \"https://pumble.com/contact-sales\",\n    \"https://pumble.com/pricing\",\n    \"https://pumble.com/integrations\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://pumble.com",
+    "https://help.pumble.com",
+    "https://pumble.com/contact-sales",
+    "https://pumble.com/pricing",
+    "https://pumble.com/integrations",
+    "https://docs.pumble.com/",
+    "https://developer.pumble.com/",
+    "https://developers.pumble.com/",
+    "https://api.pumble.com/",
+    "https://pumble.com/docs",
+    "https://pumble.com/developers",
+    "https://pumble.com/api",
+    "https://pumble.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://pumble.com/help/contact/sales/",
+    "https://pumble.com/register",
+    "https://pumble.com/teams/sales",
+    "https://pumble.com/help/contact/",
+    "https://pumble.com/features/notification-preferences",
+    "https://pumble.com/help/workspace-administration/workspace-settings/single-sign-on-sso/"
+  ],
+  "boilerplate_lines_removed": 19,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.pumble.com",
+      "reason": "page too thin (69 chars)"
+    },
+    {
+      "requested_url": "https://pumble.com/contact-sales",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.pumble.com/",
+      "reason": "page too thin (20 chars)"
+    },
+    {
+      "requested_url": "https://developer.pumble.com/",
+      "reason": "page too thin (69 chars)"
+    },
+    {
+      "requested_url": "https://developers.pumble.com/",
+      "reason": "page too thin (69 chars)"
+    },
+    {
+      "requested_url": "https://pumble.com/register",
+      "reason": "page too thin (97 chars)"
+    },
+    {
+      "requested_url": "https://pumble.com/help/contact/",
+      "reason": "page too thin (109 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://pumble.com",
+      "requested_url": "https://pumble.com",
+      "status": 200,
+      "title": "Pumble\u2122 - FREE Business Communication Tool",
+      "chars": 4213,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://pumble.com/pricing",
+      "requested_url": "https://pumble.com/pricing",
+      "status": 200,
+      "title": "Pricing - Pumble\u2122",
+      "chars": 4962,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://pumble.com/integrations",
+      "requested_url": "https://pumble.com/integrations",
+      "status": 200,
+      "title": "Integrations - Pumble\u2122",
+      "chars": 3152,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://pumble.com/help/contact/sales/",
+      "requested_url": "https://pumble.com/help/contact/sales/",
+      "status": 200,
+      "title": "Request a demo - Pumble Help",
+      "chars": 319,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://pumble.com/teams/sales",
+      "requested_url": "https://pumble.com/teams/sales",
+      "status": 200,
+      "title": "How Sales teams use Pumble",
+      "chars": 2019,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://pumble.com/features/notification-preferences",
+      "requested_url": "https://pumble.com/features/notification-preferences",
+      "status": 200,
+      "title": "Notification Preferences - Pumble\u2122",
+      "chars": 2860,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Pumble offers a public API and SDK for developers to build custom apps and integrate internal tools.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The pages mention a public API is available for creating custom integrations, but do not specify the exact authentication mechanism used.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The pages state that the Pumble API is publicly available for anyone to explore and you can get started by viewing their documentation.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Pumble SDK\"\n    ],\n    \"notes\": \"The documentation mentions a Pumble SDK and a publicly available API for custom add-ons and integrations.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Pumble features an MCP server to optimize collaboration with AI agents, summarize conversations, find lost files, and automate updates.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"The API is publicly available with self-serve exploration and documentation, but specific auth mechanisms are not detailed on the fetched pages.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://pumble.com\",\n      \"claim\": \"Pumble has an MCP server to optimize collaboration with AI agents, summarize conversations, and automate updates.\"\n    },\n    {\n      \"url\": \"https://pumble.com/integrations\",\n      \"claim\": \"The Pumble API is publicly available for anyone to explore, offering a Pumble SDK for custom add-ons.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint_url": "https://pumble.com",
+    "one_liner": "Pumble offers a public API and SDK for developers to build custom apps and integrate internal tools.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The pages mention a public API is available for creating custom integrations, but do not specify the exact authentication mechanism used."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The pages state that the Pumble API is publicly available for anyone to explore and you can get started by viewing their documentation."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Pumble SDK"
+      ],
+      "notes": "The documentation mentions a Pumble SDK and a publicly available API for custom add-ons and integrations."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Pumble features an MCP server to optimize collaboration with AI agents, summarize conversations, find lost files, and automate updates."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "The API is publicly available with self-serve exploration and documentation, but specific auth mechanisms are not detailed on the fetched pages."
+    },
+    "evidence": [
+      {
+        "url": "https://pumble.com",
+        "claim": "Pumble has an MCP server to optimize collaboration with AI agents, summarize conversations, and automate updates.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://pumble.com/integrations",
+        "claim": "The Pumble API is publicly available for anyone to explore, offering a Pumble SDK for custom add-ons.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-27T16:24:38.611237+00:00"
+}

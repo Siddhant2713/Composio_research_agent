@@ -1,0 +1,184 @@
+{
+  "app": "BigCommerce",
+  "number": 43,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:31:24.356212+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.bigcommerce.com\",\n    \"https://developer.bigcommerce.com/docs/start/about\",\n    \"https://developer.bigcommerce.com/docs/start/authentication\",\n    \"https://developer.bigcommerce.com/docs/rest-management\",\n    \"https://developer.bigcommerce.com/docs/rest-apis\",\n    \"https://developer.bigcommerce.com/api-docs\",\n    \"https://login.bigcommerce.com/deep-links/developer-account-signup\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.bigcommerce.com",
+    "https://developer.bigcommerce.com/docs/start/about",
+    "https://developer.bigcommerce.com/docs/start/authentication",
+    "https://developer.bigcommerce.com/docs/rest-management",
+    "https://developer.bigcommerce.com/docs/rest-apis",
+    "https://developer.bigcommerce.com/api-docs",
+    "https://login.bigcommerce.com/deep-links/developer-account-signup",
+    "https://docs.bigcommerce.com/",
+    "https://developers.bigcommerce.com/",
+    "https://api.bigcommerce.com/",
+    "https://bigcommerce.com/docs",
+    "https://bigcommerce.com/developers",
+    "https://bigcommerce.com/api",
+    "https://bigcommerce.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token",
+    "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+    "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+    "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension",
+    "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-plan-change",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/get-auth-storefront",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/create-token",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/email-templates",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/customer-login-api",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/current-customer/get-current-customer",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/storefront/authentication/post-login",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/post-auth-backend",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/storefront/authentication/post-auth-customer",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/post-auth-customer",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/get-backend-tokens"
+  ],
+  "boilerplate_lines_removed": 8,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.bigcommerce.com/docs/rest-apis",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://login.bigcommerce.com/deep-links/developer-account-signup",
+      "reason": "page too thin (75 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "requested_url": "https://developer.bigcommerce.com",
+      "status": 200,
+      "title": "BigCommerce Developers | BigCommerce Docs",
+      "chars": 4799,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "requested_url": "https://developer.bigcommerce.com/docs/start/about",
+      "status": 200,
+      "title": "API Accounts | BigCommerce Docs",
+      "chars": 4979,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts",
+      "requested_url": "https://developer.bigcommerce.com/docs/rest-management",
+      "status": 200,
+      "title": "Abandoned carts | BigCommerce Docs",
+      "chars": 399,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token",
+      "status": 200,
+      "title": "Get OAuth Token | BigCommerce Docs",
+      "chars": 699,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+      "status": 200,
+      "title": "Authentication for hosted storefronts | BigCommerce Docs",
+      "chars": 4903,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+      "requested_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+      "status": 200,
+      "title": "Get Product | BigCommerce Docs",
+      "chars": 1977,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+      "status": 200,
+      "title": "Authentication | BigCommerce Docs",
+      "chars": 4891,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension",
+      "status": 200,
+      "title": "Create Store Suspension | BigCommerce Docs",
+      "chars": 1564,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"BigCommerce provides REST and GraphQL APIs (Management and Storefront APIs) to manage store data, products, orders, customers, and build apps or headless storefronts.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API requests are authenticated using access tokens (e.g., passed in the X-Auth-Token header alongside client credentials or store-level tokens).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free BigCommerce trial store to test API calls and generate API credentials within the store control panel.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"Offers REST Management APIs, REST Storefront APIs, GraphQL Storefront APIs, and GraphQL Admin APIs.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve trial stores allow developers to generate API credentials easily, and comprehensive REST and GraphQL APIs are well-documented.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/overview/quick-start\",\n      \"claim\": \"Sign up for a free BigCommerce trial store to test API calls, and generate API credentials in the store control panel.\"\n    },\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/overview/quick-start\",\n      \"claim\": \"Describes building with REST and GraphQL APIs for managing products, orders, customers, and store settings.\"\n    },\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product\",\n      \"claim\": \"Shows usage of the X-Auth-Token header and access_token for REST API authentication.\"\n    },\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication\",\n      \"claim\": \"Explains authenticating GraphQL Storefront API requests using bearer tokens.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint_url": "https://developer.bigcommerce.com",
+    "one_liner": "BigCommerce provides REST and GraphQL APIs (Management and Storefront APIs) to manage store data, products, orders, customers, and build apps or headless storefronts.",
+    "auth": {
+      "method": "api_key",
+      "notes": "API requests are authenticated using access tokens (e.g., passed in the X-Auth-Token header alongside client credentials or store-level tokens)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free BigCommerce trial store to test API calls and generate API credentials within the store control panel."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "Offers REST Management APIs, REST Storefront APIs, GraphQL Storefront APIs, and GraphQL Admin APIs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve trial stores allow developers to generate API credentials easily, and comprehensive REST and GraphQL APIs are well-documented."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "claim": "Sign up for a free BigCommerce trial store to test API calls, and generate API credentials in the store control panel.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "claim": "Describes building with REST and GraphQL APIs for managing products, orders, customers, and store settings.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+        "claim": "Shows usage of the X-Auth-Token header and access_token for REST API authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+        "claim": "Explains authenticating GraphQL Storefront API requests using bearer tokens.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:33:36.984897+00:00"
+}

@@ -1,0 +1,1029 @@
+===== https://developer.monday.com
+TITLE: monday.com Developer Documentation
+ACCESSED: 2026-09-27
+
+01
+Agents
+Turn agents into teammates
+Give any agent a real identity on monday — then put it to work alongside your team, everywhere your team already works.
+01 · MCP & API
+Connect agents to the platform
+Use our native integration, or manually connect with our hosted MCP url. Each agent gets its own identity on monday.
+02 · Bring your own
+Bring any agent in
+Connect agents from Claude, ChatGPT, Make, or any provider through a managed connection or a simple webhook — or build code-first with the apps framework. Each one gets its own identity on monday.
+03 · Collaborate
+Chat, assign, and @mention
+Talk to agents like teammates. Message them in updates, assign them items, and @mention them in any conversation to kick off real work — replies, statuses, and follow-ups included.
+04 · Omnichannel
+Use them anywhere you work
+Bring an agent in once and reach it from Slack, WhatsApp, Telegram, Make, our MCP, or the API. One identity, every surface — no rebuilding per channel.
+05 · Governance
+Govern everything
+Scope each agent's board access from the admin, audit every action it takes, and track AI credit spend across the whole org — all from one dashboard.
+06 · Models API
+Connect to any LLM
+Wire your apps and agents to leading providers — Anthropic, Google, and OpenAI — through one unified Models API.
+07 · Agents API
+Run agents from your code
+Run and manage every monday agent programmatically from your own code, anywhere you need it.
+Before you bring external agents or write code, try
+monday agents
+02
+Platform API
+Connect to your monday data from anywhere
+An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!
+Coverage
+Security
+Versioning
+MCP & CLI
+Before writing code, try the
+monday AI workflow builder
+, or our partner connectors at:
+03
+Extensible UI
+Customize monday to your exact needs
+Build new views, widgets, menu actions, and doc plug-ins right inside the product. Match monday with Vibe, our open-source React components, so your app looks native from day one.
+View all customizable features
+→
+Views
+Build the views you need
+Create custom board views, item views, dashboard widgets, and full-page apps.
+Menus
+Extend menus with your actions
+Add actions to the item, board, and column menus, right where work happens.
+Products
+Add functionality everywhere
+Ship new reusable workflow blocks, agent skills, and board column types.
+Vibe
+One design system
+Build with Vibe, monday's open-source React components, and look native instantly.
+Before coding, try turning words into work apps using
+monday vibe
+04
+App framework
+Build and deploy apps on our infrastructure
+Get hosting, storage, secrets, and scaling on infra certified for SOC 2, HIPAA, and ISO 27001. Your data never leaves our secure servers.
+Get started with apps
+→
+placeholder · deploy
+monday code
+deploy
+kv-store
+queue
+cron
+secrets
+logs
+alerts
+Hosting
+Write code, skip the servers
+Deploy to isolated sandboxes monday manages. Your syncs and tools run on our infra, not yours.
+Access
+OAuth2 scopes built in
+Request granular scopes like
+boards:read
+. Store keys in managed secret storage.
+Developer MCP
+Build and deploy using AI
+Connect the developer MCP to any agent. Scaffold, set env vars, and promote versions from chat.
+Services
+Everything apps need
+Key-value storage, a pub/sub queue, cron, logs, and alerts out of the box.
+05
+Webhooks
+Trigger workflows from any monday action
+Listen for real-time events and run your workflow the moment data changes. We post the payload as it happens, signed and verifiable.
+×
+Data
+Act when data changes
+Subscribe to
+create_item
+,
+change_column_value
+, and more.
+×
+Agentic
+Trigger on agent activity
+Fire when an agent is messaged, assigned an item, or mentioned in an update.
+×
+Platform
+React to platform events
+Respond when a new user joins or a board is created to keep your backend in sync.
+Learn more about webhooks
+webhook (trigger)
+workflow (action)
+06
+Get started
+Build your first full stack app on monday.com developer platform
+You
+1
+Open a developer account
+2
+Visit the developer center
+3
+Make your first API call
+4
+Connect your IDE to our MCPs
+5
+Extend the UI
+Get started
+→
+
+===== https://developer.monday.com/
+TITLE: monday.com Developer Documentation
+ACCESSED: 2026-09-27
+
+01
+Agents
+Turn agents into teammates
+Give any agent a real identity on monday — then put it to work alongside your team, everywhere your team already works.
+01 · MCP & API
+Connect agents to the platform
+Use our native integration, or manually connect with our hosted MCP url. Each agent gets its own identity on monday.
+02 · Bring your own
+Bring any agent in
+Connect agents from Claude, ChatGPT, Make, or any provider through a managed connection or a simple webhook — or build code-first with the apps framework. Each one gets its own identity on monday.
+03 · Collaborate
+Chat, assign, and @mention
+Talk to agents like teammates. Message them in updates, assign them items, and @mention them in any conversation to kick off real work — replies, statuses, and follow-ups included.
+04 · Omnichannel
+Use them anywhere you work
+Bring an agent in once and reach it from Slack, WhatsApp, Telegram, Make, our MCP, or the API. One identity, every surface — no rebuilding per channel.
+05 · Governance
+Govern everything
+Scope each agent's board access from the admin, audit every action it takes, and track AI credit spend across the whole org — all from one dashboard.
+06 · Models API
+Connect to any LLM
+Wire your apps and agents to leading providers — Anthropic, Google, and OpenAI — through one unified Models API.
+07 · Agents API
+Run agents from your code
+Run and manage every monday agent programmatically from your own code, anywhere you need it.
+Before you bring external agents or write code, try
+monday agents
+02
+Platform API
+Connect to your monday data from anywhere
+An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!
+Coverage
+Security
+Versioning
+MCP & CLI
+Before writing code, try the
+monday AI workflow builder
+, or our partner connectors at:
+03
+Extensible UI
+Customize monday to your exact needs
+Build new views, widgets, menu actions, and doc plug-ins right inside the product. Match monday with Vibe, our open-source React components, so your app looks native from day one.
+View all customizable features
+→
+Views
+Build the views you need
+Create custom board views, item views, dashboard widgets, and full-page apps.
+Menus
+Extend menus with your actions
+Add actions to the item, board, and column menus, right where work happens.
+Products
+Add functionality everywhere
+Ship new reusable workflow blocks, agent skills, and board column types.
+Vibe
+One design system
+Build with Vibe, monday's open-source React components, and look native instantly.
+Before coding, try turning words into work apps using
+monday vibe
+04
+App framework
+Build and deploy apps on our infrastructure
+Get hosting, storage, secrets, and scaling on infra certified for SOC 2, HIPAA, and ISO 27001. Your data never leaves our secure servers.
+Get started with apps
+→
+placeholder · deploy
+monday code
+deploy
+kv-store
+queue
+cron
+secrets
+logs
+alerts
+Hosting
+Write code, skip the servers
+Deploy to isolated sandboxes monday manages. Your syncs and tools run on our infra, not yours.
+Access
+OAuth2 scopes built in
+Request granular scopes like
+boards:read
+. Store keys in managed secret storage.
+Developer MCP
+Build and deploy using AI
+Connect the developer MCP to any agent. Scaffold, set env vars, and promote versions from chat.
+Services
+Everything apps need
+Key-value storage, a pub/sub queue, cron, logs, and alerts out of the box.
+05
+Webhooks
+Trigger workflows from any monday action
+Listen for real-time events and run your workflow the moment data changes. We post the payload as it happens, signed and verifiable.
+×
+Data
+Act when data changes
+Subscribe to
+create_item
+,
+change_column_value
+, and more.
+×
+Agentic
+Trigger on agent activity
+Fire when an agent is messaged, assigned an item, or mentioned in an update.
+×
+Platform
+React to platform events
+Respond when a new user joins or a board is created to keep your backend in sync.
+Learn more about webhooks
+webhook (trigger)
+workflow (action)
+06
+Get started
+Build your first full stack app on monday.com developer platform
+You
+1
+Open a developer account
+2
+Visit the developer center
+3
+Make your first API call
+4
+Connect your IDE to our MCPs
+5
+Extend the UI
+Get started
+→
+
+===== https://developer.monday.com/apps/docs/get-started
+TITLE: Get started
+ACCESSED: 2026-09-27
+
+If you're ready to get started with monday code, this guide will help you set up and deploy your app, manage it after deployment, and optimize your usage. It also covers key features to help you get the most out of monday code
+💡 Prefer to learn by doing? Try our
+tutorial
+To begin, an
+account admin
+must enable monday code on the account. Once enabled, all users will be able to use monday code in their apps.
+Open an app in the Developer Center or
+create a new one
+In the left-side menu, navigate to
+Host on monday
+and select
+Server-side code
+Click
+Connect monday code
+and accept the terms and conditions.
+You must install the
+monday code CLI
+to manage your app's deployments. You can use it to:
+Create new versions of your app
+Upload your code to monday code servers
+Add environment variables and secrets
+Here's how to install the CLI:
+Install the CLI globally through npm by running
+npm install -g @mondaycom/apps-cli
+Run
+mapps help
+to test that it worked. You should receive a list of supported commands.
+Once installed, run
+mapps init
+and add your API token once prompted. Follow
+these steps
+if you don't know how to get your API token.
+Our official SDKs support
+NodeJS
+and
+Python
+. Server-side apps can use the SDK to access features such as storage, queues, and environment variables.
+To install the
+JavaScript SDK
+, navigate to your app's directory and run the following command:
+Shell
+npm install @mondaycom/apps-sdk
+We recommend starting with our
+example app tutorial
+to see the deployment process in action. For a visual walkthrough, check out our
+client-side app deployment tutorial on YouTube
+Once you're ready to deploy your app:
+Run
+mapps code:push
+to deploy to monday's infrastructure.
+Follow the CLI prompts to choose which app and version to deploy.
+If you don’t yet have an app to deploy, try our
+GitHub integration example
+built for monday code to test the process.
+When you
+deploy your app
+with
+mapps code:push
+, we:
+Zip your project files and upload them
+Create a container image from your code using
+Buildpack
+Deploy the container to Cloud Run and expose a URL
+Run health checks
+Return the URL via the CLI
+After deployment, you'll be able to access your deployment URL, view logs, and connect your app features.
+You can connect each app feature to your deployments on the
+Features
+tab. Your monday code URL is automatically connected, and you can choose an optional sub-route to serve your feature.
+Once you deploy your app, you'll see your deployment URLs under
+Host on monday
+>
+Server-side code
+. You can copy and use these URLs to test your endpoints, connect to integrations, or configure your app features.
+Check the
+status of your app's deployments
+with:
+Terminal
+mapps code:status -i <APP_VERSION_ID>
+You can see your app's log output under
+Host on monday
+>
+Logs
+or by running:
+Terminal
+mapps code:logs -i <APP_VERSION_ID>
+monday code provides a robust toolset that simplifies your development process, with built-in security being one of its key benefits. Use the storage, logging, and environment management tools in the
+SDK
+to ensure your app meets our security standards.
+💡
+For example:
+integrating with an external database for customer data storage will not provide the same level of security as using monday code's secure, bundled storage solutions.
+We provide two key-value storage APIs for your app to persist data on behalf of a customer. To use these APIs, you need an access token (e.g., OAuth token or integration shortLivedToken).
+JavaScript
+import { Storage } from '@mondaycom/apps-sdk';
+
+const storage = new Storage('<ACCESS_TOKEN>');
+
+// set value
+const { version } = await storage.set(key, value, { previousVersion, shared });
+// retrieve value
+const storedValue = await storage.get(key, { shared });
+// delete value
+await storage.delete(key, { shared });
+JavaScript
+import { SecureStorage } from '@mondaycom/apps-sdk';
+const secureStorage = new SecureStorage();
+
+// set value
+await secureStorage.set(key, value);
+// retrieve value
+const storedValue = await secureStorage.get(key);
+// delete value
+await secureStorage.delete(key);
+You can purge account data using:
+Terminal
+mapps storage:remove-data
+Doing so allows you to comply with GDPR and other privacy regulations.
+You can declare environment variables and secrets via the CLI:
+Terminal
+mapps code:secret
+Then access secrets using the
+Secrets Manager SDK
+monday code includes a logger to store and inspect logs:
+JavaScript
+import { Logger } from '@mondaycom/apps-sdk';
+
+const tag = 'app-2322-user-12344';
+// tag will be added to every logged message
+const logger = new Logger(tag);
+
+logger.info('POST request at /routes/run');
+logger.warn('Complexity limit reached. Retrying...');
+logger.debug(`account_info: ${JSON.stringify(account_data)}`);
+logger.error('Something went wrong', { error: new Error('error') }); // will include stack trace
+You can access logs through the CLI in several ways by filtering for a specific date range, search term, or logs of a certain type.
+Terminal
+mapp
+
+===== https://developer.monday.com/apps/docs/create-an-app
+TITLE: Create an app
+ACCESSED: 2026-09-27
+
+The monday apps framework enables you to build powerful, integrated user experiences within the monday.com platform. With it, you can:
+Add custom interfaces to modify data in monday.com boards
+Build reusable blocks for integrations
+Pipe visualizations from internal tools into monday.com
+Automate workflows or extend platform functionality using AI or custom data objects
+monday.com apps are made up of app features—the foundational building blocks provided by the framework. Creating app features involves defining their functionality, user interface (if applicable), and how they integrate with monday.com.
+Although every development path is unique, most apps follow these core steps:
+Start by defining your app's purpose:
+What should it do?
+What data will it access or modify?
+How will users interact with it?
+Choose the relevant
+app feature type
+based on how your app interacts with monday.com. Feature types define where your app appears in monday.com and how it behaves.
+Create and configure your app
+and its features in the Developer Center. This includes configuring the app's general settings, feature-specific settings, and permissions/scopes.
+For UI app features, you can build your UI using HTML, CSS, JavaScript, or any frontend framework. Use
+monday-sdk-js
+to get context, call the API, listen to events, and execute platform actions. Check out the example below for a basic board view HTML structure.
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Board View</title>
+  <script src="https://cdn.jsdelivr.net/npm/monday-sdk-js/dist/main.js"></script>
+</head>
+<body>
+  <h1>Board Data Will Go Here</h1>
+  <div id="boardName"></div>
+  <script>
+    const monday = mondaySdk();
+    monday.get('context').then(res => {
+      if (res.data.boardId) {
+        monday.api(`query { boards(ids: ${res.data.boardId}) { name } }`)
+          .then(apiRes => {
+            document.getElementById('boardName').innerText = apiRes.data.boards[0].name;
+          });
+      }
+    });
+  </script>
+</body>
+</html>
+For app features like integrations, or if your frontend needs server-side support, you need to:
+Implement logic to handle trigger and action requests from monday.com (e.g., action runs for an integration)
+Use OAuth 2.0 for secure API access
+Communicate with external services and process data
+Be sure to test your feature in different environments, user roles, and scenarios to ensure a seamless user experience.
+Open the
+Developer Center
+Click
+Create app
+Enter a unique app name and
+slug
+Click
+Create app
+After creating your app:
+Navigate to the
+Build
+tab.
+Select
+Features
+Click
+Create feature
+Choose your desired app feature and click
+Create
+Updated
+8 months ago
+Did this page help you?
+Yes
+No
+
+===== https://monday.com/
+TITLE: The AI Work Platform for People & Agents | monday.com
+ACCESSED: 2026-09-27
+
+The AI Work Platform for People & Agents | monday.com
+People and agents
+working as one team
+The AI workspace where people and agents drive business results together
+Get Started
+No credit card needed  ✦  Unlimited time on Free plan
+Your browser does not support the video tag.
+Please research vendors for Q1 and flag any contract issues before Thursday.
+Nick, Operations Manager
+Triage today's tickets and handle any critical incidents right away.
+Emma, IT Team Lead
+Update the roadmap and optimize timelines for our Q1 planning session.
+Sarah, Product Manager
+Score our open deals and send proposals to anyone above 80%.
+Sophie, Sales Director
+Screen this week's applicants and book interviews for the top candidates.
+Mark, HR Manager
+Monitor this project and let me know if anything is at risk.
+Jasmine, Project Manager
+Trusted by over 60% of the Fortune 500
+You lead. Agents act.
+Where people and agents drive results together on one secure work platform
+Continue with
+Or
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Your browser does not support the video tag.
+Trusted by over 60% of the Fortune 500
+Get more done with agents
+Posts, campaigns and ads.
+Done.
+Marketing agents write posts, run campaigns, and drive insights while your team can focus on strategy.
+Get Started
+Your browser does not support the video tag.
+Tickets, issues and risks.
+Resolved.
+IT agents catch tickets, resolve issues, and escalate risks so your team can own the infrastructure.
+Get Started
+Products and new features.
+Deployed.
+Product agents turn feedback into features and help you ship fast, giving your people space to innovate.
+Get Started
+Leads, follow-ups and deals.
+Closed.
+Sales agents find leads, send follow-ups, update the pipeline, and book meetings, so your people can seal the deal.
+Get Started
+Roles, candidates and hires.
+Secured.
+HR agents can post roles, screen candidates, and schedule interviews letting your team  focus on people.
+Get Started
+Plans, milestones and risks.
+Delivered.
+PMO agents track tasks, flag blockers, and update stakeholders helping your team  focus on execution.
+Get Started
+Your browser does not support the video tag.
+Build an agent for your mission.
+Build agents for your exact needs. Define the goal, set the rules, watch the results.
+Get Started
+An agent for every use case
+Research Agents
+Surface deep intelligence and actionable insights from any subject.
+Reporting Agents
+Automate status updates and performance reports on a set schedule.
+Insights Agents
+Spot risks and progress gaps before they become problems.
+Meeting Assistants
+Schedule meetings, summarize calls, and extract action items.
+Process Optimizers
+Identify, fix, and remove redundant or outdated data and processes.
+Create Your Own Agent
+Build a custom agent for any specific workflow or job.
+Market Analyzer
+Scans industry news and reports to surface new trends and technology automatically.
+Get Started
+Vendor Scout
+Identifies and sources the most suitable suppliers based on your specific needs.
+Get Started
+Competitor Researcher
+Tracks pricing, product launches, and hiring moves to build a clear snapshot of market shifts.
+Get Started
+Daily Wrap-Up
+Summarizes meetings, decisions, and tasks into a daily recap of team progress.
+Get Started
+Status Reporter
+Generates project statuses by highlighting progress, risks, and blockers automatically.
+Get Started
+Executive Digest
+Scans project tasks to flag items behind schedule or requiring immediate approval.
+Get Started
+Goal Tracker
+Tracks leads and signups against set goals and reports on progress automatically.
+Get Started
+Risk Analyzer
+Flags tasks nearing deadlines and notifies owners to keep projects on schedule.
+Get Started
+Anomaly Detector
+Scans data for unusual spikes or drops to identify emerging issues in real-time.
+Get Started
+Meeting Scheduler
+Finds available time slots across calendars and sends meeting invites automatically.
+Get Started
+Transcript Summarizer
+Analyzes call recordings to extract key decisions, action items, and next steps.
+Get Started
+Follow-Up Tracker
+Scans updates for unresolved questions and tags the right people to answer.
+Get Started
+Duplicates Finder
+Scans your data for duplicate items, contacts, or records and suggests merges.
+Get Started
+Process Automator
+Identifies manual tasks and suggests opportunities to automate work.
+Get Started
+Drift Detector
+Monitors automations and flags broken workflows before they impact your team.
+Get Started
+Custom Agent
+Describe any workflow in your own words to create a unique agent in minutes.
+Get Started
+Get more done with agents and people
+Meeting Scheduler
+Syncs impossible calendars
+Project Monitor
+Surfaces hidden risks
+Vendor Researcher
+Compares every quote
+Meeting Scheduler
+Syncs impossible calendars
+Project Monitor
+Surfaces hidden risks
+Vendor Researcher
+Compares every quote
+Competitor Researcher
+Tracks competitors 24/7
+Content Creator
+Drafts in your voice
+Performance Analyst
+Spots wasted budg
+
+===== https://developer.monday.com/api-reference/reference/webhooks
+TITLE: Webhooks
+ACCESSED: 2026-09-27
+
+Webhooks (also called a web callback or HTTP push API) are ways to provide real-time information and updates. They deliver data to other applications as it happens, making webhooks much more efficient for both providers and consumers.
+Our
+webhook integration
+provides real-time updates from monday.com boards, making it a valuable alternative to constantly polling the API for updates. You can use it to subscribe to events on your boards and get notified by an HTTP or HTTPS post request to a specified URL with the event information as a payload.
+If you're building a marketplace app, check out our
+app lifecycle webhooks guide
+Follow these steps to add a webhook to one of your boards:
+Open the
+Automations Center
+in the top right-hand corner of the board.
+Click on
+Integrations
+at the bottom of the left-pane menu.
+Search for
+webhooks
+and find our webhooks app.
+Select the webhook recipe of your choosing.
+Provide the URL that will receive the event payload.
+Please note
+that our servers will send a
+challenge
+to that URL to verify that you control this endpoint. Check out the
+verifying a webhook URL
+section for more info!
+Your app should control the URL you specified. Our platform checks this by sending a JSON POST body containing a randomly generated token as a
+challenge
+field. We expect you to return the token as a
+challenge
+field of your response JSON body to that request.
+The
+challenge
+will look something like this, and the response body should be an identical JSON POST body.
+JSON
+{
+ "challenge": "3eZbrw1aBm2rZgRNFdxV2595E9CY3gmdALWMmHkvFXO7tYXAYM8P"
+}
+Here's a simple example of a webhook listener that will print the output of the webhook and respond correctly to the challenge:
+JavaScript
+Python - provided by @Jorgemolina from the developers community
+app.post("/", function(req, res) {	console.log(JSON.stringify(req.body, 0, 2));	res.status(200).send(req.body);})
+from flask import Flask, request, abort, jsonify
+
+app = Flask(__name__)
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    if request.method == 'POST':
+        data = request.get_json()
+        challenge = data['challenge']
+        
+        return jsonify({'challenge': challenge})
+
+        # print(request.json)
+        # return 'success', 200
+    else:
+        abort(400)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+Some webhook requests contain a JWT in the Authorization header, which can be used to check the request is legitimate. To authenticate the request, verify the JWT's signature against the app's Signing Secret, as described in our
+integrations documentation
+If you want to enable this feature,
+create the webhook with an integration app token
+:
+Create a monday app & add an integration feature to it
+Generate an OAuth token for this app
+Call the
+create_webhook
+mutation using the OAuth token
+End-users cannot disable integration webhooks. This is so the app does not get disrupted by a curious end-user toggling a webhook on and off.
+To enable this feature, make sure to create the webhook with an integration app token. Instructions to do that are in the previous section.
+Requests sent through our webhook integration will retry once a minute for 30 minutes.
+Required scope:
+webhooks:read
+Returns an array containing one or a collection of webhooks
+Can only be queried directly at the root; can't be nested within another query
+GraphQL
+query {
+  webhooks(board_id: 1234567890){
+    id
+    event
+    board_id
+    config
+  }
+}
+Argument
+Type
+Description
+app_webhooks_only
+Boolean
+Returns only the webhooks created by the app initiating the request.
+board_id
+ID!
+The unique identifier of the board that your webhook subscribes to.
+Field
+Type
+Description
+board_id
+ID!
+The unique identifier of the webhook's board.
+config
+String
+Stores metadata about what specific actions will trigger the webhook.
+event
+WebhookEventType!
+The event the webhook listens to:
+change_column_value
+change_status_column_value
+change_subitem_column_value
+change_specific_column_value
+change_name
+create_item
+item_archived
+item_deleted
+item_moved_to_any_group
+item_moved_to_specific_group
+item_restored
+create_subitem
+change_subitem_name
+move_subitem
+subitem_archived
+subitem_deleted
+create_column
+create_update
+edit_update
+delete_update
+create_subitem_update
+id
+ID!
+The webhook's unique identifier.
+Required scope:
+webhooks:write
+Creates a new webhook. Returns
+Webhook
+After the mutation runs, a webhook subscription will be created based on a specific event, so the webhook will send data to the subscribed URL every time the event happens on your board.
+You can add a query param to your webhook URL if you want to differentiate between subitem and main item events. The URL must pass a
+verification test
+where we will send a
+JSON
+POST body request containing a
+challenge
+field. We expect your provided URL to return the token as a
+challenge
+field in your response
+JSON
+body to that request.
+GraphQL
+mutation {
+  create_webhook (board_id: 1234567890, url: "https://www.webhooks.my-webhook/test/",
+
+===== https://developer.monday.com/api-reference/docs/basics
+TITLE: The basics
+ACCESSED: 2026-09-27
+
+Welcome to monday.com, a work OS where teams create and shape their own workflows in minutes, code-free. Our mission is to help teams outdo their best, fulfilling their potential, and collaborating more effectively.
+The monday GraphQL API is part of the
+monday apps framework
+. It is an application layer that allows apps to read and update data inside a monday.com account. It supports operations boards, items, column values, users, workspaces, and more.
+There are countless use cases for the API, including:
+Accessing board data to render a custom report inside a monday.com dashboard
+Creating a new item on a board when a record is created on another system
+Importing data from another source programmatically
+With the monday apps framework, developers can package their own web apps and integrations as native monday.com building blocks.
+Admin
+,
+member
+, and
+guest
+users are all able to utilize the monday.com API.
+Admins
+and
+members
+have access to their own
+API tokens
+Guests
+cannot access an API key but can utilize API features through other authentication methods, like OAuth or a shortLivedToken.
+Viewers
+, users who have been deactivated or disabled, users with unconfirmed emails, or users on student accounts
+cannot
+access the API.
+For building and testing apps or API integrations without touching production data, use a free
+developer account
+The platform API currently supports the monday work management, dev, sales CRM, and service products. It currently does not support Workforms.
+The monday.com API is built with GraphQL, a flexible query language that allows you to return as much or as little data as you need. GraphQL is an application layer that parses the query you send it and returns (or changes) data accordingly. To learn more about the fundamental GraphQL components, check out our
+GraphQL overview
+!
+📘
+We've created a
+community
+specifically for our devs where you can search through previous topics to find solutions, ask new questions, hear about new features and updates, and learn tips and tricks from other devs. Come join in on the fun! 😎
+Updated
+21 days ago
+Did this page help you?
+Yes
+No
+
+===== https://developer.monday.com/api-reference/docs/authentication
+TITLE: Authentication
+ACCESSED: 2026-09-27
+
+The monday.com platform API utilizes
+personal V2 API tokens
+to authenticate requests and identify the user making the call. These tokens are unique to each user and have no explicit length.
+Personal tokens allow you to interact with the API using your own user account. Their permissions mirror what you can do in the monday.com UI, ensuring that API access is consistent with your platform-level permissions.
+If you don't have a monday.com account yet, create a free
+developer account
+to get an API token and start testing.
+Personal tokens mirror all permission levels set in the monday.com UI, including
+board
+,
+column
+,
+item
+, or
+account
+access.
+For example: If you don't have permission to access a certain workspace via the UI, you won't have permission using your personal API token either.
+App tokens have an additional
+set of permission scopes
+that specify which queries and mutations it can access, while personal tokens have all permission scopes.
+You can access your API token in two ways, depending on your
+user type
+All
+users with API access
+can follow these steps to access their API token:
+In your monday.com account, click on your profile picture in the top right corner.
+Select
+Developers
+. This will open the
+Developer Center
+in another tab.
+Click
+API token
+>
+Show
+Copy your personal token.
+Account admins can use the
+Developer Center
+steps above or access their token via the
+Administration
+tab:
+In your monday.com account, click on your profile picture in the top right corner.
+Select
+Administration
+>
+Connections
+>
+Personal API token
+Copy your personal token.
+Once you have your token, you can make requests with the API by passing the token in the
+Authorization
+header.
+cURL
+curl -X POST https://api.monday.com/v2 \
+  -H "Authorization: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "query { me { id name } }"}'
+API tokens can be regenerated at any time. However, this will immediately invalidate your current token, so be sure to update any integrations using it.
+In your monday.com account, click on your profile picture in the top right corner.
+Select
+Developers
+. This will open the
+Developer Center
+in another tab.
+Click
+API token
+>
+Regenerate
+In your monday.com account, click on your profile picture in the top right corner.
+Select
+Administration
+>
+Connections
+>
+Personal API token
+Click
+Regenerate
+Updated
+21 days ago
+Did this page help you?
+Yes
+No
+
+===== https://developer.monday.com/apps/docs/oauth
+TITLE: OAuth and Permissions
+ACCESSED: 2026-09-27
+
+OAuth 2.0 is a protocol that lets your app request authorization to read or modify data in a user's monday account. At the end of the OAuth process, your app gets an access token that belongs to the user and grants access to specified permission scopes.
+You can set up OAuth for your app in just two steps:
+configuring your app
+and
+going through the standard OAuth flow
+🚧
+A new OAuth 2.1 flow is available
+monday.com now supports an improved OAuth 2.1 flow with expiring access tokens, refresh tokens, and token revocation. This page describes the current (legacy) flow. If you are building a new integration or want to upgrade your existing app, see
+Migrating to the new OAuth 2.1 flow
+To start, you must first configure your app's scopes and redirect URLs. If you don't have an app, follow these steps to
+create an app
+in the monday UI and locate your
+client_id
+and
+client_secret
+Once your app has been created, set the scopes and redirect URLs in the
+OAuth tab
+in the
+Developer Center
+OAuth scopes
+define what your app can and cannot do. Each endpoint in the monday API requires a certain permission scope, which can be found in our API reference.
+When you ask a monday user to grant access to your app, you have to specify which of the following supported scopes you're requesting access to:
+Scope
+Description
+account:read
+Read general information about the account
+assets:read
+Read data from assets the user has access to
+boards:read
+Read a user's board data
+boards:write
+Modify a user's board data
+departments:read
+Read the account's department data
+departments:write
+Modify the account's departments
+docs:read
+Read a user's docs
+docs:write
+Modify a user's docs
+me:read
+Read a user's profile information
+notifications:write
+Send notifications on behalf of the user
+tags:read
+Read the account's tags
+teams:read
+Read information about the account's teams
+teams:write
+Modify the account's teams
+updates:read
+Read updates and replies the user can see
+updates:write
+Post or edit updates on behalf of the user
+users:read
+Read profile information of the account's users
+users:write
+Modify profile information of the account's users
+webhooks:read
+Read existing webhooks configuration
+webhooks:write
+Create and modify webhooks
+workspaces:read
+Read a user's workspaces data
+workspaces:write
+Modify a user's workspaces data
+After a monday user approves or denies your app’s authorization request, they will be redirected back to your app's specified
+redirect_uri
+. You can use multiple URLs if you want to route users to different pages based on their context.
+Once you've created and configured your monday app, you're ready to go through the standard OAuth flow. A successful OAuth authorization between your app, the user, and the monday OAuth server occurs in the following order:
+Make an authorization request and redirect the user to the monday OAuth URL with the client ID:
+https://auth.monday.com/oauth2/authorize
+The user sees the permission scopes your app is requesting and approves the request.
+The user is redirected to a defined URL (redirect URL) with a temporary authorization code in the query params after approval.
+Your app's backend sends a POST to the token request endpoint with this code. The token endpoint will respond with an access token. The access token gives your app access to the monday API on behalf of the user and will be valid until the user uninstalls your app.
+The first step in the OAuth flow is making an authorization request and redirecting a user to the monday OAuth page. The OAuth request URL is:
+https://auth.monday.com/oauth2/authorize
+Example:
+GET https:/auth.monday.com/oauth2/authorize?client_id=1111
+Parameter
+Description
+Default value
+Required
+client_id
+Your app's identifier. Located in the
+Basic Information
+tab.
+Yes
+redirect_uri
+URL to redirect back on approval/denial. Must match one of the redirect URLs added to your app.
+If you've only configured one
+redirect_uri
+, it will be used.
+Yes, if more than one
+redirect_uri
+is configured
+scope
+A space-separated list of OAuth scopes indicating the permissions your app is requesting. All requested scopes must match the list you configured in your app.
+The full scope list configured in your app
+No
+state
+An arbitrary value that will be passed to your app on approval or denial. Use a unique state parameter to avoid forgery attacks and check the value at every step of the OAuth flow.
+No
+app_version_id
+The app version's unique identifier. Enables app collaborators to go through the OAuth flow for the requested app version (live or draft). You can get it from your app's URL, after
+app_versions
+. This
+will not work
+for deprecated versions and non-app collaborators.
+The live version's
+callback URL
+defined in the Developer Center. If there is no live version, the latest version created on the app will be used.
+No
+force_install_if_needed
+Enables a seamless OAuth flow by automatically redirecting users to the app installation page if the app is not installed. Once an admin installs the

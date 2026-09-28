@@ -1,0 +1,1074 @@
+===== https://docs.devin.ai/get-started/devin-intro
+TITLE: Introducing Devin - Devin Docs
+ACCESSED: 2026-09-27
+
+Example Devin session, from prompt to PR
+Devin is an autonomous AI software engineer that can write, run and test code. Devin can handle most tasks, excluding extremely difficult tasks. As a rule of thumb, if you can do it in three hours, Devin can most likely do it. Ask Devin to tackle Linear/Jira tickets, implement entirely new features, repro and fix bugs, build internal tools, and more!
+See what’s new with Devin in our
+release notes
+!
+In some cases Devin may not function exactly as referenced, or documentation may be out of date.
+Already Signed Up? Get Started Now:
+Browse use cases
+What are Devin’s strengths?
+Here are the types of tasks where Devin excels:
+Tackling many tasks in parallel, before they end up in your backlog
+Linear/Jira tickets
+Entire features from scratch
+Bug reports
+App testing
+Code migrations, refactors, and modernization
+Language migrations (e.g. JavaScript to TypeScript)
+Framework upgrades (e.g. Angular 16 -> 18)
+Monorepo to submodule conversions
+Removing unused feature flags
+Extracting common code into libraries
+Common, repetitive engineering tasks
+PR Review
+Codebase Q&A
+Reproducing & fixing bugs
+Writing unit tests
+Maintaining documentation
+Customer engineering support
+Building new integrations and working with unfamiliar APIs
+Creating customized demos
+Prototyping solutions
+Building internal tools
+To get the best results from Devin:
+Write clear prompts with explicit completion criteria — the clearer the task, the higher the success rate, especially for complex work.
+Make tasks easy to verify — e.g. checking that CI passes or testing an automatic deployment.
+For harder tasks, break them into well-scoped steps and provide relevant context or examples.
+Follow our
+best practices and pre-task checklist
+The most successful workflows include:
+Tagging Devin on a
+Slack
+or
+Teams
+thread about a bug you’re discussing with coworkers
+Delegating a more complex task via the web application and taking over in Devin’s IDE once it gives you a good first draft.
+Running
+Devin for Terminal
+in your local environment for quick fixes, code exploration, and interactive coding right from the command line — then using
+/handoff
+to send longer tasks to cloud Devin.
+Carving out tasks from your todo list at the start of your day and returning to draft PRs waiting for review.
+Devin is most effective when it’s part of your team and your existing workflow.
+Devin in Slack
+General Product Features
+The Devin Interface
+Devin is designed to be a conversational user interface, and allows you to follow and take over Devin’s development process in the embedded IDE. Devin is also available via the
+Devin API
+In Devin’s Workspace, you’ll find
+developer tools
+that Devin will use to complete your task.
+Shell
+Devin’s terminal, where you can watch commands being executed and view output logs. You can also copy the shell output for debugging purposes. To run commands directly, use the IDE’s shell.
+IDE
+Devin’s embedded code editor equipped with all the IDE tools and shortcuts you’re familiar with. Follow Devin’s work real-time and take over to run commands, make direct code edits or test Devin’s code.
+Browser
+Watch Devin browse through documentation, test web applications it builds, download/upload information, and more. You can jump in to help Devin navigate through browsing tasks via the Interactive Browser.
+You can find Devin's tools in the sidebar or by clicking any progress steps in the session
+Getting Access
+To access Devin, sign up at
+app.devin.ai
+. Individual and Teams plans are available.
+You can also install
+Devin CLI
+to use Devin directly from your command line:
+curl
+-fsSL
+https://cli.devin.ai/install.sh
+|
+bash
+If your company is already working with Cognition, you can request permissions from your Administrator or Cognition directly and access Devin via the web application at
+app.devin.ai
+Feedback
+We’re learning and our customers’ input is crucial! You can share your feedback to
+support@cognition.ai
+,
+via Slack Connect
+(available to Teams users), or directly in the web app by clicking the
+Help
+(question mark) icon at the bottom of the sidebar and selecting
+Contact support
+We log all feedback provided by customers and use it to make quick improvements to Devin and inform our product priorities and roadmap.
+Demo
+To learn more check out our
+blog
+About Cognition
+We are an applied AI lab building end-to-end software agents.
+We’re building AI software engineers that help ambitious engineering teams crush their backlogs.
+
+===== https://devin.ai/
+TITLE: Devin: the autonomous software engineer
+ACCESSED: 2026-09-27
+
+Meet Devin, your team's autonomous software engineer
+Devin runs in the cloud or on your machine, tests in its own browser, and won't stop until the PR is ready to merge
+Get started
+Book a demo
+New session
+Automations
+Security
+Review
+Wiki
+More
+Sessions
+Pinned
+3
+Add enterprise SSO
+Add multi-region failover
+Upgrade Node.js across services
+Investigate API latency spike
+Patch vulnerable dependencies
+Fix failing checkout tests
+Review authentication changes
+Expand payment test coverage
+Document service architecture
+More
+Participated
+12
+Review API changes
+Optimize database queries
+Fix failing checkout tests
+More
+Kenzo Park
+Cognition
+Add enterprise SSO
+XL
+Add SAML SSO for enterprise customers.
+Follow our existing auth patterns and let admins configure it in organization settings. Keep email login working for everyone else.
+Explored authentication across 3 repositories
+Implemented SSO and organization settings
++
+13
+-
+1
+Devin
+8:05 PM
+Here’s the PR. Enterprise admins can now configure SSO in organization settings, and members can sign in through their identity provider.
+I tested setup, sign-in, and account linking in the browser. Existing email login still works, and all checks pass.
+Tested sign-in and account linking in the browser
+5 tests passed
+feat: Add SAML SSO for enterprise
+acme/platform #2922
+·
++
+9
+-
+14
+View PR
+Added to the PR. Admins can require SSO once setup is verified. I also added tests for enforcement and recovery access.
+Plan a feature, fix bugs, or perform a security scan
+Ultra
+PR Open
+·
+acme/platform
+#2922
+Add enterprise SSO
+bwhuffman
+main
+enterprise-sso
+12 files changed
++
+8
+-
+14
+Devin’s analysis
+Adds SAML single sign-on for enterprise organizations. Admins can configure their identity provider, verify the connection, and require SSO from organization settings.
+Test recording
+on Mac OS X virtual environment
+2/5
+New session
+Automations
+Security
+Review
+Wiki
+More
+Sessions
+Pinned
+3
+Add enterprise SSO
+Add multi-region failover
+Upgrade Node.js across services
+Investigate API latency spike
+Patch vulnerable dependencies
+Fix failing checkout tests
+Review authentication changes
+Expand payment test coverage
+Document service architecture
+More
+Participated
+12
+Review API changes
+Optimize database queries
+Fix failing checkout tests
+More
+Kenzo Park
+Cognition
+Add enterprise SSO
+XL
+Add SAML SSO for enterprise customers.
+Follow our existing auth patterns and let admins configure it in organization settings. Keep email login working for everyone else.
+Explored authentication across 3 repositories
+Implemented SSO and organization settings
++
+13
+-
+1
+Devin
+8:05 PM
+Here’s the PR. Enterprise admins can now configure SSO in organization settings, and members can sign in through their identity provider.
+I tested setup, sign-in, and account linking in the browser. Existing email login still works, and all checks pass.
+Tested sign-in and account linking in the browser
+5 tests passed
+feat: Add SAML SSO for enterprise
+acme/platform #2922
+·
++
+9
+-
+14
+View PR
+Added to the PR. Admins can require SSO once setup is verified. I also added tests for enforcement and recovery access.
+Plan a feature, fix bugs, or perform a security scan
+Ultra
+PR Open
+·
+acme/platform
+#2922
+Add enterprise SSO
+bwhuffman
+main
+enterprise-sso
+12 files changed
++
+8
+-
+14
+Devin’s analysis
+Adds SAML single sign-on for enterprise organizations. Admins can configure their identity provider, verify the connection, and require SSO from organization settings.
+Test recording
+on Mac OS X virtual environment
+2/5
+Your teammate’s favorite teammate
+Selecting seat
+Devin’s computer
+Flag enabled; mobile viewport on enterprise child org
+Testing 3/12
+0:24
+Ensure compatibility across various screen sizes and maintain usability features
+0:36
+Incorporate accessibility guidelines to enhance user experience for all
+0:24
+Render in light and dark themes
+0:24
+Test for offline mode
+0:30
+Loading screen improvement
+0:45
+User feedback integration
+1:00
+Sync error handling
+1:15
+Data retrieval optimization
+1:30
+Offline data storage enhancement
+2:15
+Real-time analytics integration
+3:00
+User interface optimization
+Tests end to end on its own computer
+Devin spins up its own Windows, Mac, and Linux virtual machines as needed to build, test in its browser, and record itself clicking through what it built
+Search all models
+Fusion
+Ultra
+Normal
+Lite
+All models
+SWE-2
+Fable 5.1
+GPT-6 Astra
+Grok 4.7
+Gemini 3.8 Flash
+Fusion
+Pairs frontier intelligence with cost-efficient execution
+Lead
+Claude Fable 5.1
+Effort
+High
+Sidekick
+SWE-2 Medium
+Fast mode
+Fusion
+Gets the best from every frontier model
+Access frontier performance for up to 60% less. Devin mixes and matches models to get the most from each
+Sessions
+Weekly dependency upgrades
+1 min
+1
+1
+Upgrade React to 19.2
+PR is ready
+1
+1
+Bump Next.js to 16.3
+PR is ready
+1
+1
+Architecture rewrite
+Working
+·
+56 hours
+·
+Notification panel UX
+Review PR
+1
+Refactor artifact library
+1 min
+1
+Update CSS styles for mobile responsiveness
+5 min
+1
+Optimize images for faster loading
+3 min
+
+===== https://devin.ai/pricing
+TITLE: Plans and Pricing | Devin
+ACCESSED: 2026-09-27
+
+Plans and Pricing | Devin
+Devin
+Plans and Pricing
+Choose the perfect plan for your journey
+SWE-2, our latest model, is now available →
+INDIVIDUAL PLANS
+Free
+$0
+Download
+Light quota to code with agents
+Limited model availability
+Unlimited inline edits
+Unlimited Tab completions
+Pro
+POPULAR
+$20
+per month
+Select plan
+Everything in Free, plus:
+Increased quotas, including access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models
+Full model availability
+Free use of SWE-2
+Free in Devin Desktop and CLI through October 10, 2026
+Access to cloud agents (Devin Cloud)
+Purchase extra usage at API pricing
+Max
+NEW
+$200
+per month
+Select plan
+Everything in Pro, plus:
+Significantly higher quotas
+TEAM PLANS
+Teams
+$80
+/month for team plan + $40/mo per full dev seat
+Select plan
+Everything in Pro, plus:
+Up to 200 users
+Share and collaborate
+Centralized billing
+Admin dashboard with analytics
+Priority support
+Enterprise
+Let's talk
+Get a Demo
+Built to scale across your organization:
+Highest priority support
+Dedicated account management
+SAML/OIDC SSO
+Centralized enterprise admin controls
+Dedicated deployment option
+First class support for
+every major model provider
+Compare Plans
+Free
+$0/month
+Pro
+$20/month
+Max
+$200/month
+Team
+$80/month
+Enterprise
+Let's talk
+Members
+1
+1
+1
+Up to 200 users
+$40/month per
+full user
+Each full user includes their own generous quota and access to Devin Desktop
+Unlimited
+Devin Desktop
+Tab
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Premium models
+Fast context
+Free SWE-2
+Free in Devin Desktop and CLI through October 10, 2026
+Slow
+Devin Cloud
+DeepWiki
+Devin API
+Ask Devin
+Advanced capabilities
+Sharing and collaboration
+Concurrent sessions limit
+Up to 10
+Up to 10
+Unlimited
+Unlimited
+Integrations
+Slack and Teams
+Linear and Jira
+GitHub, GitLab, and Bitbucket
+Custom git provider support
+Account support
+Dedicated Slack Connect channel for support
+Optional onboarding call with the Cognition team
+Dedicated account and engineering support
+Access to early feature releases and research previews
+Custom
+Dedicated account team
+Custom terms
+Enterprise accounts
+Centralized management of multiple Devin organizations
+Security
+Deploy in your virtual private cloud (VPC)
+SAML/OIDC SSO
+Centralized enterprise admin controls
+Teamspace isolation
+Frequently Asked Questions
+How does usage work?
+Each paid plan comes with a usage allowance that refreshes automatically on a daily and weekly basis. For the majority of users, this quota will be enough to fully cover all agent usage. Cost per message varies based on the model used, the task size and complexity, and the reasoning required.
+What happens when I reach my usage limit?
+Most users will never hit their limits. If you do go beyond your included usage on a paid plan, you can purchase extra usage which is consumed at API pricing.
+How can I make my usage limits last longer?
+Control the size of your prompts.
+Be precise with your instructions, but remove unnecessary context.
+Switch to smaller models for routine tasks.
+Using mini models like Haiku, GPT 5.2 Mini, and open source models like Kimi K2.5 will extend your usage.
+What is the Max plan?
+The Max plan is for power users who need significantly higher usage quotas. It includes everything in Pro, plus significantly higher quotas.
+What is included in the Free plan?
+The Free plan includes a light quota to code with agents, limited model availability, unlimited inline edits, and unlimited Tab completions.
+
+===== https://devin.ai/contact
+TITLE: Contact Sales | Devin
+ACCESSED: 2026-09-27
+
+Contact Sales | Devin
+Bring Devin to your Team
+Leading engineering teams use Devin to amplify their work. To empower your team, get in touch with our Sales Team.
+
+===== https://docs.devin.ai/product-guides/oidc
+TITLE: Cloud Authentication with OIDC - Devin Docs
+ACCESSED: 2026-09-27
+
+Devin can authenticate to cloud services using OpenID Connect (OIDC) workload identity federation instead of long-lived credentials. Each Devin session receives a short-lived identity token issued by Devin, which your cloud provider verifies and exchanges for temporary credentials. No static API keys or secrets need to be stored in Devin.
+How it works
+Every Devin session automatically receives a short-lived
+identity token
+, signed by Devin and refreshed for the lifetime of the session.
+Your cloud provider verifies the token against Devin’s public OIDC issuer and grants temporary, scoped access.
+Tokens identify the session through claims such as
+org_id
+,
+devin_id
+, and
+requesting_user_email
+, so you can write trust policies that grant access to your organization, or to specific sessions or users. Tokens expire automatically — there is nothing to rotate or revoke.
+Setup actions
+Add the relevant action to the
+initialize
+section of your
+environment blueprint
+:
+Action
+Purpose
+setup-aws-oidc
+AWS CLI and SDK auth via IAM
+AssumeRoleWithWebIdentity
+setup-gcp-oidc
+gcloud and Google Cloud SDK auth via Workload Identity Federation
+setup-vault-oidc
+HashiCorp Vault CLI auth via the JWT/OIDC auth method
+setup-jfrog-oidc
+JFrog CLI auth via JFrog’s OIDC token exchange
+setup-devin-oidc
+Base
+devin-oidc
+CLI, for services that trust Devin as an identity provider
+Example: AWS
+initialize
+:
+-
+uses
+:
+github.com/CognitionAI/actions/setup-aws-oidc@main
+with
+:
+role-arn
+:
+"arn:aws:iam::123456789012:role/devin-sessions"
+region
+:
+"us-east-1"
+Devin can then run AWS commands without any stored credentials:
+aws
+sts
+get-caller-identity
+See the
+setup-aws-oidc
+documentation
+for the full AWS-side prerequisites and configuration options.
+Example: GCP
+initialize
+:
+-
+uses
+:
+github.com/CognitionAI/actions/setup-gcp-oidc@main
+with
+:
+workload-identity-provider
+:
+"projects/123456789/locations/global/workloadIdentityPools/devin/providers/devin-oidc"
+service-account
+:
+"devin@my-project.iam.gserviceaccount.com"
+project
+:
+"my-project"
+gcloud and the Google Cloud client libraries then authenticate automatically through Workload Identity Federation:
+gcloud
+storage
+ls
+gcloud
+auth
+print-access-token
+See the
+setup-gcp-oidc
+documentation
+for the full GCP-side prerequisites (workload identity pool and provider setup) and configuration options.
+Example: custom services
+For your own APIs and internal services, use the base CLI to request a token for any audience your service accepts:
+devin-oidc
+token
+--audience
+my-api
+--subject-keys
+"org_id"
+Configure your service to trust Devin’s OIDC issuer and verify tokens against its published JWKS at
+/.well-known/jwks.json
+. The issuer is your Devin webapp origin —
+https://app.devin.ai
+, or your own domain for enterprise deployments (e.g.
+https://yourdomain.devinenterprise.com
+).
+For a worked example of this pattern with a third-party platform, see
+Connect Devin to Databricks
+, which federates a Databricks service principal to Devin’s issuer and wraps the Databricks CLI so each call carries a fresh token.
+Token claims
+Tokens carry the following identity claims, which you can reference in trust policies and use to compose the token subject via
+subject-keys
+. The subject is built from
+key:value
+pairs of the selected claims — for example,
+--subject-keys "org_id"
+(the default) produces a subject like
+org_id:a67b8de8-9483-4a9c-9662-51c3d2a45e88
+Claim
+Description
+org_id
+Organization the session was launched in
+account_id
+Account (enterprise or single-org customer) identifier
+devin_id
+The Devin session ID
+devin_trigger
+How the session was started (e.g.
+webapp
+,
+slack
+,
+api
+)
+requesting_user_id
+/
+requesting_user_email
+The user who started the session
+service_user_id
+Service user, for API-initiated sessions
+Security properties
+No long-lived credentials
+: tokens are short-lived and refreshed automatically; nothing needs to be rotated or revoked when a session ends.
+Scoped access
+: audience-scoped tokens are only valid for the specific service they were requested for, and your trust policies control exactly which identities can be granted access.
+Auditable identity
+: tokens carry the session, organization, and requesting user, so cloud-side audit logs attribute every action to a specific Devin session.
+Enterprise deployments with custom domains have a dedicated per-account signing key, and the token issuer is your custom Devin URL. Contact your Devin administrator or Cognition support for your issuer URL and organization ID.
+
+===== https://docs.devin.ai/api-reference/overview
+TITLE: API Overview - Devin Docs
+ACCESSED: 2026-09-27
+
+The Devin API enables you to integrate Devin into your applications, automate workflows, and build powerful tools. Use
+service users
+with role-based access control for secure, auditable API access.
+Getting started
+Teams quick start
+For teams and standard organizations. Create a service user and make your first API call in minutes.
+Enterprise quick start
+For enterprise customers with RBAC, multi-org support, and advanced permissions.
+Which path should I choose?
+Most customers should start with the Teams quick start. Choose Enterprise if you manage multiple organizations, use SSO, or need custom roles and RBAC.
+API structure
+The API is organized into two scopes:
+Organization API
+Base URL:
+https://api.devin.ai/v3/organizations/*
+For managing resources within a single organization — sessions, knowledge, playbooks, secrets, and more. This is where most integrations start.
+Enterprise API
+Base URL:
+https://api.devin.ai/v3/enterprise/*
+For cross-organization management — analytics, audit logs, user management, billing, and infrastructure. Available to enterprise customers.
+Both scopes use service user credentials (
+cog_
+prefix). See
+Authentication
+for setup.
+Session attribution
+Service users are separate identities from human users, but you can
+create sessions on behalf of any user
+in your organization using the
+create_as_user_id
+parameter. This means sessions appear in that user’s session list and count toward their usage — just like they created it themselves.
+curl
+-X
+POST
+"https://api.devin.ai/v3/organizations/
+$DEVIN_ORG_ID
+/sessions"
+\
+-H
+"Authorization: Bearer
+$DEVIN_API_KEY
+"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"prompt": "Fix the login bug in issue #42",
+"create_as_user_id": "user_abc123"
+}'
+Coming from personal API keys?
+In v1/v2, personal API keys automatically created sessions as your user. With v3, use a service user +
+create_as_user_id
+for the same behavior — with the added benefit of RBAC, audit trails, and centralized key management. The service user’s role must include
+ImpersonateOrgSessions
+permission.
+You can also authenticate directly as your user with a
+Personal Access Token
+— no service user or
+create_as_user_id
+needed. Sessions are automatically attributed to you.
+You can find user IDs with the
+List organization users
+endpoint (beta, organization-scoped service user) or the enterprise
+List users
+endpoint. Both return only users with direct role assignments. For users whose membership comes from IDP groups, use
+List organization IDP group users
+or its
+enterprise equivalent
+Legacy APIs (v1 and v2)
+The v1 and v2 APIs continue to work during the deprecation period but do not receive new features. We recommend migrating to the current API for role-based access control, session attribution, and new capabilities.
+v1 API documentation
+— session management with legacy API keys
+v2 API documentation
+— enterprise management with legacy API keys
+Migration guide
+— step-by-step migration from v1/v2
+Error handling
+All APIs use standard HTTP status codes:
+200 OK
+: Successful request
+201 Created
+: Resource created successfully
+400 Bad Request
+: Invalid request parameters
+401 Unauthorized
+: Missing or invalid API key
+403 Forbidden
+: Insufficient permissions
+404 Not Found
+: Resource not found
+429 Too Many Requests
+: Rate limit exceeded
+500 Internal Server Error
+: Server error
+Support
+For questions about the API or to report issues, email
+support@cognition.ai
+
+===== https://docs.devin.ai/work-with-devin/browser-auth
+TITLE: Devin browser authentication - Devin Docs
+ACCESSED: 2026-09-27
+
+Devin often needs to be logged into web apps — your staging environment, an admin dashboard, a SaaS tool — before it can do useful work. Instead of repeating a login every session, log in once and have Devin save the browser profile so all future sessions start authenticated.
+Saving a browser profile writes to the organization-level blueprint, so Devin only offers the
+save_browser_profile
+tool in sessions started by a user with the
+Manage Org Blueprints
+permission. It is included in the default
+org_member
+and
+org_admin
+roles; see
+Custom roles
+The workflow
+1
+Log in manually in the Interactive Browser
+Open the
+Desktop
+tab in the session and drive the browser yourself: complete the login, including SSO redirects, MFA prompts, and CAPTCHAs. See
+Interactive Browser
+2
+Ask Devin to save the browser profile
+Say
+“save the browser profile”
+or
+“persist my login sessions”
+. Devin calls its
+save_browser_profile
+tool, which zips the browser data directory (cookies,
+localStorage
+, and other Chrome profile data) and attaches it to your organization’s blueprint as a file. Other phrasings work too — “save browser cookies”, “remember my browser logins”, “keep my browser state”, “save the browser to my snapshot”.
+3
+Approve the blueprint update
+Devin proposes a one-time update to the
+organization-level
+blueprint
+, adding an
+initialize
+step named
+Initialize browser profile
+that unzips the saved profile into the browser data directory. Review it in your timeline and approve it.
+4
+Future sessions start authenticated
+Every new session in the organization restores that browser state during setup, so Devin’s browser is already logged in when the session starts. No further approvals needed.
+The restore step is a normal blueprint
+initialize
+step, referencing the profile zip through a
+$FILE_BROWSER_PROFILE
+file attachment
+:
+# Restore saved browser profile from org blueprint files
+if
+[
+-f
+"
+$FILE_BROWSER_PROFILE
+"
+];
+then
+mkdir
+-p
+/home/ubuntu/.browser_data_dir
+unzip
+-o
+"
+$FILE_BROWSER_PROFILE
+"
+-d
+/home/ubuntu/.browser_data_dir
+fi
+To refresh expired sessions, log in again and ask Devin to save the profile again — the tool replaces the existing step rather than adding a second one.
+Limitations and security
+Saved profiles are
+organization-level
+, not per-repository. Anyone in your organization can start a session that loads the profile, including the logins, cookies, and session tokens it contains. Only save profiles for accounts your whole organization is allowed to use — prefer a dedicated service account over a personal one.
+No browser extensions.
+Only profile data is restored. Extension-based tools (for example, MetaMask) are not loaded, so flows that depend on an extension won’t work.
+Saved passwords are excluded.
+Chrome’s password store is skipped, along with caches — so the profile carries session state, not credentials. Store credentials as
+Secrets
+instead.
+Size limit.
+The profile zip must be under 200 MB.
+Sessions still expire.
+Cookies restored from the profile expire on the app’s normal schedule; re-save the profile when they do.
+Alternatives
+Approach
+Best for
+Save browser profile
+Logins that are hard to script — SSO, MFA, CAPTCHAs — where clicking through once is easiest
+Playwright login script
+in
+.agents/skills/
+Scriptable logins and injecting arbitrary browser state such as
+localStorage
+keys, per repository and versioned in git
+Secrets
+API tokens and credentials Devin uses from the shell or from a login script
+
+===== https://docs.devin.ai/enterprise/getting-started/get-started
+TITLE: Getting Started with Devin Enterprise - Devin Docs
+ACCESSED: 2026-09-27
+
+Overview
+Devin Enterprise gives you fine-grained control over admin, security, and provisioning of individual users. This guide walks you through setting up Devin Enterprise, including environment configuration, tool integration, and account provisioning.
+Devin’s setup process mirrors the onboarding of a new engineer—it requires access to the same services and tools as your development team.
+This guide does not cover
+Devin’s deployment
+. For deployment details, refer to the
+Deployment Guide
+Understanding Organizations
+Organizations in Devin Enterprise are logical groupings that provide structure and boundaries for your development teams. Each organization operates as a self-contained unit with its own shared Devin machine, repository access, and member permissions.
+Learn More About Organizations
+Dive deeper into organization structure, planning patterns, and best practices for mapping your teams to Devin organizations.
+Creating Organizations
+You can create multiple organizations within your enterprise to segment teams, projects, or departments.
+To create an organization:
+Go to
+Enterprise Settings > Organizations
+Click
+Create organization
+Enter an
+Organization name
+, optionally set a monthly ACU limit and select initial members, then click
+Create
+Create organization
+Members and Roles
+User Roles
+There are three types of default users on Devin Enterprise, each with varying levels of permissions.
+Role
+Permissions
+Enterprise Admins
+- Full access to all enterprise settings
+- Create organizations
+- Invite individuals to organizations
+- Connect source code repository to account
+- Manage billing
+Organization Admins
+- Invite members to their organization
+Members
+- Use Devin and have full access within their organization
+- Execute Devin sessions
+Custom Roles
+For more granular access control, Devin Enterprise supports
+Custom Roles & RBAC
+. You can create custom roles with specific permissions at both the organization level (controlling access within a specific organization) and account level (applying across the entire enterprise).
+IdP Groups
+Custom roles can be automatically assigned based on SSO IdP group membership. See
+IdP Group Integration
+for detailed configuration steps.
+Adding Members
+After creating an organization, you can add members and assign them to specific organizations.
+Navigate to
+Enterprise Settings > Membership
+and select the
+Members
+tab
+Click
+Invite members
+Enter the email address of each user you’d like to invite
+Users will receive an email invitation to join your Devin organization.
+Add Member
+Managing Member Access
+To manage member access to organizations:
+Go to
+Enterprise Settings > Membership
+and select the
+Members
+tab
+Use the checkbox next to a user’s name to select one or more users
+Use the action buttons at the bottom of the page (
+Change role
+,
+Add organizations
+,
+Remove organizations
+, or
+Remove
+) to manage the selected users
+Manage Members
+To verify which organizations a user belongs to, click the organization count (e.g., “2 organizations”) in the table to expand and view their organization memberships.
+Member Organizations
+Single Sign-On (SSO)
+Your enterprise admin can set up authentication to Devin via SSO. We support:
+Okta
+Microsoft Entra ID
+SAML
+OIDC (Generic)
+Integrations
+Source Code Access
+Your enterprise admin must connect source code using one of our supported integrations. This can be done in
+Enterprise Settings > Connected Accounts
+:
+GitHub
+GitHub Enterprise
+GitLab
+Bitbucket
+Azure DevOps
+Manage Integrations
+Managing Repository Permissions
+Learn how to grant organizations access to specific repositories or entire GitHub groups using Group and Repository Permissions.
+Slack & Microsoft Teams Integration
+Tag @Devin directly in Slack channels or Microsoft Teams to start sessions, ask questions, and collaborate with your team. Devin responds in-thread with updates and can be controlled using inline keywords like
+!ask
+,
+mute
+, and
+sleep
+. See the
+Slack integration guide
+or
+Microsoft Teams integration guide
+for setup instructions.
+GitHub PR Comments
+Comment
+/devin <prompt>
+on any open pull request in a connected GitHub repository to start a Devin session on that PR, or
+/devin review
+to trigger a Devin Review. See
+Start Devin from a PR comment
+Next Steps
+Deployment Options
+Explore deployment models including Enterprise Cloud and Customer Dedicated Deployment.
+Security & Compliance
+Learn about Devin’s security practices, data privacy, and compliance certifications.
+Use Cases
+Browse practical examples across engineering workflows.
+For enterprise-level setup and support, contact our
+Enterprise Sales Team
+
+===== https://docs.devin.ai/get-started/first-run
+TITLE: Your First Session - Devin Docs
+ACCESSED: 2026-09-27
+
+Before you start your first session, make sure you’ve
+indexed
+and
+set up
+your repositories. These are the foundational steps that help Devin understand and work with your codebase.
+Now that you’re all set up, kick off your first Devin session! This guide will walk you through the new session interface and help you understand the best ways to interact with Devin.
+Prefer working from your terminal?
+Devin CLI
+lets you start sessions right from the command line. Install in 2 minutes with
+curl -fsSL https://cli.devin.ai/install.sh | bash
+Understanding the Devin Session Page
+When you start a new session, you’ll see two primary modes:
+Ask
+and
+Agent
+Unless you already have a fully scoped plan, we recommend starting with Ask to work with Devin on constructing a plan, then moving to Agent mode to execute it.
+Ask Mode
+Ask Devin
+is a lightweight mode for exploring your codebase and planning tasks with Devin, without making changes to the actual code. Ask Devin now supports both asking questions and planning:
+Ask questions
+about how your code works. Uses advanced code search to produce detailed, accurate, and well-cited answers.
+Plan tasks
+by scoping and planning work before implementation. Devin generates context-rich prompts for Agent sessions.
+When you start a Devin session from Ask Devin, the session status is visible directly in the conversation.
+Triggering Ask Mode
+You can trigger Ask mode from the main page or from a DeepWiki page.
+For Ask mode from the main page, toggle to Ask mode and select the repository/repositories you want to ask about.
+For Ask mode from a DeepWiki page, type a query in the chat input at the bottom of the page and click Ask. This will automatically scope Devin’s knowledge to that repository specifically.
+Learn more in our
+Ask Devin guide
+Once you’ve worked with Devin to understand the problem and create a plan, you’re ready to move to Agent mode.
+Agent Mode
+Agent mode is Devin’s full autonomous mode where it can write code, run commands, browse the web, and complete complex tasks end-to-end. Use Agent mode when you’re ready to:
+Implement features or fix bugs
+Create pull requests
+Run tests and debug issues
+Perform multi-step tasks that require code changes
+Triggering Agent Mode
+You can trigger Agent mode from the main page or from an Ask Devin session. When a session is started from Ask Devin, its status is displayed in the Ask Devin conversation so you can track progress.
+For tasks that are not fully scoped, we recommend:
+Start with
+Ask mode
+to plan out the task
+Construct a Devin Prompt
+, which will draw from your Ask session to create a scoped plan
+Click
+Send to Devin
+to move to Agent mode and execute the task
+This flow is shown below:
+For Agent mode from the main page, toggle to Agent mode and select the repository/repositories you want to work with.
+When starting an Agent session, you’ll configure a few options: selecting a Repository and selecting an Agent.
+Selecting a Repository
+Select the repository you want Devin to work with. Click the repository selector to see all repositories that have been
+added to Devin’s machine
+Selecting a repository ensures Devin:
+Has access to your codebase and can make changes
+Uses the correct branch as a starting point
+Can create pull requests to the right repository
+Selecting an Agent
+You can choose which agent configuration Devin uses for your session. Different agents may have different capabilities or be optimized for specific types of tasks.
+Available agents include:
+Devin
+(default) — A general-purpose AI software engineer for building features, fixing bugs, refactoring code, and most development tasks.
+Fast Mode
+— An optimized mode for quick, well-scoped tasks.
+Data Analyst
+(DANA) — A data analyst agent optimized for querying databases, analyzing data, and creating visualizations. To use it, open the
+Mode
+submenu in the agent picker and select
+Data
+If you’re unsure which agent to use, the default Devin agent works well for most tasks.
+You don’t need to start a new session to change modes. You can switch the agent mid-session using the agent toggle next to the message input on the session page — the change takes effect with your next message. In Slack, you can switch modes mid-session by starting a message with
+!ultra
+,
+!fast
+,
+!lite
+,
+!fusion
+,
+!swe
+, or
+!normal
+(see
+Slack mode keywords
+).
+Using @ Mentions
+Use
+@
+mentions to give Devin specific context about files, repositories, or other resources. When you type
+@
+in the chat input, you’ll see a dropdown of available mentions:
+@Repos
+- Reference a specific repository
+@Files
+- Reference a specific file in your codebase
+@Macros
+- Reference a macro for a Knowledge entry
+@Playbooks
+- Reference a team or community playbook, which are detailed prompt templates that can be used to guide Devin’s behavior
+@Skills
+- Reference a skill defined in your repository (reusable procedures committed as
+SKILL.md
+files)
+@Secrets
+- Reference a specific secret (e.g. API keys, credentials, etc.) f

@@ -1,0 +1,190 @@
+{
+  "app": "Gladly",
+  "number": 20,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:00:11.798280+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.gladly.com\",\n    \"https://docs.gladly.com\",\n    \"https://gladly.com/developers\",\n    \"https://gladly.com/partners\",\n    \"https://support.gladly.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://gladly.com",
+    "https://developer.gladly.com",
+    "https://docs.gladly.com",
+    "https://gladly.com/developers",
+    "https://gladly.com/partners",
+    "https://support.gladly.com",
+    "https://developers.gladly.com/",
+    "https://api.gladly.com/",
+    "https://gladly.com/docs",
+    "https://gladly.com/api",
+    "https://gladly.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.gladly.ai/contact/",
+    "https://www.gladly.ai/conversational-ai-for-sales/",
+    "https://developer.gladly.com/rest/",
+    "https://developer.gladly.com/chat/",
+    "https://developer.gladly.com/ios-sdk/",
+    "https://developer.gladly.com/android-sdk/",
+    "https://www.gladly.ai/partner/referral-program/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.gladly.com",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://support.gladly.com",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.gladly.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.gladly.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.gladly.ai/",
+      "requested_url": "https://gladly.com",
+      "status": 200,
+      "title": "Agentic commerce platform built for top brands | Gladly",
+      "chars": 4396,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.gladly.com",
+      "requested_url": "https://developer.gladly.com",
+      "status": 200,
+      "title": "Main Home - Gladly Developer",
+      "chars": 1180,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gladly.ai/integrations/",
+      "requested_url": "https://gladly.com/developers",
+      "status": 200,
+      "title": "Customer service integrations | Gladly",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gladly.ai/partner/",
+      "requested_url": "https://gladly.com/partners",
+      "status": 200,
+      "title": "Join the Gladly Partner program | Gladly",
+      "chars": 1799,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gladly.ai/contact/",
+      "requested_url": "https://www.gladly.ai/contact/",
+      "status": 200,
+      "title": "Contact Gladly: schedule a demo or talk to sales | Gladly",
+      "chars": 453,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.gladly.ai/conversational-ai-for-sales/",
+      "requested_url": "https://www.gladly.ai/conversational-ai-for-sales/",
+      "status": 200,
+      "title": "Conversational AI for sales across discovery and checkout | Gladly",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.gladly.com/rest/",
+      "requested_url": "https://developer.gladly.com/rest/",
+      "status": 200,
+      "title": "Gladly API",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.gladly.com/chat/",
+      "requested_url": "https://developer.gladly.com/chat/",
+      "status": 200,
+      "title": "Gladly - Documentation",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.gladly.com/ios-sdk/",
+      "requested_url": "https://developer.gladly.com/ios-sdk/",
+      "status": 200,
+      "title": "GladlySidekick  Reference",
+      "chars": 521,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Gladly REST and Lookup APIs enable external applications to manage customer profile data, interact with timelines, and provide order information.\",\n  \"auth\": {\n    \"method\": \"basic_auth\",\n    \"notes\": \"Gladly API uses token-based Basic Authentication where the username is the agent email and the password is the API token.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Administrators can log into their Gladly instance, assign the API User permission, and generate API tokens directly from the settings menu.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Chat SDK\",\n      \"iOS SDK\"\n    ],\n    \"notes\": \"Provides REST API, Lookup API, webhooks, and chat SDKs for web, iOS, and Android.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve API token generation inside the platform dashboard combined with a fully documented REST and Lookup API makes it easy for outside developers to integrate.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.gladly.com/rest/\",\n      \"claim\": \"Gladly offers a REST API and a Lookup API utilizing JSON requests and responses.\"\n    },\n    {\n      \"url\": \"https://developer.gladly.com/rest/\",\n      \"claim\": \"API tokens are created via Gladly settings after assigning the API User permission to a user profile.\"\n    },\n    {\n      \"url\": \"https://developer.gladly.com/rest/\",\n      \"claim\": \"Gladly API uses token-based Basic Authentication passing credentials via an Authorization header.\"\n    },\n    {\n      \"url\": \"https://developer.gladly.com/\",\n      \"claim\": \"Lists REST API, Chat SDK for Web, iOS, and Android, along with webhook examples.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://gladly.com",
+    "one_liner": "Gladly REST and Lookup APIs enable external applications to manage customer profile data, interact with timelines, and provide order information.",
+    "auth": {
+      "method": "basic_auth",
+      "notes": "Gladly API uses token-based Basic Authentication where the username is the agent email and the password is the API token."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Administrators can log into their Gladly instance, assign the API User permission, and generate API tokens directly from the settings menu."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Chat SDK",
+        "iOS SDK"
+      ],
+      "notes": "Provides REST API, Lookup API, webhooks, and chat SDKs for web, iOS, and Android."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve API token generation inside the platform dashboard combined with a fully documented REST and Lookup API makes it easy for outside developers to integrate."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.gladly.com/rest/",
+        "claim": "Gladly offers a REST API and a Lookup API utilizing JSON requests and responses.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.gladly.com/rest/",
+        "claim": "API tokens are created via Gladly settings after assigning the API User permission to a user profile.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.gladly.com/rest/",
+        "claim": "Gladly API uses token-based Basic Authentication passing credentials via an Authorization header.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:00:49.908616+00:00"
+}

@@ -1,0 +1,1034 @@
+===== https://www.mongodb.com/docs/atlas/api/
+TITLE: Atlas Programmatic Access - Atlas - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Programmatic Access
+You can interact with
+programmatically to perform administrative tasks or manage your deployments using the following resources.
+Atlas Administration API
+Programmatically perform administrative tasks on your
+cluster outside of the Atlas UI with the Atlas Administration API. Atlas Administration API resources add, edit, or delete administrative objects within
+, including projects, users, and clusters.
+You can explore the various endpoints available through the Atlas Administration API in MongoDB's
+Postman workspace.
+To configure access for the Atlas Administration API, see
+Get Started with the Atlas Administration API.
+Learn about the Atlas Admin API.
+See the Atlas Admin API Specification.
+Atlas Go
+SDK
+The Atlas Go
+SDK
+provides platform-specific and Go language-specific tools, libraries, and documentation to help you build applications that interact with
+quickly and easily using the Atlas Administration API.
+Atlas Go SDK.
+Atlas Embedding and Reranking API
+The Embedding and Reranking API provides endpoints for accessing Voyage AI's state-of-the-art embedding and reranking models. Use the REST API and available client SDKs to power search and retrieval in your AI applications.
+Learn about the Embedding and Reranking API
+See the Embedding and Reranking API Specification
+Atlas CLI
+The Atlas CLI is a command-line interface built specifically for
+MongoDB Atlas
+. You can use Atlas CLI to interact with
+from the terminal with short and intuitive commands and accomplish complex operational tasks such as creating a cluster or setting up an access list interactively and programmatically.
+Learn more about the Atlas CLI.
+Get Started with the Atlas CLI.
+HashiCorp Terraform MongoDB Atlas Provider
+HashiCorp Terraform MongoDB
+Provider provides refined programmatic access and management of
+MongoDB Atlas
+resources. You can define your environment using the HashiCorp Configuration Language (HCL) and deploy, update, and manage
+infrastructure as code through HashiCorp Terraform. This allows you to integrate
+into your continuous delivery workflows.
+Learn more about MongoDB Atlas and HashiCorp Terraform.
+Managing IaC with MongoDB Atlas and HashiCorp Terraform
+(Video Walkthrough).
+Cloud Development Kit for Terraform
+CDK
+for Terraform leverages the
+MongoDB Atlas
+Atlas Administration API to enable provisioning across popular programming languages such as JavaScript, TypeScript, Python, Java, Go, and C#. Utilizing the powerful capabilities of Terraform, with
+CDKTF
+you can now create, manage, and update your
+resources with ease and deploy them seamlessly in the cloud without context switching from the native programming language of choice.
+MongoDB Cloud Development Kit for Terraform.
+Managing IaC with MongoDB Atlas and the Terraform CDK
+(Video Walkthrough).
+MongoDB Atlas AWS CloudFormation Resources
+CloudFormation Resources helps you to manage
+MongoDB Atlas
+. It simplifies provisioning and management of
+features on
+AWS
+. You can create YAML- or JSON-based templates for the service or application architectures you want and have
+AWS
+CloudFormation use those templates for quick and reliable provisioning of the services or applications (called "stacks"). You can also easily update or replicate the stacks as needed.
+Learn more about Atlas CloudFormation.
+Atlas CloudFormation Resources.
+AWS Partner Solutions
+AWS
+Partner Solutions provide pre-built CloudFormation templates to help you provision a group of
+resources for specific use cases instead of deploying them one by one. Partner Solutions help you deploy popular technologies to
+AWS
+according to
+AWS
+best practices.
+AWS Quick Starts.
+AWS Cloud Development Kit
+If you prefer using familiar programming languages like JavaScript, TypeScript, Python, Java, C#, and Go rather than using YAML or
+JSON
+, you can use the
+AWS
+CDK
+to deploy
+resources. When you execute your
+AWS
+CDK
+applications, they automatically generate CloudFormation templates, which in turn utilize the
+AWS
+CloudFormation service for resource provisioning. This way, you benefit from the abstraction and flexibility provided by
+AWS
+CDK
+and take advantage of the robustness of CloudFormation for infrastructure management, while still using the programming language of your choice.
+Atlas AWS Cloud Development Kit.
+How to Deploy Atlas with AWS CDK
+(Video Walkthrough).
+Atlas Kubernetes Operator
+The
+Atlas Kubernetes Operator
+enables you to manage
+resources through custom resources that you apply in
+Kubernetes
+. This allows an infrastructure as code approach to manage declarative configuration for
+using a GitOps workflow, allowing developers to configure
+resources using the same process and tooling that they use to deploy application components into
+Kubernetes
+. The automatic creation of a
+Kubernetes
+secret containing the connection string for a da
+
+===== https://www.mongodb.com/docs/atlas/configure-api-access/
+TITLE: Get Started with the Atlas Administration API - Atlas - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Administration API
+APIs
+Administration API
+APIs
+Administration API
+Get Started with the Atlas Administration API
+Interface
+Authentication Method
+Each Atlas Administration API has its own resources and requires initial setup.
+You can access the Atlas Administration API servers through the public Internet only. The Atlas Administration API is not available over connections that use
+network peering
+or
+private endpoints.
+To learn more, see
+Programmatic Access.
+The Atlas Administration API follows the principles of the
+REST
+architectural style to expose a number of internal resources which enable programmatic access to administrative features in Atlas. To learn more about the Atlas Administration API, see
+Atlas Administration API Reference.
+The Atlas Administration API doesn't provide access to the data stored in your clusters. To read or write data in a database, you must authenticate to your cluster using the credentials for a
+database
+user
+with the appropriate read or write
+roles
+. You can use the Atlas Administration API to create and manage database users.
+To use the Atlas Administration API to manage your Atlas clusters, you must authenticate your
+API
+requests with one of the following authentication methods:
+Service account access tokens (
+OAuth 2.0)
+API keys (
+HTTP Digest Authentication)
+To learn about these methods, see
+Atlas Administration API Authentication Methods.
+The following sections describe how to use service accounts and
+API
+keys to configure programmatic access to your
+organizations and projects.
+The
+MongoDB Atlas
+Shared Responsibility Model
+defines the complementary duties of MongoDB and its customers in maintaining a secure and resilient data environment. Under this framework, MongoDB manages the security and operational integrity of the underlying platform, while customers are responsible for the configuration, management, and data policies of their specific deployments. For a detailed breakdown of ownership across security and operational excellence, see
+Shared Responsibility Model.
+Before You Begin
+Before configuring programmatic access, confirm the following:
+You have an
+account. To create one, see
+Create an
+Account.
+An
+organization exists. To create one, see
+Create an Organization.
+Required Access
+To create a service account or
+API
+keys for an organization, you must have
+Organization Owner
+access to that organization.
+To grant a service account access to a project, you must have
+Organization Owner
+access to the organization that owns the project.
+To grant
+API
+keys access to a project, you must have
+Project Owner
+access for that project.
+Optional: Require an IP Access List
+When you create an organization using the Atlas UI,
+requires an IP access list for the Atlas Administration API. This limits
+API
+requests to only those from the location-based IP or
+CIDR
+addresses that you specify in the IP access list. If you make a request to the Atlas Administration API without an IP access list entry, the server responds with a 403 status code.
+If you disable this feature, you can make
+API
+requests from any address on the Internet as long as the IP access list is empty. Once you add an IP access list entry, only requests originating from that IP address can make requests.
+IP access lists
+apply to
+using
+service account access tokens, not
+creating
+or
+revoking
+them. You can generate a token from any IP address, but you can only use it to call the
+API
+if your IP address is on the access list.
+IP access lists apply only to programmatic API keys and service accounts. They don't apply to other types of access to the Atlas Administration API, such as the Atlas CLI or delegated access granted through
+App Connections. Delegated access includes third-party partner applications, MongoDB applications such as
+MongoDB Compass
+, and Model Context Protocol (MCP) clients. If your organization requires all Atlas Administration API traffic to originate from specific addresses, don't enable delegated app access for that organization. Delegated access settings for partner applications and MCP clients are off by default in existing organizations.
+To set your organization to require IP access lists for every Atlas Administration API request after organization creation, follow these steps:
+1
+In
+, go to the
+Organization Settings
+page.
+If it's not already displayed, select your desired organization from the
+Organizations
+menu
+in the navigation bar.
+In the sidebar, click
+Organization Settings
+.
+The
+Organization Settings
+page displays.
+2
+Toggle the
+Require IP Access List for the Atlas Administration API
+setting to
+On
+.
+Grant Programmatic Access to an Organization
+Grant Programmatic Access to a Project
+To learn more about these two authentication methods, see
+Atlas Administration API Authentication Methods.
+To give
+API
+keys access to a project, you must have
+Project Access Manager
+or
+Project Owner
+acces
+
+===== https://www.mongodb.com/pricing
+TITLE: Pricing | MongoDB
+ACCESSED: 2026-09-27
+
+Pricing | MongoDB
+MongoDB Pricing
+The data platform built by - and for - developers
+MongoDB Atlas
+Fully-managed cloud
+Enterprise Advanced
+Self-managed & on-premises
+The multi-cloud data platform available on AWS, Azure, and Google Cloud
+Free
+$0/hour
+Explore Atlas
+Free forever
+For learning and exploring MongoDB in a cloud environment.
+512MB of storage
+Shared RAM
+Shared vCPU
+Flex
+$0.011/hour
+Build a Prototype
+Up to $30/month
+For application development and testing, with on-demand burst capacity for unpredictable traffic.
+5GB of storage
+Shared RAM
+Shared vCPU
+View flex pricing
+Dedicated
+$0.08/hour
+Scale Your Project
+Starts at $56.94/month
+For production applications with sophisticated workload requirements.
+10GB to 4TB of storage
+2GB to 768GB RAM
+2vCPUs to 96vCPUs
+View dedicated pricing
+Need help figuring out your monthly costs?
+Try our new Pricing Calculator.
+Calculate Costs
+Customize your deployment with tools & services
+MongoDB Search on Atlas
+Build relevance-based search 4x faster and for 77% lower cost than alternative search solutions.
+See pricing →
+MongoDB Vector Search on Atlas
+Build intelligent applications powered by semantic search and generative AI over any type of data.
+See pricing →
+Atlas Stream Processing
+Process high-volume, high-velocity streams of complex event data.
+See pricing →
+Atlas Data Federation
+Easily query, combine, or move data across Atlas and cloud object storage.
+See pricing →
+Atlas Charts
+Easily create, share, and embed visualizations from MongoDB Atlas.
+See pricing →
+Atlas SQL Interface
+MongoDB Atlas SQL Interface, Connectors, and Drivers make it easy to natively query, analyze, and visualize Atlas data with SQL-based tools.
+See pricing →
+Online Archive
+Automate the cost optimization process — without sacrificing data accessibility.
+See pricing →
+Support
+Get access to expert technical advice for optimizing performance, managing risk, and lowering costs.
+See pricing →
+View all plan features
+Questions about pricing?
+Talk to us for more information about features, sizing, support plans, and consulting.
+Contact Us
+MongoDB Enterprise Advanced
+The best way to run MongoDB on-premises or in your private cloud
+Featured Highlights
+MongoDB Enterprise Server
+Ops Manager and Cloud Manager
+Kubernetes Operator
+Enterprise security features
+Business intelligence integration and visualization
+Commercial license
+Self-serve training content
+Consultative support
+Fast initial response goals
+Rich onboarding and regular check-ins
+MongoDB Enterprise Server
+Ops Manager and Cloud Manager
+Kubernetes Operator
+Enterprise security features
+Business intelligence integration and visualization
+Commercial license
+Self-serve training content
+Consultative support
+Fast initial response goals
+Rich onboarding and regular check-ins
+Learn More
+Contact Sales
+Questions about pricing?
+Talk to us for more information about features, sizing, support plans, and consulting.
+Contact Us
+Customize your deployment with tools & services
+MongoDB Search and Vector Search Add-on
+Full-text and vector search for your EA clusters.
+Learn more →
+Named Technical Support Engineers
+MongoDB NTSE assigns a dedicated engineer to your team based on their skill set.
+View plans →
+Extended Lifecycle Support
+The ELS add-on provides ongoing technical support for versions after their EOL.
+View plans →
+Free Cluster
+Pay-as-you-go! Clusters are billed hourly with monthly invoices.
+Amazon Web Services
+Microsoft Azure
+Google Cloud
+Cluster Tier
+Storage
+RAM
+vCPUs
+Base Price
+M0
+512 MB
+Shared
+Shared
+Free forever
+M2
+2 GB
+Shared
+Shared
+$9/mo
+M5
+5 GB
+Shared
+Shared
+$25/mo
+Dedicated Cluster
+Pay-as-you-go! Clusters are billed hourly with monthly invoices.
+Amazon Web Services
+Microsoft Azure
+Google Cloud
+Cluster Tier
+Storage
+RAM
+vCPU
+Base Price
+M10
+10–128 GB
+2 GB
+2 vCPUs
+$0.08/hr
+M20
+20–256 GB
+4 GB
+2 vCPUs
+$0.20/hr
+M30
+40–512 GB
+8 GB
+2 vCPUs
+$0.54/hr
+M40
+80 GB–1 TB
+16 GB
+4 vCPUs
+$1.04/hr
+M50
+160 GB–4 TB
+32 GB
+8 vCPUs
+$2.00/hr
+M60
+320 GB–4 TB
+64 GB
+16 vCPUs
+$3.95/hr
+M80
+750 GB–4 TB
+128 GB
+32 vCPUs
+$7.30/hr
+M140
+1–4 TB
+192 GB
+48 vCPUs
+$10.99/hr
+M200
+1.5–4 TB
+256 GB
+64 vCPUs
+$14.59/hr
+M300
+2–4 TB
+384 GB
+96 vCPUs
+$21.85/hr
+M400
+3–4 TB
+488 GB
+64 vCPUs
+$22.40/hr
+M700
+4 TB
+768 GB
+96 vCPUs
+$33.26/hr
+Additional hardware configurations available for specialized workloads including Low-CPU and Local NVMe SSD.
+Scale beyond 4 TB:
+Sharded clusters offer additional compute and storage through horizontal scaling.
+The pricing provided is based on the default storage listed. Actual pricing can vary based on deployment requirements, configurations, and location. See
+Atlas Cluster Configuration Costs
+and
+Customize Cluster Storage
+.
+Flex Cluster
+Pay as you go! Clusters are billed hourly with monthly invoices. Flex clusters are priced based on usage and can cost between $8 and $30 for a month’s usage.
+Amazon Web Services
+Microsoft Azure
+Google Cloud
+Tier (ops/second)
+Total Hourly Cost
+Total Monthly Cost*
+0 - 100 (Base)
+$0.0110
+$8.00
+100 - 200
+$0.0205
+$15.00
+200 - 300
+$0.0288
+$21.00
+300 - 
+
+===== https://www.mongodb.com/docs/
+TITLE: Welcome to the MongoDB Docs - MongoDB Documentation - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Welcome to the MongoDB Docs
+MongoDB is a document-oriented, operational database built from the ground up as an alternative to the relational database for modern applications.  Unlike relational databases, MongoDB allows developers to store rich JSON-like documents that map naturally to the objects they use in their code:
+{
+"name"
+:
+"Grace Hopper"
+,
+"occupations"
+:
+[
+"Computer Scientist"
+,
+"Mathematician"
+,
+"Professor"
+]
+,
+"location"
+:
+{
+"city"
+:
+"Arlington"
+,
+"state"
+:
+"Virginia"
+,
+"zip"
+:
+"22202"
+}
+}
+Which you can retrieve with queries such as:
+db.people.find(
+{
+"location.city"
+:
+"Arlington"
+}
+)
+MongoDB also offers
+Strong consistency with ACID transactions.
+Modern additional built-in query capabilities such as geospatial search, lexical search, and vector search.
+Serverless horizontal scaling with geography-aware fault tolerance across all major clouds.
+Security primitives that allow MongoDB to operate in the most demanding of enterprise environments.
+How This Documentation is Organized
+Get Started
+Start here! This guide walks you through deploying your first database and downloading all the tools and libraries you need to start developing with MongoDB.
+Deployment
+Choose the deployment environment that best fits your operational, scalability, and management requirements.
+Development
+Everything you need to know to write apps with MongoDB, from connecting, CRUD, and the core query language, to index optimization and data modeling.
+Learn how to administer and manage MongoDB deployments, including provisioning, scaling, backup, monitoring, disaster recovery, and security.
+Client Libraries
+Explore the documentation for MongoDB's catalog of client libraries, which are available in almost every modern programming language and compatible with most application frameworks. Each client library has detailed documentation and an API reference in that library's native programming language.
+Tools
+Find useful tools and integrations to aid in both development and management, including simplified database management, integration, migration, and data visualization.
+Atlas Architecture Center
+Learn best practices for designing scalable, secure, and resilient systems using MongoDB in enterprise environments. Guidance includes architecture fundamentals, MongoDB capabilities, and reference architectures.
+
+===== https://www.mongodb.com/docs/voyageai/api-reference/overview/
+TITLE: Embedding and Reranking API Overview - Voyage AI by MongoDB - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Voyage AI Models Home
+Voyage AI Models Home
+Voyage AI Models Home
+Embedding and Reranking API Overview
+The Embedding and Reranking API provides programmatic access to the latest Voyage AI embedding and reranking models through a RESTful interface. This page provides an overview of the API and its features.
+For detailed information and parameters, see the
+API specification.
+Restrict Project Access to the Embedding and Reranking API.
+You can create an Atlas Resource Policy to restrict access to the Embedding and Reranking API for all or some projects in your organization. To learn more, see
+Atlas Resource Policies
+API Key Management
+You use
+MongoDB Atlas
+to manage API keys for the Embedding and Reranking API. This includes creating and managing your model API keys across your organization and projects, monitoring usage, and configuring rate limits.
+To learn more, see
+Manage Voyage AI Model API Keys.
+It is named
+model API key
+to distinguish it from other API keys in Atlas. You use this key the same way as API keys from other model providers.
+Authentication
+All requests to the Embedding and Reranking API must include an
+Authorization
+header with your model API key using the Bearer token format.
+Authorization
+:
+Bearer VOYAGE_API_KEY
+When you use a client SDK, you set the API key when constructing a client, and the SDK sends the header on your behalf with every request. When you integrate directly with the API, you must send this header yourself.
+Endpoints
+Public Preview
+The Europe Geography and its endpoint,
+eu.ai.mongodb.com
+, are available as a Public Preview feature. The feature and the corresponding documentation might change at any time during the Preview period.
+The scope of your model API key determines the endpoint that you send requests to. A key scoped to a Geography works only against that Geography's endpoint, and an unscoped key works against the unscoped endpoint.
+Endpoint
+Geography
+ai.mongodb.com
+Unscoped.
+can serve the request from any Geography.
+eu.ai.mongodb.com
+Europe
+us.ai.mongodb.com
+United States
+Scoped endpoints follow the pattern
+<geography>.ai.mongodb.com
+, where
+<geography>
+is the
+geography
+value of the model API key that you send with the request.
+If you send a scoped key to an endpoint that doesn't match its scope, the request fails.
+doesn't reroute the request to the endpoint that matches the key.
+Scoped endpoints differ from the unscoped endpoint in the following ways:
+charges a 10% uplift on the tokens that you send to a scoped endpoint.
+Scoped endpoints require a paid usage tier and start at usage tier 1. To use a higher usage tier with a scoped endpoint, contact your account team. To learn more about usage tiers, see
+Usage Tiers.
+Scoped endpoints have their own rate limits, which are lower than those of the unscoped endpoint. To learn more, see
+Geography Rate Limits.
+Scoped endpoints don't serve every model. To check which endpoints serve a given model, see the Supported Endpoints column of the model tables in
+Model Deprecations, Lifecycle States, and Support.
+To learn what a Geography is and when to use one, see
+Geographies for Voyage AI Inference.
+JSON
+All entities are represented in JSON. The following rules and conventions apply:
+Content Type Request Header
+When you send JSON to the server with a POST request, specify the
+Content-Type: application/json
+header. Client SDKs handle this automatically.
+Invalid Requests
+If you attempt to create a request with invalid JSON, incorrect data types, or constraint violations (such as exceeding token limits or batch sizes), the server responds with a
+400
+status code and an error message describing the issue.
+Field Names for Fields with Numbers
+Fields that contain numeric values are named to disambiguate the unit being used. For example, token counts are specified in fields like
+total_tokens
+and
+output_dimension
+to clarify the measurement unit.
+Rate Limits and Usage Tiers
+The Embedding and Reranking API implements rate limiting to ensure fair usage and optimal performance. Rate limits are applied per API key and measured in two dimensions. Your rate limits increase as you advance through
+usage tiers.
+TPM (Tokens Per Minute)
+: Maximum number of tokens processed per minute
+RPM (Requests Per Minute)
+: Maximum number of API requests per minute
+If you exceed the rate limit, the API returns a
+429
+(Rate Limit Exceeded) HTTP status code.
+Free Trial
+Usage Tier 1
+Usage Tier 2
+Usage Tier 3
+Free trial rate limits without a payment method are 3 RPM and 10K TPM. To qualify for higher rate limits, add a payment method to your account.
+Model
+Tokens Per Min (TPM)
+Requests Per Min (RPM)
+voyage-4-lite
+,
+voyage-3.5-lite
+16,000,000
+2,000
+voyage-4
+,
+voyage-3.5
+,
+voyage-code-4
+8,000,000
+2,000
+voyage-4-large
+,
+voyage-context-4
+3,000,000
+2,000
+voyage-3-large
+,
+voyage-context-3
+,
+voyage-code-3
+,
+voyage-code-2
+,
+voyage-law-2
+,
+voyage-finance-2
+3,000,000
+2,000
+voyage-multimodal-3.5
+,
+voyage-multimodal-3
+2,000,000
+2,000
+rerank-3-lite
+,
+rer
+
+===== https://www.mongodb.com/docs/atlas/sdk/
+TITLE: Atlas SDK - Atlas - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Administration API
+APIs
+Administration API
+APIs
+Administration API
+SDK
+You can build applications that interact with the Atlas Administration API using the
+SDK
+. The
+SDK
+provides platform-specific and language-specific tools, libraries, and documentation to help build applications quickly and easily.
+To learn more about the Atlas Administration API and the resources it can access, see
+Manage Deployments with the Atlas Administration API
+and the
+API Specification
+. You can also explore the various endpoints available through the Atlas Administration API in MongoDB's
+Postman workspace.
+Go SDK
+The Atlas Go
+SDK
+replaces the previous Go HTTP client (
+go-client-mongodb-atlas
+) for the Atlas Administration API. To migrate from
+go-client-mongodb-atlas
+to the Atlas Go
+SDK
+, see the
+Migration Guide.
+You can access the Atlas Go
+SDK
+here:
+Access the Atlas Go SDK
+View the Atlas Go SDK package in pkg.go.dev
+To learn about the Atlas Go
+SDK
+, use the following resources. This documentation reflects the latest version of the Atlas Go
+SDK
+:
+Authenticating with the Atlas Go SDK
+Learn Concepts for the Atlas Go SDK
+Error Handling
+Migrate from the Go HTTP Client to the Atlas Go SDK
+Best Practices
+SDK Reference
+
+===== https://www.mongodb.com/docs/get-started/
+TITLE: Get Started - MongoDB Documentation - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Get Started
+The
+atlas deployments
+commands are deprecated as of Atlas CLI version 1.52.0. Use
+atlas local
+commands for local deployments and
+atlas clusters
+commands for cloud deployments. We updated this guide to use the new commands.
+In this guide, you will learn how to create a MongoDB Atlas deployment locally or in the cloud. Then, you will learn how to create an application that connects to your deployment. To learn how to install MongoDB Community or MongoDB Enterprise editions on your own infrastructure, see the
+Install MongoDB
+guide.
+Create a MongoDB Atlas Deployment
+This section shows how to set up a local or cloud MongoDB Atlas deployment and connect to the deployment by using the MongoDB Shell.
+1
+Install dependencies
+Before you begin this tutorial, you must install the following dependencies in your development environment:
+Atlas CLI
+: Command-line interface that allows you to manage your deployments from the terminal
+MongoDB Shell
+: Interactive tool that connects to a deployment and provides database operation support
+Docker
+: Platform that allows you to run software within containers, including local MongoDB deployments
+Select the tab corresponding to your operating system to view the commands that install these required development tools.
+macOS
+Windows
+Run the following commands to install the dependencies by using the Homebrew package manager. If you do not have Homebrew, you can install it by following the instructions on the
+Homebrew website.
+brew install mongodb-atlas
+brew install --cask docker
+Run the following commands to install the dependencies by using the Chocolatey package manager. If you do not have Chocolatey, you can install it by following the instructions on the
+Chocolatey website.
+choco install mongodb-atlas
+choco install docker-desktop
+For other ways to install the Atlas CLI, see
+CLI install page.
+Docker Desktop
+The preceding commands install the
+Docker Desktop
+application. After the installation completes, ensure that you create a Docker account and start the application.
+2
+Set up a fully-featured deployment
+Run the following command and follow the prompts in the shell to deploy a cluster. If you do not have an Atlas account, the following command prompts you to create one.
+Local Deployment
+Cloud Deployment
+This command creates a single-member replica set in a container that runs on your local machine.
+atlas local setup myDeployment \
+--mdbVersion 8.0 --port <port number> --connectWith connectionString
+Replace the
+<port number>
+placeholder with the port you want to use. The default port is
+27017
+, but you can specify a different port if
+27017
+is not available.
+The command outputs the following information:
+Deployment created!
+Connection string:
+"<connection string URI>"
+Save the connection string URI for use in a future step.
+This command creates a free tier cluster on MongoDB Atlas.
+atlas setup --clusterName myDeployment \
+--provider AWS --region us-east-1 --skipSampleData \
+--username <database username> --password <database user password> \
+--connectWith skip --force
+Replace the following placeholder values to create a new
+database user
+with
+atlasAdmin
+privileges in your deployment:
+<database username>
+: Specify a username for your new database user
+<database user password>
+: Specify a password for your new database user
+The command outputs the following information:
+Cluster created.
+Your connection string:
+"<connection string URI>"
+Save the connection string URI for use in a future step.
+3
+Connect to your deployment
+You can connect to your deployment with the MongoDB Shell (
+mongosh
+) by running the following command:
+Local Deployment
+Cloud Deployment
+atlas local connect myDeployment --connectWith mongosh
+atlas clusters connect myDeployment --username <database username> \
+--password <database user password> --connectWith mongosh
+Replace the
+<database username>
+and
+<database user password>
+placeholders with the username and password you created for your database user.
+After connecting, you can run the following command to test your connection:
+show dbs
+The command returns a list of databases in your deployment.
+Congratulations! You have successfully set up your MongoDB Atlas deployment and connected to it. To learn more about how to interact with your deployment by using the MongoDB Shell, see the
+MongoDB Shell
+documentation.
+In the next section, you will learn how to create an application that connects to your deployment and interacts with data.
+Create Your First MongoDB Application
+To connect to your MongoDB Atlas deployment in an application, you can use one of the official
+MongoDB client libraries.
+Select your preferred programming language from the following dropdown menu to learn how to connect to your MongoDB Atlas deployment in that language.
+Before running the steps in this section, ensure that you exit the MongoDB Shell by running the
+exit
+command.
+Language
+
+===== https://www.mongodb.com/docs/atlas/reference/
+TITLE: Reference - Atlas - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Reference
+Here, you can find general reference information related to
+.
+Section Overview
+Quickly Navigate with Atlas Goto
+Learn about using Atlas Goto, a native
+tool, for quick UI navigation.
+Cloud Providers
+Learn about deploying
+clusters on leading cloud providers.
+Limits
+Learn about specific limitations in
+.
+Oplog Access
+Learn about Oplog operations that modify the data stored in your databases.
+Host Metrics
+Learn about various MongoDB host metrics.
+Supported Browsers
+Learn what browsers
+supports.
+Data Usage for Cluster AI Assistant
+Learn about data usage for the Cluster AI Assistant.
+Frequently Asked Questions
+Learn about all things MongoDB in the FAQ.
+Glossary
+Learn about MongoDB-specific terminology.
+
+===== https://www.mongodb.com/docs/atlas/graphql-api/
+TITLE: Manage Data on Your Atlas Cluster Using AWS AppSync Lambda Resolvers - Atlas - MongoDB Docs
+ACCESSED: 2026-09-27
+
+Manage Data on Your
+Cluster Using AWS AppSync Lambda Resolvers
+You can manage data on your
+cluster using
+AWS
+AppSync Direct Lambda Resolvers. The Lambda function, serving as a resolver for the
+AWS
+AppSync GraphQL API, enables seamless
+CRUD
+operations on your data in your
+cluster. Integrating
+with
+AWS
+AppSync offers a powerful, flexible solution for building scalable, serverless GraphQL APIs.
+This integration not only reduces the complexity of managing multiple data sources, but also enhances the development experience by providing a unified and flexible platform for modern application architectures. Whether you're handling CRUD operations or optimizing payloads, this integration enables you to build scalable, efficient, and cost-effective
+API
+s.
+This page walks you through the following steps:
+Deploy the CloudFormation stack that contains the Serverless Lambda function and an
+AWS
+-managed AppSync GraphQL API.
+Test the AppSync API by running queries from the
+AWS
+AppSync API console or
+Postman.
+Prerequisites
+Before you begin, you must do the following:
+Deploy an
+cluster
+Configure the database for
+network security
+and
+access
+Set up an
+AWS
+account with access to the
+AWS
+Management Console
+Procedure
+1
+Create the Serverless Lambda function in
+AWS
+.
+Log in to the
+AWS
+Management Console and navigate to
+Applications
+, which is located on the left sidebar within the
+AWS
+Lambda console.
+Click
+Create application
+and then select the
+Serverless application
+tab.
+Type
+MongoDB-AppSync-App
+in the search bar and then select the checkbox to show apps that create custom
+IAM
+roles or resource policies.
+Click the
+MongoDB-AppSync-App
+App in the search results.
+Paste the
+connection string in the
+AtlasConnectionString
+field under
+Application settings
+.
+Select the checkbox to create
+IAM
+roles and click
+Deploy
+to deploy the CloudFormation stack.
+The CloudFormation stack initiates the creation of:
+A Lambda function containing the essential logic required to resolve queries from the AppSync API.
+An AppSync GraphQL API containing a schema that defines Queries and Mutations. These Queries and Mutations are linked to the Lambda function established by the CloudFormation stack.
+When the deployment completes, copy the following in the
+Outputs
+section of the CloudFormation stack:
+GraphQLApiKey
+, which is the AppSync API Key
+GraphQLAPIURL
+, which is the AppSync API URL
+LambdaFunction
+, which is the
+ARN
+of the Lambda Function
+2
+Test the AppSync API with a Lambda resolver as its data source.
+You can use the
+AWS
+AppSync console or
+Postman
+to test the AppSync
+API
+.
+The
+API
+request and response payloads must be in the MongoDB Atlas Data API (v1) format. Each query must include the necessary request query and body parameters. To learn more about the Data
+API
+syntax, see the
+MongoDB Atlas Data API (v1):
+AWS (Amazon Web Services) AppSync Console
+Postman
+Log in to the
+AWS
+Management Console and navigate to the
+AWS
+AppSync page.
+Click the link to the
+MongoDB-AppSync-SAM_API
+.
+Click
+Queries
+in the left navigation under
+MongoDB-AppSync-SAM_API
+.
+Select the
+Explorer
+(third icon) under
+Queries
+.
+Select the type of query and enter the query.
+You can run any of the following types of query:
+aggregate
+find
+and
+findOne
+insertOne
+and
+insertMany
+updateOne
+and
+updateMany
+deleteOne
+and
+deleteMany
+If you type the query in the
+input
+field, the escape characters are automatically added to your query.
+Click the play button to run the query.
+The output contains escape sequence characters. We recommend implementing a logic in your application to convert the escape sequence into
+JSON
+.
+Download the Postman collection named
+postman.json
+from
+GitHub.
+Open Postman and click
+Import
+.
+Complete the steps to import the downloaded
+postman.json
+file.
+To query, do the following:
+Send
+POST
+request to the
+GraphQLAPIURL
+.
+Authenticate with
+GraphQLApiKey
+.
+Click
+Try
+to run the query.

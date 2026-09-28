@@ -1,0 +1,187 @@
+{
+  "app": "DealCloud",
+  "number": 10,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:55:12.057168+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://api.docs.dealcloud.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://api.docs.dealcloud.com",
+    "https://docs.dealcloud.com/",
+    "https://developer.dealcloud.com/",
+    "https://developers.dealcloud.com/",
+    "https://api.dealcloud.com/",
+    "https://dealcloud.com/docs",
+    "https://dealcloud.com/developers",
+    "https://dealcloud.com/api",
+    "https://dealcloud.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/api-reference",
+    "https://api.docs.dealcloud.com/sdk/intapp-rest-client/getting-started/quickstart",
+    "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+    "https://api.docs.dealcloud.com/sdk/python/authentication",
+    "https://api.docs.dealcloud.com/sdk/csharp/authentication",
+    "https://api.docs.dealcloud.com/sdk/intapp-rest-client/license",
+    "https://www.intapp.com/partners/",
+    "https://www.intapp.com/contact-us/",
+    "https://www.intapp.com/partners/data/",
+    "https://www.intapp.com/partner-program/",
+    "https://www.intapp.com/partners/channel/",
+    "https://www.intapp.com/partners/services/"
+  ],
+  "boilerplate_lines_removed": 9,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.dealcloud.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.dealcloud.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.dealcloud.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.dealcloud.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://dealcloud.com/docs",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "requested_url": "https://api.docs.dealcloud.com",
+      "status": 200,
+      "title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "chars": 222,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intapp.com",
+      "requested_url": "https://dealcloud.com/developers",
+      "status": 200,
+      "title": "Intelligence Applied",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/api-reference",
+      "requested_url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/api-reference",
+      "status": 200,
+      "title": "API Reference - DealCloud API Docs",
+      "chars": 4582,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/getting-started/quickstart",
+      "requested_url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/getting-started/quickstart",
+      "status": 200,
+      "title": "Quick Start - DealCloud API Docs",
+      "chars": 3420,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+      "requested_url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+      "status": 200,
+      "title": "Authentication - DealCloud API Docs",
+      "chars": 4595,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/python/authentication",
+      "requested_url": "https://api.docs.dealcloud.com/sdk/python/authentication",
+      "status": 200,
+      "title": "Authentication - DealCloud API Docs",
+      "chars": 2604,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/csharp/authentication",
+      "requested_url": "https://api.docs.dealcloud.com/sdk/csharp/authentication",
+      "status": 200,
+      "title": "Authentication - DealCloud API Docs",
+      "chars": 1064,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"DealCloud provides a REST API and SDKs for CRM and sales automation, authenticated primarily via OAuth2 client credentials.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Supports OAuth2 client credentials grant, password grant, API keys, basic auth, JWT, Entra ID, and Okta.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The fetched documentation describes the API client usage and configuration, but does not state how a developer initially registers or obtains credentials.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [\n      \"Python\",\n      \"C#\"\n    ],\n    \"notes\": \"REST API with Python and C# SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No Model Context Protocol integrations or servers are mentioned in the documentation.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"While API documentation and authentication methods are clearly documented via SDKs, the pages provide no information regarding how a developer obtains API credentials (access tier).\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://api.docs.dealcloud.com\",\n      \"claim\": \"The site provides developer documentation for DealCloud API with guides and SDK references for Python and C#.\"\n    },\n    {\n      \"url\": \"https://api.docs.dealcloud.com/sdk/intapp-rest-client/getting-started/quickstart\",\n      \"claim\": \"Shows HTTP requests and methods against REST endpoints.\"\n    },\n    {\n      \"url\": \"https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication\",\n      \"claim\": \"Details multiple authentication methods including OAuth2, API Key, Basic Auth, JWT, Entra ID, and Okta.\"\n    },\n    {\n      \"url\": \"https://api.docs.dealcloud.com/sdk/python/authentication\",\n      \"claim\": \"Describes instantiating the DealCloud SDK client with site URL, client ID, and client secret.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint_url": "https://api.docs.dealcloud.com",
+    "one_liner": "DealCloud provides a REST API and SDKs for CRM and sales automation, authenticated primarily via OAuth2 client credentials.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Supports OAuth2 client credentials grant, password grant, API keys, basic auth, JWT, Entra ID, and Okta."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "The fetched documentation describes the API client usage and configuration, but does not state how a developer initially registers or obtains credentials."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": [
+        "Python",
+        "C#"
+      ],
+      "notes": "REST API with Python and C# SDKs."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "No Model Context Protocol integrations or servers are mentioned in the documentation."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "While API documentation and authentication methods are clearly documented via SDKs, the pages provide no information regarding how a developer obtains API credentials (access tier)."
+    },
+    "evidence": [
+      {
+        "url": "https://api.docs.dealcloud.com",
+        "claim": "The site provides developer documentation for DealCloud API with guides and SDK references for Python and C#.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/getting-started/quickstart",
+        "claim": "Shows HTTP requests and methods against REST endpoints.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+        "claim": "Details multiple authentication methods including OAuth2, API Key, Basic Auth, JWT, Entra ID, and Okta.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/sdk/python/authentication",
+        "claim": "Describes instantiating the DealCloud SDK client with site URL, client ID, and client secret.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:55:35.802767+00:00"
+}

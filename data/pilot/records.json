@@ -10,8 +10,8 @@
       "notes": "The Bot API is accessed via an HTTPS interface (tokens managed via @BotFather), while the Telegram API uses an api_id and api_hash for MTProto-based authorization."
     },
     "access": {
-      "type": "self_serve",
-      "notes": "Developers can obtain api_id and api_hash by logging into the Telegram core website (my.telegram.org) and filling out a form, or create bots via the @BotFather bot."
+      "notes": "Developers can obtain api_id and api_hash by logging into the Telegram core website (my.telegram.org) and filling out a form, or create bots via the @BotFather bot.",
+      "tier": "self_serve"
     },
     "api_surface": {
       "rest": true,
@@ -71,8 +71,8 @@
       "notes": "Stripe uses API keys (secret, restricted, or publishable) for authentication, typically passed via HTTP Basic Auth as the username. Bearer token authentication is also supported for cross-origin requests."
     },
     "access": {
-      "type": "self_serve",
-      "notes": "Users can sign up for an account and obtain API keys immediately via the dashboard without manual approval."
+      "notes": "Users can sign up for an account and obtain API keys immediately via the dashboard without manual approval.",
+      "tier": "self_serve"
     },
     "api_surface": {
       "rest": true,
@@ -137,8 +137,8 @@
       "notes": "OAuth2 Client Credentials is described as the most common method for API integrations. The platform also supports API keys, Basic Auth, JWT, and enterprise identity providers like Microsoft Entra ID and Okta."
     },
     "access": {
-      "type": "gated",
-      "notes": "Obtaining credentials requires an existing DealCloud environment (site URL) and client credentials. The public website directs prospective users to schedule a demo."
+      "notes": "Obtaining credentials requires an existing DealCloud environment (site URL) and client credentials. The public website directs prospective users to schedule a demo.",
+      "tier": "gated"
     },
     "api_surface": {
       "rest": true,

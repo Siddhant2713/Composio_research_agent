@@ -1,0 +1,209 @@
+{
+  "app": "Stripe",
+  "number": 81,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:06:43.043926+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://stripe.com/docs/api\",\n    \"https://stripe.com/docs\",\n    \"https://dashboard.stripe.com/register\",\n    \"https://stripe.com/docs/development\",\n    \"https://stripe.com/docs/keys\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://stripe.com/docs/api",
+    "https://stripe.com/docs",
+    "https://dashboard.stripe.com/register",
+    "https://stripe.com/docs/development",
+    "https://stripe.com/docs/keys",
+    "https://docs.stripe.com/",
+    "https://developer.stripe.com/",
+    "https://developers.stripe.com/",
+    "https://api.stripe.com/",
+    "https://stripe.com/developers",
+    "https://stripe.com/api",
+    "https://stripe.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://stripe.com/contact/sales",
+    "https://docs.stripe.com/api/authentication",
+    "https://docs.stripe.com/get-started/development-environment",
+    "https://support.stripe.com/",
+    "https://docs.stripe.com/api/plans",
+    "https://docs.stripe.com/api/tokens",
+    "https://docs.stripe.com/tax",
+    "https://docs.stripe.com/get-started",
+    "https://docs.stripe.com/quickstarts",
+    "https://docs.stripe.com/apis",
+    "https://docs.stripe.com/sdks",
+    "https://docs.stripe.com/partners",
+    "https://docs.stripe.com/keys/restricted-api-keys",
+    "https://docs.stripe.com/stripe-apps/api-authentication/rak",
+    "https://dashboard.stripe.com/apikeys"
+  ],
+  "boilerplate_lines_removed": 8,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.stripe.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.stripe.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://stripe.com/contact/sales",
+      "reason": "page too thin (31 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://support.stripe.com/",
+      "reason": "page too thin (22 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.stripe.com/api",
+      "requested_url": "https://stripe.com/docs/api",
+      "status": 200,
+      "title": "Stripe API Reference",
+      "chars": 4821,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com",
+      "requested_url": "https://stripe.com/docs",
+      "status": 200,
+      "title": "Stripe Documentation",
+      "chars": 2873,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dashboard.stripe.com/register",
+      "requested_url": "https://dashboard.stripe.com/register",
+      "status": 200,
+      "title": "Sign up and create a Stripe account | Stripe",
+      "chars": 215,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/development",
+      "requested_url": "https://stripe.com/docs/development",
+      "status": 200,
+      "title": "Developer resources | Stripe Documentation",
+      "chars": 3673,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/keys",
+      "requested_url": "https://stripe.com/docs/keys",
+      "status": 200,
+      "title": "API keys | Stripe Documentation",
+      "chars": 4883,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/",
+      "requested_url": "https://docs.stripe.com/",
+      "status": 200,
+      "title": "Stripe Documentation",
+      "chars": 2873,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/api/authentication",
+      "requested_url": "https://docs.stripe.com/api/authentication",
+      "status": 200,
+      "title": "Authentication | Stripe API Reference",
+      "chars": 4809,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/get-started/development-environment",
+      "requested_url": "https://docs.stripe.com/get-started/development-environment",
+      "status": 200,
+      "title": "Set up your development environment | Stripe Documentation",
+      "chars": 4863,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.stripe.com/api/plans",
+      "requested_url": "https://docs.stripe.com/api/plans",
+      "status": 200,
+      "title": "Plans | Stripe API Reference",
+      "chars": 4696,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Stripe public REST API for managing payments, customers, subscriptions, and financial infrastructure.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API requests are authenticated using API keys provided via HTTP Basic Auth (with the key as the username) or via a Bearer token.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create an account and obtain test and live API keys directly through the Stripe Dashboard.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Ruby\",\n      \"Python\",\n      \"PHP\",\n      \"Java\",\n      \"Node.js\",\n      \"Go\",\n      \".NET\"\n    ],\n    \"notes\": \"The Stripe API is organized around REST and provides multiple official server-side client libraries and a CLI.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Mentioned as part of agent-ready tooling and developer features.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-service credentials are automatically available upon account creation, and the REST API is extensively documented with client libraries and a CLI.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.stripe.com/api\",\n      \"claim\": \"The Stripe API is organized around REST, uses standard HTTP verbs, and authenticates using API keys via HTTP Basic Auth or Bearer auth.\"\n    },\n    {\n      \"url\": \"https://docs.stripe.com/keys\",\n      \"claim\": \"When you sign up for a Stripe account, API keys are created for you and can be managed in the Stripe Dashboard.\"\n    },\n    {\n      \"url\": \"https://docs.stripe.com/development\",\n      \"claim\": \"Lists developer resources including SDKs, APIs, and Model Context Protocol.\"\n    },\n    {\n      \"url\": \"https://docs.stripe.com/api/authentication\",\n      \"claim\": \"The Stripe API authenticates requests using HTTP Basic Auth with the API key as the username or via Bearer auth.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint_url": "https://stripe.com/docs/api",
+    "one_liner": "Stripe public REST API for managing payments, customers, subscriptions, and financial infrastructure.",
+    "auth": {
+      "method": "api_key",
+      "notes": "API requests are authenticated using API keys provided via HTTP Basic Auth (with the key as the username) or via a Bearer token."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create an account and obtain test and live API keys directly through the Stripe Dashboard."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Ruby",
+        "Python",
+        "PHP",
+        "Java",
+        "Node.js",
+        "Go",
+        ".NET"
+      ],
+      "notes": "The Stripe API is organized around REST and provides multiple official server-side client libraries and a CLI."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Mentioned as part of agent-ready tooling and developer features."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-service credentials are automatically available upon account creation, and the REST API is extensively documented with client libraries and a CLI."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.stripe.com/api",
+        "claim": "The Stripe API is organized around REST, uses standard HTTP verbs, and authenticates using API keys via HTTP Basic Auth or Bearer auth.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.stripe.com/keys",
+        "claim": "When you sign up for a Stripe account, API keys are created for you and can be managed in the Stripe Dashboard.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.stripe.com/development",
+        "claim": "Lists developer resources including SDKs, APIs, and Model Context Protocol.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.stripe.com/api/authentication",
+        "claim": "The Stripe API authenticates requests using HTTP Basic Auth with the API key as the username or via Bearer auth.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:07:03.758844+00:00"
+}

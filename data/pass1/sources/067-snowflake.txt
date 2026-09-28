@@ -1,0 +1,655 @@
+===== https://docs.snowflake.com/en/
+TITLE: Snowflake Documentation
+ACCESSED: 2026-09-27
+
+Snowflake Documentation
+Snowflake Documentation
+Featured Resources
+Dive into our top picks
+user guide
+Connecting to Snowflake
+Learn about the applications and tools that you can use to access Snowflake
+user guide
+Working with Virtual Warehouses
+Learn how to create and manage warehouses, which are used to process queries
+user guide
+Databases, Tables and Views
+Learn how to create and manage databases, tables, and views for storing and accessing your data
+user guide
+Load Data into Snowflake
+Learn about the different options for getting data into Snowflake and setting up a pipeline to transform your data
+Discover the Most Popular Resources
+Getting Started
+Basic information and instructions for first-time users of Snowflake.
+Getting a Trial Account
+Snowflake in 20 Minutes
+Key Concepts and Architecture
+Connecting to Snowflake
+See all
+User Guides
+Instructions on performing various Snowflake operations.
+Understanding & Using Time Travel
+Working with Temporary and Transient Tables
+Working with Materialized Views
+About Snowflake Openflow
+See all
+Developer Guides
+Write applications that extend Snowflake, act as a client, or act as an integrating component.
+Snowflake Native App Framework
+Snowpark API
+User-defined Functions (UDFs) and Stored Procedures
+Drivers
+See all
+Reference
+Reference for SQL data types, SQL commands, SQL functions, SQL classes, scripting, views, and other areas
+SQL Data Types
+SQL Commands
+SQL Functions
+SQL Classes
+Snowflake Scripting
+See all
+Tutorials
+Tutorials to help you learn the basics of using Snowflake
+Snowflake in 20 Minutes
+Bulk Loading from a Local File System
+Bulk Loading from Amazon S3 Using COPY
+See all
+Releases
+Overview of the new features, enhancements, and important fixes introduced in the most recent releases of Snowflake.
+New features
+Behavior change log
+Snowflake connector, driver, and library monthly releases
+See all
+What's New
+New features, enhancements, and important behavior changes introduced in the most recent Snowflake releases.
+See all
+Recent Release Highlights
+preview
+On September 30th, 2025
+Declarative Sharing - Preview
+Snowflake is pleased to announce the preview of Declarative Sharing. Declarative Sharing in the Snowflake Native App Framework enables providers to share and sell data products, and to enhance those apps by including notebooks that help Snowflake consumers visualize data.
+preview
+On June 2nd, 2025
+Snowpipe Streaming with High-Performance Architecture
+Snowflake is pleased to announce the preview of the Snowpipe Streaming high-performance architecture. This next-generation implementation delivers significantly enhanced throughput and optimized streaming performance with a predictable, throughput-based pricing model.
+generally available
+On May 5th, 2025
+Release channels for Snowflake Native Apps
+generally available
+On May 23rd, 2025
+Search optimization: Support for Apache Iceberg™ tables
+generally available
+On May 23rd, 2025
+Query Acceleration Service: Support for Apache Iceberg™ tables
+generally available
+On May 23rd, 2025
+Triggered tasks: Support for streams hosted on directory tables and data shares
+Announcements
+Stay informed and discover the latest updates, improvements, and enhancements
+Behavior Changes
+Behavior changes that may impact your usage
+Performance Improvements
+All features that can improve performance and make queries run faster
+
+===== https://docs.snowflake.com/en/guides-overview-secure
+TITLE: Securing Snowflake | Snowflake Documentation
+ACCESSED: 2026-09-27
+
+Securing Snowflake
+Snowflake provides industry-leading features that help ensure you can configure the highest levels of security for your account and users,
+as well as all the data you store in Snowflake.
+These topics are intended primarily for administrators (that is, users with the ACCOUNTADMIN, SYSADMIN, or SECURITYADMIN roles).
+Authentication
+Authentication policies
+Using authentication policies to restrict account and user authentication by client, authentication methods, and more.
+Multi-factor authentication (MFA)
+Using multi-factor authentication with Snowflake.
+Federated Authentication and SSO
+Topics related to federated authentication to Snowflake.
+Key-pair authentication and key-pair rotation
+Using key-pair authentication to Snowflake.
+Using programmatic access tokens for authentication
+Generating and managing programmatic access tokens for authentication.
+OAuth
+Topics related to using Snowflake OAuth and External OAuth to connect to Snowflake.
+Workload identity federation
+Preferred authentication method for service-to-service workloads accessing Snowflake data.
+Workload identity federation for Snowflake workloads that access external services
+Using workload identity federation so that Snowflake workloads can authenticate to external services, with Snowflake acting as the OIDC provider.
+External API authentication and secrets
+Configuring Snowflake to authenticate to external services.
+Network security
+Malicious IP Protection
+Protecting your account from IP addresses that are known to be malicious.
+Controlling network traffic with network policies
+Using network policies to restrict access to Snowflake.
+Network rules
+Using network rules with other Snowflake features to restrict access to and from Snowflake.
+Private connectivity
+Private connectivity for inbound network traffic
+Using private connectivity to access the Snowflake service, Snowsight, Streamlit in Snowflake, internal stages, Snowflake managed
+storage volumes, and Snowpark Container Services.
+Private connectivity for outbound network traffic
+Using private connectivity for external network locations, external functions, external stages, external tables, external
+volumes, and Snowpipe automation.
+Administration and authorization
+Trust Center
+Using the Trust Center to evaluate and monitor your account for security risks.
+Snowflake sessions and session policies
+Using session policies to manage your Snowflake session.
+SCIM
+Topics related to using SCIM to provision users and groups to Snowflake.
+Access Control
+Topics related to role-based access control (RBAC) in Snowflake.
+Defense in depth
+End-to-End Encryption
+Using end-to-end encryption in Snowflake.
+Data movement policies
+Using data movement policies to proactively prevent data exfiltration across various movement channels in Snowflake.
+Multi-party Approval
+Using Multi-party Approval for a second-person review of security-sensitive and operationally risky critical operations.
+
+===== https://www.snowflake.com/en/developers/
+TITLE: Snowflake for Developers
+ACCESSED: 2026-09-27
+
+Snowflake for Developers
+Skip to content
+Developers
+Overview
+Guides
+Open Source
+Learn
+Developer Blog
+events
+Downloads
+Snowflake for
+Developers
+,
+Discover reference architectures, industry-specific use cases and  solutions best practices from Snowflake experts and partners.
+Featured Guides
+Community Solution
+Building AI-powered BI apps using Snowflake Cortex Analyst
+Cortex Analyst
+Cortex LLM
+AI
+Community Solution
+Running Distributed PyTorch Models on Snowflake: An End-to-End ML Solution
+Snowpark Container Services
+Notebooks on Container Runtime
+Snowpark ML
+Model Registry
++More
+Community Solution
+Customer Reviews Analytics using Snowflake Cortex
+Streamlit
+Notebooks
+Snowflake Cortex
+Community Solution
+End-to-End Data Engineering with Snowpark Pandas
+Snowpark
+Notebooks
+IT
+Certified Solution
+Getting Started with Horizon for Data Governance in Snowflake
+Horizon
+Cortex AI
+Community Solution
+Product Review Sentiment Analysis using Snowflake Cortex on Iceberg Tables
+Snowpark
+Apache Iceberg
+Snowflake Cortex
+Streams and Tasks
+Community Solution
+Visual Data Stories with Snowflake Notebooks
+Notebooks
+Snowpark
+Community Solution
+Time Series Analytics with Pricing Data on Snowflake
+Notebooks
+ASOF_JOIN
+RANGE BETWEEN
+TIME_SLICE
+Community Solution
+Restaurant Sales Forecasting and Anomaly Detection using Snowflake ML functions
+Snowpark
+Snowflake ML functions
+Streams and Tasks
+Community Solution
+Enriching consumer data through a Snowflake Native App
+Snowpark Container Services
+UDF
+Native App
+Snowpark External Access
++More
+Community Solution
+Build LLM Apps with Snowpark Container Services and NVIDIA
+Snowpark Container Services
+Streamlit
+Snowflake Native App
+Community Solution
+Question Answering on Knowledge Graphs Using RelationalAI
+Snowpark
+UDF
+Marketplace and Integrations
+Snowflake SQL API
++More
+Community Solution
+Getting Started with Horizon for Data Governance in Snowflake
+Horizon
+Community Solution
+Application Framework: Getting started with the Data Quality Manager
+Serverless Tasks
+Snowpark Python
+Streamlit
+Community Solution
+Enhance Snowflake's Native Alerting Capabilities
+Alerts
+Streamlit
+View More Guides
+No matter what you’re building
+Snowflake has a solution
+AI/ML
+Securely build and deploy LLMs and ML models.
+View solutions
+AI/ML
+AI/ML
+Securely build and deploy LLMs and ML models.
+View solutions
+Applications
+Develop and scale data-intensive applications without operational burden.
+View solutions
+Applications
+Applications
+Develop and scale data-intensive applications without operational burden.
+View solutions
+Collaboration
+Discover, acquire and monetize live data, services and apps in the AI Data Cloud.
+View solutions
+Collaboration
+Collaboration
+Discover, acquire and monetize live data, services and apps in the AI Data Cloud.
+View solutions
+Data Engineering
+Build reliable, continuous data pipelines at scale in the language of your choice.
+View solution
+Data Engineering
+Data Engineering
+Build reliable, continuous data pipelines at scale in the language of your choice.
+View solution
+Explore
+Industry Guides
+Advertising, Media & Entertainment
+Learn more
+Financial Services
+Learn more
+Healthcare & Life Sciences
+Learn more
+Manufacturing
+Learn more
+Public Sector
+Learn more
+Retail & CPG
+Learn more
+Technology
+Learn more
+Telecommunications
+Learn more
+Travel & Hospitality
+Learn more
+Explore what’s possible
+and start building today
+Join our developer community
+Connect with fellow Snowflake enthusiasts to discuss all things AI Data Cloud.
+View the forums
+Explore developer docs
+Streamline your Snowflake journey with comprehensive documentation and learning resources.
+Go to docs
+Discover our open source projects
+Check out the open source projects that Snowflake maintains and supports.
+Projects we support
+Browse developer guides
+Follow along with tutorials to get you up and running with Snowflake.
+View the guides
+Contribute to Snowflake Labs
+Browse and contribute to over 200 open source repositories.
+Contribute today
+Level up with Northstar
+Upskill on Snowflake with online self-paced courses, in-person workshops and more.
+View course options
+Recent Engineering
+News From Snowflake
+Bridging Neuroscience and AI: Insights From the Retina and Beyond
+The synergy between neuroscience and technology is becoming increasingly evident in the rapidly evolving landscape of artificial intelligence (AI). As researchers delve...
+Read the blog
+Snowpark Observability: Deep Dive into Functions and Procedures Optimizations
+Snowpark is the set of libraries and code execution environments that run Python and other programming languages next to data in Snowflake...
+Read the blog
+Best Practices for Getting Started with Snowflake’s Document AI
+During the preview of Snowflake’s Document AI, we engaged with hundreds of customers eager to empower their business teams with automated intelligent document processing (IDP) workflows...
+Read the blog
+Read more blogs
+Take the next step and get
+hands-on experience with Snowflake
+Get your questions answered by our develo
+
+===== https://www.snowflake.com/en/
+TITLE: Snowflake AI Data Cloud
+ACCESSED: 2026-09-27
+
+Snowflake AI Data Cloud
+Skip to content
+Code
+Work
+Bring agentic AI to all your data
+Ask anything with Snowflake CoWork. Build anything with Snowflake CoCo. Welcome to your one-stop shop for everyone in the enterprise.
+Discover Snowflake CoCo
+Meet Snowflake CoWork
+Snowflake CoCo
+Snowflake CoWork
+PLATFORM
+Simplify Enterprise
+Data and AI
+From ingesting and processing data to analyzing and modeling it, to building and sharing data and AI applications, Snowflake helps you innovate faster and do more with your data.
+Why Snowflake
+View Pricing
+EASY
+Bring your data and AI strategies to life
+Save time on building, configuring and tuning infrastructure with an easy, fully managed platform that’s integrated across data types and clouds.
+CONNECTED
+Connect your business ecosystem
+Snowflake’s rich ecosystem and interoperability with open table formats means you can maximize value from all your data, apps and models.
+TRUSTED
+Achieve universal business continuity
+Support your most demanding workloads with always-on, unified security, governance, observability and disaster recovery, regardless of cloud or region.
+THE AI DATA CLOUD
+Streamline your architecture.
+Smash data silos.
+Platform
+The Snowflake platform is a fully managed service that’s truly easy to use, connected across your entire data estate and trusted by thousands of customers.
+Learn more
+Data Engineering
+Build reliable, continuous data pipelines for the enterprise in the language of your choice.
+Learn more
+Analytics
+Do data analytics faster with optimal pricing and near-zero maintenance.
+Learn more
+AI
+Securely create and deploy LLMs and ML models customized with your data.
+Learn more
+Applications & Collaboration
+Share live data across clouds and organizations, plus easily develop, distribute and scale apps.
+Learn more
+Transactions
+Unify transactional, analytical and AI workloads on one enterprise-ready platform.
+Learn more
+Fully managed service
+Universal security & governance
+Cross-cloud ecosystem
+Snowflake CoCo
+Accelerate end-to-end development with a governed AI coding agent that works wherever you build.
+Discover Snowflake CoCo
+Snowflake CoWork
+The personal work agent that takes you from context to clarity to action, all within Snowflake's perimeter.
+Explore Snowflake CoWork
+Retail & Consumer Goods
+Data Built to Perform
+Under Armour moves as fast as the athletes it serves with unified data, conversational AI and agentic workflows built on Snowflake.
+Experience the story
+30x
+More visibility into product margins
+14K+
+Employees with access to conversational AI
+Read the case study
+Healthcare and Life Sciences
+Novo Unifies 900TB of Data to Power Self-Service Insights for 40,000 Users
+With Snowflake, Novo unifies commercial and research data, empowering 40,000 users with self-service insights and laying the foundation for agentic, conversational BI.
+Watch the video
+900 TB
+commercial and research data unified on Snowflake
+40K
+Active users running self-service analysis
+Watch now
+Manufacturing
+United Rentals Equips 1,600+ Locations with Trusted Answers in Real Time
+Using Snowflake CoWork and Snowflake CoCo, United Rentals compresses agent development cycles from days to minutes and answers thousands of monthly questions with a Business Intelligence Agent.
+Read the story
+1600+
+Locations reached by the BI Agent
+Read the case study
+Travel & Hospitality
+Booking.com Accelerates Travel Innovation with Cortex AI
+By migrating away from Hadoop, Booking.com modernizes its data and AI, democratizes insights and connects millions of travelers to their dream trips.
+Watch the video
+31M
+Travel listings unified by a connected data and AI platform
+175K
+Different travel destinations powered by Cortex AI
+Read the case study
+Retail & Consumer Goods
+Fanatics Personalizes the Fan Experience with Snowflake CoWork
+Fanatics builds enterprise agents with Snowflake CoWork to unify billions of fan data points, democratize data access and enhance experiences for millions of fans.
+Watch the video
+2B+
+Daily signals from fans
+100M+
+Fans each with hundreds of attributes
+Watch the video
+Prev
+Next
+Amplify Impact
+The Snowflake
+Ecosystem
+Snowflake Partner Network
+From integrated technologies to migration experts, maximize your Snowflake deployment with one of our partners.
+Learn about the Snowflake Partner Network
+Explore the Snowflake Partner Finder
+Developer Community
+Find reference architecture, level up your Snowflake skill set or see what open source Snowflake supports.
+Visit the Developers Center
+Explore upcoming developer events
+Core Concepts
+Explore our knowledge base to learn more about industry trends and best practices directly from experts at Snowflake.
+Explore Data Governance
+Explore Artificial Intelligence
+Resources and News
+The Latest from
+Snowflake
+EBOOK
+The Modern Marketing Data Stack 5th Edition
+Read now
+Report
+Operationalizing Autonomous AI: Architecting the Agentic Enterprise on a Converged Data Foundation
+Read now
+REPORT
+AI + Data Predictions 2026
+Read now
+Press Release
+Snowflake Re
+
+===== https://docs.snowflake.com/en/reference
+TITLE: Reference | Snowflake Documentation
+ACCESSED: 2026-09-27
+
+Reference
+Reference information on various areas of Snowflake.
+SQL data types reference
+Reference for SQL data types.
+SQL command reference
+Reference for SQL commands.
+Function and stored procedure reference
+Reference for SQL functions.
+SQL class reference
+Reference for SQL classes.
+Snowflake Scripting reference
+Reference for
+Snowflake Scripting
+constructs.
+General reference
+Reference material on other subjects.
+
+===== https://docs.snowflake.com/en/sql-reference-classes
+TITLE: SQL class reference | Snowflake Documentation
+ACCESSED: 2026-09-27
+
+SQL class reference
+These topics provide reference information for Snowflake
+classes
+.
+Each class supports one or more of the following SQL operations:
+ALTER: Modifies the properties of an instance of a class.
+CREATE: Creates an instance of a class.
+DROP: Deletes an instance of a class.
+SHOW: Lists instances of a class.
+An instance of a class can have one or more methods. A method is a stored procedure or function and can be called by
+using the instance name and method name, and arguments (if any) required by the method. For example,
+CALL
+instance_name
+!
+method_name
+(...)
+.
+Updating your search path
+You can add the schema for classes you use frequently to your search path to save typing and make your SQL statements
+more concise. For more information about updating your search path, see
+Update your search path
+.
+Available classes
+Snowflake provides the following system-defined (built-in) classes.
+ANOMALY_DETECTION (SNOWFLAKE.ML)
+Allows you to detect outliers in your time series data.
+ANOMALY_INSIGHTS (SNOWFLAKE.LOCAL)
+Allows you to detect outliers in your costs.
+BUDGET (SNOWFLAKE.CORE)
+Allows you to monitor credit usage of supported objects.
+CLASSIFICATION (SNOWFLAKE.ML)
+Automatically sorts data into categories based on features in the data.
+CLASSIFICATION_PROFILE (SNOWFLAKE.DATA_PRIVACY)
+Allows you to automatically classify sensitive data.
+CUSTOM_CLASSIFIER (SNOWFLAKE.DATA_PRIVACY)
+Allows you to define custom classifiers to extend your data classification capabilities.
+FORECAST (SNOWFLAKE.ML)
+Represents a forecast model that produces a forecast for a single or multiple time series.
+TOP_INSIGHTS (SNOWFLAKE.ML)
+Allows you to determine the segments driving changes in a metric.
+
+===== https://docs.snowflake.com/en/sql-reference-commands
+TITLE: SQL command reference | Snowflake Documentation
+ACCESSED: 2026-09-27
+
+SQL command reference
+These topics provide reference information for all the Snowflake SQL commands (DDL, DML, and query syntax).
+Query syntax
+— structure of SQL queries in Snowflake.
+Query operators
+— arithmetic, logical, and other types of operators.
+Data Definition Language (DDL) commands
+— overview of DDL commands.
+Data Manipulation Language (DML) commands
+— commands for performing DML operations, including:
+Inserting, deleting, updating, and merging data in Snowflake tables.
+Bulk copying data into and out of Snowflake tables.
+Staging files for bulk copying.
+All commands (alphabetical)
+— alphabetical list of all the commands.
+Commands categorized by the type of objects and operations they control, including:
+General account-level objects (accounts, users, roles, security policies, integrations, etc.) and operations (failover & recovery, etc.).
+Session-based operations (session context, queries, variables, transactions, etc.).
+Virtual warehouses (for loading data and performing queries) and resource monitors (for controlling credit usage).
+Databases, schemas, tables, and other schema-level objects (views, sequences, etc.).
+Snowflake extensions and application development (user-defined functions, stored procedures, scripting, etc.).
+Objects for sharing data (shares, listings, etc.).
+Objects for classifying, protecting, and governing data (masking policies, row-access policies, tags, etc.).
+
+===== https://docs.snowflake.com/en/sql-reference-functions
+TITLE: Function and stored procedure reference | Snowflake Documentation
+ACCESSED: 2026-09-27
+
+Function and stored procedure reference
+These topics provide reference information for the system-defined functions and system-defined stored procedures.
+Summary of functions
+— combined summary of all system-defined functions. Can be used as a
+quick-reference.
+All functions (alphabetical)
+— alphabetical list of all system-defined functions (scalar, aggregate, table, etc.).
+Aggregate functions
+— functions that take multiple rows/values as input and return a single value.
+Scalar functions
+— functions that take a single row/value as input and return a single value:
+Bitwise expression functions
+Conditional expression functions
+Context functions
+Conversion functions
+Data generation functions
+Date & time functions
+Differential privacy functions
+Encryption functions
+Geospatial functions
+Hash functions
+Metadata functions
+Notification functions
+Numeric functions
+Period functions
+Semi-structured and structured data functions
+String functions (regular expressions)
+— regular expression (search) functions
+String & binary functions
+Vector functions
+Model monitor functions
+— functions that retrieve metrics from machine learning model monitors.
+System functions
+— functions that perform control operations or return system-level information.
+Table functions
+— functions that return results in tabular format.
+Window functions
+— functions that run analytic calculations, such as moving aggregations and rankings.
+Data metric functions
+— functions that enable data quality measurements for tables and views.
+Stored procedures
+— stored procedures to facilitate using certain Snowflake features.
+
+===== https://docs.snowflake.com/en/sql-reference-data-types
+TITLE: SQL data types reference | Snowflake Documentation
+ACCESSED: 2026-09-27
+
+SQL data types reference
+Snowflake supports most basic SQL data types (with some restrictions) for use in columns, local variables, expressions, parameters,
+and any other appropriate locations.
+Note
+You can also load unstructured data into Snowflake. For more information, see
+Introduction to unstructured data
+.
+In some cases, data of one type can be converted to another type. For example, INTEGER data can be converted to FLOAT data.
+Some conversions are lossless, but others might lose information. The amount of loss depends upon the data types and the specific
+values. For example, converting a FLOAT value to an INTEGER value removes the digits after the decimal place. (The value is
+rounded to the nearest integer.)
+In some cases, the user must specify the desired conversion, such as when passing a VARCHAR value to the
+TIME_SLICE
+function, which expects a TIMESTAMP or DATE argument. We
+call this
+explicit casting
+.
+In other cases, data types are converted automatically, such as when adding a float and an integer. We call this
+implicit casting
+(or
+coercion
+). In Snowflake, data types are
+automatically coerced whenever necessary and possible.
+For more information about explicit and implicit casting, see
+Data type conversion
+.
+For more information about Snowflake data types, see the following topics:
+Summary of data types
+Numeric data types
+String & binary data types
+Logical data types
+Date & time data types
+Semi-structured data types
+Structured data types
+Unstructured data types
+Geospatial data types
+UUID data type
+Vector data types
+User-defined types
+Unsupported data types
+Data type conversion

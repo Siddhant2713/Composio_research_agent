@@ -1,0 +1,184 @@
+{
+  "app": "Jira",
+  "number": 74,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:05:45.018306+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.atlassian.com\",\n    \"https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/\",\n    \"https://developer.atlassian.com/platform/app-development/getting-started/\",\n    \"https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.atlassian.com",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "https://developer.atlassian.com/platform/app-development/getting-started/",
+    "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+    "https://docs.atlassian.com/",
+    "https://developers.atlassian.com/",
+    "https://api.atlassian.com/",
+    "https://atlassian.com/docs",
+    "https://atlassian.com/developers",
+    "https://atlassian.com/api",
+    "https://atlassian.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-plans/",
+    "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/",
+    "https://api.atlassian.com/oauth/token/accessible-resources",
+    "https://developer.atlassian.com/cloud/confluence/rest",
+    "https://developer.atlassian.com/cloud/jira/platform/rest",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
+  ],
+  "boilerplate_lines_removed": 11,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.atlassian.com/platform/app-development/getting-started/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.atlassian.com/",
+      "reason": "page too thin (56 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://atlassian.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.atlassian.com",
+      "requested_url": "https://developer.atlassian.com",
+      "status": 200,
+      "title": "",
+      "chars": 0,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "status": 200,
+      "title": "The Jira Cloud platform REST API",
+      "chars": 4717,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "status": 200,
+      "title": "OAuth 2.0 (3LO) apps",
+      "chars": 4707,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/",
+      "requested_url": "https://developers.atlassian.com/",
+      "status": 200,
+      "title": "",
+      "chars": 0,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/",
+      "status": 200,
+      "title": "Jira scopes for OAuth 2.0 (3LO) and Forge apps",
+      "chars": 4723,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-plans/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-plans/",
+      "status": 200,
+      "title": "The Jira Cloud platform REST API",
+      "chars": 4713,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "status": 200,
+      "title": "Basic auth for REST APIs",
+      "chars": 4713,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/",
+      "status": 200,
+      "title": "The Jira Cloud platform REST API",
+      "chars": 4715,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/",
+      "status": 200,
+      "title": "The Jira Cloud platform REST API",
+      "chars": 4715,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Jira Cloud platform REST API for interacting with Jira programmatically, using OAuth 2.0 (3LO) or API tokens for authentication.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Integrations can use OAuth 2.0 authorization code grants (3LO), while ad-hoc API calls, scripts, and bots use basic auth with an email and API token. Forge apps and Connect apps use built-in mechanisms like JWT.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"OAuth 2.0 (3LO) apps are created and managed directly in the developer console via user profiles.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"REST API v3 is provided alongside webhook registration capabilities and sample snippets for various languages.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials can be created via the developer console, and extensive REST API documentation is provided.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/\",\n      \"claim\": \"Describes REST API v3 for the Jira Cloud platform and mentions authentication methods including OAuth 2.0 (3LO) and basic auth.\"\n    },\n    {\n      \"url\": \"https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/\",\n      \"claim\": \"Explains how OAuth 2.0 (3LO) apps are created and managed via the developer console.\"\n    },\n    {\n      \"url\": \"https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/\",\n      \"claim\": \"Details how API tokens and basic authentication can be used for scripts and REST clients.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://developer.atlassian.com",
+    "one_liner": "Jira Cloud platform REST API for interacting with Jira programmatically, using OAuth 2.0 (3LO) or API tokens for authentication.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Integrations can use OAuth 2.0 authorization code grants (3LO), while ad-hoc API calls, scripts, and bots use basic auth with an email and API token. Forge apps and Connect apps use built-in mechanisms like JWT."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "OAuth 2.0 (3LO) apps are created and managed directly in the developer console via user profiles."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "REST API v3 is provided alongside webhook registration capabilities and sample snippets for various languages."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials can be created via the developer console, and extensive REST API documentation is provided."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "claim": "Describes REST API v3 for the Jira Cloud platform and mentions authentication methods including OAuth 2.0 (3LO) and basic auth.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+        "claim": "Explains how OAuth 2.0 (3LO) apps are created and managed via the developer console.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+        "claim": "Details how API tokens and basic authentication can be used for scripts and REST clients.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:06:10.845247+00:00"
+}

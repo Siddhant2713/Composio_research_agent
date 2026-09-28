@@ -1,0 +1,177 @@
+{
+  "app": "Freshdesk",
+  "number": 13,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:55:35.805230+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.freshdesk.com\",\n    \"https://support.freshdesk.com/support/solutions/articles/215666-how-to-generate-an-api-key\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://freshdesk.com",
+    "https://developers.freshdesk.com",
+    "https://support.freshdesk.com/support/solutions/articles/215666-how-to-generate-an-api-key",
+    "https://docs.freshdesk.com/",
+    "https://developer.freshdesk.com/",
+    "https://api.freshdesk.com/",
+    "https://freshdesk.com/docs",
+    "https://freshdesk.com/developers",
+    "https://freshdesk.com/api",
+    "https://freshdesk.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.freshworks.com/contact/",
+    "https://www.freshworks.com/partners/",
+    "https://www.freshworks.com/crm/sales/",
+    "https://www.freshworks.com/crm/suite/",
+    "https://www.freshworks.com/freshdesk/signup/",
+    "https://www.freshworks.com/freshdesk/pricing/",
+    "https://developers.freshdesk.com/v2/docs/quick-start/",
+    "https://freshdesk.com/signup",
+    "https://developer.freshdesk.com/v2/docs/quick-start/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://support.freshdesk.com/support/solutions/articles/215666-how-to-generate-an-api-key",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.freshdesk.com/",
+      "reason": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.freshdesk.com/",
+      "reason": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://freshdesk.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://freshdesk.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://www.freshworks.com/freshdesk/signup/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.freshworks.com/freshdesk/",
+      "requested_url": "https://freshdesk.com",
+      "status": 200,
+      "title": "AI-Powered Customer Service Software | Freshdesk | Freshworks",
+      "chars": 1399,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.freshdesk.com",
+      "requested_url": "https://developers.freshdesk.com",
+      "status": 200,
+      "title": "Freshdesk Developers",
+      "chars": 718,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.freshdesk.com/",
+      "requested_url": "https://developer.freshdesk.com/",
+      "status": 200,
+      "title": "Freshdesk Developers",
+      "chars": 718,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.freshworks.com/contact/",
+      "requested_url": "https://www.freshworks.com/contact/",
+      "status": 200,
+      "title": "Contact Freshworks",
+      "chars": 1830,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.freshworks.com/partners/",
+      "requested_url": "https://www.freshworks.com/partners/",
+      "status": 200,
+      "title": "Grow Your Business with Freshworks Partnerships | Become a partner today!",
+      "chars": 3421,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.freshworks.com/crm/sales/",
+      "requested_url": "https://www.freshworks.com/crm/sales/",
+      "status": 200,
+      "title": "Freshsales: Streamlined Sales CRM Solution | Freshworks",
+      "chars": 2821,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.freshworks.com/crm/suite/",
+      "requested_url": "https://www.freshworks.com/crm/suite/",
+      "status": 200,
+      "title": "Freshsales Suite: CRM plus Marketing Automation | Freshworks",
+      "chars": 3896,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Freshdesk is an AI-powered customer service software providing a developer portal with SDK and API documentation for integration.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The fetched pages mention an API and SDK docs but do not explicitly detail the authentication mechanism.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can sign up for free and log in to a Freshdesk account from the developer portal.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The developer portal mentions API docs and SDK docs, but does not provide specific technical details about REST, GraphQL, webhooks, or specific SDK languages in the fetched text.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://www.freshworks.com/freshdesk/\",\n    \"notes\": \"Mentions Freshdesk MCP to connect customer data into everyday workflows.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Self-serve signup is available via the developer site and an API exists, but specific auth mechanisms and endpoints are not fully detailed in the current fetched text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.freshworks.com/freshdesk/\",\n      \"claim\": \"Freshdesk offers MCP integration to bring customer data into everyday workflows.\"\n    },\n    {\n      \"url\": \"https://developers.freshdesk.com\",\n      \"claim\": \"Provides SDK and API documentation along with a free signup option.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://freshdesk.com",
+    "one_liner": "Freshdesk is an AI-powered customer service software providing a developer portal with SDK and API documentation for integration.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The fetched pages mention an API and SDK docs but do not explicitly detail the authentication mechanism."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can sign up for free and log in to a Freshdesk account from the developer portal."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "The developer portal mentions API docs and SDK docs, but does not provide specific technical details about REST, GraphQL, webhooks, or specific SDK languages in the fetched text."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://www.freshworks.com/freshdesk/",
+      "notes": "Mentions Freshdesk MCP to connect customer data into everyday workflows."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Self-serve signup is available via the developer site and an API exists, but specific auth mechanisms and endpoints are not fully detailed in the current fetched text."
+    },
+    "evidence": [
+      {
+        "url": "https://www.freshworks.com/freshdesk/",
+        "claim": "Freshdesk offers MCP integration to bring customer data into everyday workflows.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.freshdesk.com",
+        "claim": "Provides SDK and API documentation along with a free signup option.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-27T17:56:07.039422+00:00"
+}

@@ -1,0 +1,180 @@
+{
+  "app": "Pipedrive",
+  "number": 3,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:54:40.688565+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://pipedrive.developers.io/\",\n    \"https://developers.pipedrive.com/\",\n    \"https://developers.pipedrive.com/docs/api/v1\",\n    \"https://pipedrive.com/en/developers\",\n    \"https://support.pipedrive.com/en/category/marketplace-and-integrations\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://pipedrive.com",
+    "https://pipedrive.developers.io/",
+    "https://developers.pipedrive.com/",
+    "https://developers.pipedrive.com/docs/api/v1",
+    "https://pipedrive.com/en/developers",
+    "https://support.pipedrive.com/en/category/marketplace-and-integrations",
+    "https://docs.pipedrive.com/",
+    "https://developer.pipedrive.com/",
+    "https://api.pipedrive.com/",
+    "https://pipedrive.com/docs",
+    "https://pipedrive.com/developers",
+    "https://pipedrive.com/api",
+    "https://pipedrive.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.pipedrive.com/en/contact-sales",
+    "https://www.pipedrive.com/en/contact-sales-ai",
+    "https://www.pipedrive.com/en/products/sales/onboarding",
+    "https://www.pipedrive.com/en/partner",
+    "https://www.pipedrive.com/en/pricing",
+    "https://app.pipedrive.com/auth/login",
+    "https://www.pipedrive.com/en/products/sales",
+    "https://support.pipedrive.com/en/contact-us",
+    "https://www.pipedrive.com/en/resources/sales-pipeline-course",
+    "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "https://developers.pipedrive.com/docs/api/v1/Webhooks"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://pipedrive.developers.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://pipedrive.com/en/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://support.pipedrive.com/en/category/marketplace-and-integrations",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.pipedrive.com/",
+      "reason": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://www.pipedrive.com/en/pricing",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.pipedrive.com/",
+      "requested_url": "https://pipedrive.com",
+      "status": 200,
+      "title": "Sales CRM & Pipeline Management Software | Pipedrive",
+      "chars": 4999,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.pipedrive.com/",
+      "requested_url": "https://developers.pipedrive.com/",
+      "status": 200,
+      "title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "chars": 1957,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "requested_url": "https://developers.pipedrive.com/docs/api/v1",
+      "status": 200,
+      "title": "Pipedrive API Reference and Documentation",
+      "chars": 1767,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/contact-sales",
+      "requested_url": "https://www.pipedrive.com/en/contact-sales",
+      "status": 200,
+      "title": "Contact Sales | Pipedrive",
+      "chars": 1479,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/contact-sales-ai",
+      "requested_url": "https://www.pipedrive.com/en/contact-sales-ai",
+      "status": 200,
+      "title": "Contact Sales AI | Pipedrive",
+      "chars": 1912,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/products/sales/onboarding",
+      "requested_url": "https://www.pipedrive.com/en/products/sales/onboarding",
+      "status": 200,
+      "title": "Onboarding | Pipedrive",
+      "chars": 4599,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/partner",
+      "requested_url": "https://www.pipedrive.com/en/partner",
+      "status": 200,
+      "title": "Partner Page | CRM Partners | Pipedrive",
+      "chars": 4435,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Pipedrive is a sales CRM and pipeline management software offering a RESTful API for developers to build integrations.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The stateless API is validated against an API token obtained manually from the Pipedrive app.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can obtain an API token manually from the Pipedrive app and sign up for a sandbox account.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Node.js\",\n      \"PHP\"\n    ],\n    \"notes\": \"Supports a RESTful API with OpenAPI 3 specifications, webhooks, and official Node.js and PHP client libraries.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-service credential generation (API token obtained manually from the app/sandbox) combined with a well-documented RESTful API and official SDKs makes it easy for outside developers to build.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.pipedrive.com/\",\n      \"claim\": \"Mentions building integrations with the API and easy use of webhooks.\"\n    },\n    {\n      \"url\": \"https://developers.pipedrive.com/docs/api/v1\",\n      \"claim\": \"Describes the RESTful Pipedrive API which is stateless and validated against an API token obtained manually from the Pipedrive app.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint_url": "https://pipedrive.com",
+    "one_liner": "Pipedrive is a sales CRM and pipeline management software offering a RESTful API for developers to build integrations.",
+    "auth": {
+      "method": "api_key",
+      "notes": "The stateless API is validated against an API token obtained manually from the Pipedrive app."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can obtain an API token manually from the Pipedrive app and sign up for a sandbox account."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "Node.js",
+        "PHP"
+      ],
+      "notes": "Supports a RESTful API with OpenAPI 3 specifications, webhooks, and official Node.js and PHP client libraries."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-service credential generation (API token obtained manually from the app/sandbox) combined with a well-documented RESTful API and official SDKs makes it easy for outside developers to build."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.pipedrive.com/",
+        "claim": "Mentions building integrations with the API and easy use of webhooks.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "claim": "Describes the RESTful Pipedrive API which is stateless and validated against an API token obtained manually from the Pipedrive app.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:54:57.203487+00:00"
+}

@@ -1,0 +1,1169 @@
+===== https://plaid.com/docs/
+TITLE: Home | Plaid Docs
+ACCESSED: 2026-09-27
+
+Quickstart
+Learn about Plaid's key concepts and run starter code
+Get started
+Quickstart
+Learn about Plaid's key concepts and run starter code
+Get started
+API Reference
+Explore server-side API libraries and integrate with API endpoints
+View reference
+API Reference
+Explore server-side API libraries and integrate with API endpoints
+View reference
+Link
+Link, Plaid's client-side component, helps your users connect their accounts
+Build with Link
+Link
+Link, Plaid's client-side component, helps your users connect their accounts
+Build with Link
+Payments and Funding
+Auth
+Retrieve bank account information for ACH, wire, and other bank-to-bank transfers.
+Auth
+Retrieve bank account information for ACH, wire, and other bank-to-bank transfers.
+Balance
+Retrieve real-time account balance information.
+Balance
+Retrieve real-time account balance information.
+Identity
+Verify users' financial account ownership and reduce fraud.
+Identity
+Verify users' financial account ownership and reduce fraud.
+Signal Transaction Scores
+Reduce fraud and provide instant funds access by assessing the return risk of an ACH debit transaction.
+Signal Transaction Scores
+Reduce fraud and provide instant funds access by assessing the return risk of an ACH debit transaction.
+Transfer
+Send and receive money end to end with Plaid.
+Transfer
+Send and receive money end to end with Plaid.
+Investments Move
+Get verified data for initiating an ACATS or ATON brokerage-to-brokerage transfer.
+Investments Move
+Get verified data for initiating an ACATS or ATON brokerage-to-brokerage transfer.
+Payments (Europe)
+Make one-time payments, recurring payments, or payouts within your app.
+Payments (Europe)
+Make one-time payments, recurring payments, or payouts within your app.
+Financial Insights
+Transactions
+Retrieve transaction data for budgeting tools, expense management, and more.
+Transactions
+Retrieve transaction data for budgeting tools, expense management, and more.
+Investments
+View holdings and transactions from investment accounts.
+Investments
+View holdings and transactions from investment accounts.
+Liabilities
+Access loan data, like balances and interest rates, for student loans, mortgages, and credit cards.
+Liabilities
+Access loan data, like balances and interest rates, for student loans, mortgages, and credit cards.
+Enrich
+Add detailed information and insights to your existing transactions data.
+Enrich
+Add detailed information and insights to your existing transactions data.
+KYC, AML, and anti-fraud
+Identity Verification
+Global KYC compliance and anti-fraud. Verify user identity data and documents.
+Identity Verification
+Global KYC compliance and anti-fraud. Verify user identity data and documents.
+Monitor
+Use with Identity Verification to enable sanction, PEP, and watchlist screening for anti-money laundering compliance.
+Monitor
+Use with Identity Verification to enable sanction, PEP, and watchlist screening for anti-money laundering compliance.
+Protect
+Prevent fraud before it happens — at every step of the user lifecycle.
+Protect
+Prevent fraud before it happens — at every step of the user lifecycle.
+Credit and Underwriting
+Consumer Report (by Plaid Check)
+Make smarter credit and lending decisions with insights powered by Plaid Check.
+Consumer Report (by Plaid Check)
+Make smarter credit and lending decisions with insights powered by Plaid Check.
+Assets
+Access users' financial information for loan underwriting.
+Assets
+Access users' financial information for loan underwriting.
+Statements
+Get PDF statements directly from the user's bank, for underwriting verification and compliance.
+Statements
+Get PDF statements directly from the user's bank, for underwriting verification and compliance.
+Income
+Verify income and employment, for lending use cases and more.
+Income
+Verify income and employment, for lending use cases and more.
+Instant Onboarding
+Layer
+Onboard users instantly with just a phone number.
+Layer
+Onboard users instantly with just a phone number.
+
+===== https://plaid.com/docs/api/
+TITLE: API - Overview | Plaid Docs
+ACCESSED: 2026-09-27
+
+API endpoints and webhooks
+For documentation on specific API endpoints and webhooks, use the navigation menu or search.
+API access
+To gain access to the Plaid API, create an account on the
+Plaid Dashboard
+. Once you've completed the signup process and acknowledged our terms, we'll provide a live
+client_id
+secret
+via the Dashboard.
+API protocols and headers
+The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON, with errors indicated in response bodies as
+error_code
+error_type
+(use these in preference to HTTP status codes for identifying application-level errors). All responses come as standard JSON, with a small subset returning binary data where appropriate. The Plaid API is served over HTTPS TLS v1.2 to ensure data privacy; HTTP and HTTPS with TLS versions other than 1.2 are not supported. Clients must use an up to date root certificate bundle as the only TLS verification path; certificate pinning should never be used. All requests must include a
+Content-Type
+of
+application/json
+and the body must be valid JSON.
+Almost all Plaid API endpoints require a
+client_id
+secret
+. These may be sent either in the request body or in the headers
+PLAID-CLIENT-ID
+PLAID-SECRET
+Every Plaid API response includes a
+request_id
+, either in the body or (in the case of endpoints that return binary data, such as
+/asset_report/pdf/get
+) in the response headers. For faster support, include the
+request_id
+when contacting support regarding a specific API call.
+API host
+https://sandbox.plaid.com (Sandbox)
+https://production.plaid.com (Production)
+Plaid has two environments: Sandbox and Production. Items cannot be moved between environments. The Sandbox environment supports only test Items. You can
+request Production API access
+via the Dashboard.
+API status and incidents
+API status is available at
+status.plaid.com
+API status and incidents are also available programmatically via the following endpoints:
+https://status.plaid.com/api/v2/status.json
+for current status
+https://status.plaid.com/api/v2/incidents.json
+for current and historical incidents
+For a complete list of all API status information available programmatically, as well as more information on using these endpoints, see the
+Incident.io Status API documentation
+For information on institution-specific insights, see
+Troubleshooting institution insights
+Storing API data
+Any token returned by the API is sensitive and should be stored securely. Except for the
+public_token
+link_token
+, all Plaid tokens are long-lasting and should never be exposed on the client side. Consumer data obtained from the Plaid API is sensitive information and should be managed accordingly. For guidance and best practices on how to store and handle sensitive data, see the
+Open Finance Data Security Standard
+Identifiers used by the Plaid API that do not contain consumer data and are not keys or tokens are designed for usage in less sensitive contexts. The most common of these identifiers are the
+account_id
+item_id
+link_session_id
+, and
+request_id
+. These identifiers are commonly used for logging and debugging purposes.
+API field formats
+Strings
+Many string fields returned by Plaid APIs are reported exactly as returned by the financial institution. For this reason, Plaid does not have maximum length limits or standardized formats for strings returned by the API. In practice, field lengths of 280 characters will generally be adequate for storing returned strings, although Plaid does not guarantee this as a maximum string length.
+Numbers and money
+Plaid returns all currency values as decimal values in dollars (or the equivalent for the currency being used), rather than as integers. In some cases, it may be possible for a money value returned by the Plaid API to have more than two digits of precision -- this is common, for example, when reporting crypto balances.
+OpenAPI definition file
+OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools for a wide variety of applications, including testing, client library generation, IDE integration, and more. The Plaid API is specified in our
+Plaid OpenAPI GitHub repo
+Postman collection
+The
+Postman collection
+is a convenient tool for exploring Plaid API endpoints without writing code. The Postman collection provides pre-formatted requests for almost all of Plaid's API endpoints. All you have to do is fill in your API keys and any arguments. To get started, check out the
+Plaid Postman Collection Quickstart
+on GitHub.
+Client libraries
+See the
+client libraries
+page for more information on Plaid's client libraries.
+
+===== https://plaid.com/docs/quickstart/
+TITLE: Quickstart | Plaid Docs
+ACCESSED: 2026-09-27
+
+Want more video tutorials? The
+full getting started guide
+for the Quickstart app is available on YouTube.
+Don't want to write code? Check out the
+Plaid Postman Collection
+for a no-code way to get started with Plaid's API.
+Looking to get started with Identity Verification, Income Verification, Plaid Check (CRA), or Layer?
+For Identity Verification, check out the
+Identity Verification Quickstart
+For Plaid Check (CRA), check out the
+Plaid Check (CRA) Quickstart
+For Income, try the
+Income Verification Starter app
+For Layer, use the
+Layer Quickstart
+Introduction
+These instructions are also available on GitHub at the
+Quickstart Repo
+Let's test out running Plaid locally by cloning the Quickstart app. You'll need
+API keys, which you can receive by signing up in the
+Dashboard
+You'll have two different API keys, and there are two different Plaid
+environments. Today we'll start in the Sandbox environment. View the API Keys
+section of the Dashboard to find your Sandbox secret.
+client_id
+Private identifier for your team
+secret
+Private key, one for each of the two environments
+Sandbox
+Get started with test credentials and life-like data
+Production
+Test or launch your app with unlimited live credentials
+If you get stuck at any point in the Quickstart, help is just a click away! Check the Quickstart
+troubleshooting guide
+, ask
+Bill
+— Plaid's AI assistant — in the Dashboard, or chat with other developers in our
+Discord community
+Quickstart setup
+Once you have your API keys, it's time to run the Plaid Quickstart locally! The instructions below will guide you through the process of cloning the
+Quickstart repository
+, customizing the .env file with your own Plaid client ID and Sandbox secret, and finally, building and running the app.
+Make sure you have
+npm installed
+before following along. If you're using Windows, ensure you have a terminal capable of running basic Unix shell commands.
+#
+Note
+:
+If
+on
+Windows
+run
+# git clone
+-
+c core
+symlinks
+=
+true
+https
+:
+/
+/
+github
+com
+/
+plaid
+/
+quickstart
+# instead to ensure correct symlink behavior
+git clone https
+:
+/
+/
+github
+com
+/
+plaid
+/
+quickstart
+git
+cd quickstart
+/
+node
+#
+Copy
+the
+env
+example
+file to
+env
+then fill
+# out
+PLAID_CLIENT_ID
+PLAID_SECRET
+in
+env
+cp
+env
+example
+env
+#
+Install
+dependencies
+npm install
+#
+Start
+the backend app
+/
+start
+sh
+Open a new shell and start the frontend app. Your app will be running at
+http://localhost:3000
+# Install dependencies
+cd
+quickstart/frontend
+npm
+install
+# Start the frontend app
+npm
+start
+# Go to http://localhost:3000
+Visit localhost and log in with Sandbox credentials (typically
+user_good
+pass_good
+, as indicated at the bottom of the page).
+Create your first Item
+Most API requests interact with an
+Item
+, which is a Plaid term for a login at a financial institution. A single end-user of your application might have accounts at different financial institutions, which means they would have multiple different Items. An Item is not the same as a financial institution account, although every account will be associated with an Item. For example, if a user has one login at their bank that allows them to access both their checking account and their savings account, a single Item would be associated with both of those accounts.
+Now that you have the Quickstart running, you'll add your first Item in the Sandbox environment. Once you've opened the Quickstart app on localhost, click the
+Launch Link
+button and select any institution. Use the Sandbox credentials to simulate a successful login.
+Sandbox credentials
+username: user_good
+password: pass_good
+If prompted to enter a 2FA code:
+1234
+Once you have entered your credentials and moved to the next screen, you have created your first Item! You can now make API calls for that Item by using the buttons in the Quickstart. In the next section, we'll explain what actually happened and how the Quickstart works.
+How it works
+As you might have noticed, you use both a server and a client-side component to
+access the Plaid APIs. The flow looks like this:
+The Plaid flow
+begins when your user wants to connect their bank account to your app.
+1
+Call
+/link/token/create
+to create a
+link_token
+and pass the temporary token to your app's client.
+2
+Use the
+link_token
+to open Link for your user. In the
+onSuccess
+callback
+, Link will provide a temporary
+public_token
+. This token can also be obtained on the backend via
+/link/token/get
+3
+Call
+/item/public_token/exchange
+to exchange the
+public_token
+for a permanent
+access_token
+item_id
+for the new
+Item
+4
+Store the
+access_token
+and use it to make product requests for your user's
+Item
+The first step is to create a new
+link_token
+by making a
+/link/token/create
+request and passing in the required configurations. This
+link_token
+is a short-lived, one-time use token that authenticates your app with
+Plaid Link
+, our frontend module. Several of the environment variables you configured when launching the Quickstart, such as
+PLAI
+
+===== https://plaid.com/docs/auth/
+TITLE: Auth - Introduction to Auth | Plaid Docs
+ACCESSED: 2026-09-27
+
+Get started with Auth
+API Reference
+Quickstart
+Demo
+Auth allows you to request a user's checking, savings, or cash management account and routing number, making it easy for you to initiate credits or debits via ACH, wire transfer, or equivalent international networks. Auth makes it easy for end users to fund an account with your app, cash out to their bank account, or make purchases via pay-by-bank.
+To move money, Auth must be used with a payment processor: either a
+Plaid Partner
+or another third party. For more information, see
+Using a Payments Service
+. For an all-in-one solution that includes payment processor functionality, see
+Transfer
+(US-only). For more details, see
+Auth vs. Transfer comparison
+Auth can only be used with debitable checking, savings, or cash management accounts. Credit-type accounts, including credit cards, cannot receive payments directly via electronic interbank transfers, and Auth data cannot be used to set up credit card payments. Auth can not be used to connect debit cards; instead, you can make a transfer directly from the user's bank account, saving you money over using the debit card network.
+Prefer to learn by watching? Get an overview of how Auth works in just 3 minutes!
+Auth is commonly used in combination with other Plaid APIs that reduce risk and support compliance, such as
+Balance
+(to verify accounts have sufficient funds),
+Signal
+(to calculate the risk of ACH returns with ML-powered analysis), and
+Identity
+(to verify ownership information on the account).
+For account funding use cases, see
+Identity Verification
+for an end-to-end KYC compliance solution with optional AML capabilities.
+Integration process
+Below is a high level overview of the Auth integration process. For a more detailed walkthrough, see
+Add auth to your app
+or (if applicable) the docs for the specific
+partner
+you are using.
+Embedded Link for pay-by-bank applications
+If your use case involves the end user choosing between paying via a credit card and paying via a bank account, it is strongly recommended to use the
+Embedded experience
+for Link to increase uptake of pay-by-bank.
+Create a Link token by calling
+/link/token/create
+with
+auth
+in the
+products
+parameter.
+Initialize Link with the Link token from the previous step. For more details, see
+Link
+For Link configuration recommendations, see
+Optimizing the Link UI for Auth
+Once the user has successfully completed the Link flow, exchange the
+public_token
+for an
+access_token
+by calling
+/item/public_token/exchange
+If using a Plaid partner for payment processing, ensure the partner is enabled on your
+Plaid Dashboard
+, then call
+/processor/token/create
+or
+/processor/stripe/bank_account_token/create
+to obtain a token that you will provide to the partner to enable funds transfers. For more detailed instructions, including a full walkthrough, see
+Auth payment partners
+If not using a Plaid partner, call
+/auth/get
+to obtain the account and routing number, then provide these fields to your payment processing system.
+Listen for the
+PENDING_DISCONNECT
+webhook. If you receive it, send the Item through
+update mode
+. If update mode is not completed for the Item within 7 days of webhook receipt, consent will expire, which may lead to the account and routing number becoming invalid. For more details, see
+TAN expiration
+. Note that consent expiration does not result in a webhook.
+Listen for the
+USER_PERMISSION_REVOKED
+USER_ACCOUNT_REVOKED
+webhooks. These webhooks indicate that you should send the Item through
+update mode
+to refresh consent; if update mode cannot be launched for the Item, create a new Item instead. Attempting to use the account and routing number for transactions without successfully completing update mode may result in ACH returns. For more details, see
+TAN expiration
+Implement special remediation steps for Chase Items: if consent has expired as described in step 6, or if the permissions have been revoked as described in step 7, then the account and routing number will become invalid and must be regenerated. In addition to sending the Item through update mode, you must
+also
+call
+/auth/get
+/processor/token/create
+, or
+/processor/stripe/bank_account_token/create
+, as relevant to your use case, to get a new set of routing and account numbers. To simplify your application logic, you can do this every time you send a Chase Item through update mode when using Auth. For more details, see
+TAN expiration
+(Optional) Listen for the
+AUTH: DEFAULT_UPDATE
+webhook. This webhook indicates that the routing and/or account number for an account on the Item has changed (this is very rare). Call
+/auth/get
+/processor/token/create
+, or
+/processor/stripe/bank_account_token/create
+on that Item, as applicable for your integration, and use only the new numbers or processor token.
+(Optional) To enable and configure additional Auth verification flows, such as micro-deposit verification or database verification, use the
+Account Verification Dashboard
+. For demos and
+
+===== https://plaid.com/pricing/
+TITLE: Pricing - United States & Canada | Plaid
+ACCESSED: 2026-09-27
+
+Pricing Plans
+Simple, scalable plans for businesses of all sizes
+Pay as You Go
+Best for individuals and developers
+Start with our month-to-month plan:  unlimited usage, no commitments upfront—only pay for what you use.
+Key Features
+Access to GA products
+Unlimited live API calls
+Link customization
+Standard Pricing
+Request access
+Growth
+Best for small teams and startups
+Scale with a 12-month commitment:  access discounts, platform support package, and account management.
+Key Features
+Everything in Pay as You Go
+Discounted product rates
+Platform support package
+Single Sign-On for Plaid Dashboard
+Talk with our team
+Custom
+Best for businesses that need to scale
+Create a flexible plan with custom solutions, volume-based pricing, and support for regulated industries.
+Key Features
+Everything in Growth
+Access to beta products
+Volume discounts
+Integration assistance
+Premium support
+Account Management
+Talk with our team
+Start testing in sandbox for free
+Try it now
+Products
+Pay as You Go
+Growth
+Custom
+Auth
+Help customers fund accounts faster
+Balance
+Instantly confirm account balances
+Identity
+Verify bank account ownership
+Identity Match
+Match bank account ownership
+Investments Move
+Authorize investment transfers
+Assets
+Access financial data for underwriting
+Income
+Verify income and paystubs
+Statements
+Refresh statements by date
+Enrich
+Clean up raw transaction data
+Investments
+Get a holistic view of investments
+Liabilities
+Easily understand customer debt
+Transactions
+Access 24 months of transaction data
+Identity Verification
+Verify good users and stop bad ones
+Monitor
+Stay AML and PEP compliant
+Layer
+Onboard customers instantly
+*
+Signal
+Prevent NSFs and other returns
+*
+Transfer
+Transfer money between accounts
+*
+Consumer Report
+Get risk insights for underwriting
+*
+Protect
+Fraud intelligence system
+*
+Request access
+Talk with our team
+Talk with our team
+Products
+Pay as You Go
+Growth
+Custom
+Auth
+Included
+Included
+Included
+Balance
+Included
+Included
+Included
+Identity
+Included
+Included
+Included
+Identity Match
+Included
+Included
+Included
+Investments Move
+Included
+Included
+Included
+Assets
+Included
+Included
+Included
+Income
+Included
+Included
+Included
+Statements
+Included
+Included
+Included
+Enrich
+Included
+Included
+Included
+Investments
+Included
+Included
+Included
+Liabilities
+Included
+Included
+Included
+Transactions
+Included
+Included
+Included
+Identity Verification
+Included
+Included
+Included
+Monitor
+Included
+Included
+Included
+Layer
+Not included
+Contact for pricing
+Included
+Signal
+Not included
+Contact for pricing
+Included
+Transfer
+Not included
+Contact for pricing
+Included
+Consumer Report
+Not included
+Contact for pricing
+Included
+Protect
+Not included
+Contact for pricing
+Included
+*Talk to a Plaid Contact to learn more
+Get answers to your pricing questions
+Reach out
+if we missed yours.
+Is Plaid free for consumers?
+Yes. Consumers can use Plaid to safely connect and control the financial information they share with apps or services at no cost.
+Can I try Plaid for free?
+Absolutely. Our Limited Production service allows you to make up to 200 API calls with each available product using live data. This is the best way to start learning about and testing Plaid’s APIs.
+How much does Plaid cost?
+We offer three basic pricing models based on the product(s) you’re using and how it’s designed: one-time, subscription, and per-request.
+One-time fee products
+: You’ll incur a charge only once per connected account, regardless of the number of API calls made.
+Subscription products
+: These incur a monthly fee for each connected account.
+Per-request products
+: These have a flat fee for every successful API call.
+For more information on pricing, plans, or volume discounts, please visit
+Plaid Billing
+or connect with our
+sales team
+Does Plaid offer discounts?
+We offer volume discounts based on the length of your contract and/or the minimum monthly commitment you choose. For more details, please reach out to our
+sales team
+How does Pay-as-You-Go billing work?
+It’s simple—once you sign up for the products you need in Plaid's production dashboard, we’ll charge the card on file for the connected items (accounts). No upfront commitments. Only pay for what you use.
+
+===== https://plaid.com/docs/layer/
+TITLE: Layer - Introduction to Plaid Layer | Plaid Docs
+ACCESSED: 2026-09-27
+
+Get started with Plaid Layer
+API Reference
+Quickstart
+Demo
+Request Access
+Overview
+Instantly onboard millions of people from the Plaid Network with Layer (US only).
+The Plaid Network is made up of more than 100 million consumers who have chosen to be
+remembered by Plaid
+, each with a saved profile holding their identity data and the financial accounts they have connected. Layer draws on those profiles. How many of your users are eligible depends on the requirements you set in your Layer template, so the eligible share of your traffic is a subset of the network rather than a fixed number; your Plaid account manager can estimate it for your specific criteria.
+When a user provides their phone number, Plaid Layer checks whether they are part of the Plaid Network and verifies that they meet your onboarding requirements.
+Plaid Layer then authenticates the device and performs real-time risk analysis to reduce the risk of fraudulent sign-up attempts.
+After the user confirms their details and decides which financial account they want to share, you can verify their identity using your KYC provider and connect their accounts with Plaid.
+The user enters their phone number within your application.
+To get started with Layer,
+contact sales
+to request Sandbox access.
+See a live, interactive demo
+of a Plaid-powered onboarding flow using Layer.
+Integration overview
+If you use Layer with Consumer Report or other Plaid Check Products, see the
+Plaid Check / Layer onboarding guide
+Prefer to learn by watching? Check out this quick video guide to implementing Layer with Extended Autofill
+Configure a Layer template via the
+Dashboard
+. A template is created by default on first visit. You can customize the template's name, set logo and colors to match your brand, and configure eligibility requirements. In general, fill rates for different user data identity fields are highly correlated with each other (i.e., if Plaid has access to one piece of user identity information, it very likely has access to all of them), so you should set "required" and "optional" eligibility requirements based on your true business needs.
+For a detailed tour of the available Layer template configuration options, see the
+Layer Dashboard video walkthrough
+Call
+/session/token/create
+with the template ID for the Layer template you configured. This will return a
+link
+object that contains a
+link_token
+On your client, create an instance of Link using the
+link.link_token
+string returned by
+/session/token/create
+With Layer, you should create the Plaid handler or session object as early as possible so Link
+can pre-load in the background. This ensures the fastest possible experience for your users.
+If you have an existing Android, React Native, or Flutter integration, make sure you are on a Layer-capable SDK version and are using the current session-based APIs to open Link. For details and sample code, see
+React Native: opening Link
+Flutter: opening Link
+, and
+Android: opening Link
+Once you have a user's phone number, submit it by calling the
+submit
+method on the handler or session you created earlier.
+Link will quickly check if the user is eligible for Layer, and call the Link
+onEvent
+callback with either
+LAYER_READY
+or
+LAYER_NOT_AVAILABLE
+. Note that if the phone number uses a country code other than +1, the result will always be
+LAYER_NOT_AVAILABLE
+, as Layer does not support international phone numbers. A user's phone number is eligible only if the user previously chose to be
+remembered by Plaid
+during a Link session; Layer uses the phone number to look up that saved profile rather than matching accounts based on identity data you submit. Users whose phone number is not eligible may still qualify via
+Extended Autofill
+When you receive
+LAYER_READY
+, it means the user is eligible and you should call
+handler.open()
+to immediately present the Layer UI.
+(Optional, recommended) If you receive
+LAYER_NOT_AVAILABLE
+instead, collect the user's date of birth and
+submit
+it via the same handler as earlier, e.g.
+handler.submit({ "date_of_birth": "1975-01-18"})
+. If you receive
+LAYER_READY
+, the user is eligible for
+Layer Extended Autofill
+and you should call
+handler.open()
+to immediately present the Layer UI; the flow continues at step 8. If you receive
+LAYER_AUTOFILL_NOT_AVAILABLE
+, the flow continues with the next step.
+If neither Layer nor Layer Extended Autofill are available, you may discard the handler object and continue with any non-Layer flow in your app. For example, if your application falls back to a non-Layer product flow, you'd create a new Link token and handler to present that flow. If your non-Layer flow involves creating a Link token, include the
+phone_number
+when calling
+/link/token/create
+for a faster end user experience.
+After you have launched the Layer flow in Link via
+handler.open()
+, the end user enters the Layer flow. You will receive a
+LAYER_AUTHENTICATION_PASSED
+webhook once Plaid has determined that the end user has demonstrated ownersh
+
+===== https://plaid.com/docs/api/oauth/
+TITLE: API - OAuth | Plaid Docs
+ACCESSED: 2026-09-27
+
+Endpoints
+/oauth/token
+Create or refresh an OAuth access token
+/oauth/introspect
+Get metadata about an OAuth token
+/oauth/revoke
+Revoke an OAuth token
+These endpoints are for customers, partners and services that are integrating with Plaid's OAuth service to obtain a token for sharing consumer reports or accessing the Plaid Dashboard or other Plaid services. They are not used for the Plaid Link flow where end users connect their financial institution accounts to Plaid using a bank's OAuth service. If you are a Plaid customer trying to ensure your app supports OAuth-based bank connections, see the
+OAuth Guide
+instead.
+Endpoints
+=*=*=*=
+/oauth/token
+Create or refresh an OAuth access token
+/oauth/token
+issues an access token and refresh token depending on the
+grant_type
+provided. This endpoint supports
+Content-Type: application/x-www-form-urlencoded
+as well as JSON. The fields for the form are equivalent to the fields for JSON and conform to the OAuth 2.0 specification.
+/oauth/token
+Request fields
+The type of OAuth grant being requested:
+client_credentials
+allows exchanging a client id and client secret for a refresh and access token.
+refresh_token
+allows refreshing an access token using a refresh token. When using this grant type, only the
+refresh_token
+field is required (along with the
+client_id
+client_secret
+).
+urn:ietf:params:oauth:grant-type:token-exchange
+allows exchanging a subject token for an OAuth token. When using this grant type, the
+audience
+subject_token
+subject_token_type
+fields are required.
+These grants are defined in their respective RFCs.
+refresh_token
+client_credentials
+are defined in RFC 6749 and
+urn:ietf:params:oauth:grant-type:token-exchange
+is defined in RFC 8693.
+Possible values:
+refresh_token
+urn:ietf:params:oauth:grant-type:token-exchange
+client_credentials
+Your Plaid API
+client_id
+. The
+client_id
+is required and may be provided either in the
+PLAID-CLIENT-ID
+header or as part of a request body.
+Your Plaid API
+secret
+. The
+secret
+is required and may be provided either in the
+PLAID-SECRET
+header or as part of a request body as either
+secret
+or
+client_secret
+Your Plaid API
+secret
+. The
+secret
+is required and may be provided either in the
+PLAID-SECRET
+header or as part of a request body as either
+secret
+or
+client_secret
+A space-separated list of scopes associated with this token, in the format described in
+https://datatracker.ietf.org/doc/html/rfc6749#section-3.3
+. Currently accepted values are:
+user:read
+allows reading user data.
+user:write
+allows writing user data.
+exchange
+allows exchanging a token using the
+urn:plaid:params:oauth:user-token
+subject token type.
+mcp:dashboard
+allows access to the MCP dashboard server.
+Refresh token for OAuth
+URI of the target resource server
+Used when exchanging a token. The meaning depends on the
+subject_token_type
+:
+For
+urn:plaid:params:tokens:user
+: Must be the same as the
+client_id
+For
+urn:plaid:params:oauth:user-token
+: The other
+client_id
+to exchange tokens to.
+For
+urn:plaid:params:credit:multi-user
+:  a
+client_id
+or one of the supported CRA partner URNs:
+urn:plaid:params:cra-partner:experian
+urn:plaid:params:cra-partner:fannie-mae
+, or
+urn:plaid:params:cra-partner:freddie-mac
+Token representing the subject. The meaning depends on the
+subject_token_type
+. For
+urn:plaid:params:tokens:user
+, the
+subject_token
+must be a Plaid-issued user token from the
+/user/create
+endpoint. For
+urn:plaid:params:oauth:user-token
+, the
+subject_token
+must be an OAuth refresh token issued from the
+/oauth/token
+endpoint.
+The type of the subject token.
+urn:plaid:params:tokens:user
+allows exchanging a Plaid-issued user token for an OAuth token. When using this token type,
+audience
+must be the same as the
+client_id
+subject_token
+must be a Plaid-issued user token issued from the
+/user/create
+endpoint.
+urn:plaid:params:oauth:user-token
+allows exchanging a refresh token for an OAuth token to another
+client_id
+. The other
+client_id
+is provided in
+audience
+subject_token
+must be an OAuth refresh token issued from the
+/oauth/token
+endpoint.
+urn:plaid:params:credit:multi-user
+allows exchanging a Plaid-issued user token for an OAuth token. When using this token type,
+audience
+may be a client id or a supported CRA partner URN.
+audience
+supports a comma-delimited list of clients. When multiple clients are specified in the
+audience
+a multi-party token is created which can be used by all parties in the audience in conjunction with their
+client_id
+client_secret
+Possible values:
+urn:plaid:params:tokens:user
+urn:plaid:params:oauth:user-token
+urn:plaid:params:credit:multi-user
+const
+request
+=
+{
+grant_type
+:
+'urn:ietf:params:oauth:grant-type:token-exchange'
+scope
+:
+'user:read'
+subject_token_type
+:
+'urn:plaid:params:credit:multi-user'
+audience
+:
+'urn:plaid:params:cra-partner:fannie-mae'
+subject_token
+:
+userId
+}
+;
+try
+{
+const
+response
+=
+await
+client
+oauthToken
+(
+request
+)
+;
+}
+catch
+(
+error
+)
+{
+...
+}
+/oauth/token
+Response fields
+Access token 
+
+===== https://plaid.com/docs/api/partner/
+TITLE: API - Reseller partners | Plaid Docs
+ACCESSED: 2026-09-27
+
+For general, non-reference documentation, see
+Reseller partners
+Endpoints
+/partner/customer/create
+Create an end customer
+/partner/customer/get
+Get the status of an end customer
+/partner/customer/oauth_institutions/get
+Get the OAuth-institution registration status for an end customer
+/partner/customer/enable
+Enable an end customer in Production
+/partner/customer/remove
+Remove an end customer
+Webhooks
+END_CUSTOMER_OAUTH_STATUS_UPDATED
+Customer OAuth status updated
+Endpoints
+=*=*=*=
+/partner/customer/create
+Creates a new end customer for a Plaid reseller.
+The
+/partner/customer/create
+endpoint is used by reseller partners to create end customers. To create end customers, it should be called in the Production environment only, even when creating Sandbox API keys. If called in the Sandbox environment, it will return a sample response, but no customer will be created and the API keys will not be valid.
+/partner/customer/create
+Request fields
+Collapse all
+Your Plaid API
+client_id
+. The
+client_id
+is required and may be provided either in the
+PLAID-CLIENT-ID
+header or as part of a request body.
+Your Plaid API
+secret
+. The
+secret
+is required and may be provided either in the
+PLAID-SECRET
+header or as part of a request body.
+The company name of the end customer being created. This will be used to display the end customer in the Plaid Dashboard. It will not be shown to end users.
+Denotes whether or not the partner has completed attestation of diligence for the end customer to be created.
+The products to be enabled for the end customer. If empty or
+null
+, this field will default to the products enabled for the reseller at the time this endpoint is called.
+Possible values:
+assets
+auth
+balance
+identity
+income_verification
+investments
+investments_auth
+liabilities
+transactions
+employment
+cra_base_report
+cra_income_insights
+cra_partner_insights
+If
+true
+, the end customer's default Link customization will be set to match the partner's. You can always change the end customer's Link customization in the Plaid Dashboard. See the
+Link Customization docs
+for more information. If you require the ability to programmatically create end customers using multiple different Link customization profiles, contact your Plaid account manager for assistance.
+Important: Data Transparency Messaging (DTM) use cases will not be copied to the end customer's Link customization unless the
+Publish changes
+button is clicked after the use cases are applied. Link will not work in Production unless the end customer's DTM use cases are configured. For more details, see
+Data Transparency Messaging
+Base64-encoded representation of the end customer's logo. Must be a PNG of size 1024x1024 under 4MB. The logo will be shared with financial institutions and shown to the end user during Link flows. A logo is required if
+create_link_customization
+is
+true
+. If
+create_link_customization
+is
+false
+and the logo is omitted, the partner's logo will be used if one exists, otherwise a stock logo will be used.
+The end customer's legal name. This will be shared with financial institutions as part of the OAuth registration process. It will not be shown to end users.
+The end customer's website.
+The name of the end customer's application. This will be shown to end users when they go through the Plaid Link flow. The application name must be unique and cannot match the name of another application already registered with Plaid.
+The technical contact for the end customer. Defaults to partner's technical contact if omitted.
+Hide object
+The billing contact for the end customer. Defaults to partner's billing contact if omitted.
+Hide object
+This information is public. Users of your app will see this information when managing connections between your app and their bank accounts in Plaid Portal. Defaults to partner's customer support info if omitted. This field is mandatory for partners whose Plaid accounts were created after November 26, 2024 and will be mandatory for all partners by the 1033 compliance deadline.
+Hide object
+This field is mandatory for partners whose Plaid accounts were created after November 26, 2024 and will be mandatory for all partners by the 1033 compliance deadline.
+The end customer's address.
+Hide object
+ISO-3166-1 alpha-2 country code standard.
+Denotes whether the partner has forwarded the Plaid bank addendum to the end customer.
+Assets under management for the given end customer. Required for end customers with monthly service commitments.
+Hide object
+A list of URIs indicating the destination(s) where a user can be forwarded after completing the Link flow; used to support OAuth authentication flows when launching Link in the browser or another app. URIs should not contain any query parameters. When used in Production, URIs must use https. To modify redirect URIs for an end customer after creating them, go to the end customer's
+API page
+in the Dashboard.
+The unique identifier assigned to a financial institution by regulatory authoritie
+
+===== https://plaid.com/docs/api/webhooks/
+TITLE: API - Webhooks | Plaid Docs
+ACCESSED: 2026-09-27
+
+Prefer to learn by watching? Our
+video tutorial
+walks you through the basics of incorporating Plaid webhooks into your application.
+Looking for webhook schemas? The reference documentation for specific webhooks (
+Transactions
+Auth
+Assets
+Identity
+Identity Verification
+Monitor
+Investments
+Liabilities
+Payment Initiation
+Income
+Virtual Accounts
+Items
+, and
+Transfer
+) has moved to its respective API reference pages.
+Introduction to webhooks
+A webhook is an HTTP request used to provide push notifications. Plaid sends webhooks to programmatically inform you about changes to Plaid Items or the status of asynchronous processes. For example, Plaid will send a webhook when an Item is in an error state or has additional data available, or when a non-blocking process (like gathering transaction data or verifying a bank account via micro-deposits) is complete.
+To receive Plaid webhooks, set up a dedicated endpoint on your server as a webhook listener that can receive POST requests, then provide this endpoint URL to Plaid as described in the next section. You can also test webhooks without setting up your own endpoint following the instructions in
+Testing webhooks in Sandbox
+Configuring webhooks
+Webhooks are typically configured via the
+webhook
+parameter of
+/link/token/create
+, although some webhooks (especially those used in contexts where Link tokens are not always required), such as Identity Verification webhooks, are configured via the
+Plaid Dashboard
+instead. When specifying a webhook, the URL must be in the standard format of
+http(s)://(www.)domain.com/
+and, if https, must have a valid SSL certificate.
+To view response codes and debug any issues with webhook setup, see the
+Logs section in the Dashboard
+Plaid sends POST payloads with raw JSON to your webhook URL from one of the following IP addresses:
+52.21.26.131
+52.21.47.157
+52.41.247.19
+52.88.82.239
+Note that these IP addresses are subject to change.
+You can optionally verify webhooks to ensure they are from Plaid. For more information, see
+webhook verification
+Webhook retries
+If there is a non-200 response or no response within 10 seconds from the webhook endpoint, Plaid will keep attempting to send the webhook for up to 24 hours. Each attempt will be tried after a delay that is 4 times longer than the previous delay, starting with 30 seconds.
+If your endpoint returns a
+429 Too Many Requests
+response, Plaid will honor the
+Retry-After
+header if present, waiting the specified duration for up to a maximum of 4 hours later before the next attempt instead of applying the standard exponential backoff. The
+Retry-After
+value may be an integer number of seconds (e.g.
+120
+), an HTTP date (e.g.
+Wed, 21 Oct 2026 07:28:00 GMT
+), or an ISO 8601 timestamp (e.g.
+2026-10-21T07:28:00Z
+).
+Best practices for applications using webhooks
+You should design your application to handle duplicate and out-of-order webhooks. Ensure
+idempotency
+on actions you take when receiving a webhook. If you drive application state with webhooks, ensure your code doesn't rely on a specific order of webhook receipt.
+If you (or Plaid) experience downtime for longer than Plaid's
+retry period
+, you will lose webhooks. Ensure your application can recover by implementing endpoint polling or other appropriate logic if a webhook is not received within an expected window. All data present in webhooks is also present in our other APIs.
+It's best to keep your receiver as simple as possible, such as a receiver whose only job is to write the webhook into a queue or reliable storage. This is important for two reasons. First, if the receiver does not respond within 10 seconds, the delivery is considered failed. Second, because webhooks can arrive at unpredictable rates. Therefore if you do a lot of work in your receiver - e.g. generating and sending an email - spikes are likely to overwhelm your downstream services, or cause you to be rate-limited if the downstream is a third-party.
+Testing webhooks in Sandbox
+Webhooks will fire as normal in the Sandbox environment, with the exception of Transfer webhooks. For testing purposes, you can also use
+/sandbox/item/fire_webhook
+/sandbox/user/fire_webhook
+/sandbox/income/fire_webhook
+, or
+/sandbox/transfer/fire_webhook
+to fire a webhook on demand. If you don't have a webhook endpoint configured yet, you can also use a tool such as
+Webhook.site
+or
+Request Bin
+to quickly and easily set up a webhook listener endpoint. When directing webhook traffic to third-party tools, make sure you are using Plaid's Sandbox environment and not sending out live data.
+Example in Plaid Pattern
+For real-life examples of handling webhooks that illustrate how to handle sample transactions and Item webhooks, see
+handleTransactionsWebhook.js
+handleItemWebhook.js
+These files contain webhook handling code for the Node-based
+Plaid Pattern
+sample app.

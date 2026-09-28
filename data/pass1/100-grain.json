@@ -1,0 +1,143 @@
+{
+  "app": "Grain",
+  "number": 100,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:29:58.398140+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://help.grain.com\",\n    \"https://grain.com/pricing\",\n    \"https://grain.com/contact\",\n    \"https://grain.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://grain.com",
+    "https://help.grain.com",
+    "https://grain.com/pricing",
+    "https://grain.com/contact",
+    "https://docs.grain.com/",
+    "https://developer.grain.com/",
+    "https://developers.grain.com/",
+    "https://api.grain.com/",
+    "https://grain.com/docs",
+    "https://grain.com/developers",
+    "https://grain.com/api",
+    "https://grain.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://grain.com/contact",
+    "https://grain.com/app/signup",
+    "https://grain.com/conversation-intelligence"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.grain.com",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://grain.com/contact",
+      "reason": "page too thin (15 chars)"
+    },
+    {
+      "requested_url": "https://docs.grain.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developer.grain.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.grain.com/",
+      "reason": "page too thin (56 chars)"
+    },
+    {
+      "requested_url": "https://api.grain.com/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://grain.com/contact",
+      "reason": "page too thin (15 chars)"
+    },
+    {
+      "requested_url": "https://grain.com/app/signup",
+      "reason": "page too thin (5 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://grain.com",
+      "requested_url": "https://grain.com",
+      "status": 200,
+      "title": "Grain | The AI Notetaker Built for Growing Teams",
+      "chars": 3689,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://grain.com/pricing",
+      "requested_url": "https://grain.com/pricing",
+      "status": 200,
+      "title": "Pricing | Grain",
+      "chars": 2574,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://grain.com/conversation-intelligence",
+      "requested_url": "https://grain.com/conversation-intelligence",
+      "status": 200,
+      "title": "Win more with Grain Conversation Intelligence",
+      "chars": 3360,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Grain is an AI notetaker and meeting capture platform that offers an MCP server and API for AI agents.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The fetched pages mention an API and MCP server exist, but do not document the authentication mechanism.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Grain offers a free tier and pricing plans with self-serve signup options, but API-specific credential provisioning details are not specified.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The pages mention an API and MCP server exist, but provide no technical details regarding REST, GraphQL, webhooks, or SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"The pages state that there is an MCP Server & API allowing AI agents to query transcripts, search across meetings, and access meeting history.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"While a self-serve platform exists and an API is mentioned, the pages provide no documentation on how to obtain API credentials or how to authenticate and call the API.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://grain.com\",\n      \"claim\": \"MCP Server & API let AI agents query transcripts, search across meetings, and access full meeting history.\"\n    },\n    {\n      \"url\": \"https://grain.com\",\n      \"claim\": \"Integrations include Claude, ChatGPT, Slack, HubSpot, Zapier, and API.\"\n    }\n  ],\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://grain.com",
+    "one_liner": "Grain is an AI notetaker and meeting capture platform that offers an MCP server and API for AI agents.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The fetched pages mention an API and MCP server exist, but do not document the authentication mechanism."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Grain offers a free tier and pricing plans with self-serve signup options, but API-specific credential provisioning details are not specified."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "The pages mention an API and MCP server exist, but provide no technical details regarding REST, GraphQL, webhooks, or SDKs."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "The pages state that there is an MCP Server & API allowing AI agents to query transcripts, search across meetings, and access meeting history."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "While a self-serve platform exists and an API is mentioned, the pages provide no documentation on how to obtain API credentials or how to authenticate and call the API."
+    },
+    "evidence": [
+      {
+        "url": "https://grain.com",
+        "claim": "MCP Server & API let AI agents query transcripts, search across meetings, and access full meeting history.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://grain.com",
+        "claim": "Integrations include Claude, ChatGPT, Slack, HubSpot, Zapier, and API.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:30:12.737748+00:00"
+}

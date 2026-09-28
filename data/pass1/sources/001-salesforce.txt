@@ -1,0 +1,815 @@
+===== https://www.salesforce.com/in/?ir=1
+TITLE: Salesforce: The #1 AI CRM | Salesforce IN
+ACCESSED: 2026-09-27
+
+Connect workflows and conversational data where work happens.
+Learn more
+Tableau
+Turn agentic analytics into actionable intelligence.
+Learn more
+Build trusted, agentic experiences that act with purpose.
+Learn more
+Customer 360
+Ground every decision in proven business context.
+Learn more
+Data 360
+One governed, trusted data foundation.
+Learn more
+Explore Agentforce Coworker
+Meet Slackbot
+Start for free
+Start demo
+See our stories
+Experience Salesforce Help
+See the Ambuja Neotia story
+See the Tata Realty story
+Watch the MAHE story
+Watch the PVR INOX Story
+Watch the Shakti Pumps Story
+Watch the IndiaFirst Life story
+Watch the Hero FinCorp story
+Watch the Exide story
+See all products
+See all stories
+Report
+Agentforce delivers ROI faster and at a lower cost than a DIY approach
+Read the Valoir report
+Report
+Salesforce is voted the #1 Global Software Company on G2
+Read the report
+Report
+Futurum report explains why Agentforce is the fastest path to enterprise value
+Read the report
+Explore all Agentforce learning
+See what drives us
+Take the pledge
+Catch all the Dreamforce 2025 highlights.
+Stream it now
+Collaborate with Salesforce customers, partners, and product experts.
+Join the community
+Get the most out of Salesforce with partners, apps, and agents.
+Discover AgentExchange
+Try for free
+What is Salesforce?
+Salesforce is the
+#1 AI CRM
+(customer relationship management) platform. We bring companies and customers together by providing a unified set of applications — powered by
+agentic AI
+and data — that help every department, including sales, service, marketing, commerce, and IT, work as one. You can learn more about
+what Salesforce is
+and
+what Salesforce does
+by visiting
+our official resources
+. Our cloud-based agentic solutions help you find more leads, close more deals, and provide better service to your customers, all on a single, integrated agentic platform.
+What is CRM software and why do businesses in India need it?
+CRM
+stands for
+customer relationship management.
+It’s a technology for managing all your company’s relationships and interactions with customers and potential customers. A CRM system helps you:
+• Organise
+contact information, leads, and customer service data
+• Automate
+tasks like logging calls and sending follow-up emails
+• Analyse
+data to understand customer behaviour and business performance
+A CRM, especially one powered by AI like Salesforce, is essential for growth because it gives you a
+single
+,
+360-degree view
+of every customer
+, allowing you to build stronger, more profitable relationships at scale.
+What is agentic AI and how is it used in Salesforce?
+Agentic AI
+refers to advanced artificial intelligence systems that can act
+autonomously
+to achieve a specific goal with minimal human intervention. Unlike traditional
+AI
+that only generates content or analyses data, agentic AI can reason, plan multistep actions, and execute tasks.
+In Salesforce, agentic AI — part of our
+technology — is used to:
+• Automate
+complex workflows like lead qualification or service case resolution
+• Predict
+business outcomes, such as which deals are likely to close
+• Personalise
+every customer interaction across marketing, sales, and service channels
+How does Salesforce CRM help businesses grow in India?
+Salesforce offers agentic CRM solutions tailored for companies of all sizes, from
+startups and small businesses
+to large global enterprises. Our Agentforce 360 Platform is flexible and scalable, allowing you to start with the essentials you need — like sales, service, commerce, or marketing — and easily add more functionality as your business grows. This ensures you only pay for what you use and have an
+AI and CRM
+platform that can grow with your business.
+Salesforce Starter
+helps you hit the ground running for free, providing an all-in-one suite of sales, service, and marketing tools designed specifically for small business needs. The setup process is simple so you can focus on building customer relationships immediately, with the peace of mind that the full power of the Salesforce ecosystem is ready whenever you are.
+
+===== https://developer.salesforce.com
+TITLE: Developer Portal | Salesforce Developers | Developer
+ACCESSED: 2026-09-27
+
+Tune in
+Build with React on Salesforce: Multi-Framework Is Now GA.
+Ship production-ready React apps natively on Salesforce — with authentication, security, and governance built in. Here’s what changed in Multi-Framework since beta, and how to migrate.
+Read blog
+Introducing Salesforce Headless 360 Decoded.
+Build beyond the Salesforce UI and bring Salesforce to every agent, app, and experience. Learn how to build with Salesforce from the tools you already use, including coding agents, AI assistants, collaboration tools, MCP tools, and APIs.
+Watch now
+Video Series: React on Salesforce.
+Go beyond Lightning and build composable web experiences natively on Salesforce. Learn modern frontend development patterns from Salesforce Developer Advocates using React and other frameworks.
+Learn more
+Explore virtual events for developers.
+Join expert-led workshops, AMAs, and technical sessions to build skills, apply what works, and deliver real business outcomes.
+Browse events
+Salesforce Headless 360 Decoded
+Build beyond the Salesforce UI and bring Salesforce to every agent, app, and experience. Learn how to build with Salesforce from the tools you already use, including coding agents, AI assistants, collaboration tools, MCP tools, and APIs.
+Watch now
+Extend Data 360 with Code Extension
+Dive into a new video series to learn how to build and debug custom Python code locally, then deploy and monitor it in Data 360 using the Data 360 Code Extension SDK and Claude Code.
+Watch now
+React on Salesforce
+Learn how to get started building React apps on Salesforce, including setting up your environment, connecting to Salesforce data, and exploring modern front-end development workflows.
+Watch now
+Data 360 Activated
+Learn how to dismantle complex data silos and build a unified data foundation with Data 360.
+Watch now
+See all videos
+The Future of the Salesforce Developer in the Agentic AI Era
+The role isn’t shrinking. It’s being redefined, and the developers who see it clearly will define what comes next.
+Read the blog
+New in Salesforce Developer Edition: Agentforce Vibes IDE, Claude 4.5, MCP
+Salesforce Developer Edition now includes Agentforce Vibes IDE, Claude Sonnet 4.5, and Hosted MCP Servers – all free. Here’s what’s new.
+Read the blog
+Expose Custom Apex as a Hosted MCP Tool for Agents
+Shift from UI-first to agent-first with Headless 360. Learn how to expose your Apex logic as Salesforce Hosted MCP tools, allowing AI agents like Claude or Cursor to discover and invoke your business intelligence directly via the Model Context Protocol.
+Read the blog
+Agent Script Decoded: Intro to Agent Script Language Fundamentals
+Learn how to master Agent Script to build agents using hybrid reasoning: the perfect balance of deterministic logic and generative power.
+Read the blog
+See all posts
+Hands On with AIforce Workshop (APAC)
+October 7, 2026 • Online
+Register for the webinar
+Hands On with AIforce Workshop
+October 7, 2026 • Online
+Register for the webinar
+AIforce codeLive
+October 14, 2026 • Online
+Register for the webinar
+See all events
+Salesforce REST API
+Integrate Salesforce data into apps and perform complex operations on a large scale.
+Read more
+B2C Commerce API
+Ensure omnichannel flexibility by using a headless API to build custom apps, from full storefronts to merchant tools.
+Read more
+Marketing Cloud APIs
+Create your ideal integration with the Marketing Cloud REST and SOAP APIs.
+Read more
+Metadata API
+Customize, deploy, package, and upgrade application metadata.
+Read more
+Browse all APIs
+Add AI capabilities to your applications with pro-code and low-code tools.
+Platform
+Extend Salesforce to build enterprise-grade apps that deliver amazing customer experiences.
+Data Cloud
+Connect, federate, and harmonize data from any source and build AI apps with relevant data and insights, right in the flow of work.
+Marketing Cloud
+Deliver new, data-first digital marketing experiences that inspire customer action and loyalty.
+Service Cloud
+Extend service solutions and deliver custom service experiences.
+Commerce Cloud
+Develop personalized commerce experiences on a fast, flexible platform.
+MuleSoft
+Unlock and integrate data from any system with MuleSoft to deliver critical, time-sensitive projects.
+Tableau
+Integrate visual analytics into your business applications with Tableau Next and Tableau.
+Connect, simplify, and automate your work with Slack apps.
+View all products
+Sign up now
+
+===== https://www.salesforce.com/products/free-trial/developer/
+TITLE: Developer Edition with Agentforce and Data 360 | Salesforce
+ACCESSED: 2026-09-27
+
+Developer Edition with Agentforce and Data 360 | Salesforce
+Skip to content
+Oops, something went wrong. Please try again later.
+
+===== https://www.salesforce.com/in/pricing/
+TITLE: Salesforce Pricing: See Pricing Plans for All Salesforce Products | Salesforce IN
+ACCESSED: 2026-09-27
+
+Calculate pricing
+Start for free
+Build and customise autonomous AI agents to support your employees and customers 24/7.
+See all Agentforce pricing
+Small Business
+Help small businesses sell smarter and support faster in a single app.
+See all Small Business pricing
+Sales Cloud
+Connect teams, close more deals and streamline your entire sales process.
+See all Sales Cloud pricing
+Service Cloud
+Manage customer support cases faster across every channel.
+See all Service Cloud pricing
+Marketing Cloud
+Easily build, optimise and personalise campaigns and journeys.
+See all Marketing Cloud pricing
+Commerce Cloud
+Engage buyers online and in-store with B2C and B2B commerce.
+See all Commerce Cloud pricing
+AI App Dev
+Build, customise, and configure with AI-powered low-code and pro-code tools.
+See all AI App Dev pricing
+Data Security & Privacy
+Find the right data security and privacy solutions for your business.
+See all Data Security & Privacy pricing
+CRM
+Attract more prospects, close more deals, and strengthen customer relationships with the #1 agentic CRM.
+See all CRM pricing
+Einstein AI
+Create customisable, predictive and generative AI experiences to fit all your business needs safely.
+Contact Sales
+Data 360
+Unlock trapped data with the only data platform native to the world’s #1 agentic CRM.
+See all Data 360 pricing
+Informatica
+Connect, clean and govern your data across 50,000+ sources so every app, agent and decision runs on trusted data.
+Explore Informatica pricing
+Power productivity, automate work and connect with customers.
+See all Slack pricing
+Analytics
+Get powerful insights from any data, any time, anywhere.
+See all Analytics pricing
+MuleSoft
+Connect any app, data or device — in the cloud or on-premises.
+See all MuleSoft pricing
+Net Zero
+Go net zero now with the #1 sustainability management platform.
+See all Net Zero pricing
+Customer Success
+Choose the right level of support and expert guidance for your business.
+See all Customer Success pricing
+Heroku
+Build scalable apps on a cloud-native platform made for developers.
+See all Heroku pricing
+Automotive
+Drive unified customer, vehicle and retail experiences.
+See all Automotive pricing
+Communications
+Power simple, omni-channel B2B, B2C and Wholesale experiences.
+See all Communications pricing
+Construction & Real Estate
+Achieve operational excellence.
+Contact Sales
+Consumer Goods
+Accelerate growth from planning to execution.
+See all Consumer Goods pricing
+Education
+Elevate the education experience.
+See all Education pricing
+Energy & Utilities
+Reimagine energy and utility sales and service.
+See all Energy & Utilities pricing
+Financial Services
+Unlock the most valuable currency: customer trust.
+See all Financial Services pricing
+Healthcare & Life Sciences
+Build stronger patient and member relationships on a connected platform.
+See all Healthcare & Life Sciences pricing
+Manufacturing
+Deliver transparency across your ecosystem.
+See all Manufacturing pricing
+Media
+Quickly design, launch and monetise media experiences from anywhere.
+See all Media pricing
+Nonprofit
+Build relationships that drive change.
+See all Nonprofit pricing
+Professional Services
+Increase client trust.
+Contact Sales
+Public Sector
+Modernise the constituent experience.
+See all Public Sector pricing
+Retail
+Find a simple, unified solution for collaboration, planning, execution and business growth.
+Contact Sales
+Technology
+Drive cost-efficient growth with intelligent automated processes.
+Contact Sales
+Travel, Transportation, & Hospitality
+Deliver connected experiences.
+Contact Sales
+Flex Credit Pricing Calculator
+Get an estimate of the credits needed and your overall price for Data 360 and Agentforce
+Flex Credit Calculator
+Salesforce Digital Wallet
+Discover near real-time monitoring of your usage data for consumption-based Salesforce products, like Data 360
+Digital Wallet
+Are there upfront costs or additional fees?
+Salesforce has all kinds of add-ons, apps and additional products to help your company stay ahead in your industry. Call us at 1800-420-7332 to discuss exactly what kind of products you’re looking to add and how we can help.
+What if my business priorities and product needs have changed?
+We know things don’t always go according to plan and we’re here and will try our best to support. Keep in touch to a sales representative at 1800-420-7332 to discuss options.
+Do Salesforce products integrate with outside applications and systems?
+In many cases, Salesforce products integrate directly with many outside applications and systems to help you connect your data. For those that don’t have built-in integration, like on-premises data sources, you can purchase licences of MuleSoft, work with our integration partners, or use solutions and apps on AgentExchange.
+Talk to a sales representative to get an idea of what integration solution works best with the Salesforce products you use.
+What support and service packages are available?
+We offer several advisory, adoption and support plans to our cu
+
+===== https://www.salesforce.com/in/partners/
+TITLE: AI is easier with Salesforce Partners | Salesforce IN
+ACCESSED: 2026-09-27
+
+Meet the AgentExchange ecosystem, trusted AI capabilities and partners, built for customer choice and outcomes
+See what's possible
+Read more
+What’s new on AgentExchange
+Find solutions on AgentExchange
+Find a Consulting Partner
+Become a Partner
+Explore AgentExchange
+Find AI agent skills
+Find the right solutions faster
+Discover and evaluate agents, apps, and capabilities with AI-powered search, metadata-rich listings, and embedded experiences. Find and deploy the right solutions without leaving Agentforce or Slack.
+Simplify Procurement from Start to Finish
+Purchase on your terms with AgentExchange Private Offers, where you get access to tailored and transparent pricing, unified billing, and automated provisioning.
+Deploy to Any Surface
+Extend Salesforce to authorised AI agents like Claude, Codex, or Cursor with trusted skills and plugins grounded in your business context. Connect third-party MCP servers directly to Agentforce or Slack.
+Real results, powered by Salesforce Consulting Partners
+See how partners like Rosetree Solutions and NeuraFlash drove real results — from $15M in pipeline to 84% autonomous case resolution.
+See how partners drive outcomes
+Explore Partners on AgentExchange
+Discover certified partners that match your specific needs.
+Find a consulting partner
+Find an FDE Partner
+Find specialised Forward Deployed Engineering partners to power your Agentic strategy.
+Find a consulting partner
+ISV partner paths
+Become a consulting partner
+Resources
+AgentExchange Resource Centre
+Learn how to use AgentExchange solutions with guides, articles, and best practices.
+Read the latest
+Blog
+Partners Blog
+Find expert insights, success stories, and thought leadership about Salesforce partners.
+Read the blog
+What is the AgentExchange ecosystem?
+The
+AgentExchange Ecosystem
+is Salesforce's broader partner ecosystem for bringing additional headless capabilities to customers.
+Powered by the
+Headless Toolkit
+, it enables technology, solution, data, model, and consulting partners to connect Salesforce with partner-built agents, applications, and interfaces. Through AgentExchange, customers can discover, deploy, and scale these capabilities without adding fragmented tools or operating models.
+What is AgentExchange?
+AgentExchange is the unified marketplace to discover, buy, and deploy trusted agents, apps, and capabilities that extend Salesforce wherever your people and agents work.
+AI-driven discovery and embedded experiences help you find and activate relevant solutions directly in Agentforce or Slack. Private offers, unified billing, and automated provisioning simplify procurement. You can also extend Salesforce to authorised AI tools such as Claude, Codex, and Cursor with reusable skills and plugins, or connect third-party MCP servers to Agentforce and Slack.
+Are AppExchange apps still available?
+All the AppExchange solutions you know and trust remain a core part of your experience. You can still access the full ecosystem of over 9,000 vetted apps to secure and strengthen your Salesforce foundation. Everything is conveniently organised under the Apps category on the
+AgentExchange homepage.
+What Are Salesforce Skills and Plugins?
+Salesforce skills
+are reusable capabilities designed to work across supported AI agents, including Agentforce, Claude, and Codex. Think of a skill like a USB-C cable that connects to multiple platforms.
+Plugins are platform-specific packages that can bundle multiple skills and connections. Plugins on AgentExchange currently support Claude, with support for additional AI agents planned.
+Learn more in this blog.
+What is a Salesforce partner?
+Salesforce partners
+are trusted experts who help businesses extend and maximise the platform's value through two primary categories available on AgentExchange. Independent Software Vendors (ISVs) build the third-party apps, agents, and integrations that add specialised functionality to your environment, while consulting and implementation partners provide the strategic guidance and technical services needed to integrate Salesforce products into your specific business workflows. Whether you need a pre-built solution or a custom digital transformation, our partners provide the expertise to help you succeed.
+How is the Salesforce Customer Success Group different from a Salesforce partner?
+The Salesforce Customer Success Group is a team of Salesforce employees who are experts at working with our partners to help customers launch their implementations and maximise the value of their Salesforce solutions.
+How can a Salesforce partner help me?
+Salesforce partners provide the specialised expertise needed to transform the platform into a tailored business engine built for your specific goals. Fundamentally, they integrate Salesforce products into your existing technical ecosystem and customise features—such as tailoring Agentforce for Sales for unique lead-management workflows—to align with your specific business processes. By applying industry best practices, these 
+
+===== https://www.salesforce.com/in/sales/pricing/
+TITLE: Sales Cloud Pricing: Plans and Costs Guide | Salesforce IN
+ACCESSED: 2026-09-27
+
+Dreamforce Sales Keynote: See how the #1 CRM works for you across the entire sales cycle.
+Watch now
+Currency converter
+US Dollar (USD)
+Australian Dollar (AUD)
+British Pound (GBP)
+Euro (EUR)
+Japanese Yen (JPY)
+Swedish Krona (SEK)
+Starter Suite
+The smart CRM suite with even more sales, service, marketing – plus commerce.
+$
+25
+USD/User/Month
+(Billed monthly or annually)
+$
+25
+USD/User/Month
+(Billed monthly or annually)
+25
+€
+EUR/User/Month
+(Billed monthly or annually)
+AU$
+35
+AUD/User/Month
+(Billed monthly or annually)
+3,000
+円
+JPY/User/Month
+(Billed monthly or annually)
+250
+kr
+SEK/User/Month
+(Billed monthly or annually)
+£
+20
+GBP/User/Month
+(Billed monthly or annually)
+Lead, Account, Contact and Opportunity Management
+Built-in Sales Flows and Lead Routeing
+AI Automatically Syncs Emails, Events, and Contacts
+Dynamic Email Marketing and Analytics
+Try for free
+Pro Suite
+The flexible CRM suite with more automation and customisation across sales, service, marketing, and commerce.
+$
+100
+USD/User/Month
+(Billed annually)
+$
+100
+USD/User/Month
+(Billed annually)
+100
+€
+EUR/User/Month
+(Billed annually)
+AU$
+140
+AUD/User/Month
+(Billed annually)
+12,000
+円
+JPY/User/Month
+(Billed annually)
+1,000
+kr
+SEK/User/Month
+(Billed annually)
+£
+80
+GBP/User/Month
+(Billed annually)
+Everything in Starter Plus Greater Customisation and Automation
+Sales Quoting and Forecasting
+Access to AgentExchange
+Premier Support (add-on)
+Try for free
+Currency converter
+US Dollar (USD)
+Australian Dollar (AUD)
+British Pound (GBP)
+Euro (EUR)
+Japanese Yen (JPY)
+Swedish Krona (SEK)
+Core
+The CRM for sales with built-in AI, Slack, Tableau, and Agentforce skills to keep every deal moving.
+$
+195
+USD/User/Month
+(Billed annually)
+$
+195
+USD/User/Month
+(Billed annually)
+195
+€
+EUR/User/Month
+(Billed annually)
+AU$
+273
+AUD/User/Month
+(Billed annually)
+23,400
+円
+JPY/User/Month
+(Billed annually)
+1,950
+kr
+SEK/User/Month
+(Billed annually)
+£
+156
+GBP/User/Month
+(Billed annually)
+Everything in Professional Edition plus Momentum and Premier Success
+Slack Business+
+Tableau Next
+Try for free
+Advanced
+The CRM for sales with enhanced security and agents that help you keep deals moving.
+$
+395
+USD/User/Month
+(Billed annually)
+$
+395
+USD/User/Month
+(Billed annually)
+395
+€
+EUR/User/Month
+(Billed annually)
+AU$
+553
+AUD/User/Month
+(Billed annually)
+47,400
+円
+JPY/User/Month
+(Billed annually)
+3,950
+kr
+SEK/User/Month
+(Billed annually)
+£
+316
+GBP/User/Month
+(Billed annually)
+Everything in Core plus enhanced security, more AI and expanded data capacity
+Sales Programmes
+Backup & Recover, Archive, Data Detect, Security Centre
+Try for free
+Max
+The most complete Sales platform uniting AI, CRM, and data to help every seller hit quota.
+$
+550
+USD/User/Month
+(Billed annually)
+$
+550
+USD/User/Month
+(Billed annually)
+550
+€
+EUR/User/Month
+(Billed annually)
+AU$
+770
+AUD/User/Month
+(Billed annually)
+66,000
+円
+JPY/User/Month
+(Billed annually)
+5,500
+kr
+SEK/User/Month
+(Billed annually)
+£
+440
+GBP/User/Month
+(Billed annually)
+Everything in Advanced, plus our full suite of AI
+Agentforce for Sales and Agentforce Coworker
+Salesforce Spiff, Sales Planning, Sales Programmes, Salesforce Maps, Tableau Next and Slack Enterprise+
+2.75M Flex Credits per org per year
+Contact us
+This page is provided for information purposes only and subject to change. AI can be added to Core and above. Contact a sales representative for detailed pricing information.
+Top features.
+Free Suite
+$
+0
+user/month
+$
+0
+user/month
+0
+€
+user/month
+AU$
+0
+user/month
+0
+円
+user/month
+0
+kr
+user/month
+£
+0
+user/month
+Starter Suite
+$
+25
+user/month
+$
+25
+user/month
+25
+€
+user/month
+AU$
+35
+user/month
+3,000
+円
+user/month
+250
+kr
+user/month
+£
+20
+user/month
+Pro Suite
+$
+100
+user/month
+$
+100
+user/month
+100
+€
+user/month
+AU$
+140
+user/month
+12,000
+円
+user/month
+1,000
+kr
+user/month
+£
+80
+user/month
+Core
+$
+195
+user/month
+$
+195
+user/month
+195
+€
+user/month
+AU$
+273
+user/month
+23,400
+円
+user/month
+1,950
+kr
+user/month
+£
+156
+user/month
+Advanced
+$
+395
+user/month
+$
+395
+user/month
+395
+€
+user/month
+AU$
+553
+user/month
+47,400
+円
+user/month
+3,950
+kr
+user/month
+£
+316
+user/month
+Max
+$
+550
+user/month
+$
+550
+user/month
+550
+€
+user/month
+AU$
+770
+user/month
+66,000
+円
+user/month
+5,500
+kr
+user/month
+£
+440
+user/month
+Available for purchase*
+Available for purchase*
+Available for purchase
+Available for purchase
+Slack Free
+Slack Free
+Slack Free
+Slack Business+
+Slack Business+
+Slack Enterprise+
+Available for purchase
+Available for purchase
+Available for purchase
+Sales Programmes
+All included
+Available for purchase
+Built-in AI
+Free Suite
+$
+0
+user/month
+$
+0
+user/month
+0
+€
+user/month
+AU$
+0
+user/month
+0
+円
+user/month
+0
+kr
+user/month
+£
+0
+user/month
+Starter Suite
+$
+25
+user/month
+$
+25
+user/month
+25
+€
+user/month
+AU$
+35
+user/month
+3,000
+円
+user/month
+250
+kr
+user/month
+£
+20
+user/month
+Pro Suite
+$
+100
+user/month
+$
+100
+user/month
+100
+€
+user/month
+AU$
+140
+user/month
+12,000
+円
+user/month
+1,000
+kr
+user/month
+£
+80
+user/month
+Core
+$
+195
+user/month
+$
+195
+user/month
+195
+€
+user/month
+AU$
+273
+user/month
+23,400
+円
+user/month
+1,950
+kr
+user/month
+£
+1

@@ -1,0 +1,198 @@
+{
+  "app": "Salesforce Commerce Cloud",
+  "number": 44,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:02:42.567815+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.salesforce.com/docs/commerce\",\n    \"https://developer.salesforce.com/\",\n    \"https://help.salesforce.com/\",\n    \"https://developer.salesforce.com/signup\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.salesforce.com/docs/commerce",
+    "https://developer.salesforce.com/",
+    "https://help.salesforce.com/",
+    "https://developer.salesforce.com/signup",
+    "https://docs.salesforce.com/",
+    "https://developers.salesforce.com/",
+    "https://api.salesforce.com/",
+    "https://salesforce.com/docs",
+    "https://salesforce.com/developers",
+    "https://salesforce.com/api",
+    "https://salesforce.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/get-started.html",
+    "https://developer.salesforce.com/docs/commerce/sfnext/guide/sfnext-get-started.html",
+    "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/quick-start-landing-page.html",
+    "https://developer.salesforce.com/docs/commerce/sfra/guide",
+    "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide",
+    "https://developer.salesforce.com/docs/commerce/einstein-api/guide",
+    "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "https://developer.salesforce.com/docs/apis",
+    "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/apis-overview.html",
+    "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_types_list.htm",
+    "https://invite.salesforce.com/AIforceOct7",
+    "https://docs.salesforce.com/llms.txt",
+    "https://docs.salesforce.com/index.html",
+    "https://mcp.docs.salesforce.com/about/",
+    "https://docs.salesforce.com/admin/index.html",
+    "https://docs.salesforce.com/tableau/index.html",
+    "https://docs.salesforce.com/mulesoft/index.html"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.salesforce.com/",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developers.salesforce.com/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://api.salesforce.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://salesforce.com/docs",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+      "requested_url": "https://developer.salesforce.com/docs/commerce",
+      "status": 200,
+      "title": "Commerce Cloud | Developer",
+      "chars": 3819,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.salesforce.com/",
+      "requested_url": "https://developer.salesforce.com/",
+      "status": 200,
+      "title": "Developer Portal | Salesforce Developers | Developer",
+      "chars": 4432,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.salesforce.com/products/free-trial/developer/",
+      "requested_url": "https://developer.salesforce.com/signup",
+      "status": 200,
+      "title": "Developer Edition with Agentforce and Data 360 | Salesforce",
+      "chars": 127,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.salesforce.com/",
+      "requested_url": "https://docs.salesforce.com/",
+      "status": 200,
+      "title": "Salesforce Docs Portal",
+      "chars": 685,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/get-started.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/get-started.html",
+      "status": 200,
+      "title": "B2C Commerce Architecture | B2C Commerce | B2C Commerce | Salesforce Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/sfnext/guide/sfnext-get-started.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/sfnext/guide/sfnext-get-started.html",
+      "status": 200,
+      "title": "Storefront Next | Salesforce Developers",
+      "chars": 3493,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/quick-start-landing-page.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/quick-start-landing-page.html",
+      "status": 200,
+      "title": "Quick Start | B2C Commerce | B2C Commerce | Salesforce Developers",
+      "chars": 390,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/sfra/guide",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/sfra/guide",
+      "status": 200,
+      "title": "Announcements | B2C Commerce Storefront Reference Architecture | Salesforce Developers",
+      "chars": 2291,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide",
+      "status": 200,
+      "title": "Announcements | B2C Commerce | Salesforce Developers",
+      "chars": 2291,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Salesforce Commerce Cloud provides APIs and developer tools for building personalized commerce experiences and headless storefronts.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": null\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": null\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"Mentions B2C Commerce API and REST API in passing, but provides no substantive details on the API surface.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"Mentions Agentic MCP Shopper Tools Quick Start (Pilot) and Hosted MCP Servers in navigation/links, but gives no substantive description.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"The provided pages offer developer guides and links for B2C Commerce, SCAPI, and Composable Storefronts, but do not provide explicit details on how a first-time developer obtains credentials or authenticates API calls.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.salesforce.com/developer-centers/commerce-cloud\",\n      \"claim\": \"Lists developer guides and tools for Salesforce Commerce Cloud including B2C Commerce and Composable Storefront.\"\n    },\n    {\n      \"url\": \"https://developer.salesforce.com/\",\n      \"claim\": \"Mentions B2C Commerce API and Salesforce REST API.\"\n    },\n    {\n      \"url\": \"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/quick-start-landing-page.html\",\n      \"claim\": \"Lists Agentic MCP Shopper Tools Quick Start (Pilot) and B2C Commerce API and SDK Quick Start.\"\n    }\n  ],\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint_url": "https://developer.salesforce.com/docs/commerce",
+    "one_liner": "Salesforce Commerce Cloud provides APIs and developer tools for building personalized commerce experiences and headless storefronts.",
+    "auth": {
+      "method": "unknown",
+      "notes": null
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": null
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Mentions B2C Commerce API and REST API in passing, but provides no substantive details on the API surface."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Mentions Agentic MCP Shopper Tools Quick Start (Pilot) and Hosted MCP Servers in navigation/links, but gives no substantive description."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The provided pages offer developer guides and links for B2C Commerce, SCAPI, and Composable Storefronts, but do not provide explicit details on how a first-time developer obtains credentials or authenticates API calls."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+        "claim": "Lists developer guides and tools for Salesforce Commerce Cloud including B2C Commerce and Composable Storefront.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.salesforce.com/",
+        "claim": "Mentions B2C Commerce API and Salesforce REST API.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/quick-start-landing-page.html",
+        "claim": "Lists Agentic MCP Shopper Tools Quick Start (Pilot) and B2C Commerce API and SDK Quick Start.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T18:03:24.034687+00:00"
+}

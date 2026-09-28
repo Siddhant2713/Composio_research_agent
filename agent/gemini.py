@@ -25,7 +25,13 @@ DEFAULT_MODEL_CHAIN = (
     "gemini-3.1-flash-lite",
 )
 
-RETRYABLE = ("429", "RESOURCE_EXHAUSTED", "500", "502", "503", "UNAVAILABLE", "INTERNAL")
+# Transient overload: the same model is worth another try after a pause.
+TRANSIENT = ("500", "502", "503", "UNAVAILABLE", "INTERNAL")
+# Quota exhausted: retrying this model changes nothing, so move on immediately and stop
+# trying it for the rest of the process. Over a 100-app batch this saves hours of sleeping.
+QUOTA = ("429", "RESOURCE_EXHAUSTED")
+
+_exhausted: set[str] = set()
 
 
 class GeminiError(RuntimeError):
@@ -53,6 +59,7 @@ def generate_json(
     models: list[str] | None = None,
     attempts_per_model: int = 3,
     temperature: float = 0.0,
+    quota_pause: int = 75,
 ) -> tuple[dict[str, Any], str, str]:
     """Return (parsed_json, raw_text, model_used).
 
@@ -65,9 +72,18 @@ def generate_json(
     )
 
     chain = models or model_chain()
+
+    # Every model out of quota: these windows are largely per-minute, so pause once and
+    # give them a chance to reset rather than failing 90-odd apps in a burst.
+    if all(model in _exhausted for model in chain):
+        print(f"      (all {len(chain)} models out of quota — pausing {quota_pause}s)")
+        time.sleep(quota_pause)
+        _exhausted.clear()
+
+    usable = [m for m in chain if m not in _exhausted]
     last_error: Exception | None = None
 
-    for model in chain:
+    for model in usable:
         for attempt in range(attempts_per_model):
             try:
                 resp = client.models.generate_content(
@@ -80,14 +96,24 @@ def generate_json(
             except Exception as exc:
                 last_error = exc
                 message = str(exc)
-                if not any(code in message for code in RETRYABLE):
+
+                if any(code in message for code in QUOTA):
+                    _exhausted.add(model)
+                    print(f"      ({model} out of quota, skipping it from here on)")
+                    break
+
+                if not any(code in message for code in TRANSIENT):
                     raise
+
                 if attempt < attempts_per_model - 1:
                     sleep_for = min(45, 2 ** attempt * 6) + random.uniform(0, 2)
                     print(f"      (retry {model} {attempt + 1}/{attempts_per_model} "
                           f"in {sleep_for:.0f}s: {message[:60]})")
                     time.sleep(sleep_for)
                 else:
-                    print(f"      ({model} unavailable, falling back: {message[:60]})")
+                    print(f"      ({model} overloaded, falling back: {message[:60]})")
 
-    raise GeminiError(f"all models exhausted ({', '.join(chain)}): {last_error}")
+    raise GeminiError(
+        f"all models unavailable ({', '.join(usable)}); "
+        f"quota-exhausted so far: {sorted(_exhausted) or 'none'}: {last_error}"
+    )

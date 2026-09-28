@@ -1,0 +1,209 @@
+{
+  "app": "Slack",
+  "number": 21,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:21:49.694129+00:00",
+  "raw_candidate_proposals": "{\"urls\":[\"https://api.slack.com/\",\"https://api.slack.com/docs\",\"https://api.slack.com/methods\",\"https://api.slack.com/apps\",\"https://api.slack.com/authentication\",\"https://api.slack.com/web\",\"https://api.slack.com/start\",\"https://slack.com/developers\",\"https://api.slack.com/tutorials\",\"https://api.slack.com/developer-program\"]}",
+  "candidate_proposal_model": "gemini-3-flash-preview",
+  "candidates_considered": [
+    "https://slack.com",
+    "https://api.slack.com/",
+    "https://api.slack.com/docs",
+    "https://api.slack.com/methods",
+    "https://api.slack.com/apps",
+    "https://api.slack.com/authentication",
+    "https://api.slack.com/web",
+    "https://api.slack.com/start",
+    "https://slack.com/developers",
+    "https://api.slack.com/tutorials",
+    "https://api.slack.com/developer-program",
+    "https://docs.slack.com/",
+    "https://developer.slack.com/",
+    "https://developers.slack.com/",
+    "https://slack.com/docs",
+    "https://slack.com/api",
+    "https://slack.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://slack.com/intl/en-in/contact-sales",
+    "https://slack.com/partner-offers",
+    "https://slack.com/intl/en-in/connect",
+    "https://slack.com/intl/en-in/pricing",
+    "https://slack.com/intl/en-in/partners",
+    "https://slack.com/intl/en-in/ai-agents",
+    "https://docs.slack.dev/reference",
+    "https://docs.slack.dev/quickstart",
+    "https://docs.slack.dev/ai/agent-quickstart",
+    "https://docs.slack.dev/tools/java-slack-sdk",
+    "https://docs.slack.dev/tools/node-slack-sdk",
+    "https://slack.com/help/requests/new",
+    "https://slack.com/pricing?ui_step=28&ui_element=5",
+    "https://docs.slack.dev/authentication/tokens",
+    "https://docs.slack.dev/authentication/using-token-rotation",
+    "https://docs.slack.dev/authentication/installing-with-oauth",
+    "https://docs.slack.dev/authentication/using-pkce",
+    "https://docs.slack.dev/authentication/sign-in-with-slack/",
+    "https://docs.slack.dev/authentication/authorizing-with-postman"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://api.slack.com/methods",
+      "reason": "page too thin (82 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://slack.com/intl/en-in/",
+      "requested_url": "https://slack.com",
+      "status": 200,
+      "title": "Slack | AI work platform and productivity tools",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.slack.dev/",
+      "requested_url": "https://api.slack.com/",
+      "status": 200,
+      "title": "Slack developer docs | Slack Developer Docs",
+      "chars": 1134,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://api.slack.com/apps",
+      "requested_url": "https://api.slack.com/apps",
+      "status": 200,
+      "title": "Slack API: Applications | Slack",
+      "chars": 180,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "requested_url": "https://api.slack.com/authentication",
+      "status": 200,
+      "title": "Authentication overview | Slack Developer Docs",
+      "chars": 1466,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "requested_url": "https://api.slack.com/web",
+      "status": 200,
+      "title": "Slack Web API | Slack Developer Docs",
+      "chars": 4984,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/contact-sales",
+      "requested_url": "https://slack.com/intl/en-in/contact-sales",
+      "status": 200,
+      "title": "Contact sales | Slack",
+      "chars": 438,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/partner-offers",
+      "requested_url": "https://slack.com/partner-offers",
+      "status": 200,
+      "title": "Slack Partner Offers Marketplace | Slack",
+      "chars": 1049,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/connect",
+      "requested_url": "https://slack.com/intl/en-in/connect",
+      "status": 200,
+      "title": "Slack Connect: External communication and collaboration | Slack",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/pricing",
+      "requested_url": "https://slack.com/intl/en-in/pricing",
+      "status": 200,
+      "title": "Slack pricing for subscriptions: Find the right fit for your team | Slack",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/partners",
+      "requested_url": "https://slack.com/intl/en-in/partners",
+      "status": 200,
+      "title": "Building a better way to work starts with Slack | Slack",
+      "chars": 1780,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\"one_liner\": \"The Slack Web API is an HTTP RPC-style interface for querying information from and enacting change in a Slack workspace.\", \"auth\": {\"method\": \"oauth2\", \"notes\": \"Slack uses OAuth 2.0 to securely authenticate users and request access tokens (user, bot, and app tokens), which are passed as Bearer tokens in the Authorization header.\"}, \"access\": {\"tier\": \"self_serve\", \"notes\": \"Developers can sign in to their Slack account to create an application, or use the Slack CLI to log in and create a project.\"}, \"api_surface\": {\"rest\": false, \"graphql\": null, \"webhooks\": null, \"sdks\": [\"Java Slack SDK\", \"Node Slack SDK\", \"Python Slack SDK\", \"Bolt for Java\", \"Bolt for JavaScript\", \"Bolt for Python\"], \"notes\": \"The Web API is a collection of HTTP RPC-style methods rather than a REST API, though it uses HTTP foundations. Official SDKs and Bolt frameworks are provided for Java, JavaScript/Node, and Python.\"}, \"mcp\": {\"exists\": null, \"notes\": null}, \"buildability\": {\"verdict\": \"easy\", \"reasoning\": \"Slack offers self-serve access where developers can sign in and create apps immediately. The API is well-documented with multiple official SDKs and a CLI to streamline development.\"}, \"evidence\": [{\"url\": \"https://docs.slack.dev/apis/web-api/\", \"claim\": \"The Slack Web API is an HTTP RPC-style interface (not REST) that accepts OAuth 2.0 Bearer tokens.\"}, {\"url\": \"https://api.slack.com/apps\", \"claim\": \"Developers can sign in to their Slack account to create an application.\"}, {\"url\": \"https://docs.slack.dev/authentication/\", \"claim\": \"Slack uses OAuth 2.0 to securely authenticate users and request access tokens.\"}, {\"url\": \"https://docs.slack.dev/\", \"claim\": \"Slack provides a CLI for quickstart and lists official SDKs for Java, Node.js, and Python.\"}], \"confidence\": \"high\"}",
+  "extraction_model": "gemini-3.5-flash",
+  "record": {
+    "number": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint_url": "https://slack.com",
+    "one_liner": "The Slack Web API is an HTTP RPC-style interface for querying information from and enacting change in a Slack workspace.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Slack uses OAuth 2.0 to securely authenticate users and request access tokens (user, bot, and app tokens), which are passed as Bearer tokens in the Authorization header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign in to their Slack account to create an application, or use the Slack CLI to log in and create a project."
+    },
+    "api_surface": {
+      "rest": false,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Java Slack SDK",
+        "Node Slack SDK",
+        "Python Slack SDK",
+        "Bolt for Java",
+        "Bolt for JavaScript",
+        "Bolt for Python"
+      ],
+      "notes": "The Web API is a collection of HTTP RPC-style methods rather than a REST API, though it uses HTTP foundations. Official SDKs and Bolt frameworks are provided for Java, JavaScript/Node, and Python."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Slack offers self-serve access where developers can sign in and create apps immediately. The API is well-documented with multiple official SDKs and a CLI to streamline development."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.slack.dev/apis/web-api/",
+        "claim": "The Slack Web API is an HTTP RPC-style interface (not REST) that accepts OAuth 2.0 Bearer tokens.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://api.slack.com/apps",
+        "claim": "Developers can sign in to their Slack account to create an application.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.slack.dev/authentication/",
+        "claim": "Slack uses OAuth 2.0 to securely authenticate users and request access tokens.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.slack.dev/",
+        "claim": "Slack provides a CLI for quickstart and lists official SDKs for Java, Node.js, and Python.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:23:16.320519+00:00"
+}

@@ -1,0 +1,194 @@
+{
+  "app": "Intercom",
+  "number": 12,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:06:36.556484+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.intercom.com/\",\n    \"https://developers.intercom.com/docs\",\n    \"https://developers.intercom.com/reference\",\n    \"https://www.intercom.com/developers\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://intercom.com",
+    "https://developers.intercom.com/",
+    "https://developers.intercom.com/docs",
+    "https://developers.intercom.com/reference",
+    "https://www.intercom.com/developers",
+    "https://docs.intercom.com/",
+    "https://developer.intercom.com/",
+    "https://api.intercom.com/",
+    "https://intercom.com/docs",
+    "https://intercom.com/developers",
+    "https://intercom.com/api",
+    "https://intercom.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.intercom.com/contact-sales",
+    "https://www.intercom.com/signup",
+    "https://www.intercom.com/pricing",
+    "https://www.intercom.com/signup?solution_id=29",
+    "https://www.intercom.com/solution-partner-program",
+    "https://www.intercom.com/technology-partner-program",
+    "https://developers.intercom.com/docs/references/introduction",
+    "https://developers.intercom.com/docs/build-an-integration/getting-started/",
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/build-your-own-reports/",
+    "https://developers.intercom.com/docs/build-an-integration/getting-started/build-an-app-for-your-inbox/",
+    "https://developers.intercom.com/docs/build-an-integration/getting-started/build-an-app-for-your-messenger/",
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+    "https://developers.intercom.com/docs/references/webhooks/webhook-models",
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/sdks-plugins",
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+    "https://www.intercom.com/help/en/collections/3866057-plans-pricing",
+    "https://www.intercom.com/help/en/articles/215-get-started-with-contacts",
+    "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+    "https://www.intercom.com/help/en/articles/7733797-how-to-create-authentication-with-zendesk-for-data-connectors",
+    "https://www.intercom.com/help/en/articles/10589769-authenticating-users-in-the-messenger-with-json-web-tokens-jwts"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.intercom.com/reference",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.intercom.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.intercom.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.intercom.com/",
+      "requested_url": "https://intercom.com",
+      "status": 200,
+      "title": "Intercom | A complete system for human and AI customer service",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.intercom.com/",
+      "requested_url": "https://developers.intercom.com/",
+      "status": 200,
+      "title": "Intercom Developers | Intercom and Fin Developer Platform",
+      "chars": 2024,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.intercom.com/docs",
+      "requested_url": "https://developers.intercom.com/docs",
+      "status": 200,
+      "title": "Overview | Intercom and Fin Developer Platform",
+      "chars": 4504,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intercom.com/help/en/",
+      "requested_url": "https://docs.intercom.com/",
+      "status": 200,
+      "title": "Home | Intercom Help",
+      "chars": 1594,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intercom.com/contact-sales",
+      "requested_url": "https://www.intercom.com/contact-sales",
+      "status": 200,
+      "title": "Contact Sales | Intercom",
+      "chars": 584,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intercom.com/signup/email",
+      "requested_url": "https://www.intercom.com/signup",
+      "status": 200,
+      "title": "Sign Up | Intercom",
+      "chars": 181,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intercom.com/pricing",
+      "requested_url": "https://www.intercom.com/pricing",
+      "status": 200,
+      "title": "Intercom Pricing | Plans for every team size",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intercom.com/signup/email?solution_id=29",
+      "requested_url": "https://www.intercom.com/signup?solution_id=29",
+      "status": 200,
+      "title": "Sign Up | Intercom",
+      "chars": 144,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.intercom.com/solution-partner-program",
+      "requested_url": "https://www.intercom.com/solution-partner-program",
+      "status": 200,
+      "title": "Intercom's Solution Partner Program",
+      "chars": 3744,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Intercom provides an AI-powered customer service platform with APIs and SDKs for building integrations and apps.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Public apps require setting up OAuth, while private apps can use an Access Token.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free account to create a development workspace and access the Developer Hub.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"The platform provides REST APIs, webhooks, and SDKs (including mobile SDKs and Canvas Kit).\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Self-serve developer accounts are available to obtain credentials and test integrations, but public apps require OAuth configuration and submission to the Intercom team for review.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.intercom.com/docs\",\n      \"claim\": \"Public apps require setting up OAuth and submitting to the Intercom team for review, whereas private apps can use an Access Token without review.\"\n    },\n    {\n      \"url\": \"https://developers.intercom.com/docs\",\n      \"claim\": \"Developers can sign up to create a free account and development workspace to access the Developer Hub and configure webhooks and OAuth.\"\n    },\n    {\n      \"url\": \"https://developers.intercom.com/docs\",\n      \"claim\": \"Integrations can be built using REST APIs and the Canvas Kit framework.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://intercom.com",
+    "one_liner": "Intercom provides an AI-powered customer service platform with APIs and SDKs for building integrations and apps.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Public apps require setting up OAuth, while private apps can use an Access Token."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free account to create a development workspace and access the Developer Hub."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "The platform provides REST APIs, webhooks, and SDKs (including mobile SDKs and Canvas Kit)."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Self-serve developer accounts are available to obtain credentials and test integrations, but public apps require OAuth configuration and submission to the Intercom team for review."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.intercom.com/docs",
+        "claim": "Public apps require setting up OAuth and submitting to the Intercom team for review, whereas private apps can use an Access Token without review.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.intercom.com/docs",
+        "claim": "Developers can sign up to create a free account and development workspace to access the Developer Hub and configure webhooks and OAuth.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.intercom.com/docs",
+        "claim": "Integrations can be built using REST APIs and the Canvas Kit framework.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:06:53.999523+00:00"
+}

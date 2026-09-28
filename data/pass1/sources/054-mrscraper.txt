@@ -1,0 +1,1508 @@
+===== https://docs.mrscraper.com/docs/getting-started/overview
+TITLE: Overview | MrScraper Documentation
+ACCESSED: 2026-09-27
+
+Overview | MrScraper Documentation
+Overview
+Your all-in-one guide to understanding, configuring, and using the MrScraper platform, from your first scrape to AI agents, integrations, and APIs.
+Discover how our powerful scraping platform can transform the way you extract data. Whether you're scraping e-commerce product data, collecting job listings, gathering customer reviews for sentiment analysis, or extracting any website content, our AI scrapers and workflows are designed to automate and simplify the process, giving you a powerful edge in any project.
+Start Here
+New to MrScraper? These pages get you from sign-up to your first scraped dataset.
+Quickstart
+Run your first scraper in a few minutes with a step-by-step walkthrough.
+Scraper API
+Test API requests, explore features, and generate code without writing code.
+Token Plan
+Learn how tokens work and create an API token for authentication.
+Billing
+Understand subscription plans, token usage, and billing cycles.
+AI Agents
+Pick the agent that matches the page you're scraping, or chain several together.
+AI Scraper
+Automatically extract data with natural language instructions — no coding required.
+General Agent
+Extract structured data from a single web page using a natural language prompt.
+Listing Agent
+Scrape listing pages with automated pagination, infinite scroll, and load-more handling.
+Map Agent
+Discover and extract every URL from a website to understand its structure.
+Multi-Agent Flow
+Combine Map, Listing, and General agents into end-to-end extraction workflows.
+Features
+Explore MrScraper's key features and tools designed to make data extraction effortless.
+Workflow
+Build and customize your own scraper workflow step by step for full control.
+Self-Healing
+Let AI generate, repair, and extend workflows when a site changes.
+Bulk Scraping
+Scrape multiple URLs in one go by uploading a list or Excel file.
+Web Unblocker
+Bypass anti-scraping measures and reach geo-restricted content.
+Proxy
+Route individual scrapers through proxies to mask your IP and improve reliability.
+Cookie
+Use your own cookies to access content behind logins and restrictions.
+Scheduling
+Automate scraper runs on a schedule to keep your data fresh and up to date.
+Marketplace
+Use ready-to-run scrapers for popular websites and common scraping use cases.
+Workflow API Access
+Activate a scraper as an API endpoint and run it programmatically.
+S3 Storage
+Save scraped data straight into your own S3 bucket.
+Team
+Create a team to share scrapers and collaborate on projects.
+Use Cases
+Discover how MrScraper can support different real-world scenarios.
+E-Commerce
+Scrape product details, pricing, and availability from major e-commerce sites.
+Job Listings
+Collect job postings and company data for recruitment or market analysis.
+Sentiment Analysis
+Extract and analyze customer feedback to gain insights into sentiment and satisfaction.
+Real Estate
+Gather property listings, prices, and market trends from real estate websites.
+Flight Price
+Scrape flight prices, airlines, and schedules for price monitoring and booking analysis.
+Optimizing Cost
+Minimize token usage and maximize scraping efficiency without losing accuracy.
+Scrape Programmatically
+Create an AI scraper once, then run it from your own code via the API.
+Integrations
+Integrate MrScraper with your favorite tools to automate your data flow.
+Email
+Receive email notifications whenever a scraper finishes or encounters an error.
+Database
+Automatically store scraped data in your database for querying and analysis.
+Webhook
+Send scraper results directly to external services through webhooks.
+Zapier
+Connect your scrapers to thousands of apps with no-code Zapier automations.
+n8n
+Build automated workflows around your scrapers with the MrScraper n8n node.
+Apify
+Run MrScraper as Apify Actors and pipe results into the Apify platform.
+ClawHub
+Install the MrScraper skill to give your OpenClaw agent unblockable web scraping.
+Developer Tools
+Work with MrScraper from your terminal, your codebase, or your AI agent.
+The
+MrScraper MCP server source code
+is available on GitHub for local setup, contributions, and issue reports.
+CLI
+Scrape, crawl, and extract data from the web directly from your terminal.
+MCP Server
+Let AI agents fetch and extract web data through the Model Context Protocol.
+Python SDK
+Call the MrScraper API asynchronously with the
+mrscraper-sdk
+package.
+Node.js SDK
+Scrape, crawl, and extract structured data using the MrScraper Node SDK.
+LangChain SDK
+Use MrScraper as LangChain tools inside your own agents.
+API Reference
+Explore every endpoint, authentication, pagination, and error handling.
+Residential Proxy
+Route your own tools and browsers through our proxy network.
+Proxy Overview
+Understand proxy types, global coverage, and how to get started.
+Authentication
+Configure username patterns, sessions, and country targeting.
+Code Examples
+Ready-to-use snippets for Python, Node.js, Go, PHP, Playwright, and more.
+Quickstart
+A step-by-step guide to making your first MrSc
+
+===== https://mrscraper.com
+TITLE: Scrape Any Website with AI & Proxies | MrScraper
+ACCESSED: 2026-09-27
+
+Scrape web data
+for
+Data Research, E-Commerce, Competitor
+Data Research
+|
+Get clean, structured data from any website at any scale.
+MrScraper is trusted by the
+world's leading companies.
+Finding new data feels
+like
+magic
+AI-powered web scraper that effortlessly extracts valuable data from any site.
+AI-Powered Scraping
+Turn messy web pages into clean, ready-to-use data. Our AI understands the page, finds what matters, and gives you structured results automatically.
+Auto-Rotated
+Residential Proxy
+Stay hidden and unblocked. Our rotating home IP addresses change automatically, so you can collect data without bans or restrictions.
+Browser Agent
+The ultimate web unblocker. Extract data automatically, browse undetected, and beat anti-bot systems - all in one powerful tool.
+Turn Any Website Into an API
+Instantly convert any web page into clean, structured data. Our AI understands layouts, detects patterns automatically, and delivers the results as an easy-to-use API
+Use MrScraper for Web Harvesting
+A complete toolkit of APIs for all your scraping and data extraction needs.
+Javascript Scenario
+Take control of the page before scraping. Click, scroll, wait for elements, or run custom JavaScript to reveal dynamic content and collect fully loaded data.
+Screenshots
+Capture full-page or partial screenshots of any website with a single API call. Get a clean image of the page exactly as it appears in a real browser.
+Enterprise-reinvention
+Enterprise Data Reinvention
+Transform scattered web data into clean, reliable enterprise intelligence - without rebuilding your entire system.
+Partnership-Driven Support
+Direct, hands-on support from our team for setup and daily operations.
+Scalable Infrastructure
+Stable scraping and proxy systems that grow with your data needs.
+Secure & Compliant
+Encrypted data handling and GDPR-aligned processes for safer operations.
+Reliable Delivery
+Consistent data flow with priority support and clear SLA commitments.
+Customer Story
+From Manual Mayhem to Seamless Sync: How MrScraper Helped ReadMe Automate Documentation Migration
+Read Story
+Build at enterprise scale. Scrape at startup speed.
+High-performance data extraction you can deploy in minutes - reliable, compliant, and built for growth.
+Get started for free
+Get a demo
+Pricing on your terms
+Pick the plan that works best for you
+Pricing details
+Start Scraping
+Step-by-step guidance to launch your first automated scraper.
+Open guide
+
+===== https://mrscraper.com/pricing
+TITLE: MrScraper Pricing | MrScraper
+ACCESSED: 2026-09-27
+
+Scrape Smarter.
+Scale Faster.
+MrScraper turns websites into clean, structured data with AI-powered scraping, APIs, proxies, and automation - without the maintenance headache.
+Free
+Pro
+Custom
+Looking for residential proxies?
+View proxy pricing
+Everything You Need to Turn the Web Into Data
+From one-off extraction to recurring data pipelines, MrScraper gives you flexible tools to collect and deliver web data.
+1,000 tokens included
+Unblock any website
+Include 10GB free residential proxy
+Manual and API-based scraping
+Marketplace scraping APIs
+AI-powered structured extraction
+Usage analytics and monitoring
+Scheduled and repeatable workflows
+Webhooks and workflow integrations
+CSV / structured-data friendly exports
+Everything You Need to Turn the Web Into Data
+From one-off extraction to recurring data pipelines, MrScraper gives you flexible tools to collect and deliver web data.
+200,000 tokens included
+Unblock any website
+Include 10GB free residential proxy
+Manual and API-based scraping
+Marketplace scraping APIs
+AI-powered structured extraction
+Usage analytics and monitoring
+Scheduled and repeatable workflows
+Webhooks and workflow integrations
+CSV / structured-data friendly exports
+Everything You Need to Turn the Web Into Data
+From one-off extraction to recurring data pipelines, MrScraper gives you flexible tools to collect and deliver web data.
+Token plan tailored to your need
+Unblock any website
+Include 10GB free residential proxy
+Manual and API-based scraping
+Marketplace scraping APIs
+AI-powered structured extraction
+Usage analytics and monitoring
+Scheduled and repeatable workflows
+Webhooks and workflow integrations
+CSV / structured-data friendly exports
+What Our Customers Say
+Teams use MrScraper to automate data extraction, keep information fresh, and build reliable data workflows at scale.
+David Meslar
+Director of Marketing Blockdaemon
+★★★★★
+“MrScraper's API integration has been a huge win for Blockdaemon. Its seamless data extraction from multiple sources and automated updates have saved our team significant time and effort, streamlining our workflows.”
+Simon Torring
+Co-Founder at Cube
+★★★★★
+“MrScraper is a reliable and quality-minded data provider. We appreciate MrScraper's fast customer service and rapid innovations that help us deliver best-in-class market insights”
+Bustem
+CEO
+★★★★★
+“MrScraper has been a complete game-changer for us. We plug their API and scraping tech directly into our internal system, and it lets us scan marketplaces + social media at scale to surface bad actors fast. It gives us real-time visibility so we can protect our client's brands and customers with confidence.”
+AI-Powered
+Extract structured web data with intelligent scraping workflows.
+Built for Reliability
+Use proxies, reruns, APIs, and monitoring to keep data flowing.
+Time Saving
+Automate recurring collecting and send results into your workflow.
+Need a custom plan?
+Get a plan tailored for higher-volume token usage, dedicated requirements, or enterprise-grade data workflows.
+Higher token volumes
+Custom integrations
+Enterprise requirements
+Book a Call
+Frequently Asked Questions
+Everything you need to know about plans, billing, and getting started with MrScraper.
+What do I get on the Scraper Free plan?
+Scraper Free includes 1,000 MrScraper tokens every month at no cost - no credit card required. It's the fastest way to try scraping, proxies and AI extraction before upgrading.
+Can I change plans later?
+Yes. Upgrade from Scraper Free to Scraper Pro anytime from your account's billing settings for $199/month and 200,000 tokens, or move to a Custom plan by booking a call.
+How do I get my API Token?
+Sign in to the dashboard, open your account settings, and copy the token from the API Token page. Every API request authenticates with it, and the getting-started guide in the docs walks through your first call.
+Can I use MrScraper without coding?
+Yes. The visual scraper and AI Mode let you point at a page, describe the data you want, and get structured results without writing code. The API and SDKs are there when you want to automate further.
+Why is my scrape not returning any data?
+The usual causes are a page that loads its content with JavaScript, selectors that no longer match, or the site blocking the request. Re-run with rendering enabled, let AI Mode re-detect the fields, or route the run through the built-in proxies.
+What’s the difference between AI Mode and Manual Mode?
+AI Mode reads the page and extracts the fields you describe in plain language - the fastest way to a working scraper. Manual Mode gives you exact control with your own selectors and spends fewer tokens on predictable, high-volume runs.
+When should I use a proxy?
+Use one when a site rate-limits repeat visits, serves different content per country, or blocks datacenter traffic. Location-based proxies make your requests look like a normal visitor from the region you choose.
+Does MrScraper provide built-in proxies?
+Yes. Residential proxies with country-level targeting ar
+
+===== https://docs.mrscraper.com/docs/getting-started/api-token
+TITLE: Token Plan | MrScraper Documentation
+ACCESSED: 2026-09-27
+
+Token Plan | MrScraper Documentation
+Token Plan
+Learn how plan tokens and API tokens work in MrScraper, why token usage varies between runs, and how to create your own API token for authentication.
+MrScraper uses a
+token-based system
+for both usage and authentication.
+Plan Tokens
+measure how much you can use MrScraper's features, such as running or rerunning scrapers.
+API Tokens
+allow you to securely access the MrScraper API, for example, to rerun an existing scraper programmatically.
+Why Token Usage Varies
+Token consumption isn't fixed — a few key factors affect how many tokens any given scraper uses:
+Website Complexity
+: Heavy JavaScript, dynamic content, or multiple requests increase runtime and token usage.
+Page Size and Content Density
+: Larger pages with long articles or extensive metadata produce more input text for AI models to process.
+Data Volume
+: Extracting large datasets (e.g., paginated listings) requires more compute and bandwidth.
+AI Processing Load
+: Complex instructions or large expected outputs increase input and output token usage.
+Keep these in mind as you read the pricing tables below — they explain why two runs on the same plan can consume different amounts of tokens.
+Understanding Plan Tokens
+Each MrScraper billing plan includes a specific number of
+tokens
+Tokens represent the compute resources your scraper consumes — similar to how minutes or data are counted in a phone plan.
+The number of tokens used depends on the type of scraper you run.
+AI Scraper Token Usage
+AI Scrapers consume more tokens due to AI processing and additional factors such as:
+Usage Type
+Description
+Conversion Rate
+Run Tracking
+Each AI agent run consumes 5 tokens for trace tracking. Reruns and workflows consume 0 tokens for this component.
+0 or 5 tokens per run
+Runtime
+Time spent processing your task.
+1 token per 30 seconds of runtime
+Input Tokens
+Amount of text data (prompts or instructions) sent to the AI model.
+1 token per ~1,000 input tokens
+Output Tokens
+Amount of text generated by the AI model (responses or extracted results).
+1 token per ~200 output tokens
+Example
+If your AI scraper runs for
+90 seconds
+, processes
+5,000 input tokens
+, and generates
+1,000 output tokens
+, your total token usage would be:
+Component
+Calculation
+Tokens
+Runtime
+90 ÷ 30
+3
+Input
+5,000 ÷ 1,000
+5
+Output
+1,000 ÷ 200
+5
+Run Trace
+Fixed
+5
+Total
+18
+Note
+Each run automatically includes trace tracking for debugging and performance monitoring.
+Input and output tokens are based on how much text the AI model processes and generates.
+AI Scrapers tend to consume more tokens due to model processing.
+Runtime tokens are rounded up using the ceiling rule. For example, if your scraper runs for 40 seconds, it will count as 2 tokens (not 1).
+Workflow and Unblocker Token Usage
+Workflows and Unblocker consume tokens based on two factors:
+runtime
+and
+bandwidth
+Usage Type
+Description
+Conversion Rate
+Runtime
+Time your scraper runs.
+1 token per 30 seconds
+Bandwidth
+Amount of data downloaded or uploaded.
+1 token per 0.25 MB
+Example
+If your workflow or unblocker runs for
+40 seconds
+and uses
+1.1 MB
+of bandwidth:
+Component
+Calculation
+Tokens
+Runtime
+40 ÷ 30 = 1.33 → rounded up
+2
+Bandwidth
+1.1 ÷ 0.25 = 4.4 → rounded up
+5
+Total
+7
+Note
+Runtime tokens are rounded up using the ceiling rule. For example, if your
+scraper runs for 40 seconds, it will count as 2 tokens (not 1).
+Scraper API Token Cap
+The
+Scraper API token cap
+limits how many tokens a single scrape can use in the Scraper API. It applies only to
+Workflow
+and
+Unblocker
+, using the same runtime and bandwidth calculations shown in
+Workflow and Unblocker Token Usage
+When
+Retry
+is enabled, a failed scrape retries automatically. Two limits control how far retrying goes:
+Max retries
+: The maximum number of retry attempts (3 by default).
+Token cap
+: The maximum total tokens all attempts can use (Unlimited by default).
+Retrying stops at the first of these: the scrape succeeds, it reaches Max retries, or the running token total reaches the token cap. Each attempt's token cost is rounded up (ceiling rule) and added to a running total.
+The token cap takes effect only when Retry is enabled, since its purpose is to limit how many tokens retries can consume. If Retry is off, the scrape runs once and returns a result or an error.
+Example
+The scrape succeeds
+Stops at Max retries
+Stops at the Token Cap
+Max retries
+3
+, token cap
+10
+Attempt
+Runtime + Bandwidth
+Rounded-up Cost
+Running Total
+Result
+1 (initial)
+2.4 tokens
+3
+3
+Failed, retrying
+2 (retry 1)
+1.6 tokens
+2
+5
+Succeeded
+The scrape succeeds on the second attempt, using 5 tokens. Because it succeeded, the Scraper API returns the result and stops even though max retries and tokens still remain (5 of 10 tokens left, and 2 retries unused).
+Max retries
+2
+, token cap
+20
+Attempt
+Runtime + Bandwidth
+Rounded-up Cost
+Running Total
+Result
+1 (initial)
+3.6 tokens
+4
+4
+Failed, retrying
+2 (retry 1)
+3.8 tokens
+4
+8
+Failed, retrying
+3 (retry 2)
+3.4 tokens
+4
+12
+Failed, max retries
+
+===== https://docs.mrscraper.com/docs/getting-started/quickstart
+TITLE: Quickstart | MrScraper Documentation
+ACCESSED: 2026-09-27
+
+Quickstart | MrScraper Documentation
+Quickstart
+A step-by-step guide to making your first MrScraper API request, scraping a product page with the General AI Agent in just a few minutes.
+This guide shows you how to make your first scraping request with MrScraper.
+Make Your First API Request
+Before You Start
+Create a MrScraper account and obtain your API key from the
+Scraper API
+before following this guide.
+In this quickstart, you'll scrape a Walmart product page using the General AI Agent to get the following data:
+Product name
+Price
+Rating
+Number of reviews
+Product link
+cURL
+curl
+--location
+--request
+POST
+'https://api.mrscraper.com?token=<MRSCRAPER_API_TOKEN>&html=true&super=true'
+\
+-H
+'x-api-token: <MRSCRAPER_API_TOKEN>'
+\
+-H
+'Content-Type: application/json'
+\
+-d
+'{
+"url": "https://www.walmart.com/ip/IdeaPad-Slim-3x-15-Laptop-Snapdragon-X-X1-26-100-16GB-RAM-512GB-SSD-Luna-Grey/19075520026",
+"prompt": "Extract the following information in JSON format:\n\nproduct_name\nprice\nrating\nnumber_of_reviews\nproduct_link",
+"agent": "general"
+}'
+Try it in the Scraper API
+Run this request instantly without writing any code.
+The response contains the extracted data from the page.
+JSON
+{
+"success"
+:
+true
+,
+"data"
+: {
+"product_name"
+:
+"Lenovo IdeaPad Slim 3x 15.3
+\"
+Laptop AI Snapdragon X 16GB 512GB SSD Luna Grey"
+,
+"price"
+:
+449
+,
+"rating"
+:
+4.5
+,
+"number_of_reviews"
+:
+103
+,
+"product_link"
+:
+"https://www.walmart.com/ip/IdeaPad-Slim-3x-15-Laptop-Snapdragon-X-X1-26-100-16GB-RAM-512GB-SSD-Luna-Grey/19075520026"
+},
+"thread_id"
+:
+"cebfaa37-f6de-45e7-8dd4-ec955824d81b"
+,
+"token_usage"
+:
+16
+,
+"markdown"
+:
+""
+,
+"screenshot"
+:
+""
+,
+"status"
+:
+"Converting data to JSON"
+,
+"error"
+:
+""
+,
+"runtime"
+:
+14852
+}
+Use a Predefined Marketplace API
+MrScraper also provides ready-to-use scraping APIs through the
+Marketplace
+These APIs are designed for specific industries and websites. You do not need to create prompts or extraction logic yourself.
+Available categories include:
+E-commerce
+News
+Real Estate
+Travel
+And more
+Explore Marketplace APIs
+Browse and test ready-to-use scrapers.
+For example, you can use the
+Amazon Product Details API
+to extract product information from an Amazon product page.
+curl
+--location
+--request
+POST
+'https://sync.scraper.mrscraper.com/api/amazon/pdp/sync'
+\
+-H
+'Authorization: bearer <MRSCRAPER_API_TOKEN>'
+\
+-H
+'Content-Type: application/json'
+\
+-d
+'{
+"url": "https://www.amazon.com/STANLEY-Flowstate-3-Position-Compatible-Insulated/dp/B0CP9YB3Q4/ref=zg_bs_c_kitchen_d_sccl_2/145-6361404-7555432?pd_rd_w=3BPkW&content-id=amzn1.sym.fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_p=fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_r=E598BMWHB9QEZ75X7ABP&pd_rd_wg=Z9psI&pd_rd_r=7e3be220-af38-4e7b-b45c-9a68470a3e1f&pd_rd_i=B0CP9YB3Q4&th=1"
+}'
+The response contains the extracted data from the page.
+JSON
+{
+"success"
+:
+true
+,
+"message"
+:
+"Successfully scraped"
+,
+"data"
+: [
+{
+"pageNumber"
+:
+1
+,
+"payload"
+: {
+"templates"
+: [],
+"mods"
+: {
+"filter"
+: {
+"tItemType"
+:
+"nt_filter"
+,
+"filterItems"
+: [
+{
+"name"
+:
+"category"
+,
+"unfoldRow"
+:
+"2"
+,
+"title"
+:
+"Category"
+,
+"urlKey"
+:
+"category"
+,
+"hidden"
+:
+false
+,
+"locked"
+:
+false
+,
+"type"
+:
+"category"
+,
+"uniqueName"
+:
+"category"
+,
+"value"
+:
+""
+,
+"displayValue"
+:
+""
+,
+"options"
+: [
+{
+"url"
+:
+"/beli-sabun-pembersih-wajah/?q=159947433"
+,
+"title"
+:
+"Facial Cleanser"
+,
+"value"
+:
+"beli-sabun-pembersih-wajah"
+}
+]
+},
+{
+"name"
+:
+"brand"
+,
+"unfoldRow"
+:
+"-1"
+,
+"title"
+:
+"Brand"
+,
+"urlKey"
+:
+"ppath"
+,
+"hidden"
+:
+false
+,
+"locked"
+:
+false
+,
+"type"
+:
+"brand"
+,
+"uniqueName"
+:
+"20000"
+,
+"options"
+: [
+{
+"title"
+:
+"Men's Biore"
+,
+"value"
+:
+"men-s-biore"
+}
+]
+},
+{
+"name"
+:
+"service"
+,
+"unfoldRow"
+:
+"4"
+,
+"title"
+:
+"Service & Promotion"
+,
+"urlKey"
+:
+"service"
+,
+"hidden"
+:
+false
+,
+"locked"
+:
+false
+,
+"type"
+:
+"multiple"
+,
+"uniqueName"
+:
+"service"
+,
+"options"
+: [
+{
+"title"
+:
+"Fulfilled By Lazada"
+,
+"value"
+:
+"FBL"
+,
+"activeIcon"
+:
+""
+,
+"normalIcon"
+:
+""
+},
+{
+"title"
+:
+"Cash On Delivery"
+,
+"value"
+:
+"COD"
+,
+"activeIcon"
+:
+""
+,
+"normalIcon"
+:
+""
+},
+{
+"title"
+:
+"Coins"
+,
+"value"
+:
+"coins"
+,
+"activeIcon"
+:
+""
+,
+"normalIcon"
+:
+""
+},
+{
+"title"
+:
+"6.6 Sale"
+,
+"value"
+:
+"gcp_D6"
+,
+"activeIcon"
+:
+"https://img.lazcdn.com/us/lazgcp/e0557f6e-169b-45ec-91c4-e9e30eb17160_ALL-60-60.png"
+,
+"normalIcon"
+:
+"https://img.lazcdn.com/us/lazgcp/e0557f6e-169b-45ec-91c4-e9e30eb17160_ALL-60-60.png"
+}
+]
+},
+{
+"name"
+:
+"location"
+,
+"unfoldRow"
+:
+"3"
+,
+"title"
+:
+"Shipped From"
+,
+"urlKey"
+:
+"location"
+,
+"hidden"
+:
+false
+,
+"locked"
+:
+false
+,
+"type"
+:
+"location"
+,
+"uniqueName"
+:
+"location"
+,
+"value"
+: [],
+"options"
+: [
+{
+"title"
+:
+"East Java"
+,
+"value"
+:
+"A-ID-4"
+},
+{
+"title"
+:
+"Jabodetabek"
+,
+"value"
+:
+"A-ID-1"
+},
+{
+"title"
+:
+"North Sumatera"
+,
+"value"
+:
+"A-ID-6"
+},
+{
+"title"
+:
+"Kota Depok"
+,
+"value"
+:
+"R80010434"
+},
+{
+"title"
+:
+"Kab. Sidoarjo"
+,
+"value"
+:
+"R80010303"
+},
+{
+"title"
+:
+"Kab. Deli Serdang"
+,
+"value"
+:
+"R80010265"
+}
+]
+},
+{
+"showMin"
+:
+"Min"
+,
+"showMax"
+:
+"Max"
+,
+"name"
+:
+"price"
+,
+"unfoldRow"
+:
+"2"
+,
+"title"
+:
+"Price"
+,
+"urlKey"
+:
+"price"
+,
+
+===== https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication
+TITLE: Authentication | MrScraper Documentation
+ACCESSED: 2026-09-27
+
+Authentication | MrScraper Documentation
+Authentication
+Learn how Residential Proxy authentication works, how your username pattern sets the proxy configuration, and how to test and troubleshoot it.
+Authentication Formats
+Residential Proxy uses a flexible username-based authentication system where your username pattern determines the proxy configuration. All proxies connect through the same endpoint but behave differently based on your username structure.
+Connection Format
+All Residential Proxy connections use the following format:
+username:password@proxy.mrscraper.com:10000
+The
+username
+controls:
+Proxy type
+Country targeting
+Session persistence
+Session duration
+IP rotation behavior
+Authentication Patterns
+1. Default (United States)
+The simplest format uses just your username and password without any modifiers.
+Format:
+username:password@proxy.mrscraper.com:10000
+Behavior:
+Residential Proxy falls back to
+United States (
+us
+)
+IPs
+IP rotates on each new request
+No session persistence
+Example:
+curl
+-x
+"user123:pass456@proxy.mrscraper.com:10000"
+https://api.ipify.org
+Note:
+The UI always requires a country selection; only manual username configuration lets you omit it. Omitting it is not random assignment — it resolves to the US, so state the country explicitly whenever the target region matters.
+2. Country-Specific Proxy
+Target a specific country using ISO 3166 country codes.
+Format:
+username-country-{iso3166}:password@proxy.mrscraper.com:10000
+Parameters:
+{iso3166}
+: 2-letter ISO 3166 country code (e.g.,
+US
+,
+GB
+,
+DE
+,
+JP
+)
+Behavior:
+All requests use IPs from the specified country
+IP rotates on each new request
+No session persistence
+Examples:
+United States
+Great Britain
+Germany
+Japan
+# Target US proxies
+user123-country-us:pass456@proxy.mrscraper.com:10000
+Use Cases:
+Accessing geo-restricted content
+Testing localized websites
+Market research in specific regions
+Price comparison across countries
+3. Session-Based Static Proxy
+Maintain the same IP across multiple requests using session IDs.
+Format:
+username-country-{iso3166}-sessid-{session_id}:password@proxy.mrscraper.com:10000
+Parameters:
+{iso3166}
+: 2-letter ISO 3166 country code
+{session_id}
+: Any alphanumeric string (e.g.,
+session1
+,
+user_alpha
+,
+x9
+)
+Behavior:
+Same IP for all requests with the same
+session_id
+Default session duration: 10 minutes
+After expiration, a new IP is assigned
+Different
+session_id
+values get different IPs
+Examples:
+Session Alpha
+Session Beta
+Session Custom
+# Session ID: alpha1
+user123-country-us-sessid-alpha1:pass456@proxy.mrscraper.com:10000
+Python Example:
+import
+requests
+proxy
+=
+{
+'http'
+:
+'http://user123-country-us-sessid-session1:pass456@proxy.mrscraper.com:10000'
+,
+'https'
+:
+'http://user123-country-us-sessid-session1:pass456@proxy.mrscraper.com:10000'
+}
+# All these requests use the same IP
+for
+i
+in
+range
+(
+5
+):
+response
+=
+requests.get(
+'https://api.ipify.org'
+,
+proxies
+=
+proxy)
+print
+(
+f
+"Request
+{
+i
++
+1}
+:
+{
+response.text
+}
+"
+)
+# Same IP for all
+Use Cases:
+Account management and login sessions
+Shopping cart operations
+Dashboard interactions
+Form submissions requiring consistent IP
+4. Custom Session Duration
+Control exactly how long a session IP persists.
+Format:
+username-country-{iso3166}-sessid-{session_id}-sesstime-{minutes}:password@proxy.mrscraper.com:10000
+Parameters:
+{iso3166}
+: 2-letter ISO 3166 country code
+{session_id}
+: Alphanumeric session identifier
+{minutes}
+: Session duration in minutes (integer)
+Behavior:
+Same IP for all requests with the same
+session_id
+Session expires after
+{minutes}
+minutes
+New IP assigned after expiration
+Maximum flexibility for session management
+Examples:
+30 Minutes
+60 Minutes
+5 Minutes
+# Session lasts 30 minutes
+user123-country-jp-sessid-x9-sesstime-30:pass456@proxy.mrscraper.com:10000
+Node.js Example:
+const
+axios
+=
+require
+(
+'axios'
+);
+// 20-minute session proxy
+const
+proxy
+=
+{
+host:
+'proxy.mrscraper.com'
+,
+port:
+10000
+,
+auth: {
+username:
+'user123-country-us-sessid-node_session-sesstime-20'
+,
+password:
+'pass456'
+}
+};
+async
+function
+testProxy
+() {
+for
+(
+let
+i
+=
+0
+; i
+<
+10
+; i
+++
+) {
+const
+response
+=
+await
+axios.
+get
+(
+'https://api.ipify.org'
+, { proxy });
+console.
+log
+(
+`Request ${
+i
++
+1
+}: ${
+response
+data
+}`
+);
+// Wait 2 minutes between requests
+await
+new
+Promise
+(
+resolve
+=>
+setTimeout
+(resolve,
+120000
+));
+}
+}
+testProxy
+();
+Use Cases:
+Long scraping sessions
+Extended browsing sessions
+Multi-step workflows
+Testing with specific time constraints
+Authentication Summary
+Format
+Country
+Session
+Duration
+Rotation
+username:password
+US (default)
+No
+N/A
+Every request
+username-country-{code}
+Specific
+No
+N/A
+Every request
+username-country-{code}-sessid-{id}
+Specific
+Yes
+10 min
+After expiry
+username-country-{code}-sessid-{id}-sesstime-{min}
+Specific
+No
+Custom
+After expiry
+Best Practices
+Session ID Naming
+Use descriptive names:
+user_john
+,
+checkout_session
+,
+scraper_1
+Avoid special characters (stick to alphanumeric and underscores)
+Keep IDs under 50 characters for compatibility
+Security Consideratio
+
+===== https://docs.mrscraper.com/docs/api/overview
+TITLE: API Overview | MrScraper Documentation
+ACCESSED: 2026-09-27
+
+API Overview | MrScraper Documentation
+API Overview
+Comprehensive documentation for MrScraper's API endpoints, including authentication, pagination, error handling, and scraper management.
+Introduction
+The MrScraper API provides a powerful and flexible way to programmatically scrape web pages and retrieve structured data. Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.
+API Features
+JSON Format
+All requests with a payload require
+Content-Type: application/json
+header. All responses are returned in JSON format.
+Authentication
+All API endpoints require authentication using an API token passed in the
+x-api-token
+header. See the
+Authentication
+page for details.
+Pagination
+List endpoints support pagination to handle large datasets efficiently. See the
+Pagination
+page for details.
+Response Headers
+Track token usage, bandwidth usage, execution runtime, and target status codes in response headers. See the
+Response Headers
+page for details.
+Error Handling
+The API uses standard HTTP status codes and returns detailed error messages. See the
+Error Handling
+page for details.
+Available Endpoints
+Scraper API
+Scrape HTML, Markdown, screenshots, JSON, listings, and sitemaps from a single Scraper API endpoint.
+Platform
+Create, rerun, and manage scrapers programmatically with the Platform API.
+Authentication
+Learn how to authenticate requests to the MrScraper API using API tokens and request headers.
+
+===== https://docs.mrscraper.com/docs/guides/ecommerce
+TITLE: E-commerce | MrScraper Documentation
+ACCESSED: 2026-09-27
+
+E-commerce | MrScraper Documentation
+Common Use Case
+E-commerce
+Learn how to scrape product names, prices, ratings, and availability from e-commerce websites with MrScraper, using a TikTok Shop walkthrough.
+E-commerce websites are a rich source of product data that can be invaluable for market analysis, price comparison, inventory management, and more.
+In this guide, we'll demonstrate how to use the MrScraper's Scraper to gather product details such as names, prices, ratings, and availability from an e-commerce website.
+Scenario
+Imagine you're a market analyst looking to gather data on products listed on Tiktok Shop to analyze pricing trends and customer preferences. You want to extract details like product names, prices, ratings, and the number of items sold.
+Create a New AI Listing Scraper
+Open the
+New AI Scraper
+page.
+Select the
+Listing Scraper
+option.
+In the
+Target URL
+field, enter the URL of the Tiktok Shop page you want to scrape. For example:
+https://shop-id.tokopedia.com/c/phones-electronics/601739?source=ecommerce_mall&enter_method=categories&first_entrance=ecommerce_mall&first_entrance_position=region_redirect_301
+Click on the
+Start Scraping
+button to start scraping.
+Result :
+Scraping Result
+{
+"mode"
+:
+"direct"
+,
+"count"
+:
+71
+,
+"links"
+: [
+"https://www.tiktok.com/shop/pdp/nose-ring-by-oufer-20g-halloween-cz-double-hoop-in-316l-stainless-steel/1729608283143704812"
+,
+"https://www.tiktok.com/shop/pdp/usb-powered-led-disco-lights-by-unnamed-brand-with-remote-control-strobe-effects/1729483087369179985"
+,
+"https://www.tiktok.com/shop/pdp/halloween-pumpkin-night-light-mini-led-dimmable-touch-lamp-for-kids/1731541214379741272"
+,
+"https://www.tiktok.com/shop/pdp/soft-funny-throw-blanket-cozy-fleece-for-home-movie-decor/1731291206388977735"
+,
+"https://www.tiktok.com/shop/pdp/40oz-sip-sip-hooray-halloween-tumblers-with-lid-straw-durable-glass/1729576207882752721"
+],
+"products"
+: [
+{
+"id"
+:
+"1729608283143704812"
+,
+"url"
+:
+"https://www.tiktok.com/shop/pdp/nose-ring-by-oufer-20g-halloween-cz-double-hoop-in-316l-stainless-steel/1729608283143704812"
+,
+"sold"
+:
+2500
+,
+"brand"
+:
+"Oufer Body Piercing Jewelry"
+,
+"price"
+:
+9.46
+,
+"title"
+:
+"Oufer 20G Halloween CZ Double Hoop Nose Ring 316L Stainless Steel"
+,
+"rating"
+:
+4.6
+,
+"section"
+:
+"TikTok Picks"
+,
+"currency"
+:
+"$"
+,
+"sold_raw"
+:
+"2.5K"
+,
+"free_shipping"
+:
+false
+,
+"original_price"
+:
+11.82
+},
+{
+"id"
+:
+"1729483087369179985"
+"url"
+:
+"https://www.tiktok.com/shop/pdp/usb-powered-led-disco-lights-by-unnamed-brand-with-remote-control-strobe-effects/1729483087369179985"
+"sold"
+:
+11000
+"brand"
+:
+"11.0K sold"
+"price"
+:
+16.65
+"title"
+:
+"1pc All Aluminum One Body Party Disco Light with Remote Control, USB Powered, for Party Birthday Wedding Holiday Christmas Decoration #TOP PICKS"
+"rating"
+:
+4.6
+"section"
+:
+"Oufer 20G Halloween CZ Double Hoop Nose Ring 316L Stainless Steel"
+"currency"
+:
+"$"
+"sold_raw"
+:
+"11.0K"
+"free_shipping"
+:
+false
+"original_price"
+:
+34.69
+},
+{
+"id"
+:
+"1731541214379741272"
+"url"
+:
+"https://www.tiktok.com/shop/pdp/halloween-pumpkin-night-light-mini-led-dimmable-touch-lamp-for-kids/1731541214379741272"
+"sold"
+:
+1900
+"brand"
+:
+"1.9K sold"
+"price"
+:
+9.99
+"title"
+:
+"Halloween Pumpkin Night Light, Halloween Decorations Outdoor,Mini LED Pumpkin Lamp with 3 Level Dimmable, Nursery Nightlight for Kids, Silicone Rechargeable Bedside Touch Lamp, for Kids TikTokShopBlackFriday"
+"rating"
+:
+4.7
+"section"
+:
+"1pc All Aluminum One Body Party Disco Light with Remote Control, USB Powered, for Party Birthday Wedding Holiday Christmas Decoration #TOP PICKS"
+"currency"
+:
+"$"
+"sold_raw"
+:
+"1.9K"
+"free_shipping"
+:
+false
+"original_price"
+:NULL
+},
+{
+"id"
+:
+"1731291206388977735"
+"url"
+:
+"https://www.tiktok.com/shop/pdp/soft-funny-throw-blanket-cozy-fleece-for-home-movie-decor/1731291206388977735"
+"sold"
+:
+3000
+"brand"
+:
+"3.0K sold"
+"price"
+:
+14.39
+"title"
+:
+"Soft Funny Throw Blanket Horror Icons Flannel Fleece - Cozy Fuzzy Plush Comfy All-Season Sofa Bedroom Dorm Couch Office Car Travel Home Bedding,Comfortable Movie Decor Blanket Men Women Boys Girls Halloween Birthday Fan Gifts"
+"rating"
+:
+4.8
+"section"
+:
+"Halloween Pumpkin Night Light, Halloween Decorations Outdoor,Mini LED Pumpkin Lamp with 3 Level Dimmable, Nursery Nightlight for Kids, Silicone Rechargeable Bedside Touch Lamp, for Kids TikTokShopBlackFriday"
+"currency"
+:
+"$"
+"sold_raw"
+:
+"3.0K"
+"free_shipping"
+:
+true
+"original_price"
+:
+23.98
+},
+{
+"id"
+:
+"1729576207882752721"
+"url"
+:
+"https://www.tiktok.com/shop/pdp/40oz-sip-sip-hooray-halloween-tumblers-with-lid-straw-durable-glass/1729576207882752721"
+"sold"
+:
+6100
+"brand"
+:
+"6.1K sold"
+"price"
+:
+18.79
+"title"
+:
+"Sip-Sip Hooray! Halloween Tumbler – Cup with Lid & Straw, Spooky Season Iced Coffee Gift, Halloweentok 2024 Reusable Drinkware Insulated Sports Bottle Travel Water Bottle"
+"rating"
+:
+4.7
+"section"
+:
+"Soft Funny Throw Blanket Horror Icons Flannel Fleece - Cozy Fuzzy Plush Comfy All-Season Sofa Bedroom Dorm Couch Office Car Travel Home Bedding,Comfortable Movie Decor

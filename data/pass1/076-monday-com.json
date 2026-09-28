@@ -1,0 +1,201 @@
+{
+  "app": "Monday.com",
+  "number": 76,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:19:27.507557+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.monday.com\",\n    \"https://developer.monday.com/api/docs\",\n    \"https://developer.monday.com/api/docs/authentication\",\n    \"https://developer.monday.com/apps/docs/get-started\",\n    \"https://developer.monday.com/apps/docs/create-an-app\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.monday.com",
+    "https://developer.monday.com/api/docs",
+    "https://developer.monday.com/api/docs/authentication",
+    "https://developer.monday.com/apps/docs/get-started",
+    "https://developer.monday.com/apps/docs/create-an-app",
+    "https://docs.monday.com/",
+    "https://developers.monday.com/",
+    "https://api.monday.com/",
+    "https://monday.com/docs",
+    "https://monday.com/developers",
+    "https://monday.com/api",
+    "https://monday.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.monday.com/api-reference/reference/webhooks",
+    "https://developer.monday.com/api-reference/docs/basics",
+    "https://support.monday.com/hc/en-us/articles/11065311570066-Get-started-with-AI-workflows",
+    "https://developer.monday.com/api-reference/docs/authentication",
+    "https://developer.monday.com/apps/docs/oauth",
+    "https://developer.monday.com/apps/docs/choosing-auth",
+    "https://developer.monday.com/apps/docs/api-reference",
+    "https://developer.monday.com/api-reference/docs/get-help",
+    "https://developer.monday.com/apps/docs/plans-and-pricing",
+    "https://monday.com/sales/contact-us",
+    "https://monday.com/sales/contact-us?from=footer",
+    "https://monday.com/sales/contact-us?from=header&source=Website%20-%20Contact%20Sales",
+    "https://monday.com/help",
+    "https://monday.com/pricing"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.monday.com/",
+      "reason": "page too thin (37 chars)"
+    },
+    {
+      "requested_url": "https://support.monday.com/hc/en-us/articles/11065311570066-Get-started-with-AI-workflows",
+      "reason": "HTTP 403"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.monday.com",
+      "requested_url": "https://developer.monday.com",
+      "status": 200,
+      "title": "monday.com Developer Documentation",
+      "chars": 4157,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/",
+      "requested_url": "https://developer.monday.com/api/docs",
+      "status": 200,
+      "title": "monday.com Developer Documentation",
+      "chars": 4157,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/get-started",
+      "requested_url": "https://developer.monday.com/apps/docs/get-started",
+      "status": 200,
+      "title": "Get started",
+      "chars": 4990,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/create-an-app",
+      "requested_url": "https://developer.monday.com/apps/docs/create-an-app",
+      "status": 200,
+      "title": "Create an app",
+      "chars": 2700,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://monday.com/",
+      "requested_url": "https://api.monday.com/",
+      "status": 200,
+      "title": "The AI Work Platform for People & Agents | monday.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/reference/webhooks",
+      "requested_url": "https://developer.monday.com/api-reference/reference/webhooks",
+      "status": 200,
+      "title": "Webhooks",
+      "chars": 4994,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "requested_url": "https://developer.monday.com/api-reference/docs/basics",
+      "status": 200,
+      "title": "The basics",
+      "chars": 2126,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "requested_url": "https://developer.monday.com/api-reference/docs/authentication",
+      "status": 200,
+      "title": "Authentication",
+      "chars": 2430,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/oauth",
+      "requested_url": "https://developer.monday.com/apps/docs/oauth",
+      "status": 200,
+      "title": "OAuth and Permissions",
+      "chars": 4990,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Monday.com provides a GraphQL platform API and OAuth2/personal API token authentication for building work management integrations.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The API supports personal V2 API tokens passed in the Authorization header as well as OAuth 2.0 / OAuth 2.1 for apps.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create a free developer account to get an API token and start testing.\"\n  },\n  \"api_surface\": {\n    \"rest\": false,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"NodeJS\",\n      \"Python\"\n    ],\n    \"notes\": \"The platform API is built with GraphQL and supports webhooks and official SDKs for NodeJS and Python.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Provides a hosted MCP url and developer MCP to connect agents and IDEs.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are readily available via a free developer account, and the platform API is thoroughly documented with GraphQL, SDKs, and webhook support.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.monday.com\",\n      \"claim\": \"Mentions native MCP and hosted MCP URL, Model/Agents API, Platform API, and App framework.\"\n    },\n    {\n      \"url\": \"https://developer.monday.com/api-reference/docs/authentication\",\n      \"claim\": \"Describes personal V2 API tokens and passing them in the Authorization header.\"\n    },\n    {\n      \"url\": \"https://developer.monday.com/api-reference/docs/basics\",\n      \"claim\": \"States the platform API is built with GraphQL and users can create a free developer account.\"\n    },\n    {\n      \"url\": \"https://developer.monday.com/apps/docs/oauth\",\n      \"claim\": \"Describes OAuth 2.0 and OAuth 2.1 support and scopes.\"\n    },\n    {\n      \"url\": \"https://developer.monday.com/api-reference/reference/webhooks\",\n      \"claim\": \"Describes webhook configuration and event subscriptions.\"\n    },\n    {\n      \"url\": \"https://developer.monday.com/apps/docs/get-started\",\n      \"claim\": \"Details official SDKs for NodeJS and Python and storage/CLI capabilities.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://developer.monday.com",
+    "one_liner": "Monday.com provides a GraphQL platform API and OAuth2/personal API token authentication for building work management integrations.",
+    "auth": {
+      "method": "api_key",
+      "notes": "The API supports personal V2 API tokens passed in the Authorization header as well as OAuth 2.0 / OAuth 2.1 for apps."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create a free developer account to get an API token and start testing."
+    },
+    "api_surface": {
+      "rest": false,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": [
+        "NodeJS",
+        "Python"
+      ],
+      "notes": "The platform API is built with GraphQL and supports webhooks and official SDKs for NodeJS and Python."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Provides a hosted MCP url and developer MCP to connect agents and IDEs."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are readily available via a free developer account, and the platform API is thoroughly documented with GraphQL, SDKs, and webhook support."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.monday.com",
+        "claim": "Mentions native MCP and hosted MCP URL, Model/Agents API, Platform API, and App framework.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/authentication",
+        "claim": "Describes personal V2 API tokens and passing them in the Authorization header.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/basics",
+        "claim": "States the platform API is built with GraphQL and users can create a free developer account.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.monday.com/apps/docs/oauth",
+        "claim": "Describes OAuth 2.0 and OAuth 2.1 support and scopes.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/reference/webhooks",
+        "claim": "Describes webhook configuration and event subscriptions.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.monday.com/apps/docs/get-started",
+        "claim": "Details official SDKs for NodeJS and Python and storage/CLI capabilities.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:19:45.827195+00:00"
+}

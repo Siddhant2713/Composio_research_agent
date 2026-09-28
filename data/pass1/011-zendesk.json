@@ -1,0 +1,189 @@
+{
+  "app": "Zendesk",
+  "number": 11,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:06:20.711978+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.zendesk.com\",\n    \"https://developer.zendesk.com/api-reference\",\n    \"https://developer.zendesk.com/documentation\",\n    \"https://support.zendesk.com\",\n    \"https://www.zendesk.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://zendesk.com",
+    "https://developer.zendesk.com",
+    "https://developer.zendesk.com/api-reference",
+    "https://developer.zendesk.com/documentation",
+    "https://support.zendesk.com",
+    "https://www.zendesk.com",
+    "https://docs.zendesk.com/",
+    "https://developers.zendesk.com/",
+    "https://api.zendesk.com/",
+    "https://zendesk.com/docs",
+    "https://zendesk.com/developers",
+    "https://zendesk.com/api",
+    "https://zendesk.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.zendesk.com/in/partner/",
+    "https://www.zendesk.com/in/pricing/",
+    "https://www.zendesk.com/in/contact/",
+    "https://www.zendesk.com/in/register/",
+    "https://www.zendesk.com/in/marketplace/",
+    "https://www.zendesk.com/in/service/contact-center/",
+    "https://developer.zendesk.com/documentation/authentication/",
+    "https://developer.zendesk.com/api-reference/widget-messaging/web/core/",
+    "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+    "https://developer.zendesk.com/documentation/apps/getting-started/test-drive-the-apps-framework/",
+    "https://developer.zendesk.com/documentation/webhooks/",
+    "https://developer.zendesk.com/api-reference/webhooks/introduction/",
+    "https://developer.zendesk.com/api-reference/sales-crm/introduction/",
+    "https://developer.zendesk.com/api-reference/sales-crm/sync/introduction/",
+    "https://developer.zendesk.com/api-reference/sales-crm/firehose/overview/",
+    "https://developer.zendesk.com/api-reference/widget-messaging/introduction/",
+    "https://developer.zendesk.com/api-reference/sales-crm/search/introduction/",
+    "https://www.zendesk.com/partner/",
+    "https://www.zendesk.com/pricing/",
+    "https://www.zendesk.com/contact/",
+    "https://www.zendesk.com/register/",
+    "https://www.zendesk.com/marketplace/",
+    "https://www.zendesk.com/service/contact-center/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://support.zendesk.com",
+      "reason": "page too thin (31 chars)"
+    },
+    {
+      "requested_url": "https://docs.zendesk.com/",
+      "reason": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+    },
+    {
+      "requested_url": "https://developers.zendesk.com/",
+      "reason": "HTTP 403"
+    },
+    {
+      "requested_url": "https://www.zendesk.com/in/register/",
+      "reason": "HTTP 403"
+    },
+    {
+      "requested_url": "https://www.zendesk.com/in/marketplace/",
+      "reason": "HTTP 403"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.zendesk.com/in/#georedirect",
+      "requested_url": "https://zendesk.com",
+      "status": 200,
+      "title": "Transform Customer & Employee Service with AI Agents | Zendesk India",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/",
+      "requested_url": "https://developer.zendesk.com",
+      "status": 200,
+      "title": "Documentation Home | Zendesk Developer Docs",
+      "chars": 3622,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.zendesk.com/api-reference/",
+      "requested_url": "https://developer.zendesk.com/api-reference",
+      "status": 200,
+      "title": "API Reference Home | Zendesk Developer Docs",
+      "chars": 2654,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zendesk.com",
+      "requested_url": "https://www.zendesk.com",
+      "status": 200,
+      "title": "AI-Powered Customer Service Platform | Zendesk",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zendesk.com/in/partner/",
+      "requested_url": "https://www.zendesk.com/in/partner/",
+      "status": 200,
+      "title": "Partner with Zendesk | Sell, deploy and build customised solutions | Zendesk India",
+      "chars": 3059,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zendesk.com/in/pricing/",
+      "requested_url": "https://www.zendesk.com/in/pricing/",
+      "status": 200,
+      "title": "Zendesk Pricing Plans | Starting from \u00a319/month | Zendesk India",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zendesk.com/in/contact/",
+      "requested_url": "https://www.zendesk.com/in/contact/",
+      "status": 200,
+      "title": "Contact us | Zendesk India",
+      "chars": 2462,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Zendesk provides developer APIs organized around REST principles for ticketing, help center, live chat, voice, sales CRM, and customer data capabilities.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The fetched documentation mentions that APIs have resource-oriented URLs and accept form-encoded request bodies with JSON-encoded responses, but does not explicitly specify the developer authentication credential type (such as API key or OAuth2) in the text.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Page 2 states developers can try out the Sunshine Platform with a free, 14-day trial account and create an account.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Web\",\n      \"Android\",\n      \"iOS\",\n      \"Unity\"\n    ],\n    \"notes\": \"Zendesk APIs are organized around REST principles, accepting form-encoded request bodies and returning JSON-encoded responses. SDKs are provided for Web, Android, iOS, and Unity.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"The fetched documentation does not mention Model Context Protocol.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"A trial account can be created via self-serve and extensive REST APIs and SDKs are documented, but authentication mechanisms for third-party developers are not fully detailed in the fetched text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.zendesk.com/documentation/\",\n      \"claim\": \"Try out the Sunshine Platform with a free, 14-day trial account and use Web, Android, iOS, and Unity SDKs.\"\n    },\n    {\n      \"url\": \"https://developer.zendesk.com/documentation/\",\n      \"claim\": \"Zendesk's APIs are organized around REST principles, accept form-encoded request bodies, and return JSON-encoded responses.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://zendesk.com",
+    "one_liner": "Zendesk provides developer APIs organized around REST principles for ticketing, help center, live chat, voice, sales CRM, and customer data capabilities.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The fetched documentation mentions that APIs have resource-oriented URLs and accept form-encoded request bodies with JSON-encoded responses, but does not explicitly specify the developer authentication credential type (such as API key or OAuth2) in the text."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Page 2 states developers can try out the Sunshine Platform with a free, 14-day trial account and create an account."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Web",
+        "Android",
+        "iOS",
+        "Unity"
+      ],
+      "notes": "Zendesk APIs are organized around REST principles, accepting form-encoded request bodies and returning JSON-encoded responses. SDKs are provided for Web, Android, iOS, and Unity."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "The fetched documentation does not mention Model Context Protocol."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "A trial account can be created via self-serve and extensive REST APIs and SDKs are documented, but authentication mechanisms for third-party developers are not fully detailed in the fetched text."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.zendesk.com/documentation/",
+        "claim": "Try out the Sunshine Platform with a free, 14-day trial account and use Web, Android, iOS, and Unity SDKs.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.zendesk.com/documentation/",
+        "claim": "Zendesk's APIs are organized around REST principles, accept form-encoded request bodies, and return JSON-encoded responses.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-27T16:06:36.554755+00:00"
+}

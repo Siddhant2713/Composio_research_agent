@@ -1,0 +1,587 @@
+===== https://discord.com
+TITLE: Discord - Group Chat That’s All Fun & Games
+ACCESSED: 2026-09-27
+
+Group chat that’s all fun & games
+Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.
+MAKE YOUR GROUP CHATS MORE FUN
+Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.
+stream like you’re in the same room
+High quality and low latency streaming makes it feel like you're hanging out on the couch with friends while playing a game, watching shows, looking at photos, or idk doing homework or something.
+Hop in when you're free, no need to call
+Easily hop in and out of voice or text chats without having to call or invite anyone, so your party chat lasts before, during, and after your game session.
+talk
+play
+chat
+hang out
+talk
+play
+chat
+hang out
+talk
+play
+chat
+hang out
+talk
+play
+chat
+hang out
+See who's around to chill
+See who's around, playing games, or just hanging out. For supported games, you can see what modes or characters your friends are playing and directly join up.
+always have something to do together
+Watch videos, play built-in games, listen to music, or just scroll together and spam memes. Seamlessly text, call, video chat, and play games, all in one group chat.
+wherever YOU GAME, HANG OUT HERE
+On your PC, phone, or console, you can still hang out on Discord. Easily switch between devices and use tools to manage multiple group chats with friends.
+
+===== https://docs.discord.com/developers/intro
+TITLE: Discord Developer Platform - Documentation - Discord
+ACCESSED: 2026-09-27
+
+What do you want to build?
+Bots & Apps
+Build automated apps, commands, and integrations that run inside Discord servers.
+Activities
+Create multiplayer games and social experiences that launch directly inside Discord.
+Social Layer for Games
+Add rich presence, voice chat, and social features to your game across all platforms.
+New to Discord development?
+Overview of Apps
+Understand what Discord apps are, the different types, and how to get started.
+Build Your First App
+Follow a step-by-step guide to build and run your first Discord bot.
+Resources
+Join the Developer Discord
+Get support, API announcements, and participate in developer events.
+Report Issues on GitHub
+Report issues with the Discord API and SDKs.
+Visit the Developer Help Center
+Find articles, FAQs, and reach out to Discord’s developer support team.
+Was this page helpful?
+Yes
+No
+
+===== https://discord.com/developers
+TITLE: Discord for Developers
+ACCESSED: 2026-09-27
+
+Discord for Game Developers
+Tools, integrations, and platform capabilities for game developers to tap into the power of Discord.
+BUILD ON THE SOCIAL LAYER OF GAMES
+Players already spend time together on Discord before, during, and after they play. Discord is where the social layer of games lives today and our developer platform lets you tap into that time to drive more players, more playtime, and more revenue for your game.
+Connect With Our Team
+Explore the Platform
+Reach into one of the world’s largest and most engaged gaming audiences
+90M+
+Daily Active Users
+Reach players who gather on Discord every day.
+Source: ⓘ
+Discord Internal Data, as of Q4 2025
+90%+
+Play Video Games
+Meet players where they connect, before, during, and after play.
+Source: ⓘ
+Video game play according to 2025 Discord user survey data
+~40%
+Start a game within an hour
+Of watching someone stream that game (players on PC).
+Source: ⓘ
+PC players averaged across all months of 2025
+How Games Use Discord to Drive Growth
+Connect your game to Discord
+Social Layer integration
+links in-game accounts with Discord accounts, so players stay connected beyond the session.
+Stay top of mind beyond gameplay
+That connection can keep games present in conversations on Discord, where players decide what to play next.
+Turn social activity into outcomes
+With your game connected to Discord, you can drive longer playtime, reach new players, and unlock new revenue opportunities.
+Valuable individually. Incredibly powerful together.
+Strong communities are incredibly valuable, but servers are not the whole story. Take advantage of Discord's entire platform to win more players, more playtime, and more revenue.
+Connect Your Game
+Integration and Account Linking
+Activate Account Linking, enabling players to connect their game and Discord accounts and unlock richer cross-platform social experiences to support greater engagement, retention, and reach.
+Learn More
+Monetize Beyond the Game
+Social Commerce
+Sell in-game items directly through Discord, in the social spaces where players and their friends already spend time together, expanding your potential buyer pool and helping to drive incremental revenue.
+Learn More
+Expand Your Community
+Official Game Communities
+Create and manage your game’s official server, where players can gather, coordinate, and stay connected between sessions. Extend your game with apps that support coordination, automation, and community-driven experiences.
+Learn More
+Reach New Players
+Ads on Discord
+Run rewarded, opt-in ads on Discord that turn gameplay into discovery. Players complete in-game objectives and share progress socially, helping new players find your game through trusted, friend-led context.
+Learn More
+Games Unlocking Discord’s Full Potential
+See how game teams are building beyond the server and using the full breadth of Discord’s developer solutions to gain a competitive edge.
+Arknights: Endfield
+Arknights: Endfield
+See how Arknights: Endfield's Game Stats Widget lets players showcase their identity and Operator love, boosting engagement across their community.
+Learn more
+Wuthering Waves
+Wuthering Waves
+Kuro Games was an early adopter of the Game Stats Widget, which displays game stats like favorite characters and game progression directly on a player’s Discord Profile Board.
+Learn more
+Delta Force Mobile
+Delta Force Mobile
+Delta Force's mobile Account Linking replaced clunky browser logins with single-tap authentication, fueling squad play and deeper community engagement.
+Learn more
+Arena Breakout
+Arena Breakout
+How Tencent integrated the Discord Social SDK to deepen squad connections, re-engage players, and grow a thriving community around one of mobile gaming's most demanding games.
+Learn more
+Marvel Rivals
+Marvel Rivals
+With Social Commerce, Marvel Rivals met players where they were already hanging out, making discovery, buying, and gifting part of the social experience.
+Learn more
+Battlefield 6
+Battlefield 6
+EA achieved a record-breaking launch for Battlefield 6 by building a holistic Discord strategy, driving a 29% boost in retention and 4M Quest ad completions.
+Learn more
+Delta Force
+Delta Force
+Tencent Games revived the iconic Delta Force IP by using Discord as a massive feedback engine, growing a community of 800k fans before launch day.
+Learn more
+The Messenger / Sea of Stars
+The Messenger / Sea of Stars
+See how Sabotage Studios used ARGs and custom automation to turn their Discord into a living game world, keeping 16k fans engaged between major releases.
+Learn more
+Predecessor
+Predecessor
+By using Discord Social SDK to power its social layer, Omeda Studios launched in-game voice and friend lists in months, fueling player referrals and organic growth.
+Learn more
+Pax Dei
+Pax Dei
+Mainframe Industries integrated Discord Social SDK to power Pax Dei’s social stack, leading to a 39% increase in gameplay days for players who linked accounts.
+Learn more
+Rust
+Rust
+Facepunch integrated Discord-powered social features into Rust, bringing s
+
+===== https://discord.com/licenses
+TITLE: Licenses | Discord
+ACCESSED: 2026-09-27
+
+Licenses | Discord
+Licenses
+These are the licenses for the libraries we use:
+Licenses for OSS used in Discord are reproduced below
+Software used in Discord for Windows, Mac, Web and iOS
+THE FOLLOWING SETS FORTH ATTRIBUTION NOTICES FOR THIRD PARTY SOFTWARE THAT MAY BE CONTAINED IN PORTIONS OF THE DISCORD PRODUCT.
+The following software may be included in this product: @adyen/adyen-web, @alloc/types, @alwaysmeticulous/recorder-loader, @babel/runtime, @babel/runtime-corejs3, @discord/arborium-rt-wasm, @discord/intl, @discord/intl-ast, @discord/markdown-react, @discord/markdown-wasm, @discordapp/libdave, @discordapp/twemoji, @emotion/memoize, @emotion/weak-memoize, @fastify/otel, @floating-ui/react-dom, @floating-ui/utils, @formatjs/ecma402-abstract, @formatjs/fast-memoize, @formatjs/intl-durationformat, @formatjs/intl-listformat, @formatjs/intl-localematcher, @icons/material, @incodetech/core, @incodetech/web, @internationalized/date, @internationalized/number, @internationalized/string, @intrnl/xxhash64, @juggle/resize-observer, @openpgp/unbzip2-stream, @opentelemetry/api, @opentelemetry/api-logs, @opentelemetry/core, @opentelemetry/instrumentation, @opentelemetry/instrumentation-amqplib, @opentelemetry/instrumentation-connect, @opentelemetry/instrumentation-dataloader, @opentelemetry/instrumentation-fs, @opentelemetry/instrumentation-generic-pool, @opentelemetry/instrumentation-graphql, @opentelemetry/instrumentation-hapi, @opentelemetry/instrumentation-http, @opentelemetry/instrumentation-ioredis, @opentelemetry/instrumentation-kafkajs, @opentelemetry/instrumentation-knex, @opentelemetry/instrumentation-koa, @opentelemetry/instrumentation-lru-memoizer, @opentelemetry/instrumentation-mongodb, @opentelemetry/instrumentation-mongoose, @opentelemetry/instrumentation-mysql, @opentelemetry/instrumentation-mysql2, @opentelemetry/instrumentation-pg, @opentelemetry/instrumentation-redis, @opentelemetry/instrumentation-tedious, @opentelemetry/redis-common, @opentelemetry/resources, @opentelemetry/sdk-trace-base, @opentelemetry/semantic-conventions, @opentelemetry/sql-common, @prisma/instrumentation, @protobuf-ts/runtime, @react-aria/live-announcer, @react-dnd/invariant, @react-dnd/shallowequal, @react-spring/animated, @react-spring/core, @react-spring/shared, @react-spring/web, @remix-run/router, @rive-app/canvas, @rive-app/react-canvas, @sentry-internal/browser-utils, @sentry-internal/feedback, @sentry-internal/replay, @sentry-internal/replay-canvas, @sentry/browser, @sentry/core, @sentry/electron, @sentry/node, @sentry/node-core, @sentry/opentelemetry, @sentry/utils, @stripe/react-stripe-js, @stripe/stripe-js, @tanstack/devtools, @tanstack/devtools-event-client, @tanstack/devtools-ui, @tanstack/form-core, @tanstack/react-router, @tanstack/react-store, @tanstack/router-core, @zxing/library, ajv, animated, ansi-to-html, arch, aria-query, array.prototype.map, asn1, assert-plus, asynckit, audiobuffer-to-wav, available-typed-arrays, aws-sign2, aws4, balanced-match, base16, base64-js, bcp47, bcrypt-pbkdf, big-integer, bintrees, brace-expansion, braintree-web, buffer, buffer-crc32, call-bind, call-bind-apply-helpers, call-bound, caseless, chroma-js, chrono-node, classnames, clsx, color, color-convert, color-name, color-string, colorjs.io, combined-stream, combokeys, component-emitter, confetti-cannon, cookie, core-js, core-js-pure, core-util-is, create-react-class, date-fns, dayjs, debug, decimal.js, decimal.js-light, decode-uri-component, deep-equal, define-data-property, define-properties, delayed-stream, dependency-graph, diff, direction, double-ended-queue, dunder-proto, ecc-jsbn, electron-log, element-is-visible, emoji-picker-react, emoji-regex-xs, entities, es-abstract, es-array-method-boxes-properly, es-define-property, es-errors, es-get-iterator, es-object-atoms, es-set-tostringtag, es-to-primitive, eventemitter3, events, extend, extsprintf, fast-deep-equal, fast-json-stable-stringify, fast-safe-stringify, fast-text-encoding, favico.js, fd-slicer, fflate, file-saver, file-type-checker, fluids, focus-layers, for-each, forever-agent, form-data, forwarded-parse, function-bind, fuzzysearch, get-intrinsic, get-proto, gifenc, gifuct-js, goober, gopd, har-schema, har-validator, has-property-descriptors, has-symbols, has-tostringtag, hasown, highlight.js, history, hls.js, hoist-non-react-statics, http-signature, humanize, ical-generator, ieee754, immer, import-in-the-middle, inherits, internal-slot, intersection-observer, intl, intl-messageformat, intl-messageformat-parser, invariant, ip-regex, is-arguments, is-arrayish, is-callable, is-date-object, is-generator-function, is-hotkey, is-map, is-plain-object, is-regex, is-set, is-string, is-symbol, is-typed-array, is-typedarray, isarray, isstream, iterate-iterator, iterate-value, joi-browser, js-binary-schema-parser, jsbn, json-schema, json-schema-traverse, json-stringify-safe, jsprim, keycode, lodash, lodash.curry, lottie-web, lru-cache, markdown-it-dollarmath, match-sorte
+
+===== https://discord.com/developers/social-sdk
+TITLE: Discord Social SDK
+ACCESSED: 2026-09-27
+
+INTEGRATE the DISCORD ADVANTAGE
+Integrate the Discord Social SDK to help increase playtimes and keep players coming back for more.
+READY TO KICKSTART YOUR DISCORD STRATEGY?
+Start your integration with our “Getting Started” guides, design guidelines, and code samples, or reach out to our team to work directly with Discord on your next project.
+Get Started
+Connect With Our Team
+ACTIVATE ACCOUNT LINKING TO MAXIMIZE PLAYER RETENTION AND ENGAGEMENT
+34%
+Increased median retention compared to unlinked players
+Source: ⓘ
+Statistics based on a causal study focused on outcomes after social layer integration for 15+ games launched since December 2024
+16%
+Median session length increases for linked players
+Statistics based on a causal study focused on outcomes after social layer integration for 15+ games launched since December 2024
+Source: ⓘ
+25%
+Increased median game launch days for linked players
+Source: ⓘ
+Statistics based on a causal study focused on outcomes after social layer integration for 15+ games launched since December 2024
+YOUR GAME'S SOCIAL, SUPERCHARGED
+Seamlessly integrate Discord-powered social features directly into your game so that players can connect with friends, share progress, and jump into your game with ease.
+UNLEASH THE POWER OF DISCORD IN YOUR GAME
+With 90M+ daily active users–over 90% of them playing video games–Discord is already where massive communities of gamers connect across desktop, console, and mobile.
+Source 1: ⓘ
+Discord Internal Data, as of Q4 2025
+Source 2: ⓘ
+Video game play according to 2025 Discord user survey data
+DON’T LOSE YOUR MOST VALUABLE PLAYERS TO DOWNTIME
+Tap into Discord's social layer to give players powerful social experiences that keep them engaged—connecting teammates with their guilds, squads, and crews even when playtime's over.
+Maximize Discord's Developer Platform Potential
+Unlock your integration's full potential and supercharge the entire Discord developer platform across Communities, Quests, and new commerce opportunities.
+Access Discord's Powerful Chat Functionality
+Already integrated Discord-powered features like rich presence, account linking, and friends lists? Keep players connected to eligible games across desktop, mobile, and console with Discord’s voice and text chat functionality at no cost. Submit your game to fully unlock these powerful communication features after confirming access criteria.
+Read More
+Level-up Social Play for Your Mobile Game
+Integrate Discord-powered features into your mobile game to turn solo players into social ones by giving them easier access to the people they play with most. Stay connected with your most valuable players through account linking, bridging Discord users in your official community server with real in-game activity.
+Learn More
+Devs on Discord
+Delve into developer stories to learn about their Discord integrations, including key learnings and advice for game developers considering integrating the Discord advantage for themselves.
+Devs on Discord with Omeda Studios | Predecessor
+Devs on Discord with Digital Bandidos | Town of Salem 2
+Devs on Discord with Mainframe Industries | Pax Dei
+Devs on Discord with Facepunch Studios | Rust
+”
+Pax Dei is at heart a social sandbox. Our collaboration to put Discord at the heart of our MMO makes that deep social vision a reality, offering a world where you can find your friends and deepen those connections both in and outside our game.
+Thor Gunnarsson
+Co-founder & CEO, Mainframe Industries
+”
+The Discord Social SDK has added a dimension to communication in Rust. Players often rely on communication and we’re seeing a growing number of friends teaming up and getting together to play as squads.
+Ashley Cook
+Marketing Manager, Facepunch Studios
+”
+Adding the Discord Social SDK to Predecessor has been a huge win for both our players and the business. When Discord first walked us through what the SDK could do, it was an easy yes. It solved a bunch of things we were missing like built-in voice and text chat and gave us a chance to offer something our players already love and use daily, right inside our game.
+Robbie Singh
+CEO, Omeda Studios
+See it in action
+See how top studios are strategically using Discord to drive player engagement and growth for their games.
+Arknights: Endfield
+Arknights: Endfield
+See how Arknights: Endfield's Game Stats Widget lets players showcase their identity and Operator love, boosting engagement across their community.
+Learn more
+Wuthering Waves
+Wuthering Waves
+Kuro Games was an early adopter of the Game Stats Widget, which displays game stats like favorite characters and game progression directly on a player’s Discord Profile Board.
+Learn more
+Delta Force Mobile
+Delta Force Mobile
+Delta Force's mobile Account Linking replaced clunky browser logins with single-tap authentication, fueling squad play and deeper community engagement.
+Learn more
+Arena Breakout
+Arena Breakout
+How Tencent integrated the Discord Social SDK to deepen squad connections, re-engage players,
+
+===== https://docs.discord.com/developers/platform/oauth2-and-permissions
+TITLE: OAuth2 and Permissions - Documentation - Discord
+ACCESSED: 2026-09-27
+
+Discord uses
+OAuth2
+as the standard authorization framework for granting apps access to users and servers. Understanding OAuth2 and the permissions model is essential for any Discord app.
+Two Ways to Authenticate
+Bot Token
+When you create a bot user in the Developer Portal, Discord generates a
+bot token
+. Your code uses this token to authenticate as the bot user, a dedicated application account separate from a regular user account.
+Bot tokens:
+Authenticate as the bot user, not on behalf of any person
+Are used for Gateway connections and most REST API calls
+Grant the permissions the bot was given when added to a server
+Should be treated like passwords and never exposed publicly
+OAuth2 User Token
+When you need to act on behalf of a user, you use OAuth2 to get a user access token. The user logs in with Discord and authorizes your app for specific scopes.
+User tokens:
+Let your app read or write data on behalf of the user as authorized by requested scopes
+Are scoped, so you only get access to what the user grants
+Are short-lived and must be refreshed
+Should be treated like passwords and never exposed publicly
+Scopes
+Scopes define what your app is allowed to do. They are requested during the OAuth2 authorization flow and must be declared in the Developer Portal.
+Common scopes include:
+Scope
+What It Grants
+bot
+Adds your bot to a guild
+identify
+Read the user’s basic profile (e.g., id, username, avatar)
+guilds
+List the guilds the user belongs to
+guilds.join
+Add the user to a guild
+email
+Read the user’s email address
+connections
+View the user’s linked accounts (Twitch, Steam, etc.)
+applications.commands
+Register slash commands in a guild
+For a complete list, see the
+OAuth2 scopes reference
+.
+Permissions
+Permissions control what a
+bot
+can do in a specific server or channel. When a bot is added to a server via OAuth2, the server admin grants it a set of permissions.
+Permissions are stored as a bitfield. They can be:
+Guild-level:
+Apply across the entire server
+Channel-level:
+Overrides that apply to specific channels
+Your app should request only the permissions it needs. Requesting excessive permissions reduces trust with users. Your app should request only the permissions it needs as described in our
+Developer Policy
+.
+Further Reading
+OAuth2 Reference
+Full OAuth2 flow documentation, scopes, and endpoint details.
+Permissions Reference
+Complete permissions bitfield reference and how overrides work.
+Was this page helpful?
+Yes
+No
+
+===== https://docs.discord.com/developers/reference
+TITLE: API Reference - Documentation - Discord
+ACCESSED: 2026-09-27
+
+Base URL
+https://discord.com/api
+API Versioning
+Some API and Gateway versions are now non-functioning, and are labeled as discontinued in the table below for posterity. Trying to use these versions will fail and return 400 Bad Request.
+Discord exposes different versions of our API
+.
+You should specify which version to use by including it in the request path like
+https://discord.com/api/v{version_number}
+. Omitting the version number from the route will route requests to the current default version (marked below). You can find the change log for the newest API version
+here
+.
+API Versions
+Version
+Status
+Default
+10
+Available
+9
+Available
+8
+Deprecated
+7
+Deprecated
+6
+Deprecated
+5
+Discontinued
+4
+Discontinued
+3
+Discontinued
+Error Messages
+Starting in API v8, we’ve improved error formatting in form error responses. The response will tell you which JSON key contains the error, the error code, and a human readable error message. We will be frequently adding new error messages, so a complete list of errors is not feasible and would be almost instantly out of date. Here are some examples instead:
+Array Error
+{
+"code"
+:
+50035
+,
+"errors"
+: {
+"activities"
+: {
+"0"
+: {
+"platform"
+: {
+"_errors"
+: [
+{
+"code"
+:
+"BASE_TYPE_CHOICES"
+,
+"message"
+:
+"Value must be one of ('desktop', 'android', 'ios')."
+}
+]
+},
+"type"
+: {
+"_errors"
+: [
+{
+"code"
+:
+"BASE_TYPE_CHOICES"
+,
+"message"
+:
+"Value must be one of (0, 1, 2, 3, 4, 5)."
+}
+]
+}
+}
+}
+},
+"message"
+:
+"Invalid Form Body"
+}
+Object Error
+{
+"code"
+:
+50035
+,
+"errors"
+: {
+"access_token"
+: {
+"_errors"
+: [
+{
+"code"
+:
+"BASE_TYPE_REQUIRED"
+,
+"message"
+:
+"This field is required"
+}
+]
+}
+},
+"message"
+:
+"Invalid Form Body"
+}
+Request Error
+{
+"code"
+:
+50035
+,
+"message"
+:
+"Invalid Form Body"
+,
+"errors"
+: {
+"_errors"
+: [
+{
+"code"
+:
+"APPLICATION_COMMAND_TOO_LARGE"
+,
+"message"
+:
+"Command exceeds maximum size (8000)"
+}
+]
+}
+}
+Authentication
+Authenticating with the Discord API can be done in one of three ways:
+Using a bot token found on the Bot page within your app’s settings. For more information on bots see
+bots vs user accounts
+.
+Using an OAuth2 bearer token gained through the
+OAuth2 API
+.
+Using
+basic authentication
+with credentials as the client ID and client secret found on the
+OAuth2
+page of your app’s settings in the format
+client_id:client_secret
+as a Base64 encoded string. Only applicable for
+OAuth2 API
+token endpoints.
+For all authentication types, authentication is performed with the
+Authorization
+HTTP header in the format
+Authorization: TOKEN_TYPE TOKEN
+.
+Example Bot Token Authorization Header
+Authorization:
+Bot
+MTk4NjIy[REDACTED]
+Example Bearer Token Authorization Header
+Authorization:
+Bearer
+CZhtkLDpNYXgPH9Ml6shqh2OwykChw
+Example Basic Token Authorization Header
+Authorization:
+Basic
+MTk4NjIyNDgzNDcxOTI1MjQ4OlEzS052N0NSRW5DYS1nS0xMajFEOGV1ZFl1SmZ1Nm96
+Encryption
+All HTTP-layer services and protocols (e.g. HTTP, WebSocket) within the Discord API are using TLS 1.2.
+Snowflakes
+Discord utilizes Twitter’s
+snowflake
+format for uniquely identifiable descriptors (IDs). These IDs are guaranteed to be unique across all of Discord, except in some unique scenarios in which child objects share their parent’s ID. Because Snowflake IDs are up to 64 bits in size (e.g. a uint64), they are always returned as strings in the HTTP API to prevent integer overflows in some languages. See
+Gateway ETF/JSON
+for more information regarding Gateway encoding.
+Snowflake ID Broken Down in Binary
+111111111111111111111111111111111111111111 11111 11111 111111111111
+64                                         22    17    12          0
+Snowflake ID Format Structure (Left to Right)
+Field
+Bits
+Number of bits
+Description
+Retrieval
+Timestamp
+63 to 22
+42 bits
+Milliseconds since Discord Epoch, the first second of 2015 or 1420070400000.
+(snowflake >> 22) + 1420070400000
+Internal worker ID
+21 to 17
+5 bits
+(snowflake & 0x3E0000) >> 17
+Internal process ID
+16 to 12
+5 bits
+(snowflake & 0x1F000) >> 12
+Increment
+11 to 0
+12 bits
+For every ID that is generated on that process, this number is incremented
+snowflake & 0xFFF
+Convert Snowflake to DateTime
+Snowflake IDs in Pagination
+We typically use snowflake IDs in many of our API routes for pagination. The standardized pagination paradigm we utilize is one in which you can specify IDs
+before
+and
+after
+in combination with
+limit
+to retrieve a desired page of results. You will want to refer to the specific endpoint documentation for details.
+It is useful to note that snowflake IDs are just numbers with a timestamp, so when dealing with pagination where you want results from the beginning of time (in Discord Epoch, but
+0
+works here too) or before/after a specific time you can generate a snowflake ID for that time.
+Generating a snowflake ID from a Timestamp Example
+(
+timestamp_ms
+-
+DISCORD_EPOCH
+)
+<<
+22
+ID Serialization
+There are some cases in which our API and Gateway may return IDs in an unexpected format. Internally, Discord stores IDs as integer snow
+
+===== https://docs.discord.com/developers/platform/webhooks
+TITLE: Webhooks - Documentation - Discord
+ACCESSED: 2026-09-27
+
+Discord supports two distinct types of webhooks that work in opposite directions:
+incoming webhooks
+for posting messages into Discord, and
+webhook events
+for receiving notifications from Discord when something happens in your app.
+Incoming Webhooks
+Incoming webhooks are HTTP endpoints tied to a specific Discord channel. You POST a payload to the URL and the message appears in that channel. No bot or persistent connection required. See the
+Webhook Resource
+for the full API reference.
+This makes them ideal for one-way integrations where an external system needs to push data into Discord:
+CI/CD pipelines posting build results or deployment notifications
+Monitoring systems alerting on errors or anomalies
+External apps posting updates (GitHub commits, Jira tickets, form submissions)
+Scheduled digests or reports from cron jobs
+If you need your app to also listen to events or respond to users,
+building a Discord bot
+is the better fit.
+Webhook Events
+Webhook events work in the opposite direction. Discord POSTs to a public URL on your server when specific events occur in your app. Instead of your app polling the API, Discord pushes the notification to you.
+You subscribe to the specific event types you care about through the Developer Portal, and Discord delivers them as signed HTTP POST requests to your endpoint. Your endpoint must validate Discord’s request signatures and acknowledge events promptly.
+Events you can subscribe to include:
+Application authorized or de-authorized by a user
+Entitlement created (a user purchased something from your app)
+Quest enrollment and completion events
+For the full list of subscribable events and setup instructions, see the
+Webhook Events
+documentation.
+Further Reading
+Webhook Resource Reference
+Full API reference for incoming webhook endpoints and objects.
+Webhook Events
+Subscribable event types and how to set up your endpoint to receive them.
+Was this page helpful?
+Yes
+No

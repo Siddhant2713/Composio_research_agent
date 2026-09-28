@@ -1,0 +1,1132 @@
+===== https://shopify.dev/docs
+TITLE: Shopify Dev Docs
+ACCESSED: 2026-09-27
+
+Shopify Dev Docs
+Learn how to build an app, or customize your storefront. Whether you're just getting started, deep in the development process, or ready to distribute and monetize your work, Shopify's docs, dev tools and frameworks make building easy and efficient.
+Apps
+Extend Shopify's core functionality with apps that integrate into Shopify's admin, online store, checkout and more.
+Build your first app
+Storefronts
+Help merchants express their unique brand by building a custom theme or Hydrogen storefront.
+Build a storefront
+Agents
+Build agentic shopping experiences powered by Shopify merchants, from product discovery to checkout.
+Build agents with UCP
+Anchor to Accelerate development with Shopify CLI
+Accelerate development with Shopify CLI
+Initialize new
+apps
+,
+themes
+, and
+headless storefronts
+in an instant with the latest Shopify CLI. A single command installs all the dependencies you need, including the CLI itself, so you can dive straight into development.
+Apps
+Install Shopify CLI globally.
+Navigate to the directory where you want to create your app.
+Run the second command to create a new app. Your app will be added as a new subdirectory.
+Themes
+Install Shopify CLI globally.
+Navigate to the directory where you want to create your theme.
+Run the second command to clone a Shopify starter theme that you can build on top of. Your theme will be created in a new subdirectory.
+Headless storefronts
+Install Shopify CLI globally.
+Navigate to the directory where you want to create your Hydrogen storefront.
+Run the second command to initialize a Hydrogen storefront in a new subdirectory.
+1
+shopify
+app
+init
+1
+shopify
+theme
+init
+1
+shopify
+hydrogen
+init
+1
+npm
+i
+-
+g
+@shopify
+/
+cli
+@latest
+1
+yarn
+global
+add
+@shopify
+/
+cli
+@latest
+1
+pnpm
+add
+-
+g
+@shopify
+/
+cli
+@latest
+npm
+npm i -g @shopify/cli@latest
+yarn
+yarn global add @shopify/cli@latest
+pnpm
+pnpm add -g @shopify/cli@latest
+Anchor to Launch your app or theme
+Launch your app or theme
+When you're ready, submit your app or custom theme so merchants can find, buy, and install it. Review the
+App Store requirements
+and
+Theme Store requirements
+before you submit.
+App Store
+Submit your app so merchants can find and buy it through search or personalized recommendations.
+App Store
+Submit your app so merchants can find and buy it through search or personalized recommendations.
+App Store
+Submit your app so merchants can find and buy it through search or personalized recommendations.
+Theme Store
+Promote and sell your custom theme to merchants building their brands.
+Theme Store
+Promote and sell your custom theme to merchants building their brands.
+Theme Store
+Promote and sell your custom theme to merchants building their brands.
+Anchor to Join a community of builders
+Join a community of builders
+Connect with other developers, stay on top of platform updates, and get answers to your questions across Shopify's developer channels.
+.dev Community
+Q&A and advice from Shopify community experts
+.dev Community
+Q&A and advice from Shopify community experts
+.dev Community
+Q&A and advice from Shopify community experts
+@ShopifyDevs on X
+Product announcements, API updates, tips, and more
+@ShopifyDevs on X
+Product announcements, API updates, tips, and more
+@ShopifyDevs on X
+Product announcements, API updates, tips, and more
+Developer Changelog
+The latest Shopify ecosystem updates
+Developer Changelog
+The latest Shopify ecosystem updates
+Developer Changelog
+The latest Shopify ecosystem updates
+ShopifyDevs YouTube channel
+Tips and insights in dev and design
+ShopifyDevs YouTube channel
+Tips and insights in dev and design
+ShopifyDevs YouTube channel
+Tips and insights in dev and design
+Shopify Partners blog
+Educational resources and product previews
+Shopify Partners blog
+Educational resources and product previews
+Shopify Partners blog
+Educational resources and product previews
+
+===== https://shopify.dev/docs/api
+TITLE: Shopify APIs, libraries, and tools
+ACCESSED: 2026-09-27
+
+Shopify APIs, libraries, and tools
+Reference documentation for Shopify's APIs, libraries, and developer tools, plus the concepts that apply across all of them.
+Authentication
+How authentication works across Shopify's APIs, and which token and header each API uses.
+Authentication
+How authentication works across Shopify's APIs, and which token and header each API uses.
+Authentication
+How authentication works across Shopify's APIs, and which token and header each API uses.
+Core concepts
+Anchor to Know what applies to every API
+Know what applies to every API
+Authentication, versioning, limits, and error handling work in similar ways across Shopify's APIs, though the details can differ from one API to the next. All Shopify APIs are subject to the
+Shopify API License and Terms of
+Use
+Authentication
+covers which token and header each API uses, and
+access scopes
+gate what that token can read and write. Some APIs also require Shopify's approval or a specific
+Shopify
+plan
+API versioning
+explains how Shopify releases a new version each quarter and supports each one for a year. You can find new features, breaking changes, and deprecations in the
+developer changelog
+Limits
+covers input array size, pagination depth, how rate limiting works, and where to find the rate limit figures for each API.
+Response status and error codes
+are shared across APIs, and
+idempotent requests
+let you safely retry a request that might have failed.
+Global IDs
+identify objects in the GraphQL APIs,
+cursor-based pagination
+walks long lists of them, and the
+search query syntax
+filters those lists.
+Dev tools
+Anchor to Set up your development environment
+Set up your development environment
+Shopify's tools generate a project, run it against a store while you work, and deploy it.
+Shopify CLI
+scaffolds apps, themes, and custom storefronts, runs them against a dev store while you work, and packages and releases your app versions.
+Dev stores
+are stores with test data that you build and test against.
+React Router app package
+is Shopify's app package for React Router v7 and later.
+Libraries and templates
+include official and community API libraries for Ruby, Node, PHP, Go, and .NET, plus app templates and sample apps.
+App data and logic
+Anchor to Read and write store data
+Read and write store data
+Your app reads and writes a store's data, runs its own logic on that data inside Shopify, and learns when something changes.
+GraphQL Admin API
+reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin.
+Events
+report object and field-level changes to GraphQL resources with highly configurable payloads, while classic
+webhooks
+notify your app when a store changes.
+Shopify Functions
+run your own logic inside Shopify's backend for discounts, payments, and delivery.
+ShopifyQL
+queries store data with SQL-like syntax and returns typed columns and rows.
+Payments Apps API
+handles payment, capture, refund, and void sessions for payments partners.
+Extensions and UI
+Anchor to Extend every Shopify surface
+Extend every Shopify surface
+Extensions render your app's interface inside Shopify's own surfaces, so it keeps working when Shopify changes the surface underneath it. Each surface has its own extension API.
+App Home
+is the page merchants open your app on. Build it as an embedded page with App Bridge and Polaris, or
+as a UI extension
+with Preact.
+Admin UI extensions
+add actions and blocks to pages in the Shopify admin.
+Checkout UI extensions
+customize the buyer's path to purchase, and
+customer account UI extensions
+customize order status and profile pages.
+POS UI extensions
+add your app to Shopify Point of Sale (POS), for staff selling in person.
+Storefronts
+Anchor to Build custom commerce experiences
+Build custom commerce experiences
+Buyer-facing experiences run on Shopify's storefront APIs, frameworks, and template languages, from a Shopify theme to a storefront you host yourself.
+Storefront API
+provides the commerce primitives for custom storefronts.
+Hydrogen
+is Shopify's React framework built on it, and
+Hydrogen React
+brings its components and hooks to any React app.
+Liquid
+is the template language for Shopify themes, and the
+Ajax API
+adds interactive elements, such as cart updates, without a full page reload.
+Storefront Web Components
+bring Shopify-powered commerce to any website with HTML, and
+standard storefront events and actions
+give a storefront and the apps running on it a shared vocabulary.
+Customer Account API
+provides access to customer identity and order history, and the
+Customer Privacy API
+records buyer consent.
+App management
+Anchor to Manage and monitor your apps
+Manage and monitor your apps
+The Dev Dashboard is where you configure a live app and watch how it's behaving. The APIs in this section cover the same ground programmatically.
+Dev Dashboard
+creates and manages apps, stores, and catalogs, and its
+monitoring and logs
+chart webhooks, functions, and your own events.
+Alerts in the Dev Dashboard
+flag 
+
+===== https://shopify.dev/docs/apps/build
+TITLE: Build
+ACCESSED: 2026-09-27
+
+Build apps for Shopify
+Merchants run their whole business on Shopify, and they turn to apps for the features they need next. Your app runs inside Shopify's own surfaces, works with Shopify's APIs and store data, and can reach millions of merchants through the Shopify App Store.
+Scaffold an app
+Use Shopify CLI to generate a new app project with everything you need.
+Scaffold an app
+Use Shopify CLI to generate a new app project with everything you need.
+Scaffold an app
+Use Shopify CLI to generate a new app project with everything you need.
+Build an app
+After scaffolding, build a QR code app with the Admin API, web components, and metaobjects.
+Build an app
+After scaffolding, build a QR code app with the Admin API, web components, and metaobjects.
+Build an app
+After scaffolding, build a QR code app with the Admin API, web components, and metaobjects.
+Building and deploying apps
+Anchor to Build and release your first app
+Build and release your first app
+The
+scaffold
+and
+build
+tutorials take you through the full journey: create an app, run it against a dev store, call an API, and release it.
+Deployment
+happens throughout development. The CLI packages your extensions and configuration into an app version, and you release that version to merchants.
+Distribution
+determines who can install your app. Decide this early, because building for the
+Shopify App Store
+is a different job from building for a single organization.
+Dev tools
+Anchor to Set up your toolchain
+Set up your toolchain
+The Shopify AI Toolkit gives your coding agent Shopify's schemas and docs to work from. Shopify CLI and the Dev Dashboard both work against the same app record, so you can create an app in either one.
+Shopify AI Toolkit
+connects your coding agent to Shopify's docs and API schemas, so it writes queries that validate against the version you're building on.
+Shopify CLI
+scaffolds your app, runs it against a dev store while you work, and packages and releases your app versions.
+Dev Dashboard
+manages everything that belongs to the app itself: its credentials and scopes, your dev stores, user permissions, and its logs after merchants are running it.
+Building blocks
+Anchor to The parts of a Shopify app
+The parts of a Shopify app
+An app is a set of components you declare in your
+app configuration
+, and Shopify runs most of them for you. Only your backend is yours to host.
+Authentication
+gets your app an access token for the access scopes a merchant grants. Where your app's code runs decides how it gets that token, and which
+API
+the token can call.
+Extensions
+put your interface inside Shopify's surfaces, and you build that interface from
+Polaris web components
+Functions
+run your logic in Shopify's request path. Shopify hosts all of it.
+Custom data
+stores what Shopify's model doesn't cover, in metafields and metaobjects.
+Events and webhooks
+tell you when store data changes, so you're not polling.
+Design and quality
+Anchor to Meet the bar merchants expect
+Meet the bar merchants expect
+Merchant workflows cross back and forth between your app and the native pages of the Shopify admin. An app that matches the appearance and behavior of its host surface keeps those workflows smooth, and that consistency builds merchant trust.
+Polaris, Shopify's design system for app interfaces, gets you most of the way there. The guidelines remove the guesswork on the rest, from mobile-first layout to accessibility.
+Design guidelines
+cover structure, layout, content, and navigation, down to how a single form or alert should behave.
+Security
+covers the security requirements that your app needs to meet before review.
+App performance
+covers performance, accessibility, localization, and privacy.
+Built for Shopify
+is the badge for apps that clear the highest bar on all of them.
+App surfaces
+Anchor to Build across every surface
+Build across every surface
+A surface is a place in Shopify where your app shows up. Shopify defines where an app can appear, and each surface comes with its own extension types, APIs, and design rules. Build against a surface's rules and your app keeps working when Shopify changes the surface underneath it.
+App Home
+is the surface your app owns: your app's own page in the admin, built as an iframe you host or a UI extension Shopify hosts.
+Everywhere else, your app appears through extensions rendered inside the surface itself:
+Admin
+is where merchants run their business.
+Checkout
+is the buyer's path to purchase.
+Customer accounts
+is where buyers track orders, start returns, and manage their profile.
+Online store
+is the storefront, where your app rides along with the theme.
+Point of Sale
+puts your app in front of staff selling in person.
+Use cases
+Anchor to Solve a merchant problem
+Solve a merchant problem
+A use case is the merchant problem it solves, and it usually spans more than one surface. Most apps start here.
+Products and pricing
+shapes the catalog, purchase options, and discounts.
+Sales channels
+reach buyers beyond the merchant's store,
+Global mar
+
+===== https://shopify.dev/docs/apps/build/authentication-authorization
+TITLE: About app authentication
+ACCESSED: 2026-09-27
+
+Shopify apps call the
+GraphQL Admin API
+to read and write store data on behalf of merchants. Before your app can make those calls, it needs to authenticate: prove which app is calling, which merchant approved it, and what the app is allowed to do.
+This section covers how that authentication works for apps calling the GraphQL Admin API, and points you to the setup path for the kind of app you're building. Other Shopify APIs issue their own token types and use their own headers, so if you're authenticating requests to the Storefront API or the Customer Account API, see
+Shopify API authentication
+instead. You don't implement OAuth by hand for most apps.
+Shopify CLI
+and the
+Shopify app templates
+handle the token flow for you.
+Anchor to What you can do
+What you can do
+Call the GraphQL Admin API as an installed app, limited to the access scopes a merchant approved.
+Call the GraphQL Admin API directly from your app's frontend with
+Direct API access
+, where App Bridge authenticates each request.
+Run background jobs and scheduled tasks, and subscribe to webhooks, using an offline access token that persists across sessions.
+Attribute actions to a specific staff member and enforce per-user permissions using online access tokens.
+Give a subsystem limited, scoped access to Shopify APIs without sharing your app's full credentials, using
+delegate access tokens
+Anchor to How it works
+How it works
+For any app with a backend of its own, authentication follows the same three steps:
+Your app gets an
+access token
+for the store it's calling.
+Your app sends the token in the
+X-Shopify-Access-Token
+header on every GraphQL Admin API request.
+Shopify returns the data the token's
+access scopes
+allow, or an error if the request doesn't meet an
+access requirement
+What differs is how your app gets that token. Most apps get one after a merchant installs the app and approves the scopes it requests. An app that only works with stores in your own organization requests one directly, with no merchant install. An extension-only app has no backend, so it never holds a token at all (Shopify authenticates its requests for it through
+Direct API access
+).
+Choosing an approach
+maps each option to its setup guide.
+Anchor to Access requirements
+Access requirements
+Every GraphQL Admin API request is checked against a few different requirements. Most apps only need the first two:
+A valid access token
+: Your app holds a token for the store it's calling and sends it in the
+X-Shopify-Access-Token
+header.
+The access scope the field requires
+: Each field and mutation names the scope that grants it, and your app's token carries the scopes the merchant approved. Refer to
+access scopes
+For a small number of scopes, Shopify's approval
+: Shopify grants some access scopes to individual apps rather than to every app that declares them.
+Access scopes
+lists which ones and how to request each.
+An online access token's staff permissions
+: Apps get
+offline access tokens
+by default, but if your app requests an
+online access token
+instead, it's narrowed to what the staff member who authorized it can do, so a request can be refused even when your app holds the scope.
+Approval to use protected customer data
+: Fields that return a customer's personal data need a separate approval if your app is public. A custom app has that access automatically, though an admin-created custom app's access to name, address, phone, and email fields varies by plan. Refer to
+protected customer data
+Anchor to Key terminology
+Key terminology
+These terms come up across Shopify's authentication flows and throughout the rest of this section.
+Anchor to Authentication and authorization
+Authentication and authorization
+Authentication proves which identity is making a request. Authorization determines what that identity is allowed to do. On each API request, the access token does both: it identifies your app, and its
+access scopes
+determine what it can access.
+Some flows authenticate a user first. For example, embedded apps validate an
+ID token
+, then exchange it for an access token.
+Anchor to Access token
+Access token
+The credential your code sends on each GraphQL Admin API request, in the
+X-Shopify-Access-Token
+header.
+Online
+or
+offline
+describes a token's lifetime: online tokens last as long as a staff member's session, while offline tokens persist across sessions. See
+access tokens
+Anchor to ID token
+ID token
+A short-lived JWT that proves a request comes from an authenticated Shopify user.
+App Bridge
+issues one to the frontend of an app running inside the Shopify admin, and your app usually exchanges it for an access token rather than sending it to an API. App Bridge 2.0 and older documentation call the same credential a session token. See
+ID tokens
+, or
+Set up session tokens with App Bridge 2.0
+if that's the version your app uses.
+Anchor to Grant
+Grant
+The OAuth flow your app uses to get an access token. Shopify supports three, and which one applies depends on where your app runs and whose 
+
+===== https://www.shopify.com/partners
+TITLE: Build. Earn. Grow. – Become a Shopify Partner Today - Shopify
+ACCESSED: 2026-09-27
+
+Shopify partner program
+Build fast.
+Earn more.
+Grow together.
+From your first app to your hundredth store, Shopify helps turn your best work into lasting income.
+Become a partner
+Get paid
+$1,300,000,000  paid to partners in 2025
+Earn on apps, themes, store builds, referrals and more. Multiple revenue streams mean you control how you grow.
+Build apps
+Shape how the world shops and sells. Build for buyers, merchants, or POS users and deploy your app across checkout, storefronts, and beyond.
+Build stores
+Transform how brands show up online. Create bespoke storefronts for merchants or sell public themes using Shopify’s flexible frameworks and APIs.
+Build businesses
+Deliver expert services that help merchants grow. Launch stores, migrate platforms, drive traffic, and everything in between.
+Build for millions of merchants worldwide
+When merchants win, you win
+Shopify converts up to 36% better than competitors
+1
+. Better results drive higher retention, referrals, and recurring revenue.
+Endless opportunity
+Merchants make their first sale every 26 seconds
+2
+. We ship 100s of new features every six months. Unlimited ways to earn.
+Ship faster, earn sooner
+Modern APIs, complete docs, and CLI tools get you from idea to launch in days, not weeks.
+1
+Based on a study completed in April 2023 in partnership with a Big Three global management consulting company.
+2
+On average, based on Shopify data from January to September 2025
+Real partners. Real wins.
+Shopify’s powerful APIs and world class documentation have helped us ship exceptional products at light speed, unlocking growth for our team and our merchants.
+We see higher win rates, stronger market demand, and stronger retention because we invest in the platform that is building exclusively for commerce.
+Aligning closely with Shopify’s standards and product direction helped us create a faster, smoother app experience for merchants, and gave us more room to grow together.
+One of the best things about the Shopify community is that it’s genuinely collaborative and open. There’s a ‘blue ocean’ of opportunity to build and partner as the market keeps expanding.
+Shopify’s developer-friendly tools and active community make it easy to get started and keep building. If you want to build serious commerce features, this is the place.
+Community & Resources
+Built to help you build.
+Dev Docs
+Get unstuck fast. Complete API references, guides, and code samples for every use case.
+Dev Community Forum
+100,000+ builders. Get help, swap solutions, and meet builders like you.
+Partner Blog
+Partner success stories, best practices, and announcements to help you grow your business.
+Shopify Devs on X
+New features, launches, and community highlights. Straight from @ShopifyDevs.
+Built for Shopify
+Build apps to Shopify’s highest quality standards and unlock exclusive growth opportunities.
+Shopify Academy
+Level up with courses, training, and certifications. Build the expertise merchants look for.
+Shopify Editions
+Every 6 months, Shopify rolls out 100s of new features and updates.
+dot dev
+Join us IRL. New features, live demos, and thousands of partners building on Shopify.
+Shopify Partner Program
+Ready to grow with Shopify?
+Join 100,000+ partners turning apps, storefronts, and services into lasting revenue.
+Become a partner
+
+===== https://shopify.dev/docs/api/usage/authentication
+TITLE: Shopify API authentication
+ACCESSED: 2026-09-27
+
+To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access. How you obtain the token and which header carries it
+vary by API
+This page explains the shared model behind Shopify API authentication: how a request is authenticated, and where to go to set it up for each API.
+Anchor to How it works
+How it works
+Every authenticated Shopify API request follows the same shape:
+Your code obtains an access token scoped to the access it needs.
+Your code includes the token in a request header.
+Shopify checks the token on each request and returns the data the token is scoped to, or an error if the token doesn't grant the required
+access scope
+Authentication proves which identity is making a request, and authorization determines what that identity is allowed to do. The access token does both: it identifies your app or a buyer, and its access scopes determine what it can access.
+Some flows authenticate a user first. For example, embedded apps validate an
+ID token
+, then exchange it for an access token.
+Anchor to Authentication by API
+Authentication by API
+Which token you use depends on whose data you're working with. Most Shopify APIs, including the
+GraphQL Admin API
+,
+Storefront API
+, and
+Partner API
+, authenticate your app acting on behalf of a merchant or organization. The token represents your app and the access a merchant granted it.
+The
+Customer Account API
+is the exception. It authenticates a buyer accessing their own account data, such as their orders and addresses. After the buyer signs in and consents, your app receives an access token scoped to that buyer and calls the API on their behalf. For how this flow works, see
+Customer Account API authentication
+The following table shows what each API authenticates, how you get the token, and the header it uses:
+Authentication, tokens, and headers by API
+API
+Authenticates
+How you get the token
+Header
+GraphQL Admin API
+Your app, on behalf of a merchant
+OAuth, usually
+token exchange
+X-Shopify-Access-Token
+Storefront API
+Your app (public or private)
+Create
+public or private tokens
+, or go
+tokenless
+for basic data
+X-Shopify-Storefront-Access-Token
+or
+Shopify-Storefront-Private-Token
+Partner API
+Your app, scoped to your Partner organization
+Create a
+client token
+in the Partner Dashboard
+X-Shopify-Access-Token
+Customer Account API
+A buyer, on their own behalf
+Buyer signs in with
+OAuth 2.0 and PKCE
+Authorization
+The table covers the most commonly used APIs. For a complete list, see the
+Shopify API reference
+Anchor to Next steps
+Next steps
+Set up authentication for:
+The
+GraphQL Admin API
+to read and write store data, including products, orders, customers, and inventory.
+The
+Storefront API
+to build buyer-facing experiences such as product browsing, cart, and checkout.
+The
+Customer Account API
+to let buyers access their own account data, such as orders and addresses.
+Learn more:
+Learn how
+access tokens
+work, including the token types, the GraphQL Admin API's OAuth grants and endpoints, and how tokens expire and refresh.
+Learn what
+ID tokens
+are, the claims your app validates, and how they're exchanged for access tokens.
+Understand the
+access scopes
+you request and what each one grants.
+Find the
+response and error codes
+Shopify returns, including authentication errors.
+Was this page helpful?
+Yes
+No
+
+===== https://shopify.dev/docs/api/customer-authentication/multipass
+TITLE: Multipass
+ACCESSED: 2026-09-27
+
+Limited availability
+Multipass is no longer available to new stores. Stores already using it keep access even after they upgrade to new customer accounts.
+If you're building a new integration, then connect a
+third-party identity provider
+instead.
+Limited availability
+:
+Multipass is no longer available to new stores. Stores already using it keep access even after they upgrade to new customer accounts.
+If you're building a new integration, then connect a
+third-party identity provider
+instead.
+Multipass lets customers signed in on your external site log in to your Shopify store without entering credentials again, instead sending a signed token that redirects them.
+This guide walks you through enabling Multipass in Shopify admin, encoding customer data as JSON, generating the token, and redirecting users to your store.
+When the token is valid, customers are logged in (or a new account is created) using the email you provide.
+Anchor to Requirements
+Requirements
+Your store must be on a
+Shopify
+Plus
+plan.
+To use Multipass with new customer accounts, your store must already be using Multipass. Access is limited to stores that were using it when support for new customer accounts shipped. If your store needs Multipass and can't enable it, then
+contact Shopify
+support
+A store that downgrades off Shopify Plus loses Multipass on new customer accounts.
+Your existing Multipass token generation keeps working unchanged. The payload, the encryption, and the signature are the same.
+Anchor to Multipass with new customer accounts
+Multipass with new customer accounts
+This section applies when new customer accounts is the version selected in your
+Customer accounts
+settings
+. Multipass follows whichever version the store has selected, and a store on legacy customer accounts keeps the legacy behavior.
+A Multipass token opens a full Shopify customer session through the standard OAuth authorization code flow. The customer signs in once and stays signed in across the online store, checkout, market domains, and customer account pages, and signing out of any of those surfaces ends the session everywhere.
+Send the token to one of these surfaces:
+Surface
+How to sign the customer in
+Online store and checkout
+Redirect to
+/account/login/multipass/{token}
+on your store domain.
+Customer account pages
+Redirect to
+/login/multipass/{token}
+on your customer account domain, such as
+https://account.example.com/login/multipass/{token}
+Customer Account API
+Exchange the token for an access token with the
+Multipass grant
+Use the
+Multipass grant
+to exchange a Multipass token for a
+Customer Account API
+access token. An API client can then act for a customer your own system has already authenticated.
+A token can still be redeemed only once, and the check is shared across surfaces. A token you've already redeemed on the online store can't be redeemed again through the Multipass grant, and the reverse is also true.
+Anchor to Saved payment methods in checkout
+Saved payment methods in checkout
+When a buyer signs in through Multipass on a store using new customer accounts, checkout offers them the account features your store has turned on: their store credit balance if store credit is enabled, and their saved payment methods if saved payment methods are enabled.
+Before paying with a saved credit card, the buyer is asked to confirm the card security code (CVV). This happens on every such checkout, whether or not the card was confirmed before. Other payment methods are unaffected.
+Anchor to Step 1: Enable Multipass
+Step 1: Enable Multipass
+You can enable Multipass functionality on a store from the Shopify admin.
+From your Shopify admin, go to
+Settings > Customer
+accounts
+In the
+Multipass
+section, select
+Turn on
+to enable Multipass.
+After you enable Multipass, a secret is shared with you. You need the secret to generate tokens to log your customers into your Shopify store.
+Caution
+Make sure you keep your secret private to reduce security risks.
+Caution
+:
+Make sure you keep your secret private to reduce security risks.
+On a store using new customer accounts, Multipass is on the
+Authentication
+page rather than the main customer accounts settings. Go to
+Settings > Customer accounts > Authentication
+, then find the
+Multipass
+card below
+Sign-in options
+and
+Identity provider
+Revealing the secret and turning Multipass on or off are protected actions. You're asked to confirm your identity again before the admin shows you the secret.
+Anchor to Step 2: Encode your customer information using JSON
+Step 2: Encode your customer information using JSON
+The customer information is represented as a hash which must contain at least the email address of the customer and a current timestamp (in ISO8601 encoding). You can also include the customer's first name, last name or several
+shipping addresses
+A minimal example, containing all required fields, might look like this:
+1
+2
+3
+4
+{
+"email"
+:
+"nicpotts@example.com"
+,
+"created_at"
+:
+"2013-04-11T15:16:23-04:00"
+,
+}
+An example 
+
+===== https://shopify.dev/docs/api/polaris
+TITLE: Polaris references
+ACCESSED: 2026-09-27
+
+Shopify apps can appear across multiple surfaces in the Shopify platform. Each surface has its own set of available APIs and components. For an overview of all surfaces and how to build apps for them, see
+Build apps for Shopify
+All app surfaces use
+Polaris
+, Shopify's unified UI framework built on web components, to deliver a consistent experience across the platform.
+Learn more about
+using web components
+, including
+layouts
+,
+icons
+,
+how to handle events
+, and more.
+Anchor to App Home
+App Home
+App Home
+is your app's main page in the Shopify admin. There are two ways to build it.
+App Home (iframe)
+Build your app's main page as an iframe in Shopify admin using App Bridge and Polaris.
+App Home (iframe)
+Build your app's main page as an iframe in Shopify admin using App Bridge and Polaris.
+App Home (iframe)
+Build your app's main page as an iframe in Shopify admin using App Bridge and Polaris.
+App Home (UI extension)
+Build your app's main page as a Preact-based UI extension.
+App Home (UI extension)
+Build your app's main page as a Preact-based UI extension.
+App Home (UI extension)
+Build your app's main page as a Preact-based UI extension.
+Anchor to Extensions in other surfaces
+Extensions in other surfaces
+Extensions put your app's UI inside a surface that Shopify renders: actions and blocks on admin resource pages, defined points in checkout and customer accounts, and the smart grid and cart in Point of Sale. Each surface has its own extension APIs and its own subset of Polaris web components.
+Admin UI extensions
+Add custom actions and blocks from your app to resource pages in the Shopify admin, including products, orders, and customers.
+Admin UI extensions
+Add custom actions and blocks from your app to resource pages in the Shopify admin, including products, orders, and customers.
+Admin UI extensions
+Add custom actions and blocks from your app to resource pages in the Shopify admin, including products, orders, and customers.
+Checkout UI extensions
+Build custom functionality that merchants can install at defined points in the checkout flow, including product information, shipping, payment, order summary, and Shop Pay.
+Checkout UI extensions
+Build custom functionality that merchants can install at defined points in the checkout flow, including product information, shipping, payment, order summary, and Shop Pay.
+Checkout UI extensions
+Build custom functionality that merchants can install at defined points in the checkout flow, including product information, shipping, payment, order summary, and Shop Pay.
+Customer account UI extensions
+Build custom functionality that merchants can install at defined points on the order index, order status, and profile pages in customer accounts.
+Customer account UI extensions
+Build custom functionality that merchants can install at defined points on the order index, order status, and profile pages in customer accounts.
+Customer account UI extensions
+Build custom functionality that merchants can install at defined points on the order index, order status, and profile pages in customer accounts.
+POS UI extensions
+Build custom functionality that merchants can install at defined points in the Shopify Point of Sale (POS) app, including the smart grid, cart, and post-purchase screens.
+POS UI extensions
+Build custom functionality that merchants can install at defined points in the Shopify Point of Sale (POS) app, including the smart grid, cart, and post-purchase screens.
+POS UI extensions
+Build custom functionality that merchants can install at defined points in the Shopify Point of Sale (POS) app, including the smart grid, cart, and post-purchase screens.
+Was this page helpful?
+Yes
+No
+
+===== https://shopify.dev/docs/api/partner/latest
+TITLE: Partner API reference
+ACCESSED: 2026-09-27
+
+GraphQL Partner API
+The Partner API provides access to data in the Partners Dashboard. Data includes transactions that impact your earnings, app events, and for participating partners, Experts Marketplace opportunities. With this information, you can effectively scale your business by automating front and back-office operations, freeing up time to focus on solutions for Shopify merchants.
+Install AI Toolkit
+Ask about this page
+Copy MD
+Choose a version:
+unstable
+2026-07
+latest
+2026-04
+2026-01
+2025-10
+2025-07
+2026-07
+latest
+Anchor to Authentication
+Authentication
+There are two pieces of information that you must include to successfully authenticate requests to a Partner API endpoint:
+Your organization ID. You can find this in the URL of the Partners Dashboard when you're logged in. For example:
+https://partners.shopify.com/organization-id/api/2026-07/graphql.json
+A Partner API client access token. The API client access token must belong to the organization that you're querying. You can create a new API client for your organization through the Partner Dashboard. For example:
+X-Shopify-Access-Token: <partner-access-token>
+Unlike the GraphQL Admin API, which issues tokens scoped to a specific store, Partner API tokens are scoped to your Partner organization and authorize access to data across all stores within it. For how this compares to authentication across other Shopify APIs, see
+Shopify API authentication
+1
+2
+3
+4
+5
+6
+7
+curl
+-
+X
+POST
+\
+https
+://
+partners
+shopify
+com
+/
+{
+organization_id
+}
+/
+api
+/
+2026
+-
+07
+/
+graphql
+json
+\
+-
+H
+'Content-Type: application/json'
+\
+-
+H
+'X-Shopify-Access-Token: {partner_access_token}'
+\
+-
+d
+'{
+"query": "{your_query}"
+}'
+Anchor to Endpoints and queries
+Endpoints and queries
+Use GraphiQL explorer through your Partners Dashboard to query the Partner API. The GraphiQL explorer uses your
+Partner API client
+to retrieve the requested information from your Partner account.
+From your Partners Dashboard, navigate to Settings > Partner API clients. Next to the Partner API client that you want to explore, click View GraphiQL explorer.
+You can also use the GraphiQL explorer to work with the schema and build queries.
+Queries begin with one of the objects listed under QueryRoot. The QueryRoot is the schema’s entry-point for queries. Queries are equivalent to making a
+GET
+request in REST.
+To make a query, send a
+POST
+request to:
+https://partners.shopify.com/{org_id}/api/2026-07/graphql.json
+You can use cURL or an HTTP client such as Postman or Insomnia to query the Partner API. This example is a basic request using cURL. Replace
+{organization-id}
+with the ID for the organization you are querying, and replace
+{partner-access-token}
+with your client access token. This request retrieves the last 20 active Experts Marketplace conversations with unread messages.
+Anchor to Versioning
+Versioning
+The Partner API is
+versioned
+. To keep your app stable, make sure that you specify a supported version in the URL.
+Anchor to Create a Partner API client
+Create a Partner API client
+You must be an organization owner to create and manage your API client through the Partners Dashboard. Each API client has access only to the data belonging to the organization in which it is created. You need to create an API client for each organization that you want to access using the API. From the Partners Dashboard, navigate to Settings > Partner API clients, and then click Manage Partner API clients.
+The following permissions can be granted for each API client:
+View financials: This permission is required to access Transaction resources and to cancel Shopify App Pricing subscriptions. Transaction resources represent all of the transactions that impact your Partner earnings.
+Manage apps: This permission is required to access App resources, including all app-related events such as installs, uninstalls, and charges. This resource represents all of the public and private apps managed by your organization.
+Manage themes: This permission is required to access the Theme resource. This resource represents all of the Shopify themes managed by your organization.
+Manage jobs: This permission is required to access Conversation and Job resources. These resources represent Experts Marketplace conversations and jobs owned by your organization.
+Anchor to Secure your data by rotating your access token
+Secure your data by rotating your access token
+Your access token secures your organization's data. It should be kept secret at all times. If you need to replace your access token, you can generate a secondary token from your Partners Dashboard, Navigate to Settings > Partner API clients, and then click Manage Partner API clients.
+Anchor to Usage limitations
+Usage limitations
+Transaction information is for analytics purposes only. This information shouldn't be used for accounting or financial reporting.
+All apps and services connecting to the Partner API are subject to Shopify’s API Terms of Service. Only organization owners can create and 
+
+===== https://shopify.dev/docs/api/webhooks/latest
+TITLE: Webhooks
+ACCESSED: 2026-09-27
+
+Webhooks
+The list of all webhook topics you can subscribe to. You can use webhook subscriptions to receive notifications about particular events in a shop.
+Caution
+If your app is distributed through the Shopify App Store, it must be subscribed to Shopify's
+mandatory compliance topics
+. You can create mandatory compliance webhook subscriptions either using your Partner Dashboard or by updating your
+app configuration file
+Caution
+:
+If your app is distributed through the Shopify App Store, it must be subscribed to Shopify's
+mandatory compliance topics
+. You can create mandatory compliance webhook subscriptions either using your Partner Dashboard or by updating your
+app configuration file
+Install AI Toolkit
+Ask about this page
+Copy MD
+Choose a version:
+unstable
+2026-10
+release candidate
+2026-07
+latest
+2026-04
+2026-01
+2025-10
+2025-07
+2025-04
+2026-07
+latest
+Anchor to Getting started
+Getting started
+Creating subscriptions using the app configuration file
+You can subscribe to most topics through your
+app configuration file
+using CLI version 3.63.0 or greater.
+If you create and manage your subscriptions in your app configuration file, they will be used across all shops that your app is installed on.
+Creating subscriptions using GraphQL Admin API
+You can make app-specific subscriptions to all non-compliance topics through your app configuration file, or shop-specific subscriptions by Shopify's GraphQL Admin API.
+For subscriptions managed with the
+GraphQL Admin API
+, use the
+webhookSubscriptionCreate
+mutation. Specify the
+$topic
+and
+$webhookSubscription
+parameters to create subscriptions.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+[webhooks]
+api_version
+=
+"2023-04"
+[[webhooks.subscriptions]]
+topics
+=
+[
+"products/create"
+,
+"products/update"
+,
+"products/delete"
+]
+uri
+=
+"pubsub://example:pub-sub-topic1"
+[[webhooks.subscriptions]]
+topics
+=
+[
+"orders/create"
+]
+uri
+=
+"pubsub://example:pub-sub-topic2"
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+mutation
+webhookSubscriptionCreate
+(
+$topic
+:
+WebhookSubscriptionTopic
+!,
+$webhookSubscription
+:
+WebhookSubscriptionInput
+!
+)
+{
+webhookSubscriptionCreate
+(
+topic
+:
+$topic
+,
+webhookSubscription
+:
+$webhookSubscription
+)
+{
+webhookSubscription
+{
+id
+topic
+format
+includeFields
+uri
+}
+}
+}
+Anchor to Headers
+Headers
+Every webhook delivery includes headers that describe the topic, source store, API version, and delivery IDs. Treat header names as case-insensitive in your code, because HTTP/2 often lowercases them.
+Header
+Description
+X-Shopify-Topic
+The topic name, such as
+products/update
+X-Shopify-Hmac-Sha256
+The Base64-encoded HMAC signature that you use to verify that Shopify sent the HTTPS delivery.
+X-Shopify-Shop-Domain
+The
+myshopify.com
+domain of the store that triggered the event.
+X-Shopify-API-Version
+The API version that Shopify uses to serialize the payload.
+X-Shopify-Webhook-Id
+A unique composite key for each delivery that you use to identify and deduplicate individual deliveries.
+X-Shopify-Triggered-At
+The timestamp for when Shopify triggered the delivery.
+X-Shopify-Event-Id
+A unique ID shared across all deliveries from the same merchant action.
+X-Shopify-Name
+(optional)
+The developer-supplied subscription name, set with the
+name
+field in your subscription.
+To learn more, see
+Webhooks delivery structure
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+POST /webhooks/products HTTP/1.1
+Host: your-app.example.com
+Content-Type: application/json
+X-Shopify-Topic: products/update
+X-Shopify-Hmac-Sha256: xT6yH5jZfQm6Q3lC8nA0r7sV2bP9dK1eL4wG0hM5nYI=
+X-Shopify-Shop-Domain: snowdevil.myshopify.com
+X-Shopify-API-Version: 2026-07
+X-Shopify-Webhook-Id: 545ebdd4-b7be-4d3d-b14e-54aa78e0e0f9
+X-Shopify-Triggered-At: 2025-07-10T16:15:47.000000Z
+X-Shopify-Event-Id: 59d6d79c-595f-4e7e-bc6f-72f5c3d0c66f
+X-Shopify-Name: product-sync
+Anchor to List of topics
+List of topics
+All webhook topics you can subscribe to.
+Was this section helpful?
+Yes
+No
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+{
+"app_purchase_one_time": {
+"admin_graphql_api_id": "gid://shopify/AppPurchaseOneTime/1017262364",
+"name": "Webhook Test",
+"status": "PENDING",
+"admin_graphql_api_shop_id": "gid://shopify/Shop/548380009",
+"created_at": "2021-12-31T19:00:00-05:00",
+"updated_at": "2021-12-31T19:00:00-05:00"
+}
+}
+Examples
+app_purchases_one_time/update: Sample Payload
+{
+  "app_purchase_one_time": {
+    "admin_graphql_api_id": "gid://shopify/AppPurchaseOneTime/1017262364",
+    "name": "Webhook Test",
+    "status": "PENDING",
+    "admin_graphql_api_shop_id": "gid://shopify/Shop/548380009",
+    "created_at": "2021-12-31T19:00:00-05:00",
+    "updated_at": "2021-12-31T19:00:00-05:00"
+  }
+}
+app_subscriptions/approaching_capped_amount: Sample Payload
+{
+  "app_subscription": {
+    "admin_graphql_api_id": "gid://shopify/AppSubscription/1029266968",
+    "name": "Webhook Test",
+    "balance_used": 0,
+    "capped_amount": "20.0",
+    "currency_code": "USD",
+    "admin_graphql_api_shop_id": "gid://shopify/Shop/548380009",
+    "created_at": "2021-12-31T19:00:00-05:00",
+    "updated_at": "2021-12-31T19:00:00-05:00"
+  }
+}
+app_sub

@@ -1,0 +1,158 @@
+{
+  "app": "Smartsheet",
+  "number": 79,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:20:15.460686+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://smartsheet.com/developers\",\n    \"https://developer.smartsheet.com/\",\n    \"https://developer.smartsheet.com/dev-portal/docs\",\n    \"https://smartsheet.com/developers/api-docs\",\n    \"https://help.smartsheet.com/developers\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://smartsheet.com/developers",
+    "https://developer.smartsheet.com/",
+    "https://developer.smartsheet.com/dev-portal/docs",
+    "https://smartsheet.com/developers/api-docs",
+    "https://help.smartsheet.com/developers",
+    "https://docs.smartsheet.com/",
+    "https://developers.smartsheet.com/",
+    "https://api.smartsheet.com/",
+    "https://smartsheet.com/docs",
+    "https://smartsheet.com/api",
+    "https://smartsheet.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.smartsheet.com/register",
+    "https://www.smartsheet.com/contact",
+    "https://help.smartsheet.com/contact",
+    "https://developers.smartsheet.com/api/smartsheet/openapi",
+    "https://developers.smartsheet.com/api/brandfolder/openapi",
+    "https://developers.smartsheet.com/api/resource_management/openapi"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.smartsheet.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developer.smartsheet.com/dev-portal/docs",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://smartsheet.com/developers/api-docs",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://help.smartsheet.com/developers",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.smartsheet.com/",
+      "reason": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+    },
+    {
+      "requested_url": "https://api.smartsheet.com/",
+      "reason": "HTTP 403"
+    },
+    {
+      "requested_url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+      "reason": "page too thin (28 chars)"
+    },
+    {
+      "requested_url": "https://developers.smartsheet.com/api/brandfolder/openapi",
+      "reason": "page too thin (29 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.smartsheet.com/",
+      "requested_url": "https://smartsheet.com/developers",
+      "status": 200,
+      "title": "Smartsheet Developers & API",
+      "chars": 1100,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.smartsheet.com/register",
+      "requested_url": "https://developers.smartsheet.com/register",
+      "status": 200,
+      "title": "Register for Smartsheet Developer Tools",
+      "chars": 670,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.smartsheet.com/contact",
+      "requested_url": "https://www.smartsheet.com/contact",
+      "status": 200,
+      "title": "Contact Us | Smartsheet",
+      "chars": 899,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.smartsheet.com/contact",
+      "requested_url": "https://help.smartsheet.com/contact",
+      "status": 200,
+      "title": "Contact Support | Smartsheet Learning Center",
+      "chars": 3904,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Smartsheet provides a developer API supporting OAuth and SDKs for C#, Java, Node.js, and Python, alongside Model Context Protocol (MCP) server integration.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"The developer documentation mentions registering applications that request user authorization via an OAuth Walkthrough.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"The email address used to register for Developer Tools must belong to an existing licensed Smartsheet user on a Business plan or higher.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"C#\",\n      \"Java\",\n      \"Node.js\",\n      \"Python\"\n    ],\n    \"notes\": \"Offers API guides and reference materials alongside SDKs for C#, Java, Node.js, and Python.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"The site includes sections for 'AI & Smartsheet MCP Server' and 'Smartsheet MCP Server Tools'.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Developer tools registration requires an existing licensed Smartsheet user on a Business plan or higher, introducing a paid plan requirement before obtaining credentials.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.smartsheet.com/\",\n      \"claim\": \"Lists API guides, API reference, SDKs for C#, Java, Node.js, and Python, and an AI & Smartsheet MCP Server.\"\n    },\n    {\n      \"url\": \"https://developers.smartsheet.com/register\",\n      \"claim\": \"States that registering for Developer Tools requires an email belonging to an existing licensed Smartsheet user on a Business plan or higher, and mentions the OAuth Walkthrough.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://smartsheet.com/developers",
+    "one_liner": "Smartsheet provides a developer API supporting OAuth and SDKs for C#, Java, Node.js, and Python, alongside Model Context Protocol (MCP) server integration.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "The developer documentation mentions registering applications that request user authorization via an OAuth Walkthrough."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "The email address used to register for Developer Tools must belong to an existing licensed Smartsheet user on a Business plan or higher."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "C#",
+        "Java",
+        "Node.js",
+        "Python"
+      ],
+      "notes": "Offers API guides and reference materials alongside SDKs for C#, Java, Node.js, and Python."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "The site includes sections for 'AI & Smartsheet MCP Server' and 'Smartsheet MCP Server Tools'."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Developer tools registration requires an existing licensed Smartsheet user on a Business plan or higher, introducing a paid plan requirement before obtaining credentials."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.smartsheet.com/",
+        "claim": "Lists API guides, API reference, SDKs for C#, Java, Node.js, and Python, and an AI & Smartsheet MCP Server.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.smartsheet.com/register",
+        "claim": "States that registering for Developer Tools requires an email belonging to an existing licensed Smartsheet user on a Business plan or higher, and mentions the OAuth Walkthrough.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:20:31.436859+00:00"
+}

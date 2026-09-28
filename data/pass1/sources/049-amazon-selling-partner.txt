@@ -1,0 +1,690 @@
+===== https://developer-docs.amazon/sp-api
+TITLE: Selling Partner API
+ACCESSED: 2026-09-27
+
+Get Started
+Welcome to SP-API Documentation
+What is the Selling Partner API?
+Selling Partner API Onboarding Overview
+View More…
+Changelog
+SP-API Release Notes
+SP-API Deprecation Schedule
+SP-API Product Metadata Updates
+Directories
+SP-API Models
+SP-API Seller Use Cases
+SP-API Vendor Use Cases
+View More…
+Registration
+SP-API Registration Overview
+Developer Registration Request Status
+Third-Party Provider Registration
+View More…
+Authorization
+Authorize Applications
+Reauthorize Applications
+Reactivate Authorizations
+View More…
+Integration
+Building Robust Amazon SP-API Applications
+SP-API SDKs
+Delete an Application From Your Developer Account
+Calling the SP-API
+Configuration Details
+Call Structure
+Development Tools
+View More…
+Solution Provider Portal
+Manage Users in Solution Provider Portal
+Manage Your Business And Contact information in Solution Provider Portal
+Update Your Developer Profile in Solution Provider Portal
+View More…
+Tutorials
+Tutorial: Test Selling Partner API Endpoints
+Tutorial: Automate your SP-API Calls Using a C# SDK
+Tutorial: Automate your SP-API Calls Using a Java SDK
+View More…
+Troubleshooting
+Troubleshoot SP-API Errors
+URL Encoding
+Resolve Common HTTP and Authorization Error Codes
+View More…
+Selling Partner Appstore
+What is the Selling Partner Appstore?
+List Your App on the Selling Partner Appstore
+Edit Your Appstore Listing
+View More…
+Service Provider Network
+List Your Service
+Security and Compliance
+SP-API Security and Compliance Overview
+Amazon Selling Partner API Guard Implementation Guide
+VAT Calculation Service
+View More…
+A+ Content API
+A+ Content API
+A+ Content Examples
+A+ Content API Rate Limits
+Amazon Warehousing and Distribution API
+Amazon Warehousing and Distribution API
+Amazon Warehousing and Distribution API v2024-05-09 Reference
+App Integrations API
+App Integrations API
+Application Management API
+Application Management API
+Catalog Items API
+Catalog Items API
+Catalog Items API Rate Limits
+Catalog Items API v2022-04-01 Reference
+Customer Feedback API
+Customer Feedback API
+Customer Feedback API Rate Limits
+Data Kiosk
+Data Kiosk API
+Data Kiosk Schema Explorer User Guide
+Data Kiosk Query Processing Finished Notification
+View More…
+Delivery by Amazon API
+Delivery by Amazon API
+Easy Ship API
+Easy Ship API
+External Fulfillment
+External Fulfillment Inventory API
+External Fulfillment Returns API
+External Fulfillment Shipping API
+View More…
+Fulfillment By Amazon (FBA)
+FBA Inventory API
+FBA Inventory Dynamic Sandbox Guide
+Feeds API
+Feeds API
+Feed Type Values
+Feeds JSON Schemas
+View More…
+Finances
+Finances API
+Transfers API
+Invoices API
+Fulfillment Inbound API
+Fulfillment Inbound API
+Fulfillment Inbound API FAQ
+Migrating Fulfillment Inbound workflows
+View More…
+Fulfillment Outbound API
+Fulfillment Outbound API
+Fulfillment Outbound Workflow Guide
+Fulfillment Outbound Dynamic Sandbox Guide
+View More…
+Invoicing
+Invoices API (Brazil Only)
+Invoices API FAQ
+Listings
+Listings Items API
+Listings Items API Rate Limits
+Listings Restrictions API
+View More…
+Merchant Fulfillment API
+Merchant Fulfillment API
+Messaging API
+Messaging API
+Notifications API
+Notifications API
+Notification Type Values
+Subscribe to the ORDER_CHANGE Notification
+View More…
+Orders API
+Orders API
+Tutorial: Retrieve and Pass a Purchase Order Number to a Carrier
+Orders API Migration Guide
+View More…
+Product Fees API
+Product Fees API
+Product Pricing API
+Product Pricing API
+Product Pricing API and Notifications FAQ
+Price Adjustment Automation Workflows Guide
+View More…
+Promotions API
+Promotions API
+Replenishment API
+Replenishment API
+Reports API
+Reports API
+Report Type Values
+Reports JSON Schemas
+View More…
+Sales API
+Sales API
+Seller Wallet API
+Seller Wallet API
+Seller Wallet API Rate Limits
+Sellers API
+Sellers API
+Services API
+Services API
+Shipment Invoicing API
+Shipment Invoicing API
+Shipping API
+Shipping API v2 Resources
+Shipping API v1 Reference
+Solicitations API
+Solicitations API
+Supply Sources API
+Supply Sources API
+Multi-Location Inventory Integration Guide
+Supply Sources API Rate Limits
+Tokens API
+Tokens API
+Tracking API
+Tracking API
+Uploads API
+Uploads API
+Vehicles API
+Vehicles API
+Vehicles API Rate Limits
+Vendor Direct Fulfillment APIs
+Vendor Direct Fulfillment Dynamic Sandbox Guide
+Vendor Direct Fulfillment Workflow Guide
+SP-API Bill-to-Party Addresses
+Vendor Direct Fulfillment Transaction Status API
+Vendor Direct Fulfillment Transaction Status API
+Vendor Direct Fulfillment Inventory API
+Vendor Direct Fulfillment Inventory API
+Vendor Direct Fulfillment Orders API
+Vendor Direct Fulfillment Orders API
+Vendor Direct Fulfillment Shipping API
+Vendor Direct Fulfillment Shipping API
+Vendor Direct Fulfillment Payments API
+Vendor Direct Fulfillment Payments API
+Vendor Retail Procurement Invoices API
+Vendor Retail Procurement Invoices API
+Vendor Retail Procurement Orders API
+Vendor Retail Procurement Orders API
+Vendor Retail Procurement Shipments API
+Vendor Retail Procurement Shipments API
+Vendor Retail Procurement Transaction Status
+
+===== https://developer-docs.amazon/sp-api/docs/welcome
+TITLE: Welcome to SP-API Documentation
+ACCESSED: 2026-09-27
+
+Welcome to the
+Selling Partner API
+(SP-API) documentation site, where you can find multiple resources to help you integrate with SP-API.
+This site is for
+developer
+s who want to create applications for
+selling partner
+s (applications for
+seller
+s,
+vendor
+s, or both).
+Sections in this site that apply only to applications for sellers are marked
+for seller applications only
+. Sections that apply only to applications for vendors are marked
+for vendor applications only
+. All other sections apply to all selling partner applications.
+⭐
+To check the current status of all SP-APIs, refer to the
+API Health Dashboard
+. You can access the API Health Dashboard any time by selecting the
+API Status
+button in the upper right corner of the SP-API documentation site.
+Topic
+Description
+API references
+Interactive API references for all of the SP-APIs
+Code samples
+Walkthroughs that highlight API capabilities, best practices, and optimal use cases
+Models
+Index of all SP-API models with links to API references and GitHub Swagger models
+Deprecation schedule
+A list of all SP-API deprecation and removal dates, organized by API
+Announcements
+News for API releases, deprecations and changes, new blog posts, and general updates
+Release notes
+Record of changes to APIs, reports, feeds, and notifications
+FAQ
+Frequently asked questions about SP-API, including errors, general topics, and topics specifically for vendors
+GitHub repository
+Contains SP-API code artifacts, including
+Swagger models
+,
+client libraries
+, and
+JSON schemas
+Videos
+Educational content designed to help developers successfully integrate and build with Amazon's
+Selling Partner APIs
+📘
+Start with
+SP-API models
+to identify the APIs that apply to vendors, then visit the corresponding documentation and
+FAQ
+Want to get notifications for API announcements and content updates? Subscribe to our
+RSS feed
+✅
+If you have questions or feedback on our documentation, we'd like to hear from you! Please vote with the
+Yes
+and
+No
+thumb-vote buttons at the bottom of this page. After you vote, you have an option to leave us a comment.
+18 days ago
+
+===== https://developer-docs.amazon/sp-api/page/404
+TITLE: Page Not Found
+ACCESSED: 2026-09-27
+
+This page might have moved or been deleted. Let's get you back on track:
+Visit the SP-API developer documentation
+for guides and best practices
+Browse the API reference documentation
+for request and response schemas
+Use the search function
+Additional resources:
+Watch tutorials
+on SP-API Developer University
+Explore code samples
+and
+recipes
+to start building
+Join the discussion
+in our developer community
+Contact support
+for technical assistance with your integration.
+
+===== https://developer.amazon.com/
+TITLE: Amazon Developer
+ACCESSED: 2026-09-27
+
+Amazon Developer
+Amazon Developer Services
+Build apps and experiences for Amazon-supported devices and platforms
+Build, Ship, Shape: Amazon Developer Hackathon
+For the first time, Fire TV, Alexa+, Ring, and Bee are all part of one global hackathon. You already build for one. Now connect the living room, the front door, and the cloud in a single project. Compete for $190K in cash and AWS credits, plus category winners get a 1:1 strategy session with Amazon Developer leadership.
+Submissions close October 23.
+Build, Ship, Shape: Amazon Developer Hackathon
+For the first time, Fire TV, Alexa+, Ring, and Bee are all part of one global hackathon. You already build for one. Now connect the living room, the front door, and the cloud in a single project. Compete for $190K in cash and AWS credits, plus category winners get a 1:1 strategy session with Amazon Developer leadership.
+Submissions close October 23.
+Build agentic experiences that reach customers across devices.
+Learn more ❯
+Alexa+ add-on documentation ❯
+Alexa+ Smart Home documentation ❯
+Developer console ❯
+Develop apps and games for Amazon Fire TV, Fire tablet, and other supported devices.
+Learn more ❯
+Documentation ❯
+Recent news ❯
+Appstore Developer Community ❯
+Developer console ❯
+AWS Dev Center
+Build with your favorite programming language.
+Learn more ❯
+Amazon Music
+Reach millions of music fans and podcast listeners.
+Learn more ❯
+Login with Amazon
+Let customers log in using their Amazon accounts.
+Learn more ❯
+Fire TV Partners
+Explore partnership opportunities with Fire TV.
+Learn more ❯
+Amazon Smart Vehicles
+Accelerate your automotive technology innovation.
+Learn more ❯
+Ring Developer
+Transform Ring data into actionable intelligence.
+Learn more ❯
+JWO Technology
+Build the future of retail, start building with Just Walk Out APIs.
+Learn more ❯
+Create an Amazon Developer account
+Registration is easy, free, and the first step to growing your business with Amazon devices and services.
+Create Developer Account
+
+===== https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications
+TITLE: Authorize Applications
+ACCESSED: 2026-09-27
+
+Authorization is the process by which a
+selling partner
+grants your application permission to call the Selling Partner API (SP-API) on the selling partner's behalf. For example, when a selling partner authorizes your order management application, they give your application permission to retrieve their order data through the SP-API.
+After the authorization process is complete, your application can obtain the credentials that the SP-API requires for each API call.
+This topic provides an overview of the available authorization methods and refers you to the relevant documentation based on the method that you choose.
+Your authorization method choices depend on whether your application is public or private. The following section summarizes the authorization methods. For details, refer to the specified documentation.
+Public applications are available to multiple selling partners through the selling partner's website or through the
+Selling Partner Appstore
+. The following information summarizes the available authorization methods for public applications:
+Authorization method:
+OAuth 2.0
+through
+Login with Amazon
+(LWA).
+Who authorizes the application:
+The selling partner.
+Initial authorization flow
+: The selling partner starts either from
+your website
+or from the
+Selling Partner Appstore
+. Through browser redirects, the selling partner interacts with both Amazon and your website to complete the authorization process.
+Reauthorization:
+Reauthorization is required annually or if you want existing users (sellers or vendors) to authorize new
+role
+s for your application. To
+reauthorize your application
+, the selling partner starts at the
+Manage Your Apps
+page in Seller Central.
+Developer implementation needed?
+Yes. You must implement an authorization and a reauthorization flow. The implementation involves setting up an OAuth login URI, an OAuth redirect URI, and so on.
+Documentation:
+Authorize Public Applications
+Website Authorization Workflow
+Selling Partner Appstore Authorization Workflow
+(not applicable to vendors)
+Reauthorize Applications
+Authorization Limits
+Private applications are for exclusive use by a single organization. The following information summarizes the available authorization methods for private applications:
+Authorization method:
+Self-authorization.
+Who authorizes the application:
+You.
+Initial authorization flow:
+You perform a
+self-authorization
+process through Seller Central, Vendor Central, or the Solution Provider Portal.
+Reauthorization:
+Reauthorization is required when you add new roles. You perform the
+self-authorization
+process through Seller Central, Vendor Central, or the Solution Provider Portal.
+Developer implementation needed?
+No. You can perform authorization through one of the tools mentioned previously.
+Documentation:
+Authorize Private Applications
+Revoke Self-Authorizations
+Authorization Limits
+📘
+If you encounter issues while authorizing a Selling Partner API (SP-API) application, refer to
+Authorization error codes
+for troubleshooting steps and common error explanations.
+The following documentation applies to special cases:
+Grantless operations:
+You can call some operations without explicit authorization from a selling partner. These operations are called
+grantless operations
+. For details, refer to
+Grantless Operations
+Vendor groups:
+For vendor applications, authorization applies to the group of vendor codes that are associated with the sign-in credentials for your Vendor Central account. For details about how to handle this case, refer to
+Authorize your Application to Access Vendor Groups
+Restricted data:
+Operations that access restricted data (such as Personally Identifiable Information) require authorization through a Restricted Data Token (RDT). For details, refer to
+Authorization with the Restricted Data Token
+18 days ago
+
+===== https://developer-docs.amazon/sp-api/docs/reauthorize-applications
+TITLE: Reauthorize Applications
+ACCESSED: 2026-09-27
+
+Authorization
+allows your Selling Partner API (SP-API) application to call the SP-API on the
+selling partner
+'s behalf. For security reasons, the selling partner must reauthorize your
+public application
+every 365 days, or anytime you add a
+role
+to your application.
+This topic explains:
+How selling partners reauthorize your application.
+How to test your reauthorization workflow.
+To reauthorize your application, selling partners take the following steps:
+Sign in to
+Seller Central
+Navigate to
+Manage Your Apps
+Find the application (or use the link from Amazon's reauthorization notice).
+Choose
+Re-Authorize
+Review and accept the data access requested.
+Complete the sign-in process on the developer's website (if required).
+Your application must:
+Handle the reauthorization process using OAuth, just like the initial authorization process. This process mirrors the
+Selling Partner Appstore authorization workflow
+Process the authorization code and exchange it for new tokens.
+Update the stored refresh token for the selling partner.
+It is important to test the reauthorization workflow to ensure that your application can exchange parameters with Amazon and receive authorization information. If this workflow is not set up correctly, existing sellers and vendors might lose access to your application when they try to reauthorize annually.
+While your application is in
+Draft
+status, you can test the reauthorization workflows in the following scenarios:
+The selling partner enters the
+reauthorization flow
+when they are already logged into your website.
+The selling partner enters the
+reauthorization flow
+when they aren't logged into your website.
+To test the reauthorization flow:
+Use the
+Selling Partner Appstore authorization workflow
+or
+Website authorization workflow
+to create an initial authorization in your application.
+📘
+It's possible for the
+Draft
+and published versions of your application to be associated with different sets of roles. This happens when you haven't published your application after you add new roles. To get the latest set of roles, you must include
+version=beta
+in the authorization URI.
+Visit the
+Manage Your Apps
+page within Seller Central or the Solution Provider Portal and choose the
+Re-authorize
+button to start the reauthorization workflow.
+If you're testing your workflow with a trusted selling partner, make sure that they log in to their selling partner account on Seller Central and navigate to the
+Manage Your Apps
+page to initiate the workflow.
+Amazon loads your log-in URI with similar parameters as in the
+Selling Partner Appstore authorization workflow
+. Your website should detect that this selling partner has an existing account and proceed with the authorization sequence (handle the authorization code and refresh the stored token).
+📘
+If your application is in
+Draft
+state, Amazon includes the
+version=beta
+parameter in authorization requests. This parameter is not included for published applications.
+13 days ago
+
+===== https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview
+TITLE: Selling Partner API Onboarding Overview
+ACCESSED: 2026-09-27
+
+Before you onboard to the Selling Partner API (SP-API), it's important to understand which onboarding path to follow.
+Developers build software applications that automate tasks for sellers. Developers can:
+Create software tools
+: Developers create applications that call the SP-API to automate selling partner tasks.
+Build technical integrations
+: Connect seller data to external systems or create new functionality.
+List apps in the Selling Partner Appstore
+: Some developers, called public developers, make their applications available in the Selling Partner Appstore for sellers to install. Private developers create internal apps specific to a business.
+Examples
+: Inventory management software, repricing tools, analytics dashboards, order management systems.
+If you're a developer, follow
+Onboarding as a Developer
+Service providers are service-focused businesses that help sellers through manual account management and consulting. Service providers can:
+Provide hands-on services
+: Account management, advertising optimization, inventory planning, business consulting.
+Access Seller Central directly
+: Work through the web interface that sellers use to manage their businesses
+Focus on expertise and strategy
+: Offer specialized knowledge and manual optimization rather than automated tools.
+Get listed in Service Provider Network
+: Amazon's store where sellers discover and hire service providers.
+Examples
+: Marketing agencies, account management consultants, inventory specialists, business strategists.
+If you're a service provider, follow
+Onboarding as a Service Provider
+Yes! Some companies offer both services and software solutions. If you want to build SP-API applications in addition to providing services, complete both onboarding processes: the developer onboarding tutorial for the application side, and the service provider tutorial for the service side.
+18 days ago
+
+===== https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer
+TITLE: Developer Registration Request Status
+ACCESSED: 2026-09-27
+
+After you have submitted your request to register as a
+developer
+, Amazon evaluates the information provided and approves or denies your request. If denied, you can address the reason for the denial by viewing the link to the questions and controls that were missed, and then resubmitting your Developer Profile. The way you check the status of your request varies slightly depending on the type of the application.
+For more information, refer to
+Terminology
+The following procedures show you how to check the status of your request to register as a developer, depending on the type of application you want to create.
+Sign in to
+Solution Provider Portal
+using your developer credentials.
+📘
+For
+Seller Central
+users, sign in to
+Seller Central
+for your Amazon store and navigate to
+Apps and Services
+, then
+Develop Apps
+For
+Vendor Central
+users, sign in to
+Vendor Central
+for your Amazon store and navigate to
+Integration
+, then
+API Integration
+Follow the instructions in the
+Your developer registration is under review
+banner. A pop-up text box appears. To confirm that you want to proceed, copy the application ID from the confirmation page and paste it into the text box. The banner will change to reflect the status of your application.
+18 days ago
+
+===== https://developer-docs.amazon/sp-api/reference/welcome-to-api-references
+TITLE: Welcome to API References
+ACCESSED: 2026-09-27
+
+Welcome to the Selling Partner API reference.
+Navigate to an API to reach its landing page. Select an operation to open its specification.
+Each operation has request and response schemas, as well as examples. You can edit the values of the arguments in the request, which dynamically updates the example request in the language of your choice.
+For information about how to authenticate and call the SP-API, refer to
+Connect to the SP-API
+API
+Versions
+A+ Content Management
+v2020-11-01
+Amazon Warehousing and Distribution
+v2024-05-09
+App Integrations
+v2024-04-01
+Application Management
+v2023-11-30
+Catalog Items
+v2022-04-01
+v2020-12-01
+v0
+Customer Feedback
+v2024-06-01
+Data Kiosk
+v2023-11-15
+Easy Ship
+v2022-03-23
+External Fulfillment Inventory
+v2024-09-11
+External Fulfillment Returns
+v2024-09-11
+External Fulfillment Shipping
+v2024-09-11
+FBA Inbound Eligibility
+v1
+FBA Inventory
+v1
+Feeds
+v2021-06-30
+Finances
+v2024-06-19
+v0
+Fulfillment Inbound
+v2024-03-20
+v0
+Fulfillment Outbound
+v2026-07-04
+v2020-07-01
+Invoices
+v2026-06-25
+Invoices (Brazil only)
+v2024-06-19
+Listings Items
+v2021-08-01
+v2020-09-01
+Listings Restrictions
+v2021-08-01
+Merchant Fulfillment
+v0
+Messaging
+v1
+Notifications
+v1
+Orders
+v2026-01-01
+v0
+Product Fees
+v0
+Product Pricing
+v2022-05-01
+v0
+Product Type Definitions
+v2020-09-01
+Promotions
+v2025-12-01
+Replenishment
+v2022-11-07
+Reports
+v2021-06-30
+Sales
+v1
+Seller Wallet
+v2024-03-01
+Sellers
+v1
+Services
+v1
+Shipment Invoicing
+v0
+Solicitations
+v1
+Supply Sources
+v2020-07-01
+Tokens
+v2021-03-01
+Transfers
+v2024-06-01
+Uploads
+v2020-11-01
+Vehicles
+v2024-11-01
+Vendor Direct Fulfillment Inventory
+v1
+Vendor Direct Fulfillment Orders
+v2021-12-28
+v1
+Vendor Direct Fulfillment Payments
+v1
+Vendor Direct Fulfillment Sandbox Test Data
+v2021-10-28
+Vendor Direct Fulfillment Shipping
+v2021-12-28
+v1
+Vendor Direct Fulfillment Transactions
+v2021-12-28
+v1
+Vendor Invoices
+v1
+Vendor Orders
+v1
+Vendor Shipments
+v1
+Vendor Transaction Status
+v1

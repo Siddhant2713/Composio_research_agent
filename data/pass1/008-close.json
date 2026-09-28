@@ -1,0 +1,208 @@
+{
+  "app": "Close",
+  "number": 8,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:03:01.485364+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.close.com\",\n    \"https://developer.close.com/api/\",\n    \"https://developer.close.com/topics/authentication/\",\n    \"https://support.close.com\",\n    \"https://close.com/pricing/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://close.com",
+    "https://developer.close.com",
+    "https://developer.close.com/api/",
+    "https://developer.close.com/topics/authentication/",
+    "https://support.close.com",
+    "https://close.com/pricing/",
+    "https://docs.close.com/",
+    "https://developers.close.com/",
+    "https://api.close.com/",
+    "https://close.com/docs",
+    "https://close.com/developers",
+    "https://close.com/api",
+    "https://close.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://close.com/blog",
+    "https://close.com/partners",
+    "https://close.com/automation",
+    "https://app.close.com/signup/",
+    "https://close.com/communication",
+    "https://developer.close.com/api",
+    "https://developer.close.com/integrations/create-an-oauth-app",
+    "https://www.close.com/blog",
+    "https://www.close.com/pricing",
+    "https://developer.close.com/api/overview/oauth-authentication",
+    "https://developer.close.com/api/resources/scheduling-links/create-integration",
+    "https://developer.close.com/api/resources/scheduling-links/delete-integration",
+    "https://help.close.com/docs/api-keys-oauth",
+    "https://developer.close.com/api/overview/api-key-authentication.md",
+    "https://close.com/sales-playmaker"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://support.close.com",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://docs.close.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.close.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://close.com",
+      "requested_url": "https://close.com",
+      "status": 200,
+      "title": "Close CRM | The CRM That Does the Work",
+      "chars": 3724,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.close.com",
+      "requested_url": "https://developer.close.com",
+      "status": 200,
+      "title": "Close Developer Platform | Close | Developer API Documentation",
+      "chars": 1672,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.close.com/api/overview",
+      "requested_url": "https://developer.close.com/api/",
+      "status": 200,
+      "title": "API Overview | Close | Developer API Documentation",
+      "chars": 1926,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "requested_url": "https://developer.close.com/topics/authentication/",
+      "status": 200,
+      "title": "Authentication with API keys | Close | Developer API Documentation",
+      "chars": 1346,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://close.com/pricing",
+      "requested_url": "https://close.com/pricing/",
+      "status": 200,
+      "title": "Pricing | Close CRM",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://close.com/blog",
+      "requested_url": "https://close.com/blog",
+      "status": 200,
+      "title": "Sales, CRM & AI Blog | Close",
+      "chars": 1859,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://close.com/partners",
+      "requested_url": "https://close.com/partners",
+      "status": 200,
+      "title": "Close CRM Partner Program",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://close.com/automation",
+      "requested_url": "https://close.com/automation",
+      "status": 200,
+      "title": "CRM Automation & Sales Workflow Software | Close CRM",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://app.close.com/signup/",
+      "requested_url": "https://app.close.com/signup/",
+      "status": 200,
+      "title": "Close",
+      "chars": 263,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://close.com/communication",
+      "requested_url": "https://close.com/communication",
+      "status": 200,
+      "title": "Sales Communication CRM | Email, Calls & SMS | Close",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Close CRM exposes a developer platform featuring a REST API, webhooks, an MCP server, and multiple authentication methods for automating sales processes.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Close supports both API keys (using HTTP Basic Authentication where the key is the username and the password is empty) and OAuth 2.0.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can sign up for a free trial online without a credit card and generate API keys directly within their account settings under Settings > Developer > API Keys.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Python\",\n      \"Node.js\",\n      \"Ruby\",\n      \"PHP\",\n      \"Go\"\n    ],\n    \"notes\": \"Community libraries and REST endpoints are provided alongside webhooks and an event log covering the last 30 days.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"An MCP (Model Context Protocol) server is provided for AI agents to give tools direct access to Close data.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials can be generated within account settings, and the API is fully documented with a REST reference, OpenAPI spec, and SDK client libraries.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://close.com\",\n      \"claim\": \"Mentions REST API, webhooks, and MCP server availability.\"\n    },\n    {\n      \"url\": \"https://developer.close.com\",\n      \"claim\": \"Lists REST API reference, authentication via API keys or OAuth 2.0, webhooks, and MCP server.\"\n    },\n    {\n      \"url\": \"https://developer.close.com/api/overview\",\n      \"claim\": \"Provides base URL https://api.close.com/api/v1 and details REST conventions, webhooks, and OpenAPI spec.\"\n    },\n    {\n      \"url\": \"https://developer.close.com/api/overview/api-key-authentication\",\n      \"claim\": \"Explains how to obtain API keys in account settings and use HTTP Basic client-side authentication with a blank password.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint_url": "https://close.com",
+    "one_liner": "Close CRM exposes a developer platform featuring a REST API, webhooks, an MCP server, and multiple authentication methods for automating sales processes.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Close supports both API keys (using HTTP Basic Authentication where the key is the username and the password is empty) and OAuth 2.0."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can sign up for a free trial online without a credit card and generate API keys directly within their account settings under Settings > Developer > API Keys."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Python",
+        "Node.js",
+        "Ruby",
+        "PHP",
+        "Go"
+      ],
+      "notes": "Community libraries and REST endpoints are provided alongside webhooks and an event log covering the last 30 days."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "An MCP (Model Context Protocol) server is provided for AI agents to give tools direct access to Close data."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials can be generated within account settings, and the API is fully documented with a REST reference, OpenAPI spec, and SDK client libraries."
+    },
+    "evidence": [
+      {
+        "url": "https://close.com",
+        "claim": "Mentions REST API, webhooks, and MCP server availability.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.close.com",
+        "claim": "Lists REST API reference, authentication via API keys or OAuth 2.0, webhooks, and MCP server.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.close.com/api/overview",
+        "claim": "Provides base URL https://api.close.com/api/v1 and details REST conventions, webhooks, and OpenAPI spec.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.close.com/api/overview/api-key-authentication",
+        "claim": "Explains how to obtain API keys in account settings and use HTTP Basic client-side authentication with a blank password.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:03:46.450708+00:00"
+}

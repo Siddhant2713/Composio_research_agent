@@ -1,0 +1,201 @@
+{
+  "app": "GitHub",
+  "number": 61,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:04:42.877517+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.github.com/rest\",\n    \"https://docs.github.com/en/rest\",\n    \"https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app\",\n    \"https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\",\n    \"https://docs.github.com/en/developers\",\n    \"https://github.com/settings/developers\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.github.com/rest",
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+    "https://docs.github.com/en/developers",
+    "https://github.com/settings/developers",
+    "https://docs.github.com/",
+    "https://developer.github.com/",
+    "https://developers.github.com/",
+    "https://api.github.com/",
+    "https://github.com/docs",
+    "https://github.com/developers",
+    "https://github.com/api",
+    "https://github.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.github.com/rest/quickstart",
+    "https://docs.github.com/rest/overview/api-versions",
+    "https://docs.github.com/rest/about-the-rest-api/about-the-rest-api",
+    "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+    "https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens",
+    "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens",
+    "https://docs.github.com/en/apps/github-authentication-discovery-endpoints",
+    "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/reviewing-your-authorized-oauth-apps",
+    "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app",
+    "https://docs.github.com/en/apps/oauth-apps/maintaining-oauth-apps/troubleshooting-oauth-app-access-token-request-errors",
+    "https://docs.github.com/en/apps/oauth-apps",
+    "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps",
+    "https://docs.github.com/en/actions/tutorials/authenticate-with-github_token",
+    "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/preventing-unauthorized-access",
+    "https://docs.github.com/en/apps/using-github-apps/authorizing-github-apps",
+    "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/privileged-oauth-apps",
+    "https://support.github.com",
+    "https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2Fsettings%2Fdevelopers&source=login",
+    "https://docs.github.com/en/authentication",
+    "https://docs.github.com/en/copilot/get-started/plans",
+    "https://github.com/pricing",
+    "https://docs.github.com/en/graphql"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://docs.github.com/en/rest",
+      "requested_url": "https://docs.github.com/rest",
+      "status": 200,
+      "title": "GitHub REST API documentation - GitHub Docs",
+      "chars": 1586,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+      "requested_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+      "status": 200,
+      "title": "Creating an OAuth app - GitHub Docs",
+      "chars": 2108,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+      "requested_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+      "status": 200,
+      "title": "Managing your personal access tokens - GitHub Docs",
+      "chars": 4988,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/apps",
+      "requested_url": "https://docs.github.com/en/developers",
+      "status": 200,
+      "title": "GitHub Apps documentation - GitHub Docs",
+      "chars": 1847,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsettings%2Fdevelopers",
+      "requested_url": "https://github.com/settings/developers",
+      "status": 200,
+      "title": "Sign in to GitHub \u00b7 GitHub",
+      "chars": 392,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en",
+      "requested_url": "https://docs.github.com/",
+      "status": 200,
+      "title": "GitHub Docs",
+      "chars": 1116,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/quickstart",
+      "requested_url": "https://docs.github.com/rest/quickstart",
+      "status": 200,
+      "title": "Quickstart for GitHub REST API - GitHub Docs",
+      "chars": 4933,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/api-versions",
+      "requested_url": "https://docs.github.com/rest/overview/api-versions",
+      "status": 200,
+      "title": "API Versions - GitHub Docs",
+      "chars": 4855,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api",
+      "requested_url": "https://docs.github.com/rest/about-the-rest-api/about-the-rest-api",
+      "status": 200,
+      "title": "About the REST API - GitHub Docs",
+      "chars": 1768,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+      "requested_url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+      "status": 200,
+      "title": "Endpoints available for GitHub App user access tokens - GitHub Docs",
+      "chars": 4998,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"GitHub REST API for creating integrations, retrieving data, and automating workflows.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Supports OAuth 2.0 via OAuth apps and GitHub Apps, as well as personal access tokens (classic and fine-grained).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create and register OAuth apps and personal access tokens directly from their account settings without special gated approvals.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Octokit.js\"\n    ],\n    \"notes\": \"REST API documentation and JavaScript SDK (Octokit.js) are explicitly mentioned and detailed.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"Model Context Protocol is not mentioned in the provided text.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials can be generated directly via account settings, and comprehensive REST API documentation is available.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.github.com/en/rest\",\n      \"claim\": \"The GitHub REST API documentation provides guidance on creating integrations, retrieving data, and automating workflows.\"\n    },\n    {\n      \"url\": \"https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app\",\n      \"claim\": \"Developers can create and register an OAuth app under their personal account or organization.\"\n    },\n    {\n      \"url\": \"https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\",\n      \"claim\": \"Personal access tokens can be used for authentication to the GitHub API.\"\n    },\n    {\n      \"url\": \"https://docs.github.com/en/rest/quickstart\",\n      \"claim\": \"Provides quickstart documentation for using the GitHub REST API with GitHub CLI, curl, or Octokit.js.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.github.com/rest",
+    "one_liner": "GitHub REST API for creating integrations, retrieving data, and automating workflows.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Supports OAuth 2.0 via OAuth apps and GitHub Apps, as well as personal access tokens (classic and fine-grained)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create and register OAuth apps and personal access tokens directly from their account settings without special gated approvals."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Octokit.js"
+      ],
+      "notes": "REST API documentation and JavaScript SDK (Octokit.js) are explicitly mentioned and detailed."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Model Context Protocol is not mentioned in the provided text."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials can be generated directly via account settings, and comprehensive REST API documentation is available."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.github.com/en/rest",
+        "claim": "The GitHub REST API documentation provides guidance on creating integrations, retrieving data, and automating workflows.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+        "claim": "Developers can create and register an OAuth app under their personal account or organization.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "claim": "Personal access tokens can be used for authentication to the GitHub API.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.github.com/en/rest/quickstart",
+        "claim": "Provides quickstart documentation for using the GitHub REST API with GitHub CLI, curl, or Octokit.js.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:04:58.978981+00:00"
+}

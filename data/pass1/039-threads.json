@@ -1,0 +1,218 @@
+{
+  "app": "Threads",
+  "number": 39,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:29:41.809345+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.facebook.com/docs/threads\",\n    \"https://developers.facebook.com/docs/threads/get-started\",\n    \"https://developers.facebook.com/docs/threads/overview\",\n    \"https://developers.facebook.com/docs/threads/apis\",\n    \"https://developers.facebook.com/docs/threads/access-rate-limits\",\n    \"https://developers.facebook.com/apps/\",\n    \"https://developers.facebook.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.facebook.com/docs/threads",
+    "https://developers.facebook.com/docs/threads/get-started",
+    "https://developers.facebook.com/docs/threads/overview",
+    "https://developers.facebook.com/docs/threads/apis",
+    "https://developers.facebook.com/docs/threads/access-rate-limits",
+    "https://developers.facebook.com/apps/",
+    "https://developers.facebook.com/",
+    "https://docs.facebook.com/",
+    "https://developer.facebook.com/",
+    "https://api.facebook.com/",
+    "https://facebook.com/docs",
+    "https://facebook.com/developers",
+    "https://facebook.com/api",
+    "https://facebook.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens",
+    "https://developers.facebook.com/documentation/threads/get-started/app-access-tokens",
+    "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+    "https://developers.facebook.com/documentation/threads/webhooks",
+    "https://developers.facebook.com/documentation/threads/reference",
+    "https://developers.facebook.com/tools/debug/accesstoken/",
+    "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+    "https://developers.facebook.com/social-technologies/products/?filter-id=authentication-authorization",
+    "https://developers.facebook.com/m/signup/",
+    "https://developers.facebook.com/products/business-sdk/"
+  ],
+  "boilerplate_lines_removed": 5,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.facebook.com/docs/threads/apis",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developers.facebook.com/docs/threads/access-rate-limits",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.facebook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.facebook.com/documentation/threads",
+      "requested_url": "https://developers.facebook.com/docs/threads",
+      "status": 200,
+      "title": "Threads API | Meta for Developers",
+      "chars": 776,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started",
+      "requested_url": "https://developers.facebook.com/docs/threads/get-started",
+      "status": 200,
+      "title": "Get started with the Threads API | Meta for Developers",
+      "chars": 4823,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/overview",
+      "requested_url": "https://developers.facebook.com/docs/threads/overview",
+      "status": 200,
+      "title": "Threads API overview | Meta for Developers",
+      "chars": 4956,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps%2F",
+      "requested_url": "https://developers.facebook.com/apps/",
+      "status": 200,
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "chars": 224,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/",
+      "requested_url": "https://developers.facebook.com/",
+      "status": 200,
+      "title": "Social technologies | Meta for Developers",
+      "chars": 3379,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens",
+      "requested_url": "https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens",
+      "status": 200,
+      "title": "Long-lived access tokens - Threads API | Meta for Developers",
+      "chars": 3292,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/app-access-tokens",
+      "requested_url": "https://developers.facebook.com/documentation/threads/get-started/app-access-tokens",
+      "status": 200,
+      "title": "App Access Tokens | Meta for Developers",
+      "chars": 1368,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+      "requested_url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+      "status": 200,
+      "title": "Get Access Tokens | Meta for Developers",
+      "chars": 4948,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/webhooks",
+      "requested_url": "https://developers.facebook.com/documentation/threads/webhooks",
+      "status": 200,
+      "title": "Webhooks for Threads | Meta for Developers",
+      "chars": 4952,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/reference",
+      "requested_url": "https://developers.facebook.com/documentation/threads/reference",
+      "status": 200,
+      "title": "Threads API Reference | Meta for Developers",
+      "chars": 872,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The Threads API allows third-party developers to create and publish posts, retrieve media and profiles, moderate replies, and access insights using OAuth 2.0 and REST endpoints.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol (short-lived and long-lived tokens), or app access tokens using client credentials.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create a Meta app and configure the Threads use case themselves in the App Dashboard, though some permissions and webhooks require App Review / Advanced Access.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Provides REST endpoints accessed via graph.threads.com or graph.threads.net, along with webhooks for real-time notifications.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Self-serve credential generation is available via the App Dashboard, but going live or using specific permissions requires manual App Review / Advanced Access.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads\",\n      \"claim\": \"Lists the overview, endpoints, and features of the Threads API.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/get-started\",\n      \"claim\": \"Explains creation of a Meta app with the Threads use case and OAuth 2.0 user access tokens.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/overview\",\n      \"claim\": \"Details API base URLs graph.threads.com or graph.threads.net and rate limiting.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens\",\n      \"claim\": \"Describes exchanging short-lived tokens for long-lived access tokens.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/get-started/app-access-tokens\",\n      \"claim\": \"Explains generating app access tokens or passing app ID/secret.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions\",\n      \"claim\": \"Details the Authorization Window URL and code exchange for tokens.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/webhooks\",\n      \"claim\": \"Describes webhooks for Threads to receive real-time notifications.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/threads/reference\",\n      \"claim\": \"Provides the API reference list of endpoints.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 39,
+    "name": "Threads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://developers.facebook.com/docs/threads",
+    "one_liner": "The Threads API allows third-party developers to create and publish posts, retrieve media and profiles, moderate replies, and access insights using OAuth 2.0 and REST endpoints.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol (short-lived and long-lived tokens), or app access tokens using client credentials."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create a Meta app and configure the Threads use case themselves in the App Dashboard, though some permissions and webhooks require App Review / Advanced Access."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Provides REST endpoints accessed via graph.threads.com or graph.threads.net, along with webhooks for real-time notifications."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Self-serve credential generation is available via the App Dashboard, but going live or using specific permissions requires manual App Review / Advanced Access."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.facebook.com/documentation/threads",
+        "claim": "Lists the overview, endpoints, and features of the Threads API.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/get-started",
+        "claim": "Explains creation of a Meta app with the Threads use case and OAuth 2.0 user access tokens.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/overview",
+        "claim": "Details API base URLs graph.threads.com or graph.threads.net and rate limiting.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens",
+        "claim": "Describes exchanging short-lived tokens for long-lived access tokens.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/get-started/app-access-tokens",
+        "claim": "Explains generating app access tokens or passing app ID/secret.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+        "claim": "Details the Authorization Window URL and code exchange for tokens.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/webhooks",
+        "claim": "Describes webhooks for Threads to receive real-time notifications.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/threads/reference",
+        "claim": "Provides the API reference list of endpoints.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:30:13.755489+00:00"
+}

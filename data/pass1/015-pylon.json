@@ -1,0 +1,179 @@
+{
+  "app": "Pylon",
+  "number": 15,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:56:07.040621+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://usepylon.com\",\n    \"https://docs.usepylon.com\",\n    \"https://usepylon.com/docs\",\n    \"https://usepylon.com/api\",\n    \"https://usepylon.com/developers\",\n    \"https://usepylon.com/pricing\",\n    \"https://usepylon.com/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://usepylon.com",
+    "https://docs.usepylon.com",
+    "https://usepylon.com/docs",
+    "https://usepylon.com/api",
+    "https://usepylon.com/developers",
+    "https://usepylon.com/pricing",
+    "https://usepylon.com/contact",
+    "https://developer.usepylon.com/",
+    "https://developers.usepylon.com/",
+    "https://api.usepylon.com/",
+    "https://usepylon.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "https://www.usepylon.com/competitors/salesforce",
+    "https://www.usepylon.com/integrations/salesforce",
+    "https://www.usepylon.com/event/whats-new-september?utm_source=pylon+&utm_medium=banner&utm_campaign=wbn-september-whatsnew",
+    "https://docs.usepylon.com/pylon-docs/getting-started/pylonboarding",
+    "https://docs.usepylon.com/pylon-docs/getting-started/quickstart.md",
+    "https://docs.usepylon.com/pylon-docs/knowledge-base/custom-authentication",
+    "https://docs.usepylon.com/pylon-docs/customer-portal/custom-authentication",
+    "https://usepylon.com/get-started",
+    "https://docs.usepylon.com/pylon-docs/getting-started"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://usepylon.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://usepylon.com/api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://usepylon.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://usepylon.com/contact",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.usepylon.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://www.usepylon.com/event/whats-new-september?utm_source=pylon+&utm_medium=banner&utm_campaign=wbn-september-whatsnew",
+      "reason": "page too thin (98 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.usepylon.com/",
+      "requested_url": "https://usepylon.com",
+      "status": 200,
+      "title": "Pylon: Agentic B2B Support",
+      "chars": 2557,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs",
+      "requested_url": "https://docs.usepylon.com",
+      "status": 200,
+      "title": "Introduction | Pylon",
+      "chars": 1167,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.usepylon.com/schedule-demo",
+      "requested_url": "https://usepylon.com/pricing",
+      "status": 200,
+      "title": "Book a Demo | Pylon",
+      "chars": 230,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+      "requested_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+      "status": 200,
+      "title": "API reference | Pylon",
+      "chars": 409,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.usepylon.com/competitors/salesforce",
+      "requested_url": "https://www.usepylon.com/competitors/salesforce",
+      "status": 200,
+      "title": "Pylon vs Salesforce Service Cloud for B2B Support",
+      "chars": 4900,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/salesforce",
+      "requested_url": "https://www.usepylon.com/integrations/salesforce",
+      "status": 200,
+      "title": "Salesforce Integration | Pylon",
+      "chars": 4241,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/getting-started/pylonboarding",
+      "requested_url": "https://docs.usepylon.com/pylon-docs/getting-started/pylonboarding",
+      "status": 200,
+      "title": "Pylonboarding | Pylon",
+      "chars": 662,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Pylon is an agentic B2B support platform providing an API reference covering accounts, activities, issues, and more.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": null\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": null\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"An API reference section exists covering entities like Accounts, Activities, and Issues, but specific details on REST, GraphQL, webhooks, or SDKs are not provided in the scraped text.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Pylon makes raw customer data available via Model Context Protocol (MCP) to agents and teams.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"The scraped pages mention an API reference and MCP support, but do not contain information about how credentials are obtained or how authentication is performed.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.usepylon.com/pylon-docs/developer/api/api-reference\",\n      \"claim\": \"The documentation lists an API reference covering Accounts, Activities, Issues, and other objects.\"\n    },\n    {\n      \"url\": \"https://www.usepylon.com/\",\n      \"claim\": \"Pylon makes raw customer data available via MCP to agents and your team.\"\n    }\n  ],\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://usepylon.com",
+    "one_liner": "Pylon is an agentic B2B support platform providing an API reference covering accounts, activities, issues, and more.",
+    "auth": {
+      "method": "unknown",
+      "notes": null
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": null
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "An API reference section exists covering entities like Accounts, Activities, and Issues, but specific details on REST, GraphQL, webhooks, or SDKs are not provided in the scraped text."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Pylon makes raw customer data available via Model Context Protocol (MCP) to agents and teams."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The scraped pages mention an API reference and MCP support, but do not contain information about how credentials are obtained or how authentication is performed."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+        "claim": "The documentation lists an API reference covering Accounts, Activities, Issues, and other objects.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.usepylon.com/",
+        "claim": "Pylon makes raw customer data available via MCP to agents and your team.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:56:54.443906+00:00"
+}

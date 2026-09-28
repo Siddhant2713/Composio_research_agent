@@ -1,0 +1,140 @@
+{
+  "app": "Paygent Connect",
+  "number": 84,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:26:14.254108+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.paygent.co.jp/\",\n    \"https://www.paygent.co.jp/en/\",\n    \"https://www.paygent.co.jp/payment/service/connect/\",\n    \"https://www.paygent.co.jp/contact/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://www.paygent.co.jp/",
+    "https://www.paygent.co.jp/en/",
+    "https://www.paygent.co.jp/payment/service/connect/",
+    "https://www.paygent.co.jp/contact/"
+  ],
+  "second_hop_considered": [
+    "https://www.paygent.co.jp/partner/",
+    "https://www.paygent.co.jp/contact/detail/id_65.html",
+    "https://www.paygent.co.jp/safety/installment_sales_act",
+    "https://www.paygent.co.jp/contact/detail/id_188.html",
+    "https://www.paygent.co.jp/contact/detail/id_190.html"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://www.paygent.co.jp/en/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://www.paygent.co.jp/payment/service/connect/",
+      "reason": "HTTP 404"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.paygent.co.jp/",
+      "requested_url": "https://www.paygent.co.jp/",
+      "status": 200,
+      "title": "\u6c7a\u6e08\u4ee3\u884c\u30b5\u30fc\u30d3\u30b9\u30fbEC\u6c7a\u6e08\u306a\u3089\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 1548,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.paygent.co.jp/contact/",
+      "requested_url": "https://www.paygent.co.jp/contact/",
+      "status": 200,
+      "title": "\u304a\u554f\u3044\u5408\u308f\u305b\uff5c\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 729,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.paygent.co.jp/partner/",
+      "requested_url": "https://www.paygent.co.jp/partner/",
+      "status": 200,
+      "title": "\u30aa\u30d5\u30a3\u30b7\u30e3\u30eb\u30d1\u30fc\u30c8\u30ca\u30fc\u30d7\u30ed\u30b0\u30e9\u30e0\uff5c\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 669,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.paygent.co.jp/contact/detail/id_65.html",
+      "requested_url": "https://www.paygent.co.jp/contact/detail/id_65.html",
+      "status": 200,
+      "title": "\u30da\u30a4\u30b8\u30a7\u30f3\u30c8\u6c7a\u6e08\u4ee3\u884c\u30b5\u30fc\u30d3\u30b9\u3000\u8cc7\u6599\u8acb\u6c42\u30fb\u304a\u554f\u3044\u5408\u308f\u305b\uff5c\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 258,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.paygent.co.jp/safety/installment_sales_act",
+      "requested_url": "https://www.paygent.co.jp/safety/installment_sales_act",
+      "status": 200,
+      "title": "\u5272\u8ce6\u8ca9\u58f2\u6cd5\u30fb\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u30ac\u30a4\u30c9\u30e9\u30a4\u30f3\u5bfe\u5fdc\uff5c\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 1133,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.paygent.co.jp/contact/detail/id_188.html",
+      "requested_url": "https://www.paygent.co.jp/contact/detail/id_188.html",
+      "status": 200,
+      "title": "\u30b7\u30b9\u30c6\u30e0\u4ed5\u69d8\u66f8 \u8acb\u6c42\u30d5\u30a9\u30fc\u30e0\uff5c\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 155,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.paygent.co.jp/contact/detail/id_190.html",
+      "requested_url": "https://www.paygent.co.jp/contact/detail/id_190.html",
+      "status": 200,
+      "title": "\u30da\u30a4\u30b8\u30a7\u30f3\u30c8\u6c7a\u6e08\u4ee3\u884c\u30b5\u30fc\u30d3\u30b9 \u30d1\u30fc\u30c8\u30ca\u30fc\u30d7\u30ed\u30b0\u30e9\u30e0 \u8cc7\u6599\u8acb\u6c42\uff5c\u30da\u30a4\u30b8\u30a7\u30f3\u30c8",
+      "chars": 207,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Paygent Connect is a payment gateway and fintech service providing credit card, carrier, bank, and alternative payment processing solutions in Japan.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": null\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"System specifications and API documents require requesting them or signing an NDA beforehand.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": null\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"The provided pages mention system specifications can be requested upon NDA/contact, but do not provide public API documentation or self-serve credentials.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.paygent.co.jp/contact/\",\n      \"claim\": \"System specifications require requesting them prior to contract under an NDA.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "hint_url": null,
+    "one_liner": "Paygent Connect is a payment gateway and fintech service providing credit card, carrier, bank, and alternative payment processing solutions in Japan.",
+    "auth": {
+      "method": "unknown",
+      "notes": null
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "System specifications and API documents require requesting them or signing an NDA beforehand."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": null
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The provided pages mention system specifications can be requested upon NDA/contact, but do not provide public API documentation or self-serve credentials."
+    },
+    "evidence": [
+      {
+        "url": "https://www.paygent.co.jp/contact/",
+        "claim": "System specifications require requesting them prior to contract under an NDA.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:26:23.640046+00:00"
+}

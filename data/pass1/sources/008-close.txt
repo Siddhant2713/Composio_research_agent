@@ -1,0 +1,799 @@
+===== https://close.com
+TITLE: Close CRM | The CRM That Does the Work
+ACCESSED: 2026-09-27
+
+What is Close?
+Close is a sales CRM built for teams that sell. It combines calling, email, SMS, pipeline management, reporting, and an AI sales agent named Chloe into a single platform. Close helps teams act on their sales data.
+What is Chloe?
+Chloe is an AI sales agent built into Close CRM that calls leads, qualifies prospects through real conversations, and can book meetings while updating your CRM automatically. She is part of the CRM — not a separate tool or integration.
+11,500
++
+Sales teams trust Close
+2
+B+
+Calls, emails, and texts
+4.7
+★
+Rated on G2
+“
+Our booked appointments per week have gone up ~50% since Chloe went live.
+”
+— Dana Derricks, Founder @ FollowUp.com
+New lead comes in?
+Cold lead sitting in your CRM?
+Your rep forgot to follow-up?
+Your lead is now qualified and ready for sales
+New lead comes in?
+→
+Contacted instantly
+A lead hits your pipeline. Chloe calls within minutes — using Close's built-in dialer. Transcript, notes, and next steps logged automatically.
+Start your free trial
+Cold lead sitting in your CRM?
+→
+Re-engaged automatically
+When Chloe finds cold leads she re-opens the conversation and sends warm responses straight to your rep's inbox.
+Re-engage cold leads
+Your rep forgot to follow-up?
+→
+Followed up and moved forward
+Chloe instantly writes the follow-up, sends it at the right time, and updates the deal stage so nothing falls through the cracks.
+Automate follow-ups
+Your lead is now qualified and ready for sales
+→
+Handled and routed
+Chloe qualified your lead, booked your meeting, assigned the right rep, and now prepped your notes, before the call even starts.
+Update your CRM
+“
+We've saved over $100,000 in tech costs switching from Salesforce to Close. We're doing things we never dreamed of doing in a CRM.
+”
+— Zac Muir, VP of Revenue @ Sisu
+“
+If you’re worried your clients will be turned off by AI, don’t be — it’s just noise. Close and Chloe have done nothing but impact my bottom line in a positive way.
+”
+— Ben Pace, President @ ClientMatchmaking.com
+Customers can’t stop talking
+about how much they love Close
+Real customers loving Close and Chloe:
+Summarized calls
+Automatic follow-ups
+Updated CRM
+Surfaced insights
+Every call, captured and summarized
+Chloe generates a complete AI summary of every lead — pulling from calls, emails, and meetings. Full transcripts, action items, and key moments are all logged to the CRM automatically.
+The right message, right on time
+Chloe prepares follow-ups based on call transcripts and sends them or queues them for your rep to review.
+The CRM that updates itself
+Every conversation moves your deal forward. Plus, Chloe fills contact fields with rich data insights from LinkedIn and the web.
+Daily action-items
+Hot leads waiting for follow-up while other deals stall? Not anymore. Chloe's on top of everything.
+“
+We're not using AI to replace people. We're doing it so that the people we have are unlocked to do more. Chloe is not just innovation. She is actually creating the work we need to do.
+”
+— Jem Millett, Director of Admissions @ Flatiron School
+See all integrations
+Don't take our word for it
+Ask AI
+about Close
+See an unfiltered review of Close before you come back and start your free trial.
+Ask ChatGPT
+Ask Claude
+Ask Perplexity
+Like what you heard?
+Try for free
+Built for teams that build
+REST API, webhooks, and MCP server. Everything you need to customize Close for the way your team works.
+Explore the developer platform
+Stop missing leads. Start closing deals.
+The best part of sales is still you. Chloe handles the rest.
+“
+No matter what business model you’re in, your competition is about to be using this technology.
+”
+— Michael Fomkin, CEO & Founder @ VIP Ignite
+Try for free
+No credit card required.
+
+===== https://developer.close.com
+TITLE: Close Developer Platform | Close | Developer API Documentation
+ACCESSED: 2026-09-27
+
+Whether you’re a
+Close
+customer automating your sales process or a partner building an integration, the Close Developer Platform gives everything you or your AI agents need.
+REST API Reference
+Full endpoint docs with schemas, examples, and an interactive API explorer.
+Authentication
+API keys for scripts or OAuth 2.0 for user-facing integrations.
+Webhooks & Events
+Real-time event notifications and a 30-day event log.
+MCP Server
+Model Context Protocol for AI agents.
+Build an Integration
+Create an OAuth app, connect your product, and get listed.
+API Clients
+Community libraries for Python, Node.js, Ruby, PHP, Go, and more.
+API Changelog
+Latest API updates and deprecations.
+Browse 100+ Integrations ↗
+Explore the full directory of apps and tools that connect with Close.
+Use cases
+Push in CRM data
+— Push leads, contacts, activities, and custom data into Close from your website or other systems via the
+REST API
+.
+Sync data out
+— Stream changes with
+webhooks
+, query the
+event log
+, or pull
+reporting metrics
+and pipeline data into your BI tools, data warehouse, or design custom dashboards & reports.
+Automate outreach
+— Manage workflows with
+sequences
+or
+bulk actions
+, or send email/SMS programmatically.
+Publish an integration
+— Build for many Close customers with
+OAuth
+and get listed in the
+integrations directory
+.
+Power AI agents
+— Give Claude, ChatGPT, Cursor, and other tools direct access to Close data via the
+MCP server
+— no code required.
+Getting help
+Our
+Support Team
+can assist Close customers with any questions about the API.
+Implementing something cool or want to chat about where our API is going?
+Schedule a call
+with Joe Kemp, VP of Engineering.
+
+===== https://developer.close.com/api/overview
+TITLE: API Overview | Close | Developer API Documentation
+ACCESSED: 2026-09-27
+
+Base URL:
+https://api.close.com/api/v1
+Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies.
+Authentication
+All API requests require authentication. Two methods are supported:
+API Keys
+— Best for scripts, internal tools, and server-side integrations. Use HTTP Basic Auth with your API key as the username and an empty password.
+OAuth 2.0
+— Best for user-facing integrations.
+Core concepts
+Concept
+Description
+Leads
+Companies or organizations — the primary object in Close. Contain contacts, tasks, opportunities, and activities.
+Contacts
+Individual people within a lead.
+Opportunities
+Potential deals tracked through pipeline stages.
+Activities
+Calls, emails, notes, SMS, meetings, and other interactions logged on leads.
+Custom Fields
+Store arbitrary data on leads, contacts, opportunities, and custom activities.
+Making requests
+All requests use JSON (
+Content-Type: application/json
+).
+PUT
+requests behave as patches — send only the fields you want to update. See
+Fields
+.
+List endpoints support
+pagination
+via
+_skip
+/
+_limit
+or cursor-based pagination.
+Use the
+_fields
+parameter
+to control which fields are returned and improve performance.
+Rate limits
+apply to all endpoints. Handle
+429
+responses with exponential backoff.
+Real-time data
+Webhooks
+— Subscribe to events and receive POST notifications when data changes.
+Event Log
+— Query the last 30 days of changes to any object.
+HTTP response codes
+Code
+Meaning
+200
+Success
+201
+Created (newer endpoints)
+400
+Bad request — check your parameters
+401
+Unauthorized — invalid or missing credentials
+404
+Not found
+429
+Rate limited — back off and retry
+See
+HTTP Response Codes
+for the full list.
+OpenAPI Spec
+We publish an OpenAPI spec at:
+https://api.close.com/api/openapi.json
+Note: This spec is currently considered experimental and does not contain 100% coverage of request/response schemas.
+
+===== https://developer.close.com/api/overview/api-key-authentication
+TITLE: Authentication with API keys | Close | Developer API Documentation
+ACCESSED: 2026-09-27
+
+API keys are best used for scripts and simple integrations that are internal to
+your organization. Alternatively, see
+Authentication with OAuth
+instead.
+Getting an API key
+API keys can be created and managed in your Close account under
+Settings
+→
+Developer
+→
+API Keys
+.
+API keys are scoped to a particular user/organization combination and can be generated and deleted in the Settings page. See
+API Keys & OAuth
+for more information.
+Perform API calls with API key
+API keys use
+HTTP Basic client side authentication
+.
+Basic authentication is a simple authentication scheme built into the HTTP
+protocol. To use it, send your HTTP requests with an Authorization header that
+contains the word Basic followed by a space and a base64-encoded string composed
+of an api key followed by a colon. The API key acts as the username and the
+password is always empty.
+cURL example
+Example cURL request with an api key.
+curl
+https://api.close.com/api/v1/me/
+-u
+yourapikey:
+Notice the ’:’ at the end of the api key. This is used because the key is sent
+as the username with a blank password.
+GET /api/v1/me/ HTTP/1.1
+Authorization: Basic eW91cmFwaWtleTo=
+Host: api.close.com
+This results in the header
+Authorization: Basic eW91cmFwaWtleTo=
+sent with the
+request as base64-encoded string
+yourapikey:
+is
+eW91cmFwaWtleTo=
+API Base URL:
+https://api.close.com/api/v1
+
+===== https://close.com/pricing
+TITLE: Pricing | Close CRM
+ACCESSED: 2026-09-27
+
+Monthly
+Annually
+SAVE UP TO 50%
+Solo
+Core CRM for solo operators
+$
+19
+per user / month
+$
+9
+per user / month
+Try for free
+Includes 500 AI credits per user/month
+Use Chloe & AI features
+500 credits/month
+Refreshes monthly (no rollover)
+Additional credits available
+Everything in Essentials, but:
+Limited to 1 user
+Limited to 10k leads
+Workflows not included
+Essentials
+System of action for small teams
+$
+49
+per user / month
+$
+35
+per user / month
+Try for free
+Includes 1,000 AI credits per user/month
+Use Chloe & AI features
+Shared pool: 1,000 credits/user, up to 10,000/month
+Refreshes monthly (no rollover)
+Additional credits available
+Everything in Solo, plus:
+Unlimited contacts & leads
+Team collaboration features
+Built-in forms, email, calling & SMS
+Centralized inbox & task list
+Workflows not included
+Most popular
+Growth
+Leveraging AI and automation
+$
+109
+per user / month
+$
+99
+per user / month
+Try for free
+Includes 1,500 AI credits per user/month
+Use Chloe & AI features
+Shared pool: 1,500 credits/user, up to 15,000/month
+Refreshes monthly (no rollover)
+Additional credits available
+Everything in Essentials, plus:
+Automated workflows
+Use Chloe in Workflows
+Power dialer
+Custom activities
+Send bulk email
+Scale
+Advanced control for scaling orgs
+$
+149
+per user / month
+$
+139
+per user / month
+Try for free
+Includes 2,000 AI credits per user/month
+Use Chloe & AI features
+Shared pool: 2,000 credits/user, up to 20,000/month
+Refreshes monthly (no rollover)
+Additional credits available
+Everything in Growth, plus:
+Role-based access & permissions
+Lead visibility rules
+Predictive dialer
+Unlimited call recording retention
+Live call coaching
+Custom pricing:
+Growing fast or have more complex sales needs? We can help. Start with a custom demo.
+Talk to us →
+Chloe on every plan
+Get powerful AI leverage from day one
+No credit card needed
+Try Close risk-free
+30-day money-back guarantee
+Get a full refund, no questions asked
+Select your preferred billing cycle:
+Monthly
+Annually
+SAVE UP TO 50%
+Solo
+$19 per user / month
+$9 per user / month
+Try for free
+Essentials
+$49 per user / month
+$35 per user / month
+Try for free
+Most popular
+Growth
+$109 per user / month
+$99 per user / month
+Try for free
+Scale
+$149 per user / month
+$139 per user / month
+Try for free
+Who is this for?
+For founders and solo reps who need a real CRM, not a spreadsheet.
+For small teams that want one place for every call, email, and deal.
+For teams ready to let Chloe work leads while reps focus on closing.
+For high-volume orgs that need advanced controls and the fastest dialing.
+Chloe & AI Features
+Included Chloe & AI credits per user
+How many credits your Close plan already includes monthly. Additional credits are available for purchase.
+500
+1,000
+1,500
+2,000
+Chloe batch calling
+Chloe can call down a list of leads in batches.
+Chat [Beta]
+Chat with Chloe to answer questions and take actions in Close.
+Enrichment
+Automatically enrich contact and company records with external intelligence.
+Use Chloe in Workflows
+Chloe can be used in Workflows to automatically trigger outreach, follow-up, and more.
+Auto Updates
+Run Playbooks and automatically fill Outcomes and custom fields.
+Restrict user access to Chloe
+Limit which users can see Chloe agents, prompts, and settings.
+Core Features (CRM)
+Leads
+Contacts are defined as individuals within an organization and are attached to a Lead in Close.
+10,000
+Unlimited
+Unlimited
+Unlimited
+Custom fields
+Customize Close to store data unique to your business on Leads, Contacts, and Opportunities.
+250
+250
+250
+250
+Custom activities
+Create your own unique templates that record activities specific to your sales process.
+250
+250
+Custom activity instances / month
+Limits on the number of custom activity stored monthly.
+50,000 / month
+50,000 / month
+Unlimited contacts
+Contacts are defined as individuals within an organization and are attached to a Lead in Close.
+Opportunity management
+Track your Opportunities and view the Total Value and Expected Value of the deals in your pipelines. Up to 300 per lead.
+Multi-channel inbox view
+Centralize your to-do list to ensure no leads slip through the cracks.
+Forms
+Capture website leads with a no-code form builder.
+Task management
+Assign tasks to yourself and others to never miss a next step.
+Dynamic list building (Smart Views)
+Search, filter, and save customized views of Leads and Contacts and share them with other team members.
+Pipelines
+Create multiple opportunity pipelines to track different teams, products, or sales processes.
+Data import / export
+Import data from another CRM, a spreadhseet, or manually add in data.
+Duplicate lead detection & merge
+Duplicate lead detection on import and ability to merge duplicate leads.
+Activity timeline
+View, filter, and search all of the activities with a Lead or Contact in a chronological timeline.
+API access + event log
+Connect your Close organization using API keys of using OAuth access.
+Mobile app (iOS / Android)
+Manage the CRM, make & receive calls and texts, and review repor
+
+===== https://close.com/blog
+TITLE: Sales, CRM & AI Blog | Close
+ACCESSED: 2026-09-27
+
+Learn more, sell more.
+How a Sales Pipeline CRM Accelerates Sales: 5 Tools & How to Use Them
+6 No-Brainer Workflows Every Sales Team Needs to Save Time and Sell More
+From Founder's Instinct to Sales Engine: Meghan Watchorn's Playbook to Scaling Sales Teams
+Meghan Watchorn scaled a sales team from 3 reps to 22 and drove 4X revenue growth on Close. Her playbook for turning founder-led sales into a scalable system.
+Ready to see Close in action?
+Built-in calling, email, SMS, and AI teammates. Get started for free.
+or
+Continue with Google
+No credit card required
+|
+Set up in minutes
+|
+★
+Trusted by 11,500+ businesses
+Search
+Filter by Category
+AI Sales
+Business Growth
+Community Insights
+Product Content
+Sales Leadership
+Sales Operations
+Sales Tools
+Strategy & Skills
+From Founder's Instinct to Sales Engine: Meghan Watchorn's Playbook to Scaling Sales Teams
+How a Sales Pipeline CRM Accelerates Sales: 5 Tools & How to Use Them
+6 No-Brainer Workflows Every Sales Team Needs to Save Time and Sell More
+The Remote Sales Team Playbook
+60+ CRM Training Resources - Courses, Programs, Workshops, and Guides
+52 Top Remote Sales Tools for Your Team to Absolutely Crush It
+How to Choose the Right Dialer Software for Your Sales Team
+What's Actually Changing (and What Isn't)
+Introducing Chloe, Your AI Sales Teammate in Close
+How to Get Speed-to-Lead Under 1 Minute With AI Voice (2026 Benchmark Edition)
+How to Automatically Qualify and Call Inbound Leads with AI
+3 Ways to Call in Close: Power Dialer, Predictive Dialer, and Chloe
+Do AI Voice Agents Really Work? The Operations Reality Check
+Best AI Voice Agents for Small Business in 2026
+Build or Buy AI Voice Agents? A Decision Framework for Sales Teams
+Data Hygiene: How to Get Your CRM Shit Together
+Best Practices for Training Your AI Sales Agent
+WTF is n8n, and How Do I Use it for Sales?
+Load more articles
+
+===== https://close.com/partners
+TITLE: Close CRM Partner Program
+ACCESSED: 2026-09-27
+
+Why Close
+Recommend a CRM your customers will actually love.
+You're putting your reputation on the line. Close is a recommendation you can stand behind—purpose-built for sales, easy to adopt, and better than the general-purpose tools your customers already tolerate.
+What's in it for your customers
+Built for sales teams
+Unlike general-purpose CRMs, Close is purpose-built for sales. Less admin. More selling.
+AI that actually does the work
+Calls leads, qualifies prospects, books meetings, and updates the CRM automatically. Not another chatbot.
+Easy to adopt
+Your customers are productive in days—not months. No enterprise implementation. No lengthy onboarding.
+One platform
+Calling, SMS, email, automation, reporting, and AI. Everything works together.
+Close AI
+Working on Northstar Logistics
+Live
+Called +1 (415) 555-0142
+Connected · 2m 14s · positive sentiment
+Qualified lead — budget confirmed
+50 seats · decision maker · timeline: Q3
+Booked meeting — Tue 2:30 PM
+Invite sent · added to your calendar
+CRM updated automatically
+Notes, stage, and next step — no data entry
+AI handled 4 tasks
+~32 min saved today
+What's in it for you
+Build your business alongside Close.
+30% commission on first-year revenue
+Earn 30% of first-year subscription revenue for every qualified customer you bring to Close.
+Recommend a product you believe in
+Your reputation grows when your customers succeed. Recommend software your clients will thank you for.
+Industry-leading trial-to-paid conversion
+Close converts trials to paid better than the category—so more of your referrals stick, and you keep earning.
+Dedicated product & implementation support
+Real product and implementation help from our team—plus sales enablement, co-marketing, and technical guidance.
+Lifetime earnings as you scale
+Keep earning as your referred accounts grow. Lifetime earnings, available as you scale.
+Ready to grow with us?
+Apply now
+Why Close vs. other CRMs
+A CRM you can confidently recommend.
+Traditional CRM
+Close
+Who it's for
+Built for everyone
+Built specifically for sales teams
+Time to value
+Long implementations
+Up and selling in minutes
+AI
+AI as an add-on
+AI built directly into the CRM
+Tooling
+Multiple disconnected tools
+Calling, email, SMS, AI, and CRM together
+Data entry
+Manual CRM updates
+CRM updates itself
+Adoption
+Low adoption
+Built so reps actually use it
+Pricing
+Complex pricing
+Simple plans with AI included
+Ways to partner
+One program. Multiple ways to partner.
+Find where you fit—then submit one application. Every path leads to the same place.
+Agency & Solution Partners
+Help businesses implement Close, optimize sales processes, and earn recurring revenue.
+Apply to become a partner
+Affiliates & Creators
+Recommend Close through content, communities, or your audience and earn commissions.
+Apply to become a partner
+Technology Partners
+Build integrations that help customers get more value from Close and reach mutual customers.
+Apply to become a partner
+VC, Accelerator & Incubator Partners
+Offer Close as a preferred CRM to your portfolio companies with exclusive startup benefits.
+Apply to become a partner
+How it works
+Three steps to get started.
+Step 1
+Apply.
+Submit one short application—whatever kind of partner you are.
+Step 2
+Meet our team.
+A short call with our Partnerships team to find the right fit and get you set up.
+Step 3
+Start growing.
+Start referring, implementing, or building with Close—and earning.
+Don't take our word for it
+Partners who close with Close.
+Featured partner
+“Close has helped us take an already well-established sales process to the next level. It gives our team a clear, streamlined environment to manage leads, communication, and follow-ups efficiently in one place. As Heartbeat Consulting has grown, Close has made it easier for us to maintain structure, visibility, and speed across our sales workflow. It's become a valuable part of our infrastructure and supports us in scaling without adding unnecessary complexity.”
+Stefan Graf
+Founder, Heartbeat Consulting
+Partner
+“Close is world-class at not overcomplicating things. As a CRM, they keep reps focused on selling. In the partner program, they do the same thing for us, keep it simple so we can focus on delivering for our clients. And it's not simple for simplicity's sake, it's simple because it works, which is exactly what's grown our business alongside them.”
+Mariah Williamson
+Owner, RevPilot
+Partner
+“Becoming a Close CRM Implementation Partner over 5 years ago has been the single best professional decision I made so far. We love working with Close and we love seeing the explosive growth our customers experience with our AI Sales Operating Set Up and Close CRM is a key part of that.”
+Justus Kraft
+Founder, CRM Kraft
+Partner
+“I believed in Close when I worked there, and implementing it for clients since then has only strengthened that belief. Close understands how real sales teams operate: reps need speed, managers need visibility, and businesses need automation without unnecessary complexity. I
+
+===== https://close.com/automation
+TITLE: CRM Automation & Sales Workflow Software | Close CRM
+ACCESSED: 2026-09-27
+
+Close Automation
+Automate your sales process. Quit the busywork.
+Stop babysitting your CRM. Close automates manual, repetitive tasks so you can focus on closing deals.
+or
+Start free with Google
+No credit card required · Rated 4.7 on G2 · 11,500+ teams
+Engage leads instantly
+Capture and engage leads right away to improve speed-to-lead.
+Keep your pipeline moving
+Spot deal slowdowns and take action with tasks and automations.
+Reduce manual tasks
+Automate data entry, communication, CRM admin, tasks, and more.
+Win with consistent outreach
+Create workflows to stop leads from slipping through the cracks.
+Sales automation that keeps your deals moving
+Automated Lead Follow-Up
+Never let a lead go cold
+Send a follow-up the moment a lead clicks, opens, or replies. Trigger texts, assign tasks, or nudge reps to act—so leads stay warm and conversations keep flowing.
+Pipeline Automation
+Stop chasing deals. Start moving them.
+Automatically create Opportunities, update fields, ping AEs, update Leads, or send follow-up reminders when deals stall. Keep your pipeline clean and your close rate climbing.
+Churn Prevention
+Stay ahead of churn, boost retention
+Spot red flags early. Create check-ins, renewals, or upsell workflows based on customer behavior—so you retain more accounts and grow existing ones.
+Dialers
+AI Lead Insights
+Activity Tracking
+Speed through call lists
+Automatically dials the next number in your list. No manual dialing.
+Boost your pickup rate
+Call multiple numbers at once, but connect only when a real person answers. High-volume calling, minus the wasted time.
+Leave pre-recorded voicemails
+Leave a pre-recorded voicemail with one click. Save your time and energy for the next call.
+Catch up on leads in seconds
+Get quick, AI-generated recaps of past interactions so you never start a conversation cold.
+Never take meeting notes
+Notetaker transcribes and summarizes meetings and saves everything in the CRM.
+Level up your emails
+Tweak tone, tighten messaging, shorten, or rewrite—all with the click of a button.
+Review any call, fast
+AI pulls key insights from your calls so you can revisit conversations without rewatching every minute.
+Log everything, without doing anything
+Calls, emails, texts, and meetings are automatically logged—no manual input required.
+Stay in the loop with live deal updates
+See deal updates and lead activity in real time without chasing reps or digging through notes.
+Never forget a follow-up again
+Automate follow-up sequences and reminders so no deal slips through the cracks.
+AI-enriched lead research
+Skip Google. Close enriches your leads with key info so you can start conversations faster.
+3 hours saved per week
+98% of users say using Close saves them at least 3 hours each week of admin or manual work.
+Why small businesses love Close.
+Yes, love. (Really.)
+Closes' automation features, like email workflows and follow-up reminders, significantly reduce manual tasks, enabling me to focus more on closing deals.
+Whether it's capturing, nurturing, or following up with leads, Close adapts flexibly to our unique processes and helps us streamline our workflow to a level that few other CRMs can match.
+Try Close free for 14 days and see what selling feels like without the busywork. No credit card required.
+Try for free
+See Close in action
+How does Close automate sales follow-ups?
+Close uses forms and automated email sequences, task reminders, and customizable workflows to keep follow-ups on track. You can trigger actions based on lead behavior—like new lead, email opens, or missed calls—so your team stays on top of every opportunity without manual tracking.
+Can I customize automation rules to fit my sales process?
+Absolutely. Close's automation features are fully customizable. You can set up workflows based on your unique sales pipeline and lead behaviors.
+How does Close's automation compare to traditional CRMs?
+Unlike traditional CRMs that require heavy manual input, Close's automations are simple to manage, but powerful in action. You can run both communication Workflows (where you follow-up with leads via call, email, text, and more) and back-end CRM automations that keep your data clean, all in one place.
+Does Close's automation work with my existing tools?
+Yes. Close integrates with popular tools like Zapier, Slack, and Gmail, making it easy to connect your automation workflows across your sales stack.
+How difficult is it to set up automation in Close?
+Setting up automation is simple, with intuitive workflows and templates to get you started. No technical skills required—just set your triggers, and Close handles the rest.
+Do any of Close's automation features cost extra?
+All of Close's core automation features—workflows, task automation, and outreach sequences are included at no extra cost on the Professional (Growth) and higher plans. Lower plans like Solo/Base do not include these automation tools—so only Professional and Scale users get full automation access as part of their standard pricing. Howeve
+
+===== https://app.close.com/signup/
+TITLE: Close
+ACCESSED: 2026-09-27
+
+Close
+Your browser was unable to load all of
+Close
+'s resources. They may have been blocked by your DNS settings, firewall, proxy, or browser configuration.
+Reload the page or
+click here
+to try again. Contact
+support@close.com
+if you continue to see this message.
+
+===== https://close.com/communication
+TITLE: Sales Communication CRM | Email, Calls & SMS | Close
+ACCESSED: 2026-09-27
+
+Communication
+Close deals faster with built-in communication
+From calls and emails to texts and meetings, Close unifies all your communication channels into one sales workspace. No more tab-hopping, no more tool fatigue—just smarter, faster conversations that lead to more closed deals.
+or
+Start free with Google
+No credit card required · Rated 4.7 on G2 · 11,500+ teams
+One-Click Calling
+Start calls instantly from any lead page—no extra software needed.
+AI-Powered Call Summaries
+Get transcriptions and action items automatically with AI.
+Complete Call Coaching
+Whisper or barge on live calls and review call recordings.
+Predictive Dialing
+Double your outbound call volume with smart dialing.
+Email
+SMS
+Meetings
+WhatsApp
+Forms
+Stay in their inbox—and on their radar
+Send bulk outreach and personal replies from the same powerful platform. With automation, templates, and AI-powered rewrites, email in Close is faster, smarter, and built to convert.
+Bulk Emailing Made Simple:
+Launch personalized campaigns at scale and track opens and clicks in real time.
+Automate Follow-Ups:
+Build email workflows that send reminders and nudges for you.
+Speed Up Personal Outreach:
+Use templates, snippets, and AI-assisted rewrites to send polished messages in seconds.
+Learn more
+Follow up fast with texting built into your CRM
+Your fastest follow-up channel, now built into Close. Send 1:1 texts or automate SMS alongside email and calling.
+Text Without Switching Tools:
+Send and receive texts right inside Close.
+Template + Schedule:
+Use SMS templates to save time and schedule your messages for maximum impact.
+SMS at Scale:
+Include texts in your workflows or run bulk SMS outreach campaigns to reach more leads faster.
+Learn more
+CRM-connected meetings, from start to finish
+With calendar sync, Zoom integration, and AI notetaking, Close connects and captures every meeting so you can focus on the conversation.
+Connect Your Calendar:
+Sync Google, Outlook, Calendly, or SavvyCal to manage meetings in one place.
+Native Zoom Integration:
+Join meetings, log recordings, and stay organized.
+AI-Powered Recaps:
+Automatically transcribe and summarize meetings for perfect follow-ups.
+Make Scheduling Easy:
+Drop calendar links in your email or SMS outreach to increase booking rates.
+Learn more
+From WhatsApp connection to closed deal
+Close connects and captures every WhatsApp interaction so you can focus on the sale, wherever you go.
+Note: this is a third-party integration.
+Integrated communication:
+No Zapier or complex workarounds required.
+Instant updates:
+Two-way sync of WhatsApp conversations on the Lead Page
+Native feel:
+An intentional integration made with the Close team by our partner.
+Learn more
+Capture leads the moment they're ready
+Turn website visits into sales conversations instantly. With Close's no-code Forms, every submission routes directly into your CRM with clean data, built-in spam protection, and zero manual work.
+No-Code Setup:
+Build and embed forms in minutes — no engineering or integrations required.
+Faster Speed-to-Lead:
+Send submissions straight into Close so reps can respond in real time.
+Clean, Reliable Data:
+Automatically map fields, block spam, and keep your CRM organized from day one.
+Learn more
+Sign up, import your leads, and start more conversations. Try Close free for 14 days. No credit card required.
+Try for free
+See Close in action
+Do I need to integrate third-party tools to make calls or send emails in Close?
+Nope. Close comes with forms, calling, email, SMS, Notetaker, and even meeting scheduling built-in—out of the box. That means no extra software, no complex setups, and no switching between tabs. Everything happens inside Close, seamlessly.
+Can I use my existing phone number or email address with Close?
+Yes. You can retain your existing phone number or port it into Close, and continue sending/receiving email from your current address. Close also supports getting local phone numbers in over 200 countries.
+Is it possible to automate follow-ups across multiple channels?
+Absolutely. Close Workflows let you build multi-channel sequences using email, SMS, and task reminders. Set up templates, timing, and triggers to handle your follow-ups automatically—while keeping your outreach personal and timely.
+How much do the communication features in Close cost?
+Many of Close's communication features—like built-in forms, calling, SMS, email, Notetaker, and calendar integrations—are included in one of our base plans. Advanced tools like the AI Call Assistant and Predictive Dialer are available as add-ons or part of higher-tier plans like Professional or Enterprise. You only pay for what your team needs.
+What's the difference between the Power Dialer and Predictive Dialer?
+The Power Dialer helps reps call through lists quickly by automatically pulling in the next lead—no manual dialing or searching required. The Predictive Dialer, available on the Enterprise plan, goes a step further by dialing multiple numbers at once and only connecting

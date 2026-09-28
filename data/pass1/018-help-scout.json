@@ -1,0 +1,196 @@
+{
+  "app": "Help Scout",
+  "number": 18,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:58:02.917824+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.helpscout.com/\",\n    \"https://developer.helpscout.com/help-desk-api/\",\n    \"https://developer.helpscout.com/help-desk-api/authentication/\",\n    \"https://secure.helpscout.net/developers/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://helpscout.com",
+    "https://developer.helpscout.com/",
+    "https://developer.helpscout.com/help-desk-api/",
+    "https://developer.helpscout.com/help-desk-api/authentication/",
+    "https://secure.helpscout.net/developers/",
+    "https://docs.helpscout.com/",
+    "https://developers.helpscout.com/",
+    "https://api.helpscout.com/",
+    "https://helpscout.com/docs",
+    "https://helpscout.com/developers",
+    "https://helpscout.com/api",
+    "https://helpscout.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.helpscout.com/pricing/",
+    "https://developer.helpscout.com/webhooks/",
+    "https://developer.helpscout.com/apps/getting-started/",
+    "https://developer.helpscout.com/help-desk-api/hooks/create/",
+    "https://docs.helpscout.com/collection/1543-getting-started",
+    "https://docs.helpscout.com/category/74-copying-email-to-help-scout",
+    "https://docs.helpscout.com/category/1205-get-started-with-beacon-20"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.helpscout.com/help-desk-api/authentication/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://secure.helpscout.net/developers/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.helpscout.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.helpscout.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.helpscout.com/",
+      "requested_url": "https://helpscout.com",
+      "status": 200,
+      "title": "Help Scout: The AI-driven support platform for customer-first brands",
+      "chars": 4523,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.helpscout.com/",
+      "requested_url": "https://developer.helpscout.com/",
+      "status": 200,
+      "title": "Help Scout Developers - API Documentation\n      \n      | Help Scout Developers",
+      "chars": 995,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.helpscout.com/help-desk-api/",
+      "requested_url": "https://developer.helpscout.com/help-desk-api/",
+      "status": 200,
+      "title": "Mailbox API Overview\n      \n      | Help Scout Developers",
+      "chars": 3191,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.helpscout.com/",
+      "requested_url": "https://docs.helpscout.com/",
+      "status": 200,
+      "title": "Help Scout Support",
+      "chars": 2919,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.helpscout.com/pricing/",
+      "requested_url": "https://www.helpscout.com/pricing/",
+      "status": 200,
+      "title": "Help Scout Pricing: Affordable Customer Support Software",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.helpscout.com/webhooks/",
+      "requested_url": "https://developer.helpscout.com/webhooks/",
+      "status": 200,
+      "title": "Webhooks\n      \n      | Help Scout Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.helpscout.com/apps/getting-started/",
+      "requested_url": "https://developer.helpscout.com/apps/getting-started/",
+      "status": 200,
+      "title": "Getting Started with the Developer Platform\n      \n      | Help Scout Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.helpscout.com/help-desk-api/hooks/create/",
+      "requested_url": "https://developer.helpscout.com/help-desk-api/hooks/create/",
+      "status": 200,
+      "title": "Create Webhook\n      \n      | Help Scout Developers",
+      "chars": 1845,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.helpscout.com/collection/1543-getting-started",
+      "requested_url": "https://docs.helpscout.com/collection/1543-getting-started",
+      "status": 200,
+      "title": "Getting Started - Help Scout Support",
+      "chars": 370,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Help Scout provides Mailbox, Chat, and Docs APIs, webhooks, and sidebar apps for automating customer support workflows.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authentication is based on API Keys passed via HTTP Basic Authentication in the username field with a dummy password.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create apps and configure webhooks or generate API keys directly through the Help Scout user interface and developer documentation.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"@helpscout/javascript-sdk\",\n      \"@helpscout/ui-kit\"\n    ],\n    \"notes\": \"Help Scout offers Mailbox API 2.0, Chat API, Docs API, Webhooks, and JavaScript SDKs/UI Kits for building custom sidebar apps.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"No Model Context Protocol integrations or endpoints are mentioned in the provided documentation.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve developer tools and well-documented API keys/webhooks make building integrations straightforward.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.helpscout.com/\",\n      \"claim\": \"Help Scout provides Apps, Beacon, Inbox API, Chat API, Docs API, and Webhooks for developers.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/help-desk-api/\",\n      \"claim\": \"Authentication for the Mailbox API is based on API Keys passed via HTTP Basic Authentication.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/webhooks/\",\n      \"claim\": \"Webhooks can be configured through the Help Scout user interface under Workspace > Apps.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/apps/getting-started/\",\n      \"claim\": \"Help Scout offers a JavaScript SDK and React UI Kit for building sidebar extensions.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://helpscout.com",
+    "one_liner": "Help Scout provides Mailbox, Chat, and Docs APIs, webhooks, and sidebar apps for automating customer support workflows.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authentication is based on API Keys passed via HTTP Basic Authentication in the username field with a dummy password."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create apps and configure webhooks or generate API keys directly through the Help Scout user interface and developer documentation."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "@helpscout/javascript-sdk",
+        "@helpscout/ui-kit"
+      ],
+      "notes": "Help Scout offers Mailbox API 2.0, Chat API, Docs API, Webhooks, and JavaScript SDKs/UI Kits for building custom sidebar apps."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "No Model Context Protocol integrations or endpoints are mentioned in the provided documentation."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve developer tools and well-documented API keys/webhooks make building integrations straightforward."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.helpscout.com/",
+        "claim": "Help Scout provides Apps, Beacon, Inbox API, Chat API, Docs API, and Webhooks for developers.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.helpscout.com/help-desk-api/",
+        "claim": "Authentication for the Mailbox API is based on API Keys passed via HTTP Basic Authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.helpscout.com/webhooks/",
+        "claim": "Webhooks can be configured through the Help Scout user interface under Workspace > Apps.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.helpscout.com/apps/getting-started/",
+        "claim": "Help Scout offers a JavaScript SDK and React UI Kit for building sidebar extensions.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:59:06.180510+00:00"
+}

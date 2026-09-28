@@ -1,0 +1,1740 @@
+===== https://docs.stripe.com/api
+TITLE: Stripe API Reference
+ACCESSED: 2026-09-27
+
+API Reference
+Ask about this section
+The Stripe API is organized around
+REST
+. Our API has predictable resource-oriented URLs, accepts
+form-encoded
+request bodies, returns
+JSON-encoded
+responses, and uses standard HTTP response codes, authentication, and verbs.
+You can use the Stripe API in
+sandboxes
+without affecting your live data or interacting with banking networks. The API key that you use to
+authenticate
+the request determines whether the request runs in live mode or in a sandbox. Sandboxes support all v2 APIs. Test mode sandboxes support some
+v2 APIs
+The Stripe API doesn’t support bulk updates. You can work on only one object per request.
+The Stripe API differs for every account as we release new
+versions
+and tailor functionality.
+Log in
+to see docs with your test key and data.
+Was this section helpful?
+Yes
+No
+Just getting started?
+Check out our
+development quickstart
+guide.
+Not a developer?
+Use Stripe’s
+no-code options
+or apps from
+our partners
+to get started with Stripe and to do more with your Stripe account—no code required.
+Base URL
+https://api.stripe.com
+Client Libraries
+Ruby
+Python
+PHP
+Java
+Node.js
+Go
+.NET
+By default, the Stripe API Docs demonstrate using curl to interact with the API over HTTP. Select one of our official
+client libraries
+to see examples in code.
+Authentication
+Ask about this section
+The Stripe API uses
+API keys
+to authenticate requests. You can view and manage your API keys in
+the Stripe Dashboard
+Test mode secret keys start with
+sk
+test
+and have unrestricted access to their sandboxes. In live mode, you configure a
+restricted API key
+(starts with
+rk
+live
+) with specific API permissions. Using a restricted API key with only a subset of API permissions limits the damage a bad actor could cause if they obtained the key. In both test mode and live mode, you can create as many restricted API keys as you need for different use cases or components of your application. We also create a live mode secret key (starts with
+sk
+live
+) that grants access to all Stripe API resources. To protect your business, use restricted API keys instead.
+Your API keys carry many privileges. Follow
+best practices
+to keep your keys safe. Don’t embed secret or restricted API keys in source code or client-side applications. Instead, use your server platform’s secrets vault to provide keys to your server-side applications. If your platform doesn’t offer a secrets vault, set your keys in environment variables.
+The Stripe API authenticates requests using
+HTTP Basic Auth
+. Provide your API key as the basic auth username value. You don’t need to provide a password.
+If you need to authenticate using bearer auth (for example, for a cross-origin request), use
+-H "Authorization: Bearer
+sk_test_tR3P...88S4VQ2u
+sk_test_[REDACTED]
+"
+instead of
+-u
+sk_test_tR3P...88S4VQ2u
+sk_test_[REDACTED]
+Make all API requests over
+HTTPS
+. Calls made over plain HTTP fail. API requests without authentication also fail.
+Was this section helpful?
+Yes
+No
+Authenticated Request
+curl
+https://api.stripe.com/v1/charges \
+-u
+sk_test_[REDACTED]
+sk_test_[REDACTED]
+# The colon prevents curl from asking for a password.
+Your API Key
+A sample test API key is included in all the examples here, so you can test any example right away. Do not submit any personally identifiable information in requests made with this key.
+To test requests using your account, replace the sample API key with your actual API key or
+sign in
+Errors
+Ask about this section
+Stripe uses conventional HTTP response codes to indicate the success or failure of an API request. In general:
+Codes in the
+2xx
+range indicate success.
+Codes in the
+4xx
+range indicate an error that failed given the information provided. For example, an omitted required parameter, a failed charge, or a
+declined
+card.
+Many of these include an
+error code
+that briefly explains the error reported.
+See
+Error handling
+for guidance.
+Codes in the
+5xx
+range indicate an error with the Stripe servers (these are rare).
+Was this section helpful?
+Yes
+No
+Attributes
+code
+nullable
+string
+For some errors that could be handled programmatically, a short string indicating the
+error code
+reported.
+decline
+code
+nullable
+string
+For card errors resulting from a card issuer decline, a short string indicating the
+card issuer’s reason for the decline
+if they provide one.
+message
+nullable
+string
+A human-readable message providing more details about the error. For card errors, these messages can be shown to your users.
+param
+nullable
+string
+If the error is parameter-specific, the parameter related to the error. For example, you can use this to display a message near the correct form field.
+payment
+intent
+nullable
+object
+The
+PaymentIntent object
+for errors returned on a request involving a PaymentIntent.
+type
+enum
+The type of error returned. One of
+api
+error
+card
+error
+
+===== https://docs.stripe.com
+TITLE: Stripe Documentation
+ACCESSED: 2026-09-27
+
+Stripe Documentation
+Documentation
+Explore our guides and examples to integrate Stripe.
+Get started with Stripe
+Explore all products
+Sign in
+create an account
+to load your test API keys.
+Test cards
+4242 4242 4242 4242
+Payments
+Accept payments online
+Collect payments with invoices
+Accept payments in-person
+Revenue
+Sell subscriptions
+Offer usage-based pricing
+Set up the customer portal
+Developers
+Set up your development environment
+Build on Stripe with AI
+Integration quickstarts
+Try it out
+Start a payment
+Start a checkout session
+Create a customer
+Sell a product
+Issue coupons
+Get your balance
+Manage taxes
+$
+stripe payment_intents create
+--
+amount
+1099
+--
+currency
+"usd"
+Copy
+{
+"id"
+"xxxxxx"
+"object"
+"payment_intent"
+"amount"
+1099
+"amount_capturable"
+0
+"amount_details"
+{
+"tip"
+{}
+},
+"amount_received"
+0
+"amount_subtotal"
+1099
+"application"
+null
+"application_fee_amount"
+null
+"automatic_payment_methods"
+null
+"canceled_at"
+null
+"cancellation_reason"
+null
+"capture_method"
+"automatic"
+"charges"
+{
+…
+5 items
+}
+"client_secret"
+"xxxxxx"
+"confirmation_method"
+"automatic"
+"created"
+1790529015
+"currency"
+"usd"
+"customer"
+null
+"description"
+null
+"invoice"
+null
+"last_payment_error"
+null
+"livemode"
+false
+"metadata"
+{}
+"next_action"
+null
+"on_behalf_of"
+null
+"payment_method"
+null
+"payment_method_options"
+{
+"card"
+{
+…
+5 items
+}
+},
+"payment_method_types"
+[
+"card"
+],
+"processing"
+null
+"receipt_email"
+null
+"review"
+null
+"setup_future_usage"
+null
+"shipping"
+null
+"source"
+null
+"statement_descriptor"
+null
+"statement_descriptor_suffix"
+null
+"status"
+"requires_payment_method"
+"total_details"
+{
+…
+3 items
+}
+"transfer_data"
+null
+"transfer_group"
+null
+}
+Sign in
+to edit real requests.
+Learn more about Payment Intents
+Browse by product
+Payments
+Payments
+Online payments
+Managed Payments
+Stripe merchant of record solution
+Terminal
+In-person and omnichannel payments
+Radar
+Fraud and risk management
+Climate
+Carbon removal
+Identity
+Online identity verification
+Financial Connections
+Connect users' financial accounts
+Crypto
+Accept, onramp, or pay out in crypto
+Revenue
+Billing
+Subscriptions and recurring payments
+Tax
+Sales tax and VAT automation
+Revenue Recognition
+Accounting automation
+Atlas
+Startup incorporation
+Data
+Reports
+Financial reporting
+Sigma
+Custom SQL environment
+Data Pipeline
+Data warehouse sync
+Platforms and marketplaces
+Connect
+Embedded finance for platforms
+Account onboarding
+Onboard and verify connected accounts
+Platform payments
+Process payments for connected accounts
+Platform payouts
+Send funds to connected accounts
+Platform management
+Monitor and manage your platform
+Tax forms
+Tax reporting and filing
+Money management
+Issuing
+Card creation
+Treasury
+Building blocks for financial services
+Capital
+Business financing
+Prebuilt components
+Payment Links
+No-code payments
+Checkout
+Prebuilt, Stripe-hosted checkout page
+Elements
+Secure frontend UI components
+
+===== https://dashboard.stripe.com/register
+TITLE: Sign up and create a Stripe account | Stripe
+ACCESSED: 2026-09-27
+
+Sign up and create a Stripe account | Stripe
+Incompatible browser
+You need a modern browser to use the Stripe Dashboard. Please switch to a compatible browser to continue.
+View Stripe Dashboard browser compatibility
+
+===== https://docs.stripe.com/development
+TITLE: Developer resources | Stripe Documentation
+ACCESSED: 2026-09-27
+
+Developer resources | Stripe Documentation
+Overview
+Versioning
+Changelog
+Upgrade your integration
+How API versioning works
+Essentials
+SDKs
+API
+Testing
+Stripe CLI
+Tools
+Stripe Dashboard
+Stripe Projects
+Provisioning
+Workbench
+Developers Dashboard
+Stripe for Visual Studio Code
+Terraform
+Stripe Discord server
+Features
+Workflows
+Batch jobs
+Event destinations
+Stripe health alerts
+File uploads
+AI tools
+Agent plugins
+Model Context Protocol
+Agent skills
+Stripe Directory
+Extend Stripe
+Overview
+Build Stripe apps
+Use apps from Stripe
+Build extensions
+Custom objects
+Security and privacy
+Security
+Activity logs
+Stripebot web crawler
+Privacy
+Partners
+Partner ecosystem
+Partner certification
+India
+English (United States)
+Developer
+resources
+Set up your development environment and learn about the Stripe platform.
+Ask about this page
+Install tools
+Set up your development environment and start building with Stripe’s suite of agent-ready tooling.
+Install the Stripe CLI
+Essentials
+Stripe CLI
+Build, test, and manage Stripe integrations from the command line.
+SDKs
+Build with Stripe’s official SDKs for a range of platforms and languages.
+APIs
+Browse Stripe’s complete REST API reference.
+Build with agents
+Tailor your development environment for agent-first development workflows.
+MCP
+Enable agents to use tools and securely take actions in your Stripe account.
+Testing
+Test your integration before going live.
+Versioning
+Changelog
+Keep track of changes and upgrades to the Stripe API.
+Upgrade your API version
+Learn how to manage API versions and handle breaking changes in major releases.
+SDK versioning
+Learn how Stripe versions its APIs and SDKs.
+Tools
+Stripe Console
+Analyze and act on your Stripe data using a single conversational interface.
+Private preview
+Workbench
+Debug, manage, and grow your Stripe integration.
+Terraform
+Manage Stripe resources with infrastructure as code.
+Features
+Workflows
+Automate multi-step processes with a visual builder in the Dashboard.
+Batch jobs
+Process multiple API requests asynchronously with a single file upload.
+Public preview
+Event destinations
+Send events from Stripe to webhook endpoints and cloud services.
+Stripe health alerts
+Monitor the health of your API integrations through automated alerts.
+Signals
+Access intelligence about your transactions, customers, and businesses.
+Private preview
+File uploads
+Securely upload files such as dispute evidence and identification documents to Stripe.
+Security and privacy
+Security
+Learn how Stripe handles security.
+Activity logs
+Programmatically access your account’s security history.
+Private preview
+Privacy
+Remove data from your Dashboard and API.
+Extend Stripe
+Extend and customize Stripe
+Use apps and custom logic to extend Stripe products.
+Build Stripe Apps
+Extend Stripe with third-party services or embed custom user experiences in the Stripe Dashboard.
+Use apps from Stripe
+Unify all the software you use to run your business with apps from Stripe and our partners.
+Build extensions
+Learn how you can customize Stripe with extensions.
+Custom objects
+Build custom data models and business logic directly in Stripe.
+Private preview
+Partners
+Partner ecosystem
+Join the community of Stripe partners that helps businesses with payments and financial infrastructure.
+Partner certification
+Become a Stripe-certified architect or developer.
+Developer community
+YouTube tutorials
+Watch developer tutorials on our YouTube channel.
+Developer tools
+Sign up for the developer newsletter to get highlights and updates.
+X updates
+Follow us on X (formerly Twitter) to get updates and join our community.
+Developer chat on Discord
+Chat live with other developers on the official Stripe Discord.
+
+===== https://docs.stripe.com/keys
+TITLE: API keys | Stripe Documentation
+ACCESSED: 2026-09-27
+
+API keys | Stripe Documentation
+Overview
+Versioning
+Changelog
+Upgrade your integration
+How API versioning works
+Essentials
+SDKs
+API
+Overview
+API v2
+Rate limits
+Authentication
+API keys
+Best practices for API keys
+Restricted API keys
+Managed API keys
+Organization API keys
+Specify request context
+Domains and IP addresses
+Make requests
+Expand responses
+Pagination
+Search objects
+Localize content
+Testing and data
+Metadata
+Test your application
+Error handling
+Handle errors
+Error codes
+Testing
+Stripe CLI
+Tools
+Stripe Dashboard
+Stripe Projects
+Provisioning
+Workbench
+Developers Dashboard
+Stripe for Visual Studio Code
+Terraform
+Stripe Discord server
+Features
+Workflows
+Batch jobs
+Event destinations
+Stripe health alerts
+File uploads
+AI tools
+Agent plugins
+Model Context Protocol
+Agent skills
+Stripe Directory
+Extend Stripe
+Overview
+Build Stripe apps
+Use apps from Stripe
+Build extensions
+Custom objects
+Security and privacy
+Security
+Activity logs
+Stripebot web crawler
+Privacy
+Partners
+Partner ecosystem
+Partner certification
+India
+English (United States)
+API
+keys
+Use API keys to authenticate API requests.
+Ask about this page
+Install tools
+Stripe uses API keys to authenticate requests from your integration and determine which Stripe resources it can access. Choose the key type that matches where your code runs and grant server-side keys only the permissions your integration needs.
+Use the
+API keys
+page in the Dashboard to create, reveal, expire, and rotate keys for the account or sandbox you’re viewing. This guide covers keys used with the Stripe API. To learn about API v2 endpoints, behavior, and testing, see the
+API v2 overview
+If a request doesn’t include a valid key, Stripe returns an
+invalid request error
+. If a request includes an expired key, Stripe returns an
+authentication error
+. Use
+Workbench request logs
+to inspect API requests and troubleshoot errors.
+If you're new to Stripe
+Keep your business safe:
+Read our
+best practices
+for managing keys.
+Build and test
+: Create or select a
+sandbox
+and use its test keys. For new integrations, use a separate general sandbox instead of your account’s test mode sandbox so settings and data remain isolated from live mode. Sandbox keys start with
+pk
+test
+for publishable keys,
+rk
+test
+for restricted keys, and
+sk
+test
+for secret keys.
+When you’re ready to accept real payments
+Switch to your live mode keys
+, which start with
+pk
+live
+rk
+live
+, and
+sk
+live
+If you need to find a webhook signing secret
+: Webhook secrets are separate from API keys. Find them in the
+Webhooks
+section of the Dashboard under each webhook endpoint.
+Key types
+When you sign up for a Stripe account, we create three types of API keys for you:
+Type
+Safe to expose
+Description
+Publishable API key
+pk
+Yes
+API key for Stripe.js, Elements, and mobile SDKs. It can identify your account and create tokens or PaymentMethods from payment details, but it can’t perform sensitive operations such as creating charges or reading account data. You can include it in front-end code or applications you distribute.
+Restricted API key (RAK)
+rk
+No
+API key with permissions you control. Limit the damage to your business that a fraudulent actor could cause if they obtained your key. Create as many RAKs as you want and assign them to different parts of your application. Stripe Apps can also use
+RAK authentication
+to generate a permissioned key when a user installs an app.
+This guide
+explains how to configure and use RAKs.
+Secret API key
+sk
+No
+API key that has unrestricted permissions on all Stripe APIs. Because you can’t limit their permissions, we don’t recommend using secret keys for new use cases, and for existing integrations, we recommend migrating secret key usage to RAKs.
+Organization API key
+sk
+org
+No
+API key that works at the organization level. Same as account-level restricted or secret keys, but operates at the
+organization
+level to manage multiple Stripe accounts at once.
+This guide
+explains how to configure and use organization API keys.
+We also support
+managed API keys
+issued by certain hosting platforms. Managed keys are secret API keys that a hosting platform delivers directly to your hosted applications. You don’t need to handle managed keys directly; your hosting provider issues and rotates them for you.
+Webhook signing secrets
+Webhook signing secrets aren’t API keys—they’re per-webhook secrets that your webhook receiver uses to authenticate that webhooks actually came from Stripe. You can find the signing secret for each webhook endpoint in the
+Webhooks
+section of the Dashboard.
+You’re responsible for managing your API keys safely. Read our guide to
+best practices for protecting API keys
+Sandbox versus live mode
+All Stripe API requests occur in either a
+sandbox
+live mode
+. You can use a sandbox to test your integration and access test data, and live mode to access actual account data. Each mode has its own set
+
+===== https://docs.stripe.com/
+TITLE: Stripe Documentation
+ACCESSED: 2026-09-27
+
+Stripe Documentation
+Documentation
+Explore our guides and examples to integrate Stripe.
+Get started with Stripe
+Explore all products
+Sign in
+create an account
+to load your test API keys.
+Test cards
+4242 4242 4242 4242
+Payments
+Accept payments online
+Collect payments with invoices
+Accept payments in-person
+Revenue
+Sell subscriptions
+Offer usage-based pricing
+Set up the customer portal
+Developers
+Set up your development environment
+Build on Stripe with AI
+Integration quickstarts
+Try it out
+Start a payment
+Start a checkout session
+Create a customer
+Sell a product
+Issue coupons
+Get your balance
+Manage taxes
+$
+stripe payment_intents create
+--
+amount
+1099
+--
+currency
+"usd"
+Copy
+{
+"id"
+"xxxxxx"
+"object"
+"payment_intent"
+"amount"
+1099
+"amount_capturable"
+0
+"amount_details"
+{
+"tip"
+{}
+},
+"amount_received"
+0
+"amount_subtotal"
+1099
+"application"
+null
+"application_fee_amount"
+null
+"automatic_payment_methods"
+null
+"canceled_at"
+null
+"cancellation_reason"
+null
+"capture_method"
+"automatic"
+"charges"
+{
+…
+5 items
+}
+"client_secret"
+"xxxxxx"
+"confirmation_method"
+"automatic"
+"created"
+1790529013
+"currency"
+"usd"
+"customer"
+null
+"description"
+null
+"invoice"
+null
+"last_payment_error"
+null
+"livemode"
+false
+"metadata"
+{}
+"next_action"
+null
+"on_behalf_of"
+null
+"payment_method"
+null
+"payment_method_options"
+{
+"card"
+{
+…
+5 items
+}
+},
+"payment_method_types"
+[
+"card"
+],
+"processing"
+null
+"receipt_email"
+null
+"review"
+null
+"setup_future_usage"
+null
+"shipping"
+null
+"source"
+null
+"statement_descriptor"
+null
+"statement_descriptor_suffix"
+null
+"status"
+"requires_payment_method"
+"total_details"
+{
+…
+3 items
+}
+"transfer_data"
+null
+"transfer_group"
+null
+}
+Sign in
+to edit real requests.
+Learn more about Payment Intents
+Browse by product
+Payments
+Payments
+Online payments
+Managed Payments
+Stripe merchant of record solution
+Terminal
+In-person and omnichannel payments
+Radar
+Fraud and risk management
+Climate
+Carbon removal
+Identity
+Online identity verification
+Financial Connections
+Connect users' financial accounts
+Crypto
+Accept, onramp, or pay out in crypto
+Revenue
+Billing
+Subscriptions and recurring payments
+Tax
+Sales tax and VAT automation
+Revenue Recognition
+Accounting automation
+Atlas
+Startup incorporation
+Data
+Reports
+Financial reporting
+Sigma
+Custom SQL environment
+Data Pipeline
+Data warehouse sync
+Platforms and marketplaces
+Connect
+Embedded finance for platforms
+Account onboarding
+Onboard and verify connected accounts
+Platform payments
+Process payments for connected accounts
+Platform payouts
+Send funds to connected accounts
+Platform management
+Monitor and manage your platform
+Tax forms
+Tax reporting and filing
+Money management
+Issuing
+Card creation
+Treasury
+Building blocks for financial services
+Capital
+Business financing
+Prebuilt components
+Payment Links
+No-code payments
+Checkout
+Prebuilt, Stripe-hosted checkout page
+Elements
+Secure frontend UI components
+
+===== https://docs.stripe.com/api/authentication
+TITLE: Authentication | Stripe API Reference
+ACCESSED: 2026-09-27
+
+Authentication
+Ask about this section
+The Stripe API uses
+API keys
+to authenticate requests. You can view and manage your API keys in
+the Stripe Dashboard
+Test mode secret keys start with
+sk
+test
+and have unrestricted access to their sandboxes. In live mode, you configure a
+restricted API key
+(starts with
+rk
+live
+) with specific API permissions. Using a restricted API key with only a subset of API permissions limits the damage a bad actor could cause if they obtained the key. In both test mode and live mode, you can create as many restricted API keys as you need for different use cases or components of your application. We also create a live mode secret key (starts with
+sk
+live
+) that grants access to all Stripe API resources. To protect your business, use restricted API keys instead.
+Your API keys carry many privileges. Follow
+best practices
+to keep your keys safe. Don’t embed secret or restricted API keys in source code or client-side applications. Instead, use your server platform’s secrets vault to provide keys to your server-side applications. If your platform doesn’t offer a secrets vault, set your keys in environment variables.
+The Stripe API authenticates requests using
+HTTP Basic Auth
+. Provide your API key as the basic auth username value. You don’t need to provide a password.
+If you need to authenticate using bearer auth (for example, for a cross-origin request), use
+-H "Authorization: Bearer
+sk_test_tR3P...88S4VQ2u
+sk_test_[REDACTED]
+"
+instead of
+-u
+sk_test_tR3P...88S4VQ2u
+sk_test_[REDACTED]
+Make all API requests over
+HTTPS
+. Calls made over plain HTTP fail. API requests without authentication also fail.
+Was this section helpful?
+Yes
+No
+Authenticated Request
+curl
+https://api.stripe.com/v1/charges \
+-u
+sk_test_[REDACTED]
+sk_test_[REDACTED]
+# The colon prevents curl from asking for a password.
+Your API Key
+A sample test API key is included in all the examples here, so you can test any example right away. Do not submit any personally identifiable information in requests made with this key.
+To test requests using your account, replace the sample API key with your actual API key or
+sign in
+Errors
+Ask about this section
+Stripe uses conventional HTTP response codes to indicate the success or failure of an API request. In general:
+Codes in the
+2xx
+range indicate success.
+Codes in the
+4xx
+range indicate an error that failed given the information provided. For example, an omitted required parameter, a failed charge, or a
+declined
+card.
+Many of these include an
+error code
+that briefly explains the error reported.
+See
+Error handling
+for guidance.
+Codes in the
+5xx
+range indicate an error with the Stripe servers (these are rare).
+Was this section helpful?
+Yes
+No
+Attributes
+code
+nullable
+string
+For some errors that could be handled programmatically, a short string indicating the
+error code
+reported.
+decline
+code
+nullable
+string
+For card errors resulting from a card issuer decline, a short string indicating the
+card issuer’s reason for the decline
+if they provide one.
+message
+nullable
+string
+A human-readable message providing more details about the error. For card errors, these messages can be shown to your users.
+param
+nullable
+string
+If the error is parameter-specific, the parameter related to the error. For example, you can use this to display a message near the correct form field.
+payment
+intent
+nullable
+object
+The
+PaymentIntent object
+for errors returned on a request involving a PaymentIntent.
+type
+enum
+The type of error returned. One of
+api
+error
+card
+error
+idempotency
+error
+, or
+invalid
+request
+error
+Possible enum values
+api
+error
+card
+error
+idempotency
+error
+invalid
+request
+error
+More
+Expand all
+advice
+code
+nullable
+string
+charge
+nullable
+string
+doc
+url
+nullable
+string
+network
+advice
+code
+nullable
+string
+network
+decline
+code
+nullable
+string
+payment
+method
+nullable
+object
+payment
+method
+type
+nullable
+string
+request
+log
+url
+nullable
+string
+setup
+intent
+nullable
+object
+source
+nullable
+object
+HTTP Status Code Summary
+200
+OK
+Everything worked as expected.
+400
+Bad Request
+The request was unacceptable, often due to missing a required parameter.
+401
+Unauthorized
+No valid API key provided.
+402
+Request Failed
+The parameters were valid but the request failed.
+403
+Forbidden
+The API key doesn’t have permissions to perform the request.
+404
+Not Found
+The requested resource doesn’t exist.
+409
+Conflict
+The request conflicts with another request (perhaps due to using the same idempotent key).
+424
+External Dependency Failed
+The request couldn’t be completed due to a failure in a dependency external to Stripe.
+429
+Too Many Requests
+Too many requests hit the API too quickly. We recommend an exponential backoff of your requests.
+500, 502, 503, 504
+Server Errors
+Something went wrong on Stripe’s end. (These are rare.)
+Error Types
+api
+error
+
+===== https://docs.stripe.com/get-started/development-environment
+TITLE: Set up your development environment | Stripe Documentation
+ACCESSED: 2026-09-27
+
+Set up your development environment | Stripe Documentation
+Overview
+See all products
+About the APIs
+Stripe glossary
+Start building
+Create an account
+Quickstarts
+Start developing
+Set up your development environment
+Send your first API request
+Build and test new features
+Go-live checklist
+Release phases
+Build with agents
+Use Stripe without code
+Migrate to Stripe
+Common use cases
+Overview
+Accept simple payments as a startup
+Sell subscriptions as a SaaS startup
+Accept payments in person
+Send invoices to collect payments
+India
+English (United States)
+Set up your development
+environment
+Get familiar with the Stripe CLI and our server-side SDKs.
+Ask about this page
+Install tools
+Stripe’s server-side SDKs and command-line interface (CLI) allow you to interact with Stripe’s REST APIs. Start with the Stripe CLI to streamline your development environment and make API calls.
+Use the SDKs to avoid writing boilerplate code. To start sending requests from your environment, choose a language to follow a quickstart guide.
+Chrome extensions
+We recommend you build your payment integration with Stripe (such as
+Elements
+Checkout
+) on your own website. Then, set up your Chrome extension to send users to this payment page when they’re ready to complete a purchase.
+This method is more secure and easier to maintain than trying to handle payments directly within the extension.
+Ruby
+Python
+Go
+Java
+Node.js
+PHP
+.NET
+In this quickstart, you install the
+Stripe CLI
+—an essential tool that gets you command line access to your Stripe integration. You also install the
+Stripe Ruby server-side SDK
+to get access to Stripe APIs from applications written in Ruby.
+What you learn
+In this quickstart, you’ll learn:
+How to call Stripe APIs without writing a line of code
+How to manage third-party dependencies using a bundler with RubyGems
+How to install the Stripe Ruby SDK v
+19.6.0
+How to send your first SDK request
+Install and connect
+Install the Stripe CLI with
+npm
+npm
+install
+-g
+@stripe/cli@latest
+After installation, log in to your Stripe account:
+stripe
+login
+After you install the CLI, you can also install
+agent tooling
+, or set up
+autocompletion
+Note
+For more installation options for Windows, macOS, Linux, and Docker, see the
+Stripe CLI readme
+on GitHub.
+Confirm setup
+Now that you’ve installed the CLI, you can make a single API request to
+Create a product
+stripe
+products create
+\
+--name
+=
+"My First Product"
+\
+--description
+=
+"Created with the Stripe CLI"
+Look for the product identifier (in
+id
+) in the response object. Save it for the next step.
+If everything worked, the command-line displays the following response.
+{
+"id"
+"prod_LTenIrmp8Q67sa"
+"object"
+"product"
+See all 25 lines
+Next, call
+Create a price
+to attach a price of 30 USD. Swap the placeholder in
+product
+with your product identifier (for example,
+prod
+LTenIrmp8Q67sa
+).
+stripe
+prices create
+\
+--unit-amount
+=
+3000
+\
+--currency
+=
+usd
+\
+--product
+=
+"{{PRODUCT_ID}}"
+If everything worked, the command-line displays the following response.
+{
+"id"
+"price_1KzlAMJJDeE9fu01WMJJr79o"
+"object"
+"price"
+See all 20 lines
+We recommend managing third-party dependencies using the
+RubyGems
+command-line tool, which allows you to add new libraries and include them in your Ruby projects. Check whether RubyGems is installed:
+Install RubyGems
+gem
+--version
+If you get
+gem: command not found
+download RubyGems
+from their downloads page.
+The latest version of the Stripe Ruby server-side SDK is v
+19.6.0
+. It supports Ruby versions 2.3+.
+Check your Ruby version:
+ruby
+-v
+Install the library
+Create a gem file
+and install the generated gem using a bundler with
+RubyGems
+Add the latest version of the
+Stripe gem
+to a project:
+bundle
+add
+stripe
+Install the required gems from your specified sources:
+bundle
+install
+Installation alternatives
+Now that you have the Ruby SDK installed, you can create a subscription
+Product
+and attach a
+Price
+with a couple API requests. We’re using the product identifier returned in the response to create the price in this example.
+Use best practices for API keys
+This sample uses the default keys of your Stripe user
+account
+for your
+sandbox
+environment. Only you can see these values. Follow
+best practices
+to manage your keys safely.
+require
+'rubygems'
+require
+'stripe'
+# Don't embed any keys in production code. This is an example.
+# See
+https://docs.stripe.com/keys-best-practices.
+client
+=
+Stripe
+StripeClient
+new
+(
+"sk_test_[REDACTED]"
+)
+starter_subscription
+=
+client
+v1
+products
+create
+(
+name
+'Starter Subscription'
+description
+'$12/Month subscription'
+)
+starter_subscription_price
+=
+client
+v1
+prices
+create
+(
+currency
+'usd'
+unit_amount
+1200
+recurring
+{
+interval
+'month'
+}
+product
+starter_subscription
+[
+'id'
+]
+)
+puts
+"Success! Here is your starter subscription product id:
+#{
+starter_subscription
+id
+}
+"
+puts
+"Success! Here is your starter subscription price id:
+#{
+starte
+
+===== https://docs.stripe.com/api/plans
+TITLE: Plans | Stripe API Reference
+ACCESSED: 2026-09-27
+
+Plans
+v1
+Ask about this section
+You can now model subscriptions more flexibly using the
+Prices API
+. It replaces the Plans API and is backwards compatible to simplify your migration.
+Plans define the base price, currency, and billing cycle for recurring purchases of products.
+Products
+help you track inventory or provisioning, and plans help you track pricing. Different physical goods or levels of service should be represented by products, and pricing options should be represented by plans. This approach lets you change prices without having to change your provisioning scheme.
+For example, you might have a single “gold” product that has plans for $10/month, $100/year, €9/month, and €90/year.
+Related guides:
+Set up a subscription
+and more about
+products and prices
+Was this section helpful?
+Yes
+No
+Create a plan
+POST
+/
+v1
+/
+plans
+Update a plan
+POST
+/
+v1
+/
+plans
+/
+:id
+Retrieve a plan
+GET
+/
+v1
+/
+plans
+/
+:id
+List all plans
+GET
+/
+v1
+/
+plans
+Delete a plan
+DELETE
+/
+v1
+/
+plans
+/
+:id
+The Plan object
+v1
+Ask about this section
+Attributes
+id
+string
+Unique identifier for the object.
+active
+boolean
+Whether the plan can be used for new purchases.
+amount
+nullable
+integer
+The unit amount in
+the smallest currency unit
+to be charged, represented as a whole integer if possible. Only set if
+billing
+scheme=per
+unit
+currency
+enum
+Three-letter
+ISO currency code
+, in lowercase. Must be a
+supported currency
+interval
+enum
+The frequency at which a subscription is billed. One of
+day
+week
+month
+year
+metadata
+nullable
+map
+Set of
+key-value pairs
+that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
+nickname
+nullable
+string
+A brief description of the plan, hidden from customers.
+product
+nullable
+string
+Expandable
+The product whose pricing this plan determines.
+More attributes
+Expand all
+object
+string, value is "plan"
+amount
+decimal
+nullable
+decimal string
+billing
+scheme
+enum
+created
+timestamp
+interval
+count
+integer
+livemode
+boolean
+meter
+nullable
+string
+tiers
+nullable
+array of objects
+Includable
+tiers
+mode
+nullable
+enum
+transform
+usage
+nullable
+object
+trial
+period
+days
+nullable
+integer
+usage
+type
+enum
+The Plan object
+{
+"
+id
+"
+"
+plan_NjpIbv3g3ZibnD
+"
+"
+object
+"
+"
+plan
+"
+"
+active
+"
+true
+"
+amount
+"
+1200
+"
+amount_decimal
+"
+"
+1200
+"
+"
+billing_scheme
+"
+"
+per_unit
+"
+"
+created
+"
+1681851647
+"
+currency
+"
+"
+usd
+"
+"
+interval
+"
+"
+month
+"
+"
+interval_count
+"
+1
+"
+livemode
+"
+false
+"
+metadata
+"
+{},
+"
+nickname
+"
+null
+"
+product
+"
+"
+prod_NjpI7DbZx6AlWQ
+"
+"
+tiers_mode
+"
+null
+"
+transform_usage
+"
+null
+"
+trial_period_days
+"
+null
+"
+usage_type
+"
+"
+licensed
+"
+}
+Create a plan
+v1
+Ask about this section
+POST
+/
+v1
+/
+plans
+You can now model subscriptions more flexibly using the
+Prices API
+. It replaces the Plans API and is backwards compatible to simplify your migration.
+Parameters
+currency
+enum
+Required
+Three-letter
+ISO currency code
+, in lowercase. Must be a
+supported currency
+interval
+enum
+Required
+Specifies billing frequency. Either
+day
+week
+month
+year
+Possible enum values
+day
+month
+week
+year
+product
+object
+Required
+The product whose pricing the created plan will represent. This can either be the ID of an existing product, or a dictionary containing fields used to create a
+service product
+Show child parameters
+active
+boolean
+Whether the plan is currently available for new subscriptions. Defaults to
+true
+amount
+integer
+Required unless billing_scheme=tiered
+A positive integer in
+the smallest currency unit
+(or 0 for a free plan) representing how much to charge on a recurring basis.
+metadata
+map
+Set of
+key-value pairs
+that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to
+metadata
+nickname
+string
+A brief description of the plan, hidden from customers.
+More parameters
+Expand all
+amount
+decimal
+string
+billing
+scheme
+enum
+id
+string
+interval
+count
+integer
+meter
+string
+tiers
+array of objects
+Required if billing_scheme=tiered
+tiers
+mode
+enum
+Required if billing_scheme=tiered
+transform
+usage
+object
+trial
+period
+days
+integer
+usage
+type
+enum
+Returns
+Returns the plan object.
+curl
+https://api.stripe.com/v1/plans \
+-u
+"
+sk_test_[REDACTED]
+sk_test_[REDACTED]
+"
+\
+-d amount=1200 \
+-d currency=usd \
+-d interval=month \
+-d product=
+{{PRODUCT_ID}}
+Response
+{
+"
+id
+"
+"
+plan_NjpIbv3g3ZibnD
+"
+"
+object
+"
+"
+plan
+"
+"
+active
+"
+true
+"
+amount
+"
+1200
+"
+amount_decimal
+"
+"
+1200
+"
+"
+billing_scheme
+"
+"
+per_unit
+"
+"
+created
+"
+1681851647
+"
+currency
+"
+"
+usd
+"
+"
+interval
+"
+"
+month
+"
+"
+interval_count
+"
+1
+"
+livemode
+"
+false
+"
+metadata
+"
+{},
+"
+nickname
+"
+nu

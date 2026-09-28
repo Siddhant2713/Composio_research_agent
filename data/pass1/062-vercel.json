@@ -1,0 +1,186 @@
+{
+  "app": "Vercel",
+  "number": 62,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:52:43.893836+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://vercel.com/docs/rest-api\",\n    \"https://vercel.com/docs\",\n    \"https://vercel.com/docs/integrations/create-integration\",\n    \"https://vercel.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://vercel.com/docs/rest-api",
+    "https://vercel.com/docs",
+    "https://vercel.com/docs/integrations/create-integration",
+    "https://vercel.com/pricing",
+    "https://docs.vercel.com/",
+    "https://developer.vercel.com/",
+    "https://developers.vercel.com/",
+    "https://api.vercel.com/",
+    "https://vercel.com/developers",
+    "https://vercel.com/api",
+    "https://vercel.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+    "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+    "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+    "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+    "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+    "https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+    "https://vercel.com/docs/rest-api/sdk",
+    "https://vercel.com/docs/flags/flags-sdk-reference",
+    "https://vercel.com/docs/ai-gateway/authentication-and-byok",
+    "https://vercel.com/docs/plans",
+    "https://vercel.com/docs/ai-sdk",
+    "https://vercel.com/docs/webhooks/webhooks-api?from=graph&source_path=%2Fdocs%2Fintegrations%2Fcreate-integration&source_site=vercel-docs&relationship=outbound&surface=html",
+    "https://vercel.com/docs/pricing",
+    "https://vercel.com/docs/queues/sdk",
+    "https://vercel.com/docs/pricing/taxes",
+    "https://vercel.com/docs/plans/pro-plan"
+  ],
+  "boilerplate_lines_removed": 61,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.vercel.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.vercel.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "requested_url": "https://vercel.com/docs/rest-api",
+      "status": 200,
+      "title": "Vercel REST API Reference",
+      "chars": 2083,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs",
+      "requested_url": "https://vercel.com/docs",
+      "status": 200,
+      "title": "Vercel Documentation",
+      "chars": 4990,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs/integrations/create-integration",
+      "requested_url": "https://vercel.com/docs/integrations/create-integration",
+      "status": 200,
+      "title": "Create an Integration",
+      "chars": 4974,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/pricing",
+      "requested_url": "https://vercel.com/pricing",
+      "status": 200,
+      "title": "Vercel Pricing: Hobby, Pro, and Enterprise plans",
+      "chars": 4993,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+      "status": 200,
+      "title": "SSO Token Exchange | Vercel REST API",
+      "chars": 1500,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "status": 200,
+      "title": "List Auth Tokens | Vercel REST API",
+      "chars": 945,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "status": 200,
+      "title": "List Auth Tokens | Vercel REST API",
+      "chars": 945,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "status": 200,
+      "title": "SSO Token Exchange | Vercel REST API",
+      "chars": 1500,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "status": 200,
+      "title": "SSO Token Exchange | Vercel REST API",
+      "chars": 1500,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Vercel REST API enables programmatic management of deployments, custom domains, and project environment variables using access tokens.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Vercel Access Tokens are sent via the Authorization: Bearer <TOKEN> header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can create and manage Access Tokens directly in their account settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"The API is exposed as an HTTP/1 and HTTP/2 service over SSL following REST architecture.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://mcp.vercel.com\",\n    \"notes\": \"Vercel MCP server allows agents to search docs, manage projects and deployments, and query Web Analytics.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials can be generated in account settings and the REST API is thoroughly documented.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"claim\": \"Vercel Access Tokens are required to authenticate and use the Vercel API via Authorization Bearer header.\"\n    },\n    {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"claim\": \"Create and manage Access Tokens in your account settings.\"\n    },\n    {\n      \"url\": \"https://vercel.com/docs\",\n      \"claim\": \"Connect the Vercel MCP server with npx -y add-mcp https://mcp.vercel.com -g.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://vercel.com/docs/rest-api",
+    "one_liner": "Vercel REST API enables programmatic management of deployments, custom domains, and project environment variables using access tokens.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Vercel Access Tokens are sent via the Authorization: Bearer <TOKEN> header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can create and manage Access Tokens directly in their account settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL following REST architecture."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://mcp.vercel.com",
+      "notes": "Vercel MCP server allows agents to search docs, manage projects and deployments, and query Web Analytics."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials can be generated in account settings and the REST API is thoroughly documented."
+    },
+    "evidence": [
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "claim": "Vercel Access Tokens are required to authenticate and use the Vercel API via Authorization Bearer header.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "claim": "Create and manage Access Tokens in your account settings.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://vercel.com/docs",
+        "claim": "Connect the Vercel MCP server with npx -y add-mcp https://mcp.vercel.com -g.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:53:07.588863+00:00"
+}

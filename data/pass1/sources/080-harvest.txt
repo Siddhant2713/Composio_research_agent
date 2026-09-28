@@ -1,0 +1,634 @@
+===== https://help.getharvest.com/api-v2/
+TITLE: Harvest API V2 Documentation
+ACCESSED: 2026-09-27
+
+API Introduction
+Overview
+Postman Collection
+Code Samples
+Supported Time Zones
+Supported Currencies
+Pagination
+See all docs
+See all docs
+Clients API
+Client Contacts
+Clients
+See all docs
+Company Settings
+Company
+See all docs
+Invoices API
+Invoice Messages
+Invoice Payments
+Invoices
+Invoice Item Categories
+See all docs
+Estimates API
+Estimate Messages
+Estimates
+Estimate Item Categories
+See all docs
+Expenses API
+Expenses
+Expense Categories
+See all docs
+Tasks API
+Tasks
+See all docs
+Timesheets API
+Time Entries
+See all docs
+Projects API
+Project User Assignments
+Project Task Assignments
+Projects
+See all docs
+Roles API
+Roles
+See all docs
+Users API
+User Teammates
+User Billable Rates
+User Cost Rates
+User Project Assignments
+Users
+See all docs
+Reports API
+Expense Reports
+Uninvoiced Report
+Time Reports
+Project Budget Report
+See all docs
+Paid Time Off API
+Work Schedules
+Time Off Requests
+Time Off Policies
+Time Off Balances
+Holiday Calendars
+User Assignments & Allocations
+See all docs
+
+===== https://help.getharvest.com/api-v2/authentication-api/
+TITLE: Authentication – Harvest API V2 Documentation
+ACCESSED: 2026-09-27
+
+Authentication – Harvest API V2 Documentation
+
+===== https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/
+TITLE: Authentication – Harvest API V2 Documentation
+ACCESSED: 2026-09-27
+
+            
+            API
+Introduction
+The V2 API requires an access token to authenticate requests. There are two options available to you:
+A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API.
+Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.
+Personal access tokens
+The API can be accessed by creating a Personal Access Token from the
+Developers
+section of Harvest ID. After creating it you’ll be provided with a random token and a list of your account IDs.
+Personal Access Tokens are the preferred method when you want to write your own scripts that consume our API. Typical use cases
+for Personal Access Tokens are scripts that build custom reports, sync data between different accounts, or automate tasks that
+would otherwise take a long time when done manually.
+Personal Access Tokens replace the Basic Authentication method that was used in our v1 API, as this is more secure. Within the
+Developers
+section you’ll see a list of all your Personal Access Tokens, when they were last used, and you’ll be able to easily revoke them if necessary.
+Once generated, a Personal Access Token can be used to access the API by either providing the token in the Authorization header or including it in the query string. Each request will require your account ID as well, since you can use this Personal Access Token to access any of your Harvest or Forecast accounts.
+curl
+-H
+"Authorization: Bearer
+$ACCESS_TOKEN
+"
+\
+-H
+"Harvest-Account-Id:
+$ACCOUNT_ID
+"
+\
+-H
+"User-Agent: MyApp (
+[email protected]
+)"
+\
+https://api.harvestapp.com/v2/users/me
+Query string authentication example
+curl
+-H
+"User-Agent: MyApp (
+[email protected]
+)"
+\
+"https://api.harvestapp.com/v2/users/me?access_token=
+$ACCESS_TOKEN
+&account_id=
+$ACCOUNT_ID
+"
+OAuth2 application
+If you are interested in building integrations that other users can use, you will need to register an OAuth2 Application, also
+known as an OAuth2 Client. The application can be created from the
+Developers
+section
+of Harvest ID, and you will be required to provide some information:
+Name
+–name of your application.
+Redirect URL
+–the URL in your integration; successful authentications will be redirected to by default.
+Multi Account
+–does your integration support multiple user account access or work with only one authenticated account.
+Products
+–scope of access requested; can be either Harvest, Forecast or both. It is advised to pick the minimal scope
+required for the integration to work.
+OAuth2 authorization flow
+For server-side applications
+We use the
+Authorization Code flow
+for
+server-side authorization. To start the authorization flow, you need to redirect the user to the following URL:
+https://id.getharvest.com/oauth2/authorize?client_id={CLIENT_ID}&response_type=code
+This URL allows the user to authenticate on Harvest ID and lets them authorize access to their account(s) depending on your OAuth2 Application settings and their choice.
+This endpoint accepts other parameters:
+state
+–(optional) used to pass any value that will get sent back to you when redirecting back to your application.
+redirect_uri
+–(optional) the default Redirect URL can be further customized here if needed, but needs to start with the Redirect
+URL registered with your Application.
+After a successful authorization, the user will be redirected back to the Redirect URL you specified when registering your OAuth2
+application, or the
+redirect_uri
+you provided. These parameters will be attached:
+code
+–an authorization code that you will have to exchange for a set of Refresh and Access Tokens. You will be able to use this
+Access Token to access the user’s account on their behalf.
+state
+–(optional) contains the original value for the
+state
+parameter that was passed at the beginning of the authorization.
+scope
+–contains a list of space-separated strings describing the granted access scope. See the
+Scopes
+section for further
+explanation.
+Once you have the Authorization Code, you can exchange it for a set of Access and Refresh Tokens:
+curl
+-X
+POST
+\
+-H
+"User-Agent: MyApp (
+[email protected]
+)"
+\
+-d
+"code=
+$AUTHORIZATION_CODE
+"
+\
+-d
+"client_id=
+$CLIENT_ID
+"
+\
+-d
+"client_secret=
+$CLIENT_SECRET
+"
+\
+-d
+"grant_type=authorization_code"
+\
+'https://id.getharvest.com/api/v2/oauth2/token'
+Response:
+{
+"access_token"
+:
+"{ACCESS_TOKEN}"
+,
+"refresh_token"
+:
+"{REFRESH_TOKEN}"
+,
+"token_type"
+:
+"bearer"
+,
+"expires_in"
+:
+1209600
+}
+When your Access Token is about to expire, you can use the Refresh Token to get a new Access Token:
+curl
+-X
+POST
+\
+-H
+"User-Agent: MyApp (
+[email protected]
+)"
+\
+-H
+"Accept: application/json"
+\
+-d
+"refresh_token=
+$REFRESH_TOKEN
+"
+\
+-d
+"client_id=
+$CLIENT_ID
+"
+\
+-d
+"client_secret=
+$CLIENT_SECRET
+"
+\
+-d
+"grant_
+
+===== https://help.getharvest.com/api-v2/clients-api/clients/contacts/
+TITLE: Client Contacts – Harvest API V2 Documentation
+ACCESSED: 2026-09-27
+
+Clients
+            
+            API
+Client Contacts
+Client Contacts
+The contact object
+Attribute
+Type
+Description
+id
+integer
+Unique ID for the contact.
+client
+object
+An object containing the contact’s client id and name.
+title
+string
+The title of the contact.
+first_name
+string
+The first name of the contact.
+last_name
+string
+The last name of the contact.
+email
+string
+The contact’s email address.
+phone_office
+string
+The contact’s office phone number.
+phone_mobile
+string
+The contact’s mobile phone number.
+fax
+string
+The contact’s fax number.
+invoice_recipient_status
+string
+The contact’s default role on the client’s invoices (Invoice email default in the web UI). One of
+none
+,
+recipient
+,
+cc
+, or
+bcc
+. Defaults to
+none
+created_at
+datetime
+Date and time the contact was created.
+updated_at
+datetime
+Date and time the contact was last updated.
+Required permissions
+You must be an Administrator or Manager with permission to create and edit clients in order to interact with the
+/v2/contacts
+endpoint. Insufficient permissions will result in a
+403 Forbidden
+status code.
+List all contacts
+Returns a list of your contacts. The contacts are returned sorted by creation date, with the most recently created contacts appearing first.
+The response contains an object with a
+contacts
+property that contains an array of up to
+per_page
+contacts. Each entry in the array is a separate contact object. If no more contacts are available, the resulting array will be empty. Several additional pagination properties are included in the response to simplify paginating your contacts.
+GET /v2/contacts
+Parameter
+Type
+Description
+client_id
+integer
+Only return contacts belonging to the client with the given ID.
+updated_since
+datetime
+Only return contacts that have been updated since the given date and time.
+page
+integer
+DEPRECATED
+The page number to use in pagination. For instance, if you make a list request and receive 2000 records, your subsequent call can include
+page=2
+to retrieve the next page of the list. (Default: 1)
+per_page
+integer
+The number of records to return per page. Can range between 1 and 2000. (Default: 2000)
+This endpoint supports cursor-based pagination and therefore deprecates
+  the
+page
+parameter.
+
+  For more information, visit the
+pagination guide
+Example requests
+We have a collection of API requests in
+Postman
+that makes it easy to try this out.
+Click here
+to learn more!
+curl "https://api.harvestapp.com/v2/contacts" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Harvest-Account-Id: $ACCOUNT_ID" \
+  -H "User-Agent: MyApp (
+[email protected]
+)"
+Example responses
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts
+type=
+"array"
+>
+<contact>
+<id
+type=
+"integer"
+>
+4706479
+</id>
+<client-id
+type=
+"integer"
+>
+5735774
+</client-id>
+<title>
+Owner
+</title>
+<first-name>
+Jane
+</first-name>
+<last-name>
+Doe
+</last-name>
+<email>
+[email protected]
+</email>
+<phone-office>
+(203) 697-8885
+</phone-office>
+<phone-mobile>
+(203) 697-8886
+</phone-mobile>
+<fax>
+(203) 697-8887
+</fax>
+<created-at
+type=
+"dateTime"
+>
+2013-08-12T15:30:14Z
+</created-at>
+<updated-at
+type=
+"dateTime"
+>
+2015-04-16T18:07:28Z
+</updated-at>
+</contact>
+<contact>
+<id
+type=
+"integer"
+>
+4706453
+</id>
+<client-id
+type=
+"integer"
+>
+5735776
+</client-id>
+<title>
+Manager
+</title>
+<first-name>
+Richard
+</first-name>
+<last-name>
+Roe
+</last-name>
+<email>
+[email protected]
+</email>
+<phone-office>
+(318) 515-5905
+</phone-office>
+<phone-mobile>
+(318) 515-5906
+</phone-mobile>
+<fax>
+(318) 515-5907
+</fax>
+<created-at
+type=
+"dateTime"
+></created-at>
+<updated-at
+type=
+"dateTime"
+></updated-at>
+</contact>
+</contacts>
+{
+"contacts"
+:[
+{
+"id"
+:
+4706479
+,
+"title"
+:
+"Owner"
+,
+"first_name"
+:
+"Jane"
+,
+"last_name"
+:
+"Doe"
+,
+"email"
+:
+"
+[email protected]
+"
+,
+"phone_office"
+:
+"(203) 697-8885"
+,
+"phone_mobile"
+:
+"(203) 697-8886"
+,
+"fax"
+:
+"(203) 697-8887"
+,
+"created_at"
+:
+"2017-06-26T21:20:07Z"
+,
+"updated_at"
+:
+"2017-06-26T21:27:07Z"
+,
+"client"
+:{
+"id"
+:
+5735774
+,
+"name"
+:
+"ABC Corp"
+}
+},
+{
+"id"
+:
+4706453
+,
+"title"
+:
+"Manager"
+,
+"first_name"
+:
+"Richard"
+,
+"last_name"
+:
+"Roe"
+,
+"email"
+:
+"
+[email protected]
+"
+,
+"phone_office"
+:
+"(318) 515-5905"
+,
+"phone_mobile"
+:
+"(318) 515-5906"
+,
+"fax"
+:
+"(318) 515-5907"
+,
+"created_at"
+:
+"2017-06-26T21:06:55Z"
+,
+"updated_at"
+:
+"2017-06-26T21:27:20Z"
+,
+"client"
+:{
+"id"
+:
+5735776
+,
+"name"
+:
+"123 Industries"
+}
+}
+],
+"per_page"
+:
+2000
+,
+"total_pages"
+:
+1
+,
+"total_entries"
+:
+2
+,
+"next_page"
+:
+null
+,
+"previous_page"
+:
+null
+,
+"page"
+:
+1
+,
+"links"
+:{
+"first"
+:
+"https://api.harvestapp.com/v2/contacts?page=1&per_page=2000"
+,
+"next"
+:
+null
+,
+"previous"
+:
+null
+,
+"last"
+:
+"https://api.harvestapp.com/v2/contacts?page=1&per_page=2000"
+}
+}
+Retrieve a contact
+Retrieves the contact with the given ID. Returns a contact object and a
+200 OK
+response code if a valid identifier was provided.
+GET /v2/contacts/{CONTACT_ID}
+Example requ
+
+===== https://www.getharvest.com/contact?from=helpcenter
+TITLE: Contact Help & Support | Harvest
+ACCESSED: 2026-09-27
+
+How can we help?
+We're closed right now, but you'll hear back from a friendly Expert soon after we
+                          open.
+Bending Spoons Operations S.p.A.
+Via Nino Bonnet, 10
+20154 Milan
+Italy
+Get in touch with Sales
+Contact Sales
+Our business hours
+Monday through Friday
+9:00am - 6:00pm CET

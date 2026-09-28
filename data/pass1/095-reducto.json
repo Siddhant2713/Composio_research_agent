@@ -1,0 +1,195 @@
+{
+  "app": "Reducto",
+  "number": 95,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:07:29.180822+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.reducto.ai\",\n    \"https://reducto.ai/docs\",\n    \"https://reducto.ai/api\",\n    \"https://reducto.ai/pricing\",\n    \"https://reducto.ai/contact\",\n    \"https://reducto.ai\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://reducto.ai",
+    "https://docs.reducto.ai",
+    "https://reducto.ai/docs",
+    "https://reducto.ai/api",
+    "https://reducto.ai/pricing",
+    "https://reducto.ai/contact",
+    "https://developer.reducto.ai/",
+    "https://developers.reducto.ai/",
+    "https://api.reducto.ai/",
+    "https://reducto.ai/developers",
+    "https://reducto.ai/developer"
+  ],
+  "second_hop_considered": [
+    "https://reducto.ai/contact?source=contact_sales_nav",
+    "https://reducto.ai/contact?source=contact_sales_home",
+    "https://studio.reducto.ai/auth",
+    "https://reducto.ai/contact?source=request_demo_home",
+    "https://docs.reducto.ai/api-reference/parse",
+    "https://docs.reducto.ai/reference/credit-usage",
+    "https://docs.reducto.ai/reference/pricing-migration",
+    "https://docs.reducto.ai/quickstart",
+    "https://docs.reducto.ai/reference/faq",
+    "https://reducto.ai/contact?source=growth_pricing",
+    "https://reducto.ai/contact?source=enterprise_pricing",
+    "https://reducto.ai/contact?plan=Growth&source=pricing-table",
+    "https://reducto.ai/contact?plan=Enterprise&source=pricing-table",
+    "https://reducto.ai/migrate"
+  ],
+  "boilerplate_lines_removed": 9,
+  "fetch_failures": [
+    {
+      "requested_url": "https://reducto.ai/api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.reducto.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.reducto.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://studio.reducto.ai/auth",
+      "reason": "page too thin (14 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://reducto.ai",
+      "requested_url": "https://reducto.ai",
+      "status": 200,
+      "title": "Reducto: The Agentic Document Platform for AI Teams",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.reducto.ai/overview",
+      "requested_url": "https://docs.reducto.ai",
+      "status": 200,
+      "title": "Overview - Reducto",
+      "chars": 3384,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "requested_url": "https://reducto.ai/pricing",
+      "status": 200,
+      "title": "Reducto Pricing | Agentic document platform for parsing and extraction",
+      "chars": 3385,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://reducto.ai/contact",
+      "requested_url": "https://reducto.ai/contact",
+      "status": 200,
+      "title": "Contact Sales and Request a Demo | Reducto",
+      "chars": 0,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://reducto.ai/contact?source=contact_sales_nav",
+      "requested_url": "https://reducto.ai/contact?source=contact_sales_nav",
+      "status": 200,
+      "title": "Contact Sales and Request a Demo | Reducto",
+      "chars": 0,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://reducto.ai/contact?source=contact_sales_home",
+      "requested_url": "https://reducto.ai/contact?source=contact_sales_home",
+      "status": 200,
+      "title": "Contact Sales and Request a Demo | Reducto",
+      "chars": 0,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://reducto.ai/contact?source=request_demo_home",
+      "requested_url": "https://reducto.ai/contact?source=request_demo_home",
+      "status": 200,
+      "title": "Contact Sales and Request a Demo | Reducto",
+      "chars": 0,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.reducto.ai/api-reference/parse",
+      "requested_url": "https://docs.reducto.ai/api-reference/parse",
+      "status": 200,
+      "title": "Reducto Documentation | Parse API Reference",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Reducto is an agentic document platform providing parsing, extraction, splitting, editing, and classification APIs for AI teams.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses a Bearer token in the Authorization header (e.g., Authorization: Bearer <token>).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Offers a free tier with credits ($150 / 15,000 free credits) and a self-serve API Quickstart to parse documents in minutes.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Python\",\n      \"Node.js\",\n      \"Go\"\n    ],\n    \"notes\": \"Provides REST endpoints and SDKs for Python, Node.js, and Go, plus custom webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Provides an MCP server to give agents Reducto tools directly in MCP clients like Claude Code, Codex, and Cursor.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve access with free credits, clear API documentation, and code examples in Python, Node.js, and Go.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://reducto.ai\",\n      \"claim\": \"Reducto parse r-1 reads documents and outputs structured data and bounding-box citations.\"\n    },\n    {\n      \"url\": \"https://docs.reducto.ai/overview\",\n      \"claim\": \"Capabilities include Classify, Parse, Extract, Split, Edit, and Pipelines, available via API & SDKs (Python, Node.js, Go, REST) and an MCP server.\"\n    },\n    {\n      \"url\": \"https://reducto.ai/pricing\",\n      \"claim\": \"Includes Parse API, Extract API, Edit API, Split API, and Custom Webhooks, with free credits to start.\"\n    },\n    {\n      \"url\": \"https://docs.reducto.ai/api-reference/parse\",\n      \"claim\": \"Demonstrates the Parse API endpoint using Bearer token authentication in Python, Node.js, and Go.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://reducto.ai",
+    "one_liner": "Reducto is an agentic document platform providing parsing, extraction, splitting, editing, and classification APIs for AI teams.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses a Bearer token in the Authorization header (e.g., Authorization: Bearer <token>)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Offers a free tier with credits ($150 / 15,000 free credits) and a self-serve API Quickstart to parse documents in minutes."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Python",
+        "Node.js",
+        "Go"
+      ],
+      "notes": "Provides REST endpoints and SDKs for Python, Node.js, and Go, plus custom webhooks."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Provides an MCP server to give agents Reducto tools directly in MCP clients like Claude Code, Codex, and Cursor."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve access with free credits, clear API documentation, and code examples in Python, Node.js, and Go."
+    },
+    "evidence": [
+      {
+        "url": "https://reducto.ai",
+        "claim": "Reducto parse r-1 reads documents and outputs structured data and bounding-box citations.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.reducto.ai/overview",
+        "claim": "Capabilities include Classify, Parse, Extract, Split, Edit, and Pipelines, available via API & SDKs (Python, Node.js, Go, REST) and an MCP server.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://reducto.ai/pricing",
+        "claim": "Includes Parse API, Extract API, Edit API, Split API, and Custom Webhooks, with free credits to start.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.reducto.ai/api-reference/parse",
+        "claim": "Demonstrates the Parse API endpoint using Bearer token authentication in Python, Node.js, and Go.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:07:39.932636+00:00"
+}

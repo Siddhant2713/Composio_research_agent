@@ -1,0 +1,98 @@
+{
+  "app": "Consensus",
+  "number": 94,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:53:55.658173+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://consensus.app\",\n    \"https://consensus.app/home/pricing/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://consensus.app",
+    "https://consensus.app/home/pricing/",
+    "https://docs.consensus.app/",
+    "https://developer.consensus.app/",
+    "https://developers.consensus.app/",
+    "https://api.consensus.app/",
+    "https://consensus.app/docs",
+    "https://consensus.app/developers",
+    "https://consensus.app/api",
+    "https://consensus.app/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://consensus.app",
+      "reason": "page too thin (68 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://consensus.app/home/pricing/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.consensus.app/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.consensus.app/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.consensus.app/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.consensus.app/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://consensus.app/docs",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://consensus.app/developers",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://consensus.app",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://consensus.app (page too thin (68 chars)); https://consensus.app/home/pricing/ (HTTP 404); https://docs.consensus.app/ (HTTP 403); https://developer.consensus.app/ (ConnectError: [Errno -5] No address associated with hostname); https://developers.consensus.app/ (ConnectError: [Errno -5] No address associated with hostname); https://api.consensus.app/ (HTTP 404)"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:54:01.097939+00:00"
+}

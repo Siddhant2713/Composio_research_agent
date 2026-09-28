@@ -1,0 +1,796 @@
+===== https://brightdata.com
+TITLE: Bright Data: Web Data Infrastructure for Humans & Agents
+ACCESSED: 2026-09-27
+
+The web's data, unlocked
+Discover, access, extract, and interact with any public website. Get structured, reliable, real-time or historical data at petabyte-scale. Ready for any model, pipeline, or workflow.
+Get started for free
+Talk to a data expert
+No credit card required
+Instant
+scraper APIs
+Unstoppable browsing
+infrastructure
+AI-ready
+BI-ready datasets
+400M+ proxy IPs
+from 195 countries
+PLATFORM
+From DIY scraping to hands-off data delivery
+Dataset Marketplace
+High-quality datasets from popular domains
+Scraper APIs
+Pre-built or custom-made scraping endpoints
+Web Archive
+Ever-growing, petabyte scale web archive
+AI Scraper Studio
+Turn any website into a data pipeline
+Data Feeds
+Easily access structured, high-quality web data on demand. 
+Real-time, pre-collected, or historical – tailored to your needs.
+5B+ records regularly refreshed; 800+ domains
+Automated data quality validation checks
+Seamless API and webhook integration
+Minimize engineering effort required
+Get started
+Unlocker API
+Say goodbye to blocks and CAPTCHAs
+SERP API
+Get multi-engine search results on-demand
+Browser API
+Spin up remote browsers, stealth included
+Crawl API
+Turn entire websites into AI-friendly data
+Web Access APIs
+Build and scale advanced scraping operations effortlessly. Search, crawl, and navigate reliably – without being blocked.
+Automatically avoid anti-bot measures and CAPTCHAs
+Advanced JS rendering and remote browsers
+High performance with near-zero downtime
+Minimize setup and maintenance required
+Get started
+Residential
+400M+ diverse IPs from real user devices
+Datacenter
+High-speed IPs for large-scale extraction
+ISP
+1,300,000+ fast, stable residential-grade IPs
+Proxy Infrastructure
+Leverage the world’s largest proxy network for reliable web data extraction at scale. 100% ethically-sourced and compliant.
+Full control, visibility and enterprise-grade security
+Integrated Proxy Manager and Management APIs
+Optimized routing for speed and reliability
+99.99% uptime and 99.95% success rate
+Get started
+Popular use cases
+AI-ready data for every industry
+Data for AI
+Train and fine-tune models, power agents web
+                access, enhance RAG, and fuel industry-specific AI solutions.
+eCommerce
+Access competitors’ prices, products and review
+                data at scale.
+Marketing
+Master the art of social media marketing with
+                web data.
+Travel
+Access competitor pricing, hotel availability and
+                flight schedules.
+Market research
+Deeply understand your target audience.
+SERP tracking
+Maximize your SEO impact with real-time SERP
+                ranking data.
+Financial Services
+Gain a competitive edge using high-quality
+                reliable datasets.
+Data Security
+Fight fraud, mitigate risk, & achieve real-time
+                visibility.
+Real Estate
+Predict how prices will move, anticipate market
+                trends.
+Ad Tech
+Protect your brand, verify ads, & conduct real-time ad
+                intelligence.
+Brand Protection
+Power your brand protection and anti-piracy
+                efforts.
+Integrations
+Universal compatibility with all AI/ML workflows and data infrastructure
+ML/AI, Datasets, SERP API, AI Agents
+How I Built a Web Scraping AI Agent
+MCP Server
+My AI Sales Bot Made $596 Overnight | MCP Build
+MCP Server
+How I Scrape Any Site Using This MCP Server + Claude, LangGraph & AI Agents
+MCP Server
+Model Context Protocol (MCP): Web Search Agent using Google ADK and Bright Data MCP
+MCP Server
+AI Agents Are Getting Blocked? – Use Bright Data’s MCP Server
+MCP Server
+Scrape ANY Website In Realtime With This Powerful AI MCP Server! | Bright Data MCP
+Startups
+Elio Narciso
+Startups
+Jessica Zizzamia
+Startups
+Arjun Chintapalli
+Startups
+TJ Richardson
+Startups
+Saroop Bharwani
+Startups
+Constantine Janashvilli
+Discover more
+Powered by an award-winning 
+proxy network
+Over 400M+
+residential proxy IPs
+, best-in-class technology and the ability to target any country, city, carrier & ASN make our premium proxy services a top choice for developers.
+Proxy services
+All proxy locations
+Customer spotlight of the month
+How
+Yutori Powers AI Agents
+with
+Bright Data
+When limited concurrency and fragmented data sources threatened Raylu’s ability to deliver real-time investment intelligence, they rebuilt their web access layer with Bright Data – scaling from hundreds to hundreds of thousands of concurrent sessions without sacrificing SOC 2 compliance.
+Raylu
+More customer stories
+SUPPORT
+We’ll support you every step of the way
+Talk to a web data expert to get the most out of your data
+Rated #1 by customers on G2
+Under 10 minutes average response time
+24/7 support anytime, anywhere
+COMPLIANCE
+Leading the way in ethical web data collection
+We have set the
+gold standard for ethical and compliant web data practices.
+Our peer network is built on trust, with every member personally opting in and the guarantee of zero personal data collection. We champion the collection of only publicly availabl
+
+===== https://docs.brightdata.com/introduction
+TITLE: Bright Data documentation - Bright Data Docs
+ACCESSED: 2026-09-27
+
+​
+Start building with live web data
+Scrape any site, buy ready-made datasets. Thousands of pre-built scrapers, one API key.
+Read
+https://docs.brightdata.com/llms.txt
+and get me set up with Bright Data
+Copied
+Copy prompt
+5,000 free credits per month
+, no credit card required. See the
+free tier
+.
+Quickstart
+Scrape your first page and get structured JSON in three steps.
+You're an agent? Start here
+llms.txt, skills and MCP tools for AI readers.
+All products
+Data extraction, web search, AI training data and proxy networks.
+API reference
+Authentication, endpoints, SDKs and the CLI.
+​
+Browse by product
+​
+Data extraction
+Extract structured data, unblock pages and collect search results.
+Scraper API
+Structured data from thousands of sites
+Scraper Studio
+Build and host custom scrapers
+Dataset Marketplace
+Ready-made datasets, 250+ domains
+Web Unlocker API
+Unblock any protected page
+Browser API
+Remote browsers for automation
+SERP API
+Search results as structured JSON
+Managed services
+Done-for-you data collection
+​
+Web search
+Search records and the live web by API.
+Business Search
+Find people and companies by criteria
+​
+AI training data
+Media and archived pages for model training.
+Media Data API
+Video, audio and captions at scale
+Web Archive
+Cached web page snapshots
+​
+Proxy networks
+Five network types for routing traffic at scale.
+Residential proxies
+400M+ real-user IPs
+Datacenter proxies
+Fast, low-cost IPs
+ISP proxies
+Static residential-grade IPs
+Proxy Manager
+Open-source proxy routing
+Browser Extension
+Proxies in Chrome
+​
+AI tools
+Tools that connect agents to the live web.
+Bright Data MCP
+Live web access for agents
+SDKs
+Python and JavaScript clients
+Bright Data CLI
+The platform from your terminal
+​
+Set up your AI tools
+Connect Bright Data to the tool you already use. Each command is the same one documented in its
+MCP integration guide
+.
+Claude Code
+Cursor
+Codex CLI
+Bright Data CLI
+claude
+mcp
+add
+--transport
+sse
+brightdata
+"https://mcp.brightdata.com/sse?token=YOUR_API_KEY"
+{
+"mcpServers"
+: {
+"brightdata-mcp"
+: {
+"command"
+:
+"npx"
+,
+"args"
+: [
+"-y"
+,
+"@brightdata/mcp"
+],
+"env"
+: {
+"API_TOKEN"
+:
+"<your API token>"
+}
+}
+}
+}
+codex
+mcp
+add
+brightdata
+--env
+API_TOKEN=YOUR_API_KEY
+--
+npx
+-y
+@brightdata/mcp
+npx
+-p
+@brightdata/cli
+brightdata
+--version
+​
+Send your first request
+Each example scrapes a LinkedIn profile with the Scraper API and works as-is after you replace
+YOUR_API_KEY
+with a key from your
+account settings
+. See
+authentication
+for how API keys work across all products.
+cURL
+Python
+Node.js
+curl
+-X
+POST
+\
+"https://api.brightdata.com/datasets/v3/scrape?dataset_id=gd_l1viktl72bvl7bjuj0&format=json"
+\
+-H
+"Authorization: Bearer YOUR_API_KEY"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'[{"url": "https://www.linkedin.com/in/satyanadella"}]'
+import
+requests
+response
+=
+requests.post(
+"https://api.brightdata.com/datasets/v3/scrape"
+,
+params
+=
+{
+"dataset_id"
+:
+"gd_l1viktl72bvl7bjuj0"
+,
+"format"
+:
+"json"
+},
+headers
+=
+{
+"Authorization"
+:
+"Bearer YOUR_API_KEY"
+,
+"Content-Type"
+:
+"application/json"
+,
+},
+json
+=
+[{
+"url"
+:
+"https://www.linkedin.com/in/satyanadella"
+}],
+)
+print
+(response.json())
+const
+response
+=
+await
+fetch
+(
+"https://api.brightdata.com/datasets/v3/scrape?dataset_id=gd_l1viktl72bvl7bjuj0&format=json"
+,
+{
+method:
+"POST"
+,
+headers:
+{
+"Authorization"
+:
+"Bearer YOUR_API_KEY"
+,
+"Content-Type"
+:
+"application/json"
+,
+},
+body:
+JSON
+.
+stringify
+([
+{
+url:
+"https://www.linkedin.com/in/satyanadella"
+}
+]),
+}
+);
+const
+data
+=
+await
+response
+.
+json
+();
+console
+.
+log
+(
+data
+);
+The same request pattern works for every scraper: swap the dataset ID and input URL. See the
+Instagram
+and
+SERP API
+quickstarts for the next targets.
+Was this page helpful?
+Yes
+No
+
+===== https://brightdata.com/pricing
+TITLE: Top-Tier Proxies & Scraping APIs Pricing
+ACCESSED: 2026-09-27
+
+Bright Data's Products Pricing
+Designed to meet enterprise companies' unique needs and challenges
+Proxy Networks Pricing
+Elevate your business with our top-tier proxy services.
+Largest Geographic Coverage
+Battle-Tested Stability & Speeds
+400M+ monthly Residential IPs
+See Pricing
+Web Scraper API Pricing
+Easily extract web data with our powerful Web Scraper API.
+Pre-built scraper APIs
+IP rotation & CAPTCHA handling
+Scalable infrastructure support
+See Pricing
+Scraper Studio Pricing
+Launch AI-powered scrapers for any website in minutes.
+Collect data from any website
+Only pay for successful requets
+Free tier pricing available
+See Pricing
+Scraping Browser Pricing
+Access our Scraping Browser, compatible with leading web automation tools.
+Built-In Website Unlocking
+Save Time & Resources
+Puppeteer & Playwright Compatible
+See Pricing
+SERP API Pricing
+Access our powerful SERP API to retrieve live data from any search engine.
+Data Delivered in JSON or HTML
+Save Time & Resources
+Search Multiple Search Engines
+See Pricing
+Web Unlocker Pricing
+Start accessing websites smoothly by rotating IPs and solving CAPTCHAs.
+Handles all Website Unlocking
+Solves CAPTCHA
+Tackles headers, user agents, & cookies
+See Pricing
+Datasets Pricing
+Access the data you need without coding using our ready-to-use datasets.
+Subscription option
+Dedicated account manager
+No coding
+See Pricing
+Bright Insights Pricing
+Explore a world of eCommerce insights, elevating your brand to new heights.
+Actionable eCommerce insights
+Data accuracy
+Multiple use cases
+See Pricing
+Bright Data is used by world's top brands
+Elio Narciso
+Co-founder and CEO at ScaleStack
+Jessica Zizzamia
+Head of Product at Vibeslist
+Arjun Chintapalli
+Co-Founder & CTO of RTRVR
+TJ Richardson
+Co-founder at Fundable
+Saroop Bharwani
+Co-founder at Senso
+Constantine Janashvilli
+Co-founder at Parallax Vision
+Bhavani Kalisetty
+Co-Founder & CTO of RTRVR
+Not sure what you need?
+Contact sales
+
+===== https://brightdata.com/license
+TITLE: Bright Data License Agreement
+ACCESSED: 2026-09-27
+
+Bright Data Master Service Agreement
+3.
+Client Warranties and Representations.
+The Client warrants, represents and covenants to Bright Data that:
+General -
+It is aware that the Services may only be used by individuals that are at least 18 years old and at least the legal age allowed for by the applicable jurisdiction. The Client represents and warrants that, to the extent it is an individual, it is of legal age, as described above. Client further acknowledges that Bright Data may require proof of age as a condition for the provision of the Service.
+To the extent that the use of the Service will contain any personal information, that is intended for processing by Bright Data as a “processor” (as the term is defined in the applicable privacy legislation) then the provision of the Service will also be subject to
+Data Protection Addendum
+.
+The Client will be solely responsible for any actions it performs based on the use of the Service.
+The Client is responsible for protecting its personal username and/or password to the Service. The Client may not share its account privileges with anyone or knowingly permit any unauthorized access to the Service. The accounts of those involved will be disabled if sharing is detected.
+The Client shall not use the Services in violation of applicable law or regulations or any third party rights (including intellectual property rights) and not use the Service in any manner or for any purpose other than as stated in the intended use case provided to Bright Data, if applicable.
+Without derogating from the generality of the above, the Client will only use the Service in accordance with the
+Acceptable Use Policy
+, as may be amended from time to time.
+Specific terms for the Proxy Services
+When using the Proxy Services, the Client shall:
+I.
+Not use the Service to: (i) distribute cracking, warez, ROM, virus, adware, worms, trojan horses, malware, spyware or any other similar malicious activities and products or any other computer code, files or programs designed to interrupt, hijack, destroy, limit or adversely affect the functionality of any computer software, hardware, network or telecommunications equipment; (ii) cause any network resource to be unavailable to its intended users, including, without limitation, via “Denial-of-Service (DoS)” or “Distributed Denial-of-Service (DDoS)” attack; (iii) distribute any unlawful content or encourage any unlawful activity; (iv) cause any damage or service disruption to any third party computers or service; or (v) enhance or operate a service that competes with the Services, or assist any other party to do so.
+II.
+Not use other systems, products or services that infringe upon the patents and other intellectual property rights of Bright Data.
+III.
+Not engage in any reselling of the Service in whole or in part, without Bright Data’s prior written authorization.
+IV.
+Not, and not enable others to, copy, decompile, reverse engineer, disassemble, attempt to derive the source code of, decrypt, modify, or create derivative works of the Service or any services provided by Bright Data, or any part thereof, including without limitation by using the Service in order to perform mapping of the IP addresses used by Bright Data in the provision of the Service, without Bright Data’s prior written approval. It is hereby clarified that IP addresses used as part of the provision of the Service are personal and confidential information, and any unauthorized use of such information is strictly prohibited and may be considered breach of applicable law and/or third party rights.
+Specific terms for the Data Services (including without limitation Datasets, Web Scraper IDE and Bright Insights)
+I.
+When using the Data Services, the Client shall not distribute, transmit, reproduce, publish, license, transfer, or sell any Data in order to offer a similar or competitive product.
+5.
+Confidential Information.
+If a Party (the
+“Receiving Party”
+) obtains access to Confidential Information (as defined below) of the other Party (the
+“Disclosing Party”
+) in connection with the negotiation of or performance under this Agreement, the Receiving Party agrees that:
+The Disclosing Party shall retain ownership of the Confidential Information and that the Receiving Party shall not acquire any rights therein, except the right to use such Confidential Information to the extent provided in this Agreement;
+The Receiving Party shall use at least the same degree of care to protect the Confidential Information from unauthorized disclosure or access that the Receiving Party uses to protect its own Confidential Information, but not less than reasonable care, including measures to protect against the unauthorized use, access, destruction, loss and alteration of such Confidential Information;
+Except as otherwise provided in this Agreement, no Confidential Information disclosed pursuant to this Agreement shall be made available by the Receiving Party to any third party for any purpose, except to a consult
+
+===== https://brightdata.com/contact
+TITLE: Contact Us - Bright Data
+ACCESSED: 2026-09-27
+
+Contact us
+We’re here to support you, and get you the data you need. Fast.
+Contact sales
+Start free trial
+24/7 Live Support
+Contact our attuned support agents with any questions.
+Get support
+Sales Inquiries
+Contact Sales to find the right plan that best fits your needs
+Contact sales
+Report Suspected Abuse
+Protect other customers and the Bright Data network by reporting suspicious activity.
+Report here
+Join the Affiliate Program
+Promote Bright Data on your website or social media, and earn commission.
+Learn more
+Work with Us
+Explore our job opportunities, and create a better internet.
+Discover positions
+The Bright Initiative
+Learn about our work with universities, research institutions, and governments.
+Visit the Bright Initiative
+Media Inquiries
+Contact our public relations team. This is the fastest way to get a response for anyone on deadline.
+Contact PR
+Our global sales team
+Our offices
+New York
+Mailing Address:
+WeWork c/o Bright Data
+500 7th Ave
+8th Floor Mailroom
+New York, NY 10018
+Office Address:
+500 7th Ave
+9th Floor, Office 9A1234
+New York, NY 10018
+San Francisco
+Bright Data Inc. San Francisco offices:
+Office Address:
+625 Second Street
+Suite 101
+San Francisco, CA 94107
+Israel
+4 Hamahshev St., Netanya 4250714,
+Israel (POB 8025)
+Beit Ilan, Poleg Industrial Center
+Parking: There’s a parking lot behind (south of) our building (entrance from HaTsoran st.)
+Main Office Tel: +972-9-8355993
+Fax: +972-9-8355003
+Cyprus
+Bright Data (Cyprus) Ltd
+Office Address:
+79 Spyros Kyprianou Avenue
+4th Floor, "MGO PROTOPAPAS" Building
+Limassol, Cyprus
+Let's get social
+
+===== https://brightdata.com/partners
+TITLE: Partner with us - Bright Data
+ACCESSED: 2026-09-27
+
+Bright Data Partners
+Explore growth opportunities & meet our current
+partners with the #1 web data platform
+Join now
+Choose the partnership that’s right for your business
+Solution Partner
+Global businesses focusing on software distribution, delivering strategy, implementation, consulting, and integration services by leveraging Bright Data products.
+Learn more
+Cloud Partnerships
+Integrators leverage Bright Data's Cloud partnerships with AWS, Snowflake and Databricks to add public web data into existing data, for crucial business insights, and smarter AI models. Join us to be part of the revolution.
+Join us
+AI Transformation Partners
+Power your Enterprise AI agents with reliable web context. Bright Data provides a standardized web data layer, enabling your platform to ship agents faster and scale predictably in production environments.
+Learn more
+Affiliates Program
+Companies and individuals who promote and implement dedicated Bright Data links in online campaigns.
+Learn more
+What’s unique about our partnership program
+Bright Data is the world’s #1 web data platform
+Bright Data’s technology offers a cost-effective way to perform fast and stable public web data collection at scale, effortlessly converting unstructured data into structured data, resulting in complete, accurate, and enriched datasets.
+24/7 technical support and marketing assistance
+Email, phone, dedicated Slack Channel, ticketing system. We enable all communication channels to support your sales efforts.
+Partner Manager and sales support
+A dedicated Partner Manager will provide support and sales enablement, including sales process design, training, strategy, and skills development.
+Enhanced product offering and value proposition
+Increase the overall added value to your customers by complementing offer stack with Bright Data’s suite of cutting-edge products.
+Bright Data
+partners around the world
+Bright Data currently has more than 4,500 partners worldwide. We are always looking for new opportunities to grow and bring added value to our partners
+Bright Data Partnership Guide
+Download now
+
+===== https://brightdata.com/pricing/serp
+TITLE: SERP API Pricing Plans
+ACCESSED: 2026-09-27
+
+SERP API Pricing
+Access results from any major search engine. Pay only for success
+Free Tier
+5K
+requests
+Start free
+5K records per month
+No credit card required
+Expert support
+Pay as you go
+$
+1.5
+/1K requests
+Start free
+Pay only for success
+Set monthly spend limits
+Unlimited concurrency
+Expert support
+Scale
+$
+499
+/month
+Slide to adjust plan
+Start free
+380K requests included
+$
+1.3
+/1K additional requests
+Unlimited concurrency
+Cancel anytime
+Expert support
+Enterprise
+Custom
+Talk to sales
+Volume discounts
+Account manager
+Premium SLA
+Priority support
+SSO
+Prices shown are estimates in local currency for reference only. Actual charges will be calculated and billed in USD based on the exchange rate at the time of the transaction. Bright Data is not liable for any foreign exchange differences. USD pricing is binding, local currency amounts are indicative only.
+We accept these payment methods:
+Using AWS? You can now pay through the AWS Marketplace
+Get started
+Every plan gives you full access - pay less per record as you scale
+Data Collection
+Automated proxy management
+Full browser rendering
+CAPTCHA solving
+Performance at Scale
+Unlimited concurrency
+Batch & scheduled collection
+Job management APIs
+Data Delivery
+Data validation & discovery
+Data parsing (JSON or CSV)
+Webhook or API delivery
+All the features you need, included in the price:
+Real-Time SERP Data
+Supports All Major Search Engines
+JavaScript Rendering
+Worldwide Localized Results
+CAPTCHA Solving
+Desktop and Mobile User Agents
+Automatic Retries and IP Rotation
+Simulates Human-Like Browsing Behavior
+Browser Fingerprinting
+Unlimited Concurrent Requests
+Data Delivered in JSON or HTML
+Custom Headers
+Customizable Search Parameters
+Data Integrity Validations
+User-Friendly Playground & API
+Bright Data is used by world's top brands
+Elio Narciso
+Co-founder and CEO at ScaleStack
+Jessica Zizzamia
+Head of Product at Vibeslist
+Arjun Chintapalli
+Co-Founder & CTO of RTRVR
+TJ Richardson
+Co-founder at Fundable
+Saroop Bharwani
+Co-founder at Senso
+Constantine Janashvilli
+Co-founder at Parallax Vision
+Bhavani Kalisetty
+Co-Founder & CTO of RTRVR
+SERP API FAQ
+What is a SERP API?
+Search engines regularly change their structure and algorithms making data scraping difficult. SERP API automatically adjusts to changing SERPs and provides real user’s results with a variety of tailored search parameters. Results will shift depending on your search history, device, and location but with SERP API you will never get blocked because of location. Data is delivered with accuracy and speed in JSON or HTML output.
+Bright Data SERP API provides real user’s results in high volumes for all the major search engines. It enables a wide variety of tailored search parameters, and your search results data will be delivered in JSON or HTML output. Focus on extracting the data you need without worrying about getting blocked, and with the most accuracy and speed.
+Why use Bright Data SERP API for scraping search engines?
+Gather SERP data as a real user in any location, while saving money on data extraction engineers and IT professionals without worrying about server maintenance. SERP API is easily integrated into all 3rd party crawler software. Bright Data can support your growing traffic needs and peak periods.
+What are the common use cases for SERP API?
+Organic keyword tracking, brand protection, price comparison, market research, detect copyright infringements, ad intelligence
+What are the benefits of SERP API?
+Get real user search results from all major search engines using different search parameters, in real-time and with the highest success rates, regardless of your requests volume. Only pay for successful requests and enjoy response time under 5 sec. Use different location parameters to automatically target a suitable peer to get a better understanding on how different location and time change the search results. Use different devices and search types for a more accurate search.
+How are searches counted?
+Executing each API is counted as a request.
+In asynchronous mode, only “send request” is counted and collecting the response is not counted.
+Is the data provided by SERP API accurate?
+Yes. Bright Data SERP API provides real user results that are 100% accurate in high volumes for all major search engines. Focus on analyzing SERP results without worrying about getting blocked or receiving misleading information–we’ll get you the accurate SERP results with incredible speed.
+What locations does the SERP API support?
+SERP API supports 195 countries – every country on Earth–and also enables city-level targeting.
+Is there a limit to the number of concurrent requests I can make?
+No. There is no limit to the number of concurrent requests. SERP API is built for scale.
+Not sure what you need?
+Contact sales
+
+===== https://brightdata.com/partners/aws
+TITLE: AWS - Bright Data
+ACCESSED: 2026-09-27
+
+Bright Data and AWS
+The world’s leading web data collection & proxy products, now easily discoverable through the AWS marketplace
+Servers & infrastructure managed on Amazon for guaranteed resilience, scale, stability, and agility
+Reviewed & validated by AWS for technological superiority & security
+Save considerable development resources by outsourcing web data collection to Bright Data
+Start now
+Leverage Bright Data
+& AWS partnership to consume public web data and integrate it with your existing data management sources to gain crucial business insights
+Leveraging the direct connection between Bright Data and S3 storage enables enterprises to store large datasets quickly and reliably without the need to heavily invest in resources to maintain data processing and storage in-house. With AWS at the core of Bright Data architecture you can rest assure that your data feeds will remain, stable, operational, scalable and fully secured.
+Learn more
+I recommend using Bright Data’s products for any company, especially in the finance industry. Bright Data is trustworthy and compliant,
+ the service is great,
+the products are flawless and their network is fast and stable.
+Xiaolong Shi
+Crawler Engineer at Bitget
+Bright Data has their own proxy infrastructure which helps keep your web data flowing plus, their web unlocker helps beat any pesky CAPTCHAs that might be holding you back.
+Nicholas Renotte
+Data Science Specialist
+Watch now
+From my experience, Bright Data’s service has been invaluable. Bright Data helped us collect enough public web data to meet our needs, and with its support and development staff, we optimized many of our processes.
+Charmagne Cruz
+Head of Reporting & Analytics, Business Technologies and Pricing at Shopee Philippines Inc.
+Having the best
+quality
+and
+quantity
+of data is the most important thing, and that’s where the combination of Bright Data and tgndata works.
+George Koutsoudopoulos
+CEO at tgndata
+Watch now
+We are really impressed with the
+reliability
+, and very happy with Bright Data overall. We have a regular communication channel with our account manager, who is very helpful.
+Yorgos Panzaris
+CTO at Convert Group
+We are very pleased with the partnership with Bright Data. Everything’s been good, the network has been very
+stable
+, we’re happy with the
+customer service
+and the
+support
+staff is bar none in our book.
+Cheddi Rai
+CEO at AdRetreaver
+More customer stories
+Award-winning web data scraping and proxy infrastructure
+Get any websites’ data delivered to you structured for real-time analysis
+Overcome all CAPTCHAs and website blocking
+Purchase pre-collected datasets, battle-tested web crawlers, or collect data yourself with the world’s most powerful proxy infrastructure
+Fortune 500 companies, academic institutions, and small businesses all rely on Bright Data’s solutions to retrieve crucial public web data in the most efficient, reliable, and flexible way, so they can research, monitor, analyze data, and make better decisions
+Solutions brief
+How web data is transforming ecommerce
+The ecommerce field is changing fast, and data is the catalyst. Online retail businesses are increasingly relying on insights drawn from web data to guide their pricing strategies as well as find…
+Data acquisition remains unaffected amidst shrinking department budgets, reveals research
+New research from Bright Data, a web data platform, and independent research firm Vanson Bourne reveals…
+How to cut costs on web data collection by 54%
+Data collection can be costly. If you are searching for the most effective way to reduce the data collection costs of your organization, this article is for you. We will discuss the tested strategy you…
+Harness the world’s leading web data platform together with AWS
+Start now

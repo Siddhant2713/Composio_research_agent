@@ -1,0 +1,1006 @@
+{
+  "pass": "pass1",
+  "generated_at": "2026-09-27T20:19:25.194727+00:00",
+  "apps": {
+    "Salesforce": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "Build with React on Salesforce: Multi-Framework Is Now GA. Ship production-ready React apps natively on Salesforce \u2014 with authentication, security, and governance built in.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "Sign up now",
+        "problem": "Self\u2011serve access requires access\u2011docs showing how to obtain credentials; only marketing copy is present.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": true,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "Salesforce REST API Integrate Salesforce data into apps and perform complex operations on a large scale. B2C Commerce API Ensure omnichannel flexibility by using a headless API to build custom apps, from full storefronts to merchant tools. Marketing Cloud APIs Create your ideal integration with the Marketing Cloud REST and SOAP APIs. Metadata API Customize, deploy, package, and upgrade application metadata.",
+        "problem": "Only REST, B2C Commerce, Marketing Cloud (REST & SOAP) and Metadata APIs are mentioned; GraphQL, webhooks, and the Data 360 Code Extension SDK are not covered in this line.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "Expose Custom Apex as a Hosted MCP Tool for Agents ... allowing AI agents like Claude or Cursor to discover and invoke your business intelligence directly via the Model Context Protocol.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "partial",
+        "supporting_line": "Start for free",
+        "problem": "The line indicates a free edition but does not directly address how easy it is to build with the platform.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "yes",
+        "supporting_line": "Salesforce REST API ... Extend Data 360 with Code Extension ... using the Data 360 Code Extension SDK ... New in Salesforce Developer Edition: ... Hosted MCP Servers \u2013 all free.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Pipedrive": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "The API is stateless \u2013 all requests are validated against an API token. The API token can be obtained manually from the Pipedrive app.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "We offer two official Pipedrive API client libraries: Node.js and PHP.",
+        "problem": "Claim also includes RESTful API and webhooks, which are not covered by this line.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No claim provided to verify.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "yes",
+        "supporting_line": "Pipedrive is an amazing tool! Their developer API, well-documented API reference page and easy use of webhooks allow developers to easily build solutions in the Pipedrive Developer Platform.",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "partial",
+        "supporting_line": "Easily build integrations with our API and developer platform to reach over 100,000 companies through the Pipedrive Marketplace.",
+        "problem": "Does not mention the RESTful API token validation claim.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Intercom": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "Public apps (sometimes referred to as integrations) are apps that are available for any customer to install. These apps have access to other peoples' Intercom data, which means there are specific requirements in order to publish them, such as setting up OAuth and submitting to the Intercom team for review.",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "sign up here to create your free account. This will give you access to your Developer Hub.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "If you aren't able to find an existing app that solves the problem you're facing, you can build your own using our REST APIs and Canvas Kit framework.",
+        "problem": "The quoted line mentions REST APIs and SDKs (Canvas Kit) but does not mention webhooks, which are also claimed.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No information about an MCP (Marketplace) is present in the provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The text does not provide an overall assessment of buildability difficulty (e.g., 'moderate').",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The specific claim statements are not directly quoted in the provided text; while related information exists, no single line verifies each listed claim.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Gorgias": {
+      "auth.method": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No information about authentication method in the provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "Sign up for our Developer Portal to start our partnership. This step is required only if you plan to build a Public app.",
+        "problem": "Access tier is described (public apps require sign\u2011up/approval, private apps are self\u2011serve), so claim of unknown is incorrect.",
+        "evidence_type": "access_docs",
+        "judge_inconsistent": true,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "yes",
+        "supporting_line": "Refer to our API documentation to find all the information you need.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No mention of MCP in the provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "partial",
+        "supporting_line": "Open API to build and customize integrations",
+        "problem": "Text indicates that building integrations is possible via an open API, so claim of unknown is incorrect.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": true,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Slack": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "OAuth 2.0 : Learn how to use OAuth 2.0 to securely authenticate users and request access tokens.",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "You'll need to sign in to your Slack account to create an application.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "WhatsApp Business": {
+      "auth.method": {
+        "confirmed": "partial",
+        "supporting_line": "\"Authorization\": \"Bearer <ACCESS_TOKEN>\",",
+        "problem": "The claim says authentication uses an API key, but the text shows bearer token authentication.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": true,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "Onboard customers: Learn how to build Embedded Signup; a flow to onboard customers directly from your website.",
+        "problem": "The text mentions self\u2011serve embedded signup and partner resources, but does not describe the mixed tier details such as business verification or credit\u2011line setup claimed.",
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "Select language Python JavaScript cURL",
+        "problem": "The line confirms SDK language options and implies REST/HTTP usage, but the text does not explicitly state that GraphQL is unsupported nor does it list all REST capabilities; therefore the full claim is not completely verified.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The text provides no statement about the overall difficulty (e.g., \"moderate\") of building with the platform.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "partial",
+        "supporting_line": "Cloud API ... Marketing Messages API for WhatsApp ... Business Management API",
+        "problem": "The quoted line supports the first sub\u2011claim about the three APIs, but does not address the HTTP/Graph API/webhooks claim nor the MCP announcement, so the bundled claim is only partially covered.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "LinkedIn Ads": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No evidence about tier creation or upgrade process.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.",
+        "problem": "Does not explicitly state that the APIs are REST.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No mention of MCP in the provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "Text does not confirm self\u2011serve developer portal access or tier\u2011upgrade requirements.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "GoHighLevel": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "We now have an OAuth based API",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "no information on how developers obtain credentials or access tier",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "yes",
+        "supporting_line": "Your go-to resource for our Public API endpoints and documentation.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "no mention of MCP in the provided text",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "no information on developer buildability or access",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "partial",
+        "supporting_line": "We now have an OAuth based API",
+        "problem": "does not mention API 1.0 Docs for public endpoints in the same sentence",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Pinterest": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "Build a working authentication flow based on OAuth 2",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "Application requests are reviewed each business day.",
+        "problem": "Claim also mentions needing a business account and accepting developer terms, which are not covered by this line.",
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "Python SDK : Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.",
+        "problem": "The claim lists multiple API capabilities (content, ads, catalogs, conversions, analytics) not demonstrated by this line; only the Python SDK is mentioned.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "Pinterest MCP is on the way",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The text does not provide an overall buildability assessment such as 'moderate'.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The claim aggregates multiple external URL statements; the provided text does not verify each URL's specific claim.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "SendGrid": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "This section stores your key in a local environment variable named SENDGRID_API_KEY",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "Go to Settings > API Keys. The API Keys page displays your current API keys with the following parameters:",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "The SendGrid v3 Web API provides a REST interface to send email at scale",
+        "problem": "The claim also asserts the presence of SDKs for multiple languages and that GraphQL is not offered; the quoted line only confirms the REST interface.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "partial",
+        "supporting_line": "Use up-to-date documentation to quickly integrate and send with our APIs.",
+        "problem": "The text does not explicitly state that building is \"easy\"; it only suggests documentation and examples are available.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "yes",
+        "supporting_line": "The SendGrid v3 Web API provides a REST interface to send email at scale",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "WooCommerce": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "After generating the key, the screen displays your Consumer Key, Consumer Secret, a QR Code, and a Revoke Key link.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "To create or manage keys for a specific WordPress user: Go to WooCommerce > Settings > Advanced > REST API Select Create an API key or Add Key.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "yes",
+        "supporting_line": "Webhooks configured to use the legacy REST API also stop working unless you install this plugin.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "partial",
+        "supporting_line": "Call for Testing: WooCommerce MCP Beta",
+        "problem": "Only a beta is mentioned; no explicit statement that no production server exists.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "partial",
+        "supporting_line": "To create or manage keys for a specific WordPress user: Go to WooCommerce > Settings > Advanced > REST API Select Create an API key or Add Key.",
+        "problem": "Line shows self\u2011serve key generation but does not directly address overall ease of building integrations.",
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Magento (Adobe Commerce)": {
+      "auth.method": {
+        "confirmed": "partial",
+        "supporting_line": "Commerce SDKs and libraries provide reusable patterns for authentication, configuration, event handling, and Commerce integration, including the Admin UI SDK and OOPE modules.",
+        "problem": "does not mention Adobe Identity Management Service (IMS) as used for authentication",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "no information about sign\u2011up or credential acquisition flow",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Ahrefs": {
+      "auth.method": {
+        "confirmed": "partial",
+        "supporting_line": "To send requests to Ahrefs API, you'll need an API key.",
+        "problem": "The text does not specify that the API key is sent in the Authorization header as a Bearer token, and does not mention OAuth 2.0 Authorization Code Flow with PKCE.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+        "problem": "No evidence in the text about needing to submit an application form to join the Ahrefs Connect integration program.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "yes",
+        "supporting_line": "REST API ... OpenAPI spec Full machine-readable spec for every endpoint.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "partial",
+        "supporting_line": "To send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in Account settings / API keys.",
+        "problem": "The text does not mention the application review and approval process required for third\u2011party apps via Ahrefs Connect.",
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The claim aggregates multiple URL\u2011specific statements, but no single line in the provided text confirms all of them together.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Vercel": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "Create and manage Access Tokens in your account settings",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL https://api.vercel.com and follow the REST architecture.",
+        "problem": "Webhooks are listed separately in the endpoint list but not mentioned in the same sentence as the REST architecture; the claim bundles REST and Webhooks together.",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "Vercel MCP\nBeta\nLet your agent search the docs, manage projects and deployments, and query Web Analytics through the Vercel MCP server.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The text does not state that building or using the API is \"easy\"; it only describes credential creation and API documentation.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "yes",
+        "supporting_line": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Datadog": {
+      "auth.method": {
+        "confirmed": "partial",
+        "supporting_line": "Authenticate to the API with an API key using the header DD-API-KEY. For some endpoints, you also need an Application key, which uses the header DD-APPLICATION-KEY.",
+        "problem": "OAuth2 dynamic client registration support not mentioned",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "no information on how to obtain initial credentials",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "The Datadog API is an HTTP REST API.",
+        "problem": "does not list all claimed SDK languages explicitly",
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "no mention of MCP existence",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "cannot determine access tier due to lack of credential acquisition info",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Airtable": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "Claude ... Connects in one click via OAuth.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "The server is available to all users on all plans.",
+        "problem": "Claim of self\u2011serve credential acquisition is not supported by access documentation; only marketing about availability is present.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": true,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "yes",
+        "supporting_line": "npm install -g @airtable/mcp-cli",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "yes",
+        "supporting_line": "If you're new to Airtable, the fastest way to get started is to build something from nothing.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "partial",
+        "supporting_line": "The server is available to all users on all plans.",
+        "problem": "No line found confirming that the MCP server supports Personal Access Tokens (PATs).",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Coda": {
+      "auth.method": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No information about authentication method in the provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No information on how to obtain credentials.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+        "problem": "No evidence regarding GraphQL or webhooks support; claim that they are false is unsupported.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server. It's optimized for LLM usage patterns and often exposes more granular methods for accessing and modifying data.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "Insufficient information to assess buildability (no credential or authentication details).",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "Stripe": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "The Stripe API authenticates requests using HTTP Basic Auth.",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "yes",
+        "supporting_line": "create an account to load your test API keys.",
+        "problem": null,
+        "evidence_type": "access_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "The Stripe API is organized around REST.",
+        "problem": "Only REST and SDKs are mentioned; the text does not mention GraphQL or webhooks, so the claim about GraphQL=false and webhooks=true is unsupported.",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "yes",
+        "supporting_line": "MCP Enable agents to use tools and securely take actions in your Stripe account.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "The provided text contains no statement about the ease of building with Stripe; the claim is subjective and unsupported.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "yes",
+        "supporting_line": "The Stripe API is organized around REST.",
+        "problem": null,
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "iPayX": {
+      "auth.method": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No evidence in provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No evidence in provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No claim provided.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No claim provided.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No evidence in provided text.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No claim provided.",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    },
+    "NotebookLM": {
+      "auth.method": {
+        "confirmed": "yes",
+        "supporting_line": "curl \"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-5-flash:generateContent\" \\ -H \"x-goog-api-key: $GEMINI_API_KEY\" \\ -H 'Content-Type: application/json' \\ -X POST \\ -d '{\"contents\":[{\"parts\":[{\"text\":\"Explain how AI works in a few words\"}]}]}'",
+        "problem": null,
+        "evidence_type": "usage_docs",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "access.tier": {
+        "confirmed": "partial",
+        "supporting_line": "Get your no cost Gemini API key",
+        "problem": "self-serve claim requires access documentation; only marketing mention of a free key is present",
+        "evidence_type": "marketing",
+        "judge_inconsistent": true,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "api_surface": {
+        "confirmed": "partial",
+        "supporting_line": "Python JavaScript Go Java REST",
+        "problem": "GraphQL availability is not addressed, so claim that graphql is false cannot be confirmed",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "mcp.exists": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": "No claim provided to verify",
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "buildability.verdict": {
+        "confirmed": "partial",
+        "supporting_line": "Google AI Studio is the fast path for developers, students, and researchers who want to try Gemini models and get started building with the Gemini Developer API.",
+        "problem": "Ease of building is subjective; only marketing language suggests simplicity",
+        "evidence_type": "marketing",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      },
+      "evidence_supports_claims": {
+        "confirmed": "no",
+        "supporting_line": null,
+        "problem": null,
+        "evidence_type": "none",
+        "judge_inconsistent": false,
+        "judge": "groq:openai/gpt-oss-120b"
+      }
+    }
+  }
+}

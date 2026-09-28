@@ -1,0 +1,1086 @@
+===== https://vercel.com/docs/rest-api
+TITLE: Vercel REST API Reference
+ACCESSED: 2026-09-27
+
+Interact programmatically with your Vercel account using the SDK or direct HTTP requests. You can deploy new versions of web applications, manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects.
+The API supports any programming language or framework that can send HTTP requests.
+The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL
+https://api.vercel.com
+and follow the REST architecture.
+Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the
+Authorization
+header:
+Authorization: Bearer <TOKEN>
+Create and manage Access Tokens in your
+account settings
+By default, you can access resources in your personal account. To access resources owned by a team, append the Team ID as a query string:
+https://api.vercel.com/v6/deployments?teamId=[teamID]
+The API limits the number of calls you can make over a period of time. Rate limits are specified via response headers:
+X-RateLimit-Limit
+X-RateLimit-Remaining
+, and
+X-RateLimit-Reset
+. See the
+limits documentation
+for details.
+Browse all available REST API endpoints grouped by category.
+Access Groups
+endpoint
+s
+Ai Gateway
+endpoint
+s
+Aliases
+endpoint
+s
+API Ai Gateway
+endpoint
+s
+Artifacts
+endpoint
+s
+Authentication
+endpoint
+s
+Billing
+endpoint
+s
+Bulk Redirects
+endpoint
+s
+Certs
+endpoint
+s
+Checks V2
+endpoint
+s
+Connect
+endpoint
+s
+Deployments
+endpoint
+s
+DNS
+endpoint
+s
+Domains
+endpoint
+s
+Domains Registrar
+19
+endpoint
+s
+Drains
+endpoint
+s
+Edge Cache
+endpoint
+s
+Environment
+endpoint
+s
+Feature Flags
+21
+endpoint
+s
+Global Config
+endpoint
+s
+Integrations
+endpoint
+s
+Kms
+endpoint
+s
+Logs
+endpoint
+Marketplace
+25
+endpoint
+s
+Microfrontends
+endpoint
+s
+Networking
+endpoint
+s
+Observability
+endpoint
+s
+Project Routes
+endpoint
+s
+Projectmembers
+endpoint
+s
+Projects
+32
+endpoint
+s
+Rolling Release
+endpoint
+s
+Sandboxes
+30
+endpoint
+s
+Security
+endpoint
+s
+Static Ips
+endpoint
+Storage
+endpoint
+s
+Teams
+endpoint
+s
+User
+endpoint
+s
+VCR
+27
+endpoint
+s
+Vercel Ci
+endpoint
+s
+Web Analytics
+endpoint
+s
+Webhooks
+endpoint
+s
+
+===== https://vercel.com/docs
+TITLE: Vercel Documentation
+ACCESSED: 2026-09-27
+
+Ship anything with Vercel
+Deploy your first app, set up your coding agent to build and deploy on Vercel, or call any AI model through AI Gateway.
+Get started
+Set up your agent
+Get AI Gateway key
+Deploy an app
+Set up your agent
+Call a model
+terminal
+npm
+i
+-g
+vercel
+vercel
+login
+vercel
+terminal
+# Plugin for Claude Code, Codex, Grok Build, Cursor, Copilot, Kimi Code
+npx
+plugins
+add
+vercel/vercel-plugin
+# Skills for any other agent
+npx
+skills
+add
+vercel-labs/agent-skills
+# Let your agent manage projects, deployments, and logs
+npx
+-y
+add-mcp
+https://mcp.vercel.com
+-g
+# Route your agent's model calls through AI Gateway
+npx
+vercel
+ai-gateway
+setup
+terminal
+# Create an API key and export the key it prints
+vercel
+ai-gateway
+api-keys
+create
+export
+AI_GATEWAY_API_KEY
+"your-ai-gateway-api-key"
+# Call any model through one endpoint
+curl
+https://ai-gateway.vercel.sh/v1/chat/completions
+\
+-H
+"Authorization: Bearer $AI_GATEWAY_API_KEY"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"model": "anthropic/claude-opus-5",
+"messages": [{ "role": "user", "content": "Why is the sky blue?" }]
+}'
+Set up the agent you code with, and the platform for the agents you ship. This prompt installs the Vercel Plugin or Agent Skills, connects the Vercel MCP server, and deploys your project:
+Agent Prompt
+Help me set up this project on Vercel. Read https://vercel.com/docs/getting-started-with-vercel first. Then: 1. Install the Vercel CLI globally (`npm i -g vercel`) and log in with `vercel login`. 2. If you are Claude Code, OpenAI Codex, Grok Build, Cursor, GitHub Copilot, or Kimi Code, install the Vercel Plugin with `npx plugins add vercel/vercel-plugin`. Otherwise, install Vercel Skills with `npx skills add vercel-labs/agent-skills`. 3. Connect the Vercel MCP server with `npx -y add-mcp https://mcp.vercel.com -g`. 4. Deploy with `vercel` and share the preview URL. 5. Suggest next steps based on my project, such as adding a custom domain, setting environment variables, or configuring Vercel Functions.
+Show more
+Vercel Plugin
+Give your coding agent deployment skills, framework best practices, and slash commands. Works with Claude Code, OpenAI Codex, Grok Build, Cursor, GitHub Copilot, and Kimi Code.
+Agent Skills
+Install skills for any agent that supports them, covering Next.js, the AI SDK, Turborepo, and deploying to Vercel.
+Vercel MCP
+Beta
+Let your agent search the docs, manage projects and deployments, and query Web Analytics through the Vercel MCP server.
+Vercel Connect
+Give your agent short-lived tokens to call Slack, GitHub, Microsoft, Snowflake, or any OAuth or API-key service, and act on behalf of users, without storing provider secrets.
+Claim Deployments
+Let your agent deploy apps for users, then transfer ownership with a claim URL so each deployment lands in the user's own Vercel account.
+Containers
+Run your agent's runtime and tools from a Docker image on Vercel Functions, or give Sandbox a custom image for the code your agent executes.
+The latest changes across the Vercel platform. Browse the full
+changelog
+for everything that shipped.
+Sep 25, 2026
+Push images to Vercel Container Registry from GitHub Actions
+The vercel/vcr-action/login GitHub Action logs workflows in to Vercel Container Registry with GitHub OIDC, removing long-lived registry credentials from secrets.
+Sep 25, 2026
+Pixel Canary is now available in stealth for free on AI Gateway
+Pixel Canary is now available on Vercel AI Gateway, with strengths in coding, frontend development, and mobile app design.
+Sep 25, 2026
+Vercel Sandbox now supports memory observability
+Vercel sandbox memory usage data can now be accessed in the dashboard and CLI.
+Sep 24, 2026
+Vercel Connect now supports TanStack AI
+Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment.
+AI Gateway
+Call hundreds of models through one endpoint with the AI SDK, any OpenAI-compatible SDK, or cURL, with budgets, fallbacks, and usage monitoring.
+AI SDK
+Build chat, agents, and structured output in TypeScript with streaming and tool calling across React, Next.js, Vue, Svelte, and Node.js.
+eve
+Deploy and run durable backend AI agents built with eve, an open-source, filesystem-first agent framework.
+Sandbox
+Run untrusted or agent-generated code in isolated, ephemeral execution environments.
+Workflows
+Build durable, observable applications and AI agents with the Workflow SDK on a fully managed platform.
+MCP Servers
+Build and deploy Model Context Protocol servers so agents can call your APIs and systems as tools.
+Deploy Next.js with zero configuration, or bring one of 40+ supported frameworks.
+Functions
+Run server-side code on demand with Fluid compute, which scales concurrency for AI and I/O-heavy workloads.
+Routing Middleware
+Run code before a request completes to rewrite, redirect, or personalize responses.
+Incremental Static Regeneration
+Regenerate static pages on a schedule or on demand withou
+
+===== https://vercel.com/docs/integrations/create-integration
+TITLE: Create an Integration
+ACCESSED: 2026-09-27
+
+Copy page
+Copy page
+Copy page
+Copy page
+Learn the process of creating and managing integrations on Vercel, helping you extend the capabilities of Vercel projects by connecting them with your third-party services. The overall process of creating an integration is as follows:
+Submit a
+create integration form
+request to Vercel
+If you are creating a native integration, submit the
+create product form
+as well
+Once your integration is approved, you can share it for users to install if it's a
+connectable account integration
+For a
+native integration
+, you need to
+create a product
+and use the
+Integration API to create an integration server
+to handle the communication between the integration user and the Vercel platform
+Publish your native integration
+for users to install
+Integrations can be created by filling out the
+Create Integration
+form. To access the form:
+From your Vercel
+dashboard
+, select your account/team from the team switcher
+Open
+Integrations
+in the sidebar to see the Integrations overview
+Then, select the
+Integrations Console
+button and then select
+Create
+Fill out all the entries in the
+Create integration form
+as necessary
+At the end of the form, depending on the type of integration you are creating, you
+must
+accept the terms provided by Vercel so that your integration can be published
+If you are creating a native integration, continue to the
+Native integration product creation
+process.
+To create native integrations, please share your
+team_id
+and
+Integration's
+URL
+Slug
+with
+Vercel in your shared Slack channel (
+#shared-mycompanyname
+). You can sign up
+to be a native integration provider
+here
+You can create your product(s) using the
+Create product form
+after you have submitted the integration form. Review the
+storage product creation flow
+to understand the sequence your integration server needs to handle when a Vercel user installs your product.
+The
+Create Integration
+form must be completed in full before you can submit your integration for review. The form has the following fields:
+Field
+Description
+Name
+The name of your integration.
+URL Slug
+The URL slug for your integration.
+Developer
+The owner of the Integration, generally a legal name.
+Contact Email
+The contact email for the owner of the integration. This will
+not
+be publicly listed.
+Support Contact Email
+The support email for the integration. This
+will
+be publicly listed.
+Short Description
+A short description of your integration.
+Logo
+The logo for your integration.
+Category
+The category for your integration.
+Website
+The website for your integration.
+Documentation URL
+The documentation URL for your integration.
+EULA URL
+The URL to your End User License Agreement (EULA) for your integration.
+Privacy Policy URL
+The URL to your Privacy Policy for your integration.
+Overview
+A detailed overview of your integration.
+Additional Information
+Additional information about configuring your integration.
+Feature Media
+Images featured on your integration details page. You can upload 1 to 8 images with an aspect ratio of 16:9.
+Redirect URL
+The URL the user sees during installation.
+API Scopes
+The API scopes for your integration.
+Webhook URL
+The URL to receive webhooks from Vercel.
+Configuration URL
+The URL to configure your integration.
+Base URL
+(Native integration)
+The URL that points to your integration server
+Redirect Login URL
+(Native integration)
+The URL where the integration users are redirected to when they open your product's dashboard
+Installation-level Billing Plans
+(Native integration)
+Enable the ability to select billing plans when installing the integration
+Integrations Agreement
+Which partner terms apply before publish
+depends on native versus connectable account integrations
+The
+Create Product
+form must be completed in full for at least one product before you can submit your product for review. The form has the following fields:
+Field
+Description
+Name
+The name of your product.
+URL Slug
+The URL slug for your product.
+Short Description
+A short description of your product.
+Short Billing Plans Description
+A short description of your billing plan.
+Metadata Schema
+The metadata your product will receive when a store is created or updated.
+Logo
+The logo for your product.
+Tags
+Tags for the integrations marketplace categories.
+Guides
+Getting started guides for specific frameworks.
+Resource Links
+Resource links such as documentation.
+Snippets
+Add up to 6 code snippets to help users get started with your product.
+Global Config Support
+Enable/Disable Experimentation Global Config Sync
+Log Drain Settings
+Configure a Log Drain
+Checks API
+Enable/Disable Checks API
+To create a
+product
+for your
+native integration
+, follow the steps in
+Create a product for a native integration
+Once you have created your
+connectable account integration
+, it will be assigned the
+Community
+badge
+and be available for external users to download. You can share it with users either through your site or through the Vercel
+deploy button
+If you are interested in having y
+
+===== https://vercel.com/pricing
+TITLE: Vercel Pricing: Hobby, Pro, and Enterprise plans
+ACCESSED: 2026-09-27
+
+Scale your app,
+control your costs
+Hobby
+$0
+/mo.
+The perfect starting place for your web app or personal project.
+Import your repo, deploy in seconds
+Automatic CI/CD
+Web Application Firewall
+Global, automated CDN
+Fluid compute
+DDoS Mitigation
+Traffic & performance insights
+Start deploying
+Pro
+Popular
+$20
+/mo.
+Everything you need to build and scale your app.
+All Hobby features, plus:
+$20 of included usage credit
+Flat Rate CDN with traffic spike protection
+Advanced spend management
+Team collaboration & free viewer seats
+Cold start prevention
+Free custom domain
+Start a free trial
+Enterprise
+Custom
+Critical security, performance, observability, platform SLAs, and support.
+All Pro features, plus:
+Guest & Team access controls
+SCIM & Directory Sync
+Managed WAF Rulesets
+Multi-region compute & failover
+99.99% SLA
+Advanced Support
+Get a demo
+All prices shown are in USD and exclude value-added tax (VAT), goods and services tax (GST), and other applicable taxes. Taxes are calculated based on your billing address and added to your invoice where required by law.
+Learn more about taxes
+Learn about Fluid Compute
+No idle, no waste
+Only pay for actual execution time, not idle resources.
+Learn about Spend Management
+Control your spending
+Set a limit, get alerts, and we'll stop usage before you go over budget.
+Vercel Delivery Network
+Ultra-fast, secure by default global application delivery.
+Vercel Network
+Global Points of Presence
+Vercel Regions
+Automatic Routing
+HTTPS Certificates
+TLS/SSL Encryption
+Traffic Load Balancing
+Private Inter-Region Network
+Automatic Region Failover
+Configurable Routing
+Reverse Proxy
+Rewrites
+Redirects
+Middleware Support
+Edge Requests
+1M / month included
+Included in Flat Rate CDN
+Custom
+Fast Data Transfer
+100 GB / month included
+Included in Flat Rate CDN
+Custom
+Regional pricing
+↗
+Vercel Firewall
+Customizable security to protect your applications.
+Web Application Firewall
+Custom Firewall Rules
+Up to 3
+Up to 40
+Up to 1,000
+IP Blocking
+Up to 3
+Up to 100
+Up to 1,000
+System Bypass Rules
+—
+Up to 25
+Up to 100
+Firewall Rate Limit Requests
+1M allowed requests / month included
+Starting at $0.50 per 1M allowed requests
+Custom
+OWASP Core Ruleset (managed)
+—
+—
+Custom
+Bot Management
+Automated DDoS Mitigation
+AI Bots (managed ruleset)
+Bot Protection (managed ruleset)
+BotID
+Basic checks included
+$1 per 1,000 Deep Analysis checks
+Custom
+Attack Challenge Mode
+Regional pricing
+↗
+Content, Caching & Optimization
+Store and cache content close to your customers.
+Content Delivery
+Zero-config CDN cache
+Automated Compression
+Background Revalidation
+Stale-While-Revalidate
+Incremental Static Regeneration (ISR)
+ISR Reads
+1M / month included
+Starting at $0.40 per 1M
+Custom
+ISR Writes
+200k / month included
+Starting at $4 per 1M
+Custom
+Bulk Redirects
+1K included per project
+$50 / month per 25K redirects
+Custom
+Blob
+Blob Storage Size
+1 GB / month included
+$0.023 per GB
+Custom
+Blob Simple Operations
+10K / month included
+$0.40 per 1M
+Custom
+Blob Advanced Operations
+2K / month included
+$5 per 1M
+Custom
+Blob Data Transfer
+10 GB / month included
+Included in Flat Rate CDN
+Custom
+Image Optimization
+Image Optimization Transformation
+5K / month included
+Starting at $0.05 per 1K
+Custom
+Image Optimization Cache Reads
+300K / month included
+Starting at $0.40 per 1M
+Custom
+Image Optimization Cache Writes
+100K / month included
+Starting at $4 per 1M
+Custom
+Global Config
+Global Config Reads
+100K / month included
+Starting at $3 per 1M reads
+Custom
+Global Config Writes
+100 writes / month included
+$1 per 100 writes
+Custom
+Microfrontends Support
+Microfrontends
+2 included projects
+2 included projects
+then $250 per additional project
+Custom
+Microfrontends Routing
+50K routed requests / month included
+$2 per 1M routed requests
+Custom
+Regional pricing
+↗
+Vercel Compute
+Dynamic, scalable functions to power your framework of choice. Now available with Fluid compute with
+Active CPU pricing
+Vercel Functions
+Fluid Active CPU
+4 hours / month included
+Starting at $0.128 per hour
+Custom
+Fluid Provisioned Memory
+360 GB-hrs / month included
+Starting at $0.0106 per GB-hr
+Custom
+Function Invocations
+1M / month included
+Starting at $0.60 per 1M
+Custom
+Service Requests
+Beta
+1M requests / month included
+Starting at $0.50 per 1M
+Custom
+Vercel Sandbox
+Sandbox Active CPU
+5 hours / month included
+Starting at $0.128 per hour
+Custom
+Sandbox Provisioned Memory
+420 GB-hrs / month included
+Starting at $0.0212 per GB-hr
+Custom
+Sandbox Creations
+5K / month included
+Starting at $0.60 per 1M
+Custom
+Sandbox Data Transfer
+20 GB / month included
+Included in Flat Rate CDN
+Custom
+Concurrent Sandboxes
+10K
+Custom
+Snapshot Storage
+15 GB
+Starting at $0.08 per GB-month
+Custom
+Vercel Container Registry Image Storage
+Beta
+10 GB / month included
+$0.10 per GB-month
+Custom
+Fast Origin Transfer
+10 GB / month included
+Starting at $0.06 per GB
+Custom
+Vercel Workflows
+Workflow Events
+50K events / month included
+$20 per 1M
+Custom
+Workflow Storage Writes
+1 GB
+$0.50 per GB
+Custom
+Workflow Storage Re
+
+===== https://vercel.com/docs/rest-api/authentication/sso-token-exchange
+TITLE: SSO Token Exchange | Vercel REST API
+ACCESSED: 2026-09-27
+
+SSO Token Exchange
+POST
+https://api.vercel.com/v1/integrations/sso/token
+During the autorization process, Vercel sends the user to the provider
+redirectLoginUrl
+, that includes the OAuth authorization
+code
+parameter. The provider then calls the SSO Token Exchange endpoint with the sent code and receives the OIDC token. They log the user in based on this token and redirects the user back to the Vercel account using deep-link parameters included the redirectLoginUrl. Providers should not persist the returned
+id_token
+in a database since the token will expire. See
+Authentication with SSO
+for more details.
+https://api.vercel.com/v1/integrations/sso/token
+'https://api.vercel.com/v1/integrations/sso/token'
+'POST'
+body
+JSON
+stringify
+"code"
+"state"
+"client_id"
+"example_id"
+"client_secret"
+"redirect_uri"
+"grant_type"
+"authorization_code"
+"access_token"
+"expires_in"
+"id_token"
+"example_id"
+"refresh_token"
+"token_type"
+application/json
+Option 1
+Option 2
+code
+string
+The sensitive code received from Vercel
+state
+string
+Optional
+The state received from the initialization request
+client_id
+string
+The integration client id
+client_secret
+string
+The integration client secret
+redirect_uri
+string
+Optional
+The integration redirect URI
+grant_type
+string
+The grant type, when using x-www-form-urlencoded content type
+enum values
+access_token
+string
+expires_in
+number
+Optional
+id_token
+string
+refresh_token
+string
+Optional
+token_type
+string
+One of the provided values in the request body is invalid.
+500
+
+===== https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html
+TITLE: List Auth Tokens | Vercel REST API
+ACCESSED: 2026-09-27
+
+List Auth Tokens
+GET
+https://api.vercel.com/v6/user/tokens
+Retrieve a list of the current User's authentication tokens.
+https://api.vercel.com/v6/user/tokens
+'https://api.vercel.com/v6/user/tokens'
+'GET'
+"pagination"
+"count"
+"next"
+"prev"
+"tokens"
+[
+"activeAt"
+"1632816536002"
+"createdAt"
+"1632816536002"
+"expiresAt"
+"1632816536002"
+"id"
+"5d9f2ebd38ddca62e5d51e9c1704c72530bdc8bfdd41e782a6687c48399e8391"
+"leakedAt"
+"1632816536002"
+"leakedUrl"
+"name"
+"Example Name"
+"origin"
+"github"
+"prefix"
+"vcp_"
+"revokedAt"
+"1632816536002"
+19
+"scopes"
+[
+20
+21
+"createdAt"
+22
+"expiresAt"
+23
+"origin"
+"app"
+24
+"sudo"
+25
+"expiresAt"
+26
+"origin"
+"email-otp"
+27
+"verifiedAt"
+28
+29
+"type"
+"user"
+30
+31
+]
+32
+"suffix"
+"abc123"
+33
+"type"
+"oauth2-token"
+34
+35
+]
+36
+Authorization
+bearerToken
+Default authentication mechanism
+pagination
+object
+properties
+tokens
+array
+properties
+401
+The request is not authorized.
+You do not have permission to access this resource.
+410
+
+===== https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html
+TITLE: List Auth Tokens | Vercel REST API
+ACCESSED: 2026-09-27
+
+List Auth Tokens
+GET
+https://api.vercel.com/v6/user/tokens
+Retrieve a list of the current User's authentication tokens.
+https://api.vercel.com/v6/user/tokens
+'https://api.vercel.com/v6/user/tokens'
+'GET'
+"pagination"
+"count"
+"next"
+"prev"
+"tokens"
+[
+"activeAt"
+"1632816536002"
+"createdAt"
+"1632816536002"
+"expiresAt"
+"1632816536002"
+"id"
+"5d9f2ebd38ddca62e5d51e9c1704c72530bdc8bfdd41e782a6687c48399e8391"
+"leakedAt"
+"1632816536002"
+"leakedUrl"
+"name"
+"Example Name"
+"origin"
+"github"
+"prefix"
+"vcp_"
+"revokedAt"
+"1632816536002"
+19
+"scopes"
+[
+20
+21
+"createdAt"
+22
+"expiresAt"
+23
+"origin"
+"app"
+24
+"sudo"
+25
+"expiresAt"
+26
+"origin"
+"email-otp"
+27
+"verifiedAt"
+28
+29
+"type"
+"user"
+30
+31
+]
+32
+"suffix"
+"abc123"
+33
+"type"
+"oauth2-token"
+34
+35
+]
+36
+Authorization
+bearerToken
+Default authentication mechanism
+pagination
+object
+properties
+tokens
+array
+properties
+401
+The request is not authorized.
+You do not have permission to access this resource.
+410
+
+===== https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html
+TITLE: SSO Token Exchange | Vercel REST API
+ACCESSED: 2026-09-27
+
+SSO Token Exchange
+POST
+https://api.vercel.com/v1/integrations/sso/token
+During the autorization process, Vercel sends the user to the provider
+redirectLoginUrl
+, that includes the OAuth authorization
+code
+parameter. The provider then calls the SSO Token Exchange endpoint with the sent code and receives the OIDC token. They log the user in based on this token and redirects the user back to the Vercel account using deep-link parameters included the redirectLoginUrl. Providers should not persist the returned
+id_token
+in a database since the token will expire. See
+Authentication with SSO
+for more details.
+https://api.vercel.com/v1/integrations/sso/token
+'https://api.vercel.com/v1/integrations/sso/token'
+'POST'
+body
+JSON
+stringify
+"code"
+"state"
+"client_id"
+"example_id"
+"client_secret"
+"redirect_uri"
+"grant_type"
+"authorization_code"
+"access_token"
+"expires_in"
+"id_token"
+"example_id"
+"refresh_token"
+"token_type"
+application/json
+Option 1
+Option 2
+code
+string
+The sensitive code received from Vercel
+state
+string
+Optional
+The state received from the initialization request
+client_id
+string
+The integration client id
+client_secret
+string
+The integration client secret
+redirect_uri
+string
+Optional
+The integration redirect URI
+grant_type
+string
+The grant type, when using x-www-form-urlencoded content type
+enum values
+access_token
+string
+expires_in
+number
+Optional
+id_token
+string
+refresh_token
+string
+Optional
+token_type
+string
+One of the provided values in the request body is invalid.
+500
+
+===== https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html
+TITLE: SSO Token Exchange | Vercel REST API
+ACCESSED: 2026-09-27
+
+SSO Token Exchange
+POST
+https://api.vercel.com/v1/integrations/sso/token
+During the autorization process, Vercel sends the user to the provider
+redirectLoginUrl
+, that includes the OAuth authorization
+code
+parameter. The provider then calls the SSO Token Exchange endpoint with the sent code and receives the OIDC token. They log the user in based on this token and redirects the user back to the Vercel account using deep-link parameters included the redirectLoginUrl. Providers should not persist the returned
+id_token
+in a database since the token will expire. See
+Authentication with SSO
+for more details.
+https://api.vercel.com/v1/integrations/sso/token
+'https://api.vercel.com/v1/integrations/sso/token'
+'POST'
+body
+JSON
+stringify
+"code"
+"state"
+"client_id"
+"example_id"
+"client_secret"
+"redirect_uri"
+"grant_type"
+"authorization_code"
+"access_token"
+"expires_in"
+"id_token"
+"example_id"
+"refresh_token"
+"token_type"
+application/json
+Option 1
+Option 2
+code
+string
+The sensitive code received from Vercel
+state
+string
+Optional
+The state received from the initialization request
+client_id
+string
+The integration client id
+client_secret
+string
+The integration client secret
+redirect_uri
+string
+Optional
+The integration redirect URI
+grant_type
+string
+The grant type, when using x-www-form-urlencoded content type
+enum values
+access_token
+string
+expires_in
+number
+Optional
+id_token
+string
+refresh_token
+string
+Optional
+token_type
+string
+One of the provided values in the request body is invalid.
+500

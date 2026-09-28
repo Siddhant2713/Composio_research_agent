@@ -1,0 +1,180 @@
+{
+  "app": "Aircall",
+  "number": 29,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:25:57.352969+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.aircall.io/\",\n    \"https://aircall.io/\",\n    \"https://developer.aircall.io/api-references/\",\n    \"https://developer.aircall.io/authentication/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://aircall.io",
+    "https://developer.aircall.io/",
+    "https://developer.aircall.io/api-references/",
+    "https://developer.aircall.io/authentication/",
+    "https://docs.aircall.io/",
+    "https://developers.aircall.io/",
+    "https://api.aircall.io/",
+    "https://aircall.io/docs",
+    "https://aircall.io/developers",
+    "https://aircall.io/api",
+    "https://aircall.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://aircall.io/contact-sales/",
+    "https://aircall.io/pricing/",
+    "https://aircall.io/contact/",
+    "https://aircall.io/partners/",
+    "https://aircall.io/get-started/",
+    "https://aircall.io/partner-stories/",
+    "https://aircall.io/partners/technology/signup/",
+    "https://aircall.io/signup/",
+    "https://aircall.io/integration-terms/",
+    "https://help.aircall.io/en/articles/3819565-synchronizing-your-crm-s-contacts-to-aircall"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.aircall.io/authentication/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.aircall.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.aircall.io/",
+      "reason": "page too thin (20 chars)"
+    },
+    {
+      "requested_url": "https://api.aircall.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://aircall.io/docs",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://aircall.io/get-started/",
+      "reason": "page too thin (21 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://aircall.io",
+      "requested_url": "https://aircall.io",
+      "status": 200,
+      "title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "chars": 4893,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.aircall.io/",
+      "requested_url": "https://developer.aircall.io/",
+      "status": 200,
+      "title": "Aircall for Developers",
+      "chars": 2344,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.aircall.io/api-references",
+      "requested_url": "https://developer.aircall.io/api-references/",
+      "status": 200,
+      "title": "API References | Aircall",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://aircall.io/contact-sales/",
+      "requested_url": "https://aircall.io/contact-sales/",
+      "status": 200,
+      "title": "Contact Sales | Aircall",
+      "chars": 622,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://aircall.io/pricing/",
+      "requested_url": "https://aircall.io/pricing/",
+      "status": 200,
+      "title": "Aircall Pricing & Plans: AI-Powered Calling, Voice Agents & 250+ Integrations | Aircall",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://aircall.io/contact/",
+      "requested_url": "https://aircall.io/contact/",
+      "status": 200,
+      "title": "Contact Us | Aircall",
+      "chars": 1050,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://aircall.io/partners/",
+      "requested_url": "https://aircall.io/partners/",
+      "status": 200,
+      "title": "Become an Aircall channel partner  | Aircall",
+      "chars": 2379,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Aircall is an AI-powered customer communications platform providing a REST API, webhooks, MCP support, and SDKs for third-party integrations.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Aircall supports both OAuth and Basic Auth depending on whether you are connecting as a Technology Partner or an Aircall customer.\"\n  },\n  \"access\": {\n    \"tier\": \"mixed\",\n    \"notes\": \"Aircall offers self-serve signup options on lower pricing tiers ('Get free access'), while full API access requires specific plans such as Professional or Enterprise.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Embed SDK\"\n    ],\n    \"notes\": \"Aircall provides a REST API, webhooks, MCP connectivity, and the Embed SDK.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Aircall provides Model Context Protocol (MCP) support to connect tools and data to AI Virtual Agents.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Full API access requires a Professional or Enterprise plan, but self-serve access and extensive API references are available.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.aircall.io/\",\n      \"claim\": \"Mentions connecting tools and data to AI Virtual Agents through MCP, and using REST API and webhooks.\"\n    },\n    {\n      \"url\": \"https://developers.aircall.io/api-references\",\n      \"claim\": \"Documents REST API, OAuth, and Basic Auth options.\"\n    },\n    {\n      \"url\": \"https://aircall.io/pricing/\",\n      \"claim\": \"Shows Professional and Enterprise plans include 'Full API access'.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint_url": "https://aircall.io",
+    "one_liner": "Aircall is an AI-powered customer communications platform providing a REST API, webhooks, MCP support, and SDKs for third-party integrations.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Aircall supports both OAuth and Basic Auth depending on whether you are connecting as a Technology Partner or an Aircall customer."
+    },
+    "access": {
+      "tier": "mixed",
+      "notes": "Aircall offers self-serve signup options on lower pricing tiers ('Get free access'), while full API access requires specific plans such as Professional or Enterprise."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "Embed SDK"
+      ],
+      "notes": "Aircall provides a REST API, webhooks, MCP connectivity, and the Embed SDK."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Aircall provides Model Context Protocol (MCP) support to connect tools and data to AI Virtual Agents."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Full API access requires a Professional or Enterprise plan, but self-serve access and extensive API references are available."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.aircall.io/",
+        "claim": "Mentions connecting tools and data to AI Virtual Agents through MCP, and using REST API and webhooks.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.aircall.io/api-references",
+        "claim": "Documents REST API, OAuth, and Basic Auth options.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://aircall.io/pricing/",
+        "claim": "Shows Professional and Enterprise plans include 'Full API access'.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:26:14.530790+00:00"
+}

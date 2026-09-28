@@ -1,0 +1,555 @@
+===== https://github.com/sherlock-project/sherlock
+TITLE: GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub
+ACCESSED: 2026-09-27
+
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+2,933 Commits
+2,933 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.actor
+.actor
+.github
+.github
+devel
+devel
+docs
+docs
+sherlock_project
+sherlock_project
+tests
+tests
+.dockerignore
+.dockerignore
+.editorconfig
+.editorconfig
+.gitignore
+.gitignore
+Dockerfile
+Dockerfile
+LICENSE
+LICENSE
+pyproject.toml
+pyproject.toml
+pytest.ini
+pytest.ini
+tox.ini
+tox.ini
+View all files
+Repository files navigation
+Hunt down social media accounts by username across
+400+ social networks
+Installation
+•
+Usage
+•
+Contributing
+Installation
+Warning
+Packages for ParrotOS and Ubuntu 24.04, maintained by a third party, appear to be
+broken
+.
+Users of these systems should defer to
+uv
+/
+pipx
+/
+pip
+or Docker.
+Method
+Notes
+pipx install sherlock-project
+pip
+or
+uv
+may be used in place of
+pipx
+docker run -it --rm sherlock/sherlock
+dnf install sherlock-project
+Community-maintained packages are available for Debian (>= 13), Ubuntu (>= 22.10), Homebrew, Kali, and BlackArch. These packages are not directly supported or maintained by the Sherlock Project.
+See all alternative installation methods
+here
+.
+General usage
+To search for only one user:
+sherlock user123
+To search for more than one user:
+sherlock user1 user2 user3
+Accounts found will be stored in an individual text file with the corresponding username (e.g
+user123.txt
+).
+$
+sherlock --help
+usage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--output OUTPUT] [--csv] [--xlsx] [--site SITE_NAME] [--proxy PROXY_URL] [--dump-response]
+[--json JSON_FILE] [--timeout TIMEOUT] [--print-all] [--print-found] [--no-color] [--browse] [--local] [--nsfw] [--txt] [--ignore-exclusions]
+USERNAMES [USERNAMES ...]
+Sherlock: Find Usernames Across Social Networks (Version 0.16.0)
+positional arguments:
+USERNAMES             One or more usernames to check with social networks. Check similar usernames using {?} (replace to '_', '-', '.').
+options:
+-h, --help            show this help message and exit
+--version             Display version information and dependencies.
+--verbose, -v, -d, --debug
+Display extra debugging information and metrics.
+--folderoutput FOLDEROUTPUT, -fo FOLDEROUTPUT
+If using multiple usernames, the output of the results will be saved to this folder.
+--output OUTPUT, -o OUTPUT
+If using single username, the output of the result will be saved to this file.
+--csv                 Create Comma-Separated Values (CSV) File.
+--xlsx                Create the standard file for the modern Microsoft Excel spreadsheet (xlsx).
+--site SITE_NAME      Limit analysis to just the listed sites. Add multiple options to specify more than one site.
+--proxy PROXY_URL, -p PROXY_URL
+Make requests over a proxy. e.g. socks5://127.0.0.1:1080
+--dump-response       Dump the HTTP response to stdout for targeted debugging.
+--json JSON_FILE, -j JSON_FILE
+Load data from a JSON file or an online, valid, JSON file. Upstream PR numbers also accepted.
+--timeout TIMEOUT     Time (in seconds) to wait for response to requests (Default: 60)
+--print-all           Output sites where the username was not found.
+--print-found         Output sites where the username was found (also if exported as file).
+--no-color            Don't color terminal output
+--browse, -b          Browse to all results on default browser.
+--local, -l           Force the use of the local data.json file.
+--nsfw                Include checking of NSFW sites from default list.
+--txt                 Enable creation of a txt file
+--ignore-exclusions   Ignore upstream exclusions (may return more false positives)
+Credits
+Thank you to everyone who has contributed to Sherlock! ❤️
+Star History
+License
+MIT © Sherlock Project
+Creator -
+Siddharth Dushantha
+About
+Hunt down social media accounts by username across social networks
+sherlockproject.xyz
+Topics
+cli
+cti
+cybersecurity
+forensics
+hacktoberfest
+information-gathering
+infosec
+linux
+osint
+pentesting
+python
+python3
+reconnaissance
+redteam
+sherlock
+tools
+Resources
+Readme
+MIT license
+Code of conduct
+Code of conduct
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+92.9k
+stars
+Watchers
+1.4k
+watching
+Forks
+11.0k
+forks
+Report repository
+Releases
+Sponsor this project
+Used by
+Contributors
+Languages
+
+===== https://github.com/sherlock-project/sherlock/wiki
+TITLE: Home · sherlock-project/sherlock Wiki · GitHub
+ACCESSED: 2026-09-27
+
+sherlock-project
+/
+sherlock
+Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Notifications
+You must be signed in to change notification settings
+Fork
+11k
+Star
+92.9k
+Welcome To The Sherlock Wiki!
+Purpose
+Sherlock is a tool that scans social networks (and other sites) for the existence of a specified username.
+The
+current list
+shows the sites that are scanned.
+
+===== https://docs.github.com/en
+TITLE: GitHub Docs
+ACCESSED: 2026-09-27
+
+GitHub Docs
+Help for wherever you are on your GitHub journey.
+Search for anything...
+/
+All docs
+Get started
+Get started
+Migrations
+Account and profile
+Subscriptions & notifications
+Authentication
+Billing and payments
+Site policy
+Collaborative coding
+Codespaces
+Repositories
+Pull requests
+GitHub Discussions
+Integrations
+GitHub Copilot
+GitHub Copilot
+Plans
+Cloud agent
+Tutorials
+GitHub Copilot Cookbook
+Customization library
+Copilot CLI
+CI/CD and DevOps
+GitHub Actions
+GitHub Packages
+GitHub Pages
+Security and code quality
+Security and code quality
+Secure your secrets
+Find and fix code vulnerabilities
+Secure your supply chain
+Maintain quality code
+Secure at scale
+Client apps
+GitHub CLI
+GitHub Mobile
+GitHub Desktop
+Project management
+GitHub Issues
+Projects
+Search on GitHub
+Enterprise and teams
+Organizations
+Secure at scale
+Enterprise onboarding
+Enterprise administrators
+Developers
+Apps
+REST API
+GraphQL API
+Webhooks
+Community
+Building communities
+GitHub Sponsors
+GitHub Education
+GitHub for Nonprofits
+GitHub Support
+Contribute to GitHub Docs
+More docs
+CodeQL query writing
+Electron
+npm
+GitHub Well-Architected
+
+===== https://api.github.com/
+TITLE: 
+ACCESSED: 2026-09-27
+
+{
+  "current_user_url": "https://api.github.com/user",
+  "current_user_authorizations_html_url": "https://github.com/settings/connections/applications{/client_id}",
+  "authorizations_url": "https://api.github.com/authorizations",
+  "code_search_url": "https://api.github.com/search/code?q={query}{&page,per_page,sort,order}",
+  "commit_search_url": "https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}",
+  "emails_url": "https://api.github.com/user/emails",
+  "emojis_url": "https://api.github.com/emojis",
+  "events_url": "https://api.github.com/events",
+  "feeds_url": "https://api.github.com/feeds",
+  "followers_url": "https://api.github.com/user/followers",
+  "following_url": "https://api.github.com/user/following{/target}",
+  "gists_url": "https://api.github.com/gists{/gist_id}",
+  "hub_url": "https://api.github.com/hub",
+  "issue_search_url": "https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}",
+  "issues_url": "https://api.github.com/issues",
+  "keys_url": "https://api.github.com/user/keys",
+  "label_search_url": "https://api.github.com/search/labels?q={query}&repository_id={repository_id}{&page,per_page}",
+  "notifications_url": "https://api.github.com/notifications",
+  "organization_url": "https://api.github.com/orgs/{org}",
+  "organization_repositories_url": "https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}",
+  "organization_teams_url": "https://api.github.com/orgs/{org}/teams",
+  "public_gists_url": "https://api.github.com/gists/public",
+  "rate_limit_url": "https://api.github.com/rate_limit",
+  "repository_url": "https://api.github.com/repos/{owner}/{repo}",
+  "repository_search_url": "https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}",
+  "current_user_repositories_url": "https://api.github.com/user/repos{?type,page,per_page,sort}",
+  "starred_url": "https://api.github.com/user/starred{/owner}{/repo}",
+  "starred_gists_url": "https://api.github.com/gists/starred",
+  "topic_search_url": "https://api.github.com/search/topics?q={query}{&page,per_page}",
+  "user_url": "https://api.github.com/users/{user}",
+  "user_organizations_url": "https://api.github.com/user/orgs",
+  "user_repositories_url": "https://api.github.com/users/{user}/repos{?type,page,per_page,sort}",
+  "user_search_url": "https://api.github.com/search/users?q={query}{&page,per_page,sort,order}"
+}
+
+===== https://github.com/sherlock-project/sherlock/blob/master/LICENSE
+TITLE: sherlock/LICENSE at master · sherlock-project/sherlock · GitHub
+ACCESSED: 2026-09-27
+
+Latest commit
+History
+History
+History
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+MIT License
+Copyright (c) 2019 Sherlock Project
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===== https://github.com/pricing
+TITLE: Pricing · Plans for every developer · GitHub
+ACCESSED: 2026-09-27
+
+Try GitHub, the complete developer platform
+We get it, there's a lot you can do with GitHub.
+    That’s why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot,
+    and Advanced Security.
+Start free for 30 days
+Free
+The basics for individuals
+and organizations
+$
+0
+USD
+per month
+$
+0
+USD
+per month
+forever
+Join for free
+Unlimited public/private repositories
+Host open source projects in public GitHub repositories, accessible via web or command line. Public repositories are accessible to anyone at GitHub.com.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Dependabot security and version updates
+Keep projects secure by automatically opening pull requests to update vulnerable dependencies and keep them up to date.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+2,000 CI/CD minutes/month
+Free for public repositories
+Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+500MB of Packages storage
+Free for public repositories
+Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Issues & Projects
+Give your developers flexible features for project management that adapts to any team, project, and workflow — all alongside your code.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Community support
+Get help with most of your GitHub questions and issues in our Community Forum.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Featured add-ons
+GitHub Codespaces Access
+With
+GitHub Codespaces
+, get an instant dev environment in the cloud, so you can code anywhere on any device.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Show features
+Most popular
+Team
+Advanced collaboration for
+individuals and organizations
+$
+4
+USD
+per user/month
+$
+4
+USD
+per user/month
+for the first 12 months
+*
+Continue with Team
+Everything included in Free, plus...
+Access to GitHub Codespaces
+Blazing fast cloud developer environments with flexible compute and pre-configured containers, developers can code, collaborate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Repository rules
+Enforce restrictions on how code branches and tags are merged across your organization, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Multiple reviewers in pull requests
+Assign multiple users or a team to review a pull request.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Draft pull requests
+Easily discuss and collaborate on pull requests before submitting to formal review.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Code owners
+Automatically request reviews—or require approval—by selected contributors when changes are made to sections of code that they own.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Required reviewers
+Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Pages and Wikis
+Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Environment deployment branches and secrets
+A job cannot access secrets that are defined in an environment unless it is running on the specified branch.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+3,000 CI/CD minutes/month
+Free for public repositories
+Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+2GB of Packages storage
+Free for public repositories
+Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Web-based support
+GitHub Support can help you troubleshoot issues you run into while using GitHub.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Featured add-ons
+GitHub Secret Protection
+Ensure your secrets stay secure. Mitigate risk associated with exposed secrets in your repositories, while preventing new leaks before they happen with push protection.
+Uh oh!
+There was
+
+===== https://github.com/partners
+TITLE: GitHub Partner Program · GitHub
+ACCESSED: 2026-09-27
+
+GitHub Partner Program
+Building stronger solutions together
+Strengthen your market position, boost differentiation, and get access to specialist guidance across Technology, Service & Channel, Startups, and Education.
+Explore Partner Programs
+Elevate your brand
+Enhance your credibility, gain industry recognition, and expand your market visibility by co-branding and messaging with GitHub.
+Sharpen your skillset
+Leverage powerful training and enablement resources to earn certifications that differentiate you from the competition.
+Optimize your solutions
+Engage GitHub experts and resources to refine, test, and improve performance.
+Why partner with GitHub?
+Partner with GitHub to open doors, accelerate delivery, and win together.
+Technology Partners
+Build innovative integrations and reach 100M+ developers.
+Learn more about Technology Partners
+Services & Channel Partners
+Scale your business, expand customer reach, and unlock co-selling opportunities.
+Learn more about Services & Channel Partners
+Startup Partners
+Grow your portfolio with GitHub’s secure, AI-powered platform.
+Learn more about Startup Partners
+Education Partners
+Empower learners and educators with GitHub tools.
+Learn more about Education Partners
+“
+GitHub’s partner program gave us resources to reach new markets and build stronger solutions. Their AI leadership transformed how we build software. Being named Partner of the Year is a testament to this collaboration—and we’re just getting started.
+Marcel de Vries
+Global Managing Director & CTO at Xebia
+Ready to grow with GitHub?
+Join a global community of innovators to build better together today.
+Explore Partner Programs

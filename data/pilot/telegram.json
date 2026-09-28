@@ -145,8 +145,8 @@
       "notes": "The Bot API is accessed via an HTTPS interface (tokens managed via @BotFather), while the Telegram API uses an api_id and api_hash for MTProto-based authorization."
     },
     "access": {
-      "type": "self_serve",
-      "notes": "Developers can obtain api_id and api_hash by logging into the Telegram core website (my.telegram.org) and filling out a form, or create bots via the @BotFather bot."
+      "notes": "Developers can obtain api_id and api_hash by logging into the Telegram core website (my.telegram.org) and filling out a form, or create bots via the @BotFather bot.",
+      "tier": "self_serve"
     },
     "api_surface": {
       "rest": true,

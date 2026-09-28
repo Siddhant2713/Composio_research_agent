@@ -46,9 +46,9 @@
     "access": {
       "description": "How a first-time developer obtains credentials: self-serve signup vs. gated behind sales/partner approval.",
       "type": ["object", "null"],
-      "required": ["type", "notes"],
+      "required": ["tier", "notes"],
       "properties": {
-        "type": {
+        "tier": {
           "type": "string",
           "enum": ["self_serve", "gated", "mixed", "unknown"]
         },
@@ -80,12 +80,13 @@
       }
     },
     "buildability": {
+      "description": "Whether an outside developer could realistically build an integration today. 'no' means they could not (no public access at all); 'unknown' means the pages do not say.",
       "type": ["object", "null"],
       "required": ["verdict", "reasoning"],
       "properties": {
         "verdict": {
           "type": "string",
-          "enum": ["easy", "moderate", "hard", "blocked", "unknown"]
+          "enum": ["easy", "moderate", "hard", "no", "unknown"]
         },
         "reasoning": { "type": ["string", "null"] }
       }
@@ -99,9 +100,30 @@
         "properties": {
           "url": { "type": "string" },
           "claim": { "type": "string" },
+          "quote": {
+            "type": ["string", "null"],
+            "description": "Verbatim line from that page, verified present at extraction time."
+          },
           "accessed_at": { "type": ["string", "null"] }
         }
       }
+    },
+    "support": {
+      "description": "Per-field verified support: the one line each finding rests on.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["url", "quote"],
+        "properties": {
+          "url": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    },
+    "unsupported_fields": {
+      "description": "Fields discarded because their quoted line was not found in the fetched text.",
+      "type": "array",
+      "items": { "type": "string" }
     },
     "confidence": {
       "type": "string",

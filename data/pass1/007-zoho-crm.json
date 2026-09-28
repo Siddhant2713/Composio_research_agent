@@ -1,0 +1,186 @@
+{
+  "app": "Zoho CRM",
+  "number": 7,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:02:48.906808+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.zoho.com/crm/developer/\",\n    \"https://www.zoho.com/crm/developer/docs/api/v2/\",\n    \"https://www.zoho.com/accounts/protocol/oauth/v2/\",\n    \"https://www.zoho.com/developer/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://zoho.com/crm",
+    "https://www.zoho.com/crm/developer/",
+    "https://www.zoho.com/crm/developer/docs/api/v2/",
+    "https://www.zoho.com/accounts/protocol/oauth/v2/",
+    "https://www.zoho.com/developer/",
+    "https://docs.zoho.com/",
+    "https://developer.zoho.com/",
+    "https://developers.zoho.com/",
+    "https://api.zoho.com/",
+    "https://zoho.com/docs",
+    "https://zoho.com/developers",
+    "https://zoho.com/api",
+    "https://zoho.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.zoho.com/crm/zohocrm-pricing.html?source_from=crm_home",
+    "https://www.zoho.com/crm/sales-force-automation/?source_from=crm_home",
+    "https://www.zoho.com/crm/signup.html?plan=enterprise&source_from=crm_home",
+    "https://www.zoho.com/crm/sales-force-automation/cpq.html?source_from=crm_home",
+    "https://www.zoho.com/enterprise/ebs/?source_from=crm_home",
+    "https://www.zoho.com/crm/signup.html?plan=enterprise&src=sfa-hub",
+    "https://www.zoho.com/crm/developer/graphql-apis.html?source_from=ai-hub",
+    "https://www.zoho.com/crm/developer/mobile-web-sdk.html?source_from=ai-hub",
+    "https://www.zoho.com/developer/signup.html",
+    "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+    "https://www.zoho.com/marketplace/become-a-partner.html?src=developer-homepage"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://www.zoho.com/accounts/protocol/oauth/v2/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.zoho.com/",
+      "reason": "page too thin (0 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.zoho.com/en-in/crm/",
+      "requested_url": "https://zoho.com/crm",
+      "status": 200,
+      "title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/",
+      "requested_url": "https://www.zoho.com/crm/developer/",
+      "status": 200,
+      "title": "Zoho CRM | Developer Tools and API",
+      "chars": 3999,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v2/",
+      "requested_url": "https://www.zoho.com/crm/developer/docs/api/v2/",
+      "status": 200,
+      "title": "Zoho CRM API | Online Help - Zoho CRM",
+      "chars": 401,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/developer/",
+      "requested_url": "https://www.zoho.com/developer/",
+      "status": 200,
+      "title": "Transform your ideas into solutions | Zoho Developer",
+      "chars": 3438,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/crm/zohocrm-pricing.html?source_from=crm_home",
+      "requested_url": "https://www.zoho.com/crm/zohocrm-pricing.html?source_from=crm_home",
+      "status": 200,
+      "title": "Zoho CRM Pricing and Editions - Free for 3 users",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/crm/sales-force-automation/?source_from=crm_home",
+      "requested_url": "https://www.zoho.com/crm/sales-force-automation/?source_from=crm_home",
+      "status": 200,
+      "title": "SFA | Simplifying sales, amplifying impact",
+      "chars": 2125,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/crm/signup.html?plan=enterprise&source_from=crm_home",
+      "requested_url": "https://www.zoho.com/crm/signup.html?plan=enterprise&source_from=crm_home",
+      "status": 200,
+      "title": "Sign up for Zoho CRM | 15-day free CRM trial \u2013 Try now!",
+      "chars": 499,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/crm/sales-force-automation/cpq.html?source_from=crm_home",
+      "requested_url": "https://www.zoho.com/crm/sales-force-automation/cpq.html?source_from=crm_home",
+      "status": 200,
+      "title": "Custom quoting simplified | CPQ",
+      "chars": 2091,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.zoho.com/enterprise/ebs/?source_from=crm_home",
+      "requested_url": "https://www.zoho.com/enterprise/ebs/?source_from=crm_home",
+      "status": 200,
+      "title": "Zoho Enterprise Business Solutions",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Zoho CRM provides REST APIs, GraphQL, and SDKs to integrate customer data, automate workflows, and build third-party applications.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The provided pages mention using REST APIs and SDKs to connect, but do not describe the exact authentication mechanism required for API calls.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The pages mention free trials and a fully featured free Developer Edition that users can sign up for.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The developer documentation mentions REST APIs, SDKs, GraphQL APIs, bulk APIs, notification APIs, and query APIs.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"The pages mention configuring an MCP server and Model Context Protocol support to turn natural language into business outcomes.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Self-serve developer resources and a free Developer Edition are available along with documented REST and GraphQL APIs, but specific API authentication methods are not detailed in the text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.zoho.com/crm/developer/\",\n      \"claim\": \"The platform offers REST APIs, SDKs, and GraphQL APIs for integration.\"\n    },\n    {\n      \"url\": \"https://www.zoho.com/crm/developer/\",\n      \"claim\": \"A fully featured free Developer Edition is available for learning and testing.\"\n    },\n    {\n      \"url\": \"https://www.zoho.com/crm/developer/docs/api/v2/\",\n      \"claim\": \"Entity APIs, Bulk APIs, Notification APIs, and Query APIs are provided in V2.\"\n    },\n    {\n      \"url\": \"https://www.zoho.com/developer/\",\n      \"claim\": \"Supports Model Context Protocol (MCP) to connect LLMs to Zoho's APIs and data.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "hint_url": "https://zoho.com/crm",
+    "one_liner": "Zoho CRM provides REST APIs, GraphQL, and SDKs to integrate customer data, automate workflows, and build third-party applications.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The provided pages mention using REST APIs and SDKs to connect, but do not describe the exact authentication mechanism required for API calls."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The pages mention free trials and a fully featured free Developer Edition that users can sign up for."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "The developer documentation mentions REST APIs, SDKs, GraphQL APIs, bulk APIs, notification APIs, and query APIs."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "The pages mention configuring an MCP server and Model Context Protocol support to turn natural language into business outcomes."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Self-serve developer resources and a free Developer Edition are available along with documented REST and GraphQL APIs, but specific API authentication methods are not detailed in the text."
+    },
+    "evidence": [
+      {
+        "url": "https://www.zoho.com/crm/developer/",
+        "claim": "The platform offers REST APIs, SDKs, and GraphQL APIs for integration.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/",
+        "claim": "A fully featured free Developer Edition is available for learning and testing.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v2/",
+        "claim": "Entity APIs, Bulk APIs, Notification APIs, and Query APIs are provided in V2.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.zoho.com/developer/",
+        "claim": "Supports Model Context Protocol (MCP) to connect LLMs to Zoho's APIs and data.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-27T16:03:01.484660+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "app": "Binance",
+  "number": 83,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:53:07.589975+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://binance-docs.github.io\",\n    \"https://developers.binance.com\",\n    \"https://www.binance.com/en/my/settings/api-management\",\n    \"https://www.binance.com/en/support/faq\",\n    \"https://binance.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://binance-docs.github.io",
+    "https://developers.binance.com",
+    "https://www.binance.com/en/my/settings/api-management",
+    "https://www.binance.com/en/support/faq",
+    "https://binance.com",
+    "https://docs.github.io/",
+    "https://developer.github.io/",
+    "https://developers.github.io/",
+    "https://api.github.io/",
+    "https://github.io/docs",
+    "https://github.io/developers",
+    "https://github.io/api",
+    "https://github.io/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://binance-docs.github.io",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.binance.com",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://www.binance.com/en/my/settings/api-management",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://www.binance.com/en/support/faq",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://binance.com",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.github.io/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.github.io/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.github.io/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "hint_url": "https://binance-docs.github.io",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://binance-docs.github.io (HTTP 404); https://developers.binance.com (page too thin (16 chars)); https://www.binance.com/en/my/settings/api-management (page too thin (0 chars)); https://www.binance.com/en/support/faq (page too thin (0 chars)); https://binance.com (page too thin (0 chars)); https://docs.github.io/ (HTTP 404)"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:53:13.133790+00:00"
+}

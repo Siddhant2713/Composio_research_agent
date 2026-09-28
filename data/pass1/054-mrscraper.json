@@ -1,0 +1,192 @@
+{
+  "app": "MrScraper",
+  "number": 54,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:56:42.860818+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.mrscraper.com\",\n    \"https://mrscraper.com\",\n    \"https://mrscraper.com/pricing\",\n    \"https://mrscraper.com/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.mrscraper.com",
+    "https://mrscraper.com",
+    "https://mrscraper.com/pricing",
+    "https://mrscraper.com/contact",
+    "https://developer.mrscraper.com/",
+    "https://developers.mrscraper.com/",
+    "https://api.mrscraper.com/",
+    "https://mrscraper.com/docs",
+    "https://mrscraper.com/developers",
+    "https://mrscraper.com/api",
+    "https://mrscraper.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.mrscraper.com/docs/getting-started/api-token",
+    "https://docs.mrscraper.com/docs/getting-started/quickstart",
+    "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+    "https://docs.mrscraper.com/docs/api/overview",
+    "https://docs.mrscraper.com/docs/guides/ecommerce",
+    "https://docs.mrscraper.com/docs/integrations/node",
+    "https://mrscraper.com/integrations",
+    "https://mrscraper.com/pricing/proxy",
+    "https://app.mrscraper.com/auth/login",
+    "https://app.mrscraper.com/auth/signup"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://mrscraper.com/contact",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.mrscraper.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.mrscraper.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.mrscraper.com/",
+      "reason": "HTTP 401"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "requested_url": "https://docs.mrscraper.com",
+      "status": 200,
+      "title": "Overview | MrScraper Documentation",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://mrscraper.com",
+      "requested_url": "https://mrscraper.com",
+      "status": 200,
+      "title": "Scrape Any Website with AI & Proxies | MrScraper",
+      "chars": 2432,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://mrscraper.com/pricing",
+      "requested_url": "https://mrscraper.com/pricing",
+      "status": 200,
+      "title": "MrScraper Pricing | MrScraper",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "requested_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "status": 200,
+      "title": "Token Plan | MrScraper Documentation",
+      "chars": 4990,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+      "requested_url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+      "status": 200,
+      "title": "Quickstart | MrScraper Documentation",
+      "chars": 4998,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+      "requested_url": "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+      "status": 200,
+      "title": "Authentication | MrScraper Documentation",
+      "chars": 4998,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "requested_url": "https://docs.mrscraper.com/docs/api/overview",
+      "status": 200,
+      "title": "API Overview | MrScraper Documentation",
+      "chars": 1540,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/guides/ecommerce",
+      "requested_url": "https://docs.mrscraper.com/docs/guides/ecommerce",
+      "status": 200,
+      "title": "E-commerce | MrScraper Documentation",
+      "chars": 4998,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"MrScraper is an AI-powered web scraping and data extraction platform providing REST APIs, SDKs, and proxies.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API requests require authentication using an API token passed in the x-api-token header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can sign up for a free plan instantly without a credit card and obtain an API token from account settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Python SDK\",\n      \"Node.js SDK\",\n      \"LangChain SDK\"\n    ],\n    \"notes\": \"Offers a REST API along with Python, Node.js, and LangChain SDKs, plus webhooks for integrations.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://docs.mrscraper.com/docs/getting-started/overview\",\n    \"notes\": \"The MrScraper MCP server source code is available on GitHub to let AI agents fetch and extract web data through the Model Context Protocol.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are available instantly upon signup, and the API is fully documented with cURL and SDK examples.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/overview\",\n      \"claim\": \"Mentions SDKs, Webhooks, and MCP server availability.\"\n    },\n    {\n      \"url\": \"https://mrscraper.com/pricing\",\n      \"claim\": \"Scraper Free plan includes 1,000 tokens per month at no cost and requires no credit card.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/api-token\",\n      \"claim\": \"Explains how plan tokens and API tokens work for authentication.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/quickstart\",\n      \"claim\": \"Provides cURL request examples using the x-api-token header.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/api/overview\",\n      \"claim\": \"Confirms REST principles and x-api-token header authentication.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://docs.mrscraper.com",
+    "one_liner": "MrScraper is an AI-powered web scraping and data extraction platform providing REST APIs, SDKs, and proxies.",
+    "auth": {
+      "method": "api_key",
+      "notes": "API requests require authentication using an API token passed in the x-api-token header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can sign up for a free plan instantly without a credit card and obtain an API token from account settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Python SDK",
+        "Node.js SDK",
+        "LangChain SDK"
+      ],
+      "notes": "Offers a REST API along with Python, Node.js, and LangChain SDKs, plus webhooks for integrations."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "notes": "The MrScraper MCP server source code is available on GitHub to let AI agents fetch and extract web data through the Model Context Protocol."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are available instantly upon signup, and the API is fully documented with cURL and SDK examples."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "claim": "Mentions SDKs, Webhooks, and MCP server availability.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://mrscraper.com/pricing",
+        "claim": "Scraper Free plan includes 1,000 tokens per month at no cost and requires no credit card.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "claim": "Explains how plan tokens and API tokens work for authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+        "claim": "Provides cURL request examples using the x-api-token header.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "claim": "Confirms REST principles and x-api-token header authentication.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:56:57.860084+00:00"
+}

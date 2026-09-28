@@ -1,0 +1,98 @@
+{
+  "app": "Gumroad",
+  "number": 48,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:52:29.927746+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://app.gumroad.com/api\",\n    \"https://help.gumroad.com/article/281-the-gumroad-api\",\n    \"https://gumroad.com/api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://gumroad.com/api",
+    "https://app.gumroad.com/api",
+    "https://help.gumroad.com/article/281-the-gumroad-api",
+    "https://docs.gumroad.com/",
+    "https://developer.gumroad.com/",
+    "https://developers.gumroad.com/",
+    "https://api.gumroad.com/",
+    "https://gumroad.com/docs",
+    "https://gumroad.com/developers",
+    "https://gumroad.com/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://gumroad.com/api",
+      "reason": "page too thin (3 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://app.gumroad.com/api",
+      "reason": "page too thin (3 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://help.gumroad.com/article/281-the-gumroad-api",
+      "reason": "page too thin (19 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.gumroad.com/",
+      "reason": "page too thin (4 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.gumroad.com/",
+      "reason": "page too thin (9 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developers.gumroad.com/",
+      "reason": "page too thin (12 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.gumroad.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://gumroad.com/docs",
+      "reason": "page too thin (4 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint_url": "https://gumroad.com/api",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://gumroad.com/api (page too thin (3 chars)); https://app.gumroad.com/api (page too thin (3 chars)); https://help.gumroad.com/article/281-the-gumroad-api (page too thin (19 chars)); https://docs.gumroad.com/ (page too thin (4 chars)); https://developer.gumroad.com/ (page too thin (9 chars)); https://developers.gumroad.com/ (page too thin (12 chars))"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:52:43.893112+00:00"
+}

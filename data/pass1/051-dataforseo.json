@@ -1,0 +1,195 @@
+{
+  "app": "DataForSEO",
+  "number": 51,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:49:10.670724+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.dataforseo.com\",\n    \"https://dataforseo.com/pricing\",\n    \"https://app.dataforseo.com/register\",\n    \"https://dataforseo.com/contact-us\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.dataforseo.com",
+    "https://dataforseo.com/pricing",
+    "https://app.dataforseo.com/register",
+    "https://dataforseo.com/contact-us",
+    "https://developer.dataforseo.com/",
+    "https://developers.dataforseo.com/",
+    "https://api.dataforseo.com/",
+    "https://dataforseo.com/docs",
+    "https://dataforseo.com/developers",
+    "https://dataforseo.com/api",
+    "https://dataforseo.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.dataforseo.com/v3/auth/",
+    "https://app.dataforseo.com/register/",
+    "https://docs.dataforseo.com/v3/appendix/webhook_resend/",
+    "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api",
+    "https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/",
+    "https://dataforseo.com/contact",
+    "https://dataforseo.com/pricing-list",
+    "https://dataforseo.com/pricing/serp",
+    "https://dataforseo.com/pricing/on-page",
+    "https://dataforseo.com/pricing/merchant"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://app.dataforseo.com/register",
+      "reason": "page too thin (54 chars)"
+    },
+    {
+      "requested_url": "https://developer.dataforseo.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.dataforseo.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.dataforseo.com/",
+      "reason": "HTTP 401"
+    },
+    {
+      "requested_url": "https://app.dataforseo.com/register/",
+      "reason": "page too thin (54 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.dataforseo.com/v3/",
+      "requested_url": "https://docs.dataforseo.com",
+      "status": 200,
+      "title": "DataForSEO API v.3",
+      "chars": 3894,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dataforseo.com/pricing",
+      "requested_url": "https://dataforseo.com/pricing",
+      "status": 200,
+      "title": "DataForSEO API v3 Pricing \u2013 Transparent Pay-As-You-Go Pricing Model",
+      "chars": 1106,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dataforseo.com",
+      "requested_url": "https://dataforseo.com/contact-us",
+      "status": 200,
+      "title": "Powerful API Stack For Data-Driven SEO Tools \u2013 DataForSEO",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "requested_url": "https://docs.dataforseo.com/v3/auth/",
+      "status": 200,
+      "title": "Authentication \u2013 DataForSEO API v.3",
+      "chars": 4787,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.dataforseo.com/v3/appendix/webhook_resend/",
+      "requested_url": "https://docs.dataforseo.com/v3/appendix/webhook_resend/",
+      "status": 200,
+      "title": "appendix/webhook_resend \u2013 DataForSEO API v.3",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api",
+      "requested_url": "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api",
+      "status": 200,
+      "title": "What are pingbacks & postbacks and how to use them with DataForSEO API? \u2013 DataForSEO",
+      "chars": 3382,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/",
+      "requested_url": "https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/",
+      "status": 200,
+      "title": "keywords_data/dataforseo_trends/subregion_interests/live \u2013 DataForSEO API v.3",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"DataForSEO API v3 provides SEO, keyword data, and search engine scraping data via a REST API authenticated with HTTP Basic auth.\",\n  \"auth\": {\n    \"method\": \"basic_auth\",\n    \"notes\": \"Uses HTTP Basic authentication where API credentials (login and password generated from the dashboard API Access tab) are base64-encoded and passed in the 'Authorization' header as 'Authorization: Basic <base64_encoded_credentials>'.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can create a free account with DataForSEO and then go to the API Access tab in the account dashboard to obtain their API login and password.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"PHP\",\n      \"C#\",\n      \"Java\",\n      \"Python\",\n      \"TypeScript\"\n    ],\n    \"notes\": \"The API uses REST technology with HTTP protocol, returning JSON by default (or XML/HTML based on extensions), and supports webhooks/callbacks (pingbacks and postbacks).\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"The fetched documentation does not mention the Model Context Protocol or MCP.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Credentials are self-serve via account signup, and the API is fully documented with REST endpoints, code examples, and officially supported SDKs.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.dataforseo.com/v3/\",\n      \"claim\": \"DataForSEO API uses REST technology over HTTP protocol, returning JSON by default with support for XML and HTML, and lists multiple official client SDKs.\"\n    },\n    {\n      \"url\": \"https://dataforseo.com/pricing\",\n      \"claim\": \"DataForSEO uses a pay-as-you-go pricing model with a minimum payment amount of $50.\"\n    },\n    {\n      \"url\": \"https://docs.dataforseo.com/v3/auth/\",\n      \"claim\": \"DataForSEO uses Basic Authentication where unique API credentials (login and password from the dashboard) are passed in the Authorization header as Base64-encoded text.\"\n    },\n    {\n      \"url\": \"https://docs.dataforseo.com/v3/appendix/webhook_resend/\",\n      \"claim\": \"Demonstrates POST requests to the DataForSEO API using JSON payload and Basic Authentication.\"\n    },\n    {\n      \"url\": \"https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api\",\n      \"claim\": \"Describes support for pingbacks (callbacks) and postbacks (webhooks).\"\n    },\n    {\n      \"url\": \"https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/\",\n      \"claim\": \"Details a live REST API endpoint taking JSON POST data and returning JSON responses.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://docs.dataforseo.com",
+    "one_liner": "DataForSEO API v3 provides SEO, keyword data, and search engine scraping data via a REST API authenticated with HTTP Basic auth.",
+    "auth": {
+      "method": "basic_auth",
+      "notes": "Uses HTTP Basic authentication where API credentials (login and password generated from the dashboard API Access tab) are base64-encoded and passed in the 'Authorization' header as 'Authorization: Basic <base64_encoded_credentials>'."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can create a free account with DataForSEO and then go to the API Access tab in the account dashboard to obtain their API login and password."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "PHP",
+        "C#",
+        "Java",
+        "Python",
+        "TypeScript"
+      ],
+      "notes": "The API uses REST technology with HTTP protocol, returning JSON by default (or XML/HTML based on extensions), and supports webhooks/callbacks (pingbacks and postbacks)."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "The fetched documentation does not mention the Model Context Protocol or MCP."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve via account signup, and the API is fully documented with REST endpoints, code examples, and officially supported SDKs."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.dataforseo.com/v3/",
+        "claim": "DataForSEO API uses REST technology over HTTP protocol, returning JSON by default with support for XML and HTML, and lists multiple official client SDKs.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://dataforseo.com/pricing",
+        "claim": "DataForSEO uses a pay-as-you-go pricing model with a minimum payment amount of $50.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/auth/",
+        "claim": "DataForSEO uses Basic Authentication where unique API credentials (login and password from the dashboard) are passed in the Authorization header as Base64-encoded text.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/appendix/webhook_resend/",
+        "claim": "Demonstrates POST requests to the DataForSEO API using JSON payload and Basic Authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api",
+        "claim": "Describes support for pingbacks (callbacks) and postbacks (webhooks).",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/",
+        "claim": "Details a live REST API endpoint taking JSON POST data and returning JSON responses.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:49:28.450035+00:00"
+}

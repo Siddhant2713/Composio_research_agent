@@ -1,0 +1,1555 @@
+===== https://www.firecrawl.dev/
+TITLE: Firecrawl - The web data API to search, scrape, and interact with the web at scale. 🔥
+ACCESSED: 2026-09-27
+
+2 Months Free - Annually
+Power AI agents with
+clean web data
+The web data API to search, scrape, and interact at scale.
+It's also open source.
+Start for free
+Setup for agents
+Map
+Crawl
+[ .JSON ]
+1
+2
+{
+3
+"
+url
+"
+:
+"
+https://example.com
+"
+,
+4
+"
+markdown
+"
+:
+"
+# Getting Started...
+"
+,
+5
+"
+json
+"
+:
+{
+"
+title
+"
+:
+"
+Guide
+"
+,
+"
+docs
+"
+:
+"
+...
+"
+}
+,
+6
+"
+screenshot
+"
+:
+"
+https://example.com/hero.png
+"
+7
+}
+8
+Scraping...
+Trusted by
+150,000+
+companies
+of all sizes
+Read story
+Read story
+Read story
+Read story
+Read story
+Read story
+Read story
+Read story
+01
+/
+07
+·
+Main Features
+//
+Developer First
+//
+Start
+searching
+today
+The infrastructure layer that helps AI find, read, and act on the live web.
+Search the web and get full content from results.
+Learn more
+Get llm-ready data from websites. Markdown, JSON, screenshot, etc.
+Learn more
+Interact
+NEW
+Scrape a page, then interact with it using AI prompts or code.
+Learn more
+Python
+Node.js
+cURL
+CLI
+Copy code
+1
+# pip install firecrawl-py
+2
+from
+firecrawl
+import
+Firecrawl
+3
+4
+app
+=
+Firecrawl
+(
+api_key
+=
+"fc-YOUR_API_KEY"
+)
+5
+6
+# Scrape a website:
+7
+app
+scrape
+(
+'firecrawl.dev'
+)
+8
+9
+10
+1
+# pip install firecrawl-py
+2
+from
+firecrawl
+import
+Firecrawl
+3
+4
+app
+=
+Firecrawl
+(
+api_key
+=
+"fc-YOUR_API_KEY"
+)
+5
+6
+# Perform a search:
+7
+search_result
+=
+app
+search
+(
+"firecrawl"
+,
+limit
+=
+5
+)
+8
+9
+10
+1
+from
+firecrawl
+import
+Firecrawl
+2
+3
+app
+=
+Firecrawl
+(
+api_key
+=
+"fc-YOUR_API_KEY"
+)
+4
+5
+# Scrape a page, then interact with it:
+6
+result
+=
+app
+scrape
+(
+"https://firecrawl.dev"
+)
+7
+scrape_id
+=
+result
+metadata
+"scrapeId"
+8
+9
+app
+interact
+(
+scrape_id
+,
+prompt
+=
+"Search for 'mechanical keyboard'"
+)
+10
+app
+interact
+(
+scrape_id
+,
+prompt
+=
+"Click the first result"
+)
+11
+[ .
+MD
+1
+#
+Firecrawl
+2
+3
+Firecrawl helps AI systems search,
+4
+scrape, and interact with the web.
+5
+6
+##
+7
+8
+-
+Search: Find information across the web
+9
+-
+Scrape: Clean data from any page
+10
+-
+Interact: Click, navigate, operate pages
+11
+-
+Agent: Autonomous data gathering
+12
+[ .
+JSON
+1
+2
+{
+3
+"
+url
+"
+:
+"
+https://firecrawl.dev
+"
+,
+4
+"
+title
+"
+:
+"
+Firecrawl
+"
+,
+5
+"
+markdown
+"
+:
+"
+Turn websites into...
+"
+6
+}
+,
+7
+{
+8
+"
+url
+"
+:
+"
+https://docs.firecrawl.dev
+"
+,
+9
+"
+title
+"
+:
+"
+Firecrawl Docs
+"
+,
+10
+"
+markdown
+"
+:
+"
+# Getting Started...
+"
+11
+}
+12
+[ .
+JSON
+1
+{
+2
+"
+success
+"
+:
+true
+,
+3
+"
+output
+"
+:
+"
+Keyboard available at $100
+"
+,
+4
+"
+liveViewUrl
+"
+:
+"
+https://liveview...
+"
+,
+5
+"
+interactiveLiveViewUrl
+"
+:
+"
+https://...
+"
+6
+}
+02
+/
+07
+·
+Power your agent
+//
+Agent Ready
+//
+Easily connect with your
+AI agents
+Connect Firecrawl to any AI agent or MCP client in minutes.
+One command.
+Connect your agent to Firecrawl through MCP or the CLI and skills.
+Prompt
+MCP
+CLI
+Copy and paste this into your AI agent.
+Run npx -y firecrawl-cli@latest init --all --browser. Use my existing Firecrawl login or help me log in. Read the installed skills before running queries.
+View the docs
+Agent onboarding.
+Are you an AI agent? Fetch this skill to get an API key and start building.
+cURL
+curl
+-s
+https
+:
+//firecrawl
+dev/agent-onboarding/SKILL
+md
+View the skill
+02
+/
+07
+·
+Core
+//
+Built for Performance
+//
+Fast, reliable, token-efficient.
+And it's
+open source
+Web data infrastructure built from the ground up
+Reliable on any page
+Industry-leading reliability.
+96% coverage on our 1,000-URL firecrawl/scrape-content-dataset-v1 benchmark, run Jan 13, 2026. Every query and URL comes back as clean data.
+See benchmarks
+Firecrawl
+96
+%
+Puppeteer
+79
+%
+cURL
+75
+%
+Speed that feels invisible
+Blazingly fast.
+P95 latency of 3,387 ms on the same 1,000-URL benchmark, run Jan 13, 2026, built for real-time agents and dynamic apps.
+See comparisons
+URL
+Crawl
+50
+ms
+51
+ms
+51
+ms
+52
+ms
+50
+ms
+52
+ms
+49
+ms
+50
+ms
+52
+ms
+52
+ms
+51
+ms
+51
+ms
+firecrawl.dev
+/blog/launch-week
+38,381
+tokens
+<nav>
+<h1>
+<ads>
+<p>
+<footer>
+Token-efficient
+Only the content that matters.
+No navs, footers, or ads. Just clean markdown, with 93% fewer input tokens for your model.
+Calculate your savings
+firecrawl/
+firecrawl
+Public
+Star
+185.4K
+[python-SDK] improvs/async
+#
+1337
+·
+Apr 18, 2025
+·
+rafaelsideguide
+feat(extract): cost limit
+#
+1473
+·
+Apr 17, 2025
+·
+mogery
+feat(scrape): get job result from GCS, avoid Redis
+#
+1461
+·
+Apr 15, 2025
+·
+mogery
+Extract v2/rerank improvs
+#
+1437
+·
+Apr 11, 2025
+·
+rafaelsideguide
++90
+Open Source
+Code you can trust.
+Developed transparently and collaboratively. Join our community of contributors.
+Check out our repo
+03
+/
+07
+·
+//
+Zero configuration
+//
+We handle the
+hard stuff
+JavaScript rendering, smart wait, media parsing, search, actions, and more.
+Docs to data
+Media parsing.
+Firecrawl can parse and output content from pdfs, docx, and more.
+https://example.com/docs
+/
+report.pdf
+https://example.com/files
+/
+brief.docx
+https://example.com/docs
+/
+guide.html
+docx
+Parsing
+...
+Knows the moment
+Smart wait.
+Firecrawl intelligently waits for content to load, making data extraction faster and more reliable.
+https://example-spa.c
+
+===== https://docs.firecrawl.dev/introduction
+TITLE: Introduction | Firecrawl
+ACCESSED: 2026-09-27
+
+Firecrawl is the web data API for AI agents. Search, scrape, and interact with the live web to get clean Markdown or structured data.
+Get started
+Build directly with the API
+Scrape your first page now. No account or API key is required for this request.
+cURL
+# No API key needed to get started — add -H "Authorization: Bearer $FIRECRAWL_API_KEY" for higher rate limits:
+curl
+-s
+-X
+POST
+"https://api.firecrawl.dev/v2/scrape"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"url": "https://firecrawl.dev",
+"formats": ["markdown", "html"]
+}'
+Add an
+API key
+when you need higher limits. See the
+Python SDK
+,
+Node SDK
+, or
+API reference
+to build it into your application.
+Other ways to get started
+Install the Firecrawl CLI
+One command installs the Firecrawl CLI, authenticates in your browser, and adds skills to every detected coding agent.
+npx
+-y
+firecrawl-cli@latest
+init
+--all
+--browser
+Restart your coding agent after setup so it can discover the new skills. See
+CLI
+for the full setup.
+Set up with an agent
+Provide your agent with this Firecrawl setup prompt, or see
+all MCP setup options
+For AI agents:
+Use
+llms.txt
+for an index of the documentation, or
+llms-full.txt
+for the full text.
+Build and test directly
+Get your API key
+Create a free account for direct API access and higher limits
+Try it in the Playground
+Test Firecrawl in the browser without writing code
+What can Firecrawl do?
+Search the web and get full page content from results
+Extract content from any URL as markdown, HTML, or structured JSON
+Interact
+Continue working with any scraped page: click, fill forms, extract dynamic
+content
+Why Firecrawl?
+LLM-ready output
+: Clean markdown, structured JSON, screenshots, and more.
+Handles the hard stuff
+: Proxies, anti-bot, JavaScript rendering, and dynamic content.
+Reliable
+: Built for production with high uptime and consistent results.
+Fast
+: Results in seconds, optimized for high throughput.
+MCP Server
+: Connect Firecrawl to any AI tool via the
+Model Context Protocol
+Bounty: 5,000 credit reward
+for solid feedback on Firecrawl
+To qualify, complete a high-signal interview (thoughtful, concrete use cases, etc) with our Firecrawl Feedback Assistant. Only takes a few minutes, can be stopped at any time, and is both human/agent-friendly (just paste the link into your agentic harness!). New to Firecrawl? Your take still counts.
+Start the interview
+Include your email to be eligible. Interviews are reviewed for quality at the end of each week.
+Search the web and get full page content from results in one call. See the
+Search feature docs
+for all options.
+Python
+Node
+cURL
+CLI
+from
+firecrawl
+import
+Firecrawl
+firecrawl
+=
+Firecrawl(
+# No API key needed to get started — add one for higher rate limits:
+# api_key="fc-YOUR-API-KEY",
+)
+results
+=
+firecrawl.search(
+query
+=
+"firecrawl"
+,
+limit
+=
+3
+,
+)
+print
+(results)
+import
+{
+Firecrawl
+}
+from
+'firecrawl'
+;
+const
+firecrawl
+=
+new
+Firecrawl
+({
+// No API key needed to get started — add one for higher rate limits:
+// apiKey: "fc-YOUR-API-KEY",
+});
+const
+results
+=
+await
+firecrawl
+search
+(
+'firecrawl'
+, {
+limit:
+3
+,
+scrapeOptions:
+{
+formats:
+'markdown'
+] }
+});
+console
+log
+(
+results
+);
+# No API key needed to get started — add -H "Authorization: Bearer $FIRECRAWL_API_KEY" for higher rate limits:
+curl
+-s
+-X
+POST
+"https://api.firecrawl.dev/v2/search"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"query": "firecrawl",
+"limit": 3
+}'
+# Search the web
+firecrawl
+search
+"firecrawl web scraping"
+--limit
+5
+--pretty
+Response
+SDKs will return the data object directly. cURL will return the complete payload.
+JSON
+{
+"success"
+:
+true
+,
+"data"
+: {
+"web"
+: [
+{
+"url"
+:
+"https://www.firecrawl.dev/"
+,
+"title"
+:
+"Firecrawl - The Web Data API for AI"
+,
+"description"
+:
+"The web crawling, scraping, and search API for AI. Built for scale. Firecrawl delivers the entire internet to AI agents and builders."
+,
+"position"
+:
+1
+},
+{
+"url"
+:
+"https://github.com/firecrawl/firecrawl"
+,
+"title"
+:
+"mendableai/firecrawl: Turn entire websites into LLM-ready ... - GitHub"
+,
+"description"
+:
+"Firecrawl is an API service that takes a URL, crawls it, and converts it into clean markdown or structured data."
+,
+"position"
+:
+2
+},
+...
+],
+"images"
+: [
+{
+"title"
+:
+"Quickstart | Firecrawl"
+,
+"imageUrl"
+:
+"https://mintlify.s3.us-west-1.amazonaws.com/firecrawl/logo/logo.png"
+,
+"imageWidth"
+:
+5814
+,
+"imageHeight"
+:
+1200
+,
+"url"
+:
+"https://docs.firecrawl.dev/"
+,
+"position"
+:
+1
+},
+...
+],
+"news"
+: [
+{
+"title"
+:
+"Y Combinator startup Firecrawl is ready to pay $1M to hire three AI agents as employees"
+,
+"url"
+:
+"https://techcrunch.com/2025/05/17/y-combinator-startup-firecrawl-is-ready-to-pay-1m-to-hire-three-ai-agents-as-employees/"
+,
+"snippet"
+:
+"It's now placed three new ads on YC's job board for “AI agents only” and has set aside a $1 million budget total to make it happen."
+,
+"date"
+:
+"3 months ago"
+,
+"position"
+:
+1
+},
+...
+}
+}
+Scrape any URL and get its content in markdown, HTML, or other formats. 
+
+===== https://www.firecrawl.dev/pricing
+TITLE: Pricing | Firecrawl
+ACCESSED: 2026-09-27
+
+Flexible
+pricing
+Start for free, then scale as you grow.
+100,000
+credits/month
+1k
+Free
+5k
+Hobby
+100k
+Standard
+500k
+Growth
+1M
+Scale
+Custom
+Standard: $83/month
+Prices shown are per month, billed annually.
+🇺🇸
+USD
+Free Plan
+A lightweight way to get started.
+No cost, no card, no hassle.
+1,000
+credits
+/ month
+$
+0
+/month
+Get started
+500
+searches or
+1,000
+pages scraped
+2
+concurrent requests
+Low rate limits
+Hobby
+Great for side projects and small tools.
+Fast, simple, no overkill.
+5,000
+credits
+/ month
+$
+16
+/month
+Billed yearly
+Save
+$38
+Subscribe
+2,500
+searches or
+5,000
+pages scraped
+5
+concurrent requests
+Basic support
+1,000
+extra credits per
+$5
+Standard
+Recommended
+Perfect for scaling with less effort.
+Simple, solid, dependable.
+100,000
+credits
+/ month
+$
+83
+/month
+Billed yearly
+Save
+$198
+Subscribe
+50,000
+searches or
+100,000
+pages scraped
+25
+concurrent requests
+Standard support
+2,000
+extra credits per
+$5
+Growth
+Built for high volume and speed.
+Firecrawl at full force.
+500,000
+credits
+/ month
+$
+333
+/month
+Billed yearly
+Save
+$798
+Subscribe
+250,000
+searches or
+500,000
+pages scraped
+50
+concurrent requests
+Priority support
+2,500
+extra credits per
+$5
+Scale Plans
+High-volume plans for teams that need more power and dedicated support. Get access to higher rate limits, more concurrent browsers, and priority support.
+Scale checks out instantly, no sales call needed.
+Need more? Contact us
+Scale
+For teams scaling their data pipelines
+1,000,000
+credits
+/ month
+$
+599
+/month
+Billed yearly
+Save
+$1,798
+Subscribe
+500,000
+searches or
+1,000,000
+pages scraped
+100
+concurrent requests
+Priority support
+5,000
+extra credits per
+$
+5
+Enterprise
+Power at your pace with custom solutions
+Custom
+credits
+Custom
+Contact sales
+Custom
+concurrent requests
+Dedicated support & SLA
+Bulk discounts
+Zero-data retention
+SSO & advanced security
+Pay-as-you-go
+Keep accessing web data with search and scrape when your credits run out. We add credits in 5 USD increments, up to a monthly limit you set. Paid plans only.
+Enable pay-as-you-go
+View pricing as Markdown
+Pricing at a
+glance
+Credit unit
+1 credit = 1 page on a basic scrape, crawl, or map. Search costs 2 credits per 10 results; Interact costs 2 credits per browser minute. On Scrape and Crawl, the JSON, Question, and Highlight formats add 4 credits per page; Monitor's deterministic-extraction engine bills a flat 7 credits per page per check instead. Credits are shared across all endpoints: search results and pages scraped draw on one balance.
+Free tier
+1,000 credits every month, refreshed monthly, no credit card required.
+Entry plan
+Hobby: $19/month billed monthly, or $16/month billed annually, for 5,000 credits per month (2,500 searches or 5,000 pages scraped).
+Failed requests
+A scrape that returns no result is not charged. A page that responds with an error status such as 403 or 404 is still returned to you and costs 1 credit.
+Effective
+September 4, 2026
+. Prices in USD.
+API
+Credits
+Credits are consumed for each API request, varying by endpoint and feature. These rates are the same on every plan.
+Credits
+1
+/ page
+Crawl
+1
+/ page
+Map
+1
+/ page
+2
+/ 10 results
+Interact
+2
+/ browser minute
+Monitor
+1
+/ page / check
+Agent (Preview)
+5 daily runs free.
+Dynamic pricing
+02
+/
+04
+·
+COMPARE PLANS
+Compare
+Plans
+What changes from one plan to the next.
+Limits and Performance
+Limits and Performance
+, compared across every Firecrawl plan
+Feature
+Free
+Hobby
+Standard
+Growth
+Scale
+Enterprise
+Concurrent browsers
+Concurrent browsers set how many pages render at the same time.
+2
+5
+25
+50
+100
+Custom
+Max queued jobs
+This is how many jobs can wait in the queue at once. Above Scale you get 2,000 for each browser, up to 2,000,000.
+50,000
+50,000
+50,000
+100,000
+200,000+
+200,000+
+Rate limit, /scrape, /map and /search
+Your team gets this many requests a minute for each endpoint.
+10 / min
+100 / min
+500 / min
+5,000 / min
+10,000 / min
+Custom
+Rate limit, /crawl and /agent
+Your team can send this many requests a minute. Batch scrape shares the crawl limit, and extract shares the agent limit.
+2 / min
+20 / min
+100 / min
+1,000 / min
+2,000 / min
+Custom
+Rate limit, /interact
+Your team can start this many browser sandbox sessions a minute.
+2 / min
+20 / min
+100 / min
+1,000 / min
+1,500 / min
+Custom
+Team and Access
+Team and Access
+, compared across every Firecrawl plan
+Feature
+Free
+Hobby
+Standard
+Growth
+Scale
+Enterprise
+Multi-team organizations
+An organization can run more than one team, and our team sets that up for you.
+–
+Not available
+–
+Not available
+–
+Not available
+Contact support
+Contact support
+Contact support
+Single Sign-On
+Your team signs in through your own identity provider, over SAML or OIDC.
+–
+Not available
+–
+Not available
+–
+Not available
+–
+Not available
+–
+Not available
+Included
+SCIM provisioning
+Your identity provider adds and removes team members automatically. This needs Single Sign-On.
+–
+Not available
+–
+Not available
+–
+Not available
+–
+Not available
+–
+Not available
+Included
+Support
+Support
+, compared across every Fire
+
+===== https://docs.firecrawl.dev/api-reference/introduction
+TITLE: Introduction - Firecrawl Docs
+ACCESSED: 2026-09-27
+
+Extract content from any webpage in markdown or json format.
+Crawl
+Crawl entire websites, extract their content and metadata.
+Map
+Get a complete list of URLs from any website quickly and reliably.
+Search the web and get full page content in any format.
+Agentic Features
+Extract
+Extract structured data from entire webpages using natural language.
+Base URL
+All requests contain the following base URL:
+https://api.firecrawl.dev
+Authentication
+For authentication, it’s required to include an Authorization header. The header should contain
+Bearer fc-123456789
+, where
+fc-123456789
+represents your API Key.
+Authorization:
+Bearer
+fc-123456789
+Response codes
+Firecrawl employs conventional HTTP status codes to signify the outcome of your requests.
+Typically, 2xx HTTP status codes denote success, 4xx codes represent failures related to the user, and 5xx codes signal infrastructure problems.
+Status
+Description
+200
+Request was successful.
+400
+Verify the correctness of the parameters.
+401
+The API key was not provided.
+402
+Payment required
+404
+The requested resource could not be located.
+408
+The request timed out (e.g., page took too long to load).
+429
+The rate limit has been surpassed.
+5xx
+Signifies a server error with Firecrawl.
+Refer to the Error Codes section for a detailed explanation of all potential API errors.
+Firecrawl error codes
+When a 408 or 5xx error occurs, Firecrawl provides more specific error codes to clarify what went wrong.​
+Error Code
+Status
+Description
+SCRAPE_TIMEOUT
+408
+The page took too long to load or render. Try increasing the
+timeout
+parameter (up to 60000ms).
+SCRAPE_ALL_ENGINES_FAILED
+500
+All scraping engines failed.
+SCRAPE_SSL_ERROR
+500
+Page SSL certificate is invalid. You can use
+skipTlsVerification:true
+to bypass this check.
+SCRAPE_SITE_ERROR
+500
+Unrecoverable site error.
+SCRAPE_DNS_RESOLUTION_ERROR
+500
+DNS resolution failed.
+SCRAPE_ACTION_ERROR
+500
+Error while performing a page action.
+SCRAPE_PDF_PREFETCH_FAILED
+500
+Failed to prefetch PDF.
+SCRAPE_PDF_INSUFFICIENT_TIME_ERROR
+500
+Not enough time to process PDF.
+SCRAPE_PDF_ANTIBOT_ERROR
+500
+PDF blocked by anti-bot mechanisms.
+SCRAPE_ZDR_VIOLATION_ERROR
+500
+Zero Data Retention conflict: occurs when
+zeroDataRetention:true
+but another option (e.g.
+screenshot
+) requires temporary storage.
+SCRAPE_UNSUPPORTED_FILE_ERROR
+500
+Unsupported file type or file size exceeds 10MB limit.
+SCRAPE_LOCKDOWN_CACHE_MISS
+404
+Lockdown mode is enabled but no cached data is available for the URL. Seed the cache with a non-lockdown scrape first, or disable
+lockdown
+. See
+Lockdown Mode
+UNKNOWN_ERROR
+500
+Generic or unexpected error.
+429 responses
+When you exceed your plan’s rate or concurrency limits, the API returns a 429 response code. See
+Rate Limits
+for per-plan limits.
+Suggest edits
+Raise issue
+
+===== https://docs.firecrawl.dev/ai-onboarding
+TITLE: Build with AI | Firecrawl
+ACCESSED: 2026-09-27
+
+If you’re developing with AI, Firecrawl offers several resources to improve your experience. Firecrawl ships with
+skills
+— self-contained knowledge packs that AI coding agents discover and use automatically. One install command gives agents CLI skills for live web work and workflow skills for producing repeatable deliverables. Build skills for integrating Firecrawl into application code are a separate step (
+firecrawl setup build
+). Firecrawl users can get an API key in two ways. See
+Get credentials
+below.
+Get credentials
+CLI and agent skills
+Using Firecrawl as a Tool
+Agentic Debugging
+Firecrawl MCP Server
+Firecrawl Docs for Agents
+Quick Start Guides
+Agent Harnesses
+SDKs
+Get credentials
+Firecrawl users can get an API key in two ways. Most users should sign in through the dashboard or CLI. If your agent platform supports WorkOS ID-JAG, it can register directly with Firecrawl.
+Which should I use?
+Use the dashboard or CLI unless you know your platform supports WorkOS ID-JAG.
+How you might arrive:
+Docs:
+you landed here. Pick the option below that matches how you can sign in.
+API
+401
+:
+ID-JAG capable agents can follow the discovery flow in
+auth.md
+Step 1. Everyone else should use the dashboard or CLI.
+Direct URL:
+follow
+SKILL.md
+for browser sign-in and setup, or
+auth.md
+for WorkOS ID-JAG registration.
+Stripe Projects:
+in a project that already uses the Stripe CLI,
+stripe projects add firecrawl/api --name firecrawl
+provisions the account and writes
+FIRECRAWL_API_KEY
+to
+.env
+. See
+Stripe Projects
+Use the dashboard or CLI
+Default for most users.
+Sign in in the browser, run CLI
+--browser
+, install skills and MCP, or create an API key in the dashboard.
+Register with WorkOS ID-JAG
+For supported agent platforms.
+Use this when your platform can mint a WorkOS ID-JAG for Firecrawl. Review
+Agent Auth
+, then follow
+auth.md
+Can’t sign in or get a key?
+The CLI, SDKs, and REST API allow keyless search, scrape, interact, and parse. Hosted MCP exposes the narrower keyless Search, Scrape, and Parse surface; interact requires an account connection or API key there. Keyless access is rate-limited and meant as a fallback, so move to a free account or API key as soon as one is available. See
+Keyless (no API key)
+for details.
+Once you have an API key, continue with
+CLI and agent skills
+below.
+CLI and agent skills
+The
+Firecrawl CLI
+lets your agent search, scrape, interact, crawl, map, extract, and run agent jobs from the terminal. It’s built for humans, AI agents, and CI/CD pipelines.
+The Firecrawl
+skills
+are self-contained knowledge packs that AI coding agents like Codex, Claude Code, Cursor, and OpenCode discover and use automatically. A single install command sets up the CLI tools for live web work and the workflow skills for producing repeatable deliverables. Build skills for integrating Firecrawl into application code are installed with
+firecrawl setup build
+:
+npx
+-y
+firecrawl-cli@latest
+init
+--all
+--browser
+--all
+skips agent selection and initializes every detected agent
+--browser
+opens the browser for Firecrawl authentication automatically
+--skip-auth
+,
+--skip-install
+,
+--skip-skills
+, and
+--agent <name>
+are also available. See
+firecrawl init --help
+After install, verify everything is working:
+firecrawl
+--status
+firecrawl
+scrape
+"https://firecrawl.dev"
+To reinstall or scope to a specific agent later:
+firecrawl
+setup
+skills
+# CLI / core skills
+firecrawl
+setup
+build
+# build skills
+firecrawl
+setup
+workflows
+# workflow skills
+What the install gives you
+Firecrawl skills cover three categories.
+init
+installs CLI and workflow skills. Run
+firecrawl setup build
+for build skills. Each segment lives in its own repo so it can evolve independently:
+firecrawl/cli
+— CLI skills for live web work
+firecrawl/skills
+— build skills for app integration
+firecrawl/firecrawl-workflows
+— workflow skills for repeatable deliverables
+CLI skills
+— for live web work during an agent session:
+Skill
+Purpose
+firecrawl
+Overall CLI command workflow
+firecrawl-search
+Search the web and discover pages
+firecrawl-scrape
+Extract clean content from a known URL
+firecrawl-interact
+Interact with scraped pages using prompts or code
+firecrawl-crawl
+Bulk-extract content from an entire site
+firecrawl-map
+Discover all URLs on a domain
+firecrawl-agent
+Run autonomous web data gathering with a job
+firecrawl-monitor
+Detect site changes and get notified
+firecrawl-parse
+Parse local documents into markdown
+firecrawl-download
+Download a site as local files
+firecrawl-research-index
+Search papers, read passages, and follow citations
+firecrawl-developer-index
+Search issues, pull requests, READMEs, and docs
+The install above includes both index skills. To add just the paper-search one to an existing setup — worth doing when the work is biomedical or scientific literature — run:
+npx
+skills
+add
+firecrawl/skills@firecrawl-research-index
+Build skills
+— for integrating Firecrawl into application code:
+Skill
+Purpose
+firecrawl-build
+Choose the right Firecrawl endpoint for your product
+f
+
+===== https://docs.firecrawl.dev/sdks/overview
+TITLE: SDKs | Firecrawl
+ACCESSED: 2026-09-27
+
+Use an SDK to search, scrape, and interact with the web without managing raw HTTP requests. Each SDK wraps the Firecrawl API with idiomatic helpers for authentication, polling, and error handling.
+Official SDKs
+Python SDK
+For Python apps, with sync and async support.
+Node SDK
+For Node.js and TypeScript apps.
+Go SDK
+For Go applications.
+Java SDK
+For Java and JVM-based applications.
+Ruby SDK
+For Ruby and Rails applications.
+Rust SDK
+For Rust applications, with full v2 API support.
+.NET SDK
+For .NET and ASP.NET Core applications.
+PHP SDK
+For PHP and Laravel applications.
+Elixir SDK
+For Elixir and Phoenix applications.
+CLI
+Run Firecrawl from the command line.
+Suggest edits
+Raise issue
+
+===== https://www.firecrawl.dev/token-efficiency
+TITLE: Firecrawl pays for itself | Token Efficiency Benchmark
+ACCESSED: 2026-09-27
+
+Token Efficiency Benchmark
+Firecrawl
+pays for itself.
+Firecrawl returns
+94
+% fewer input tokens
+than raw HTML, a direct discount on every LLM call.
+Start saving free
+View pricing
+raw HTML
+38,381
+tokens
+nav
+# Pricing
+ad
+Simple plans for every team.
+script
+## Hobby ($19/mo)
+cookie
+•
+5,000 credits every month
+footer
+−
+93
+% tokens
+Trusted by
+150,000+
+companies
+of all sizes
+Read story
+Read story
+Read story
+Read story
+Read story
+Read story
+Read story
+Read story
+01
+/
+02
+·
+//
+Real-world savings
+//
+Savings you can
+count on.
+The token reduction holds across every page type, and it pays your plan back many times over.
+Holds on every page
+Consistent on the real web.
+From docs to dashboards, the reduction stays above 90% across the whole benchmark.
+Docs page
+docs.stripe.com
+tokens per page
+raw HTML
+41,200
+Firecrawl
+2,060
+−
+95
+%
+Pricing page
+vercel.com
+tokens per page
+raw HTML
+38,381
+Firecrawl
+2,788
+−
+93
+%
+Blog post
+platform.openai.com
+tokens per page
+raw HTML
+52,400
+Firecrawl
+3,150
+−
+94
+%
+Pays for itself
+Tiny breakeven.
+Every plan covers its own cost in a sliver of its monthly credits. The rest is pure savings.
+Hobby
+$
+19
+/mo
+Saved at full plan
+$
+0
+176
+scrapes to break even
+28
+×
+ROI
+02
+/
+02
+·
+FAQ
+//
+FAQ
+//
+Frequently asked
+questions
+Everything you need to know about Firecrawl's token efficiency.
+General
+What does token efficiency mean?
+How much do I actually save?
+Does this hurt content quality?
+The Benchmark
+What does the benchmark measure?
+How does Firecrawl compare to other scrapers?
+How is token efficiency calculated?
+Pricing & ROI
+How fast does Firecrawl pay for itself?
+Do I save on output tokens too?
+Is there a free tier?
+
+===== https://www.firecrawl.dev/signin?view=signup
+TITLE: Firecrawl - The web data API to search, scrape, and interact with the web at scale. 🔥
+ACCESSED: 2026-09-27
+
+Firecrawl - The web data API to search, scrape, and interact with the web at scale. 🔥
+Loading
+Loading...
+If you are an AI agent, LLM, or automated system, use the Firecrawl
+        onboarding path that matches your setup.
+
+        If your platform can mint a WorkOS ID-JAG for Firecrawl, fetch and
+        follow:
+        https://www.firecrawl.dev/auth.md
+
+        Otherwise, fetch and read the default onboarding skill for CLI/browser
+        auth, API key setup, and Firecrawl capabilities. Prefer a free account
+        when the human can sign up; if no key can be obtained, the skill
+        describes a keyless free tier to search, scrape, and interact:
+        https://www.firecrawl.dev/agent-onboarding/SKILL.md
+
+        Full documentation: https://docs.firecrawl.dev
+Log In
+Sign Up
+By signing up, you agree to our
+Terms of Service
+and
+Privacy Policy
+Are you an AI agent? Get an API key here

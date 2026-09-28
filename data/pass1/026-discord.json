@@ -1,0 +1,177 @@
+{
+  "app": "Discord",
+  "number": 26,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:24:38.612188+00:00",
+  "raw_candidate_proposals": "{\"urls\": [\"https://discord.com/developers/docs\", \"https://discord.com/developers/applications\", \"https://discord.com/developers\"]}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://discord.com",
+    "https://discord.com/developers/docs",
+    "https://discord.com/developers/applications",
+    "https://discord.com/developers",
+    "https://docs.discord.com/",
+    "https://developer.discord.com/",
+    "https://developers.discord.com/",
+    "https://api.discord.com/",
+    "https://discord.com/docs",
+    "https://discord.com/api",
+    "https://discord.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://discord.com/licenses",
+    "https://discord.com/developers/social-sdk",
+    "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+    "https://docs.discord.com/developers/reference",
+    "https://docs.discord.com/developers/platform/webhooks",
+    "https://docs.discord.com/developers/discord-social-sdk/overview",
+    "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "https://discord.com/developers/contact-us",
+    "https://discord.com/developers/newsletter-sign-up"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://discord.com/developers/applications",
+      "reason": "page too thin (24 chars)"
+    },
+    {
+      "requested_url": "https://developer.discord.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    },
+    {
+      "requested_url": "https://developers.discord.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    },
+    {
+      "requested_url": "https://api.discord.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://discord.com",
+      "requested_url": "https://discord.com",
+      "status": 200,
+      "title": "Discord - Group Chat That\u2019s All Fun & Games",
+      "chars": 1530,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.discord.com/developers/intro",
+      "requested_url": "https://discord.com/developers/docs",
+      "status": 200,
+      "title": "Discord Developer Platform - Documentation - Discord",
+      "chars": 848,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://discord.com/developers",
+      "requested_url": "https://discord.com/developers",
+      "status": 200,
+      "title": "Discord for Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://discord.com/licenses",
+      "requested_url": "https://discord.com/licenses",
+      "status": 200,
+      "title": "Licenses | Discord",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://discord.com/developers/social-sdk",
+      "requested_url": "https://discord.com/developers/social-sdk",
+      "status": 200,
+      "title": "Discord Social SDK",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+      "requested_url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+      "status": 200,
+      "title": "OAuth2 and Permissions - Documentation - Discord",
+      "chars": 2456,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "requested_url": "https://docs.discord.com/developers/reference",
+      "status": 200,
+      "title": "API Reference - Documentation - Discord",
+      "chars": 4984,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.discord.com/developers/platform/webhooks",
+      "requested_url": "https://docs.discord.com/developers/platform/webhooks",
+      "status": 200,
+      "title": "Webhooks - Documentation - Discord",
+      "chars": 1932,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Discord's public API allows developers to build automated bots, apps, and integrations using REST and Webhooks, authenticated via bot tokens, OAuth2, or basic auth.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Discord supports authentication using bot tokens, OAuth2 bearer tokens, or basic auth using client ID and client secret.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create bot users and apps via the Developer Portal.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Discord provides a REST API and supports incoming webhooks and webhook events.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are obtainable through the Developer Portal, and the API is fully documented with REST and webhook support.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.discord.com/developers/reference\",\n      \"claim\": \"Authenticating with the Discord API can be done using a bot token, an OAuth2 bearer token, or basic authentication.\"\n    },\n    {\n      \"url\": \"https://docs.discord.com/developers/platform/webhooks\",\n      \"claim\": \"Discord supports incoming webhooks and webhook events.\"\n    },\n    {\n      \"url\": \"https://docs.discord.com/developers/platform/oauth2-and-permissions\",\n      \"claim\": \"When you create a bot user in the Developer Portal, Discord generates a bot token.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint_url": "https://discord.com",
+    "one_liner": "Discord's public API allows developers to build automated bots, apps, and integrations using REST and Webhooks, authenticated via bot tokens, OAuth2, or basic auth.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Discord supports authentication using bot tokens, OAuth2 bearer tokens, or basic auth using client ID and client secret."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create bot users and apps via the Developer Portal."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Discord provides a REST API and supports incoming webhooks and webhook events."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are obtainable through the Developer Portal, and the API is fully documented with REST and webhook support."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.discord.com/developers/reference",
+        "claim": "Authenticating with the Discord API can be done using a bot token, an OAuth2 bearer token, or basic authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.discord.com/developers/platform/webhooks",
+        "claim": "Discord supports incoming webhooks and webhook events.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+        "claim": "When you create a bot user in the Developer Portal, Discord generates a bot token.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:24:49.413835+00:00"
+}

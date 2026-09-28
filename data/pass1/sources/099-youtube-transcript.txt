@@ -1,0 +1,828 @@
+===== https://transcriptapi.com
+TITLE: YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI
+ACCESSED: 2026-09-27
+
+YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI
+YouTube Transcript API That Just Works
+Stop fighting YouTube blocks. Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP — at scale.
+Get Started Free
+View Pricing
+Works everywhere
+Powering 15M+ transcripts every month
+Your browser does not support the video tag.
+Trusted in production
+500K+ Transcripts Processed Daily
+49ms median response time. 15M+ transcripts served last month.
+youtubetotranscript.com
+Verified Production User
+~11M
+transcripts per month
+Active
+recapio.com
+Verified Production User
+~2.8M
+transcripts per month
+Active
+Everything you need from YouTube
+One API. Full YouTube Access.
+Transcripts, search, channels, playlists — all in one place. Every feature works via API, MCP, and agent skills.
+Get Transcripts
+1 credit
+Extract transcripts from any YouTube video — with or without timestamps. Drop the output straight into summarizers, search indexes, or AI pipelines.
+Summarize videos
+Study notes
+Search indexes
+Content repurposing
+Request
+Copy
+curl
+"
+https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ&format=json
+" \
+-H
+"
+Authorization: Bearer API_KEY
+"
+Response
+{
+  "
+language
+": "
+en
+",
+  "
+length_seconds
+":
+1164
+,
+  "
+lengthText
+": "
+19:24
+",
+  "
+metadata
+": {
+    "
+title
+": "
+Do schools kill creativity?
+"
+  },
+  "
+transcript
+": [
+    {
+      "
+text
+": "
+Good morning. How are you?
+",
+      "
+start
+":
+0.0
+,
+      "
+duration
+":
+3.2
+},
+    {
+      "
+text
+": "
+It's been great, hasn't it?
+",
+      "
+start
+":
+3.2
+,
+      "
+duration
+":
+2.9
+}
+  ]
+}
+AI Agent
+Copy
+Pull the transcript from this TED talk and give me a bullet-point summary with key quotes
+get_transcript(video_url="dQw4w9WgXcQ")
+Here's the summary of "Do schools kill creativity?" by Sir Ken Robinson:
+
+• Schools prioritize conformity over creative thinking
+• Children are educated out of creativity as they age
+• Key quote: "If you're not prepared to be wrong, you'll never come up with anything original"
+
+Want me to extract all the timestamps where he references specific examples?
+·
+MCP Tool
+Search YouTube
+1 credit
+Search YouTube for videos, channels, or playlists. Filter by type and limit results — perfect for discovery, research, and building content pipelines.
+Content research
+Competitor analysis
+Topic discovery
+Trend monitoring
+Request
+Copy
+curl
+"
+https://transcriptapi.com/api/v2/youtube/search?q=climate+change&type=video&limit=5
+" \
+-H
+"
+Authorization: Bearer API_KEY
+"
+Response
+{
+  "
+results
+": [
+    {
+      "
+type
+": "
+video
+",
+      "
+videoId
+": "
+G9t__9Tmli0
+",
+      "
+title
+": "
+Climate Change 101
+",
+      "
+channelTitle
+": "
+National Geographic
+",
+      "
+lengthText
+": "
+4:00
+",
+      "
+viewCountText
+": "
+12M views
+",
+      "
+publishedTimeText
+": "
+6 years ago
+",
+      "
+hasCaptions
+":
+true
+},
+    {
+      "
+type
+": "
+video
+",
+      "
+videoId
+": "
+SDr2gaSrOCk
+",
+      "
+title
+": "
+Before the Flood
+",
+      "
+channelTitle
+": "
+National Geographic
+",
+      "
+lengthText
+": "
+1:30:08
+",
+      "
+viewCountText
+": "
+8.5M views
+",
+      "
+publishedTimeText
+": "
+7 years ago
+",
+      "
+hasCaptions
+":
+true
+}
+  ],
+  "
+result_count
+":
+5
+,
+  "
+has_more
+":
+true
+}
+AI Agent
+Copy
+Find the most-watched climate change explainers on YouTube and compare their key arguments
+search_youtube(q="climate change", limit=5)
+Found 5 top climate change videos:
+
+1. "Climate Change 101" (12M views) — broad overview by National Geographic
+2. "Before the Flood" (8.5M views) — Leonardo DiCaprio documentary
+3. "Causes and Effects of Climate Change" (5.1M views) — National Geographic explainer
+4. "Climate Change" (3.8M views) — Kurzgesagt animated breakdown
+5. "Is It Too Late To Stop Climate Change?" (2.9M views) — science-focused deep dive
+
+Should I pull the transcripts and compare how each one frames the core science?
+·
+MCP Tool
+Search Inside a Channel
+1 credit
+Search within a specific channel to find videos on any topic. Great for researching a creator's content or finding niche topics in large channels.
+Research a creator
+Find specific topics
+Competitive intelligence
+Request
+Copy
+curl
+"
+https://transcriptapi.com/api/v2/youtube/channel/search?channel=@TED&q=AI&limit=10
+" \
+-H
+"
+Authorization: Bearer API_KEY
+"
+Response
+{
+  "
+results
+": [
+    {
+      "
+type
+": "
+video
+",
+      "
+videoId
+": "
+UyyjU8fzEYU
+",
+      "
+title
+": "
+The wonderful implications of computers that can learn
+",
+      "
+channelTitle
+": "
+TED
+",
+      "
+lengthText
+": "
+16:22
+",
+      "
+viewCountText
+": "
+2.3M views
+",
+      "
+publishedTimeText
+": "
+10 years ago
+",
+      "
+hasCaptions
+":
+true
+},
+    {
+      "
+type
+": "
+video
+",
+      "
+videoId
+": "
+hJP5GqnTrNo
+",
+      "
+title
+": "
+Can AI fix education?
+",
+      "
+channelTitle
+": "
+TED
+",
+      "
+lengthText
+": "
+10:39
+",
+      "
+viewCountText
+": "
+180K views
+",
+      "
+publishedTimeText
+": "
+1 year ago
+",
+      "
+hasCaptions
+":
+true
+}
+  ],
+  "
+result_count
+":
+6
+,
+  "
+has_more
+":
+true
+}
+AI Agen
+
+===== https://transcriptapi.com/docs/
+TITLE: TranscriptAPI Documentation | TranscriptAPI.com
+ACCESSED: 2026-09-27
+
+TranscriptAPI Documentation
+Extract YouTube video transcripts with a simple API call or through Model Context Protocol
+Get Started
+View API Reference
+Quick Access
+Section titled “Quick Access”
+Complete guide to transcripts, search, channel, and playlist endpoints with
+authentication, parameters, and examples.
+View API Reference →
+MCP Integration
+Use TranscriptAPI with Model Context Protocol for seamless integration with
+AI tools.
+View MCP Documentation →
+Guides & Tutorials
+Step-by-step guides for integrating TranscriptAPI into your applications and
+workflows.
+MCP Integration Guides:
+ChatGPT Setup
+Claude Setup
+OpenAI Agent Builder
+LLMS.txt
+AI-friendly documentation format for LLM context. Download the complete docs
+in a single text file.
+Download LLMS.txt →
+Support & Billing
+Get help with billing, credits, and other account-related questions.
+Contact Us
+Billing & Credits
+
+===== https://transcriptapi.com/signup
+TITLE: Sign up for TranscriptAPI
+ACCESSED: 2026-09-27
+
+Sign up for TranscriptAPI
+TranscriptAPI.com
+Create an account
+Enter your email below to create your account
+Already have an account?
+Sign In
+By clicking continue, you agree to our
+Terms of Service
+and
+Privacy Policy
+.
+
+===== https://transcriptapi.com/contact
+TITLE: Contact Us | TranscriptAPI
+ACCESSED: 2026-09-27
+
+Get in Touch
+Have questions or need support? We're here to help!
+Email us at
+[email protected]
+Copy
+Send Email
+View Documentation
+What can we help you with?
+•
+Technical support and API questions
+•
+Billing and subscription inquiries
+•
+Feature requests and feedback
+•
+Partnership and business opportunities
+Response Time:
+We typically respond within 24-48 hours during business days.
+
+===== https://transcriptapi.com/docs/api/
+TITLE: YouTube Transcript API Reference | TranscriptAPI.com
+ACCESSED: 2026-09-27
+
+YouTube Transcript API Reference
+The YouTube Transcript API provides a simple and reliable way to extract transcripts from YouTube videos programmatically. This complete reference covers authentication, request parameters, response formats, and practical examples.
+Want to test the API interactively? Try our
+Swagger UI
+where you can make live requests right in your browser.
+Base URL
+Section titled “Base URL”
+All API requests are made to:
+https://transcriptapi.com/api/v2
+Endpoints
+Section titled “Endpoints”
+The API provides the following endpoints:
+Endpoint
+Description
+Credits
+GET /youtube/transcript
+Extract video transcript (supports a
+language
+priority list)
+1
+GET /youtube/info
+Video metadata + available transcript languages
+Free
+GET /youtube/video/metadata
+Rich video metadata (structured description, channel, optional
+details
+/
+related
+)
+1
+GET /youtube/search
+Search videos, channels, playlists, or movies — with
+sort
+/
+upload_date
+/
+duration
+/
+features
+filters
+1
+GET /youtube/channel/resolve
+Resolve @handle/URL to channel ID
+Free
+GET /youtube/channel/info
+Channel profile / identity (title, handle, counts, tags, banners, tabs)
+1
+GET /youtube/channel/search
+Search within a channel (accepts @handle, URL, or UC… ID)
+1
+GET /youtube/channel/videos
+Paginated channel feed —
+tab=videos
+(default),
+shorts
+, or
+streams
+; optional
+sort
+1/page
+GET /youtube/channel/playlists
+Paginated channel playlists
+1/page
+GET /youtube/channel/posts
+Paginated community (Posts tab) content
+1/page
+GET /youtube/channel/sections
+Curated channel sections (
+featured
+Home page,
+podcasts
+,
+releases
+)
+1
+GET /youtube/channel/latest
+Latest 15 videos via RSS (accepts @handle, URL, or UC… ID)
+Free
+GET /youtube/playlist/videos
+Paginated playlist videos (accepts URL or playlist ID)
+1/page
+Quick Start
+Section titled “Quick Start”
+Here’s how to make your first API request:
+curl
+-X
+GET
+"
+https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ
+"
+\
+-H
+"
+Authorization: Bearer YOUR_API_KEY
+"
+Don’t have an API key yet?
+Get one from your dashboard
+.
+Expected Response:
+{
+"video_id"
+:
+"
+dQw4w9WgXcQ
+"
+,
+"language"
+:
+"
+en
+"
+,
+"transcript"
+: [
+{
+"text"
+:
+"
+Never gonna give you up
+"
+,
+"start"
+:
+0.0
+,
+"duration"
+:
+4.12
+},
+{
+"text"
+:
+"
+Never gonna let you down
+"
+,
+"start"
+:
+4.12
+,
+"duration"
+:
+3.85
+}
+],
+"length_seconds"
+:
+213
+,
+"lengthText"
+:
+"
+3:33
+"
+}
+Authentication
+Section titled “Authentication”
+The API uses Bearer token authentication. Include your API key in the
+Authorization
+header of every request:
+Authorization: Bearer YOUR_API_KEY
+Example:
+curl
+-X
+GET
+"
+https://transcriptapi.com/api/v2/youtube/transcript?video_url=...
+"
+\
+-H
+"
+Authorization: Bearer YOUR_API_KEY
+"
+Get your API key from
+your API Keys dashboard
+.
+YouTube Transcript
+Section titled “YouTube Transcript”
+Request Parameters
+Section titled “Request Parameters”
+video_url (required)
+Section titled “video_url (required)”
+The YouTube video URL or video ID to fetch transcripts for.
+Property
+Value
+Type
+string
+Pattern
+^([a-zA-Z0-9_-]{11}|https?://.\*)$
+Required
+Yes
+Accepted Formats:
+Full YouTube URL:
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Short YouTube URL:
+https://youtu.be/dQw4w9WgXcQ
+Video ID only:
+dQw4w9WgXcQ
+Examples:
+# Full URL
+?
+video_url
+=
+https://www.youtube.com/watch?
+v
+=
+dQw4w9WgXcQ
+# Short URL
+?
+video_url
+=
+https://youtu.be/dQw4w9WgXcQ
+# Video ID only
+?
+video_url
+=
+dQw4w9WgXcQ
+format (optional)
+Section titled “format (optional)”
+The output format for the transcript response.
+Property
+Value
+Type
+string
+Values
+json
+,
+text
+Default
+json
+json
+: Returns structured data with transcript segments
+text
+: Returns plain text transcript
+include_timestamp (optional)
+Section titled “include_timestamp (optional)”
+Whether to include timestamps in the transcript output.
+Property
+Value
+Type
+boolean
+Default
+true
+Behavior Matrix:
+Format
+include_timestamp
+Output
+json
+true
+Segments with
+text
+,
+start
+,
+duration
+json
+false
+Segments with only
+text
+text
+true
+Lines formatted as
+[123.45s] text
+text
+false
+Plain concatenated text
+send_metadata (optional)
+Section titled “send_metadata (optional)”
+Whether to include video metadata in the response.
+Property
+Value
+Type
+boolean
+Default
+false
+When enabled, includes:
+title
+: Video title
+author_name
+: Channel name
+author_url
+: Channel URL
+thumbnail_url
+: Video thumbnail
+language (optional)
+Section titled “language (optional)”
+A comma-separated
+priority list
+of language codes. The API returns the first one that’s available.
+Property
+Value
+Type
+string
+Default
+(omitted)
+— English, otherwise the video’s first available language
+Provide a list like
+de,en,asr
+; codes are tried left to right and the first available wins. If none resolve, you receive a
+404
+that lists the languages the video
+does
+offer.
+Codes are case-insensitive and region is ignored (
+en-GB
+/
+en-US
+→
+en
+,
+de-DE
+→
+de
+), so
+de
+matches a German track. Up to 10 codes.
+asr
+requests the video’s
+auto-generated
+captions (ASR = automatic speech recognition). Use
+asr-<code>
+(for example
+asr-hi
+) to request a spe
+
+===== https://transcriptapi.com/docs/getting-started/
+TITLE: Getting Started | TranscriptAPI.com
+ACCESSED: 2026-09-27
+
+Getting Started
+Getting Started
+Section titled “Getting Started”
+Welcome to TranscriptAPI! Get YouTube video transcripts through our REST API or seamlessly integrate with AI assistants using Model Context Protocol (MCP).
+Choose Your Integration Method
+Section titled “Choose Your Integration Method”
+REST API Integration
+Section titled “REST API Integration”
+Perfect for direct integration into your applications, scripts, and workflows.
+Quick Start:
+Sign up for an API key
+Make your first API request using the
+YouTube Transcript API
+Start fetching transcripts in your application
+View Complete API Reference →
+MCP (Model Context Protocol) Integration
+Section titled “MCP (Model Context Protocol) Integration”
+Ideal for AI assistants like Claude, ChatGPT, and custom agent workflows.
+Quick Start:
+Get your
+TranscriptAPI credentials
+Choose your platform:
+Claude Setup Guide
+ChatGPT Setup Guide
+OpenAI Agent Builder Guide
+Start analyzing YouTube videos in natural conversation
+Learn More About MCP Integration →
+What You Can Do
+Section titled “What You Can Do”
+With TranscriptAPI, you can:
+Extract transcripts from any YouTube video with captions
+Search YouTube videos and channels (paginated)
+Browse channel uploads with pagination
+Get latest channel videos (free, via RSS)
+Browse playlist contents with pagination
+Resolve channel handles to IDs (free)
+Get structured JSON or plain text formats
+Include video metadata (title, author, thumbnail)
+Control timestamp inclusion
+Integrate with AI workflows through MCP
+Next Steps
+Section titled “Next Steps”
+API Users
+: Check the
+for complete endpoint documentation
+MCP Users
+: Read the
+MCP documentation
+to understand authentication options
+Need Help?
+: Visit our
+Contact page
+Have Questions?
+Section titled “Have Questions?”
+Contact our support team
+for assistance with your integration.

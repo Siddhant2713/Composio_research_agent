@@ -1,0 +1,100 @@
+{
+  "app": "QuickBooks",
+  "number": 86,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:53:23.031712+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.intuit.com\",\n    \"https://developer.intuit.com/app/developer/qbo/docs/get-started\",\n    \"https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account\",\n    \"https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization\",\n    \"https://developer.intuit.com/app/developer/homepage\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.intuit.com",
+    "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+    "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization",
+    "https://developer.intuit.com/app/developer/homepage",
+    "https://docs.intuit.com/",
+    "https://developers.intuit.com/",
+    "https://api.intuit.com/",
+    "https://intuit.com/docs",
+    "https://intuit.com/developers",
+    "https://intuit.com/api",
+    "https://intuit.com/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.intuit.com",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.intuit.com/app/developer/homepage",
+      "reason": "page too thin (62 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.intuit.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.intuit.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://api.intuit.com/",
+      "reason": "HTTP 502",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint_url": "https://developer.intuit.com",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://developer.intuit.com (page too thin (62 chars)); https://developer.intuit.com/app/developer/qbo/docs/get-started (page too thin (62 chars)); https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account (page too thin (62 chars)); https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization (page too thin (62 chars)); https://developer.intuit.com/app/developer/homepage (page too thin (62 chars)); https://docs.intuit.com/ (ConnectError: [Errno -2] Name or service not known)"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:53:50.366843+00:00"
+}

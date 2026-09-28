@@ -1,0 +1,209 @@
+{
+  "app": "Apify",
+  "number": 55,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:56:57.861203+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.apify.com\",\n    \"https://docs.apify.com/api/v2\",\n    \"https://docs.apify.com/academy/api\",\n    \"https://console.apify.com/sign-up\",\n    \"https://apify.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.apify.com",
+    "https://docs.apify.com/api/v2",
+    "https://docs.apify.com/academy/api",
+    "https://console.apify.com/sign-up",
+    "https://apify.com/pricing",
+    "https://developer.apify.com/",
+    "https://developers.apify.com/",
+    "https://api.apify.com/",
+    "https://apify.com/docs",
+    "https://apify.com/developers",
+    "https://apify.com/api",
+    "https://apify.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.apify.com/sdk",
+    "https://docs.apify.com/sdk/js",
+    "https://docs.apify.com/sdk/python",
+    "https://docs.apify.com/get-started",
+    "https://docs.apify.com/cli/docs/reference",
+    "https://console.apify.com/account",
+    "https://sdk.apify.com/docs/api/apify",
+    "https://docs.apify.com/api/v2/webhook-get",
+    "https://docs.apify.com/sdk/js/docs/overview",
+    "https://docs.apify.com/cli/docs/quick-start",
+    "https://apify.com/contact-sales",
+    "https://apify.com/contact-sales/demo",
+    "https://apify.com/contact",
+    "https://apify.com/partners",
+    "https://docs.apify.com/api"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://console.apify.com/sign-up",
+      "reason": "page too thin (28 chars)"
+    },
+    {
+      "requested_url": "https://developer.apify.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    },
+    {
+      "requested_url": "https://api.apify.com/",
+      "reason": "HTTP 404"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.apify.com",
+      "requested_url": "https://docs.apify.com",
+      "status": 200,
+      "title": "Apify Documentation",
+      "chars": 3308,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/api/v2",
+      "requested_url": "https://docs.apify.com/api/v2",
+      "status": 200,
+      "title": "Apify API | Apify Documentation",
+      "chars": 4974,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/academy/api",
+      "requested_url": "https://docs.apify.com/academy/api",
+      "status": 200,
+      "title": "Tutorials on Apify API | Academy | Apify Documentation",
+      "chars": 407,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://apify.com/pricing",
+      "requested_url": "https://apify.com/pricing",
+      "status": 200,
+      "title": "Apify pricing - flexible plan + pay as you go \u00b7 Apify",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/",
+      "requested_url": "https://developers.apify.com/",
+      "status": 200,
+      "title": "Apify Documentation",
+      "chars": 3308,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/sdk",
+      "requested_url": "https://docs.apify.com/sdk",
+      "status": 200,
+      "title": "Apify Documentation",
+      "chars": 1695,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/sdk/js/docs/overview",
+      "requested_url": "https://docs.apify.com/sdk/js",
+      "status": 200,
+      "title": "Apify SDK for JavaScript | SDK for JavaScript | Apify Documentation",
+      "chars": 1546,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/sdk/python/docs/overview",
+      "requested_url": "https://docs.apify.com/sdk/python",
+      "status": 200,
+      "title": "Overview | SDK for Python | Apify Documentation",
+      "chars": 4184,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/get-started",
+      "requested_url": "https://docs.apify.com/get-started",
+      "status": 200,
+      "title": "Get started | Platform | Apify Documentation",
+      "chars": 2214,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.apify.com/cli/docs/reference",
+      "requested_url": "https://docs.apify.com/cli/docs/reference",
+      "status": 200,
+      "title": "Command reference | CLI | Apify Documentation",
+      "chars": 4981,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The Apify API (version 2) provides programmatic access to the Apify platform, organized around RESTful HTTP endpoints.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"You can find your API token on the Integrations page in the Apify Console. Use it in the request's Authorization header as Bearer <token> or as the token parameter in the URL.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The pricing page lists a Free plan that allows users to start for free with no credit card required.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"JavaScript\",\n      \"Python\",\n      \"Java\",\n      \"Rust\",\n      \".NET\",\n      \"PHP\",\n      \"Go\"\n    ],\n    \"notes\": \"The Apify API (version 2) is organized around RESTful HTTP endpoints and offers multiple official API clients.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"The documentation mentions discovering and using Actors with AI agents and LLMs via the Apify MCP server.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"The platform offers a self-serve free tier with no credit card required, along with a documented REST API and official SDKs that use API token authentication.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.apify.com/api/v2\",\n      \"claim\": \"The Apify API (version 2) is organized around RESTful HTTP endpoints and uses a secret API token in the Authorization header as Bearer <token> or as a token parameter.\"\n    },\n    {\n      \"url\": \"https://apify.com/pricing\",\n      \"claim\": \"A Free plan is available to start for free with no credit card required.\"\n    },\n    {\n      \"url\": \"https://docs.apify.com/api/v2\",\n      \"claim\": \"Lists stable and experimental API clients for Node.js, Python, Java, Rust, .NET, PHP, and Go.\"\n    },\n    {\n      \"url\": \"https://docs.apify.com\",\n      \"claim\": \"Mentions discovering and use Actors with AI agents and LLMs via Apify MCP server.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://docs.apify.com",
+    "one_liner": "The Apify API (version 2) provides programmatic access to the Apify platform, organized around RESTful HTTP endpoints.",
+    "auth": {
+      "method": "api_key",
+      "notes": "You can find your API token on the Integrations page in the Apify Console. Use it in the request's Authorization header as Bearer <token> or as the token parameter in the URL."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The pricing page lists a Free plan that allows users to start for free with no credit card required."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "JavaScript",
+        "Python",
+        "Java",
+        "Rust",
+        ".NET",
+        "PHP",
+        "Go"
+      ],
+      "notes": "The Apify API (version 2) is organized around RESTful HTTP endpoints and offers multiple official API clients."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "The documentation mentions discovering and using Actors with AI agents and LLMs via the Apify MCP server."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "The platform offers a self-serve free tier with no credit card required, along with a documented REST API and official SDKs that use API token authentication."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.apify.com/api/v2",
+        "claim": "The Apify API (version 2) is organized around RESTful HTTP endpoints and uses a secret API token in the Authorization header as Bearer <token> or as a token parameter.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://apify.com/pricing",
+        "claim": "A Free plan is available to start for free with no credit card required.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.apify.com/api/v2",
+        "claim": "Lists stable and experimental API clients for Node.js, Python, Java, Rust, .NET, PHP, and Go.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.apify.com",
+        "claim": "Mentions discovering and use Actors with AI agents and LLMs via Apify MCP server.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:57:12.080042+00:00"
+}

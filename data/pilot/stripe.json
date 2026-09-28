@@ -152,8 +152,8 @@
       "notes": "Stripe uses API keys (secret, restricted, or publishable) for authentication, typically passed via HTTP Basic Auth as the username. Bearer token authentication is also supported for cross-origin requests."
     },
     "access": {
-      "type": "self_serve",
-      "notes": "Users can sign up for an account and obtain API keys immediately via the dashboard without manual approval."
+      "notes": "Users can sign up for an account and obtain API keys immediately via the dashboard without manual approval.",
+      "tier": "self_serve"
     },
     "api_surface": {
       "rest": true,

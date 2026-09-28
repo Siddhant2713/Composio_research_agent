@@ -1,0 +1,181 @@
+{
+  "app": "ClickUp",
+  "number": 77,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:19:45.828199+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://clickup.com/api\",\n    \"https://doc.clickup.com/d/h/ad-900/d73bdf7026514ca\",\n    \"https://help.clickup.com/hc/en-us/articles/6312175417495-Intro-to-ClickUp-API\",\n    \"https://clickup.com/developers\",\n    \"https://clickup.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://clickup.com/api",
+    "https://doc.clickup.com/d/h/ad-900/d73bdf7026514ca",
+    "https://help.clickup.com/hc/en-us/articles/6312175417495-Intro-to-ClickUp-API",
+    "https://clickup.com/developers",
+    "https://clickup.com/pricing",
+    "https://docs.clickup.com/",
+    "https://developer.clickup.com/",
+    "https://developers.clickup.com/",
+    "https://api.clickup.com/",
+    "https://clickup.com/docs",
+    "https://clickup.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.clickup.com/docs/authentication",
+    "https://help.clickup.com/hc/en-us/",
+    "https://developer.clickup.com/reference",
+    "https://developer.clickup.com/docs/webhooks",
+    "https://clickup.com/features/2fa",
+    "https://help.clickup.com/hc/en-us/articles/6327741965591-Two-factor-authentication?_gl=1*di3knk*_gcl_au*MzIyMDQzMDkuMTY4NjI2MTY2Mw..",
+    "https://help.clickup.com/",
+    "https://clickup.com/partners",
+    "https://clickup.com/plans/enterprise"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://doc.clickup.com/d/h/ad-900/d73bdf7026514ca",
+      "reason": "page too thin (7 chars)"
+    },
+    {
+      "requested_url": "https://help.clickup.com/hc/en-us/articles/6312175417495-Intro-to-ClickUp-API",
+      "reason": "HTTP 403"
+    },
+    {
+      "requested_url": "https://clickup.com/developers",
+      "reason": "HTTP 403"
+    },
+    {
+      "requested_url": "https://docs.clickup.com/",
+      "reason": "HTTP 403"
+    },
+    {
+      "requested_url": "https://help.clickup.com/hc/en-us/",
+      "reason": "HTTP 403"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.clickup.com",
+      "requested_url": "https://clickup.com/api",
+      "status": 200,
+      "title": "ClickUp",
+      "chars": 510,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://clickup.com/pricing",
+      "requested_url": "https://clickup.com/pricing",
+      "status": 200,
+      "title": "ClickUp Pricing and Plans",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.clickup.com/",
+      "requested_url": "https://developer.clickup.com/",
+      "status": 200,
+      "title": "ClickUp",
+      "chars": 510,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.clickup.com/",
+      "requested_url": "https://developers.clickup.com/",
+      "status": 200,
+      "title": "ClickUp",
+      "chars": 378,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "requested_url": "https://developer.clickup.com/docs/authentication",
+      "status": 200,
+      "title": "Authentication",
+      "chars": 2800,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.clickup.com/reference/getaccesstoken",
+      "requested_url": "https://developer.clickup.com/reference",
+      "status": 200,
+      "title": "Get Access Token",
+      "chars": 198,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/webhooks",
+      "requested_url": "https://developer.clickup.com/docs/webhooks",
+      "status": 200,
+      "title": "Webhooks",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://clickup.com/features/2fa",
+      "requested_url": "https://clickup.com/features/2fa",
+      "status": 200,
+      "title": "Project Management Software with 2FA | ClickUp\u2122",
+      "chars": 897,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"ClickUp offers a Public REST API and an MCP Server for building integrations, automations, and AI workflows.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"ClickUp supports OAuth 2.0 (Authorization Code grant) for apps and integrations, as well as personal API tokens for personal use or testing.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for ClickUp and generate personal API tokens or create new OAuth apps directly through their account settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"The public API provides REST endpoints and webhooks, along with an MCP Server.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"ClickUp provides an MCP Server to connect AI assistants directly with ClickUp.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials can be created immediately inside an account, and the public API is thoroughly documented with OAuth and personal token options.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.clickup.com\",\n      \"claim\": \"Mentions the Public API, MCP Server, Webhooks, and OAuth flow.\"\n    },\n    {\n      \"url\": \"https://developer.clickup.com/docs/authentication\",\n      \"claim\": \"Explains personal API tokens and the OAuth 2.0 Authorization Code grant workflow.\"\n    },\n    {\n      \"url\": \"https://developer.clickup.com/docs/webhooks\",\n      \"claim\": \"Describes webhook creation, wildcard usage, event payloads, and headers.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://clickup.com/api",
+    "one_liner": "ClickUp offers a Public REST API and an MCP Server for building integrations, automations, and AI workflows.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "ClickUp supports OAuth 2.0 (Authorization Code grant) for apps and integrations, as well as personal API tokens for personal use or testing."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for ClickUp and generate personal API tokens or create new OAuth apps directly through their account settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "The public API provides REST endpoints and webhooks, along with an MCP Server."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "ClickUp provides an MCP Server to connect AI assistants directly with ClickUp."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials can be created immediately inside an account, and the public API is thoroughly documented with OAuth and personal token options."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.clickup.com",
+        "claim": "Mentions the Public API, MCP Server, Webhooks, and OAuth flow.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.clickup.com/docs/authentication",
+        "claim": "Explains personal API tokens and the OAuth 2.0 Authorization Code grant workflow.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.clickup.com/docs/webhooks",
+        "claim": "Describes webhook creation, wildcard usage, event payloads, and headers.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:19:59.348307+00:00"
+}

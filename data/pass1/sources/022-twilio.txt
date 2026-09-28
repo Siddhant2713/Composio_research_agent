@@ -1,0 +1,735 @@
+===== https://www.twilio.com/en-us
+TITLE: Conversational AI and APIs for SMS, Email, Voice | Twilio
+ACCESSED: 2026-09-27
+
+The platform for conversations in the AI era
+The Twilio platform empowers humans and AI agents to work together, coordinate across channels, and pick up every customer conversation where the last one left off.
+Explore what's possible
+Free trial
+No credit card required
+Flexible pricing
+The infrastructure behind every magical customer moment
+Intelligent
+self-service
+The Twilio platform turns every interaction — including first contact — into a personalized experience. AI agents draw from internal knowledge and real-time data so every conversation feels like a natural dialogue.
+Products
+Voice
+Conversation Orchestrator
+Conversation Relay
+Conversation Intelligence
+Conversation Memory
+Contextual
+hand-off
+AI agents know when to bring in a human based on complexity or customer intent. Conversations are transferred with full context, so customers never have to repeat themselves.
+Products
+Voice
+Conversation Orchestrator
+Conversation Intelligence
+Conversation Memory
+Cross-channel
+continuity
+Customers can easily switch between channels like chat, text, voice, and email without interruption.
+Products
+Voice
+RCS
+Conversation Intelligence
+Conversation Memory
+Conversation Orchestrator
+Persistent
+memory
+Twilio unifies customer data into a living memory, offering insight into a person's preferences, interests, and sentiment. This way, you can anticipate customer needs in the moment without them having to ask.
+Products
+Conversation Memory
+Conversation Intelligence
+Conversation Orchestrator
+Segment Engage
+RCS
+Remember every customer,
+reach them on any channel
+The Twilio platform connects channels, customer data, and AI orchestration to ensure every interaction, whether it's between humans or AI agents, feels continuous, contextual, and personal.
+Discover the Twilio Platform
+Building blocks for every conversation
+Your toolkit is expanding. Discover a new generation of building blocks designed to orchestrate context-rich conversations across channels, for humans and AI agents.
+View all products
+Conversations
+New
+Build continuous conversations with persistent memory, intelligence, and orchestration for humans and AI.
+Start conversations
+Messaging
+Send, receive, and manage SMS, RCS, WhatsApp, MMS, and more on our globally reliable platform.
+Send messages
+Email
+Deliver email at incredible scale with the trusted Twilio SendGrid Email API.
+Send emails
+Voice
+Build voice experiences that strengthen customer connections  while unlocking ROI with data and AI.
+Make calls
+User authentication
+Fight fraud and keep customer accounts secure with verification and identity lookup tools.
+Verify users
+Customer data
+Unify clean, consented customer data from any source for real-time insights on every customer.
+Connect data
+Build. Without limits.
+Sign up for a free Twilio account and grab one of our official server-side SDKs to get started. Send your first text message, phone call, or email in minutes.
+View docs
+# Download the helper library from https://www.twilio.com/docs/python/install
+import os
+from twilio.rest import Client
+
+# Find your Account SID and Auth Token at twilio.com/console
+# and set the environment variables. See http://twil.io/secure
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
+client = Client(account_sid, auth_token)
+
+message = client.messages.create(
+                              body='Hi there',
+                              from_='+15017122661',
+                              to='+15558675310'
+                          )
+
+print(message.sid)
+// Install the C# / .NET helper library from twilio.com/docs/csharp/install
+using System;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Find your Account SID and Auth Token at twilio.com/console
+        // and set the environment variables. See http://twil.io/secure
+        string accountSid = Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID");
+        string authToken = Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN");
+
+        TwilioClient.Init(accountSid, authToken);
+
+        var message = MessageResource.Create(
+            body: "Hi there",
+            from: new Twilio.Types.PhoneNumber("+15017122661"),
+            to: new Twilio.Types.PhoneNumber("+15558675310")
+        );
+
+        Console.WriteLine(message.Sid);
+    }
+}
+<?php
+
+// Update the path below to your autoload.php,
+// see https://getcomposer.org/doc/01-basic-usage.md
+require_once '/path/to/vendor/autoload.php';
+
+use Twilio\Rest\Client;
+
+// Find your Account SID and Auth Token at twilio.com/console
+// and set the environment variables. See http://twil.io/secure
+$sid = getenv("TWILIO_ACCOUNT_SID");
+$token = getenv("TWILIO_AUTH_TOKEN");
+$twilio = new Client($sid, $token);
+
+$message = $twilio->messages
+                  ->create("+15558675310", // to
+                           ["body" => "Hi there", "from" => "+15017122661"]
+                  );
+
+print($message->sid);
+# Download the hel
+
+===== https://www.twilio.com/docs
+TITLE: Docs: API Reference, Tutorials, and Integration | Twilio
+ACCESSED: 2026-09-27
+
+Twilio Docs
+Build better and engage your customers across all channels with our API reference documentation, quickstarts, SDKs and multi-language code samples.
+Discover our featured
+content
+Get started with Twilio
+essentials
+Start building with AI and our developer
+toolkit
+Conversations
+Communications
+Authentication
+Customer data
+Builder tools
+Support and Services
+Conversations
+Turn fragmented interactions into continuous conversations with persistent memory, intelligent orchestration, and real-time context for humans and AI agents.
+Conversation Memory
+Give agents (human or AI) persistent memory across channels and sessions by extracting intelligence from conversations.
+Conversation Orchestrator
+Connect channels into one continuous conversation that persists, even as an interaction moves across channels or teams.
+Conversation Intelligence
+Turn voice and messaging interactions into valuable context with AI-powered language transcription and analysis.
+Conversation Relay
+Integrate voice AI into your communications stack to power smooth, human-like customer conversation at scale.
+Communications
+Twilio APIs give you flexibility, global reach, and reliable deliverability to connect with customers anywhere.
+Messaging APIs
+Send and receive text messages at scale with multichannel APIs for SMS, RCS, WhatsApp, MMS, and more.
+Twilio SendGrid Email API
+Create, send, and manage emails at scale with built-in cloud connections and authentication to maximize inbox placement.
+Voice API
+Add intelligent, customizable voice calling to your systems for smarter, more impactful customer conversations.
+Phone Numbers
+Get access to toll-free, A2P 10DLC, short codes, and Alphanumeric Sender IDs in over 100 countries.
+Elastic SIP Trunking
+Connect your communications platform with flexible, secure SIP trunking for reliable, scalable global voice.
+Twilio Flex
+Connect your customers to the right virtual or live agent by orchestrating inbound and outbound interactions.
+Video
+Enable global, high quality video calls in your application to maintain a unique, human touch with customers.
+Marketing Campaigns
+Design and send captivating emails at scale with dynamic templates, real-time validation, deliverability insights, and advanced analytics.
+Trust Hub
+Centralized onboarding for SHAKEN/STIR, CNAM, and phone number verification.
+Event Streams
+Get a unified, real-time feed of all Twilio events and interactions streamed to multiple destinations.
+Interconnect
+Protect your communications with end-to-end, network-level security.
+TaskRouter
+Skills-based routing system that provides the heart of a contact center that you can control from your code.
+Sync
+Sync real-time, two-way data across devices and the cloud with no custom infrastructure or heavy lifting required.
+Twilio Email
+Build and scale email workflows alongside other channels like SMS, WhatsApp, and more.
+Authentication
+Fight fraud and keep customer accounts secure without adding friction to your user experience.
+Verify
+Verify users with a fully managed authentication API optimized for speed, reliability, and fraud prevention.
+Lookup
+Verify phone numbers, reduce fraud, and improve deliverability with real-time carrier, line type, and identity intelligence.
+Customer Data
+Unlock insights from your customer interactions to learn exactly how, when, and where they want to hear from you.
+Twilio Segment Connections
+Connect all your first-party data in a single platform to power personalized customer experiences.
+Twilio Protocols
+Take control of data quality at scale with intuitive data controls, a shared data dictionary, and real-time validation.
+Twilio Unify
+Unify customer data across channels, track real-time interactions, and personalize at scale.
+Twilio Engage
+Personalized omnichannel campaigns with cross-channel orchestration on a data-first platform.
+Twilio Privacy Portal
+Automate and scale data privacy to keep your customer data secure and streamline regulatory compliance.
+Builder Tools
+Build, deploy, and operate apps at scale with Twilio developer tools.
+Serverless
+A serverless environment to build communication apps with no servers to spin up or infrastructure to maintain.
+Studio
+Quickly connect channels and orechstrate interactions with a visual workflow builder on Twilio's serverless architecture.
+Functions
+A serverless environment to quickly create production-grade, event-driven Twilio applications.
+Support and Services
+Accelerate time to value with Twilio experts for solution design, deployment, and 24/7 support across your customer engagement stack.
+Support Plans
+Basic to personalized support plans to get the help you need for your Twilio account.
+Partners
+Our network of trusted, reliable partners who can help you build your Twilio use case.
+Professional Services
+A team of Twilio experts to help you get your use case to production sooner or scale faster.
+Featured content
+Dive into our handpicked selection of developer-focused content.
+One-time password (OTP)
+Create your first verifica
+
+===== https://login.twilio.com/u/signup?state=hKFo2SBGUkVxN3BNaEZWdzRKa09iUGVCVWVMZllyMFU4ZXZQZaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFFETU9JbkM1ZTRTX0xuR1NEbnFDMzg1NkdLZnRUa296o2NpZNkgYm1pSTNGWGZzSmxqUEk3UzBUeWl3Znp3S1JsTEFrVnc
+TITLE: Twilio | Try Twilio Free
+ACCESSED: 2026-09-27
+
+Twilio | Try Twilio Free
+Start your free trial today to test out the Twilio platform with no strings attached:
+No credit card required
+Free trials available
+Access to all products across the Twilio platform
+Get up and running
+Verify your email address & phone number
+Tell us what you want to build first
+Start building!
+*Free trials may be limited by time, features, and usage caps,
+and are subject to change without notice.
+Already have an account?
+Login
+Or
+
+===== https://www.twilio.com/en-us/pricing
+TITLE: Twilio Pricing | Twilio
+ACCESSED: 2026-09-27
+
+Twilio pricing
+Start for free. Then pay as you go.
+Sign up for a free trial—no credit card required
+Pay as you go with usage-based pricing
+Unlock volume discounts as you scale
+Pricing current as of July 2026
+Jump to:
+Conversations
+Communications
+Authentication
+Customer Data
+Builder tools
+Conversations
+Conversation Orchestrator
+Keep conversations connected across channels.
+Starts at $0.0002/1k characters for conversation ingestion.
+View Orchestrator pricing
+Conversation Intelligence
+Extract context from real-time conversations.
+Starts at $0.005/1k characters for Twilio-authored Operators; $0.002/1k input characters and $0.018/1k output characters for Custom Operators
+View Intelligence pricing
+Conversation Memory
+Build a persistent memory of customer interactions.
+Starts at $0.0028/1k characters for memory generation - input + output. $0.007/memory recall.
+View Memory pricing
+Enterprise Knowledge
+Build your policies, documents, and reference materials into your Conversation Memory.
+Starts at $0.018/GB-Hour for knowledge storage and $0.005/retrieval for knowledge retrieval.
+View Knowledge pricing
+Conversation Relay
+Integrate advanced voice AI for natural conversations.
+Starts at $0.07/min.
+View Relay pricing
+Communications
+SMS
+Send and receive SMS and MMS messages.
+Starts at $0.0083 to send or receive a message.
+View SMS pricing
+RCS
+Send and receive RCS messages.
+Starts at $0.0083 to send or receive a message.
+View RCS pricing
+WhatsApp Business API
+Send and receive WhatsApp messages.
+Starts at $0.005 to send or receive a WhatsApp message. Prices vary by use case.
+View WhatsApp pricing
+Conversations API
+Cross‑channel conversations on SMS, WhatsApp, Chat, and MMS.
+Starts at $0.05 per active user per month.
+View Conversations pricing
+Twilio SendGrid Email API
+Deliver email at scale with our email API.
+Start for free with 100 emails/day. Paid plans start at $19.95/month.
+View Sendgrid Email API pricing
+Twilio Email
+Email that works alongside native Twilio channels like SMS, WhatsApp, and more.
+Starts at $0.0013/email.
+View Email pricing
+Twilio SendGrid Marketing Campaigns
+Manage and automate email marketing campaigns.
+Start with a free trial with 100 emails/day. Paid plans start at $15/month.
+View Campaigns pricing
+Voice APIs
+Embed reliable calling into any application.
+Starts at $0.0085/min to receive and $0.014/min to make a call.
+View Voice pricing
+Elastic SIP Trunking
+Connectivity for global VoIP infrastructure.
+Starts at $0.0045/min for origination and $0.007/min for termination.
+View SIP pricing
+Twilio Flex
+Customizable cloud contact center platform.
+Start with 5,000 hours free. $1/active user hour or $150/named user per month.
+View Flex pricing
+Twilio Video
+Embed reliable video calling into any application.
+Start with 5,000 hours free. $1/active user hour or $150/named user per month.
+View Video pricing
+Interconnect
+Private connections to protect your communications.
+Starts at $0.01 per inbound caller identification request.
+View Interconnect pricing
+TaskRouter
+A skills‑based routing system to direct tasks to the right employee.
+First 100 tasks/month are free, then $0.06/task.
+View docs
+Twilio for Salesforce
+Send Twilio SMS from Salesforce.
+Start with a 30-day free trial, then $15 per seat per month.
+View Salesforce pricing
+Authentication
+Verify
+Verify users to stop account fraud.
+Starts at $0.05/verification.
+View Verify pricing
+Lookup
+Verify phone number validity.
+Starts at $0.01 per inbound caller identification request. Prices vary by request type.
+View Lookup pricing
+Customer Data
+Connections
+Connect all your first-party data.
+Starts at $120/month for up to 10k visitors/month. Try free for 14 days.
+View Connections pricing
+Protocols
+Take control of data quality at scale.
+Add-on to Connections Business or CDP plans. Pricing is customized based on your needs.
+View CDP pricing
+Unify
+Unify customer data across channels.
+Unify is included in CDP plans. Pricing is customized based on your needs.
+View CDP pricing
+Twilio Engage
+Personalized multichannel campaigns.
+Engage is included in CDP plans. Pricing is customized based on your needs.
+View CDP pricing
+Twilio Segment CDP
+The leading CDP to unlock customer data.
+Pricing is customized based on your needs.
+View CDP pricing
+Builder tools
+Studio
+Build apps with a drag‑and‑drop editor.
+Starts at $0.0025 per flow execution.
+View Studio pricing
+Functions
+Create event-driven microservices on Twilio.
+Start with 10,000 free invocations, then $0.0001 per invocation.
+View Functions pricing
+Assets
+A serverless environment to run code.
+
+===== https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup
+TITLE: Lookup API Pricing | Twilio
+ACCESSED: 2026-09-27
+
+Pricing current as of August 2026
+Formatting and validation
+Validate and reformat phone numbers automatically to match national and global dialing standards for optimal deliverability.
+Free
+Inbound caller identification
+Identify inbound callers then personalize outreach using the verified caller or business name to improve conversions, security, and customer experience. Only available in the US.
+$0.01
+per request
+Identity match
+Prevent bots and false account creation. Confirm the ownership of a mobile phone number by comparing user-supplied data against authoritative sources.
+$0.1
+per request*
+* Prices vary per country. More information on
+docs
+.
+Reassigned number risk
+Get a risk assessment for if a number has been reassigned since the user’s last consent date.
+0-1,000
+$0.02
+1,000-10,000
+$0.014
+10,000-50,000
+$0.0125
+50,000-200,000
+$0.0085
+200,000-500,000
+$0.0075
+500,000-2,000,000
+$0.003
+2,000,000-6,000,000
+$0.0025
+6,000,000+
+$0.0015
+Line type intelligence
+Identify the carrier and phone line type from mobile, landline, fixed VoIP, non-fixed VoIP, toll free, and more to mitigate fake accounts, scrub contact lists, and improve deliverability.
+$0.008
+per request
+Line Status
+Validate if the phone number is active or reachable so you can increase engagement and reduce costs on users who will not convert.
+0-100,000
+$0.007
+100,001-500,000
+$0.0063
+500,001-1,000,000
+$0.0056
+1,000,001-2,500,000
+$0.0049
+2,500,001-5,000,000
+$0.00455
+5,000,001-10,000,000
+$0.0042
+>10,000,000
+$0.00385
+SMS Pumping Risk Score
+Powered by advanced machine learning models, SMS Pumping Risk Score can effectively identify and flag malicious behavior associated with phone numbers involved in SMS Pumping Fraud.
+ROW
+$0.025
+per request
+NAMER
+Free
+SIM swap and call forwarding
+Detect SIM swap to stop fraud and account takeovers with timestamps and dates of any SIM changes, plus configurable risk tolerance that enables accurate modeling and metrics.
+Let's find the right products
+              for you
+Generating your product
+              picks...
+See your product picks
+Expand
+Take a look
+For the best recommendations, tell me your use case, goals, requirements, etc.
+I need to track which ads drive calls
+I want to personalize customer support
+I want to follow up with leads automatically
+Minimize
+Generating...
+Complete
+Thinking...
+Finding the best products for your use case
+R.I.P.
+Something went wrong.
+Retry
+Close modal
+Generating Toolkit...
+See your toolkit
+What's in your toolkit
+Add-ons to enhance your basic toolkit
+Ask about your toolkit
+Ask about Twilio products, features, and
+                  capabilities.
+Thinking...
+We've run into an issue, please try again.
+Looking for inspiration? Ask me one of these!
+Ready, set, build! Resources to get started
+Put the
+toolkit to use
+Download toolkit
+This product recommendation tool is powered by a hybrid AI system (Twilio and OpenAI) and may generate
+          information that is inaccurate or incomplete. Recommendations are algorithmic, not professional advice. You
+          should independently verify this information before use. By using this tool, you agree that your input is
+          processed by both Twilio's internal systems and external OpenAI models to generate a response. You are
+          responsible for any information you share. Twilio is not responsible for your use of this generated
+          information, and this use does not modify your Twilio agreement if one is in place. Review our Privacy Notice
+          for additional details on how we use data.
+
+===== https://www.twilio.com/en-us/help/sales
+TITLE: Talk to Sales | Twilio
+ACCESSED: 2026-09-27
+
+Get expert answers, and tailored product guidance, fast.
+Complete this form and within one business day, you'll receive tailored guidance on which Twilio, Segment, or SendGrid products fit your use case. You’ll also get pricing, compliance details, and a clear path to production at your scale.
+Talk to our team
+Fill out the form and we will be in touch within one business day.
+Thank you
+We’ve received your request. A member of the Twilio Sales team will review your information and be in contact within 1 business day to discuss your use case.
+Oops! Something went wrong, please try submitting the form again.
+...Or, start building right away
+No credit card required
+Experiment with SMS, Voice, WhatsApp, Email, Conversations, Connections, and more
+Full API access with generous free usage tiers
+Scale when you are ready with pay-as-you-go pricing
+Get started in minutes.
+Get support
+Visit our Help Center
+Go to the Help Center for support plans, FAQs, billing, etc.
+Report a violation
+Twilio may contact you via call or email if you’ve opted in, but we don’t allow spam. Report any unwanted messages or calls.
+Don’t take our word for it. Over 335,000 companies build with Twilio
+Leverage Twilio’s scalability and reliability
+38B+
+voice calls
+262B+
+messages sent or received
+2.4T+
+emails sent
+271B
+Segment events processed
+
+===== https://www.twilio.com/en-us/user-authentication-identity
+TITLE: User Authentication & Identity | Twilio
+ACCESSED: 2026-09-27
+
+Twilio has acquired Stytch auth.
+Learn more
+Treat your customers to a VIP authentication experience
+Remove the friction from onboarding and transactions with authoritative phone data validation and real-time verification. Validate users automatically at any touchpoint to identify then fast-track real customers into
+no-input verification
+. Utilize our
+Verify
+and
+Lookup
+APIs together to supercharge your authentication solutions and get the most from your investment.
+4.5B+
+verifications each year
+130B
+messages sent and received yearly
+99.95% +
+monthly API uptime
+1500+
+global carrier partner
+New user activation without friction
+Discreetly confirm user identities with carrier signal data and possession factors. With
+Silent Network Authentication
+you can trigger no-input onboarding for real users—or added security to halt fake account creation.
+Repeat authentication in less time
+Fast-track real users into a
+frictionless login flow
+. Use mobile device identity signals like SIM swaps and more to spot real users, apply extra security as needed, and mitigate account takeover.
+Online transaction protection
+Enable effortless online purchasing and payments with automated validation in milliseconds. Step-up
+authentication triggers when risk signals
+are detected for an added layer of fraud protection.
+Multichannel account management
+Reduce tickets and support costs by streamlining user account changes, password resets, and more across preferred
+channels like SMS, voice, email, push, and WhatsApp
+.
+Verify API
+Add effortless two-factor authentication to onboarding and transaction flows with one multichannel, turnkey API.
+Mitigate SMS traffic pumping fraud and improve conversion with Fraud Guard.
+Optimize user verification over SMS, Silent Network Authentication, WhatsApp and more.
+Explore the Verify API
+Lookup API
+Automatically validate users behind-the-scenes with mobile carrier data to reduce fraud and abandonment.
+Boost conversions using mobile identity signals to personalize engagement, streamline onboarding, and optimize deliverability.
+Mitigate fraud by triggering added security as needed with risk signal detection, step-up authentication, and more.
+Explore the Lookup API
+Stytch by Twilio
+Make your application enterprise and agent ready with SSO, device-level risk intelligence, and scoped access for AI agents.
+Offer SSO to enterprise accounts that’s SAML/OIDC-compliant and easily configurable per customer.
+Reduce fraud and abuse with device intelligence that triggers real-time blocks, challenges, or rate limiting.
+Secure AI agent and MCP workflows by granting scoped access to agents acting on behalf of users.
+Explore Stytch by Twilio
+"Secure onboarding and account security is an important focus for us and our customers. We use Twilio to verify phone numbers and to make sure that the right account or right supplier is behind the right phone number...Twilio was a great decision for us."
+Andrew Solomon
+Sr. Software Engineer
+Resources
+5 best practices for seamless and secure user onboarding
+Learn how to build an onboarding process that satisfies customers while keeping both their accounts and your platform secure from day one.
+Read the e-book
+Cut acquisition costs
+Reward customers with a lifecycle of friction-free authentication that drives conversions and lifetime value, plus weeds out fake users to reduce fraud and boost marketing returns.
+Optimize data and decision making
+Collect reliable data from verified end-users only. Our mobile carrier signals confirm user identities at signup, helping you make smart decisions throughout the customer journey.
+Customize multichannel at scale
+Deliver verification experiences that your customers prefer. With easy-to-integrate APIs and developer tools, it’s simple to build, customize, and scale your perfect solution.
+Let's find the right products
+              for you
+Generating your product
+              picks...
+See your product picks
+Expand
+Take a look
+For the best recommendations, tell me your use case, goals, requirements, etc.
+I need to track which ads drive calls
+I want to personalize customer support
+I want to follow up with leads automatically
+Minimize
+Generating...
+Complete
+Thinking...
+Finding the best products for your use case
+R.I.P.
+Something went wrong.
+Retry
+Close modal
+Generating Toolkit...
+See your toolkit
+What's in your toolkit
+Add-ons to enhance your basic toolkit
+Ask about your toolkit
+Ask about Twilio products, features, and
+                  capabilities.
+Thinking...
+We've run into an issue, please try again.
+Looking for inspiration? Ask me one of these!
+Ready, set, build! Resources to get started
+Put the
+toolkit to use
+Download toolkit
+This product recommendation tool is powered by a hybrid AI system (Twilio and OpenAI) and may generate
+          information that is inaccurate or incomplete. Recommendations are algorithmic, not professional advice. You
+          should independently verify this information before use. By using this 
+
+===== https://www.twilio.com/en-us/user-authentication-identity/verify
+TITLE: Verify API | Twilio
+ACCESSED: 2026-09-27
+
+Verify API at a glance
+Get a short-and-sweet summary of Verify capabilities, use cases, and pricing in our
+Twilio Verify fact sheet.
+Verify is a turnkey API for user verification. Add two-factor authentication across channels like SMS, email,
+WhatsApp
+, and TOTP or implement frictionless verification with Silent Network Authentication (SNA).
+Quickly integrate a one-time password authentication (OTP) solution that handles your connectivity, channels, code generation, fraud monitoring, and prevention.
+And now, you can add Stytch by Twilio
+Device Fingerprinting
+for device-level risk signals that inform when to step up verification.
+Explore docs
+Build verification steps that feel like a feature, not a frustration
+Trusted user verification with a downright delightful user experience.
+Signup verification
+Prevent fake account creation and create a secure signup experience for new users with one-time passwords that can be delivered across channels.
+Intuit set up one-time password (OTP) SMS messages to authenticate new customers across the globe while eliminating any friction along the way.
+94%
+deliverability across the globe
+200+
+countries deployed in 3 months
+Read Intuit's story
+Login protection
+Protect users from account takeovers by sending verification codes upon login as a method of two-factor authentication (2FA).
+Stripe keeps millions of users secure by asking them to verify their identities quickly and easily over phone calls or SMS with Verify.
+~70%
+of user verifications handled by Twilio Verify
+6
+point improvement in login success rates in the US
+Read Stripe's story
+Secure transactions
+Validate users in real-time so you can confidently authorize high-value online transactions and protect customers against fraud.
+Bitso implemented Verify to improve global delivery for verification OTPs. They depend on reliable user verification messages to keep customers’ financial accounts and transactions secure.
+99%
+of users successfully verified
+82%
+of users completed password resets
+Read Bitso's story
+Verify API features
+Global user verification is hard—Verify makes it easy.
+100% Protection from SMS pumping fraud with Fraud Guard
+Fraud Guard has already saved customers over $82 million by blocking 747 million fraud attempts
+1
+. With first-to-market innovation, Fraud Guard offers 100% protection against SMS pumping fraud.
+Learn more about Fraud Guard
+Verify procures and manages short codes, long codes, toll free, and global alpha-sender IDs to accelerate global expansion.
+Improve delivery rates with carrier-approved messages templates that automatically translate across 42 languages.
+Dashboards provide conversion and success rates per region and channel, as well as SMS fraud trends to optimize against fraud.
+Secure authentication to protect end users, accounts, and transactions without requiring users to wait or leave your app.
+Develop compliant healthcare and financial service applications that do not require users to provide personally identifiable information (PII).
+Embed push functionality in your apps easily.
+Verify uses premium telephony routes on Twilio's Super Network to prioritize deliverability and speed.
+Verify's built-in platform protection for service rate limits give you turnkey protections with flexibility.
+OTP delivery via SMS, WhatsApp, voice, and email, all managed through a single API.
+Verify manages the complexity of changing carrier and government regulations in 200+ regions and countries.
+Integrate Verify into your app in as little as one sprint with its developer-first APIs and client libraries for a quick and confident deployment.
+# Download the helper library from https://www.twilio.com/docs/ruby/install
+require 'rubygems'
+require 'twilio-ruby'
+
+# Find your Account SID and Auth Token at twilio.com/console
+# and set the environment variables. See http://twil.io/secure
+account_sid = ENV['TWILIO_ACCOUNT_SID']
+auth_token = ENV['TWILIO_AUTH_TOKEN']
+@client = Twilio::REST::Client.new(account_sid, auth_token)
+
+verification = @client.verify
+                      .v2
+                      .services('VAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+                      .verifications
+                      .create(to: '+15017122661', channel: 'sms')
+
+puts verification.sid
+# Download the helper library from https://www.twilio.com/docs/python/install
+import os
+from twilio.rest import Client
+
+# Find your Account SID and Auth Token at twilio.com/console
+# and set the environment variables. See http://twil.io/secure
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
+client = Client(account_sid, auth_token)
+
+verification = client.verify \
+                     .v2 \
+                     .services('VAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX') \
+                     .verifications \
+                     .create(to='+15017122661', channel='sms')
+
+print(verification.sid)
+<?php
+
+// Update the path below to your autoload.php,
+// see https://getcomposer.org/doc/01-basic-usage.md
+req

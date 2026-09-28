@@ -1,0 +1,1039 @@
+===== https://www.hubspot.com/
+TITLE: HubSpot | Software & Tools for your Business - Homepage
+ACCESSED: 2026-09-27
+
+Play video
+All your customer data, right at your fingertips.
+Play video
+Marketing, sales, and service, finally on the same page.
+Play video
+AI you control. Results you can trust.
+Previous
+Next
+Play video
+All your customer data, right at your fingertips.
+Play video
+Marketing, sales, and service, finally on the same page.
+Play video
+AI you control. Results you can trust.
+Marketing Hub
+®
+Attract and convert the right leads.
+Run campaigns, personalize content, and track it all.
+Learn more
+about Marketing Hub software
+Sales Hub
+®
+Generate quality leads and close deals, faster.
+Automate prospecting, manage pipeline, and accelerate revenue growth.
+Learn more
+about Sales Hub software
+Service Hub
+®
+Streamline and scale support to serve customers faster.
+Drive retention with actionable insights, customer health scores, and real-time usage data.
+Learn more
+about Service Hub software
+Content Hub
+™
+Create content that clicks with your audience.
+Build pages, publish content across channels, and stay on brand.
+Learn more
+about Content Hub software
+Data Hub
+™
+Turn scattered data into unified intelligence.
+Combine, clean, and activate your customer data across every team and tool.
+Learn more
+about Data Hub software
+Revenue Hub
+™
+Make it easy for customers to pay you.
+Send quotes, collect payments, and manage subscriptions.
+Learn more
+about Revenue Hub
+Smart CRM
+™
+All your customer data in one place.
+Keep your data clean, connected, and actionable.
+Learn more
+about HubSpot's Smart CRM
+Agent Hub
+™
+Deploy and manage AI agents across the platform.
+Build new agents tailored to your business, powered by your data.
+Learn more
+about HubSpot's AI agents
+Small Business Bundle
+The Starter edition of each product, at one low price.
+Learn more
+about the HubSpot Small Business Bundle of tools
+AEO (Beta)
+See where your brand shows up in AI results.
+Get recommendations to improve your visibility.
+Learn more
+about AEO
+Previous slide
+Next slide
+Customer Agent
+Resolve inquiries, take action in your CRM, and hand off with full context.
+Learn more
+about Customer Agent
+Prospecting Agent
+Spot buying signals, source contacts, and launch personalized outreach — instantly.
+Learn more
+about prospecting agent
+Data Agent
+Know which accounts are ready to buy and why.
+Learn more
+about content agent
+Works with the tools you already use. 2,000+ integrations.
+See all app integrations
+Enterprise
+Mid-Sized Business
+Small Business
+“HubSpot took the time to understand our business needs fully. The pre-sales and subsequent support really stood out from the start. They committed to engage with us deeply and work side-by-side with us on the implementation. They’ve since more than met this commitment.”
+Adam Jones
+Director of Business Development, Unipart
+Read full case study
+about Unipart
+12
+months for the pipeline to grow from millions to billions
+5
+point increase in net promoter score (NPS)
+“HubSpot gave us the tools we needed to grow without losing the personal connection with our fans. Their support has been vital to our continued marketing success.”
+Whitney Hallock
+Director of Marketing & Experience, Angel City FC
+Read full case study
+of Angel City FC
+300%+
+fan database growth in just 2 years
+~350
+new fan sign-ups per week
+7
+minutes average content engagement time
+“Just like you’d train a new hire, we trained customer agent — and now it’s often more accurate than we were. [...] And when something needs a human touch, our team can step in quickly — with full context at their fingertips.”
+John Mothershead
+Director of Member Success, Youth on Course
+Read full case study
+of Youth on Course
+59%
+increase in members YoY
+17%
+increase in response time
+7%
+increase in customer satisfaction
+Voted #1 in 526 G2 Reports
+Get a demo
+of HubSpot's premium software
+Get started free
+with HubSpot's free tools
+
+===== https://developers.hubspot.com
+TITLE: HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.
+ACCESSED: 2026-09-27
+
+Fuel Your Applications: Seamlessly Bring Data Into HubSpot
+Efficiently integrate the data your solutions need—so you can automate workflows and scale with confidence.
+Fuel your solutions
+Surface Insights: Bring Data to Life in HubSpot
+Add dashboards, app cards, and custom interfaces to your solutions with HubSpot’s APIs and UI extensions—giving users clear, actionable views.
+Add visual components
+Act on Data: Keep Work Moving
+Use workflows, webhooks, and custom actions to execute the next step the moment data updates—keeping users in flow and out of tool-hopping.
+Automate what happens next
+Ship Intelligent Features
+Add AI that turns intent into outcomes—connecting your solution to the right data, decisions, and actions without extra overhead.
+Add intelligence to your apps
+Ship Solutions Customers Can Find
+Reach the right customers faster with problem-based discovery, personalized placement, and a unified install flow.
+Start building for the Marketplace
+by reading our blog post: Navigating the Reimagined Marketplace for App Developers
+When it comes to balancing capability and usability for our clients, HubSpot is absolutely peerless. For anyone who wants to accomplish more with less hassle — HubSpot is the CRM and CMS platform you’re looking for.
+View Case Study
+Evelynn Ulsh
+Creative Technologist
+@
+Causemic
+HubSpot empowered MakeWebBetter to truly live up to our name. Our apps and themes, downloaded by over 30,000 businesses, showcase how HubSpot's platform fuels our mission to make the web better.
+View Case Study
+Umakant Sharma
+Product & Partnership Lead
+@
+MakeWebBetter
+Discovering HubSpot and the HubSpot Developer Community marked the start of both my professional and personal transformation. It has empowered me to manage customer and personal projects with remarkable efficiency and ease.
+View Case Study
+Anton Bujanowski
+Founder & CEO
+@
+GraphiSpot
+HubSpot has reached a level of maturity and sophistication that development opportunities are virtually endless. For developers looking to expand their horizons and work on cutting-edge projects, the platform is unparalleled.
+View Case Study
+Niko Dixon
+Full Stack Developer
+@
+Aptitude 8
+Developing on HubSpot never gets boring. Each time you think you learned everything about the API or the endless features, they release a new one. This benefits not only our clients, but also our developers.
+View Case Study
+Teun Rutten
+Development Team Lead
+@
+Bright Digital
+Learn. Build. Certify. Repeat. All with the HubSpot Academy
+Whether you're diving into quick, practical lessons or earning comprehensive certifications, HubSpot Academy gives you everything you need to build smarter and grow faster in one place.
+Visit the HubSpot Academy
+and begin learning
+Stream developer content anytime, anywhere
+Join a vibrant community of developers on the HubSpot Developers YouTube Channel. Access hands-on tutorials, in-depth webinars and events, and engaging podcast episodes about developer journeys.
+Visit our Dev YouTube Channel
+and stream content
+Explore, Learn, and Contribute on HubSpot’s Developer Blog
+Explore the HubSpot Developer Blog for hands-on tutorials and insights straight from HubSpot engineers and fellow developers in the community. It’s your space to learn, share, and even contribute your own expertise.
+Visit the Developer Blog
+and start learning from peers
+Sign up to receive HubSpot's Developer Newsletter
+In addition to occasional special announcements, you'll get a monthly roundup with developer updates, relevant product news, and other information that will help you grow as a developer on our platform and beyond.
+Sign up today
+for the HubSpot Developer Newsletter
+
+===== https://developers.hubspot.com/docs
+TITLE: HubSpot Developer Documentation - HubSpot docs
+ACCESSED: 2026-09-27
+
+HubSpot Developer Documentation - HubSpot docs
+Documentation Index
+Fetch the complete documentation index at:
+/docs/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Get Started
+Install the HubSpot CLI globally
+Authorize your HubSpot account
+Start building
+npm
+yarn
+pnpm
+ruby
+npm
+install
+-g
+@hubspot/cli
+&&
+hs
+init
+yarn
+global
+add
+@hubspot/cli
+&&
+hs
+init
+pnpm
+add
+-g
+@hubspot/cli
+&&
+hs
+init
+gem
+install
+hubspot-cli
+&&
+hs
+init
+Build your first project
+hs
+get-started
+Resources
+Get Started
+Create your first app or template in minutes
+Platform Overview
+Get to know HubSpot’s development platform and tools
+API Reference
+Integrate with HubSpot’s APIs
+Developer Changelog
+Learn about new changes and releases
+HubSpot Developers Channel
+Explore educational developer content
+HubSpot Community
+Join the HubSpot Community
+
+===== https://developers.hubspot.com/docs/api-reference/latest/overview
+TITLE: 2026-09 API reference - HubSpot docs
+ACCESSED: 2026-09-27
+
+The 2026-09 APIs use a date-based versioning scheme (e.g.,
+/crm/2026-09/
+) that follows the previous 2026-03 API
+version
+. All endpoints in this section follow the pattern:
+/api-name/2026-09/resource
+For example, to retrieve all contacts:
+GET
+/crm/objects/2026-09/contacts
+All APIs, whether legacy, new, or beta, use the same root path as before:
+https://api.hubapi.com/
+.
+This versioning model gives HubSpot the ability to ship updates on a predictable schedule. When a new date version is released, the previous version continues to work until its end-of-life date, giving you time to migrate. For new integrations, always use the latest date version. Learn more about this change on
+HubSpot’s Developer Changelog
+.
+Across the API reference section, use the versioning dropdown menu in the top bar to switch versions. If there’s an equivalent endpoint to the one you’re currently viewing, you’ll automatically be sent there. Otherwise, you’ll land on that version’s home page.
+Last modified on
+September 9, 2026
+Was this page helpful?
+Yes
+No
+
+===== https://developers.hubspot.com/
+TITLE: HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.
+ACCESSED: 2026-09-27
+
+Fuel Your Applications: Seamlessly Bring Data Into HubSpot
+Efficiently integrate the data your solutions need—so you can automate workflows and scale with confidence.
+Fuel your solutions
+Surface Insights: Bring Data to Life in HubSpot
+Add dashboards, app cards, and custom interfaces to your solutions with HubSpot’s APIs and UI extensions—giving users clear, actionable views.
+Add visual components
+Act on Data: Keep Work Moving
+Use workflows, webhooks, and custom actions to execute the next step the moment data updates—keeping users in flow and out of tool-hopping.
+Automate what happens next
+Ship Intelligent Features
+Add AI that turns intent into outcomes—connecting your solution to the right data, decisions, and actions without extra overhead.
+Add intelligence to your apps
+Ship Solutions Customers Can Find
+Reach the right customers faster with problem-based discovery, personalized placement, and a unified install flow.
+Start building for the Marketplace
+by reading our blog post: Navigating the Reimagined Marketplace for App Developers
+When it comes to balancing capability and usability for our clients, HubSpot is absolutely peerless. For anyone who wants to accomplish more with less hassle — HubSpot is the CRM and CMS platform you’re looking for.
+View Case Study
+Evelynn Ulsh
+Creative Technologist
+@
+Causemic
+HubSpot empowered MakeWebBetter to truly live up to our name. Our apps and themes, downloaded by over 30,000 businesses, showcase how HubSpot's platform fuels our mission to make the web better.
+View Case Study
+Umakant Sharma
+Product & Partnership Lead
+@
+MakeWebBetter
+Discovering HubSpot and the HubSpot Developer Community marked the start of both my professional and personal transformation. It has empowered me to manage customer and personal projects with remarkable efficiency and ease.
+View Case Study
+Anton Bujanowski
+Founder & CEO
+@
+GraphiSpot
+HubSpot has reached a level of maturity and sophistication that development opportunities are virtually endless. For developers looking to expand their horizons and work on cutting-edge projects, the platform is unparalleled.
+View Case Study
+Niko Dixon
+Full Stack Developer
+@
+Aptitude 8
+Developing on HubSpot never gets boring. Each time you think you learned everything about the API or the endless features, they release a new one. This benefits not only our clients, but also our developers.
+View Case Study
+Teun Rutten
+Development Team Lead
+@
+Bright Digital
+Learn. Build. Certify. Repeat. All with the HubSpot Academy
+Whether you're diving into quick, practical lessons or earning comprehensive certifications, HubSpot Academy gives you everything you need to build smarter and grow faster in one place.
+Visit the HubSpot Academy
+and begin learning
+Stream developer content anytime, anywhere
+Join a vibrant community of developers on the HubSpot Developers YouTube Channel. Access hands-on tutorials, in-depth webinars and events, and engaging podcast episodes about developer journeys.
+Visit our Dev YouTube Channel
+and stream content
+Explore, Learn, and Contribute on HubSpot’s Developer Blog
+Explore the HubSpot Developer Blog for hands-on tutorials and insights straight from HubSpot engineers and fellow developers in the community. It’s your space to learn, share, and even contribute your own expertise.
+Visit the Developer Blog
+and start learning from peers
+Sign up to receive HubSpot's Developer Newsletter
+In addition to occasional special announcements, you'll get a monthly roundup with developer updates, relevant product news, and other information that will help you grow as a developer on our platform and beyond.
+Sign up today
+for the HubSpot Developer Newsletter
+
+===== https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth
+TITLE: Working with OAuth - HubSpot docs
+ACCESSED: 2026-09-27
+
+OAuth is a secure means of authentication that uses authorization tokens rather than a password to connect your app to a user account. Initiating OAuth access is the first step towards allowing users to
+install your app
+in their HubSpot accounts.
+This authentication guide pertains to
+legacy public apps
+. For the OAuth guide focused on apps built on the new developer platform, check out
+this article
+instead.
+Please note:
+Any app designed for installation by multiple HubSpot accounts or listing on the HubSpot Marketplace must use OAuth.
+Users installing apps in their HubSpot account must either be a
+Super Admin
+or have
+HubSpot Marketplace Access
+permissions.
+​
+Recommended resources
+The
+OAuth Quickstart Guide
+will get you up and running with a working example app.
+This
+HubSpot Academy tutorial
+provides a quick introduction on using OAuth with HubSpot, including a breakdown of the HubSpot-OAuth flow and how to refresh an access token.
+​
+Set up OAuth authentication
+To set up OAuth authentication for your app:
+First,
+create an app
+.
+Use the client ID and client secret, along with the
+query parameters
+and
+scopes
+outlined below, to build your authorization URL.
+Send users installing your app to the authorization URL, where they’ll be presented with a screen that allows them to select their account and grant access to your integration. You can set the authorization URL to be for a specific HubSpot account by adding the account ID between
+/oauth/
+and
+/authorize
+, as shown below. After granting access, they’ll be redirected back to your application via a
+redirect_url
+, which will have a code query parameter appended to it. You’ll use that code and the client secret to get an
+access_token and refresh_token
+from HubSpot.
+Example authorization URLs
+Any account:
+https://app.hubspot.com/oauth/authorize?client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&scope=contacts%20automation&redirect_uri=https://www.example.com/
+Specific account (ID 123456):
+https://app.hubspot.com/oauth/123456/authorize?client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&scope=contacts%20automation&redirect_uri=https://www.example.com/
+Example redirect URL:
+https://example.com/?code=xxxx
+Example error:
+https://www.example.com/?error=error_code&error_description=Human%20readable%20description%20of%20the%20error
+Use the
+access_token
+to authenticate any API calls made for that HubSpot account.
+Once the
+access_token
+expires, use the
+refresh_token
+to generate a new
+access_token
+.
+Please note:
+Your app will not appear as a
+Connected App
+in a user’s account unless you generate the refresh token and initial access token.
+Access tokens reflect the scopes requested from the app and
+do not
+reflect the permissions or limitations of what a user can do in their HubSpot account. For example, if a user has permissions to view only owned contacts but authorizes a request for the
+crm.objects.contacts.read
+scope, the resulting access token can view all contacts in the account and not only those owned by the authorizing user.
+​
+Query parameters
+The following query parameters are required when building an authorization URL for your app:
+Parameter
+Description
+How to use
+client_id
+An ID that serves as a unique identifier for your app.
+Get this from your app’s Auth settings page (as described above).
+redirect_uri
+The URL visitors will be redirected to after granting access to your app.
+You’ll also designate this on your app’s Auth settings page.
+Note:
+For security reasons, this URL
+must
+use
+https
+in production. (When testing using
+localhost
+,
+http
+can be used.) You also
+must
+use a domain, as IP addresses are not supported.
+scope
+A space-separated set of permissions that your app needs access to.
+Any scopes that you’ve checked off in your app’s
+Auth
+settings will be treated as required, and you’ll need to include them in this parameter or the authorization page will display an error. Additionally, users will get an error if they try to install your app in an account that doesn’t have access to an included scope. Consult the
+scopes reference documentation
+for more details about which endpoints can be accessed by specific scopes.
+The following parameters are optional:
+Parameter
+How to use
+Description
+optional_scope
+A space-separated set of optional permissions for your app.
+Optional scopes will be automatically dropped from the authorization request if the user selects a HubSpot account that doesn’t have access to that tool (e.g., authorizing a
+Content Hub
+Enterprise
+scope in a HubSpot free account). If you’re using optional scopes, you will need to check the access token or refresh token to see which ones were granted. Check out the
+reference documentation on scopes
+for more details.
+state
+If this parameter is included in the authorization URL, the value will be included in a state query parameter when the user is directed to the
+redirect_uri
+.
+A string value that can be used to maintain the user’s state when they’re redirected back to your app.
+​
+Configure scopes
+OAuth requires you t
+
+===== https://developers.hubspot.com/docs/apps/legacy-apps/authentication/oauth-quickstart-guide
+TITLE: Working with OAuth | OAuth Quickstart Guide - HubSpot docs
+ACCESSED: 2026-09-27
+
+This authentication guide pertains to
+legacy public apps
+. For the OAuth quickstart guide focused on apps built on the new developer platform, check out
+this article
+instead.
+​
+Before you get started
+Before you can start using OAuth with HubSpot, you’ll need to have:
+A developer account
+An app
+associated with your developer account
+A HubSpot account to install your app in (you can use an existing account or
+create a test account
+)
+You must be a
+Super Admin
+to install an app in a HubSpot account.
+​
+How it works
+HubSpot supports the
+OAuth 2.0 Authorization Code grant type
+, which can be broken down into four basic steps:
+Your app opens a browser window to send the user to the HubSpot OAuth 2.0 server
+The user reviews the requested permissions and grants the app access
+The user is redirected back to the app with an authorization code in the query string
+The app sends a request to the OAuth 2.0 server to exchange the authorization code for an access token
+​
+In this guide
+Quickstart App
+: A Node.js demo app that authenticates with HubSpot’s OAuth 2.0 server
+Getting OAuth tokens
+: How to authorize your app with users
+Using OAuth tokens
+: How to make queries with a token
+Refreshing OAuth tokens
+: How to use the refresh token provided by HubSpot
+All code examples in this guide are written in JavaScript (Node.js)
+​
+Quickstart app
+If this is your first time using OAuth authentication with HubSpot’s APIs, it’s strongly recommended that you check out the
+OAuth 2.0 Quickstart App
+, written in Node.js. This sample app is designed to get you started using OAuth 2.0 as quickly as possible by demonstrating all the steps outlined below in the
+getting OAuth tokens section
+below.
+Get the quickstart app
+​
+Getting OAuth tokens
+​
+1. Create the authorization URL and direct the user to HubSpot’s OAuth 2.0 server
+When sending a user to HubSpot’s OAuth 2.0 server, the first step is creating the authorization URL. This will identify your app and define the resources (scopes) it’s requesting access to on behalf of the user. The query parameters you can pass as part of an authorization URL are shown in the table below. For more detailed information on this step, read the
+reference doc
+.
+Fields marked with
+*
+are required.
+Parameter
+Description
+Example
+client_id
+*
+The client ID identifies your app. Find it on your app’s settings page.
+7fff1e36-2d40-4ae1-bbb1-5266d59564fb
+scope
+*
+The
+scopes
+your application is requesting, separated by URL-encoded spaces (
+%20
+).
+oauth%20crm.objects.contacts.read
+redirect_uri
+*
+The URL that the user will be redirected to after they authorize your app for the requested scopes.
+For production applications,
+https
+is required.
+https://www.example.com/auth-callback
+optional_scope
+The scopes that are optional for your app, and will be dropped if the selected HubSpot portal does not have access to those products
+automation
+state
+A unique string value that can be used to maintain the user’s state when they’re redirected back to your app.
+WeHH_yy2irpl8UYAvv-my
+Once you’ve created your URL, start the OAuth connection process by sending the user to it.
+The code blocks below provide examples of using different redirect types:
+Using a server-side redirect:
+// Build the auth URL
+const
+authUrl
+=
+"https://app.hubspot.com/oauth/authorize"
++
+`?client_id=
+${
+encodeURIComponent
+(
+CLIENT_ID
+)
+}
+`
++
+`&scope=
+${
+encodeURIComponent
+(
+SCOPES
+)
+}
+`
++
+`&redirect_uri=
+${
+encodeURIComponent
+(
+REDIRECT_URI
+)
+}
+`
++
+`&state=
+${
+encodeURIComponent
+(
+STATE
+)
+}
+`
+;
+// Redirect the user
+return
+res
+.
+redirect
+(
+authUrl
+);
+Using an HTML link:
+<
+a
+href
+=
+"https://app.hubspot.com/oauth/authorize?scope=contacts%20social&redirect_uri=https://www.example.com/auth-callback&client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&state=xxxxxxxx"
+>
+Install
+</
+a
+>
+Encoding an additional redirect user state:
+Some apps may need to redirect the user to different locations. For example, an app may wish to redirect users to different subdomains of their integration (e.g.
+userA.integration.com
+and
+userB.integration.com
+). To do so, use the
+state
+parameter to encode more information about the user state:
+1. Generate and store a nonce value for the state parameter.
+2. Store the user’s state in a local datastore using the nonce as its key.
+3. Include the nonce value as the state parameter in the authorization URL.
+4. When the user authenticates and is redirected to your redirect URL, validate the state parameter and use it as the key to retrieve the user state that was stored.
+5. From there, redirect the user as needed (e.g. redirecting again to a user specific URL).
+​
+2. HubSpot prompts user for consent
+HubSpot displays a consent window to the user showing the name of your app and a short description of the HubSpot API services it’s requesting permission to access. The user can then grant access to your app.
+Note:
+The user installing the app must have access to all requested scopes. If they don’t have the required access, the installation will fail and they will be direc
+
+===== https://developers.hubspot.com/docs/apps/legacy-apps/public-apps/overview
+TITLE: Legacy public apps - HubSpot docs
+ACCESSED: 2026-09-27
+
+In HubSpot, a legacy public app is a type of integration that can be installed on customer accounts or listed on the HubSpot Marketplace. It requires authentication via
+OAuth
+. Once a user
+installs
+your app on their HubSpot account, you’ll be able to make API calls to that account using an
+OAuth access token
+. Your app will also appear in the account’s
+Connected Apps
+settings.
+Connected apps are also able to take advantage of
+subscribing to changes using webhooks
+and creating custom
+timeline events
+.
+You can leverage the same features of legacy public apps by instead building an app on the
+latest version
+of the developer platform, which still provides OAuth authentication, and can be distributed to a set of allowlisted accounts or via the HubSpot marketplace. Learn more about how to
+create an app
+.
+​
+Manage legacy public apps in HubSpot
+To manage existing legacy public apps in HubSpot:
+In your HubSpot account, navigate to
+Development
+.
+In the left sidebar menu, click
+Legacy apps
+.
+In the app listing table, click the
+name
+of the app.
+From the app details page, you can manage app settings such as:
+App information
+Authentication settings
+Redirect URLs
+Scopes
+Domain verification
+​
+App information
+After
+navigating to your app in HubSpot
+, use the
+App Info
+tab to manage app details such as:
+Public app name:
+the name that appears wherever your app displays in HubSpot. This includes the installation page and the
+Powered by
+footer for
+CRM cards
+and
+timeline events
+.
+App logo:
+the logo displayed next to your app in HubSpot tools and the App Marketplace.
+Description:
+the app’s description that displays in HubSpot tools and the App Marketplace.
+To delete the app, scroll to the bottom of the
+Basic info
+page, then click
+Delete
+.
+​
+Authentication settings
+After
+navigating to your app in HubSpot
+, click the
+Auth
+tab to access your app’s client credentials and manage its authentication settings, such as redirect URL and scopes.
+​
+Redirect URLs
+In the
+Redirect URLs
+section, you can update the URL that users are redirected to after installing your app.
+To update an existing redirect URL, click the
+URL field
+and modify the value, then click
+Save changes
+.
+To add a redirect URL, click
+Add redirect URL
+, then enter the value into the field and click
+Save changes
+. You can add multiple redirect URLs, and can use a
+http://localhost
+address for local development as you build out and test your app.
+If you have multiple redirect URLs, click the
+delete icon
+next to the URL you want to delete, then click
+Save changes
+.
+​
+Scopes
+In the
+Scopes
+section, you can remove scopes, modify existing scopes, or add new scopes:
+To delete a scope from the app, click
+Delete
+next to the scope.
+To modify a scope’s
+type
+, click the
+dropdown menu
+next to an existing scope and select a
+type
+.
+To add new scopes to the app:
+Click
+Add new scope
+.
+In the right panel, use the
+search bar
+to search for a scope, then select the
+checkbox
+next to any scope you want the user to authorize. Click the
+dropdown menu
+next to the scope and select a
+scope type
+.
+Click
+Update
+.
+​
+Scope types
+There are three different scope types available to configure. You must specify the scopes your app will require for installation, but you can also specify two other scope types: conditionally required scopes and optional scopes.
+Required scopes:
+scopes that must be authorized by the user
+and
+must be present in the
+scope
+query parameter in your app’s install URL for successful installation.
+Conditionally required scopes:
+scopes that must be authorized by the user only if they’re present in the
+scope
+query parameter in your app’s install URL for successful installation.
+This scope type allows you to be flexible and provide a separate install URL for tiered features or scopes that are only required when users enable certain features in your app. For example, you could offer two install URLs to your users: one install URL could include the conditionally required scope in the
+scope
+query parameter for users with access to a feature, while another install URL omits that scope in the
+scope
+query parameter for users without access.
+If a conditionally required scope is present in your app install URL and a user without access to the associated feature attempts to install your app using that URL, the installation will fail.
+Optional scopes:
+scopes that are
+not
+required to successfully install your app. These scopes are specified in the
+optional_scope
+query parameter in your app’s install URL. For example, if you want your app to be able to fetch
+custom object
+data (which is only available to
+Enterprise
+HubSpot accounts), you could add the
+crm.objects.custom.read
+scope as an optional scope. Then, if an account has access to the custom objects, the scope will be authorized. Otherwise, they’ll still be able to install the app without the custom objects scope.
+​
+Domain verification
+When HubSpot users install an app, they consent to give the app’s developer access to their account data. The developer’
+
+===== https://www.hubspot.com/products/sales
+TITLE: AI Sales Software for Pipeline & Closed Deals | HubSpot
+ACCESSED: 2026-09-27
+
+AI Sales Software for Pipeline & Closed Deals | HubSpot
+HubSpot is a Challenger in the 2026 Gartner®  Magic Quadrant™ for CRM Sales.
+Home
+Sales Hub
+Create Pipeline
+Know when to reach out and who to target. Sales Hub's AI-powered tools surface accounts showing real buying signals, so reps focus on leads that are actually going somewhere.
+Breeze Prospecting Agent (Beta)
+Find accounts, source buying committees, and execute personalized outreach with an AI agent that learns from your best reps over time..
+Lead Management
+Manage leads and activities on one AI-powered workspace and turn more leads into deals.
+Sales Automation
+Set up automated multi-channel outreach that adapts based on prospect engagement.
+Buying Groups
+Map every decision maker, champion, and influencer automatically, so reps are never single-threaded on a high-stakes deal.
+Call Tracking
+Make calls efficiently with a power dialer, voicemail drops, and CRM logging for your most important conversations.
+HubSpot Sales Extensions
+Work where reps already live. Access HubSpot directly in Gmail or Outlook, and research prospects or take action from any webpage without switching tabs.
+View more
+Revenue Hub + Sales Hub
+Win the deal. Quote fast. Get paid.
+Don't let separate sales and CPQ tools slow you down. Close deals in Sales Hub, then quote, bill, and collect payment in Revenue Hub — all without switching platforms.
+Explore Revenue Hub
+quotes and payments software
+Progress Deals
+Keep deals moving from first conversation to closed-won. Deal progression drafts follow-ups, suggests next steps, and keeps your CRM current automatically — so reps always know what moves the deal forward.
+Deal Scoring
+Use AI to automatically score, rank and prioritize which deals are most likely to close.
+Deal Pipelines
+Easily add, score, and track deals so nothing falls through the cracks.
+AI Guided Selling
+Guide sellers in a workspace that surfaces leads, deals, tasks, and next best actions with smart queues and daily action summaries.
+HubSpot Notetaker
+Capture every meeting automatically, prep with full customer context, and send follow-up recordings instantly.
+Playbooks
+Build a library of sales content for your team to share and tracking which documents close deals.
+Deal Progression
+AI analyzes conversation transcripts, emails, and deal history to suggest CRM updates, draft follow-up emails, and next steps to keep deals moving forward.
+View more
+Close Deals
+Give leaders a real-time view of pipeline health, deal plans, rep performance, and revenue risk — all from the same data your reps work in every day.
+Deal Plans
+Give every deal a shared path to close with milestones, owners, and dates your buyers can see and act on directly.
+CPQ in Revenue Hub
+AI-powered CPQ — configure, price, quote — accelerates the quoting process from one unified platform.
+Sales Methodology Scoring
+Standardize how your team sells by automatically extracting conversation context and mapping it to your sales framework.
+Sales Analytics & Reporting
+Get full visibility into your process to measure performance and deliver results.
+Conversation Intelligence
+Bring the voice of the customer into your CRM and provide better coaching.
+Forecasting
+Get a comprehensive view of your pipeline with AI-powered projections.
+View more
+73%
+of sales professionals say HubSpot increased their win rate
+94%
+more deals closed after 6 months
+82%
+more meetings booked with prospecting agent
+Grow Without Limits: Sales Hub Pricing
+Sales software that scales with you.
+Free
+No credit card required
+$0/month
+Track deals
+Engage visitors with live chat
+Schedule meetings without the back-and-forth
+Starter
+Starts at
+$10
+$20
+/month
+per seat*
+Automate personalized outreach
+Schedule meetings
+Report on outcomes
+Professional
+Starts at
+$100/month
+per seat
+Find and engage high-value prospects
+Customize sales workflows and sequences
+Record and transcribe calls
+Enterprise
+Starts at
+$150/month
+per seat
+Create custom objects for unique processes
+Manage complex pipelines
+Advanced analytics and reporting
+Demo premium editions
+of HubSpot's sales software
+Start 14-day free trial
+of HubSpot's sales tools
+*Discount available for new customers only. Offer available for a limited time. For more detailed information on product packaging and the limits that apply, please see our
+pricing page
+. Price shown in USD and subject to applicable tax.
+What is sales software?
+Sales software
+includes all the tools you need to improve your sales team’s productivity. It supports the entire sales cycle, from finding potential leads and tracking their progress, to managing and automating the deal flow, and even generating quotes. Additionally, it offers valuable analytics, coaching, and reporting features for managers to onboard and coach reps, analyze strategy, and optimize process.
+Rather than using multiple tools to accomplish each of these tasks separately, HubSpot’s sales software enables teams to do all their work under one roof. Save time and energy by using a single
+
+===== https://offers.hubspot.com/contact-sales
+TITLE: Contact Sales | HubSpot's Software
+ACCESSED: 2026-09-27
+
+Contact Sales | HubSpot's Software
+1 888 482 7768
+See more local numbers
+Chat with Sales
+Get a demo
+1 888 482 7768
+See more local numbers
+Chat with our sales team
+Get a product demo
+Chat not available
+Complete the form for a free demo of HubSpot’s software.
+Americas
+1 888 482 7768
+(English)
+1 857 829 5064
+(Spanish)
+55 11 5193-3250
+(Portuguese)
+55 11 5193-3251
+(English)
+56 2 3278 9790
+(Spanish)
+56 2 3278 9791
+(English)
+57 601 705 7100
+(Spanish)
+57 601 7056900
+(English)
+52 55 6952 1760
+(Spanish)
+52 55 6952 1761
+(English)
+Europe, the Middle East, and Africa
+800 1023542
+(German)
+800 102354
+(English)
+32 9 320 0370
+(French)
+32 9 320 0350
+(English)
+800 210 0254
+(English)
+45 43 33 34 45
+(English)
+800 189362
+(English)
+33 1 72 73 06 44
+(English)
+33 1 72 73 05 00
+(French)
+49 30 2084 86000
+(German)
+49 30 2179 98000
+(English)
+353 1 518 7500
+(English)
+972 3-376-0840
+(English)
+390 68 033 5222
+(English)
+352 34 2080 9343
+(French)
+352 34 2080 9350
+(German)
+352 34 20 80 93 44
+(English)
+31 2 0200 3299
+(English)
+47 24 14 08 55
+(English)
+800 210 649
+(English)
+34 9 1087 3200
+(Spanish)
+34 9 1087 3300
+(English)
+46 20 015 91 62
+(English)
+41 21 355 2166
+(German)
+41 21 355 2171
+(French)
+41 21 355 21 70
+(English)
+800 0 444 9440
+(English)
+800101 0765
+(English)
+44 20 7324 3700
+(English)
+27 21 426 8487
+(English)
++48 80 001 30 88
+(English)
+Asia Pacific
+61 2 9164 8000
+(English)
+852 3011 4980
+(English)
+000800 050 3669
+(English)
+62 21 3950 4705
+(English)
+81 3-4520-9500
+(Japanese)
+60 37 724 0500
+(English)
+0800 147 875
+(English)
+65 6955 6000
+(English)
+1 800 1441 1273
+(English)
+1 800 1441 1273
+(English)
+66-2-7604053
+(English)

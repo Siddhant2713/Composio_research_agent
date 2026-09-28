@@ -1,0 +1,992 @@
+===== https://woocommerce.com/document/woocommerce-rest-api/
+TITLE: WooCommerce REST API Documentation - WooCommerce
+ACCESSED: 2026-09-27
+
+WooCommerce REST API
+The WooCommerce REST API connects your store to external systems and services. Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection. This document covers how to generate and manage REST API keys from a merchant perspective, with links to developer documentation for more advanced topics.
+Note:
+You can find the
+technical documentation
+for the REST API on GitHub.
+Before generating API keys, confirm that your WordPress permalinks are set to a human-readable format. Go to
+Settings > Permalinks
+in your WordPress dashboard and select any option other than
+Plain
+Day and name
+is a common default that works well.
+The WooCommerce REST API uses a key system to control access. Each set of keys is linked to a WordPress user on your site. You can create keys with different permission levels depending on what the connected application needs.
+To create or manage keys for a specific WordPress user:
+Go to
+WooCommerce > Settings > Advanced > REST API
+Select
+Create an API key
+or
+Add Key
+. The
+Key Details
+screen opens.
+Enter a
+Description
+to identify what the key is used for.
+Select the
+User
+you want to generate a key for from the dropdown.
+Select a level of access for this API key from the
+Permissions
+dropdown:
+Read
+— allows the application to retrieve data from your store
+Write
+— allows the application to create and update data in your store
+Read/Write
+— allows the application both read and write access
+Select
+Generate API Key
+After generating the key, the screen displays your
+Consumer Key
+,
+Consumer Secret
+, a
+QR Code
+, and a
+Revoke Key
+link. Copy the
+Consumer Key
+and
+Consumer Secret
+and enter them in the application you are connecting to. The application may also request your site URL.
+Note:
+The Consumer Secret is shown only once. Copy and store it in a safe place before leaving the page.
+The legacy REST API has been removed from WooCommerce core. WooCommerce now integrates directly with the WordPress REST API. If an integration on your site still requires the legacy REST API, install and activate the
+WooCommerce Legacy REST API
+plugin from WordPress.org.
+Webhooks configured to use the legacy REST API also stop working unless you install this plugin.
+After installing and activating the plugin, go to
+WooCommerce > Settings > Advanced > Legacy API
+and select the
+Enable the legacy REST API
+checkbox.
+If you need to test or build custom integrations with the REST API, the following developer resources provide detailed technical guidance:
+Make a basic request
+— walks through requesting order data from your site to confirm the API is working.
+WooCommerce REST API Docs
+— the complete technical reference for all available endpoints.
+Do you still have questions and need assistance?
+This documentation is about the free,
+core WooCommerce plugin
+, for which support is provided in our
+community forums on WordPress.org
+. By searching this forum, you’ll often find that your question has been asked and answered before.
+If you haven’t created a WordPress.org account to use the forums,
+here’s how
+If you’re looking to
+extend
+the core functionality shown here, we recommend reviewing available extensions in the
+WooCommerce Marketplace
+Need ongoing advanced support or a
+customization
+built for WooCommerce? Hire a
+Woo Agency Partner
+Are you a
+developer
+building your own WooCommerce integration or extension? Check our
+Developer Resources
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+===== https://woocommerce.com/wordpress-ecommerce/
+TITLE: WordPress Ecommerce Plugin - WooCommerce
+ACCESSED: 2026-09-27
+
+Flexible ecommerce, for WordPress builds of all sizes
+WooCommerce is a powerful ecommerce solution that supports the growth of your business. Whether you’re a freelance developer, in-house engineer, or agency owner, our open-source platform lets you create anything you need. All on WordPress — the world’s most popular website builder.
+Explore the docs
+Trusted by more developers
+than any other platform
+31
+%
+of the top 1 million
+ecommerce sites
+Store Leads
+4
+M+
+online stores built
+with WooCommerce
+Store Leads
+(using Woo Cart/Checkout)
+43
+%
+of the internet runs
+on WordPress
+W3Techs
+Become a Woo Agency Partner
+Become a Marketplace Partner
+Build on open-source WordPress
+Unlock limitless potential with the open-source ecommerce platform built on WordPress. Unparalleled customization empowers you to create tailored online stores that meet any client’s unique needs.
+Need to integrate with other software? If there’s not already an extension in our Marketplace, you can build your own connections with nearly any application out there.
+Design exactly the store you need
+Take complete creative control of WooCommerce storefronts and craft unique, brand-reflecting experiences instead of cookie-cutter websites. Use the intuitive block editor to design modern, engaging stores that are easy to update and manage.
+Extend your revenue streams
+Have an idea for an extension that will benefit WooCommerce merchants? Add recurring revenue streams to your business by selling your work in our Marketplace. Tens of thousands of merchants and developers visit every month to find solutions for automation, shipping, marketing, and more.
+The complete ecommerce developer’s toolkit
+Explore our curated list of developer resources and guides designed to help you make the most out of WooCommerce.
+Documentation
+Get up and running quickly with our
+Getting Started guide
+for developers.
+REST API
+Build interactive and headless solutions with the
+WooCommerce REST API
+and
+Store API
+CLI
+Supercharge development and site management with the
+WooCommerce CLI
+Extensions
+Learn the key concepts and processes for
+developing extensions
+or select from hundreds already in our
+Marketplace
+Changelog
+Keep up to date with
+WooCommerce core releases
+or explore the
+open-source codebase
+yourself.
+SkyTechGaming.com
+“We moved to Woo because of the customizability. With Shopify, everything is behind a paywall and makes it difficult to test and develop.”
+— Jason Mares, Web designer and frontend developer
+Fast, flexible, and extensible
+WooCommerce offers the flexibility and control needed to bring any e-commerce vision to life.
+Full customization
+WooCommerce is
+open source
+, giving you full control to personalize every aspect of a storefront. Integrate any tools, add functionality with hundreds of extensions, or extend for completely new solutions.
+Advanced performance
+Build on a
+robust foundation
+that scales effortlessly. WooCommerce ensures your clients’ sites handle increasing traffic and complexity without limitations.
+Modern deployment
+Deploy with confidence using
+version control
+. Easily track changes, revert if needed, and maintain the flexibility and security to manage projects efficiently.
+Data ownership
+Unlike closed platforms, WooCommerce gives your clients
+complete ownership of their store and data
+. Their information is truly theirs, and you choose your preferred hosting solution.
+AngryCreative.com
+“We’re stronger together! Proprietary software companies filled with VC money are everywhere. By leveraging the freedoms of open source and working together we can truly become a force to be reckoned with.”
+—
+Jimmy Rosen, Founder and President
+Join the community
+Engage with a thriving network of WooCommerce developers.
+Developer hub
+Visit our
+central developer hub
+for all of our WooCommerce core development resources.
+Community Slack
+Join 30,000 builders in the
+WooCommerce Community Slack
+Newsletter
+Get the
+insider updates
+that help you build better and grow faster with WooCommerce.
+Discussions
+Shape the project by sharing feedback in
+GitHub discussions
+Open source
+Contribute to
+WooCommerce on GitHub
+NeuraLab.net
+“We use every chance possible to bolster Open Source projects such as WordPress or WooCommerce to democratize publishing and make the ecommerce field a fair-play for everybody… especially in these times where accessibility, privacy, and user experience are paramount for any kind of meaningful growth.”
+Kresimir Koncic, Founder and Director
+Build with complete confidence
+Never miss an update, or an opportunity. Get the insider updates that help you build better and grow faster with WooCommerce.
+By subscribing, you understand that the information above will be used in accordance with our
+Privacy Policy
+. We track email opens and clicks for measurement and optimization purposes.
+
+===== https://developer.woocommerce.com/
+TITLE: The WooCommerce Developer Blog
+ACCESSED: 2026-09-27
+
+Building WooCommerce, together
+Release announcements, roadmap info, and technical updates from the Woo team.
+By submitting, you understand that the information above will be used in accordance with our
+Privacy Policy
+. We track email opens and clicks for measurement and optimization purposes.
+Featured posts
+See all posts
+Releases
+|
+Sep 22, 2026
+WooCommerce 11.1.2 Release Notes
+WooCommerce 11.1.2 has been released with targeted fixes for security, and a bug around the variation gallery.
+By
+Nadir Seghir
+Releases
+|
+Sep 21, 2026
+WooCommerce 11.2.0 Pre-release notes
+WooCommerce 11.2.0 Beta is now available for testing! Check out the pre-release notes to learn more about what’s to come.
+By
+Shani Banerjee
+Releases
+|
+Sep 18, 2026
+WooCommerce 11.1.1 Release Notes
+WooCommerce 11.1.1 has been released with targeted fixes for security, and a bug around the Mini-Cart.
+By
+Nadir Seghir
+Events
+|
+Sep 17, 2026
+Join us for our “Building with WooCommerce Block Themes” Live Event
+Join us on September 30, 2026, for a practical live conversation about building WooCommerce stores with block themes.
+By
+Brian Coords
+Engineering
+|
+Sep 16, 2026
+Running the Claude Commerce Agent on WooCommerce
+Anthropic quietly released its experimental and open-source Claude Commerce Agent. We decided to dive in and get YOU set up…
+By
+Shani Banerjee
+Feedback
+|
+Sep 15, 2026
+Call for testing: Purple, a WooCommerce block theme
+WooCommerce introduces Purple, its first official block theme for beta testing, offering extensive customization options and modern templates for e-commerce.…
+By
+Brian Coords
+Advisories
+,
+Engineering
+|
+Sep 8, 2026
+WooCommerce Subscriptions 9.2.0: settings updates and dev changes
+Dev Advisory: WooCommerce Subscriptions 9.2.0 has some notable updates and behavior changes. If you utilize the extension, please check out…
+By
+Vasily Belolapotkov
+Build with complete confidence
+Never miss an update, or an opportunity. Get the insider updates that help you build better and grow faster with WooCommerce.
+Subscribe to the newsletter
+Latest Releases
+See all Release Posts
+WooCommerce 11.1.2 Release Notes
+By
+Nadir Seghir
+|
+Sep 22, 2026
+WooCommerce 11.2.0 Pre-release notes
+By
+Shani Banerjee
+|
+Sep 21, 2026
+WooCommerce 11.1.1 Release Notes
+By
+Nadir Seghir
+|
+Sep 18, 2026
+WooCommerce 11.1.0: Release Notes
+By
+Shani Banerjee
+|
+Sep 3, 2026
+WooCommerce 11.1: What’s coming for developers
+By
+Shani Banerjee
+|
+Aug 18, 2026
+WooCommerce 11.0.1 Release Notes
+By
+Brian Coords
+|
+Aug 10, 2026
+WooCommerce 11.0 Release Notes
+By
+Brian Coords
+|
+Aug 4, 2026
+WooCommerce 11.0: What’s coming for developers
+By
+Brian Coords
+|
+Jul 13, 2026
+WooCommerce 10.9.4 Release Notes
+By
+Brian Coords
+|
+Jul 7, 2026
+Grow with Woo
+Join the Woo community on Slack
+Become an agency partner
+Become a Marketplace partner
+Contribute to WooCommerce
+Coming soon to Woo
+See all Roadmap Insights
+Product Object Caching Enabled by Default for New Stores in WooCommerce 11.0
+By
+vladimirreznichenko
+|
+Jun 17, 2026
+Introducing color swatches in WooCommerce core
+By
+Albert Juhé Lluveras
+|
+Jun 3, 2026
+Bringing Variation Galleries into Core
+By
+Marco Lucio Giannotta
+|
+May 19, 2026
+Giving merchants better visibility into the health of their subscriptions
+By
+Darren Ethier
+|
+Apr 30, 2026
+Call for testing: Experimental REST API Caching in WooCommerce 10.5
+By
+konamiman
+|
+Jan 23, 2026
+Call for Testing: WooCommerce MCP Beta
+By
+Brian Coords
+|
+Nov 3, 2025
+Understanding the Interactivity API-driven future for WooCommerce Blocks
+By
+Shani Banerjee
+|
+Oct 30, 2025
+AI & Agentic Commerce in WooCommerce
+By
+Beau Lebens
+|
+Oct 3, 2025
+Improving WooCommerce Performance at Scale
+By
+Beau Lebens
+|
+Oct 1, 2025
+Developer Advisories
+See all Developer Advisories
+Developer advisory: New Store API filter for validating cart item quantities in 11.2
+By
+Shani Banerjee
+|
+Sep 24, 2026
+WooCommerce Subscriptions 9.2.0: settings updates and dev changes
+By
+Vasily Belolapotkov
+|
+Sep 8, 2026
+WooCommerce 11.1 release is delayed
+By
+Nadir Seghir
+|
+Sep 1, 2026
+WooCommerce 11.1 Delivers Faster REST and Store API Requests by Skipping Block Registration
+By
+Raluca
+|
+Aug 31, 2026
+Retiring stable feature flags in WooCommerce 11.1
+By
+Luigi Teschio
+|
+Aug 31, 2026
+Changes to order item deletion in WooCommerce 11.1
+By
+Thomas Roberts
+|
+Aug 31, 2026
+Changes to product lifecycle hooks in WooCommerce 11.2: save and reorder
+By
+vladimirreznichenko
+|
+Aug 25, 2026
+Reserved item meta keys are no longer persisted in the admin
+By
+Jorge Torres
+|
+Aug 18, 2026
+Security update for Stripe for WooCommerce
+By
+Brian Coords
+|
+Aug 6, 2026
+
+===== https://woocommerce.github.io/woocommerce-rest-api-docs/
+TITLE: WooCommerce REST API Documentation - WP REST API v3
+ACCESSED: 2026-09-27
+
+WooCommerce REST API Documentation - WP REST API v3
+cURL
+Node.js
+PHP
+Python
+Ruby
+Introduction
+WooCommerce (WC) 2.6+ is fully integrated with the WordPress
+REST
+API. This allows WC data to be created, read, updated, and deleted using requests in JSON format and using WordPress REST API Authentication methods and standard HTTP verbs which are understood by most HTTP clients.
+The current WP REST API integration version is
+v3
+which takes a first-order position in endpoints.
+The following table shows API versions present in each major version of WooCommerce:
+API Version
+WC Version
+WP Version
+Documentation
+v3
+3.5.x or later
+4.4 or later
+-
+v2
+3.0.x or later
+4.4 or later
+v2 docs
+v1
+2.6.x or later
+4.4 or later
+v1 docs
+Prior to 2.6, WooCommerce had a REST API separate from WordPress which is now known as the legacy API. You can find the documentation for the legacy API separately.
+API Version
+WC Version
+WP Version
+Documentation
+Legacy v3
+2.4.x or later
+4.1 or later
+Legacy v3 docs
+Legacy v2
+2.2.x or later
+4.1 or later
+Legacy v2 docs
+Legacy v1
+2.1.x or later
+4.1 or later
+Legacy v1 docs
+Requirements
+To use the latest version of the REST API you must be using:
+WooCommerce 3.5+.
+WordPress 4.4+.
+Pretty permalinks in
+Settings > Permalinks
+so that the custom endpoints are supported.
+Default permalinks will not work.
+You may access the API over either HTTP or HTTPS, but
+HTTPS is recommended where possible
+If you use ModSecurity and see
+501 Method Not Implemented
+errors, see
+this issue
+for details.
+Request/Response Format
+The default response format is JSON. Requests with a message-body use plain JSON to set or update resource attributes. Successful requests will return a
+200 OK
+HTTP status.
+Some general information about responses:
+Dates are returned in ISO8601 format:
+YYYY-MM-DDTHH:MM:SS
+Resource IDs are returned as integers.
+Any decimal monetary amount, such as prices or totals, will be returned as strings with two decimal places.
+Other amounts, such as item counts, are returned as integers.
+Blank fields are generally included as
+null
+or emtpy string instead of being omitted.
+JSONP Support
+The WP REST API supports JSONP by default. JSONP responses use the
+application/javascript
+content-type. You can specify the callback using the
+?_jsonp
+parameter for
+GET
+requests to have the response wrapped in a JSON function:
+GET
+/wp-json/wc/v3?_jsonp=callback
+curl https://example.com/wp-json/wc/v3/products/tags/34?_jsonp
+=
+tagDetails
+\
+-u
+consumer_key:consumer_secret
+WooCommerce
+get
+(
+"
+products/tags/34?_jsonp=tagDetails
+"
+)
+then
+((
+response
+)
+=>
+{
+console
+log
+(
+response
+data
+);
+})
+catch
+((
+error
+)
+=>
+{
+console
+log
+(
+error
+response
+data
+);
+});
+<?php
+print_r
+(
+$woocommerce
+->
+get
+(
+'products/tags/34'
+,
+[
+'_jsonp'
+=>
+'tagDetails'
+]));
+?>
+print
+(
+wcapi
+get
+(
+"products/tags/34?_jsonp=tagDetails"
+).
+json
+())
+woocommerce
+get
+(
+"products/tags/34"
+,
+_jsonp:
+"tagDetails"
+).
+parsed_response
+Response:
+/**/tagDetails({"id":34,"name":"Leather Shoes","slug":"leather-shoes","description":"","count":0,"_links":{"self":[{"href":"https://example.com/wp-json/wc/v3/products/tags/34"}],"collection":[{"href":"https://example.com/wp-json/wc/v3/products/tags"}]}})%
+Errors
+Occasionally you might encounter errors when accessing the REST API. There are four possible types:
+Error Code
+Error Type
+400 Bad Request
+Invalid request, e.g. using an unsupported HTTP method
+401 Unauthorized
+Authentication or permission error, e.g. incorrect API keys
+404 Not Found
+Requests to resources that don't exist or are missing
+500 Internal Server Error
+Server error
+WP REST API error example:
+{
+"code"
+:
+"rest_no_route"
+,
+"message"
+:
+"No route was found matching the URL and request method"
+,
+"data"
+:
+{
+"status"
+:
+404
+}
+}
+WooCommerce REST API error example:
+{
+"code"
+:
+"woocommerce_rest_term_invalid"
+,
+"message"
+:
+"Resource doesn't exist."
+,
+"data"
+:
+{
+"status"
+:
+404
+}
+}
+Errors return both an appropriate HTTP status code and response object which contains a
+code
+,
+message
+and
+data
+attribute.
+Parameters
+Almost all endpoints accept optional parameters which can be passed as a HTTP query string parameter, e.g.
+GET /orders?status=completed
+. All parameters are documented along each endpoint.
+Pagination
+Requests that return multiple items will be paginated to 10 items by default. This default can be changed by the site administrator by changing the
+posts_per_page
+option. Alternatively the items per page can be specified with the
+?per_page
+parameter:
+GET /orders?per_page=15
+You can specify further pages with the
+?page
+parameter:
+GET /orders?page=2
+You may also specify the offset from the first resource using the
+?offset
+parameter:
+GET /orders?offset=5
+Page number is 1-based and omitting the
+?page
+parameter will return the first page.
+The total number of resources and pages are always included in the
+X-WP-Total
+and
+X-WP-TotalPages
+HTTP headers.
+Pagination info is included in the
+Link Header
+. It's recommended that you follow these values instead of building your own URLs w
+
+===== https://woocommerce.com/documentation/woocommerce/
+TITLE: WooCommerce Documentation - WooCommerce
+ACCESSED: 2026-09-27
+
+WooCommerce
+Build exactly the ecommerce website you want with WooCommerce — a customizable, open-source ecommerce platform built on WordPress.
+Are you a developer?
+Check out our technical documentation
+Getting started
+Everything you’ll need to get your online store up and running. From installation to managing orders — our guides can help with configuring WooCommerce to work for your business.
+How to build an online store on WooCommerce
+Updating free WooCommerce extensions/plugins
+Which payment option is right for me?
+See all topics
+Migrating to WooCommerce
+Ready to switch platforms?
+Our migration guides help you confidently move your store to WooCommerce. Whether you're just exploring or already planning the transition, you'll find step-by-step resources to get set up, transfer your data, and unlock the flexibility and control that come with owning your store.
+How to migrate from Shopify
+How to migrate from Wix
+Importing products from Etsy
+See all topics
+Products
+Product brands
+Set up Related Products, Up-Sells and Cross-Sells
+How to Add a WooCommerce Product
+See all topics
+Taxes
+Setting Up EU VAT Rates for Digital Products
+EU VAT July 2021 changes, ecommerce, and WooCommerce
+How to handle multiple regions and currencies with WooCommerce
+See all topics
+Shipping
+Order Fulfillment
+Setting up Shipping Zones
+Offer Shipping Insurance
+See all topics
+Payments
+Fraud Prevention
+Direct Bank Transfer (BACS)
+Cash on Delivery
+See all topics
+Orders
+Customer Order Withdrawal
+Refunding Orders in WooCommerce
+Removing personal data from orders
+See all topics
+Data and reporting
+Analytics and Sales Reports
+Dashboard Widgets
+WooCommerce Analytics: Order Attribution Report
+See all topics
+Customers
+Customizing the customer email-verification prompt
+Accounts and Privacy Settings
+The My account page
+See all topics
+Marketing
+Managing Coupons in WooCommerce
+Google for WooCommerce
+Email troubleshooting
+See all topics
+Site administration
+Email Settings
+Customizing WooCommerce: Best Practices
+Updating free WooCommerce extensions/plugins
+See all topics
+Store design
+Block Patterns in WooCommerce
+Using Template Parts in WooCommerce
+WooCommerce Customize Your Store
+See all topics
+Mobile App
+Additional users
+Age verification in the WooCommerce mobile app
+AI Support Chat
+See all topics
+Get help
+Get help with WooCommerce and WordPress by checking out our collection of guides, FAQs, and documentation.
+
+Start here: our
+troubleshooting guide
+addresses some of the most common issues. You can also get help from your fellow merchants in the
+WooCommerce support forums
+Get tailored help fast with Woo’s AI Assistant
+Get help in your WooCommerce store admin dashboard
+How to get help
+See all topics
+
+===== https://woocommerce.com/documentation/woocommerce/getting-started/
+TITLE: Getting started Documentation - WooCommerce
+ACCESSED: 2026-09-27
+
+Getting started
+Everything you’ll need to get your online store up and running. From installation to managing orders — our guides can help with configuring WooCommerce to work for your business.
+Documents
+How to build an online store on WooCommerce
+Thinking about starting an online store on WooCommerce or have already begun building? Well first off, congrats! Woo powers success for millions of merchants around the world, and we hope it’ll do the same for you. Here you’ll find step-by-step instructions on how to build an online store with Woo. We know there are a […]
+Updating free WooCommerce extensions/plugins
+Free WooCommerce extensions and plugins do not require an active subscription to receive updates. This page explains where free subscriptions appear in your dashboard and how to keep them updated. Free subscriptions in your dashboard You may see free extensions or plugins listed in your store’s WordPress admin at WooCommerce > Extensions > My subscriptions. […]
+Which payment option is right for me?
+There is a large range of payment gateway options for WooCommerce to provide payment options for your customers. Read on to learn about how to choose a payment method, including WooPayments (available in selected locations). On this page you’ll learn: What is a payment gateway? A payment gateway, in WooCommerce terms, is a WordPress plugin that […]
+Accessibility Features in the WooCommerce Plugin
+Overview WooCommerce is built on top of WordPress, which adheres to strict accessibility coding standards. The WooCommerce plugin inherits these practices and introduces its own accessibility features to ensure compatibility with assistive technologies such as screen readers and keyboard-only navigation. This page outlines the built-in accessibility features within the plugin. Note: Many regions legally require […]
+WooCommerce Setup
+Introduction Having a customizable ecommerce platform means that there are a lot of available settings to consider and adjust to fit your vision. The Onboarding Wizard and Setup Checklist take you through all the necessary initial steps to set up your store and get it ready to start selling! Right after activating WooCommerce, you are […]
+WooCommerce Menu Items
+Activating WooCommerce adds 4 main menu items to the WordPress admin dashboard. Click here for a closer look.
+Consider shipping before you start
+Considering shipping before you start is important for setting up shipping correctly before taking orders in your WooCommerce store. If you are new to WooCommerce, we recommend taking some time to answer the following questions.
+Adding and Managing Products
+Before you can start selling, you need products to offer. That’s why adding and managing your inventory is a crucial step in setting up your shop. Getting Started with Product Management in WooCommerce In WooCommerce, you can add a product with just a name and a price. However, the more details you provide, the more […]
+Setting up taxes in WooCommerce
+A step-by-step guide to setting up Tax Rates for your store
+Managing orders
+Orders are the center of activity in your store. Understanding how to manage them effectively is key to keeping your business running smoothly. The following documentation is your guide to managing orders in WooCommerce. It is designed to assist administrators and shop managers in navigating through the various aspects of order management. Orders are visible […]
+
+===== https://woocommerce.com/pricing/
+TITLE: WooCommerce Pricing Puts You In Control - WooCommerce
+ACCESSED: 2026-09-27
+
+WooCommerce pricing puts you in control
+WooCommerce is the
+free, open-source ecommerce platform
+for WordPress. Build a custom online store and only pay for the added features you use — no platform fees, no revenue share.
+Estimate your costs
+How WooCommerce pricing works
+WooCommerce is free to download and use, and you choose where to invest your budget from there. Get everything you need and nothing you don’t, with total transparency and no tiers or surprise fees.
+0
+%
+revenue share
+Core platform: WooCommerce
+Free, with no monthly subscription.
+Payments: Pick your processor
+No extra costs, just your solution’s processing fees.
+Hosting: Choose your provider
+$25 – $350/month for most stores, but scales with traffic and performance needs.
+Extensions: Add à la carte
+$29 – $299/year per extension to enhance your store.
+Compare the costs
+WooCommerce’s flexible and transparent model translates into long-term savings for your business. Scroll right to compare pricing across platforms.
+Shopify Basic
+Shopify Advanced
+Shopify Plus
+BigCommerce Core
+BigCommerce Enterprise
+Salesforce Commerce Cloud
+Wix Enterprise
+Adobe Commerce (Magento)
+Monthly platform and hosting fees
+$0 platform fee
+Choose the host that makes sense for your business
+$29/mo
+$399/month
+$2,300+/month
+$29/mo, online revenue capped at $50k
+~$1,000–5,000+/month
+1-3% of GMV
+~$500–2,000+/month
+$22k–$125k+/year
+Card payment processing
+~2.50-2.90% + 30¢ per transaction with WooPayments
+2.9% + 30¢ per transaction
+2.5% + $0.30 per transaction
+2.4% + $0.30 per transaction
+2.89% + 29¢ per transaction
+~2.35% + $0.49 per transaction
+~2.9% + $0.30 per transaction
+~2.9% + $0.30 per transaction
+~2.9% + $0.30 per transaction
+Additional fee for using third-party payment solution
+None
+2% per transaction
+0.6% per transaction
+0.2% per transaction
+2% per transaction
+None
+None
+None
+None
+Revenue share
+None
+None
+None
+0.25% on monthly sales over $800k
+None
+0.6% on GMV above $250k/month
+1-3% of GMV
+None
+None
+Subscription processing fees
+None with WooCommerce Subscriptions
+~1–3% depending on app (no native subscription billing)
+~1–3% depending on app
+~1–3% depending on app
+~1–3% depending on app (no native subscription billing)
+0–2% plus up to $500/month, depending on app
+Varies based on app; annual fees can reach $2,000-10,000
+None
+Varies based on app; annual fees can exceed $1,000
+Fee for localized selling in global markets
+$0, can sell in unlimited markets
+3 markets included. Unable to add more
+$59/month per market after first 3 markets
+$59/month per market after first 50 markets
+None
+$0
+$59/month per market after first 50 markets
+$0, but requires development
+$0
+Product variant limits
+Unlimited
+Up to 2,048 variants per product; max 3 option types per product
+Up to 2,048 variants per product; max 3 option types per product
+Up to 2,048 variants per product; max 3 option types per product
+Up to 600 variants per product
+Maximum 600 SKUs per product
+Unlimited
+Max 1,000 variants per product
+Unlimited
+Maksimer
+“WooCommerce offers unmatched control over both costs and capabilities. Unlike rigid SaaS platforms, we can tailor every part of the stack — only paying for the features the business truly needs.”
+Nils-Fredrik Winther-Kaland, CEO
+Grow your business, not your costs
+WooCommerce doesn’t believe in taxing your growth. There’s no revenue share, and we don’t lock features away behind higher-priced plan tiers. The free core platform includes:
+Unlimited products, orders, and APIs.
+Costs tied to infrastructure, not sales volume.
+Customizations that stay yours.
+Offer any payments without penalties
+WooCommerce lets you choose and change your payments solution without fees, restrictions, or forced bundles.
+Use any gateway or BNPL provider without penalty.
+Run multiple gateways to maximize conversion.
+Negotiate processor rates directly as volume grows.
+Customize your checkout without forced upgrades.
+Get started
+See real WooCommerce pricing breakdowns
+Ecommerce costs aren’t one-size-fits-all. Check out these sample merchant total cost of ownership (TCO) summaries from our agency partner StuntCoders.
+Read more about WooCommerce TCO
+from StuntCoders.
+Boutique luxury goods brand, Europe, $2M annual revenue
+A luxury regional ecommerce store with a highly customized front end, configurable product logic (e.g., engraving), and premium UX focused on detail and mobile experience.
+Cost category
+First year cost
+Ongoing annual cost
+Initial development
+$70,000
+$0
+Yearly functional additions/maintenance
+$15,000
+$35,000
+Third-party services (Algolia, Mailchimp, GDPR, Tripletex)
+$3,000
+$3,000
+Server hosting
+$300
+$300
+Premium plugins
+$300
+$300
+Payment fees (~2.5% average, Klarna and Nexi)
+~$50,000
+~$50,000
+Total
+~$139,000
+~$89,500
+Total cost as a percentage of revenue
+6.95%
+4.48%
+Regulated medical retailer, Europe, $10M annual revenue
+A medical and pharmacy business with complex user flows for prescription validation, identity verification, and multi-platform communication with data protection.
+Cost category
+
+===== https://woocommerce.com/partners/
+TITLE: Partners - WooCommerce
+ACCESSED: 2026-09-27
+
+Expand your business with the WooCommerce Marketplace
+Open the door to new opportunities with a partnership with Woo. Join the official WooCommerce Marketplace and get your products in front of millions of engaged WooCommerce store owners.
+Become a partner
+3.6M+
+Woo-powered stores online
+Source:
+Storeleads
+1000+
+Products in our Marketplace
+95%
+Satisfaction rate amongst
+Marketplace partners
+Let’s grow together
+We’re always looking for new solutions to help our store owners grow their businesses. Discover what a partnership with Woo can do for you.
+Reach a large and engaged user base
+With more than 3.6 million WooCommerce stores worldwide, you can reach a huge community of users. Listings on our online and in-app marketplaces will put your products front and center for users actively looking for ways to customize their stores.
+Get the Woo seal of approval
+The WooCommerce Marketplace is the only official outlet for WooCommerce products. Every product listed adheres to our compatibility standards, which has helped us build our reputation as a trustworthy and safe marketplace to buy from.
+Extra exposure and promotion opportunities
+As an official partner, you may receive extra exposure through product features in our newsletters, social media channels, and blog posts. You could also benefit from collaboration opportunities with other brands in the Automattic family.
+Access product insights
+Make informed decisions on developing and improving your products. Access key information, such as product performance metrics, ratings and reviews, and feature requests, to build on your success. Plus, our expert team will be on hand to provide extra guidance.
+Become a partner
+You’ll be in good company
+Get to know the Woo Developer community
+Join the WooCommerce Community on Slack
+Follow the Developer Blog for core updates
+Engage with an active community in the forums
+Need some help?
+Take a look at our
+guide to getting started on the WooCommerce Marketplace
+for information on the submission and review process. If you’d like to discuss the partnership opportunities available with Woo, please
+reach out to our dedicated Partnership team
+Expand your business with the WooCommerce Marketplace
+Become a partner
+
+===== https://woocommerce.com/contact-us/
+TITLE: Contact us - WooCommerce
+ACCESSED: 2026-09-27
+
+How can we help?
+Need a hand with WooCommerce? We can point you in the right direction. Choose a topic to learn more about the resources and support that are available.
+Migrate to WooCommerce
+Our specialist team can work with you to develop a seamless migration plan that’s customized to your needs.
+Get in touch
+Help with my account
+Need help with your account or a product purchased on WooCommerce.com? Our Happiness Engineers will be glad to help.
+Log in

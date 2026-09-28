@@ -1,0 +1,473 @@
+===== https://airtable.com/developers/agents
+TITLE: Overview - Airtable Developers
+ACCESSED: 2026-09-27
+
+Airtable for agents and humans
+Airtable's structured field types, relational links, and built-in automations make it a rich data layer for AI agents. Any MCP-compatible tool can read, write, and query your bases through natural language, scoped to your existing permissions.
+Query and edit your data
+Ask questions, summarize records, create and edit fields without leaving your chat. Works with Claude, ChatGPT, or any connected MCP client.
+Build with schema
+Turn anything into structured data
+Terminal
+Prioritize my Q3 projects based on due date, owner capacity, and current blockers, and call out what's blocking each one.
+Initiatives
+/
+Planning
+Mobile app redesign
+P0
+Blocked on iOS App Store review
+Client portal MVP
+P1
+API integration with billing system incomplete
+Onboarding flow redesign
+P1
+Waiting on user research findings
+Navigation refresh
+P2
+Key stakeholder unavailable for final review
+Checkout redesign
+P2
+A/B test results pending before rollout
+Connect your tool of choice
+Start querying your Airtable data in minutes from the tools your team already uses.
+Claude
+Best for:
+Querying and updating your data through natural conversation. Connects in one click via OAuth.
+Add Airtable to Claude
+ChatGPT
+Best for:
+Querying and updating your data through natural conversation. Connects in one click via OAuth.
+Add Airtable to ChatGPT
+Claude Code
+Best for:
+Building interfaces, authoring skills, and schema-aware workflows. Install the plugin to get Airtable MCP & full skills library.
+View install guide
+CLI
+Best for:
+Scripting, scheduled operations, and running workflows against your Airtable data. Install via npm.
+npm install -g @airtable/mcp-cli
+Built to work with any agent
+Airtable is model agnostic and works with the AI tools your team already use. You're not locked into a single provider.
+View the quickstart
+What our
+MCP server allows agents to do
+The Airtable MCP server gives agents your base's full structure — field types, relationships, and views — so they can make context-aware decisions.
+Query your data
+Ask questions across your bases, surface records, and analyze information.
+Update records
+Create, edit, and delete records, fields, and tables through conversation.
+Build bases
+Set up new bases and tables, define schemas, and structure your data.
+Make your AI tool smarter with skills
+Skills are expert playbooks that make your agent fluent in Airtable starting from core techniques to opinionated workflows for your specific use case.
+Airtable skills plugin
+The easiest way to install Airtable skills is via the plugin. It installs all available skills and keeps them up to date.
+Claude Code
+Codex
+/plugin marketplace add airtable/skills
+/plugin install airtable@airtable-skills
+Official Airtable skills
+Skills can also be installed individually. Airtable provides core skills and role-based solutions skills.
+Core skills
+Description
+airtable-overview
+Teaches your AI tool how Airtable is structured — bases, tables, field types, views, and relationships.
+airtable-filters
+Improves the accuracy of record queries by teaching your AI tool how Airtable filters work.
+airtable-cli
+Teaches your agent about the Airtable CLI.
+Solution skills
+Description
+product-ops
+Teaches your AI tool sprint tracking, roadmap management, and prioritization workflows.
+sales-ops
+Teaches your AI tool pipeline management, deal tracking, and revenue reporting workflows.
+marketing-ops
+Teaches your AI tool campaign tracking, asset management, and launch coordination workflows.
+View the full skills catalog
+
+===== https://airtable.com/developers/agents/mcp/tools
+TITLE: Tools reference - Airtable Developers
+ACCESSED: 2026-09-27
+
+Tools reference
+Tools exposed by Airtable's remote MCP server at
+https://mcp.airtable.com/mcp
+Automations
+Create an automation
+create_automation
+Creates an automation (trigger plus actions, including conditional and repeating groups).
+Saves the draft configuration only — it is off until the user reviews and turns it on in
+the Airtable UI. Prefer calling
+get_create_automation_instructions
+first.
+Example prompt:
+"Set up an automation to send a Slack message whenever a new record is added to my Tasks table"
+Delete an automation
+delete_automation
+Deletes an automation that is off. Automations that are on must be turned off in the
+Airtable UI first.
+Example prompt:
+"Delete the unused automation named Weekly digest"
+Fetch input options for an automation action or trigger
+fetch_automation_input_data
+Fetches dynamic input options for an automation trigger or action (for example Slack
+channels or Jira projects). Requires an external account ID from
+list_external_accounts
+Example prompt:
+"Which Slack channels can I send to in this automation?"
+Get automation configuration
+get_automation
+Gets the full configuration of a single automation, including trigger and action inputs
+and deployment status. Use
+list_automations
+first to obtain the automation ID.
+Example prompt:
+"Show me the full configuration of the Slack notification automation"
+Get create automation instructions
+get_create_automation_instructions
+Returns the full specification for creating or updating automations — supported triggers
+and actions, expression language, catalogs, and examples. AI tools typically call this once
+per session before building an automation.
+List automations
+list_automations
+Lists automations in a base, including ID, name, deployment status, trigger info, and
+node summaries. Optionally filter by trigger type.
+Example prompts:
+"What automations are configured in this base?"
+"Show me automations that run when a record is created"
+Test an automation webhook trigger
+test_automation_webhook_trigger
+Re-runs an automation webhook trigger test to capture the latest representative request
+body schema.
+Update an automation
+update_automation
+Replaces the full draft configuration of an existing automation (trigger, nodes, name, and
+description). If the automation is on, live behavior is unchanged until unpublished changes
+are applied with Update in the Airtable UI. Use
+list_automations
+and
+get_automation
+first.
+Example prompt:
+"Update the Slack notification automation to also email the assignee"
+Bases
+Creates a new Airtable base
+create_base
+Creates a new Airtable base.
+Example prompts:
+"Create a base called 'Project Tracker' in my workspace"
+"Set up a new base for tracking job applications"
+List Airtable bases
+list_bases
+Finds the Airtable bases you have access to.
+Search for an Airtable base
+search_bases
+Finds bases matching a name and recommends the best match.
+Fields
+Creates a new field in an Airtable table
+create_field
+Adds a new field to an existing table.
+Updates the name, description, and/or options of a field in an Airtable table
+update_field
+Updates an existing field's name or description, or a formula field's expression.
+Changing a field's type or its select choices is not supported. Use the Airtable UI for those changes.
+Example prompts:
+"Rename the Status field in my Tasks table to Stage"
+"Change the formula on my Total field to multiply Quantity by Price"
+Forms
+Get the schema of a form page
+get_form_schema
+Returns the layout of a form: its sections, fields, required fields, and visibility conditions.
+Submit a form
+submit_form
+Submits a form.
+Example prompt:
+"Submit the new-hire intake form for John Doe with a start date of next Monday"
+Interfaces
+Create an interface
+create_interface
+Creates a new interface within a base. Interfaces let you present your base's data in custom layouts that teammates can use without needing direct access to the underlying tables.
+Example prompts:
+"Create an interface for the Projects base"
+"Set up a new interface for the HR team"
+Create an interface page
+create_page
+Creates a new page within an interface. Supports visualization, dashboard, and recordDetail
+page types. Supports kanban, list, calendar, gallery, grid, timeline, and recordReview
+visualization types for "visualization" pages.
+Delete an interface
+delete_interface
+Deletes an interface, including all of its pages, from a base.
+Delete an interface page
+delete_page
+Deletes a page from an interface.
+Fetch records from an interface page
+list_records_for_page
+Lists records from an interface page. Works even when users only have access to the interface, not the underlying base.
+Get a record from an interface page
+get_record_for_page
+Gets a single record from an interface page. Works even when users only have access to the interface, not the underlying base.
+Get the required configuration for a page element type
+describe_page_element
+Returns the configuration options for a page element type (list, grid, 
+
+===== https://airtable.com/developers/agents/intro/quickstart
+TITLE: Quickstart - Airtable Developers
+ACCESSED: 2026-09-27
+
+Quickstart
+If you're new to Airtable, the fastest way to get started is to build something from nothing. You don't need to have a pre-defined data model or set up a single table by hand. Describe what you want to track, point your AI tool at whatever raw material you already have, and it builds a real, structured base for you in one sitting.
+Start from scratch: turn a messy idea into a working app for your team
+Imagine that you're trying to put together an operations base for your team.
+The sweet spot:
+you have a rough idea of what you want to track
+and
+a pile of messy source material — a spreadsheet, a folder of PDFs, an email thread, some notes. You can use Airtable's MCP server to turn that messiness into an app for your team.
+The starting point: one flat tracking sheet, duplicates and all.
+What you'll need
+An Airtable account
+An MCP-compatible AI tool — Claude, ChatGPT, or any connected MCP client.
+Step 1 — Connect Airtable
+Add the Airtable connector in your AI tool. If you grant access to a workspace or all content, Airtable will handle everything, from base creation to data ingestion. See our
+setup guides
+for connecting to top clients.
+During authorization you choose what the AI tool can access — a single workspace is plenty for this walkthrough.
+Step 2 — Describe what you want, and hand over your mess
+Describe what you want to track in plain language and attach or paste whatever raw material you already have. No schema knowledge required.
+Don't have anything messy lying around?
+Download the sample data here to follow along
+Here's what I want to keep track of: the organizations we work with, our contacts at each one, and the projects we're running for them - statuses, owners, and due dates.
+
+And here's what I've got: our team's tracking spreadsheet, attached. Fair warning, it's messy - duplicate companies, inconsistent dates, a few gaps.
+
+Using the Airtable connector, propose a base structure, then once I approve, build it and load my data in.
+One message: what you want to track, plus your raw material attached as-is.
+Step 3 — Review the structure before anything is built
+Your AI tool proposes the tables, fields, and how they link — for example, three linked tables like
+Organizations ↔ Contacts ↔ Projects
+, with sensible field types (status, dates, owners, links). Refine it in chat until it's right. Nothing gets created until you approve.
+The proposed structure — three linked tables, normalized statuses and dates — before anything is created.
+Step 4 — Let it build the base and load your data
+Once you approve, your AI tool creates the base, tables, fields, and links through the MCP server, then reads your raw inputs and writes them in as clean, de-duplicated,
+linked
+records — not a flat dump. It shows you what it's about to write so you can confirm before it commits.
+The built base: normalized statuses, real dates, linked organizations — and ambiguous rows flagged for review instead of silently dropped.
+You've got a real base
+From here you can:
+Ask questions across your data —
+"Which projects are due in the next two weeks and who's our contact for each?"
+Keep feeding it new inputs to add more records over time.
+Use the server to build Interfaces pages on top of it.
+Cross-table questions in plain language — the answer links the project, its organization, and your contact there.
+Once you're satisfied, you can go into Airtable and share the base with the rest of your team. No configuration or deployment required. The app is at your fingertips, and theirs. New teammates can query data, create new records, and connect from whatever tools they're using. Airtable is now your team's operational hub.
+
+===== https://airtable.com/developers/agents/mcp/getting-started
+TITLE: MCP server overview - Airtable Developers
+ACCESSED: 2026-09-27
+
+MCP server overview
+Airtable's MCP server lets you connect AI tools directly to your Airtable bases. This integration allows you to ask questions about your data, create and update records, build and manage automations, and analyze information—all through natural conversation with AI tools like Claude, ChatGPT, Cursor, and more. The server is available to all users on all plans.
+Airtable's MCP server
+Model Context Protocol (MCP) is an open standard that allows AI tools to securely connect to external data sources. Using Airtable's MCP server, AI tools can query your Airtable data, perform actions on your behalf, and present structured information—all while respecting your existing permissions and security settings.
+Base Owner and Creator
+Can manipulate base schema and change records
+Base Editor
+Will only be able to change and update records
+Interface only users
+Will only be able to interact with pages and data exposed in those Interfaces.
+Common clients
+The following tools have a pre-built connector to Airtable and can be connected in a single step.
+Client
+Quickstart guide
+Plugin support
+Client docs
+Claude
+Claude quickstart
+Add connector
+Claude Code
+Claude Code quickstart
+Install plugin
+ChatGPT
+ChatGPT quickstart
+Add Airtable app
+Google Gemini
+Google Gemini quickstart
+Open Gemini apps
+Gemini Enterprise
+Gemini Enterprise admin setup
+If you want to connect to the MCP server from a different MCP client, you can follow the instructions on the
+Other clients
+page.
+Using the server
+Once you've connected, you will be able to query the data stored in Airtable or start building new bases.
+Be specific when possible:
+make it clear what base contains the information you're looking for.
+It's normal for your AI tool to use discovery tools:
+it may have to list all your bases, explore your base schema, and inspect records before it can give you an answer to your task.
+Create skills or memories:
+if you find yourself repeating common workflows, encoding that workflow in a skill is a good way to set your agent up for success.
+Use natural language:
+you don't need to know field names or table IDs—describe what you want in plain English. Sometimes you may want to describe the base in more detail before asking for data from a table.
+Check permissions:
+if you can't access certain data via MCP, verify that you have the appropriate permissions in Airtable.
+Think about what data you're giving your AI tool:
+your tool will be able to read and make edits to your Airtable data on your behalf. Make sure you trust the tools you're using or any other data sources you connect to.
+What tools does the MCP server provide
+You can search our tool documentation for detailed tool information. At a high level the server can do the following.
+Scenarios
+Example tools
+Create and discover bases
+Search bases by name
+List all bases you've allowed
+Modify base schema
+Create tables
+Modify tables
+Create fields in tables
+Create advanced fields
+Build and publish interfaces
+Read, create, and modify records
+Read page structure and data from Interfaces
+Create records
+Modify records
+Create comments
+Fill out and submit forms
+Get a form's fields and requirements
+Submit a form on your behalf
+Create and manage automations
+List automations in a base
+Get automation configuration
+Create and update automations
+Delete automations that are off
+Authentication
+Our MCP server supports two authentication methods: OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups).
+OAuth is the fastest path for connecting through most known clients. After installing the MCP server, complete a one-click OAuth flow before getting started. During authorization, you can choose exactly which bases, apps, and workspaces to connect to. You can manage and update the connection permissions any time from
+https://airtable.com/?integrations=thirdParty
+. Our server supports Dynamic Client Registration (DCR).
+OAuth
+Some organizations may want to manually create and approve an OAuth app. Admins can approve this specific app in the admin panel if they don't want to use DCR.
+1
+Follow the Airtable OAuth application setup flow to register an OAuth client. Your tool should supply the redirect URI required to create the app.
+2
+Create the app with the following scopes:
+data.records:read
+data.records:write
+schema.bases:read
+schema.bases:write
+data.recordComments:read
+data.recordComments:write
+workspacesAndBases:read
+3
+Copy your client ID (and, optionally, client secret).
+4
+In your AI assistant's MCP configuration, enter:
+Server URL:
+https://mcp.airtable.com/mcp
+Client ID:
+[Your client ID]
+5
+Complete the OAuth flow in your AI tool. Once authorized, the tool can call the MCP server on your behalf.
+Personal access tokens
+Personal Access Tokens give you precise, persistent control over what the MCP server can access. To use a PAT, create one in your Airtable account with the following scopes (or li
+
+===== https://airtable.com/developers/agents/skills-and-plugins/sales-ops
+TITLE: Sales ops agent skill - Airtable Developers
+ACCESSED: 2026-09-27
+
+Sales ops agent skill
+Set up and run Airtable-based sales operations and CRM workflows — pipeline management, account and renewal management, deal desk, RFP / tender pipelines, partner CRMs, sales forecasting, vertical CRMs (real estate, mortgage, brokerage, capital markets, public works, nonprofit), and AI-native lean stacks (Clay-equivalent enrichment, AI-assisted outbound, conversation-intel ingestion). Use when the user wants to track deals, manage accounts, build a pipeline, run a deal desk, coordinate partners, manage RFPs, or build an AI-forward GTM stack. Defaults to augmenting existing CRMs (Salesforce / HubSpot); also supports Airtable-as-CRM and AI-native stacks. Asks scope first. Commercial workflows only; post-sale support belongs to a future customer-success skill.
+Plugin installation
+Install all official skills by
+installing a plugin
+Copy and paste in your MCP client
+Click the copy button on the code block below and paste it into your MCP client.
+The sales ops skill
+---
+name: sales-ops
+description: Set up and run Airtable-based sales operations and CRM workflows — pipeline management, account and renewal management, deal desk, RFP / tender pipelines, partner CRMs, sales forecasting, vertical CRMs (real estate, mortgage, brokerage, capital markets, public works, nonprofit), and AI-native lean stacks (Clay-equivalent enrichment, AI-assisted outbound, conversation-intel ingestion). Use when the user wants to track deals, manage accounts, build a pipeline, run a deal desk, coordinate partners, manage RFPs, or build an AI-forward GTM stack. Defaults to augmenting existing CRMs (Salesforce / HubSpot); also supports Airtable-as-CRM and AI-native stacks. Asks scope first. Commercial workflows only; post-sale support belongs to a future customer-success skill.
+license: MIT
+metadata:
+    version: '0.1.0'
+    author: airtable
+---
+
+# Sales operations and CRM workflows
+
+Set up and run sales operations workflows in Airtable — pipeline, accounts, renewals, deal desk, RFP tracking, partner CRMs, vertical sales-shaped systems. Adapts to team size, existing CRM, and industry. Ask scope before scaffolding; the same trigger can mean a 3-table pipeline for a 5-person team, a Salesforce-augmenting deal desk for a 200-person enterprise sales org, or a vertical-specific CRM for a mortgage broker / real estate firm / public-works contractor.
+
+## Who this serves and what they're solving for
+
+Sales operations spans more roles and verticals than the "VP Sales running Salesforce" stereotype.
+
+-   **Revenue leaders** (CRO / VP Sales / RevOps / sales-ops manager) — pipeline coverage, forecast accuracy, segment visibility, lead-to-revenue efficiency. _"Broken"_ means _"I can't trust the numbers."_
+-   **Daily operators** (AE / SDR / BDR / account manager) — prospect context at the point of contact, fast inbound routing, deal-stage clarity, low-friction logging. _"Broken"_ means _"I'm pasting between five tabs to send one email."_
+-   **Cross-functional support** (deal desk, sales engineering, sales-ops analysts) — approval routing with audit trail, capacity vs. demand, technical-fit scoring, exception triage. Distinct product surface from the CRM itself.
+-   **Partner / channel managers** — partner-led pipeline rollups, deal registration with anti-conflict rules, joint account planning, MDF tracking.
+-   **Vertical operators** — mortgage loan officers, real-estate brokers, capture managers (public works / AEC), donor relations leads, capital-markets desk operators — sales-shaped workflows with industry-specific vocabulary, regulators, and integrations.
+
+Cross-cutting problems: the existing CRM is usually staying but bleeds into spreadsheets where work actually happens (_"swivel-chair work,"_ _"single source of truth"_); per-seat licensing pushes stakeholders out of the system, so visibility breaks; the modern sales-tech stack (Outreach / Salesloft / Apollo / Gong / CaptivateIQ) is often _absent_ in non-tech and mid-market footprints; AI-forward teams want an open data substrate to build Clay-equivalent enrichment + AI-drafted outbound + conversation-intel ingestion _on_, not a CRM with AI bolted on.
+
+## Before scaffolding: ask scope
+
+Sales operations spans more industries and shapes than most categories — most customers running sales workflows in Airtable are NOT tech-SaaS GTM teams. Real estate brokerages, mortgage operations, insurance carriers, capital markets desks, public-works contractors, nonprofits managing donors, education institutions managing partnerships, talent agencies tracking deals — all run "sales ops in Airtable" with different schemas and workflows. Lead with three scope questions; branch from there.
+
+1. **Team size and shape.** Solo / small (under 10) / mid (10–50) / large (50+) / enterprise (multi-team / multi-base). Determines schema-shape default — a 5-person team building their first CRM and a 200-person sales org augmenting Salesforce don't want the s
+
+===== https://airtable.com/developers/agents/skills-and-plugins/getting-started
+TITLE: Getting started - Airtable Developers
+ACCESSED: 2026-09-27
+
+Getting started with skills
+About skills
+A skill is a packaged set of instructions an agent loads when it recognizes a relevant task, so it follows a proven recipe instead of reasoning through the workflow from scratch. They don't add new MCP capabilities; they just give agents more Airtable expertise.
+All of Airtable's skills are open source in the
+airtable/skills
+repo. They're written by Airtable experts to help agents get things done more effectively in Airtable.
+For example,
+airtable-filters
+teaches an agent how to query records with the right operators and ID formats,
+airtable-overview
+explains Airtable's data model, and solution skills like
+product-ops
+,
+sales-ops
+, and
+marketing-ops
+stand up and run a complete system in Airtable using best practices we've learned over the years.
+Plugins are the best way to stay up to date
+The fastest way to get Airtable's skills is to install them as a plugin.
+Install as a plugin (recommended).
+Plugins bundle the skills together and stay connected to the source, so when Airtable ships new skills or improves existing ones your agent picks up the updates automatically — no manual re-syncing, and you install the whole set at once. This is the right choice for almost everyone.
+You can check whether your AI tool supports plugins in
+MCP server overview
+For Cursor, OpenCode, Pi, Gemini CLI, or any other agent that consumes
+Agent Skills
+:
+Pull the skills directly from the
+airtable/skills
+repo:
+# All skills
+npx skills add airtable/skills
+
+# A specific skill
+npx skills add airtable/skills --skill airtable-filters
+This copies the skills into your project as a point-in-time snapshot. It's useful when you want a specific skill or need to vendor a fixed version, but those copies won't update on their own — you'll have to re-pull to get improvements.
+What's in the catalog
+Airtable's skills fall into two groups.
+Core skills
+are the foundations. They teach an agent the Airtable data model and the mechanics of working with your data, and they're designed to be composed into larger workflows.
+Airtable overview
+— what Airtable is and how bases, tables, fields, records, views, automations, and interfaces fit together.
+Airtable filters
+— how to find, filter, and narrow down records by field value, with the correct operators and ID formats for each field type.
+Solution skills
+are end-to-end workflows for a job to be done. They build on the core skills to set up and operate a complete system in Airtable.
+Product ops
+— roadmap management, feedback intake, launch coordination, and prioritization.
+Sales ops
+— pipelines, account and renewal management, deal desk, and forecasting.
+Marketing ops
+— request intake, campaign orchestration, content calendars, and budget and ROI tracking.
+Why use skills
+An agent connected to the MCP server can do a lot on its own, but it has to reason through every workflow from scratch — picking tools, sequencing steps, and inferring conventions like how to filter a linked-record field or best practices for navigating an Interface. Skills close that gap.
+As what you build in Airtable grows, you may want to write skills for your own workflows, they work well alongside the officially-supported Airtable skills.

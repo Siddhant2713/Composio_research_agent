@@ -1,0 +1,1600 @@
+===== https://twenty.com
+TITLE: Twenty | #1 Open Source CRM
+ACCESSED: 2026-09-27
+
+Build your Enterprise CRM
+at AI Speed
+Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves.
+Get started
+Talk to us
+Twenty
+Companies
+New Record
+All Companies
+9
+Filter
+Sort
+Options
+Companies
+Url
+Created By
+Address
+Account Owner
+ICP
+ARR
+Linkedin
+Industry
+Main contact
+Employees
+Opportunities
+Added
+Anthropic
+anthropic.com
+Dario Amodei
+18 Rue De Navarin
+Dario Amodei
+True
+$500,000
+anthropic
+AI Research
+Dario Amodei
+612
+E
+Enterprise Expansion
+Jul 1, 2023
+Linkedin
+linkedin.com
+Reid Hoffman
+1226 Moises Causeway
+Ryan Roslansky
+False
+$1,000,000
+linkedin
+Professional Networking
+Ryan Roslansky
+19,300
+T
+Talent Outreach
+Jul 3, 2023
+Slack
+slack.com
+Stewart Butterfield
+1316 Dameon Mountain
+Stewart Butterfield
+True
+$2,300,000
+slack
+Collaboration Software
+Lidiane Jones
+4,500
+W
+Workspace Renewal
+Jul 5, 2023
+Notion
+notion.com
+API
+API - Key name
+1162 Sammy Creek
+Ivan Zhao
+False
+$750,000
+notion
+Productivity Software
+Ivan Zhao
+620
+W
+Workspace Consolidation
+Jul 8, 2023
+Figma
+figma.com
+WF
+Workflow name
+110 Oswald Junction
+Dylan Field
+True
+$3,500,000
+figma
+Design Tools
+Dylan Field
+1,300
+AI
+AI Prototyping
+D
+Design Ops
+Jul 12, 2023
+Github
+github.com
+Chris Wanstrath
+3891 Ranchview Drive
+Thomas Dohmke
+True
+$900,000
+github
+Developer Platform
+Thomas Dohmke
+3,800
+C
+Copilot Rollout
+Jul 14, 2023
+Airbnb
+airbnb.com
+Joe Gebbia
+4517 Washington Avenue
+Brian Chesky
+True
+$4,200,000
+airbnb
+Travel
+Brian Chesky
+6,900
+H
+Host Ops
+Jul 15, 2023
+Stripe
+stripe.com
+Patrick Collison
+2118 Thornridge Circle
+Patrick Collison
+True
+$1,800,000
+stripe
+Payments
+Patrick Collison
+7,400
+B
+Billing Expansion
+Jul 17, 2023
+Sequoia
+sequoia.com
+Roelof Botha
+1316 Dameon Mountain
+Roelof Botha
+False
+$6,000,000
+sequoia
+Venture Capital
+Roelof Botha
+1,100
+F
+Fund Ops
+Jul 20, 2023
+Segment
+segment.com
+Peter Reinhardt
+8502 Preston Rd. East
+Peter Reinhardt
+True
+$2,750,000
+segment
+Customer Data
+Peter Reinhardt
+1,550
+W
+Warehouse Rollout
+Jul 21, 2023
+Mailchimp
+mailchimp.com
+Ben Chestnut
+3517 W. Gray St.
+Ben Chestnut
+False
+$1,250,000
+mailchimp
+Marketing Automation
+Rania Succar
+1,900
+L
+Lifecycle Campaigns
+Jul 23, 2023
+Accel
+accel.com
+Ray Damm
+4140 Parker Rd.
+Ping Li
+True
+$5,800,000
+accel
+Venture Capital
+Ping Li
+540
+P
+Portfolio Sync
+Jul 24, 2023
+Founders Fund
+foundersfund.com
+SYS
+System
+2715 Ash Dr. San Jose
+Peter Thiel
+True
+$2,100,000
+foundersfund
+Private Equity
+Peter Thiel
+734
+F
+Fundraising
+Jul 25, 2023
+Google
+google.com
+Sundar Pichai
+4140 Parker Rd.
+Sundar Pichai
+False
+$7,500,000
+google
+Computer Software
+Sundar Pichai
+734
+G
+Google AI and Data Solutions
+L
+Relation 2
+L
+Relation 3
+Jul 1, 2023 2:25 pm
+Calculate
+Editor
+AI Chat
++
+1795
+-
+112
+Scaffold a launch-ops CRM in my workspace with rockets, launches, payloads, customers, and launch sites, with relevant actions for each.
+~/code/my-twenty-app
+main
+Mythos
+…my-twenty-app/src/constants/schema-identifiers.ts
++
+84
+-
+0
+1
+export
+const
+SCHEMA_IDS
+= {
+2
+rocket: { object:
+'733956fd-…'
+, fields: {
+launches
+:
+'5b877c2a-…'
+} },
+3
+launch: { object:
+'e7f1e750-…'
+, fields: {
+rocket
+:
+'42c9106f-…'
+} },
+4
+payload: { object:
+'16ffcc45-…'
+, fields: {
+customer
+:
+'d84468aa-…'
+} },
+5
+launchSite: { object:
+'2f18d525-…'
+, fields: {
+launches
+:
+'b94b7f00-…'
+} },
+79
+unmodified lines
+…my-twenty-app/src/objects/launch.object.ts
++
+237
+-
+0
+1
+import
+{
+defineObject
+,
+FieldType
+,
+RelationType
+}
+from
+'twenty-sdk'
+;
+3
+export
+default
+defineObject
+({
+4
+nameSingular:
+'launch'
+,
+5
+labelSingular:
+'Launch'
+, labelPlural:
+'Launches'
+,
+6
+icon:
+'IconRocket'
+,
+7
+fields: [
+8
+{ name:
+'missionCode'
+, type:
+FieldType
+.
+TEXT
+, isUnique:
+true
+},
+9
+{ name:
+'status'
+, type:
+FieldType
+.
+SELECT
+, options: [ … ] },
+10
+{ name:
+'plannedLaunchAt'
+, type:
+FieldType
+.
+DATE_TIME
+},
+11
+{ name:
+'rocket'
+, type:
+FieldType
+.
+RELATION
+, relationType:
+RelationType
+.
+MANY_TO_ONE
+},
+226
+unmodified lines
+…my-twenty-app/src/objects/payload.object.ts
++
+198
+-
+0
+1
+import
+{
+STANDARD_OBJECT
+}
+from
+'twenty-sdk'
+;
+4
+{ name:
+'payloadType'
+, type:
+FieldType
+.
+SELECT
+},
+5
+{ name:
+'customer'
+, type:
+FieldType
+.
+RELATION
+,
+6
+relationTargetObjectMetadataUniversalIdentifier:
+STANDARD_OBJECT
+.company.universalIdentifier,
+7
+universalSettings: { relationType:
+RelationType
+.
+MANY_TO_ONE
+, joinColumnName:
+'companyId'
+},
+8
+},
+190
+unmodified lines
+…my-twenty-app/src/objects/rocket.object.ts
++
+28
+-
+32
+140
+unmodified lines
+141
+141
+{
+142
+name:
+'launches'
+,
+143
+type:
+FieldType
+.
+RELATION
+,
+144
+relationType:
+RelationType
+.
+ONE_TO_MANY
+,
+145
+relationTargetObjectMetadataUniversalIdentifier:
+SCHEMA_IDS
+.launch.object,
+146
+},
+…my-twenty-app/src/views/upcoming-launches.view.ts
++
+82
+-
+0
+1
+import
+{
+defineView
+,
+ViewFilterOperand
+,
+ViewType
+}
+from
+'twenty-sdk'
+;
+3
+export
+default
+defineView
+({
+4
+name:
+'Upcoming launches'
+,
+5
+type:
+ViewType
+.
+TABLE
+,
+6
+filters: [
+7
+{ fieldMetadataUniversalIdentifier:
+SCHEMA_IDS
+.launch.fields.plannedLaunchAt,
+8
+operand:
+ViewFilterOperand
+.
+IS_IN_FUTURE
+},
+9
+],
+73
+unmodified lines
+…my-twenty-app/src/__tests__/schema.integration-tes
+
+===== https://docs.twenty.com/developers/introduction
+TITLE: Developers - Twenty Documentation
+ACCESSED: 2026-09-27
+
+Extend Twenty with custom objects, server-side logic, UI components, and AI agents — all as TypeScript packages.
+REST and GraphQL APIs, webhooks, and OAuth.
+Run Twenty on your own infrastructure.
+Set up the monorepo locally and submit PRs.
+Was this page helpful?
+⌘
+I
+
+===== https://docs.twenty.com/getting-started/introduction
+TITLE: Why Twenty - Twenty Documentation
+ACCESSED: 2026-09-27
+
+You’ve been choosing between software that’s easy to start but impossible to change, and software that’s flexible but takes months to set up. Twenty is the third option:
+a production-ready CRM you can reshape as you go.
+​
+What makes Twenty different
+Twenty is a platform you can build on, not a product you configure.
+Agents operate inside your data model with real permissions. Skills, Tools, MCP.
+The flexibility of vibe-coded tools on secured foundations.
+React, TypeScript. Your team already knows how to extend Twenty. No proprietary languages, no gatekeeping.
+Open-source core, self-hostable, export your data anytime.
+​
+Who is Twenty for
+Large enterprises replacing Salesforce
+— your team
+spends more time fighting the tool than using it.
+You feel locked-in and the costs keep rising.
+Startups with technical founders
+— you’ve outgrown
+spreadsheets and Notion. You have big ambitions and want
+a CRM that scales with you.
+GTM teams looking for an edge
+— you want to build
+your own lead scoring, your own enrichment, your own
+outbound workflows.
+Privacy-conscious organizations
+— you need to
+self-host and own your data end to end. Regulatory,
+contractual, or just principle.
+Salesforce partners
+—
+your developers are tired of presenting license cost increases to your clients.
+You want a better DX, and to deliver projects faster at a lower license cost for your clients.
+Web development agencies
+— your team knows TypeScript, React,
+and PostgreSQL. Twenty opens the CRM market
+to you without learning APEX or getting proprietary certifications.
+​
+Who Twenty is not for
+Teams that want a CRM they never have to think
+about.
+Twenty rewards teams that want to stay close to
+their tools and shape them over time. If you want
+something fully managed, Pipedrive or
+HubSpot will serve you well.
+Companies that need hundreds of pre-built integrations
+today.
+Our ecosystem is growing fast, but it’s not yet
+as broad as Salesforce or HubSpot. If you’re comfortable
+building what’s missing, you’ll love it. If not, give us
+another year.
+Organizations where tools are chosen in boardrooms,
+not by the people using them.
+We don’t do steak dinners
+and executive briefings. We win with teams that have the
+authority to pick their own tools.
+Ready to get started?
+Set up Twenty in under 5 minutes — cloud or self-hosted.
+Was this page helpful?
+⌘
+I
+
+===== https://twenty.com/pricing
+TITLE: Twenty CRM Pricing — Plans from $9 per User per Month
+ACCESSED: 2026-09-27
+
+Simple
+Pricing
+Start your free trial today
+without credit card.
+Monthly
+Yearly
+-25%
+Self-hosting
+Pro
+$9
+/user/month
+Full customization
+Create custom apps
+AI Agents with custom skills
+50 workflow credits/year included
+Standard support
+Start for free
+Organization
+$19
+/user/month
+Everything in Pro
+Row-level permissions
+SAML/OIDC SSO
+Custom domain
+Priority support
+Start for free
+Enterprise
+from $50k
+/year
+Everything in Organization
+Single-tenant isolation
+IP allow-listing
+SCIM provisioning
+Dedicated support & SLA
+Talk to sales
+Need help with customization?
+Find the right partner to implement, customize, and tailor Twenty to your team.
+Browse partners
+Name
+Pro
+Organization
+Enterprise
+Price
+$9
+$19
+From $50k/year
+Seats limit
+Unlimited
+Unlimited
+Unlimited
+Workspace
+Custom objects
+Unlimited
+Unlimited
+Unlimited
+Custom fields
+Unlimited
+Unlimited
+Unlimited
+Custom views
+Unlimited
+Unlimited
+Unlimited
+View types
+Table, Kanban, Calendar
+Table, Kanban, Calendar
+Table, Kanban, Calendar
+Custom layout
+Unlimited
+Unlimited
+Unlimited
+Records
+Unlimited
+Unlimited
+Unlimited
+CSV import & export
+Languages
+30+
+30+
+30+
+Reports
+Number of dashboards
+Unlimited
+Unlimited
+Unlimited
+Emails & Calendar
+Internet accounts per user
+Unlimited
+Unlimited
+Unlimited
+Folder/Label import
+Email sharing
+Fully customizable
+Fully customizable
+Fully customizable
+AI & Automations
+Workflows
+AI agents
+Security
+Two-factor authentication
+User roles
+Unlimited
+Unlimited
+Unlimited
+Read/Edit/Delete permissions
+Unlimited
+Unlimited
+Unlimited
+Field-level permissions
+Unlimited
+Unlimited
+Unlimited
+Row-level permissions
+Unlimited
+Unlimited
+SSO
+Encryption key rotation
+Audit logs
+Environments
+Local, Production
+Local, Production
+Local, Production
+Impersonate users
+Support
+Community
+Help center
+Email and Chat
+Priority support
+Dedicated support & SLA
+Onboarding Packs
+Implementation partners
+Customization
+Custom apps
+Unlimited
+Unlimited
+Unlimited
+Subdomain (yourco.twenty.com)
+Custom domain (crm.yourco.com)
+Developers
+REST & GraphQL API
+Webhooks
+MCP server
+Install shared tarball app
+API calls
+50 per minute
+100 per minute
+Custom
+Enterprise
+Single-tenant isolation
+IP allow-listing
+SCIM provisioning
+Security review & DPA
+See more features
+Compare
+the real cost
+Feature-by-feature price checks against the CRMs you're probably comparing us with. Sources included.
+Twenty vs HubSpot
+Twenty vs Salesforce
+Twenty vs SAP Sales Cloud
+Twenty vs Pipedrive
+Twenty vs Microsoft Dynamics
+1‑800‑YES‑SOFTWARE
+Salesfarce Add-on Center
+?
+×
+Salesfarce Pro
+$100
+/ seat / month - billed yearly
+Add-ons
+Select all
+API access
++$35/user per month
+Webhooks (Change Data Capture)
++$7000/org per month
+Live updates
+Unavailable
+Unavailable
+Real-time is a state of mind, not a feature.
+✓
+UI theme
+Retro 2015
+Included!
+Better than Liquid Glass!
+SSO
++$5/user per month
+11 permissions
+groups
++$75/user per month
+Switch to enterprise!
+Maps view
++$105/user per month
+6 workflows
++$75/user per month
+Switch to enterprise!
+Lock-in
+3
+2 years contract
+-33% off
+✓
+APEX tutorials
+Free for you!
+Included!
+Available on YouTube!
+Self-hosting
+Out of stock
+Out of stock
+Self-hosting, now for rent!
+✓
+Salesforce Classic
+Extended run!
+Included!
+Outlived every redesign since 2004.
+Flow
+orchestration
+$1/orchestration run/org
++$75/user per month
+Switch to enterprise!
+Infinite scroll
+Coming soon!
+Coming soon!
+Pagination builds character.
+AI (Einstein)
++$75/user per month
+Switch to enterprise!
+Encrypt your data
++20% of net spend
++$75/user per month
+Switch to enterprise!
+More options available!
+Check more add-ons
+Any Questions?
+Stop fighting custom.
+Start building, with Twenty
+Get started
+Talk to us
+Is Twenty really open-source?
+Yes. Twenty is the #1 Open Source CRM on GitHub. You can self-host to fully own your infrastructure, or run it on our managed cloud for a zero-ops setup.
+How long does it take to get started?
+Sign up for Cloud in under a minute and start your 30-day trial. For larger rollouts, our 4-hour Onboarding Packs or certified partners get you live in 1–2 weeks.
+Can I migrate from Salesforce or HubSpot?
+Yes. Import your data via CSV, or use our API for 50,000+ records. Our partners can handle the full migration for you.
+Do I need a developer to customize Twenty?
+No. Build custom objects, fields, views, and no-code workflows straight from Settings. Unlimited, no extra charge.
+Can developers extend Twenty with code?
+Yes, with our Apps framework. Scaffold an extension with `npx create-twenty-app` and ship custom objects, server-side logic functions, React components that render inside Twenty’s UI, AI skills and agents, views, and navigation, all in TypeScript, deployable to any workspace.
+Does Twenty work with Claude, ChatGPT, and Cursor?
+Yes. Ever
+
+===== https://twenty.com/partners
+TITLE: Find a Twenty Partner — Certified Open Source CRM Experts
+ACCESSED: 2026-09-27
+
+Hire the people who
+build on Twenty
+Certified partners who set up your CRM to match how your company works, from the migration to the custom apps.
+Browse partners
+Get matched
+Directory
+Browse the
+certified partners
+Filter by region, language, and specialty, then read a profile and book a call with the partner yourself.
+Services
+What a Twenty partner does
+Four kinds of work, delivered by teams that build on Twenty every day.
+Migration
+Move your data out of Salesforce, HubSpot or spreadsheets.
+Customization & apps
+Custom objects, workflows and apps built on the platform.
+Self-hosted operations
+Deploy, upgrade and operate Twenty on your own infrastructure.
+Training & RevOps
+Onboard your team and design your sales process.
+Didn't find the
+right partner
+?
+Tell us what you need and we'll match you with a certified Twenty partner.
+Submit a brief
+Questions
+Working with
+a Twenty partner
+How does matching work?
+Share a short brief on your project, timeline, and budget. We hand-pick certified partners who fit and introduce you within 48 hours.
+What do partners charge?
+Rates vary by partner and scope. Each partner profile lists their published rates, and you can compare before booking a call.
+How are partners vetted?
+Every partner is certified by Twenty and reviewed on delivered projects, technical depth, and customer feedback before joining the directory.
+Can a partner run my migration?
+Yes. Migration partners move your data out of Salesforce, HubSpot, or spreadsheets, and can own the full cutover for you.
+Do partners support self-hosting?
+Yes. Some partners specialise in deploying, upgrading, and operating self-hosted Twenty instances on your own infrastructure.
+How do I become a partner?
+Agencies and freelancers apply through the Twenty partner program page, which lists the requirements and carries the application form.
+Want to
+offer
+Twenty services?
+Agencies and freelancers can apply to join the certified directory.
+Learn more about the partner program
+Become a partner
+
+===== https://twenty.com/customers/alternative-partners
+TITLE: From Salesforce to self-hosted Twenty, powered by AI | Alternative Partners
+ACCESSED: 2026-09-27
+
+7 min
+From Salesforce to
+self-hosted Twenty
+Back
+Benjamin Reynolds
+Principal and Founder, Alternative Partners
+Consulting
+Industry
+AI-assisted
+Salesforce migration
+Self-hosted
+Full ownership
+Alternative Partners
+AI in the
+migration workflow
+Alternative Partners is a consulting firm that moved from Salesforce to a self-hosted Twenty instance. Benjamin Reynolds led the migration. He had already become a Twenty expert implementing Twenty for one of Twenty's first cloud customers.
+His approach was unconventional. Instead of mapping fields manually, scripting transforms, and validating data step by step, he handed the job to agentic AI tools with a brief: where the data lives, the GitHub repo for the target platform, and the Railway deployment. Start, and only return if something breaks beyond a 70% confidence fix.
+It worked. This is AI-assisted iteration in practice: not AI as a product feature, but as part of implementation work, compressing what would typically be weeks into something one person can oversee without being the bottleneck.
+Ownership
+Self-hosted
+means control
+The self-hosted setup means Alternative Partners owns the full stack: no vendor access to their data, no dependency on a SaaS pricing model, full control over how the system evolves. The migration was fast because of AI; the result is durable because the stack is open source.
+Ready to grow
+with Twenty?
+Join the teams that chose to own their CRM. Start building with Twenty today.
+Get started
+Talk to us
+
+===== https://docs.twenty.com/developers/extend/oauth
+TITLE: OAuth - Twenty Documentation
+ACCESSED: 2026-09-27
+
+Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access. Clients are registered dynamically via
+RFC 7591
+— no manual setup in a dashboard.
+​
+When to Use OAuth
+Scenario
+Auth Method
+Internal scripts, automation
+API Key
+External app acting on behalf of a user
+OAuth — Authorization Code
+Server-to-server, no user context
+OAuth — Client Credentials
+Twenty App with UI extensions
+Apps
+(OAuth is handled automatically)
+​
+Register a Client
+Twenty supports
+dynamic client registration
+per
+RFC 7591
+. No manual setup needed — register programmatically:
+POST
+/oauth/register
+Content-Type:
+application/json
+{
+"client_name"
+:
+"My Integration",
+"redirect_uris"
+:
+[
+"https://myapp.com/callback"
+],
+"grant_types"
+:
+[
+"authorization_code"
+],
+"token_endpoint_auth_method"
+:
+"client_secret_post"
+}
+Response:
+{
+"client_id"
+:
+"abc123"
+,
+"client_secret"
+:
+"secret456"
+,
+"client_name"
+:
+"My Integration"
+,
+"redirect_uris"
+: [
+"https://myapp.com/callback"
+]
+}
+Store the
+client_secret
+securely — it cannot be retrieved later.
+​
+Scopes
+Scope
+Access
+api
+Full read/write access to the Core and Metadata APIs
+profile
+Read the authenticated user’s profile information
+Request scopes as a space-separated string:
+scope=api profile
+​
+Authorization Code Flow
+Use this flow when your app acts on behalf of a Twenty user.
+​
+1. Redirect the user to authorize
+GET /oauth/authorize?
+client_id=YOUR_CLIENT_ID&
+response_type=code&
+redirect_uri=https://myapp.com/callback&
+scope=api&
+state=random_state_value&
+code_challenge=CHALLENGE&
+code_challenge_method=S256
+Parameter
+Required
+Description
+client_id
+Your registered client ID
+response_type
+Must be
+code
+redirect_uri
+Must match a registered redirect URI
+scope
+Space-separated scopes (defaults to
+api
+)
+state
+Recommended
+Random string to prevent CSRF attacks
+code_challenge
+Recommended
+PKCE challenge (SHA-256 hash of verifier, base64url-encoded)
+code_challenge_method
+Recommended
+Must be
+S256
+when using PKCE
+The user sees a consent screen and approves or denies access.
+​
+2. Handle the callback
+After authorization, Twenty redirects back to your
+redirect_uri
+:
+https://myapp.com/callback?code=AUTH_CODE&state=random_state_value
+Verify that
+state
+matches what you sent.
+​
+3. Exchange the code for tokens
+POST
+/oauth/token
+Content-Type:
+application/x-www-form-urlencoded
+grant_type
+=
+authorization_code
+&
+code
+=
+AUTH_CODE
+&
+redirect_uri
+=
+https://myapp.com/callback
+&
+client_id
+=
+YOUR_CLIENT_ID
+&
+client_secret
+=
+YOUR_CLIENT_SECRET
+&
+code_verifier
+=
+YOUR_PKCE_VERIFIER
+Response:
+{
+"access_token"
+:
+"eyJhbG..."
+,
+"token_type"
+:
+"Bearer"
+,
+"expires_in"
+:
+3600
+,
+"refresh_token"
+:
+"dGhpcyBpcyBh..."
+}
+​
+4. Use the access token
+GET
+/rest/companies
+Authorization:
+Bearer
+ACCESS_TOKEN
+​
+5. Refresh when expired
+POST
+/oauth/token
+Content-Type:
+application/x-www-form-urlencoded
+grant_type
+=
+refresh_token
+&
+refresh_token
+=
+YOUR_REFRESH_TOKEN
+&
+client_id
+=
+YOUR_CLIENT_ID
+&
+client_secret
+=
+YOUR_CLIENT_SECRET
+​
+Client Credentials Flow
+For server-to-server integrations with no user interaction:
+POST
+/oauth/token
+Content-Type:
+application/x-www-form-urlencoded
+grant_type
+=
+client_credentials
+&
+client_id
+=
+YOUR_CLIENT_ID
+&
+client_secret
+=
+YOUR_CLIENT_SECRET
+&
+scope
+=
+api
+The returned token has workspace-level access, not tied to any specific user.
+​
+Server Discovery
+Twenty publishes its OAuth configuration at a standard discovery endpoint:
+GET /.well-known/oauth-authorization-server
+This returns all endpoints, supported grant types, scopes, and capabilities — useful for building generic OAuth clients.
+​
+API Endpoints Summary
+Endpoint
+Purpose
+/.well-known/oauth-authorization-server
+Server metadata discovery
+/oauth/register
+Dynamic client registration
+/oauth/authorize
+User authorization
+/oauth/token
+Token exchange and refresh
+Environment
+Base URL
+Cloud
+https://api.twenty.com
+Self-Hosted
+https://{your-domain}
+​
+OAuth vs API Keys
+API Keys
+OAuth
+Setup
+Generate in Settings
+Register a client, implement flow
+User context
+None (workspace-level)
+Specific user’s permissions
+Best for
+Scripts, internal tools
+External apps, multi-user integrations
+Token rotation
+Manual
+Automatic via refresh tokens
+Scoped access
+Full API access
+Granular via scopes
+Was this page helpful?
+⌘
+I
+
+===== https://docs.twenty.com/developers/extend/apps/getting-started/quick-start
+TITLE: Quick Start - Twenty Documentation
+ACCESSED: 2026-09-27
+
+​
+Prerequisites
+Node.js 24.5+
+—
+Download
+Yarn 4
+— bundled with Node via Corepack. Enable it:
+corepack enable
+Docker
+—
+Download
+. Needed to run a local Twenty server. Skip if you already have Twenty running elsewhere.
+Building a Twenty app has three phases. The scaffolder collapses them into one happy-path command, but each phase is a separate concept — when something fails, knowing which phase you’re in tells you what to fix.
+Phase
+What you do
+Tool
+Result
+1. Scaffold
+Generate the app’s source code
+npx create-twenty-app
+A TypeScript project on disk
+2. Run a server
+Start a Twenty server to sync into
+Docker +
+yarn twenty docker:start
+A running Twenty instance
+3. Sync
+Live-sync your code to the server
+yarn twenty dev
+Your changes appear in the UI
+​
+Phase 1 — Scaffold your project
+Create a new app from the template:
+npx
+create-twenty-app@latest
+my-twenty-app
+The scaffolder is non-interactive: the directory name becomes the app name. Pass
+--display-name
+and
+--description
+to customize the generated metadata (you can also edit it later in
+src/constants/universal-identifiers.ts
+). This generates a TypeScript project in
+my-twenty-app/
+with a starter
+application-config.ts
+, a default role, CI/CD workflows, and an integration test.
+After this phase:
+you have an app’s source code on your machine. It isn’t running yet — that’s Phase 2.
+​
+Phase 2 — Run a local Twenty server
+Your app needs a Twenty server to sync into. The server is a full Twenty instance — UI, GraphQL API, PostgreSQL — running locally in Docker. Your local code uploads its definitions to that server, which makes them appear in the UI.
+The scaffolder starts one for you: with Docker running, it pulls the
+twentycrm/twenty-app-dev
+image, starts it on port
+2020
+, and authenticates the CLI against the pre-seeded demo workspace (
+tim@apple.dev
+) — no sign-in required.
+To connect to an existing Twenty server instead, pass
+--url <your-server-url>
+. Remote servers authenticate with OAuth: a browser opens so you can sign in and click
+Authorize
+, which gives the CLI access to your workspace. (You can also opt into OAuth locally with
+--authentication-method oauth
+— sign in with
+tim@apple.dev
+/
+tim@apple.dev
+.)
+Your terminal will confirm everything is set up.
+After this phase:
+you have a running Twenty server at
+http://localhost:2020
+with your CLI authorized to sync to it.
+If Docker isn’t installed or running, the scaffolder will tell you the right start command for your OS. Once Docker is up, you can resume with
+yarn twenty docker:start
+— no need to re-scaffold.
+​
+Phase 3 — Sync your changes
+This is the inner loop you’ll spend most of your time in.
+cd
+my-twenty-app
+yarn
+twenty
+dev
+This watches
+src/
+, rebuilds on every change, and syncs the result to the server. Edit a file, save, and within a few seconds the server reflects the change. You’ll see a live status panel in your terminal.
+For more detailed output (build logs, sync requests, error traces), add
+--verbose
+.
+Open
+http://localhost:2020/settings/applications#developer
+. You should see your app under
+Your Apps
+.
+Click
+My twenty app
+to see its
+application registration
+— a server-level record describing your app (name, identifier, OAuth credentials, source). One registration can be installed across multiple workspaces on the same server.
+Click
+View installed app
+to see the workspace install. The
+About
+tab shows version and management options.
+After this phase:
+you have a live development loop. Edit any file in
+src/
+and it appears in the UI.
+​
+One-shot sync for CI and scripts
+Use
+plan
+and
+apply
+to run the same pipeline once, without a watcher:
+yarn
+twenty
+plan
+# preview the metadata changes without applying them
+yarn
+twenty
+apply
+# show the plan, then apply it
+Command
+Behavior
+When to use
+yarn twenty dev
+Watches and re-syncs on every change. Runs until you stop it.
+Interactive local development.
+yarn twenty apply
+Single build + sync, exits
+0
+on success,
+1
+on failure. Asks for confirmation on destructive changes (pass
+--force
+to skip).
+CI, pre-commit hooks, AI agents, scripted workflows.
+yarn twenty plan
+Builds and prints the metadata changes
+without applying them
+.
+Inspecting what a sync would change before committing to it.
+All modes need an authenticated remote. See
+Syncing & recovery
+for more on
+plan
+.
+All three modes require your workspace to own the app’s registration. The sync is refused when the
+universalIdentifier
+from your app config is registered to another workspace, or to no workspace yet — apps imported from the marketplace catalog start unowned and have to be claimed first. See
+Registration ownership
+.
+yarn twenty dev --once
+and
+yarn twenty dev --once --dry-run
+are deprecated aliases for
+yarn twenty apply
+and
+yarn twenty plan
+.
+​
+Dev mode options
+Flag
+Description
+--force
+Apply destructive changes (deletes) without confirmation.
+--no-delete
+Keep entities that are missing from your source instead of deleting them. Also accepted by
+plan
+and
+apply
+.
+--debounceMs <ms>
+Set the file-change debounce delay in m
+
+===== https://docs.twenty.com/developers/extend/webhooks
+TITLE: Webhooks - Twenty Documentation
+ACCESSED: 2026-09-27
+
+Twenty sends an HTTP POST to your URL whenever a record is created, updated, or deleted. All object types are covered, including custom objects.
+​
+Create a Webhook
+Go to
+Settings → APIs & Webhooks → Webhooks
+Click
++ Create webhook
+Enter your webhook URL (must be publicly accessible)
+Click
+Save
+The webhook activates immediately and starts sending notifications.
+​
+Manage Webhooks
+Edit
+: Click the webhook → Update URL →
+Save
+Delete
+: Click the webhook →
+Delete
+→ Confirm
+​
+Events
+Twenty sends webhooks for these event types:
+Event
+Example
+Record Created
+person.created
+,
+company.created
+,
+note.created
+Record Updated
+person.updated
+,
+company.updated
+,
+opportunity.updated
+Record Deleted
+person.deleted
+,
+company.deleted
+All event types are sent to your webhook URL. Event filtering may be added in future releases.
+​
+Payload Format
+Each webhook sends an HTTP POST with a JSON body:
+{
+"event"
+:
+"person.created"
+,
+"data"
+: {
+"id"
+:
+"abc12345"
+,
+"firstName"
+:
+"Alice"
+,
+"lastName"
+:
+"Doe"
+,
+"email"
+:
+"alice@example.com"
+,
+"createdAt"
+:
+"2025-02-10T15:30:45Z"
+,
+"createdBy"
+:
+"user_123"
+},
+"timestamp"
+:
+"2025-02-10T15:30:50Z"
+}
+Field
+Description
+event
+What happened (e.g.,
+person.created
+)
+data
+The full record that was created/updated/deleted
+timestamp
+When the event occurred (UTC)
+Respond with a
+2xx HTTP status
+(200-299) to acknowledge receipt. Non-2xx responses are logged as delivery failures.
+​
+Webhook Validation
+Twenty signs each webhook request for security. Validate signatures to ensure requests are authentic.
+​
+Headers
+Header
+Description
+X-Twenty-Webhook-Signature
+HMAC SHA256 signature
+X-Twenty-Webhook-Timestamp
+Request timestamp
+​
+Validation Steps
+Get the timestamp from
+X-Twenty-Webhook-Timestamp
+Create the string:
+{timestamp}:{JSON payload}
+Compute HMAC SHA256 using your webhook secret
+Compare with
+X-Twenty-Webhook-Signature
+​
+Example (Node.js)
+const
+crypto
+=
+require
+(
+"crypto"
+);
+const
+timestamp
+=
+req
+.
+headers
+[
+"x-twenty-webhook-timestamp"
+];
+const
+payload
+=
+JSON
+.
+stringify
+(
+req
+.
+body
+);
+const
+secret
+=
+"your-webhook-secret"
+;
+const
+stringToSign
+=
+`
+${
+timestamp
+}
+:
+${
+payload
+}
+`
+;
+const
+expectedSignature
+=
+crypto
+.
+createHmac
+(
+"sha256"
+,
+secret
+)
+.
+update
+(
+stringToSign
+)
+.
+digest
+(
+"hex"
+);
+const
+receivedSignature
+=
+req
+.
+headers
+[
+"x-twenty-webhook-signature"
+];
+const
+isValid
+=
+crypto
+.
+timingSafeEqual
+(
+Buffer
+.
+from
+(
+expectedSignature
+,
+"hex"
+),
+Buffer
+.
+from
+(
+receivedSignature
+,
+"hex"
+)
+);
+​
+Webhooks vs Workflows
+Method
+Direction
+Use Case
+Webhooks
+OUT
+Automatically notify external systems of any record change
+Workflow + HTTP Request
+OUT
+Send data out with custom logic (filters, transformations)
+Workflow Webhook Trigger
+IN
+Receive data into Twenty from external systems
+For receiving external data, see
+Set Up a Webhook Trigger
+.
+Was this page helpful?
+⌘
+I

@@ -1,0 +1,204 @@
+{
+  "app": "Google Ads",
+  "number": 31,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:01:14.228860+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.google.com/google-ads\",\n    \"https://developers.google.com/google-ads/api/docs/start\",\n    \"https://developers.google.com/google-ads/api/reference/\",\n    \"https://developers.google.com/google-ads/api/docs/oauth/overview\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.google.com/google-ads",
+    "https://developers.google.com/google-ads/api/docs/start",
+    "https://developers.google.com/google-ads/api/reference/",
+    "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "https://docs.google.com/",
+    "https://developer.google.com/",
+    "https://developers.google.com/",
+    "https://api.google.com/",
+    "https://google.com/docs",
+    "https://google.com/developers",
+    "https://google.com/api",
+    "https://google.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.google.com/google-ads/webhook/docs/overview",
+    "https://developers.google.com/google-ads/api/docs/oauth/user-authentication",
+    "https://developers.google.com/google-ads/api/docs/oauth/multi-party-approvals",
+    "https://developers.google.com/google-ads/api/docs/oauth/multi-user-authentication",
+    "https://developers.google.com/google-ads/api/docs/oauth/single-user-authentication",
+    "https://developers.google.com/google-ads/api/videos/catalog/authentication-authorization-2",
+    "https://developers.google.com/google-ads/api/reference/rpc/v25/ReachPlanService/ListPlannableUserInterests",
+    "https://developers.google.com/google-ads/api/reference/rpc/v25/AuthenticationErrorEnum.AuthenticationError",
+    "https://developers.google.com/google-ads/api/reference/rpc/v24/ReachPlanService/ListPlannableUserInterests",
+    "https://developers.google.com/google-ads/api/reference/rpc/v24/AuthenticationErrorEnum.AuthenticationError",
+    "https://developers.google.com/google-ads/api/reference/rpc/v23/ReachPlanService/ListPlannableUserInterests",
+    "https://developers.google.com/google-ads/api/reference/rpc/v23/AuthenticationErrorEnum.AuthenticationError",
+    "https://developers.google.com/google-ads/api/docs/oauth/internals"
+  ],
+  "boilerplate_lines_removed": 4,
+  "fetch_failures": [
+    {
+      "requested_url": "https://api.google.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.google.com/google-ads",
+      "requested_url": "https://developers.google.com/google-ads",
+      "status": 200,
+      "title": "Google Ads \u00a0|\u00a0 Google for Developers",
+      "chars": 674,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+      "requested_url": "https://developers.google.com/google-ads/api/docs/start",
+      "status": 200,
+      "title": "Introduction \u00a0|\u00a0 Google Ads API \u00a0|\u00a0 Google for Developers",
+      "chars": 2652,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/upgrade",
+      "requested_url": "https://developers.google.com/google-ads/api/reference/",
+      "status": 200,
+      "title": "Upgrade your API version \u00a0|\u00a0 Google Ads API \u00a0|\u00a0 Google for Developers",
+      "chars": 4895,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "requested_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "status": 200,
+      "title": "Use OAuth 2.0 to Access Google Ads API \u00a0|\u00a0 Google for Developers",
+      "chars": 2980,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2079883842:1790532098444198",
+      "requested_url": "https://docs.google.com/",
+      "status": 200,
+      "title": "Sign in - Google Accounts",
+      "chars": 234,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/",
+      "requested_url": "https://developer.google.com/",
+      "status": 200,
+      "title": "Google for Developers | Build with Gemini",
+      "chars": 4007,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/webhook/docs/overview",
+      "requested_url": "https://developers.google.com/google-ads/webhook/docs/overview",
+      "status": 200,
+      "title": "Overview \u00a0|\u00a0 Lead Form Webhook \u00a0|\u00a0 Google for Developers",
+      "chars": 926,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/user-authentication",
+      "requested_url": "https://developers.google.com/google-ads/api/docs/oauth/user-authentication",
+      "status": 200,
+      "title": "User authentication workflow \u00a0|\u00a0 Google Ads API \u00a0|\u00a0 Google for Developers",
+      "chars": 1652,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/multi-party-approvals",
+      "requested_url": "https://developers.google.com/google-ads/api/docs/oauth/multi-party-approvals",
+      "status": 200,
+      "title": "Multi-party approvals (MPA) \u00a0|\u00a0 Google Ads API \u00a0|\u00a0 Google for Developers",
+      "chars": 4893,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/multi-user-authentication",
+      "requested_url": "https://developers.google.com/google-ads/api/docs/oauth/multi-user-authentication",
+      "status": 200,
+      "title": "Multi-user authentication workflow \u00a0|\u00a0 Google Ads API \u00a0|\u00a0 Google for Developers",
+      "chars": 4865,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Google Ads API is a programmatic interface for managing Google Ads accounts and campaigns.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, and a developer token is also required.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The pages do not explicitly explain the initial sign-up or developer token acquisition funnel for unaffiliated developers.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Java\",\n      \".NET\",\n      \"Python\",\n      \"PHP\",\n      \"Ruby\",\n      \"Perl\"\n    ],\n    \"notes\": \"Provides client libraries in multiple languages for the Google Ads API and supports webhooks for lead forms.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Uses OAuth 2.0 and developer tokens, but requires going through an OAuth App verification process and obtaining a developer token, which adds approval hoops.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.google.com/google-ads\",\n      \"claim\": \"Mentions Google Ads API and Lead form Webhook.\"\n    },\n    {\n      \"url\": \"https://developers.google.com/google-ads/api/docs/get-started/introduction\",\n      \"claim\": \"Describes the Google Ads API as a programmatic interface for managing Google Ads accounts and campaigns.\"\n    },\n    {\n      \"url\": \"https://developers.google.com/google-ads/api/docs/oauth/overview\",\n      \"claim\": \"States that the Google Ads API utilizes OAuth 2.0 for authentication and authorization, and a developer token is required.\"\n    },\n    {\n      \"url\": \"https://developers.google.com/google-ads/webhook/docs/overview\",\n      \"claim\": \"Describes webhook support for lead form extensions to receive lead data into a preferred CRM.\"\n    },\n    {\n      \"url\": \"https://developers.google.com/google-ads/api/docs/oauth/multi-user-authentication\",\n      \"claim\": \"Lists client code examples for Java, .NET, Python, PHP, Ruby, and Perl, and mentions OAuth App verification.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://developers.google.com/google-ads",
+    "one_liner": "Google Ads API is a programmatic interface for managing Google Ads accounts and campaigns.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, and a developer token is also required."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "The pages do not explicitly explain the initial sign-up or developer token acquisition funnel for unaffiliated developers."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Java",
+        ".NET",
+        "Python",
+        "PHP",
+        "Ruby",
+        "Perl"
+      ],
+      "notes": "Provides client libraries in multiple languages for the Google Ads API and supports webhooks for lead forms."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Uses OAuth 2.0 and developer tokens, but requires going through an OAuth App verification process and obtaining a developer token, which adds approval hoops."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.google.com/google-ads",
+        "claim": "Mentions Google Ads API and Lead form Webhook.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+        "claim": "Describes the Google Ads API as a programmatic interface for managing Google Ads accounts and campaigns.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "claim": "States that the Google Ads API utilizes OAuth 2.0 for authentication and authorization, and a developer token is required.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/webhook/docs/overview",
+        "claim": "Describes webhook support for lead form extensions to receive lead data into a preferred CRM.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/multi-user-authentication",
+        "claim": "Lists client code examples for Java, .NET, Python, PHP, Ruby, and Perl, and mentions OAuth App verification.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:01:47.908192+00:00"
+}

@@ -1,0 +1,193 @@
+{
+  "app": "Amazon Selling Partner",
+  "number": 49,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:48:22.834473+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer-docs.amazon.com/sp-api\",\n    \"https://developer-docs.amazon.com/sp-api/docs\",\n    \"https://developer-docs.amazon.com/sp-api/docs/authorization-from-web-applications\",\n    \"https://developer-docs.amazon.com/sp-api/docs/step-1-connect-to-the-selling-partner-api\",\n    \"https://developer.amazon.com/support/sp-api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer-docs.amazon.com/sp-api",
+    "https://developer-docs.amazon.com/sp-api/docs",
+    "https://developer-docs.amazon.com/sp-api/docs/authorization-from-web-applications",
+    "https://developer-docs.amazon.com/sp-api/docs/step-1-connect-to-the-selling-partner-api",
+    "https://developer.amazon.com/support/sp-api",
+    "https://docs.amazon.com/",
+    "https://developer.amazon.com/",
+    "https://developers.amazon.com/",
+    "https://api.amazon.com/",
+    "https://amazon.com/docs",
+    "https://amazon.com/developers",
+    "https://amazon.com/api",
+    "https://amazon.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+    "https://developer-docs.amazon/sp-api/docs/reauthorize-applications",
+    "https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview",
+    "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+    "https://developer-docs.amazon/sp-api/reference",
+    "https://developer-docs.amazon/sp-api/docs/sales-api",
+    "https://developer-docs.amazon/sp-api/docs/authorization-with-the-restricted-data-token",
+    "https://developer-docs.amazon/sp-api/docs/self-authorization",
+    "https://developer-docs.amazon/sp-api/docs/authorize-public-applications",
+    "https://developer-docs.amazon/sp-api/docs/service-provider-onboarding-step-1",
+    "https://developer.amazon.com/support/cases/new",
+    "https://developer.amazon.com/device-partners/firetv/",
+    "https://developer.amazon.com/en/device-partners/firetv/",
+    "https://developer.amazon.com/appsandservices/support/pml.html",
+    "https://www.amazon.com/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2Fsettings%2Fconsole%2Fhome&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=mas_dev_portal&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=amzn_developer_portal&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&language=en_US"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.amazon.com/support/sp-api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.amazon.com/",
+      "reason": "page too thin (25 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer-docs.amazon/sp-api",
+      "requested_url": "https://developer-docs.amazon.com/sp-api",
+      "status": 200,
+      "title": "Selling Partner API",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/welcome",
+      "requested_url": "https://developer-docs.amazon.com/sp-api/docs",
+      "status": 200,
+      "title": "Welcome to SP-API Documentation",
+      "chars": 2094,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/page/404",
+      "requested_url": "https://developer-docs.amazon.com/sp-api/docs/authorization-from-web-applications",
+      "status": 200,
+      "title": "Page Not Found",
+      "chars": 470,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.amazon.com/",
+      "requested_url": "https://developer.amazon.com/",
+      "status": 200,
+      "title": "Amazon Developer",
+      "chars": 1986,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+      "status": 200,
+      "title": "Authorize Applications",
+      "chars": 3817,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/reauthorize-applications",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/reauthorize-applications",
+      "status": 200,
+      "title": "Reauthorize Applications",
+      "chars": 2968,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview",
+      "status": 200,
+      "title": "Selling Partner API Onboarding Overview",
+      "chars": 1887,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+      "status": 200,
+      "title": "Developer Registration Request Status",
+      "chars": 1250,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/reference/welcome-to-api-references",
+      "requested_url": "https://developer-docs.amazon/sp-api/reference",
+      "status": 200,
+      "title": "Welcome to API References",
+      "chars": 1938,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The Amazon Selling Partner API (SP-API) allows developers to build applications that automate tasks for sellers and vendors, supporting extensive RESTful operations.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Public applications use OAuth 2.0 through Login with Amazon (LWA) and require annual reauthorization or reauthorization when roles are added. Private applications use self-authorization. Operations may also use Restricted Data Tokens (RDT) or be grantless.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Amazon evaluates information provided during developer registration and approves or denies requests.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"C# SDK\",\n      \"Java SDK\"\n    ],\n    \"notes\": \"The pages feature comprehensive REST API references and swagger models alongside C# and Java tutorials/SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"url\": null,\n    \"notes\": \"Model Context Protocol is not mentioned in the fetched documentation.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"While documentation and SDKs are well-established, developer registration requires approval from Amazon, placing access into a gated or review-based category rather than purely self-serve.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api\",\n      \"claim\": \"Lists various SP-API documentation sections, SDK tutorials, and a broad collection of RESTful service endpoints.\"\n    },\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications\",\n      \"claim\": \"Specifies OAuth 2.0 through Login with Amazon (LWA) as the authorization method for public applications and self-authorization for private applications.\"\n    },\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer\",\n      \"claim\": \"Notes that after submitting a request to register as a developer, Amazon evaluates the information and approves or denies the request.\"\n    },\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api/reference/welcome-to-api-references\",\n      \"claim\": \"Provides a comprehensive directory of versioned REST API references with request/response schemas.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint_url": "https://developer-docs.amazon.com/sp-api",
+    "one_liner": "The Amazon Selling Partner API (SP-API) allows developers to build applications that automate tasks for sellers and vendors, supporting extensive RESTful operations.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Public applications use OAuth 2.0 through Login with Amazon (LWA) and require annual reauthorization or reauthorization when roles are added. Private applications use self-authorization. Operations may also use Restricted Data Tokens (RDT) or be grantless."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "Amazon evaluates information provided during developer registration and approves or denies requests."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "C# SDK",
+        "Java SDK"
+      ],
+      "notes": "The pages feature comprehensive REST API references and swagger models alongside C# and Java tutorials/SDKs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Model Context Protocol is not mentioned in the fetched documentation."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "While documentation and SDKs are well-established, developer registration requires approval from Amazon, placing access into a gated or review-based category rather than purely self-serve."
+    },
+    "evidence": [
+      {
+        "url": "https://developer-docs.amazon/sp-api",
+        "claim": "Lists various SP-API documentation sections, SDK tutorials, and a broad collection of RESTful service endpoints.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+        "claim": "Specifies OAuth 2.0 through Login with Amazon (LWA) as the authorization method for public applications and self-authorization for private applications.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+        "claim": "Notes that after submitting a request to register as a developer, Amazon evaluates the information and approves or denies the request.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api/reference/welcome-to-api-references",
+        "claim": "Provides a comprehensive directory of versioned REST API references with request/response schemas.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:48:43.544854+00:00"
+}

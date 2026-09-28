@@ -1,0 +1,746 @@
+===== https://www.liveagent.com/
+TITLE: LiveAgent - Help Desk Software & Live Chat
+ACCESSED: 2026-09-27
+
+Deliver seamless support with AI-powered help desk
+LiveAgent combines an all-in-one customer service platform with AI chatbot,
+live chat
+, ticketing, and call center. Automate up to 75% of conversations with built-in AI.
+No setup fee
+24/7
+Customer service
+No credit card required
+Cancel any time
+30-day free trial
+Partner with AI teammates to automate customer support
+AI Chatbot
+Resolves customer inquiries instantly, 24/7, in 100+ languages, lightening your team’s workload. Built on autonomous AI
+agents
+.
+Learn more
+: AI Chatbot
+AI Answer Improver
+Strengthens every human reply, ensuring clear, polished, and professional communication with customers.
+Learn more
+: AI Answer Improver
+AI Answer Composer
+Generates complete, accurate replies in one click. Learns from your
+knowledge base
+to ensure every response is correct and consistent.
+Learn more
+: AI Answer Composer
+Discover all AI features
+Free trial
+Every channel. One inbox. No missed chats.
+Email, live chat, phone, social media, WhatsApp, Viber, knowledge base — all unified in a single dashboard with 175+ features and 200+ integrations.
+Explore why LiveAgent is the best choice for your business
+LiveAgent has been selected as the fastest implementation software, the best live chat software, and an industry leader by customers on prominent review portals.
+Too many customer messages?
+Powerful help desk software
+Increase support team productivity by up to 20%. Manage email, chat, calls and social messages in one inbox.
+Losing track of support requests?
+Smart ticketing
+Resolve up to 28% more requests on first contact. Automatically turn messages into tickets. Track and resolve every request easily.
+Customers messaging you on social media?
+Social media integrations
+Respond to social messages up to 75% faster and organize your customer communication.
+Visitors expect instant answers?
+The fastest live chat
+Increase conversions by up to 3× with live chat. Chat with visitors in real time and resolve questions faster.
+Customers asking the same questions?
+Knowledge base
+Reduce support workload by up to 30%. Create help articles and FAQs so customers can find answers themselves.
+Managing phone support separately?
+Built-in call center
+Achieve 90%+ customer satisfaction. Handle calls directly from the helpdesk and track every conversation.
+The best customer experiences are built with LiveAgent
+Explore real success stories from businesses that chose
+LiveAgent as their help desk
+and dedicated communication platform.
+How M4Markets Delivers AI-Powered Support with LiveAgent
+Discover how M4Markets reduced agent workload and boosted international engagement 80% with LiveAgent's AI chatbot and automation.
+80%
+increase in engagement across international regions
+24/7
+instant support with LiveAgent AI chatbot
+Read story
+How CS Apparel Group launches new support lines in minutes with LiveAgent
+Learn how CS Apparel Group, one of the largest sports and fashion retailers in Czech Republic and Slovakia, improved support speed by 75% with LiveAgent.
++75%
+improvement in average email response time (from 24h to 6h)
++17%
+improvement in SLA levels for calls (from 80% to 97%)
+Read story
+Show more
+Explore LiveAgent resources
+Take a quick product tour, check special startup offers, and stay updated with the latest LiveAgent improvements.
+Would you like to take a tour?
+Take a tour of LiveAgent and explore every feature, functionality, and use case of our multi-channel help desk solution.
+Take a tour
+Looking to improve your startup?
+If you’re looking for the right help desk software for your startup, you’re at the right place. See why you should choose LiveAgent.
+Check the deal for startups
+See what’s new in LiveAgent
+Find out about the latest updates of
+LiveAgent help desk software
+and explore how we continually improve our solution.
+Discover LiveAgent updates
+Our latest blogs
+12 Customer Service Goals and Objectives to Focus on in 2026
+Discover 2026's top customer service goals with actionable examples. Learn to set SMART goals, reduce wait times, and boost satisfaction today.
+September 22, 2026
+•
+17 min read
+12 Key Help Desk Metrics, KPIs, and How to Calculate Them
+HelpDesk
++4
+Sep 22, 2026
+•
+21 min read
+6 Ways You Can Engage With Customers on Social Media Platform
+Social Media
++3
+Sep 22, 2026
+•
+9 min read
+9 Current Customer Service Trends + Recent Tips from Our Experts
+CustomerService
++4
+Sep 22, 2026
+•
+11 min read
+Building a customer service team: Comprehensive guide
+CustomerService
++4
+Sep 22, 2026
+•
+17 min read
+Read more
+Testimonials
+We have worked with thousands of amazing people
+See all awards
+“LiveAgent combines excellent live chat, ticketing and automation that allow us to provide exceptional support to our customers.”
+Peter Komornik
+Slido
+“It’s a pleasure to have a great portal that improves our customer service.”
+Roman Bosch
+Partly
+“LiveAgent empowers our agents to provide better, faster, and more accurate support.”
+Christine Preusler
+HostingAdvice
+“LiveAgent helped us to achieve 2 importa
+
+===== https://support.liveagent.com/
+TITLE: LiveAgent support portal
+ACCESSED: 2026-09-27
+
+LiveAgent support portal
+LiveAgent performance & services status page
+Check our status page for more info about overall performance & health status of our services
+LiveAgent developer's changelog
+Check out our developer's changelog on https://dev.ladesk.com/
+LiveAgent awards & certificates
+See our awards & certificates on https://www.liveagent.com/awards/
+Last Standalone release of LiveAgent
+Announcing last release and end of life for for the self-hosted version of LiveAgent
+Getting Started
+How does LiveAgent work?
+Limitations of different subscription plans
+Trial account email limitations
+and 2 more ...
+Important Updates & Changes
+List of LiveAgent Important Updates & Changes
+Changes to ticket note types in version 5.62
+Changes to ticket fields in version 5.59
+and 7 more ...
+Technical Support
+Features and functions
+Integrations and plugins
+Troubleshooting
+and 477 more ...
+Customizations
+Agent panel
+Chats
+Forms
+and 51 more ...
+Billing & payments support
+LiveAgent pricing page
+LiveAgent My Account section
+LiveAgent invoicing explained
+and 1 more ...
+Video Tutorials
+How to create Chat buttons in LiveAgent
+How to create Chat invitations in LiveAgent
+How to create Departments in LiveAgent
+and 21 more ...
+
+===== https://www.liveagent.com/pricing/
+TITLE: Pricing | LiveAgent - Help Desk Software & Live Chat
+ACCESSED: 2026-09-27
+
+Pricing
+Choose the right plan for your team
+Trusted by leading companies worldwide
+Small business
+Affordable ticketing platform for smaller support teams
+$15
+per agent/month billed annually
+or $19 billed monthly
+Try for free
+AI Agents
+Ticketing
+Live chat
+Knowledgebase
+Customer Portal
+Contact forms
+Automation rules
+Integrations
+Multiple language support
+See all features
+Medium business
+A versatile and balanced plan for full-scale customer support
+$29
+per agent/month billed annually
+or $35 billed monthly
+Try for free
+Everything in Small plan
+AI Agents incl. full setup
+Call center & IVR
+Time Rules
+Reports
+Proactive chat invitations
+Agent ratings
+Sound configuration
+Service levels (SLA)
+SSO
+Custom roles
+See all features
+MOST POPULAR
+Large business
+An all-inclusive plan with all features and capabilities
+$49
+per agent/month billed annually
+or $59 billed monthly
+Try for free
+Everything in Medium plan
+Time tracking &
+Audit log
+Audit log
+Facebook
+Instagram
+X
+Viber
+Telegram
+WhatsApp
+See all features
+Enterprise
+A full-scale solution with extra support & exclusive services
+$69
+per agent/month billed annually
+or $85 billed monthly
+Book demo call
+Everything in Large plan
+Almost unlimited
+Dedicated account manager
+Priority support
+Assisted channels integration
+Branding Free
+Custom billing setup
+Service review call and reports
+Scheduled release management
+See all features
+30 days free trial
+No credit card required
+Upgrade & pay as you go
+No contracts
+Cancel any time
+See LiveAgent in action
+Let us show you the difference LiveAgent can make.
+Deal for Startups
+Special
+Special offer for selected teams.
+Compare plans
+Check out our plan comparisons and select the best one for you
+Monthly
+Annually
+Small business
+Medium business
+Large business
+Enterprise
+$19
+/month
+$15
+per agent/month billed annually
+Try for free
+$35
+/month
+$29
+per agent/month billed annually
+Try for free
+$59
+/month
+$49
+per agent/month billed annually
+Try for free
+$85
+/month
+$69
+per agent/month billed annually
+Book demo call
+Pricing
+Pricing
+Per agent/month billed annually
+Annual pricing is billed yearly and calculated based on the number of agents you add to the system. If you add more agent seats during the year, a top-up request will be generated at the same reduced rate.
+$15
+$29
+$49
+$69
+Per agent/month billed monthly
+Monthly pricing is billed monthly and calculated based on the number of agents you add to the system. If you add more agent seats during the month, a top-up request will be generated at the same reduced rate.
+$19
+$35
+$59
+$85
+AI features
+AI features
+AI Answer Assistant
+Boost your support agents' efficiency and utilize AI to generate professional responses to customer inquiries & refine answer drafts based on provided instructions.
+AI Chatbot
+Boost your support agents' efficiency and utilize AI to generate professional responses to customer inquiries & refine answer drafts based on provided instructions.
+24/7 AI chat with seamless human escalation
+Boost your support agents' efficiency, utilize AI and let the chatbot's AI agent decide when to transfer the chat automatically.
+AI Tickets Responder with AI Agent-Spam prevention
+Boost your support agents' efficiency, utilize AI and let an AI agent answer incoming tickets while preventing spam and irrelevant requests.
+AI Self-Learning Loop with Ticket to Memory
+Boost your support agents' efficiency, utilize AI and turn resolved support tickets into structured knowledge.
+AI Ticket Validation & Autoresponse
+Boost your support agents' efficiency, utilize AI and deliver instant, personalized responses to incoming tickets.
+AI Ticket Triage & Categorization
+Boost your support agents' efficiency, utilize AI and automatically read incoming support tickets and assign the correct category tag.
+AI Ticket Summary catch up
+Boost your support agents' efficiency, utilize AI and analyze a ticket, filters out system logs to focus on human messages only, and generate a concise "Executive Summary".
+AI Spam & Irrelevance Filter
+Boost your support agents' efficiency, utilize AI and parse raw ticket data such as headers, HTML, and body, and apply your specific business context.
+Communication channels
+Communication channels
+Customer Portal
+Gives you the opportunity to create an unlimited amount of separate customer portals, where each one of them can have its own unique design, settings, and content.
+Contact forms – Contact us buttons
+Customizable contact buttons that can be embedded on your website
+3
+10
+50
+200
+Contact forms – In page
+Full contact forms that can be embedded directly in web pages
+3
+10
+50
+200
+Slack notifications
+Receive a Slack notification every time you receive a new ticket or a ticket response in LiveAgent.
+Customer forum
+Create an online community forum for your users. Empower them to ask questions, provide answers, and lead discussions.
+Email ticketing – Incoming email accounts
+Smart email ticketing ensures no emails get lost or remain unanswered. Our ticketing system also prevents duplicate responses with t
+
+===== https://www.liveagent.com/about/contact/
+TITLE: Contact Us | LiveAgent - Help Desk Software & Live Chat
+ACCESSED: 2026-09-27
+
+Contact Us
+Get in touch with LiveAgent’s support team. Contact us via phone, email, live chat, or visit our offices in Slovakia and the US for
+help desk software
+assistance.
+Multiple ways to reach us
+Choose the communication channel that works best for you - we're here to help in every way possible.
+Email support
+Connect with us via email for comprehensive support. Send your queries to support@ladesk.com and receive personalized assistance. Our expert team ensures every email is answered promptly, providing you with detailed solutions tailored to your needs.
+Contact us via Email
+Live Chat support
+For instant support, use
+our Live Chat
+feature available on our website. A click on the chat icon opens a direct line to our support team, offering real-time solutions to your inquiries.
+Contact us via Live Chat
+WhatsApp contact
+Get in touch with us on WhatsApp for convenient and quick support. Simply send your message, and our support team will be there to assist you with your queries and concerns. It's a perfect channel for fast, efficient communication.
+Contact us via WhatsApp
+Empower yourself with our resources
+Dive into our
+Knowledge Base
+for immediate answers to frequently asked questions, how-to guides, and articles. It's a treasure trove of information designed to help you navigate and maximize the benefits of LiveAgent.
+Knowledge Base
+Video tutorials
+Watch our video tutorials for step-by-step instructions on utilizing LiveAgent's features. From basic functions to advanced settings, these tutorials cater to all skill levels.
+Video tutorials
+Demo call request
+Interested in seeing LiveAgent in action? Schedule a personalized demo call to explore our features and learn how we can tailor our solutions to your business needs. Simply fill out our form and we'll get in touch to arrange a convenient time for your demonstration.
+Request demo call
+Call sales
+Need immediate assistance? Our phone lines are open for you. Speak directly with our sales representatives who are prepared to provide the assistance you require, right when you need it.
+US:
++1-888-257-8754
+International:
++421 2 33 456 826
+Engage with us on social media
+Follow us on X, Facebook, and LinkedIn for the latest news, updates, and support. Engage with our team and community for quick tips, insights, and answers to common questions.
+We’re here for you
+At LiveAgent, your success is our goal. We are committed to providing you with exceptional support and resources to ensure your experience is both productive and pleasant. Reach out to us through any of our channels; our team is eager to assist and guide you every step of the way.
+Our offices
+Bratislava
+Quality Unit, s.r.o.
+Vajnorska 100/A
+831 04 Bratislava
+Slovakia (European Union)
+Kyiv
+Quality Unit Ukraine
+Solomianskyy rayon
+03110 Kyiv
+Ukraine
+Wilmington
+Quality Unit, LLC
+3 Germay Dr.
+Wilmington, DE 19804
+USA
+
+===== https://support.liveagent.com/840770-Complete-API-reference
+TITLE: Complete API reference
+ACCESSED: 2026-09-27
+
+Complete API reference
+Complete API reference
+Data fields formats
+Return messages formats
+Error messages formats
+Api v.1
+Agents
+Retrieves agent info and auth token
+Application
+Return application installation date and latest version
+Companies
+Retrieve list of companies
+Retrieve company info
+Conversations
+Delete conversation
+Retrieves all conversations
+Retrieves conversation info
+Retrieves all conversation messages
+Create new message in conversation
+Change status of the conversation
+Unassign a tag from a conversation
+Retrieve a list of tags assigned to a conversation
+Assign tag to a conversation
+Customers
+Delete custom field value in user contact
+Add custom field value to customer
+Retrieve customer groups
+Customers groups
+Delete customers group
+Retrieve customers group info
+Retrieve all groups of all customers
+Add customers group
+Change customers group
+Files
+Retrieve file
+Add file
+Knowledgebase
+Retrieve a list of all knowledgebase articles (deprecated)
+Add knowledgebase category, suggestion category or forum
+Remove knowledgebase entry
+Retrieve a list of all knowledgebase entries
+Retrieve a list of all knowledgebases
+Knowledgebase search
+Online status
+Agents
+Reports
+Agents report
+Channels report
+Departments report
+Performance report
+Tags report
+Tickets Agent availability report
+Tickets Load report
+Tickets SLA Compliance report
+Tickets SLA Log report
+Suggestion categories
+Retrieves all suggestion categories
+Tags
+Remove tag
+Retrieve a list of all available tags
+Retrieve tag info
+Add tag
+Change tag
+Datafield formats
+Type
+Description
+datetime
+valid format: YYYY-MM-DD HH:MM:SS.
+Note: values are in time zone defined in '/accounts/settings.php' or in "GMT" timezone by default.
+text
+could be any string or empty
+constlist
+could be only one instance of finite set. Possible values are named in specifice field description.
+int
+integer value greater or equal to zero.
+array
+list of entities. All entities have the same column definition
+list
+list of entities. Every entity has its specific column definition.
+opdatetime
+datetime with operator. This field has the same format as 'datetime' except you can use various operators with it.
+Possible operators:
+eq:
+equals, example 'eq:2009-11-12 05:02:01' or just '2009-11-12 05:02:01'
+gt:
+greater than, example 'gt:2009-11-12 05:02:01'
+lt:
+less than, example 'lt:2009-11-12 05:02:01'
+gte:
+greater than or equals, example 'gte:2009-11-12 05:02:01'
+lte:
+less than or equals, example 'lte:2009-11-12 05:02:01'
+btw:
+between, example 'btw:2009-11-12 05:02:01,2010-10-11 04:01:59'
+note: if you do not enter any operator,  'eq' will be used as default.
+Return messages formats
+Return messages are in JSON format by default. But you can change this to XML by adding
+.xml
+at the end of call URL.This will give response in JSON:
+GET
+http://example.com/api/agents/john@agent.com
+We add
+.xml
+to call URL and we have response in XML format
+GET
+http://example.com/api/agents/john@agent.com
+.xml
+Note: if y ou have
+PHP YAML
+extension enabled in your PHP, you could also use
+.yaml
+to get response in YAML format.
+Error messages formats
+400 - Bad request error
+You can get this in case your athentification with API key failed because of problem with API key in application.
+401 - Forbidden
+You can get this in case of failed authentification with wrong key
+404 - Not found error
+You can get this in case "agnet with email agent@email.com not found"
+500 - Common porcessing error
+This is the most common error type. You can get this in case "parameter message is missing" or "unable to load conversation"
+503 - Service Unavailable
+You can get this in case application is unavaliable to process requests - in case of updating and/or installing.
+Error response example
+<?xml version='1.0' encoding='utf-8'?>
+<
+response
+>
+<
+status
+>
+ERROR
+</
+status
+>
+<
+statuscode
+>
+500
+</
+statuscode
+>
+<
+errormessage
+>
+Example error message
+</
+errormessage
+>
+<
+debugmessage
+>
+debug info
+</
+debugmessage
+>
+</
+response
+>
+{
+  "response":{
+    "status":"ERROR",
+    "statuscode":500,
+    "errormessage":"Example error message",
+    "debugmessage":"debug info"
+  }
+}
+API version 1
+Agents
+Retrieves agent info and auth token
+Avaliable from application version: 2.8.2.1
+Avaliable examples:
+WordPress plugin example
+Example call
+GET
+http://example.com/api/agents/
+[agentidentifier]
+<
+?
+php
+$ch
+=
+curl_init
+()
+;
+curl_setopt
+(
+$ch
+,
+CURLOPT_URL
+,
+"http
+://
+example
+.
+com
+/
+api
+/
+agents
+/[
+agentidentifier
+]?
+&apikey
+=
+value"
+)
+;
+curl_setopt
+(
+$ch
+,
+CURLOPT_RETURNTRANSFER
+,
+true
+)
+;
+$curl_response
+=
+curl_exec
+(
+$ch
+)
+;
+if
+(
+$curl_response
+===
+false
+)
+{
+$info
+=
+curl_error
+(
+$ch
+)
+;
+    curl_close
+(
+$ch
+)
+;
+die
+(
+"error occurred during curl exec
+.
+Additional info
+:
+"
+.
+var_export
+(
+$info
+,
+true
+))
+;
+}
+curl_close
+(
+$ch
+)
+;
+/*
+process
+$curl_response
+here
+*/
+print_r
+(
+json_decode
+(
+$curl_response
+))
+;
+Mandatory parameters
+Name
+Type
+Description
+[agentidentifier]
+text
+Agent identifier. Can be email or userid.
+apikey
+text
+API key
+Call response description
+Return fields
+Name
+Type
+Desc
+
+===== https://support.liveagent.com/979899-Getting-Started
+TITLE: Getting Started
+ACCESSED: 2026-09-27
+
+Getting Started
+Getting Started
+How does LiveAgent work?
+LiveAgent helpdesk software is a customer service tool that helps manage and streamline interactions with customers across multiple channels such as email, live chat, phone calls, and social media.
+
+The software sorts incoming customer queries automatically into tickets and assigns them to the appropriate department or agent using predefined rules. It provides a single, shared inbox where agents can access and respond to all customer inquiries. LiveAgent also offers features such as automation r...
+Limitations of different subscription plans
+In LiveAgent, each subscription plan comes with a specific set of limitations related to the features available, such as the number of connected email accounts, the number of departments, or access to certain functionalities. These limitations depend on the customer's chosen subscription plan, and users may not be able to set up a specific feature or create more records without upgrading their plan.
+ A complete breakdown of all limits for each plan can be found on our pricing page (https://www.l...
+Trial account email limitations
+Introduction
+ When using a LiveAgent Trial Account, it's important to be aware of the email limitations that come with it. These limitations have been put in place to ensure the sustainability and availability of the service for all users. This article provides an overview of the email limitations in a LiveAgent Trial Account and offers guidance on how to upgrade your current plan if required.
+ 
+ Email Limitations in LiveAgent Trial Accounts
+ 
+ A LiveAgent Trial Account has the following limitat...
+Free account email limitations
+Introduction
+ When using a LiveAgent Free Account, it's important to be aware of the email limitations that come with it. These limitations have been put in place to ensure the sustainability and availability of the service for all users. This article provides an overview of the email limitations in a LiveAgent Free Account and offers guidance on how to upgrade your current plan if required.
+ 
+ Email Limitations in LiveAgent Free Accounts
+ The LiveAgent free account comes with certain email limi...
+Account inactivity and suspension
+Due to our efforts to optimize space on our data centers and reduce the huge amount of energy that our servers consume to slow down climate change and save our planet, Free and Trial LiveAgent accounts are automatically suspended after several weeks of inactivity. To keep an account active, it's required to log in at least once in 4 weeks to the agent panel, logging just into the customer portal is not sufficient.
+
+Moreover, all accounts that are suspended for a long time are by default terminat...
+
+===== https://support.liveagent.com/369705-LiveAgent-pricing-page
+TITLE: LiveAgent pricing page
+ACCESSED: 2026-09-27
+
+LiveAgent pricing page
+LiveAgent pricing page
+You can find our available plans, included features, and the pricing on the page
+https://www.liveagent.com/pricing/
+Updated:
+Jun 07, 2022
+Other Articles
+LiveAgent My Account section
+LiveAgent invoicing explained
+Accepted payment methods

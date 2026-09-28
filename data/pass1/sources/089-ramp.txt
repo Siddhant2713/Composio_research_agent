@@ -1,0 +1,505 @@
+===== https://ramp.com/api
+TITLE: Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp
+ACCESSED: 2026-09-27
+
+US corporate payments processed by Ramp:
+0.9003908%
+Time is money. Save both.
+Cards, expenses, bill payments, and
+banking
+*
+– in the blink of AI.
+Wait, what? Yes, we really put on a
+one-night-only
+Broadway musical about paying bills, starring three Bills. Turns out when bill pay takes seconds instead of hours, you get time for things like this.
+AGENTS AT WORK TODAY:
+Join
+70,000
+of the world’s most ambitious companies
+growing 3.2x faster than the average American business.
+Read the report
+$1M+
+saved on global spend
+One platform for all of finance.
+Agents for every workflow, working 24/7.
+Switch in days, not months
+View Demo
+Cards & Expenses
+that handle themselves
+Procure to pay
+without chasing approvals
+Accounting automation
+eliminates month-end madness
+Banking
+that flows money to the highest return
+200+ Integrations
+to the tools you already use
+See recommendations for your business
+Start with your company website URL, then add any context about your business or spend challenges.
+By continuing, you understand that Ramp uses AI to suggest content and acknowledge our
+Privacy Policy
+.
+Built on the intelligence of
+70k
++
+finance teams.
+One platform for the agentic era.
+Explore Ramp Intelligence
+Watch Video
+Introducing Stack by Ramp.
+The AI operating system built for today’s top finance teams.
+Learn about Ramp Stack
+Stack has finally automated what we all knew was coming with AI, but it did it in a reliable and consistent manner.
+Tyler Otto
+President, Specialized Accounting
+Read their story
+Watch Video
+Keep your finance team focused on strategy.
+Let agents handle the busywork.
+Learn about Ramp Intelligence
+Gone are the days of scrambling to chase receipts, manually coding really large data sets. All of that has been automatically addressed throughout the month in real time.
+Lauren Feeney
+Controller, Perplexity
+Read their story
+AI that learns from your team.
+And gets smarter with every team that joins.
+Learn about Policy Agents
+We have thousands of transactions a month, and the number of manual edits I make has dropped drastically. Ramp's AI just keeps getting smarter every week.
+Neusha Sayadian
+Fractional CFO, Valence
+See what agents can automate.
+Get a personalized look at the busy work agents can take off your team's plate.
+View Demo
+View Demo
+Scale the team.
+Shrink the paperwork.
+You had a bureaucracy. Now you have a business again.
+Set user access on autopilot.
+Provision cards, permissions, and limits automatically based on role, location, department and custom fields.
+Enterprise Solutions
+One platform for all your global spend.
+Issue cards in 30+ currencies and reimburse employees in local currencies, including pounds, euros, yen, and pesos.
+Global Spend Management
+70,000 teams and counting
+We've got the receipts.
+View Demo
+Shannon McCormick
+International Workplace Experience Lead
+,
+Notion
+As soon as I texted my first Ramp receipt, I realized Ramp is a game-changer. It’s incredibly intuitive.
+Heather Bruzus
+Principal Accountant
+,
+Mindbody & ClassPass
+We got positive feedback, which just doesn't happen very often. That proved this was the right decision.
+Tzu-San Hung
+Head of Strategic Finance
+,
+Notion
+Beautiful tools use beautiful tools.
+Matteo Franceschetti
+CEO
+,
+Eight Sleep
+Ramp was a complete game changer. It's a single platform that can handle every aspect of our spending.
+Christine Mimnagh-Fleming
+Sr. Manager, Finance Transformation
+,
+Shopify
+Ramp is so intuitive, people get it right away.
+Carey Peek
+CFO
+,
+KIPP Nashville Public Schools
+Implementing Ramp has been my biggest win as CFO. Employees love it and often go out of their way to tell me so.
+Mayor Neil Bradshaw
+Mayor
+,
+City of Ketchum, ID
+Ramp gives us the ability to make more informed financial policy decisions. It was one of the best decisions we've ever made.
+Bret Taylor
+CEO
+,
+Sierra
+It's almost like we're a more self-actualized company because everyone is just working on what we do differently.
+Michael Bohn
+Head of Business Operations
+,
+Foursquare
+The average person can figure Ramp out without training. That’s what drives 100% adoption.
+Ben Whipple
+Director of Public Works
+,
+City of Ketchum, ID
+I snap a picture of the receipt, Ramp handles the rest like magic, and I move on.
+Michael Litwin
+VP Controller
+,
+Virgin Voyages
+Before Ramp it was a process from the dark ages. We had people just doing expenses full-time. It was miserable.
+Staci Robinson
+AP Manager
+,
+Pair Eyewear
+Ramp's AI has given me a better work-life balance. I have more time for my family now that the AI handles much of the work I used to do manually.
+Irish Rose
+Controller
+,
+Eight Sleep
+Closing the books with Ramp is effortless.
+Andrew Clarke
+SVP Finance
+,
+Studs
+We've consolidated four platforms into one with Ramp.
+Jason Penegar
+VP Controller
+,
+Boys & Girls Clubs of America
+The Ramp journey has been incredible. A flawless implementation…
+Sarah Bird
+Controller
+,
+Seed Health
+It's rare to feel like a company and a team is a partner, and that they really want to understand what you need. 
+
+===== https://ramp.com/developer-tools
+TITLE: Developer Platform
+ACCESSED: 2026-09-27
+
+Developer Tools
+Build once. Automate forever.
+Agent-ready protocols, real-time data access, and modular APIs built for composability.
+Explore docs
+Tools for every use case.
+Issue virtual cards.
+Provision cards with precise controls for any workflow, customer, or agent.
+View guide
+Build agents.
+Use Ramp’s MCP server and APIs to create agents that do work for you.
+View guide
+Connect to your ERP.
+Sync vendors, code transactions, and reconcile payables.
+View guide
+Customize your AP.
+Build custom approval and payment flows across ERP and procurement systems.
+View guide
+“
+Ramp’s API has allowed us to provide customized yet surprisingly simple expense workflows for our customers. We’re building with Ramp toward a future where travel and spend is fully integrated and automated by default.
+”
+Stuart Blake
+VP of Revenue, TravelPerk
+Join the technology partner program.
+Accelerate your growth by developing, publishing, and marketing your solution on the Ramp App Center.
+Learn more
+Sign up for updates and early access features.
+
+===== https://ramp.com/signup
+TITLE: Sign Up for Ramp — Apply for a Card in Minutes
+ACCESSED: 2026-09-27
+
+Sign Up for Ramp — Apply for a Card in Minutes
+Get started with Ramp.
+Apply for Ramp’s corporate card and all-in-one finance platform.
+By continuing, you agree to Ramp’s
+Terms of Service
+and
+Privacy Policy
+.
+
+===== https://ramp.com/pricing
+TITLE: Ramp Pricing and Plans
+ACCESSED: 2026-09-27
+
+Start for free.
+Scale with Intelligence.
+Whether you’re a startup, global enterprise, or somewhere in between, Ramp is designed to save you time and money.
+AI-assisted
+Free
+$0/mo/user
+Best for smaller teams who want to simplify finances.
+Key features:
+Corporate Card
+Unlimited cards
+Card issuing controls
+Travel & Expense
+Complete expenses via SMS or Slack
+Create a custom travel policy
+Book flights, hotels, and car rentals
+Auto-receipt collection and matching
+Accounts Payable
+Automated invoice extraction (OCR)
+Configurable approval workflows
+Automated fraud checks
+Pay bills by ACH, card, check, wire, and more
+Accounts Receivable
+Invoice creation (OCR)
+Automated customer follow-up and cash application
+Accept payments via ACH, card, and check
+Treasury
+Earn
+4.64%
+*
+in a Ramp Investment Account
+Earn
+2%
+*
+on cash in a FDIC-insured account
+No fees, minimum deposits, or transfer caps
+Free wires and same-day ACH via Bill Pay
+Accounting Automation
+Basic accounting rules
+QuickBooks Online and Xero integrations
+Budgets & Reporting
+Custom reports and insights via AI reporting
+Custom report builder
+Vendor Management
+Automated vendor tracking and contract extraction
+Price intelligence
+View all features
+AI-powered
+Plus
+$15/mo/user
++ Platform fee based on team size
+Save 20% with annual billing
+Perfect for teams who want to use AI-driven automation to eliminate busywork.
+All the features of Free, and:
+Travel & Expense
+AI-driven expense reviews and policy insights
+Auto-lock cards when compliance is unmet
+24/7 phone support for travel bookings
+Accounts Payable
+Auto-coded line items
+AI-driven approval recommendations
+Automated batch payments
+Payment release approvals
+Procurement (Add-on to Plus or Enterprise)
+Advanced intake and approval workflows
+AI-driven vendor compliance reviews
+Automated PO creation and tracking
+Three-way match with Ramp purchase orders
+Accounting Automation
+NetSuite, Sage Intacct, and more integrations
+AI coding for every field
+Automate approval and sync of routine spend
+Support for multi-entity businesses
+Global Coverage
+Auto tax capture and coding
+Budgets & Reporting
+Share live reports and schedule exports
+Track budgets vs. actuals in real time
+User management
+Custom user roles
+Multi-entity visibility restrictions
+Audit log
+View all features
+AI-tailored
+Enterprise
+Custom
+Annual billing
+Specifically made for teams who need full customization.
+All the features of Plus, and:
+Accounting Automation
+Workday, Oracle Fusion Cloud, and more integrations
+Global Coverage
+Locally funded reimbursements
+Pay card payments in local currency
+Local currency card issuing in 30+ countries
+White Glove Support
+Dedicated account and customer success manager
+Priority 24/7 global support
+Implementation Services
+Custom implementation scoping and roll out plan
+Integration setup and validation testing
+Employee training and change management
+Enterprise Services
+Custom development
+ERP extensions and configurations
+Custom policy and workflow configuration
+Advanced org, role, and entity configuration
+View all features
+70,000+ finance teams have saved millions of hours with Ramp.
+Corporate Card
+Corporate liability charge card
+Competitive credit limits
+Unlimited physical and virtual cards
+Card issuing controls
+Category and vendor controls
+Proactive policy controls and follow up
++ Automatically lock cards when required receipts or items aren’t submitted on time
++ Automatically lock cards when required receipts or items aren’t submitted on time
+Travel
+Travel bookings
+Travel policies
+Create company-wide policies
++ Create custom travel policies based on role, department, location, and more
++ Create custom travel policies based on role, department, location, and more
+Guest bookings
++ Invite external guests to book travel in Ramp with set budgets and policy controls
++ Invite external guests to book travel in Ramp with set budgets and policy controls
+Support
+24/7 chat support
+24/7 phone support
+24/7 phone support
+Expense Management
+Spend limits with preset accounting codes
+Automatic receipt collection and matching
+Employee repayments
+Reimbursements
++ Limit reimbursement spending
++ Submit and review reimbursements in bulk
++ Send weekly batched reimbursements
++ Limit reimbursement spending
++ Submit and review reimbursements in bulk
++ Send weekly batched reimbursements
+Transaction alerts and flags
++ Require itemized receipts, flag alcohol spend, weekend transactions, and more
++ Require itemized receipts, flag alcohol spend, weekend transactions, and more
+Approval workflows
++ Route based on GL code, entity, and other accounting conditions
++ Route based on GL code, entity, and other accounting conditions
+Complete expenses & ask policy questions via SMS or Slack
+Approval recommendations for every transaction
+Proactive policy & compliance insights
+Parallel approvers
+Missing receipt affidavits
+Sunshine Act
+Accounts Payable
+Invoice capture with AI-powered OCR
+Pay bills by check, ACH, card, and wire
+Advanced exports
+Tax management
++W8 uploads
++W8 uploads
+
+===== https://ramp.com/partnerships
+TITLE: Why Partner With Ramp? Become a Ramp Partner or Affiliate | Ramp
+ACCESSED: 2026-09-27
+
+Become a
+Ramp Partner
+Ramp's partner program is built for the people who advise clients, manage portfolios, move money, and run networks
+Learn more
+A smarter finance stack for your clients. Real growth for you.
+Accounting partners
+Trusted by 4500+ accounting firms to help you deliver more value for clients and spend less time on the busywork.
+Learn more
+Private equity partners
+Drive value creation, reduce costs, and automate workflows with real-time spend visibility across your entire portfolio.
+Learn more
+Venture capital partners
+Accelerate portfolio value creation with a modern finance platform that helps them save time and money.
+Learn more
+Franchise partners
+Real-time visibility and automated control across every location — built for your corporate and franchise teams.
+Learn more
+Technology partnerships
+Offer corporate cards, expense management, and AP automation to your customers.
+Learn more
+Banking
+Help your commercial clients save time, control spend, and run finance operations more efficiently.
+Learn more
+Data partnerships
+Partner with Ramp to utilize data-backed insights from Ramp Rate, the Ramp AI Index, and aggregated spend intelligence.
+Learn more
+Reseller partnerships
+Grow account value by expanding beyond IT into finance, solving real spend challenges customers already want to fix.
+Learn more
+System integrators
+The AI-native finance platform built for modern enterprises and the growth engine for partners ready to go deeper.
+Learn more
+Hear it from our partners
+See why partners across industries are partnering with Ramp to accelerate value creation and grow faster
+When we invest in tools like Ramp, the impact ripples outward, freeing our staff to focus on the 3 million youth we serve.
+Jason Penegar, VP Controller, Boys & Girls Clubs of America
+See their story
+We're saving hours every single month just in our own firm - and that same benefit comes to our customers at the scale of 50 or 60 clients.
+Dan Luthi, Partner, Ignite Spot Accounting
+See their story
+Most banks treat the back office as a cost to keep down. We treat ours as a return to compound, which is why we run it on Ramp. Now we put our clients on Ramp, too.
+Patrick Gaughen, President & COO, Hingham Institution for Savings
+See their story
+
+===== https://ramp.com/pe-partnerships
+TITLE: Finance platform built for private equity firms | Ramp
+ACCESSED: 2026-09-27
+
+The #1 finance operations platform for private equity.
+Drive value creation, reduce costs, and automate workflows with real-time spend visibility across your entire portfolio.
+Become a partner
+Why leading private equity firms are partnering with Ramp
+One platform to control spend, drive efficiency, and create value across every portfolio company.
+Accelerate value creation across the portfolio
+Give portfolio companies a platform that delivers time and money savings from day one.
+Gain full visibility into portfolio spend
+See exactly where every portfolio company spends in one unified dashboard.
+Reduce operating costs with AI-powered insights
+Surface savings opportunities and reduce costs across your entire portfolio.
+Scale efficiency without scaling headcount
+Deploy turnkey AI to drive efficiencies across your firm and portfolio.
+Everything your portfolio companies need, in one place.
+From corporate cards to treasury and AP — Ramp handles it all.
+Corporate cards and expense management
+Physical and virtual cards with spend limits, cashback, and easy expense submission.
+Smart treasury and banking for your portfolio
+Earn yield on cash and automate treasury operations with intelligent forecasting.
+Simplified accounts payable and procurement
+Auto-code, approve, and pay bills. Streamline purchasing with intake forms and vendor management.
+Real-time spend visibility and insights
+Monitor every portfolio company's spend and budget health instantly.
+Explore our latest insights
+AI in PE: Ahead of the market, behind the curve
+Ramp partnered with Accordion to benchmark AI adoption across PE-backed companies — by sector, and by what's actually driving value creation.
+Download the whitepaper
+Exclusive partnership benefits
+Purpose-built benefits to accelerate value creation across your firm and portfolio.
+Scaled platform pricing benefits for portfolio companies.
+Dedicated team to expedite underwriting for your portfolio.
+White-glove support from onboarding, go-live, and beyond.
+Access to Ramp's PE Advisor Console for cross-portfolio benchmarking and spend analysis.
+Explore Ramp for your portfolio
+First name
+Last name
+Work email
+Company name
+
+===== https://ramp.com/vc-partnerships
+TITLE: Partner with Ramp and drive value creation across your portfolio | Ramp
+ACCESSED: 2026-09-27
+
+Venture Capital  & Accelerator Partnerships
+Empower your founders.
+Become a partner
+See benefits
+Why partner with Ramp?
+Accelerate value creation for portfolio companies
+Be ahead of the innovation curve and introduce your portfolio companies to a modern finance platform that helps them save time and money.
+Empower your portfolio’s finance leaders
+Unlock unparalleled cash flow visibility and offer your portfolio finance leaders competitive credit limits, robust spend controls, real-time alerts, and workflow automation.
+Help increase portfolio companies profitability
+Reduce operating expenses and drive efficiency within your portfolio with real-time visibility into spending and get AI-powered insights on savings.
+Unlock discounted pricing and partner benefits
+Offer portfolio companies discounted pricing, bonuses, and personalized educational content to enhance their experience using the Ramp platform.
+Meet our partners
+Why CoreTrust partnered with Ramp to close a critical gap in member spend management
+Learn more
+Why Alpine partnered with Ramp to streamline spend and cut costs across its portfolio
+Learn more
+Exclusive partnership benefits.
+Collaborate with Ramp to unlock best-in-class fintech solutions, enjoy exclusive access to customized events, and engage with our industry experts in shaping thought leadership within the field.
+Sign-on bonus upon portfolio company application
+Scaled platform pricing benefits for portfolio companies
+Dedicated team to expedite underwriting for your portfolio
+Opportunity to unlock annual marketing funds and co-hosted events with Ramp
+Access to Ramp's Advisor Console for cross-portfolio benchmarking and spend analysis
+Explore Ramp for your fund
+First name
+Last name
+Work email
+Company name
+“
+Portfolio companies using Ramp display better command over spend... Leveraging Ramp helps our founders save a significant amount of time on admin workflows and empowers teams to focus on mission-critical tasks.
+”
+Principal
+at 8VC

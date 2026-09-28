@@ -1,0 +1,186 @@
+{
+  "app": "Devin",
+  "number": 96,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:28:52.675703+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.devin.ai\",\n    \"https://docs.devin.ai/api\",\n    \"https://docs.devin.ai/authentication\",\n    \"https://www.devin.ai\",\n    \"https://www.devin.ai/pricing\",\n    \"https://www.devin.ai/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.devin.ai",
+    "https://docs.devin.ai/api",
+    "https://docs.devin.ai/authentication",
+    "https://www.devin.ai",
+    "https://www.devin.ai/pricing",
+    "https://www.devin.ai/contact",
+    "https://developer.devin.ai/",
+    "https://developers.devin.ai/",
+    "https://api.devin.ai/",
+    "https://devin.ai/docs",
+    "https://devin.ai/developers",
+    "https://devin.ai/api",
+    "https://devin.ai/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.devin.ai/product-guides/oidc",
+    "https://docs.devin.ai/api-reference/overview",
+    "https://docs.devin.ai/work-with-devin/browser-auth",
+    "https://docs.devin.ai/enterprise/getting-started/get-started",
+    "https://docs.devin.ai/get-started/first-run",
+    "https://docs.devin.ai/desktop/getting-started",
+    "https://app.devin.ai/auth/signup",
+    "https://app.devin.ai/signup"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.devin.ai/api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.devin.ai/authentication",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.devin.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.devin.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.devin.ai/get-started/devin-intro",
+      "requested_url": "https://docs.devin.ai",
+      "status": 200,
+      "title": "Introducing Devin - Devin Docs",
+      "chars": 4482,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://devin.ai/",
+      "requested_url": "https://www.devin.ai",
+      "status": 200,
+      "title": "Devin: the autonomous software engineer",
+      "chars": 4999,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://devin.ai/pricing",
+      "requested_url": "https://www.devin.ai/pricing",
+      "status": 200,
+      "title": "Plans and Pricing | Devin",
+      "chars": 3481,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://devin.ai/contact",
+      "requested_url": "https://www.devin.ai/contact",
+      "status": 200,
+      "title": "Contact Sales | Devin",
+      "chars": 161,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.devin.ai/product-guides/oidc",
+      "requested_url": "https://docs.devin.ai/product-guides/oidc",
+      "status": 200,
+      "title": "Cloud Authentication with OIDC - Devin Docs",
+      "chars": 4479,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "requested_url": "https://docs.devin.ai/api-reference/overview",
+      "status": 200,
+      "title": "API Overview - Devin Docs",
+      "chars": 3423,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/browser-auth",
+      "requested_url": "https://docs.devin.ai/work-with-devin/browser-auth",
+      "status": 200,
+      "title": "Devin browser authentication - Devin Docs",
+      "chars": 3454,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.devin.ai/enterprise/getting-started/get-started",
+      "requested_url": "https://docs.devin.ai/enterprise/getting-started/get-started",
+      "status": 200,
+      "title": "Getting Started with Devin Enterprise - Devin Docs",
+      "chars": 4607,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.devin.ai/get-started/first-run",
+      "requested_url": "https://docs.devin.ai/get-started/first-run",
+      "status": 200,
+      "title": "Your First Session - Devin Docs",
+      "chars": 4974,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Devin is an autonomous AI software engineer that can write, run, and test code, available via web app, CLI, and a public REST API.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Both scopes use service user credentials with a cog_ prefix, sent via Bearer token in the Authorization header. Personal Access Tokens are also supported.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can sign up directly at app.devin.ai or use self-serve free and paid plans.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The Devin API is organized into Organization and Enterprise scopes with base URLs like https://api.devin.ai/v3/organizations/*.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"The fetched documentation does not mention the Model Context Protocol.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve signup is available and the API is fully documented with service user credentials and standard HTTP endpoints.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.devin.ai/get-started/devin-intro\",\n      \"claim\": \"To access Devin, sign up at app.devin.ai.\"\n    },\n    {\n      \"url\": \"https://docs.devin.ai/api-reference/overview\",\n      \"claim\": \"The API uses service user credentials and is organized into Organization and Enterprise scopes under https://api.devin.ai/v3/.\"\n    },\n    {\n      \"url\": \"https://devin.ai/pricing\",\n      \"claim\": \"Free and paid self-serve plans are available on the pricing page.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://docs.devin.ai",
+    "one_liner": "Devin is an autonomous AI software engineer that can write, run, and test code, available via web app, CLI, and a public REST API.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Both scopes use service user credentials with a cog_ prefix, sent via Bearer token in the Authorization header. Personal Access Tokens are also supported."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can sign up directly at app.devin.ai or use self-serve free and paid plans."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "The Devin API is organized into Organization and Enterprise scopes with base URLs like https://api.devin.ai/v3/organizations/*."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "The fetched documentation does not mention the Model Context Protocol."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve signup is available and the API is fully documented with service user credentials and standard HTTP endpoints."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.devin.ai/get-started/devin-intro",
+        "claim": "To access Devin, sign up at app.devin.ai.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.devin.ai/api-reference/overview",
+        "claim": "The API uses service user credentials and is organized into Organization and Enterprise scopes under https://api.devin.ai/v3/.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://devin.ai/pricing",
+        "claim": "Free and paid self-serve plans are available on the pricing page.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:29:08.855470+00:00"
+}

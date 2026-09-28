@@ -1,0 +1,150 @@
+{
+  "app": "SE Ranking",
+  "number": 52,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:00:32.587108+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://seranking.com/api\",\n    \"https://seranking.com/help/api\",\n    \"https://seranking.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://seranking.com/api",
+    "https://seranking.com/help/api",
+    "https://seranking.com/pricing",
+    "https://docs.seranking.com/",
+    "https://developer.seranking.com/",
+    "https://developers.seranking.com/",
+    "https://api.seranking.com/",
+    "https://seranking.com/docs",
+    "https://seranking.com/developers",
+    "https://seranking.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://seranking.com/api-pricing.html",
+    "https://seranking.com/sign-up.html",
+    "https://seranking.com/contact.html",
+    "https://seranking.com/educational-partnership-program.html"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://seranking.com/api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://seranking.com/help/api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.seranking.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developer.seranking.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.seranking.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.seranking.com/",
+      "reason": "HTTP 401"
+    },
+    {
+      "requested_url": "https://seranking.com/docs",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://seranking.com/sign-up.html",
+      "reason": "page too thin (83 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://seranking.com/subscription.html",
+      "requested_url": "https://seranking.com/pricing",
+      "status": 200,
+      "title": "Subscription - SE Ranking",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://seranking.com/api-pricing.html",
+      "requested_url": "https://seranking.com/api-pricing.html",
+      "status": 200,
+      "title": "SE Ranking API Pricing: Free Trial, Wallet, Annual Plans",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://seranking.com/contact.html",
+      "requested_url": "https://seranking.com/contact.html",
+      "status": 200,
+      "title": "SE Ranking: Contact Us",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://seranking.com/educational-partnership-program.html",
+      "requested_url": "https://seranking.com/educational-partnership-program.html",
+      "status": 200,
+      "title": "SE Ranking Educational Partnership Program",
+      "chars": 2273,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"SE Ranking provides an SEO and GEO data platform featuring REST APIs and Model Context Protocol (MCP) access for AI assistants.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The fetched pages mention API access, credits, and endpoints, but do not describe the specific credential format or authentication method (e.g., API key header) used for requests.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can start a free 14-day trial or purchase standalone/wallet API plans directly on the website without a required sales contact.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The platform offers a Data API (Backlinks API, Domain Analysis API, Keyword Research API, AI Search API, Website Audit API) and a Project Management API, plus MCP server access.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"MCP (Model Context Protocol) access is included in the plans to query live SEO and GEO data through AI assistants like Claude, Cursor, and Gemini.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Self-serve access and a free trial allow getting API credits easily, but the pages do not document the exact authentication mechanism or request headers needed to make successful API calls.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://seranking.com/subscription.html\",\n      \"claim\": \"SE Ranking offers API credits and MCP access across plans, as well as a standalone SEO Data API plan.\"\n    },\n    {\n      \"url\": \"https://seranking.com/api-pricing.html\",\n      \"claim\": \"Provides a 14-day free trial with 100K API credits, Wallet top-ups, Standalone plans, and MCP support for connecting to AI assistants.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://seranking.com/api",
+    "one_liner": "SE Ranking provides an SEO and GEO data platform featuring REST APIs and Model Context Protocol (MCP) access for AI assistants.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The fetched pages mention API access, credits, and endpoints, but do not describe the specific credential format or authentication method (e.g., API key header) used for requests."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can start a free 14-day trial or purchase standalone/wallet API plans directly on the website without a required sales contact."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "The platform offers a Data API (Backlinks API, Domain Analysis API, Keyword Research API, AI Search API, Website Audit API) and a Project Management API, plus MCP server access."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "MCP (Model Context Protocol) access is included in the plans to query live SEO and GEO data through AI assistants like Claude, Cursor, and Gemini."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Self-serve access and a free trial allow getting API credits easily, but the pages do not document the exact authentication mechanism or request headers needed to make successful API calls."
+    },
+    "evidence": [
+      {
+        "url": "https://seranking.com/subscription.html",
+        "claim": "SE Ranking offers API credits and MCP access across plans, as well as a standalone SEO Data API plan.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://seranking.com/api-pricing.html",
+        "claim": "Provides a 14-day free trial with 100K API credits, Wallet top-ups, Standalone plans, and MCP support for connecting to AI assistants.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-27T17:00:57.488517+00:00"
+}

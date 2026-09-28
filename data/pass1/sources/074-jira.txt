@@ -1,0 +1,1562 @@
+===== https://developer.atlassian.com
+TITLE: 
+ACCESSED: 2026-09-27
+
+
+
+===== https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/
+TITLE: The Jira Cloud platform REST API
+ACCESSED: 2026-09-27
+
+The Jira Cloud platform REST API
+REST API v3
+About
+Version
+Authentication and authorization
+Permissions
+Expansion, pagination, and ordering
+Timestamps
+Special headers
+Anonymous operations
+Asynchronous operations
+Experimental features
+Status codes
+App data policies
+App migration
+App properties
+Application roles
+Audit records
+Avatars
+Classification levels
+Dashboards
+Dynamic modules
+Field schemes
+Filter sharing
+Filters
+Group and user picker
+Groups
+Issue attachments
+Issue bulk operations
+Issue comment properties
+Issue comments
+Issue custom field associations
+Issue custom field configuration (apps)
+Issue custom field contexts
+Issue custom field options
+Issue custom field options (apps)
+Issue custom field values (apps)
+Issue field configurations
+Issue fields
+Issue link types
+Issue links
+Issue navigator settings
+Issue notification schemes
+Issue panels
+Issue priorities
+Issue properties
+Issue redaction
+Issue remote links
+Issue resolutions
+Issue search
+Issue security level
+Issue security schemes
+Issue type properties
+Issue type schemes
+Issue type screen schemes
+Issue types
+Issue votes
+Issue watchers
+Issue worklog properties
+Issue worklogs
+Issues
+JQL
+JQL functions (apps)
+Jira expressions
+Jira settings
+Labels
+License metrics
+Migration of Connect modules to Forge
+Myself
+Permission schemes
+Permissions
+Plans
+Priority schemes
+Project avatars
+Project categories
+Project classification levels
+Project components
+Project email
+Project features
+Project key and name validation
+Project permission schemes
+Project properties
+Project role actors
+Project roles
+Project templates
+Project types
+Project versions
+Projects
+Screen schemes
+Screen tab fields
+Screen tabs
+Screens
+Server info
+Service Registry
+Status
+Tasks
+Teams in plan
+Time tracking
+UI modifications (apps)
+User properties
+User search
+Users
+Webhooks
+Workflow scheme drafts
+Workflow scheme project associations
+Workflow schemes
+Workflow status categories
+Workflow statuses
+Workflow transition rules
+Workflows
+Other operations
+Jira Cloud platform / Reference / REST API v3
+About
+Postman Collection
+OpenAPI
+The Jira REST API enables you to interact with Jira programmatically. Use this API to
+build apps
+, script interactions with
+Jira, or develop any other type of integration. This page documents the REST resources available in Jira Cloud, including
+the HTTP response codes and example requests and responses.
+Version
+This documentation is for
+version 3
+of the Jira Cloud platform REST API, which is the latest
+version.
+Version 2
+and
+version 3 of the API offer the same collection of operations. However, version 3 provides support for
+the
+Atlassian Document Format
+(ADF) in:
+body
+in comments, including where comments are used in issue, issue link, and transition resources.
+comment
+in worklogs.
+description
+and
+environment
+fields in issues.
+textarea
+type custom fields (multi-line text fields) in issues. Single line custom fields
+(
+textfield
+) accept a string and don't handle Atlassian Document Format content.
+Authentication and authorization
+Forge apps
+For Forge apps,
+REST API scopes
+are used when authenticating with Jira Cloud platform. See
+Add scopes to call an Atlassian REST API
+for more details.
+The URIs for Forge app REST API calls have this structure:
+/rest/api/3/<resource-name>
+For example,
+/rest/api/3/issue/DEMO-1
+Connect apps
+For Connect apps, authentication (JWT-based) is built into the Connect libraries. Authorization is implemented using either
+scopes (shown as
+App scope required
+for operations on this page) or user impersonation. See
+Security for Connect apps
+for details.
+The URIs for Connect app REST API calls have this structure:
+https://<site-url>/rest/api/3/<resource-name>
+For example,
+https://your-domain.atlassian.net/rest/api/3/issue/DEMO-1
+Other integrations
+For integrations that are not Forge or Connect apps, use OAuth 2.0 authorization code grants (3LO) for security
+(3LO scopes are shown as for operations
+OAuth scopes required
+). See
+OAuth 2.0 (3LO) apps
+for details.
+The URIs for OAuth 2.0 (3LO) app REST API calls have this structure:
+https://api.atlassian.com/ex/jira/<cloudId>/rest/api/3/<resource-name>
+For example,
+https://api.atlassian.com/ex/jira/35273b54-3f06-40d2-880f-dd28cf8daafa/rest/api/3/issue/DEMO-1
+Ad-hoc API calls
+For personal scripts, bots, and ad-hoc execution of the REST APIs use basic authentication. See
+Basic auth for REST APIs
+for details.
+The URIs for basic authentication REST API calls have this structure:
+https://<site-url>/rest/api/3/<resource-name>
+For example,
+https://your-domain.atlassian.net/rest/api/3/issue/DEMO-1
+Permissions
+Operation permissions
+Most operations in this API require permissions. The calling user must have the required permissions for an operation to
+use i
+
+===== https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/
+TITLE: OAuth 2.0 (3LO) apps
+ACCESSED: 2026-09-27
+
+OAuth 2.0 (3LO) apps
+Last updated Sep 21, 2026
+OAuth 2.0 (3LO) apps
+This page shows you how to configure
+OAuth 2.0 (3LO)
+(also known as "three-legged OAuth" or "authorization
+code grants") apps. OAuth 2.0 (3LO) allows external applications and services to access
+Atlassian product APIs on a user's behalf. OAuth 2.0 (3LO) apps are created and managed in the
+developer console
+This page only applies to OAuth 2.0 apps (integrations) created in the developer console.
+For Forge apps and Connect apps, you don't need to configure authentication it is built into the app frameworks.
+See
+Security for Forge apps
+and
+Security for Connect apps
+For simple scripts or to make REST API calls yourself, see
+Basic auth for REST APIs
+Overview
+Important notice for apps using  3LO or API tokens
+Apps that collect API tokens or instruct customers to create individual 3LO apps don't comply with our
+Security requirements for cloud apps
+and
+Acceptable use policy
+Follow these best practices:
+Build a single, distributable 3LO app for your integration.
+Clearly identify your app in the Marketplace (recommended).
+Work with customers to transition away from custom 3LO apps or API tokens.
+Read our blog post for full details
+OAuth 2.0 (3LO) involves three parties:
+An Atlassian site (
+resource
+)
+A user (
+resource owner
+)
+An external application/service (
+client
+).
+For example, a Jira or Confluence site (
+resource
+), an Atlassian user (
+resource owner
+), and Gmail (
+client
+).
+Underlying the authorization interactions between these three parties is an authorization server.
+To the user, the authorization process looks like this:
+The app directs the user to an Atlassian screen that prompts them to grant access to their data
+on the Atlassian site. The screen displays the access being requested in the Atlassian product.
+The user grants (or denies) access to their data on the Atlassian site, via the screen.
+The user is directed back to the external service. If the user granted access, the external service
+can now access data (within the specified scopes) from the Atlassian site on the user's behalf.
+Underlying this process are a number of interactions between the external service, the app, and the
+authorization server. The full process is described in more detail below.
+Note, this process assumes that the external service has registered an app with Atlassian that can
+use OAuth 2.0 (3LO).
+The user, in the external service, uses a feature that requires data from an Atlassian product.
+The external service seeks authorization to access the product's APIs, within the specified scopes,
+on behalf of the user.
+The user is directed to the Atlassian account login screen, if they are not already logged in,
+and prompted to log in.
+The user is directed to the authorization URL for the authorization server. This displays a screen
+that prompts the user to grant access to their data.
+If the user grants access, the user is directed to the callback URL with an authorization code.
+The app makes a POST to the token URL for the authorization server, exchanging the authorization
+code for an access token.
+The access token can now be used to access the APIs for the authorized Atlassian site on behalf
+of the user. This can be used until the token expires or is revoked.
+Creating OAuth 2.0 (3LO) Apps
+From any page on
+developer.atlassian.com
+, select your profile
+icon in the top-right corner, and from the dropdown, select
+Developer console
+In the Developer console, select the
+Create
+dropdown and choose
+OAuth 2.0 integration
+to
+create an OAuth 2.0 (3LO) app.
+Enter an app name and choose the
+OAuth 2.0 (3LO) grant type
+for your app.
+When you create an OAuth 2.0 (3LO) app, you can choose between two grant types:
+Account-level grant: The user’s consent applies at the Atlassian account level. A single grant can cover access to
+multiple sites where your app is installed, subject to the scopes you request.
+Resource-level grant: The user’s consent is limited to the specific site(s) they select on the consent screen.
+The resulting tokens can only be used with those selected site(s).
+Enabling OAuth 2.0 (3LO)
+Before you can implement OAuth 2.0 (3LO) for your app, you need to enable it for your app using the
+developer console
+From any page on
+developer.atlassian.com
+, select your profile
+icon in the top-right corner, and from the dropdown, select
+Developer console
+Select your app from the list (or create one if you don't already have one).
+Select
+Authorization
+in the left menu.
+Next to OAuth 2.0 (3LO), select
+Configure
+Enter the
+Callback URL
+. Set this to any URL that is accessible by the app. When you implement
+OAuth 2.0 (3LO) in your app (see next section), the
+redirect_uri
+must match this URL.
+Click
+Sa
+
+===== https://developer.atlassian.com/
+TITLE: 
+ACCESSED: 2026-09-27
+
+
+
+===== https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/
+TITLE: Jira scopes for OAuth 2.0 (3LO) and Forge apps
+ACCESSED: 2026-09-27
+
+Jira scopes for OAuth 2.0 (3LO) and Forge apps
+Last updated Sep 21, 2026
+Jira scopes for OAuth 2.0 (3LO) and Forge apps
+Scopes enable an app to request a level of access to an Atlassian product.
+Jira permissions also control access to data and aren't overridden by scopes. For example, if a
+user does not have the Browse projects permission then the
+Get project
+operation won't be able
+to access project data even if the app has the
+manage:jira-project
+and other required scopes.
+The scopes may provide the
+potential
+to access beta or non-public APIs that are later changed or
+removed from the Atlassian product. The inclusion of the API endpoint in a scope doesn't imply that
+the product makes this endpoint public. Read the
+Jira REST API documentation
+for details.
+Some scopes automatically imply that the app is granted other scopes.
+Setting your app's scopes
+When choosing your scopes, the recommendation is to use classic scopes.
+Scopes limit
+It's recommended that you use less than 50 scopes in an application. When adding scopes in the
+developer console
+, a count of the scopes added to your app is displayed. If you are
+approaching 50 scopes, review your use of scopes and ensure you're using classic scopes to the maximum
+extent possible and remove any unnecessary granular scopes.
+Forge apps
+The easiest way to set your app's scopes is to:
+Update
+to the latest forge-cli packages.
+Run
+forge lint --fix
+to add the scopes to the manifest.
+Run
+forge install --upgrade
+to apply the manifest changes to your app.
+This process does not remove any redundant scopes from the manifest file, and these scopes need to
+be removed manually.
+If you want to set the scopes manually, you need to:
+Review your app to determine all of the operations used.
+Consult the
+Jira Cloud platform REST API
+documentation to
+determine the scope needed for each operation and create a list of scopes.
+Add the scopes required to the app's manifest file while remembering to remove any deprecated
+scopes.
+OAuth 2.0 apps
+For OAuth 2.0 apps, you need to:
+Review your app to determine all of the operations used.
+Consult the
+Jira Cloud platform REST API
+documentation to
+determine the scope needed for each operation and create a list of scopes.
+Update the scopes required in the developer console.
+Scopes
+These scopes are for apps using
+OAuth 2.0 authorization code grants (3LO)
+for authorization and Forge apps. The title and description are displayed to the user on the
+consent screen during the authorization flow.
+Scopes for Atlassian Connect are different. See
+Scopes for Connect apps
+to know more.
+Classic scopes
+Where available, the recommendation is to use these scopes.
+Scope name
+Summary
+Description
+read:jira-user
+View user profiles
+View user information in Jira that the user has access to, including usernames, email 
+             addresses, and avatars.
+read:jira-work
+View Jira issue data
+Read Jira project and issue data, search for issues and objects associated with issues 
+             like attachments and worklogs.
+write:jira-work
+Create and manage issues
+Create and edit issues in Jira, post comments as the user, create worklogs, and delete 
+             issues.
+manage:jira-project
+Manage project settings
+Create and edit project settings and create new project-level objects (for example, 
+             versions and components).
+manage:jira-configuration
+Manage Jira global settings
+Take Jira administration actions (for example, create projects and custom fields, 
+             view workflows, and manage issue link types).
+manage:jira-webhook
+Manage Jira webhooks
+Fetch, register, refresh, and delete dynamically declared Jira webhooks.
+Granular scopes
+Use these scopes only when you can't use classic scopes.
+Scope name
+Title
+Description
+read:application-role:jira
+View application roles
+View application roles.
+read:audit-log:jira
+View audit logs
+View audit logs.
+read:avatar:jira
+View avatars
+View system and custom avatars.
+write:avatar:jira
+Create and update avatars
+Create and update system and custom avatars.
+delete:avatar:jira
+Delete avatars
+Delete system and custom avatars.
+read:project.avatar:jira
+Read project avatars
+Read project avatars.
+write:project.avatar:jira
+Create and update project avatars
+Create and update project avatars.
+delete:project.avatar:jira
+Delete project avatars
+Delete project avatars.
+read:dashboard:jira
+View dashboards
+View dashboards.
+write:dashboard:jira
+Create and update dashboards
+Create and update dashboards.
+delete:dashboard:jira
+Delete dashboards
+Delete dashboards.
+read:dashboard.property:jira
+View dashboard properties
+View dashboard properties.
+write:dashboard.property:jira
+Create and update dashboard properties
+Create and update dashboard properties.
+delete:dashboar
+
+===== https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-plans/
+TITLE: The Jira Cloud platform REST API
+ACCESSED: 2026-09-27
+
+The Jira Cloud platform REST API
+REST API v3
+About
+Version
+Authentication and authorization
+Permissions
+Expansion, pagination, and ordering
+Timestamps
+Special headers
+Anonymous operations
+Asynchronous operations
+Experimental features
+Status codes
+App data policies
+App migration
+App properties
+Application roles
+Audit records
+Avatars
+Classification levels
+Dashboards
+Dynamic modules
+Field schemes
+Filter sharing
+Filters
+Group and user picker
+Groups
+Issue attachments
+Issue bulk operations
+Issue comment properties
+Issue comments
+Issue custom field associations
+Issue custom field configuration (apps)
+Issue custom field contexts
+Issue custom field options
+Issue custom field options (apps)
+Issue custom field values (apps)
+Issue field configurations
+Issue fields
+Issue link types
+Issue links
+Issue navigator settings
+Issue notification schemes
+Issue panels
+Issue priorities
+Issue properties
+Issue redaction
+Issue remote links
+Issue resolutions
+Issue search
+Issue security level
+Issue security schemes
+Issue type properties
+Issue type schemes
+Issue type screen schemes
+Issue types
+Issue votes
+Issue watchers
+Issue worklog properties
+Issue worklogs
+Issues
+JQL
+JQL functions (apps)
+Jira expressions
+Jira settings
+Labels
+License metrics
+Migration of Connect modules to Forge
+Myself
+Permission schemes
+Permissions
+Plans
+GET
+Get plans paginated
+POST
+Create plan
+GET
+Get plan
+PUT
+Update plan
+PUT
+Archive plan
+POST
+Duplicate plan
+PUT
+Trash plan
+Priority schemes
+Project avatars
+Project categories
+Project classification levels
+Project components
+Project email
+Project features
+Project key and name validation
+Project permission schemes
+Project properties
+Project role actors
+Project roles
+Project templates
+Project types
+Project versions
+Projects
+Screen schemes
+Screen tab fields
+Screen tabs
+Screens
+Server info
+Service Registry
+Status
+Tasks
+Teams in plan
+Time tracking
+UI modifications (apps)
+User properties
+User search
+Users
+Webhooks
+Workflow scheme drafts
+Workflow scheme project associations
+Workflow schemes
+Workflow status categories
+Workflow statuses
+Workflow transition rules
+Workflows
+Other operations
+Jira Cloud platform / Reference / REST API v3
+Plans
+Postman Collection
+OpenAPI
+This resource represents plans. Use it to get, create, duplicate, update, trash and archive plans.
+Operations
+GET
+/rest/api/3/plans/plan
+POST
+/rest/api/3/plans/plan
+GET
+/rest/api/3/plans/plan/{planId}
+PUT
+/rest/api/3/plans/plan/{planId}
+PUT
+/rest/api/3/plans/plan/{planId}/archive
+POST
+/rest/api/3/plans/plan/{planId}/duplicate
+PUT
+/rest/api/3/plans/plan/{planId}/trash
+GET
+Get plans paginated
+Experimental
+Returns a
+paginated
+list of plans.
+Permissions
+required:
+Administer Jira
+global permission
+Data Security Policy
+:
+Exempt from app access rules
+Scopes
+OAuth 2.0 scopes
+required:
+read:jira-work
+Connect apps cannot access this REST resource.
+Request
+Query parameters
+Expand all
+includeTrashed
+boolean
+includeArchived
+boolean
+cursor
+string
+maxResults
+integer
+Responses
+200
+OK
+Returned if the request is successful.
+application/json
+PageWithCursorGetPlanResponseForPage
+Show child properties
+401
+Unauthorized
+403
+Forbidden
+GET
+/
+rest
+/
+api
+/
+3
+/
+plans
+/
+plan
+Forge
+curl
+Node.js
+Java
+Python
+PHP
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+// This sample uses Atlassian Forge
+// https://developer.atlassian.com/platform/forge/
+import { requestJira } from "@forge/bridge";
+
+const response = await requestJira(`/rest/api/3/plans/plan`, {
+  headers: {
+    'Accept': 'application/json'
+  }
+});
+
+console.log(`Response: ${response.status} ${response.statusText}`);
+console.log(await response.json());
+200
+Response
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+{
+  "cursor": "",
+  "isLast": true,
+  "maxResults": 2,
+  "nextPageCursor": "2",
+  "total": 10,
+  "values": [
+    {
+      "id": "100",
+      "issueSources": [
+        {
+          "type": "Project",
+          "value": 10000
+        }
+      ],
+      "name": "Plan 1",
+      "scenarioId": "200",
+      "status": "Active"
+    },
+    {
+      "id": "200",
+      "issueSources": [
+        {
+          "type": "Board",
+          "value": 20000
+        }
+      ],
+      "name": "Plan 2",
+      "scenarioId": "300",
+      "status": "Trashed"
+    }
+  ]
+}
+POST
+Create plan
+Experimental
+Creates a plan.
+Permissions
+required:
+Administer Jira
+global permission
+Data Security Policy
+:
+Exempt from app access rules
+Scopes
+OAuth 2.0 scopes
+required:
+write:jira-work
+Connect apps cannot access this REST resource.
+Request
+Query parameters
+useGroupId
+boolean
+Request body
+application/json
+Expand all
+crossProjectReleases
+array<CreateCrossProjectReleaseRequest>
+customFields
+array<CreateCustomFieldRequest>
+exclusionRules
+CreateExclusionRulesRequest
+issueSources
+array<Cr
+
+===== https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/
+TITLE: Basic auth for REST APIs
+ACCESSED: 2026-09-27
+
+Basic auth for REST APIs
+Last updated Sep 21, 2026
+Basic auth for REST APIs
+This page shows you how REST clients can authenticate themselves using
+basic authentication
+with an
+Atlassian account
+email address
+and
+API token
+Authentication using passwords has been deprecated.
+Basic authentication is not as secure as other methods. We recommend using it for simple scripts and
+manual calls to the REST APIs. Otherwise, consider building an app:
+Forge apps and Connect apps use more secure methods for authentication: OAuth 2.0 and JWT respectively.
+In addition, authentication is built into the app frameworks, so you don't need to configure it.
+See
+Security for Forge apps
+and
+Security for Connect apps
+OAuth 2.0 apps (integrations) created in the
+developer console
+can use
+OAuth 2.0 authorization code grants (3LO)
+, which
+is also more secure than basic auth.
+Overview
+Important notice for apps using  3LO or API tokens
+Apps that collect API tokens or instruct customers to create individual 3LO apps don't comply with our
+Security requirements for cloud apps
+and
+Acceptable use policy
+Follow these best practices:
+Build a single, distributable 3LO app for your integration.
+Clearly identify your app in the Marketplace (recommended).
+Work with customers to transition away from custom 3LO apps or API tokens.
+Read our blog post for full details
+The Jira REST API is protected by the same restrictions that apply in the standard Jira web interface.
+These restrictions mean that if you don't log in, you access Jira anonymously. If you log in and don't
+have permission to view something in Jira, you won't be able to view it using the Jira REST API either.
+In most cases, the first step in using the Jira REST API is to authenticate a user account with your
+Jira site. This page provides a simple example of basic authentication.
+Get an API token
+Basic auth requires API tokens. You generate an API token for your Atlassian account and use
+it to authenticate anywhere where you would have used a password. This enhances security because:
+you're not saving your primary account password outside of where you authenticate
+you can quickly revoke individual API tokens on a per-use basis
+API tokens will allow you to authenticate even if your Atlassian Cloud organization has two-factor
+authentication or SAML enabled.
+See the Atlassian Cloud Support
+API tokens
+article to discover
+how to generate an API token.
+Simple example
+Most client software provides a simple mechanism for supplying a user name (in our case, the email address)
+and API token that the client uses to build the required authentication headers. For example, you can
+specify the
+-u
+argument in cURL as follows:
+1
+2
+3
+4
+5
+6
+curl -D- \
+   -u fred@example.com:freds_api_token \
+   -X GET \
+   -H "Content-Type: application/json" \
+   https://your-domain.atlassian.net/rest/api/2/issue/createmeta
+Supply basic auth headers
+You can construct and send basic auth headers. To do this you perform the following steps:
+Generate an API token for Jira using your
+Atlassian Account
+Build a string of the form
+useremail:api_token
+BASE64 encode the string.
+Linux/Unix/MacOS:
+1
+2
+echo -n "user@example.com:api_token_string" | base64
+Windows 7 and later, using Microsoft Powershell:
+1
+2
+3
+4
+5
+$Text = ‘user@example.com:api_token_string’
+$Bytes = [System.Text.Encoding]::UTF8.GetBytes($Text)
+$EncodedText = [Convert]::ToBase64String($Bytes)
+$EncodedText
+Supply an
+Authorization
+header with content
+Basic
+followed by the encoded string. For example, the string
+fred:fred
+encodes to
+ZnJlZDpmcmVk
+in base64, so you would make the request as follows:
+1
+2
+3
+4
+5
+6
+curl -D- \
+   -X GET \
+   -H "Authorization: Basic ZnJlZDpmcmVk" \
+   -H "Content-Type: application/json" \
+   "https://your-domain.atlassian.net/rest/api/2/issue/QA-31"
+Advanced topics
+Authentication challenges
+Because Jira permits a default level of access to anonymous users, it does not supply an authentication
+challenge. Some HTTP clients expect to receive an authentication challenge before they send
+an authorization header. This means that a client may not behave as expected. In this case,
+configure the client to supply the authorization header, as described above, rather than
+relying on its default mechanism.
+CAPTCHA
+A CAPTCHA is 'triggered' after several consecutive failed log in attempts, and requires the user to
+interpret a distorted picture of a word and type that word into a text field with each subsequent log
+in attempt. If CAPTCHA has been triggered, you cannot use Jira's REST API to authenticate with the Jira site.
+You can check this in the error response from Jira. If there is an
+X-Seraph-LoginReason
+header with
+a value of
+AUTHENTICATION_DENIED
+, the application rejected the
+
+===== https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/
+TITLE: The Jira Cloud platform REST API
+ACCESSED: 2026-09-27
+
+The Jira Cloud platform REST API
+REST API v3
+About
+Version
+Authentication and authorization
+Permissions
+Expansion, pagination, and ordering
+Timestamps
+Special headers
+Anonymous operations
+Asynchronous operations
+Experimental features
+Status codes
+App data policies
+App migration
+App properties
+Application roles
+Audit records
+Avatars
+Classification levels
+Dashboards
+Dynamic modules
+Field schemes
+Filter sharing
+Filters
+Group and user picker
+Groups
+Issue attachments
+Issue bulk operations
+Issue comment properties
+Issue comments
+Issue custom field associations
+Issue custom field configuration (apps)
+Issue custom field contexts
+Issue custom field options
+Issue custom field options (apps)
+Issue custom field values (apps)
+Issue field configurations
+Issue fields
+Issue link types
+Issue links
+Issue navigator settings
+Issue notification schemes
+Issue panels
+Issue priorities
+Issue properties
+Issue redaction
+Issue remote links
+Issue resolutions
+Issue search
+Issue security level
+Issue security schemes
+Issue type properties
+Issue type schemes
+Issue type screen schemes
+Issue types
+Issue votes
+Issue watchers
+Issue worklog properties
+Issue worklogs
+Issues
+JQL
+JQL functions (apps)
+Jira expressions
+Jira settings
+Labels
+License metrics
+Migration of Connect modules to Forge
+Myself
+Permission schemes
+Permissions
+Plans
+Priority schemes
+Project avatars
+Project categories
+Project classification levels
+Project components
+Project email
+Project features
+Project key and name validation
+Project permission schemes
+Project properties
+Project role actors
+Project roles
+Project templates
+Project types
+Project versions
+Projects
+Screen schemes
+Screen tab fields
+Screen tabs
+Screens
+Server info
+Service Registry
+Status
+Tasks
+Teams in plan
+Time tracking
+UI modifications (apps)
+User properties
+User search
+Users
+Webhooks
+GET
+Get dynamic webhooks for app
+POST
+Register dynamic webhooks
+DEL
+Delete webhooks by ID
+GET
+Get failed webhooks
+PUT
+Extend webhook life
+Workflow scheme drafts
+Workflow scheme project associations
+Workflow schemes
+Workflow status categories
+Workflow statuses
+Workflow transition rules
+Workflows
+Other operations
+Jira Cloud platform / Reference / REST API v3
+Webhooks
+Postman Collection
+OpenAPI
+This resource represents webhooks. Webhooks are calls sent to a URL when an event occurs in Jira for issues specified by a JQL query. Only Connect and OAuth 2.0 apps can register and manage webhooks. For more information, see
+Webhooks
+Operations
+GET
+/rest/api/3/webhook
+POST
+/rest/api/3/webhook
+DEL
+/rest/api/3/webhook
+GET
+/rest/api/3/webhook/failed
+PUT
+/rest/api/3/webhook/refresh
+GET
+Get dynamic webhooks for app
+Returns a
+paginated
+list of the webhooks registered by the calling app.
+Permissions
+required:
+Only
+Connect
+and
+OAuth 2.0
+apps can use this operation.
+Data Security Policy
+:
+Exempt from app access rules
+Scopes
+OAuth 2.0 scopes
+required:
+Classic
+RECOMMENDED
+:
+read:jira-work
+,
+manage:jira-webhook
+Granular
+:
+read:webhook:jira
+,
+read:jql:jira
+Connect app scope
+required
+:
+READ
+Request
+Query parameters
+Expand all
+startAt
+integer
+maxResults
+integer
+Responses
+200
+OK
+Returned if the request is successful.
+application/json
+PageBeanWebhook
+A page of items.
+Show child properties
+400
+Bad Request
+403
+Forbidden
+GET
+/
+rest
+/
+api
+/
+3
+/
+webhook
+Forge
+curl
+Node.js
+Java
+Python
+PHP
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+// This sample uses Atlassian Forge
+// https://developer.atlassian.com/platform/forge/
+import { requestJira } from "@forge/bridge";
+
+const response = await requestJira(`/rest/api/3/webhook`, {
+  headers: {
+    'Accept': 'application/json'
+  }
+});
+
+console.log(`Response: ${response.status} ${response.statusText}`);
+console.log(await response.json());
+200
+Response
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+{
+  "isLast": true,
+  "maxResults": 3,
+  "startAt": 0,
+  "total": 3,
+  "values": [
+    {
+      "events": [
+        "jira:issue_updated",
+        "jira:issue_created"
+      ],
+      "expirationDate": "2019-06-01T12:42:30.000+0000",
+      "fieldIdsFilter": [
+        "summary",
+        "customfield_10029"
+      ],
+      "id": 10000,
+      "jqlFilter": "project = PRJ",
+      "url": "https://your-app.example.com/webhook-received"
+    },
+    {
+      "events": [
+        "jira:issue_created"
+      ],
+      "expirationDate": "2019-06-01T12:42:30.000+0000",
+      "id": 10001,
+      "jqlFilter": "issuetype = Bug",
+      "url": "https://your-app.example.com/webhook-received"
+    },
+    {
+      "events": [
+        "issue_property_set"
+      ],
+      "expirationDate": "2019-06-01T12:42:30.000+0000",
+      "id": 10002,
+      "issuePropertyKeysFilter": [
+        "my-issue-property-key"
+      ],
+      "jqlFilter": "proje
+
+===== https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/
+TITLE: The Jira Cloud platform REST API
+ACCESSED: 2026-09-27
+
+The Jira Cloud platform REST API
+REST API v3
+About
+Version
+Authentication and authorization
+Permissions
+Expansion, pagination, and ordering
+Timestamps
+Special headers
+Anonymous operations
+Asynchronous operations
+Experimental features
+Status codes
+App data policies
+App migration
+App properties
+Application roles
+Audit records
+Avatars
+Classification levels
+Dashboards
+Dynamic modules
+Field schemes
+Filter sharing
+Filters
+Group and user picker
+Groups
+Issue attachments
+Issue bulk operations
+Issue comment properties
+Issue comments
+Issue custom field associations
+Issue custom field configuration (apps)
+Issue custom field contexts
+Issue custom field options
+Issue custom field options (apps)
+Issue custom field values (apps)
+Issue field configurations
+Issue fields
+Issue link types
+Issue links
+Issue navigator settings
+Issue notification schemes
+Issue panels
+Issue priorities
+Issue properties
+Issue redaction
+Issue remote links
+Issue resolutions
+Issue search
+Issue security level
+Issue security schemes
+Issue type properties
+Issue type schemes
+Issue type screen schemes
+Issue types
+Issue votes
+Issue watchers
+Issue worklog properties
+Issue worklogs
+Issues
+JQL
+JQL functions (apps)
+Jira expressions
+Jira settings
+Labels
+License metrics
+GET
+Get license
+GET
+Get approximate license count
+GET
+Get approximate application license count
+Migration of Connect modules to Forge
+Myself
+Permission schemes
+Permissions
+Plans
+Priority schemes
+Project avatars
+Project categories
+Project classification levels
+Project components
+Project email
+Project features
+Project key and name validation
+Project permission schemes
+Project properties
+Project role actors
+Project roles
+Project templates
+Project types
+Project versions
+Projects
+Screen schemes
+Screen tab fields
+Screen tabs
+Screens
+Server info
+Service Registry
+Status
+Tasks
+Teams in plan
+Time tracking
+UI modifications (apps)
+User properties
+User search
+Users
+Webhooks
+Workflow scheme drafts
+Workflow scheme project associations
+Workflow schemes
+Workflow status categories
+Workflow statuses
+Workflow transition rules
+Workflows
+Other operations
+Jira Cloud platform / Reference / REST API v3
+License metrics
+Postman Collection
+OpenAPI
+This resource represents license metrics. Use it to get available metrics for Jira licences.
+Operations
+GET
+/rest/api/3/instance/license
+GET
+/rest/api/3/license/approximateLicenseCount
+GET
+/rest/api/3/license/approximateLicenseCount/product/{applicationKey}
+GET
+Get license
+Experimental
+Returns licensing information about the Jira instance.
+Permissions
+required:
+None.
+Data Security Policy
+:
+Exempt from app access rules
+Scopes
+OAuth 2.0 scopes
+required:
+Classic
+RECOMMENDED
+:
+manage:jira-configuration
+Granular
+:
+read:license:jira
+Connect app scope
+required
+:
+READ
+Request
+This request has no parameters.
+Responses
+200
+OK
+Returned if the request is successful.
+application/json
+License
+Details about a license for the Jira instance.
+Show child properties
+401
+Unauthorized
+GET
+/
+rest
+/
+api
+/
+3
+/
+instance
+/
+license
+Forge
+curl
+Node.js
+Java
+Python
+PHP
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+// This sample uses Atlassian Forge
+// https://developer.atlassian.com/platform/forge/
+import { requestJira } from "@forge/bridge";
+
+const response = await requestJira(`/rest/api/3/instance/license`, {
+  headers: {
+    'Accept': 'application/json'
+  }
+});
+
+console.log(`Response: ${response.status} ${response.statusText}`);
+console.log(await response.json());
+200
+Response
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+{
+  "applications": [
+    {
+      "id": "jira-core",
+      "plan": "PAID"
+    },
+    {
+      "id": "jira-product-discovery",
+      "plan": "FREE"
+    },
+    {
+      "id": "jira-servicedesk",
+      "plan": "FREE"
+    },
+    {
+      "id": "jira-software",
+      "plan": "PAID"
+    }
+  ]
+}
+GET
+Get approximate license count
+Experimental
+Returns the approximate number of user accounts across all Jira licenses. Note that this information is cached with a 7-day lifecycle and could be stale at the time of call.
+Permissions
+required:
+Administer Jira
+global permission
+Data Security Policy
+:
+Exempt from app access rules
+Scopes
+OAuth 2.0 scopes
+required:
+Classic
+RECOMMENDED
+:
+manage:jira-configuration
+Granular
+:
+read:license:jira
+Connect apps cannot access this REST resource.
+Request
+This request has no parameters.
+Responses
+200
+OK
+Returned if the request is successful.
+application/json
+LicenseMetric
+A metric that provides insight into the active licence details
+Show child properties
+401
+Unauthorized
+403
+Forbidden
+GET
+/
+rest
+/
+api
+/
+3
+/
+license
+/
+approximateLicenseCount
+Forge
+curl
+Node.js
+Java
+Python
+PHP
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+// This sample uses Atlassian Forge
+// https://developer.atlassian.com/platform/forge/
+import { requestJira }

@@ -1,0 +1,523 @@
+===== https://developers.gohighlevel.com
+TITLE: HighLevel Developers Community
+ACCESSED: 2026-09-27
+
+HighLevel Developers Community
+Create.
+Code.
+Collaborate
+Code.
+Create.
+Collaborate.
+Join hundreds of other developers just like you who are helping businesses achieve digital success
+Login To Developer Marketplace
+Sign In To Developer Marketplace
+Dev Ideas Board
+Have a product suggestion? This
+is the place! Keep an eye on our
+feature requests all in one place.
+Have a product suggestion? This
+is the place! Keep an eye on our
+feature requests all in one place.
+View the ideas Board
+-->
+API 2.0 Docs
+We now have an OAuth based API
+and all integration documentation
+can be found here.
+View the API 2.0 Docs
+-->
+API 1.0 Docs
+Your go-to resource for our
+Public API endpoints and
+documentation.
+Your go-to resource for our
+Public API endpoints and
+documentation.
+View the API 1.0 Docs
+-->
+CONTACT US
+Corporate HQ
+400 North Saint Paul St.
+Suite 920
+Dallas, Texas 75201
+Toll Free:
+(888) 732-4197
+FEATURES
+Insights
+Dashboard
+Outbound Calling
+Appointment Automation
+Reputation Management
+Unified Messaging
+Lead Management
+Easy Integration
+Mobile App
+About HighLevel
+Careers
+Blog
+Events
+HighLevel Vs ActiveCampaign
+HighLevel Vs Hubspot
+affiliates
+Affiliate Login
+Become an Affiliate
+Affiliate Agreement
+LEGAL
+Privacy Policy
+Terms of Service
+GDPR Compliance
+FEATURES
+Insights
+Dashboard
+Outbound Calling
+Appointment Automation
+Reputation Management
+Unified Messaging
+Lead Management
+Easy Integration
+Mobile App
+About HighLevel
+Careers
+Blog
+Events
+HighLevel Vs ActiveCampaign
+HighLevel Vs Hubspot
+affiliates
+Affiliate Login
+Become an Affiliate
+Affiliate Agreement
+LEGAL
+Privacy Policy
+Terms of Service
+GDPR Compliance
+CONTACT US
+Corporate HQ
+400 North Saint Paul St.
+Suite 920
+Dallas, Texas 75201
+Toll Free:
+(888) 732-4197
+© 2026 HighLevel, LLC. | All Rights Reserved
+© 2026 HighLevel, LLC. | All Rights Reserved
+
+===== https://help.gohighlevel.com/support/home
+TITLE: Home | Support : HighLevel Support Portal
+ACCESSED: 2026-09-27
+
+Hi, how can we help you?
+Getting Started w/ HighLevel
+Customer Support
+Agency View
+SaaS Configurator
+Phone System
+Email
+Contacts
+Conversations
+Most popular articles
+View all articles
+HighLevel API Documentation
+Modified on Tue, 18 Aug at  7:48 AM
+How to Set Up a Whitelabel Domain for the Desktop Web App
+Modified on Fri, 14 Aug at  9:01 AM
+Dedicated Email Sending Domains Overview & Setup
+Modified on Fri, 17 Apr at  7:19 AM
+24/7 Customer Support Options
+Modified on Mon, 3 Aug at 10:27 AM
+Phone System Pricing & Billing Guide
+Modified on Thu, 24 Sep at  8:37 AM
+HighLevel Pricing Guide
+Modified on Sat, 22 Aug at  5:09 PM
+What is the HighLevel’s Native Phone System? (LC Phone)
+Modified on Fri, 11 Sep at  9:27 AM
+List of Merge Fields
+Modified on Sat, 12 Sep at  6:55 PM
+How do I find my Client's Location ID?
+Modified on Wed, 12 Aug at  6:43 AM
+Set Up a Root Domain or Subdomain for HighLevel Sites
+Modified on Sun, 27 Sep at  1:40 AM
+LC - Phone Messaging Policy
+Modified on Tue, 15 Sep at  1:42 AM
+AI Employee: Access, Rebilling and Reselling
+Modified on Mon, 14 Sep at 10:29 AM
+
+===== https://developer.stoplight.io/
+TITLE: developer | Stoplight
+ACCESSED: 2026-09-27
+
+developer | Stoplight
+Like what you see? Create your own free Stoplight workspace to start documenting and designing APIs today.
+Create a Workspace
+developer
+
+===== https://developers.stoplight.io/
+TITLE: developers | Stoplight
+ACCESSED: 2026-09-27
+
+developers | Stoplight
+Like what you see? Create your own free Stoplight workspace to start documenting and designing APIs today.
+Create a Workspace
+developers
+
+===== https://help.gohighlevel.com/support/solutions/155000000123
+TITLE: Contacts : HighLevel Support Portal
+ACCESSED: 2026-09-27
+
+Contacts
+Smart Lists (18)
+"Add Contact" Form Upgrade and Customizations
+Adding Files To Contacts using a Custom Field
+Adding Multiple Phone Numbers for a Contact
+Advanced Filters in Smart Lists
+Company Object Feature: A Manual Way to Organize Contacts
+View all 18
+Contact Details View (6)
+Activity Section Upgrade
+Contacts – All-New Contact Detail Page
+How to Create Subscriptions & Invoices from Contact's Profile
+How to Customize the Contact Detail Page
+Enhanced Document Privacy & Access Controls
+View all 6
+Bulk Actions (7)
+Adding Contact Tags to Multiple Contacts
+Removing Contact Tags From Multiple Contacts
+Importing Contacts and Opportunities via CSV
+New Drip Mode Architecture for Bulk Actions
+Bulk Actions For Contacts & SmartLists
+View all 7
+Contacts (8)
+Documents
+How to Use Contact Types to Organize and Segment Contacts
+Contact and Opportunity Followers in HighLevel
+Internal Tasks for your Team
+Workflow - Adding and Removing Followers for Contacts
+View all 8
+Updating Contact Properties (1)
+Associating Contacts using Custom Labels
+Getting Started with Contacts (1)
+Importing Contacts using a CSV file
+Contacts and Other Modules (1)
+How to Share and Manage Documents via Client Portal and CRM?
+
+===== https://help.gohighlevel.com/support/solutions/articles/155000001156-highlevel-pricing-guide
+TITLE: HighLevel Pricing & Billing: Wallets, Charges, Rebilling : HighLevel Support Portal
+ACCESSED: 2026-09-27
+
+HighLevel Pricing Guide
+Modified on: Sat, 22 Aug, 2026 at  5:09 PM
+Nearly everything you need to know about HighLevel Pricing, Charges, Wallets, Rebilling and more.
+HighLevel Subscription Plans
+How to Manage Your Billing
+What is an Agency Wallet
+Phone System Pricing
+Email System Pricing
+AI Employee Pricing
+Reselling Services Pricing
+Ad Manager
+Branded Client Portal App
+Dedicated IP Address
+Domain Purchases
+Email Validation
+Online Listings
+Premium Prospecting Tool
+SEO (Powered by Search Atlas)
+WhatsApp Integration
+WordPress Hosting
+Workflow - External AI Models
+Workflow - Premium Features
+Workflow Pro Plan
+Add-On Services
+Premium Support
+Whitelabel Mobile App
+Whitelabel Zap
+HL Certificate Program
+Advanced Account Setup
+HIPAA Compliance
+Frequently Asked Questions
+HighLevel Subscription Plans
+At the core of the HighLevel service is our subscription plans which are in three tiers. Starter, Unlimited, and Agency Pro. Each plan level unlocks additional features to help Level Up your business. Before you can utilize the additional services shown below, you must have an active subscription and account with us.
+*Subject to change. We are always coming out with new features or adjusting our offerings to best serve you.
+If you have a question about which features work with which plan or you're interested in upgrading to another plan, you can schedule a call with our
+Account Management Team
+.
+How to Manage Your Billing
+Did you know you can see every single charge to your account as well as manage your subscription, wallet amounts, and more from within your HighLevel App? We even break down charges by a sub-account, it's a critical tool when discussing or reviewing HighLevel charges or pricing.
+Just log into your HighLevel desktop App and navigate to your Company Billing Settings (
+Agency
+View
+>
+Settings
+>
+Billing
+).
+What is an Agency Wallet
+The Agency Wallet is used to pay for usage-based services in HighLevel. Instead of paying for a fixed package of usage each month, your agency is charged based on what is actually used.
+To load credits into your wallet, HighLevel charges your Agency card on file. When a supported service is used, the charge is deducted from the Agency Wallet. If the wallet balance falls below your minimum balance, HighLevel automatically charges the agency card on file to refill the wallet. Common wallet-funded services include the Phone System, Email System, Email Validation, AI usage, Autocomplete Addresses, and Workflow Premium Features.
+You can review your wallet balance, transaction history, recharge amount, and minimum wallet balance from
+Agency View
+>
+Settings
+>
+Billing
+>
+Wallet & Transactions
+.
+Learn More:
+Rebilling, Reselling, and Wallets Explained
+Phone System Pricing
+The Phone System allows agencies and sub-accounts to buy phone numbers, send and receive SMS/MMS, and make or receive calls inside HighLevel. It removes the need to connect a separate third-party telephony provider for standard phone and messaging activity.
+The Phone System is available on all HighLevel plan levels. Rebilling without markup is available on the $297/mo and $497/mo plans. Rebilling WITH Markup is only available on the $497/mo plan.
+Pricing:
+The pricing for LC Phone System is precisely the same amount as Twilio. Pricing varies between regions and products for this reason we will be providing basic info and pricing for all the top-used product categories based on US/Canada pricing (
+LC Phone Pricing & Billing Guide
+). All other charges can be located on Twilio’s Pricing Pages provided below.
+Related Articles:
+LC Phone System Pricing
+Calculating SMS Costs: A Step-by-Step Guide
+Twilio SMS Pricing
+Twilio Phone Pricing
+Email System Pricing
+The Email System, also known as LC Email, allows agencies and sub-accounts to send and receive email inside HighLevel without connecting a separate third-party email provider like Mailgun. Email sending works out of the box for every sub-account, helping agencies manage email activity directly inside HighLevel. Email usage may include sent emails, forwarded emails, and other supported LC Email activity generated by sub-accounts.
+The Email System is available on all HighLevel plan levels. Rebilling without markup is available on the $297/mo and $497/mo plans. Rebilling WITH Markup is only available on the $497/mo plan.
+Pricing:
+Email usage is $0.675 per 1,000 emails across all plans.
+For the latest LC Phone number and messaging rates, refer to the LC Phone Pricing & Billing Guide.
+Related Articles:
+LC Email System & Pricing
+Email Re-Billing on the Unlimited and Pro Plans
+AI Employee Pricing
+AI Employee is a suite of HighLevel AI tools that helps agencies automate conversations, content creation, review responses, and in-app assistance. AI Employee pricing  is available under three plans. Choose the plan that fits your location's usage and billing preference.
+AI Growth and AI Employee are billed monthly per enabled location. Pay-per-use does not have a monthly subscription fee; usage
+
+===== https://help.gohighlevel.com/support/solutions/articles/48001223556-phone-system-pricing-billing-guide
+TITLE: LC Phone Pricing & Billing Guide  : HighLevel Support Portal
+ACCESSED: 2026-09-27
+
+Phone System Pricing & Billing Guide
+Modified on: Thu, 24 Sep, 2026 at  8:37 AM
+Overview
+This guide outlines the full pricing structure for the native Phone System within the platform, including phone number rental, SMS/MMS messaging, voice calling, carrier pass-through charges, and A2P registration. Pricing matches Twilio's rates.
+All prices are in USD.
+Table of Contents
+1
+Phone Numbers
+2
+Messaging — SMS & MMS
+3
+Voice
+4
+A2P Pricing
+5
+Pass-Through Charges & Re-billing
+6
+Number Intelligence
+7
+Frequently Asked Questions
+1
+Phone Numbers
+All phone numbers are charged monthly. Below are the US/Canada rates:
+Number Type
+Monthly Cost
+Local Numbers
+$1.15 / month
+Toll-Free Numbers
+$2.15 / month
+Note
+For all other countries, refer to the country-specific pricing PDFs attached at the bottom of this page.
+2
+Messaging — SMS & MMS
+SMS
+Per-segment pricing — US/Canada
+Country
+Outbound
+Inbound
+US
+$0.00747
+$0.00747
+Canada
+$0.00747
+$0.00747
+A 10% discount is applied to the $0.0083 list price for both local and toll-free numbers.
+Note
+For all other countries, refer to the country-specific sms pricing PDFs attached at the bottom of this page.
+MMS
+Per-segment pricing — US, Canada & Australia
+Country
+Outbound
+Inbound
+US
+$0.0220
+$0.0165 (Local) / $0.0200 (Toll-free)
+Canada
+$0.0220
+$0.0165 (Local) / $0.0200 (Toll-free)
+Australia
+$0.3500
+$0.3500 (Local & Toll-Free)
+For segment calculation details, refer to the
+How to Calculate SMS and MMS Costs
+guide.
+Carrier Fees
+Passed through by the recipient's carrier
+Carrier fees are charged by the recipient's carrier on top of standard SMS/MMS rates. Amounts vary by carrier and message type.
+Carrier
+SMS Out
+SMS In
+MMS Out
+MMS In
+AT&T
+$0.0035
+$0.0035
+$0.0090
+$0.0090
+T-Mobile
+$0.0045
+$0.0025
+$0.0100
+$0.0100
+Verizon
+$0.0045
+$0.0070
+$0.0070
+—
+US Cellular
+$0.0050
+$0.0100
+$0.0100
+$0.0100
+All Other Carriers
+$0.0040
+$0.0100
+$0.0100
+—
+3
+Voice
+Voice call costs are billed per minute. Below is the breakdown for US and Canada, plus additional charges for recording, transcription, and related services.
+Outbound Calls
+Total:
+$0.0180
+$0.0166 / minute
+(Discount on US & Canada outbound calling rates)
+Component
+Rate
+Outbound USA
+$0.0126/min (10% discount on $0.014 list)
+Client Minutes
+$0.004/min
+Inbound — Web, Mobile, or Deskphone
+Total:
+$0.0129
+$0.01165 / minute
+(Discount on US & Canada inbound calling rates)
+Inbound calls have two legs: the call arriving at your platform number, and the forwarded leg to where you answer. Both are billed.
+Component
+Rate
+Incoming Call (USA)
+$0.00765/min (10% discount on $0.0085 list)
+Client Minutes
+$0.004/min
+Note:
+Inbound calls to US Toll-Free numbers cost $0.0198/ minute (a 10% discount from Twilio's $0.22/min rate)
+Inbound — USA Forwarding Number
+Total: $0.02 / minute
+Component
+Rate
+Incoming Call (USA)
+$0.00765/min
+Outgoing Call (to forwarding number)
+$0.0126/min
+International Forwarding
+Forwarding to an international number (e.g., a UK mobile) uses Twilio's international rates for the second leg, which are higher than standard US/Canada rates.
+BILLING $ REGIONALS NOTES
+Calls are billed in full minutes, any partial minute rounds up. Calls to
+Alaska
+and
+Yukon Territory
+follow Twilio's regional pricing, not standard US/Canada rates.
+Additional Voice Charges
+Service
+Rate
+Call Recording
+$0.0025/min
+Call Recording Storage
+$0.0005/min/month
+Call Transcription
+$0.024/min
+Answering Machine Detection
+$0.0075/call
+Voicemail Drops
+$0.0180/min
+Conference Calls
+$0.0018 – $0.0040/min/participant (region-dependent)
+Amazon Polly (Text-to-Speech)
+$0.00084/100 characters
+Conference Call Regional Rates
+Region
+Rate / Participant / Min
+US
+$0.0018
+Dublin
+$0.0025
+Tokyo
+$0.0030
+Singapore
+$0.0030
+Sydney
+$0.0030
+São Paulo
+$0.0040
+4
+A2P Pricing
+A2P Brand and Campaign registration fees for Low Volume and High Volume campaigns:
+Type
+Daily Segment Limit
+Monthly Campaign Fee
+One-Time Registration Fee
+Sole Proprietor
+3,000 segments/day
+Upto $2.10
+/Campaign
+$22.50
+(incl. $3 Fast Track)
+Low Volume (LV)
+6,000 segments/day
+$1.50- $10.50
+/Campaign
+$22.50
+(incl. $3 Fast Track)
+High Volume (HV)
+6,00,000 segments/day
+$10.50
+/Campaign
+$64.00
+(incl. $3 Fast Track)
+IMPORTANT
+Submitting your campaign starts both your one time registration fee and monthly campaign fee, regardless of the review outcome.
+Don't want to continue?
+Delete your campaign to stop future monthly charges.
+The
+$3 Fast Track fee
+is
+non-refundable
+and speeds up the campaign review process.
+Starting February 1, 2026:
+A2P campaign resubmissions are
+free
+. The previous
+$15 resubmission fee
+has been removed.
+5
+Pass-Through Charges & Re-billing
+Certain communication products are classified as
+pass-through charges
+.
+A fixed
+5% markup
+is applied to these charges at the location (sub-account) level, only when re-billing is enabled.
+Which charges get the 5% markup?
+Category
+Description
+A2P Registration Fees
+One-time Brand Registration, Campaign Registration, and recurring monthly campaign fees.
+SMS Carrier Fees
+Carrier surcharges applied by mobile carriers fo

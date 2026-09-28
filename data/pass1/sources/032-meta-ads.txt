@@ -1,0 +1,764 @@
+===== https://developers.facebook.com/documentation/ads-commerce/marketing-api
+TITLE: Marketing API | Meta | Meta for Developers
+ACCESSED: 2026-09-27
+
+Marketing API
+The Marketing API is a collection of
+Graph API
+endpoints and other features that can be used to help you advertise across Meta technologies. Before advertising on Facebook, Instagram, Messenger, and WhatsApp, we recommend you learn about Meta's
+ad campaign structure
+to understand the objects you're working with and how they relate to each other.
+Get started
+Get Started
+Begin creating and managing Meta ad campaigns by following step-by-step guidance on setting up campaigns, ad sets, and creatives using the Marketing API
+Basic Ad Creation
+Get detailed guidance on how to set up campaigns, ad sets, and ad creatives, including code samples that illustrate the implementation process.
+Learn more
+Manage Campaigns
+Learn key operations you can perform using the Marketing API, including how to modify, pause and delete campaigns.
+Learn more
+Ad Optimization Basics
+Use Marketing API endpoints that serve as essential tools for developers to manage audiences and analyze ad campaign insights.
+Learn more
+Related APIs
+Explore additional APIs to enhance ad targeting, manage catalogs, maintain business presence, and integrate commerce tools across Meta technologies
+Conversions API
+Connect the marketing data on your servers to the Meta systems that optimize ad targeting, decrease cost per action, and measure results.
+Learn more
+Catalog API
+Create a catalog of items you want to promote and use it to run ads, sell from a shop on Facebook or Instagram, and more.
+Learn more
+Business Management API
+Create and maintain your business's organic and paid presence on Facebook, Instagram, Messenger, and WhatsApp.
+Learn more
+Commerce API
+Enables businesses to integrate their infrastructure with the tools available to sell products across Meta technologies, including shops and Marketplace.
+Learn more
+Tools and Resources
+Ads Manager
+⁠
+Business Manager
+⁠
+Commerce Manager
+⁠
+App Dashboard
+Meta Business SDK
+Marketing API Status
+⁠
+Meta Blueprint
+⁠
+Meta Developer Community Forums
+
+===== https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference
+TITLE: Marketing API Reference | Meta for Developers
+ACCESSED: 2026-09-27
+
+Marketing API Reference
+Jun 26, 2026
+Ads in WhatsApp Status are available via the Marketing API.
+Learn more about ads in WhatsApp Status.
+Marketing API root nodes
+This is a full list of root nodes for the Facebook Marketing API with links to reference docs for each. For background on the API’s architecture and how to call root nodes and their edges, see
+Using the Graph API
+To access all reference information you will need to be logged in to Facebook.
+Node
+Description
+/{AD_ACCOUNT_USER_ID}
+Someone on Facebook who creates ads. Each ad user can have a role on several ad accounts.
+/act_{AD_ACCOUNT_ID}
+Represents the business entity managing ads.
+/{AD_ID}
+Contains information for an ad, such as creative elements and measurement information.
+/{AD_CREATIVE_ID}
+Format for your image, carousel, collection, or video ad.
+/{AD_SET_ID}
+Contains all ads that share the same budget, schedule, bid, and targeting.
+/{AD_CAMPAIGN_ID}
+Defines your ad campaigns’ objective. Contains one or more ad sets.
+User
+User edges
+Edge
+Description
+/adaccounts
+All ad accounts associated with this person
+/accounts
+All pages and places that someone is an admin of
+/promotable_events
+All promotable events you created or promotable page events that belong to pages you are an admin for
+Ad account
+All collections of ad objects in Marketing APIs belong to an
+ad account
+Ad account edges
+The most popular edges of the Ad Account node. Visit the
+Ad Account Edges reference
+for a complete list of all edges.
+Edge
+Description
+/adcreatives
+Defines your ad’s appearance and content
+/adimages
+Library of images to use in ad creatives. Upload and manage these images independently of ad creatives
+/ads
+Data for an ad, such as creative elements and measurement information
+/adsets
+Contain all ads that share the same budget, schedule, bid, and targeting
+/advideos
+Library of videos for use in ad creatives. Upload and manage these videos independently of ad creatives
+/campaigns
+Define your campaigns’ objective and contain one or more ad sets
+/customaudiences
+The custom audiences owned by/shared with this ad account
+/insights
+Interface for insights. De-dupes results across child objects, provides sorting, and async reports.
+/users
+List of people associated with an ad account
+Ad
+An individual ad associated with an ad set.
+Ad edges
+The most popular edges of the Ad node. Visit the
+Ad Edges reference
+for a complete list of all edges.
+Edge
+Description
+/adcreatives
+Defines your ad’s appearance and content
+/insights
+Insights on your advertising performance.
+/leads
+Any leads associated with a Lead Ad.
+/previews
+Generate ad previews from an existing ad
+Ad set
+An ad set is a group of ads that share the same daily or lifetime budget, schedule, bid type, bid info, and targeting data.
+Ad set edges
+The most popular edges of the Ad Set node. Visit the
+Ad Set Edges reference
+for a complete list of all edges.
+Edge
+Description
+/activities
+Log of actions taken on the ad set
+/adcreatives
+Defines your ad’s content and appearance
+/ads
+Data necessary for an ad, such as creative elements and measurement information
+/insights
+Insights on your advertising performance.
+Ad campaign
+A campaign is the highest level organizational structure within an ad account and should represent a single objective for an advertiser.
+Ad campaign edges
+The most popular edges of the Ad Campaign node. Visit the
+Ad Campaign Edges reference
+for a complete list of all edges.
+Edge
+Description
+/ads
+Data necessary for an ad, such as creative elements and measurement information
+/adsets
+Contain all ads that share the same budget, schedule, bid, and targeting.
+/insights
+Insights on your advertising performance.
+Ad creative
+The format which provides layout and contains content for the ad.
+Ad creative edges
+The most popular edges of the Ad Creative node. Visit the
+Ad Creative Edges reference
+for a complete list of all edges.
+Edge
+Description
+/previews
+Generate ad previews from the existing ad creative object
+
+===== https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started
+TITLE: Get started with the Marketing API | Meta for Developers
+ACCESSED: 2026-09-27
+
+Get started with the Marketing API
+Jun 16, 2026
+Ads in WhatsApp Status are available via the Marketing API.
+Learn more about ads in WhatsApp Status.
+To use the Marketing API, you must follow some key steps to set up your environment and gain access to the API’s features. This section outlines the prerequisites necessary for getting started.
+Ad account requirements
+To manage your ads through the Marketing API, you must have an
+active ad account
+⁠
+to run campaigns and manage billing. An ad account allows you to track your advertising expenses, monitor performance, and optimize your campaigns.
+Finding your ad account number
+Find your ad account number in
+Meta Ads Manager
+⁠
+Log into Facebook:
+Start by logging into your Facebook account that is associated with your business.
+Access Ads Manager:
+Find Ads Manager in the drop-down menu in the upper right corner of your Facebook homepage or business page.
+Locate your ad account:
+In Ads Manager, click on the ad account Settings from the menu on the bottom left of the screen.
+View ad account information:
+In the Settings screen, your ad account number appears in the Account overview section along with other details such as your billing information and spending limits.
+Meta Developer account
+See
+Register as a Meta Developer
+for more information.
+Create an app
+See
+Create an App
+for more information on setting up an app in the App Dashboard as well as app types and use cases.
+Authorization and authentication
+See
+Authorization
+for more information on verifying the users and apps that will be accessing the Marketing API and granting them permissions.
+See
+Authentication
+for more information on getting, extending, and renewing access tokens with the Marketing API.
+Next steps
+Create an Ad Campaign
+Manage Ad Campaigns
+Optimize Ad Campaigns
+
+===== https://developers.facebook.com/documentation/development/register
+TITLE: Register as a Meta Developer | Meta for Developers
+ACCESSED: 2026-09-27
+
+Register as a Meta Developer
+Sep 19, 2024
+This document explains how to register as a Meta developer. Once you have registered you will have access to the App Dashboard and all of our products, SDKs, APIs, development tools, and developer documentation.
+Step 1: Start the registration process
+While logged into your Facebook account, go to
+https://developers.facebook.com/async/registration
+Alternatively, you can go to the
+Social Technologies Dev Center
+website and click
+Get Started
+Step 2: Agree to our Terms and Policies
+Click
+Next
+to agree to our
+Platform Terms
+and
+Developer Policies
+Step 3: Verify your account
+We will send a confirmation code to the phone number and email address that you provide in order to confirm that you have access to them. Your number and email will be used for important developer notifications of any changes that may impact to your app.
+Step 4: Select your occupation
+Select an occupation that most closely describes what you do for a living.
+Next Steps
+Now that you have registered you can use the App Dashboard to
+create your first app
+
+===== https://developers.facebook.com/documentation/facebook-login/guides/access-tokens
+TITLE: Access Tokens for Meta Technologies | Meta for Developers
+ACCESSED: 2026-09-27
+
+Access Tokens for Meta Technologies
+Nov 25, 2025
+An access token is an opaque string that identifies a user, app, or Facebook Page and can be used by the app to make Graph API calls. The token includes information about when it expires and which app generated it. Most API calls on Meta apps require an access token for privacy checks. Different types of access tokens support different use cases.
+Access Token Type
+Description
+App Access Token
+App access tokens let you read and modify app settings. Generate one using your Meta app secret via a server-to-server call.
+Client Token
+Client tokens identify your app when calling app-level APIs from native or desktop apps. Because client tokens are embedded in apps, they are not secret. Find your client token in the Meta App Dashboard.
+Page Access Token
+Page access tokens let you read, write, and modify data belonging to a Facebook Page. To obtain one, first get a user access token, then exchange it for a Page access token via the Graph API.
+System User Access Token
+System User access tokens let your app perform programmatic, automated actions on Ad objects or Pages without requiring input from an app user or re-authentication.
+User Access Token
+User access tokens let your app take actions in real time based on input from the user. You need a User access token any time your app reads, modifies, or writes a person’s Facebook data on their behalf. Obtain one via a login dialog that requires the person to grant your app permission.
+User Access Tokens
+User access tokens let your app take actions in real time based on input from the user. You need a User access token any time your app reads, modifies, or writes a person’s Facebook data on their behalf. Obtain one via a login dialog that requires the person to grant your app permission.
+Different platforms have different methods to kick off this process and include functionality to manage access tokens on behalf of the developer and the person granting permissions:
+Android
+The Facebook SDKs for Android automatically manages user access tokens through the class
+com.facebook.AccessToken
+. You can learn more about obtaining a user access token by implementing
+Facebook Login for Android
+. You can retrieve the user access token by inspecting
+Session.getCurrentAccessToken
+Sample Code
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    accessToken = AccessToken.getCurrentAccessToken();
+}
+iOS
+The Facebook SDKs for iOS automatically manages user access tokens through the class
+FBSDKAccessToken
+. You can learn more about obtaining a user access token by implementing
+Facebook Login for iOS
+. You can retrieve the access token by inspecting
+FBSDKAccessToken.currentAccessToken
+Sample Code
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  NSString *accessToken = [FBSDKAccessToken currentAccessToken];
+}
+Javascript
+The
+Facebook SDK for Javascript
+obtains and persists user access tokens automatically in browser cookies. You can retrieve the user access token by making a call to
+FB.getAuthResponse
+which will include an
+accessToken
+property within the response.
+Sample Code
+FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    var accessToken = response.authResponse.accessToken;
+  }
+} );
+Please visit the
+Facebook Web SDKs documentation
+for a
+complete code sample
+Web (without JavaScript)
+When building a web app
+without Facebook’s SDK for Javascript
+you will need to generate an access token during the steps outlined in that document.
+App Access Tokens
+App access tokens let you read and modify app settings. Generate one using your Meta app secret via a server-to-server call.
+Limitations
+App access tokens don’t expose all user data that a user access token would. To read user data in your app, use a user access token instead.
+App access tokens are insecure if your app is set to
+Native/Desktop
+in the Advanced settings of your
+App Dashboard
+. Native or desktop apps typically embed the app secret in the code, making the generated app access token insecure.
+Generating an app access token
+To generate an app access token, you need:
+Your
+App ID
+Your
+App Secret
+Code sample
+curl -X GET "https://graph.facebook.com/oauth/access_token
+  ?client_id={your-app-id}
+  &client_secret={your-app-secret}
+  &grant_type=client_credentials"
+This call returns an app access token that you can use in place of a user access token for API calls. Never hard-code app access tokens into client-side code or app binaries — doing so exposes your app secret and gives anyone who loads your webpage or decompiles your app full access to modify it. Only use app access tokens in server-to-server calls.
+Important
+: This request uses your app secret, so it must only be made using server-side code. Never share your app secret with anyone.
+There is another method to make calls to the Graph API that doesn’t require using a generated app access token. You can just pass y
+
+===== https://developers.facebook.com/
+TITLE: Social technologies | Meta for Developers
+ACCESSED: 2026-09-27
+
+Social technologies | Meta for Developers
+Social technologies
+Build technologies that help people connect, find communities and grow businesses.
+Get started
+Explore all products
+Browse documentation
+Developer tools
+Get support
+What's new
+Build with us
+Learn more about our social technologies solutions that can help you create, grow and connect across Facebook, Instagram, Messenger, WhatsApp, and Threads.
+Facebook
+Messenger
+Instagram
+WhatsApp
+Threads
+SUCCESS STORIES
+200M+ businesses use our services every month to connect with customers and grow.
+Concepto Móvil
+Concepto Móvil boosts business solutions and aligns teams through Meta Certification.
+Learn more
+Universal Pictures
+Engaging fans through interactive multimedia messaging campaigns.
+Learn more
+Housing Development Finance Corporation
+Developing a faster, simpler and convenient way to help customers determine their home loan eligibility.
+Learn more
+View success stories
+Explore all our products
+Social technologies offer a wide range of solutions that can help you grow, build community and monetize your apps.
+Ads and Monetization
+Reach billions of people with Meta ads and monetization solutions to grow your business.
+Overview
+Artificial Intelligence
+Utilize industry-leading open and accessible AI tools for scale.
+Overview
+Authentication
+Implement convenient and secure authentication methods, supported by robust authorization protocols.
+Overview
+Business Messaging
+Do more with conversations by getting the right messages to the right people at the right time.
+Overview
+Gaming
+Access a suite of innovative gaming platforms and services.
+Overview
+Open Source
+Empower the community through open source technology.
+Overview
+Social Integrations
+Connect with and engage billions of people using our Meta technologies with our social integrations.
+Overview
+Explore all products
+Latest news
+SEPTEMBER 15, 2026
+Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent
+Your AI agent can now set up WhatsApp business messaging Getting a WhatsApp Business integration running means moving between the Developer Console, Business Manager, the API reference, and your editor, then pasting an access token somewhere it shouldn't live. It's a lot of setup before you write any real code.WhatsApp Business Tools MCP changes...
+Developer Tools, WhatsApp
+AUGUST 27, 2026
+Login with Facebook open beta: faster logins, less maintenance
+Login with Facebook is entering open beta on August 27, 2026, bringing a wave of improvements focused on one thing: fewer steps and less maintenance. Here is what is available in the open beta, what each feature does, and what it takes to adopt. Please see each section below for integration instructions. 1. Single Sign On (one tap) onAndroidandWeb...
+Business Tools, Platforms, Facebook, Facebook Login
+AUGUST 4, 2026
+Meta AI Developer Assistant Now Available for Developer Support
+Today, we’re bringing Meta AI Developer Assistant to the developer support experience on developers.facebook.com by rolling out a revamped developer support experience powered by Meta AI Developer Assistant. When you visit developers.facebook.com/support, you’ll find an AI-powered assistant ready to help you troubleshoot issues, navigate compliance...
+Developer Tools
+More on the blog
+Get our newsletter
+Sign up for monthly updates from Meta for Developers.
+Sign up
+
+===== https://developers.facebook.com/documentation/business-sdk
+TITLE: Meta Business SDK | Meta for Developers
+ACCESSED: 2026-09-27
+
+Meta Business SDK
+Apr 25, 2025
+The Meta Business SDK gives you access to our suite of business APIs allowing you to build unique and customized solutions to serve your businesses and clients.
+Common Uses
+Ads Buying
+— Guide for creating ad campaigns for Click to Messenger Ads and promoting your Facebook Page.
+Instagram Management
+— Guide for publishing photos and responding to comments on Instagram.
+Onboarding Clients at Scale
+— Guide for managing hundreds or thousands of small businesses and offering them ads buying within your website or platform.
+Page Management
+— Guide to  creating pages, updating pages, and managing Page content.
+Catalog Management
+— Guide to manage products.
+Documentation Contents
+Overview
+Explanations of core concepts and usage requirements.
+Getting Started
+A short tutorial to implement the Meta Business SDK.
+Java
+|
+Node.js
+|
+PHP
+|
+Python
+|
+Ruby
+Guides
+Use case based guides to help you perform specific actions.
+Reference
+Product specifications and endpoint references.
+Support
+Solutions to common problems, troubleshooting tips, and FAQs.
+
+===== https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication
+TITLE: Authentication | Meta for Developers
+ACCESSED: 2026-09-27
+
+Authentication
+Jun 24, 2026
+Ads in WhatsApp Status are available via the Marketing API.
+Learn more about ads in WhatsApp Status.
+Every Marketing API call requires an access token as a parameter.
+See
+Access Tokens for Meta Technologies
+for more information on the various types of access tokens.
+Get an access token for your app
+User access tokens
+Graph API Explorer
+You can get a user access token using the
+Graph API Explorer
+. To learn how to use the Graph API Explorer to make API calls, see the
+Graph API Explorer Guide
+In the
+Meta App
+field, select an app to obtain the access token for.
+In the
+User or Page
+field, select
+User Token
+In the
+Add a Permission
+drop-down under
+Permissions
+, select the permissions you need (for example,
+ads_read
+or
+ads_management
+).
+Click
+Generate Access Token
+. The box on top of the button displays the access token;
+store the token
+for later use.
+Debug
+To get more information in the token you just generated, click on the information icon (
+i
+) in front of the token to open the
+Access Token Info
+table, which displays some basic information about the token. Click
+Open in Access Token Tool
+to be redirected to the
+Access Token Debugger
+While debugging, you can check:
+App ID:
+The app ID mentioned in the prerequisite section.
+Expires:
+A time stamp. A short-lived token expires in an hour or two.
+Scopes:
+Contains the permissions added in the Graph API Explorer.
+Extend your access token
+Paste your token in the text box of the
+Access Token Debugger
+and click
+Debug
+Click
+Extend Access Token
+at the bottom of the
+Access Token Info
+table to get a long-lived token, and copy that token for later use.
+Check your new token’s properties using the Access Token Debugger. It should have a longer expiration time, such as “60 days”, or “Never” under
+Expires
+. See
+Long-Lived Access Token
+for more information.
+System user access tokens
+A system user access token is a type of access token that is associated with a system user account, which is an account that is created in Meta Business Suite to manage assets and call the Marketing API. System user access tokens are useful for server-to-server interactions where there is no user present to authenticate. System user access tokens can be used to perform actions on behalf of the business, such as reading and writing business data, managing ad campaigns, and other ad objects.
+One benefit of using a system user access token is that it does not expire, so it can be used in long-running scripts or services that need to access the Marketing API. Additionally, because system user accounts are not tied to a specific individual, they can be used to provide a level of separation between personal and business activity on Meta technologies.
+System user tokens are also less likely to be invalidated than long-lived user access tokens.
+See
+System Users
+for more information.
+Get an access token for ad accounts you manage
+After the owner of an ad account you are going to manage clicks the
+Allow
+button when you prompt for permissions, they are redirected to a URL that contains the value of the
+redirect_uri
+parameter and an authorization code:
+http://YOUR_URL?code=<AUTHORIZATION_CODE>
+You can then build the URL for an API call that includes the endpoint for getting a token, your app ID, your site URL, your app secret, and the authorization code you just received:
+https://graph.facebook.com/
+v26.0
+/oauth/access_token?
+  client_id=<YOUR_APP_ID>
+  &redirect_uri=<YOUR_URL>
+  &client_secret=<YOUR_APP_SECRET>
+  &code=<AUTHORIZATION_CODE>
+The API response should contain the generated access token:
+If you follow the server-side authentication flow, you get a persistent token.
+If you follow the client-side authentication flow, you get a token with a finite validity period of about one to two hours. This short-lived token can be exchanged for a persistent token by calling the
+Graph API endpoint for Extending Tokens
+If a
+system user
+of a business invokes the API, you can use a
+system user access token
+You can debug the access token, check for expiration, and validate the permissions granted using the
+Access Token Debugger
+or the
+programmatic validation API
+Storing the token
+Your Marketing API access token should be safely stored in your database for subsequent API calls. Always move tokens between your client and server securely over HTTPS to ensure account security.
+Read more about the implications of moving tokens between your clients and your server
+You should regularly check for validity of the token, and if necessary, prompt for permissions renewal. Even a persistent token can become invalid in a few cases, including the following:
+A password changes
+A user revokes permissions
+As user access tokens can be invalidated or revoked anytime for some reasons, your app should expect to have a flow to re-request permission from users. Check the validity of the user token when they start your app. If necessary, re-run the authentication f
+
+===== https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization
+TITLE: Authorization | Meta for Developers
+ACCESSED: 2026-09-27
+
+Authorization
+May 5, 2026
+Ads in WhatsApp Status are available via the Marketing API.
+Learn more about ads in WhatsApp Status.
+Ads Management Standard Access is now Marketing API Access Tier
+No code changes are needed.
+Tier labels have been updated: “Standard Access” is now
+Limited Access
+, and “Advanced Access” is now
+Full Access
+. The revised qualification threshold for Full Access has been reduced from 1,500 to
+500 Marketing API calls
+in the past 15 days. The underlying permission identifier remains the same, and existing access levels are preserved automatically. Learn more in the
+Marketing API Access Tier documentation
+The authorization process verifies the users and apps that will be accessing the Marketing API and grants them permissions.
+App Roles
+In your app’s dashboard, you can set roles for yourself or team members as necessary: Admin, Developer, Tester.
+Note:
+Depending on your intended use case, you may need to submit your app for review to gain access to specific permissions related to ad management.
+Access Levels, Permissions, and Features
+Business apps are subject to an additional layer of Graph API authorization called
+access levels
+. During
+App Review
+, your app must also request specific permissions and features.
+All developers must follow all Meta
+Platform Terms
+and
+Developer Policies
+Calls on ANY access level are against production data.
+Marketing API Access Levels vs. Marketing API Access Tier
+Permissions and features for apps have two different access levels: standard access and advanced access (
+Note:
+The use of the term "standard access" here refers to platform-wide access levels and is not related to the
+Marketing API Access Tier
+, which has its own tiers: "Limited access" and "Full access".) To upgrade your Marketing API Access Tier, your app must meet the requirements shown in the App Dashboard.
+Marketing API Access Tier overview
+The Marketing API Access Tier controls your rate limits, Business Manager access, and system user capacity. Your tier is determined by whether your app has been approved through App Review.
+Limited access (default)
+Full access (after App Review)
+How to get
+Automatically granted when you add the Marketing API product to your app.
+Click
++Upgrade
+for the Marketing API Access Tier feature in your App Dashboard. Your app must meet the
+requirements below
+Rate limits
+Heavily rate-limited per ad account. For development only. Not for production apps running for live advertisers.
+Lightly
+rate limited
+per ad account.
+Account limits
+Manage an unlimited number of ad accounts. App admins or developers can make API calls on behalf of ad account admins or advertisers.
+Manage an unlimited number of ad accounts, assuming you get
+ads_read
+or
+ads_management
+permission from the ad account.
+Business Manager
+Limited access to
+Business Manager
+and
+Catalog
+APIs. No Business Manager access to manage ad accounts, user permissions, and Pages.
+Access to all
+Business Manager
+and
+Catalog
+APIs.
+System users
+Can create 1
+system user
+and 1 admin system user.
+Can create 10
+system users
+and 1 admin system user.
+Page creation
+Cannot create Pages through the API.
+Cannot create Pages through the API.
+To check your current access level, go to
+App Dashboard
+>
+App Review
+>
+Permissions and Features
+Permissions and Features
+Permissions
+The permissions you should request change depending on which API you want to access.
+If your app is only managing your ad account, standard access to the
+ads_read
+and
+ads_management
+permissions are sufficient. If your app is managing other people’s ad accounts, you need advanced access to the
+ads_read
+and/or
+ads_management
+permissions. See all
+available permissions for business apps
+Features
+The features you should request change depending on how you want to use our APIs. If you’re managing ads, a common feature to request is Marketing API Access Tier. See
+all available features for business apps
+Feature access levels
+Feature Access Level
+Description
+Standard access
+Business apps are automatically approved for standard access for all permissions and features available to the Business app type.
+Use this option if you’re getting started. You can build end-to-end workflows before requesting full permissions, and you can access an unlimited number of ad accounts.
+Some API calls may not be available with standard access because they may belong to multiple accounts or the affected account can’t be identified programmatically.
+Advanced access
+Advanced access must be approved through the
+App Review
+process on an individual permission and feature basis.
+To request advanced access, go to your app’s dashboard and click
+App Review
+>
+Permissions and Features
+Find the permission or feature you would like to access and, under
+Action
+, click
+Request advanced access
+. You can select one or more features. Once you have selected your options, click
+Continue the Request
+. You’ll be taken to a screen that guides you through the submi
+
+===== https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference/business/partners
+TITLE: Business Partners | Meta for Developers
+ACCESSED: 2026-09-27
+
+Version
+v22.0
+v23.0
+v24.0
+v25.0
+Business Partners
+May 21, 2019
+Ads in WhatsApp Status are available via the Marketing API.
+Learn more about ads in WhatsApp Status.
+Reading
+Other businesses which work with this business as partners.
+Example
+Select language
+HTTP
+PHP SDK
+JavaScript SDK
+Android SDK
+iOS SDK
+GET /v25.0/{business-id}/partners HTTP/1.1
+Host: graph.facebook.com
+Try it in
+Graph API Explorer
+If you want to learn how to use the Graph API, read our
+Using Graph API guide
+Parameters
+This endpoint doesn't have any parameters.
+Fields
+Reading from this edge will return a JSON formatted result:
+{
+"data": [],
+"paging": {},
+"summary": {}
+}
+data
+A list of
+Business
+nodes.
+paging
+For more details about pagination, see the
+Graph API guide
+summary
+Aggregated information about the edge, such as counts. Specify the fields to fetch in the summary param (like summary=__type__).
+Field
+Description
+filtered_total_count
+int32
+Filtered total number of objects on this edge
+default
+total_count
+int32
+Total number of objects on this edge
+default
+Error Codes
+Error Code
+Description
+100
+Invalid parameter
+200
+Permissions error
+Creating
+You can't perform this operation on this endpoint.
+Updating
+You can't perform this operation on this endpoint.
+Deleting
+You can't perform this operation on this endpoint.

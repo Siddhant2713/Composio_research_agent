@@ -58,7 +58,7 @@ def test_record_has_evidence(records, app):
 
 def test_telegram_is_self_serve_api_key(records):
     record = records["Telegram"]
-    assert record["access"]["type"] == "self_serve"
+    assert record["access"]["tier"] == "self_serve"
     assert record["auth"]["method"] == "api_key", (
         "Telegram's Bot API uses a long-lived bot token, which is an api_key: "
         f"got {record['auth']['method']}"
@@ -68,13 +68,13 @@ def test_telegram_is_self_serve_api_key(records):
 def test_dealcloud_is_gated_despite_good_docs(records):
     """The trap case: thorough public docs must not be read as self-serve access."""
     record = records["DealCloud"]
-    assert record["access"]["type"] == "gated", (
-        f"DealCloud access should be gated, got {record['access']['type']}"
+    assert record["access"]["tier"] == "gated", (
+        f"DealCloud access should be gated, got {record['access']['tier']}"
     )
 
 
 def test_stripe_is_self_serve(records):
-    assert records["Stripe"]["access"]["type"] in ("self_serve", "mixed")
+    assert records["Stripe"]["access"]["tier"] in ("self_serve", "mixed")
 
 
 @pytest.mark.parametrize("app", sorted(EXPECTED_APPS))

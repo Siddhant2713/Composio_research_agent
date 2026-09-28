@@ -1,0 +1,166 @@
+{
+  "app": "Harvest",
+  "number": 80,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:06:26.941785+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://help.getharvest.com/api-v2\",\n    \"https://id.getharvest.com/developers\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://help.getharvest.com/api-v2",
+    "https://id.getharvest.com/developers",
+    "https://docs.getharvest.com/",
+    "https://developer.getharvest.com/",
+    "https://developers.getharvest.com/",
+    "https://api.getharvest.com/",
+    "https://getharvest.com/docs",
+    "https://getharvest.com/developers",
+    "https://getharvest.com/api",
+    "https://getharvest.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://help.getharvest.com/api-v2/authentication-api",
+    "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+    "https://www.getharvest.com/contact?from=helpcenter"
+  ],
+  "boilerplate_lines_removed": 8,
+  "fetch_failures": [
+    {
+      "requested_url": "https://id.getharvest.com/developers",
+      "reason": "page too thin (115 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://getharvest.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://getharvest.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://help.getharvest.com/api-v2/",
+      "requested_url": "https://help.getharvest.com/api-v2",
+      "status": 200,
+      "title": "Harvest API V2 Documentation",
+      "chars": 982,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/",
+      "requested_url": "https://help.getharvest.com/api-v2/authentication-api",
+      "status": 200,
+      "title": "Authentication \u2013 Harvest API V2 Documentation",
+      "chars": 45,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "requested_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "status": 200,
+      "title": "Authentication \u2013 Harvest API V2 Documentation",
+      "chars": 4789,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+      "requested_url": "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+      "status": 200,
+      "title": "Client Contacts \u2013 Harvest API V2 Documentation",
+      "chars": 4830,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.getharvest.com/contact?from=helpcenter",
+      "requested_url": "https://www.getharvest.com/contact?from=helpcenter",
+      "status": 200,
+      "title": "Contact Help & Support | Harvest",
+      "chars": 300,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Harvest API V2 provides programmatic access via REST using Personal Access Tokens or OAuth2 for managing time tracking, projects, clients, invoices, and estimates.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Supports both Personal Access Tokens and a full OAuth2 Authorization Code flow.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create Personal Access Tokens or register OAuth2 applications directly from the Developers section of Harvest ID.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"Offers a REST API v2 with endpoints for clients, company settings, invoices, estimates, expenses, tasks, timesheets, projects, roles, users, reports, and paid time off.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-service credentials can be generated directly in the Harvest ID developer console, and the API is thoroughly documented with curl and Postman examples.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://help.getharvest.com/api-v2/\",\n      \"claim\": \"Lists the various API V2 modules available, such as Clients, Invoices, Tasks, Timesheets, and Projects.\"\n    },\n    {\n      \"url\": \"https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/\",\n      \"claim\": \"Describes authentication options including Personal Access Tokens created from the Developers section of Harvest ID and full OAuth2 flow.\"\n    },\n    {\n      \"url\": \"https://help.getharvest.com/api-v2/clients-api/clients/contacts/\",\n      \"claim\": \"Provides REST API endpoint details and curl examples for interacting with client contacts.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://help.getharvest.com/api-v2",
+    "one_liner": "Harvest API V2 provides programmatic access via REST using Personal Access Tokens or OAuth2 for managing time tracking, projects, clients, invoices, and estimates.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Supports both Personal Access Tokens and a full OAuth2 Authorization Code flow."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create Personal Access Tokens or register OAuth2 applications directly from the Developers section of Harvest ID."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": null,
+      "notes": "Offers a REST API v2 with endpoints for clients, company settings, invoices, estimates, expenses, tasks, timesheets, projects, roles, users, reports, and paid time off."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-service credentials can be generated directly in the Harvest ID developer console, and the API is thoroughly documented with curl and Postman examples."
+    },
+    "evidence": [
+      {
+        "url": "https://help.getharvest.com/api-v2/",
+        "claim": "Lists the various API V2 modules available, such as Clients, Invoices, Tasks, Timesheets, and Projects.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "claim": "Describes authentication options including Personal Access Tokens created from the Developers section of Harvest ID and full OAuth2 flow.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+        "claim": "Provides REST API endpoint details and curl examples for interacting with client contacts.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T18:06:43.042592+00:00"
+}

@@ -1,0 +1,619 @@
+===== https://www.intercom.com/
+TITLE: Intercom | A complete system for human and AI customer service
+ACCESSED: 2026-09-27
+
+Over 2,000 five-star reviews on
+A complete
+system for
+human and AI
+customer service
+Intercom is the only helpdesk with a natively integrated
+AI Agent
+,
+Fin
+.
+, meaning every customer conversation improves the next one, enabling perfect experiences that were never possible before.
+Start free trial
+View demo
+14 day free trial. No credit card required.
+Two products,
+one seamless experience
+Intercom helpdesk
+Fin AI Agent
+Trusted by 30,000+ leading brands
+Intercom helpdesk
+Intercom is a fully-featured
+AI-powered helpdesk
+With an omnichannel inbox, AI-powered ticketing, and real-time assistance from Copilot, your human team has everything they need to onboard faster, work more efficiently, and deliver better customer experiences.
+Start free trial
+View demo
+Maximize productivity with an AI-enhanced inbox
+Give every agent an AI assistant that provides expert guidance, automates repetitive work, and translates conversations in real time.
+Learn more
+Ticketing, built for collaboration
+One ticketing system for customer issues, back-office collaboration, and tracker tickets that resolve widespread problems, keeping everyone aligned and customers informed.
+Learn more
+Support for customers, before they need it
+Onboard, educate, and notify your customers with in-context, automated messages that cut support volume and keep customers happy.
+Learn more
+Maximize productivity with an AI-enhanced inbox
+Give every agent an AI assistant that provides expert guidance, automates repetitive work, and translates conversations in real time.
+Learn more
+Ticketing, built for collaboration
+One ticketing system for customer issues, back-office collaboration, and tracker tickets that resolve widespread problems, keeping everyone aligned and customers informed.
+Support for customers, before they need it
+Onboard, educate, and notify your customers with in-context, automated messages that cut support volume and keep customers happy.
+Fin AI Agent
+Fin is the
+highest-performing AI agent
+Fin has industry leading resolution rates, averaging 76% across 12,000+ customers, with many seeing over 85%. It’s trusted by many of the most forward-thinking businesses in the world, including Anthropic, Clay, Lightspeed, Rocket Money, Gamma, and many more.
+Start free trial
+View demo
+Train and test Fin to handle complex queries
+Start with the knowledge you already have, then train Fin on your processes and policies. Use AI-driven Simulations to test fully simulated customer conversations from start to finish, so you can confidently resolve increasingly complex, multi-step queries before going live.
+Deploy across every channel
+Deploy Fin across phone, email, chat, Slack, and more so every customer receives accurate, personalized responses, wherever they reach out.
+Analyze performance with AI-powered insights
+Monitor performance, spot trends, and optimize with AI-powered Suggestions, then use those Insights to retrain Fin and continuously improve your customer experience.
+Train and test Fin to handle complex queries
+Start with the knowledge you already have, then train Fin on your processes and policies. Use AI-driven Simulations to test fully simulated customer conversations from start to finish, so you can confidently resolve increasingly complex, multi-step queries before going live.
+Deploy across every channel
+Deploy Fin across phone, email, chat, Slack, and more so every customer receives accurate, personalized responses, wherever they reach out.
+Analyze performance with AI-powered insights
+Monitor performance, spot trends, and optimize with AI-powered Suggestions, then use those Insights to retrain Fin and continuously improve your customer experience.
+Intercom helpdesk
+Fin AI Agent
+Together, they deliver better
+support experiences
+Intercom and Fin are built together, sharing the same record, knowledge, and inbox. That means every conversation your team has teaches Fin something new, every gap gets spotted and closed, and support gets better for everyone, every time.
+Start free trial
+View demo
+Work together, seamlessly
+Fin and your team work from the same inbox and customer record, making it easy to collaborate, hand off conversations, and deliver a consistent customer experience.
+Self-improving system
+Fin constantly improves by learning from your best human reps, and suggestions and assistance from Fin make your human team better. With everything in one system, managers get recommendations on what to fix, from missing content to data integrations, and can act on them with one click.
+Centralised Knowledge Hub
+Centralize, manage, and optimize all of the information that powers Fin, human, and self-serve support. See how your content is performing across every touchpoint including Fin, Copilot and on your Help Center with detailed reporting.
+Anthropic
+Glean
+Neo Financial
+“
+We’ve been seeing around
+560,000 resolutions a month with Fin, at about a 79% resolution rate,
+which is incredible when you think of all the conversations that are not funneling to our human 
+
+===== https://developers.intercom.com/
+TITLE: Intercom Developers | Intercom and Fin Developer Platform
+ACCESSED: 2026-09-27
+
+Intercom Developers | Intercom and Fin Developer Platform
+Skip to content
+Intercom for Developers
+Integrate with Intercom by building apps on the complete
+AI customer service platform
+. Create seamless customized experiences in the Intercom Help Desk and Messenger using our APIs and SDKS.
+Start building
+See App Store
+Install Intercom
+On Web, iOS, Android, and more
+Make sure the Messenger is available everywhere your customers are. Customize the UI, configure user interactions, or set up
+push notifications
+.
+Install now
+Build and list an app
+Offer an integration to Intercom's 25K+ customers
+Build an app that helps solve business problems, from AI to reporting. Get started by setting up a free
+development workspace
+to test and publish your app.
+Sign up for free
+Create a custom integration
+For Inbox, Messenger, and accessing data
+Build a solution just for your team on your main Intercom workspace. See what's possible with a
+Messenger app
+tutorial or
+Tickets
+tutorial.
+See how it works
+Join the brands who build
+on Intercom
+Go to app store
+"The Intercom API had everything we needed to go from whiteboard to working app within a week. Plus, the documentation made it dead simple."
+Roger Zurawicki
+Engineer @ Coda
+“Integrating with Intercom has increased our product engagement and retention. Within 2 weeks of launch, our app had already been used in over 2,500 conversations.”
+Nicolas Grenié
+Developer Advocate
+“Aircall signups through Intercom-referral have increased 5x since we launched our app, and it's already been adopted by hundreds of support and sales teams.”
+Clement Bruneau
+Director of Business Development
+Guides for developers
+🎟️ Tickets + GitHub Issues
+Build an integration
+using webhooks and the Tickets API to create a GitHub issue when a ticket is created in Intercom.
+📈 Reporting
+Create your own reports
+from conversation and teammates data using the Intercom API.
+✉️ Inbox apps for admins
+In Intercom, admins are called teammates.
+Build an Inbox app
+for a teammate to log data about a contact.
+
+===== https://developers.intercom.com/docs
+TITLE: Overview | Intercom and Fin Developer Platform
+ACCESSED: 2026-09-27
+
+Overview
+Copy
+The Intercom Developer Platform is a suite of
+SDKs
+and
+APIs
+for building apps that connect with Intercom. You can use these apps to extend the functionality of Intercom or to integrate Intercom with other services.
+New to Intercom?
+For more information about Intercom products,
+visit our main website
+or read
+our user documentation
+.
+Install Intercom
+Install the
+Messenger
+into your product for web or mobile. This will allow your customers to send messages to your Intercom Inbox and provide a way for you to test Messenger integrations.
+You can also:
+Make
+customizations to the Messenger
+Set up
+identity verification
+Enable push notifications for
+iOS
+,
+Android
+, and
+React Native
+.
+For Public App Developers
+Public apps (sometimes referred to as integrations) are apps that are available for any customer to install. These apps have access to other peoples' Intercom data, which means there are specific requirements in order to publish them, such as setting up OAuth and submitting to the Intercom team for review.
+Set up a development workspace
+To develop a public app you will need to use a development workspace:
+sign up here
+to create your free account.
+This will give you access to your
+Developer Hub
+, where you can configure webhooks, define your endpoints for Messenger and Inbox apps, set up OAuth, and submit your app for review.
+Development Workspaces vs. Paid Workspaces
+Development workspaces have
+limitations listed here
+and do not have the full functionality of a paid Intercom workspace. Development workspaces are only available for the US region.
+Build your app
+Here's the fun part! Build your app using any stack you'd like. For apps that are sent via the Messenger or available for the teammates in the Inbox, you'll need to use our
+Canvas Kit
+framework.
+To see how it works, try
+building an app for Inbox
+or
+building an app for Messenger
+.
+You are also required to
+set up OAuth
+so that your app has permission to access and interact with customers' data.
+We recommend creating a
+[Staging]
+or
+[Dev]
+app and a
+[Production]
+app to assist in the development process.
+Submit for review
+Once development is done and OAuth is configured, in the
+Developer Hub
+of your
+[Production]
+app you can choose the
+listing type
+, provide
+installation URLs
+, and follow the steps outlined in
+this guide
+to submit it for review.
+Make sure that your app follows our
+developer terms
+and
+platform guidelines
+. Once it's approved, your app is ready to be used by any of Intercom's 25K+ customers.
+For Private App Developers
+Private apps are apps that you can build specifically for your Intercom workspace that only access your own data. You can build a private app using your Access Token and it does not require a review.
+Install apps from the App Store
+Your team probably needs to integrate with other tools; we might have an app for it. Install connectors to tools you already use, like:
+Slack
+Stripe
+WhatsApp
+Salesforce
+Available apps can be discovered and installed in the
+Intercom App Store
+, including apps built by Intercom, and apps built by other companies.
+Build your own integration
+If you aren't able to find an existing
+app
+that solves the problem you're facing, you can build your own using our
+REST APIs
+and
+Canvas Kit
+framework.
+Go to the Developer Hub and
+create a new app
+. Make sure it's associated with your main Intercom workspace from the dropdown. Then you can use the
+Access Token
+from that app to start building.
+Your app can be whatever you want — to see how it works, try
+building an app for Inbox
+or creating your own
+reports using the API
+. You can find more guides to help you build under the Guides section in the sidebar.
+Configure your app
+Your app should already be installed on the workspace where you created it. To uninstall the app, add it to another workspace, or regenerate the token, go to
+Your Workspaces
+in your Developer Hub —
+this guide
+will show you how. You can start using your app right away, and no review is required for a private app.
+Getting help
+Let us know
+If you have any feedback on our developer documentation, please let us know what you think in the forms at the bottom of each page. Report issues with code blocks by clicking the feedback icon in the top right of the block.
+Join our
+Intercom Community
+to get help, chat to Intercom experts, and connect to other developers building with Intercom. If you need immediate assistance, contact Intercom customer support directly using the Messenger in the bottom right of this page.
+
+===== https://www.intercom.com/help/en/
+TITLE: Home | Intercom Help
+ACCESSED: 2026-09-27
+
+Collections
+Overview
+Intercom is the only helpdesk with a natively integrated AI Agent, Fin.
+26 articles
+Getting Started
+Everything you need to know to get started.
+37 articles
+Fin AI Agent
+Using the most powerful Customer Agent in the market, ready to resolve your most complex queries on all your channels.
+161 articles
+Channels
+Enabling the channels you use to communicate with customers, all from the Inbox.
+96 articles
+Inbox
+Boosting productivity with a workspace that connects your inbox, tickets, and help center.
+114 articles
+Workflows
+Automating repetitive tasks for customers and teammates with our no-code visual builder.
+69 articles
+Knowledge
+Managing all of your support content to empower your customers, AI agent, and teammates.
+55 articles
+Reports
+Monitoring, analyzing and optimizing your support operation with real-time performance data.
+49 articles
+Outbound
+Onboarding, educating, and notifying your customers with in-context, automated messages.
+138 articles
+Contacts
+Tracking your customers in Intercom for better relationships.
+45 articles
+Apps & Integrations
+Integrating apps with your workspace, and building your own custom apps.
+69 articles
+Mobile SDKs
+Installing and using Intercom in your mobile app.
+16 articles
+Community
+FAQs from our community forum.
+19 articles
+Academy
+Using the Academy to level up and learn new skills.
+2 articles
+Security & Privacy
+How Fin keeps your data secure, complies with global regulations, and helps you manage your own workspace security.
+47 articles
+A summit for CX leaders
+San Francisco, CA In Person & Online
+Join us on October 7
+
+===== https://www.intercom.com/contact-sales
+TITLE: Contact Sales | Intercom
+ACCESSED: 2026-09-27
+
+Over 2,000 five-star reviews on
+Trusted by 30,000+ support
+teams globally
+Powered by Fin, which resolves on average 76% of conversations end to end.
+450+ integrations out of the box, including Salesforce, Stripe and Jira
+From $29/seat/month + $0.99 per Fin outcome
+Trusted by more than
+30,000
+leading brands
+“We’ve been seeing around 560,000 resolutions a month with Fin, at about a 79% resolution rate, which is incredible when you think of all the conversations that are not funneling to our human team.”
+Isabel Larrow
+Product Support Operations at Anthropic
+Get a personalized demo
+
+===== https://www.intercom.com/signup/email
+TITLE: Sign Up | Intercom
+ACCESSED: 2026-09-27
+
+Sign Up | Intercom
+Try Fin with Intercom, our AI-first helpdesk
+14 days free. No credit card needed.
+Want Fin for your current platform?
+Trial Fin only.
+TRUSTED BY INDUSTRY LEADERS:
+
+===== https://www.intercom.com/pricing
+TITLE: Intercom Pricing | Plans for every team size
+ACCESSED: 2026-09-27
+
+Get Fin and Intercom for a single, fully integrated customer service platform
+Fin million dollar guarantee
+Billed annually
+Billed monthly
+Our Fin AI Agent + Intercom plans
+Essential
+Includes Fin AI Agent
+Customer support for individuals, startups, and small businesses.
+From
+$0.99
+per Fin outcome
+$19
+per seat/mo
+Start free trial
+Key features include
+Fin for service, sales & ecommerce
+Messenger
+Shared inbox and ticketing system
+Pre-built reports
+Public help center
+View all features
+Advanced
+Includes Fin AI Agent
+Powerful automation tools and AI features for growing support teams.
+From
+$0.99
+per Fin outcome
+$85
+per seat/mo
+Start free trial
+Get a demo
+Every Essential feature, plus
+Multiple team Inboxes
+Workflows automation builder
+Round robin assignment
+Private and multilingual Help Center
+Includes 20 free Lite seats
+View all features
+Expert
+Includes Fin AI Agent
+Collaboration, security, and multibrand features for large support teams.
+From
+$0.99
+per Fin outcome
+$132
+per seat/mo
+Start free trial
+Get a demo
+Every Advanced feature, plus
+SSO & identity management
+HIPAA support
+Service level agreements (SLAs)
+Multibrand Messenger / Help Center
+Includes 50 free Lite seats
+View all features
+All plans include free, unlimited live chat, support email, in-app chats, banners, and tooltips. Pay-as-you-go for email campaigns, SMS, WhatsApp, and Phone.
+View channel pricing
+Already have a helpdesk?
+Fin AI Agent
+Use Fin with your current helpdesk including Salesforce and more.
+From
+$0.99
+per Fin outcome
+No seats required
+Contact sales
+View Demo
+Features include
+Set up in under an hour on your current helpdesk
+Answers email, live chat, phone and more
+Customizable tone & answer length
+Takes action on external systems
+Hands off to agents in preferred Inbox
+All plans include free, unlimited live chat, support email, in-app chats, banners, and tooltips. Pay-as-you-go for email campaigns, SMS, WhatsApp, and Phone.
+View channel pricing
+Add-ons
+Included in your free trial. Add or remove anytime.
+Pro
+Includes Operator
+Advanced AI features to analyze performance, monitor quality, and improve Fin, plus Operator, an agent for your customer operations.
+From
+$99
+/mo
+Learn more
+Copilot
+Increase agent efficiency with a personal AI assistant in the inbox. Free to use in 10 Copilot and 10 AI Auto-translation conversations per agent/mo.
+$29
+per agent/mo
+Learn more
+Proactive Support Plus
+Advanced in-app and outbound support features including Posts, Checklists, Product Tours, Surveys, and Series campaign builder.
+$99
+/mo
+Learn more
+Get an estimate
+based on your needs
+Find the right plan for your team
+Get an estimated cost for Intercom’s AI-first customer service platform, based on your team size, expected Fin outcomes, and more.
+Calculate costs
+See the ROI impact Fin could have on your business
+Estimate how much time and money Fin could save your team, based on your current and future support volume.
+Calculate savings
+Startups get 93% off
+Get a direct line to your customers with
+best-in-class support.
+Apply now
+Thousands of businesses
+have already seen transformational results
+[solidcore]
+Robin
+Synthesia
+“
+We’re saving hundreds of thousands of dollars with Fin today, and as we continue to open more studios, that’s projected to reach millions.
+”
+Shane McCarty
+Chief Digital Officer
+at [solidcore]
+“
+The numbers speak for themselves. We’re seeing a 50% resolution rate with Fin, which is pretty amazing!
+”
+Ben Peak
+Director, Technical Support
+at Robin
+“
+Since launching Fin AI Agent, our resolution time has gone from five days and five hours to four hours and 37 minutes, a 96% decrease.
+”
+Constantina Samara
+VP of Customer Support
+at Synthesia
+“
+We’re saving hundreds of thousands of dollars with Fin today, and as we continue to open more studios, that’s projected to reach millions.
+”
+Shane McCarty
+Chief Digital Officer
+at [solidcore]
+“
+The numbers speak for themselves. We’re seeing a 50% resolution rate with Fin, which is pretty amazing!
+”
+Ben Peak
+Director, Technical Support
+at Robin
+“
+Since launching Fin AI Agent, our resolution time has gone from five days and five hours to four hours and 37 minutes, a 96% decrease.
+”
+Constantina Samara
+VP of Customer Support
+at Synthesia
+FAQs
+How does Intercom pricing work?
+Intercom pricing has two components:
+Seats:
+You pay per teammate based on your plan (Essential, Advanced, Expert)
+Usage:
+You pay for what you use (e.g. Fin outcomes, messaging channels)
+All plans include access to Intercom and Fin AI Agent. Want a tailored estimate?
+Use the pricing calculator
+.
+How is Fin AI Agent priced?
+Fin is priced at
+$0.99 per outcome
+.
+An outcome is counted when:
+A customer confirms their issue is resolved, or
+They don’t ask for more help after Fin responds, or
+Fin completes a workflow (Procedure), including handoffs
+You’re only charged once per conversation, even if multiple questions are answered.
+Can I use Fin with my existing helpdesk?
+Yes. Fin can be used with tools like Salesforce and others.
+Pricing:
+$0.99 per outcom
+
+===== https://www.intercom.com/signup/email?solution_id=29
+TITLE: Sign Up | Intercom
+ACCESSED: 2026-09-27
+
+Sign Up | Intercom
+Start your 14-day free trial, no credit card needed
+Includes Intercom helpdesk and Fin AI Agent.
+TRUSTED BY INDUSTRY LEADERS:
+
+===== https://www.intercom.com/solution-partner-program
+TITLE: Intercom's Solution Partner Program
+ACCESSED: 2026-09-27
+
+[ Solution Partner Program ]
+Join us in a winning partnership
+Our solution partners drive growth for themselves and their clients with exclusive access to Intercom’s tools and expertise.
+Apply now
+Why partner with Intercom?
+01
+Grow with the industry leader
+Earn commission on clients you refer to us, and connect with over 30,000 Intercom customers.
+02
+Expand your services with AI
+Partner with AI experts to build, implement, and customize solutions for your customers.
+03
+Full support at every step
+Get guidance from your dedicated partner manager on training, certifications, and integrations.
+Escalate Ops
+The SaaSy People
+DKM
+BetterGrowth
+“
+Partnering with Intercom has enabled us to develop a region with remarkable businesses, helping top companies achieve their goals through AI-driven customer success strategies. Both Intercom and Escalate teams are fully aligned for major growth in the Americas.
+”
+Santiago Fiaschi
+CEO & Co-founder
+at Escalate Ops
+“
+At The SaaSy People, Intercom isn't just a vendor, they're a partner in our success. Their AI-first platform sets them apart in a competitive landscape and enables us to deliver hyper-personalised support experiences that truly resonate with our customers.
+”
+Reece Couchman
+CEO & Founder
+at The SaaSy People
+“
+At DKM Ecosystem, we help businesses scale globally by leveraging Intercom's AI-driven customer communication platform, integrating automation and real-time analytics to enhance engagement and streamline operations. Together with Intercom and our clients, we are building a growing ecosystem where innovation and efficiency drive continuous success.
+”
+Zmark Zheng
+CEO
+at DKM
+“
+Intercom has a meaningful lead in conversational AI, transforming forever how companies will serve their customers. The Intercom team is passionate, talented and a pleasure to work with.
+”
+Houst Perry
+CEO
+at BetterGrowth
+“
+Partnering with Intercom has enabled us to develop a region with remarkable businesses, helping top companies achieve their goals through AI-driven customer success strategies. Both Intercom and Escalate teams are fully aligned for major growth in the Americas.
+”
+Santiago Fiaschi
+CEO & Co-founder
+at Escalate Ops
+“
+At The SaaSy People, Intercom isn't just a vendor, they're a partner in our success. Their AI-first platform sets them apart in a competitive landscape and enables us to deliver hyper-personalised support experiences that truly resonate with our customers.
+”
+Reece Couchman
+CEO & Founder
+at The SaaSy People
+“
+At DKM Ecosystem, we help businesses scale globally by leveraging Intercom's AI-driven customer communication platform, integrating automation and real-time analytics to enhance engagement and streamline operations. Together with Intercom and our clients, we are building a growing ecosystem where innovation and efficiency drive continuous success.
+”
+Zmark Zheng
+CEO
+at DKM
+“
+Intercom has a meaningful lead in conversational AI, transforming forever how companies will serve their customers. The Intercom team is passionate, talented and a pleasure to work with.
+”
+Houst Perry
+CEO
+at BetterGrowth
+Intercom customers who grow with our partners
+Want to become an Intercom Partner?
+01
+Apply
+Agencies, BPOs, and SIs are welcome to apply. If you're a good fit, we'll schedule an intro call.
+Apply now
+02
+Sign
+We'll share our official agreement with you. Once you've reviewed and signed it, you're set.
+Apply now
+03
+Onboard
+Finally, we'll kick off your onboarding process so you can develop your Intercom strategy.
+Apply now
+Check out Intercom's Technology Partner Program
+Are you a B2B SaaS company? Integrate with our program and accelerate your growth when you become a technology partner.
+Learn more
+Apply to the Solution Partner Program
+Apply now

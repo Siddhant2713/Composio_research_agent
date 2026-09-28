@@ -1,0 +1,172 @@
+{
+  "app": "YouTube Transcript",
+  "number": 99,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:29:40.441297+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://transcriptapi.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://transcriptapi.com",
+    "https://docs.transcriptapi.com/",
+    "https://developer.transcriptapi.com/",
+    "https://developers.transcriptapi.com/",
+    "https://api.transcriptapi.com/",
+    "https://transcriptapi.com/docs",
+    "https://transcriptapi.com/developers",
+    "https://transcriptapi.com/api",
+    "https://transcriptapi.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://transcriptapi.com/signup",
+    "https://transcriptapi.com/contact",
+    "https://transcriptapi.com/docs/api",
+    "https://transcriptapi.com/docs/getting-started"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.transcriptapi.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developer.transcriptapi.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.transcriptapi.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.transcriptapi.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://transcriptapi.com/developers",
+      "reason": "page too thin (13 chars)"
+    },
+    {
+      "requested_url": "https://transcriptapi.com/api",
+      "reason": "HTTP 404"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://transcriptapi.com",
+      "requested_url": "https://transcriptapi.com",
+      "status": 200,
+      "title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "chars": 4972,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/",
+      "requested_url": "https://transcriptapi.com/docs",
+      "status": 200,
+      "title": "TranscriptAPI Documentation | TranscriptAPI.com",
+      "chars": 882,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://transcriptapi.com/signup",
+      "requested_url": "https://transcriptapi.com/signup",
+      "status": 200,
+      "title": "Sign up for TranscriptAPI",
+      "chars": 217,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://transcriptapi.com/contact",
+      "requested_url": "https://transcriptapi.com/contact",
+      "status": 200,
+      "title": "Contact Us | TranscriptAPI",
+      "chars": 381,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "requested_url": "https://transcriptapi.com/docs/api",
+      "status": 200,
+      "title": "YouTube Transcript API Reference | TranscriptAPI.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/getting-started/",
+      "requested_url": "https://transcriptapi.com/docs/getting-started",
+      "status": 200,
+      "title": "Getting Started | TranscriptAPI.com",
+      "chars": 1833,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"YouTube Transcript API provides endpoints to extract transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses Bearer token authentication with an API key included in the Authorization header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can sign up for an account and get an API key from their dashboard.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"Offers a REST API at https://transcriptapi.com/api/v2 and supports Model Context Protocol (MCP).\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://transcriptapi.com/docs/\",\n    \"notes\": \"Supports Model Context Protocol (MCP) for AI assistants like Claude, ChatGPT, and custom agent workflows.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials can be obtained by signing up, and the REST API and MCP integration are thoroughly documented.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://transcriptapi.com\",\n      \"claim\": \"Extract transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP.\"\n    },\n    {\n      \"url\": \"https://transcriptapi.com/docs/\",\n      \"claim\": \"Extract YouTube video transcripts with a simple API call or through Model Context Protocol.\"\n    },\n    {\n      \"url\": \"https://transcriptapi.com/signup\",\n      \"claim\": \"Enter your email below to create your account to sign up for TranscriptAPI.\"\n    },\n    {\n      \"url\": \"https://transcriptapi.com/docs/api/\",\n      \"claim\": \"The API uses Bearer token authentication. Include your API key in the Authorization header of every request.\"\n    },\n    {\n      \"url\": \"https://transcriptapi.com/docs/getting-started/\",\n      \"claim\": \"Welcome to TranscriptAPI! Get YouTube video transcripts through our REST API or seamlessly integrate with AI assistants using Model Context Protocol (MCP).\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://transcriptapi.com",
+    "one_liner": "YouTube Transcript API provides endpoints to extract transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses Bearer token authentication with an API key included in the Authorization header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can sign up for an account and get an API key from their dashboard."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": null,
+      "notes": "Offers a REST API at https://transcriptapi.com/api/v2 and supports Model Context Protocol (MCP)."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://transcriptapi.com/docs/",
+      "notes": "Supports Model Context Protocol (MCP) for AI assistants like Claude, ChatGPT, and custom agent workflows."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials can be obtained by signing up, and the REST API and MCP integration are thoroughly documented."
+    },
+    "evidence": [
+      {
+        "url": "https://transcriptapi.com",
+        "claim": "Extract transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://transcriptapi.com/docs/",
+        "claim": "Extract YouTube video transcripts with a simple API call or through Model Context Protocol.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://transcriptapi.com/signup",
+        "claim": "Enter your email below to create your account to sign up for TranscriptAPI.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://transcriptapi.com/docs/api/",
+        "claim": "The API uses Bearer token authentication. Include your API key in the Authorization header of every request.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://transcriptapi.com/docs/getting-started/",
+        "claim": "Welcome to TranscriptAPI! Get YouTube video transcripts through our REST API or seamlessly integrate with AI assistants using Model Context Protocol (MCP).",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:29:58.396826+00:00"
+}

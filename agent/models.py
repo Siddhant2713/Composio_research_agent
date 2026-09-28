@@ -33,7 +33,7 @@ class BuildabilityVerdict(str, Enum):
     easy = "easy"
     moderate = "moderate"
     hard = "hard"
-    blocked = "blocked"
+    no = "no"          # not buildable by an outside developer at all
     unknown = "unknown"
 
 
@@ -53,7 +53,7 @@ class Auth(BaseModel):
 class Access(BaseModel):
     """How a first-time developer gets credentials at all."""
 
-    type: AccessType = AccessType.unknown
+    tier: AccessType = AccessType.unknown
     notes: Optional[str] = None
 
 
@@ -79,7 +79,15 @@ class Buildability(BaseModel):
 class Evidence(BaseModel):
     url: str
     claim: str
+    quote: Optional[str] = None      # verbatim line from that page, verified on extraction
     accessed_at: Optional[str] = None
+
+
+class Support(BaseModel):
+    """The single verified line a field rests on."""
+
+    url: str
+    quote: str
 
 
 class AppSeed(BaseModel):
@@ -105,4 +113,8 @@ class AppRecord(BaseModel):
     mcp: Optional[Mcp] = None
     buildability: Optional[Buildability] = None
     evidence: list[Evidence] = Field(default_factory=list)
+    # Pass 2 onwards: the verified line behind each field, and which fields were discarded
+    # because their quote could not be found in the fetched text.
+    support: dict[str, Support] = Field(default_factory=dict)
+    unsupported_fields: list[str] = Field(default_factory=list)
     confidence: Confidence = Confidence.low

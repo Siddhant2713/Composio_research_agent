@@ -1,0 +1,188 @@
+{
+  "app": "Clay",
+  "number": 60,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:01:38.000895+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://clay.com/docs\",\n    \"https://clay.com/pricing\",\n    \"https://clay.com/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://clay.com",
+    "https://clay.com/docs",
+    "https://clay.com/pricing",
+    "https://clay.com/contact",
+    "https://docs.clay.com/",
+    "https://developer.clay.com/",
+    "https://developers.clay.com/",
+    "https://api.clay.com/",
+    "https://clay.com/developers",
+    "https://clay.com/api",
+    "https://clay.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.clay.com/partners",
+    "https://www.clay.com/clay-for-sales",
+    "https://app.clay.com/signup?source=nav",
+    "https://www.clay.com/partners/solutions",
+    "https://university.clay.com/docs-topics/getting-started",
+    "https://www.clay.com/pricing-calculator",
+    "https://www.clay.com/partners/integrations",
+    "https://developers.clay.com/quickstart"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.clay.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.clay.com/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://app.clay.com/signup?source=nav",
+      "reason": "page too thin (60 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.clay.com/",
+      "requested_url": "https://clay.com",
+      "status": 200,
+      "title": "Clay | Build systems to grow revenue",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://university.clay.com/docs",
+      "requested_url": "https://clay.com/docs",
+      "status": 200,
+      "title": "Clay University | Documentation for Clay GTM Engineers",
+      "chars": 2328,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.clay.com/pricing",
+      "requested_url": "https://clay.com/pricing",
+      "status": 200,
+      "title": "Compare plans, features & costs | Clay.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.clay.com/contact",
+      "requested_url": "https://clay.com/contact",
+      "status": 200,
+      "title": "Contact us | Clay.com",
+      "chars": 188,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://university.clay.com/",
+      "requested_url": "https://docs.clay.com/",
+      "status": 200,
+      "title": "Clay University | The fastest way to master Clay",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.clay.com/",
+      "requested_url": "https://developers.clay.com/",
+      "status": 200,
+      "title": "Overview - Clay docs",
+      "chars": 1774,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.clay.com/partners",
+      "requested_url": "https://www.clay.com/partners",
+      "status": 200,
+      "title": "Partners programs | Clay.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.clay.com/clay-for-sales",
+      "requested_url": "https://www.clay.com/clay-for-sales",
+      "status": 200,
+      "title": "Clay for Sales Teams  | Clay.com",
+      "chars": 2406,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.clay.com/partners/solutions",
+      "requested_url": "https://www.clay.com/partners/solutions",
+      "status": 200,
+      "title": "Solutions Partner Program | Clay.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://university.clay.com/docs-topics/getting-started",
+      "requested_url": "https://university.clay.com/docs-topics/getting-started",
+      "status": 200,
+      "title": "Getting started - Clay Docs Topic",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Clay is an infrastructure and GTM data platform providing developer APIs, CLI, and plugins for searching data, running routines, and managing audiences.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Developer tools and API access involve signing in or using the Clay plugin and CLI from various environments.\"\n  },\n  \"access\": {\n    \"tier\": \"mixed\",\n    \"notes\": \"Clay offers free and self-serve plans (Free, Launch, Growth), but higher-tier features like API access and tables require higher-tier plans such as Enterprise.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"The developer platform provides an API to search GTM data, run routines, read table data, work with audiences, and manage webhooks on Growth and Enterprise tiers.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"References exist to 'Clay MCP for Reps' and troubleshooting for MCP.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Self-serve plans exist to get started with the platform, but full API access and certain primitives like tables require Enterprise plans or specific plan tiers.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.clay.com/pricing\",\n      \"claim\": \"Growth plan includes HTTP API integrations and webhook automation, while Enterprise plan includes Clay API access.\"\n    },\n    {\n      \"url\": \"https://developers.clay.com/\",\n      \"claim\": \"The developer platform lets developers search Clay's GTM data, run reusable Clay logic, read table data, and work with Audiences programmatically via an API and CLI.\"\n    },\n    {\n      \"url\": \"https://university.clay.com/docs-topics/getting-started\",\n      \"claim\": \"Documentation references the Clay MCP for Reps and installing the Clay plugin (API & CLI).\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://clay.com",
+    "one_liner": "Clay is an infrastructure and GTM data platform providing developer APIs, CLI, and plugins for searching data, running routines, and managing audiences.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Developer tools and API access involve signing in or using the Clay plugin and CLI from various environments."
+    },
+    "access": {
+      "tier": "mixed",
+      "notes": "Clay offers free and self-serve plans (Free, Launch, Growth), but higher-tier features like API access and tables require higher-tier plans such as Enterprise."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "The developer platform provides an API to search GTM data, run routines, read table data, work with audiences, and manage webhooks on Growth and Enterprise tiers."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "References exist to 'Clay MCP for Reps' and troubleshooting for MCP."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Self-serve plans exist to get started with the platform, but full API access and certain primitives like tables require Enterprise plans or specific plan tiers."
+    },
+    "evidence": [
+      {
+        "url": "https://www.clay.com/pricing",
+        "claim": "Growth plan includes HTTP API integrations and webhook automation, while Enterprise plan includes Clay API access.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.clay.com/",
+        "claim": "The developer platform lets developers search Clay's GTM data, run reusable Clay logic, read table data, and work with Audiences programmatically via an API and CLI.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://university.clay.com/docs-topics/getting-started",
+        "claim": "Documentation references the Clay MCP for Reps and installing the Clay plugin (API & CLI).",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:01:55.227933+00:00"
+}

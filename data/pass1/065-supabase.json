@@ -1,0 +1,216 @@
+{
+  "app": "Supabase",
+  "number": 65,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:10:58.175739+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://supabase.com/docs\",\n    \"https://supabase.com/docs/guides/api\",\n    \"https://supabase.com/docs/guides/auth\",\n    \"https://supabase.com/docs/reference\",\n    \"https://supabase.com/pricing\",\n    \"https://supabase.com/dashboard\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://supabase.com/docs",
+    "https://supabase.com/docs/guides/api",
+    "https://supabase.com/docs/guides/auth",
+    "https://supabase.com/docs/reference",
+    "https://supabase.com/pricing",
+    "https://supabase.com/dashboard",
+    "https://docs.supabase.com/",
+    "https://developer.supabase.com/",
+    "https://developers.supabase.com/",
+    "https://api.supabase.com/",
+    "https://supabase.com/developers",
+    "https://supabase.com/api",
+    "https://supabase.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://supabase.com/docs/guides/getting-started/quickstarts/vue",
+    "https://supabase.com/docs/guides/getting-started/quickstarts/hono",
+    "https://supabase.com/docs/guides/getting-started/quickstarts/flask",
+    "https://supabase.com/docs/reference/self-hosting-auth/introduction",
+    "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
+    "https://supabase.com/docs/guides/api/quickstart",
+    "https://supabase.com/docs/guides/getting-started",
+    "https://supabase.com/docs/guides/api/sql-to-rest",
+    "https://supabase.com/docs/guides/api/rest/client-libs",
+    "https://supabase.com/docs/guides/api/rest/generating-types",
+    "https://supabase.com/docs/guides/api/rest/auto-generated-docs",
+    "https://supabase.com/docs/guides/auth/oauth-server/token-security",
+    "https://supabase.com/docs/guides/auth/oauth-server/getting-started",
+    "https://supabase.com/docs/guides/auth/oauth-server/mcp-authentication",
+    "https://supabase.com/docs/guides/auth/jwts",
+    "https://supabase.com/docs/guides/auth/sessions",
+    "https://supabase.com/docs/guides/auth/auth-mfa",
+    "https://supabase.com/docs/guides/getting-started/api-keys",
+    "https://supabase.com/docs/guides/getting-started/quickstarts/nuxtjs",
+    "https://supabase.com/contact/sales",
+    "https://supabase.com/dashboard/support/new?category=sales&subject=Enquiry%20about%20larger%20instance%20sizes",
+    "https://supabase.com/auth",
+    "https://supabase.com/partners",
+    "https://supabase.com/contact-us",
+    "https://forms.supabase.com/enterprise"
+  ],
+  "boilerplate_lines_removed": 12,
+  "fetch_failures": [
+    {
+      "requested_url": "https://supabase.com/dashboard",
+      "reason": "page too thin (8 chars)"
+    },
+    {
+      "requested_url": "https://developer.supabase.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://supabase.com/docs/reference/self-hosting-auth/introduction",
+      "reason": "page too thin (21 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://supabase.com/docs",
+      "requested_url": "https://supabase.com/docs",
+      "status": 200,
+      "title": "Supabase Docs",
+      "chars": 3057,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "requested_url": "https://supabase.com/docs/guides/api",
+      "status": 200,
+      "title": "Data REST API | Supabase Docs",
+      "chars": 2141,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth",
+      "requested_url": "https://supabase.com/docs/guides/auth",
+      "status": 200,
+      "title": "Auth | Supabase Docs",
+      "chars": 3549,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/reference",
+      "requested_url": "https://supabase.com/docs/reference",
+      "status": 200,
+      "title": "Supabase Docs",
+      "chars": 448,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/pricing",
+      "requested_url": "https://supabase.com/pricing",
+      "status": 200,
+      "title": "Pricing & Fees | Supabase",
+      "chars": 4992,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/quickstarts/vue",
+      "requested_url": "https://supabase.com/docs/guides/getting-started/quickstarts/vue",
+      "status": 200,
+      "title": "Use Supabase with Vue | Supabase Docs",
+      "chars": 4839,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/quickstarts/hono",
+      "requested_url": "https://supabase.com/docs/guides/getting-started/quickstarts/hono",
+      "status": 200,
+      "title": "Use Supabase with Hono | Supabase Docs",
+      "chars": 4837,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/quickstarts/flask",
+      "requested_url": "https://supabase.com/docs/guides/getting-started/quickstarts/flask",
+      "status": 200,
+      "title": "Use Supabase with Python | Supabase Docs",
+      "chars": 4841,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
+      "requested_url": "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
+      "status": 200,
+      "title": "Use Supabase with Next.js | Supabase Docs",
+      "chars": 4825,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Supabase provides an open source Firebase alternative with a full Postgres database, auto-generated REST APIs, authentication, storage, real-time subscriptions, and edge functions.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Supabase uses key-auth enabled behind an API gateway and publishable/project API keys for accessing auto-generated Data REST APIs, alongside JWTs for authentication in Supabase Auth.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can start building for free and create projects from the dashboard or via database.new.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"JavaScript\",\n      \"Flutter\",\n      \"Python\",\n      \"C#\",\n      \"Swift\",\n      \"Kotlin\"\n    ],\n    \"notes\": \"Supabase provides auto-generated REST APIs using PostgREST and client libraries for multiple languages.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Supabase provides an MCP server that connects AI assistants to Supabase to inspect schemas and act on projects.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are readily obtainable by signing up, and public documentation, client SDKs, and an auto-generated REST API allow developers to start quickly.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://supabase.com/docs/guides/api\",\n      \"claim\": \"Supabase provides a RESTful API using PostgREST, provisioned behind an API gateway with key-auth enabled.\"\n    },\n    {\n      \"url\": \"https://supabase.com/docs/guides/auth\",\n      \"claim\": \"Supabase Auth uses JSON Web Tokens (JWTs) for authentication and integrates with database features.\"\n    },\n    {\n      \"url\": \"https://supabase.com/pricing\",\n      \"claim\": \"Users can start for free on a self-serve tier.\"\n    },\n    {\n      \"url\": \"https://supabase.com/docs/guides/getting-started/quickstarts/vue\",\n      \"claim\": \"Supabase provides an MCP server that connects AI assistants to Supabase to inspect your schema and act on projects.\"\n    },\n    {\n      \"url\": \"https://supabase.com/docs/reference\",\n      \"claim\": \"Client libraries are available in JavaScript, Flutter, C#, Swift, Kotlin, and Python, along with a Management API.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://supabase.com/docs",
+    "one_liner": "Supabase provides an open source Firebase alternative with a full Postgres database, auto-generated REST APIs, authentication, storage, real-time subscriptions, and edge functions.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Supabase uses key-auth enabled behind an API gateway and publishable/project API keys for accessing auto-generated Data REST APIs, alongside JWTs for authentication in Supabase Auth."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can start building for free and create projects from the dashboard or via database.new."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "JavaScript",
+        "Flutter",
+        "Python",
+        "C#",
+        "Swift",
+        "Kotlin"
+      ],
+      "notes": "Supabase provides auto-generated REST APIs using PostgREST and client libraries for multiple languages."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Supabase provides an MCP server that connects AI assistants to Supabase to inspect schemas and act on projects."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are readily obtainable by signing up, and public documentation, client SDKs, and an auto-generated REST API allow developers to start quickly."
+    },
+    "evidence": [
+      {
+        "url": "https://supabase.com/docs/guides/api",
+        "claim": "Supabase provides a RESTful API using PostgREST, provisioned behind an API gateway with key-auth enabled.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://supabase.com/docs/guides/auth",
+        "claim": "Supabase Auth uses JSON Web Tokens (JWTs) for authentication and integrates with database features.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://supabase.com/pricing",
+        "claim": "Users can start for free on a self-serve tier.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://supabase.com/docs/guides/getting-started/quickstarts/vue",
+        "claim": "Supabase provides an MCP server that connects AI assistants to Supabase to inspect your schema and act on projects.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://supabase.com/docs/reference",
+        "claim": "Client libraries are available in JavaScript, Flutter, C#, Swift, Kotlin, and Python, along with a Management API.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:16:22.387699+00:00"
+}

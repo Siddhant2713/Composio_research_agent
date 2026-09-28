@@ -6,6 +6,7 @@ That property is what keeps fabricated URLs out of the final records.
 from __future__ import annotations
 
 import re
+import time
 from dataclasses import dataclass, field
 from datetime import date
 from urllib.parse import urljoin, urlparse
@@ -60,14 +61,34 @@ class Page:
 class FetchFailure:
     requested_url: str
     reason: str
+    # Why it failed, because the consequences differ: "thin" means the server answered 2xx
+    # but the text was empty (a client-rendered docs site — the docs DO exist, we just
+    # cannot read them), whereas "unreachable"/"http_error" mean there was nothing there.
+    kind: str = "unreachable"
+
+
+# A bare UA string is not enough: several developer-doc sites (developer.salesforce.com
+# among them) answer 403 unless the request carries the rest of a real browser's headers.
+BROWSER_HEADERS = {
+    "User-Agent": UA,
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Ch-Ua": '"Chromium";v="125", "Not.A/Brand";v="24"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Linux"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+}
 
 
 def make_client(timeout: float = 25.0) -> httpx.Client:
-    return httpx.Client(
-        follow_redirects=True,
-        timeout=timeout,
-        headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,*/*"},
-    )
+    return httpx.Client(follow_redirects=True, timeout=timeout, headers=BROWSER_HEADERS)
 
 
 # Sidebar/nav chrome reads as a list of capability names ("Model Context Protocol",
@@ -116,15 +137,44 @@ def _html_to_text(html: str) -> tuple[str, str]:
     return title, text
 
 
-def fetch(client: httpx.Client, url: str, max_chars: int = 6000) -> Page | FetchFailure:
-    """Fetch one URL. Returns a Page only for a real 2xx response with real text."""
-    try:
-        resp = client.get(url)
-    except Exception as exc:
-        return FetchFailure(url, f"{type(exc).__name__}: {exc}"[:200])
+def _is_transient(status: int | None, exc: Exception | None) -> bool:
+    """Worth retrying: rate limits, server errors, timeouts, connection resets.
+
+    A 404 or a DNS failure is a settled answer — retrying it just burns the batch's time.
+    """
+    if status is not None:
+        return status == 429 or 500 <= status < 600
+    return isinstance(exc, (httpx.TimeoutException, httpx.RemoteProtocolError, httpx.ReadError))
+
+
+def fetch(
+    client: httpx.Client,
+    url: str,
+    max_chars: int = 6000,
+    attempts: int = 3,
+    backoff: float = 2.0,
+) -> Page | FetchFailure:
+    """Fetch one URL, retrying transient failures. Returns a Page only for real 2xx text."""
+    resp = None
+    for attempt in range(attempts):
+        try:
+            resp = client.get(url)
+        except Exception as exc:
+            if _is_transient(None, exc) and attempt < attempts - 1:
+                time.sleep(backoff * (attempt + 1))
+                continue
+            return FetchFailure(url, f"{type(exc).__name__}: {exc}"[:200])
+
+        if _is_transient(resp.status_code, None) and attempt < attempts - 1:
+            time.sleep(backoff * (attempt + 1))
+            continue
+        break
+
+    if resp is None:
+        return FetchFailure(url, "no response")
 
     if resp.status_code >= 400:
-        return FetchFailure(url, f"HTTP {resp.status_code}")
+        return FetchFailure(url, f"HTTP {resp.status_code}", kind="http_error")
 
     ctype = resp.headers.get("content-type", "")
     if not any(t in ctype for t in ("html", "text", "json", "xml")):
@@ -134,7 +184,9 @@ def fetch(client: httpx.Client, url: str, max_chars: int = 6000) -> Page | Fetch
     # A thin page is often a JS-rendered docs landing page: little text, but its links
     # still lead to the pages that matter, so keep it rather than dropping it.
     if len(text.strip()) < 120:
-        return FetchFailure(url, f"page too thin ({len(text.strip())} chars)")
+        return FetchFailure(
+            url, f"page too thin ({len(text.strip())} chars)", kind="thin"
+        )
 
     return Page(
         url=str(resp.url),
@@ -155,6 +207,10 @@ SECRET_PATTERNS = (
     re.compile(r"\bxox[abprs]-[A-Za-z0-9-]{10,}"),                   # Slack tokens
     re.compile(r"\bAKIA[0-9A-Z]{16}\b"),                             # AWS access key id
     re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),                        # Google API key
+    re.compile(r"\bsecret_[A-Za-z0-9]{30,}"),                        # Notion integration token
+    re.compile(r"\bntn_[A-Za-z0-9]{30,}"),                           # Notion token (current)
+    # Discord bot token: base64 client id . timestamp . hmac
+    re.compile(r"\b[A-Za-z0-9_-]{23,28}\.[A-Za-z0-9_-]{6}\.[A-Za-z0-9_-]{27,40}\b"),
     re.compile(r"\bey[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}"),  # JWT
     re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----.*?-----END [A-Z ]*PRIVATE KEY-----", re.S),
 )

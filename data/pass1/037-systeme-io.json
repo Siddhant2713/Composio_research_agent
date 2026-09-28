@@ -1,0 +1,179 @@
+{
+  "app": "systeme.io",
+  "number": 37,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:28:51.978276+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://systeme.io/blog/systeme-io-api\",\n    \"https://systeme.io/pricing\",\n    \"https://systeme.io\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://systeme.io",
+    "https://systeme.io/blog/systeme-io-api",
+    "https://systeme.io/pricing",
+    "https://docs.systeme.io/",
+    "https://developer.systeme.io/",
+    "https://developers.systeme.io/",
+    "https://api.systeme.io/",
+    "https://systeme.io/docs",
+    "https://systeme.io/developers",
+    "https://systeme.io/api",
+    "https://systeme.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://systeme.io/register",
+    "https://systeme.io/sales-funnels",
+    "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "https://developer.systeme.io/reference/contact",
+    "https://developer.systeme.io/reference/post_contact-1",
+    "https://developer.systeme.io/reference/delete_contact-1",
+    "https://developer.systeme.io/reference/post_contact_tag-1",
+    "https://developer.systeme.io/reference/api_webhooks_post-1",
+    "https://developer.systeme.io/reference/delete_contact_tag-1"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://systeme.io/blog/systeme-io-api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.systeme.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developers.systeme.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://systeme.io/docs",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://systeme.io/register",
+      "reason": "page too thin (91 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://systeme.io",
+      "requested_url": "https://systeme.io",
+      "status": 200,
+      "title": "Systeme.io - The only tool you need to launch your online business",
+      "chars": 1544,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://systeme.io/pricing",
+      "requested_url": "https://systeme.io/pricing",
+      "status": 200,
+      "title": "Systeme.io Pricing \u2014 Free, Startup, Webinar, Unlimited Plans",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.systeme.io/reference/api",
+      "requested_url": "https://developer.systeme.io/",
+      "status": 200,
+      "title": "Public API",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://systeme.io/sales-funnels",
+      "requested_url": "https://systeme.io/sales-funnels",
+      "status": 200,
+      "title": "The easiest funnel builder you\u2019ll ever use",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "requested_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "status": 200,
+      "title": "How to use the systeme.io public API (Application Programming Interface) | systeme.io Help Center",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.systeme.io/reference/api_contacts_get_collection-1",
+      "requested_url": "https://developer.systeme.io/reference/contact",
+      "status": 200,
+      "title": "Retrieves the collection of Contact resources.",
+      "chars": 179,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.systeme.io/reference/post_contact-1",
+      "requested_url": "https://developer.systeme.io/reference/post_contact-1",
+      "status": 200,
+      "title": "Creates a Contact resource.",
+      "chars": 228,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Systeme.io public API for managing contacts, tags, campaigns, funnels, courses, and more via RESTful endpoints.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authentication is performed by attaching the API key to the X-API-Key header of each request, generated from the profile settings in the dashboard.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can generate public API keys directly from their dashboard profile settings under the 'MCP & API keys' section.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Shell\",\n      \"Node\",\n      \"Ruby\",\n      \"PHP\",\n      \"Python\"\n    ],\n    \"notes\": \"The API adheres to RESTful conventions, supports cursor-based pagination and merge patch (PATCH with application/merge-patch+json).\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Mentioned in the help center under 'Model Context Protocol (MCP)' and referenced in relation to creating API keys and limitations on editing/deleting certain funnels via MCP.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"The API offers self-serve credential generation from the dashboard, clearly documented REST endpoints, and standard API key authentication via the X-API-Key header.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"claim\": \"The API adheres to RESTful conventions and uses the X-API-Key header for authentication.\"\n    },\n    {\n      \"url\": \"https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io\",\n      \"claim\": \"Users can generate API keys by going to Settings, MCP & API keys, and clicking Create under Public API keys.\"\n    },\n    {\n      \"url\": \"https://developer.systeme.io/reference/api_contacts_get_collection-1\",\n      \"claim\": \"Code examples are provided in Shell, Node, Ruby, PHP, and Python.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://systeme.io",
+    "one_liner": "Systeme.io public API for managing contacts, tags, campaigns, funnels, courses, and more via RESTful endpoints.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authentication is performed by attaching the API key to the X-API-Key header of each request, generated from the profile settings in the dashboard."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can generate public API keys directly from their dashboard profile settings under the 'MCP & API keys' section."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [
+        "Shell",
+        "Node",
+        "Ruby",
+        "PHP",
+        "Python"
+      ],
+      "notes": "The API adheres to RESTful conventions, supports cursor-based pagination and merge patch (PATCH with application/merge-patch+json)."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Mentioned in the help center under 'Model Context Protocol (MCP)' and referenced in relation to creating API keys and limitations on editing/deleting certain funnels via MCP."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "The API offers self-serve credential generation from the dashboard, clearly documented REST endpoints, and standard API key authentication via the X-API-Key header."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.systeme.io/reference/api",
+        "claim": "The API adheres to RESTful conventions and uses the X-API-Key header for authentication.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "claim": "Users can generate API keys by going to Settings, MCP & API keys, and clicking Create under Public API keys.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.systeme.io/reference/api_contacts_get_collection-1",
+        "claim": "Code examples are provided in Shell, Node, Ruby, PHP, and Python.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:29:12.012040+00:00"
+}

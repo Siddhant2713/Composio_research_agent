@@ -1,0 +1,190 @@
+{
+  "app": "Snowflake",
+  "number": 67,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:04:58.981197+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.snowflake.com\",\n    \"https://docs.snowflake.com/en/developer-guide\",\n    \"https://docs.snowflake.com/en/sql-reference/sql-api\",\n    \"https://docs.snowflake.com/en/user-guide/admin-security\",\n    \"https://developers.snowflake.com\",\n    \"https://www.snowflake.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.snowflake.com",
+    "https://docs.snowflake.com/en/developer-guide",
+    "https://docs.snowflake.com/en/sql-reference/sql-api",
+    "https://docs.snowflake.com/en/user-guide/admin-security",
+    "https://developers.snowflake.com",
+    "https://www.snowflake.com",
+    "https://developer.snowflake.com/",
+    "https://api.snowflake.com/",
+    "https://snowflake.com/docs",
+    "https://snowflake.com/developers",
+    "https://snowflake.com/api",
+    "https://snowflake.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.snowflake.com/en/reference",
+    "https://docs.snowflake.com/en/sql-reference-classes",
+    "https://docs.snowflake.com/en/sql-reference-commands",
+    "https://docs.snowflake.com/en/sql-reference-functions",
+    "https://docs.snowflake.com/en/sql-reference-data-types",
+    "https://docs.snowflake.com/en/user-guide-getting-started",
+    "https://docs.snowflake.com/user-guide/programmatic-access-tokens",
+    "https://docs.snowflake.com/user-guide/oauth-intro",
+    "https://docs.snowflake.com/user-guide/security-mfa",
+    "https://docs.snowflake.com/user-guide/key-pair-auth",
+    "https://docs.snowflake.com/en/user-guide/oauth-intro",
+    "https://docs.snowflake.com/en/user-guide/security-mfa",
+    "https://www.snowflake.com/en/contact-sales/",
+    "https://www.snowflake.com/en/developers/solutions-center/restaurant-sales-forecasting-and-anomaly-detection-using-snowflake-cortex-ml-functions/",
+    "https://signup.snowflake.com/",
+    "https://www.snowflake.com/en/contact/",
+    "https://www.snowflake.com/en/expedition/",
+    "https://www.snowflake.com/en/pricing-options/",
+    "https://www.snowflake.com/en/ai-pulse/"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.snowflake.com/en/developer-guide",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.snowflake.com/en/sql-reference/sql-api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://api.snowflake.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.snowflake.com/en/",
+      "requested_url": "https://docs.snowflake.com",
+      "status": 200,
+      "title": "Snowflake Documentation",
+      "chars": 3354,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/guides-overview-secure",
+      "requested_url": "https://docs.snowflake.com/en/user-guide/admin-security",
+      "status": 200,
+      "title": "Securing Snowflake | Snowflake Documentation",
+      "chars": 2945,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.snowflake.com/en/developers/",
+      "requested_url": "https://developers.snowflake.com",
+      "status": 200,
+      "title": "Snowflake for Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.snowflake.com/en/",
+      "requested_url": "https://www.snowflake.com",
+      "status": 200,
+      "title": "Snowflake AI Data Cloud",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/reference",
+      "requested_url": "https://docs.snowflake.com/en/reference",
+      "status": 200,
+      "title": "Reference | Snowflake Documentation",
+      "chars": 415,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-classes",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-classes",
+      "status": 200,
+      "title": "SQL class reference | Snowflake Documentation",
+      "chars": 1702,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-commands",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-commands",
+      "status": 200,
+      "title": "SQL command reference | Snowflake Documentation",
+      "chars": 1414,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-functions",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-functions",
+      "status": 200,
+      "title": "Function and stored procedure reference | Snowflake Documentation",
+      "chars": 1593,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-data-types",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-data-types",
+      "status": 200,
+      "title": "SQL data types reference | Snowflake Documentation",
+      "chars": 1616,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Snowflake is a fully managed cloud-based data platform offering data warehousing, data engineering, AI/ML workflows, and application development through SQL and drivers.\",\n  \"auth\": {\n    \"method\": \"other\",\n    \"notes\": \"Snowflake supports multiple authentication methods including key-pair authentication, OAuth, programmatic access tokens, and workload identity federation as described in the security documentation.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The fetched pages do not mention whether obtaining an account or initial API credentials is self-serve or gated.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The provided documentation references SQL commands, classes, functions, stored procedures, and general drivers, but does not provide explicit substantive details on REST endpoints, GraphQL, or webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"The fetched pages do not describe how an unaffiliated developer can obtain credentials (access tier is unknown) or provide specific details on the developer integration API surface.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.snowflake.com/en/guides-overview-secure\",\n      \"claim\": \"Snowflake supports multiple authentication methods including key-pair authentication, programmatic access tokens, and OAuth.\"\n    },\n    {\n      \"url\": \"https://docs.snowflake.com/en/sql-reference-commands\",\n      \"claim\": \"Reference information covers SQL commands (DDL, DML, and query syntax) used to interact with Snowflake.\"\n    }\n  ],\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.snowflake.com",
+    "one_liner": "Snowflake is a fully managed cloud-based data platform offering data warehousing, data engineering, AI/ML workflows, and application development through SQL and drivers.",
+    "auth": {
+      "method": "other",
+      "notes": "Snowflake supports multiple authentication methods including key-pair authentication, OAuth, programmatic access tokens, and workload identity federation as described in the security documentation."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "The fetched pages do not mention whether obtaining an account or initial API credentials is self-serve or gated."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "The provided documentation references SQL commands, classes, functions, stored procedures, and general drivers, but does not provide explicit substantive details on REST endpoints, GraphQL, or webhooks."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages do not describe how an unaffiliated developer can obtain credentials (access tier is unknown) or provide specific details on the developer integration API surface."
+    },
+    "evidence": [
+      {
+        "url": "https://docs.snowflake.com/en/guides-overview-secure",
+        "claim": "Snowflake supports multiple authentication methods including key-pair authentication, programmatic access tokens, and OAuth.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://docs.snowflake.com/en/sql-reference-commands",
+        "claim": "Reference information covers SQL commands (DDL, DML, and query syntax) used to interact with Snowflake.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T18:05:22.815763+00:00"
+}

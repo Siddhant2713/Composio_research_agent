@@ -1,0 +1,439 @@
+===== https://otter.ai
+TITLE: Otter Meeting Agent - AI Notetaker, Transcription, Insights
+ACCESSED: 2026-09-27
+
+Otter Meeting Agent - AI Notetaker, Transcription, Insights
+"I am possibly Otter's most enthusiastic supporter. My team and I are using it everyday. And we’re using it for almost every meeting.”
+— Tim Draper
+“Otter is a must-have. Just being conservative - our team is getting 33% time back.”
+— Laura Brown, Vice President of Sales at Aiden Technologies
+“I use Otter.ai almost everyday….it is a superpower.”
+— Brandon Savage, Head of Solution Enablement, Voziq.ai
+Ask Otter anything
+Otter AI Chat searches across your meetings and connected apps to instantly answer questions and help you create follow-ups, reports, and content.
+A desktop app for bot-free meetings
+Record conversations directly from your Mac or Windows desktop, without bots joining the call.
+See the words, as they’re spoken
+Live transcription in multiple languages, and speaker recognition.
+Get instant summaries you can trust
+Otter turns every meeting into a clear summary with decisions, action items, and insights.
+Automate the action items
+Clear next steps are automatically captured and assigned from every meeting.
+Push sales insights to your CRM
+Key deal details, notes, and next steps automatically extracted from every meeting and synced to your CRM.
+Organize your conversations with Channels
+Meetings grouped by team, project, or topic so everyone can find recordings and collaborate in one shared space.
+Start for free
+Sales
+Capture sales call notes, get live coaching tips, automate follow-ups, and drive sales efficiency with CRM.
+Learn more
+Education
+Automatically capture lectures, discussions, and study sessions turning them into searchable notes and summaries you can use anytime.
+Learn more
+Media
+Capture interviews and production meetings and automatically turn them into searchable transcripts, key quotes, and draft-ready notes.
+Learn more
+Recruiting Agent
+Get real-time help during interviews and turn every conversation into structured, shareable candidate insight.
+Learn more
+SDR Agent
+From live demos to booked meetings, our SDR Agent handles it all right from your website.
+Learn more
+Choose how you capture meetings
+Whether you automatically send your AI Notetaker to meetings, record bot-free on desktop or Chrome, or capture on mobile, Otter gives you flexible ways to record meetings anywhere.
+Scale with your company
+Otter is built with the security, governance, and compliance controls enterprises expect.
+Pull meeting knowledge into your favorite AI chat
+ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter’s MCP Server for deeper analysis and smarter workflows.
+Trusted by teams, loved by people
+But don’t take our word for it.
+Otter is a must-have. Just being conservative - our team is getting 33% time back
+— Laura Brown, Vice President of Sales at Aiden Technologies
+"I am possibly Otter's most enthusiastic supporter. My team and I are using it everyday. And we’re using it for almost every meeting.”
+— Tim Draper
+“It’s an incredible app. The most accurate app  out there [for transcription].”
+— Tony Robbins
+As Seen in The Wall Street Journal
+Recognized by WSJ as a must-try AI tool, Otter.ai’s AI-powered summaries and action items help teams follow up faster and work more efficiently.
+Learn more
+“I easily save hours per week, without a doubt. That’s an exponential amount of time savings.”
+— Matt Sodnicar, Marketing Manager, Canidium
+“I use Otter.ai almost everyday….it is a superpower.”
+— Brandon Savage, Head of Solution Enablement, Voziq.ai
+4
++
+Hours saved per week
+Users report saving over four hours weekly by automating transcription and summaries.
+Zoom
+Invite your AI Meeting Agent for automatic real-time transcription, key takeaways and action items, and more.
+Learn more
+Claude
+Ground AI-generated answers in your team's meeting knowledge for more accurate, reliable results.
+Learn more
+Dropbox
+Upload any audio and video files, and they’ll be automatically transcribed into searchable and shareable text.
+Learn more
+Google Calendar
+Schedule your AI Meeting Agent to automatically join all your Zoom, Microsoft Teams, and Google Meet meetings.
+Learn more
+Google Docs
+Sync transcriptions and meeting notes for easy editing, sharing, and collaboration with all your teammates.
+Learn more
+Google Meet
+Get you real-time transcriptions, summaries, and answer questions on any call with your AI Meeting Agent.
+Learn more
+HubSpot
+Log meeting transcripts and notes to automatically push sales insights to your CRM.
+Learn more
+Jira
+Keep projects moving forward by automatically sending key takeaways and action items from every conversation.
+Learn more
+Notion
+Seamlessly sync your transcripts, notes, and key takeaways for easy organization, collaboration, and progress.
+Learn more
+Glean
+Search Otter transcripts, notes, and action items alongside the rest of your company knowledge in Glean.
+Learn more
+Salesforce
+Automatically log transcripts and insights ensuring your teams always have the latest customer interactions.
+Learn more
+Sl
+
+===== https://otter.ai/pricing
+TITLE: Pricing | Otter.ai
+ACCESSED: 2026-09-27
+
+Pricing | Otter.ai
+Choose the plan that's right
+for you
+Prices in USD
+Basic
+For those who want to give
+it a try
+Free
+Get started
+Download for Mac
+Download for Windows
+Zoom, MS Teams, and Google Meet
+AI Chat within and across meetings
+New
+AI meeting workflows
+3 lifetime audio/video file imports
+Live transcription
+Speaker identification
+Audio recording playback
+Multi-language support
+iOS and Android apps
+300 monthly transcription minutes
+New
+Otter MCP server
+Pro
+For individuals and small teams
+$16
+.99
+/user/month
+$16
+.99
+$8
+.49*
+/user/month
+save 50%
+Buy now
+1200 in-app recording minutes
+Advanced AI workflows
+10 monthly audio/video file imports
+Everything in Basic, plus
+Up to
+90 mins
+/meeting
+New
+Advanced meeting templates
+Unlimited storage
+Team vocabulary & taggable speakers
+Advanced search, export & playback
+New
+Salesforce*, HubSpot*, Zapier integrations
+Business
+Best Value
+For medium-sized teams
+$30
+$24
+/user/month
+20% off for 3 months
++
+Buy now
+Unlimited meetings + in-app recordings
+Custom AI workflows
+Unlimited audio/video file imports*
+Everything in Pro, plus
+Up to
+4 hours
+/meeting
+Enhanced admin features: activity logs, usage analytics, and more
+Join 3 concurrent meetings
+Prioritized support
+Enterprise
+For large teams and companies
+Schedule a demo
+Unlimited custom AI workflows
+Otter Sales Notetaker
+Custom integrations (CRM, dialers)
+Everything in Business, plus
+SSO, SCIM, Domain Capture
+Enterprise-grade security & controls
+HIPAA compliance (add-on)
+Otter API & Webhooks
+Video replay for Zoom and Google Meet
+Coming Soon
+AI Chat with Gmail, Google Drive, Notion, Jira
+Customer Success Program
+Prices in USD
+Basic
+For those who want to give
+it a try
+Free
+Download for Mac
+Download for Windows
+Zoom, MS Teams, and Google Meet
+AI Chat within and across meetings
+New
+AI meeting workflows
+3 lifetime audio/video file imports
+Live transcription
+Speaker identification
+Audio recording playback
+Multi-language support
+iOS and Android apps
+300 monthly transcription minutes
+New
+Otter MCP server
+Pro
+For individuals and small teams
+$8
+.33
+/user/month
+save 51%
+$8
+.33
+$4
+.17*
+/user/month
+save 50%
+Buy now
+1200 in-app recording minutes
+Advanced AI workflows
+10 monthly audio/video file imports
+Everything in Basic, plus
+Up to
+90 mins
+/meeting
+New
+Advanced meeting templates
+Unlimited storage
+Team vocabulary & taggable speakers
+Advanced search, export & playback
+New
+Salesforce*, HubSpot*, Zapier integrations
+Business
+Best Value
+For medium-sized teams
+$19
+.99
+/user/month
+save 33%
+Buy now
+Unlimited meetings + in-app recordings
+Custom AI workflows
+Unlimited audio/video file imports*
+Everything in Pro, plus
+Up to
+4 hours
+/meeting
+Enhanced admin features: activity logs, usage analytics, and more
+Join 3 concurrent meetings
+Prioritized support
+Enterprise
+For large teams and companies
+Schedule a demo
+Unlimited custom AI workflows
+Otter Sales Notetaker
+Custom integrations (CRM, dialers)
+Everything in Business, plus
+SSO, SCIM, Domain Capture
+Enterprise-grade security & controls
+HIPAA compliance (add-on)
+Otter API & Webhooks
+Video replay for Zoom and Google Meet
+New
+AI Chat with Gmail, Google Drive, Notion, Jira
+Customer Success Program
+*Salesforce and HubSpot integrations subject to user limits
+*Offer valid only with an India-issued credit card.
+Sit back and relax while our SDR Agent instantly engages prospects on your site with real-time, personalized video calls that deliver tailored demos for every visitor.
+Schedule a Demo
+Workspace Size
+Max workspace members
+5
+5 billed users
+25 billed users
+Unlimited
+Meeting Templates
+AI Meeting Templates
+Standard
+Advanced
+Advanced
+Advanced
+Custom AI Meeting Templates usage limits
+5 meetings per user
+15 meetings per user
+30 meetings per user
+Unlimited
+Automatic Transcription
+Unlimited in-app recordings.
+Limit applies only to imported files
+AI transcription in English, Spanish, French, German, Japanese, and Chinese
+Speaker identification (by name)
+Shared speakers
+Shared speakers
+Shared speakers
+Keywords and speaker talk time
+Automated summaries with action items and outlines
+Live transcription of recording via Otter app
+Live notes and captioning for Google Meet
+Automatic sync of audio/video files from Dropbox
+Automatic sync of cloud recordings from Zoom
+Joins Zoom, MS Teams, and Google Meet to automatically write and share notes
+Max number of concurrent meetings
+1
+2
+3
+3
+Integrated live notes and captioning for Zoom
+Live transcription via RTMP (additional fees apply)
+Meeting & recording transcription monthly limit (no rollover)
+300 minutes per user
+*
+1,200 minutes per user
+*
+Unlimited
+Unlimited
+Imported file transcription monthly limit (no rollover)
+300 minutes per user
+*
+1,200 minutes per user
+*
+6,000 minutes per user
+6,000 minutes per user
+Max transcription time per conversation
+30 minutes
+90 minutes
+4 hours
+4 hours
+Max number of real-time recordings and transcriptions
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Max number of pre-recorded audio/video files for import and transcription
+3 lifetime per user
+10 mo
+
+===== https://otter.ai/sales-agent
+TITLE: Otter.ai - AI Sales Notetaker
+ACCESSED: 2026-09-27
+
+Otter.ai - AI Sales Notetaker
+Sales Notetaker
+Education Notetaker
+Media Notetaker
+SDR Agent
+Recruiting Agent
+No matter your role, our AI Sales Notetaker keeps you rolling.
+Account Execs
+Automatically capture and summarize all your sales calls so you can focus on selling instead of taking notes.
+Sales Ops
+Automatically capture and summarize all your sales calls so you can focus on selling instead of taking notes.
+Sales Leads
+Ask your AI Sales Notetaker questions during a call and get answers for your clients at the speed of “Hey Otter.”
+Flexible plans for teams, individuals, and enterprises
+Basic
+Get started with Otter for free
+Free forever
+Perfect for individuals and small teams looking to transcribe and summarize their meetings effortlessly
+Features
+Automated AI meeting summaries
+Unlimited meetings
+Basic Integrations (Zoom, Google Meet, Teams, Slack)
+Start for free
+Business
+From $19.99/month per user
+7-day free trial included
+Ideal for teams that want to collaborate seamlessly and turn meetings into actionable outcomes
+Features - Everything in Basic, plus
+6000 monthly transcription minutes - 4 hours per conversation
+Collaborative note editing
+Import and transcribe unlimited audio or video files
+& more powerful workspace and admin features
+Start for free
+Enterprise
+Need a custom solution?
+Contact our sales team to learn more about Otter’s advanced capabilities.
+Contact sales
+The world's smartest AI Notetaker
+Start for free
+Demo it live
+Browse related articles
+Enhancing Productivity With the Best AI Meeting Assistant Tool
+OtterPilot™ is the Smart AI Meeting Assistant You’ve Been Waiting For
+The Role of AI in the Workplace: Transforming Business Operations
+Creating an Effective Communication Plan, With Examples
+Meeting Notes Template With Action Items: Your Guide to Productive Meetings
+How To Use an AI Notetaker for In-Person Meetings: A Guide
+14 Essential Project Management Skills for Success
+AI for Content Creation: Best Tools and Use Cases
+Video to text
+Free AI transcription
+
+===== https://otter.ai/partner-program
+TITLE: Otter.ai Partner Program | Technology & Reseller Partners
+ACCESSED: 2026-09-27
+
+Otter.ai Partner Program | Technology & Reseller Partners
+Partners
+Partner with Otter.ai
+Bring AI meeting intelligence to your customers, users, or members. Otter helps teams capture, summarize, and act on the conversations that drive their business. Whether you want to build an integration, refer customers, resell Otter, bundle it into your offering, or support customer adoption, we'd like to hear from you.
+Apply to partner
+Why partner with Otter?
+Help customers get more value from every conversation.
+Increase customer value
+Add AI meeting notes, summaries, action items, and insights to the workflows your customers already use.
+Create revenue opportunities
+Explore referral, resale, co-sell, bundled, marketplace, or other commercial models.
+Differentiate your offering
+Help customers standardize on a trusted AI meeting assistant instead of fragmented individual tools.
+Support customer adoption
+Work with Otter on enablement, onboarding, and best practices to help customers get value faster.
+Ways to partner
+Technology & integration partners
+Build integrations that connect Otter meeting intelligence into your product, platform, or customer workflows.
+Channel, reseller & distribution partners
+Bring Otter to your customers, members, or marketplace users through referral, resale, co-sell, or bundled motions.
+Referral & affiliate partners
+Refer qualified customers to Otter and earn incentives for approved opportunities or new business.
+Solutions & services partners
+Help customers implement, adopt, and operationalize Otter through consulting, enablement, workflow design, or managed services.
+Not sure where you fit? Apply anyway — we're happy to learn more.
+How it works
+1
+Apply
+Tell us about your company, audience, customers, and partnership goals.
+2
+Connect
+Our partnerships team will review your application and follow up if there may be a fit.
+3
+Launch
+We'll align on the right model and next steps to bring the partnership to market.
+Ready to partner?
+Tell us a bit about your company and what you're looking to build.
+Submit application
+Application form

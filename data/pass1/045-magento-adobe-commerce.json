@@ -1,0 +1,207 @@
+{
+  "app": "Magento (Adobe Commerce)",
+  "number": 45,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T18:03:24.035960+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.adobe.com/commerce\",\n    \"https://developer.adobe.com/commerce/extensibility\",\n    \"https://developer.adobe.com/commerce/webservices\",\n    \"https://developer.adobe.com/commerce/php\",\n    \"https://developer.adobe.com/commerce/frontend\",\n    \"https://experienceleague.adobe.com/docs/commerce-developer-guide/introduction/commerce-developer-guide.html\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.adobe.com/commerce",
+    "https://developer.adobe.com/commerce/extensibility",
+    "https://developer.adobe.com/commerce/webservices",
+    "https://developer.adobe.com/commerce/php",
+    "https://developer.adobe.com/commerce/frontend",
+    "https://experienceleague.adobe.com/docs/commerce-developer-guide/introduction/commerce-developer-guide.html",
+    "https://docs.adobe.com/",
+    "https://developer.adobe.com/",
+    "https://developers.adobe.com/",
+    "https://api.adobe.com/",
+    "https://adobe.com/docs",
+    "https://adobe.com/developers",
+    "https://adobe.com/api",
+    "https://adobe.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://solutionpartners.adobe.com/solution-partners/training_and_certification/certification.html",
+    "https://developer.adobe.com/commerce/extensibility/webhooks/",
+    "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+    "https://developer.adobe.com/graphql-mesh-gateway/",
+    "https://developer.adobe.com/commerce/php/module-reference/",
+    "https://experienceleague.adobe.com/en/docs/sales-qualifier/using/home",
+    "https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-console",
+    "https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences",
+    "https://developer.adobe.com/adobe-for-creativity/getting-started/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.adobe.com/commerce/webservices",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.adobe.com/commerce/frontend",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://experienceleague.adobe.com/docs/commerce-developer-guide/introduction/commerce-developer-guide.html",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.adobe.com/commerce/",
+      "requested_url": "https://developer.adobe.com/commerce",
+      "status": 200,
+      "title": ":experiencecloud:",
+      "chars": 1614,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/extensibility/",
+      "requested_url": "https://developer.adobe.com/commerce/extensibility",
+      "status": 200,
+      "title": "Adobe Commerce extensibility",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/php/",
+      "requested_url": "https://developer.adobe.com/commerce/php",
+      "status": 200,
+      "title": "Commerce PHP Extensions",
+      "chars": 1986,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs",
+      "requested_url": "https://docs.adobe.com/",
+      "status": 200,
+      "title": "Adobe Enterprise Documentation",
+      "chars": 2454,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/",
+      "requested_url": "https://developer.adobe.com/",
+      "status": 200,
+      "title": "The most memorable digital experiences are unleashed by developer creativity",
+      "chars": 1872,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://partners.adobe.com/digitalexperience/",
+      "requested_url": "https://solutionpartners.adobe.com/solution-partners/training_and_certification/certification.html",
+      "status": 200,
+      "title": "Home | Digital Partner Experience Program",
+      "chars": 3689,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+      "requested_url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+      "status": 200,
+      "title": "Adobe Commerce Webhooks Overview",
+      "chars": 2936,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+      "requested_url": "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+      "status": 200,
+      "title": "Adobe Commerce Admin UI SDK overview",
+      "chars": 2389,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/graphql-mesh-gateway/",
+      "requested_url": "https://developer.adobe.com/graphql-mesh-gateway/",
+      "status": 200,
+      "title": "Overview - API Mesh for Adobe Developer App Builder",
+      "chars": 2462,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/php/module-reference/",
+      "requested_url": "https://developer.adobe.com/commerce/php/module-reference/",
+      "status": 200,
+      "title": "Module Reference | Commerce PHP Extensions",
+      "chars": 228,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Adobe Commerce (Magento) provides developer tools, APIs, webhooks, events, and App Builder for building out-of-process and in-process extensions and integrations.\",\n  \"auth\": {\n    \"method\": \"other\",\n    \"notes\": \"Authentication uses Adobe Identity Management Service (IMS) or reusable patterns provided by Commerce SDKs and libraries.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The fetched developer documentation describes extensibility and building apps, but does not explicitly detail the sign-up or credential acquisition flow for a first-time unaffiliated developer.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Admin UI SDK\"\n    ],\n    \"notes\": \"Supports REST endpoints, GraphQL (via API Mesh), webhooks, events, and App Builder SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"The pages do not mention the Model Context Protocol.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Extensive developer documentation and tools (App Builder, SDKs) exist, but access and credential provisioning details are not fully specified on these pages.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.adobe.com/commerce/\",\n      \"claim\": \"Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce.\"\n    },\n    {\n      \"url\": \"https://developer.adobe.com/commerce/extensibility/\",\n      \"claim\": \"Adobe Commerce supports out-of-process extensibility using App Builder, App Management, APIs, events, and webhooks.\"\n    },\n    {\n      \"url\": \"https://developer.adobe.com/commerce/extensibility/webhooks/\",\n      \"claim\": \"Webhooks enable developers to configure synchronous logic to execute calls to external systems when an Adobe Commerce event triggers, using REST endpoints like GET /V1/webhooks/supportedList.\"\n    },\n    {\n      \"url\": \"https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/\",\n      \"claim\": \"Adobe Identity Management Service (IMS) manages authentication for the Admin UI SDK.\"\n    },\n    {\n      \"url\": \"https://developer.adobe.com/graphql-mesh-gateway/\",\n      \"claim\": \"API Mesh allows developers to combine multiple data sources into a single, queryable GraphQL endpoint.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint_url": "https://developer.adobe.com/commerce",
+    "one_liner": "Adobe Commerce (Magento) provides developer tools, APIs, webhooks, events, and App Builder for building out-of-process and in-process extensions and integrations.",
+    "auth": {
+      "method": "other",
+      "notes": "Authentication uses Adobe Identity Management Service (IMS) or reusable patterns provided by Commerce SDKs and libraries."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "The fetched developer documentation describes extensibility and building apps, but does not explicitly detail the sign-up or credential acquisition flow for a first-time unaffiliated developer."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": [
+        "Admin UI SDK"
+      ],
+      "notes": "Supports REST endpoints, GraphQL (via API Mesh), webhooks, events, and App Builder SDKs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "The pages do not mention the Model Context Protocol."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Extensive developer documentation and tools (App Builder, SDKs) exist, but access and credential provisioning details are not fully specified on these pages."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.adobe.com/commerce/",
+        "claim": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/extensibility/",
+        "claim": "Adobe Commerce supports out-of-process extensibility using App Builder, App Management, APIs, events, and webhooks.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+        "claim": "Webhooks enable developers to configure synchronous logic to execute calls to external systems when an Adobe Commerce event triggers, using REST endpoints like GET /V1/webhooks/supportedList.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/",
+        "claim": "Adobe Identity Management Service (IMS) manages authentication for the Admin UI SDK.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.adobe.com/graphql-mesh-gateway/",
+        "claim": "API Mesh allows developers to combine multiple data sources into a single, queryable GraphQL endpoint.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-27T18:03:38.139829+00:00"
+}

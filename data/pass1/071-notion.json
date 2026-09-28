@@ -1,0 +1,193 @@
+{
+  "app": "Notion",
+  "number": 71,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:18:01.606769+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.notion.com\",\n    \"https://developers.notion.com/reference\",\n    \"https://developers.notion.com/docs/getting-started\",\n    \"https://developers.notion.com/docs/authorization\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.notion.com",
+    "https://developers.notion.com/reference",
+    "https://developers.notion.com/docs/getting-started",
+    "https://developers.notion.com/docs/authorization",
+    "https://docs.notion.com/",
+    "https://developer.notion.com/",
+    "https://api.notion.com/",
+    "https://notion.com/docs",
+    "https://notion.com/developers",
+    "https://notion.com/api",
+    "https://notion.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.notion.com/guides/get-started/quick-start",
+    "https://developers.notion.com/guides/get-started/handling-api-keys",
+    "https://developers.notion.com/reference/webhooks",
+    "https://developers.notion.com/cli/get-started/overview",
+    "https://developers.notion.com/guides/get-started/personal-access-tokens",
+    "https://developers.notion.com/reference/view",
+    "https://developers.notion.com/reference/user",
+    "https://developers.notion.com/reference/database",
+    "https://developers.notion.com/reference/get-users",
+    "https://api.notion.com/v1/oauth/token",
+    "https://developers.notion.com/reference/create-a-token",
+    "https://developers.notion.com/reference/refresh-a-token",
+    "https://www.notion.com/contact-sales",
+    "https://www.notion.com/signup",
+    "https://www.notion.com/pricing"
+  ],
+  "boilerplate_lines_removed": 4,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.notion.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    },
+    {
+      "requested_url": "https://developer.notion.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.notion.com/guides/get-started/overview",
+      "requested_url": "https://developers.notion.com",
+      "status": 200,
+      "title": "Overview - Notion Docs",
+      "chars": 4978,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/reference/intro",
+      "requested_url": "https://developers.notion.com/reference",
+      "status": 200,
+      "title": "Introduction - Notion Docs",
+      "chars": 4964,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "requested_url": "https://developers.notion.com/docs/authorization",
+      "status": 200,
+      "title": "Authorization - Notion Docs",
+      "chars": 4952,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.notion.com/",
+      "requested_url": "https://api.notion.com/",
+      "status": 200,
+      "title": "The AI workspace that works for you. | Notion",
+      "chars": 696,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.notion.com/product/docs",
+      "requested_url": "https://notion.com/docs",
+      "status": 200,
+      "title": "Docs | Notion",
+      "chars": 2634,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/guides/get-started/quick-start",
+      "requested_url": "https://developers.notion.com/guides/get-started/quick-start",
+      "status": 200,
+      "title": "API quickstart - Notion Docs",
+      "chars": 4862,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+      "requested_url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+      "status": 200,
+      "title": "Secure API tokens - Notion Docs",
+      "chars": 3504,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/reference/webhooks",
+      "requested_url": "https://developers.notion.com/reference/webhooks",
+      "status": 200,
+      "title": "Webhooks - Notion Docs",
+      "chars": 4970,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/cli/get-started/overview",
+      "requested_url": "https://developers.notion.com/cli/get-started/overview",
+      "status": 200,
+      "title": "Notion CLI - Notion Docs",
+      "chars": 1911,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developers.notion.com/guides/get-started/personal-access-tokens",
+      "requested_url": "https://developers.notion.com/guides/get-started/personal-access-tokens",
+      "status": 200,
+      "title": "Personal access tokens - Notion Docs",
+      "chars": 4962,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Notion provides a REST API, OAuth 2.0 public connections, internal static tokens, and personal access tokens to automate and build integrations for pages, databases, and workspace content.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Notion supports multiple token-based mechanisms including static API tokens for internal connections, personal access tokens (PATs), and OAuth 2.0 for public connections.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a Notion account and create internal connections, public connections, or personal access tokens directly via the Developer portal.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"JavaScript\"\n    ],\n    \"notes\": \"The public API follows RESTful conventions, supports webhooks for real-time events, and offers an official JavaScript SDK alongside cURL examples.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are straightforward to obtain from the Developer portal (such as personal access tokens or internal connection tokens), and the REST API is thoroughly documented with a JavaScript SDK and cURL examples.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.notion.com/guides/get-started/overview\",\n      \"claim\": \"Notion supports internal connections, public connections, and personal access tokens powered by a REST API.\"\n    },\n    {\n      \"url\": \"https://developers.notion.com/reference/intro\",\n      \"claim\": \"The Notion API follows RESTful conventions and requests are sent to https://api.notion.com with request/response bodies encoded as JSON.\"\n    },\n    {\n      \"url\": \"https://developers.notion.com/reference/webhooks\",\n      \"claim\": \"Webhooks allow connections to receive real-time updates via secure HTTP POST requests for page and database changes.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://developers.notion.com",
+    "one_liner": "Notion provides a REST API, OAuth 2.0 public connections, internal static tokens, and personal access tokens to automate and build integrations for pages, databases, and workspace content.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Notion supports multiple token-based mechanisms including static API tokens for internal connections, personal access tokens (PATs), and OAuth 2.0 for public connections."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a Notion account and create internal connections, public connections, or personal access tokens directly via the Developer portal."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "JavaScript"
+      ],
+      "notes": "The public API follows RESTful conventions, supports webhooks for real-time events, and offers an official JavaScript SDK alongside cURL examples."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": null
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are straightforward to obtain from the Developer portal (such as personal access tokens or internal connection tokens), and the REST API is thoroughly documented with a JavaScript SDK and cURL examples."
+    },
+    "evidence": [
+      {
+        "url": "https://developers.notion.com/guides/get-started/overview",
+        "claim": "Notion supports internal connections, public connections, and personal access tokens powered by a REST API.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.notion.com/reference/intro",
+        "claim": "The Notion API follows RESTful conventions and requests are sent to https://api.notion.com with request/response bodies encoded as JSON.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developers.notion.com/reference/webhooks",
+        "claim": "Webhooks allow connections to receive real-time updates via secure HTTP POST requests for page and database changes.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T17:18:15.272865+00:00"
+}

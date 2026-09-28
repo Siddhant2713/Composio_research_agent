@@ -1,0 +1,186 @@
+{
+  "app": "Twilio",
+  "number": 22,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:23:16.321311+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.twilio.com/docs\",\n    \"https://www.twilio.com/docs/api\",\n    \"https://www.twilio.com/try-twilio\",\n    \"https://www.twilio.com/console\",\n    \"https://www.twilio.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://twilio.com",
+    "https://www.twilio.com/docs",
+    "https://www.twilio.com/docs/api",
+    "https://www.twilio.com/try-twilio",
+    "https://www.twilio.com/console",
+    "https://www.twilio.com/pricing",
+    "https://docs.twilio.com/",
+    "https://developer.twilio.com/",
+    "https://developers.twilio.com/",
+    "https://api.twilio.com/",
+    "https://twilio.com/docs",
+    "https://twilio.com/developers",
+    "https://twilio.com/api",
+    "https://twilio.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+    "https://www.twilio.com/login",
+    "https://www.twilio.com/en-us/help/sales",
+    "https://www.twilio.com/en-us/user-authentication-identity",
+    "https://www.twilio.com/en-us/user-authentication-identity/verify",
+    "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+    "https://www.twilio.com/docs/verify/quickstarts",
+    "https://www.twilio.com/en-us/partners",
+    "https://www.twilio.com/docs/salesforce",
+    "https://www.twilio.com/en-us/support-plans",
+    "https://www.twilio.com/docs/lookup/quickstart",
+    "https://www.twilio.com/en-us/salesforce",
+    "https://www.twilio.com/en-us/help/owl-sales"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://www.twilio.com/console",
+      "reason": "page too thin (6 chars)"
+    },
+    {
+      "requested_url": "https://www.twilio.com/login",
+      "reason": "page too thin (6 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.twilio.com/en-us",
+      "requested_url": "https://twilio.com",
+      "status": 200,
+      "title": "Conversational AI and APIs for SMS, Email, Voice | Twilio",
+      "chars": 4985,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.twilio.com/docs",
+      "requested_url": "https://www.twilio.com/docs",
+      "status": 200,
+      "title": "Docs: API Reference, Tutorials, and Integration | Twilio",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://login.twilio.com/u/signup?state=hKFo2SBGUkVxN3BNaEZWdzRKa09iUGVCVWVMZllyMFU4ZXZQZaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFFETU9JbkM1ZTRTX0xuR1NEbnFDMzg1NkdLZnRUa296o2NpZNkgYm1pSTNGWGZzSmxqUEk3UzBUeWl3Znp3S1JsTEFrVnc",
+      "requested_url": "https://www.twilio.com/try-twilio",
+      "status": 200,
+      "title": "Twilio | Try Twilio Free",
+      "chars": 458,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/pricing",
+      "requested_url": "https://www.twilio.com/pricing",
+      "status": 200,
+      "title": "Twilio Pricing | Twilio",
+      "chars": 4555,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+      "status": 200,
+      "title": "Lookup API Pricing | Twilio",
+      "chars": 3527,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/help/sales",
+      "requested_url": "https://www.twilio.com/en-us/help/sales",
+      "status": 200,
+      "title": "Talk to Sales | Twilio",
+      "chars": 1325,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "status": 200,
+      "title": "User Authentication & Identity | Twilio",
+      "chars": 4971,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+      "status": 200,
+      "title": "Verify API | Twilio",
+      "chars": 4985,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Twilio provides communication and messaging APIs (such as SMS, Voice, Email via SendGrid, and Verify) that empower developers and AI agents to orchestrate customer conversations across channels.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses an Account SID and Auth Token set as environment variables and passed to the API client library.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free trial account without a credit card to obtain full API access.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\",\n      \"C# / .NET\",\n      \"PHP\",\n      \"Ruby\"\n    ],\n    \"notes\": \"Offers server-side SDKs and helper libraries for various programming languages.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No Model Context Protocol implementation is mentioned in the text.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve credentials are available via a free trial sign-up, and official server-side SDKs and documentation are provided.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.twilio.com/en-us\",\n      \"claim\": \"Sign up for a free trial Twilio account and official server-side SDKs to send messages and make calls.\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/docs\",\n      \"claim\": \"Provides API reference documentation, quickstarts, SDKs, and multi-language code samples.\"\n    },\n    {\n      \"url\": \"https://login.twilio.com/u/signup?state=hKFo2SBGUkVxN3BNaEZWdzRKa09iUGVCVWVMZllyMFU4ZXZQZaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFFETU9JbkM1ZTRTX0xuR1NEbnFDMzg1NkdLZnRUa296o2NpZNkgYm1pSTNGWGZzSmxqUEk3UzBUeWl3Znp3S1JsTEFrVnc\",\n      \"claim\": \"Start a free trial today with no credit card required and access all products.\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/en-us/help/sales\",\n      \"claim\": \"Full API access with generous free usage tiers and pay-as-you-go pricing upon signup.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint_url": "https://twilio.com",
+    "one_liner": "Twilio provides communication and messaging APIs (such as SMS, Voice, Email via SendGrid, and Verify) that empower developers and AI agents to orchestrate customer conversations across channels.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses an Account SID and Auth Token set as environment variables and passed to the API client library."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free trial account without a credit card to obtain full API access."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Python",
+        "C# / .NET",
+        "PHP",
+        "Ruby"
+      ],
+      "notes": "Offers server-side SDKs and helper libraries for various programming languages."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "No Model Context Protocol implementation is mentioned in the text."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve credentials are available via a free trial sign-up, and official server-side SDKs and documentation are provided."
+    },
+    "evidence": [
+      {
+        "url": "https://www.twilio.com/en-us",
+        "claim": "Sign up for a free trial Twilio account and official server-side SDKs to send messages and make calls.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.twilio.com/docs",
+        "claim": "Provides API reference documentation, quickstarts, SDKs, and multi-language code samples.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://login.twilio.com/u/signup?state=hKFo2SBGUkVxN3BNaEZWdzRKa09iUGVCVWVMZllyMFU4ZXZQZaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFFETU9JbkM1ZTRTX0xuR1NEbnFDMzg1NkdLZnRUa296o2NpZNkgYm1pSTNGWGZzSmxqUEk3UzBUeWl3Znp3S1JsTEFrVnc",
+        "claim": "Start a free trial today with no credit card required and access all products.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.twilio.com/en-us/help/sales",
+        "claim": "Full API access with generous free usage tiers and pay-as-you-go pricing upon signup.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:23:38.347002+00:00"
+}

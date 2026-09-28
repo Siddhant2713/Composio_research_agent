@@ -1,0 +1,179 @@
+{
+  "app": "Plain",
+  "number": 17,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:12:45.986886+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://plain.com/docs\",\n    \"https://docs.plain.com\",\n    \"https://plain.com/api\",\n    \"https://plain.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://plain.com",
+    "https://plain.com/docs",
+    "https://docs.plain.com",
+    "https://plain.com/api",
+    "https://plain.com/pricing",
+    "https://developer.plain.com/",
+    "https://developers.plain.com/",
+    "https://api.plain.com/",
+    "https://plain.com/developers",
+    "https://plain.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.plain.com/channels/contact-forms",
+    "https://www.plain.com/docs/graphql/introduction",
+    "https://www.plain.com/docs/graphql-reference/queries/activeThreadCluster",
+    "https://www.plain.com/docs/product/channels/contact-forms",
+    "https://help.plain.com/article/pricing"
+  ],
+  "boilerplate_lines_removed": 5,
+  "fetch_failures": [
+    {
+      "requested_url": "https://plain.com/api",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://developer.plain.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developers.plain.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://api.plain.com/",
+      "reason": "HTTP 403"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.plain.com/",
+      "requested_url": "https://plain.com",
+      "status": 200,
+      "title": "Plain \u2014 The AI Support Stack Built for B2B",
+      "chars": 4991,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.plain.com/docs/product/what-is-plain",
+      "requested_url": "https://plain.com/docs",
+      "status": 200,
+      "title": "What is Plain? - Plain Docs",
+      "chars": 2364,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.plain.com/pricing",
+      "requested_url": "https://plain.com/pricing",
+      "status": 200,
+      "title": "Plain Pricing \u2014 Plans from $35/seat/month | 7-Day Free Trial",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.plain.com/channels/contact-forms",
+      "requested_url": "https://www.plain.com/channels/contact-forms",
+      "status": 200,
+      "title": "Plain Contact Forms \u2014 Structured Support Requests from Inside Your Product",
+      "chars": 4311,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/introduction",
+      "requested_url": "https://www.plain.com/docs/graphql/introduction",
+      "status": 200,
+      "title": "Introduction - Plain Docs",
+      "chars": 1985,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql-reference/queries/activeThreadCluster",
+      "requested_url": "https://www.plain.com/docs/graphql-reference/queries/activeThreadCluster",
+      "status": 200,
+      "title": "activeThreadCluster - Plain Docs",
+      "chars": 1373,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.plain.com/docs/product/channels/contact-forms",
+      "requested_url": "https://www.plain.com/docs/product/channels/contact-forms",
+      "status": 200,
+      "title": "Contact forms - Plain Docs",
+      "chars": 1520,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.plain.com/article/pricing",
+      "requested_url": "https://help.plain.com/article/pricing",
+      "status": 200,
+      "title": "Plans & billing - Plain plans and pricing | Help Center",
+      "chars": 1736,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Plain is an AI support infrastructure and helpdesk platform built API-first with a GraphQL API for B2B teams.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authorization uses a Bearer token where the token is an API key passed in the Authorization header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Plans start with a free trial and can be signed up for via self-serve.\"\n  },\n  \"api_surface\": {\n    \"rest\": false,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"TypeScript\"\n    ],\n    \"notes\": \"Plain provides a fully typed GraphQL API and a TypeScript SDK.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"An MCP Server is mentioned for accessing the GraphQL API from an Agent.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve access to trial plans combined with a fully documented GraphQL API, TypeScript SDK, and MCP server make it easy to build integrations.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.plain.com/docs/product/what-is-plain\",\n      \"claim\": \"Plain is built API-first and everything the app can do, the GraphQL API can do.\"\n    },\n    {\n      \"url\": \"https://www.plain.com/docs/graphql/introduction\",\n      \"claim\": \"Details the GraphQL API URL, required headers including Authorization: Bearer YOUR_TOKEN where the token is an API key, and the TypeScript SDK.\"\n    },\n    {\n      \"url\": \"https://www.plain.com/docs/graphql/introduction\",\n      \"claim\": \"Mentions trying the MCP Server if looking to access the GraphQL API from an Agent.\"\n    },\n    {\n      \"url\": \"https://www.plain.com/pricing\",\n      \"claim\": \"Shows self-serve plans with a 7-day free trial and no credit card required.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://plain.com",
+    "one_liner": "Plain is an AI support infrastructure and helpdesk platform built API-first with a GraphQL API for B2B teams.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authorization uses a Bearer token where the token is an API key passed in the Authorization header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Plans start with a free trial and can be signed up for via self-serve."
+    },
+    "api_surface": {
+      "rest": false,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": [
+        "TypeScript"
+      ],
+      "notes": "Plain provides a fully typed GraphQL API and a TypeScript SDK."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "An MCP Server is mentioned for accessing the GraphQL API from an Agent."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve access to trial plans combined with a fully documented GraphQL API, TypeScript SDK, and MCP server make it easy to build integrations."
+    },
+    "evidence": [
+      {
+        "url": "https://www.plain.com/docs/product/what-is-plain",
+        "claim": "Plain is built API-first and everything the app can do, the GraphQL API can do.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.plain.com/docs/graphql/introduction",
+        "claim": "Details the GraphQL API URL, required headers including Authorization: Bearer YOUR_TOKEN where the token is an API key, and the TypeScript SDK.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.plain.com/docs/graphql/introduction",
+        "claim": "Mentions trying the MCP Server if looking to access the GraphQL API from an Agent.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://www.plain.com/pricing",
+        "claim": "Shows self-serve plans with a 7-day free trial and no credit card required.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:13:13.952194+00:00"
+}

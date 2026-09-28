@@ -1,0 +1,188 @@
+{
+  "app": "Front",
+  "number": 14,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T16:07:05.808059+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://dev.frontapp.com/\",\n    \"https://dev.frontapp.com/docs\",\n    \"https://dev.frontapp.com/reference\",\n    \"https://front.com/developers\",\n    \"https://help.front.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://front.com",
+    "https://dev.frontapp.com/",
+    "https://dev.frontapp.com/docs",
+    "https://dev.frontapp.com/reference",
+    "https://front.com/developers",
+    "https://help.front.com/",
+    "https://docs.front.com/",
+    "https://developer.front.com/",
+    "https://developers.front.com/",
+    "https://api.front.com/",
+    "https://front.com/docs",
+    "https://front.com/api",
+    "https://front.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://front.com/pricing",
+    "https://front.com/partners/channel",
+    "https://help.front.com/en/contact-us",
+    "https://front.com/teams/inbound-sales",
+    "https://front.com/partners/integration",
+    "https://front.com/compare/front-vs-sfdc",
+    "https://dev.frontapp.com/docs/oauth",
+    "https://dev.frontapp.com/docs/authentication",
+    "https://dev.frontapp.com/docs/chat-sdk-reference",
+    "https://dev.frontapp.com/docs/plugin-getting-started",
+    "https://dev.frontapp.com/reference/plugin-sdk-introduction",
+    "https://dev.frontapp.com/docs/autopilot-resolve-sdk-reference",
+    "https://dev.frontapp.com/reference/plugin-sdk-contact",
+    "https://dev.frontapp.com/reference/plugin-sdk-cancel-token",
+    "https://dev.frontapp.com/reference/plugin-sdk-pagination-token",
+    "https://dev.frontapp.com/reference/contacts",
+    "https://dev.frontapp.com/reference/list-notes",
+    "https://help.front.com/en/categories/185-getting-started"
+  ],
+  "boilerplate_lines_removed": 3,
+  "fetch_failures": [
+    {
+      "requested_url": "https://front.com/developers",
+      "reason": "HTTP 404"
+    },
+    {
+      "requested_url": "https://docs.front.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://developer.front.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known"
+    },
+    {
+      "requested_url": "https://help.front.com/en/contact-us",
+      "reason": "page too thin (115 chars)"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://front.com",
+      "requested_url": "https://front.com",
+      "status": 200,
+      "title": "Front | Customer service platform \u2014 powered by AI, designed for humans",
+      "chars": 3711,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dev.frontapp.com/docs/welcome",
+      "requested_url": "https://dev.frontapp.com/",
+      "status": 200,
+      "title": "Welcome",
+      "chars": 5000,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://dev.frontapp.com/reference/introduction",
+      "requested_url": "https://dev.frontapp.com/reference",
+      "status": 200,
+      "title": "Introduction",
+      "chars": 2596,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://help.front.com/",
+      "requested_url": "https://help.front.com/",
+      "status": 200,
+      "title": "Front Help Center",
+      "chars": 777,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://front.com/pricing",
+      "requested_url": "https://front.com/pricing",
+      "status": 200,
+      "title": "Front Pricing and Plans | Front",
+      "chars": 4905,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://front.com/partners/channel",
+      "requested_url": "https://front.com/partners/channel",
+      "status": 200,
+      "title": "Front Partner Program | SaaS Channel Partner",
+      "chars": 1375,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://front.com/teams/inbound-sales",
+      "requested_url": "https://front.com/teams/inbound-sales",
+      "status": 200,
+      "title": "Customer Operations Platform for Sales Teams | Front",
+      "chars": 3496,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://front.com/partners/integration",
+      "requested_url": "https://front.com/partners/integration",
+      "status": 200,
+      "title": "Front Integration Partner Program",
+      "chars": 1525,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Front Core API provides comprehensive control over all entities in Front from Contacts to Comments, utilizing REST.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Front supports OAuth2.0 as well as API Tokens.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"You can create a developer account by signing up here to get access to a free developer environment.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Core API communicates via JSON using REST, supports webhooks for real-time events, and provides Postman collections.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"MCP Server allows accessing Front data and actions through the MCP protocol.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"easy\",\n    \"reasoning\": \"Self-serve developer accounts can be created freely, and the Core API and authentication methods are thoroughly documented.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://dev.frontapp.com/docs/welcome\",\n      \"claim\": \"You can create a developer account by signing up here to get a free developer environment and access the APIs.\"\n    },\n    {\n      \"url\": \"https://dev.frontapp.com/reference/introduction\",\n      \"claim\": \"Front supports OAuth2.0 as well as API Tokens, and calls use the Core API base URL.\"\n    },\n    {\n      \"url\": \"https://dev.frontapp.com/docs/welcome\",\n      \"claim\": \"Lists MCP Server as a feature to access Front data and actions through the MCP protocol.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://front.com",
+    "one_liner": "Front Core API provides comprehensive control over all entities in Front from Contacts to Comments, utilizing REST.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Front supports OAuth2.0 as well as API Tokens."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "You can create a developer account by signing up here to get access to a free developer environment."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Core API communicates via JSON using REST, supports webhooks for real-time events, and provides Postman collections."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "MCP Server allows accessing Front data and actions through the MCP protocol."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Self-serve developer accounts can be created freely, and the Core API and authentication methods are thoroughly documented."
+    },
+    "evidence": [
+      {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "claim": "You can create a developer account by signing up here to get a free developer environment and access the APIs.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://dev.frontapp.com/reference/introduction",
+        "claim": "Front supports OAuth2.0 as well as API Tokens, and calls use the Core API base URL.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "claim": "Lists MCP Server as a feature to access Front data and actions through the MCP protocol.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-27T16:11:21.885273+00:00"
+}

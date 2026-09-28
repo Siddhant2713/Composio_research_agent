@@ -1,0 +1,185 @@
+{
+  "app": "Copper",
+  "number": 9,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-27T17:54:57.205865+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.copper.com\",\n    \"https://www.copper.com/api\",\n    \"https://support.copper.com/hc/en-us/articles/217983638-API-Getting-Started\",\n    \"https://www.copper.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://copper.com",
+    "https://developer.copper.com",
+    "https://www.copper.com/api",
+    "https://support.copper.com/hc/en-us/articles/217983638-API-Getting-Started",
+    "https://www.copper.com/pricing",
+    "https://docs.copper.com/",
+    "https://developers.copper.com/",
+    "https://api.copper.com/",
+    "https://copper.com/docs",
+    "https://copper.com/developers",
+    "https://copper.com/api",
+    "https://copper.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.copper.com/signup",
+    "https://www.copper.com/contact",
+    "https://www.copper.com/partners",
+    "https://www.copper.com/automate-sales",
+    "https://www.copper.com/manage-contacts",
+    "https://developer.copper.com/introduction/oauth/quickstart.html",
+    "https://developer.copper.com/introduction/oauth/flow.html",
+    "https://developer.copper.com/introduction/oauth/index.html",
+    "https://developer.copper.com/introduction/authentication.html",
+    "https://developer.copper.com/webhooks/overview.html",
+    "https://developer.copper.com/people/list-contact-types.html",
+    "https://www.copper.com/sales-reporting"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://www.copper.com/api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://support.copper.com/hc/en-us/articles/217983638-API-Getting-Started",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.copper.com/",
+      "reason": "page too thin (17 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developers.copper.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.copper.com/",
+      "reason": "page too thin (60 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.copper.com/",
+      "requested_url": "https://copper.com",
+      "status": 200,
+      "title": "CRM Software Solutions Company for Service Businesses | Copper CRM",
+      "chars": 4926,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://developer.copper.com",
+      "requested_url": "https://developer.copper.com",
+      "status": 200,
+      "title": "Getting started - Copper Developer API",
+      "chars": 1824,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.copper.com/pricing",
+      "requested_url": "https://www.copper.com/pricing",
+      "status": 200,
+      "title": "Pricing | Copper CRM",
+      "chars": 4925,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.copper.com/signup",
+      "requested_url": "https://www.copper.com/signup",
+      "status": 200,
+      "title": "Signup | Copper CRM",
+      "chars": 473,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.copper.com/contact",
+      "requested_url": "https://www.copper.com/contact",
+      "status": 200,
+      "title": "Contact Us | Copper CRM",
+      "chars": 592,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.copper.com/partners",
+      "requested_url": "https://www.copper.com/partners",
+      "status": 200,
+      "title": "Partners | Copper CRM",
+      "chars": 4357,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.copper.com/automate-sales",
+      "requested_url": "https://www.copper.com/automate-sales",
+      "status": 200,
+      "title": "Automate Sales with Copper CRM | Boost Efficiency & Close More Deals | Copper CRM",
+      "chars": 3964,
+      "accessed_at": "2026-09-27"
+    },
+    {
+      "url": "https://www.copper.com/manage-contacts",
+      "requested_url": "https://www.copper.com/manage-contacts",
+      "status": 200,
+      "title": "Manage contacts inside Gmail with Copper CRM | Copper CRM",
+      "chars": 4852,
+      "accessed_at": "2026-09-27"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper CRM resources.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The provided documentation pages mention the Developer API URL and Postman resources, but do not describe the specific authentication mechanism (such as API keys or OAuth2 tokens) required for API calls.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The provided pages do not describe how a developer obtains API credentials or accesses the Developer API.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The Copper Developer API provides a RESTful interface with JSON-formatted responses. Postman collections and environments are available.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"The Model Context Protocol is not mentioned in the documentation.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"unknown\",\n    \"reasoning\": \"While a REST API is documented at api.copper.com and Postman resources are provided, the documentation pages do not specify how to obtain credentials (access) or how to authenticate requests (auth), leaving buildability unknown.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.copper.com\",\n      \"claim\": \"The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources at https://api.copper.com/developer_api/.\"\n    },\n    {\n      \"url\": \"https://developer.copper.com\",\n      \"claim\": \"Postman collections and environments are available to interact with the Copper Developer API.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint_url": "https://copper.com",
+    "one_liner": "Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper CRM resources.",
+    "auth": {
+      "method": "unknown",
+      "notes": "The provided documentation pages mention the Developer API URL and Postman resources, but do not describe the specific authentication mechanism (such as API keys or OAuth2 tokens) required for API calls."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "The provided pages do not describe how a developer obtains API credentials or accesses the Developer API."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "The Copper Developer API provides a RESTful interface with JSON-formatted responses. Postman collections and environments are available."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "The Model Context Protocol is not mentioned in the documentation."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "While a REST API is documented at api.copper.com and Postman resources are provided, the documentation pages do not specify how to obtain credentials (access) or how to authenticate requests (auth), leaving buildability unknown."
+    },
+    "evidence": [
+      {
+        "url": "https://developer.copper.com",
+        "claim": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources at https://api.copper.com/developer_api/.",
+        "accessed_at": "2026-09-27"
+      },
+      {
+        "url": "https://developer.copper.com",
+        "claim": "Postman collections and environments are available to interact with the Copper Developer API.",
+        "accessed_at": "2026-09-27"
+      }
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-27T17:55:12.055859+00:00"
+}
