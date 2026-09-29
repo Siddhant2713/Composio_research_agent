@@ -27,11 +27,28 @@ DEFAULT_MODEL_CHAIN = (
 
 # Transient overload: the same model is worth another try after a pause.
 TRANSIENT = ("500", "502", "503", "UNAVAILABLE", "INTERNAL")
-# Quota exhausted: retrying this model changes nothing, so move on immediately and stop
-# trying it for the rest of the process. Over a 100-app batch this saves hours of sleeping.
+# Quota exhausted: retrying this model changes nothing, so move on immediately.
 QUOTA = ("429", "RESOURCE_EXHAUSTED")
 
-_exhausted: set[str] = set()
+# How long to stop trying a model after it fails. Quota windows are long; overload is
+# capacity and usually clears, so it gets a short rest and is then tried again.
+QUOTA_COOLDOWN = 30 * 60
+OVERLOAD_COOLDOWN = 10 * 60
+
+# model -> unix time until which to skip it. Without this, a model that is overloaded at the
+# start of a batch is retried three times per call for all 100 apps, which is roughly twenty
+# seconds of sleeping per app spent on a model already known to be unavailable.
+_cooldown: dict[str, float] = {}
+
+
+def _rest(model: str, seconds: int, why: str) -> None:
+    _cooldown[model] = time.time() + seconds
+    print(f"      ({model} {why}; resting {seconds // 60}m)")
+
+
+def _available(chain: list[str]) -> list[str]:
+    now = time.time()
+    return [m for m in chain if _cooldown.get(m, 0) <= now]
 
 
 class GeminiError(RuntimeError):
@@ -69,18 +86,25 @@ def generate_json(
         response_mime_type="application/json",
         response_schema=response_schema,
         temperature=temperature,
+        # This is a single-shot structured call with no tools, so the SDK's multi-turn
+        # automatic function calling is not wanted. Disabling it silences the advisory
+        # warning the SDK prints on every generate_content call.
+        automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
     )
 
     chain = models or model_chain()
 
-    # Every model out of quota: these windows are largely per-minute, so pause once and
-    # give them a chance to reset rather than failing 90-odd apps in a burst.
-    if all(model in _exhausted for model in chain):
-        print(f"      (all {len(chain)} models out of quota — pausing {quota_pause}s)")
-        time.sleep(quota_pause)
-        _exhausted.clear()
+    # Everything is resting: wait for the earliest model to come back rather than failing
+    # the remaining apps in a burst.
+    if not _available(chain):
+        soonest = min(_cooldown[m] for m in chain)
+        wait = max(0.0, min(soonest - time.time(), quota_pause))
+        print(f"      (all {len(chain)} models resting — waiting {wait:.0f}s)")
+        time.sleep(wait)
+        for model in chain:                       # give them all one more chance
+            _cooldown.pop(model, None)
 
-    usable = [m for m in chain if m not in _exhausted]
+    usable = _available(chain) or list(chain)
     last_error: Exception | None = None
 
     for model in usable:
@@ -98,8 +122,7 @@ def generate_json(
                 message = str(exc)
 
                 if any(code in message for code in QUOTA):
-                    _exhausted.add(model)
-                    print(f"      ({model} out of quota, skipping it from here on)")
+                    _rest(model, QUOTA_COOLDOWN, "out of quota")
                     break
 
                 if not any(code in message for code in TRANSIENT):
@@ -111,9 +134,10 @@ def generate_json(
                           f"in {sleep_for:.0f}s: {message[:60]})")
                     time.sleep(sleep_for)
                 else:
-                    print(f"      ({model} overloaded, falling back: {message[:60]})")
+                    _rest(model, OVERLOAD_COOLDOWN, "overloaded")
 
+    resting = sorted(m for m, until in _cooldown.items() if until > time.time())
     raise GeminiError(
         f"all models unavailable ({', '.join(usable)}); "
-        f"quota-exhausted so far: {sorted(_exhausted) or 'none'}: {last_error}"
+        f"resting: {resting or 'none'}: {last_error}"
     )
