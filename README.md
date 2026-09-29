@@ -34,6 +34,7 @@ Open `site/index.html` directly from disk — no server, no build step, no netwo
 | `GEMINI_API_KEY` | everything | extraction and candidate-URL proposals |
 | `GROQ_API_KEY` | verification | the adversarial re-check. Falls back to Gemini if unset |
 | `GEMINI_MODELS` | optional | comma-separated fallback chain, most-preferred first |
+| | | The default chain is the six live Flash models. Pro has no free-tier quota; on a paid key, prepend it: `GEMINI_MODELS=gemini-3.1-pro-preview,gemini-3.8-flash,gemini-3.6-flash,gemini-3-flash-preview,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite` |
 | `GROQ_MODEL` | optional | defaults to `openai/gpt-oss-120b` |
 | `AUDIT_PACE_SECONDS` | optional | seconds between audit calls (default 40) |
 

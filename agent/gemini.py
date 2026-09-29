@@ -16,6 +16,9 @@ from google import genai
 from google.genai import types
 
 # Ordered most- to least-preferred. Overridable via GEMINI_MODELS (comma-separated).
+# The six live Flash models as of Sept 2026. Pro is deliberately absent: it has no free-tier
+# quota, so including it would cost a failed call per cooldown cycle for nothing. On a paid
+# key, prepend gemini-3.1-pro-preview via GEMINI_MODELS.
 DEFAULT_MODEL_CHAIN = (
     "gemini-3.6-flash",
     "gemini-3.8-flash",
