@@ -96,6 +96,21 @@ If the access claim rests only on usage docs or marketing, mark it "no" or "part
 so in `problem`. Conversely, a line showing a developer generating their own key in the
 product's settings or console DOES confirm "self_serve" — that is access_docs, mark it "yes".
 
+Also for `access.tier`: if the text shows BOTH a self-serve signup AND an approval, review,
+waitlist or tier-upgrade step for fuller API access, then "mixed" is the correct claim and
+"self_serve" is wrong. Do not confirm "self_serve" just because one line supports it while
+the same text gates fuller access elsewhere.
+
+## When the claim is "unknown" or null
+The record declined to answer. Judge whether declining was CORRECT, not whether the text
+confirms the word "unknown":
+- "yes" — the text really is silent or too ambiguous to settle this field. Declining was the
+  right call. Put the closest relevant line in `supporting_line`, or null if nothing relates.
+- "no" — the text clearly establishes an answer that the record should have given. Quote the
+  line it missed and say in `problem` what the answer should have been.
+- "partial" — the text hints at an answer but does not establish it.
+An honest "unknown" against silent documentation is a correct record, not a failure.
+
 CLAIMS:
 {claims}
 

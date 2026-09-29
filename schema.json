@@ -52,7 +52,11 @@
           "type": "string",
           "enum": ["self_serve", "gated", "mixed", "unknown"]
         },
-        "notes": { "type": ["string", "null"] }
+        "notes": { "type": ["string", "null"] },
+        "reconciliation": {
+          "type": ["string", "null"],
+          "description": "How the tier squares with gate language found on the same pages."
+        }
       }
     },
     "api_surface": {

@@ -55,6 +55,9 @@ class Access(BaseModel):
 
     tier: AccessType = AccessType.unknown
     notes: Optional[str] = None
+    # How the tier squares with any gate language found on the same pages. Present so a
+    # reader can see that contradicting evidence was weighed, not skipped.
+    reconciliation: Optional[str] = None
 
 
 class ApiSurface(BaseModel):

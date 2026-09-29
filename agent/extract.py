@@ -41,8 +41,13 @@ EXTRACTION_SCHEMA: dict[str, Any] = {
             "properties": {
                 "tier": {"type": "string", "enum": ["self_serve", "gated", "mixed", "unknown"]},
                 "notes": {"type": "string", "nullable": True},
+                "reconciliation": {
+                    "type": "string",
+                    "nullable": True,
+                    "description": "How the tier squares with the gate lines listed in the prompt.",
+                },
             },
-            "required": ["tier", "notes"],
+            "required": ["tier", "notes", "reconciliation"],
         },
         "api_surface": {
             "type": "object",
@@ -185,11 +190,65 @@ Do not produce a buildability verdict. It is computed from `access`, `auth` and
 `api_surface` after your answer is validated, so that it always follows from the fields it
 depends on instead of being asserted on its own.
 
+## Lines you must reconcile before answering `access`
+{gate_lines}
+
 ## Fetched pages
 {corpus}
 
 Return only the JSON object.
 """
+
+GATE_INSTRUCTIONS = """These lines were found in the pages above and each suggests a newcomer
+may NOT simply help themselves to credentials. Before you answer `access`, account for them
+in `access.reconciliation`: say for each whether it gates API credentials for an outside
+developer, or is about something else (enterprise pricing, a marketplace listing, support).
+
+Finding one line showing self-serve signup does NOT settle the question while these exist.
+- If a self-serve tier exists but fuller API access needs review, approval, a video demo or
+  a tier upgrade, the answer is "mixed", not "self_serve".
+- If credentials themselves require applying, a waitlist or sales contact, it is "gated".
+- Only answer "self_serve" if none of these gates apply to getting API credentials.
+"""
+
+NO_GATE_LINES = """None found. No line in the fetched pages mentions applying for access,
+approval, review, a waitlist or contacting sales. Leave `access.reconciliation` null."""
+
+
+# Language that means a newcomer cannot simply help themselves. Found in code rather than
+# left to the model to notice: requiring one supporting quote proved to reward cherry-picking
+# — for LinkedIn Ads the model quoted "Create a developer application in the Developer Portal"
+# and answered self_serve while the same page said "apply for Standard tier access".
+GATE_PATTERNS = (
+    re.compile(r"[^.\n]*\bapply (?:for|to)\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\brequest (?:api )?access\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\b(?:tier )?upgrade request\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\bapproval (?:process|required)\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\b(?:app|application) review\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\bwaitlist\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\bcontact (?:our )?sales\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\bschedule a demo\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\baccount manager\b[^.\n]*\.", re.I),
+    re.compile(r"[^.\n]*\bmust be (?:approved|enabled by)\b[^.\n]*\.", re.I),
+)
+
+
+def find_gate_lines(pages: list[Page], limit: int = 6) -> list[tuple[str, str]]:
+    """Lines in the fetched text suggesting credentials are not simply self-issued."""
+    found: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for page in pages:
+        for pattern in GATE_PATTERNS:
+            for match in pattern.finditer(page.text):
+                line = " ".join(match.group(0).split())[:240]
+                key = line.lower()
+                if len(line) < 25 or key in seen:
+                    continue
+                seen.add(key)
+                found.append((page.url, line))
+                if len(found) >= limit:
+                    return found
+    return found
 
 
 def build_corpus(pages: list[Page]) -> str:
@@ -210,8 +269,19 @@ def extract_record(
     pages: list[Page],
 ) -> tuple[AppRecord, str, str]:
     """Extract a record for one app. Returns (record, raw_model_output, model_used)."""
+    gate_lines = find_gate_lines(pages)
+    if gate_lines:
+        rendered_gates = GATE_INSTRUCTIONS + "\n" + "\n".join(
+            f'- "{line}"\n  (from {url})' for url, line in gate_lines
+        )
+    else:
+        rendered_gates = NO_GATE_LINES
+
     prompt = EXTRACTION_PROMPT.format(
-        name=seed.name, category=seed.category, corpus=build_corpus(pages)
+        name=seed.name,
+        category=seed.category,
+        corpus=build_corpus(pages),
+        gate_lines=rendered_gates,
     )
     data, raw, model_used = generate_json(client, prompt, EXTRACTION_SCHEMA)
 
