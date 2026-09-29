@@ -1,0 +1,224 @@
+{
+  "app": "Pipedrive",
+  "number": 3,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:44:56.250947+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://pipedrive.developers.io/\",\n    \"https://developers.pipedrive.com/\",\n    \"https://developers.pipedrive.com/docs/api/v1\",\n    \"https://developers.pipedrive.com/docs/getting-started\",\n    \"https://developers.pipedrive.com/authentication\",\n    \"https://www.pipedrive.com/en/features/marketplace\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://pipedrive.com",
+    "https://pipedrive.developers.io/",
+    "https://developers.pipedrive.com/",
+    "https://developers.pipedrive.com/docs/api/v1",
+    "https://developers.pipedrive.com/docs/getting-started",
+    "https://developers.pipedrive.com/authentication",
+    "https://www.pipedrive.com/en/features/marketplace",
+    "https://docs.pipedrive.com/",
+    "https://developer.pipedrive.com/",
+    "https://api.pipedrive.com/",
+    "https://pipedrive.com/docs",
+    "https://pipedrive.com/developers",
+    "https://pipedrive.com/api",
+    "https://pipedrive.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.pipedrive.com/en/contact-sales",
+    "https://www.pipedrive.com/en/contact-sales-ai",
+    "https://www.pipedrive.com/en/products/sales/onboarding",
+    "https://www.pipedrive.com/en/partner",
+    "https://www.pipedrive.com/en/pricing",
+    "https://app.pipedrive.com/auth/login",
+    "https://www.pipedrive.com/en/products/sales",
+    "https://support.pipedrive.com/en/contact-us",
+    "https://www.pipedrive.com/en/resources/sales-pipeline-course",
+    "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+    "https://www.pipedrive.com/en/register"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://pipedrive.developers.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://docs.pipedrive.com/",
+      "reason": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.pipedrive.com/",
+      "requested_url": "https://pipedrive.com",
+      "status": 200,
+      "title": "Sales CRM & Pipeline Management Software | Pipedrive",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.pipedrive.com/",
+      "requested_url": "https://developers.pipedrive.com/",
+      "status": 200,
+      "title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "chars": 1959,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "requested_url": "https://developers.pipedrive.com/docs/api/v1",
+      "status": 200,
+      "title": "Pipedrive API Reference and Documentation",
+      "chars": 1771,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/getting-started",
+      "requested_url": "https://developers.pipedrive.com/docs/getting-started",
+      "status": 200,
+      "title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "chars": 145,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.pipedrive.com/authentication",
+      "requested_url": "https://developers.pipedrive.com/authentication",
+      "status": 200,
+      "title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "chars": 145,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/marketplace",
+      "requested_url": "https://www.pipedrive.com/en/features/marketplace",
+      "status": 200,
+      "title": "Pipedrive Marketplace | CRM Extensions & Apps",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/contact-sales",
+      "requested_url": "https://www.pipedrive.com/en/contact-sales",
+      "status": 200,
+      "title": "Contact Sales | Pipedrive",
+      "chars": 1479,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/contact-sales-ai",
+      "requested_url": "https://www.pipedrive.com/en/contact-sales-ai",
+      "status": 200,
+      "title": "Contact Sales AI | Pipedrive",
+      "chars": 1912,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/products/sales/onboarding",
+      "requested_url": "https://www.pipedrive.com/en/products/sales/onboarding",
+      "status": 200,
+      "title": "Onboarding | Pipedrive",
+      "chars": 4601,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/partner",
+      "requested_url": "https://www.pipedrive.com/en/partner",
+      "status": 200,
+      "title": "Partner Page | CRM Partners | Pipedrive",
+      "chars": 4439,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Pipedrive is a CRM and sales pipeline management software providing a RESTful API and Model Context Protocol (MCP) support for integrations.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The API is stateless and all requests are validated against an API token obtained manually from the Pipedrive app.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can obtain a sandbox account and API tokens directly through self-service.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Node.js\",\n      \"PHP\"\n    ],\n    \"notes\": \"Pipedrive offers a RESTful API using JSON, OpenAPI 3 specifications, webhooks, and official Node.js and PHP client libraries.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://www.pipedrive.com/en/marketplace\",\n    \"notes\": \"Pipedrive MCP is available to connect AI assistants to Pipedrive.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.pipedrive.com/\",\n      \"claim\": \"Pipedrive offers a 14-day free trial with no credit card required.\",\n      \"quote\": \"14-day free trial, no credit card required\"\n    },\n    {\n      \"url\": \"https://developers.pipedrive.com/docs/api/v1\",\n      \"claim\": \"The API is a RESTful API that validates requests against an API token.\",\n      \"quote\": \"This reference helps you implement the RESTful Pipedrive API. This API uses a JSON format for output and is capable of handling CORS (Cross-Origin Resource Sharing) requests. The API is stateless \u2013 all requests are validated against an API token.\"\n    },\n    {\n      \"url\": \"https://developers.pipedrive.com/docs/api/v1\",\n      \"claim\": \"The API token can be obtained manually from the Pipedrive app.\",\n      \"quote\": \"The API token can be obtained manually from the Pipedrive app.\"\n    },\n    {\n      \"url\": \"https://www.pipedrive.com/en/marketplace\",\n      \"claim\": \"Pipedrive MCP is available for connecting AI assistants.\",\n      \"quote\": \"Pipedrive MCP is now available\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.pipedrive.com/docs/api/v1\",\n      \"quote\": \"The API is stateless \u2013 all requests are validated against an API token. The API token can be obtained manually from the Pipedrive app.\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.pipedrive.com/docs/api/v1\",\n      \"quote\": \"To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes. Go to the Developer Sandbox Account page to learn more and request your own sandbox account.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.pipedrive.com/docs/api/v1\",\n      \"quote\": \"This reference helps you implement the RESTful Pipedrive API. This API uses a JSON format for output and is capable of handling CORS (Cross-Origin Resource Sharing) requests.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://www.pipedrive.com/en/marketplace\",\n      \"quote\": \"Connect your favorite AI assistant to Pipedrive with MCP.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint_url": "https://pipedrive.com",
+    "one_liner": "Pipedrive is a CRM and sales pipeline management software providing a RESTful API and Model Context Protocol (MCP) support for integrations.",
+    "auth": {
+      "method": "api_key",
+      "notes": "The API is stateless and all requests are validated against an API token obtained manually from the Pipedrive app."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can obtain a sandbox account and API tokens directly through self-service."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "Node.js",
+        "PHP"
+      ],
+      "notes": "Pipedrive offers a RESTful API using JSON, OpenAPI 3 specifications, webhooks, and official Node.js and PHP client libraries."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://www.pipedrive.com/en/marketplace",
+      "notes": "Pipedrive MCP is available to connect AI assistants to Pipedrive."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.pipedrive.com/",
+        "claim": "Pipedrive offers a 14-day free trial with no credit card required.",
+        "quote": "14-day free trial, no credit card required",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "claim": "The API is a RESTful API that validates requests against an API token.",
+        "quote": "This reference helps you implement the RESTful Pipedrive API. This API uses a JSON format for output and is capable of handling CORS (Cross-Origin Resource Sharing) requests. The API is stateless \u2013 all requests are validated against an API token.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "claim": "The API token can be obtained manually from the Pipedrive app.",
+        "quote": "The API token can be obtained manually from the Pipedrive app.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.pipedrive.com/en/marketplace",
+        "claim": "Pipedrive MCP is available for connecting AI assistants.",
+        "quote": "Pipedrive MCP is now available",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "quote": "The API is stateless \u2013 all requests are validated against an API token. The API token can be obtained manually from the Pipedrive app."
+      },
+      "access": {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "quote": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes. Go to the Developer Sandbox Account page to learn more and request your own sandbox account."
+      },
+      "api_surface": {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "quote": "This reference helps you implement the RESTful Pipedrive API. This API uses a JSON format for output and is capable of handling CORS (Cross-Origin Resource Sharing) requests."
+      },
+      "mcp": {
+        "url": "https://www.pipedrive.com/en/marketplace",
+        "quote": "Connect your favorite AI assistant to Pipedrive with MCP."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:45:12.222260+00:00"
+}

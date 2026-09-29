@@ -1,0 +1,579 @@
+===== https://podio.com
+TITLE: Work Management Platform | Streamline Collaboration & Workflows | Podio
+ACCESSED: 2026-09-28
+
+Work Management Platform | Streamline Collaboration & Workflows | Podio
+Welcome to the new Progress Podio! Now find more product info at our new website
+here
+or read the
+blog
+to learn more.
+Simplify Work, Amplify Results with Progress Podio
+Unify and automate work with no-code tools, flexible workflows and
+                            customizable business solutions.
+Sign Up
+Log In
+Structure, Automate and Scale—Your Way
+Podio supports building digital workspaces tailored to your team's unique
+                            processes. Whether you're tracking leads, managing projects, streamlining operations or
+                            automating approvals, Podio is built to support a wide range of workflows. With powerful
+                            no-code tools, automation and real-time collaboration, Podio helps you structure, scale and
+                            simplify work—on your terms.
+Key Capabilities:
+Customize
+No-code drag and drop builder to customize your data structure
+Personalized dashboards and workspace layouts
+Multiple data views: table, kanban, calendar and badge
+Pre-built templates to jumpstart setup
+Bidirectional relationship fields to link related data items
+Webforms for data intake to capture external submissions
+Automate
+Customize powerful workflows with If-This-Then-That rules
+Automate task assignments, status updates and notifications
+Use calculations and custom rules to power dynamic workflows
+Integrate with 3rd party tools and other systems of records
+Trigger actions across systems with API-first flexibility
+Generate pdf documents from templates
+Initiate signature and approval requests
+Automate email and SMS delivery using dynamic content
+Collaborate
+Real-time collaboration with comments, file sharing and mentions
+Shared workspaces among team members
+Client Access with free external licenses
+Mobile apps for iOS, Android and iPad
+Contextual search to find relevant content, conversations and records
+Multi-level permissions to support controlled sharing and focused teamwork
+Detailed user activity and revision history to support transparency and audit
+                                preparation
+Trusted Leader in Flexible Work Management Solutions
+Progress Podio
+                                Reviews 2025: Details, Pricing & Features | G2
+2025 G2 Easiest
+                                Setup
+2025 G2 Best Est.
+                                ROI
+2025 Capterra
+                                Shortlist for Team Communication
+2024 Capterra
+                                Shortlist for Digital Workplace
+2024 TrustRadius
+                                Tech Cares Awards
+Best Team Management
+                                Softwares
+The Business Benefit
+Boost Efficiency, Empower Teams
+and Scale with Confidence
+Podio supports businesses of all sizes streamline operations, improve
+                            visibility and make more informed decisions. Whether you're a startup or a global
+                            enterprise, Podio is built to support a range of needs with advanced automation and
+                            customizable workflows—leaving teams to focus on high-impact work.
+Boost Productivity
+Automate repetitive tasks and streamline handoffs with structured
+                            workflows that save time and minimize errors.
+Improve Collaboration
+Break down silos with shared workspaces, client access, real-time
+                            updates and mobile-ready tools.
+Enhance Visibility
+Centralize data, conversations and project updates in one place for
+                            real-time insights and accountability.
+Scale with Flexibility
+Tailor Podio to your evolving business needs with flexible
+                            architecture, robust APIs and security features designed to support enterprise needs.
+Accelerate Time to Value
+Quickly launch custom apps and workspaces using no-code
+                            tools.
+One Platform. Endless Possibilities.
+Support multiple work types—CRM, project tracking, approvals,
+                            and more—on a single platform to help reduce tool sprawl and license costs.
+Trusted by Thousands of Organisations... All Around the World!
+What Our Customers Say
+Real Teams. Real Results.
+Grew 30x with Podio generating 5x ROI in six months
+We wanted to have something custom,
+                                            and Anders (from Workways) told me about his Podio experience and how you
+                                            can build whatever you want and his recommendation on where to start.
+                                            Without Podio and its automations, my company would be a lot less
+                                            profitable.
+Stefan
+                                            Stojkovic,
+Founder, GulvKanonen
+In collaboration with trusted
+                                            Podio Partner, Workways
+Read full story
+Automate to operate without boundaries
+What can easily take 4-to-
+
+===== https://developers.podio.com/
+TITLE: Developers - Podio API Documentation
+ACCESSED: 2026-09-28
+
+Developers - Podio API Documentation
+Get an API key
+Authentication
+API Reference
+Tutorials
+Client Libraries
+Developer Forums
+Partner Extensions
+Terms of Use
+Getting started with Podio API
+The Podio API lets you integrate with other services and build tools and applications on top of Podio
+1
+Get an API Key
+Get started right away -
+generate your API key
+.
+2
+Browse the documentation
+Learn
+how the API works
+and
+what it can do
+.
+3
+Go live!
+Share your project -
+get featured in our showcase
+.
+What is the Podio API?
+The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for
+PHP
+,
+.NET
+,
+Ruby
+,
+Java
+,
+Python
+,
+Android
+and
+Objective-C
+which make working with common API operations very simple.
+What can you do with it?
+Quite a lot! In fact, the entire Podio frontend is built on the API, and we've exposed it all for you to use too. If you want to build event-driven applications, you have the ability to register
+webhooks
+in your Podio apps. There are some sensible
+rate-limits
+in place, but if you need us to raise them for your app, get in touch.
+How do I get started?
+You'll need a Podio account, first of all. Then you should review
+our Terms of API use
+and then
+grab an API key
+for each app you want to build from your account settings page.
+We recommend that you start out by getting to know the
+concepts and conventions
+of Podio and its API and learn how to
+authenticate
+with us, before you dive into the
+tutorials
+and the
+documentation
+.
+You will probably also want to look at our
+client libraries
+to see if we have one available for your prefered language or platform.
+If you need a hand, please post in the
+API developer forum
+.
+
+===== https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fdocs
+TITLE: Login | Podio
+ACCESSED: 2026-09-28
+
+Login | Podio
+Podio
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+{"environment":"production","use_bundled_assets":true,"serverTime":1790567146,"base_domain":"podio.com","uploadURL":"https://files.podio.com/upload","asset_host":"https://d3apguah0u98pa.cloudfront.net","decimalSeparator":".","endpoints":{"api":"https://api.podio.com","apiProxy":"https://podio.com/_proxy"},"gtm":{"account":"GTM-WGNRBW","dimensions":{}},"smrtPhone":"o58MJ3pKDphv3wGT2Sft2PG1IIHBi0sI","activeFeatures":["new_flat_modal_theme","uncheck_calender_by_default","tooltip_remove_escaping","limit_to_500_items","hide_completedtasks_enabled","use_braintree_dropin","show_mfa_tab","new_ui","new_app_view_sidebar","clear_browser_cache","conversation_message_delete","new_table_layout","app_share_with_users","stream_activity_group_limit"],"authenticity_identifier":"csrftoken","podioRequestId":"c552f3b9","on_employee_network":false,"isBrowserDeprecated":false,"conversions":{},"podio_text_editor_stylesheet_url":"https://d3apguah0u98pa.cloudfront.net/stylesheets-visual-refresh/_3607ba1c/compressed/text_editor_inner.css","jammit_asset_suffix":"/_3607ba1c"}
+{}
+{"locale":"en_US","moment":{"longDateFormat":{"LT":"h:mm A","L":"MM/DD/YYYY","LL":"MMMM D YYYY","LLL":"MMMM D YYYY LT","LLLL":"dddd, MMMM D YYYY LT"},"week":{"dow":"0","doy":"3"}},"fullCalendar":{"timeFormat":"h(:mm)a","axisFormat":"h(:mm)a","columnFormat":{"month":"ddd","week":"ddd M/D","day":"dddd M/D"}},"datePicker":{"dateFormat":"mm/dd/yy","firstDay":"0"},"timeEntry":{"show24Hours":false},"validations":{"date_regexp":"^(0[1-9]|1[012])\\/(0[1-9]|[12][0-9]|3[01])\\/(1|2)\\d\\d\\d$","number_regexp":"^-?(?:[\\d,]*)(?:\\.\\d+)?$"},"number":{"format":{"separator":".","delimiter":",","precision":3,"significant":false,"strip_insignificant_zeros":false},"currencySymbol":"$"},"placeholders":{"date":"MM/DD/YYYY"},"customDateTimeFormats":{"longDateWithoutYear":"MMMM D"}}
+
+===== https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fdeveloper
+TITLE: Login | Podio
+ACCESSED: 2026-09-28
+
+Login | Podio
+Podio
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+{"environment":"production","use_bundled_assets":true,"serverTime":1790567147,"base_domain":"podio.com","uploadURL":"https://files.podio.com/upload","asset_host":"https://d3apguah0u98pa.cloudfront.net","decimalSeparator":".","endpoints":{"api":"https://api.podio.com","apiProxy":"https://podio.com/_proxy"},"gtm":{"account":"GTM-WGNRBW","dimensions":{}},"smrtPhone":"o58MJ3pKDphv3wGT2Sft2PG1IIHBi0sI","activeFeatures":["new_flat_modal_theme","uncheck_calender_by_default","tooltip_remove_escaping","limit_to_500_items","hide_completedtasks_enabled","use_braintree_dropin","show_mfa_tab","new_ui","new_app_view_sidebar","clear_browser_cache","conversation_message_delete","new_table_layout","app_share_with_users","stream_activity_group_limit"],"authenticity_identifier":"csrftoken","podioRequestId":"acb8d13b","on_employee_network":false,"isBrowserDeprecated":false,"conversions":{},"podio_text_editor_stylesheet_url":"https://d3apguah0u98pa.cloudfront.net/stylesheets-visual-refresh/_3607ba1c/compressed/text_editor_inner.css","jammit_asset_suffix":"/_3607ba1c"}
+{}
+{"locale":"en_US","moment":{"longDateFormat":{"LT":"h:mm A","L":"MM/DD/YYYY","LL":"MMMM D YYYY","LLL":"MMMM D YYYY LT","LLLL":"dddd, MMMM D YYYY LT"},"week":{"dow":"0","doy":"3"}},"fullCalendar":{"timeFormat":"h(:mm)a","axisFormat":"h(:mm)a","columnFormat":{"month":"ddd","week":"ddd M/D","day":"dddd M/D"}},"datePicker":{"dateFormat":"mm/dd/yy","firstDay":"0"},"timeEntry":{"show24Hours":false},"validations":{"date_regexp":"^(0[1-9]|1[012])\\/(0[1-9]|[12][0-9]|3[01])\\/(1|2)\\d\\d\\d$","number_regexp":"^-?(?:[\\d,]*)(?:\\.\\d+)?$"},"number":{"format":{"separator":".","delimiter":",","precision":3,"significant":false,"strip_insignificant_zeros":false},"currencySymbol":"$"},"placeholders":{"date":"MM/DD/YYYY"},"customDateTimeFormats":{"longDateWithoutYear":"MMMM D"}}
+
+===== https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fdevelopers
+TITLE: Login | Podio
+ACCESSED: 2026-09-28
+
+Login | Podio
+Podio
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+{"environment":"production","use_bundled_assets":true,"serverTime":1790567148,"base_domain":"podio.com","uploadURL":"https://files.podio.com/upload","asset_host":"https://d3apguah0u98pa.cloudfront.net","decimalSeparator":".","endpoints":{"api":"https://api.podio.com","apiProxy":"https://podio.com/_proxy"},"gtm":{"account":"GTM-WGNRBW","dimensions":{}},"smrtPhone":"o58MJ3pKDphv3wGT2Sft2PG1IIHBi0sI","activeFeatures":["new_flat_modal_theme","uncheck_calender_by_default","tooltip_remove_escaping","limit_to_500_items","hide_completedtasks_enabled","use_braintree_dropin","show_mfa_tab","new_ui","new_app_view_sidebar","clear_browser_cache","conversation_message_delete","new_table_layout","app_share_with_users","stream_activity_group_limit"],"authenticity_identifier":"csrftoken","podioRequestId":"ff8f0a68","on_employee_network":false,"isBrowserDeprecated":false,"conversions":{},"podio_text_editor_stylesheet_url":"https://d3apguah0u98pa.cloudfront.net/stylesheets-visual-refresh/_3607ba1c/compressed/text_editor_inner.css","jammit_asset_suffix":"/_3607ba1c"}
+{}
+{"locale":"en_US","moment":{"longDateFormat":{"LT":"h:mm A","L":"MM/DD/YYYY","LL":"MMMM D YYYY","LLL":"MMMM D YYYY LT","LLLL":"dddd, MMMM D YYYY LT"},"week":{"dow":"0","doy":"3"}},"fullCalendar":{"timeFormat":"h(:mm)a","axisFormat":"h(:mm)a","columnFormat":{"month":"ddd","week":"ddd M/D","day":"dddd M/D"}},"datePicker":{"dateFormat":"mm/dd/yy","firstDay":"0"},"timeEntry":{"show24Hours":false},"validations":{"date_regexp":"^(0[1-9]|1[012])\\/(0[1-9]|[12][0-9]|3[01])\\/(1|2)\\d\\d\\d$","number_regexp":"^-?(?:[\\d,]*)(?:\\.\\d+)?$"},"number":{"format":{"separator":".","delimiter":",","precision":3,"significant":false,"strip_insignificant_zeros":false},"currencySymbol":"$"},"placeholders":{"date":"MM/DD/YYYY"},"customDateTimeFormats":{"longDateWithoutYear":"MMMM D"}}
+
+===== https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fapi
+TITLE: Login | Podio
+ACCESSED: 2026-09-28
+
+Login | Podio
+Podio
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+{"environment":"production","use_bundled_assets":true,"serverTime":1790567148,"base_domain":"podio.com","uploadURL":"https://files.podio.com/upload","asset_host":"https://d3apguah0u98pa.cloudfront.net","decimalSeparator":".","endpoints":{"api":"https://api.podio.com","apiProxy":"https://podio.com/_proxy"},"gtm":{"account":"GTM-WGNRBW","dimensions":{}},"smrtPhone":"o58MJ3pKDphv3wGT2Sft2PG1IIHBi0sI","activeFeatures":["new_flat_modal_theme","uncheck_calender_by_default","tooltip_remove_escaping","limit_to_500_items","hide_completedtasks_enabled","use_braintree_dropin","show_mfa_tab","new_ui","new_app_view_sidebar","clear_browser_cache","conversation_message_delete","new_table_layout","app_share_with_users","stream_activity_group_limit"],"authenticity_identifier":"csrftoken","podioRequestId":"a7af1905","on_employee_network":false,"isBrowserDeprecated":false,"conversions":{},"podio_text_editor_stylesheet_url":"https://d3apguah0u98pa.cloudfront.net/stylesheets-visual-refresh/_3607ba1c/compressed/text_editor_inner.css","jammit_asset_suffix":"/_3607ba1c"}
+{}
+{"locale":"en_US","moment":{"longDateFormat":{"LT":"h:mm A","L":"MM/DD/YYYY","LL":"MMMM D YYYY","LLL":"MMMM D YYYY LT","LLLL":"dddd, MMMM D YYYY LT"},"week":{"dow":"0","doy":"3"}},"fullCalendar":{"timeFormat":"h(:mm)a","axisFormat":"h(:mm)a","columnFormat":{"month":"ddd","week":"ddd M/D","day":"dddd M/D"}},"datePicker":{"dateFormat":"mm/dd/yy","firstDay":"0"},"timeEntry":{"show24Hours":false},"validations":{"date_regexp":"^(0[1-9]|1[012])\\/(0[1-9]|[12][0-9]|3[01])\\/(1|2)\\d\\d\\d$","number_regexp":"^-?(?:[\\d,]*)(?:\\.\\d+)?$"},"number":{"format":{"separator":".","delimiter":",","precision":3,"significant":false,"strip_insignificant_zeros":false},"currencySymbol":"$"},"placeholders":{"date":"MM/DD/YYYY"},"customDateTimeFormats":{"longDateWithoutYear":"MMMM D"}}
+
+===== https://podio.com/signup?force_locale=en_US
+TITLE: Podio
+ACCESSED: 2026-09-28
+
+Podio
+Podio
+Good decision.
+Create your
+free
+account and join over 500,000 teams getting their work done on Podio.
+English
+Dansk
+Deutsch
+Français
+Español
+Italiano
+Português brasileiro
+Nederlands
+日本語
+Svenska
+{"environment":"production","use_bundled_assets":true,"serverTime":1790567149,"base_domain":"podio.com","uploadURL":"https://files.podio.com/upload","asset_host":"https://d3apguah0u98pa.cloudfront.net","decimalSeparator":".","endpoints":{"api":"https://api.podio.com","apiProxy":"https://podio.com/_proxy"},"gtm":{"account":"GTM-WGNRBW","dimensions":{}},"smrtPhone":"o58MJ3pKDphv3wGT2Sft2PG1IIHBi0sI","activeFeatures":["new_flat_modal_theme","uncheck_calender_by_default","tooltip_remove_escaping","limit_to_500_items","hide_completedtasks_enabled","use_braintree_dropin","show_mfa_tab","new_ui","new_app_view_sidebar","clear_browser_cache","conversation_message_delete","new_table_layout","app_share_with_users","stream_activity_group_limit"],"authenticity_identifier":"csrftoken","podioRequestId":"c974258d","on_employee_network":false,"isBrowserDeprecated":false,"conversions":{},"podio_text_editor_stylesheet_url":"https://d3apguah0u98pa.cloudfront.net/stylesheets-visual-refresh/_3607ba1c/compressed/text_editor_inner.css","jammit_asset_suffix":"/_3607ba1c"}
+{}
+{"locale":"en_US","moment":{"longDateFormat":{"LT":"h:mm A","L":"MM/DD/YYYY","LL":"MMMM D YYYY","LLL":"MMMM D YYYY LT","LLLL":"dddd, MMMM D YYYY LT"},"week":{"dow":"0","doy":"3"}},"fullCalendar":{"timeFormat":"h(:mm)a","axisFormat":"h(:mm)a","columnFormat":{"month":"ddd","week":"ddd M/D","day":"dddd M/D"}},"datePicker":{"dateFormat":"mm/dd/yy","firstDay":"0"},"timeEntry":{"show24Hours":false},"validations":{"date_regexp":"^(0[1-9]|1[012])\\/(0[1-9]|[12][0-9]|3[01])\\/(1|2)\\d\\d\\d$","number_regexp":"^-?(?:[\\d,]*)(?:\\.\\d+)?$"},"number":{"format":{"separator":".","delimiter":",","precision":3,"significant":false,"strip_insignificant_zeros":false},"currencySymbol":"$"},"placeholders":{"date":"MM/DD/YYYY"},"customDateTimeFormats":{"longDateWithoutYear":"MMMM D"}}
+
+===== https://developers.podio.com/authentication
+TITLE: Authentication - Podio API Documentation
+ACCESSED: 2026-09-28
+
+Authentication - Podio API Documentation
+Getting started
+Get an API key
+API Reference
+Tutorials
+Client Libraries
+Developer Forums
+Partner Extensions
+Terms of Use
+How to authenticate with Podio API
+The Podio API uses the
+OAuth2 protocol
+for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flows depending on what kind of integration you are making.
+Before you can use the Podio API you must
+register your application
+. Your application is assigned a unique identifier, called "Client ID", together with a "Client Secret". You will need both of these to authenticate. The Client Secret should not be shared with anyone.
+Authentication flows
+Podio supports four different ways of autheticating depending on what kind of application you are building:
+Server-side flow
+This is the preferred way of authenticating for web apps.
+Client-side flow
+Use the client-side flow if your application does not have a server. Examples: Browser extensions, web app running purely in the browser, mobile or desktop applications.
+Username & password flow
+Use this flow only if none of the other flows are suitable. It requires the user's username and password to be shared.
+App authentication flow
+Use app authentication if you only need to interact with a single Podio app and do not need to authenticate as a specific user. Examples: Automated scripts.
+All of these authentication methods will provide you with an access token. You will be including this access token in any subsequent requests to the API. You will do this by including an HTTP header with the access token like so:
+Authorization: OAuth2 ACCESS_TOKEN
+Where ACCESS_TOKEN should be replaced with the actual access token you have obtained. If you are using one of our
+client libraries
+this is handled for you automatically.
+Token Expiry
+All tokens received have an associated expiry time. Access Token & refresh Token can be exchanged prior to expiry.
+Token Expiry Time:
+Access Token: 8 hours
+Refresh Token: 28 days
+Recommended Usage:
+By default, the access token is valid for
+8 hours
+. So, you need
+NOT
+request a new token with each new API call.
+App Authentication flow, being more secure, is the preferred way of authentication over Username and Password flow.
+Refreshing expired tokens
+In addition to the access token, the response also contains a
+expires_in
+parameter, and a
+refresh_token
+parameter. The value of the expires_in parameter is the number of seconds until the token expires. This is an example of a full response when obtaining an access token:
+{
+"access_token"
+:
+ACCESS_TOKEN
+,
+"token_type"
+:
+"bearer"
+,
+"expires_in"
+:
+EXPIRES_IN
+,
+"refresh_token"
+:
+REFRESH_TOKEN
+,
+"scope"
+:
+GRANTED_SCOPE_STRING
+,
+"ref"
+:
+{
+"type"
+:
+"user"
+,
+"id"
+:
+USER_ID
+}
+}
+See
+Scopes & Permissions
+for details about the value of
+GRANTED_SCOPE_STRING
+When the access token expires, you can use the refresh_token to "refresh" your access, and gain another access_token. To use the refresh_token you need to do a
+POST
+request to our token-endpoint with the
+grant_type
+set to
+refresh_token
+:
+HTTP
+METHOD:
+POST
+URL:
+https://api.podio.com/oauth/token/v
+2
+HEADER:
+"Content-Type: application/json"
+BODY:
+{
+"grant_type"
+:
+"refresh_token"
+,
+"client_id"
+:
+YOUR_APP_ID
+,
+"client_secret"
+:
+YOUR_APP_SECRET
+,
+"refresh_token"
+:
+REFRESH_TOKEN
+,
+}
+This request returns the same data as above, and you can continue to do this over and over again, to keep your application authenticated without having to ask the user to re-authenticate.
+State parameter & Cross Site Request Forgery (CSRF)
+In order to avoid Cross Site Request Forgery attacks, we recommend you to use an optional state-parameter to pass an identifier, and then validate the state on the response you get from our API.
+When you make the request to obtain the authorization code include the state parameter like so:
+https://podio.com/oauth/authorize?client_id=YOUR_APP_ID&redirect_uri=YOUR_URL
+&state=YOUR_CSRF_TOKEN
+When the Podio API redirects the user back to your application the state parameter is included and you can validate it:
+http://YOUR_URL?code=A_CODE_GENERATED_BY_SERVER
+&state=YOUR_CSRF_TOKEN
+The state parameter is optional. Any string value can be used.
+
+===== https://podio.com/extensions
+TITLE: Podio Extensions
+ACCESSED: 2026-09-28
+
+Podio Extensions
+Time Doctor helps you to track time accurately to your Podio tasks. Time Doctor also including time verification features such as viewing screenshots of your teams computer screen and viewing websites and applications used when working.
+View extension
+Skyvia is a universal cloud data platform that supports multiple Podio integration scenarios. It's designed to quickly and easily solve a wide range of data-related tasks, all without the need for coding. Skyvia allows users to sync Podio data with other data sources in one-way or bidirectionally, ingest (ETL or ELT) Podio data to a data warehouse, import and export CSV files to/from Podio in a convenient web-based user interface, activate enriched data by loading it back from a data warehouse to Podio using a reverse ETL approach, design advanced data pipelines working with multiple sources, data replication, backup, etc.Connect Podio data (including Items, Tasks, etc.) to all major cloud apps and on-premise databases to automate data movement in any direction.Skyvia supports over 190 connectors, making it a comprehensive solution for your data integration needs.CRM: Salesforce, Dynamics 365/CRM, HubSpot, Zoho, Pipedrive, Close CRME-commerce: Shopify, BigCommerce, ShipStationPayment processing: Stripe, Square, ZuoraMarketing automation: Marketo, Klaviyo, Reply, GetResponseDatabases: SQL Server, MySQL, PostgreSQL, BigQuery, Snowflake, RedshiftFile storage: FTP/SFTP, Google Drive, Dropbox, Box, OneDrive, S3BI tools: Looker Studio, Power BI, Tableau,  and many more.Why Customers Choose SkyviaEasy to use.100% cloud.Flexible pricing.Register for free
+View extension
+One click. Call logged. Deal closed.  Reach more prospects, increase productivity, and close more deals with smrtPhone, the only phone system built for Podio by passionate Podio Partners.Our deep integration into Podio means you spend more time growing your business and less time on clerical tasks. All data is effortlessly synced between smrtPhone and Podio. Optimize your inbound and outbound calls and texts, easily manage a dispersed team, and never miss an important call with our full-featured mobile app. Use call data and KPI reporting to make better marketing decisions, train your team, and refine your operations to close more deals in less time.And, when you’re ready to level up: Increase efficiency, maximize call volumes, and streamline follow ups with smrtDialer, our integrated 4-line sales dialer. We offer pay-as-you-go, affordable pricing ensuring you only pay for what you use.Built for PodioFully Integrated 4-line Sales dialer add-on for fast, efficient outreachAll calls, texts, and voicemails effortlessly logged in PodioSync contacts from Podio automaticallyOne-click calling from within PodioSMS API for automated text folllow-ups (using Citrix PWA)Inbound calls pop up in Podio (Chrome Extension)Call Monitoring/Whisper/Barge (PRO Feature)Automated Geo-Caller ID Matching (PRO Feature)Warm Transfers and Conferencing (PRO Feature)Full-featured mobile appsInstant tracking numbersEasy call managementCall routing and complex IVRFully customizable to fit your business Comprehensive Reporting and Data insightsEasier team managementFriendly, dedicated live support teamNew features added oftenNo long term contracts Bulk discounts available
+View extension
+Using Device Magic, you can use all the data you have in Podio to create custom mobile forms within your Podio account that can be sent to your team in the field and completed on their existing mobile devices, without an Internet connection. Once the form is completed, the data is instantly delivered into your Podio account.When you combine Device Magic with Podio, you get everything related to the job in one place, regardless of if it happens in the office or on the the job.
+View extension
+Devart SSIS Data Flow Components for Podio allow you to integrate Podio Items, Tasks, and other objects with other cloud applications and databases via SQL Server Integration Services (SSIS). They include optimized Podio Source, Podio Destination, and Podio Lookup components and provide their own Podio Connection Manager.With Devart SSIS Data Flow Components for Podio you can:quickly build SSIS-based integration solutions for Podio;automate Podio integration via SSIS Data Flow tasks;import and export CSV files to Podio;synchronize Podio with SQL Server or other data sources;and many more.SQL Support for Podio:Devart Podio Source supports SQL to get data from Podio. Simple statements are translated directly to Podio API calls and executed on the Podio side, and for more complex statements, the necessary data are queried from Podio and processed locally. You can specify complex SELECT statement with grouping, filtering, ordering, etc. in the Devart Podio Source editor.Convenient Devart Podio Source Editor:Devart Podio Source component offers a convenient editor, which displays all the Podio objects and their fields and allows you to quickly build a que
+
+===== https://developers.podio.com/doc
+TITLE: Podio API Documentation - Podio API Documentation
+ACCESSED: 2026-09-28
+
+Podio API Documentation - Podio API Documentation
+Getting started
+Get an API key
+Authentication
+Tutorials
+Client Libraries
+Developer Forums
+Partner Extensions
+Terms of Use
+Podio API Documentation
+Areas
+Our API is split up into different areas, that each contains a subset of methods grouped by functionality. You could call each area its own API, but we like to call them areas, because it's just a simple grouping.
+Core Areas
+Applications
+This area is used to manage application definitions.
+Comments
+Comments are made by users on different objects.
+Contacts
+Each user has a profile attached, that holds all the personal details of the user.
+Files
+This area contains all the files that can be uploaded to Podio by end users.
+Hooks
+Hooks are webhooks that can call external sites when certain actions occur in Podio.
+Items
+Items are entries in an app.
+OAuth authorization
+This API uses OAuth 2.
+Status
+Status messages are small texts that the users wishes to share with the other users in a space.
+Tasks
+Tasks are used to track what work has to be done.
+Other Areas
+Actions
+Actions are activities performed by users that does not pertain to one of the core objects in Podio, items, tasks and statuses.
+Alerts
+An alert is a ping from on user to one or more other users.
+App market
+Apps and packs can be shared to the app market so they can be installed and used by anyone.
+Batch
+This area contains all the batch operations that the user have executed.
+Calendar
+The calendar is used to get the calendar for a user.
+Conversations
+Conversations are private messages exchanged between &gt;=2 users.
+Devices
+Methods needed for supporting external devices like mobile phones and desktop clients.
+Email
+This area manages emails sent to and received from a user.
+Embeds
+Embeds are links shared by users in statuses, conversations and comments.
+Flows
+Causes:item.
+Forms
+Forms can be used to enable direct submission into apps from websites.
+Friends
+API for accessing and modifying one's friends in Podio: users that are (or have been in the past) in the same workspace or have interacted directly inside Podio (e.
+Grants
+Grants are single access permissions for specific objects, f.
+Importer
+Used for importing files into applications, for example, xlsx and xls files.
+Integrations
+This API controls the integration supported by Podio "out-of-the-box".
+Layout
+Manage application's layout (badge, relationship) definitions.
+Linked Accounts
+Linked Accounts represent connections to 3rd-party APIs like Google, Facebook, etc.
+Notifications
+A notification is an information about an event that occured in Podio.
+Organizations
+This area holds organizations.
+Questions
+The question area makes it possible to attach questions to other objects in Podio.
+Ratings
+Many objects can be rated including items and status messages.
+Recurrence
+Handles recurrence for different objects, currently tasks.
+Reference
+API for getting generic information about objects.
+Reminders
+Reminders are used to remind you about tasks with a due date.
+Search
+This API makes it possible to search across Podio.
+Space members
+Manages membership of spaces.
+Spaces
+A space is a work area.
+Stream
+The stream API will supply the different streams.
+Subscriptions
+Subscriptions allows the user to be notified when an object is created, updated, delete, comments added to it or rated.
+Tags
+Tags are words or short sentences that are used as metadata for objects.
+Users
+This area holds all the users which just includes basic operations.
+Views
+Views can be used to limit the items returned when viewing an app.
+Voting
+User-defined voting on an item.
+Widgets
+Widgets are small components that can be installed on an organization, space, app or user.

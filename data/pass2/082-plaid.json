@@ -1,0 +1,213 @@
+{
+  "app": "Plaid",
+  "number": 82,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:54:24.213311+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://plaid.com/docs\",\n    \"https://plaid.com/docs/api\",\n    \"https://dashboard.plaid.com/signup\",\n    \"https://plaid.com/docs/quickstart\",\n    \"https://plaid.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://plaid.com/docs",
+    "https://plaid.com/docs/api",
+    "https://dashboard.plaid.com/signup",
+    "https://plaid.com/docs/quickstart",
+    "https://plaid.com/pricing",
+    "https://docs.plaid.com/",
+    "https://developer.plaid.com/",
+    "https://developers.plaid.com/",
+    "https://api.plaid.com/",
+    "https://plaid.com/developers",
+    "https://plaid.com/api",
+    "https://plaid.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://plaid.com/docs/auth/",
+    "https://plaid.com/docs/layer",
+    "https://dashboard.plaid.com/signup",
+    "https://plaid.com/docs/api/oauth/",
+    "https://plaid.com/docs/api/partner/",
+    "https://plaid.com/docs/api/webhooks/",
+    "https://plaid.com/docs/api/processors/",
+    "https://plaid.com/docs/api/products/auth/",
+    "https://plaid.com/docs/api/processor-partners/",
+    "https://plaid.com/docs/auth/partnerships/",
+    "https://plaid.com/docs/auth/partnerships/dwolla/",
+    "https://plaid.com/docs/api/link/",
+    "https://plaid.com/docs/api/items/",
+    "https://plaid.com/docs/quickstart/glossary/",
+    "https://plaid.com/contact",
+    "https://plaid.com/layer/",
+    "https://plaid.com/partners/",
+    "https://plaid.com/products/auth/"
+  ],
+  "boilerplate_lines_removed": 5,
+  "fetch_failures": [
+    {
+      "requested_url": "https://dashboard.plaid.com/signup",
+      "reason": "page too thin (17 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.plaid.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.plaid.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://dashboard.plaid.com/signup",
+      "reason": "page too thin (17 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://plaid.com/docs/",
+      "requested_url": "https://plaid.com/docs",
+      "status": 200,
+      "title": "Home | Plaid Docs",
+      "chars": 3963,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/docs/api/",
+      "requested_url": "https://plaid.com/docs/api",
+      "status": 200,
+      "title": "API - Overview | Plaid Docs",
+      "chars": 4576,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/docs/quickstart/",
+      "requested_url": "https://plaid.com/docs/quickstart",
+      "status": 200,
+      "title": "Quickstart | Plaid Docs",
+      "chars": 4919,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/pricing/",
+      "requested_url": "https://plaid.com/pricing",
+      "status": 200,
+      "title": "Pricing - United States & Canada | Plaid",
+      "chars": 4178,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/docs/auth/",
+      "requested_url": "https://plaid.com/docs/auth/",
+      "status": 200,
+      "title": "Auth - Introduction to Auth | Plaid Docs",
+      "chars": 4978,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/docs/layer/",
+      "requested_url": "https://plaid.com/docs/layer",
+      "status": 200,
+      "title": "Layer - Introduction to Plaid Layer | Plaid Docs",
+      "chars": 4986,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/docs/api/oauth/",
+      "requested_url": "https://plaid.com/docs/api/oauth/",
+      "status": 200,
+      "title": "API - OAuth | Plaid Docs",
+      "chars": 4806,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://plaid.com/docs/api/partner/",
+      "requested_url": "https://plaid.com/docs/api/partner/",
+      "status": 200,
+      "title": "API - Reseller partners | Plaid Docs",
+      "chars": 4938,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Plaid provides financial technology APIs enabling applications to connect with user bank accounts for payments, auth, balance, transactions, and other financial services.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Almost all Plaid API endpoints require a client ID and secret (`PLAID-CLIENT-ID` and `PLAID-SECRET` headers or request body fields), though an OAuth 2.0 endpoint (`/oauth/token`) is also provided for token exchange and obtaining tokens.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can obtain API access by signing up in the Plaid Dashboard and starting in the Sandbox environment for free.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"The Plaid API is JSON over HTTPS via REST endpoints and includes webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Mentioned as part of OAuth scope (`mcp:dashboard` allows access to the MCP dashboard server).\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://plaid.com/docs/api/\",\n      \"claim\": \"API uses JSON over HTTP(S) and requires client ID and secret headers.\",\n      \"quote\": \"Almost all Plaid API endpoints require a . These may be sent either in the request body or in the headers PLAID-CLIENT-ID PLAID-SECRET\"\n    },\n    {\n      \"url\": \"https://plaid.com/docs/api/\",\n      \"claim\": \"API access can be obtained by creating an account on the Plaid Dashboard.\",\n      \"quote\": \"To gain access to the Plaid API, create an account on the Plaid Dashboard .\"\n    },\n    {\n      \"url\": \"https://plaid.com/docs/api/oauth/\",\n      \"claim\": \"OAuth scopes include MCP dashboard access.\",\n      \"quote\": \"mcp:dashboard allows access to the MCP dashboard server.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://plaid.com/docs/api/\",\n      \"quote\": \"Almost all Plaid API endpoints require a . These may be sent either in the request body or in the headers PLAID-CLIENT-ID PLAID-SECRET\"\n    },\n    \"access\": {\n      \"url\": \"https://plaid.com/docs/api/\",\n      \"quote\": \"To gain access to the Plaid API, create an account on the Plaid Dashboard .\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://plaid.com/docs/api/\",\n      \"quote\": \"The Plaid API is JSON over HTTP.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://plaid.com/docs/api/oauth/\",\n      \"quote\": \"mcp:dashboard allows access to the MCP dashboard server.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint_url": "https://plaid.com/docs",
+    "one_liner": "Plaid provides financial technology APIs enabling applications to connect with user bank accounts for payments, auth, balance, transactions, and other financial services.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Almost all Plaid API endpoints require a client ID and secret (`PLAID-CLIENT-ID` and `PLAID-SECRET` headers or request body fields), though an OAuth 2.0 endpoint (`/oauth/token`) is also provided for token exchange and obtaining tokens."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can obtain API access by signing up in the Plaid Dashboard and starting in the Sandbox environment for free."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "The Plaid API is JSON over HTTPS via REST endpoints and includes webhooks."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Mentioned as part of OAuth scope (`mcp:dashboard` allows access to the MCP dashboard server)."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://plaid.com/docs/api/",
+        "claim": "API uses JSON over HTTP(S) and requires client ID and secret headers.",
+        "quote": "Almost all Plaid API endpoints require a . These may be sent either in the request body or in the headers PLAID-CLIENT-ID PLAID-SECRET",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://plaid.com/docs/api/",
+        "claim": "API access can be obtained by creating an account on the Plaid Dashboard.",
+        "quote": "To gain access to the Plaid API, create an account on the Plaid Dashboard .",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://plaid.com/docs/api/oauth/",
+        "claim": "OAuth scopes include MCP dashboard access.",
+        "quote": "mcp:dashboard allows access to the MCP dashboard server.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "Almost all Plaid API endpoints require a . These may be sent either in the request body or in the headers PLAID-CLIENT-ID PLAID-SECRET"
+      },
+      "access": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "To gain access to the Plaid API, create an account on the Plaid Dashboard ."
+      },
+      "api_surface": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "The Plaid API is JSON over HTTP."
+      },
+      "mcp": {
+        "url": "https://plaid.com/docs/api/oauth/",
+        "quote": "mcp:dashboard allows access to the MCP dashboard server."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:54:41.194645+00:00"
+}

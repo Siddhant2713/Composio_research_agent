@@ -1,0 +1,200 @@
+{
+  "app": "Ahrefs",
+  "number": 53,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:19:35.797963+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://ahrefs.com/api\",\n    \"https://ahrefs.com/help/category/ahrefs-api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://ahrefs.com/api",
+    "https://ahrefs.com/help/category/ahrefs-api",
+    "https://docs.ahrefs.com/",
+    "https://developer.ahrefs.com/",
+    "https://developers.ahrefs.com/",
+    "https://api.ahrefs.com/",
+    "https://ahrefs.com/docs",
+    "https://ahrefs.com/developers",
+    "https://ahrefs.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+    "https://docs.ahrefs.com/en/api/docs/introduction",
+    "https://docs.ahrefs.com/en/api/reference/site-explorer",
+    "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+    "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://ahrefs.com/help/category/ahrefs-api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.ahrefs.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.ahrefs.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://api.ahrefs.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://ahrefs.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://ahrefs.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.ahrefs.com",
+      "requested_url": "https://ahrefs.com/api",
+      "status": 200,
+      "title": "Ahrefs for Developers",
+      "chars": 3216,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ahrefs.com/",
+      "requested_url": "https://docs.ahrefs.com/",
+      "status": 200,
+      "title": "Ahrefs for Developers",
+      "chars": 3216,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+      "requested_url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+      "status": 200,
+      "title": "OAuth guide | Ahrefs for Developers",
+      "chars": 3924,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "requested_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "status": 200,
+      "title": "Introduction | Ahrefs for Developers",
+      "chars": 3947,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/api/reference/site-explorer",
+      "requested_url": "https://docs.ahrefs.com/en/api/reference/site-explorer",
+      "status": 200,
+      "title": "Site Explorer | Ahrefs for Developers",
+      "chars": 1447,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+      "requested_url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+      "status": 200,
+      "title": "How to apply | Ahrefs for Developers",
+      "chars": 742,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "requested_url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "status": 200,
+      "title": "API keys creation and management | Ahrefs for Developers",
+      "chars": 1092,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API requests require providing an API key in the Authorization header as a Bearer token. For Ahrefs Connect third-party apps, OAuth 2.0 Authorization Code Flow with PKCE is used.\"\n  },\n  \"access\": {\n    \"tier\": \"mixed\",\n    \"notes\": \"Ahrefs API is available on eligible paid plans with limited free test queries, while Ahrefs Connect integration program requires submitting an application form.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"REST API v3 is provided with an OpenAPI specification and endpoints for various search and marketing data.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://docs.ahrefs.com\",\n    \"notes\": \"Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management\",\n      \"claim\": \"API keys are provided in the Authorization header as a Bearer token\",\n      \"quote\": \"Authorization: Bearer YOUR_API_KEY\"\n    },\n    {\n      \"url\": \"https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide\",\n      \"claim\": \"Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)\",\n      \"quote\": \"Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE).\"\n    },\n    {\n      \"url\": \"https://docs.ahrefs.com/en/api/docs/introduction\",\n      \"claim\": \"Ahrefs API is available on eligible paid plans with limited test queries\",\n      \"quote\": \"Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.\"\n    },\n    {\n      \"url\": \"https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply\",\n      \"claim\": \"Applications to the integration program require submitting an application form\",\n      \"quote\": \"Submit the application form with:\"\n    },\n    {\n      \"url\": \"https://docs.ahrefs.com\",\n      \"claim\": \"MCP integration connects Ahrefs data to AI assistants\",\n      \"quote\": \"Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management\",\n      \"quote\": \"Authorization: Bearer YOUR_API_KEY\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.ahrefs.com/en/api/docs/introduction\",\n      \"quote\": \"Ahrefs API is available on eligible paid plans.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.ahrefs.com/en/api/reference/site-explorer\",\n      \"quote\": \"Base URL\\nhttps://api.ahrefs.com/v3/site-explorer\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.ahrefs.com\",\n      \"quote\": \"Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://ahrefs.com/api",
+    "one_liner": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management."
+    },
+    "access": {
+      "tier": "mixed",
+      "notes": "Ahrefs API is available on eligible paid plans with limited free test queries, while Ahrefs Connect integration program requires submitting an application form."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://docs.ahrefs.com/en/api/reference/site-explorer."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://docs.ahrefs.com",
+      "notes": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "A self-serve tier exists but important capabilities sit behind a gate. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "claim": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)",
+        "quote": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE).",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+        "claim": "Ahrefs API is available on eligible paid plans with limited test queries",
+        "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply",
+        "claim": "Applications to the integration program require submitting an application form",
+        "quote": "Submit the application form with:",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.ahrefs.com",
+        "claim": "MCP integration connects Ahrefs data to AI assistants",
+        "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+        "quote": "Ahrefs API is available on eligible paid plans."
+      },
+      "mcp": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights."
+      }
+    },
+    "unsupported_fields": [
+      "auth: quoted line not found on https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "api_surface: quoted line not found on https://docs.ahrefs.com/en/api/reference/site-explorer"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:25:37.223231+00:00"
+}

@@ -1,0 +1,209 @@
+{
+  "app": "systeme.io",
+  "number": 37,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:14:13.463773+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://systeme.io\",\n    \"https://systeme.io/blog/api\",\n    \"https://help.systeme.io\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://systeme.io",
+    "https://systeme.io/blog/api",
+    "https://help.systeme.io",
+    "https://docs.systeme.io/",
+    "https://developer.systeme.io/",
+    "https://developers.systeme.io/",
+    "https://api.systeme.io/",
+    "https://systeme.io/docs",
+    "https://systeme.io/developers",
+    "https://systeme.io/api",
+    "https://systeme.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://systeme.io/pricing",
+    "https://systeme.io/register",
+    "https://systeme.io/sales-funnels",
+    "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "https://help.systeme.io/category/146-sales-funnel",
+    "https://help.systeme.io/category/537-contacts-management",
+    "https://help.systeme.io/article/166-how-to-contact-systeme-io-support",
+    "https://help.systeme.io/article/316-how-to-authenticate-your-personal-domain-name",
+    "https://developer.systeme.io/reference/contact",
+    "https://developer.systeme.io/reference/post_contact-1",
+    "https://developer.systeme.io/reference/delete_contact-1",
+    "https://developer.systeme.io/reference/post_contact_tag-1",
+    "https://developer.systeme.io/reference/api_webhooks_post-1",
+    "https://developer.systeme.io/reference/delete_contact_tag-1"
+  ],
+  "boilerplate_lines_removed": 4,
+  "fetch_failures": [
+    {
+      "requested_url": "https://systeme.io/blog/api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.systeme.io/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.systeme.io/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://systeme.io/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://systeme.io/register",
+      "reason": "page too thin (91 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://systeme.io",
+      "requested_url": "https://systeme.io",
+      "status": 200,
+      "title": "Systeme.io - The only tool you need to launch your online business",
+      "chars": 1508,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.systeme.io",
+      "requested_url": "https://help.systeme.io",
+      "status": 200,
+      "title": "systeme.io Help Center",
+      "chars": 818,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.systeme.io/reference/api",
+      "requested_url": "https://developer.systeme.io/",
+      "status": 200,
+      "title": "Public API",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://systeme.io/pricing",
+      "requested_url": "https://systeme.io/pricing",
+      "status": 200,
+      "title": "Systeme.io Pricing \u2014 Free, Startup, Webinar, Unlimited Plans",
+      "chars": 4978,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://systeme.io/sales-funnels",
+      "requested_url": "https://systeme.io/sales-funnels",
+      "status": 200,
+      "title": "The easiest funnel builder you\u2019ll ever use",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "requested_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "status": 200,
+      "title": "How to use the systeme.io public API (Application Programming Interface) | systeme.io Help Center",
+      "chars": 4956,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.systeme.io/category/146-sales-funnel",
+      "requested_url": "https://help.systeme.io/category/146-sales-funnel",
+      "status": 200,
+      "title": "systeme.io Help Center",
+      "chars": 1075,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Systeme.io public API for managing contacts, tags, campaigns, funnels, price plans, and courses.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can generate API keys directly inside their Systeme.io dashboard profile settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"claim\": \"The API adheres to RESTful conventions.\",\n      \"quote\": \"Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.\"\n    },\n    {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"claim\": \"API keys are generated in profile settings.\",\n      \"quote\": \"Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \\\"Public API keys\\\" section.\"\n    },\n    {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"claim\": \"Authentication uses the X-API-Key header.\",\n      \"quote\": \"To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request.\"\n    },\n    {\n      \"url\": \"https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io\",\n      \"claim\": \"Steps to generate an API key via the dashboard.\",\n      \"quote\": \"Click on your profile picture and select Settings (1).\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"quote\": \"To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request.\"\n    },\n    \"access\": {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"quote\": \"Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \\\"Public API keys\\\" section.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developer.systeme.io/reference/api\",\n      \"quote\": \"Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://systeme.io",
+    "one_liner": "Systeme.io public API for managing contacts, tags, campaigns, funnels, price plans, and courses.",
+    "auth": {
+      "method": "api_key",
+      "notes": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can generate API keys directly inside their Systeme.io dashboard profile settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.systeme.io/reference/api",
+        "claim": "The API adheres to RESTful conventions.",
+        "quote": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.systeme.io/reference/api",
+        "claim": "API keys are generated in profile settings.",
+        "quote": "Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \"Public API keys\" section.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.systeme.io/reference/api",
+        "claim": "Authentication uses the X-API-Key header.",
+        "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "claim": "Steps to generate an API key via the dashboard.",
+        "quote": "Click on your profile picture and select Settings (1).",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developer.systeme.io/reference/api",
+        "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request."
+      },
+      "access": {
+        "url": "https://developer.systeme.io/reference/api",
+        "quote": "Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \"Public API keys\" section."
+      },
+      "api_surface": {
+        "url": "https://developer.systeme.io/reference/api",
+        "quote": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:14:27.886220+00:00"
+}

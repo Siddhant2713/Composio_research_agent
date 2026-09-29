@@ -1,0 +1,204 @@
+{
+  "app": "Brex",
+  "number": 88,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:00:19.790053+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.brex.com\",\n    \"https://developer.brex.com/docs/welcome/\",\n    \"https://developer.brex.com/api-reference/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.brex.com",
+    "https://developer.brex.com/docs/welcome/",
+    "https://developer.brex.com/api-reference/",
+    "https://docs.brex.com/",
+    "https://developers.brex.com/",
+    "https://api.brex.com/",
+    "https://brex.com/docs",
+    "https://brex.com/developers",
+    "https://brex.com/api",
+    "https://brex.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.brex.com/guides/quickstart",
+    "https://developer.brex.com/openapi/webhooks_api",
+    "https://developer.brex.com/openapi/onboarding_api",
+    "https://developer.brex.com/examples/onboarding_examples",
+    "https://developer.brex.com/_auth/idp-login?idpId=oidc&localePrefix=&redirectTo=",
+    "https://developer.brex.com/docs/authentication/",
+    "https://www.brex.com/signup",
+    "https://www.brex.com/pricing",
+    "https://www.brex.com/partners",
+    "https://www.brex.com/contact-us",
+    "https://partners.brex.com/directory/"
+  ],
+  "boilerplate_lines_removed": 17,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.brex.com/docs/welcome/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.brex.com/api-reference/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.brex.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.brex.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://brex.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.brex.com/openapi/webhooks_api",
+      "reason": "page too thin (12 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.brex.com/openapi/onboarding_api",
+      "reason": "page too thin (14 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.brex.com/_auth/idp-login?idpId=oidc&localePrefix=&redirectTo=",
+      "reason": "page too thin (7 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.brex.com",
+      "requested_url": "https://developer.brex.com",
+      "status": 200,
+      "title": "Overview",
+      "chars": 1554,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.brex.com/",
+      "requested_url": "https://developers.brex.com/",
+      "status": 200,
+      "title": "Overview",
+      "chars": 1554,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.brex.com/support/brex-api",
+      "requested_url": "https://brex.com/docs",
+      "status": 200,
+      "title": "Brex API",
+      "chars": 3089,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "requested_url": "https://developer.brex.com/guides/quickstart",
+      "status": 200,
+      "title": "Quickstart",
+      "chars": 2357,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.brex.com/examples/onboarding_examples",
+      "requested_url": "https://developer.brex.com/examples/onboarding_examples",
+      "status": 200,
+      "title": "Onboarding API examples",
+      "chars": 1860,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Brex provides a unified spend platform with a public REST API using Bearer token authentication to manage corporate cards, expenses, budgets, payments, and onboarding.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses user tokens passed via the Authorization: Bearer <TOKEN> header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Account and card admins can generate user tokens directly from the Brex dashboard under Settings > Developer.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Brex APIs use REST architecture, are defined using OpenAPI, accept and return JSON, and require HTTPS.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.brex.com\",\n      \"claim\": \"Brex APIs use the REST architecture and include a Webhooks API.\",\n      \"quote\": \"Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs.\"\n    },\n    {\n      \"url\": \"https://developer.brex.com/guides/quickstart\",\n      \"claim\": \"Authentication uses a bearer token passed in the header.\",\n      \"quote\": \"To do so, add the header Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE> and make a GET request to https://api.brex.com/v2/users/me with your language/tool of choice.\"\n    },\n    {\n      \"url\": \"https://www.brex.com/support/brex-api\",\n      \"claim\": \"Account or card admins can generate API tokens in the dashboard.\",\n      \"quote\": \"Only account or card admins can create API tokens in the dashboard.\"\n    },\n    {\n      \"url\": \"https://developer.brex.com/guides/quickstart\",\n      \"claim\": \"Tokens are created through the Brex dashboard settings.\",\n      \"quote\": \"Settings > Developer. You'll have to login as an account admin if you haven't already.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developer.brex.com/guides/quickstart\",\n      \"quote\": \"To do so, add the header Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE> and make a GET request to https://api.brex.com/v2/users/me with your language/tool of choice.\"\n    },\n    \"access\": {\n      \"url\": \"https://www.brex.com/support/brex-api\",\n      \"quote\": \"Check your role permissions and if you\u2019re authorized, generate a user token from your Brex dashboard following these instructions.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developer.brex.com\",\n      \"quote\": \"Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint_url": "https://developer.brex.com",
+    "one_liner": "Brex provides a unified spend platform with a public REST API using Bearer token authentication to manage corporate cards, expenses, budgets, payments, and onboarding.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses user tokens passed via the Authorization: Bearer <TOKEN> header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Account and card admins can generate user tokens directly from the Brex dashboard under Settings > Developer."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Brex APIs use REST architecture, are defined using OpenAPI, accept and return JSON, and require HTTPS."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.brex.com",
+        "claim": "Brex APIs use the REST architecture and include a Webhooks API.",
+        "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.brex.com/guides/quickstart",
+        "claim": "Authentication uses a bearer token passed in the header.",
+        "quote": "To do so, add the header Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE> and make a GET request to https://api.brex.com/v2/users/me with your language/tool of choice.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.brex.com/support/brex-api",
+        "claim": "Account or card admins can generate API tokens in the dashboard.",
+        "quote": "Only account or card admins can create API tokens in the dashboard.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.brex.com/guides/quickstart",
+        "claim": "Tokens are created through the Brex dashboard settings.",
+        "quote": "Settings > Developer. You'll have to login as an account admin if you haven't already.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developer.brex.com/guides/quickstart",
+        "quote": "To do so, add the header Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE> and make a GET request to https://api.brex.com/v2/users/me with your language/tool of choice."
+      },
+      "access": {
+        "url": "https://www.brex.com/support/brex-api",
+        "quote": "Check your role permissions and if you\u2019re authorized, generate a user token from your Brex dashboard following these instructions."
+      },
+      "api_surface": {
+        "url": "https://developer.brex.com",
+        "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T05:01:41.503564+00:00"
+}

@@ -1,0 +1,225 @@
+{
+  "app": "Pinterest",
+  "number": 38,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:14:27.887401+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.pinterest.com\",\n    \"https://developers.pinterest.com/docs/getting-started/introduction/\",\n    \"https://developers.pinterest.com/docs/api/v5/\",\n    \"https://developers.pinterest.com/docs/getting-started/authentication/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.pinterest.com",
+    "https://developers.pinterest.com/docs/getting-started/introduction/",
+    "https://developers.pinterest.com/docs/api/v5/",
+    "https://developers.pinterest.com/docs/getting-started/authentication/",
+    "https://docs.pinterest.com/",
+    "https://developer.pinterest.com/",
+    "https://api.pinterest.com/",
+    "https://pinterest.com/docs",
+    "https://pinterest.com/developers",
+    "https://pinterest.com/api",
+    "https://pinterest.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://help.pinterest.com/contact",
+    "https://business.pinterest.com/en/pinterest-partners",
+    "https://business.pinterest.com",
+    "https://opensource.pinterest.com/",
+    "https://www.pinterest.com/pinterest",
+    "https://www.pinterest.com/_/_/about/",
+    "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+    "https://developers.pinterest.com/docs/developer-tools/sdk/",
+    "https://developers.pinterest.com/docs/developer-tools/quickstart-tools/",
+    "https://developers.pinterest.com/apps/",
+    "https://developers.pinterest.com/docs/developer-tools/sandbox/",
+    "https://www.pinterest.com/",
+    "https://www.pinterest.com/ideas",
+    "https://www.pinterest.com/docs/food/",
+    "https://www.pinterest.com/docs/glass/",
+    "https://www.pinterest.com/docs/_saved/",
+    "https://www.pinterest.com/docs/crafts/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.pinterest.com/docs/api/v5/",
+      "reason": "page too thin (36 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.pinterest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.pinterest.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://help.pinterest.com/contact",
+      "reason": "page too thin (42 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.pinterest.com",
+      "requested_url": "https://developers.pinterest.com",
+      "status": 200,
+      "title": "Pinterest Developers",
+      "chars": 1241,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "requested_url": "https://developers.pinterest.com/docs/getting-started/introduction/",
+      "status": 200,
+      "title": "Pinterest Developers",
+      "chars": 3231,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.pinterest.com/",
+      "requested_url": "https://developer.pinterest.com/",
+      "status": 200,
+      "title": "Pinterest Developers",
+      "chars": 1241,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pinterest.com/docs/",
+      "requested_url": "https://pinterest.com/docs",
+      "status": 200,
+      "title": "Pat Johnson (docs) - Profile | Pinterest",
+      "chars": 525,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://business.pinterest.com/en-in/pinterest-business-partners/",
+      "requested_url": "https://business.pinterest.com/en/pinterest-partners",
+      "status": 200,
+      "title": "Pinterest Partners: Work With Approved Partners | Pinterest Business",
+      "chars": 605,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://business.pinterest.com/en-in/",
+      "requested_url": "https://business.pinterest.com",
+      "status": 200,
+      "title": "Pinterest For Business: How to Market Your Brand | Pinterest Business",
+      "chars": 2168,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://opensource.pinterest.com/",
+      "requested_url": "https://opensource.pinterest.com/",
+      "status": 200,
+      "title": "Open Source | Pinterest Open Source",
+      "chars": 2109,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.pinterest.com/pinterest/",
+      "requested_url": "https://www.pinterest.com/pinterest",
+      "status": 200,
+      "title": "Pinterest (pinterest) - Profile | Pinterest",
+      "chars": 813,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Pinterest developer platform providing APIs to plan content, manage ads, upload product feeds, track conversions, and ingest analytics data.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Uses OAuth 2.0 for standard API requests, and also supports product-limited tokens for trial testing after approval.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Requires registering app details via a request form that is reviewed each business day for trial access approval.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\"\n    ],\n    \"notes\": \"REST API and Python SDK are mentioned for campaign management and general integration.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"Pinterest MCP is noted as 'on the way' with no functioning MCP server currently available.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.pinterest.com\",\n      \"claim\": \"Pinterest offers an API to plan content, manage ads, upload product feeds, and analyze data.\",\n      \"quote\": \"Securely plan content, manage ads, upload product feeds, and more.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"Application requests are reviewed and trial access is required.\",\n      \"quote\": \"Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"Authentication uses OAuth 2.\",\n      \"quote\": \"Build a working authentication flow based on OAuth 2\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"A Python SDK is available.\",\n      \"quote\": \"Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com\",\n      \"claim\": \"Pinterest MCP is coming soon.\",\n      \"quote\": \"Pinterest MCP is on the way\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"quote\": \"Build a working authentication flow based on OAuth 2\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"quote\": \"Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"quote\": \"Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://developers.pinterest.com\",\n      \"quote\": \"Pinterest MCP is on the way\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://developers.pinterest.com",
+    "one_liner": "Pinterest developer platform providing APIs to plan content, manage ads, upload product feeds, track conversions, and ingest analytics data.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Uses OAuth 2.0 for standard API requests, and also supports product-limited tokens for trial testing after approval."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "Requires registering app details via a request form that is reviewed each business day for trial access approval."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Python"
+      ],
+      "notes": "REST API and Python SDK are mentioned for campaign management and general integration."
+    },
+    "mcp": {
+      "exists": false,
+      "url": null,
+      "notes": "Pinterest MCP is noted as 'on the way' with no functioning MCP server currently available."
+    },
+    "buildability": {
+      "verdict": "hard",
+      "reasoning": "Credentials require approval, sales contact, or vendor provisioning, so an outside developer cannot start unaided. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.pinterest.com",
+        "claim": "Pinterest offers an API to plan content, manage ads, upload product feeds, and analyze data.",
+        "quote": "Securely plan content, manage ads, upload product feeds, and more.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "claim": "Application requests are reviewed and trial access is required.",
+        "quote": "Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "claim": "Authentication uses OAuth 2.",
+        "quote": "Build a working authentication flow based on OAuth 2",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "claim": "A Python SDK is available.",
+        "quote": "Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.pinterest.com",
+        "claim": "Pinterest MCP is coming soon.",
+        "quote": "Pinterest MCP is on the way",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "quote": "Build a working authentication flow based on OAuth 2"
+      },
+      "access": {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "quote": "Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access."
+      },
+      "api_surface": {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "quote": "Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling."
+      },
+      "mcp": {
+        "url": "https://developers.pinterest.com",
+        "quote": "Pinterest MCP is on the way"
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:14:52.902675+00:00"
+}

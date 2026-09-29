@@ -1,0 +1,197 @@
+{
+  "app": "Airtable",
+  "number": 72,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:44:09.178935+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://airtable.com/developers\",\n    \"https://airtable.com/developers/web/api/introduction\",\n    \"https://airtable.com/developers/web/guides/personal-access-tokens\",\n    \"https://airtable.com/developers/web/guides/oauth\",\n    \"https://support.airtable.com/docs/creating-and-managing-personal-access-tokens\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://airtable.com/developers",
+    "https://airtable.com/developers/web/api/introduction",
+    "https://airtable.com/developers/web/guides/personal-access-tokens",
+    "https://airtable.com/developers/web/guides/oauth",
+    "https://support.airtable.com/docs/creating-and-managing-personal-access-tokens",
+    "https://docs.airtable.com/",
+    "https://developer.airtable.com/",
+    "https://developers.airtable.com/",
+    "https://api.airtable.com/",
+    "https://airtable.com/docs",
+    "https://airtable.com/api",
+    "https://airtable.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://airtable.com/developers/agents/mcp/tools",
+    "https://airtable.com/developers/agents/intro/quickstart",
+    "https://airtable.com/developers/agents/mcp/getting-started",
+    "https://airtable.com/developers/agents/skills-and-plugins/sales-ops",
+    "https://airtable.com/developers/agents/skills-and-plugins/getting-started"
+  ],
+  "boilerplate_lines_removed": 4,
+  "fetch_failures": [
+    {
+      "requested_url": "https://airtable.com/developers/web/api/introduction",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://airtable.com/developers/web/guides/oauth",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://support.airtable.com/docs/creating-and-managing-personal-access-tokens",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.airtable.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.airtable.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.airtable.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://airtable.com/developers/agents",
+      "requested_url": "https://airtable.com/developers",
+      "status": 200,
+      "title": "Overview - Airtable Developers",
+      "chars": 3520,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://airtable.com/developers/agents/mcp/tools",
+      "requested_url": "https://airtable.com/developers/agents/mcp/tools",
+      "status": 200,
+      "title": "Tools reference - Airtable Developers",
+      "chars": 4950,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://airtable.com/developers/agents/intro/quickstart",
+      "requested_url": "https://airtable.com/developers/agents/intro/quickstart",
+      "status": 200,
+      "title": "Quickstart - Airtable Developers",
+      "chars": 3663,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://airtable.com/developers/agents/mcp/getting-started",
+      "requested_url": "https://airtable.com/developers/agents/mcp/getting-started",
+      "status": 200,
+      "title": "MCP server overview - Airtable Developers",
+      "chars": 4954,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://airtable.com/developers/agents/skills-and-plugins/sales-ops",
+      "requested_url": "https://airtable.com/developers/agents/skills-and-plugins/sales-ops",
+      "status": 200,
+      "title": "Sales ops agent skill - Airtable Developers",
+      "chars": 4952,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://airtable.com/developers/agents/skills-and-plugins/getting-started",
+      "requested_url": "https://airtable.com/developers/agents/skills-and-plugins/getting-started",
+      "status": 200,
+      "title": "Getting started - Airtable Developers",
+      "chars": 3206,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Airtable provides a remote MCP server and developer platform that enables AI tools to query data, create and edit records, manage schemas, and build automations using OAuth or Personal Access Tokens.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Supports OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The MCP server and integration capabilities are available to all users on all plans, and developers can connect via OAuth or generate personal access tokens directly within their accounts.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"@airtable/mcp-cli\"\n    ],\n    \"notes\": \"The documentation describes an MCP server and CLI tool for agentic and programmatic access, but does not detail standard REST or GraphQL endpoints.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://mcp.airtable.com/mcp\",\n    \"notes\": \"Airtable provides a remote MCP server at https://mcp.airtable.com/mcp allowing AI tools to connect directly to bases.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://airtable.com/developers/agents/mcp/getting-started\",\n      \"claim\": \"Authentication methods supported include OAuth and Personal Access Tokens.\",\n      \"quote\": \"Our MCP server supports two authentication methods: OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups).\"\n    },\n    {\n      \"url\": \"https://airtable.com/developers/agents/mcp/getting-started\",\n      \"claim\": \"The server is available to all users on all plans.\",\n      \"quote\": \"The server is available to all users on all plans.\"\n    },\n    {\n      \"url\": \"https://airtable.com/developers/agents/mcp/tools\",\n      \"claim\": \"The remote MCP server URL is https://mcp.airtable.com/mcp.\",\n      \"quote\": \"Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://airtable.com/developers/agents/mcp/getting-started\",\n      \"quote\": \"Our MCP server supports two authentication methods: OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups).\"\n    },\n    \"access\": {\n      \"url\": \"https://airtable.com/developers/agents/mcp/getting-started\",\n      \"quote\": \"The server is available to all users on all plans.\"\n    },\n    \"api_surface\": null,\n    \"mcp\": {\n      \"url\": \"https://airtable.com/developers/agents/mcp/tools\",\n      \"quote\": \"Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://airtable.com/developers",
+    "one_liner": "Airtable provides a remote MCP server and developer platform that enables AI tools to query data, create and edit records, manage schemas, and build automations using OAuth or Personal Access Tokens.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Supports OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The MCP server and integration capabilities are available to all users on all plans, and developers can connect via OAuth or generate personal access tokens directly within their accounts."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://mcp.airtable.com/mcp",
+      "notes": "Airtable provides a remote MCP server at https://mcp.airtable.com/mcp allowing AI tools to connect directly to bases."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Credentials are self-serve (oauth2), but the pages do not establish the API surface, so integration work is harder to scope. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://airtable.com/developers/agents/mcp/getting-started",
+        "claim": "Authentication methods supported include OAuth and Personal Access Tokens.",
+        "quote": "Our MCP server supports two authentication methods: OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups).",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://airtable.com/developers/agents/mcp/getting-started",
+        "claim": "The server is available to all users on all plans.",
+        "quote": "The server is available to all users on all plans.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://airtable.com/developers/agents/mcp/tools",
+        "claim": "The remote MCP server URL is https://mcp.airtable.com/mcp.",
+        "quote": "Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://airtable.com/developers/agents/mcp/getting-started",
+        "quote": "Our MCP server supports two authentication methods: OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups)."
+      },
+      "access": {
+        "url": "https://airtable.com/developers/agents/mcp/getting-started",
+        "quote": "The server is available to all users on all plans."
+      },
+      "mcp": {
+        "url": "https://airtable.com/developers/agents/mcp/tools",
+        "quote": "Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp"
+      }
+    },
+    "unsupported_fields": [
+      "api_surface: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:44:20.113992+00:00"
+}

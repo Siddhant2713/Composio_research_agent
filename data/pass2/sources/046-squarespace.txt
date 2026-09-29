@@ -1,0 +1,835 @@
+===== https://developers.squarespace.com
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Build on Squarespace
+Everything you need to build and publish external apps — reliable APIs, clear documentation, and a marketplace to reach Squarespace's global customer base.
+Read the docs
+Start building
+What can you build on Squarespace?
+Integration, customization, or extension. Our docs can get you started, and the rest is up to you.
+01
+App creation
+Use our APIs to connect your business to Squarespace and reach more customers.
+02
+Advanced commerce management
+Manage your storefront's orders, inventory, transactions, and more.
+03
+Website & domain reselling
+Add Squarespace websites and domains to your business offering.
+04
+Custom themes & code
+Inject CSS, JavaScript, and full code blocks against the 7.1 layout model.
+05
+Webhooks & automation
+Subscribe to order, inventory, content, and customer events with signed delivery.
+06
+AI compatibility
+Integrate our API docs directly into Claude or ChatGPT.
+What APIs and tools does the platform include?
+Get deep control with Commerce APIs, Reseller APIs, and a reliable custom code spec.
+Commerce APIs
+Read and write orders, products, inventory, and transactions. REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery.
+→
+Custom Code Spec
+A documented contract for injecting code into 7.1 sites — code blocks, code injection points, and the Fluid Engine layout model. No version drift.
+→
+Reseller APIs
+Provision, configure and bill for Squarespace sites and domains on behalf of clients. Built for companies looking to integrate our products into their offering.
+Coming soon
+Stay in the loop
+Get notified about API updates, breaking changes, and new developer tools.
+Ready to build?
+Get started.
+Read the Docs
+Start building
+
+===== https://developers.squarespace.com/commerce-apis/contacts
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Commerce API
+Commerce API
+Contacts
+Download schema
+Manage customer contacts and address book entries for a website: create, read, update, delete, and query contacts; maintain addresses for shipping and fulfillment.
+List contacts
+GET
+https://api.squarespace.com
+/v1/contacts
+Returns a paginated list of contacts for the website. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+List contacts
+›
+query Parameters
+pageSize
+​
+integer
+·
+int32
+·
+min: 0
+·
+max: 1000
+number of contacts to retrieve per request
+Default:
+50
+cursor
+​
+string
+where next page of results begins. should be {pagination.nextPageCursor} from previous response.
+List contacts
+›
+Headers
+Authorization
+​
+string
+·
+required
+API key or OAuth access token
+Default:
+Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​
+string
+·
+required
+User Agent
+Default:
+YOUR_CUSTOM_APP_DESCRIPTION
+List contacts
+›
+Responses
+200
+400
+403
+429
+A paginated list of contacts.
+PaginatedGetContactsResponse
+contacts
+​
+Contact
+[]
+paginated list of contacts retrieved
+pagination
+​
+object
+Create contact
+POST
+https://api.squarespace.com
+/v1/contacts
+Creates a new contact. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Create contact
+›
+Headers
+Authorization
+​
+string
+·
+required
+API key or OAuth access token
+Default:
+Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​
+string
+·
+required
+User Agent
+Default:
+YOUR_CUSTOM_APP_DESCRIPTION
+Create contact
+›
+Request Body
+CreateContactRequest
+firstName
+​
+string
+·
+required
+Contact's first name
+Example:
+john
+lastName
+​
+string
+·
+required
+Contact's last name
+Example:
+doe
+locale
+​
+string
+·
+required
+Contact's locale
+Example:
+en-US
+primaryEmail
+​
+CreateEmail
+·
+required
+Primary email supplied when creating a contact.
+Create contact
+›
+Responses
+201
+400
+403
+409
+429
+The created contact.
+CreateContactResponse
+contact
+​
+Contact
+A contact.
+Query contacts
+POST
+https://api.squarespace.com
+/v1/contacts/query
+Returns a paginated list of contacts matching filters and sort options in the request body. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+Query contacts
+›
+Headers
+Authorization
+​
+string
+·
+required
+API key or OAuth access token
+Default:
+Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​
+string
+·
+required
+User Agent
+Default:
+YOUR_CUSTOM_APP_DESCRIPTION
+Query contacts
+›
+Request Body
+QueryContactsRequest
+acceptsMarketingWithDate
+​
+AcceptsMarketingWithDate
+Contact's marketing settings with joined on date
+cursor
+​
+string
+The cursor for the next page of results. Use the value of
+pagination.nextPageCursor
+from the previous response.
+donationAmount
+​
+IntegerFilter
+Object for filtering by a min and max integer
+donationCount
+​
+IntegerFilter
+Object for filtering by a min and max integer
+firstDonationOn
+​
+DateFilter
+Object for filtering by before and after dates
+firstOrderOn
+​
+DateFilter
+Object for filtering by before and after dates
+lastDonationOn
+​
+DateFilter
+Object for filtering by before and after dates
+lastOrderOn
+​
+DateFilter
+Object for filtering by before and after dates
+orderAmount
+​
+IntegerFilter
+Object for filtering by a min and max integer
+orderCount
+​
+IntegerFilter
+Object for filtering by a min and max integer
+pageSize
+​
+integer
+·
+int32
+·
+min: 1
+·
+max: 1000
+The number of contacts to return per request.
+Default:
+50
+searchString
+​
+string
+Search string for Name and Email address
+sortDirection
+​
+string
+·
+enum
+Direction to sort results, ASCENDING or DESCENDING
+Enum values:
+ASCENDING
+DESCENDING
+sortField
+​
+string
+·
+enum
+Field to sort results by
+Enum values:
+ID
+CREATED_ON
+EMAIL
+ACCEPTS_MARKETING_JOINED_ON
+FIRST_NAME
+LAST_NAME
+ORDER_COUNT
+LAST_ORDER_ON
+show
+4
+more
+Query contacts
+›
+Responses
+200
+400
+403
+429
+A paginated list of contacts matching the query.
+PaginatedQueryContactsResponse
+contacts
+​
+Contact
+[]
+paginated list of contacts retrieved
+pagination
+​
+object
+Get contact
+GET
+https://api.squarespace.com
+/v1/contacts/{contactId}
+Returns the contact for the given contact ID. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+Get contact
+›
+path Parameters
+contactId
+​
+string
+·
+required
+The contact's ID.
+Get contact
+›
+Headers
+Authorization
+​
+string
+·
+required
+API key or OAuth access token
+Default:
+Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​
+string
+·
+required
+User Agent
+Default:
+YOUR_CUSTOM_APP_DESCRIPTION
+Get contact
+›
+Responses
+200
+403
+404
+429
+The requested contact.
+GetContactResponse
+contact
+​
+Contact
+A contact.
+Delete contact
+DELETE
+https://api.squarespace.com
+/v1/contacts/{contactId}
+Deletes the contact for the given contact ID. Requires OAuth website scope website.c
+
+===== https://developers.squarespace.com/changes/self-service-oauth-credential-management
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Announcing Self-Service OAuth Credential Management
+Date:
+Monday, July 27, 2026
+Starting Monday, July 27, 2026, Squarespace is transitioning to a self-service model for OAuth credential management, empowering developers to build and maintain integrations with greater speed and autonomy.
+What is changing?
+Historically, obtaining OAuth credentials to work with Squarespace APIs required manual form submissions and Zendesk tickets, often resulting in wait times of several days. With this launch, we are introducing a new "Developer Apps" tab within the Account Dashboard, allowing you to bypass manual provisioning.
+Key Features
+Instant Credential Generation:
+Generate OAuth client IDs and secrets immediately for development and testing.
+On-Demand Secret Rotation:
+Securely rotate client secrets through the self-service interface to maintain high security standards without reaching out to support.
+Unified Management:
+Create, update, and view application details in a single dashboard.
+Demo Mode and Production Reviews
+To ensure platform security while maintaining developer speed, all new applications created via the self-service tool will enter Demo Mode by default.
+When you are ready to take your integration live, simply request a review directly from the app details page in your dashboard.
+How to Get Started
+Visit the Portal:
+Navigate to
+developers.squarespace.com
+and select
+Start Building
+on our homepage.
+Accept Terms:
+You will be prompted to accept the mandatory
+Developer Terms of Use
+to unlock the new functionality.
+Manage Credentials:
+Access the
+Developers
+tab in your Account Dashboard to begin creating your first app.
+Note for Existing Users:
+This change applies to new OAuth applications. Existing OAuth users who wish to utilize the self-service management screen should create a new app through the dashboard and request a review.
+Thank you for building on the Squarespace platform. We look forward to seeing what you create.
+Standalone pages DOM changes
+
+===== https://developers.squarespace.com/quick-start
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Quick Start
+The Squarespace Developer Platform enables web developers to access Squarespace template files (as provided to the consumer) and customize those files to create something unique. The advanced developer can go even further and create his or her own custom template from scratch.
+Notice: Use of the Squarespace Developer Platform is subject to our
+Developer Terms of Use
+Choose a Starting Point
+First, you can start with one of the consumer level templates created by Squarespace's designers. These templates have loads of style options built-in, allowing you to achieve a high quality design quickly.
+If you've already started a Squarespace site and you want to enable Developer Mode, jump to step two.
+Start With a Consumer Template
+Or
+optionally, you can start with the developer Base Template, which features very minimal styles and markup used to create a completely custom template.
+Start With Developer Base Template
+NOTE:
+Trial sites with Developer Mode enabled do not expire, giving you as much time as you need to build your custom Squarespace site.
+Enable Developer Mode
+Enabling Developer Mode will give you access to a copy of the template repository for your site, allowing you to make changes to the template and add custom code using Git.
+Note: Your site will not receive template updates from Squarespace when Developer Mode is enabled, and you will not be able to switch templates. Additionally, note that using Git will not allow you to run server-side code.
+Before enabling Developer Mode, it’s important to note that disabling Developer Mode (or disconnecting GitHub Repository) is an irreversible action. You can expect the following if you disable it in the future:
+Any changes to the template repository including custom collections, new or modified layouts and regions, new or modified scripts and styles, uploaded assets and custom types will be lost.
+All tweaks in the Site Styles panel will revert to their original settings before Developer Mode was enabled.
+All content in block fields such as sidebars, headers and footers will be lost.
+Existing content items based on custom types will still be editable as their base content items but without the custom fields.
+The site's existing navigation structure will revert to the original navigation structure. Pages from the existing navigation structure will be moved to the Not Linked section of the Pages panel.
+Existing custom collections will become uneditable.
+If you’ve decided to move forward with turning on Developer Mode, in the Site Manager, navigate to
+Settings -> Developer Tools -> Developer Mode
+. At the top right corner of the settings panel, there is a toggle that is set to off. Click the toggle to turn on Developer Mode.
+For new Developer Mode sites, the steps to connect to Git are:
+Click Connect to GitHub
+Authorize connection
+Name repository
+To migrate an existing site to GitHub you will click a link in the banner of the Developer Mode panel and follow the same steps
+Contact
+Customer Care
+for help and troubleshooting Git connection.
+Beginner Tutorial
+
+===== https://developers.squarespace.com/webhooks/overview
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Webhooks overview
+Instead of making repeated API calls, a client may subscribe to notifications from Squarespace for supported system events.
+To receive notifications from Squarespace for a merchant site,
+create a webhook subscription using the
+Webhook Subscriptions API
+You can use the
+send test notification
+endpoint to test your subscriptions.
+When will a subscription expire?
+Subscriptions never expire.
+Which events can I subscribe to?
+See "Event notifications" below for a full list.
+How can I verify a notification is from Squarespace?
+Every Squarespace notification includes a
+Squarespace-Signature
+header.
+To verify this header, you must have access to the
+secret
+from a returned
+Webhook Subscription
+secret
+is only returned when
+creating a subscription
+or when
+rotating a secret
+Read the
+Verifying notifications
+guide for further details about verifying notifications.
+Structure of a Squarespace notification
+Squarespace webhook notifications are sent as a request to a subscribed webhook endpoint.
+The request always contains headers, including a signature, and a JSON payload.
+Note: Squarespace reserves the right to add properties and fields without a version change. Version changes are reserved for breaking changes only.
+Headers
+User-Agent
+: "Squarespace/1.0"
+Content-Type
+: "application/json"
+Squarespace-Signature
+: "
+"
+Payload
+Code
+{
+// String; unique notification id
+"id"
+:
+"5c2ba184b63ed3cb411ce2b1"
+,
+// String; Squarespace website id that triggered the notification.
+"websiteId"
+:
+"5f3c3d55ac435e1a051f77b3"
+,
+// String; unique Webhook Subscription id
+"subscriptionId"
+:
+"5f3c2155d947844beedda991"
+,
+// String; description of the event that triggered the notification.
+"topic"
+:
+"extension.uninstall"
+,
+// ISO 8601 UTC date and time string; represents when the notification was created.
+"createdOn"
+:
+"2020-04-22T22:18+00:00"
+,
+// Object; data associated with the event.
+"data"
+: {
+...
+}
+}
+Event notifications
+Below is a list of events that trigger notifications.
+Read the
+Notification delivery
+guide to learn about the notification lifecycle.
+Extension events
+Extension uninstall
+Commerce order events
+Commerce order notifications require OAuth access permissions for the Commerce Orders API.
+See the Commerce
+Authentication and permissions
+guide for details.
+Order create
+Order update
+Contact events
+Contact notifications cover
+contact
+lifecycle (
+contact.*
+) and
+address book
+changes (
+address.*
+).
+A
+contact
+is a person associated with a Squarespace site — such as a customer, subscriber, or donor — as described in the
+Contacts API overview
+Subscribing to these events requires permissions — see
+Authentication and permissions
+Contact
+Contact create
+Contact update
+Contact delete
+Address
+Address create
+Address update
+Address delete
+Verifying notifications
+
+===== https://developers.squarespace.com/commerce-apis/oauth
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Accessing Squarespace APIs using OAuth 2.0
+Squarespace uses
+OAuth 2.0
+to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.
+Terms
+Client
+Third-party application that needs to make Squarespace API calls.
+User
+Squarespace customer who wants to integrate their site with a client.
+Confirmation page
+Page created by Squarespace for the user to authorize (
+Allow
+or
+Deny
+) client access to their Squarespace account.
+Access token
+Short-term token to make authenticated API requests.
+Refresh token
+Long-term token to obtain new access tokens.
+Instructions
+1. Register the client and obtain OAuth 2.0 credentials
+Before a client can make Squarespace API calls, the client must be registered with Squarespace as an OAuth client. Start the Oauth client process
+here
+Client name
+Icon image (.png or .svg format, max size 200kb, 1:1 ratio)
+Redirect URI(s) - For example,
+https://thirdpartyapp.com/oauth/connect
+Initiate URL* - For example,
+https://thirdpartyapp.com/oauth/initiate
+Link to Client's Terms and Conditions
+Link to Client's Privacy Policy
+*Applies only to Squarespace partner apps. These will be linked from inside Squarespace.
+We will review your registration and respond with
+your_client_id
+and
+your_client_secret
+as soon as possible. These credentials are used in the subsequent steps.
+2. Prompt the user to authorize client access
+The
+/authorize
+URL prompts the user to authorize client access to their Squarespace data and serves as the confirmation page. If a user selects
+Allow
+, OAuth 2.0 authentication is started between the client and Squarespace APIs. Append required and any optional parameters to the
+GET /authorize
+endpoint;
+all parameter values should be URL-encoded
+Code
+GET https://login.squarespace.com/api/1/login/oauth/provider/authorize
+Query parameter
+Requirement
+Value
+client_id
+Required
+Alphanumeric value for your_client_id that was supplied by
+Squarespace in
+Step 1
+redirect_uri
+Required
+String; the full redirect URI sent to Squarespace in
+Step 1
+scope
+Required
+String; comma-separated list of client permission values (see below)
+for API access. The confirmation page always displays website(s) for
+user selection for
+scope=website.*
+website.orders
+Send order data and mark orders as fulfilled.
+website.orders.read
+View order and fulfillment information.
+website.transactions.read
+Access transactional order and donation data.
+website.inventory
+View and update inventory stock levels.
+website.inventory.read
+View inventory stock levels.
+website.products
+View product information and modify products.
+website.products.read
+View product information.
+website.contacts
+View customer contact information and address book entries; create, update, and delete contacts and address book entries.
+website.contacts.read
+View customer contact information and address book entries.
+website.discounts
+View and manage discounts.
+website.discounts.read
+View discounts.
+Example:
+&scope=website.inventory,website.orders
+state
+Required
+Alphanumeric random value generated by client. You'll use it in
+Step 3,
+Implement redirect URI
+, to prevent CSRF attacks.
+website_id
+Conditionally Required
+Alphanumeric value for a Squarespace site ID.
+When a logged-in user initiates an OAuth connection from Squarespace, this
+value is appended as a query parameter on the provided initiate URL. Partners must
+pass this parameter back to the
+GET /authorize
+endpoint.
+If an OAuth connection is initiated by a logged-out user, Squarespace will not
+include a website_id parameter on the initiate URL. Partners should not pass any
+website_id
+parameter back to the
+GET /authorize
+endpoint in these cases. Instead, the user will be prompted to select a website
+on the confirmation page.
+access_type
+Optional
+String; use
+offline
+for long-term API access. For more
+information, see
+Token expiration and long-term access
+. Omit
+parameter for short-term API access.
+Authorize URL example with parameters
+Note: Parameter values are in plain text and not URL-encoded for example purposes.
+Code
+https://login.squarespace.com/api/1/login/oauth/provider/authorize?client_id=fGBjMDBaUHli&redirect_uri=http://localhost:8090/oauth/callback&scope=website.inventory,website.orders&state=2BsmGS9AAzFppUmcoIagOLj4iKII
+3. Implement redirect URI
+Both
+Allow
+or
+Deny
+on the confirmation page directs the user to the client redirect URI (i.e., the
+redirect_uri
+specified in
+Step 2
+) with query parameters appended by Squarespace. For
+Allow
+, the redirect URI should verify the
+state
+parameter and match it against
+state
+value that was appended for the
+/authorize
+endpoint. This verification prevents CSRF attacks. Squarespace doesn't provide guidelines for
+Deny
+implementation.
+Parameter
+Value
+error
+String;
+access_denied
+if user selects
+Deny
+on confirmation page. Parameter isn't appended if user selects
+Allow
+state
+Alphanumeric value; not present if user selects
+Deny
+code
+Alphanumeric value used in
+step 4. Request access token
+. Value is
+initially URL-encoded and sho
+
+===== https://developers.squarespace.com/commerce-apis/authentication-and-permissions
+TITLE: Squarespace Developer Platform: APIs, Apps, and Docs
+ACCESSED: 2026-09-28
+
+Authentication and permissions
+To keep Squarespace merchant site data private and secure,
+every request to Commerce APIs must be authenticated and have
+minimum
+permissions.
+However, authenticated requests automatically have access to public site data,
+such as site name, identifier, language, currency, time zone, and location.
+Read the permission levels for each Commerce API below.
+Then, depending on your development needs,
+authenticate requests by using an API key or OAuth access token.
+Remember: Requests only have access to data for
+the website that owns the API key or OAuth access token.
+API permission levels
+Forms API
+Read Only
+: View form submission data; for Zapier integration only
+Inventory API
+Read Only
+: View inventory stock levels
+Read and Write
+: Manage inventory stock levels
+Orders API
+Read Only
+: View order, fulfillment, and customer information (name, email, address, and more)
+Read and Write
+: View customer information (name, email, address, and more); manage order and fulfillment information
+Products API
+Read Only
+: View product information, including information for any images and variants; view Store Page information
+Read and Write
+: Manage product information, including information for any images and variants; view Store Page information
+Contacts API
+Read Only
+: View contact records, address books, and marketing preferences
+Read and Write
+: Manage contact records, address books, and marketing preferences
+Discounts API
+Read Only
+: View discount records
+Read and Write
+: Manage discount records
+Webhook Subscriptions API
+(OAuth only)
+Read and Write
+: Create, update, delete, and test webhook subscriptions
+Profiles API
+(maintenance mode — new integrations should use the
+Contacts API
+)
+Read Only
+: View the name, address, email, marketing preferences, and other profile information of customers, subscribers, and other website users
+Transactions API
+Read Only
+: View transactional order, donation data, and customer information (email)
+Authenticating requests
+Depending on your development needs,
+you can use a generated API key or start the OAuth process with Squarespace
+to become a registered OAuth client. A Squarespace merchant site can use both
+API keys and OAuth for data access, but Squarespace Extensions are required to use OAuth.
+Custom applications
+With
+Squarespace's Commerce Advanced
+plan,
+you can develop a custom application for a Squarespace merchant site.
+Follow the steps below to generate an API key for a custom application.
+Log in to a Squarespace site.
+In the left nav, click
+Settings
+; scroll down and click
+Advanced
+Click
+Developer API Keys
+Click the
+GENERATE KEY
+button.
+In the dialog, add a key name under "KEY NAME",
+and select one or more Commerce APIs under "PERMISSIONS" and permission level.
+Record the generated key in a safe and secure place.
+For security reasons, this is the only time the API key is visible.
+API keys will never expire as long as the merchant site remains active.
+Commercial development
+Squarespace Extensions allow customers on any plan
+to optimize and expand their site in a few clicks.
+If you'd like to develop a new Extension,
+start the OAuth client process
+here
+Once you've obtained OAuth credentials, you can use our
+OAuth 2.0 Guide
+to learn how to authorize your application to integrate with Squarespace and use Squarespace APIs.
+Next steps
+Make requests to Commerce APIs
+Read the
+FAQ
+for answers to common questions
+Read our
+brand guidelines
+Overview
+OAuth

@@ -1,0 +1,210 @@
+{
+  "app": "BigCommerce",
+  "number": 43,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:16:31.022367+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.bigcommerce.com\",\n    \"https://developer.bigcommerce.com/api-docs\",\n    \"https://developer.bigcommerce.com/docs/start/about\",\n    \"https://developer.bigcommerce.com/docs/start/authentication\",\n    \"https://developer.bigcommerce.com/api-reference\",\n    \"https://login.bigcommerce.com/deep-links/developer-account-signup\",\n    \"https://www.bigcommerce.com/partners/developers/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.bigcommerce.com",
+    "https://developer.bigcommerce.com/api-docs",
+    "https://developer.bigcommerce.com/docs/start/about",
+    "https://developer.bigcommerce.com/docs/start/authentication",
+    "https://developer.bigcommerce.com/api-reference",
+    "https://login.bigcommerce.com/deep-links/developer-account-signup",
+    "https://www.bigcommerce.com/partners/developers/",
+    "https://docs.bigcommerce.com/",
+    "https://developers.bigcommerce.com/",
+    "https://api.bigcommerce.com/",
+    "https://bigcommerce.com/docs",
+    "https://bigcommerce.com/developers",
+    "https://bigcommerce.com/api",
+    "https://bigcommerce.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token",
+    "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+    "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+    "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension",
+    "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-plan-change",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/get-auth-storefront",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/create-token",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/email-templates",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/customer-login-api",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/current-customer/get-current-customer",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/storefront/authentication/post-login",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/post-auth-backend",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/storefront/authentication/post-auth-customer",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/post-auth-customer",
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/get-backend-tokens",
+    "https://partners.bigcommerce.com/English/register_email.aspx?_gl=1*1cdii84*_ga*MjAzMTIwMjY5Mi4xNjY1MTU5NTQy*_ga_WS2VZYPC6G*MTY4MjUyNzgzMi4yODIuMS4xNjgyNTMxNDEyLjUwLjAuMA..&_ga=2.76446417.57107493.1682352488-2031202692.1665159542&_gac=1.159306184.1680797946.Cj0KCQjw27mhBhC9ARIsAIFsETF_QobJjsofrQyRAZ-IAbyEhTPAjr-D3_8olmw8itFk0BX2DSgdhhEaAv-iEALw_wcB",
+    "https://partners.bigcommerce.com/English/register_email.aspx?_gl=1*3gw6v7*_ga*MjAzMTIwMjY5Mi4xNjY1MTU5NTQy*_ga_WS2VZYPC6G*MTY4MzEzMDE3My4zMDguMS4xNjgzMTMzMTAxLjU0LjAuMA..&_ga=2.98960798.1422074574.1682949665-2031202692.1665159542&_gac=1.184029396.1680797946.Cj0KCQjw27mhBhC9ARIsAIFsETF_QobJjsofrQyRAZ-IAbyEhTPAjr-D3_8olmw8itFk0BX2DSgdhhEaAv-iEALw_wcB",
+    "https://partners.bigcommerce.com/English/register_email.aspx?_gl=1*13h1vyy*_ga*MjAzMTIwMjY5Mi4xNjY1MTU5NTQy*_ga_WS2VZYPC6G*MTY4MzEzMDE3My4zMDguMS4xNjgzMTMzMTA0LjUxLjAuMA..&_ga=2.98960798.1422074574.1682949665-2031202692.1665159542&_gac=1.184029396.1680797946.Cj0KCQjw27mhBhC9ARIsAIFsETF_QobJjsofrQyRAZ-IAbyEhTPAjr-D3_8olmw8itFk0BX2DSgdhhEaAv-iEALw_wcB",
+    "https://partners.bigcommerce.com/English/register_email.aspx?_gl=1*13f3u0u*_ga*OTMyNDkzNTk5LjE2NzEyMTU0MDg.*_ga_WS2VZYPC6G*MTY5MTYwMTEzNC4zNDUuMC4xNjkxNjAxMTM0LjYwLjAuMA..&_ga=2.89292499.995916552.1691364400-932493599.1671215408",
+    "https://partners.bigcommerce.com/English/register_email.aspx?_gl=1*1d6lcpn*_ga*OTMyNDkzNTk5LjE2NzEyMTU0MDg.*_ga_WS2VZYPC6G*MTY5MTYwMTEzNC4zNDUuMS4xNjkxNjAxMTQ3LjQ3LjAuMA..&_ga=2.89292499.995916552.1691364400-932493599.1671215408",
+    "https://support.bigcommerce.com/s/"
+  ],
+  "boilerplate_lines_removed": 4,
+  "fetch_failures": [
+    {
+      "requested_url": "https://login.bigcommerce.com/deep-links/developer-account-signup",
+      "reason": "page too thin (75 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "requested_url": "https://developer.bigcommerce.com",
+      "status": 200,
+      "title": "BigCommerce Developers | BigCommerce Docs",
+      "chars": 4855,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "requested_url": "https://developer.bigcommerce.com/docs/start/about",
+      "status": 200,
+      "title": "API Accounts | BigCommerce Docs",
+      "chars": 4979,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "requested_url": "https://developer.bigcommerce.com/api-reference",
+      "status": 200,
+      "title": "About Our APIs | BigCommerce Docs",
+      "chars": 3376,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.bigcommerce.com/partners/become-a-partner/",
+      "requested_url": "https://www.bigcommerce.com/partners/developers/",
+      "status": 200,
+      "title": "Join Our World-Class Partner Program | BigCommerce",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token",
+      "status": 200,
+      "title": "Get OAuth Token | BigCommerce Docs",
+      "chars": 708,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+      "status": 200,
+      "title": "Authentication for hosted storefronts | BigCommerce Docs",
+      "chars": 4975,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+      "requested_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product",
+      "status": 200,
+      "title": "Get Product | BigCommerce Docs",
+      "chars": 1999,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+      "status": 200,
+      "title": "Authentication | BigCommerce Docs",
+      "chars": 4917,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension",
+      "requested_url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension",
+      "status": 200,
+      "title": "Create Store Suspension | BigCommerce Docs",
+      "chars": 1598,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"BigCommerce provides REST and GraphQL APIs to manage store data, authenticate customers, and build headless ecommerce storefronts.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"BigCommerce APIs use OAuth-based API accounts and token authentication passed via headers such as X-Auth-Token.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free BigCommerce trial store and generate API credentials directly in the store control panel under Settings > API Accounts.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"Offers REST Store Management APIs, REST Storefront API, and GraphQL Storefront API.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/overview/quick-start\",\n      \"claim\": \"Access is self-serve via creating a sandbox trial and generating credentials in settings.\",\n      \"quote\": \"Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.\"\n    },\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts\",\n      \"claim\": \"BigCommerce offers OAuth-based API accounts.\",\n      \"quote\": \"BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs: store-level credentials, app-level credentials, and account-level credentials.\"\n    },\n    {\n      \"url\": \"https://docs.bigcommerce.com/developer/api-reference/about-our-apis\",\n      \"claim\": \"Supports both REST and GraphQL APIs.\",\n      \"quote\": \"BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts\",\n      \"quote\": \"BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs: store-level credentials, app-level credentials, and account-level credentials.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.bigcommerce.com/developer/docs/overview/quick-start\",\n      \"quote\": \"Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.bigcommerce.com/developer/api-reference/about-our-apis\",\n      \"quote\": \"BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint_url": "https://developer.bigcommerce.com",
+    "one_liner": "BigCommerce provides REST and GraphQL APIs to manage store data, authenticate customers, and build headless ecommerce storefronts.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "BigCommerce APIs use OAuth-based API accounts and token authentication passed via headers such as X-Auth-Token."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free BigCommerce trial store and generate API credentials directly in the store control panel under Settings > API Accounts."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Offers REST Store Management APIs, REST Storefront API, and GraphQL Storefront API."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "claim": "Access is self-serve via creating a sandbox trial and generating credentials in settings.",
+        "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "claim": "BigCommerce offers OAuth-based API accounts.",
+        "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs: store-level credentials, app-level credentials, and account-level credentials.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "claim": "Supports both REST and GraphQL APIs.",
+        "quote": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs: store-level credentials, app-level credentials, and account-level credentials."
+      },
+      "access": {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+      },
+      "api_surface": {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "quote": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:17:02.573945+00:00"
+}

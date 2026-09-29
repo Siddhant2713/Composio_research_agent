@@ -1,0 +1,192 @@
+{
+  "app": "Zoho Cliq",
+  "number": 23,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:56:29.230910+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.zoho.com/cliq/help/rest-api/\",\n    \"https://www.zoho.com/cliq/developer.html\",\n    \"https://www.zoho.com/cliq/\",\n    \"https://accounts.zoho.com/\",\n    \"https://api-console.zoho.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://zoho.com/cliq",
+    "https://www.zoho.com/cliq/help/rest-api/",
+    "https://www.zoho.com/cliq/developer.html",
+    "https://www.zoho.com/cliq/",
+    "https://accounts.zoho.com/",
+    "https://api-console.zoho.com/",
+    "https://docs.zoho.com/",
+    "https://developer.zoho.com/",
+    "https://developers.zoho.com/",
+    "https://api.zoho.com/",
+    "https://zoho.com/docs",
+    "https://zoho.com/developers",
+    "https://zoho.com/api",
+    "https://zoho.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.zoho.com/cliq/signup.html",
+    "https://www.zoho.com/cliq/contact-demo.html",
+    "https://www.zoho.com/accounts/oneauth.html?utm_source=tfa-banner-accounts&utm_medium=web&utm_campaign=oenauth-ms",
+    "https://www.zoho.com/developer/signup.html",
+    "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+    "https://www.zoho.com/marketplace/become-a-partner.html?src=developer-homepage"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://www.zoho.com/cliq/help/rest-api/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://www.zoho.com/cliq/developer.html",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://accounts.zoho.com/",
+      "reason": "page too thin (44 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.zoho.com/",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://www.zoho.com/accounts/oneauth.html?utm_source=tfa-banner-accounts&utm_medium=web&utm_campaign=oenauth-ms",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://www.zoho.com/developer/signup.html",
+      "reason": "page too thin (94 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.zoho.com/cliq/",
+      "requested_url": "https://zoho.com/cliq",
+      "status": 200,
+      "title": "Team chat & communication software for businesses - Zoho Cliq",
+      "chars": 4341,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://accounts.zoho.com/signin?servicename=AaaServer&context=&serviceurl=https%3A%2F%2Fapi-console.zoho.com%2F",
+      "requested_url": "https://api-console.zoho.com/",
+      "status": 200,
+      "title": "Zoho Accounts",
+      "chars": 4056,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.zoho.com/developer/",
+      "requested_url": "https://developer.zoho.com/",
+      "status": 200,
+      "title": "Transform your ideas into solutions | Zoho Developer",
+      "chars": 3284,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/signup.html",
+      "requested_url": "https://www.zoho.com/cliq/signup.html",
+      "status": 200,
+      "title": "Zoho Cliq-Free Sign Up",
+      "chars": 245,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/contact-demo.html",
+      "requested_url": "https://www.zoho.com/cliq/contact-demo.html",
+      "status": 200,
+      "title": "Zoho Cliq - Contact Us | Demo Request",
+      "chars": 1021,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+      "requested_url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+      "status": 200,
+      "title": "Zoho REST APIs | Zoho Developer",
+      "chars": 4434,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Zoho Cliq offers team chat, online meetings, communication tools, and a REST API authenticated via OAuth 2.0.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Zoho APIs are authenticated using the OAuth 2.0 standard, supporting various app types and self client option.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"You can create a free account to get started and register your application in the API console to obtain credentials.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"Mentions Rest API & Authtoken as well as REST APIs supporting JSON or XML formats.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"While MCP is mentioned as a general topic under Zoho Developer, there is no specific mention of an MCP server for Zoho Cliq.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.zoho.com/cliq/\",\n      \"claim\": \"Zoho Cliq is team chat and communication software offering developer platform components.\",\n      \"quote\": \"Have the app work the way you want with easy-to-build components in Cliq\u2019s developer platform.\"\n    },\n    {\n      \"url\": \"https://www.zoho.com/developer/rest-api.html?src=developer-homepage\",\n      \"claim\": \"Zoho APIs use OAuth 2.0 for authentication.\",\n      \"quote\": \"Zoho APIs are authenticated using the OAuth 2.0 standard, which supports every app type including web apps, JavaScript apps, mobile or desktop apps, and IoT devices.\"\n    },\n    {\n      \"url\": \"https://www.zoho.com/developer/rest-api.html?src=developer-homepage\",\n      \"claim\": \"Users can create a free account to get started with the APIs.\",\n      \"quote\": \"You can create a free account to get started.\"\n    },\n    {\n      \"url\": \"https://www.zoho.com/cliq/contact-demo.html\",\n      \"claim\": \"Zoho Cliq provides a Rest API & Authtoken.\",\n      \"quote\": \"Rest API & Authtoken\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://www.zoho.com/developer/rest-api.html?src=developer-homepage\",\n      \"quote\": \"Zoho APIs are authenticated using the OAuth 2.0 standard, which supports every app type including web apps, JavaScript apps, mobile or desktop apps, and IoT devices.\"\n    },\n    \"access\": {\n      \"url\": \"https://www.zoho.com/developer/rest-api.html?src=developer-homepage\",\n      \"quote\": \"You can create a free account to get started.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://www.zoho.com/cliq/contact-demo.html\",\n      \"quote\": \"Rest API & Authtoken\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint_url": "https://zoho.com/cliq",
+    "one_liner": "Zoho Cliq offers team chat, online meetings, communication tools, and a REST API authenticated via OAuth 2.0.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Zoho APIs are authenticated using the OAuth 2.0 standard, supporting various app types and self client option."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "You can create a free account to get started and register your application in the API console to obtain credentials."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://www.zoho.com/cliq/contact-demo.html."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Credentials are self-serve (oauth2), but the pages do not establish the API surface, so integration work is harder to scope. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.zoho.com/cliq/",
+        "claim": "Zoho Cliq is team chat and communication software offering developer platform components.",
+        "quote": "Have the app work the way you want with easy-to-build components in Cliq\u2019s developer platform.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+        "claim": "Zoho APIs use OAuth 2.0 for authentication.",
+        "quote": "Zoho APIs are authenticated using the OAuth 2.0 standard, which supports every app type including web apps, JavaScript apps, mobile or desktop apps, and IoT devices.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+        "claim": "Users can create a free account to get started with the APIs.",
+        "quote": "You can create a free account to get started.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+        "quote": "Zoho APIs are authenticated using the OAuth 2.0 standard, which supports every app type including web apps, JavaScript apps, mobile or desktop apps, and IoT devices."
+      },
+      "access": {
+        "url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+        "quote": "You can create a free account to get started."
+      }
+    },
+    "unsupported_fields": [
+      "api_surface: quoted line not found on https://www.zoho.com/cliq/contact-demo.html",
+      "mcp: no support offered"
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-28T03:56:40.991098+00:00"
+}

@@ -1,0 +1,658 @@
+===== https://docs.ahrefs.com
+TITLE: Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+Ahrefs for Developers
+Build with
+Ahrefs data
+Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.
+Search documentation...
+⌘K
+1
+wikipedia.org
+98
+2
+github.com
+96
+3
+medium.com
+94
+4
+stackoverflow.com
+93
+5
+producthunt.com
+91
+REST API
+Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.
+Introduction
+Overview, authentication, and rate limits
+Free test queries
+Try API endpoints without an Enterprise plan
+Explore endpoints
+Browse all available API endpoints
+API keys
+Create and manage your API keys
+Changelog
+Latest API updates and changes
+OpenAPI spec
+Full machine-readable spec for every endpoint
+Introduction
+Overview, authentication, and rate limits
+Free test queries
+Try API endpoints without an Enterprise plan
+Explore endpoints
+Browse all available API endpoints
+API keys
+Create and manage your API keys
+Changelog
+Latest API updates and changes
+OpenAPI spec
+Full machine-readable spec for every endpoint
+MCP
+Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.
+Introduction
+What is MCP and how to get started
+Claude Desktop / Web
+Connect Ahrefs to Claude on desktop or web
+ChatGPT setup
+Use Ahrefs data in ChatGPT conversations
+Claude Code
+Integrate Ahrefs into your coding workflow
+Introduction
+What is MCP and how to get started
+Claude Desktop / Web
+Connect Ahrefs to Claude on desktop or web
+ChatGPT setup
+Use Ahrefs data in ChatGPT conversations
+Claude Code
+Integrate Ahrefs into your coding workflow
+Data Studio
+Build custom dashboards with Ahrefs data in Google Data Studio.
+Introduction
+Get started with Ahrefs connectors for Data Studio
+Site Explorer connector
+Backlinks, organic traffic, and domain metrics
+Rank Tracker connector
+Track keyword rankings over time
+Site Audit connector
+Monitor site health and technical SEO issues
+Brand Radar connector
+Track your brand presence in AI search
+Introduction
+Get started with Ahrefs connectors for Data Studio
+Site Explorer connector
+Backlinks, organic traffic, and domain metrics
+Rank Tracker connector
+Track keyword rankings over time
+Site Audit connector
+Monitor site health and technical SEO issues
+Brand Radar connector
+Track your brand presence in AI search
+Bot Analytics
+Understand how bots interact with your website. Track crawl activity, identify bot types, and monitor their impact.
+Introduction
+Overview of Bot Analytics
+Cloudflare Logpush
+Recommended Cloudflare Enterprise setup
+Cloudflare Worker
+Worker-based setup for any Cloudflare plan
+Introduction
+Overview of Bot Analytics
+Cloudflare Logpush
+Recommended Cloudflare Enterprise setup
+Cloudflare Worker
+Worker-based setup for any Cloudflare plan
+Ahrefs Connect
+Bring Ahrefs data into third-party apps through our integration program. Built on API v3.
+Introduction
+Overview of the integration program
+How it works
+Architecture and data flow
+OAuth guide
+Implement OAuth 2.0 authorization
+How to apply
+Steps to join the program
+Introduction
+Overview of the integration program
+How it works
+Architecture and data flow
+OAuth guide
+Implement OAuth 2.0 authorization
+How to apply
+Steps to join the program
+
+===== https://docs.ahrefs.com/
+TITLE: Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+Ahrefs for Developers
+Build with
+Ahrefs data
+Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.
+Search documentation...
+⌘K
+1
+wikipedia.org
+98
+2
+github.com
+96
+3
+medium.com
+94
+4
+stackoverflow.com
+93
+5
+producthunt.com
+91
+REST API
+Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.
+Introduction
+Overview, authentication, and rate limits
+Free test queries
+Try API endpoints without an Enterprise plan
+Explore endpoints
+Browse all available API endpoints
+API keys
+Create and manage your API keys
+Changelog
+Latest API updates and changes
+OpenAPI spec
+Full machine-readable spec for every endpoint
+Introduction
+Overview, authentication, and rate limits
+Free test queries
+Try API endpoints without an Enterprise plan
+Explore endpoints
+Browse all available API endpoints
+API keys
+Create and manage your API keys
+Changelog
+Latest API updates and changes
+OpenAPI spec
+Full machine-readable spec for every endpoint
+MCP
+Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.
+Introduction
+What is MCP and how to get started
+Claude Desktop / Web
+Connect Ahrefs to Claude on desktop or web
+ChatGPT setup
+Use Ahrefs data in ChatGPT conversations
+Claude Code
+Integrate Ahrefs into your coding workflow
+Introduction
+What is MCP and how to get started
+Claude Desktop / Web
+Connect Ahrefs to Claude on desktop or web
+ChatGPT setup
+Use Ahrefs data in ChatGPT conversations
+Claude Code
+Integrate Ahrefs into your coding workflow
+Data Studio
+Build custom dashboards with Ahrefs data in Google Data Studio.
+Introduction
+Get started with Ahrefs connectors for Data Studio
+Site Explorer connector
+Backlinks, organic traffic, and domain metrics
+Rank Tracker connector
+Track keyword rankings over time
+Site Audit connector
+Monitor site health and technical SEO issues
+Brand Radar connector
+Track your brand presence in AI search
+Introduction
+Get started with Ahrefs connectors for Data Studio
+Site Explorer connector
+Backlinks, organic traffic, and domain metrics
+Rank Tracker connector
+Track keyword rankings over time
+Site Audit connector
+Monitor site health and technical SEO issues
+Brand Radar connector
+Track your brand presence in AI search
+Bot Analytics
+Understand how bots interact with your website. Track crawl activity, identify bot types, and monitor their impact.
+Introduction
+Overview of Bot Analytics
+Cloudflare Logpush
+Recommended Cloudflare Enterprise setup
+Cloudflare Worker
+Worker-based setup for any Cloudflare plan
+Introduction
+Overview of Bot Analytics
+Cloudflare Logpush
+Recommended Cloudflare Enterprise setup
+Cloudflare Worker
+Worker-based setup for any Cloudflare plan
+Ahrefs Connect
+Bring Ahrefs data into third-party apps through our integration program. Built on API v3.
+Introduction
+Overview of the integration program
+How it works
+Architecture and data flow
+OAuth guide
+Implement OAuth 2.0 authorization
+How to apply
+Steps to join the program
+Introduction
+Overview of the integration program
+How it works
+Architecture and data flow
+OAuth guide
+Implement OAuth 2.0 authorization
+How to apply
+Steps to join the program
+
+===== https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide
+TITLE: OAuth guide | Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+OAuth guide | Ahrefs for Developers
+For App Developers
+For Ahrefs Users
+OAuth guide
+All API calls require authorization and are made
+on behalf of an authorized Ahrefs user
+. To do this, your app must obtain an API
+access token
+for that user.
+Ahrefs Connect uses
+OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)
+. The process has two main steps:
+1. Authorize the application
+Redirect the user to:
+https://app.ahrefs.com/web/oauth/authorize?response_type=code&client_id={client_id}&scope=apiv3-integration-apps&redirect_uri={redirect_uri}&code_challenge={code_challenge}&code_challenge_method=s256&state={state}
+Parameters:
+{client_id}
+: URL-encoded Client ID from
+Ahrefs Connect
+section in your
+Account settings
+.
+{redirect_uri}
+: URL-encoded Redirect URI you’ve registered in the same section.
+{code_challenge}
+: Derived from a
+code verifier
+using the S256 method:
+Generate a
+code verifier
+— a random string of 43–128 characters using a cryptographically secure generator. Allowed characters:
+[A-Z] [a-z] [0-9] - . _ ~
+(see
+RFC7636 Section 4.1
+).
+Compute the
+SHA-256
+hash of the code verifier.
+Base64-URL-encode the hash.
+Use this encoded value as the
+code_challenge
+(see
+RFC7636 Section 4.2
+).
+{state}
+: Generate an opaque value to maintain state between the request and callback. The authorization server will include this value when redirecting the user back to your app. (see
+RFC6749 Section 4.1.1
+)
+info
+Note for legacy app developers:
+Both the legacy integration (API v2) and the new Ahrefs Connect (API v3) share the same OAuth client. This means they also share the same Redirect URI — you can’t configure separate production Redirect URIs for the old and new versions of your app.
+We recommend updating the production Redirect URI in your Account Settings
+only after
+your new app has been reviewed and activated by Ahrefs, and you’re ready to release it.
+If you prefer to keep using the same Redirect URI for both versions, you can use the
+{state}
+parameter to distinguish requests. For example, attach a unique string for the legacy app and another for the new app. Since the same
+{state}
+value is returned by the OAuth server when redirecting users back to your app, your server can branch logic based on this value. This way, users can continue generating tokens for both versions without breaking the existing integration.
+User experience:
+The user sees the Ahrefs authorization consent screen.
+They grant your app permission to access Ahrefs API on their behalf.
+Ahrefs redirects them to your
+Redirect URI
+with:
+code
+parameter — used in Step 2
+state
+parameter — verify it matches your original request.
+2. Retrieve the
+access_token
+Exchange the
+code
+for an
+access_token
+by sending a
+POST
+request to
+https://ahrefs.com/oauth/token
+.
+Send the parameters
+in the request body using the
+application/x-www-form-urlencoded
+format (see
+RFC6749 Section 4.1.3
+):
+grant_type
+:
+authorization_code
+client_id
+:
+{client_id}
+(Must match the one in Step 1)
+redirect_uri
+:
+{redirect_uri}
+(Must match the one in Step 1)
+code
+:
+{code}
+(From Step 1)
+code_verifier
+:
+{original_code_verifier}
+(The untransformed value from Step 1)
+client_secret
+:
+{client_secret}
+(
+Web apps only
+— found in your
+Ahrefs Connect
+section in
+Account settings
+. Omit for desktop apps.)
+Example response:
+{
+    "access_token": "\<token to use in API requests>",
+    "expires_in": \<lifetime of the access token in seconds>,
+    "token_type": "Bearer",
+    "scope": "apiv3-integration-apps"
+}
+Token lifetime & re-connection
+No refresh tokens are issued.
+Access tokens are valid for
+1 year
+. After expiry, the user must
+reconnect (re-authorize)
+via OAuth.
+info
+Security note:
+Never
+expose
+access_token
+to end users, either during authorization or later (in UI, logs, URLs, or client-side code).
+For
+web apps
+, store
+client_secret
+server-side only
+.
+You will need to demonstrate secure token handling as part of the
+Approval process
+.
+
+===== https://docs.ahrefs.com/en/api/docs/introduction
+TITLE: Introduction | Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+Introduction | Ahrefs for Developers
+Reference
+API
+Introduction
+With Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists:
+Site Explorer
+: Overview stats and historical charts, Backlinks, Organic and paid traffic reports
+Keywords Explorer
+: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports
+Site Audit
+: Projects' Health Scores, full issue reports and content of crawled pages
+SERP Overview
+: Top 100 SERP results
+Rank Tracker
+: Project overview, Competitor reports and Rank Tracker SERPs
+Batch Analysis
+: Metrics for up to 100 targets per request
+Brand Radar
+: Brand overview stats, historical performance charts, and real prompts with citations across multiple AI agents
+Social Media Management
+: Channels, posts, activity history and metrics for connected social media accounts
+Content Helper
+: The core topics covered by the pages ranking for a keyword, with per-page coverage scores
+Management
+: Endpoints to manage your Rank Tracker projects and Keywords Explorer lists
+Subscription information
+: Your API limits and usage
+Public endpoints
+: Our crawler's IP addresses and ranges
+Eligibility
+Ahrefs API is available on
+eligible paid plans
+. On all other plans, you'll still have access to a
+limited set of free test queries
+.
+Plan limits
+All requests besides
+free test queries
+and the
+Rank Tracker
+,
+Management
+,
+Public
+and
+some other
+endpoints consume
+API units
+. The cost depends on the number of rows in a response and the fields requested. The minimum cost for any request is
+50 units
+. If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units.
+Related guide:
+Limits consumption
+info
+Please be advised that API units once consumed are non-refundable. We strongly encourage the use of our
+complimentary test queries
+for all development and testing purposes to mitigate any unintended usage of API units.
+We also recommend
+putting limits
+on your API keys, especially when you are in the testing and development stage.
+Eligible paid plans
+include a monthly API unit allowance. On plans that support pay-as-you-go usage, additional units are automatically charged once the included limit is exceeded.
+See also:
+Pricing page
+and
+Account settings / Limits & usage
+.
+API keys
+To send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in
+Account settings / API keys
+.
+Related guide:
+API keys creation and management
+Basic usage
+Get a quick start with these API buttons in
+Ahrefs reports
+.
+Click on them to display the request as a cURL command.
+These buttons can be used as a query builder since the cURL command will be updated dynamically with any filters you apply to the report.
+Note that cURL contains all the fields and metrics shown in the current report. You can remove the fields you don't need to reduce the cost of a request.
+For full usage details, view our API reference in these docs. The reference contains an OpenAPI-compatible specification of each endpoint's request and response format.
+Rate limiting
+Ahrefs API is limited to 60 requests per minute by default. If this limit is exceeded, the API will respond with an HTTP 429 status code (
+Too Many Requests
+).
+Additionally, to maintain optimal performance and system stability, API requests may occasionally be rejected with the same HTTP 429 status code due to throttling. Throttling occurs dynamically based on real-time system load, resource availability, and the computational demands of your requests.
+Links
+Full OpenAPI spec
+Privacy policy
+Terms of use
+
+===== https://docs.ahrefs.com/en/api/reference/site-explorer
+TITLE: Site Explorer | Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+Site Explorer | Ahrefs for Developers
+Reference
+API
+Site Explorer
+Fetch data from Site Explorer reports
+Base URL
+https://api.ahrefs.com/v3/site-explorer
+Version
+3.0.0
+Endpoints
+28
+Overview
+Data from overview
+GET
+Domain rating
+/domain-rating
+GET
+Backlinks stats
+/backlinks-stats
+GET
+Outlinks stats
+/outlinks-stats
+GET
+Metrics
+/metrics
+GET
+AI Responses Count
+/ai-responses-count
+GET
+Refdomains history
+/refdomains-history
+GET
+Domain Rating history
+/domain-rating-history
+GET
+URL Rating history
+/url-rating-history
+GET
+Pages history
+/pages-history
+GET
+Metrics history
+/metrics-history
+GET
+Keywords history
+/keywords-history
+GET
+Metrics by country
+/metrics-by-country
+GET
+Pages by traffic
+/pages-by-traffic
+GET
+Total search volume history
+/total-search-volume-history
+Backlinks profile
+Backlinks data
+GET
+Backlinks
+/all-backlinks
+GET
+Broken Backlinks
+/broken-backlinks
+GET
+Refdomains
+/refdomains
+GET
+Anchors
+/anchors
+Organic search
+Organic search data
+GET
+Organic keywords
+/organic-keywords
+GET
+Organic competitors
+/organic-competitors
+GET
+Top pages
+/top-pages
+Paid search
+Paid search data
+GET
+Paid pages
+/paid-pages
+Pages
+Pages data
+GET
+Best pages by backlinks
+/pages-by-backlinks
+GET
+Best pages by internal links
+/pages-by-internal-links
+GET
+Crawled pages
+/crawled-pages
+Outgoing links
+Outgoing links data
+GET
+Linked Domains
+/linkeddomains
+GET
+Outgoing external anchors
+/linked-anchors-external
+GET
+Outgoing internal anchors
+/linked-anchors-internal
+
+===== https://docs.ahrefs.com/en/ahrefs-connect/docs/how-to-apply
+TITLE: How to apply | Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+How to apply | Ahrefs for Developers
+For App Developers
+For Ahrefs Users
+How to apply
+Submit the
+application form
+with:
+A brief description of your product
+A link to your website
+How you plan to use Ahrefs data in your app
+This will help our team quickly confirm if your product is eligible for
+Ahrefs Connect,
+explain the process, and guide you through the next steps.
+info
+For legacy integration apps
+If your app is already part of the
+legacy Integrations program,
+you automatically have access to the
+Staging
+environment for development and can start building with API v3 right away.
+Contact
+[email protected]
+when you’re ready to kick off the review and activation process for your app in production.
+Learn more:
+For legacy app developers
+
+===== https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management
+TITLE: API keys creation and management | Ahrefs for Developers
+ACCESSED: 2026-09-28
+
+API keys creation and management | Ahrefs for Developers
+Reference
+API
+API keys creation and management
+You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests:
+Authorization: Bearer YOUR_API_KEY
+.
+Creating API keys
+Create and manage existing API keys in
+Account settings / API keys
+. Note that only workspace owners and admins have access to this section.
+You can create up to 1,000 API keys. Each key has a lifetime of 1 year, after which it will expire and become inactive. You can see the expiration date for each key and who created it on this page.
+A key will also be invalidated if the user who created it is removed from the workspace.
+Controlling usage
+To control the monthly usage of API units in your workspace, limit the usage of particular API keys in
+Account settings / API keys
+.
+If your subscription plan allows pay-as-you-go charges, you can also limit the maximum number of API units that can be added on a pay-as-you-go basis or disable pay-as-you-go API units altogether in
+Account settings / Limits & usage
+.

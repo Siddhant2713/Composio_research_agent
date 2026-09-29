@@ -1,0 +1,210 @@
+{
+  "app": "Datadog",
+  "number": 69,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:35:04.881328+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.datadoghq.com/api\",\n    \"https://docs.datadoghq.com/account_management/api_key_management\",\n    \"https://docs.datadoghq.com/developers\",\n    \"https://www.datadoghq.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.datadoghq.com/api",
+    "https://docs.datadoghq.com/account_management/api_key_management",
+    "https://docs.datadoghq.com/developers",
+    "https://www.datadoghq.com/pricing",
+    "https://docs.datadoghq.com/",
+    "https://developer.datadoghq.com/",
+    "https://developers.datadoghq.com/",
+    "https://api.datadoghq.com/",
+    "https://datadoghq.com/docs",
+    "https://datadoghq.com/developers",
+    "https://datadoghq.com/api",
+    "https://datadoghq.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.datadoghq.com/api/latest/authentication/validate-api-key/",
+    "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/",
+    "https://docs.datadoghq.com/api/latest/oauth2-client-public/get-an-oauth2-client-scopes-restriction/",
+    "https://docs.datadoghq.com/api/latest/oauth2-client-public/upsert-an-oauth2-client-scopes-restriction/",
+    "https://docs.datadoghq.com/api/latest/oauth2-client-public/delete-an-oauth2-client-scopes-restriction/",
+    "https://docs.datadoghq.com/api/latest/webhooks-integration/get-an-oauth2-client-credentials-auth-method/",
+    "https://docs.datadoghq.com/actions/datastores/auth",
+    "https://docs.datadoghq.com/llm_observability/instrument/sdk",
+    "https://docs.datadoghq.com/actions/workflows/access_and_auth/",
+    "https://docs.datadoghq.com/actions/app_builder/access_and_auth/",
+    "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints/",
+    "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+    "https://www.datadoghq.com/pricing/list/",
+    "https://www.datadoghq.com/partner/datadog-for-startups/",
+    "https://www.datadoghq.com/partner/",
+    "https://www.datadoghq.com/about/contact/",
+    "https://www.datadoghq.com/partner/network/",
+    "https://www.datadoghq.com/pricing/allotments/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.datadoghq.com/account_management/api_key_management",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "requested_url": "https://docs.datadoghq.com/api",
+      "status": 200,
+      "title": "API Reference",
+      "chars": 4831,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.datadoghq.com/extend/",
+      "requested_url": "https://docs.datadoghq.com/developers",
+      "status": 200,
+      "title": "Extend Datadog",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.datadoghq.com/pricing/",
+      "requested_url": "https://www.datadoghq.com/pricing",
+      "status": 200,
+      "title": "Pricing | Datadog",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.datadoghq.com/",
+      "requested_url": "https://docs.datadoghq.com/",
+      "status": 200,
+      "title": "Datadog Docs",
+      "chars": 416,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.datadoghq.com/account/login?next=%2F",
+      "requested_url": "https://developer.datadoghq.com/",
+      "status": 200,
+      "title": "Datadog: Log In",
+      "chars": 129,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.datadoghq.com/account/login?next=%2F",
+      "requested_url": "https://developers.datadoghq.com/",
+      "status": 200,
+      "title": "Datadog: Log In",
+      "chars": 129,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://api.datadoghq.com/account/login?next=%2F",
+      "requested_url": "https://api.datadoghq.com/",
+      "status": 200,
+      "title": "Datadog: Log In",
+      "chars": 129,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api/latest/authentication/validate-api-key/",
+      "requested_url": "https://docs.datadoghq.com/api/latest/authentication/validate-api-key/",
+      "status": 200,
+      "title": "Validate API key",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/",
+      "requested_url": "https://docs.datadoghq.com/api/latest/oauth2-client-public/register-an-oauth2-client/",
+      "status": 200,
+      "title": "Register an OAuth2 client",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api/latest/oauth2-client-public/get-an-oauth2-client-scopes-restriction/",
+      "requested_url": "https://docs.datadoghq.com/api/latest/oauth2-client-public/get-an-oauth2-client-scopes-restriction/",
+      "status": 200,
+      "title": "Get an OAuth2 client scopes restriction",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Datadog is a monitoring and security platform for cloud applications, providing an HTTP REST API for programmatic access.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authenticate to the API with an API key using the header DD-API-KEY. For some endpoints, an Application key using the header DD-APPLICATION-KEY is also needed.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The provided pages document API usage and authentication methods but do not mention how a first-time developer obtains credentials.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [\n      \"java\",\n      \"python\",\n      \"ruby\",\n      \"go\",\n      \"javascript\",\n      \"rust\"\n    ],\n    \"notes\": \"The pages describe an HTTP REST API and provide official client libraries in Java, Python, Ruby, Go, JavaScript/TypeScript, and Rust.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"The pages mention 'Example MCP Client' in OAuth examples, but contain no substantive description of an MCP server or Model Context Protocol implementation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.datadoghq.com/api/latest/\",\n      \"claim\": \"The Datadog API is a REST API authenticated via API keys.\",\n      \"quote\": \"The Datadog API is an HTTP REST API.\"\n    },\n    {\n      \"url\": \"https://docs.datadoghq.com/api/latest/\",\n      \"claim\": \"Authentication uses the DD-API-KEY header.\",\n      \"quote\": \"Authenticate to the API with an API key using the header DD-API-KEY.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.datadoghq.com/api/latest/\",\n      \"quote\": \"Authenticate to the API with an API key using the header DD-API-KEY.\"\n    },\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://docs.datadoghq.com/api/latest/\",\n      \"quote\": \"The Datadog API is an HTTP REST API.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.datadoghq.com/api",
+    "one_liner": "Datadog is a monitoring and security platform for cloud applications, providing an HTTP REST API for programmatic access.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authenticate to the API with an API key using the header DD-API-KEY. For some endpoints, an Application key using the header DD-APPLICATION-KEY is also needed."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": [
+        "java",
+        "python",
+        "ruby",
+        "go",
+        "javascript",
+        "rust"
+      ],
+      "notes": "The pages describe an HTTP REST API and provide official client libraries in Java, Python, Ruby, Go, JavaScript/TypeScript, and Rust."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "claim": "The Datadog API is a REST API authenticated via API keys.",
+        "quote": "The Datadog API is an HTTP REST API.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "claim": "Authentication uses the DD-API-KEY header.",
+        "quote": "Authenticate to the API with an API key using the header DD-API-KEY.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "quote": "Authenticate to the API with an API key using the header DD-API-KEY."
+      },
+      "api_surface": {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "quote": "The Datadog API is an HTTP REST API."
+      }
+    },
+    "unsupported_fields": [
+      "access: no support offered",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T03:35:24.594946+00:00"
+}

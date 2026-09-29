@@ -1,0 +1,128 @@
+{
+  "app": "fanbasis",
+  "number": 50,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:18:54.013175+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://fanbasis.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://fanbasis.com",
+    "https://docs.fanbasis.com/",
+    "https://developer.fanbasis.com/",
+    "https://developers.fanbasis.com/",
+    "https://api.fanbasis.com/",
+    "https://fanbasis.com/docs",
+    "https://fanbasis.com/developers",
+    "https://fanbasis.com/api",
+    "https://fanbasis.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://commas.com/contact",
+    "https://commas.com/enterprises"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://commas.com/",
+      "requested_url": "https://fanbasis.com",
+      "status": 200,
+      "title": "Commas | Where you make money on the internet",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://commas.com/contact",
+      "requested_url": "https://commas.com/contact",
+      "status": 200,
+      "title": "Contact",
+      "chars": 157,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://commas.com/enterprises",
+      "requested_url": "https://commas.com/enterprises",
+      "status": 200,
+      "title": "Commas Enterprise | Infrastructure built for scale",
+      "chars": 3734,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Commas provides an all-in-one internet commerce platform featuring checkout, funnels, webinars, courses, communities, embedded APIs, and an MCP assistant.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The provided pages do not describe the authentication method used by developers to call the API.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The provided pages mention APIs and an enterprise tier, but do not provide explicit instructions or details on how an unaffiliated developer or customer obtains API credentials.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The pages mention 'APIs and SDKs' as part of the enterprise features, but do not detail specific protocols, webhooks, or SDK languages.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"notes\": \"The platform features a beta MCP integration allowing users to run Commas from an AI assistant.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://commas.com/\",\n      \"claim\": \"The platform offers APIs and SDKs.\",\n      \"quote\": \"Embedded checkouts, multi-rail payouts, APIs and SDKs.\"\n    },\n    {\n      \"url\": \"https://commas.com/\",\n      \"claim\": \"An MCP server or integration exists in beta to run Commas from an AI assistant.\",\n      \"quote\": \"Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.\"\n    },\n    {\n      \"url\": \"https://commas.com/enterprises\",\n      \"claim\": \"Enterprise tier offers embedded checkouts, APIs, and embeddable components.\",\n      \"quote\": \"APIs and embeddable components, live in days not quarters.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://commas.com/\",\n      \"quote\": \"Embedded checkouts, multi-rail payouts, APIs and SDKs.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://commas.com/\",\n      \"quote\": \"Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "hint_url": "https://fanbasis.com",
+    "one_liner": "Commas provides an all-in-one internet commerce platform featuring checkout, funnels, webinars, courses, communities, embedded APIs, and an MCP assistant.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "The pages mention 'APIs and SDKs' as part of the enterprise features, but do not detail specific protocols, webhooks, or SDK languages."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "The platform features a beta MCP integration allowing users to run Commas from an AI assistant."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://commas.com/",
+        "claim": "The platform offers APIs and SDKs.",
+        "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://commas.com/",
+        "claim": "An MCP server or integration exists in beta to run Commas from an AI assistant.",
+        "quote": "Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://commas.com/enterprises",
+        "claim": "Enterprise tier offers embedded checkouts, APIs, and embeddable components.",
+        "quote": "APIs and embeddable components, live in days not quarters.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "api_surface": {
+        "url": "https://commas.com/",
+        "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+      },
+      "mcp": {
+        "url": "https://commas.com/",
+        "quote": "Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English."
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T04:19:11.170437+00:00"
+}

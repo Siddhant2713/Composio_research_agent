@@ -1,0 +1,219 @@
+{
+  "app": "Amazon Selling Partner",
+  "number": 49,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:18:33.716632+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer-docs.amazon.com/sp-api\",\n    \"https://developer-docs.amazon.com/sp-api/docs\",\n    \"https://developer-docs.amazon.com/sp-api/docs/authorization-from-web-applications\",\n    \"https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api\",\n    \"https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer-docs.amazon.com/sp-api",
+    "https://developer-docs.amazon.com/sp-api/docs",
+    "https://developer-docs.amazon.com/sp-api/docs/authorization-from-web-applications",
+    "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "https://docs.amazon.com/",
+    "https://developer.amazon.com/",
+    "https://developers.amazon.com/",
+    "https://api.amazon.com/",
+    "https://amazon.com/docs",
+    "https://amazon.com/developers",
+    "https://amazon.com/api",
+    "https://amazon.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+    "https://developer-docs.amazon/sp-api/docs/reauthorize-applications",
+    "https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview",
+    "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+    "https://developer-docs.amazon/sp-api/reference",
+    "https://developer-docs.amazon/sp-api/docs/sales-api",
+    "https://developer-docs.amazon/sp-api/docs/authorization-with-the-restricted-data-token",
+    "https://developer-docs.amazon/sp-api/docs/self-authorization",
+    "https://developer-docs.amazon/sp-api/docs/authorize-public-applications",
+    "https://developer-docs.amazon/sp-api/docs/service-provider-onboarding-step-1",
+    "https://developer.amazon.com/support/cases/new",
+    "https://developer.amazon.com/device-partners/firetv/",
+    "https://developer.amazon.com/en/device-partners/firetv/",
+    "https://developer.amazon.com/appsandservices/support/pml.html",
+    "https://www.amazon.com/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2Fsettings%2Fconsole%2Fhome&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=mas_dev_portal&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=amzn_developer_portal&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&language=en_US"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.amazon.com/",
+      "reason": "page too thin (25 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer-docs.amazon/sp-api",
+      "requested_url": "https://developer-docs.amazon.com/sp-api",
+      "status": 200,
+      "title": "Selling Partner API",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/welcome",
+      "requested_url": "https://developer-docs.amazon.com/sp-api/docs",
+      "status": 200,
+      "title": "Welcome to SP-API Documentation",
+      "chars": 2094,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/page/404",
+      "requested_url": "https://developer-docs.amazon.com/sp-api/docs/authorization-from-web-applications",
+      "status": 200,
+      "title": "Page Not Found",
+      "chars": 470,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+      "requested_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+      "status": 200,
+      "title": "Connect to the SP-API",
+      "chars": 4976,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+      "requested_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+      "status": 200,
+      "title": "SP-API Registration Overview",
+      "chars": 2559,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.amazon.com/",
+      "requested_url": "https://developer.amazon.com/",
+      "status": 200,
+      "title": "Amazon Developer",
+      "chars": 1986,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+      "status": 200,
+      "title": "Authorize Applications",
+      "chars": 3817,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/reauthorize-applications",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/reauthorize-applications",
+      "status": 200,
+      "title": "Reauthorize Applications",
+      "chars": 2968,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/selling-partner-api-onboarding-overview",
+      "status": 200,
+      "title": "Selling Partner API Onboarding Overview",
+      "chars": 1887,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+      "requested_url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+      "status": 200,
+      "title": "Developer Registration Request Status",
+      "chars": 1250,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The Amazon Selling Partner API (SP-API) provides programmatic access to inventory, orders, pricing, and other selling partner workflows.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Uses Login with Amazon (LWA) to exchange refresh tokens or client credentials for access tokens.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Developer registration requests are evaluated by Amazon, and developers must complete profiles, policy requirements, and security controls.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"C#\",\n      \"Java\"\n    ],\n    \"notes\": \"Exposes REST endpoints, JSON schemas, notifications, and client SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No Model Context Protocol (MCP) server is mentioned in the documentation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api\",\n      \"claim\": \"Authentication uses Login with Amazon (LWA) OAuth2 tokens.\",\n      \"quote\": \"A Login with Amazon (LWA) access token authorizes your application to take certain actions on behalf of a selling partner.\"\n    },\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer\",\n      \"claim\": \"Developer access is subject to review and approval by Amazon.\",\n      \"quote\": \"After you have submitted your request to register as a developer, Amazon evaluates the information provided and approves or denies your request.\"\n    },\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api\",\n      \"claim\": \"REST API and SDKs are supported.\",\n      \"quote\": \"Tutorial: Automate your SP-API Calls Using a C# SDK\"\n    },\n    {\n      \"url\": \"https://developer-docs.amazon/sp-api\",\n      \"claim\": \"Webhooks/Notifications API is available.\",\n      \"quote\": \"Subscribe to the ORDER_CHANGE Notification\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api\",\n      \"quote\": \"A Login with Amazon (LWA) access token authorizes your application to take certain actions on behalf of a selling partner.\"\n    },\n    \"access\": {\n      \"url\": \"https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer\",\n      \"quote\": \"After you have submitted your request to register as a developer, Amazon evaluates the information provided and approves or denies your request.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developer-docs.amazon/sp-api\",\n      \"quote\": \"Tutorial: Automate your SP-API Calls Using a C# SDK\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint_url": "https://developer-docs.amazon.com/sp-api",
+    "one_liner": "The Amazon Selling Partner API (SP-API) provides programmatic access to inventory, orders, pricing, and other selling partner workflows.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Uses Login with Amazon (LWA) to exchange refresh tokens or client credentials for access tokens."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "Developer registration requests are evaluated by Amazon, and developers must complete profiles, policy requirements, and security controls."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "C#",
+        "Java"
+      ],
+      "notes": "Exposes REST endpoints, JSON schemas, notifications, and client SDKs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "hard",
+      "reasoning": "Credentials require approval, sales contact, or vendor provisioning, so an outside developer cannot start unaided. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+        "claim": "Authentication uses Login with Amazon (LWA) OAuth2 tokens.",
+        "quote": "A Login with Amazon (LWA) access token authorizes your application to take certain actions on behalf of a selling partner.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+        "claim": "Developer access is subject to review and approval by Amazon.",
+        "quote": "After you have submitted your request to register as a developer, Amazon evaluates the information provided and approves or denies your request.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api",
+        "claim": "REST API and SDKs are supported.",
+        "quote": "Tutorial: Automate your SP-API Calls Using a C# SDK",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api",
+        "claim": "Webhooks/Notifications API is available.",
+        "quote": "Subscribe to the ORDER_CHANGE Notification",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+        "quote": "A Login with Amazon (LWA) access token authorizes your application to take certain actions on behalf of a selling partner."
+      },
+      "access": {
+        "url": "https://developer-docs.amazon/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer",
+        "quote": "After you have submitted your request to register as a developer, Amazon evaluates the information provided and approves or denies your request."
+      },
+      "api_surface": {
+        "url": "https://developer-docs.amazon/sp-api",
+        "quote": "Tutorial: Automate your SP-API Calls Using a C# SDK"
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:18:54.011161+00:00"
+}

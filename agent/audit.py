@@ -29,6 +29,12 @@ from agent.gemini import generate_json, make_client as make_gemini_client
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 
+# Groq's free tier allows ~8k tokens per minute and one audit call is several thousand, so
+# back-to-back apps trip the limit. Pacing between apps keeps the run under it, which is
+# faster overall than repeatedly hitting 429 and waiting out a long retry-after.
+PACE_SECONDS = int(os.environ.get("AUDIT_PACE_SECONDS", "40"))
+MAX_RETRY_WAIT = 180
+
 VERDICT_VALUES = ("yes", "no", "partial")
 EVIDENCE_TYPES = ("access_docs", "usage_docs", "marketing", "none")
 
@@ -124,10 +130,17 @@ def _ask_groq(prompt: str, retries: int = 5) -> dict:
             continue
 
         if resp.status_code == 429 or resp.status_code >= 500:
-            # Groq tells us how long to wait; obey it rather than guessing.
-            wait = float(resp.headers.get("retry-after", 0) or 0) or min(60, 8 * (attempt + 1))
+            # Groq tells us how long to wait, but it sometimes asks for half an hour once a
+            # longer window is exhausted. Blocking that long stalls the whole batch, so the
+            # wait is capped and the app is skipped instead — the run is resumable, and a
+            # skipped app is visible rather than silently missing.
+            asked = float(resp.headers.get("retry-after", 0) or 0)
+            wait = min(asked or 8 * (attempt + 1), MAX_RETRY_WAIT)
             last = f"HTTP {resp.status_code}"
-            print(f"        (groq {last}, waiting {wait:.0f}s)")
+            if asked > MAX_RETRY_WAIT:
+                print(f"        (groq asked for {asked:.0f}s; capped at {wait:.0f}s)")
+            else:
+                print(f"        (groq {last}, waiting {wait:.0f}s)")
             time.sleep(wait + 1)
             continue
 

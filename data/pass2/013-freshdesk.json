@@ -1,0 +1,202 @@
+{
+  "app": "Freshdesk",
+  "number": 13,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:47:27.589196+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.freshdesk.com/\",\n    \"https://support.freshdesk.com/support/solutions/articles/215666-how-to-generate-your-api-key\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://freshdesk.com",
+    "https://developers.freshdesk.com/",
+    "https://support.freshdesk.com/support/solutions/articles/215666-how-to-generate-your-api-key",
+    "https://docs.freshdesk.com/",
+    "https://developer.freshdesk.com/",
+    "https://api.freshdesk.com/",
+    "https://freshdesk.com/docs",
+    "https://freshdesk.com/developers",
+    "https://freshdesk.com/api",
+    "https://freshdesk.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.freshworks.com/contact/",
+    "https://www.freshworks.com/partners/",
+    "https://www.freshworks.com/crm/sales/",
+    "https://www.freshworks.com/crm/suite/",
+    "https://www.freshworks.com/freshdesk/signup/",
+    "https://www.freshworks.com/freshdesk/pricing/",
+    "https://developers.freshdesk.com/v2/docs/quick-start/",
+    "https://freshdesk.com/signup",
+    "https://developer.freshdesk.com/v2/docs/quick-start/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://support.freshdesk.com/support/solutions/articles/215666-how-to-generate-your-api-key",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.freshdesk.com/",
+      "reason": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.freshdesk.com/",
+      "reason": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://freshdesk.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://freshdesk.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://www.freshworks.com/freshdesk/signup/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.freshworks.com/freshdesk/",
+      "requested_url": "https://freshdesk.com",
+      "status": 200,
+      "title": "AI-Powered Customer Service Software | Freshdesk | Freshworks",
+      "chars": 1399,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.freshdesk.com/",
+      "requested_url": "https://developers.freshdesk.com/",
+      "status": 200,
+      "title": "Freshdesk Developers",
+      "chars": 718,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.freshdesk.com/",
+      "requested_url": "https://developer.freshdesk.com/",
+      "status": 200,
+      "title": "Freshdesk Developers",
+      "chars": 718,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.freshworks.com/contact/",
+      "requested_url": "https://www.freshworks.com/contact/",
+      "status": 200,
+      "title": "Contact Freshworks",
+      "chars": 1830,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.freshworks.com/partners/",
+      "requested_url": "https://www.freshworks.com/partners/",
+      "status": 200,
+      "title": "Grow Your Business with Freshworks Partnerships | Become a partner today!",
+      "chars": 3421,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.freshworks.com/crm/sales/",
+      "requested_url": "https://www.freshworks.com/crm/sales/",
+      "status": 200,
+      "title": "Freshsales: Streamlined Sales CRM Solution | Freshworks",
+      "chars": 2821,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.freshworks.com/crm/suite/",
+      "requested_url": "https://www.freshworks.com/crm/suite/",
+      "status": 200,
+      "title": "Freshsales Suite: CRM plus Marketing Automation | Freshworks",
+      "chars": 3896,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Freshdesk provides AI-powered customer service software and includes an API for managing helpdesk data and an MCP integration.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The fetched developer pages link to API documentation and developer tools, but do not explicitly detail the specific authentication mechanism (e.g., API key or OAuth2) used for API calls.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The pages show self-service sign-up options such as 'Start for free' and 'Signup for free'.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The developer documentation mentions an API with endpoints to access and manage data ('View the API Docs') and SDK documentation ('View the SDK Docs').\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://www.freshworks.com/freshdesk/\",\n    \"notes\": \"Through MCP, bring customer data into everyday workflows and automate support at scale.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.freshworks.com/freshdesk/\",\n      \"claim\": \"Freshdesk provides MCP integration.\",\n      \"quote\": \"Through MCP, bring customer data into everyday workflows and automate support at scale.\"\n    },\n    {\n      \"url\": \"https://developers.freshdesk.com/\",\n      \"claim\": \"Freshdesk provides API endpoints and SDK docs.\",\n      \"quote\": \"All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use.\"\n    },\n    {\n      \"url\": \"https://developers.freshdesk.com/\",\n      \"claim\": \"Freshdesk allows free signup.\",\n      \"quote\": \"Don't have a Freshdesk account? Signup for free\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://developers.freshdesk.com/\",\n      \"quote\": \"Don't have a Freshdesk account? Signup for free\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.freshdesk.com/\",\n      \"quote\": \"All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://www.freshworks.com/freshdesk/\",\n      \"quote\": \"Through MCP, bring customer data into everyday workflows and automate support at scale.\"\n    }\n  },\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://freshdesk.com",
+    "one_liner": "Freshdesk provides AI-powered customer service software and includes an API for managing helpdesk data and an MCP integration.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The pages show self-service sign-up options such as 'Start for free' and 'Signup for free'."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "The developer documentation mentions an API with endpoints to access and manage data ('View the API Docs') and SDK documentation ('View the SDK Docs')."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://www.freshworks.com/freshdesk/",
+      "notes": "Through MCP, bring customer data into everyday workflows and automate support at scale."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.freshworks.com/freshdesk/",
+        "claim": "Freshdesk provides MCP integration.",
+        "quote": "Through MCP, bring customer data into everyday workflows and automate support at scale.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.freshdesk.com/",
+        "claim": "Freshdesk provides API endpoints and SDK docs.",
+        "quote": "All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.freshdesk.com/",
+        "claim": "Freshdesk allows free signup.",
+        "quote": "Don't have a Freshdesk account? Signup for free",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://developers.freshdesk.com/",
+        "quote": "Don't have a Freshdesk account? Signup for free"
+      },
+      "api_surface": {
+        "url": "https://developers.freshdesk.com/",
+        "quote": "All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use."
+      },
+      "mcp": {
+        "url": "https://www.freshworks.com/freshdesk/",
+        "quote": "Through MCP, bring customer data into everyday workflows and automate support at scale."
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered"
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-28T03:47:39.467070+00:00"
+}

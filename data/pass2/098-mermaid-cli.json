@@ -1,0 +1,187 @@
+{
+  "app": "Mermaid CLI",
+  "number": 98,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:13:35.868051+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://github.com/mermaid-js/mermaid-cli\",\n    \"https://github.com/mermaid-js/mermaid-cli#readme\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://github.com/mermaid-js/mermaid-cli",
+    "https://github.com/mermaid-js/mermaid-cli#readme",
+    "https://docs.github.com/",
+    "https://developer.github.com/",
+    "https://developers.github.com/",
+    "https://api.github.com/",
+    "https://github.com/docs",
+    "https://github.com/developers",
+    "https://github.com/api",
+    "https://github.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://github.com/mermaid-js/mermaid-cli/blob/master/LICENSE",
+    "https://github.com/pricing",
+    "https://github.com/partners",
+    "https://support.github.com?tags=dotcom-footer",
+    "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fmermaid-js%2Fmermaid-cli&report=mermaid-js+%28user%29",
+    "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=mermaid-js%2Fmermaid-cli",
+    "https://docs.github.com/en/authentication",
+    "https://docs.github.com/en/copilot/get-started/plans",
+    "https://support.github.com",
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/graphql",
+    "https://github.com/docs/onboarding-actions",
+    "https://github.com/docs/onboarding-actions/forks",
+    "https://github.com/docs/onboarding-actions/pulls",
+    "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Corg-login%3E&source=header"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.github.com/",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://support.github.com?tags=dotcom-footer",
+      "reason": "page too thin (70 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fmermaid-js%2Fmermaid-cli&report=mermaid-js+%28user%29",
+      "reason": "page too thin (86 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "requested_url": "https://github.com/mermaid-js/mermaid-cli",
+      "status": 200,
+      "title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library \u00b7 GitHub",
+      "chars": 4994,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli#readme",
+      "requested_url": "https://github.com/mermaid-js/mermaid-cli#readme",
+      "status": 200,
+      "title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library \u00b7 GitHub",
+      "chars": 4994,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en",
+      "requested_url": "https://docs.github.com/",
+      "status": 200,
+      "title": "GitHub Docs",
+      "chars": 1116,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://api.github.com/",
+      "requested_url": "https://api.github.com/",
+      "status": 200,
+      "title": "",
+      "chars": 2395,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/docs",
+      "requested_url": "https://github.com/docs",
+      "status": 200,
+      "title": "GitHub Docs \u00b7 GitHub",
+      "chars": 1830,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/developers",
+      "requested_url": "https://github.com/developers",
+      "status": 200,
+      "title": "Developers \u00b7 GitHub",
+      "chars": 231,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/LICENSE",
+      "requested_url": "https://github.com/mermaid-js/mermaid-cli/blob/master/LICENSE",
+      "status": 200,
+      "title": "mermaid-cli/LICENSE at master \u00b7 mermaid-js/mermaid-cli \u00b7 GitHub",
+      "chars": 1194,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/pricing",
+      "requested_url": "https://github.com/pricing",
+      "status": 200,
+      "title": "Pricing \u00b7 Plans for every developer \u00b7 GitHub",
+      "chars": 4964,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/partners",
+      "requested_url": "https://github.com/partners",
+      "status": 200,
+      "title": "GitHub Partner Program \u00b7 GitHub",
+      "chars": 1650,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Mermaid CLI is a command-line interface tool for the Mermaid library that takes a mermaid definition file as input and generates SVG, PNG, or PDF files as output.\",\n  \"auth\": {\n    \"method\": \"none\",\n    \"notes\": \"Mermaid CLI is a local command-line tool and does not use API authentication mechanisms.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The CLI is available as a public open source project on GitHub under the MIT license and can be installed freely via npm or Docker.\"\n  },\n  \"api_surface\": {\n    \"rest\": false,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"Mermaid CLI operates purely as a command-line utility and does not provide REST, GraphQL, or webhook developer APIs.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No Model Context Protocol (MCP) server or interface is mentioned in the documentation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://github.com/mermaid-js/mermaid-cli\",\n      \"claim\": \"Mermaid CLI is a command-line interface for the Mermaid library taking definition files and generating SVG/PNG/PDF outputs.\",\n      \"quote\": \"This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.\"\n    },\n    {\n      \"url\": \"https://github.com/mermaid-js/mermaid-cli\",\n      \"claim\": \"Installation is done via npm.\",\n      \"quote\": \"npm install -g @mermaid-js/mermaid-cli\"\n    },\n    {\n      \"url\": \"https://github.com/mermaid-js/mermaid-cli/blob/master/LICENSE\",\n      \"claim\": \"Mermaid CLI is distributed under the MIT License.\",\n      \"quote\": \"MIT License\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://github.com/mermaid-js/mermaid-cli\",\n      \"quote\": \"npm install -g @mermaid-js/mermaid-cli\"\n    },\n    \"api_surface\": null,\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://github.com/mermaid-js/mermaid-cli",
+    "one_liner": "Mermaid CLI is a command-line interface tool for the Mermaid library that takes a mermaid definition file as input and generates SVG, PNG, or PDF files as output.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://github.com/mermaid-js/mermaid-cli."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "claim": "Mermaid CLI is a command-line interface for the Mermaid library taking definition files and generating SVG/PNG/PDF outputs.",
+        "quote": "This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {},
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: quoted line not found on https://github.com/mermaid-js/mermaid-cli",
+      "api_surface: no support offered",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:13:49.995176+00:00"
+}

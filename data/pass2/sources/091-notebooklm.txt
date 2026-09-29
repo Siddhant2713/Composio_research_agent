@@ -1,0 +1,993 @@
+===== https://cloud.google.com/ai/gemini
+TITLE: Google AI Studio vs. Gemini Enterprise Agent Platform vs. Gemini Enterprise app | Google Cloud
+ACCESSED: 2026-09-28
+
+Google AI Studio vs. Gemini Enterprise Agent Platform vs. Gemini Enterprise app | Google Cloud
+From tokenmaxxing to ROI: Learn who is gaining the most ROI from AI and strategies that you can follow in our latest report
+The Gemini era for developers and businesses
+Gemini's ecosystem of products and models can help developers and businesses get the most out of Google AI, from building with Gemini models to using Gemini across every employee in your organization.
+Try Gemini 3
+, our best models for reasoning, coding, and multimodal understanding
+Learn how customers are using Google AI today to reshape their businesses.
+BUILD WITH GEMINI MODELS:
+Google AI Studio
+Experiment, prototype, and deploy.
+Google AI Studio is the fast path for developers, students, and researchers who want to try Gemini models and get started building with the Gemini Developer API.
+Gemini Enterprise Agent Platform
+Build AI agents and integrate generative AI into your applications.
+Google Cloud offers Agent Platform, a single, fully-managed, unified development platform for using Gemini models and other third party models at scale.
+USE GEMINI IN YOUR BUSINESS:
+Gemini Enterprise app
+Bring the best of Google AI to every employee
+. Gemini Enterprise app empowers teams to discover, create, share, and run AI agents all in one secure platform.
+Google Workspace with Gemini
+Your AI-powered assistant built right into Gmail, Docs, Slides, Sheets,
+and more, to help boost your productivity and creativity.
+Gemini offering
+Use case
+Resources
+Gemini Developer API
+Discover the power of Gemini with Google AI Studio and start building
+Start using Gemini with
+Google AI Studio
+, a web-based tool that lets you prototype, run prompts right in your browser. Google AI Studio is the fast path for developers, students, and researchers who want to try Gemini models and get started building with the Gemini Developer API.
+Try Gemini
+3
+Get your no cost Gemini API key
+Gemini Developer API quickstart
+Gemini API in Gemini Enterprise Agent Platform
+Access, customize, and deploy Gemini models at scale with Agent Platform
+Enterprise customers and developers can experience Google's largest and most capable AI models through the Gemini API in
+Agent Platform
+. Agent Platform makes it possible to discover, customize, tune, and deploy Gemini models at scale, empowering developers to build new and differentiated applications that can process information across text, code, images, and video.
+Guide to get started using the Gemini API in Agent Platform
+View examples of prompts and responses using Gemini models
+Gemini Enterprise app
+Bring the best of Google AI to every employee, for every workflow
+With
+Gemini Enterprise app
+, every individual can shift from tedious tasks to high-impact work. They can access Google’s powerful AI models through an intuitive chat interface, deploy ready-to-use agents from Google and our thriving ecosystem of partners, and even transform their own expertise into shared automations for the entire company with a powerful no-code workbench.
+Try Gemini Enterprise app
+Explore prebuilt agents
+Get sample prompts in the prompt guide
+Google Cloud with Gemini
+Accelerate software delivery with Gemini Code Assist
+Our AI assistant for developers. Gemini Code Assist offers AI-powered assistance to help developers build applications with higher velocity and quality. Code assistance is available in many popular IDEs, such as
+Visual Studio Code
+,
+JetBrains IDEs
+,
+Cloud Workstations
+,
+Cloud Shell Editor
+, and supports
+20+ programming languages
+.
+Set up Gemini Code Assist for a cloud project
+Use Gemini Code Assist in your IDE
+Efficiently manage your application lifecycle with Gemini Cloud Assist
+Gemini Cloud Assist (in preview) helps cloud teams design, operate, and optimize their application lifecycle. Gemini’s contextual and personalized AI guidance understands your Google Cloud resources to help you craft new designs, deploy workloads, manage applications, troubleshoot issues, and optimize performance and costs.
+Set up Gemini Cloud Assist in Google Cloud Console
+Accelerate analytics and workflows with Gemini in BigQuery
+Gemini in
+BigQuery
+provides AI-powered assistive and collaboration features including assisted SQL and Python data analysis, visual data preparation, and intelligent recommendations that help enhance productivity and optimize costs.
+Set up Gemini in BigQuery
+Introduction to Gemini in BigQuery
+Automate insights with Gemini in Looker
+Gemini in
+Looker
+(preview) provides an always-on intelligent assistant that enables you to have conversations with your data and helps you automatically create and share your insights even faster, with automated reports and visualizations.
+Set up Gemini in Looker
+Elevate security expertise with AI
+Generative AI-powered assistance to cloud defenders where and when they need it. Gemini in
+Security Operations
+and Gemini in
+Threat Intelligence
+are now generally available, while Gemini in
+Security Command Center
+is currently in prev
+
+===== https://developers.google.com/
+TITLE: Google for Developers | Build with Gemini
+ACCESSED: 2026-09-28
+
+Stay organized with collections
+Save and categorize content based on your preferences.
+Build with
+Gemini
+Unlock AI models to build innovative apps and transform development workflows with tools across platforms.
+The fastest path from prompt to production app with Gemini.
+Experience our agent-first platform built for the next era of how you build, work, and automate.
+Build and scale your apps without needing to manage the infrastructure with Google Cloud Run.
+Build high-quality Android apps faster with Gemini in Android Studio.
+Develop next-generation apps and agents by integrating Google's most advanced reasoning and generative models and agent-first APIs.
+Discover how your web applications can perform AI tasks with browser-managed AI models and APIs.
+Build, scale, govern, and optimize enterprise agents.
+close
+GEMINI API
+Integrate Gemini directly into your apps
+Unleash the full potential of your applications by integrating Gemini's long context window and native multimodal reasoning to process massive codebases, complex media, and real-time agentic workflows with a single API.
+View documentation
+Python
+JavaScript
+Go
+Java
+REST
+More
+from
+google
+import
+genai
+client
+=
+genai
+.
+Client
+()
+response
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-3.5-flash"
+,
+contents
+=
+"Explain how AI works in a few words"
+,
+)
+print
+(
+response
+.
+text
+)
+import
+{
+GoogleGenAI
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
+const
+response
+=
+await
+ai
+.
+models
+.
+generateContent
+({
+model
+:
+"gemini-3.5-flash"
+,
+contents
+:
+"Explain how AI works in a few words"
+,
+});
+console
+.
+log
+(
+response
+.
+text
+);
+}
+await
+main
+();
+package
+main
+import
+(
+"context"
+"fmt"
+"log"
+"google.golang.org/genai"
+)
+func
+main
+()
+{
+ctx
+:=
+context
+.
+Background
+()
+client
+,
+err
+:=
+genai
+.
+NewClient
+(
+ctx
+,
+nil
+)
+if
+err
+!=
+nil
+{
+log
+.
+Fatal
+(
+err
+)
+}
+result
+,
+err
+:=
+client
+.
+Models
+.
+GenerateContent
+(
+ctx
+,
+"gemini-3.5-flash"
+,
+genai
+.
+Text
+(
+"Explain how AI works in a few words"
+),
+nil
+,
+)
+if
+err
+!=
+nil
+{
+log
+.
+Fatal
+(
+err
+)
+}
+fmt
+.
+Println
+(
+result
+.
+Text
+())
+}
+package
+com.example
+;
+import
+com.google.genai.Client
+;
+import
+com.google.genai.types.GenerateContentResponse
+;
+public
+class
+GenerateTextFromTextInput
+{
+public
+static
+void
+main
+(
+String
+[]
+args
+)
+{
+Client
+client
+=
+new
+Client
+();
+GenerateContentResponse
+response
+=
+client
+.
+models
+.
+generateContent
+(
+"gemini-3.5-flash"
+,
+"Explain how AI works in a few words"
+,
+null
+);
+System
+.
+out
+.
+println
+(
+response
+.
+text
+());
+}
+}
+curl
+"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-5-flash:generateContent"
+\
+-H
+"x-goog-api-key:
+$GEMINI_API_KEY
+"
+\
+-H
+'Content-Type: application/json'
+\
+-X
+POST
+\
+-d
+'{
+"contents": [
+{
+"parts": [
+{
+"text": "Explain how AI works in a few words"
+}
+]
+}
+]
+}'
+News & Announcements
+Raising the quality bar: Prepare for new Play standards in memory, code, and onboarding.
+Learn more
+Use build-time validation and modular architectures to make your agents production-ready.
+Learn more
+Google Play is evolving from a standard billing system to a flexible ecosystem built for high-quality experiences. Learn how to set the new standard for user experience and unlock lower rates.
+Learn more
+Discover the new Antigravity CLI and migrate by June 18
+Learn more
+Community & Events
+Google I/O Connect
+I/O Connect China
+Connect with fellow professional developers and Google experts, get inspired by the latest tools and tech, accelerate your development, and create cutting-edge applications.
+August 12-13 / Shanghai
+Google Cloud
+Build with Gemini
+Move beyond basic chatbots. Join Google Cloud experts for a hands-on day building, scaling, and deploying secure, production-ready AI agents.
+Aug - Oct / Multi-city
+Google Cloud
+Google Cloud Summit Doha
+Join the annual Google Cloud event to discover the latest technological innovations in AI, security, application development, collaboration, and more.
+September 22 / Doha, Qatar
+Build and manage in one place
+Access specialized AI workspaces, learn from 700+ hands-on codelabs, and manage projects from a centralized Builders Hub as you move from prototype to production.
+Join the program
+
+===== https://docs.cloud.google.com/docs
+TITLE: Google Cloud Documentation
+ACCESSED: 2026-09-28
+
+Send feedback
+Stay organized with collections
+Save and categorize content based on your preferences.
+Find user guides, quickstarts, tutorials, use cases, code samples, and more.
+Get started for free
+Start your proof of concept with $300 in free credit
+Develop with our latest Generative AI models and tools.
+Get free usage of 20+ popular products, including Compute Engine and AI APIs.
+No automatic charges, no commitment.
+View free product offers
+Keep exploring with 20+ always-free products.
+Access 20+ free products for common use cases, including AI APIs, VMs, data warehouses,
+          and more.
+Learn about Google Cloud, including popular features with pointers to documentation and tutorials.
+Plan and design your infrastructure with architectural guidance and best practices.
+Start building in the console with $300 in free credits for new customers. All customers get free usage of over 20 products.
+Plan how to migrate your workloads, data, and processes.
+Compare AWS and Azure services to Google Cloud.
+Explore product quickstarts, tutorials, and interactive walkthroughs.
+Get generative-AI powered assistance with an always-on collaborator.
+Prepare your organization for scalable, production-ready, enterprise workloads.
+Study emerging cloud technologies and get Google Cloud certified.
+Review samples to demonstrate the use of Google Cloud products.
+Plan and quickly deploy pre-built solutions to solve your business challenges.
+New guide
+Learn the stages of building a generative AI application, choose the best products and tools for your use case, and access the documentation you need to get started.
+Popular guide
+Install and initialize the Google Cloud CLI and run core gcloud CLI commands.
+Leverage the power of AI/ML solutions to transform your organization and solve real-world problems.
+Create applications with a comprehensive set of tools and services.
+Run and manage applications on a secure platform.
+Run your workloads on virtual machines with specialized offerings for ML, high-performance computing, and other workloads to match your needs.
+Load, transform, and analyze data to provide business intelligence insights.
+Migrate and manage enterprise data with security, reliability, high availability, and fully-managed data services.
+Extend your Google Cloud topology to the edge, on-premises, and other cloud platforms.
+Transform your business with Google Cloud solutions for specific industries like commerce, healthcare, and financial services.
+Tools and services to help you migrate to Google Cloud.
+Connect your networks and workloads, load balance traffic, and secure your network.
+Documentation, guides, and resources for observability and monitoring across Google Cloud products and services.
+Google Cloud security products help organizations secure their cloud environment, protect their data, and comply with industry regulations.
+Data storage, backup, and disaster recovery.
+Organize, analyze, and manage access to your Google Cloud resources and services.
+Manage costs and usage across Google Cloud products and services.
+Use Google Cloud SDK, languages, frameworks, and tools effectively in cloud development.
+Configure your infrastructure using code instead of graphical interfaces or command-line scripts.
+Use tools and information to help you on your journey to Google Cloud.
+The Rust logo is owned by the Rust Foundation and distributed under the terms of the Creative Commons Attribution license (CC-BY).
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-09-24 UTC.
+
+===== https://ai.google.dev/
+TITLE: Gemini Developer API | Gemma open models  |  Google AI for Developers
+ACCESSED: 2026-09-28
+
+Send feedback
+New
+Build with Gemini 3 Flash, our frontier intelligence built for speed and scale
+AI for every
+developer
+Unlock AI models to build innovative apps and transform development workflows with tools across platforms.
+Explore models in Google AI Studio
+Integrate Google AI models with an API key
+Build with cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind
+View Gemini API docs
+Integrate models into apps
+Unlock AI capabilities for your apps with a simple call to the Gemini API.
+Gemini API docs
+Explore AI models
+Quickly evaluate AI models, develop prompts, and transform ideas into code.
+Google AI Studio
+Own your AI with Gemma open models
+Build custom AI solutions and retain complete control. Tailor Gemma models, built from the same research and technology as Gemini, with your own data.
+Build with Gemma
+Run AI models on-device with Google AI Edge
+Build and deploy edge ML solutions across mobile, web, and embedded applications, from simple APIs to custom pipelines, with support across all major frameworks.
+Explore Google AI Edge
+Gemini Nano on Android
+Unlock low latency and cost effective generative AI features while keeping data on-device.
+Android docs
+AI features for web apps
+Integrate AI models like Gemini Nano into web apps with Chrome's built-in web platform APIs.
+AI on Chrome
+Build with AI responsibly
+Build trusted and secure AI with guidance for responsible design, development, and deployment of models and applications.
+Build Responsible AI
+Build responsible models
+Tools and guidance to design, build, and evaluate open AI models responsibly.
+Responsible GenAI Toolkit
+Develop secure AI systems
+Build and deploy secure, responsible AI applications with the help of Google's Secure AI Framework (SAIF).
+Secure AI Framework
+Agents
+Analysis and insights
+Code generation
+Code chat
+Agents
+Gemini empowers you to be more productive by acting as your coding agent. It can plan and execute tasks, freeing you to focus on what matters most.
+Jules
+Colab
+Firebase
+Analysis and insights
+Improve code quality and fix issues with code analysis. Get insights, suggestions, and code snippets within your existing development environment.
+Android Studio
+Chrome DevTools
+Firebase
+Google Cloud
+JetBrains IDEs
+VS Code
+Code generation
+Gemini adds AI-powered code completion with natural language understanding to create entire code blocks from your descriptions, revolutionizing your development workflow.
+Android Studio
+Colab
+Firebase
+Google Cloud
+JetBrains IDEs
+VS Code
+Code chat
+Ask development questions and receive responses that help you reduce errors, solve problems, and become a better developer. Gemini understands the context of your environment to give you the best responses for your questions.
+Android Studio
+Colab
+Firebase
+Google Cloud
+JetBrains IDEs
+VS Code
+Explore apps built with the Gemini API
+Tldraw
+Prototyping a new natural language computing experience on an infinite canvas with Gemini 2.0
+View
+Rooms
+Unlocking richer avatar interactions with Gemini 2.0 text and audio capabilities
+View
+Toonsutra
+Leveraging contextual multilingual translation abilities of Gemini 2.0 to make comics and webtoons accessible to audiences in India across regional languages.
+View
+Viggle
+Experimenting with Gemini 2.0 to create virtual characters and audio narration for their AI powered video platform
+View
+Sublayer
+See how the Ruby-based AI agent framework empowers developer teams to be more productive with the power of Gemini models.
+View
+Sourcegraph
+Learn how Cody AI saw big quality gains using Gemini's massive context window.
+View
+AgentOps
+Explore how AgentOps provides cost-effective and powerful LLM-powered agent observability for enterprises using Gemini API.
+View
+Join the community
+Tap into the power of our community forum. Get answers, build together, and be part of the conversation.
+Google AI Forum
+
+===== https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-686046529:1790572039287695
+TITLE: Sign in - Google Accounts
+ACCESSED: 2026-09-28
+
+Sign in - Google Accounts
+Loading
+Sign in
+Use your Google Account
+Email or phone
+Forgot email?
+Type the text you hear or see
+Not your computer? Use Guest mode to sign in privately.
+Learn more about using Guest mode
+Next
+Create account
+
+===== https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1912954470:1790572041969410
+TITLE: Sign in - Google Accounts
+ACCESSED: 2026-09-28
+
+Sign in - Google Accounts
+Loading
+Sign in
+Use your Google Account
+Email or phone
+Forgot email?
+Type the text you hear or see
+Not your computer? Use Guest mode to sign in privately.
+Learn more about using Guest mode
+Next
+Create account
+
+===== https://cloud.google.com/contact
+TITLE: Contact Sales | Google Cloud
+ACCESSED: 2026-09-28
+
+Contact Sales | Google Cloud
+How can we help you today?
+Talk to a Google Cloud sales specialist
+Chat online with us
+Chat online with the Google Cloud sales team, available Monday, 9 AM ET, through Friday, 7 PM ET.
+Start chat
+Request a call back
+Fill out the contact form with your information, and we’ll get back to you shortly.
+Go to contact form
+Find a Google Cloud partner
+to help you evaluate and implement the right solution for your business.
+Get started on my own
+Google Cloud free trial
+Start building on Google Cloud with $300 in free credits and 20+ always free products.
+Get started for free
+Gemini Enterprise
+Bring the best of Google AI to every employee, for every workflow—all in one secure platform. Try the Business edition at no cost for 30 days.
+Start 30-day trial
+How-to guides
+Explore comprehensive documentation, quickstart guides, and code snippets for Google Cloud products and services.
+View documentation
+Training resources
+Build the cloud skills you need to elevate your career and solve the challenges of the future.
+Explore training
+Ready-to-deploy tools
+Google Cloud Marketplace offers more than 2,000 popular development stacks, solutions, and services optimized to run on Google Cloud.
+Explore Marketplace
+Google for Startups Cloud Program
+Build and scale your startup with your first year covered by Google Cloud credits, plus get support to help your startup grow.
+Learn more about the program
+Get support for my current Google Cloud product(s)
+Billing and account support
+Chat with billing specialists about your account, free trial, settings, invoices, and payments.
+Get billing support
+Technical support
+Admins can submit a new case or review the status of an existing case in console.
+File a case
+Premium Support
+Contact sales to purchase Premium Support, which includes Customer Awareness and a named Technical Account Manager.
+Purchase Premium Support
+Community support
+Get answers to technical questions from expert communities, including Stack Overflow, Server Fault, and Google Groups.
+Visit community forum
+Support for other Google products
+Go to the Google Help Center for assistance with YouTube, Gmail, Google Photos, or another Google product.
+Go to Google Help Center
+For all other support topics, including Standard and Enhanced Support features, visit the
+Support Hub
+.
+Increase my Google Cloud product quota
+Request business project quota increase
+Submit a request to increase your project quota for Google Cloud or Google API projects.
+Request quota increase
+Get help with denied quota increase requests
+For quota requests that were denied or require further context, fill out the contact form.
+Go to contact form
+Quota increase FAQs
+Learn more about Google Cloud’s quota increase policies, including best practices and troubleshooting for requests.
+Read FAQs
+Learn about Google Cloud partners
+Become a Google Cloud partner
+Unlock your growth: Join the Google Cloud Partner Network.
+Enroll now
+Get partner support
+Chat with our partner help agent or open a case with our support team.
+Open a case
+Find a Google Cloud partner
+Find Google Cloud partners with the experience you’re looking for and the credentials to prove it.
+Explore Partner Finder
+Explore, launch, and manage partner solutions
+Quickly deploy your co-branded solutions on Google Cloud Marketplace.
+Explore Cloud Marketplace
+Learn more about
+Google Cloud Partner Network
+.
+Get help with Google Workspace (Gmail, Docs, etc.)
+Talk to a Google Workspace sales specialist
+Fill out the contact form to start a conversation with a Google Workspace sales specialist.
+Go to contact form
+Get support for an existing Google Workspace account
+Get phone, email, and chat support—or find articles for setup, billing, and other common topics.
+Visit Help Center
+Learn more about
+Google Workspace
+.
+
+===== https://docs.cloud.google.com/docs/get-started/
+TITLE: Get started with Google Cloud  |  Google Cloud Documentation
+ACCESSED: 2026-09-28
+
+Send feedback
+Stay organized with collections
+Save and categorize content based on your preferences.
+Start by creating a Google Cloud account. Plus, you get $300 in free credits and free usage of 20+ products on signup to run, test, and deploy workloads.
+Create an account
+Google Cloud overview
+Get hands-on experience with
+free usage of 20+ products
+, including popular products like AI APIs, Compute Engine, BigQuery, and more.
+Go to console
+Google Cloud overview
+Click to show or hide setup steps by job function:
+Establish administrators, billing accounts, and other settings in your Google Cloud environment.
+1
+Establish your organization, administrators, and billing
+2
+Create an initial architecture
+3
+Deploy or download configuration
+Cloud Quotas overview
+Google Cloud deployment archetypes (Architecture Center)
+Set up billing, spending notifications, and resource structure to facilitate cost monitoring and optimization.
+1
+Learn about Cloud Billing
+2
+Create a billing account
+3
+Set up spending notifications
+4
+Enable billing data export for custom reporting
+Monitor costs using billing reports
+Optimize costs with FinOps hub
+Resource hierarchy options for cost tracking
+Implement cost optimization strategies (Architecture Center)
+Familiarize yourself with core security concepts and tools that impact your security, privacy,
+    and compliance controls.
+1
+Set up API access
+2
+Set up a local development environment
+3
+Learn about IAM in Google Cloud
+4
+Understand identity management
+5
+Learn about organization policies
+Software supply chain security
+Security Command Center overview
+Well-Architected Framework: Security, privacy, and compliance (Architecture Center)
+Start automating infrastructure and secure collaboration with teammates using Google Cloud tools and best practices.
+1
+Set up API access
+2
+Set up a local development environment
+3
+Enable teammates using IAM
+4
+Choose and install a Cloud Client Library
+5
+Learn about authentication
+6
+Learn about authorization and access control
+Observability in Google Cloud
+Terraform and Infrastructure Manager
+CI/CD pipeline for containerized apps (Architecture Center)
+Get basic API access and set up a development environment that can interact with Google Cloud services.
+1
+Set up API access
+2
+Set up a local development environment
+3
+Choose and install a Cloud Client Library
+4
+Set up IDE extensions
+5
+Learn about authentication basics
+6
+Learn about authorization and access control
+Choose models and infrastructure for a generative AI application
+Analyze sample data using Google Cloud products with minimal setup.
+1
+Load and query sample data
+2
+Explore, analyze, and share data
+3
+Learn about programmatic analysis tools
+4
+Introduction to AI and ML in BigQuery
+Set up the bq command-line tool
+Gemini in BigQuery overview
+Data analytics design patterns (Architecture Center)
+wb_iridescent
+Learn and experiment with pre-built solution templates.
+home_repair_service
+Discover tools, resources, and products that enable interaction with Google Cloud using code.
+hub
+Follow recommendations and best practices to design and operate a well-architected cloud topology.
+dashboards
+A quick reference for Google Cloud products.
+cloud
+Compare AWS and Azure services to Google Cloud.
+school
+Explore our curriculum and grow your skills with Google Cloud Training.
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-09-23 UTC.
+
+===== https://cloud.google.com/sdk
+TITLE: Cloud SDK - Libraries and Command Line Tools | Google Cloud
+ACCESSED: 2026-09-28
+
+Cloud SDK - Libraries and Command Line Tools | Google Cloud
+Jump to
+Cloud SDK: Libraries and Command Line Interface
+Cloud SDK
+Libraries and tools for interacting with Google Cloud products and services.
+Cloud SDK is available at no charge
+for users with a Google Cloud account.
+Create my account
+Contact sales
+Integrate APIs using Client Libraries for
+Java
+,
+C++
+,
+Python
+,
+Node.js
+,
+Ruby
+,
+Go
+,
+.NET
+,
+PHP
+,
+Rust
+, and
+ABAP
+Script or interact with cloud resources at scale using the
+Google Cloud CLI
+Accelerate local development with emulators for
+Pub/Sub
+,
+Spanner
+,
+Bigtable
+, and
+Datastore
+VIDEO
+What is the Google Cloud SDK?
+3:00
+Key features
+Key features
+SDK Client Libraries for popular programming languages
+Cloud SDK provides language-specific Cloud Client Libraries supporting each language’s natural conventions and styles. This makes it easier for you to interact with Google Cloud APIs in your language of choice. Client libraries also handle authentication, reduce the amount of necessary boilerplate code, and provide helper functions for pagination of large datasets and asynchronous handling of long-running operations.
+Google Cloud Command Line Interface (gcloud CLI)
+The
+gcloud CLI
+manages authentication, local configuration, developer workflow, and general interactions with Google Cloud resources. With the Google Cloud CLI, it’s easy to perform many common cloud tasks like creating a Compute Engine VM instance, managing a Google Kubernetes Engine cluster, and deploying an App Engine application, either from the command line or in scripts and other automations.
+View all features
+Learn about the Cloud SDK, the gcloud command line interface, and Cloud Shell.
+5:53
+Generate a solution
+What problem are you trying to solve?
+Generate solution
+What you'll get:
+check_small
+Step-by-step guide
+check_small
+Reference architecture
+check_small
+Available pre-built solutions
+This service was built with
+Gemini Enterprise Agent Platform
+. You must be 18 or older to use it. Do not enter sensitive, confidential, or personal info.
+All features
+Cloud SDKs by language
+Google Cloud SDK: Tools for all languages
+Google Cloud CLI
+lets you manage resources and services from the command line. It also contains service and data emulators to speed up local development.
+Cloud Shell
+lets you code or use a terminal directly in the web-browser.
+Cloud Code
+provides IDE extensions for VSCode and IntelliJ.
+Google Cloud SDK for Java
+Cloud SDK Libraries
+Java
+Spring Framework Support
+Google Cloud SDK for Go
+Cloud SDK Libraries
+Go
+Google Cloud SDK for Python
+Cloud SDK Libraries
+Python
+Google Cloud SDK for Ruby
+Cloud SDK Libraries
+Ruby
+Google Cloud SDK for Rust
+Cloud SDK Libraries
+Rust
+Google Cloud SDK for PHP
+Cloud SDK Libraries
+PHP
+Google Cloud SDK for C#
+Cloud SDK Libraries
+C#
+Google Cloud SDK for C++
+Cloud SDK Libraries
+C++
+Google Cloud SDK for Node.js
+Cloud SDK Libraries
+Node.js
+Google Cloud SDK for ABAP
+ABAP SDK for Google Cloud
+ABAP
+Other
+Additional (paid) tools for
+tracing
+,
+logging
+,
+monitoring
+, and
+error reporting.
+Pricing
+Pricing
+Cloud SDK is available at no charge for users with a Google Cloud account.
+Take the next step
+New customers get $300 in free credits to try Cloud SDK and other Google Cloud products.
+Get started for free
+Need help getting started?
+Contact sales
+Work with a trusted partner
+Find a partner
+Continue browsing
+See all products
+
+===== https://cloud.google.com/pricing
+TITLE: Pricing Overview | Google Cloud
+ACCESSED: 2026-09-28
+
+Pricing Overview | Google Cloud
+Google Cloud pricing
+Save money with Google Cloud’s transparent and innovative approach to pricing. Estimate your costs with our
+pricing calculator
+or contact us to get a quote for your organization.
+Request a quote
+Get started for free
+Start running workloads for free
+Create an account to evaluate how Google Cloud products perform in real-world scenarios. New customers get
+$300 in free credits
+to run, test, and deploy workloads, including Google-recommended,
+pre-built solutions
+. All customers can use
+20+ products for free
+, up to monthly usage limits.
+$300
+in free credits
+20+
+free products
+Only pay for what you use
+With Google Cloud’s pay-as-you-go pricing structure, you only pay for the services you use. No up-front fees. No termination charges. Pricing varies by product and usage—
+view detailed price list.
+Save up to 57% on workloads
+Google Cloud saves you money over other providers through automatic savings based on monthly usage and by pre-paying for resources at discounted rates. For example,
+save up to 57%
+with committed use discounts on Compute Engine resources like machine types or GPUs.
+2:48
+Gain visibility into current cost trends and forecasts
+Stay in control of your spending
+Control your spending
+with budgets, alerts, quota limits, and other free cost management tools.
+Optimize costs
+with actionable, AI-powered intelligent recommendations and custom dashboards that display cost trends and forecasts.
+We’re here to help with
+free 24/7 billing support
+.
+Estimate your costs
+Understand how your costs can fluctuate based on location, workloads, and other variables with the
+pricing calculator
+. Or get a custom quote by connecting with a
+sales representative
+.
+0:46
+4:01
+Get free credits
+From ideation to launch and beyond, build with us and get access to the best of Google. Startups can get up to $350,000 in Cloud credits through the
+Google for Startups Cloud Program
+to continue scaling with customized support and solutions.
+Apply now
+Want more guidance? We’ve got you covered.
+Migration assessment: Estimate the cost of migration and get an end-to-end plan.
+Request free migration assessment
+Discover five ways to reduce overall cloud spend with a cost optimization strategy.
+Download the whitepaper
+Partner with trained consultants for help with implementation, migration & more.
+Find a partner for any budget
+Take the next step
+Tell us what you’re solving for. A Google Cloud expert will help you find the best solution.
+Contact sales
+Work with a trusted partner
+Find a partner
+Start using Google Cloud
+Try it free
+Continue browsing
+See all products

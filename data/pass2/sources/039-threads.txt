@@ -1,0 +1,1109 @@
+===== https://developers.facebook.com/documentation/threads
+TITLE: Threads API | Meta for Developers
+ACCESSED: 2026-09-28
+
+Threads API
+Jul 2, 2026
+Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights. The sections below link to reference material and step-by-step guides.
+Documentation contents
+Overview
+Brief overview of the Threads API limitations.
+Get Started
+Learn about the requirements for using the Threads API.
+Threads Use Case
+How to create and customize a Meta app with the Threads API use case in the App Dashboard.
+Reference
+The Threads API endpoints and their parameters.
+Guides
+Learn how to make posts, retrieve media, and troubleshoot issues.
+Single Thread Posts
+Carousel Posts
+Threads Media
+Threads Profiles
+Troubleshooting
+Reply Moderation
+Mentions
+Insights
+Webhooks
+Keyword Search
+oEmbed
+Web Intents
+Postman Collection
+
+===== https://developers.facebook.com/documentation/threads/get-started
+TITLE: Get started with the Threads API | Meta for Developers
+ACCESSED: 2026-09-28
+
+Get started with the Threads API
+Jun 30, 2026
+To access the Threads API, create an app and pick the
+Threads Use Case
+This guide provides information on what you need to get started using the Threads API.
+Before You Start
+You need the following:
+Meta App
+A
+Meta app
+created with the
+Threads use case
+When creating your app there will be 2 app IDs and app secrets. For Threads API implementation purposes, use the Threads app ID and its corresponding app secret.
+Public Server
+We download media used in publishing attempts so the media must be hosted on a publicly accessible server at the time of the attempt.
+Authorization
+Data access authorization is controlled by your app users through the use of the permissions listed below. Users must grant your app these permissions through the
+Authorization Window
+before your app can access their data. For more details, refer to our
+Permissions guide
+threads_basic
+— Required for all Threads endpoints.
+threads_content_publish
+— Required for Threads publishing endpoints only.
+threads_manage_replies
+— Required for making
+POST
+calls to reply endpoints.
+threads_read_replies
+— Required for making
+GET
+calls to reply endpoints.
+threads_manage_insights
+— Required for making
+GET
+calls to insights endpoints.
+Threads testers
+can grant your app these permissions at any time. In order for app users without a role on your app to be able to grant your app these permissions, each permission must first be approved through the
+App Review
+process, and your app must be published.
+Permission grants made by app users with public profiles are valid for 90 days.
+Refreshing
+an app user’s long-lived access token will extend the permission grant for another 90 days if the app user who granted the token has a public profile. If the app user’s profile is
+private
+⁠
+, however, the permission grant cannot be extended and the app user must grant the expired permission to your app again.
+Threads User Access Tokens
+API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol. Access tokens are app-scoped (unique to the app and user pair) and can be short-lived or long-lived. API requests that query Threads users or publish Threads media must include a Threads user access token. Use the
+Access Token Debugger
+to debug your Threads User Access Token.
+Short-Lived Access Tokens
+Short-lived access tokens are valid for 1 hour, but can be exchanged for
+long-lived tokens
+. To get a short-lived access token, implement the
+Authorization Window
+into your app. After the app user authenticates their identity through the window, we will redirect the user back to your app and include an
+authorization code
+, which you can then
+exchange for a short-lived access token
+Long-Lived Access Tokens
+Short-lived tokens that have not expired can be
+exchanged for long-lived access tokens
+, which are valid for 60 days. Long-lived tokens can be
+refreshed
+before they expire by querying the
+GET /refresh_access_token
+endpoint.
+Authorization Window
+The Authorization Window allows your app to get
+authorization codes
+and
+permissions
+from app users. Authorization codes can be exchanged for
+Threads user access tokens
+, which must be included when fetching an app user’s profile, retrieving Threads media, publishing posts, reading replies, managing replies, or viewing insights.
+To implement the Authorization Window, refer to the
+Getting Access Tokens
+guide.
+Authorization Codes
+Authorization codes can be exchanged for short-lived
+Threads user access tokens
+. To get an authorization code, implement the
+Authorization Window
+into your app. After an app user authenticates their identity through the window and grants your app any permissions it needs, we will redirect the user to your app and include an authorization code. You can then use the API to exchange the code for the app user’s short-lived Threads user access token.
+Authorization codes are short-lived and are only valid for 1 hour.
+Threads Testers
+In order to test your app with a Threads user, you must first send an invitation to the Threads user’s profile and accept the invitation. Invitations can be sent by clicking on the
+Add People
+button and selecting
+Threads Tester
+in the
+App Dashboard
+>
+App roles
+>
+Roles
+tab.
+Invitations can be accepted by the Threads user in the
+Website permissions
+section under
+Account Settings
+⁠
+of the Threads website or mobile app after signing into their account.
+Sample App
+Our open-source
+Threads API sample app
+⁠
+serves as a practical guide, enabling you to better understand the API and troubleshoot any issues by referencing a working implementation. This can simplify the integration process, accelerate development time, and ensure a smoother implementation experience.
+Next Steps
+Make
+Single Thread Posts
+Make
+Carousel Posts
+Retrieve Threads Media
+
+===== https://developers.facebook.com/documentation/threads/overview
+TITLE: Threads API overview | Meta for Developers
+ACCESSED: 2026-09-28
+
+Threads API overview
+Dec 22, 2025
+You may use the Threads API to enable people to create and publish content on a person’s behalf on Threads, and to display those posts within your app solely to the person who created it.
+The Threads API can be accessed by either
+graph.threads.com
+or
+graph.threads.net
+Rate limiting
+Calls to the Threads API are counted against the calling app’s call count. An app’s call count is unique for each app and app user pair and is the number of calls the app has made in a rolling 24-hour window. It is calculated as follows:
+Calls within 24 hours = 4800 * Number of Impressions
+The Number of Impressions is the number of times any content from the app user’s Threads account has entered a person’s screen within the last 24 hours.
+Rate limiting may also be subject to total CPU time per day:
+720000 * number_of_impressions for total_cputime
+2880000 * Number of Impressions for total_time
+The minimum value for impressions is 10 (so if the impressions is less than 10 we default to 10).
+Posts
+Threads profiles are limited to 250 API-published posts within a 24-hour moving period. Carousels count as a single post. The
+POST /{threads-user-id}/threads_publish
+endpoint enforces this limit when attempting to publish a media container. Enforce the publishing rate limit in your app, especially if it allows app users to schedule posts for future publishing.
+To check a profile’s current Threads API rate limit usage, query the
+GET /{threads-user-id}/threads_publishing_limit
+endpoint
+This endpoint requires the
+threads_basic
+and
+threads_content_publish
+permissions.
+Fields
+Name
+Description
+quota_usage
+Threads publishing count over the last 24 hours.
+config
+Threads publishing rate limit config object, which contains the
+quota_total
+and
+quota_duration
+fields.
+Example request
+curl -s -X GET \
+  "https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_publishing_limit?fields=quota_usage,config&access_token=<ACCESS_TOKEN>"
+Example response
+  "data": [
+      "quota_usage": 4,
+      "config": {
+        "quota_total": 250,
+        "quota_duration": 86400
+  ]
+Replies
+Threads profiles are limited to 1,000 replies within a 24-hour moving period.
+To check a profile’s current Threads replies rate limit usage, query the
+GET /{threads-user-id}/threads_publishing_limit
+endpoint
+. See the
+Reply Management
+documentation for more information.
+This endpoint requires the
+threads_basic
+,
+threads_content_publish
+, and
+threads_manage_replies
+permissions.
+Fields
+Name
+Description
+reply_quota_usage
+Threads reply publishing count over the last 24 hours.
+reply_config
+Threads reply publishing rate limit config object, which contains the
+quota_total
+and
+quota_duration
+fields.
+Example request
+curl -s -X GET \
+  "https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_publishing_limit?fields=reply_quota_usage,reply_config&access_token=<ACCESS_TOKEN>"
+Example response
+  "data": [
+      "reply_quota_usage": 1,
+      "reply_config": {
+        "quota_total": 1000,
+        "quota_duration": 86400
+  ]
+Deletion
+Threads profiles are limited to 100 deletions within a 24-hour moving period.
+To check a profile’s current Threads deletion rate limit usage, query the
+GET /{threads-user-id}/threads_publishing_limit
+endpoint
+. See the
+Delete Posts
+documentation for more information.
+This endpoint requires the
+threads_basic
+and
+threads_delete
+permissions.
+Fields
+Name
+Description
+delete_quota_usage
+Threads deletion count over the last 24 hours.
+delete_config
+Threads deletion rate limit config object, which contains the
+quota_total
+and
+quota_duration
+fields.
+Example request
+curl -s -X GET \
+  "https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_publishing_limit?fields=delete_quota_usage,delete_config&access_token=<ACCESS_TOKEN>"
+Example response
+  "data": [
+      "delete_quota_usage": 1,
+      "delete_config": {
+        "quota_total": 100,
+        "quota_duration": 86400
+  ]
+Location search
+Threads profiles are limited to 500 location searches within a 24-hour moving period.
+To check a profile’s current Threads location search rate limit usage, query the
+GET /{threads-user-id}/threads_publishing_limit
+endpoint
+. See the
+Location Search
+documentation for more information.
+This endpoint requires the
+threads_basic
+and
+threads_location_tagging
+permissions.
+Fields
+Name
+Description
+location_search_quota_usage
+Threads location search count over the last 24 hours.
+location_search_config
+Threads location search rate limit config object, which contains the
+quota_total
+and
+quota_duration
+fields.
+Example request
+curl -s -X GET \
+  "https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_publishing_limit?fields=location_search_quota_usage,location_search_config&access_token=<ACCESS_TOKEN>"
+Example response
+  "data": [
+      "location_search_quota_usage": 1,
+      "location_search_config": {
+        "quota_total"
+
+===== https://developers.facebook.com/documentation/threads/posts
+TITLE: Threads Posts | Meta for Developers
+ACCESSED: 2026-09-28
+
+Threads Posts
+Apr 14, 2026
+You can use the Threads API to publish image, video, text, or carousel posts.
+This document covers:
+Single Thread Posts
+Carousel Posts
+Topic Tags, Links, and GIFs
+Media Specifications
+Single thread posts
+Publishing a single image, video, or text post is a two-step process:
+Create a media container with text only or with an image or video hosted on your public server with optional text using the
+POST /{threads-user-id}/threads
+endpoint.
+Publish the media container using the
+POST /{threads-user-id}/threads_publish
+endpoint.
+Limitations
+Text posts are limited to 500 characters.
+Emojis are counted as the
+number of UTF-8 bytes
+⁠
+Step 1: Create a Threads media container
+Use the
+POST /{threads-user-id}/threads
+endpoint to create a Threads media container.
+Parameters
+Name
+Description
+is_carousel_item
+Boolean
+Required.
+Indicates that images and/or videos will appear in a carousel.
+Values:
+true
+,
+false
+(
+default
+for single thread posts)
+media_type
+string
+Required.
+Indicates the current media type.
+Values:
+TEXT
+,
+IMAGE
+,
+VIDEO
+CAROUSEL
+is not available for single thread posts.
+image_url
+URL
+Optional. Required for
+media_type=IMAGE
+The URL path to the image.
+Threads retrieves your image from the URL provided, so it must be on a public server.
+video_url
+URL
+Optional. Required for
+media_type=VIDEO
+The URL path to the video.
+Threads retrieves your video from the URL provided, so it must be on a public server.
+text
+string
+Optional. Required for
+media_type=TEXT
+The text associated with the post. If any URLs are included, the first URL in the
+text
+field will be used as the link preview for the post.
+For the post character limit, emojis are counted as the
+number of UTF-8 bytes
+⁠
+Refer to the
+POST /{threads-user-id}/threads
+endpoint reference
+for additional supported parameters.
+Example request
+curl -i -X POST \
+  -d "media_type=IMAGE" \
+  -d "image_url=<IMAGE_URL>" \
+  -d "text=<TEXT>" \
+  -d "access_token=<ACCESS_TOKEN>" \
+"https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads"
+Example response
+  "id": "<THREADS_MEDIA_CONTAINER_ID>"
+Step 2: Publish the Threads media container
+Use the
+POST /{threads-user-id}/threads_publish
+endpoint to publish the media container ID returned in the previous step.
+It is recommended to wait on average 30 seconds before publishing a Threads media container to give our server enough time to fully process the upload. See the
+media container status endpoint
+for more details.
+Parameters
+Name
+Description
+creation_id
+int
+Required.
+The Threads media container ID.
+Example request
+curl -i -X POST \
+  -d "creation_id=<MEDIA_CONTAINER_ID>" \
+  -d "access_token=<ACCESS_TOKEN>" \
+"https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_publish"
+Example response
+  "id": "<THREADS_MEDIA_ID>"
+Carousel posts
+You may publish up to 20 images, videos, or a mix of the two in a carousel post. Publishing carousels is a three-step process:
+Create the individual media containers for each image and video that should appear in the carousel using the
+POST /{threads-user-id}/threads
+endpoint.
+Create a single carousel container to contain the media containers using the
+POST /{threads-user-id}/threads
+endpoint.
+Publish the carousel container using the
+POST /{threads-user-id}/threads_publish
+endpoint.
+Carousel posts count as a single post against a profile’s
+rate limit
+Limitations
+Carousels are limited to 20 images, videos, or a mix of the two.
+Carousels require a minimum of two children.
+Step 1: Create a media container
+Use the
+POST /{threads-user-id}/threads
+endpoint to create a media container for each of the images and/or videos that will appear in the carousel.
+Parameters
+Name
+Description
+is_carousel_item
+Boolean
+Required.
+Indicates that images and/or videos will appear in a carousel when set to
+true
+Values:
+true
+,
+false
+media_type
+string
+Required.
+Indicates the current media type.
+Values:
+IMAGE
+,
+VIDEO
+CAROUSEL
+is not available for single thread posts.
+image_url
+URL
+Optional. Required for
+media_type=IMAGE
+The URL path to the image.
+Threads retrieves your image from the URL provided, so it must be on a public server.
+video_url
+URL
+Optional. Required for
+media_type=VIDEO
+The URL path to the video.
+Threads retrieves your video from the URL provided, so it must be on a public server.
+text
+string
+Optional.
+The text associated with the post. If any URLs are included, the first URL in the
+text
+field will be used as the link preview for the post.
+For the post character limit, emojis are counted as the
+number of UTF-8 bytes
+⁠
+Refer to the
+POST /{threads-user-id}/threads
+endpoint reference
+for additional supported parameters.
+Example request
+curl -i -X POST \
+  -d "image_url=<IMAGE_URL>" \
+  -d "is_carousel_item=true" \
+  -d "access_token=<ACCESS_TOKEN>" \
+"https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads"
+Example response
+  "id": "<THREADS_MEDIA_CONTAINER_ID>"
+If the o
+
+===== https://developers.facebook.com/documentation/threads/insights
+TITLE: Threads Insights API | Meta for Developers
+ACCESSED: 2026-09-28
+
+Threads Insights API
+Jan 30, 2026
+The Threads Insights API allows you to read the insights from users’ own Threads.
+Permissions
+The Threads Insights API requires an appropriate access token and permissions based on the node you are targeting. While you are testing, you can easily generate tokens and grant your app permissions by using the Graph API Explorer.
+threads_basic
+— Required for making any calls to all Threads API endpoints.
+threads_manage_insights
+— Required for making
+GET
+calls to insights endpoints.
+Limitations
+The user insights
+since
+and
+until
+parameters do not work for dates before April 13, 2024 (Unix timestamp
+1712991600
+).
+Media Insights
+To retrieve the available insights metrics, send a
+GET
+request to the
+/{threads-media-id}/insights
+endpoint with the
+metric
+parameter containing a comma-separated list of metrics to be returned.
+Returned metrics do not capture nested replies’ metrics.
+An empty array will be returned for
+REPOST_FACADE
+posts because they are posts made by other users.
+Available Metrics
+Name
+Description
+views
+The number of times your post was played or displayed.
+This metric is
+in development
+⁠
+likes
+The number of likes on the post.
+replies
+The number of replies on the post.
+When the requested media is a root post, this number includes total replies. If the media is itself a reply, this number includes only
+direct
+replies.
+reposts
+The number of times the post was reposted.
+quotes
+The number of times the post was quoted.
+shares
+The number of shares of your Threads posts.
+This metric is
+in development
+⁠
+Example Request
+curl -s -X GET \
+  -F "metric=likes,replies" \
+  -F "access_token=<THREADS_ACCESS_TOKEN>"
+"https://graph.threads.com/v1.0/<THREADS_MEDIA_ID>/insights"
+Example Response
+  "data": [
+      "name": "likes",
+      "period": "lifetime",
+      "values": [
+          "value": 100
+      ],
+      "title": "Likes",
+      "description": "The number of likes on your post.",
+      "id": "<media_id>/insights/likes/lifetime"
+    },
+      "name": "replies",
+      "period": "lifetime",
+      "values": [
+          "value": 10
+      ],
+      "title": "Replies",
+      "description": "The number of replies on your post.",
+      "id": "<media_id>/insights/replies/lifetime"
+  ]
+User Insights
+To retrieve the available user insights metrics, send a
+GET
+request to the
+/{threads-user-id}/threads_insights
+endpoint with the
+metric
+parameter, and optionally, the
+since
+and
+until
+parameters.
+User insights are not guaranteed to work before June 1, 2024.
+Parameters
+Name
+Description
+since
+Optional.
+Used in conjunction with the
+until
+parameter to define a range. If you omit
+since
+and
+until
+, it defaults to a 2-day range: yesterday through today.
+The earliest Unix timestamp that can be used is
+1712991600
+, any timestamp before that will be rejected.
+Format:
+Unix Timestamp
+until
+Optional.
+Used in conjunction with the
+since
+parameter to define a range. If you omit
+since
+and
+until
+, it defaults to a 2-day range: yesterday through today.
+The earliest Unix timestamp that can be used is
+1712991600
+, any timestamp before that will be rejected.
+Format:
+Unix Timestamp
+metric
+Required.
+A comma-separated list of the metrics to be returned. Must be at least one of the user metrics values.
+User Metrics
+Name
+Response Type
+Description
+views
+Time Series
+The number of times your profile was viewed.
+likes
+Total Value
+The  number of likes on your posts.
+replies
+Total Value
+The number of replies on your posts.
+This number includes only top-level replies.
+reposts
+Total Value
+The number of times your posts were reposted.
+quotes
+Total Value
+The number of times your posts were quoted.
+clicks
+Link Total Values
+The number of times people clicked on URLs you shared.
+followers_count
+Total Value
+Your total number of followers on Threads.
+This metric does not support the
+since
+and
+until
+parameters.
+follower_demographics
+Total Value
+The demographic characteristics of followers, including countries, cities, and gender distribution.
+This metric does not support the
+since
+and
+until
+parameters.
+A Threads profile must have at least 100 followers to fetch this metric.
+Can only have one
+breakdown
+parameter, which must be equal to one of the following values:
+country
+,
+city
+,
+age
+, or
+gender
+Example Request
+curl -s -X GET \
+  -F "metric=views" \
+  -F "access_token=<ACCESS_TOKEN>" \
+"https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_insights"
+Example Time Series Metric Response
+  "data": [
+      "name": "views",
+      "period": "day",
+      "values": [
+          "value": 10,
+          "end_time": "2024-07-12T08:00:00+0000"
+        },
+          "value": 20,
+          "end_time": "2024-07-15T08:00:00+0000"
+        },
+          "value": 30,
+          "end_time": "2024-07-16T08:00:00+0000"
+      ],
+      "title": "views",
+      "desc
+
+===== https://developers.facebook.com/documentation/threads/webhooks
+TITLE: Webhooks for Threads | Meta for Developers
+ACCESSED: 2026-09-28
+
+Webhooks for Threads
+Jun 30, 2026
+Webhooks for Threads allow you to receive real-time notifications for the subscribed topics and fields.
+Receive live webhook notifications
+To receive live webhook notifications, the following conditions must be satisfied:
+Your app must have Threads webhooks added as a sub-use case and appropriate fields subscribed to in the App Dashboard.
+For non-tech providers, the apps must be in
+Live Mode
+For tech providers, the apps must have permissions with an
+Advanced Access level
+. You can request Advanced Access for permissions as shown here:
+If the app permissions don't have an access level of Advanced Access, the app won't receive webhook notifications.
+The app user must have granted your app appropriate permissions (that is,
+threads_basic
+,
+threads_read_replies
+for reply webhooks).
+The business connected to the app must be verified.
+To receive real-time
+reply
+and
+mention
+notifications, the owner of the media object upon which the webhook event occurs must not have set their account to private.
+To receive real-time
+delete
+and
+publish
+notifications, the owner of the media object upon which the webhook event occurs must be a public account or private account that authenticated to the app.
+Limitations
+Apps don’t receive webhook notifications if the media where the reply or mention appears was created by a private account.
+Your app must have successfully completed App Review (
+Advanced Access
+) to receive webhook notifications for all of the fields.
+Step 0: [Optional] Use the sample app to test your integration
+Download the
+webhooks sample app
+⁠
+to test your integration.
+Step 1: Add the webhooks sub-use case to the main Threads API use case
+Under
+Use Cases
+>
+Customize
+>
+Settings
+, add the
+Get real-time notifications with Threads Webhooks
+sub-use case.
+Step 2: Create an endpoint and configure Threads webhooks
+Create an endpoint
+that accepts and processes webhooks. To add the configuration:
+Select the desired topic, and click
+Subscribe to this object
+Set the callback URL and token.
+The token here is passed to your server defined in the callback URL to allow verification that the call originates from Meta servers.
+Webhook topics
+Moderate topic fields
+Name
+Description
+replies
+Replies
+on a
+Threads Media
+owned by the Threads install user.
+Required permission(s):
+threads_basic
+,
+threads_read_replies
+delete
+Threads posts that were
+deleted
+by the authenticated user.
+Required permissions:
+threads_basic
+,
+threads_delete
+Interaction topic fields
+Name
+Description
+mentions
+Mentions
+on a public
+Threads Media
+tagging the Threads install user.
+Required permission(s):
+threads_basic
+,
+threads_manage_mentions
+Optional permission(s):
+threads_read_replies
+— required for the
+has_replies
+,
+is_reply
+,
+replied_to
+, and
+root_post
+fields. Without this permission, these fields will be removed from the webhook response.
+publish
+Threads posts that were
+published
+by the authenticated user (including replies to user’s or other’s posts).
+Required permissions:
+threads_basic
+Notification formats
+Fields
+Name
+Description
+app_id
+The Threads App ID displayed in
+App Dashboard
+>
+App settings
+>
+Basic
+>
+Threads App ID
+topic
+Name of the Webhook topic.
+Threads supports moderate and interaction topics.
+target_id
+The media’s ID for a
+reply
+or
+delete
+webhook, or the mentioned Threads user app-scoped user ID for a
+mentions
+webhook.
+time
+Time when the real-time notification is sent.
+subscription_id
+The subscription ID for the user in the webhook.
+id
+The media’s ID.
+deleted_at
+Time when the post was deleted in ISO 8601 format.
+timestamp
+Time when the post was published in ISO 8601 format.
+Real-time reply notifications
+If you subscribe to the
+replies
+field, your endpoint receives a webhook notification containing the reply object.
+Sample replies payload
+    "app_id": "123456",
+    "topic": "moderate",
+    "target_id": "78901",
+    "time": 1723226877,
+    "subscription_id": "234567",
+    "has_uid_field": false,
+    "values": {
+        "value": {
+            "id": "8901234",
+            "username": "test_username",
+            "text": "Reply",
+            "media_type": "TEXT_POST",
+            "permalink": "https:\/\/www.threads.com\/@test_username\/post\/Pp",
+            "replied_to": {
+                "id": "567890"
+            },
+           "root_post": {
+               "id": "123456",
+               "owner_id": "123456",
+               "username": "test_username_2"
+           },
+            "shortcode": "Pp",
+            "timestamp": "2024-08-07T10:33:16+0000"
+        },
+        "field": "replies"
+Additional fields not listed in this sample response that are returned when applicable include
+is_verified
+and
+profile_picture_url
+Real-time mention notifications
+If you subscribe to the
+mentions
+field, Threads sends your endpoint a webhook notification containing the media object in which the user is mentioned.
+Sample mentions payload
+    "app_id": "123456",
+    "topic": "in
+
+===== https://developers.facebook.com/documentation/development
+TITLE: App Development with Meta | Meta for Developers
+ACCESSED: 2026-09-28
+
+App Development with Meta
+Aug 22, 2025
+Before you can integrate with Meta’s products, use Meta’s SDKs, or access any of Meta’s APIs, first register as a Meta developer. After you register, use the app dashboard to provide information about your app. This documentation explains how to register as a developer, how to use the app dashboard to configure your app, and how to build, test, and release your app.
+Documentation contents
+Register
+Register as a developer to gain access to our app development tools.
+Create an App
+Create an app and use the App Dashboard to access the app and account settings.
+Build and Test
+Tools and information to help you with the app development process.
+Release
+How to make your app available to Meta app users.
+Maintaining Data Access
+How to avoid losing access to our products, APIs, and SDKs.
+Terms and Policies
+Terms and Policies that you must agree to.
+Support
+Our developer support resources and how to access them.
+Trust Center
+Your one-stop shop for all Developer resources.
+See also
+Documentation
+— Documentation for all of our products, APIs, and SDKs.
+Products
+— Products available for Facebook developers.
+Data Protocol videos
+⁠
+- Additional videos for developers.
+
+===== https://developers.facebook.com/
+TITLE: Social technologies | Meta for Developers
+ACCESSED: 2026-09-28
+
+Social technologies | Meta for Developers
+Social technologies
+Build technologies that help people connect, find communities and grow businesses.
+Get started
+Explore all products
+Browse documentation
+Developer tools
+Get support
+What's new
+Build with us
+Learn more about our social technologies solutions that can help you create, grow and connect across Facebook, Instagram, Messenger, WhatsApp, and Threads.
+Facebook
+Messenger
+Instagram
+WhatsApp
+Threads
+SUCCESS STORIES
+200M+ businesses use our services every month to connect with customers and grow.
+Concepto Móvil
+Concepto Móvil boosts business solutions and aligns teams through Meta Certification.
+Learn more
+Universal Pictures
+Engaging fans through interactive multimedia messaging campaigns.
+Learn more
+Housing Development Finance Corporation
+Developing a faster, simpler and convenient way to help customers determine their home loan eligibility.
+Learn more
+View success stories
+Explore all our products
+Social technologies offer a wide range of solutions that can help you grow, build community and monetize your apps.
+Ads and Monetization
+Reach billions of people with Meta ads and monetization solutions to grow your business.
+Overview
+Artificial Intelligence
+Utilize industry-leading open and accessible AI tools for scale.
+Overview
+Authentication
+Implement convenient and secure authentication methods, supported by robust authorization protocols.
+Overview
+Business Messaging
+Do more with conversations by getting the right messages to the right people at the right time.
+Overview
+Gaming
+Access a suite of innovative gaming platforms and services.
+Overview
+Open Source
+Empower the community through open source technology.
+Overview
+Social Integrations
+Connect with and engage billions of people using our Meta technologies with our social integrations.
+Overview
+Explore all products
+Latest news
+SEPTEMBER 15, 2026
+Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent
+Your AI agent can now set up WhatsApp business messaging Getting a WhatsApp Business integration running means moving between the Developer Console, Business Manager, the API reference, and your editor, then pasting an access token somewhere it shouldn't live. It's a lot of setup before you write any real code.WhatsApp Business Tools MCP changes...
+Developer Tools, WhatsApp
+AUGUST 27, 2026
+Login with Facebook open beta: faster logins, less maintenance
+Login with Facebook is entering open beta on August 27, 2026, bringing a wave of improvements focused on one thing: fewer steps and less maintenance. Here is what is available in the open beta, what each feature does, and what it takes to adopt. Please see each section below for integration instructions. 1. Single Sign On (one tap) onAndroidandWeb...
+Business Tools, Platforms, Facebook, Facebook Login
+AUGUST 4, 2026
+Meta AI Developer Assistant Now Available for Developer Support
+Today, we’re bringing Meta AI Developer Assistant to the developer support experience on developers.facebook.com by rolling out a revamped developer support experience powered by Meta AI Developer Assistant. When you visit developers.facebook.com/support, you’ll find an AI-powered assistant ready to help you troubleshoot issues, navigate compliance...
+Developer Tools
+More on the blog
+Get our newsletter
+Sign up for monthly updates from Meta for Developers.
+Sign up
+
+===== https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens
+TITLE: Long-lived access tokens - Threads API | Meta for Developers
+ACCESSED: 2026-09-28
+
+Long-lived access tokens - Threads API
+Mar 27, 2025
+By default, Threads user access tokens are short-lived and are valid for one hour. However, short-lived tokens can be exchanged for long-lived tokens.
+Long-lived tokens are valid for 60 days and can be refreshed as long as they are at least 24 hours old but have not expired, and the app user has granted your app the
+threads_basic
+permission. Refreshed tokens are valid for 60 days from the date at which they are refreshed. Tokens that have not been refreshed in 60 days will expire and can no longer be refreshed.
+Long-lived access tokens for private Threads profiles can now be refreshed. In addition, permissions granted to apps by app users with private profiles are now valid for 90 days.
+Limitations
+Expired short-lived tokens cannot be exchanged for long-lived tokens. If the user’s token has expired, get a new one before exchanging it for a long-lived token.
+Requests for long-lived tokens include your app secret so should only be made in server-side code, never in client-side code or in an app binary that could be decompiled. Do not share your app secret with anyone, expose it in code, send it to a client, or store it in a device.
+Get a Long-Lived Token
+Use the
+GET /access_token
+endpoint to exchange a short-lived Threads user access token for a long-lived token. Once you have a long-lived token, you can use it in server-side requests or send it to the client for use there.
+Your request must be made server-side and include:
+A valid (unexpired) short-lived Threads user access token.
+Your Threads app secret (
+App Dashboard
+>
+App settings
+>
+Basic
+>
+Threads App secret
+).
+Parameters
+Include the following query string parameters to augment the request.
+Name
+Description
+client_secret
+string
+Required.
+Your Threads app’s secret, displayed in the
+App Dashboard
+>
+App settings
+>
+Basic
+>
+Threads App secret
+field.
+grant_type
+string
+Required.
+Set this to
+th_exchange_token
+access_token
+string
+Required.
+The valid (unexpired) short-lived Threads user access token that you want to exchange for a long-lived token.
+Sample Request
+curl -i -X GET "https://graph.threads.com/access_token
+  ?grant_type=th_exchange_token
+  &client_secret=<THREADS_APP_SECRET>
+  &access_token=<SHORT_LIVED_ACCESS_TOKEN>"
+Sample Response
+  "access_token": "<LONG_LIVED_USER_ACCESS_TOKEN>",
+  "token_type": "bearer",
+  "expires_in": 5183944  // number of seconds until token expires
+Refresh a Long-Lived Token
+Use the
+GET /refresh_access_token
+endpoint to refresh unexpired long-lived Threads user access tokens. Refreshing a long-lived token makes it valid for 60 days again. Long-lived tokens that have not been refreshed in 60 days will expire.
+Your request must include:
+A valid (unexpired) long-lived Threads user access token.
+Parameters
+Name
+Description
+grant_type
+string
+Required.
+Set this to
+th_refresh_token
+access_token
+string
+Required.
+The valid (unexpired) long-lived Threads user access token that you want to refresh.
+Sample Request
+curl -i -X GET "https://graph.threads.com/refresh_access_token
+  ?grant_type=th_refresh_token
+  &access_token=<LONG_LIVED_ACCESS_TOKEN>"
+Sample Response
+  "access_token": "<LONG_LIVED_USER_ACCESS_TOKEN>",
+  "token_type": "bearer",
+  "expires_in": 5183944 // number of seconds until token expires
+
+===== https://developers.facebook.com/documentation/threads/get-started/app-access-tokens
+TITLE: App Access Tokens | Meta for Developers
+ACCESSED: 2026-09-28
+
+App Access Tokens
+Aug 18, 2026
+Use an app access token to make requests to the Threads API on behalf of an app rather than a user. Certain APIs require app access tokens instead of user access tokens, such as the
+oEmbed API
+Generating an app access token
+To generate an app access token, you need:
+Your Threads app ID
+Your Threads app secret
+Example request
+curl -X GET https://graph.threads.com/oauth/access_token
+  ?client_id=<APP_ID>
+  &client_secret=<APP_SECRET>
+  &grant_type=client_credentials
+Example response
+  "access_token": "TH|<APP_ID>|<APP_SECRET>",
+  "token_type": "bearer"
+This call returns an app access token that you can use in place of a user access token to make API calls as noted above.
+Because this request uses your app secret, it must never be made in client-side code or in an app binary that could be decompiled. Never share your app secret with anyone. Make this API call only from server-side code.
+Alternate method
+Another method to call the Threads API on behalf of an app does not require a generated app access token. You can pass your app ID and app secret as the
+access_token
+parameter when you make a call.
+Example request
+curl -X GET https://graph.threads.com/<API_ENDPOINT>
+  ?access_tokens=TH|<APP_ID>|<APP_SECRET>&...
+The choice to use a generated access token or this method depends on where you hide your app secret.

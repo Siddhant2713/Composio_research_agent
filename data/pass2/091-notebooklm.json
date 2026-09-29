@@ -1,0 +1,206 @@
+{
+  "app": "NotebookLM",
+  "number": 91,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:05:30.277923+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://cloud.google.com/gemini\",\n    \"https://developers.google.com/\",\n    \"https://cloud.google.com/docs\",\n    \"https://ai.google.dev/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://cloud.google.com/gemini",
+    "https://developers.google.com/",
+    "https://cloud.google.com/docs",
+    "https://ai.google.dev/",
+    "https://docs.google.com/",
+    "https://developer.google.com/",
+    "https://api.google.com/",
+    "https://google.com/docs",
+    "https://google.com/developers",
+    "https://google.com/api",
+    "https://google.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://cloud.google.com/contact/",
+    "https://docs.cloud.google.com/docs/get-started/",
+    "https://cloud.google.com/sdk",
+    "https://cloud.google.com/pricing",
+    "https://cloud.google.com/windows",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+    "https://docs.cloud.google.com/docs/authentication",
+    "https://docs.cloud.google.com/sdk/docs",
+    "https://docs.cloud.google.com/sdk/gcloud",
+    "https://ai.google.dev/api",
+    "https://ai.google.dev/pricing"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://api.google.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://cloud.google.com/ai/gemini",
+      "requested_url": "https://cloud.google.com/gemini",
+      "status": 200,
+      "title": "Google AI Studio vs. Gemini Enterprise Agent Platform vs. Gemini Enterprise app | Google Cloud",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.google.com/",
+      "requested_url": "https://developers.google.com/",
+      "status": 200,
+      "title": "Google for Developers | Build with Gemini",
+      "chars": 4138,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.cloud.google.com/docs",
+      "requested_url": "https://cloud.google.com/docs",
+      "status": 200,
+      "title": "Google Cloud Documentation",
+      "chars": 3778,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ai.google.dev/",
+      "requested_url": "https://ai.google.dev/",
+      "status": 200,
+      "title": "Gemini Developer API | Gemma open models \u00a0|\u00a0 Google AI for Developers",
+      "chars": 3860,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-686046529:1790572039287695",
+      "requested_url": "https://docs.google.com/",
+      "status": 200,
+      "title": "Sign in - Google Accounts",
+      "chars": 234,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1912954470:1790572041969410",
+      "requested_url": "https://google.com/docs",
+      "status": 200,
+      "title": "Sign in - Google Accounts",
+      "chars": 234,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://cloud.google.com/contact",
+      "requested_url": "https://cloud.google.com/contact/",
+      "status": 200,
+      "title": "Contact Sales | Google Cloud",
+      "chars": 3798,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.cloud.google.com/docs/get-started/",
+      "requested_url": "https://docs.cloud.google.com/docs/get-started/",
+      "status": 200,
+      "title": "Get started with Google Cloud \u00a0|\u00a0 Google Cloud Documentation",
+      "chars": 3640,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://cloud.google.com/sdk",
+      "requested_url": "https://cloud.google.com/sdk",
+      "status": 200,
+      "title": "Cloud SDK - Libraries and Command Line Tools | Google Cloud",
+      "chars": 3375,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://cloud.google.com/pricing",
+      "requested_url": "https://cloud.google.com/pricing",
+      "status": 200,
+      "title": "Pricing Overview | Google Cloud",
+      "chars": 2623,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"NotebookLM has no specific documentation or product details in the provided pages; the pages discuss Google AI Studio and the Gemini Developer API.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The Gemini Developer API uses an API key passed in the x-goog-api-key header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can get a Gemini API key or start using Google AI Studio via self-service signup options.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [\n      \"Python\",\n      \"JavaScript\",\n      \"Go\",\n      \"Java\"\n    ],\n    \"notes\": \"The Gemini Developer API provides REST endpoints and client libraries for Python, JavaScript, Go, and Java.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"url\": null,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.google.com/\",\n      \"claim\": \"The Gemini API supports REST and provides client SDKs for Python, JavaScript, Go, and Java.\",\n      \"quote\": \"Python JavaScript Go Java REST More\"\n    },\n    {\n      \"url\": \"https://developers.google.com/\",\n      \"claim\": \"The Gemini API uses an API key header for authentication.\",\n      \"quote\": \"curl \\\"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-5-flash:generateContent\\\" \\\\\\n-H \\\"x-goog-api-key: $GEMINI_API_KEY\\\" \\\\\"\n    },\n    {\n      \"url\": \"https://cloud.google.com/ai/gemini\",\n      \"claim\": \"Users can obtain a Gemini API key through self-serve options.\",\n      \"quote\": \"Get your no cost Gemini API key\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.google.com/\",\n      \"quote\": \"-H \\\"x-goog-api-key: $GEMINI_API_KEY\\\" \\\\\"\n    },\n    \"access\": {\n      \"url\": \"https://cloud.google.com/ai/gemini\",\n      \"quote\": \"Get your no cost Gemini API key\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.google.com/\",\n      \"quote\": \"Python\\nJavaScript\\nGo\\nJava\\nREST\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://cloud.google.com/gemini",
+    "one_liner": "NotebookLM has no specific documentation or product details in the provided pages; the pages discuss Google AI Studio and the Gemini Developer API.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://developers.google.com/."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can get a Gemini API key or start using Google AI Studio via self-service signup options."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": [
+        "Python",
+        "JavaScript",
+        "Go",
+        "Java"
+      ],
+      "notes": "The Gemini Developer API provides REST endpoints and client libraries for Python, JavaScript, Go, and Java."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.google.com/",
+        "claim": "The Gemini API supports REST and provides client SDKs for Python, JavaScript, Go, and Java.",
+        "quote": "Python JavaScript Go Java REST More",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.google.com/",
+        "claim": "The Gemini API uses an API key header for authentication.",
+        "quote": "curl \"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-5-flash:generateContent\" \\\n-H \"x-goog-api-key: $GEMINI_API_KEY\" \\",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://cloud.google.com/ai/gemini",
+        "claim": "Users can obtain a Gemini API key through self-serve options.",
+        "quote": "Get your no cost Gemini API key",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://cloud.google.com/ai/gemini",
+        "quote": "Get your no cost Gemini API key"
+      },
+      "api_surface": {
+        "url": "https://developers.google.com/",
+        "quote": "Python\nJavaScript\nGo\nJava\nREST"
+      }
+    },
+    "unsupported_fields": [
+      "auth: quoted line not found on https://developers.google.com/",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:07:30.378553+00:00"
+}

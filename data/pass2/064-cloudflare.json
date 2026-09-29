@@ -1,0 +1,213 @@
+{
+  "app": "Cloudflare",
+  "number": 64,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:34:57.373424+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.cloudflare.com/api\",\n    \"https://developers.cloudflare.com/fundamentals/api\",\n    \"https://developers.cloudflare.com/fundamentals/api/get-started/create-token/\",\n    \"https://dash.cloudflare.com/profile/api-tokens\",\n    \"https://www.cloudflare.com/developer-platform/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.cloudflare.com/api",
+    "https://developers.cloudflare.com/fundamentals/api",
+    "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "https://dash.cloudflare.com/profile/api-tokens",
+    "https://www.cloudflare.com/developer-platform/",
+    "https://docs.cloudflare.com/",
+    "https://developer.cloudflare.com/",
+    "https://developers.cloudflare.com/",
+    "https://api.cloudflare.com/",
+    "https://cloudflare.com/docs",
+    "https://cloudflare.com/developers",
+    "https://cloudflare.com/api",
+    "https://cloudflare.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token",
+    "https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/vpc_flows/subresources/tokens/methods/create",
+    "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes",
+    "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients",
+    "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/get",
+    "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes/methods/list",
+    "https://developers.cloudflare.com/fundamentals/oauth/",
+    "https://www.cloudflare.com/resource/contact-enterprise-sales/",
+    "https://developers.cloudflare.com/fundamentals/user-profiles/2fa/",
+    "https://developers.cloudflare.com/fundamentals/api/reference/sdks/",
+    "https://developers.cloudflare.com/fundamentals/reference/partners/",
+    "https://developers.cloudflare.com/fundamentals/api/reference/template/",
+    "https://www.cloudflare.com/plans/enterprise/contact/",
+    "https://www.cloudflare.com/plans/developer-platform/",
+    "https://www.cloudflare.com/plans/",
+    "https://dash.cloudflare.com/sign-up",
+    "https://www.cloudflare.com/partners/",
+    "https://www.cloudflare.com/personal/",
+    "https://developers.cloudflare.com/sandbox/"
+  ],
+  "boilerplate_lines_removed": 4,
+  "fetch_failures": [
+    {
+      "requested_url": "https://dash.cloudflare.com/profile/api-tokens",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.cloudflare.com/api/",
+      "requested_url": "https://developers.cloudflare.com/api",
+      "status": 200,
+      "title": "API Reference | Cloudflare API",
+      "chars": 4974,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/api/",
+      "requested_url": "https://developers.cloudflare.com/fundamentals/api",
+      "status": 200,
+      "title": "Cloudflare's API \u00b7 Cloudflare Fundamentals docs",
+      "chars": 235,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "requested_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "status": 200,
+      "title": "Create API token \u00b7 Cloudflare Fundamentals docs",
+      "chars": 2548,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.cloudflare.com/developer-platform/",
+      "requested_url": "https://www.cloudflare.com/developer-platform/",
+      "status": 200,
+      "title": "Cloudflare Developer Platform | Build applications | Cloudflare",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/",
+      "requested_url": "https://docs.cloudflare.com/",
+      "status": 200,
+      "title": "Cloudflare Developer Docs | Cloudflare Docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token/",
+      "requested_url": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token",
+      "status": 200,
+      "title": "Refresh participant's authentication token | Cloudflare API",
+      "chars": 1094,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/vpc_flows/subresources/tokens/methods/create/",
+      "requested_url": "https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/vpc_flows/subresources/tokens/methods/create",
+      "status": 200,
+      "title": "Generate authentication token for VPC flow logs export. | Cloudflare API",
+      "chars": 1961,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes/",
+      "requested_url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes",
+      "status": 200,
+      "title": "OAuth Scopes | Cloudflare API",
+      "chars": 491,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/",
+      "requested_url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients",
+      "status": 200,
+      "title": "OAuth Clients | Cloudflare API",
+      "chars": 4888,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/get/",
+      "requested_url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/get",
+      "status": 200,
+      "title": "OAuth Client Details | Cloudflare API",
+      "chars": 4820,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Cloudflare developer platform providing serverless computing, databases, storage, media, and AI inference via REST APIs and SDKs.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Cloudflare primarily uses Bearer tokens and API keys in the Authorization header or via X-Auth-Key/X-Auth-Email headers.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create API tokens directly from the Cloudflare dashboard under My Profile or Manage Account.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"TypeScript\",\n      \"Python\",\n      \"Go\",\n      \"Terraform\"\n    ],\n    \"notes\": \"The documentation mentions REST API access, alongside official SDKs for TypeScript, Python, Go, and Terraform.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"MCP server portals are generally available to connect, secure, and monitor approved MCP servers through one endpoint.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.cloudflare.com/fundamentals/api/get-started/create-token/\",\n      \"claim\": \"API tokens can be created via the dashboard to authenticate API calls using Bearer tokens.\",\n      \"quote\": \"From the Cloudflare dashboard, go to My Profile > API Tokens for user tokens.\"\n    },\n    {\n      \"url\": \"https://developers.cloudflare.com/api/\",\n      \"claim\": \"SDKs are available for TypeScript, Python, Go, and Terraform.\",\n      \"quote\": \"TypeScript 7.2.0 npm install cloudflare\"\n    },\n    {\n      \"url\": \"https://developers.cloudflare.com/\",\n      \"claim\": \"MCP server portals are generally available.\",\n      \"quote\": \"MCP server portals are generally available to connect, secure, and monitor approved MCP servers through one endpoint.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token/\",\n      \"quote\": \"The preferred authorization scheme for interacting with the Cloudflare API.\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.cloudflare.com/fundamentals/api/get-started/create-token/\",\n      \"quote\": \"From the Cloudflare dashboard, go to My Profile > API Tokens for user tokens.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.cloudflare.com/fundamentals/api/\",\n      \"quote\": \"Use the following resources to learn more about Cloudflare's REST API:\"\n    },\n    \"mcp\": {\n      \"url\": \"https://developers.cloudflare.com/\",\n      \"quote\": \"MCP server portals are generally available to connect, secure, and monitor approved MCP servers through one endpoint.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://developers.cloudflare.com/api",
+    "one_liner": "Cloudflare developer platform providing serverless computing, databases, storage, media, and AI inference via REST APIs and SDKs.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Cloudflare primarily uses Bearer tokens and API keys in the Authorization header or via X-Auth-Key/X-Auth-Email headers."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create API tokens directly from the Cloudflare dashboard under My Profile or Manage Account."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "TypeScript",
+        "Python",
+        "Go",
+        "Terraform"
+      ],
+      "notes": "The documentation mentions REST API access, alongside official SDKs for TypeScript, Python, Go, and Terraform."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: quoted line not found on https://developers.cloudflare.com/."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "claim": "API tokens can be created via the dashboard to authenticate API calls using Bearer tokens.",
+        "quote": "From the Cloudflare dashboard, go to My Profile > API Tokens for user tokens.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.cloudflare.com/api/",
+        "claim": "SDKs are available for TypeScript, Python, Go, and Terraform.",
+        "quote": "TypeScript 7.2.0 npm install cloudflare",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token/",
+        "quote": "The preferred authorization scheme for interacting with the Cloudflare API."
+      },
+      "access": {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "quote": "From the Cloudflare dashboard, go to My Profile > API Tokens for user tokens."
+      },
+      "api_surface": {
+        "url": "https://developers.cloudflare.com/fundamentals/api/",
+        "quote": "Use the following resources to learn more about Cloudflare's REST API:"
+      }
+    },
+    "unsupported_fields": [
+      "mcp: quoted line not found on https://developers.cloudflare.com/"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:35:21.908275+00:00"
+}

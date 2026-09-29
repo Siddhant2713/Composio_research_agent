@@ -1,0 +1,599 @@
+===== https://developers.klaviyo.com/en
+TITLE: API Reference & Technical Guides | Klaviyo Developers
+ACCESSED: 2026-09-28
+
+Build personalized
+experiences that scale.
+Create apps and integrations using Klaviyo's API that help 
+  your business grow. Get started for free.
+Explore docs
+Join 300+ others who have integrated with Klaviyo
+Get started
+Start here
+Getting started
+Learn how to authenticate, how data is stored, and how to make your first API calls.
+Explore docs
+Guides
+Developer guides
+Read detailed guides for common developer use cases. Learn how our New APIs compare to our legacy APIs.
+Read guides
+Docs
+API docs
+Klaviyo's new and improved APIs are now available! Learn about our API objects, methods, attributes, and responses
+Read API docs
+Developer tools
+Speed up development with tools designed for your workflow.
+SDKs
+Install a Klaviyo maintained SDK to accelerate development– offered in Python, PHP, Ruby, and Node.
+Explore SDKs
+Test accounts
+Test custom integrations and apps without the risk of impacting your production account.
+Create test account
+Postman
+Make test calls using Postman’s UI tool with our collection of pre-built API requests.
+Test with Postman
+Sample code repository
+Find pre-built solutions, examples, and reference code guides in our Klaviyo Labs GitHub.
+View code samples
+Sample data
+Populate your test account with sample data to quickly explore our API and see how data is used in Klaviyo.
+Generate sample data
+Napkin
+Create and deploy serverless cloud functions instantly from the browser. Quickly add authentication for your API, schedule tasks, and replay events.
+Explore Napkin.io
+Use cases
+Custom integrations
+Better user experience
+Reporting
+Build custom integrations to bring data into Klaviyo to create personalized experiences. Integrate with point-of-sale software, inventory management systems, scheduling apps, and more.
+Read docs
+Brian Whalley - Co-Founder of Wonderment
+“Since Klaviyo doesn't impose a rigid data schema, it's easy to send in just about any arbitrary data without having to do annoying manipulations or data mappings and without having to pre-configure a data schema in the app.”
+Read story →
+Use profile information, custom events, catalog information, and other types of data to build custom customer experiences using Klaviyo's flows, template email builder, and more.
+Read docs
+Callum McMaugh - Techincal Lead at Giftnotes
+“Merchants can set up flows based on Klaviyo events to send out branded notifications to both the [gift] recipient and the customer. They can also segment the customer and the recipient for greater insights into their customer’s shopping habits.”
+Read story →
+Pull data from Klaviyo to create dashboards, sync to other systems, and perform analysis to keep up with your marketing performance.
+Read docs
+Kyle Tremblay - Sr. Product Manger at EXCLUSIVE
+“Integrating with Klaviyo’s APIs was a no-brainer as it allowed us to build reporting that’s informed by our clients’ goals. Additionally, we’re now able to highlight useful, holistic insights to determine what actions should be taken by our clients to meet their goals.”
+Read story →
+Join the community
+Developer blog
+Learn about use cases, how-tos, case studies, and more.
+Developer community
+Get support and inspiration from Klaviyo community experts.
+
+===== https://developers.klaviyo.com/en/docs/changelog_
+TITLE: Changelog
+ACCESSED: 2026-09-28
+
+Welcome to Klaviyo's API changelog. We frequently release exciting features to our APIs under new revisions to best support our developer community. Note that while we encourage you to update your API usage regularly, no immediate action is required with each release. Each revision is supported for 2 years after its release. Revisions with breaking changes have entries marked with
+Breaking changes
+. We recommend connecting your apps to our latest revision every 12-18 months.
+Review our
+updated API versioning and deprecation policy
+for more information.
+📘
+Try adding custom actions to flows
+Run custom Python and Node.js scripts in flows with
+custom actions
+.
+The Custom Objects metadata and record APIs are now generally available. Manage object types with
+Get Object Types
+,
+Create Object Type
+, and
+Delete Object Type
+; manage schemas (including draft and active versions) with
+Create Object Schema
+and
+Update Object Schema
+; and manage relationships to profiles and data source mappings. List and retrieve object records by compound ID, and start bulk delete jobs for object records (
+up to 500 object record IDs
+per request;
+maximum payload size 5 MB
+). See the
+Custom Objects API overview
+.
+Retrieve ingestion-failure logs for an object type with
+Get Ingestion Logs for Object Type
+. Only ingestion failures are logged, logs are retained for 14 days, and results are returned newest first with a fixed page size of 50.
+Record historical events without triggering flows by setting the new top-level
+backfill
+flag on
+Create Event
+and
+Bulk Create Events
+. Use it for CRM migrations and bulk replay workloads to avoid re-firing flow messages. See
+historical and backfill events
+for examples.
+Get Events
+now returns events whose metric can't be resolved (missing or soft-deleted) by default, matching
+Get Event
+— previously they were silently omitted. Pass the new
+has(metric)
+filter (
+filter=has(metric)
+) to exclude them; it mirrors the existing
+has(profile)
+.
+❗️
+Breaking changes
+A profile's conversation relationship is now
+plural and multi-channel
+. Retrieve a profile's conversations with
+Get Conversations for Profile
+(
+GET /api/profiles/{id}/conversations/
+) and include them inline with
+?include=conversations
+— these
+replace
+the singular
+GET /api/profiles/{id}/conversation/
+and
+?include=conversation
+from prior revisions.
+The response shape changes from a single object to a list.
+Where a profile previously returned one
+conversation
+relationship (SMS only), it now returns a
+conversations
+list with
+one conversation per channel
+, each carrying a
+channel
+attribute (
+sms
+,
+whatsapp
+, or
+instagram
+). Update any code that reads
+relationships.conversation
+on a profile — or the singular
+?include=conversation
+payload — to read the plural
+conversations
+and iterate the list.
+This is what makes non-SMS sends possible: read the conversation whose
+channel
+is
+whatsapp
+, then pass its ID as the
+conversation
+relationship to
+Create Conversation Message
+(whose request and response are unchanged). Before this revision, only a profile's SMS conversation was retrievable, so WhatsApp and Instagram conversation IDs could not be obtained.
+Every API reference page now links its OpenAPI (OAS) definition for easier agent and tooling discovery.
+🚧
+Endpoints in beta are subject to change and should not be used in production. To learn more see our
+API versioning and deprecation
+policy. If you have feedback about these endpoints, please reach out in our
+developer community
+.
+Configure, run, and observe a Klaviyo Customer Agent programmatically. Requires the new
+agents:read
+and
+agents:write
+scopes and is available to accounts with Customer Agent enabled. Available since the
+2026-04-15
+beta revision.
+Configure
+the agent's building blocks: singleton agent settings (
+Get Customer Agent
+and
+Update Customer Agent
+),
+skills
+,
+tools
+, write-once encrypted
+secrets
+, and
+knowledge
+from snippets, webpages, or
+file uploads
+.
+Run
+a single conversation turn with
+Create Customer Agent Response
+— use
+mode: preview
+to test a configuration change (non-billed) or
+mode: live
+for real interactions.
+Observe
+production behavior: list transcripts with
+Get Customer Agent Conversations
+, and pull aggregate metrics via the
+conversation
+and
+per-skill
+values reports.
+Manage your brand identity and assets programmatically — the API counterpart to Klaviyo's brand library. Requires the new
+brands:read
+and
+brands:write
+scopes.
+Create, read, update, and delete brand
+logos
+,
+colors
+,
+buttons
+, and
+social groups
+.
+Read and update your
+brand voice
+and
+brand email defaults
+— singleton resources with no create or delete.
+Read endpoints use the
+MEDIUM
+rate limit tier (
+10 requests/second burst
+,
+150 requests/minute steady
+); write endpoints use the
+SMALL
+tier (
+3 requests/second burst
+,
+60 requests/minute steady
+).
+Automate sending domain and DKIM setup without clicking through the UI. Register a domain and receive the DNS records to publish with
+Create Sending Domain
+, list and retrieve domains (with cu
+
+===== https://developers.klaviyo.com/en/reference/api_overview
+TITLE: API overview
+ACCESSED: 2026-09-28
+
+📘
+Jumpstart your Klaviyo API journey with our YouTube tutorials.
+Dive into
+Klaviyo's API tutorial playlist on YouTube
+, where we provide walkthroughs of some of our most popular Klaviyo API endpoints.
+New Klaviyo developers:
+Check out our
+Get started with Klaviyo
+series to set up an account, obtain API credentials, and authenticate.
+Current Klaviyo developers:
+Install one of our
+new SDKs
+.
+Make test calls with the
+new API collection in our Postman workspace
+.
+To learn more, see below for an overview of the newly launched API features:
+Go into detail on the
+JSON API features
+supported by our new API surface.
+View the latest OpenAPI spec here.
+Import the spec into your favorite API tool, such as Postman, to start interacting with our new APIs right away.
+You can also navigate to our
+Postman Workspace
+, where you will find our latest collection of requests, along with the API definitions. You can get started by checking out our
+Postman collection guide
+.
+Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs). Read below for a quick overview of each method.
+All
+/api
+endpoints use
+private API keys
+with API key scopes to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an error. A
+400
+error indicates an invalid or missing API key.
+Private key authentication for
+/api
+endpoints is performed by setting the following request header:
+Authorization: Klaviyo-API-Key your-private-api-key
+If you are a tech partner integrating with Klaviyo, we recommend using OAuth to authenticate your app. OAuth offers multiple benefits over a private key integration, including security, usability, and improved rate limits. Check out our
+guide on setting up OAuth
+.
+All
+/client
+endpoints are designed to only be called from publicly-browseable client-side environments and use public API keys to authorize and route requests. Your public API key is your 6-character company ID, also known as a site ID. We recommend using the
+Klaviyo object
+or our
+mobile SDKs
+for interacting with our client-side APIs.
+Public API keys are passed to
+/client
+endpoints using a query parameter:
+curl --request POST \
+  --url 'https://a.klaviyo.com/client/events/?company_id=COMPANY_ID'
+  --header 'Content-Type: application/json'
+  --data '{DATA}'
+📘
+Client endpoints are specifically designed to limit functionality to object creation of specific types of objects and do not respond with any potentially sensitive response data. For security reasons, this data must be accessed using private key endpoints only (i.e.,
+/api
+).
+Klaviyo's APIs support the use of API scopes, which allow you to restrict access for third parties using a private API key. Adding a scope helps you protect your and your customers’ data by limiting what third parties can access.
+You can add any of the following scopes to any new private API key in Klaviyo:
+Read-only
+Only allows third parties to view all data associated with the endpoint
+Full
+Allows third parties to create, delete, or make changes to anything associated with that endpoint (set by default)
+Custom
+Allows you to decide how much access to give the third party
+Note that you cannot add a scope to an existing private key. You also cannot edit a private API key after it’s been created. If you need to remove access to a key based on its current scope, delete it and then create a new key with the correct scope.
+For more information about the supported scopes for each endpoint and how to add a scope to an API key, please refer to the
+Authenticate API requests
+guide.
+Check out our
+API versioning and deprecation policy
+to learn about how Klaviyo handles API versioning and support.
+Every response will include an HTTP status code with more details on whether the request succeeded. Check out
+our guide on status codes and errors
+to learn more about status codes used by Klaviyo’s APIs and how to troubleshoot error responses.
+All new API endpoints are
+rate limited
+on a per-account basis, and use a fixed-window rate limiting algorithm with two distinct windows: burst (short) and steady (long). All API traffic will be subject to rate limits, and will receive
+HTTP 429
+errors in the event either a burst or steady rate limit is reached.
+Each endpoint lists its burst and steady rate limits in our API reference documentation.
+Klaviyo’s modern APIs offer powerful functionality via the
+relationships
+object, a thorough set of syntax offered by JSON:API for modeling relationships between resources. This syntax allows developers to efficiently query specific groups of related resources, eliminating the need to perform redundant queries.
+Check out our
+guide on JSON:API relationships
+for more information on how use, create, modify, and delete resource relationships.
+JSON:API’s general filtering syntax and its supported operations can be used across all n
+
+===== https://developers.klaviyo.com/en/docs/get_started
+TITLE: Get started with Klaviyo
+ACCESSED: 2026-09-28
+
+Klaviyo is a powerful email and SMS marketing tool with a strong commitment to data science. Klaviyo's
+App Marketplace
+and API make it simple to build emails and experiences that are truly personal at scale.
+📘
+Are you looking to build an integration with Klaviyo and become a partner? Check out our
+partner resources
+.
+Kickstart your journey as a Klaviyo developer with the
+Klaviyo developer certificate
+. Learn the fundamentals of building with Klaviyo:
+Understand Klaviyo's data model
+Understand our APIs
+Get access to key resources and developer tools
+Explore use cases and examples of building with both server-side and client-side APIs
+Learn how to troubleshoot and handle errors
+Welcome to the Developer guides. Follow along the steps below, or select a step to begin, and get started building with Klaviyo today.
+Create a test account (optional)
+Generate sample data
+Install a library (optional)
+Authenticate API requests
+Make a test API request
+Use Klaviyo's Postman collections
+Rate limits & error handling
+Then, level up your knowledge with in-depth code guides:
+Understanding Client-Side API Calls
+Understanding Customer Data
+Learn Klaviyo fundamentals with an overview of Klaviyo's data model and architecture:
+Klaviyo's data model
+Klaviyo's architecture
+📘
+Quickstart:
+For a step-by-step visual demonstration of how to use Klaviyo APIs, check out our
+YouTube API tutorial playlist
+or our
+Academy guide on connecting your Klaviyo usage with APIs
+.
+Head on over to the
+Help Center
+to browse a comprehensive collection of how-to's and guides for using Klaviyo products and getting connected to our native integrations. You can also take the <href="
+https://academy.klaviyo.com/en-us/collections/api-fundamentals-for-marketers"
+target="_blank">API fundamentals for marketers learning path to learn more about how to use and troubleshoot Klaviyo's API endpoints.
+Updated
+3 days ago
+Did this page help you?
+Yes
+No
+
+===== https://help.klaviyo.com/hc/en-us
+TITLE: Klaviyo Help Center
+ACCESSED: 2026-09-28
+
+What can we help you find today?
+Search by topic
+Featured resources
+Account & billing
+Advanced KDP & Marketing Analytics
+Analytics
+Audience
+Campaigns
+Composer
+Content
+Conversations
+Customer Agent
+Customer Hub
+Deliverability & compliance
+Digital Experiences
+Flows
+Helpdesk
+Integrations
+Push Notifications
+Reviews
+Sign-up forms
+SMS
+Social Marketing
+Translations Settings
+WhatsApp
+Select a topic
+Featured resources
+Account & billing
+Advanced KDP & Marketing Analytics
+Analytics
+Audience
+Campaigns
+Composer
+Content
+Conversations
+Customer Agent
+Customer Hub
+Deliverability & compliance
+Digital Experiences
+Flows
+Helpdesk
+Integrations
+Push Notifications
+Reviews
+Sign-up forms
+SMS
+Social Marketing
+Translations Settings
+WhatsApp
+Featured resources
+Discover educational guides, courses, and materials to grow your business with Klaviyo.
+Academy
+Getting started with Klaviyo
+Integrate your store and start messaging with Klaviyo.
+Help center
+How to get set up with SMS in Klaviyo
+Set the foundation for successful SMS sending.
+Help center
+How to create and send an email campaign
+Craft and send your first email campaign.
+Help center
+Getting started with sign-up forms
+Use forms to interact with your subscribers and gather more info about them.
+Help center
+How to use Flows AI to build a flow
+Create complete flows at scale using natural language inputs.
+Help center
+Getting started with reviews
+Gather customer feedback and help drive more conversions.
+Explore more from Klaviyo
+Community
+Connect with peers, partners, and Klaviyo experts to find inspiration, share insights, and get answers to all of your questions.
+Visit Community
+Partners
+Hire a Klaviyo-certified expert to help you with a specific task, or for ongoing marketing management.
+Hire a partner
+Support
+Access support through your account.
+Email support
+(free trial and paid accounts)
+Available 24/7
+Chat/virtual assistance
+Availability varies by location and plan type
+Log in
+
+===== https://www.klaviyo.com/uk/contact-us
+TITLE: Contact Klaviyo - Klaviyo UK
+ACCESSED: 2026-09-28
+
+Contact us
+Support
+Get help using Klaviyo
+To contact our support team (and access helpful resources), sign in at
+klaviyo.com/support
+.
+Can’t sign in? Submit an
+account access request
+.
+Sales
+Learn more about Klaviyo
+Request a demo
+Partnerships
+Team up with Klaviyo
+partners@klaviyo.com
+Learn about our partner program
+Press inquiries
+Get the scoop
+press@klaviyo.com
+Security
+Contact our risk and trust team
+Report security vulnerabilities
+
+===== https://developers.klaviyo.com/en/docs/sdk_overview
+TITLE: Web and Mobile SDKs
+ACCESSED: 2026-09-28
+
+Node
+PHP
+Python
+Ruby
+Klaviyo's mobile SDKs let you bring the full power of Klaviyo into your mobile app:
+Profile identification
+— recognize your users
+Event tracking
+— capture in-app behaviors and conversions
+Push notifications
+— send targeted, personalized push messages
+In-app forms
+— surface pop-up experiences without leaving the app
+Geofencing
+— track real-world locations to trigger marketing content
+All these features are available for iOS, Android, React Native and Flutter apps through our respective SDKs.
+iOS Swift
+Android
+React Native
+Expo Plugin
+Flutter
+❗️
+All v1/v2 SDKs were retired on June 30, 2024 and will not receive further updates. To continue receiving API and SDK improvements, we recommend migrating to our latest APIs and SDKs. You can find instructions for making the switch within the README of each legacy SDK repo below.
+Node
+PHP
+Python
+Ruby
+Node.js (legacy)
+PHP (legacy)
+Python (legacy)
+Ruby (legacy)
+🚧
+NOTE: /v1 & /v2 Legacy APIs (Deprecated) | 2012 - 2021 SDKs do not support all API operations
+If you are currently using a legacy SDK, you may be missing some key functionality. For that reason, we recommend customers use our latest SDKs.
+Alternatively, if you'd like to continue using a legacy SDK (e.g: for multi-threading/multi-store support as we work on updating this feature), you can make newer API calls that are not in the SDK by making HTTPS requests outright. For help with this, you can reference our language-specific code examples within the
+API reference
+, which lists all available operations.
+Updated
+3 days ago
+Did this page help you?
+Yes
+No
+
+===== https://developers.klaviyo.com/en/reference/get_lists
+TITLE: Get Lists
+ACCESSED: 2026-09-28
+
+200
+Success
+4XX
+Client Error
+5XX
+Server Error
+Shell
+Node
+Ruby
+PHP
+Python
+Loading…
+Choose an example:
+application/vnd.api+json
+
+===== https://developers.klaviyo.com/en/reference/get_flows
+TITLE: Get Flows
+ACCESSED: 2026-09-28
+
+200
+Success
+4XX
+Client Error
+5XX
+Server Error
+Shell
+Node
+Ruby
+PHP
+Python
+Loading…
+Choose an example:
+application/vnd.api+json

@@ -1,0 +1,956 @@
+===== https://neo4j.com/docs/create-applications/
+TITLE: Create applications - Neo4j Documentation
+ACCESSED: 2026-09-28
+
+Language libraries
+Python
+Drivers
+Interact with a Neo4j instance through a Python application.
+Guide
+Reference
+Go
+Drivers
+Interact with a Neo4j instance through a Go application.
+Guide
+Reference
+Java
+Drivers
+Interact with a Neo4j instance through a Java application.
+Guide
+Reference
+JDBC
+Drivers
+Interact with a Neo4j instance through a Java application and the JDBC standard.
+Guide
+JavaScript
+Drivers
+Interact with a Neo4j instance through a JavaScript application.
+Guide
+Reference
+.NET
+Drivers
+Interact with a Neo4j instance through a .NET application.
+Guide
+Reference
+MCP
+Model Context Protocol
+Connect AI applications to Neo4j via Model Context Protocol.
+Guide
+Other libraries
+GraphQL
+Libraries
+Use the GraphQL Library to have data treated as a graph natively from the frontend all the way to storage.
+https://neo4j.com/docs/graphql/current/
+Object Graph Mapping Library
+Libraries
+A (Java) Object Graph Mapping library, to abstract the database and query it without the language library.
+https://neo4j.com/docs/ogm-manual/current/
+Spring Data Neo4j
+Libraries
+An Object Graph Mapping (OGM) library, as a Spring Data module.
+https://docs.spring.io/spring-data/neo4j/reference/
+APIs
+Neo4j Query API
+APIs
+Execute Cypher® statements against a Neo4j server through HTTP requests.
+https://neo4j.com/docs/query-api/current/
+Change Data Capture
+APIs
+Capture and track changes to your database in real-time, and keep other data storages up to date with Neo4j.
+https://neo4j.com/docs/cdc/current/
+Bolt
+APIs
+The binary messaging protocol that Neo4j language libraries use to communicate with the server.
+https://neo4j.com/docs/bolt
+Cypher Builder
+Cypher Builder
+Build Cypher queries for Neo4j in JavaScript and TypeScript.
+https://neo4j.com/docs/cypher-builder/current/
+Licenses and disclaimers
+Licenses and disclaimers
+
+===== https://neo4j.com/docs/
+TITLE: Neo4j documentation - Neo4j Documentation
+ACCESSED: 2026-09-28
+
+CTA cards
+Deployment options
+Choose from fully and self-managed local and cloud deployments. Run Neo4j on Docker or Kubernetes.
+Get a Neo4j instance
+Cypher
+Learn how to write Cypher®, Neo4j’s declarative query language.
+Query your data
+Neo4j Tools
+Use Neo4j’s tools to explore, visualize, manage, monitor, and import data to your graph.
+Discover the products
+Graph Data Science
+Run graph algorithms and machine learning models to analyze your data at scale.
+Get insights from data
+Create applications
+Discover the client libraries and APIs to develop applications with Neo4j and AuraDB.
+Start developing
+Connect data sources
+Learn how to use connectors and other tools to connect Neo4j with other data sources.
+Connect to Neo4j
+Tailored for you
+Keep exploring
+Developer
+Choose your deployment
+Learn Cypher
+Start querying
+Create applications
+Connect data sources
+Integrate GenAI functions
+Improve app performance
+Extend Neo4j
+Database Admin
+Manage your database
+Deploy and manage a cluster
+Database internals
+Manage users, roles, and privileges
+Monitor your database
+Backup and restore
+Upgrade and migration
+Data Scientist
+Analyze your data
+Set up your deployment
+Create data visualizations
+Use machine learning algorithms
+Set up a Python client
+Manage your graph
+Data Engineer
+Graph database concepts
+Model your data
+Connect data sources
+Import your dataset
+Monitor data changes
+Data modeling tools
+Tutorials & How-to guides
+Tutorials & How-to guides
+Embedding & Vector Indexes Tutorial
+Import data from a relational database into Neo4j
+Build a Cypher recommendation engine
+Set up and use a composite database
+Capture and track changes in real-time
+Apply centrality algorithms to your graph
+GraphAcademy courses
+GraphAcademy courses
+Introduction to Neo4j and graph databases
+Cypher query language fundamentals
+How to import data to Neo4j
+Neo4j & GenerativeAI Fundamentals
+Vector indexes and unstructured data
+Introduction to Graph Data Science
+Other resources
+Join forums and discussions
+Community forum
+Discord
+Developer blogs, articles and books
+Developer blog
+Other resources
+
+===== https://neo4j.com/developer/
+TITLE: Developer center
+ACCESSED: 2026-09-28
+
+Developer Center
+Build smarter apps, easier, with graph tools for your language
+Python
+# Python code example
+from neo4j import GraphDatabase
+
+# Neo4j connection settings
+URI = "neo4j+s://
+.databases.neo4j.io"
+AUTH = ("neo4j", "
+")
+
+# Create the driver
+driver = GraphDatabase.driver(URI, auth=AUTH)
+
+# Query the graph
+with driver:
+    result = driver.execute_query(
+        """
+  MATCH pattern =
+  	   (p1:Project)
+    	   -[:USES*1..3]->
+  	   (m:Module)
+    	   <-[:USES*1..3]-
+  	   (p2:Project)
+  WHERE p1 <> p2
+  RETURN pattern;
+        """,
+        database_="neo4j",
+    )
+
+    for record in result.records:
+        print(record)
+Build with python
+Java
+import org.neo4j.driver.AuthTokens;
+import org.neo4j.driver.GraphDatabase;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+
+public class App {
+
+  public static void main(String[] args) {
+
+    try (
+      var driver =
+        GraphDatabase.driver(
+          "neo4j+s://
+.databases.neo4j.io",
+          AuthTokens.basic(
+            "neo4j", "
+"
+          )
+        )
+    ) {
+
+      driver.verifyConnectivity();
+
+      // Query that produces the visualization
+      var javaVersions =
+        driver.executableQuery(
+            """
+            MATCH (j:JavaVersion)
+              -[:INCLUDES]->
+            (f:Feature)
+              -[:BELONGS_TO]->
+            (c:Category {
+              name: $categoryName
+            })
+            WHERE
+              toInteger(j.version) >= $minVersion
+            WITH j,
+              collect(f.title) AS features,
+              c.name AS category
+            RETURN j {
+              .version,
+              .status,
+              .gaDate,
+              .eolDate,
+              features: features,
+              category: category
+            } AS javaVersion;
+            """
+          )
+          .withParameters(
+            Map.of(
+              "categoryName", "lang",
+              "minVersion", 24
+            )
+          )
+          .execute()
+          .records()
+          .stream()
+          .map(r ->
+              r.get("javaVersion")
+                .as(JavaVersion.class)
+          )
+          .toList();
+
+      for (var javaVersion : javaVersions) {
+        System.out.println(javaVersion);
+      }
+    }
+  }
+
+  record JavaVersion(
+    String version,
+    String status,
+    LocalDate gaDate,
+    LocalDate eolDate,
+    List
+features
+  ) {}
+
+  record Feature(
+    String title,
+    Category category
+  ) {}
+
+  record Category(
+    String name
+  ) {}
+}
+Build with java
+JavaScript
+const neo4j = require("neo4j-driver");
+
+// Neo4j connection settings
+const URI =
+  process.env.NEO4J_URI ||
+  "neo4j+s://
+.databases.neo4j.io";
+
+const USERNAME =
+  process.env.NEO4J_USERNAME ||
+  "neo4j";
+
+const PASSWORD =
+  process.env.NEO4J_PASSWORD ||
+  "
+";
+
+const DATABASE =
+  process.env.NEO4J_DATABASE ||
+  "neo4j";
+
+const AUTH =
+  neo4j.auth.basic(
+    USERNAME,
+    PASSWORD
+  );
+
+const driver =
+  neo4j.driver(
+    URI,
+    AUTH
+  );
+
+// Query that produces the visualization
+async function main() {
+  try {
+    const result =
+      await driver.executeQuery(
+        `
+        MATCH (lib:Library)
+          -[:SUPPORTS]->
+        (f:Feature),
+        (lib)
+          -[:BELONGS_TO]->
+        (t:Trend {
+          name: $frameworkName
+        })
+        RETURN
+          lib.name AS library,
+          f.name   AS feature,
+          t.name   AS trend;
+        `,
+        {
+          frameworkName: "Vue.js",
+        },
+        {
+          database: DATABASE,
+        }
+      );
+
+    for (const record of result.records) {
+      console.log(record.toObject());
+    }
+  } catch (error) {
+    console.error(
+      "Query failed:",error);
+  } finally {
+    await driver.close();
+  }
+}
+
+main().catch(console.error);
+Build With JavaScript
+C#
+using Neo4j.Driver;
+
+// Neo4j connection settings
+var uri = "neo4j+s://
+.databases.neo4j.io";
+var user = "neo4j";
+var password = "
+";
+
+using var driver =
+    GraphDatabase.Driver(
+        uri,
+        AuthTokens.Basic(
+            user,
+            password
+        )
+    );
+
+await driver.VerifyConnectivityAsync();
+
+var result =
+    await driver
+        .ExecutableQuery(
+            @"
+            MATCH (m:Maintainer {
+                name: $maintainerName
+            })<-[:MAINTAINED_BY]-
+            (pkg:Package)
+                -[:TESTS_WITH]->
+            (tp:TestPackage)
+                -[:MAINTAINED_BY]->
+            (tm:Maintainer)
+            WHERE
+                m.name <> tm.name
+            RETURN
+                m.name   AS maintainer,
+                pkg.name AS package,
+                tp.name  AS testPackage,
+                tm.name  AS testMaintainer;
+            "
+        )
+        .WithParameters(
+            new
+            {
+                maintainerName = "Microsoft"
+            }
+        )
+        .WithConfig(
+            new QueryConfig(
+                database: "neo4j"
+            )
+        )
+        .ExecuteAsync();
+
+foreach (var record in result.Result)
+{
+    var maintainer =
+        re
+
+===== https://neo4j.com/pricing/
+TITLE: Cloud & self-hosted graph database platform pricing | Neo4j
+ACCESSED: 2026-09-28
+
+Neo4j pricing
+Graph Database
+Graph Analytics
+Graph database pricing plans
+Deploy Neo4j AuraDB on any cloud provider of your choice.
+Fully Managed
+Graph database pricing plans
+The best way to run Neo4j on premises in your private cloud, or public cloud infrastructure.
+Self Managed
+AuraDB Free
+$0
+Learn
+and Explore Graphs
+Start Learning
+(opens in new tab)
+No credit card or other payment method required
+Start learning with access to all graph tools
+AuraDB Professional
+$65
+/GB/month*
+(minimum 1GB cluster)
+Build
+Production-Ready Apps
+Try for Free
+(opens in new tab)
+View Trial and Pricing Details
+AuraDB Professional pricing
+14-day free trial available.
+Try it now.
+Memory
+CPU
+Storage
+Hourly
+Monthly
+1GB
+1CPU
+2GB
+$0.09/hour
+$65.70/month
+2GB
+1CPU
+4GB
+$0.18/hour
+$131.40/month
+4GB
+1CPU
+8GB
+$0.36/hour
+$262.80/month
+8GB
+2CPU
+16GB
+$0.72/hour
+$525.60/month
+16GB
+3CPU
+32GB
+$1.44/hour
+$1,051.20/month
+24GB
+5CPU
+48GB
+$2.16/hour
+$1,576.80/month
+32GB
+6CPU
+64GB
+$2.88/hour
+$2,102.40/month
+48GB
+10CPU
+96GB
+$4.32/hour
+$3,153.60/month
+64GB
+12CPU
+128GB
+$5.76/hour
+$4,204.80/month
+For sizing larger than 64GB, consider AuraDB Business Critical.
+×
+Up to 128GB memory per database instance
+Scalable on demand
+Daily backups, 7-day retention
+Available on Azure, AWS, and Google Cloud
+Advanced instance-level metrics
+AuraDB Business Critical
+$146
+/GB/month*
+(minimum 2GB cluster)
+Scale
+Apps for Enterprise Use
+Sign Up
+(opens in new tab)
+View Pricing Details
+AuraDB Business Critical pricing
+Memory
+CPU
+Storage
+Hourly
+Monthly
+2GB
+1CPU
+4GB
+$0.40/hour
+$292/month
+4GB
+1CPU
+8GB
+$0.80/hour
+$584/month
+8GB
+2CPU
+16GB
+$1.60/hour
+$1,168/month
+16GB
+3CPU
+32GB
+$3.20/hour
+$2,336/month
+32GB
+6CPU
+64GB
+$6.40/hour
+$4,672/month
+64GB
+12CPU
+128GB
+$12.80/hour
+$9,344/month
+128GB
+24CPU
+256GB
+$25.60/hour
+$18,688/month
+192GB
+36CPU
+384GB
+$38.40/hour
+$28,032/month
+256GB
+48CPU
+512GB
+$51.20/hour
+$37,376/month
+384GB
+82CPU
+768GB
+$76.80/hour
+$56,064/month
+512GB
+96CPU
+1024GB
+$102.40/hour
+$74,752/month
+×
+Up to 1944GB memory instance (GCP) & 512GB memory instance (AWS & Azure)
+Highly available 3-zone cluster with 99.95% uptime SLA
+Daily backups with 30-day retention and hourly point-in-time restore
+Role-based access control with granular security
+Supports multiple databases per instance
+Pay-as-you-go and prepaid consumption billing
+24x7 support
+AuraDB Virtual Dedicated Cloud
+Deploy applications, using all capabilities of AuraDB Business Critical, but in a dedicated environment
+Contact Us
+Contact us
+about AuraDB Virtual Dedicated Cloud
+This form is temporarily unavailable. Please try again later.
+The information you provide will be used in accordance with
+Neo4j's Privacy Notice
+, including in respect of marketing our products, events and services.
+×
+VPC isolation and dedicated infrastructure
+Up to 1944GB memory instance (GCP) & 512GB memory instance (AWS & Azure)
+Hourly backups with 60-day retention
+Enhanced
+24x7 support and services
+Also available via cloud marketplaces for simplified billing
+Microsoft Azure
+Google Cloud
+Amazon Web Services
+Simple pricing, predictable cost
+Simple, transparent pricing
+Pay for provisioned database capacity — no extras for storage, compute, IO, network, or backups. With hourly metering, costs are simple to model and predict.
+Scale seamlessly, on demand
+Easily add or reduce capacity with a few clicks to meet your changing needs, without any service interruption.
+Pause database, save 80% costs
+Pause your database when not in use and save 80% of running costs. Your data and backups are stored securely. Resume with just a click.
+Capacity-based consumption pricing
+Included in your price: Storage, IO, Backup, and Data Transfer.
+Start Learning
+Try for Free
+Sign Up
+Contact Us
+AuraDB Free
+$0
+Start Learning
+Database administration
+DB Instance Size
+^Limits on node and relationship counts
+Multiple databases per instance
+Not Included
+Availability Zone (AZ) Configuration
+Single-zone
+Service Availability SLA
+Not Included
+DB Instance Control
+Auto-pause/resume
+Automated Rolling Updates
+Included
+Database Monitoring
+Not Included
+API to Provision and Manage Instances
+Included
+Backup Frequency | Retention With Point-in-Time Recovery
+Not Included
+Query Log forwarding
+Not Included
+Performance and scalability
+Block Format
+Included
+Query Log Analyzer
+Not Included
+Advanced Metrics
+Not Included
+Pipelined and Parallel Runtime
+Not Included
+Secondaries
+Not Included
+Vector Optimization
+Not Included
+Security
+Industry Standard Compliance
+Trust Center
+Encryption (at rest and in transit)
+Included
+RBAC and Fine-Grained Access Control
+Not Included
+SSO Authentication
+Not Included
+Customer Managed Keys
+Not Included
+Security Log Forwarding
+Not Included
+Private Endpoints
+Not Included
+IP Filtering
+Not Included
+Property-Based Access Control
+Not Included
+Multi-Factor Authentication (MFA)
+Included
+Activity Feed
+Included
+Productivity and visualization
+Aura Console
+Included
+Neo4j Data Importer
+Included
+Query API
+Included
+GraphQL Library
+Included
+Neo4j Bloom/Visualization Library
+Bloom Basic
+Dashboards
+Incl
+
+===== https://neo4j.com/docs/reference/license/
+TITLE: Licenses and disclaimers - Neo4j Documentation
+ACCESSED: 2026-09-28
+
+Licenses
+Neo4j documentation license
+Neo4j documentation is covered by the Creative Commons license.
+Documentation license
+Bloom Client
+The Neo4j Bloom Client license.
+Bloom™ Client license
+Neo4j Visualization Library
+The Neo4j Visualization Library license.
+Neo4j Visualization Library™
+Disclaimers
+GenAI outputs
+Disclaimer for GenAI outputs in Neo4j products powered by artificial intelligence.
+GenAI outputs
+Aura Agent AI models
+Disclosure of AI models and cloud service providers used in Neo4j Aura Agent.
+How Aura Agent uses AI models
+Aura Onboarding Assistant
+Description of how Neo4j Aura Onboarding Assistant uses AI models.
+How Neo4j Aura Onboarding Assistant uses AI models
+
+===== https://neo4j.com/docs/graphql/current/
+TITLE: Introduction - Neo4j GraphQL Library
+ACCESSED: 2026-09-28
+
+This is the documentation of the GraphQL Library version 7.
+For the long-term support (LTS) version 5, refer to
+GraphQL Library version 5 LTS
+.
+The Neo4j GraphQL Library is a highly flexible, low-code, open source JavaScript library that enables rapid API development for cross-platform and mobile applications by tapping into the power of connected data.
+How it works
+The Neo4j GraphQL Library requires a set of type definitions that describes the shape of your graph data and creates an API layer to communicate with the data.
+It generates an entire executable schema with all additional types needed to execute queries and mutations to interact with your Neo4j database.
+For example, consider these type definitions:
+type Product @node {
+    productName: String
+    category: [Category!]! @relationship(type: "PART_OF", direction: OUT)
+}
+
+type Category @node {
+    categoryName: String
+    products: [Product!]! @relationship(type: "PART_OF", direction: IN)
+}
+Based on these type definitions, the library generates query and mutation templates to create new instances of the types as well as query existing instances.
+The following mutation creates a new product as well as a new category:
+mutation {
+  createProducts(
+    input: [
+      {
+        productName: "New Product"
+        category: { create: [{ node: { categoryName: "New Category" } }] }
+      }
+    ]
+  ) {
+    products {
+      productName
+      category {
+        categoryName
+      }
+    }
+  }
+}
+Here is an example of how you can query existing data:
+query {
+  products {
+    productName
+    category {
+      categoryName
+    }
+  }
+}
+The response looks like this:
+{
+  "data": {
+    "products": [
+      {
+        "productName": "New Product",
+        "category": [
+          {
+            "categoryName": "New Category"
+          }
+        ]
+      }
+    ]
+  }
+}
+For every query and mutation that is executed against this generated schema, the Neo4j GraphQL Library generates a single Cypher query which is executed against the database.
+This eliminates the
+N+1 Problem
+, which can make GraphQL implementations slow and inefficient.
+See
+Integrating the library
+to learn how to use the GraphQL Library in your technology stack.
+Check out
+Creating a new project
+to create a new project, either based on Neo4j Aura or self-hosted.
+Library features
+Automatic generation of
+Queries
+and
+Mutations
+for CRUD interactions.
+Types
+, including temporal and spatial.
+Support for both node and relationship properties.
+Extensive
+Filtering
+,
+Sorting
+and
+Pagination
+options.
+Security options
+and additional
+Schema Configuration
+.
+Subscriptions
+to server events.
+Apollo federation integration
+.
+Extensibility through the
+@cypher
+directive
+and/or
+Custom Resolvers
+.
+A
+Toolbox
+(UI) to experiment with your Neo4j GraphQL API on Neo4j Desktop.
+Resources
+GitHub
+Issue Tracker
+npm package
+License
+Documentation license:
+Creative Commons 4.0
+Source:
+Apache 2.0
+Get hands-on with the
+GraphQL course on GraphAcademy
+.
+
+===== https://neo4j.com/docs/java-reference/current/
+TITLE: The Neo4j Java Reference v2026.09 - Java Reference
+ACCESSED: 2026-09-28
+
+The Java Reference contains information on advanced Java-centric usage of Neo4j.
+It covers the following topics:
+Extending Neo4j
+— How to build unmanaged extensions and procedures.
+Using Neo4j embedded in Java applications
+— Instructions on embedding Neo4j in .
+Traversal Framework
+— A walkthrough of the traversal framework.
+Transaction management
+— Examples on transaction management in Neo4j.
+JMX metrics
+— How to monitor Neo4j with JMX and a reference of available metrics.
+You might want to keep the
+Neo4j Javadocs (Neo4j Java API Documentation)
+handy while reading.
+Who should read this?
+The Java Reference is written for advanced Java developers who want to extend Neo4j’s functionality or embed Neo4j in their software.
+Disclaimer
+This guide describes how to make changes to server-sided and deployment functionalities and has no connection with the
+Neo4j Java Driver
+.
+License:
+Creative Commons 4.0
+
+===== https://neo4j.com/docs/getting-started/
+TITLE: Get started with Neo4j - Getting Started
+ACCESSED: 2026-09-28
+
+Explore the capabilities of graph databases
+With a property graph database at its core, Neo4j offers an ecosystem of tools, applications, and libraries which aim to help you get started with the technology.
+What is Neo4j
+Learn what a graph database is and how to use it in your projects.
+What is Neo4j?
+What is a graph database
+Learn the principles of a graph database.
+What is a graph database
+What is Cypher
+Learn Cypher®, Neo4j’s graph query language, and start thinking about graphs and patterns.
+What is Cypher?
+Work with data
+Model your data for Neo4j
+Discover strategies to model your data and to improve your workflow.
+/docs/model
+Import data to Neo4j
+Read more about the different ways of importing data to your Neo4j graph database.
+/docs/import/
+Create applications with Neo4j
+Run through detailed examples of how to integrate Neo4j with your preferred programming language.
+/docs/create-applications
+Data science with Neo4j
+Learn how to use Neo4j Graph Data Science, a library of graph algorithms for analysts and data scientists.
+/docs/gds
+Visualize data in Neo4j
+Learn how to export your graph data in Neo4j for display as a visualization.
+/docs/visualize/
+GraphAcademy courses
+GraphAcademy courses
+Embedding & Vector Indexes Tutorial
+Import from a relational database into Neo4j
+Build a Cypher recommendation engine
+Set up and use a composite database
+Capture and track changes in real-time
+Apply centrality algorithms to your graph
+Licenses and disclaimers
+Licenses and disclaimers
+
+===== https://neo4j.com/docs/api/java-driver/current/
+TITLE: Overview (Neo4j Java Driver 6.3 API)
+ACCESSED: 2026-09-28
+
+These pages document the official
+Neo4j
+driver for Java.
+Example
+import java.util.Map;
+import org.neo4j.driver.*;
+
+final class SmallExample {
+    // Driver objects are thread-safe and are typically made available application-wide.
+    private final Driver driver;
+
+    public SmallExample(String uri, String user, String password) {
+        driver = GraphDatabase.driver(uri, AuthTokens.basic(user, password));
+    }
+
+    private void addPerson(String name) {
+        driver.executableQuery("MERGE (a:Person {name: $x})")
+                .withParameters(Map.of("x", name))
+                .execute();
+    }
+
+    private void printPeople(String initial) {
+        driver.executableQuery("MATCH (a:Person) WHERE a.name STARTS WITH $x RETURN a.name AS name")
+                .withParameters(Map.of("x", initial))
+                .withConfig(QueryConfig.builder().withRouting(RoutingControl.READ).build())
+                .execute()
+                .records()
+                .forEach(record -> System.out.println(record.get("name").asString()));
+    }
+
+    public void close() {
+        // Closing a driver immediately shuts down all open connections.
+        driver.close();
+    }
+
+    public static void main(String... args) {
+        var example = new SmallExample("bolt://localhost:7687", "neo4j", "password");
+        example.addPerson("Ada");
+        example.addPerson("Alice");
+        example.addPerson("Bob");
+        example.printPeople("A");
+        example.close();
+    }
+}
+Modules
+org.neo4j.driver
+The Neo4j Java Driver module.

@@ -1,0 +1,102 @@
+{
+  "app": "Lark",
+  "number": 24,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:56:40.992157+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://open.larksuite.com\",\n    \"https://open.larksuite.com/document/home/index\",\n    \"https://open.larksuite.com/document/server-docs/api-call-guide/calling-apis\",\n    \"https://open.larksuite.com/document/common-concepts/overview-of-develop-process\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://open.larksuite.com",
+    "https://open.larksuite.com/document/home/index",
+    "https://open.larksuite.com/document/server-docs/api-call-guide/calling-apis",
+    "https://open.larksuite.com/document/common-concepts/overview-of-develop-process",
+    "https://docs.larksuite.com/",
+    "https://developer.larksuite.com/",
+    "https://developers.larksuite.com/",
+    "https://api.larksuite.com/",
+    "https://larksuite.com/docs",
+    "https://larksuite.com/developers",
+    "https://larksuite.com/api",
+    "https://larksuite.com/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://open.larksuite.com",
+      "reason": "page too thin (14 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://open.larksuite.com/document/home/index",
+      "reason": "page too thin (31 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://open.larksuite.com/document/server-docs/api-call-guide/calling-apis",
+      "reason": "page too thin (31 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://open.larksuite.com/document/common-concepts/overview-of-develop-process",
+      "reason": "page too thin (31 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.larksuite.com/",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.larksuite.com/",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developers.larksuite.com/",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.larksuite.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 24,
+    "name": "Lark",
+    "category": "Communications and Messaging",
+    "hint_url": "https://open.larksuite.com",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://open.larksuite.com (page too thin (14 chars)); https://open.larksuite.com/document/home/index (page too thin (31 chars)); https://open.larksuite.com/document/server-docs/api-call-guide/calling-apis (page too thin (31 chars)); https://open.larksuite.com/document/common-concepts/overview-of-develop-process (page too thin (31 chars)); https://docs.larksuite.com/ (page too thin (0 chars)); https://developer.larksuite.com/ (page too thin (0 chars))"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "support": {},
+    "unsupported_fields": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T03:56:52.250556+00:00"
+}

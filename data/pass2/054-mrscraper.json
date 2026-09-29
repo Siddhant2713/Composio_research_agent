@@ -1,0 +1,207 @@
+{
+  "app": "MrScraper",
+  "number": 54,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T06:16:54.606799+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.mrscraper.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.mrscraper.com",
+    "https://developer.mrscraper.com/",
+    "https://developers.mrscraper.com/",
+    "https://api.mrscraper.com/",
+    "https://mrscraper.com/docs",
+    "https://mrscraper.com/developers",
+    "https://mrscraper.com/api",
+    "https://mrscraper.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.mrscraper.com/docs/getting-started/api-token",
+    "https://docs.mrscraper.com/docs/getting-started/quickstart",
+    "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+    "https://docs.mrscraper.com/docs/api/overview",
+    "https://docs.mrscraper.com/docs/guides/ecommerce",
+    "https://docs.mrscraper.com/docs/integrations/node"
+  ],
+  "boilerplate_lines_removed": 7,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.mrscraper.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.mrscraper.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.mrscraper.com/",
+      "reason": "HTTP 401",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://mrscraper.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://mrscraper.com/api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://mrscraper.com/developer",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "requested_url": "https://docs.mrscraper.com",
+      "status": 200,
+      "title": "Overview | MrScraper Documentation",
+      "chars": 4969,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "requested_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "status": 200,
+      "title": "Token Plan | MrScraper Documentation",
+      "chars": 4986,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+      "requested_url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+      "status": 200,
+      "title": "Quickstart | MrScraper Documentation",
+      "chars": 4614,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+      "requested_url": "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+      "status": 200,
+      "title": "Authentication | MrScraper Documentation",
+      "chars": 4941,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "requested_url": "https://docs.mrscraper.com/docs/api/overview",
+      "status": 200,
+      "title": "API Overview | MrScraper Documentation",
+      "chars": 1483,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/guides/ecommerce",
+      "requested_url": "https://docs.mrscraper.com/docs/guides/ecommerce",
+      "status": 200,
+      "title": "E-commerce | MrScraper Documentation",
+      "chars": 4838,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"MrScraper is an all-in-one web scraping and data extraction platform providing AI agents, workflows, proxies, and a REST API for automated data collection.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API requests require authentication using an API token passed in the x-api-token header (or via token query parameter / Bearer authorization depending on endpoint).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Documentation instructs users to create a MrScraper account and obtain their API key from the token plan section.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Python SDK\",\n      \"Node.js SDK\",\n      \"LangChain SDK\"\n    ],\n    \"notes\": \"Built on REST principles with JSON-encoded requests and responses, alongside webhooks and official SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://docs.mrscraper.com/docs/getting-started/overview\",\n    \"notes\": \"MrScraper provides an MCP Server letting AI agents fetch and extract web data through the Model Context Protocol, with source code available on GitHub.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/quickstart\",\n      \"claim\": \"Authentication uses an API token sent via header or query parameter.\",\n      \"quote\": \"Create a MrScraper account and obtain your API key from the before following this guide.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/api/overview\",\n      \"claim\": \"The API is built on REST principles with JSON payloads.\",\n      \"quote\": \"Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/api/overview\",\n      \"claim\": \"API requests require authentication with an API token in the x-api-token header.\",\n      \"quote\": \"All API endpoints require authentication using an API token passed in the x-api-token header.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/overview\",\n      \"claim\": \"An MCP server is available for AI agents.\",\n      \"quote\": \"MCP Server: Let AI agents fetch and extract web data through the Model Context Protocol.\"\n    },\n    {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/overview\",\n      \"claim\": \"Webhooks are supported for integrations.\",\n      \"quote\": \"Webhook: Send scraper results directly to external services through webhooks.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.mrscraper.com/docs/api/overview\",\n      \"quote\": \"All API endpoints require authentication using an API token passed in the x-api-token header.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/quickstart\",\n      \"quote\": \"Create a MrScraper account and obtain your API key from the before following this guide.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.mrscraper.com/docs/api/overview\",\n      \"quote\": \"Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.mrscraper.com/docs/getting-started/overview\",\n      \"quote\": \"MCP Server: Let AI agents fetch and extract web data through the Model Context Protocol.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://docs.mrscraper.com",
+    "one_liner": "MrScraper is an all-in-one web scraping and data extraction platform providing AI agents, workflows, proxies, and a REST API for automated data collection.",
+    "auth": {
+      "method": "api_key",
+      "notes": "API requests require authentication using an API token passed in the x-api-token header (or via token query parameter / Bearer authorization depending on endpoint)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Documentation instructs users to create a MrScraper account and obtain their API key from the token plan section."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Python SDK",
+        "Node.js SDK",
+        "LangChain SDK"
+      ],
+      "notes": "Built on REST principles with JSON-encoded requests and responses, alongside webhooks and official SDKs."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "notes": "MrScraper provides an MCP Server letting AI agents fetch and extract web data through the Model Context Protocol, with source code available on GitHub."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+        "claim": "Authentication uses an API token sent via header or query parameter.",
+        "quote": "Create a MrScraper account and obtain your API key from the before following this guide.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "claim": "The API is built on REST principles with JSON payloads.",
+        "quote": "Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "claim": "API requests require authentication with an API token in the x-api-token header.",
+        "quote": "All API endpoints require authentication using an API token passed in the x-api-token header.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "claim": "An MCP server is available for AI agents.",
+        "quote": "MCP Server: Let AI agents fetch and extract web data through the Model Context Protocol.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "claim": "Webhooks are supported for integrations.",
+        "quote": "Webhook: Send scraper results directly to external services through webhooks.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "quote": "All API endpoints require authentication using an API token passed in the x-api-token header."
+      },
+      "access": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+        "quote": "Create a MrScraper account and obtain your API key from the before following this guide."
+      },
+      "api_surface": {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "quote": "Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes."
+      },
+      "mcp": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "MCP Server: Let AI agents fetch and extract web data through the Model Context Protocol."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T06:17:09.655576+00:00"
+}

@@ -1,0 +1,211 @@
+{
+  "app": "Ecwid",
+  "number": 47,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:18:12.902497+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://api-docs.ecwid.com\",\n    \"https://developers.ecwid.com\",\n    \"https://my.ecwid.com/cp/CP.html?register=v2\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://api-docs.ecwid.com",
+    "https://developers.ecwid.com",
+    "https://my.ecwid.com/cp/CP.html?register=v2",
+    "https://docs.ecwid.com/",
+    "https://developer.ecwid.com/",
+    "https://api.ecwid.com/",
+    "https://ecwid.com/docs",
+    "https://ecwid.com/developers",
+    "https://ecwid.com/api",
+    "https://ecwid.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.ecwid.com/api-reference",
+    "https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields",
+    "https://docs.ecwid.com/api-reference/advanced/js-api-calls",
+    "https://docs.ecwid.com/webhook-automations",
+    "https://docs.ecwid.com/get-started/api-glossary",
+    "https://docs.ecwid.com/contact-ecwid-api-support-team",
+    "https://ecwid.com/pricing",
+    "https://docs.ecwid.com/get-started/",
+    "https://docs.ecwid.com/build-apps/webhook-automations"
+  ],
+  "boilerplate_lines_removed": 9,
+  "fetch_failures": [
+    {
+      "requested_url": "https://my.ecwid.com/cp/CP.html?register=v2",
+      "reason": "non-text content-type: ''",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.ecwid.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://api.ecwid.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://ecwid.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://ecwid.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.ecwid.com",
+      "requested_url": "https://api-docs.ecwid.com",
+      "status": 200,
+      "title": "Build with Ecwid apps | Ecwid Documentation",
+      "chars": 1753,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.ecwid.com",
+      "requested_url": "https://developers.ecwid.com",
+      "status": 200,
+      "title": "Ecwid Developers | Build an e-commerce app for Ecwid merchants",
+      "chars": 2267,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ecwid.com/",
+      "requested_url": "https://docs.ecwid.com/",
+      "status": 200,
+      "title": "Build with Ecwid apps | Ecwid Documentation",
+      "chars": 1753,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ecwid.com/api-reference",
+      "requested_url": "https://docs.ecwid.com/api-reference",
+      "status": 200,
+      "title": "REST API overview | REST API Reference | Ecwid Documentation",
+      "chars": 1477,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields",
+      "requested_url": "https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields",
+      "status": 200,
+      "title": "Checkout extra fields | REST API Reference | Ecwid Documentation",
+      "chars": 1322,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ecwid.com/api-reference/advanced/js-api-calls",
+      "requested_url": "https://docs.ecwid.com/api-reference/advanced/js-api-calls",
+      "status": 200,
+      "title": "JS API calls | REST API Reference | Ecwid Documentation",
+      "chars": 928,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ecwid.com/webhook-automations",
+      "requested_url": "https://docs.ecwid.com/webhook-automations",
+      "status": 200,
+      "title": "Webhook automations overview | Webhook automations | Ecwid Documentation",
+      "chars": 848,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/api-glossary",
+      "requested_url": "https://docs.ecwid.com/get-started/api-glossary",
+      "status": 200,
+      "title": "API glossary | Ecwid Documentation",
+      "chars": 2812,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Ecwid provides an ecommerce REST API, JavaScript API, and webhooks managed via OAuth 2.0.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time, granting direct access.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Supports a REST API, webhooks, and a client-side JavaScript API.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.ecwid.com/api-reference\",\n      \"claim\": \"The API uses OAuth 2.0 authorization.\",\n      \"quote\": \"We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.\"\n    },\n    {\n      \"url\": \"https://docs.ecwid.com/get-started/api-glossary\",\n      \"claim\": \"Users can generate custom apps in the admin dashboard for self-serve access.\",\n      \"quote\": \"Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time.\"\n    },\n    {\n      \"url\": \"https://docs.ecwid.com/api-reference\",\n      \"claim\": \"The platform exposes a REST API.\",\n      \"quote\": \"Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.\"\n    },\n    {\n      \"url\": \"https://docs.ecwid.com/webhook-automations\",\n      \"claim\": \"The platform provides webhooks.\",\n      \"quote\": \"Ecwid webhooks are automatic real-time notifications for apps about different events in the store.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.ecwid.com/api-reference\",\n      \"quote\": \"We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.ecwid.com/get-started/api-glossary\",\n      \"quote\": \"Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.ecwid.com/api-reference\",\n      \"quote\": \"Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint_url": "https://api-docs.ecwid.com",
+    "one_liner": "Ecwid provides an ecommerce REST API, JavaScript API, and webhooks managed via OAuth 2.0.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time, granting direct access."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Supports a REST API, webhooks, and a client-side JavaScript API."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.ecwid.com/api-reference",
+        "claim": "The API uses OAuth 2.0 authorization.",
+        "quote": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.ecwid.com/get-started/api-glossary",
+        "claim": "Users can generate custom apps in the admin dashboard for self-serve access.",
+        "quote": "Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.ecwid.com/api-reference",
+        "claim": "The platform exposes a REST API.",
+        "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.ecwid.com/webhook-automations",
+        "claim": "The platform provides webhooks.",
+        "quote": "Ecwid webhooks are automatic real-time notifications for apps about different events in the store.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.ecwid.com/api-reference",
+        "quote": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure."
+      },
+      "access": {
+        "url": "https://docs.ecwid.com/get-started/api-glossary",
+        "quote": "Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time."
+      },
+      "api_surface": {
+        "url": "https://docs.ecwid.com/api-reference",
+        "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:18:28.384939+00:00"
+}

@@ -1,0 +1,903 @@
+===== https://reducto.ai
+TITLE: Reducto: The Agentic Document Platform for AI Teams
+ACCESSED: 2026-09-28
+
+Helping everyone from startups to
+Fortune 10
+enterprises unlock their data.
+Harvey
+Scale AI
+Newfront
+Medallion
+Vanta
+Legora
+Rogo
+Levelpath
+JLL
+Vise
+Laurel
+Toast
+Mercor
+Datasite
+Anterior
+Supio
+EliseAI
+Unify
+Harvey
+Scale AI
+Newfront
+Medallion
+Vanta
+Legora
+Rogo
+Levelpath
+JLL
+Vise
+Laurel
+Toast
+Mercor
+Datasite
+Anterior
+Supio
+EliseAI
+Unify
++ many more
+What's new
+Introducing:
+r-1 Model
+r-1 is our most capable parsing model yet, replacing complex, multi-tool pipelines with a single model for just 1¢ per page, all-in. Available in preview today—try it on your own documents in Studio.
+Try for free
+Book a demo
+Parse
+Reducto parse r-1 reads documents like a human would—capturing complex layouts, tables, and formatting with high accuracy and bounding-box citations. Outputs are reviewed and corrected in real-time for near-perfect results, even on edge cases.
+Learn more
+Reducto parse r-1 reads documents like a human would—capturing complex layouts, tables, and formatting with high accuracy and bounding-box citations. Outputs are reviewed and corrected in real-time for near-perfect results, even on edge cases.
+Learn more
+Extract
+Extract structured data directly from documents with schema-level precision. Whether it's invoice fields, onboarding forms, or financial disclosures, Reducto ensures the right data lands exactly where you need it.
+Learn more
+Split
+Automatically separate multi-document files or long forms into individually useful units. Intelligent heuristics and layout-aware splitting keep your pipelines clean and efficient—no manual pre-processing needed.
+Learn more
+Edit
+Fill in detected blanks, tables, and checkboxes with supplied data. No bounding boxes or pre-defined templates are required; Edit dynamically identifies fillable elements regardless of document layout or format, supporting scanned PDFs, digital forms, and complex multi-page documents.
+Learn more
+Use cases
+Get started
+Reducto helped us parse documents we previously could not because of table complexity. It's probably the only AI product that has actually worked for us.
+Engineering Leader, Top 5 Global Hedge Fund
+See the whole document
+r-1 understands layout, text, tables, figures, and formatting together in context.
+Reason through complex structure
+A unified parsing model handles dense tables, unusual layouts, annotations, and formatting-dependent information.
+Produce structured, grounded output
+r-1 returns accurate document structure, formatting, and granular citations ready for downstream workflows.
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extraction
+Automatic page rotation
+Embedding optimization
+Intelligent chunking
+Figure summarization
+Graph extractio
+
+===== https://docs.reducto.ai/overview
+TITLE: Overview - Reducto
+ACCESSED: 2026-09-28
+
+Reducto is the agentic document platform for AI teams who need production-grade document processing at enterprise scale. It provides a complete toolkit for the full document lifecycle, from classification and extraction to editing and workflow orchestration, powered by custom in-house and leading frontier models.
+What you can build:
+Automated intake pipelines
+that classify, split, and route documents without manual triage
+Structured data extraction
+from invoices, contracts, medical records, and any document type at scale
+Document generation and editing
+that fills forms, modifies templates, and produces new documents programmatically
+RAG-ready content pipelines
+with layout-aware chunking optimized for LLM consumption
+Multi-step workflows
+that chain classification, parsing, extraction, and editing into single API calls
+​
+Platform capabilities
+Reducto covers the full lifecycle of document work. Each capability is available as a standalone API endpoint or composed into pipelines.
+Classify
+Route documents by type before processing. Define categories in natural language.
+Parse
+Convert documents into structured JSON with text, tables, and figures, with layout-aware chunking.
+Extract
+Pull specific fields into structured JSON using a schema. Define what you need, get exactly that.
+Split
+Divide documents into logical sections using natural language descriptions.
+Edit
+Fill PDF forms and modify DOCX files programmatically with natural language instructions.
+Pipelines
+Chain multiple steps into reusable, single-call workflows deployed from Studio.
+Supports
+30+ file types
+including PDFs, images, spreadsheets, presentations, and scanned documents.
+​
+How to use Reducto
+API & SDKs
+For developers building automated pipelines. Available in Python, Node.js, Go, and REST.
+Studio
+For visual pipeline building. Configure, test, and deploy document workflows in your browser.
+Agent-ready tooling:
+Reducto integrates directly into AI agent workflows via the
+MCP server
+,
+CLI
+, and native SDKs.
+Agent Guide
+One-page reference for coding agents using Reducto.
+MCP Server
+Give agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients.
+CLI
+Parse local files and folders from a terminal with minimal setup.
+​
+Performance
+Reducto’s r-1 unified full-page model handles text, tables, figures, layout, formatting, and grounding in one pass, with customized agentic processing available as augmentation. The platform also uses specialized models for workflows that need additional processing.
+Every result links to the
+Studio citation viewer
+where you can inspect outputs against source documents at the bounding-box level.
+​
+Built for production
+SOC 2 Type II
+Audited security controls.
+HIPAA
+Signed BAA available.
+Zero Data Retention
+Documents deleted within 24h.
+Deployment flexibility.
+SaaS, hybrid VPC, full VPC, or air-gapped on-premises
+Scale.
+3B+ pages processed, with autoscaling for production workloads.
+Security.
+Encryption at rest (AES-256) and in transit (TLS 1.2+). EU data residency.
+Learn more →
+Support.
+Dedicated field engineering, custom model fine-tuning, and 24/7 oncall for Enterprise customers
+See Enterprise readiness →
+​
+Get started
+API Quickstart
+Parse your first document in 5 minutes with Python, Node.js, Go, or REST.
+Studio Quickstart
+Build and deploy an extraction pipeline visually, no code required.
+Was this page helpful?
+Yes
+No
+
+===== https://reducto.ai/pricing
+TITLE: Reducto Pricing | Agentic document platform for parsing and extraction
+ACCESSED: 2026-09-28
+
+Core Functionality
+Parse API
+Extract API
+Edit API
+Split API
+30+ Supported File Types
+Up to 5 seats for Reducto Studio
+No Page Limits
+After your free $150, standard rates apply.
+Everything in Standard, plus:
+Volume Discounts
+Zero Data Retention Agreement
+Business Associate Agreement
+Premium Rate Limits and Priority Requests
+Priority Slack/Teams and Email Support
+EU/AU Data Residency Endpoints
+Unlimited Studio Seats
+Everything in Growth, plus:
+VPC and On-Prem Deployments
+Custom MSA
+Custom SLA
+Custom Rate Limits and Throughput
+Custom Processing Pipelines
+Dedicated On-Call Support
+Role-Based Access Control
+SSO and SAML Authentication
+Migration credits
+If you're using another document processor, we'll give you
+up to $5,000 in credits
+to migrate your workload to Reducto.
+Apply for migration credits
+Endpoint
+Per 1,000 pages
+r-1 Parse
+$10
+Custom
+Custom
+Extract
+$20
+Custom
+Custom
+Deep Extract
+$40
+Custom
+Custom
+Split
+$20
+Custom
+Custom
+Deep Split
+$40
+Custom
+Custom
+Classify
+$7.50
+Custom
+Custom
+Edit
+$60 or $15 for pre-filled pages
+Custom
+Custom
+Custom rates for Growth and Enterprise include volume discounts per-endpoint. For full details on how Reducto measures API usage across products, see our
+documentation here
+.
+Throughput
+Guaranteed concurrent pages
+200
+350
+500+
+Parsing
+Tables
+Forms
+Images
+Graphs
+Equation
+Advanced chart extraction
+Extraction
+Layout
+Bounding Box Support
+Structured Schema
+Extraction Citations
+Deep Extract
+Scanning
+Table Summarization
+Multilingual OCR
+Automatic Page Rotation
+Custom Webhooks
+Enrichment VLM
+Spreadsheet Table Clustering
+Document Splitting
+Exclusive
+Studio Seats
+Up to 5
+Unlimited
+Unlimited
+Volume Discounts
+Premium Rate Limits and Priority Requests
+Priority Slack/Teams and Email Support
+EU/AU Data Residency Endpoints
+Advanced Security
+Business Associate Agreement
+Zero Data Retention Agreement
+VPC and On-Prem Deployments
+Custom MSA
+Custom SLA
+Custom Rate Limits and Throughput
+Custom Processing Pipelines
+Dedicated On-Call Support
+Role-Based Access Control
+SSO and SAML Authentication
+File Type Support
+PDF & Image Formats
+PDF
+PNG
+JPEG/JPG
+GIF
+BMP
+TIFF
+PCX
+PPM
+APNG
+PSD
+CUR
+DCX
+FTEX
+PIXAR
+Spreadsheets
+CSV
+XLSX
+XLSM
+XLS
+XLTX
+XLTM
+QPW
+Presentations & Text Documents
+PPTX
+PPT
+DOCX
+DOC
+DOTX
+WPD
+TXT
+HTML
+Reducto for Startups & YC
+Free credits and startup pricing
+If you're an early-stage team building document processing into your product, our Startup Program gives you free credits and discounted Growth pricing to get to production faster.
+Explore the Startup Program
+Backed by Y Combinator?
+Claim the exclusive YC deal
+Free credits to test production document workflows
+Startup pricing on our Growth tier
+Priority support and a dedicated Slack channel
+Startup Program Eligibility
+Under $15M in funding
+Under $3M in annual revenue
+Under 50 employees
+How does usage-based pricing work?
+Reducto uses per-product pricing based on what you process. Standard rates start at $10 per 1,000 pages for r-1 Parse and $20 per 1,000 pages for Extract, with parsing included. Standard accounts include 15,000 free credits.
+For current rates and usage details, see our
+Usage and Pricing
+.
+Do you offer trials? How can I get access to an API key?
+Who is eligible for the free credits?
+Can Reducto parse handwriting or non-English languages?
+Is Reducto HIPAA and SOC2 compliant?
+Do you have an MCP?
+I have a question not answered yet. Who can I talk to?
+
+===== https://reducto.ai/contact
+TITLE: Contact Sales and Request a Demo | Reducto
+ACCESSED: 2026-09-28
+
+
+
+===== https://reducto.ai/contact?source=contact_sales_nav
+TITLE: Contact Sales and Request a Demo | Reducto
+ACCESSED: 2026-09-28
+
+
+
+===== https://reducto.ai/contact?source=contact_sales_home
+TITLE: Contact Sales and Request a Demo | Reducto
+ACCESSED: 2026-09-28
+
+
+
+===== https://reducto.ai/contact?source=request_demo_home
+TITLE: Contact Sales and Request a Demo | Reducto
+ACCESSED: 2026-09-28
+
+
+
+===== https://docs.reducto.ai/api-reference/parse
+TITLE: Reducto Documentation | Parse API Reference
+ACCESSED: 2026-09-28
+
+Parse
+Python
+import
+requests
+url
+=
+"https://platform.reducto.ai/parse"
+payload
+=
+{
+"input"
+:
+"<string>"
+,
+"enhance"
+: {
+"agentic"
+: [],
+"advanced_chart_agent"
+:
+False
+,
+"summarize_figures"
+:
+True
+,
+"intelligent_ordering"
+:
+False
+},
+"retrieval"
+: {
+"chunking"
+: {
+"chunk_mode"
+:
+"disabled"
+,
+"chunk_overlap"
+:
+0
+},
+"filter_blocks"
+: [],
+"embedding_optimized"
+:
+False
+},
+"formatting"
+: {
+"add_page_markers"
+:
+False
+,
+"table_output_format"
+:
+"dynamic"
+,
+"merge_tables"
+:
+False
+,
+"include"
+: []
+},
+"spreadsheet"
+: {
+"split_large_tables"
+: {
+"enabled"
+:
+True
+,
+"size"
+:
+50
+},
+"include"
+: [],
+"clustering"
+:
+"accurate"
+,
+"exclude"
+: []
+},
+"settings"
+: {
+"ocr_system"
+:
+"standard"
+,
+"extraction_mode"
+:
+"hybrid"
+,
+"force_url_result"
+:
+False
+,
+"return_ocr_data"
+:
+False
+,
+"return_images"
+: [],
+"embed_pdf_metadata"
+:
+False
+,
+"extract_document_properties"
+:
+False
+,
+"embed_pdf_metadata_dpi"
+:
+100
+,
+"persist_results"
+:
+False
+,
+"hybrid_vpc"
+: {}
+}
+}
+headers
+=
+{
+"Authorization"
+:
+"Bearer <token>"
+,
+"Content-Type"
+:
+"application/json"
+}
+response
+=
+requests.post(url,
+json
+=
+payload,
+headers
+=
+headers)
+print
+(response.text)
+const options = {
+  method: 'POST',
+  headers: {Authorization: 'Bearer <token>', 'Content-Type': 'application/json'},
+  body: JSON.stringify({
+    input: '<string>',
+    enhance: {
+      agentic: [],
+      advanced_chart_agent: false,
+      summarize_figures: true,
+      intelligent_ordering: false
+    },
+    retrieval: {
+      chunking: {chunk_mode: 'disabled', chunk_overlap: 0},
+      filter_blocks: [],
+      embedding_optimized: false
+    },
+    formatting: {
+      add_page_markers: false,
+      table_output_format: 'dynamic',
+      merge_tables: false,
+      include: []
+    },
+    spreadsheet: {
+      split_large_tables: {enabled: true, size: 50},
+      include: [],
+      clustering: 'accurate',
+      exclude: []
+    },
+    settings: {
+      ocr_system: 'standard',
+      extraction_mode: 'hybrid',
+      force_url_result: false,
+      return_ocr_data: false,
+      return_images: [],
+      embed_pdf_metadata: false,
+      extract_document_properties: false,
+      embed_pdf_metadata_dpi: 100,
+      persist_results: false,
+      hybrid_vpc: {}
+    }
+  })
+};
+
+fetch('https://platform.reducto.ai/parse', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+package main
+
+import (
+	"fmt"
+	"strings"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://platform.reducto.ai/parse"
+
+	payload := strings.NewReader("{\n  \"input\": \"<string>\",\n  \"enhance\": {\n    \"agentic\": [],\n    \"advanced_chart_agent\": false,\n    \"summarize_figures\": true,\n    \"intelligent_ordering\": false\n  },\n  \"retrieval\": {\n    \"chunking\": {\n      \"chunk_mode\": \"disabled\",\n      \"chunk_overlap\": 0\n    },\n    \"filter_blocks\": [],\n    \"embedding_optimized\": false\n  },\n  \"formatting\": {\n    \"add_page_markers\": false,\n    \"table_output_format\": \"dynamic\",\n    \"merge_tables\": false,\n    \"include\": []\n  },\n  \"spreadsheet\": {\n    \"split_large_tables\": {\n      \"enabled\": true,\n      \"size\": 50\n    },\n    \"include\": [],\n    \"clustering\": \"accurate\",\n    \"exclude\": []\n  },\n  \"settings\": {\n    \"ocr_system\": \"standard\",\n    \"extraction_mode\": \"hybrid\",\n    \"force_url_result\": false,\n    \"return_ocr_data\": false,\n    \"return_images\": [],\n    \"embed_pdf_metadata\": false,\n    \"extract_document_properties\": false,\n    \"embed_pdf_metadata_dpi\": 100,\n    \"persist_results\": false,\n    \"hybrid_vpc\": {}\n  }\n}")
+
+	req, _ := http.NewRequest("POST", url, payload)
+
+	req.Header.Add("Authorization", "Bearer <token>")
+	req.Header.Add("Content-Type", "application/json")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(string(body))
+
+}
+200
+422
+{
+"job_id"
+:
+"<string>"
+,
+"duration"
+:
+123
+,
+"usage"
+: {
+"num_pages"
+:
+123
+,
+"credits"
+:
+123
+,
+"credit_breakdown"
+: {},
+"page_billing_breakdown"
+: {},
+"non_empty_cell_count"
+:
+123
+,
+"usage_breakdown"
+: {
+"parse_model"
+:
+"R-1"
+,
+"tier"
+:
+"Default"
+,
+"parse_pages"
+:
+0
+,
+"parse_native_pages"
+:
+0
+,
+"legacy_parse_credits"
+:
+0
+,
+"ocr_pages"
+:
+0
+,
+"charts"
+:
+0
+,
+"prompted_blocks"
+:
+0
+}
+},
+"result"
+: {
+"type"
+:
+"full"
+,
+"chunks"
+: [
+{
+"content"
+:
+"<string>"
+,
+"embed"
+:
+"<string>"
+,
+"enriched"
+:
+"<string>"
+,
+"blocks"
+: [
+{
+"type"
+:
+"Header"
+,
+"bbox"
+: {
+"left"
+:
+123
+,
+"top"
+:
+123
+,
+"width"
+:
+123
+,
+"height"
+:
+123
+,
+"page"
+:
+123
+,
+"original_page"
+:
+123
+},
+"content"
+:
+"<string>"
+,
+"image_url"
+:
+"<string>"
+,
+"chart_data"
+: [
+"<string>"
+],
+"confidence"
+:
+"low"
+,
+"granular_confidence"
+: {
+"extract_confidence"
+:
+123
+,
+"parse_confidence"
+:
+123
+},
+"merged_tables"
+: [
+{
+"content"
+:
+"<string>"
+,
+"bbox"
+: {
+"left"
+:
+123
+,
+"top"
+:
+123
+,
+"width"
+:
+123
+,
+"height"
+:
+123
+,
+"page"
+:
+123
+,
+"original_page"
+:
+123
+},
+"image_url"
+:
+"<string>"
+}
+],
+"extra"
+: {}
+}
+],
+"enrichment_success"
+:
+false
+}
+],
+"ocr"
+: {
+"words"
+: [
+{
+"text"
+:
+"<string>"
+,
+"

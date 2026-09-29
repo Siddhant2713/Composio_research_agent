@@ -1,0 +1,232 @@
+{
+  "app": "Twenty",
+  "number": 5,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:45:25.085177+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://twenty.com/developers\",\n    \"https://docs.twenty.com\",\n    \"https://twenty.com/pricing\",\n    \"https://github.com/twentyhq/twenty\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://twenty.com",
+    "https://twenty.com/developers",
+    "https://docs.twenty.com",
+    "https://twenty.com/pricing",
+    "https://github.com/twentyhq/twenty",
+    "https://developer.twenty.com/",
+    "https://developers.twenty.com/",
+    "https://api.twenty.com/",
+    "https://twenty.com/docs",
+    "https://twenty.com/api",
+    "https://twenty.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://twenty.com/partners",
+    "https://twenty.com/customers/alternative-partners",
+    "https://docs.twenty.com/developers/extend/oauth",
+    "https://docs.twenty.com/developers/extend/apps/getting-started/quick-start",
+    "https://docs.twenty.com/developers/extend/webhooks",
+    "https://docs.twenty.com/getting-started/quickstart",
+    "https://docs.twenty.com/getting-started/key-features",
+    "https://docs.twenty.com/getting-started/core-concepts/ai",
+    "https://docs.twenty.com/getting-started/core-concepts/apps",
+    "https://docs.twenty.com/getting-started/core-concepts/layout",
+    "https://docs.twenty.com/getting-started/core-concepts/glossary",
+    "https://twenty.com/compare-pricing/salesforce",
+    "https://twenty.com/compare-pricing/sap-sales-cloud",
+    "https://twenty.com/compare-pricing/hubspot",
+    "https://twenty.com/compare-pricing/pipedrive",
+    "https://github.com/pricing",
+    "https://github.com/partners",
+    "https://github.com/topics/sales",
+    "https://github.com/topics/graphql",
+    "https://support.github.com?tags=dotcom-footer",
+    "https://github.com/twentyhq/twenty/blob/main/LICENSE"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.twenty.com/",
+      "reason": "page too thin (6 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developers.twenty.com/",
+      "reason": "page too thin (6 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.twenty.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://twenty.com",
+      "requested_url": "https://twenty.com",
+      "status": 200,
+      "title": "Twenty | #1 Open Source CRM",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/introduction",
+      "requested_url": "https://twenty.com/developers",
+      "status": 200,
+      "title": "Developers - Twenty Documentation",
+      "chars": 273,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.twenty.com/getting-started/introduction",
+      "requested_url": "https://docs.twenty.com",
+      "status": 200,
+      "title": "Why Twenty - Twenty Documentation",
+      "chars": 2345,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://twenty.com/pricing",
+      "requested_url": "https://twenty.com/pricing",
+      "status": 200,
+      "title": "Twenty CRM Pricing \u2014 Plans from $9 per User per Month",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/twentyhq/twenty",
+      "requested_url": "https://github.com/twentyhq/twenty",
+      "status": 200,
+      "title": "GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. \u00b7 GitHub",
+      "chars": 3845,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://twenty.com/partners",
+      "requested_url": "https://twenty.com/partners",
+      "status": 200,
+      "title": "Find a Twenty Partner \u2014 Certified Open Source CRM Experts",
+      "chars": 1995,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://twenty.com/customers/alternative-partners",
+      "requested_url": "https://twenty.com/customers/alternative-partners",
+      "status": 200,
+      "title": "From Salesforce to self-hosted Twenty, powered by AI | Alternative Partners",
+      "chars": 1491,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/oauth",
+      "requested_url": "https://docs.twenty.com/developers/extend/oauth",
+      "status": 200,
+      "title": "OAuth - Twenty Documentation",
+      "chars": 4281,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/apps/getting-started/quick-start",
+      "requested_url": "https://docs.twenty.com/developers/extend/apps/getting-started/quick-start",
+      "status": 200,
+      "title": "Quick Start - Twenty Documentation",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/webhooks",
+      "requested_url": "https://docs.twenty.com/developers/extend/webhooks",
+      "status": 200,
+      "title": "Webhooks - Twenty Documentation",
+      "chars": 2815,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Twenty is an open-source CRM that technical teams can extend and customize using TypeScript, REST and GraphQL APIs, webhooks, and OAuth.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access, as well as API keys for internal scripts and automation.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can start a free trial or sign up for Cloud in under a minute without a credit card, and clients are registered dynamically per RFC 7591.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"twenty-sdk\"\n    ],\n    \"notes\": \"Twenty supports REST and GraphQL APIs, webhooks, a Model Context Protocol (MCP) server, and TypeScript extensions.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Twenty includes an MCP server mentioned in pricing features and documentation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.twenty.com/developers/extend/oauth\",\n      \"claim\": \"OAuth 2.0 implementation with authorization code and client credentials\",\n      \"quote\": \"Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access.\"\n    },\n    {\n      \"url\": \"https://twenty.com/pricing\",\n      \"claim\": \"Self-serve pricing and free trial signup\",\n      \"quote\": \"Start your free trial today without credit card.\"\n    },\n    {\n      \"url\": \"https://docs.twenty.com/developers/introduction\",\n      \"claim\": \"REST and GraphQL APIs and webhooks\",\n      \"quote\": \"REST and GraphQL APIs, webhooks, and OAuth.\"\n    },\n    {\n      \"url\": \"https://twenty.com/pricing\",\n      \"claim\": \"MCP server feature availability\",\n      \"quote\": \"MCP server\"\n    },\n    {\n      \"url\": \"https://docs.twenty.com/developers/extend/webhooks\",\n      \"claim\": \"Webhooks support for notifications on create, update, and delete\",\n      \"quote\": \"Twenty sends an HTTP POST to your URL whenever a record is created, updated, or deleted. All object types are covered, including custom objects.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.twenty.com/developers/extend/oauth\",\n      \"quote\": \"Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access.\"\n    },\n    \"access\": {\n      \"url\": \"https://twenty.com/pricing\",\n      \"quote\": \"Start your free trial today without credit card.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.twenty.com/developers/introduction\",\n      \"quote\": \"REST and GraphQL APIs, webhooks, and OAuth.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://twenty.com/pricing\",\n      \"quote\": \"MCP server\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "hint_url": "https://twenty.com",
+    "one_liner": "Twenty is an open-source CRM that technical teams can extend and customize using TypeScript, REST and GraphQL APIs, webhooks, and OAuth.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access, as well as API keys for internal scripts and automation."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can start a free trial or sign up for Cloud in under a minute without a credit card, and clients are registered dynamically per RFC 7591."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": [
+        "twenty-sdk"
+      ],
+      "notes": "Twenty supports REST and GraphQL APIs, webhooks, a Model Context Protocol (MCP) server, and TypeScript extensions."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: quoted line not found on https://twenty.com/pricing."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.twenty.com/developers/extend/oauth",
+        "claim": "OAuth 2.0 implementation with authorization code and client credentials",
+        "quote": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://twenty.com/pricing",
+        "claim": "Self-serve pricing and free trial signup",
+        "quote": "Start your free trial today without credit card.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.twenty.com/developers/introduction",
+        "claim": "REST and GraphQL APIs and webhooks",
+        "quote": "REST and GraphQL APIs, webhooks, and OAuth.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.twenty.com/developers/extend/webhooks",
+        "claim": "Webhooks support for notifications on create, update, and delete",
+        "quote": "Twenty sends an HTTP POST to your URL whenever a record is created, updated, or deleted. All object types are covered, including custom objects.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.twenty.com/developers/extend/oauth",
+        "quote": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access."
+      },
+      "access": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Start your free trial today without credit card."
+      },
+      "api_surface": {
+        "url": "https://docs.twenty.com/developers/introduction",
+        "quote": "REST and GraphQL APIs, webhooks, and OAuth."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: quoted line not found on https://twenty.com/pricing"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:45:42.250873+00:00"
+}

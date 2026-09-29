@@ -1,0 +1,219 @@
+{
+  "app": "GitHub",
+  "number": 61,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:34:01.978043+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.github.com/rest\",\n    \"https://docs.github.com/en/rest\",\n    \"https://docs.github.com/graphql\",\n    \"https://docs.github.com/en/graphql\",\n    \"https://docs.github.com/apps\",\n    \"https://docs.github.com/en/apps\",\n    \"https://github.com/settings/developers\",\n    \"https://docs.github.com/en/authentication\",\n    \"https://docs.github.com/en/get-started/start-your-journey/hello-world\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.github.com/rest",
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/graphql",
+    "https://docs.github.com/en/graphql",
+    "https://docs.github.com/apps",
+    "https://docs.github.com/en/apps",
+    "https://github.com/settings/developers",
+    "https://docs.github.com/en/authentication",
+    "https://docs.github.com/en/get-started/start-your-journey/hello-world",
+    "https://docs.github.com/",
+    "https://developer.github.com/",
+    "https://developers.github.com/",
+    "https://api.github.com/",
+    "https://github.com/docs",
+    "https://github.com/developers",
+    "https://github.com/api",
+    "https://github.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.github.com/rest/quickstart",
+    "https://docs.github.com/rest/overview/api-versions",
+    "https://docs.github.com/rest/about-the-rest-api/about-the-rest-api",
+    "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+    "https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens",
+    "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens",
+    "https://docs.github.com/en/graphql/reference/licenses",
+    "https://docs.github.com/en/graphql/reference/git",
+    "https://docs.github.com/en/graphql/reference/apps",
+    "https://docs.github.com/en/graphql/reference/meta",
+    "https://docs.github.com/en/graphql/reference/orgs",
+    "https://docs.github.com/en/graphql/reference/gists",
+    "https://docs.github.com/en/apps/github-authentication-discovery-endpoints",
+    "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/reviewing-your-authorized-oauth-apps",
+    "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app",
+    "https://docs.github.com/en/apps/oauth-apps/maintaining-oauth-apps/troubleshooting-oauth-app-access-token-request-errors",
+    "https://docs.github.com/en/apps/using-github-apps/authorizing-github-apps",
+    "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/privileged-oauth-apps",
+    "https://support.github.com",
+    "https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2Fsettings%2Fdevelopers&source=login",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/preventing-unauthorized-access",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/token-expiration-and-revocation",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+    "https://github.com/github/docs/blob/main/content/authentication/index.md",
+    "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh",
+    "https://docs.github.com/en/authentication/troubleshooting-ssh/error-bad-file-number"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://docs.github.com/en/rest",
+      "requested_url": "https://docs.github.com/rest",
+      "status": 200,
+      "title": "GitHub REST API documentation - GitHub Docs",
+      "chars": 1586,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/graphql",
+      "requested_url": "https://docs.github.com/graphql",
+      "status": 200,
+      "title": "GitHub GraphQL API documentation - GitHub Docs",
+      "chars": 1721,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/apps",
+      "requested_url": "https://docs.github.com/apps",
+      "status": 200,
+      "title": "GitHub Apps documentation - GitHub Docs",
+      "chars": 1847,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsettings%2Fdevelopers",
+      "requested_url": "https://github.com/settings/developers",
+      "status": 200,
+      "title": "Sign in to GitHub \u00b7 GitHub",
+      "chars": 394,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/authentication",
+      "requested_url": "https://docs.github.com/en/authentication",
+      "status": 200,
+      "title": "Authentication documentation - GitHub Docs",
+      "chars": 2671,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/quickstart",
+      "requested_url": "https://docs.github.com/rest/quickstart",
+      "status": 200,
+      "title": "Quickstart for GitHub REST API - GitHub Docs",
+      "chars": 4953,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/api-versions",
+      "requested_url": "https://docs.github.com/rest/overview/api-versions",
+      "status": 200,
+      "title": "API Versions - GitHub Docs",
+      "chars": 4865,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api",
+      "requested_url": "https://docs.github.com/rest/about-the-rest-api/about-the-rest-api",
+      "status": 200,
+      "title": "About the REST API - GitHub Docs",
+      "chars": 1774,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+      "requested_url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+      "status": 200,
+      "title": "Endpoints available for GitHub App user access tokens - GitHub Docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens",
+      "requested_url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens",
+      "status": 200,
+      "title": "Endpoints available for fine-grained personal access tokens - GitHub Docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"GitHub REST and GraphQL APIs for creating integrations, retrieving data, and automating workflows.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Integrations can authenticate using access tokens such as personal access tokens or GitHub App tokens.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The provided text documents APIs and apps but does not mention how a first-time developer obtains credentials.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Octokit.js\"\n    ],\n    \"notes\": \"Supports REST API, GraphQL API, webhooks, and SDKs like Octokit.js.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"No Model Context Protocol server is mentioned in the provided text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.github.com/en/rest\",\n      \"claim\": \"GitHub provides a REST API to create integrations and automate workflows.\",\n      \"quote\": \"Create integrations, retrieve data, and automate your workflows with the GitHub REST API.\"\n    },\n    {\n      \"url\": \"https://docs.github.com/en/graphql\",\n      \"claim\": \"GitHub provides a GraphQL API for precise and flexible queries.\",\n      \"quote\": \"To create integrations, retrieve data, and automate your workflows, use the GitHub GraphQL API.\"\n    },\n    {\n      \"url\": \"https://docs.github.com/en/apps\",\n      \"claim\": \"GitHub apps can integrate with APIs and webhooks.\",\n      \"quote\": \"Go deeper with GitHub by integrating with our APIs and webhooks, customizing your GitHub workflow, and building and sharing apps with the community.\"\n    },\n    {\n      \"url\": \"https://docs.github.com/en/rest/quickstart\",\n      \"claim\": \"Octokit.js can be used to interact with the GitHub REST API in JavaScript scripts.\",\n      \"quote\": \"You can use Octokit.js to interact with the GitHub REST API in your JavaScript scripts.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.github.com/en/rest/quickstart\",\n      \"quote\": \"Create an access token. For example, create a personal access token or a GitHub App user access token.\"\n    },\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://docs.github.com/en/rest\",\n      \"quote\": \"GitHub REST API documentation\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.github.com/rest",
+    "one_liner": "GitHub REST and GraphQL APIs for creating integrations, retrieving data, and automating workflows.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Integrations can authenticate using access tokens such as personal access tokens or GitHub App tokens."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://docs.github.com/en/rest."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.github.com/en/rest",
+        "claim": "GitHub provides a REST API to create integrations and automate workflows.",
+        "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.github.com/en/graphql",
+        "claim": "GitHub provides a GraphQL API for precise and flexible queries.",
+        "quote": "To create integrations, retrieve data, and automate your workflows, use the GitHub GraphQL API.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.github.com/en/apps",
+        "claim": "GitHub apps can integrate with APIs and webhooks.",
+        "quote": "Go deeper with GitHub by integrating with our APIs and webhooks, customizing your GitHub workflow, and building and sharing apps with the community.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.github.com/en/rest/quickstart",
+        "claim": "Octokit.js can be used to interact with the GitHub REST API in JavaScript scripts.",
+        "quote": "You can use Octokit.js to interact with the GitHub REST API in your JavaScript scripts.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.github.com/en/rest/quickstart",
+        "quote": "Create an access token. For example, create a personal access token or a GitHub App user access token."
+      }
+    },
+    "unsupported_fields": [
+      "access: no support offered",
+      "api_surface: quoted line not found on https://docs.github.com/en/rest",
+      "mcp: no support offered"
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-28T04:34:17.112426+00:00"
+}

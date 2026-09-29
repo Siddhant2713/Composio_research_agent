@@ -1,0 +1,1480 @@
+===== https://developers.cloudflare.com/api/
+TITLE: API Reference | Cloudflare API
+ACCESSED: 2026-09-28
+
+API Reference
+Libraries
+TypeScript
+7.2.0
+npm install cloudflare
+Read Docs
+Python
+5.8.0
+pip install cloudflare
+Read Docs
+Go
+v7.11.0
+go get -u github.com/cloudflare/cloudflare-go/v7@v7.11.0
+Read Docs
+Terraform
+5.26.0
+terraform {
+  required_providers {
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 5.0"
+Read Docs
+API Overview
+Registrar
+Registrar API for searching, checking, registering, and managing domains through Cloudflare Registrar.
+Prerequisites
+Before using this API, ensure:
+Cloudflare account
+— the caller must have a valid Cloudflare account.
+Billing profile
+— the account must have a billing profile with a valid,
+current default payment method (credit card or other accepted method).
+This cannot be set up via API — the account owner must configure billing
+at
+https://dash.cloudflare.com/{account_id}/billing/payment-info
+before
+calling
+POST /registrations
+.
+API authentication
+— use an API token or API key with the appropriate
+Registrar permissions for the operations you are calling.
+Terminology: domain extension
+Throughout this API, “extension” refers to the domain extension part of a fully
+qualified domain name — the portion after the registrable label. For example,
+in
+example.co.uk
+, the extension is
+co.uk
+(not just
+uk
+). This covers both
+top-level domains like
+com
+and multi-level extensions like
+co.uk
+. This is
+distinct from other uses of the word “extension” (e.g., EPP extensions).
+Supported extensions
+This API supports programmatic registration for all extensions supported by
+the dashboard experience, with the following exceptions:
+giving
+mom
+inc
+lol
+sh
+link
+cc
+new
+Cloudflare Registrar supports 400+ extensions in the dashboard. Extensions
+listed above can be registered at
+https://dash.cloudflare.com/{account_id}/domains/registrations
+.
+Typical workflow
+Search
+— call
+GET /domain-search?q={keyword}
+to discover available domains.
+Check
+— call
+POST /domain-check
+with candidate domains to verify real-time
+availability and pricing.
+Review the response
+— if
+registrable: false
+, inspect
+reason
+to
+understand whether the domain is unavailable, the extension is not supported
+by this API, the extension is not supported by Cloudflare Registrar at all,
+or the extension’s registry has frozen new registrations.
+Handle premium domains
+— if
+tier: premium
+, premium registration is
+not currently supported by this API. Surface the premium pricing to the user,
+but do not proceed to
+POST /registrations
+for that domain.
+Observe the registration schema
+— call
+GET /extensions/:extension_name
+to discover the required values for registering this extension.
+Register
+— call
+POST /registrations
+with the chosen domain name for
+supported non-premium registrations.
+Confirm completion
+— if the response is
+201 Created
+, registration
+completed within the default timeout and no polling is needed.
+Poll when needed
+— if the response is
+202 Accepted
+, poll
+links.self
+from the workflow response.
+Stop for user action
+— if
+state: action_required
+, stop polling and
+surface
+context.action
+to the user.
+The workflow will not resolve on its own.
+Continue when blocked
+— if
+state: blocked
+, continue polling and
+inform the user that a third party, such as the extension registry or losing
+registrar, is delaying progress.
+Review failures before retrying
+— if
+state: failed
+, review
+error.code
+and
+error.message
+, then decide whether user action or a new
+Check call is needed.
+All successful domain registrations are non-refundable.
+Once the registration
+workflow completes with
+state: succeeded
+, the charge cannot be reversed.
+Confirm pricing and domain choice with the user before calling
+POST /registrations
+.
+Default behavior for mutating operations
+By default, mutating operations such as create and update hold the connection
+for a bounded, server-defined amount of time while the operation completes.
+In most cases, the response contains a completed workflow status and no
+polling is required.
+Completed within the synchronous wait window:
+Returns
+201
+(create)
+or
+200
+(update) with a
+workflow_status
+where
+state: succeeded
+and
+completed: true
+.
+Still processing after the synchronous wait window:
+Returns
+202 Accepted
+with a
+workflow_status
+where
+completed: false
+. Use
+the
+links.self
+URL to poll for completion.
+Non-blocking mode
+To receive an immediate
+202 Accepted
+response without waiting, send the
+Prefer: respond-async
+request header (RFC 7240). The server will acknowledge
+it with a
+Preference-Applied: respond-async
+response header.
+Polling
+When the response is
+202
+, poll the workflow status endpoint indicated by
+links.self
+in the response body until the workflow reaches a terminal
+state or requires user action.
+Registrar Sandbox
+Use the Registrar Sandbox API to test domain search, availability checks,
+registration, and domain management flows without buying real domains.
+This API is a test environment for the production Registrar API.
+Prerequisites
+Before using this API, make sure you have:
+Cloudflare acc
+
+===== https://developers.cloudflare.com/fundamentals/api/
+TITLE: Cloudflare's API · Cloudflare Fundamentals docs
+ACCESSED: 2026-09-28
+
+Cloudflare's API
+Last updated
+Apr 20, 2026
+|
+Copy as Markdown
+|
+View as Markdown
+|
+Agent setup
+Use the following resources to learn more about Cloudflare's REST API:
+Get started
+How to
+Reference
+Troubleshooting
+Was this helpful?
+Yes
+No
+
+===== https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
+TITLE: Create API token · Cloudflare Fundamentals docs
+ACCESSED: 2026-09-28
+
+Create API token
+Last updated
+Apr 20, 2026
+|
+Copy as Markdown
+|
+View as Markdown
+|
+Agent setup
+Determine if you want a user token or an
+Account API token
+. Use Account API tokens if you prefer service tokens that are not associated with users and your
+desired API endpoints are compatible
+.
+From the
+Cloudflare dashboard
+↗︎
+, go to
+My Profile
+>
+API Tokens
+for user tokens. For Account Tokens, go to
+Manage Account
+>
+API Tokens
+.
+Select
+Create Token
+.
+Select a template from the available
+API token templates
+or create a custom token. The following example uses the
+Edit zone DNS
+template.
+Add or edit the token name to describe why or how the token is used. Templates are prefilled with a token name and permissions.
+Modify the token's permissions. After selecting a permissions group (
+Account
+User
+, or
+Zone
+), choose what level of access to grant the token. Most groups offer
+Edit
+or
+Read
+options.
+Edit
+is full CRUDL (create, read, update, delete, list) access, while
+Read
+is the read permission and list where appropriate. Refer to the
+available token permissions
+for more information.
+Select which resources the token is authorized to access. For example, granting
+Zone DNS Read
+access to a zone
+example.com
+will allow the token to read DNS records only for that specific zone. Any other zone will return an error for DNS record reads operations. Any other operation on that zone will also return an error.
+(Optional) Restrict how a token is used in the
+Client IP Address Filtering
+and
+TTL (time to live)
+fields.
+Select
+Continue to summary
+.
+Review the token summary. Select
+Edit token
+to make adjustments. You can also edit a token after creation.
+Select
+Create Token
+to generate the token's secret.
+Copy the secret to a secure place.
+The token secret page also includes an example command to test the token. Use the
+/user/tokens/verify
+endpoint to fetch the current status of the given token.
+curl
+"https://api.cloudflare.com/client/v4/user/tokens/verify"
+\
+--header
+"Authorization: Bearer <API_TOKEN>"
+The result:
+"result"
+: {
+"id"
+"100bf38cc8393103870917dd535e0628"
+"status"
+"active"
+},
+"success"
+true
+"errors"
+: [],
+"messages"
+: [
+"code"
+10000
+"message"
+"This API Token is valid and active"
+"type"
+null
+]
+New API tokens use the
+cfut_
+prefixed
+scannable format
+, which allows credential scanning tools to detect leaked tokens.
+With this you have successfully created an API token and can start working with the Cloudflare API. After creating your first API token, you can create additional API tokens
+via the API
+.
+Was this helpful?
+Yes
+No
+
+===== https://www.cloudflare.com/developer-platform/
+TITLE: Cloudflare Developer Platform | Build applications | Cloudflare
+ACCESSED: 2026-09-28
+
+Developers who know use Cloudflare
+All the primitives you need to build full-stack and AI applications
+Pure creation and unhindered innovation. Stop worrying about infrastructure, performance, and unpredictable pricing: the Cloudflare developer platform offers scalable computing power, databases, storage, media, and AI to build applications.
+Compare plans and pricing
+Sign up for demo
+Request a demo
+Thank You
+Someone from Cloudflare will be in touch with you shortly.
+In submitting this form, you agree to receive information from Cloudflare related to our products, events, and special offers. You can unsubscribe from such messages at any time. We never sell your data, and we value your privacy choices. Please see our
+Privacy Policy
+for information.
+BENEFITS
+Build on scalable infrastructure in the connectivity cloud
+Improve user experience everywhere
+Get the lowest latency with greater control when code is automatically deployed to all 330 global locations.
+Boost productivity and innovation
+Build, deploy, and deliver trusted applications everywhere without operational overhead.
+Transparent and competitive pricing
+Reduce costs with generous free tiers, transparent pricing, and no egress fees.
+ANALYST RECOGNITION
+What top analysts say
+Cloudflare named a Challenger in 2025 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms
+Read report
+Cloudflare a 'Leader' in The Forrester Wave™: Edge Development Platforms, Q1 2026
+Read report
+Cloudflare named a ‘Leader’ in 2024 IDC MarketScape for Worldwide Commercial Edge Delivery Services
+Read report
+Build ambitious applications
+Build
+Store
+Deliver
+Build
+Run workloads on our infinitely scalable global network, with locations in more than 330 cities. Deploy serverless code instantly across the globe to give your applications exceptional performance, reliability, and scale.
+Code is deployed and executes globally, reducing network round trips for minimal latency
+Deploy using popular frameworks with minimal configuration for a better developer experience
+Run background or batch tasks allowing services to run at their own pace.
+Expand your toolkit with Workers Integration Marketplace
+See all products
+Store
+From storing session state to objects and more, store data on the Cloudflare global network.
+S3-compatible global object storage with no egress fees
+Build natively serverless SQL databases, or make your existing databases feel distributed
+Stateful edge applications with a consistent data store
+Globally distributed key-value storage
+See all products
+Deliver Media
+Make websites blazing fast by optimizing content for performance and serving content from the Cloudflare global network, which is located within 50 ms of 95% of the Internet-connected population globally.
+Upload, encode, record, play, and serve live and on-demand video content
+Optimize and dynamically resize images
+Build a highly scalable image pipeline
+Deliver content to users from the closest available Cloudflare data center
+See all products
+Explore how to build full-stack web applications on Cloudflare
+See reference architecture
+Optimizing application development with serverless
+Read article
+Top use cases
+See all
+Build scalable applications
+Use Cloudflare Workers to construct serverless applications.
+Learn more
+Optimize web experience
+Enhance your applications with optimized images, video, and dynamic functions.
+Learn more
+Build AI applications
+Run generative AI tasks on our global network of GPUs.
+Learn more
+Improve application reliability
+Detect, diagnose, and resolve application issues with logging and analytics.
+Learn more
+Ingest, store, and query data
+A variety of options for storing, processing, and querying data and objects.
+Learn more
+Deliver, store, and optimize media
+Enable rapid, cost-effective downloads of digital assets stored as objects.
+Learn more
+C&A goes serverless with Cloudflare to scale swiftly when online shopping soars
+"Cloudflare aligns precisely with our ecommerce vision. With Cloudflare Workers, we eliminate the operational overhead of implementing and managing servers. That gives us more time to focus on the business."
+Developer platform case studies
+By consolidating its global security and networking onto Cloudflare’s connectivity cloud, Delivery Hero replaced inefficient VPNs with Zero Trust access for 40,000 employees while slashing bandwidth costs by 90% and neutralizing sophisticated bot attacks.
+98.5%
+cache hit rate
+90%
+bandwidth expenses cut
+Read case study
+See all case studies
+Porsche Informatik relies on Cloudflare to manage traffic for its brand and dealer network, protect its websites from the internet, and automate cloud migration tasks
+40%
+faster page loads
+95%
+traffic edge-served
+Read case study
+See all case studies
+With Cloudflare Cache Reserve, Docker ensures swift, reliable, and secure delivery of 500+ million downloads daily
+99%
+cache hit rate
+66%
+cost savings
+Read case study
+See all case studies
+As online business becomes more important for Conrad Electronic, th
+
+===== https://developers.cloudflare.com/
+TITLE: Cloudflare Developer Docs | Cloudflare Docs
+ACCESSED: 2026-09-28
+
+Cloudflare Developer Docs
+Explore guides and tutorials to start building on Cloudflare's platform
+Get started
+Copy prompt
+Prompt copied!
+Powerful primitives, seamlessly integrated
+Compute
+AI
+Storage & Databases
+Media
+Deploy with one command
+Build and deploy serverless functions and full-stack apps on Cloudflare's global network. No servers to manage. No cold starts or region complexity.
+npm create cloudflare@latest my-app
+Create your first Worker
+Workers
+·
+Containers
+·
+Durable Objects
+·
+Queues
+·
+Flagship
+The AI inference platform
+Run AI inference globally with one API call, build agents, and search across your data — no GPUs to manage, no capacity planning.
+npx wrangler ai models
+Browse available models
+Workers AI
+·
+AI Gateway
+·
+AI Search
+·
+Agents
+·
+Vectorize
+·
+Browser Run
+Make your database feel instant, everywhere
+Serverless SQL, globally distributed key-value, and global database acceleration — query directly from Workers with no connection management.
+npx wrangler d1 create my-database
+Get started with D1
+R2
+·
+Pipelines
+·
+D1
+·
+KV
+·
+Hyperdrive
+Build media pipelines without infrastructure headaches
+Cloudflare Images helps teams build scalable, reliable media pipelines to store, optimize, and deliver images.
+curl --request POST https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/images/v1
+Get started with Images
+Images
+·
+Stream
+·
+Realtime
+Build with your favorite AI agent
+Paste into any AI coding agent to install Cloudflare agent tooling:
+Copy prompt
+Prompt copied!
+Browse all agent setup guides
+All agents
+What's new
+The latest features and improvements shipping across Cloudflare.
+View Changelog
+Sep 25, 2026
+Browser Run
+Subscribe to Browser Run crawl events
+Receive crawl lifecycle events through Cloudflare Queues.
+Read update
+Sep 25
+Cloudflare Network Firewall
+Managed Rulesets supported in Unified Routing
+Cloudflare Advanced Network Firewall Managed Rulesets now work with Unified Routing mode.
+Read more
+Sep 25
+Email Service
+Suppress recipients for one sending domain
+Email Sending suppressions can now apply to one sending domain instead of every sending domain in your account.
+Read more
+Sep 25
+WAF
+WAF Release - 2026-09-25 - Emergency
+Cloudflare WAF managed rulesets 2026-09-25 emergency release
+Read more
+Sep 25
+Workers
+Workers tracing — new getActiveSpan(), recordException(), startSpan(), and setAttributes() APIs
+Create spans without changing the active context, annotate the current span from anywhere, record exceptions, and set multiple attributes at once.
+Read more
+Sep 25
+Workers
+See every release and gradual deployment on Workers Metrics charts
+Workers Metrics charts now show all releases in the selected time range, including each traffic allocation change in a gradual deployment.
+Read more
+Sep 24
+1.1.1.1 (DNS Resolver)
+RFC 8509 root key trust anchor sentinel support
+1.1.1.1 supports RFC 8509 root key trust anchor sentinels to help diagnose DNSSEC root key rollovers.
+Read more
+Sep 24
+Access
+MCP server portals are now generally available
+MCP server portals are now generally available to connect, secure, and monitor approved MCP servers through one endpoint.
+Read more
+Security that scales
+Everything you need to secure applications, APIs, and infrastructure.
+Public websites & apps
+WAF
+Protect your applications without sacrificing performance
+Identify and block malicious payloads before they can compromise your application.
+Harden your app with WAF
+SSL/TLS
+Encrypt your site in minutes
+Streamline TLS Certificate Management.
+Set up SSL/TLS
+Turnstile
+Verify visitors without CAPTCHA
+Confirm web visitors are real and block unwanted bots without slowing down web experiences for real users.
+Add Turnstile protection
+Corporate and home networks
+Tunnel
+Securely connect origins with post-quantum encrypted tunnels
+Outbound-only encrypted tunnels, no open ports.
+Create a secure Tunnel
+Access
+Secure internal applications with Cloudflare Access
+Identity-first, quantum-safe access to private applications and infrastructure.
+Set up Cloudflare Access
+Gateway
+Secure Internet browsing without disruptions
+Cloud-native Secure Web Gateway (SWG) that inspects browser traffic without disruption.
+Create Gateway policies
+Faster web performance
+Accelerate websites and applications with Cloudflare CDN caching, image optimization, smart routing, load balancing, and web analytics.
+Explore Directory
+DNS
+Fast, reliable and resilient DNS queries
+World's fastest authoritative DNS, consistently ranked #1 by DNSPerf; free, fully API-managed, DNSSEC supported.
+Set up Authoritative DNS
+Smart Shield
+Minimize origin load and accelerate dynamic content
+Intelligently manage traffic, optimize content delivery, and safeguard origin infrastructure.
+Enable Smart Shield
+CDN
+Default caching for static assets, with cache rules for full control
+Caches content in 330+ cities worldwide, with instant purging and granular Cache Rules.
+Set up Cache Rules
+Speed
+Assess your site speed and apply recommended optimizations
+Application delivery optimizations includ
+
+===== https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token/
+TITLE: Refresh participant's authentication token | Cloudflare API
+ACCESSED: 2026-09-28
+
+Regenerates participant’s authentication token for the given meeting and participant ID.
+Security
+API Token
+The preferred authorization scheme for interacting with the Cloudflare API.
+Create a token
+.
+Example:
+Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY
+Accepted Permissions (at least one required)
+Realtime Admin
+Realtime
+P
+ath
+Parameters
+Expand
+Collapse
+account_id
+string
+The account identifier tag.
+maxLength
+32
+app_id
+string
+The app identifier tag.
+meeting_id
+string
+format
+uuid
+participant_id
+string
+Returns
+Expand
+Collapse
+data
+object
+token
+Data returned by the operation
+token
+string
+Regenerated participant’s authentication token.
+success
+boolean
+Success status of the operation
+Refresh participant's authentication token
+HTTP
+curl
+https://api.cloudflare.com/client/v4/accounts/
+$ACCOUNT_ID
+/realtime/kit/
+$APP_ID
+/meetings/
+$MEETING_ID
+/participants/
+$PARTICIPANT_ID
+/token
+\
+-X
+POST
+\
+-H
+"Authorization: Bearer
+$CLOUDFLARE_API_TOKEN
+"
+200 example
+"data"
+: {
+"token"
+"token"
+},
+"success"
+true
+Returns Examples
+200 example
+"data"
+: {
+"token"
+"token"
+},
+"success"
+true
+
+===== https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/vpc_flows/subresources/tokens/methods/create/
+TITLE: Generate authentication token for VPC flow logs export. | Cloudflare API
+ACCESSED: 2026-09-28
+
+Generate authentication token for VPC flow logs export.
+Security
+API Email + API Key
+The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
+Example:
+X-Auth-Email: user@example.com
+The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
+Example:
+X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194
+Accepted Permissions (at least one required)
+Magic Network Monitoring Admin
+P
+ath
+Parameters
+Expand
+Collapse
+account_id
+string
+Returns
+Expand
+Collapse
+errors
+array of
+ResponseInfo
+code
+message
+documentation_url
+source
+code
+number
+minimum
+1000
+message
+string
+documentation_url
+optional
+string
+source
+optional
+object
+pointer
+pointer
+optional
+string
+messages
+array of
+ResponseInfo
+code
+message
+documentation_url
+source
+code
+number
+minimum
+1000
+message
+string
+documentation_url
+optional
+string
+source
+optional
+object
+pointer
+pointer
+optional
+string
+result
+string
+Authentication token to be used for VPC Flows export authentication.
+success
+true
+Whether the API call was successful
+Generate authentication token for VPC flow logs export.
+HTTP
+curl
+https://api.cloudflare.com/client/v4/accounts/
+$ACCOUNT_ID
+/mnm/vpc-flows/token
+\
+-X
+POST
+\
+-H
+"X-Auth-Email:
+$CLOUDFLARE_EMAIL
+"
+\
+-H
+"X-Auth-Key:
+$CLOUDFLARE_API_KEY
+"
+200 example
+"errors"
+: [
+"code"
+1000
+"message"
+"message"
+"documentation_url"
+"documentation_url"
+"source"
+: {
+"pointer"
+"pointer"
+],
+"messages"
+: [
+"code"
+1000
+"message"
+"message"
+"documentation_url"
+"documentation_url"
+"source"
+: {
+"pointer"
+"pointer"
+],
+"result"
+"JWE/JWT auth token"
+"success"
+true
+Returns Examples
+200 example
+"errors"
+: [
+"code"
+1000
+"message"
+"message"
+"documentation_url"
+"documentation_url"
+"source"
+: {
+"pointer"
+"pointer"
+],
+"messages"
+: [
+"code"
+1000
+"message"
+"message"
+"documentation_url"
+"documentation_url"
+"source"
+: {
+"pointer"
+"pointer"
+],
+"result"
+"JWE/JWT auth token"
+"success"
+true
+
+===== https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes/
+TITLE: OAuth Scopes | Cloudflare API
+ACCESSED: 2026-09-28
+
+Models
+Expand
+Collapse
+OAuthScopeListResponse
+object
+id
+name
+category
+scopes
+An available OAuth scope that can be assigned to an OAuth client.
+id
+string
+The scope label to use in the scopes array when creating or updating an OAuth client.
+name
+string
+Human-readable name of the OAuth scope.
+category
+optional
+string
+Category for grouping scopes in the UI.
+scopes
+optional
+array of
+string
+The underlying resource scopes (Bach scopes) that define which resources this OAuth scope can act upon.
+
+===== https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/
+TITLE: OAuth Clients | Cloudflare API
+ACCESSED: 2026-09-28
+
+Models
+Expand
+Collapse
+OAuthClientListResponse
+object
+client_id
+visibility
+allowed_cors_origins
+17
+more
+Fields shared by OAuth client responses and create/update requests.
+client_id
+string
+The unique identifier for an OAuth client.
+visibility
+"public"
+or
+"private"
+Visibility of the OAuth client.
+One of the following:
+"public"
+"private"
+allowed_cors_origins
+optional
+array of
+string
+Array of allowed CORS origins.
+client_name
+optional
+string
+Human-readable name of the OAuth client.
+client_uri
+optional
+string
+URL of the home page of the client.
+client_uri_verification
+optional
+object
+status
+text
+Client URI domain control verification state.
+status
+optional
+"pending"
+or
+"in_progress"
+or
+"verified"
+or
+"failed"
+Current verification status for the client URI host.
+One of the following:
+"pending"
+"in_progress"
+"verified"
+"failed"
+text
+optional
+string
+Exact TXT record value that must be added to DNS to prove ownership of the client URI host.
+created_at
+optional
+string
+Timestamp when the OAuth client was created.
+format
+date-time
+grant_types
+optional
+array of
+"authorization_code"
+or
+"refresh_token"
+Array of OAuth grant types the client is allowed to use.
+authorization_code
+is required;
+refresh_token
+may be included optionally.
+One of the following:
+"authorization_code"
+"refresh_token"
+has_rotated_secret
+optional
+boolean
+Indicates whether the client has a rotated secret that has not yet been deleted.
+logo_uri
+optional
+string
+URL of the client’s logo.
+optional_scopes
+optional
+array of
+string
+Scopes that the authorizing user may decline during consent. Each value must also appear in
+scopes
+. The scopes
+openid
+offline
+, and
+offline_access
+cannot be optional.
+policy_uri
+optional
+string
+URL that points to a privacy policy document.
+post_logout_redirect_uris
+optional
+array of
+string
+Array of allowed post-logout redirect URIs.
+promoted_at
+optional
+string
+Timestamp when the OAuth client was promoted to public visibility.
+format
+date-time
+redirect_uris
+optional
+array of
+string
+Array of allowed redirect URIs for the client.
+response_types
+optional
+array of
+"token"
+or
+"id_token"
+or
+"code"
+Array of OAuth response types the client is allowed to use.
+One of the following:
+"token"
+"id_token"
+"code"
+scopes
+optional
+array of
+string
+Array of OAuth scopes the client is allowed to request. Colon-delimited scopes are not accepted. Dot-delimited scopes are validated against available OAuth API scopes; simple identity scopes are allowed. Protocol scopes
+offline_access
+and
+openid
+are added or removed automatically based on
+grant_types
+and
+response_types
+.
+token_endpoint_auth_method
+optional
+"none"
+or
+"client_secret_basic"
+or
+"client_secret_post"
+The authentication method the client uses at the token endpoint.
+One of the following:
+"none"
+"client_secret_basic"
+"client_secret_post"
+tos_uri
+optional
+string
+URL that points to a terms of service document.
+updated_at
+optional
+string
+Timestamp when the OAuth client was last updated.
+format
+date-time
+OAuthClientGetResponse
+object
+client_id
+visibility
+allowed_cors_origins
+17
+more
+Fields shared by OAuth client responses and create/update requests.
+client_id
+string
+The unique identifier for an OAuth client.
+visibility
+"public"
+or
+"private"
+Visibility of the OAuth client.
+One of the following:
+"public"
+"private"
+allowed_cors_origins
+optional
+array of
+string
+Array of allowed CORS origins.
+client_name
+optional
+string
+Human-readable name of the OAuth client.
+client_uri
+optional
+string
+URL of the home page of the client.
+client_uri_verification
+optional
+object
+status
+text
+Client URI domain control verification state.
+status
+optional
+"pending"
+or
+"in_progress"
+or
+"verified"
+or
+"failed"
+Current verification status for the client URI host.
+One of the following:
+"pending"
+"in_progress"
+"verified"
+"failed"
+text
+optional
+string
+Exact TXT record value that must be added to DNS to prove ownership of the client URI host.
+created_at
+optional
+string
+Timestamp when the OAuth client was created.
+format
+date-time
+grant_types
+optional
+array of
+"authorization_code"
+or
+"refresh_token"
+Array of OAuth grant types the client is allowed to use.
+authorization_code
+is required;
+refresh_token
+may be included optionally.
+One of the following:
+"authorization_code"
+"refresh_token"
+has_rotated_secret
+optional
+boolean
+Indicates whether the client has a rotated secret that has not yet been deleted.
+logo_uri
+optional
+string
+URL of the client’s logo.
+optional_scopes
+optional
+array of
+string
+Scopes that the authorizing user may decline during consent. Each value must also appear in
+scopes
+. The scopes
+openid
+offline
+, and
+offline_access
+cannot be optional.
+policy_uri
+optional
+string
+URL that points to a privacy policy document.
+post_logout_redirect_uris
+optional
+array of
+string
+Array of allowed post-logout redirect URIs.
+promoted_at
+optional
+string
+Timestamp when the OAuth client was promoted to public visibility.
+format
+date-time
+
+===== https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/get/
+TITLE: OAuth Client Details | Cloudflare API
+ACCESSED: 2026-09-28
+
+Get details of a specific OAuth client.
+Security
+API Token
+The preferred authorization scheme for interacting with the Cloudflare API.
+Create a token
+.
+Example:
+Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY
+API Email + API Key
+The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
+Example:
+X-Auth-Email: user@example.com
+The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
+Example:
+X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194
+Accepted Permissions (at least one required)
+OAuth Client Read
+P
+ath
+Parameters
+Expand
+Collapse
+account_id
+string
+Account identifier tag.
+maxLength
+32
+minLength
+32
+oauth_client_id
+string
+The unique identifier for an OAuth client.
+Returns
+Expand
+Collapse
+errors
+array of
+object
+code
+message
+documentation_url
+source
+code
+number
+minimum
+1000
+message
+string
+documentation_url
+optional
+string
+source
+optional
+object
+pointer
+pointer
+optional
+string
+messages
+array of
+object
+code
+message
+documentation_url
+source
+code
+number
+minimum
+1000
+message
+string
+documentation_url
+optional
+string
+source
+optional
+object
+pointer
+pointer
+optional
+string
+success
+true
+Whether the API call was successful.
+result
+optional
+object
+client_id
+visibility
+allowed_cors_origins
+17
+more
+Fields shared by OAuth client responses and create/update requests.
+client_id
+string
+The unique identifier for an OAuth client.
+visibility
+"public"
+or
+"private"
+Visibility of the OAuth client.
+One of the following:
+"public"
+"private"
+allowed_cors_origins
+optional
+array of
+string
+Array of allowed CORS origins.
+client_name
+optional
+string
+Human-readable name of the OAuth client.
+client_uri
+optional
+string
+URL of the home page of the client.
+client_uri_verification
+optional
+object
+status
+text
+Client URI domain control verification state.
+status
+optional
+"pending"
+or
+"in_progress"
+or
+"verified"
+or
+"failed"
+Current verification status for the client URI host.
+One of the following:
+"pending"
+"in_progress"
+"verified"
+"failed"
+text
+optional
+string
+Exact TXT record value that must be added to DNS to prove ownership of the client URI host.
+created_at
+optional
+string
+Timestamp when the OAuth client was created.
+format
+date-time
+grant_types
+optional
+array of
+"authorization_code"
+or
+"refresh_token"
+Array of OAuth grant types the client is allowed to use.
+authorization_code
+is required;
+refresh_token
+may be included optionally.
+One of the following:
+"authorization_code"
+"refresh_token"
+has_rotated_secret
+optional
+boolean
+Indicates whether the client has a rotated secret that has not yet been deleted.
+logo_uri
+optional
+string
+URL of the client’s logo.
+optional_scopes
+optional
+array of
+string
+Scopes that the authorizing user may decline during consent. Each value must also appear in
+scopes
+. The scopes
+openid
+offline
+, and
+offline_access
+cannot be optional.
+policy_uri
+optional
+string
+URL that points to a privacy policy document.
+post_logout_redirect_uris
+optional
+array of
+string
+Array of allowed post-logout redirect URIs.
+promoted_at
+optional
+string
+Timestamp when the OAuth client was promoted to public visibility.
+format
+date-time
+redirect_uris
+optional
+array of
+string
+Array of allowed redirect URIs for the client.
+response_types
+optional
+array of
+"token"
+or
+"id_token"
+or
+"code"
+Array of OAuth response types the client is allowed to use.
+One of the following:
+"token"
+"id_token"
+"code"
+scopes
+optional
+array of
+string
+Array of OAuth scopes the client is allowed to request. Colon-delimited scopes are not accepted. Dot-delimited scopes are validated against available OAuth API scopes; simple identity scopes are allowed. Protocol scopes
+offline_access
+and
+openid
+are added or removed automatically based on
+grant_types
+and
+response_types
+.
+token_endpoint_auth_method
+optional
+"none"
+or
+"client_secret_basic"
+or
+"client_secret_post"
+The authentication method the client uses at the token endpoint.
+One of the following:
+"none"
+"client_secret_basic"
+"client_secret_post"
+tos_uri
+optional
+string
+URL that points to a terms of service document.
+updated_at
+optional
+string
+Timestamp when the OAuth client was last updated.
+format
+date-time
+OAuth Client Details
+HTTP
+curl
+https://api.cloudflare.com/client/v4/accounts/
+$ACCOUNT_ID
+/oauth_clients/
+$OAUTH_CLIENT_ID
+\
+-H
+"Authorization: Bearer
+$CLOUDFLARE_API_TOKEN
+"
+200 example
+"errors"
+: [
+"code"
+1000
+"message"
+"message"
+"documentation_url"
+"documentation_url"
+"source"
+: {
+"pointer"
+"pointer"
+],
+"messages"
+: [
+"code"
+1000
+"message"
+"message"
+"documentation_url"
+"documentation_url"
+"source"
+: {
+"pointer"
+"pointer"
+],
+"success"
+true
+"result"
+: {
+"client_id"
+"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"
+"visibility"
+"private"
+"allowed_cors_origins"
+: [
+"https://example.com"
+],
+"client_name"
+"My OAuth App"
+"clie

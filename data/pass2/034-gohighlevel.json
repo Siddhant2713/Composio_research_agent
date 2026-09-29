@@ -1,0 +1,190 @@
+{
+  "app": "GoHighLevel",
+  "number": 34,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:59:50.007987+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://highlevel.stoplight.io\",\n    \"https://developers.gohighlevel.com\",\n    \"https://help.gohighlevel.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://highlevel.stoplight.io",
+    "https://developers.gohighlevel.com",
+    "https://help.gohighlevel.com",
+    "https://docs.stoplight.io/",
+    "https://developer.stoplight.io/",
+    "https://developers.stoplight.io/",
+    "https://api.stoplight.io/",
+    "https://stoplight.io/docs",
+    "https://stoplight.io/developers",
+    "https://stoplight.io/api",
+    "https://stoplight.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://marketplace.gohighlevel.com/signup",
+    "https://help.gohighlevel.com/support/signup",
+    "https://help.gohighlevel.com/support/solutions/155000000123",
+    "https://help.gohighlevel.com/support/solutions/articles/155000001156-highlevel-pricing-guide",
+    "https://help.gohighlevel.com/support/solutions/articles/48001223556-phone-system-pricing-billing-guide"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://highlevel.stoplight.io",
+      "reason": "page too thin (9 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.stoplight.io/",
+      "reason": "page too thin (31 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.stoplight.io/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://stoplight.io/docs",
+      "reason": "page too thin (31 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://marketplace.gohighlevel.com/signup",
+      "reason": "page too thin (41 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://help.gohighlevel.com/support/signup",
+      "reason": "page too thin (80 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.gohighlevel.com",
+      "requested_url": "https://developers.gohighlevel.com",
+      "status": 200,
+      "title": "HighLevel Developers Community",
+      "chars": 1801,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/home",
+      "requested_url": "https://help.gohighlevel.com",
+      "status": 200,
+      "title": "Home | Support : HighLevel Support Portal",
+      "chars": 1082,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.stoplight.io/",
+      "requested_url": "https://developer.stoplight.io/",
+      "status": 200,
+      "title": "developer | Stoplight",
+      "chars": 157,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.stoplight.io/",
+      "requested_url": "https://developers.stoplight.io/",
+      "status": 200,
+      "title": "developers | Stoplight",
+      "chars": 159,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/155000000123",
+      "requested_url": "https://help.gohighlevel.com/support/solutions/155000000123",
+      "status": 200,
+      "title": "Contacts : HighLevel Support Portal",
+      "chars": 1209,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000001156-highlevel-pricing-guide",
+      "requested_url": "https://help.gohighlevel.com/support/solutions/articles/155000001156-highlevel-pricing-guide",
+      "status": 200,
+      "title": "HighLevel Pricing & Billing: Wallets, Charges, Rebilling : HighLevel Support Portal",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001223556-phone-system-pricing-billing-guide",
+      "requested_url": "https://help.gohighlevel.com/support/solutions/articles/48001223556-phone-system-pricing-billing-guide",
+      "status": 200,
+      "title": "LC Phone Pricing & Billing Guide  : HighLevel Support Portal",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"GoHighLevel provides a marketing, ads, email, and social platform with public API 1.0 and OAuth-based API 2.0 endpoints for third-party integrations.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"API 2.0 uses OAuth based authentication.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The provided pages mention API documentation and developer login, but do not describe how a first-time developer obtains credentials.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The pages reference API 1.0 Public API endpoints and API 2.0 docs.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"Model Context Protocol is not mentioned in the text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.gohighlevel.com\",\n      \"claim\": \"API 2.0 uses an OAuth based API.\",\n      \"quote\": \"We now have an OAuth based API and all integration documentation can be found here.\"\n    },\n    {\n      \"url\": \"https://developers.gohighlevel.com\",\n      \"claim\": \"API 1.0 provides public API endpoints and documentation.\",\n      \"quote\": \"Your go-to resource for our Public API endpoints and documentation.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.gohighlevel.com\",\n      \"quote\": \"We now have an OAuth based API and all integration documentation can be found here.\"\n    },\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://developers.gohighlevel.com\",\n      \"quote\": \"Your go-to resource for our Public API endpoints and documentation.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://highlevel.stoplight.io",
+    "one_liner": "GoHighLevel provides a marketing, ads, email, and social platform with public API 1.0 and OAuth-based API 2.0 endpoints for third-party integrations.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "API 2.0 uses OAuth based authentication."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [],
+      "notes": "The pages reference API 1.0 Public API endpoints and API 2.0 docs."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.gohighlevel.com",
+        "claim": "API 2.0 uses an OAuth based API.",
+        "quote": "We now have an OAuth based API and all integration documentation can be found here.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.gohighlevel.com",
+        "claim": "API 1.0 provides public API endpoints and documentation.",
+        "quote": "Your go-to resource for our Public API endpoints and documentation.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.gohighlevel.com",
+        "quote": "We now have an OAuth based API and all integration documentation can be found here."
+      },
+      "api_surface": {
+        "url": "https://developers.gohighlevel.com",
+        "quote": "Your go-to resource for our Public API endpoints and documentation."
+      }
+    },
+    "unsupported_fields": [
+      "access: no support offered",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T04:00:13.458844+00:00"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T20:20:26.437334+00:00",
+  "generated_at": "2026-09-28T06:27:28.570616+00:00",
   "denominator": 100,
   "blocker_vocabulary": [
     "none",
@@ -13,127 +13,124 @@
   ],
   "totals": {
     "auth": {
-      "api_key": 36,
-      "oauth2": 31,
-      "unknown": 24,
-      "other": 4,
-      "basic_auth": 3,
-      "none": 2
+      "unknown": 36,
+      "api_key": 32,
+      "oauth2": 29,
+      "other": 1,
+      "basic_auth": 1,
+      "jwt": 1
     },
     "access": {
-      "self_serve": 66,
-      "unknown": 20,
-      "gated": 8,
-      "mixed": 6
+      "self_serve": 58,
+      "unknown": 35,
+      "gated": 5,
+      "mixed": 2
     },
     "buildability": {
-      "easy": 56,
-      "moderate": 21,
-      "unknown": 20,
-      "no": 2,
-      "hard": 1
+      "unknown": 46,
+      "easy": 41,
+      "moderate": 8,
+      "hard": 5
     },
     "blocker": {
-      "none": 54,
-      "unknown": 13,
-      "paid_plan_gate": 9,
-      "admin_account_only": 7,
-      "partner_or_sales_gate": 7,
+      "none": 53,
+      "unknown": 27,
       "docs_not_machine_readable": 6,
-      "app_review_gate": 3,
-      "no_public_api": 1
+      "admin_account_only": 5,
+      "partner_or_sales_gate": 5,
+      "paid_plan_gate": 4
     },
     "confidence": {
-      "high": 74,
-      "low": 18,
+      "high": 60,
+      "low": 32,
       "medium": 8
     },
     "mcp_exists": {
-      "True": 41,
-      "None": 38,
-      "False": 21
+      "None": 57,
+      "True": 42,
+      "False": 1
     }
   },
   "per_category_access": {
     "AI, Research and Media-native": {
       "n": 10,
-      "self_serve": 7,
+      "self_serve": 6,
       "gated": 1,
       "mixed": 0,
-      "unknown": 2,
-      "self_serve_pct": 70.0,
+      "unknown": 3,
+      "self_serve_pct": 60.0,
       "unblocked_pct": 60.0
     },
     "CRM and Sales": {
       "n": 10,
-      "self_serve": 8,
+      "self_serve": 7,
       "gated": 0,
       "mixed": 0,
-      "unknown": 2,
-      "self_serve_pct": 80.0,
-      "unblocked_pct": 80.0
+      "unknown": 3,
+      "self_serve_pct": 70.0,
+      "unblocked_pct": 70.0
     },
     "Communications and Messaging": {
       "n": 10,
-      "self_serve": 7,
+      "self_serve": 6,
       "gated": 0,
-      "mixed": 2,
-      "unknown": 1,
-      "self_serve_pct": 70.0,
-      "unblocked_pct": 50.0
+      "mixed": 0,
+      "unknown": 4,
+      "self_serve_pct": 60.0,
+      "unblocked_pct": 60.0
     },
     "Data, SEO and Scraping": {
       "n": 10,
-      "self_serve": 7,
+      "self_serve": 4,
       "gated": 1,
       "mixed": 2,
-      "unknown": 0,
-      "self_serve_pct": 70.0,
-      "unblocked_pct": 60.0
+      "unknown": 3,
+      "self_serve_pct": 40.0,
+      "unblocked_pct": 30.0
     },
     "Developer, Infra and Data platforms": {
       "n": 10,
-      "self_serve": 8,
+      "self_serve": 5,
       "gated": 0,
       "mixed": 0,
-      "unknown": 2,
-      "self_serve_pct": 80.0,
-      "unblocked_pct": 70.0
+      "unknown": 5,
+      "self_serve_pct": 50.0,
+      "unblocked_pct": 50.0
     },
     "Ecommerce": {
       "n": 10,
-      "self_serve": 4,
+      "self_serve": 5,
       "gated": 1,
-      "mixed": 1,
+      "mixed": 0,
       "unknown": 4,
-      "self_serve_pct": 40.0,
-      "unblocked_pct": 10.0
+      "self_serve_pct": 50.0,
+      "unblocked_pct": 30.0
     },
     "Finance and Fintech": {
       "n": 10,
-      "self_serve": 3,
-      "gated": 3,
+      "self_serve": 4,
+      "gated": 0,
       "mixed": 0,
-      "unknown": 4,
-      "self_serve_pct": 30.0,
+      "unknown": 6,
+      "self_serve_pct": 40.0,
       "unblocked_pct": 30.0
     },
     "Marketing, Ads, Email and Social": {
       "n": 10,
       "self_serve": 6,
       "gated": 1,
-      "mixed": 1,
-      "unknown": 2,
+      "mixed": 0,
+      "unknown": 3,
       "self_serve_pct": 60.0,
-      "unblocked_pct": 40.0
+      "unblocked_pct": 60.0
     },
     "Productivity and Project Management": {
       "n": 10,
-      "self_serve": 8,
+      "self_serve": 7,
       "gated": 1,
       "mixed": 0,
-      "unknown": 1,
-      "self_serve_pct": 80.0,
+      "unknown": 2,
+      "self_serve_pct": 70.0,
       "unblocked_pct": 70.0
     },
     "Support and Helpdesk": {
@@ -149,9 +146,8 @@
   "crosstabs": {
     "auth_by_category": {
       "AI, Research and Media-native": {
-        "api_key": 5,
-        "none": 1,
-        "unknown": 4
+        "api_key": 2,
+        "unknown": 8
       },
       "CRM and Sales": {
         "api_key": 2,
@@ -159,27 +155,24 @@
         "unknown": 3
       },
       "Communications and Messaging": {
-        "api_key": 4,
-        "oauth2": 3,
-        "other": 1,
-        "unknown": 2
+        "api_key": 3,
+        "oauth2": 2,
+        "unknown": 5
       },
       "Data, SEO and Scraping": {
-        "api_key": 7,
+        "api_key": 6,
         "basic_auth": 1,
-        "none": 1,
-        "unknown": 1
+        "unknown": 3
       },
       "Developer, Infra and Data platforms": {
-        "api_key": 4,
-        "basic_auth": 1,
-        "oauth2": 3,
-        "other": 2
+        "api_key": 6,
+        "jwt": 1,
+        "oauth2": 2,
+        "unknown": 1
       },
       "Ecommerce": {
-        "api_key": 2,
-        "oauth2": 4,
-        "other": 1,
+        "api_key": 1,
+        "oauth2": 6,
         "unknown": 3
       },
       "Finance and Fintech": {
@@ -188,66 +181,64 @@
         "unknown": 6
       },
       "Marketing, Ads, Email and Social": {
-        "api_key": 4,
-        "oauth2": 6
+        "api_key": 3,
+        "oauth2": 6,
+        "unknown": 1
       },
       "Productivity and Project Management": {
-        "api_key": 2,
-        "oauth2": 7,
+        "api_key": 3,
+        "oauth2": 6,
         "unknown": 1
       },
       "Support and Helpdesk": {
         "api_key": 3,
-        "basic_auth": 1,
-        "oauth2": 2,
-        "unknown": 4
+        "oauth2": 1,
+        "other": 1,
+        "unknown": 5
       }
     },
     "access_by_category": {
       "AI, Research and Media-native": {
         "gated": 1,
-        "self_serve": 7,
-        "unknown": 2
+        "self_serve": 6,
+        "unknown": 3
       },
       "CRM and Sales": {
-        "self_serve": 8,
-        "unknown": 2
+        "self_serve": 7,
+        "unknown": 3
       },
       "Communications and Messaging": {
-        "mixed": 2,
-        "self_serve": 7,
-        "unknown": 1
+        "self_serve": 6,
+        "unknown": 4
       },
       "Data, SEO and Scraping": {
         "gated": 1,
         "mixed": 2,
-        "self_serve": 7
+        "self_serve": 4,
+        "unknown": 3
       },
       "Developer, Infra and Data platforms": {
-        "self_serve": 8,
-        "unknown": 2
+        "self_serve": 5,
+        "unknown": 5
       },
       "Ecommerce": {
         "gated": 1,
-        "mixed": 1,
-        "self_serve": 4,
+        "self_serve": 5,
         "unknown": 4
       },
       "Finance and Fintech": {
-        "gated": 3,
-        "self_serve": 3,
-        "unknown": 4
+        "self_serve": 4,
+        "unknown": 6
       },
       "Marketing, Ads, Email and Social": {
         "gated": 1,
-        "mixed": 1,
         "self_serve": 6,
-        "unknown": 2
+        "unknown": 3
       },
       "Productivity and Project Management": {
         "gated": 1,
-        "self_serve": 8,
-        "unknown": 1
+        "self_serve": 7,
+        "unknown": 2
       },
       "Support and Helpdesk": {
         "self_serve": 8,
@@ -256,114 +247,96 @@
     },
     "buildability_by_blocker": {
       "easy": {
-        "admin_account_only": 6,
-        "none": 48,
-        "paid_plan_gate": 1,
-        "partner_or_sales_gate": 1
+        "admin_account_only": 4,
+        "none": 36,
+        "paid_plan_gate": 1
       },
       "hard": {
-        "partner_or_sales_gate": 1
+        "partner_or_sales_gate": 5
       },
       "moderate": {
-        "admin_account_only": 1,
-        "app_review_gate": 3,
-        "none": 5,
-        "paid_plan_gate": 8,
-        "partner_or_sales_gate": 3,
-        "unknown": 1
-      },
-      "no": {
-        "no_public_api": 1,
-        "partner_or_sales_gate": 1
+        "none": 6,
+        "paid_plan_gate": 2
       },
       "unknown": {
+        "admin_account_only": 1,
         "docs_not_machine_readable": 6,
-        "none": 1,
-        "partner_or_sales_gate": 1,
-        "unknown": 12
+        "none": 11,
+        "paid_plan_gate": 1,
+        "unknown": 27
       }
     },
     "access_by_auth": {
       "gated": {
-        "api_key": 2,
-        "oauth2": 3,
-        "unknown": 3
-      },
-      "mixed": {
-        "api_key": 3,
-        "oauth2": 3
-      },
-      "self_serve": {
-        "api_key": 30,
-        "basic_auth": 3,
-        "none": 2,
-        "oauth2": 22,
-        "other": 2,
-        "unknown": 7
-      },
-      "unknown": {
         "api_key": 1,
         "oauth2": 3,
-        "other": 2,
-        "unknown": 14
+        "unknown": 1
+      },
+      "mixed": {
+        "unknown": 2
+      },
+      "self_serve": {
+        "api_key": 26,
+        "basic_auth": 1,
+        "jwt": 1,
+        "oauth2": 18,
+        "other": 1,
+        "unknown": 11
+      },
+      "unknown": {
+        "api_key": 5,
+        "oauth2": 8,
+        "unknown": 22
       }
     },
     "blocker_by_category": {
       "AI, Research and Media-native": {
-        "docs_not_machine_readable": 1,
         "none": 6,
-        "paid_plan_gate": 1,
         "partner_or_sales_gate": 1,
-        "unknown": 1
+        "unknown": 3
       },
       "CRM and Sales": {
-        "none": 8,
-        "unknown": 2
+        "none": 7,
+        "unknown": 3
       },
       "Communications and Messaging": {
         "docs_not_machine_readable": 1,
-        "none": 5,
-        "paid_plan_gate": 3,
-        "partner_or_sales_gate": 1
+        "none": 6,
+        "unknown": 3
       },
       "Data, SEO and Scraping": {
-        "no_public_api": 1,
-        "none": 6,
-        "paid_plan_gate": 2,
-        "partner_or_sales_gate": 1
+        "none": 3,
+        "paid_plan_gate": 4,
+        "partner_or_sales_gate": 1,
+        "unknown": 2
       },
       "Developer, Infra and Data platforms": {
         "admin_account_only": 1,
-        "none": 7,
-        "unknown": 2
+        "none": 5,
+        "unknown": 4
       },
       "Ecommerce": {
-        "admin_account_only": 3,
+        "admin_account_only": 2,
         "docs_not_machine_readable": 1,
-        "none": 1,
-        "paid_plan_gate": 1,
+        "none": 3,
         "partner_or_sales_gate": 1,
         "unknown": 3
       },
       "Finance and Fintech": {
         "admin_account_only": 1,
-        "docs_not_machine_readable": 3,
+        "docs_not_machine_readable": 4,
         "none": 3,
-        "partner_or_sales_gate": 2,
-        "unknown": 1
+        "unknown": 2
       },
       "Marketing, Ads, Email and Social": {
-        "app_review_gate": 3,
-        "none": 4,
-        "paid_plan_gate": 1,
+        "none": 6,
         "partner_or_sales_gate": 1,
-        "unknown": 1
+        "unknown": 3
       },
       "Productivity and Project Management": {
-        "admin_account_only": 1,
         "none": 7,
-        "paid_plan_gate": 1,
-        "unknown": 1
+        "partner_or_sales_gate": 1,
+        "unknown": 2
       },
       "Support and Helpdesk": {
         "admin_account_only": 1,
@@ -381,38 +354,38 @@
   },
   "blocker_by_app": {
     "Ahrefs": "paid_plan_gate",
-    "Aircall": "paid_plan_gate",
+    "Aircall": "unknown",
     "Airtable": "none",
     "Amazon Selling Partner": "partner_or_sales_gate",
-    "Apify": "none",
-    "Asana": "admin_account_only",
+    "Apify": "unknown",
+    "Asana": "none",
     "Attio": "none",
-    "BigCommerce": "admin_account_only",
+    "BigCommerce": "none",
     "Binance": "docs_not_machine_readable",
     "Brex": "admin_account_only",
     "Bright Data": "none",
     "Clay": "paid_plan_gate",
-    "ClickUp": "none",
+    "ClickUp": "unknown",
     "Close": "none",
     "Cloudflare": "none",
     "Coda": "unknown",
-    "Consensus": "docs_not_machine_readable",
+    "Consensus": "partner_or_sales_gate",
     "Copper": "unknown",
     "DataForSEO": "none",
     "Datadog": "unknown",
     "DealCloud": "unknown",
-    "Devin": "paid_plan_gate",
+    "Devin": "none",
     "Discord": "none",
     "Ecwid": "admin_account_only",
-    "Fathom": "unknown",
-    "Firecrawl": "none",
+    "Fathom": "none",
+    "Firecrawl": "paid_plan_gate",
     "Freshdesk": "none",
     "Front": "none",
-    "GitHub": "none",
+    "GitHub": "unknown",
     "Gladly": "admin_account_only",
     "GoHighLevel": "unknown",
-    "Google Ads": "app_review_gate",
-    "Gorgias": "unknown",
+    "Google Ads": "unknown",
+    "Gorgias": "none",
     "Grain": "none",
     "Gumroad": "docs_not_machine_readable",
     "Harvest": "none",
@@ -423,53 +396,53 @@
     "Klaviyo": "none",
     "Lark": "docs_not_machine_readable",
     "Linear": "none",
-    "LinkedIn Ads": "paid_plan_gate",
-    "LiveAgent": "none",
+    "LinkedIn Ads": "none",
+    "LiveAgent": "unknown",
     "Magento (Adobe Commerce)": "unknown",
     "Mailchimp": "none",
-    "Mermaid CLI": "none",
-    "Meta Ads": "app_review_gate",
+    "Mermaid CLI": "unknown",
+    "Meta Ads": "none",
     "Monday.com": "none",
     "MongoDB Atlas": "admin_account_only",
     "MrScraper": "none",
     "Neo4j": "none",
-    "Netlify": "none",
+    "Netlify": "unknown",
     "NotebookLM": "none",
     "Notion": "none",
-    "Otter AI": "partner_or_sales_gate",
-    "Paygent Connect": "partner_or_sales_gate",
+    "Otter AI": "unknown",
+    "Paygent Connect": "unknown",
     "Pinterest": "partner_or_sales_gate",
     "Pipedrive": "none",
-    "PitchBook": "partner_or_sales_gate",
+    "PitchBook": "docs_not_machine_readable",
     "Plaid": "none",
     "Plain": "none",
     "Podio": "none",
-    "Pumble": "paid_plan_gate",
+    "Pumble": "unknown",
     "Pylon": "unknown",
     "QuickBooks": "docs_not_machine_readable",
     "Ramp": "unknown",
-    "Reducto": "none",
-    "SE Ranking": "none",
-    "Salesforce": "none",
+    "Reducto": "unknown",
+    "SE Ranking": "paid_plan_gate",
+    "Salesforce": "unknown",
     "Salesforce Commerce Cloud": "unknown",
-    "SendGrid": "none",
+    "SendGrid": "unknown",
     "Sentry": "none",
-    "Sherlock": "no_public_api",
+    "Sherlock": "unknown",
     "Shopify": "admin_account_only",
-    "Slack": "partner_or_sales_gate",
-    "Smartsheet": "paid_plan_gate",
+    "Slack": "none",
+    "Smartsheet": "partner_or_sales_gate",
     "Snowflake": "unknown",
-    "Squarespace": "paid_plan_gate",
+    "Squarespace": "none",
     "Stripe": "none",
     "Supabase": "none",
     "Telegram": "none",
-    "Threads": "app_review_gate",
+    "Threads": "none",
     "Twenty": "none",
     "Twilio": "none",
     "Vercel": "none",
     "Vonage": "none",
     "Waterfall.io": "partner_or_sales_gate",
-    "WhatsApp Business": "paid_plan_gate",
+    "WhatsApp Business": "unknown",
     "WooCommerce": "none",
     "Xero": "none",
     "YouTube Transcript": "none",
@@ -482,16 +455,19 @@
     "systeme.io": "none"
   },
   "evidence": {
-    "total_urls": 316,
+    "total_urls": 287,
     "records_without_evidence": [
+      "Salesforce",
+      "LiveAgent",
       "Lark",
+      "Salesforce Commerce Cloud",
       "Gumroad",
       "Binance",
+      "Paygent Connect",
       "iPayX",
       "QuickBooks",
-      "PitchBook",
-      "Consensus"
+      "PitchBook"
     ]
   },
-  "source": "pass1_full.json"
+  "source": "pass2_full.json"
 }

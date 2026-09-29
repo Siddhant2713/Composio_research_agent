@@ -1,0 +1,501 @@
+===== https://developer.adobe.com/commerce/
+TITLE: :experiencecloud:
+ACCESSED: 2026-09-28
+
+Build your commerce vision
+Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.
+Take a product tour
+Get Developer Docs
+Get Merchant Docs
+Get Operations Docs
+Meet the newest Adobe Commerce offerings
+Learn how Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer can help you deliver high-impact shopping experiences and reduce operational costs.
+Commerce as a Cloud Service
+Commerce Optimizer
+Learn about the new AI developer tools
+Use the AI developer tools to create new Adobe Developer App Builder applications or convert existing extensions to applications.
+Learn more
+Event-driven integrations
+Build a personalized commerce powerhouse by adding Adobe Experience Cloud products to Adobe Commerce.
+Customizable storefronts
+Our new Edge Delivery Services, Commerce dropins, and Content blocks are now combined to create the fastest shops on the web.
+API-first Commerce
+Make innovation a constant with a secure, scalable, and extensible commerce platform.
+Developer playground
+An API playground for hands-on learning
+View code samples
+Extensibility use cases for Adobe Commerce
+Access on-demand training
+Training to take your career to the next level
+Get Developer Certification
+Grow your skills and get hired by partners
+What's new with Adobe Commerce
+See the latest new features and innovations
+Get started integrating your systems with Adobe Commerce
+Accelerate Adobe Commerce integrations with enterprise systems using the integration starter kit.
+Get started
+
+===== https://developer.adobe.com/commerce/extensibility/
+TITLE: Adobe Commerce extensibility
+ACCESSED: 2026-09-28
+
+data-slots=image, heading, text
+Adobe Commerce extensibility
+Learn how to create out-of-process extensions for Adobe Commerce using App Builder and App Management.
+Extend Adobe Commerce without changing the Commerce core
+Adobe Commerce supports
+out-of-process extensibility
+: custom business logic, integrations, and user experiences run as applications outside the Commerce application process. These applications communicate with Commerce using supported APIs, events, webhooks, and extension points rather than adding PHP code directly to the Commerce codebase.
+Adobe implements this model through
+Adobe Developer App Builder
+and
+Commerce App Management
+:
+App Builder
+provides the platform for building secure, scalable Commerce applications. See
+App development
+and the
+App Builder documentation
+to get started.
+I/O Runtime
+hosts serverless actions that execute your custom logic.
+Commerce
+APIs
+,
+events
+, and
+webhooks
+** connect your application to Commerce data and behavior.
+Commerce SDKs and libraries
+provide reusable patterns for authentication, configuration, event handling, and Commerce integration, including the
+Admin UI SDK
+and
+OOPE modules
+.
+App Management
+provides the application lifecycle: associate, configure, install, update, and remove Commerce apps.
+This separation lets developers create and deploy an app independently from the Commerce release cycle. It also helps isolate custom workloads, reduce upgrade coupling, and make integrations easier to operate and evolve.
+Out-of-process and in-process extensibility
+Traditional Commerce extensions use an
+in-process
+model. PHP modules, plugins, observers, and other customizations run inside the Commerce application process and interact directly with its runtime, services, and database. This model can provide deep control, but it also couples custom code to the Commerce version, PHP runtime, internal APIs, deployment process, and available application resources.
+Out-of-process extensibility moves that custom logic outside the Commerce process:
+Characteristic
+Out-of-process extensibility
+In-process extensibility
+Where code runs
+Outside Commerce, on App Builder and its supporting services
+Inside the Commerce application process
+How it connects to Commerce
+APIs, events, webhooks, SDKs, and supported extension points
+PHP extension points and runtime services
+Release lifecycle
+Independently developed, tested, deployed, and operated
+Coupled to Commerce deployment and upgrades
+Upgrade considerations
+Custom logic is decoupled from the Commerce codebase
+Custom code must remain compatible with Commerce and its runtime
+Scaling and resource use
+Can scale and process independently of the Commerce application
+Shares Commerce application resources
+Typical strengths
+Upgrade safety, integration flexibility, isolation, and independent delivery
+Deep, synchronous control of the Commerce runtime
+The two models are not interchangeable implementation details. They represent different lifecycle and operating models.
+For new Commerce apps and modernizing existing customizations, start with App Management and build using the out-of-process extensibility model.
+Build with App Management
+Use
+App Management
+as the foundation for your Commerce extension lifecycle. It establishes how an app is defined, associated with a Commerce instance, configured, installed, updated, and removed.
+Start here to:
+Define the app
+and its Commerce capabilities.
+Build the app
+with App Builder, Commerce SDKs, and supported integration patterns.
+Connect the app
+to Commerce through APIs,
+events
+,
+webhooks
+, or
+UI extension points
+.
+Deploy and associate the app
+with Commerce.
+Configure, test, and operate the app
+across its supported environments. See
+Observability
+for monitoring guidance.
+When to use a starter kit
+Starter kits
+are
+opinionated accelerators
+, not alternate application lifecycle systems. They provide scaffolding, examples, and recommended patterns for common scenarios such as
+creating an integration
+and
+customizing the checkout process
+.
+Choose a starter kit when you want to:
+Quickly explore a common Commerce use case.
+Start from a working reference implementation.
+Adopt a recommended integration or UI pattern.
+Customize an established foundation for your requirements.
+Regardless of whether you start from an empty App Builder project or a starter kit, the resulting application follows the App Management lifecycle.
+Build with App Management. Start with a starter kit if you need an accelerator.
+Related resources
+Developer agent
+— get AI-assisted help while building Commerce apps.
+App development
+— learn how to build, port, and submit Commerce apps.
+Events
+,
+Webhooks
+,
+Admin UI SDK
+, and
+OOPE modules
+— the supported extension points for connecting your app to Commerce.
+Observability
+— monitor and troubleshoot your Commerce apps.
+API Mesh
+— A GraphQL gateway that composes Commerce APIs and third-party APIs behind a single endpoint, reducing round trips from the storefront or App Builder actions.
+The
+#app-
+
+===== https://developer.adobe.com/commerce/php/
+TITLE: Commerce PHP Extensions
+ACCESSED: 2026-09-28
+
+data-slots=image, heading, text
+Commerce PHP Extensions
+Learn how to create and maintain PHP extensions for Adobe Commerce and Magento Open Source.
+data-slots=heading, links
+Resources
+Commerce open-source projects
+Community Slack workspace
+Contributor statistics
+Overview
+This documentation provides resources for developing PHP-based extensions for Adobe Commerce and Magento Open Source.
+Discover
+Use these sections to learn about how to develop PHP extensions.
+data-slots=heading, link, text
+Sections
+Architecture
+Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework.
+data-slots=link, text
+Extension Development
+Learn about extending or customizing Adobe Commerce and Magento Open Source components. Apply this knowledge to create components that introduce new functionality and distribute them to merchants.
+data-slots=link, text
+Best Practices
+Use this collection of best practices curated by the community as well as the Adobe User Experience (UX), Product Management, and Engineering teams to avoid commonly reported issues in third-party Adobe Commerce and Magento Open source extensions.
+data-slots=link, text
+Module Reference
+Get module names and descriptions for PHP modules specific to Magento Open Source, Adobe Commerce, and B2B for Adobe Commerce.
+data-slots=link, text
+Coding Standards
+Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery.
+data-slots=link, text
+Tutorials
+Follow step-by-step tutorials to customize default Adobe Commerce and Magento Open Source features, including checkout, attributes, and the product creation form.
+data-width=100%
+data-slots=heading, link, text
+Contributing to this documentation
+We encourage you to participate in our open documentation initiative. If you have suggestions, corrections, additions, or deletions for this documentation, check out the source on
+GitHub
+, and open a pull request.
+
+===== https://experienceleague.adobe.com/en/docs
+TITLE: Adobe Enterprise Documentation
+ACCESSED: 2026-09-28
+
+Adobe Enterprise documentation
+Adobe Enterprise Documentation offers more than a collection of user guides. Discover our growing library of product documentation, tutorials, and on-demand events packed with strategies, hints, and best practices for creating awesome digital experiences. Let Experience League help you become an expert with the Adobe enterprise solutions you use the most.
+CX Enterprise
+Coworker and AI resources
+About AI in CX Enterprise
+Coworker
+AI documentation
+Data insights and audiences
+Analytics
+Customer Journey Analytics
+Real-Time Customer Data Platform (all editions)
+Audience Manager
+Advertising
+Marketo Measure
+Intelligent Services
+Mix Modeler
+Content and commerce
+Experience Manager as a Cloud Service
+Experience Manager Sites Optimizer
+Brand Visibility
+LLM Apps (Beta)
+Brand Concierge
+Experience Manager Assets Essentials
+Experience Manager 6.5 LTS
+Experience Manager 6.5
+Experience Manager – Older Versions
+Experience Manager Guides
+Learning Manager
+Commerce (including Magento Open Source)
+Customer journeys
+Journey Optimizer
+Journey Optimizer B2B Edition
+Target
+Campaign
+Marketo Engage
+Sales Qualifier
+Marketing and media
+GenStudio for Performance Marketing
+Workfront
+Adobe Pass
+CX Enterprise admin and central interface
+User management and product licenses
+Organizations
+Preferences and notifications
+Central Interface Components
+CX Enterprise Identity Service (ECID)
+CX Enterprise Audiences
+CX Enterprise Customer Attributes
+CX Enterprise Assets
+Experience Platform
+Experience Platform documentation
+Experience Platform
+Data Collection
+Digital Experience Blueprints
+Document Cloud
+Documentation
+Acrobat Learn & Support
+Acrobat Sign Learn & Support
+Developer
+Acrobat Services
+Acrobat Services Tutorials
+Helpful resources for Document Cloud
+Document Cloud Learn & Support
+Document Cloud Enterprise Tutorials
+Adobe Status
+Admin Guide
+Creative Cloud for enterprise
+Documentation
+Creative Cloud Learn & Support
+Helpful resources for Creative Cloud for enterprise
+Creative Cloud for enterprise tutorials
+Adobe Status
+Adobe Developer
+Admin guide
+Additional resources
+Cross-cloud resources
+Experience League events
+Adobe Status
+Adobe Developer
+Enterprise admin guide
+Software distribution
+Enablement and administration resources
+CX Enterprise administration
+Adobe Enterprise and Teams: Administration Guide
+Learn and support resources
+CX Enterprise Release Notes
+Tutorials
+Playlists
+Events
+Certification
+Community Forum
+Support
+
+===== https://partners.adobe.com/digitalexperience/
+TITLE: Home | Digital Partner Experience Program
+ACCESSED: 2026-09-28
+
+#F8F8F8
+ADOBE PARTNER PROGRAM
+Unlock value with partners
+Join the Adobe Digital Experience Partner Program to grow your business and deliver personalized, seamless customer experiences. Gain access to Adobe’s tools, training, and collaboration to innovate, integrate scalable solutions, and drive success. Ready to lead in digital transformation? Let’s make it happen—together.
+Learn more
+https://main--da-dx-partners--adobecom.aem.page/eds/partners-shared/fragments/product-overview/notification
+#121212
+Grow your business by partnering with Adobe!
+Get a sneak peek of how our unified partner program and reimagined Partner Experience Hub can help you establish and strengthen your Adobe business.
+Watch now
+https://main--da-dx-partners--adobecom.aem.live/eds/partners-shared/video/media_12138ed01c99a6872988a6d21fc5163f704cefda6.mp4#autoplay
+style
+xl spacing top,
+static-links
+masonry
+full width
+Gain the knowledge to grow your business
+With diverse learning resources across Adobe products, certifications paths for individual learners, and a wealth of tools and resources, we’ve got what you need to learn, evolve, and succeed.
+On-demand learning.
+Access learning modules and train at your own pace using our library of courses, webinars, and other materials.
+Partner certification and accreditation journeys.
+Choose a credential journey for a personalized step-by-step path that will help you grow your skills.
+Hands-on resources.
+Enhance your skills with access to demo tools and Adobe application sandboxes and downloads.
+style
+m spacing, container
+Close deals with a compelling sales story
+Driving sales in today’s market demands sellers deliver a compelling narrative that resonates with customers, is relevant to their industry, and aligns to their strategic objectives. Partnering with Adobe unlocks access to a vast resource library that help sellers meet the mark.
+Sales Plays.
+Our collection of Sales Plays helps sellers position individual or integrated Adobe applications for sale with a repeatable, standardized, and customer-centric approach.
+Industries.
+Leverage Adobe expertise to sell our applications across verticals with insight into industry-specific trends and use cases to further shape your sales messaging.
+style
+m spacing bottom, container
+Go public with your Adobe partnership
+We want to grow your Adobe business and we prove it with an array of resources and programs to promote your expertise and attract potential clients.
+Specialization.
+Partners can earn Adobe’s stamp of approval after attaining certified technical proficiency. Differentiate your company and highlight your employees’ expertise at the same time.
+Accredited partner solutions.
+Promote your specific Adobe services and offerings.
+Partner marketing resources.
+Locate resources to help you build, design, and deliver your own marketing and lead generation efforts for your organization and your clients.
+style
+m spacing bottom, container
+Gain access to Adobe experts and like-minded peers
+Our partner community grows stronger every year—here, you can network, find events, and grow your business and career.
+Partner events.
+Join partner-centered events in your region, including conferences, workshops, learning programs, and certification prep events.
+Webinars.
+Learn about new product releases, best practices, go-to-market strategies, and everything in between. Webinars occur regularly and are recorded and available on demand.
+Community.
+Join our LinkedIn group, explore forums, ask questions, and stay informed about products and program updates.
+style
+m spacing bottom, container
+https://main--da-dx-partners--adobecom.aem.page/eds/partners-shared/fragments/cta-banner/register-now
+
+===== https://developer.adobe.com/commerce/extensibility/webhooks/
+TITLE: Adobe Commerce Webhooks Overview
+ACCESSED: 2026-09-28
+
+Adobe Commerce Webhooks Overview
+Webhooks enable developers to configure synchronous logic to execute calls to external systems when an Adobe Commerce event triggers. Synchronous calls are required when Commerce needs to compute or validate something immediately (order totals, taxes, payments) using a 3rd-party endpoint and write the result back into Adobe Commerce.
+This process is illustrated in the following diagram.
+Webhook execution always starts with an event occurring in Adobe Commerce. This event can occur from many different types of user flows. For example, an event fires when a shopper adds a product to their shopping cart or an administrator creates a quote.
+The event triggers a real-time call from Commerce to a URL endpoint, such as an Order Management System. This call contains relevant data, such as the Commerce product SKU and requests information from that external system. As an example, the call requests a product's stock status to make sure it is available to be purchased.
+Execution completes by resolving the response from the external system back into the Commerce application. For example, if the external system responds that the product is available, Commerce completes the shopper's action and adds the product to the shopping cart. If the product is not available, the flow is interrupted and an exception is thrown. ("Exception: Product is not in stock"). The shopper cannot add the product to the cart.
+Not all situations are ideal for webhooks. Create a webhook only if synchronous communication with the external server is critical. For many scenarios, asynchronous communication is sufficient, and as a result,
+Adobe I/O Events for Adobe Commerce
+is a better alternative.
+The resolution of a remote call also determines whether to implement a webhook. Webhooks resolve as successful, by throwing an exception, or by modifying the event data payload.
+Use cases
+can help you understand when to implement webhooks.
+Webhook development process
+Use these guidelines to develop your own webhooks:
+Identify the Adobe Commerce event that triggers a webhook. In Adobe Commerce as a Cloud Service (SaaS), you can browse the available events from the Admin by selecting
+System
+> Webhooks >
+Webhooks List
+or using the
+GET /V1/webhooks/supportedList
+REST endpoint
+. In PaaS environments, run the
+bin/magento webhooks:list:all
+command
+to list supported methods and the
+bin/magento webhooks:info <webhook-name>
+command
+to return the payload.
+To make a web call to the external server, gather the requirements. This includes the URL, connection information, headers, and the payload the server expects.
+Create your
+webhook
+. Review the sample
+use cases
+for ideas. Extension developers should place this file in the
+etc
+directory of their custom module. Merchants who want to implement their own webhooks can define them in the system
+app/etc/webhooks.xml
+file.
+Test
+your webhook and interpret the
+response
+.
+
+===== https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/
+TITLE: Adobe Commerce Admin UI SDK overview
+ACCESSED: 2026-09-28
+
+Adobe Commerce Admin UI SDK overview
+The Adobe Commerce Admin UI SDK enables an App Builder developer to extend the
+Commerce Admin
+to include custom menus and pages. These Admin customizations were traditionally defined in a PHP module. The principles of Out-of-Process development require a more modern approach. The Admin UI SDK provides the merchant with the means to use the Admin to configure and interact with an app developed in App Builder.
+Many types of apps use this SDK. It represents a one-to-many approach for supporting Out of Process UI Extensibility. Application developers, internal adopters, and merchants using Out of Process Extensibility no longer have to rely on purely headless applications. Instead, they can now build and use secure and authenticated UIs directly from the Commerce Admin panel.
+Architecture
+The following diagram shows the architecture of the Admin UI SDK.
+The SDK contains two main components that are necessary for development:
+The
+CommerceBackendUix
+module is a traditional in-process Commerce PHP module that allows Out of Process extensions to inject menus and pages into the Admin.
+uix
+defines a React app that renders the custom Admin content.
+Adobe Identity Management Service (IMS)
+manages authentication. The merchant adds their IMS org information into a configuration panel in Commerce. Once this information is added, the merchant's App Builder app can securely communicate with the merchant's instance and render the app UI.
+The following sequence diagram illustrates the authentication process in V2.
+In V1, the sequence is as follows:
+Code samples
+The
+Adobe Commerce Samples repository
+contains samples for different extension points of the Adobe Commerce Admin UI SDK. Use these samples to learn how the Admin SDK injects menus and pages into the Admin.
+Admin UI SDK and Adobe Extensions
+Adobe App Builder supports
+extensions
+, which allow developers to integrate their applications with specific Adobe products. Extensions act as a bridge between Adobe products and the applications built using Adobe App Builder. As a result, these applications can be easily integrated and extended within Adobe's ecosystem.
+The Admin UI SDK supports only the
+extensions
+type. An App Builder project using an
+application
+configuration should be
+migrated
+to use an
+extensions
+configuration linked to the
+commerce/backend-ui/1
+extension point ID.
+
+===== https://developer.adobe.com/graphql-mesh-gateway/
+TITLE: Overview - API Mesh for Adobe Developer App Builder
+ACCESSED: 2026-09-28
+
+data-src=includes/update-notice.md
+data-slots=image, heading, text
+API Mesh for Adobe Developer App Builder
+API Mesh for Adobe Developer App Builder is an orchestration layer that enables developers to seamlessly integrate private and third-party APIs with Adobe products and APIs.
+API Mesh allows developers to combine multiple data sources into a single, queryable GraphQL endpoint.
+GraphQL
+allows you to determine the information the response contains, unlike REST APIs, which have fixed response formats.
+By serving multiple sources through a single gateway and providing customized responses, API Mesh creates a better user experience for accessing your backend services.
+Features
+Adobe API Manager
+- A reverse proxy that accepts most API calls for many backend services
+Configurable Integrations
+- Low/No-code method to integrate with your own private APIs with Adobe Commerce, other Adobe products, and third-party APIs
+Backward Compatibility
+- Preserve existing APIs while gradually adopting new ones
+Extensibility
+- Customize and extend your APIs directly in the gateway without making changes to the API source
+Advanced Security
+- Web application firewall (WAF) and distributed denial-of-service (DDoS) protection for all your APIs
+Related information
+Use the following sections to learn more about the API Mesh and extensibility at Adobe.
+data-slots=link, text
+API Mesh for Adobe Developer App Builder
+Allows developers to integrate private and third-party APIs and other software interfaces with Adobe Commerce and other Adobe products using Adobe IO.
+data-slots=link, text
+App Builder
+Is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+data-slots=link, text
+Adobe I/O Events for Adobe Commerce
+Makes Commerce transactional data available to App Builder using Adobe I/O. You can define the events to transmit data each time an event triggers, or only under circumstances defined within configuration rules.
+Join the conversation
+Join the
+#commerce-api-mesh-community
+Slack channel to ask questions, share your work, and connect with other developers interested in API Mesh.
+Contributing to this documentation
+We encourage you to participate in our open documentation initiative. If you have suggestions, corrections, additions, or deletions for this documentation, check out the source on
+GitHub
+and open a pull request.
+
+===== https://developer.adobe.com/commerce/php/module-reference/
+TITLE: Module Reference | Commerce PHP Extensions
+ACCESSED: 2026-09-28
+
+Module Reference | Commerce PHP Extensions
+Introduction
+The Module Reference contains brief descriptions for modules of the Adobe Commerce v2.4.9. All module topics are generated from the corresponding README file of the module.

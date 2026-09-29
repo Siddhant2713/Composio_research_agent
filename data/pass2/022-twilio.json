@@ -1,0 +1,214 @@
+{
+  "app": "Twilio",
+  "number": 22,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:56:05.683074+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.twilio.com/docs\",\n    \"https://www.twilio.com/try-twilio\",\n    \"https://console.twilio.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://twilio.com",
+    "https://www.twilio.com/docs",
+    "https://www.twilio.com/try-twilio",
+    "https://console.twilio.com/",
+    "https://docs.twilio.com/",
+    "https://developer.twilio.com/",
+    "https://developers.twilio.com/",
+    "https://api.twilio.com/",
+    "https://twilio.com/docs",
+    "https://twilio.com/developers",
+    "https://twilio.com/api",
+    "https://twilio.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+    "https://www.twilio.com/login",
+    "https://www.twilio.com/en-us/help/sales",
+    "https://www.twilio.com/en-us/user-authentication-identity",
+    "https://www.twilio.com/en-us/user-authentication-identity/verify",
+    "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+    "https://www.twilio.com/docs/verify/quickstarts",
+    "https://www.twilio.com/en-us/pricing",
+    "https://www.twilio.com/en-us/partners",
+    "https://www.twilio.com/docs/salesforce",
+    "https://www.twilio.com/en-us/support-plans",
+    "https://www.twilio.com/docs/lookup/quickstart",
+    "https://developers.twilio.com/conferences/ed297cfd920f/conference_registrations/verify_email_registered"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://console.twilio.com/",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.twilio.com/",
+      "reason": "page too thin (43 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://www.twilio.com/login",
+      "reason": "page too thin (6 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.twilio.com/en-us",
+      "requested_url": "https://twilio.com",
+      "status": 200,
+      "title": "Conversational AI and APIs for SMS, Email, Voice | Twilio",
+      "chars": 4985,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/docs",
+      "requested_url": "https://www.twilio.com/docs",
+      "status": 200,
+      "title": "Docs: API Reference, Tutorials, and Integration | Twilio",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://login.twilio.com/u/signup?state=hKFo2SB3WjZNVWg1Mmx1Yk10ZG9nRTF4ZmlEUExKUG9FVVlaZKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIG1RM2xHTE5ScGFjdjlidC1oVXpDUkh0TE1HQktSWFFZo2NpZNkgYm1pSTNGWGZzSmxqUEk3UzBUeWl3Znp3S1JsTEFrVnc",
+      "requested_url": "https://www.twilio.com/try-twilio",
+      "status": 200,
+      "title": "Twilio | Try Twilio Free",
+      "chars": 458,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.twilio.com/series/twilio-developers-hub/landing_page",
+      "requested_url": "https://developers.twilio.com/",
+      "status": 200,
+      "title": "Twilio Hub",
+      "chars": 1386,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+      "status": 200,
+      "title": "Lookup API Pricing | Twilio",
+      "chars": 3555,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/help/sales",
+      "requested_url": "https://www.twilio.com/en-us/help/sales",
+      "status": 200,
+      "title": "Talk to Sales | Twilio",
+      "chars": 1339,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "status": 200,
+      "title": "User Authentication & Identity | Twilio",
+      "chars": 4985,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+      "status": 200,
+      "title": "Verify API | Twilio",
+      "chars": 4985,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Twilio provides developer APIs and communication building blocks for messaging, voice, email, and authentication, using Account SID and Auth Token credentials.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses an Account SID and Auth Token to authenticate API calls via helper libraries or HTTP.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free trial with no credit card required and obtain API access immediately.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\",\n      \"C# / .NET\",\n      \"PHP\",\n      \"Ruby\"\n    ],\n    \"notes\": \"Provides REST APIs and official server-side helper libraries/SDKs for multiple languages.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://www.twilio.com/en-us/user-authentication-identity\",\n    \"notes\": \"Mentions securing AI agent and Model Context Protocol (MCP) workflows by granting scoped access to agents acting on behalf of users.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.twilio.com/en-us\",\n      \"claim\": \"Sign up is self-serve with free trials and no credit card required.\",\n      \"quote\": \"Free trial\\nNo credit card required\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/en-us\",\n      \"claim\": \"API calls are authenticated using an Account SID and Auth Token.\",\n      \"quote\": \"account_sid = os.environ['TWILIO_ACCOUNT_SID']\\nauth_token = os.environ['TWILIO_AUTH_TOKEN']\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/en-us/user-authentication-identity\",\n      \"claim\": \"The platform supports Model Context Protocol (MCP) workflows.\",\n      \"quote\": \"Secure AI agent and MCP workflows by granting scoped access to agents acting on behalf of users.\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/en-us/help/sales\",\n      \"claim\": \"Full API access with generous free usage tiers is available without contacting sales.\",\n      \"quote\": \"Full API access with generous free usage tiers\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://www.twilio.com/en-us\",\n      \"quote\": \"account_sid = os.environ['TWILIO_ACCOUNT_SID']\\nauth_token = os.environ['TWILIO_AUTH_TOKEN']\"\n    },\n    \"access\": {\n      \"url\": \"https://www.twilio.com/en-us/help/sales\",\n      \"quote\": \"Full API access with generous free usage tiers\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://www.twilio.com/en-us\",\n      \"quote\": \"Sign up for a free Twilio account and grab one of our official server-side SDKs to get started.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://www.twilio.com/en-us/user-authentication-identity\",\n      \"quote\": \"Secure AI agent and MCP workflows by granting scoped access to agents acting on behalf of users.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint_url": "https://twilio.com",
+    "one_liner": "Twilio provides developer APIs and communication building blocks for messaging, voice, email, and authentication, using Account SID and Auth Token credentials.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses an Account SID and Auth Token to authenticate API calls via helper libraries or HTTP."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free trial with no credit card required and obtain API access immediately."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": [
+        "Python",
+        "C# / .NET",
+        "PHP",
+        "Ruby"
+      ],
+      "notes": "Provides REST APIs and official server-side helper libraries/SDKs for multiple languages."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "notes": "Mentions securing AI agent and Model Context Protocol (MCP) workflows by granting scoped access to agents acting on behalf of users."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.twilio.com/en-us",
+        "claim": "Sign up is self-serve with free trials and no credit card required.",
+        "quote": "Free trial\nNo credit card required",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.twilio.com/en-us",
+        "claim": "API calls are authenticated using an Account SID and Auth Token.",
+        "quote": "account_sid = os.environ['TWILIO_ACCOUNT_SID']\nauth_token = os.environ['TWILIO_AUTH_TOKEN']",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.twilio.com/en-us/user-authentication-identity",
+        "claim": "The platform supports Model Context Protocol (MCP) workflows.",
+        "quote": "Secure AI agent and MCP workflows by granting scoped access to agents acting on behalf of users.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.twilio.com/en-us/help/sales",
+        "claim": "Full API access with generous free usage tiers is available without contacting sales.",
+        "quote": "Full API access with generous free usage tiers",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://www.twilio.com/en-us",
+        "quote": "account_sid = os.environ['TWILIO_ACCOUNT_SID']\nauth_token = os.environ['TWILIO_AUTH_TOKEN']"
+      },
+      "access": {
+        "url": "https://www.twilio.com/en-us/help/sales",
+        "quote": "Full API access with generous free usage tiers"
+      },
+      "api_surface": {
+        "url": "https://www.twilio.com/en-us",
+        "quote": "Sign up for a free Twilio account and grab one of our official server-side SDKs to get started."
+      },
+      "mcp": {
+        "url": "https://www.twilio.com/en-us/user-authentication-identity",
+        "quote": "Secure AI agent and MCP workflows by granting scoped access to agents acting on behalf of users."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:56:29.229024+00:00"
+}

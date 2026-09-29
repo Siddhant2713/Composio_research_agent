@@ -1,0 +1,93 @@
+{
+  "app": "Pinterest",
+  "field": "mcp.exists",
+  "why_this_example": "Pass 1 asserted this value without being held to a line on the page. Pass 2 had to quote a line and have it verified against the fetched text, which changed the answer. Selected from the wrong->right shortlist and then checked by hand against the source page.",
+  "pass1": {
+    "answer": true,
+    "notes": "Pinterest MCP is mentioned as on the way / build faster with the Pinterest MCP.",
+    "evidence_urls": [
+      "https://developers.pinterest.com",
+      "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "https://developer.pinterest.com/"
+    ],
+    "judge_verdict": "yes",
+    "judge_problem": null,
+    "raw_model_output": "{\n  \"one_liner\": \"Pinterest API for integrating organic content, ads, product catalogs, conversions, and analytics.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Build a working authentication flow based on OAuth 2. Product limited tokens are also available for testing once approved for trial access.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Requires creating a business account, accepting developer terms, and submitting a request for trial access which is reviewed each business day.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\"\n    ],\n    \"notes\": \"The API supports managing content, ads, shopping catalogs, conversions, and analytics. A Python SDK is mentioned.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Pinterest MCP is mentioned as on the way / build faster with the Pinterest MCP.\"\n  },\n  \"buildability\": {\n    \"verdict\": \"moderate\",\n    \"reasoning\": \"Access requires manual application review for trial access (gated tier), but once approved, authentication uses standard OAuth 2 and there is documentation and a Python SDK.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.pinterest.com\",\n      \"claim\": \"Pinterest API provides use cases for tracking conversions, creating content, building and managing ads, managing product catalogs, and analyzing Pinterest data.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"App creation requires submitting an application request for trial access which is reviewed each business day, and authenticating via OAuth 2.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"The SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.\"\n    },\n    {\n      \"url\": \"https://developer.pinterest.com/\",\n      \"claim\": \"Pinterest API allows users to securely plan content, manage ads, upload product feeds, and more.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}"
+  },
+  "pass2": {
+    "answer": false,
+    "notes": "Pinterest MCP is noted as 'on the way' with no functioning MCP server currently available.",
+    "verified_support": {
+      "url": "https://developers.pinterest.com",
+      "quote": "Pinterest MCP is on the way"
+    },
+    "unsupported_fields": [],
+    "judge_verdict": "yes",
+    "judge_supporting_line": "Pinterest MCP is on the way",
+    "raw_model_output": "{\n  \"one_liner\": \"Pinterest developer platform providing APIs to plan content, manage ads, upload product feeds, track conversions, and ingest analytics data.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Uses OAuth 2.0 for standard API requests, and also supports product-limited tokens for trial testing after approval.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Requires registering app details via a request form that is reviewed each business day for trial access approval.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\"\n    ],\n    \"notes\": \"REST API and Python SDK are mentioned for campaign management and general integration.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"Pinterest MCP is noted as 'on the way' with no functioning MCP server currently available.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.pinterest.com\",\n      \"claim\": \"Pinterest offers an API to plan content, manage ads, upload product feeds, and analyze data.\",\n      \"quote\": \"Securely plan content, manage ads, upload product feeds, and more.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"Application requests are reviewed and trial access is required.\",\n      \"quote\": \"Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"Authentication uses OAuth 2.\",\n      \"quote\": \"Build a working authentication flow based on OAuth 2\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"claim\": \"A Python SDK is available.\",\n      \"quote\": \"Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.\"\n    },\n    {\n      \"url\": \"https://developers.pinterest.com\",\n      \"claim\": \"Pinterest MCP is coming soon.\",\n      \"quote\": \"Pinterest MCP is on the way\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"quote\": \"Build a working authentication flow based on OAuth 2\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"quote\": \"Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.pinterest.com/docs/getting-started/connect-app/\",\n      \"quote\": \"Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://developers.pinterest.com\",\n      \"quote\": \"Pinterest MCP is on the way\"\n    }\n  },\n  \"confidence\": \"high\"\n}"
+  },
+  "other_candidates": [
+    {
+      "app": "Pipedrive",
+      "field": "mcp.exists",
+      "from": null,
+      "to": true
+    },
+    {
+      "app": "Gorgias",
+      "field": "access.tier",
+      "from": "unknown",
+      "to": "self_serve"
+    },
+    {
+      "app": "Pinterest",
+      "field": "buildability.verdict",
+      "from": "moderate",
+      "to": "hard"
+    },
+    {
+      "app": "Pinterest",
+      "field": "access.tier",
+      "from": "gated",
+      "to": "gated"
+    },
+    {
+      "app": "NotebookLM",
+      "field": "access.tier",
+      "from": "self_serve",
+      "to": "self_serve"
+    },
+    {
+      "app": "Salesforce",
+      "field": "buildability.verdict",
+      "from": "easy",
+      "to": "unknown"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "field": "mcp.exists",
+      "from": null,
+      "to": null
+    },
+    {
+      "app": "GoHighLevel",
+      "field": "mcp.exists",
+      "from": null,
+      "to": null
+    },
+    {
+      "app": "Squarespace",
+      "field": "access.tier",
+      "from": "mixed",
+      "to": "self_serve"
+    },
+    {
+      "app": "Fathom",
+      "field": "access.tier",
+      "from": "unknown",
+      "to": "self_serve"
+    }
+  ],
+  "generated_at": "2026-09-28T18:59:04.256630+00:00"
+}

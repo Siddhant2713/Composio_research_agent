@@ -1,0 +1,805 @@
+===== https://www.gladly.ai/
+TITLE: Agentic commerce platform built for top brands | Gladly
+ACCESSED: 2026-09-28
+
+Commerce AI for every customer moment.
+Get a Demo
+Try it yourself
+Wherever their journey leads.
+Trusted by the brands customers love
+Every journey starts with a question. Where are your customers finding their answers?
+Gladly AI
+01
+.
+Guides
+02
+.
+Remembers
+03
+.
+Unifies
+04
+.
+Keeps
+05
+.
+Converts
+06
+.
+Controls
+Not all agentic commerce is equal
+The store associate your website never had.
+Today's shopper won't spend without a little help: will it fit, is it worth it, what pairs with it. Gladly answers on the spot and walks them to the right product, right on the page.
+Conversational Commerce
+It knows your shopper.
+Most website AI forgets who it's talking to the moment the page reloads. Gladly recognizes the shopper and what they care about, so the help feels personal from the first message and the recommendations are ones they'll want.
+Lifelong Customer Memory
+Everyone else needs two bots.
+A shopping AI can't handle the return. A service bot can't help you buy. So brands bolt one beside the other and leave the customer guessing which box to talk to. Gladly is a single AI across the entire relationship, so a shopper is never dumped onto a different bot, a different tone, or a dead end.
+One Platform
+The decision happens on your site.
+Shoppers are taking their questions to ChatGPT and Claude, and the sale walks out with them. Gladly brings that conversation onto the site you own, so discovery, the purchase, and the customer stay with you.
+Conversational Commerce
+Help that pays for itself.
+When shoppers get a real answer at the moment of decision, they buy. You convert more of the high-intent traffic you already paid to bring in, and check them out inside the conversation.
+The Customer Journey Doesn't Stop
+Tuned by your team, in minutes.
+Your ecommerce team sets what it recommends, how it guides, and when things change. No engineers, no tickets, no rebuild.
+AI Observability
+01
+.
+Gladly AI
+Guides
+02
+.
+Gladly AI
+Remembers
+03
+.
+Gladly AI
+Unifies
+04
+.
+Gladly AI
+Keeps
+05
+.
+Gladly AI
+Converts
+06
+.
+Gladly AI
+Controls
+Simply powerful
+Every capability to sell, serve, and grow, in one seamless workflow.
+One thread, never resets
+Voice AI, minus the pause
+All you need to trust AI
+One brain, every surface
+AI and teams, together
+Every chat, more revenue
+Sharper every week
+Keeping your AI on track
+Helped by name, not number
+One thread, never resets
+Every chat, more revenue
+Voice AI, minus the pause
+Sharper every week
+All you need to trust AI
+Keeping your AI on track
+One brain, every surface
+Helped by name, not number
+AI and teams, together
+Get a Demo
+The #1 Agentic Commerce Platform
+Agile by design.
+Gladly is the only retail-trained AI Commerce solution for the modern customer journey. Sell, serve, and support customers - all from the same chat.
+Ideal Outcome
+Quicker conversion
+Larger orders
+Brand Voice
+On-brand and polished
+Casual and playful
+Switch On
+Recommend items that pair well
+Follow up via SMS if customer bounces
+How Hard It Works the Sale
+How assertively it sells
+How many products it puts forward
+How readily it offers a discount
+Gladly Commerce Agent
+Here's the impact at a glance
++19%
+Higher Conversion
++$34
+Bigger Average Order
+41%
+Carts Saved
+4.8★
+Happier Customers
+One experience. Every customer.
+Design it once. Gladly delivers it at scale, without the feeling of scale.
+Customer Profile
+Every conversation starts with the whole person.
+Conversation History
+Every past chat, call, and email, threaded across all channels.
+Live Journey Context
+What they're browsing, what's in cart, where they're headed.
+Test
+Activate
+Activated
+Try it now
+Where Gladly Wins
+Brands like yours. Outcomes like these.
+The proof is in the numbers - and the brands behind them are ones you already know.
+Read More Customer Stories
++35%
+How MaryRuth’s doubled order volume while improving team efficiency by 35%.
+Learn More
+33%
+How Rothy’s lean team shrunk conversation times by 33% while holding a 93% CSAT score.
+Learn More
++120%
+How KÜHL’s service agents generated more than 120% more revenue per call.
+Learn More
++18
+How Condé Nast unified and accelerated revenue for 18 iconic brands with one CX platform.
+Learn More
+-29%
+How Deckers Brands cut customer wait times by 29% and doubled agent productivity.
+Learn More
+Up within hours. Smarter every day.
+Most AI rollouts take six months to ship and plateau six weeks after. Gladly inverts both. See for yourself.
+Get a Demo
+
+===== https://developer.gladly.com
+TITLE: Main Home - Gladly Developer
+ACCESSED: 2026-09-28
+
+App Platform
+Build integrations with external systems to take action and
+                    retrieve data.
+Learn more
+REST API
+Integrate seamlessly with Gladly by enabling a connector,
+                    calling Gladly's REST APIs, or implementing the Lookup
+                    API to provide data from your own services.
+Learn more
+Chat SDK
+Embed Chat SDK in your website or app to let customers
+                    search for answers or contact your customer service team.
+Web
+iOS
+Android
+Help Center
+Help your customers help themselves. Use this reference to
+                    configure the answers your customers see on your Help
+                    Center, styled the way you want it.
+Learn more
+Tutorials
+Learn how to use our APIs to automate popular workflows
+                           ranging from exporting conversation data out of Gladly to
+                           building integrations with 3rd party providers.
+Learn more
+Code Examples
+Explore sample code and reference implementations for
+                           Gladly's APIs, webhooks, and platform tools.
+App Platform Tools
+App Platform Examples
+REST API Examples
+Webhook Examples
+Web Chat SDK Examples
+
+===== https://www.gladly.ai/integrations/
+TITLE: Customer service integrations | Gladly
+ACCESSED: 2026-09-28
+
+Gladly apps and integrations
+Gladly is even more powerful when it’s connected to your entire tech stack.
+By unifying data from the leading ecommerce, subscriptions, and order management platforms, Gladly powers every experience with a complete view of the customer. The result: radically efficient service that feels radically personal.
+Explore our ready-to-install apps below, see how it all comes together in our
+interactive demo
+, or discover how you can easily build custom integrations with our App Platform.
+Sort by
+Featured Partners
+A-Z
+Filter by
+All Apps
+AI & Human Assistance
+AI & Chatbots
+Customer Data Platform
+Subscriptions
+Customer Loyalty
+Event Bus
+Reverse ETL
+Returns
+ETL
+Shipping
+Customer Insights
+Featured Partners
+E-Commerce
+Forms
+Customer Satisfaction
+Order Management
+Marketing
+Workforce Management & Productivity
+Assembled Workforce Management
+Smarter staffing and new visibility into support operations.
+Learn more
+MaestroQA
+Identify issues, coach agents, and measure impact.
+Learn more
+Medallia
+Get customer feedback to increase customer satisfaction
+Learn more
+Playvox Workforce Management (WFM)
+Make smarter staffing decisions with Gladly data
+Learn more
+Simplesat
+Send CSAT, CES, NPS and 5-stars surveys.
+Learn more
+AWS EventBridge
+Design rules and custom workflows for the real-time routing of your data
+Learn more
+Ada Support Inc.
+Live-chat handoff from AI chatbot to agents
+Learn more
+AfterShip
+AI-powered returns and order tracking
+Learn more
+AgentsOnly
+Transforming CX with AI & 20,000 top agents
+Learn more
+Aircall
+A cloud-based call center software that integrates with CRM, productivity, and helpdesk tools.
+Learn more
+Amazon Connect
+Automated calls & chatbots for easy, enhanced customer interactions.
+Learn more
+Attentive
+AI-powered SMS and email marketing
+Learn more
+BigCommerce
+Pull customer and purchase history details
+Learn more
+Calabrio
+Evaluate and improve agent performance
+Learn more
+Corso
+Manage shipping, returns and warranty claims all within your Gladly workflow.
+Learn more
+Delighted
+Pull in customer product feedback
+Learn more
+Emplifi
+Drive customer reviews with targeted programs
+Learn more
+Endear
+Scale support with always-on agents
+Learn more
+Fivetran
+The automated data movement platform
+Learn more
+Flip
+Flip your phone channel into a modern Voice experience. Squash support issues. Wow your customers.
+Learn more
+Formspree
+Send form submissions directly to Gladly
+Learn more
+Formstack
+Brand forms and route them directly to Gladly
+Learn more
+Hark
+Voice of Customer that does more than “check the box”
+Learn more
+HiOperator
+Scalable. US-based. Effortless Customer Service.
+Learn more
+HighTouch
+Sync data from your warehouse to Gladly
+Learn more
+Idiomatic
+Customer intelligence software.
+Learn more
+JIRA
+Brings teams together to reach the next level of productivity with AI agents that orchestrate, plan, and track projects at scale.
+Learn more
+Jotform
+No-code form builder for data collection and automation
+Learn more
+KODIF.ai
+Conversational AI, Workflow Automation, and Co-pilot
+Learn more
+Klaviyo
+Control marketing engagement based on the customer experience
+Learn more
+Linc
+Customer experience automation solutions
+Learn more
+Loop
+Seamlessly view and resolve customer returns with Gladly’s pre-built Loop integration
+Learn more
+Magento
+Pull customer and purchase history details
+Learn more
+Medallia Agent Connect
+Get customer feedback to increase customer satisfaction
+Learn more
+Messenger
+Support customers via Facebook Messenger
+Learn more
+Narvar
+Post-purchase experience and order tracking
+Learn more
+Netomi
+Truly intelligent multichannel AI that auto-resolves customer inquiries
+Learn more
+Okendo
+Builds connections between consumers and the brands they love.
+Learn more
+Optimizely / Zaius
+AI-driven digital experience optimization
+Learn more
+Ordergroove
+An Effortless Subscription Experience
+Learn more
+Qualtrics
+Capture in-the-moment customer insights.
+Learn more
+Recharge
+Simplify subscription management
+Learn more
+Recurly
+Seamless, AI-powered subscription management
+Learn more
+ReturnLogic
+Returns management and operations for scaling eCommerce brands.
+Learn more
+Salesforce
+Global cloud computing company that develops CRM solutions and provides business software on a subscription basis.
+Learn more
+ScreenMeet
+Cobrowse, screen share, video chat and remote support
+Learn more
+Segment – Source
+Send valuable customer data
+Learn more
+SentiSum
+Analyze tickets for customer sentiment trends
+Learn more
+Shiphero
+AI-powered instant customer support for seamless order tracking and updates
+Learn more
+Shipmonk
+3PL for DTC, B2B, and retail fulfillment, specializing in the facilitation of sustained growth for ecommerce brands
+Learn more
+Shipped Suite
+Streamline the shipment issue resolution process
+Learn more
+Shopify
+Pull customer and purchase history details
+Learn more
+Siena
+Empathic AI customer service that's almost human
+Learn more
+Simplr
+Scale support with always-on agents
+Learn more
+Skio
+Learn more about Gladly’s Skio integra
+
+===== https://help.gladly.com
+TITLE: Gladly Help and Product Docs
+ACCESSED: 2026-09-28
+
+How can we help you?
+Comprehensive Gladly documentation to set you up for success. Select a version to search our help and product documentation.
+Implementation
+Product Documentation
+Developer Tutorials
+Ask me a question
+CTRL + K
+Press CTRL + K to open search
+Additional resources
+Find a range of resources, including developer, eLearning courses, and the latest and product updates from Gladly.
+Developer
+REST APIs, SDKs, and more.
+Visit Developer
+Academy
+Certification and courses for CX practitioners, enthusiasts, and aficionados.
+Visit Connect Learning
+Release Notes
+Learn the latest and greatest from Gladly.
+Visit Release Notes
+Popular Topics
+Reports and Insights
+Get the data you need to make business decisions with Gladly Reports and Insights.
+Gladly (AI)
+Leverage AI to enhance support across channels and improve service efficiency.
+AI Features for Agents
+Discover how AI enables agents to communicate more effectively.
+Work in Gladly (By Role)
+Learn how to use Gladly tools and features based on your role.
+Integrations
+Effortlessly integrate with top platforms in eCommerce, subscriptions, and order management systems.
+Recently Created Articles
+AI Sessions Overview
+Ordergroove Installation
+Set Up ChannelReply Integration
+Repairshopr on App Platform Overview
+Repairshopr App Platform Installation
+Recently Modified Articles
+September Releases
+AI Sessions List (Legacy View)
+AI Sessions Overview
+Ordergroove Installation
+Ordergroove on App Platform Overview
+Most Viewed Articles
+Why do I keep getting errors when sending an email?
+Product Docs
+Add and Deactivate Users
+Why do I see multiple routing events called “Agent browser telephony connection failed?”
+July Releases
+Check out our video tutorials to understand and effectively utilize Gladly features.
+Learn about People Match for routing
+Gladly Insights Dashboard
+How to close your phones
+More Videos
+
+===== https://www.gladly.ai/contact/
+TITLE: Contact Gladly: schedule a demo or talk to sales | Gladly
+ACCESSED: 2026-09-28
+
+Contact Sales
+Our Gladly team is excited to learn more about you, your company, and the potential opportunity to partner together.
+Fill out the form below to schedule an introductory call.
+Looking to partner with Gladly?
+Let’s work together to transform customer service
+Build personal relationships that drive revenue with Gladly.
+Join the most beloved brands building lifelong loyalty.
+Need to talk?
+Contact support
+Press related inquiries
+Help center
+
+===== https://www.gladly.ai/partner/
+TITLE: Join the Gladly Partner program | Gladly
+ACCESSED: 2026-09-28
+
+Become a Gladly partner
+Our partner program is designed to empower a diverse range of professionals focused on elevating customer engagement.
+Become a partner
+Why partner with Gladly?
+The Gladly Partner Program helps you transform customer experiences while growing your business. Refer, implement, or integrate Gladly to unlock revenue opportunities and access exclusive perks like expert support, co-marketing opportunities with our GTM team.
+Perfect for BPOs, Solution Providers, Agencies, and Cloud Service Providers.
+Join our Gladly partner network
+Make a referral to Gladly
+Partnering made easy
+Join a community dedicated to revolutionizing customer support. Together, we can empower businesses to build lasting customer relationships.
+Referral partners
+Bring in top leads, work hand-in-hand with our sales team to seal the deal, and enjoy generous referral fees tied to first-year subscription revenue.
+Technology alliance partners
+Use our API to create tailored solutions, improve tools with integrations, highlight joint success stories, and partner with leaders like Shopify, Twilio, and Microsoft.
+Referral partners
+Bring in top leads, work hand-in-hand with our sales team to seal the deal, and enjoy generous referral fees tied to first-year subscription revenue.
+Technology alliance partners
+Use our API to create tailored solutions, improve tools with integrations, highlight joint success stories, and partner with leaders like Shopify, Twilio, and Microsoft.
+Help us connect with businesses that can benefit from Gladly.
+Submit a referral
+Discover Gladly Apps and Integrations
+Seamlessly connect with leading platforms and easily build custom integrations to maximize your Gladly experience and help your team achieve more.
+See our integrations
+Step into the Gladly Partner network.
+
+===== https://www.gladly.ai/conversational-ai-for-sales/
+TITLE: Conversational AI for sales across discovery and checkout | Gladly
+ACCESSED: 2026-09-28
+
+Put your best salesperson back on your website.
+Gladly understands what each shopper wants and guides them from discovery to checkout in one conversation, using retail intelligence and customer context to turn your site into a new sales channel.
+Get a Demo
+Retail brands selling through conversation
+01
+Problem / Solution
+Going online cost brands their best salesperson. The usual fix just bolts on a second chatbot.
+←
+All
+A search box can’t sell. A bolt-on shopping bot can’t stay.
++
+When retail moved online, the associate who greeted you and walked you to the right thing got replaced by a search box, filters, and endless scroll. Conversion has sat at 2 to 5% ever since. The fix on offer makes it worse: a shopping bot stapled onto the catalog that disappears the moment the sale closes, sitting next to a separate service bot that was never built to sell. Now the shopper has two bots on one site and has to guess which one to type into. Nobody asked for that shopping experience.
+One conversation that sells, serves, and remembers.
++
+Gladly is the single conversation a shopper has with the brand, before the purchase and long after it. It greets them, understands what they want, recommends from real retail knowledge and their own history, and closes the sale right in the thread, with a human associate one tap away for the high-stakes buy. Because it trained on 450 million retail conversations, it knows which products come back and what keeps a customer happy months later, so it sells for the second and third purchase, for the whole relationship. And the shopper it helps today is the customer it already knows tomorrow, on one record, across the whole relationship.
+The Problem
+02
+Proof by Volume
+Agentic commerce leads to a 2.2x increase in revenue per conversation.
+450 million retail conversations. Trained to help a shopper find the right thing.
+$15M
+15M in revenue from chat alone.
+20%+
+20%+ purchase rate following a contact with an agent.
+120%
+120% increase in upsells per contact.
+View customer stories
+03
+Capabilities
+Four things Gladly Agentic Commerce can do that your bolt-on salesbot can't.
+←
+All
+Conversational discovery
++
+A shopper types what they actually want, “something warm for a winter trip, under $200,” and Gladly returns the right products with the reasoning behind them, the way an associate would. When a shopper stalls or lingers, it can step in the way a good associate reads the floor.
+It knows the shopper on every visit
++
+Gladly recommends from the customer’s full history, their sizes, their styles, and everything they’ve bought before, across every visit. The second and third purchase start from what it already knows, not a blank slate. A bolt-on sales bot meets every returning shopper as a stranger
+Built to sell what sticks
++
+Trained on 450 million retail conversations, Gladly knows which combinations get returned and what keeps a customer happy long after checkout. It steers shoppers toward the order that lasts, so you build LTV and CSAT, and steer shoppers away from the buy they’d regret and return.
+One conversation, before and after the sale
++
+The same AI that just sold the jacket handles the exchange, the “where is it,” and next month’s sizing question, all in the same thread. No second bot to bolt on. No making the customer guess where to ask. And checkout happens right in the conversation, with no redirect.
+04
+Mechanism walkthrough
+How Gladly turns a shopper into a customer, inside one conversation
+←
+All
+A shopper arrives and starts talking
++
+Gladly greets them and understands what they’re after in their own words, pulling in their history and the brand’s catalog. When a shopper stalls, lingers, or looks ready to bounce, it can offer help before the moment is lost.
+Gladly guides them to the right product
++
+It compares options, answers the sizing and fit questions that stall a purchase, surfaces the reviews that matter, and recommends what fits this shopper and tends to stay bought, drawing on 450 million retail conversations.
+They buy in the conversation, and Gladly remembers them
++
+Checkout happens in the thread, no redirect. From there the same AI handles the delivery question, the return, and the next visit, so discovery flows straight into a lifelong relationship on one record.
+Where Gladly Wins
+Gladly Agentic Commerce in production: what it actually generates
+The proof is in the numbers.
+Read More Customer Stories
++35%
+How MaryRuth’s doubled order volume while improving team efficiency by 35%.
+Learn More
+33%
+How Rothy’s lean team shrunk conversation times by 33% while holding a 93% CSAT score.
+Learn More
++120%
+How KÜHL’s service agents generated more than 120% more revenue per call.
+Learn More
++18
+How Condé Nast unified and accelerated revenue for 18 iconic brands with one CX platform.
+Learn More
+-29%
+How Deckers Brands cut customer wait times by 29% and doubled agent productivity.
+Learn More
+How much revenue could Gladly add to your storefront?
+Current cost per contact
+$
+Average monthly tic
+
+===== https://developer.gladly.com/rest/
+TITLE: Gladly API
+ACCESSED: 2026-09-28
+
+Gladly API
+Gladly API
+(
+1.0
+)
+Download OpenAPI specification:
+Download
+Introducing the Gladly API
+At Gladly, we believe that customer service is best when it's a conversation.
+That means more than just helping customers with one-off questions or issues: it's about making them feel known, valued, and respected for the individuals they are.
+The Gladly API was built to help facilitate those relationships, providing agents with the rich customer context
+they need to deliver seamless experiences that make customers feel like they're more than just a number in a sea of others.
+Overview
+You can integrate easily with Gladly by calling Gladly's
+REST API
+and implementing the
+Lookup API
+to provide data from your own services.
+Some examples of what you do through Gladly APIs include managing customer profile data, interacting with a customer's timeline,
+providing the latest information about a customer's orders, and more.
+REST API
+Clients can access the
+REST API
+via HTTPS at your organization's Gladly domain (e.g.
+https://{organization}.gladly.com
+).
+Resources follow REST semantics and utilize industry-standard HTTP verbs, response codes, and authentication schemes.
+In addition, all responses and payloads are in JSON with consistent error codes and formats.
+Lookup API
+The Gladly
+Lookup API
+allows your organization to provide data services to power the agent's experience with a complete view of your customers'
+information, transactions, and activity. You can provide a web service that implements the Lookup API and Gladly will call it when that data is needed.
+Like the REST API, the Lookup API is specified using REST semantics, and exchanges JSON requests and responses authenticated and signed with secure keys.
+Gladly will perform lookups when certain activities occur within Gladly, such as when a customer's profile is loaded.
+A detailed overview of Lookup Adaptor architecture, requests, resposnes and more can be found
+here
+.
+Testing
+Test the myriad possibilities of the Gladly API in a safe, secure space. We'll enable the Gladly API in a separate sandbox environment, so you can experiment freely without impacting your production environment (or vice versa).
+Your sandbox environment is accessible at
+https://{organization}.gladly.qa
+, where
+organization
+is your company name. For specific API endpoints, see documentation below.
+Getting Started
+Think of this section as getting the keys to unlocking your access to the Gladly APIs.
+First, you'll need to set up an account with the necessary API
+permissions
+.
+With these permissions, you can then go on to create the
+API Token(s)
+you need to access Gladly's API
+resources
+.
+Permissions
+Gladly Administrators can set API permissions on an agent-by-agent basis.
+We'll discuss how this maps to API access in the section on
+authentication
+below.
+To allow a user to create API tokens and access the API:
+Log in to your Gladly instance.
+Open the menu on the top left-hand corner of the page.
+Navigate to
+Settings
+>
+*Users
+Search and click the user profile you wish to give access to.
+You'll see a permission called
+API User
+. Select it, while making sure to keep the user's
+Agent
+role intact.
+Hit
+Save
+to give access.
+We recommend creating a dedicated user to make API calls, whose account won't be used for agent and organization management.
+This will help you with any future audits of API activity vs. agent activity.
+Creating API Tokens
+You must create an API token to access Gladly API resources (see above
+Permissions
+).
+If your profile already has access to the
+API User
+permission, you'll see a menu item titled
+More settings
+. Click
+More settings
+:
+Click
+API Tokens
+, then the
+Create Token
+button on the upper right-hand corner of the page:
+A token will be generated and named, by default,
+New Token
+(though depending on whether you have existing tokens, it may be named New Token 2, or New Token 3, etc.).
+You can rename the token to something more easily referenceable by clicking the name to edit.
+This token will be associated with your agent profile, which we refer to as the API User in this document.
+For security purposes, you'll only see a new token once before you navigate away from the page.
+Replacing/Rotating API Tokens
+Should you lose this token, or wish to rotate your application keys, you can do the following:
+Generate a new token.
+Store the new token in a secure location.
+Delete the old token.
+Update your applications/scripts with the new token.
+Authentication
+BasicAuth
+Gladly API uses token-based
+Basic Authentication
+. API tokens are associated with designated Gladly users.
+To create and use an API token, your user must have the API User permission. An API token can be used to perform any API request without restriction.
+user name
+password
+agent email
+API token
+The credentials must be passed via an
+Authorization
+HTTP header. All requests must be made over HTTPS.
+curl
+-u user@organization.com:
+$GLADLY_API_TOKEN
+\
+https://organization.gladly.com/api/v1/organization
+Security Scheme Type
+HTTP
+H
+
+===== https://developer.gladly.com/chat/
+TITLE: Gladly - Documentation
+ACCESSED: 2026-09-28
+
+Gladly - Documentation
+Gladly
+The Gladly Chat is an embeddable UI element that lives on your website and allows customers to search for
+answers or talk and interact with your team in real-time. The Gladly Chat API enables you to have programmatic
+control of the Gladly Chat.
+JavaScript snippet
+Add the following JavaScript embed code to all your site's pages, preferably at the bottom of the page to avoid
+slowing down the main page content to load. This will load the code that powers the Gladly Chat on your site.
+Note that the fourth argument of the snippet below specifies 'PROD' which enables you to use the latest release of
+the Chat-SDK with your production appId.
+<script>
+  !function(c,n,r,t){if(!c[r]){var i,d,p=[];d="PROD"!==t&&t?"STAGING"===t?"https://cdn.gladly.qa/gladly/chat-sdk/widget.js":t:"https://cdn.gladly.com/chat-sdk/widget.js",c[r]={init:function(){i=arguments;var e={then:function(t){return p.push({type:"t",next:t}),e},catch:function(t){return p.push({type:"c",next:t}),e}};return e}},c.__onHelpAppHostReady__=function(t){if(delete c.__onHelpAppHostReady__,(c[r]=t).loaderCdn=d,i)for(var e=t.init.apply(t,i),n=0;n<p.length;n++){var a=p[n];e="t"===a.type?e.then(a.next):e.catch(a.next)}},function(){try{var t=n.getElementsByTagName("script")[0],e=n.createElement("script");e.async=!0,e.src=d+"?q="+(new Date).getTime(),t.parentNode.insertBefore(e,t)}catch(t){}}()}}
+  (window,document,'Gladly','PROD')
+ </script>
+Initialize
+In order to start the Gladly Chat on your site, you must initialize it after you load the above
+JavaScript embed code.
+Basic Initialization:
+Add the following script tag to your page to automatically initialize the Gladly Chat. This is
+most appropriate if you do not want to take advantage of any Gladly API functionality and just want
+to display a basic widget. The "your-own-id" value can be found in the Settings > Chat page in Gladly under the "Embed Name" column.
+<script>
+ window.gladlyConfig = {
+   appId: 'your-own-id',
+   configurationOverride: {
+     v2: { legacyUI: false }
+   }
+ };
+</script>
+The
+configurationOverride.v2.legacyUI
+option is available for customers using the upgraded Gladly Chat
+widget who want to toggle between the Basic or Enhanced experiences (e.g.: for A/B testing, or to load different experiences on select pages).
+Setting
+legacyUI: false
+loads the
+Enhanced version, while setting
+legacyUI: true
+loads the Basic version. If no value is set, then Gladly will respect the default version selected in Settings > Chat.
+Note that this option is only read when the widget
+loads, so it cannot be toggled while the page is running: on Single-Page Apps, changing it on a
+client-side route change has no effect until the next full page load. The same option can be passed
+to
+Gladly.init()
+, as shown in the Manual Initialization example below.
+Manual Initialization:
+Chat can be manually initialized to get better control over when to display the Chat.
+This could be desirable, for example, if you want to start the Chat from your own button.
+For a more dynamic interaction, Chat exposes an Availability state that allows
+the site to change the behavior depending on if chat is closed or if it's unavailable due to high
+demand.
+The example below initializes the Chat, then checks to see if chat is available and sets
+a class on a button assumed to exist on the page.
+Gladly.init({
+  appId: "your-own-id",
+  configurationOverride: {
+    v2: { legacyUI: false }
+  }
+}).then(function() {
+  // This is called once Chat has been initialized.
+
+  // An element with the id "start-chat" is assumed to be on the page.
+  var startChatButton = document.getElementById('start-chat');
+
+  // An onClick handler can be attached to the "start-chat" element
+  startChatButton.onclick = function() {Gladly.show()};
+
+  // This API call gets the current availability
+  var availablility = Gladly.getAvailability();
+
+  // Setting the availability as the class name on the "start-chat" element,
+  // this allows us to change the look of the button via CSS.
+  startChatButton.setAttribute('class', availablility.toLowerCase());
+
+  // Subscribe to changes in availability, and update the class on the "start-chat" element.
+  Gladly.on('availability:change', function(availablility) {
+    startChatButton.setAttribute('class', availablility.toLowerCase());
+  });
+}).catch(function(error) {
+  // If anything goes wrong when Chat is being initialized, this gets called.
+  console.log('error:', error)
+});
+Browser Support
+The Gladly Chat supports major browsers. For the desktop, we support current + previous major
+versions of Chrome, Firefox, and Safari along with the current version of Microsoft Edge.
+For mobile, we support current + previous major versions of Chrome on Android and iOS and the
+current + previous versions of Safari on iOS.
+Working with Sandbox / Staging Environment
+You can use our sandbox environment to test upcoming Chat-SDK releases or new configuration on your
+staging site. To launch the Gladly Chat on your staging site, fol

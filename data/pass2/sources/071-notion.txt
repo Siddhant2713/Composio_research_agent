@@ -1,0 +1,1192 @@
+===== https://developers.notion.com/guides/get-started/overview
+TITLE: Overview - Notion Docs
+ACCESSED: 2026-09-28
+
+Using Notion API
+Notion connections let you connect your workspace to external tools and automate workflows through code. With the REST API, you can read, create, and update nearly everything in a workspace — pages, databases, users, comments, and more.
+When you create a connection, you define what it can do: which API endpoints it can call, what content it can read or write, and how it authenticates. Each connection gets its own credentials and its own set of permissions.
+What is a Notion connection?
+A Notion
+connection
+— sometimes called an integration — connects your workspace to external apps and tools. That could be a SaaS product, an automation script, or a custom tool you’ve built.
+Connections are added to Notion workspaces and require
+explicit permission
+from users to access Notion pages and databases.
+Create Notion connections that unlock new possibilities for teams.
+Notion already has a
+library
+of connections you can browse. For developers who want to build their own, Notion supports internal connections, public connections, and personal access tokens — all powered by the same REST API.
+Connection types
+Notion supports three authentication models:
+Internal connections
+are scoped to a single workspace and use a static API token. They’re ideal for custom automations and workflows — things like syncing data, sending notifications, or building internal dashboards.
+Public connections
+use OAuth 2.0 for authentication. At creation time, you choose their
+installation scope
+Any workspace
+(any Notion user can install; Marketplace-eligible) or
+Selected workspaces only
+(restricted to workspaces you select; not Marketplace-eligible).
+Personal access tokens (PATs)
+are user-scoped tokens for scripts, CLI workflows, Workers, and tools that should act as one Notion user. A PAT uses the creator’s workspace membership and page permissions. See
+Personal access tokens
+Public connections must undergo a Notion security review before being
+listed on the Marketplace
+. You can create and use a public connection without listing it.
+Comparison
+Feature
+Internal connections
+Public connections
+Personal access tokens
+Best for
+Team-owned automations in one workspace.
+Apps or services used by many Notion users or workspaces.
+User-owned scripts, CLI workflows, Workers, and trusted tools.
+Installation scope
+Single workspace.
+Any workspace, or a specific set of workspaces chosen at creation time. Scope can’t change after creation.
+One user in one workspace.
+User access
+Only members of the workspace where it’s installed.
+Any user in a workspace where the connection is allowed to install.
+The member who created the token.
+Content access
+Granted directly to the connection, not tied to any specific user.
+Users choose which pages to share during the OAuth flow or via the Add connections menu.
+Uses the creator’s Notion permissions; pages do not need to be shared with a bot.
+Authentication
+Static API token.
+OAuth 2.0.
+Static bearer token.
+Looking for SCIM or SAML SSO?
+Enterprise identity management (user provisioning, group management, and Single Sign-On) is covered in Notion’s Help Center, not in these API docs.
+Provision users and groups with SCIM
+SAML SSO configuration
+Shared concepts
+All connection and token types share a few core concepts.
+Capabilities
+Every connection or token has a set of capabilities that control what it can do — read content, update content, insert content, read comments, and more. You configure capabilities when you create a connection or PAT. See the
+Capabilities reference
+for the full list.
+Pages
+Create, update, and retrieve page content.
+Databases
+Manage database, properties, entries, and schemas.
+Views
+Create and configure database views programmatically.
+Data sources
+Manage data sources, properties, entries, and schemas.
+File uploads
+Upload and attach files to pages and databases.
+Comments
+Handle page and inline comments.
+Content queries
+Search through workspace content.
+Users
+Access user profiles and permissions.
+Content access
+Connections must have access to pages and databases before they can interact with them. The mechanism differs by type:
+Internal connections
+can be granted access in two ways: the connection owner can add pages directly from the
+Content access
+tab in the Developer portal, or workspace members can share pages via the
+Add connections
+menu in Notion.
+Public connections
+use the OAuth page picker, where users select which pages to grant access to during the authorization flow.
+Personal access tokens
+use the token creator’s existing Notion permissions. If the creator can access a page in Notion, a PAT with the right capabilities can access it through the API.
+See the
+Internal connections
+Public connections
+, and
+Personal access tokens
+guides for specifics on how content access works for each type.
+Webhooks
+Connections can subscribe to real-time events — like page updates, property changes, and new comments — via webhooks. This allows your connection to react to changes 
+
+===== https://developers.notion.com/reference/intro
+TITLE: Introduction - Notion Docs
+ACCESSED: 2026-09-28
+
+Connections use the API to access Notion’s pages, databases, and users. Connections can connect services to Notion and build interactive experiences for users within Notion. Use the navigation on the left to find details for objects and endpoints used in the API.
+A bearer token is required to interact with the Notion API. Use an installation access token from an internal connection, an OAuth access token from a public connection, or a
+personal access token
+. If this is your first look at the Notion API, begin with the
+Getting started guide
+to learn which connection type to use.
+To work on a specific internal connection without access to its token, confirm that you are an admin in the workspace where the connection was created. Check inside the Notion UI via
+Settings & Members
+in the left sidebar. If you’re not an admin in any of your workspaces, create a personal workspace for free or use a PAT where workspace policy allows it.
+Conventions
+The base URL to send all API requests is
+https://api.notion.com
+. HTTPS is required for all API requests.
+The Notion API follows RESTful conventions when possible, with most operations performed via
+GET
+POST
+PATCH
+, and
+DELETE
+requests on page and database resources. Request and response bodies are encoded as JSON.
+JSON conventions
+Top-level resources have an
+"object"
+property. This property can be used to determine the type of the resource (e.g.
+"database"
+"user"
+, etc.)
+Top-level resources are addressable by a UUIDv4
+"id"
+property. You may omit dashes from the ID when making requests to the API, e.g. when copying the ID from a Notion URL.
+Property names are in
+snake_case
+(not
+camelCase
+or
+kebab-case
+).
+Temporal values (dates and datetimes) are encoded in
+ISO 8601
+strings. Datetimes will include the time value (
+2020-08-12T02:12:33.231Z
+) while dates will include only the date (
+2020-08-12
+)
+The Notion API does not support empty strings. To unset a string value for properties like a
+url
+page property value
+, for example, use an explicit
+null
+instead of
+""
+Code samples & SDKs
+Samples requests and responses are shown for each endpoint. Requests are shown using the Notion
+JavaScript SDK
+, and
+cURL
+. These samples make it easy to copy, paste, and modify as you build your connection.
+Notion SDKs are open source projects that you can install to easily start building. You may also choose any other language or library that allows you to make HTTP requests.
+Pagination
+Endpoints that return lists of objects support cursor-based pagination requests. By default, Notion returns ten items per API call. If the number of items in a response from a support endpoint exceeds the default, then a connection can use pagination to request a specific set of the results and/or to limit the number of returned items.
+Supported endpoints
+HTTP method
+Endpoint
+GET
+List all users
+GET
+List block children
+GET
+List comments
+GET
+Retrieve a page property item
+GET
+List file uploads
+GET
+List data source templates
+GET
+List views
+GET
+Get view query results
+POST
+Query a data source
+POST
+Create a view query
+POST
+Search
+Responses
+If an endpoint supports pagination, then the response object contains the below fields.
+Field
+Type
+Description
+has_more
+boolean
+Whether the response includes the end of the list.
+false
+if there are no more results. Otherwise,
+true
+next_cursor
+string
+A string that can be used to retrieve the next page of results by passing the value as the
+start_cursor
+parameter
+to the same endpoint.
+Only available when
+has_more
+is true.
+object
+"list"
+The constant string
+"list"
+results
+array of objects
+The list, or partial list, of endpoint-specific results. Refer to a
+supported endpoint
+’s individual documentation for details.
+type
+"block"
+"comment"
+"data_source"
+"file_upload"
+"page"
+"page_or_database"
+"property_item"
+"template"
+"user"
+"view"
+A constant string that represents the type of the objects in
+results
+{type}
+paginated list object
+An object containing type-specific pagination information. For
+property_item
+s, the value corresponds to the
+paginated page property type
+. For all other types, the value is an empty object.
+Parameters for paginated requests
+Parameter location varies by endpoint
+GET
+requests accept parameters in the query string.
+POST
+requests receive parameters in the request body.
+Parameter
+Type
+Description
+page_size
+number
+The number of items from the full list to include in the response.
+Default
+100
+Maximum
+100
+The response may contain fewer than the default number of results.
+start_cursor
+string
+A
+next_cursor
+value returned in a previous
+response
+. Treat this as an opaque value.
+Defaults to
+undefined
+, which returns results from the beginning of the list.
+How to send a paginated request
+1
+Send an initial request to a
+supported endpoint
+2
+Retrieve the
+next_cursor
+value from the response (only available when
+has_more
+is
+true
+).
+3
+Send a follow up request to the endpoint that includes the
+next_cursor
+param in either the query string (for
+GET
+request
+
+===== https://www.notion.com/
+TITLE: The AI workspace that works for you. | Notion
+ACCESSED: 2026-09-28
+
+Play
+Trusted by 98% of the Forbes Cloud 100
+See what Notion can do
+Triage product feedback
+→
+Resolve support tickets in Slack
+→
+Respond to security alerts faster
+→
+Automate weekly reporting
+→
+Create your own developer tools
+→
+Using the most AI-native tools like Notion is an important competitive advantage for us to stay small while doing a lot.
+Michael Truell
+Co-founder & CEO
+Notion’s thoughtful design speeds up collaboration and decisions so we can deliver impact to our customers faster.
+Renee Solorzano
+Sr. Director of Product Design
+Notion Custom Agents help our team go beyond doing work with AI to building AI tools that do the work for them.
+Ben Levick
+Head of Operations & Internal AI
+
+===== https://www.notion.com/product/docs
+TITLE: Docs | Notion
+ACCESSED: 2026-09-28
+
+Connect people & projects with updates & action items.
+Duplicate Template
+→
+Duplicate Template
+→
+All your company's design assets in one place.
+Duplicate Template
+→
+Duplicate Template
+→
+A customizable PRD that fits any type of project.
+Duplicate Template
+→
+Duplicate Template
+→
+Tell your company's story in a dynamic way.
+Duplicate Template
+→
+Duplicate Template
+→
+AI meeting notes
+AI meeting notes
+AI meeting notes
+AI meeting notes
+Code snippets
+Native syntax highlighting for dozens of languages.
+Toggles
+Collapsible sections make your docs easy to read.
+Images & videos
+Embed directly from Loom & YouTube, or upload your own.
+Table of contents
+Click to jump to a section. Updates automatically.
+Charts
+Add live charts to any doc.
+And 50+ more content types
+Like a bottomless box of building blocks.
+Every team’s files, at a glance
+Notion’s sidebar keeps your workspace organized no matter how fast you grow.
+Not only do our streamlined workflows in Notion save us time, they also make it easier to stay up to date on task details and progress.
+Taku Wakasugi
+Toyota Frontier Research Center, Toyota
+Collaborate or co-edit together
+Allow others to comment or suggest edits. Just type the @ key to get their attention.
+Comments keep the ball rolling async
+A consolidated view of feedback makes it easy to iterate, even across time zones.
+We can quickly build out a meeting agenda for a large group of people and still make it interactive and fun.
+Scott Stephens
+Design Operations Manager, Kin + Carta
+Product managers
+Connect the roadmap to goals, and keep folks aligned on what’s shipping and when.
+See how PMs use Notion
+→
+Designers
+Move review rounds forward, prioritize requests, and hit all your creative deadlines.
+See how designers use Notion
+→
+Engineers
+Ship features faster with sprints, code guidelines, bug fixes & more, all in one place.
+See how engineers use Notion
+→
+Wikis
+It's hard to move fast with a clunky & disorganized workspace. Centralize all your knowledge in Notion instead.
+Projects
+Manage any type of project, no matter the team or size.
+Figma
+Always share the most updated designs with your team.
+Try now
+→
+Amplitude
+Track release metrics, experiment results, and more.
+Try now
+→
+Github
+Bring pull requests, issues, and even repos directly into Notion.
+Try now
+→
+Slack
+Simply paste a link to see the full message without switching tools.
+Try now
+→
+Jira
+See bug updates, or convert an entire project into a database.
+Try now
+→
+Browse all connections
+Go to the gallery
+→
+Mixpanel’s daily standup & tasks
+Try template
+→
+Notion's product requirement doc
+Try template
+→
+Netflix's branding framework
+Try template
+→
+
+===== https://developers.notion.com/guides/get-started/quick-start
+TITLE: API quickstart - Notion Docs
+ACCESSED: 2026-09-28
+
+You need a Notion account and a terminal.
+Step 1: Get a personal access token
+A personal access token (PAT) lets you authenticate API requests as yourself without setting up a connection or completing an OAuth flow.
+1
+Open
+Personal access tokens
+in the Developer portal.
+2
+Select
+New token
+3
+Enter a name, select the
+Notion API
+capability, and then select
+Create token
+. If a workspace picker appears, select a workspace first.
+4
+Copy the token and save it somewhere secure. You won’t be able to see it again.
+Don’t see the option to create a token?
+On Business and Enterprise plans, PAT creation is restricted by default. Ask a workspace owner to enable it in
+Settings → Connections
+See
+Who can create PATs
+Set the token as an environment variable so you can use it in the examples below. This lasts for your current terminal session — run it again if you open a new window.
+macOS / Linux
+Windows (PowerShell)
+export
+NOTION_API_KEY
+=
+ntn_
+***
+$
+env:
+NOTION_API_KEY
+=
+"ntn_***"
+Step 2: Create a page
+Make a POST request to the
+Create a page
+endpoint with markdown content. The API creates a private page in your workspace, using the
+# heading
+as the page title automatically.
+curl
+HTTP
+JavaScript
+curl
+-X
+POST
+https://api.notion.com/v1/pages
+\
+-H
+"Authorization: Bearer
+$NOTION_API_KEY
+"
+\
+-H
+"Notion-Version: 2026-03-11"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"icon": { "emoji": "🚀" },
+"markdown": "# Hello from the API\n\n## Welcome\n\nThis page was created with the Notion API. You just made your first request!\n\n- Read the [API reference](https://developers.notion.com/reference/intro)\n- Explore [examples](https://developers.notion.com/page/examples)"
+}'
+POST
+https://api.notion.com/v1/pages
+Authorization
+Bearer {PERSONAL_ACCESS_TOKEN}
+Content-Type
+application/json
+Notion-Version
+2026-03-11
+{
+"icon"
+: {
+"emoji"
+"🚀"
+},
+"markdown"
+"# Hello from the API
+\n\n
+## Welcome
+\n\n
+This page was created with the Notion API. You just made your first request!
+\n\n
+- Read the [API reference](https://developers.notion.com/reference/intro)
+\n
+- Explore [examples](https://developers.notion.com/page/examples)"
+}
+// Save as quickstart.mjs after running: npm install @notionhq/client
+import
+{
+Client
+}
+from
+"@notionhq/client"
+;
+const
+notion
+=
+new
+Client
+({
+auth:
+process
+env
+NOTION_API_KEY
+});
+async
+function
+main
+() {
+const
+page
+=
+await
+notion
+pages
+create
+({
+icon:
+{
+emoji:
+"🚀"
+},
+markdown:
+[
+"# Hello from the API"
+""
+"## Welcome"
+""
+"This page was created with the Notion API. You just made your first request!"
+""
+"- Read the [API reference](https://developers.notion.com/reference/intro)"
+"- Explore [examples](https://developers.notion.com/page/examples)"
+].
+join
+(
+"
+\n
+"
+),
+});
+console
+log
+(
+"Created page:"
+page
+url
+);
+}
+main
+();
+The
+markdown
+field accepts
+Notion-flavored Markdown
+— headings, lists, code blocks, links, and more. The API converts it to Notion blocks for you.
+Under the hood: markdown → blocks
+Notion pages are made up of
+blocks
+— headings, paragraphs, lists, and more. When you send
+markdown
+, the API converts it into this block structure automatically.
+You can also build this structure directly using the
+children
+field. Here’s what the same page looks like expressed as blocks:
+{
+"icon"
+: {
+"emoji"
+"🚀"
+},
+"properties"
+: {
+"title"
+: [{
+"text"
+: {
+"content"
+"Hello from the API"
+} }]
+},
+"children"
+: [
+{
+"object"
+"block"
+"type"
+"heading_2"
+"heading_2"
+: {
+"rich_text"
+: [{
+"text"
+: {
+"content"
+"Welcome"
+} }]
+}
+},
+{
+"object"
+"block"
+"type"
+"paragraph"
+"paragraph"
+: {
+"rich_text"
+: [
+{
+"text"
+: {
+"content"
+"This page was created with the Notion API. You just made your first request!"
+}
+}
+]
+}
+}
+]
+}
+The block model gives you precise control over every element — formatting, colors, toggles, and block types that markdown can’t express. Use
+markdown
+when you want simplicity, and
+children
+when you need that control.
+See
+Working with page content
+to learn more about the block model.
+Check the result
+A successful response returns a page object:
+Response
+{
+"object"
+"page"
+"id"
+"a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+"created_time"
+"2025-01-15T09:30:00.000Z"
+"last_edited_time"
+"2025-01-15T09:30:00.000Z"
+"icon"
+: {
+"type"
+"emoji"
+"emoji"
+"🚀"
+},
+"parent"
+: {
+"type"
+"workspace"
+"workspace"
+true
+},
+"properties"
+: {
+"title"
+: {
+"id"
+"title"
+"type"
+"title"
+"title"
+: [{
+"plain_text"
+"Hello from the API"
+}]
+}
+},
+"url"
+"https://www.notion.com/Hello-from-the-API-a1b2c3d4e5f67890abcdef1234567890"
+"public_url"
+null
+}
+To see your new page:
+From the response:
+Copy the
+url
+value and open it in your browser.
+From Notion:
+Look in
+Private
+in your sidebar for 🚀
+Hello from the API
+Open the page and you should see your heading, paragraph, and bullet list inside.
+Getting an error?
+Error responses return a JSON object with a
+code
+and
+message
+{
+"object"
+"error"
+"status"
+401
+"code"
+"unauthorized"
+"message"
+"API token is invalid."
+}
+Erro
+
+===== https://developers.notion.com/guides/get-started/handling-api-keys
+TITLE: Secure API tokens - Notion Docs
+ACCESSED: 2026-09-28
+
+Notion API tokens authorize requests to the Notion API. This guidance applies to internal connection tokens, OAuth access tokens, and
+personal access tokens
+Protect your tokens
+Anyone who obtains a token can make requests allowed by its capabilities and content permissions. Depending on the token, this could expose or change workspace content.
+For a PAT, access is limited by the token’s capabilities and the permissions of the person who created it. For an internal connection, access is limited to pages shared with the connection and its capabilities.
+Don’t share tokens in messages, support requests, issue trackers, or other public places.
+Don’t put tokens directly in source code or configuration files.
+Store tokens in environment variables or an encrypted secret manager.
+Use separate tokens for development, staging, and production.
+Grant only the capabilities that each application needs.
+Revoke tokens that you no longer use.
+Store tokens outside your code
+Use an environment variable for local development. Add
+.env
+files to
+.gitignore
+and never commit them.
+# .env file (never commit this file)
+NOTION_API_KEY
+=
+ntn_abc1[REDACTED]
+TypeScript
+const
+notion
+=
+new
+Client
+({
+auth:
+process
+env
+NOTION_API_KEY
+});
+Use a secret manager for deployed applications. Limit who can read production secrets and keep an inventory of each token’s owner and purpose.
+Calling the API from a browser
+The Notion API sends cross-origin resource sharing (CORS) headers, so browser code can call the API directly.
+Never ship an internal connection token or a client secret in page source that strangers can load. Anyone who can view the source can use that secret to act as the connection.
+For apps that other people use, create a
+public connection
+, which uses OAuth. Exchange the OAuth code for a token on a server you control. For a personal or local tool, putting a token in a page that only you can open is a risk you must choose whether to accept.
+OAuth token endpoints under
+/v1/oauth/*
+do not send CORS headers on purpose. OAuth code exchange requires a client secret and must run on a server.
+Scan for exposed tokens
+Enable secret scanning in your repository and CI system. Block commits that contain tokens, and alert the token owner if a token is detected.
+Replace tokens regularly
+Replace long-lived tokens on a schedule and whenever someone with access to them leaves your team. PATs expire on the date chosen when the token is created, up to one year later. Replace a PAT before it expires.
+Respond to an exposed token
+Revoke or replace a token immediately if it may have been exposed.
+1. Disable the token
+1
+Log in to Notion.
+2
+Go to
+Settings
+→
+Connections
+→
+Develop or manage connections
+3
+Find the connection or personal access token that uses the exposed token.
+4
+Select
+Refresh
+for an internal connection, or revoke the personal access token.
+For a PAT, you can also revoke the token from
+Personal access tokens
+in the Developer portal. Create a new token if the application still needs access.
+Select Refresh to replace the token for an internal connection.
+2. Update applications
+Replace the old token in every application and environment that used it. Test the new token, and remove the old value from configuration files and documentation.
+3. Review activity
+Check recent changes to pages and databases. Look for connections you don’t recognize in
+Settings
+→
+Connections
+Getting help
+If you need help with an exposed token or unauthorized access, contact
+Notion support
+
+===== https://developers.notion.com/reference/webhooks
+TITLE: Webhooks - Notion Docs
+ACCESSED: 2026-09-28
+
+Webhooks let your connection receive real-time updates from Notion. Whenever a page or database changes, Notion sends a secure HTTP POST request to your webhook endpoint. This allows your application to respond to workspace activity as it happens — whether that’s syncing data, triggering automation, or keeping your UI in sync with user activity.
+Think of it like this:
+Instead of repeatedly polling the Notion API to check if anything has changed, Notion will tell you the moment something important happens.
+How webhooks work: A simple example
+Let’s walk through an example from start to finish:
+1
+Your connection is subscribed to
+page.content_updated
+events.
+2
+A user edits the title of a page in Notion.
+3
+Within a minute, Notion sends a webhook request to your configured endpoint.
+4
+The event payload includes metadata such as the page ID, the event type, and a timestamp.
+5
+Your server receives the event, verifies it, and calls the Notion API to fetch the updated title using the page ID from the event.
+6
+Your application updates its internal data or takes any other action you’ve defined.
+This flow lets you react quickly to user activity, without polling or guessing when something has changed.
+Getting started with webhooks
+Step 1 - Creating a webhook subscription
+To receive webhook events, you’ll need to create a subscription through your connection settings.
+You’ll need to:
+1
+Visit your
+connection settings
+2
+Either create a new connection or select an existing one.
+3
+Navigate to the
+Webhooks
+tab and click
++ Create a subscription
+4
+Enter your public
+Webhook URL
+— this is the public endpoint where you want Notion to send events. It must be a secure (SSL) and publicly available endpoint. Endpoints in localhost are not reachable.
+5
+Choose which event types you’d like to subscribe to. You can modify these later if needed.
+6
+Click
+Create subscription
+At this point, your webhook is created but not yet verified. To complete the setup, you’ll need to confirm that your endpoint can receive and respond to verification.
+Step 2 - Verifying the subscription
+When you create a subscription, Notion sends a one-time POST request to your webhook URL. The body of the request contains a
+verification_token
+, which proves that Notion can successfully reach your endpoint.
+Example payload with
+verification_token
+JSON
+{
+"verification_token"
+"secret_t[REDACTED]"
+}
+You’ll need to:
+1
+Inspect the incoming request at your endpoint and extract the
+verification_token
+from the JSON payload.
+(Optional): Securely store this token for payload validation setup later,
+in step 3
+2
+Go back to the
+Webhooks
+tab within your Notion connection UI and click
+⚠️ Verify
+on the bottom left of the page
+3
+Paste the
+verification_token
+value into the form and click
+Verify subscription.
+If you did not receive a
+verification_token
+, you can click
+Resend token
+from the webhook verification modal.
+Once submitted, your webhook subscription is considered active, and will start receiving events.
+Changing your webhook URL or event subscriptions
+You can only change the webhook URL before verification. After verification, if you need to change the URL, you must delete and recreate the subscription. You can change the subscribed events at any time.
+Step 3 - Validating event payloads (Recommended)
+To help ensure the security of your connection, Notion includes a cryptographic signature with every webhook event we send. This allows you to verify that the payload was sent by Notion and hasn’t been modified in transit.
+While payload validation is optional, we recommend implementing it for any production environment.
+Using a no-code or low-code platform?
+If you’re using a no-code or low-code platform (like Zapier, Make, or Pipedream), you may not have access to custom code for signature verification — and that’s okay. Validation is encouraged, but not required for webhooks to work.
+How it works
+In the previous step, Notion sent a one-time
+verification_token
+to your webhook URL. You’ll use this token to verify the authenticity of all subsequent webhook events.
+Every webhook request from Notion includes an
+X-Notion-Signature
+header, which contains an HMAC-SHA256 hash of the request body, signed with your
+verification_token
+Sample
+X-Notion-Signature
+from Notion
+JSON
+{
+"X-Notion-Signature"
+"sha256=461e8cbcba8a75c3edd866f0e71280f5a85cbf21eff040ebd10fe266df38a735"
+}
+To validate the request, you can use the
+verification_token
+along with the event’s payload to recompute the signature and verify the request’s authenticity. If they match, the payload is trustworthy.
+Using the SDK for JavaScript and TypeScript?
+@notionhq/client
+v5.23.0 and later includes a
+verifyWebhookSignature()
+helper that performs this check for you, including the constant-time comparison. Pass the raw request body exactly as it arrived (re-serialized JSON produces different bytes and fails verification), the
+X-Notion-Signature
+header value, and your
+verificati
+
+===== https://developers.notion.com/cli/get-started/overview
+TITLE: Notion CLI - Notion Docs
+ACCESSED: 2026-09-28
+
+ntn
+is the Notion CLI. Use it to authenticate with Notion, deploy and manage
+Notion Workers
+, and make API requests — all from your terminal.
+Install
+curl
+-fsSL
+https://ntn.dev
+|
+bash
+Verify the installation:
+ntn
+--version
+See
+Installation
+for more installation options.
+Authenticate
+Log in to connect the CLI to your Notion workspace:
+ntn
+login
+This opens a browser window where you authorize access. Your credentials are stored securely in your system’s keychain. See
+Authentication
+for more details.
+What you can do
+Workers
+Deploy, manage, and debug Notion Workers.
+API requests
+Make Notion API requests directly from the terminal.
+Data sources
+Create, query, and manage data sources from the terminal.
+File uploads
+Upload static assets like images and PDFs to Notion.
+Manage Notion Workers
+Create, deploy, and operate Workers — small TypeScript programs that extend Notion with syncs, tools, and webhooks:
+ntn
+workers
+new
+# Scaffold a project
+ntn
+workers
+deploy
+# Build and upload
+ntn
+workers
+list
+# List deployed workers
+See the
+Workers guide
+to get started.
+Make API requests
+Make authenticated requests to the Notion API with inline JSON construction and shell completion:
+ntn
+api
+v1/users
+# GET users
+ntn
+api
+v1/pages
+parent[page_id]=abc123
+# POST with inline body fields
+ntn
+api
+v1/pages/abc123
+-X
+PATCH
+archived:=
+true
+# PATCH with typed assignment
+See the
+API requests guide
+for the full inline syntax reference.
+Upload files
+Upload static assets like images and PDFs to reference from Notion pages:
+ntn
+files
+create
+<
+photo.png
+ntn
+files
+create
+--external-url
+https://example.com/photo.png
+ntn
+files
+list
+See the
+file uploads guide
+for details.
+Next steps
+Installation
+Alternative install methods and shell completions.
+Authentication
+Manage login sessions and credentials.
+Command reference
+Full reference for every ntn command.
+Notion Workers quickstart
+Create and deploy your first Notion Worker.
+
+===== https://developers.notion.com/guides/get-started/authorization
+TITLE: Authorization - Notion Docs
+ACCESSED: 2026-09-28
+
+What is authorization?
+Authorization is the process of granting a connection or token access to Notion data.
+Internal connections
+use a static API token,
+personal access tokens
+use a user-scoped static API token, and
+public connections
+use the
+OAuth 2.0
+protocol.
+Internal connection auth flow set-up
+To use an internal connection, start by creating your connection in the
+Developer portal
+The internal connection will be associated with the workspace of your choice. You are required to be a workspace owner to create a connection.
+Create a new connection from the Developer portal.
+Once the connection is created, you can update its settings as needed under the
+Configuration
+tab and retrieve the installation access token in this tab.
+The installation access token will be used to authenticate REST API requests. The connection sends the same token in every API request.
+Find the installation access token in the Configuration tab.
+Connection permissions
+Before a connection can interact with your Notion workspace page(s), the page must be manually shared with the connection. To share a page with a connection, visit the page in your Notion workspace, click the ••• menu at the top right of a page, scroll down to
+Add connections
+, and use the search bar to find and select the connection from the dropdown list.
+Once the connection is shared, you can start making API requests. If the page is not shared, any API requests made will respond with an error.
+Never share your installation access token
+Your installation access token is a secret. To keep your connection secure, never store the token in your source code or commit it in version control. Instead, read the token from an environment variable. Use a secret manager or deployment system to set the token in the environment.
+Learn more: Best Practices for Handling API Keys
+Making API requests with an internal connection
+Any time your connection interacts with your workspace, include the installation access token in the
+Authorization
+header with every API request. However, if you are using Notion’s
+SDK for JavaScript
+to interact with the REST API, the token is set once when a client is initialized.
+HTTP
+GET
+/v1/pages/b55c9c91-384d-452b-81db-d1ef79372b75
+HTTP
+/
+1.1
+Authorization
+Bearer {INTEGRATION_TOKEN}
+JavaScript
+const
+{
+Client
+}
+=
+require
+(
+"@notionhq/client"
+)
+// Initializing a client
+const
+notion
+=
+new
+Client
+({
+auth:
+process
+env
+NOTION_TOKEN
+})
+const
+getUsers
+=
+async
+()
+=>
+{
+const
+listUsersResponse
+=
+await
+notion
+users
+list
+({})
+}
+If you are not using the
+Notion SDK for JavaScript
+, also set the
+Notion-Version
+and
+Content-type
+headers in all of your requests, like so:
+JSON
+headers: {
+Authorization
+`Bearer
+$
+{
+process.env.NOTION_TOKEN
+}
+`
+"Notion-Version"
+"2026-03-11"
+"Content-Type"
+"application/json"
+},
+If you receive an error response from the API, check if the connection has been properly
+added to the page
+. If this does not solve the problem, refer to our
+Status codes
+page for more information.
+Personal access token authentication
+Personal access tokens (PATs) are created directly by a Notion user in the
+Developer portal
+. There is no OAuth flow and no page picker. A PAT acts as the user who created it and uses that user’s permissions in the selected workspace.
+Use a PAT when a script, CLI workflow, Worker, or trusted tool should act as you. Use an internal connection for team-owned workspace automations, or a public connection when other Notion users need to install your app.
+PATs use the same
+Authorization
+header as other Notion API tokens:
+HTTP
+GET
+/v1/users/me
+HTTP
+/
+1.1
+Authorization
+Bearer {PERSONAL_ACCESS_TOKEN}
+Notion-Version
+2026-03-11
+See
+Personal access tokens
+for creation steps, workspace admin controls, tier defaults, and security guidance.
+Public connection auth flow set-up
+A public connection can be installed in any Notion workspace within its
+installation scope
+— either any workspace, or a specific set chosen at creation time.
+Since a public connection is not tied to a single workspace with a single installation access token, public connections instead follow the
+OAuth 2.0 protocol
+to authorize a connection to interact with a workspace.
+How to make a public connection
+Navigate to the
+Developer portal
+and create a new public connection.
+Fill out the form with your connection details, including your redirect URI(s) under the OAuth configuration section and the connection’s
+installation scope
+— either
+Any workspace
+or
+Selected workspaces only
+. This can’t be changed after creation.
+The redirect URI is the URI your users will be redirected to after authorizing the public connection. To learn more, read
+OAuth’s description of redirect URIs
+Marketplace listing details (such as descriptions, categories, and images) are managed separately through the
+Listings
+section. Refer to the
+List on the Marketplace
+guide to learn more.
+Public connection authorization overview
+Once your connection has been made public, you 

@@ -1,0 +1,466 @@
+===== https://aircall.io
+TITLE: AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall
+ACCESSED: 2026-09-28
+
+Customer communications, evolved
+with AI that
+handles customer interactions, end to end.
+TRY FOR FREE
+TALK TO SALES
+23,000+ companies TRUST AIRCALL
+to power their customer communications
+Aircall
+is
+the
+intuitive,
+AI-powered
+platform
+bringing
+together
+intelligent
+voice
+agents,
+automated
+workflows,
+&
+adaptive
+real-time
+coaching
+at
+scale.
+TEAM-LED
+Team-led customer conversations powered by a modern phone system.
+Native integrations with CRM, help desk, and business tools automatically sync conversations and customer data across your systems.
+Clear and reliable calling
+Enterprise-grade connectivity and crystal-clear audio keep every conversation stable, secure, and high quality.
+One collaborative workspace
+A shared inbox keeps every conversation visible, giving your team the ability to collaborate in real time and step in without losing context.
+Connected across every channel
+Calls, SMS, and messaging live in one platform, keeping every interaction connected to your CRM, help desk, and business tools.
+AI-ASSISTED
+AI Assistants that support your team in real time.
+AI Assistants support your team during live conversations, analyze every interaction, and complete follow-up work automatically.
+Live coaching during calls
+AI Assistants provide real-time guidance and suggested responses, improving performance in every conversation.
+Live transcription and insights
+AI Assistants transcribe every call and analyze sentiment, topics, and key moments giving managers immediate visibility into performance and trends.
+Automated follow-ups and CRM updates
+AI Assistants capture notes, update CRM records, and create follow-up tasks automatically reducing manual work after every conversation.
+AI-LED
+AI Agents that provide 24/7 customer coverage.
+AI Agents answer instantly, resolve routine requests automatically, and escalate complex issues with full context when needed.
+Autonomous resolution
+AI Agents identify caller intent, gather key details, and resolve routine inquiries end to end.
+Always-on availability
+AI Agents handle after-hours calls, manage peak volume, and respond to repetitive requests automatically.
+Escalation with full context
+AI Agents escalate complex issues with complete conversation history and customer context.
+Team-led customer conversations powered by a modern phone system.
+Native integrations with CRM, help desk, and business tools automatically sync conversations and customer data across your systems.
+Clear and reliable calling
+Enterprise-grade connectivity and crystal-clear audio keep every conversation stable, secure, and high quality.
+One collaborative workspace
+A shared inbox keeps every conversation visible, giving your team the ability to collaborate in real time and step in without losing context.
+Connected across every channel
+Calls, SMS, and messaging live in one platform, keeping every interaction connected to your CRM, help desk, and business tools.
+AI Assistants that support your team in real time.
+AI Assistants support your team during live conversations, analyze every interaction, and complete follow-up work automatically.
+Live coaching during calls
+AI Assistants provide real-time guidance and suggested responses, improving performance in every conversation.
+Live transcription and insights
+AI Assistants transcribe every call and analyze sentiment, topics, and key moments giving managers immediate visibility into performance and trends.
+Automated follow-ups and CRM updates
+AI Assistants capture notes, update CRM records, and create follow-up tasks automatically reducing manual work after every conversation.
+AI Agents that provide 24/7 customer coverage.
+AI Agents answer instantly, resolve routine requests automatically, and escalate complex issues with full context when needed.
+Autonomous resolution
+AI Agents identify caller intent, gather key details, and resolve routine inquiries end to end.
+Always-on availability
+AI Agents handle after-hours calls, manage peak volume, and respond to repetitive requests automatically.
+Escalation with full context
+AI Agents escalate complex issues with complete conversation history and customer context.
+Aircall makes everything so simple for my team.
+You don’t need to be technical at all,
+that’s part of the beauty of it.
+Anthony Messina
+IT Manager
+250+ integrations that connect every conversation to your business tools.
+Native integrations with CRM, help desk, and business tools automatically sync conversations and customer data across your systems.
+Salesforce
+HubSpot
+Zendesk
+Bullhorn
+monday.com
+Shopify
+Pipedrive
+Microsoft Teams
+See our integrations
+The definitive AI implementation guide, no developer needed.
+Launching an AI Agent is easy.
+Quickly go live with our AI Implementation Guide.
+GET YOUR COPY
+Upgrade your customer conversations today.
+Try for Free
+Talk to Sales
+Enterprise-grade security & compliance
+SOC2
+TYPE II
+GDPR
+EU PRIVACY
+HIPAA
+DATA PRIVACY
+
+===== https://developer.aircall.io/
+TITLE: Aircall for Developers
+ACCESSED: 2026-09-28
+
+01
+Power AI Virtual Agents
+Connect your tools and data to Aircall's AI Virtual Agents through MCP. Handle inbound and outbound calls. Let them pull context from your tools, take real actions mid-call, and escalate to a human when needed.
+Build for AI
+02
+Connect Aircall to your business stack
+Use our REST API and webhooks to access calls, contacts, and users — and keep every system in sync with what's happening on every call, human or AI.
+See what you can build
+03
+Use Aircall anywhere
+Give your team Aircall on desktop and mobile — or use the Embed SDK to drop the agent workspace straight into the tools they already work in.
+Explore the Aircall Anywhere SDK
+04
+Display insights during calls
+Surface customer data from any system directly inside the Aircall Workspace. Give your agents the context they need to have better conversations, right when it matters.
+Learn about Insight Cards
+Explore, build, and ship on Aircall.
+Explore what you can build, extend your own setup, and publish apps for thousands of businesses.
+Discover Aircall AI
+Trigger outbound AI agent calls, give agents actions through MCP, and pull AI insights from every conversation.
+Publish an app
+Launch your app to our global marketplace and reach customers worldwide, with our tech partnerships team supporting you every step of the way.
+Extend your own setup
+Connect your CRM, automate workflows, or build custom integrations for your own Aircall workspace, no marketplace approval needed.
+Developer tools & Resources
+We provide everything you need to learn about Aircall, connect with our platform and build advanced features
+          faster.
+Guides
+YouTube
+Postman
+AI
+Sept 2026
+Monitor Calls with Conversation Trackers
+Read more
+→
+Messaging
+June 2026
+Send WhatsApp messages via the REST API
+Read more
+→
+Analytics
+June 2026
+New Analytics endpoints: retrieve reports via API
+Read more
+→
+AI
+May 2026
+Trigger outbound AI agent calls
+Read more
+→
+Join a global ecosystem of technology partners
+Thousands of developers and technology companies have built on Aircall. Get access
+            to dedicated support, developer sandboxes, and co-marketing opportunities, and reach 20,000+ businesses
+            through our App Marketplace.
+Get started
+Read partner stories
+Let's build the new age
+of AI together
+Start
+                building
+Explore Aircall's AI features
+→
+
+===== https://aircall.io/contact-sales/
+TITLE: Contact Sales | Aircall
+ACCESSED: 2026-09-28
+
+Talk to our Sales team
+Explore use-cases for your company, schedule a demo, get custom pricing, and learn how Aircall can deliver a bespoke, always-on customer experience.
+23,000+ companies trust Aircall
+to power their customer communications
+“With Aircall, we haven’t just advanced technically, we’re also seeing marked improvements in sales and customer service.”
+Talk to our Sales team
+Explore use-cases for your company, schedule a demo, get custom pricing, and learn how Aircall can deliver a bespoke, always-on customer experience.
+LOOKING FOR TECHNICAL OR PRODUCT SUPPORT?
+VISIT OUR
+HELP CENTER
+OR
+CONTACT SUPPORT
+.
+
+===== https://aircall.io/pricing/
+TITLE: Aircall Pricing & Plans: AI-Powered Calling, Voice Agents & 250+ Integrations | Aircall
+ACCESSED: 2026-09-28
+
+Pay annually
+Pay monthly
+Save 25% by paying annually
+Country
+United States
+AI Voice Agents
+Natural-sounding AI that answers and resolves calls, with or without a phone system.
+$100
+per month minimum
+Get free access
+Includes:
+38 languages with custom
+voices
+FAQs, custom caller intake questions, and
+more
+Trigger-based outbound calling, voicemail detection, and branded caller
+ID
+In-call and post-call AI
+actions
+The AI agent can take action across connected systems during or after a call — for example, pulling order details from Shopify, processing a refund in Stripe, booking a meeting in your calendar, and logging the outcome in your CRM within a single call. The more systems connected, the more it can resolve without a handoff or follow-up ticket.
+Custom routing, escalation paths, handoffs, and fallback
+logic
+Native Aircall numbers and business
+telephony
+Per-agent performance
+dashboards
+A real-time view of each agent's performance (autonomous resolution rate, goal completion rate, and call transfer rate) with ranked recommendations drawn from real call data that admins can act on directly from the dashboard.
+Customer communication platform where AI Agents and your team work together
+Essentials
+INCLUDES AI VOICE AGENTS
+Business phone system and customer conversations in one workspace, synced to your CRM.
+$30
+per license/month
+Get free access
+Includes AI Voice Agents, plus:
+Unlimited calls within US &
+Canada*
+Unlimited inbound calls within the US and Canada, plus 1,000 outbound minutes for domestic calls.
+SMS and
+MMS
+SMS: available in 14 countries across North America, Europe, and Australia. Domestic delivery only, except between the US and Canada. MMS: available for US, Canadian, and Australian numbers only.
+Shared inbox with your
+team
+Call recordings and AI
+transcripts
+IVR and basic call
+flow
+Route incoming calls automatically using a keypad menu (IVR) so callers can reach the right team, combined with business-hours scheduling that sends calls to voicemail outside working hours.
+Basic dashboards and
+analytics
+Track inbound and outbound call activity with core KPIs, call history, and network quality. Includes up to six months of data
+250+
+integrations
+50 min AI Voice Agents per
+month
+Professional
+INCLUDES AI VOICE AGENTS
+Powerful automations, real-time analytics and AI features for growing businesses.
+$50
+per license/month
+Get free access
+Everything in Essentials, plus:
+AI call summary and conversation
+intelligence
+AI-generated call summaries, sentiment analysis, key topics, talk-to-listen ratio.
+Smart call routing and queue
+callback
+Smart Routing directs calls to the right agent using live data from your CRM or help desk (such as account owner or region), while Queue Callback lets callers request a callback instead of waiting on hold — automatically calling them back once an agent is available.
+Power
+Dialer
+Import up to 1,000 numbers and dial them in sequence, with time between calls for notes and tags. Available on desktop and web
+Outbound call
+campaigns
+Run outbound calling campaigns across your team, with automated retries and real-time analytics
+Call whispering & barge
+call
+User-level analytics and live
+monitoring
+Track performance across inbound, outbound, unanswered calls, and individual agents. Includes SLA, time-to-answer, and connected call rate metrics.
+Full API
+access
+Enterprise
+INCLUDES AI VOICE AGENTS
+For organizations to operate with scalability, control, and security.
+Custom pricing
+Talk to Sales
+Everything in Professional, plus:
+Unlimited global
+calls
+Custom onboarding and prioritized
+support
+Access to API developer
+support
+Enterprise-grade SLA and compliance (HIPAA, GDPR,
+SOC2)
+SSO and
+SCIM
+Compare all plans
+Features
+Essentials
+$30
+per license/month
+Get free access
+Professional
+$50
+per license/month
+Get free access
+Enterprise
+Custom pricing
+Talk to Sales
+Detailed pricing
+Minimum number of
+users
+3
+3
+25
+Max number of
+teams
+3
+Unlimited
+Unlimited
+Phone number included in the
+plan
+1 local or toll-free
+1 local or toll-free
+1 local or toll-free
+Price of each additional number, per
+month
+$6
+$6
+$6
+Inbound calls & internal calls (toll-free
+excluded)
+Unlimited
+Unlimited
+Unlimited
+Outbound calls -
+domestic
+Unlimited in US and Canada*
+Unlimited in US and Canada*
+Unlimited in US and Canada*
+Outbound calls -
+international
+Contact us for rates and bundle
+Contact us for rates and bundle
+Unlimited*
+SMS and MMS business text messaging -
+domestic
+***US, Canada, UK, Australia, France, Germany: contact us for rates
+***US, Canada, UK, Australia, France, Germany: contact us for rates
+***US, Canada, UK, Australia, France, Germany: contact us for rates
+Access to call
+recordings
+Up to 1 year (by request, 6 months available in dashboard)
+Unlimited (by request, 6 months available in dashboard)
+Unlimited (by request, 6 months available in dashboard)
+Analytics
+data
+Up to 6 months (basic analytics)
+Up to 6 months (basic and advanced analytics)
+Unlimited (Analytics+)
+Initial setup
+Softphone for desktop, Android,
+iOS
+Compute
+
+===== https://aircall.io/contact/
+TITLE: Contact Us | Aircall
+ACCESSED: 2026-09-28
+
+Or just pick up the phone
+Local numbers in 13 countries, answered by the sales team in that region.
+Americas
+Americas
+2
+Europe, Middle East and Africa
+EMEA
+9
+Asia Pacific
+Asia Pacific
+2
+France
++33 1 76 36 06 95
+Spain
++34 911 23 96 09
+Israel
++972 3 720 8185
+Netherlands
++31 85 208 1002
+United Kingdom
++44 20 3318 7154
+Denmark
++45 89 87 16 99
+Switzerland
++41 43 508 69 54
+Germany
++49 30 30808459
+Italy
++39 02 9475 0786
+OFFICES
+Nine offices distributed across the world
+Paris
+11 Rue Saint-Georges, 75009 Paris, France
+New York
+44 W 28th Street, Floor 14, New York, NY 10001
+London
+8 Devonshire Square, London, EC2M 4PL
+Madrid
+José Abascal Street, 45, 3rd floor, 28003 Madrid
+Berlin
+Rosenthaler Str. 43-45, 10178 Berlin
+Sydney
+Level 1, 12 O’Connell Street, Sydney NSW 2000
+San Francisco
+539 Bryant St, San Francisco, CA 94107
+Mexico City
+Blvd. Miguel de Cervantes Saavedra 161
+Piso 3, Oficinas OF-3023, OF-3024, OF-3025
+Col. Granada, Alcaldía Miguel Hidalgo, C.P. 11520
+Ciudad de México, México
+Bellevue
+600 Bellevue Way NE, Suite 200, Bellevue, WA 98004
+
+===== https://aircall.io/partners/
+TITLE: Become an Aircall channel partner  | Aircall
+ACCESSED: 2026-09-28
+
+What is the Partner Collective?
+We’re a collaborative network of partners who champion and seamlessly integrate each others' solutions into our customers’ technology ecosystems.
+The Partner Collective is our way of investing back into our core channel partners like you.
+We learn and grow as a team, bringing our expertise into a wider technology ecosystem to deliver for our customers’ unique needs. Together, we’re unstoppable.
+Boost revenue growth
+With every new customer, you have the chance to broaden your service offerings and expand your revenue potential.
+Enable your team
+Unlock a range of resources, tools, and 1:1 training aimed to boost your sales and improve customer experience.
+Go-to-market support
+Gain access to our go-to-market campaigns and resources, designed to help you drive customer acquisition.
+Why join the Partner Collective?
+You’ll become part of a collaborative partner community that builds and grows through knowledge, insight, and access to resources.
+Plus, you’ll benefit from some incredible perks:
+Business Opportunities
+Bring in new business and empower your customers by building your offering of Aircall Services.
+Commission
+Earn more as you progress! Your share of revenue increases as you move up the tiers, with the potential to earn lifetime value commission.
+Partner Demo Account
+Access Aircall’s Partner Licenses and Demo Environment so you can be fully armed when you resell our industry-leading communications platform.
+and more...
+Start earning more
+YOU'RE IN GOOD COMPANY
+Ceri Sherwood
+Senior HubSpot Specialist, Inbound FinTech
+" Aircall don't have a system that they've just kept stagnant, they're continuously updating it every single month, and that’s why we love working with them. "
+Brónagh Crowley
+VP of Sales, Ultimate
+" A key part of our mission is that we provide a full, omnichannel, seamless experience [...] So that’s where great partners such as Aircall come in and help bridge that gap for us, and also help provide a seamless solution for our customers. "
+Let's create an impact
+Collective intelligence
+We aim to bring our partners’ expertise into one shared community.
+Collective insight
+We share our knowledge and collaborate to grow together.
+Collective impact
+We want our customers’ experiences to be the best they can possibly be.
+Ready to partner? We are.
+Join the Partner Collective
+Log in to Partner Portal

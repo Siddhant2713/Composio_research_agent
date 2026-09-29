@@ -1,0 +1,1076 @@
+===== https://docs.bigcommerce.com/developer/docs/overview/quick-start
+TITLE: BigCommerce Developers | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+Build, customize, and scale on the BigCommerce platform. Whether you’re
+creating a storefront, building an app, or managing store data through APIs,
+these docs will get you there.
+New to the redesigned Developer Docs?
+Watch the
+Commerce Live walkthrough
+for a tour of what’s new — AI-powered search and chat, AI-ready page actions, an in-browser API Request Runner, a redesigned changelog, and richer feedback tools.
+What are you building?
+A Storefront
+Build with Catalyst (Next.js), customize Stencil themes,
+or go fully headless with the GraphQL Storefront API.
+An App or Integration
+Create single-click apps for the BigCommerce marketplace,
+build custom integrations, or extend checkout.
+Managing Store Data
+Use REST and GraphQL APIs to manage products, orders,
+customers, and store settings programmatically.
+A B2B Store
+Set up B2B Edition for wholesale and enterprise buyers
+with company accounts, quotes, and custom pricing.
+Get started in 3 steps
+1
+Create a sandbox store
+Sign up for a free BigCommerce trial store to test API
+calls and build integrations without affecting live data.
+2
+Generate API credentials
+Navigate to
+Settings > API Accounts
+in your store
+control panel. Create credentials with the scopes you need.
+3
+Make your first API call
+Explore the
+API Reference
+or
+follow the
+Apps Quick Start
+to build your first integration.
+Make your first API request
+REST Management API
+See the
+Guide to API Accounts
+for instructions on creating API accounts.
+You can experiment with our REST Management APIs using the
+Request Runner
+, which is built in to the
+API Reference
+for most endpoints. Copy and paste your
+store_hash
+and
+access_token
+into the form, then click
+Send
+Visual Studio Code REST Client
+If you use
+Visual Studio Code
+, another way to make API requests is with the
+REST Client
+extension. Once you have it installed, create a new file called
+bigcommerce.http
+and paste in the following:
+@
+ACCESS_TOKEN =
+your_access_token
+@
+STORE_HASH =
+your_store_hash
+###
+GET
+https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/catalog/products
+X-Auth-Token
+:
+{{ACCESS_TOKEN}}
+Content-Type
+:
+:
+Save and you’ll see the
+send request
+link above
+GET
+. Click
+send request
+and the response will open in a split window.
+Postman
+To try out REST endpoints and view responses, you can import our API specification files into
+Postman
+or any other tool that can import
+Open API Specification
+files.
+To view sample JSON request bodies for each REST API resource, see the
+API Reference
+for that resource.
+REST Storefront API
+To make your first requests in a browser with the REST Storefront APIs, see the step-by-step tutorial
+Working with Storefront Cart and Checkout APIs
+GraphQL Storefront API
+This example uses
+Request Runner
+to make an initial request that creates a Storefront API token. It is a REST API request, so you will need to copy and paste your
+API credentials
+In the
+allowed_cors_origins
+array, include the URL(s) of the storefront from which you plan to use the token.
+POST
+https://api.bigcommerce.com/stores/{store_hash}/v3/storefront/api-token
+X-Auth-Token
+:
+{{access_token}}
+Content-Type
+:
+:
+{
+"
+channel_id
+"
+:
+1
+,
+// int (only ID 1 currently accepted)
+"
+expires_at
+"
+:
+1602288000
+,
+// double UTC unix timestamp in seconds (required)
+"
+allowed_cors_origins
+"
+:
+[
+// array (accepts 1 origin currently)
+"
+https://example.com
+"
+]
+}
+While viewing your storefront in a browser, open the developer tools JavaScript console; for example,
+Google Chrome’s Console
+. Add your API token to the authorization header in the following code sample and add a valid
+Product ID
+for the
+entityId
+, then run the code in the console:
+fetch
+(
+'
+/graphql
+'
+,
+{
+method
+:
+'
+POST
+'
+,
+mode
+:
+'
+cors
+'
+,
+headers
+:
+{
+'
+Content-Type
+'
+:
+'
+'
+,
+'
+'
+:
+'
+'
+,
+'
+Authorization
+'
+:
+`
+Bearer {{TOKEN}}
+`
+}
+,
+body
+:
+JSON
+stringify
+(
+{
+query
+:
+`
+query SingleProduct {
+site {
+products (entityIds: {{product ID}}) {
+edges {
+node {
+id
+entityId
+name
+prices {
+price {
+value
+currencyCode
+}
+}
+}
+}
+}
+}
+}
+`
+}
+)
+}
+)
+then
+(
+res
+=>
+res
+json
+())
+then
+(
+res
+=>
+console
+log
+(res))
+catch
+(
+err
+=>
+console
+error
+(err))
+;
+Customer Login API
+For more information, see the
+Customer Login API Overview
+Learn about the platform
+What is BigCommerce?
+We’re a commerce-centric company, platform, and set of retailer-facing SaaS products used to scale ecommerce businesses:
+Commerce-centric company
+We’re innovators in the commerce landscape. A NASDAQ-listed, publicly traded company, we empower brands and retailers to grow at all stages of their development, across every sales channel.
+Commerce platform
+From store-level APIs that handle product catalogs, orders, and customers to shopper-focused APIs that help you craft perfect storefront experiences, our platform can power almost any commerce experience you can imagine. The products we offer are all powered by our platform, and our
+developer-focus
+
+===== https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts
+TITLE: API Accounts | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+BigCommerce offers a suite of APIs that let you manage store data, sign customers in, make client-side queries for product information, and write apps that integrate third-party services into store operations.
+BigCommerce
+API accounts
+play a role in every authenticated request to our servers. Our API accounts come in a few different flavors to meet the needs of different use cases. For example, app API accounts work well in multi-store contexts, whereas store API accounts are a good choice for frontend applications.
+Some endpoints only work with one kind of API account.
+For an overview of the authentication schemes that our APIs use, see the
+section below.
+API accounts
+BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce’s REST APIs: store-level credentials, app-level credentials, and account-level credentials. This section describes the difference between the three, how to obtain and revoke account credentials, and the use cases for each. It also contains a reference for available OAuth scopes and provides a compelling list of reasons to migrate from legacy API tokens to OAuth credentials.
+Every parent set of API credentials that you request for your store is its own
+API account
+. At its simplest, an API account consists of the following:
+The
+client_id
+uniquely identifies the app or user, or the
+client
+, making a request.
+The
+client_secret
+is a cryptographically secure value known only to the client and BigCommerce.
+Every active API account has at least one
+access_token
+Store-level API accounts
+include a static access token that does not change.
+App-level API accounts
+expect each application to generate a unique access token for every store that installs the app.
+Account-level API accounts
+include a single access token that belongs to the parent account of the store that the user is signed in to at the time of creation.
+Guard these values closely.
+The client ID and client secret will never change; access tokens do not expire based on time and cannot be manually invalidated. It’s best practice to limit each account’s
+OAuth scope
+to only the privileges needed to complete that app or user’s designated tasks. Create separate API accounts for each app, store API user or function, or account-related implementation.
+Choosing the right kind of API account
+Where both types of API account are supported, review the preceding sections to make an informed choice about which best fits your use case.
+API or Use Case
+Store-level API account
+App-level API account
+Account-level API account
+GraphQL Account API
+, including
+Users
+×
+GraphQL Admin API
+×
+×
+GraphQL Storefront API
+×
+B2B REST Management API
+×
+REST Store Management APIs
+×
+×
+REST Storefront API
+×
+Customer Login API
+×
+Current Customer API
+×
+Payments API
+×
+×
+Apps that host REST Provider APIs (provider apps)
+×
+Apps that create App Extensions
+×
+Apps hosted in the store control panel (single-click apps)
+×
+Manual connection between a third-party app and a store
+×
+×
+Single-store frontend scripts
+×
+Store-level API accounts
+Merchants generate single-store API credentials when they create API accounts in their store control panel, in the
+Settings > Store-level API accounts
+menu. Use these credentials to read and change one store’s data with BigCommerce’s APIs. You can’t change store-level access tokens or OAuth scopes.
+In addition to the
+API account components
+in the preceding section, store-level API accounts contain the following attributes out of the box:
+An
+access_token
+, which accompanies most REST API requests.
+The
+client name
+is a label for your convenience, and it doesn’t accompany requests.
+The
+API path
+is the URL to which you make requests. The API path won’t change, but it will have
+/v3/
+or
+/v2/
+appended to it, depending on the current version for the endpoint you’re querying.
+Most APIs that work with store-level API accounts use the
+access_token
+to authenticate requests to BigCommerce. However, a few use the access token to generate a temporary credential. To learn more about special cases that involve store-level credentials, consult the documentation for the API you want to use.
+Be careful with client secrets
+Do not send your
+client_secret
+or
+access_token
+in plain text or an unencrypted payload.
+Be particularly careful with the
+client_secret
+An attacker can use your
+client_secret
+to both sign and decrypt JWTs sent between you and BigCommerce.
+Creating store-level API credentials
+To create a store-level API account, consult our Knowledge Base article on
+Creating a Store API Account
+Revoking store-level API credentials
+To revoke store-level API credentials, you must delete the corresponding store API account. If the
+client_id
+and
+client_secret
+are compromised, or the account has become unnecessary, secure your account by deleting the API account. You cannot recover a deleted API account, so take care.
+Delete carefully
+Deleting an account cannot be undone, so be sure before clicking the trash can ic
+
+===== https://docs.bigcommerce.com/developer/api-reference/about-our-apis
+TITLE: About Our APIs | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+The BigCommerce suite of APIs empowers you to create apps, automate store processes, and build headless ecommerce solutions.
+If you’re new to building BigCommerce apps, we recommend that you start by exploring the
+App Marketplace
+to get a feel for what’s possible.
+When you’re ready to play with our APIs, check out the
+API Request Quick Start
+Available APIs
+BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.
+You can download generated OpenAPI specification files for API references in JSON or YAML. For details, see
+OpenAPI Specifications
+REST Store Management APIs
+BigCommerce’s Store Management and Payment APIs (for example, the
+Catalog API
+) allow you to manage transactions, modify store data, and act as store administrator. Example use cases include the following:
+Add and update products in a store
+Update a customer’s order and change the order status
+Create a coupon
+Manage a customer’s store account details
+REST Storefront API
+The
+REST Storefront API
+lets you manage customer carts, checkouts, and order information client-side. Example use cases include the following:
+Add an item with JavaScript to a shopper’s cart from a Stencil storefront
+Programmatically retrieve and display information to a customer about their recent order
+Update the billing address of a checkout
+Clear a customer’s current cart
+GraphQL Storefront API
+BigCommerce’s
+GraphQL Storefront API
+lets you query and mutate products, customers, and carts, then launch a checkout on a headless storefront as well as from a native storefront’s frontend. Example use cases include the following:
+Add additional product data to a Stencil storefront
+Access customer data on the frontend of a site
+Manage shopper’s carts on a headless storefront
+Fetch category and brand details from a store’s frontend
+Customer Login API
+The
+Customer Login API
+lets you programmatically sign customers in to a BigCommerce storefront. Example use cases include the following:
+Sign customers in to a BigCommerce store from a third-party account or a headless storefront
+Enable login using credentials other than email and password, such as a phone number
+Integrate a BigCommerce store with an SSO provider
+Current Customer API
+BigCommerce’s
+Current Customer API
+lets you determine which customer is logged in to a storefront during a session.
+Confirm a customer’s identity in the browser
+Validate a customer’s identity to display specific information to them from an external app
+API authentication and context
+Make BigCommerce API requests in the context of the
+storefront
+, BigCommerce
+API server
+, or
+app server
+. Each of the following APIs listings links to its section of our
+Authentication and Example Requests
+article, which contains the base URL of the API in question.
+API or Use Case
+Context
+GraphQL Account API
+, including
+Users
+server
+GraphQL Admin API
+server
+GraphQL Storefront API
+storefront
+REST Management API
+server
+REST Storefront API
+storefront
+Customer Login API
+storefront
+Current Customer API
+storefront
+Payments API
+server
+Apps that host REST Provider APIs (provider apps)
+server
+Apps hosted in the store control panel (single-click apps)
+server
+Single-store frontend scripts
+storefront
+Headless storefronts with backend or request proxy
+server
+Serverless headless storefronts
+storefront, GraphQL-only
+
+===== https://www.bigcommerce.com/partners/become-a-partner/
+TITLE: Join Our World-Class Partner Program | BigCommerce
+ACCESSED: 2026-09-28
+
+Join Our World-Class Partner Program | BigCommerce
+Join our global
+partner ecosystem.
+BigCommerce is the
+most trusted
+commerce solution provider* and our best-in-class partner ecosystem is a big reason why.
+Join us.
+*The Forrester Wave™ B2C and B2B Commerce Solutions Q2, 2022
+Become an Agency Partner
+Join our ecosystem of leading creative and design partners.
+Apply now
+Become a Tech Partner
+Join our ecosystem of leading developers and tech partners.
+Apply now
+Our world-class partner ecosystem includes:
+We're big on collaboration
+ADVOCACY
+CO-SELLING
+SUPPORT
+ENABLEMENT
+We’re intentional about partner alignment.
+There is no one-size-fits-all in partnership.
+We take time to understand each partner’s ideal customer and engagement type to effectively advocate for the right fit on each project.
+We’ll be in the trenches with you.
+Remarkable collaboration every step of the way.
+We provide true deal flow, demand generation, and co-selling support for our partners as we add hundreds of enterprise plan clients per quarter, together.
+We’re obsessed with your success.
+Our experts are “most trusted” for a reason.
+You’ll receive a Channel Account Manager and at higher tiers, gain access to a Partner Marketing Manager for joint GTM and goal strategies, and all partners receive elevated support and solutioning services.
+We empower success, right from the start.
+No guesswork required.
+Our dedicated onboarding and enablement team equips your team with the knowledge and roadmap to accelerate revenue generation.
+ADVOCACY
+CO-SELLING
+SUPPORT
+ENABLEMENT
+What partners say about BigCommerce:
+“Looking back, I wish we would have joined the BigCommerce Partner Program sooner. Not only does their platform solve a multitude of challenges other platforms simply cannot, but their team that supports their partner network makes it a community I couldn’t imagine not being a part of. Cheers to continued joint success in the years to come!”
+Ryan Bloms
+Associate Director, Partnerships Codal
+“EPAM is proud to partner with BigCommerce to help our retail customers create game changing ecommerce experiences for their consumers. BigCommerce’s dedication to continuous innovation helps our clients deliver modernized, differentiated consumer focused experiences that accelerate revenue growth and make online shopping simple, secure and fast.”
+Andrew Fegley
+Head of Digital, North America,  EPAM
+“With the rise of social commerce, direct-to-consumer purchases and acceleration of ecommerce, brands require omnichannel expertise that meets the needs of the modern consumer. WPP is a leader in commerce services, alongside our strength in strategy, media, creativity and integrated experience, and this partnership with BigCommerce reflects our commitment to continue to develop a unique commerce offering for our clients.”
+Nilufar Fowler
+EVP, Strategic Partnerships WPP
+“The world's biggest and most sophisticated merchants need a flexible approach to ecommerce that allows them to quickly make changes to meet the growing needs of their customers. BigCommerce and Contentstack, both members of the MACH Alliance, make it easy for merchants to go composable to drive long-term results.”
+Preseetha Pettigrew
+Vice President, Global Partnerships, Contentstack
+“The BigCommerce and PayPal strategic partnership has been truly valuable not just for our two companies but also for the tens of thousands of BigCommerce merchants globally, providing the tools that can help businesses grow and decision makers feel they made the right choice by selecting BigCommerce and PayPal.”
+Dan Leberman
+SVP, Global SMB, Channel Partner & Inside Sales at PayPal
+Partnership has its privileges.
+We're proud of the partner benefits we offer.
+20% commission
+Partner portal for resources & prospect registration
+Sandbox store for staging & testing
+Sales engineering support (on Enterprise plans)
+Connect, ideate, and collaborate with fellow partners
+Demand generation enablement kits
+Grow with us, get more benefits.
+Each new badge brings additional perks.
+Become an agency partner and create with us!
+Learn more. Apply now.
+Get our agency partner guide
+Become a technical partner and build with us!
+Learn more. Apply now.
+Get our tech partner guide
+Next steps.
+Click, share a few details, and you’ll instantly become an enrolled partner
+Step 1: Apply now
+Step 2: Start announcing
+Register your opportunities, be seen by thousands.
+Step 3: Start building
+From apps to storefronts, and everything in between.
+Step 4: Be empowered
+Use our Partner Portal for training, lead search, and selling.
+Step 5: Keep growing
+Strategic support and quarterly resource publishing.
+Agency or Tech?
+Join our best-in-class partner ecosystem.
+Become an agency partner
+Create seamless online experiences with low/no code, headless, or both. Natively get fully customizable checkout, Multi-Storefront, B2B and more to focus on frictionless innovation with low maintenance and tier 1 performance and security.
+Apply Now
+Become a tech partner
+Use our open
+
+===== https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/auth/create-token
+TITLE: Get OAuth Token | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+This endpoint allows you to generate a temporary OAuth token required to authenticate requests to the Powered by APIs. Franchises support a single OAuth token. Generating a new OAuth token will invalidate the previous OAuth token.
+X-Auth-Client
+string
+The client ID of the franchise API account.
+Headers
+string
+Required
+Defaults to
+The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+Request
+duration
+double
+Required
+Response
+Success
+access_token
+string
+Optional
+>=1 character
+expires_at
+string
+Optional
+>=1 character
+Errors
+401
+Unauthorized Error
+403
+Forbidden Error
+502
+Bad Gateway Error
+503
+Service Unavailable Error
+504
+Gateway Timeout Error
+
+===== https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication
+TITLE: Authentication for hosted storefronts | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+As of September 30, 2025, the B2B Edition API
+authToken
+is deprecated and replaced by the standard BigCommerce API
+X-Auth-Token
+used together with a new header
+X-Store-Hash
+. This change only applies to Server-to-Server requests. Storefront requests remain unchanged.
+While
+authToken
+authentication is not expected to be fully sunset in the near future, it is advised to migrate to the new system as soon as possible to prevent disruption of functionality.
+The server and path for B2B REST Management API endpoints remains the same.
+Authentication provides vital security for your application by verifying who can access certain data. B2B Edition provides several methods for retrieving tokens that can be used to authenticate requests to server to server and storefront APIs.
+Server-to-Server Tokens
+BigCommerce API authentication tokens are used to authenticate requests to the B2B REST Management API. These tokens use specially managed scopes for B2B Edition and are configured ahead via the BigCommerce control panel.
+Creating an API Account
+Creating an API Account is recommended for backend users who need access to relevant account features, company management, and other tasks available through the B2B REST Management API.
+The process for setting up a store-level token is dependent on the appropriate BigCommerce permissions being enabled. Specifically, only users with the
+Create store-level API Accounts
+permission enabled can set up the necessary token.
+To create a token for server-to-server requests,
+Navigate to
+Settings > Store-level API accounts
+in the BigCommerce Control Panel.
+Click Create API Account.
+Create a V3 Token with the B2B Edition scope set to
+modify
+Save the relevant account keys for future reference.
+If you are a partner building an app intended for use with B2B Edition, you will need to ensure the B2B Edition scope is enabled before publishing the app.
+For more information on creating and managing API accounts, refer to
+API Accounts (Help Center)
+If your store doesn’t have B2B Edition enabled, the B2B Edition scope will not be available. Reach out to support or sales to enable B2B Edition.
+Using the REST Management API
+When using the B2B REST Management API, two header parameters are required for authentication: access token and store hash. Both are returned in the API account creation process. Specifically, your requests should include the headers
+X-Auth-Token
+- The ACCESS TOKEN provided during API account creation. This is required for authentication across all server-to-server endpoints.
+X-Store-Hash
+- The STORE HASH provided during API account creation. This hash is unique to the store, but not to the account. This ensures requests are made to the appropriate B2B Edition account.
+An
+X-Auth-Token
+used without an
+X-Store-Hash
+or with a mismatched hash will return server errors. Ensure both are correct before making calls to the API.
+The
+X-Auth-Token
+structure is designed for long-term use. As such, they do not expire by default.
+User-specific tokens can be generated by the
+deprecated
+Get a Server to Server Token
+endpoint. Rather than relying on an existing token, it generates an
+authToken
+by validating a backend user’s login credentials and the store hash.
+Server to server tokens can be configured to expire using this endpoint to set a fixed validity period using the
+endAt
+field in the request. For more information, see
+Server-to-Server Authentication
+This endpoint generates an
+authToken
+, which is deprecated. In addition, it does not support users with custom system user roles, even if those roles have API account creation permissions.
+If you are still using the B2B Edition specific
+authToken
+, the store hash is not needed as the token includes that information. Including
+X-Store-Hash
+with
+authToken
+will have unexpected results. Please migrate to the unified token structure as soon as possible to avoid loss of functionality.
+async
+function
+()
+{
+try
+{
+let
+authToken
+=
+await
+fetch
+(
+{
+method
+:
+"
+post
+"
+,
+url
+:
+"
+https://api-b2b.bigcommerce.com/api/v3/io/auth/backend
+"
+,
+body
+:
+{
+storeHash
+:
+"
+<STORE_HASH>
+"
+,
+email
+:
+"
+<USER_EMAIL>
+"
+,
+password
+:
+"
+<USER_PASSWORD>
+"
+,
+channelId
+:
+1
+,
+name
+:
+"
+optionalTokenName
+"
+,
+beginAt
+:
+1000
+,
+endAt
+:
+17219304
+,
+// Unix timestamp for expiry
+}
+}
+)
+;
+return
+authToken
+;
+}
+catch
+(
+error
+)
+{
+console
+log
+(
+error
+)
+;
+throw
+error
+;
+}
+}
+Tokens created via API can be invalidated as necessary using the
+deprecated
+Delete Backend API Tokens
+endpoint.
+Storefront Tokens
+Note:
+This section covers authentication for the B2B Edition GraphQL Storefront API. It is best practice to use GraphQL mutations when generating storefront authTokens on B2B Edition’s Buyer Portal experience. For information about the equivalent REST Storefront Authentication API requests, see
+B2B Edition’s REST Storefront and GraphQL Storefront APIs allow you to query and modify data from the context of a storefront user. Depending on your store’s configurations, you can perform certa
+
+===== https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products/get-product
+TITLE: Get Product | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+Returns a single
+Product
+. Optional parameters can be passed in.
+X-Auth-Token
+string
+### OAuth scopes
+
+| UI Name | Permission | Parameter |
+|:--------|:-----------|:----------|
+|  Products | modify | `store_v2_products` |
+|  Products | read-only | `store_v2_products_read_only` |
+
+### Authentication header
+
+| Header | Argument | Description |
+|:-------|:---------|:------------|
+| `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). |
+
+### Further reading
+
+For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests).
+
+For more about BigCommerce OAuth scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes).
+
+For a list of API status codes, see [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes).
+Path parameters
+product_id
+integer
+Required
+The ID of the
+Product
+to which the resource belongs.
+store_hash
+string
+Required
+Permanent ID of the BigCommerce store.
+Headers
+string
+Required
+Defaults to
+The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+Query parameters
+include
+list of enums
+Optional
+A comma-separated list of sub-resources to return with a product object.
+Show 11 enum values
+include_fields
+list of enums
+Optional
+Fields to include, in a comma-separated list. The ID and the specified fields will be returned.
+Show 64 enum values
+exclude_fields
+list of strings
+Optional
+Fields to exclude, in a comma-separated list. The specified fields will be excluded from a response. The ID cannot be excluded.
+Response
+OK
+data
+object
+Optional
+Base Product response
+Show 76 properties
+meta
+object
+Optional
+Response metadata.
+Errors
+404
+Not Found Error
+
+===== https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication
+TITLE: Authentication | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+Authenticate GraphQL Storefront API requests using bearer tokens passed with the
+Authorization
+header. You can authenticate using three different kinds of tokens:
+storefront tokens
+,
+private tokens
+, or
+customer impersonation tokens
+POST
+https://your_store.example.com/graphql
+Authorization
+:
+Bearer {token}
+:
+Content-Type
+:
+{
+// request body
+}
+Storefront tokens
+Storefront tokens used in server-to-server contexts are deprecated. Use
+private tokens
+for server-to-server and headless interactions instead. Storefront tokens will continue to work for browser-side requests. The deprecation timeline is as follows:
+June 30, 2026
+: Storefront tokens can no longer be created without
+allowed_cors_origins
+. Existing tokens without origins will continue to work.
+March 31, 2027
+: Storefront tokens without
+allowed_cors_origins
+will no longer be accepted for API requests.
+Storefront tokens are most appropriate to use directly from the web browser. If you’re creating a token for an application that will make server-to-server or proxied requests to the GraphQL Storefront API, use a
+private token
+. If you work with customer data, use a
+customer impersonation token
+. If you only wish to query information from an anonymous shopper’s perspective in a browser, use a storefront token.
+Storefront token security
+Generally speaking, vanilla storefront tokens are not considered sensitive, and it is safe to expose them in web browsers. Storefront tokens can only expose information and actions that shoppers can access when they browse a storefront.
+It is possible to create a long-lived token that does not expire. For greater security, we recommend creating shorter-lived tokens and rotating them periodically.
+For security reasons, GraphQL Storefront API tokens are scoped to particular
+CORS
+origins, so you must supply the origin or origins on which you intend to use the token. If you have more than two origins, you will need multiple tokens. For server-to-server or headless interactions that do not require CORS origins, use a
+private token
+instead.
+Create a storefront token
+You can create storefront tokens by API. On Stencil storefronts, you can also
+access an autogenerated token
+using in-page context.
+Use the
+Create a storefront token
+REST endpoint to create storefront bearer tokens. Add the
+storefront API tokens creation scope
+to the
+store-level or app-level API account
+you use to generate tokens. You can use a storefront bearer token to create a
+customer access token
+The channel ID for the default Stencil storefront is
+1
+. Storefront tokens don’t require you to pass in channel IDs if you want to make the request on behalf of all the stores channels IDs. To learn more about channels, see
+the channels section of the multi-storefront overview
+. For more about using the GraphQL Storefront API on custom channels, consult the GraphQL Storefront API overview’s
+FAQ section on alternate channels
+Request
+Response
+POST
+https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/storefront/api-token
+x-auth-token
+:
+{{access_token}}
+accept
+:
+content-type
+:
+{
+"
+channel_ids
+"
+:
+[
+1
+,
+2
+,
+3
+]
+,
+// array of integers (must be a valid channel IDs on the store)
+"
+expires_at
+"
+:
+1602288000
+,
+// when the token will expire, as an integer unix timestamp (in seconds)
+"
+allowed_cors_origins
+"
+:
+[
+// array of origins (up to 2 origins per token)
+"
+https://example.com
+"
+]
+}
+Customer access tokens
+A customer access token establishes
+customer context
+for server-to-server requests: it represents an authenticated storefront session and is sent in the
+X-Bc-Customer-Access-Token
+header alongside a storefront or private token. For how to obtain and use one, see
+Customer access tokens
+Using auto-generated tokens on Stencil storefronts
+On Stencil storefronts, you can access a token at render time and pass the token to client-side code using the
+{{settings.storefront_api.token}}
+Handlebars property. This auto-generated token has an expiry period of 24-48 hours and will rotate before expiration.
+Private tokens
+Private tokens are designed for server-to-server and headless storefront interactions with the GraphQL Storefront API. Unlike storefront tokens, private tokens do not require CORS origins and should never be exposed in a web browser.
+Private tokens support the following access scopes:
+Unauthenticated
+: Query information from the perspective of an anonymous shopper. This is equivalent to an unauthenticated storefront session.
+Customer
+: Access customer-specific data, such as product pricing and availability, customer account details, and more. You must pass the
+X-Bc-Customer-Access-Token
+header along with the private token.
+B2B
+: Access B2B-specific data, such as company accounts, buyer roles, and shared shopping lists.
+Create a private token
+Add the
+Storefront API tokens creation scope
+to the
+store-level or app-level API account
+you use to generate tokens.
+Request
+Response
+POST
+https://api.bigcomm
+
+===== https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-reference/plans/create-store-suspension
+TITLE: Create Store Suspension | BigCommerce Docs
+ACCESSED: 2026-09-28
+
+This endpoint allows you to create a store suspension at the end of the merchant’s current billing cycle. Once a merchant’s store is suspended, billing is paused for the merchant’s store subscription.
+X-Auth-Client
+string
+The client ID of the franchise API account.
+OR
+X-Auth-Token
+string
+An OAuth token generated from the franchise API account.
+
+To authenticate, generate an **OAuth Token** (if you donʼt have one or itʼs expired):
+
+```http
+POST https://api.bigcommerce.com/franchises/{franchise_uuid}/v1/oauth/token
+Accept: application/json
+X-Auth-Client: {client_id}
+X-Auth-Secret: {client_secret}
+
+{
+  "duration": 900
+}
+```
+
+Response:
+
+```json
+{
+  "access_token": "dlkJcn34...Lkd012",
+  "expires_at": "2018-04-24T16:15:26.509045122Z”
+}
+```
+
+After you generate an **OAuth token**, use the `client_id` and `oauth_token` to authenticate all other API requests:
+
+```http
+GET https://api.bigcommerce.com/franchises/{franchise_uuid}/v1/accounts/123
+Accept: application/json
+X-Auth-Client: {client_id}
+X-Auth-Token: {oauth_token}
+```
+
+Response:
+
+```json
+{
+  "data": {
+    "id": "12345678910",
+    "name": "Test Company",
+    ...
+  },
+  "meta": {}
+}
+```
+Path parameters
+store_id
+string
+Required
+The ID of the store.
+Headers
+string
+Required
+Defaults to
+The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+Response
+Success
+data
+object
+Optional
+Show 3 properties
+meta
+object
+Optional
+Errors
+401
+Unauthorized Error
+404
+Not Found Error
+422
+Unprocessable Entity Error
+502
+Bad Gateway Error
+503
+Service Unavailable Error
+504
+Gateway Timeout Error

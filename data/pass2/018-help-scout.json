@@ -1,0 +1,223 @@
+{
+  "app": "Help Scout",
+  "number": 18,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:55:15.928035+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.helpscout.com/\",\n    \"https://developer.helpscout.com/docs/\",\n    \"https://developer.helpscout.com/help-desk-api/\",\n    \"https://developer.helpscout.com/docs/authentication/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://helpscout.com",
+    "https://developer.helpscout.com/",
+    "https://developer.helpscout.com/docs/",
+    "https://developer.helpscout.com/help-desk-api/",
+    "https://developer.helpscout.com/docs/authentication/",
+    "https://docs.helpscout.com/",
+    "https://developers.helpscout.com/",
+    "https://api.helpscout.com/",
+    "https://helpscout.com/docs",
+    "https://helpscout.com/developers",
+    "https://helpscout.com/api",
+    "https://helpscout.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.helpscout.com/pricing/",
+    "https://developer.helpscout.com/webhooks/",
+    "https://developer.helpscout.com/apps/getting-started/",
+    "https://developer.helpscout.com/help-desk-api/hooks/create/",
+    "https://docs.helpscout.com/collection/1543-getting-started",
+    "https://docs.helpscout.com/category/74-copying-email-to-help-scout",
+    "https://docs.helpscout.com/category/1205-get-started-with-beacon-20"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.helpscout.com/docs/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.helpscout.com/docs/authentication/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.helpscout.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.helpscout.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.helpscout.com/",
+      "requested_url": "https://helpscout.com",
+      "status": 200,
+      "title": "Help Scout: The AI-driven support platform for customer-first brands",
+      "chars": 4523,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.helpscout.com/",
+      "requested_url": "https://developer.helpscout.com/",
+      "status": 200,
+      "title": "Help Scout Developers - API Documentation\n      \n      | Help Scout Developers",
+      "chars": 995,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.helpscout.com/help-desk-api/",
+      "requested_url": "https://developer.helpscout.com/help-desk-api/",
+      "status": 200,
+      "title": "Mailbox API Overview\n      \n      | Help Scout Developers",
+      "chars": 3191,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.helpscout.com/",
+      "requested_url": "https://docs.helpscout.com/",
+      "status": 200,
+      "title": "Help Scout Support",
+      "chars": 2919,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.helpscout.com/pricing/",
+      "requested_url": "https://www.helpscout.com/pricing/",
+      "status": 200,
+      "title": "Help Scout Pricing: Affordable Customer Support Software",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.helpscout.com/webhooks/",
+      "requested_url": "https://developer.helpscout.com/webhooks/",
+      "status": 200,
+      "title": "Webhooks\n      \n      | Help Scout Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.helpscout.com/apps/getting-started/",
+      "requested_url": "https://developer.helpscout.com/apps/getting-started/",
+      "status": 200,
+      "title": "Getting Started with the Developer Platform\n      \n      | Help Scout Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.helpscout.com/help-desk-api/hooks/create/",
+      "requested_url": "https://developer.helpscout.com/help-desk-api/hooks/create/",
+      "status": 200,
+      "title": "Create Webhook\n      \n      | Help Scout Developers",
+      "chars": 1845,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.helpscout.com/collection/1543-getting-started",
+      "requested_url": "https://docs.helpscout.com/collection/1543-getting-started",
+      "status": 200,
+      "title": "Getting Started - Help Scout Support",
+      "chars": 370,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Help Scout is an AI-driven customer support platform providing shared inboxes, live chat, knowledge bases, and developer tools including an Inbox API, Chat API, Docs API, webhooks, and sidebar apps.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authentication is based on API Keys passed via HTTP Basic Authentication in the username field with a dummy password such as X.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free plan or trial and obtain API credentials or set up apps directly within the product settings/dashboard.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"@helpscout/javascript-sdk\",\n      \"@helpscout/ui-kit\"\n    ],\n    \"notes\": \"Help Scout provides REST APIs (Mailbox, Chat, Docs APIs), Webhooks, and JavaScript/React SDKs for building sidebar apps and integrations.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"url\": null,\n    \"notes\": \"The provided text contains no mention of a Model Context Protocol (MCP) server or integration.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.helpscout.com/help-desk-api/\",\n      \"claim\": \"API authentication uses API Keys passed via HTTP Basic Authentication.\",\n      \"quote\": \"Authentication is based on API Keys. Each API Key is associated with a Help Scout user.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/help-desk-api/\",\n      \"claim\": \"The API Key is passed via HTTP Basic Authentication in the username field.\",\n      \"quote\": \"The API Key is passed via HTTP Basic Authentication and goes in the username field.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/\",\n      \"claim\": \"Help Scout offers a free plan to start using the platform.\",\n      \"quote\": \"If that\u2019s how you're looking to grow, try Help Scout free. We\u2019d love to see where it takes you.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/\",\n      \"claim\": \"Help Scout provides multiple developer tools including Inbox API, Chat API, Docs API, and Webhooks.\",\n      \"quote\": \"Inbox API - read and write data to Help Scout inboxes\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/webhooks/\",\n      \"claim\": \"Webhooks can be configured through the Help Scout user interface.\",\n      \"quote\": \"Configuring webhooks can be done through the Help Scout user interface.\"\n    },\n    {\n      \"url\": \"https://developer.helpscout.com/apps/getting-started/\",\n      \"claim\": \"A JavaScript SDK is offered for building apps.\",\n      \"quote\": \"While you have the freedom to use any language, platform, or library to build your app, we also offer a JavaScript SDK and a React UI Kit to streamline your development process.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developer.helpscout.com/help-desk-api/\",\n      \"quote\": \"Authentication is based on API Keys.\"\n    },\n    \"access\": {\n      \"url\": \"https://www.helpscout.com/\",\n      \"quote\": \"If that\u2019s how you're looking to grow, try Help Scout free. We\u2019d love to see where it takes you.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developer.helpscout.com/\",\n      \"quote\": \"Inbox API - read and write data to Help Scout inboxes\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://helpscout.com",
+    "one_liner": "Help Scout is an AI-driven customer support platform providing shared inboxes, live chat, knowledge bases, and developer tools including an Inbox API, Chat API, Docs API, webhooks, and sidebar apps.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authentication is based on API Keys passed via HTTP Basic Authentication in the username field with a dummy password such as X."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for a free plan or trial and obtain API credentials or set up apps directly within the product settings/dashboard."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "@helpscout/javascript-sdk",
+        "@helpscout/ui-kit"
+      ],
+      "notes": "Help Scout provides REST APIs (Mailbox, Chat, Docs APIs), Webhooks, and JavaScript/React SDKs for building sidebar apps and integrations."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.helpscout.com/help-desk-api/",
+        "claim": "API authentication uses API Keys passed via HTTP Basic Authentication.",
+        "quote": "Authentication is based on API Keys. Each API Key is associated with a Help Scout user.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.helpscout.com/help-desk-api/",
+        "claim": "The API Key is passed via HTTP Basic Authentication in the username field.",
+        "quote": "The API Key is passed via HTTP Basic Authentication and goes in the username field.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.helpscout.com/",
+        "claim": "Help Scout provides multiple developer tools including Inbox API, Chat API, Docs API, and Webhooks.",
+        "quote": "Inbox API - read and write data to Help Scout inboxes",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.helpscout.com/webhooks/",
+        "claim": "Webhooks can be configured through the Help Scout user interface.",
+        "quote": "Configuring webhooks can be done through the Help Scout user interface.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.helpscout.com/apps/getting-started/",
+        "claim": "A JavaScript SDK is offered for building apps.",
+        "quote": "While you have the freedom to use any language, platform, or library to build your app, we also offer a JavaScript SDK and a React UI Kit to streamline your development process.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developer.helpscout.com/help-desk-api/",
+        "quote": "Authentication is based on API Keys."
+      },
+      "access": {
+        "url": "https://www.helpscout.com/",
+        "quote": "If that\u2019s how you're looking to grow, try Help Scout free. We\u2019d love to see where it takes you."
+      },
+      "api_surface": {
+        "url": "https://developer.helpscout.com/",
+        "quote": "Inbox API - read and write data to Help Scout inboxes"
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:55:25.038362+00:00"
+}

@@ -1,0 +1,216 @@
+{
+  "app": "Bright Data",
+  "number": 57,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:33:02.669392+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://brightdata.com/docs\",\n    \"https://brightdata.com/api-reference\",\n    \"https://brightdata.com/cp/setting/developers\",\n    \"https://brightdata.com/pricing\",\n    \"https://brightdata.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://brightdata.com",
+    "https://brightdata.com/docs",
+    "https://brightdata.com/api-reference",
+    "https://brightdata.com/cp/setting/developers",
+    "https://brightdata.com/pricing",
+    "https://docs.brightdata.com/",
+    "https://developer.brightdata.com/",
+    "https://developers.brightdata.com/",
+    "https://api.brightdata.com/",
+    "https://brightdata.com/developers",
+    "https://brightdata.com/api",
+    "https://brightdata.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://brightdata.com/license",
+    "https://brightdata.com/contact",
+    "https://brightdata.com/partners",
+    "https://brightdata.com/pricing/serp",
+    "https://brightdata.com/partners/aws",
+    "https://brightdata.com/cp/setting/auth",
+    "https://docs.brightdata.com/api-reference/authentication",
+    "https://docs.brightdata.com/api-reference/SDK",
+    "https://docs.brightdata.com/api-reference/SDK-JS",
+    "https://docs.brightdata.com/api-reference/media-data-api/media-data-api",
+    "https://docs.brightdata.com/quickstart",
+    "https://brightdata.com/pricing/managed-services"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://brightdata.com/api-reference",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://brightdata.com/cp/setting/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.brightdata.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.brightdata.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://brightdata.com",
+      "requested_url": "https://brightdata.com",
+      "status": 200,
+      "title": "Bright Data: Web Data Infrastructure for Humans & Agents",
+      "chars": 4961,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.brightdata.com/introduction",
+      "requested_url": "https://brightdata.com/docs",
+      "status": 200,
+      "title": "Bright Data documentation - Bright Data Docs",
+      "chars": 3696,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://brightdata.com/pricing",
+      "requested_url": "https://brightdata.com/pricing",
+      "status": 200,
+      "title": "Top-Tier Proxies & Scraping APIs Pricing",
+      "chars": 1933,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://brightdata.com/license",
+      "requested_url": "https://brightdata.com/license",
+      "status": 200,
+      "title": "Bright Data License Agreement",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://brightdata.com/contact",
+      "requested_url": "https://brightdata.com/contact",
+      "status": 200,
+      "title": "Contact Us - Bright Data",
+      "chars": 1577,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://brightdata.com/partners",
+      "requested_url": "https://brightdata.com/partners",
+      "status": 200,
+      "title": "Partner with us - Bright Data",
+      "chars": 2082,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://brightdata.com/pricing/serp",
+      "requested_url": "https://brightdata.com/pricing/serp",
+      "status": 200,
+      "title": "SERP API Pricing Plans",
+      "chars": 4791,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://brightdata.com/partners/aws",
+      "requested_url": "https://brightdata.com/partners/aws",
+      "status": 200,
+      "title": "AWS - Bright Data",
+      "chars": 3761,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Bright Data provides web data infrastructure including proxy networks, scraper APIs, datasets, and AI integration tools.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses an API token or Bearer token passed in the Authorization header or environment variables.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Offers a free tier with 5,000 free credits per month, no credit card required, allowing developers to get started immediately.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Python\",\n      \"Node.js\"\n    ],\n    \"notes\": \"Provides REST APIs, SDKs for Python and Node.js, and webhook integrations.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://docs.brightdata.com/introduction\",\n    \"notes\": \"Offers a Model Context Protocol (MCP) server for live web access for AI agents.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://brightdata.com\",\n      \"claim\": \"Bright Data offers scraper APIs and webhook integration\",\n      \"quote\": \"Seamless API and webhook integration\"\n    },\n    {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"claim\": \"Bright Data offers a self-serve tier with 5,000 free credits and no credit card required\",\n      \"quote\": \"5,000 free credits per month, no credit card required. See the free tier.\"\n    },\n    {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"claim\": \"Bright Data provides an API key mechanism for authentication\",\n      \"quote\": \"Each example scrapes a LinkedIn profile with the Scraper API and works as-is after you replace YOUR_API_KEY with a key from your account settings.\"\n    },\n    {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"claim\": \"Bright Data provides an MCP server tool for AI readers\",\n      \"quote\": \"Bright Data MCP\\nLive web access for agents\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"quote\": \"Each example scrapes a LinkedIn profile with the Scraper API and works as-is after you replace YOUR_API_KEY with a key from your account settings.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"quote\": \"5,000 free credits per month, no credit card required. See the free tier.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"quote\": \"SDKs\\nPython and JavaScript clients\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.brightdata.com/introduction\",\n      \"quote\": \"Bright Data MCP\\nLive web access for agents\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://brightdata.com",
+    "one_liner": "Bright Data provides web data infrastructure including proxy networks, scraper APIs, datasets, and AI integration tools.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses an API token or Bearer token passed in the Authorization header or environment variables."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Offers a free tier with 5,000 free credits per month, no credit card required, allowing developers to get started immediately."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "Python",
+        "Node.js"
+      ],
+      "notes": "Provides REST APIs, SDKs for Python and Node.js, and webhook integrations."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://docs.brightdata.com/introduction",
+      "notes": "Offers a Model Context Protocol (MCP) server for live web access for AI agents."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://brightdata.com",
+        "claim": "Bright Data offers scraper APIs and webhook integration",
+        "quote": "Seamless API and webhook integration",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.brightdata.com/introduction",
+        "claim": "Bright Data offers a self-serve tier with 5,000 free credits and no credit card required",
+        "quote": "5,000 free credits per month, no credit card required. See the free tier.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.brightdata.com/introduction",
+        "claim": "Bright Data provides an API key mechanism for authentication",
+        "quote": "Each example scrapes a LinkedIn profile with the Scraper API and works as-is after you replace YOUR_API_KEY with a key from your account settings.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.brightdata.com/introduction",
+        "claim": "Bright Data provides an MCP server tool for AI readers",
+        "quote": "Bright Data MCP\nLive web access for agents",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.brightdata.com/introduction",
+        "quote": "Each example scrapes a LinkedIn profile with the Scraper API and works as-is after you replace YOUR_API_KEY with a key from your account settings."
+      },
+      "access": {
+        "url": "https://docs.brightdata.com/introduction",
+        "quote": "5,000 free credits per month, no credit card required. See the free tier."
+      },
+      "api_surface": {
+        "url": "https://docs.brightdata.com/introduction",
+        "quote": "SDKs\nPython and JavaScript clients"
+      },
+      "mcp": {
+        "url": "https://docs.brightdata.com/introduction",
+        "quote": "Bright Data MCP\nLive web access for agents"
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:33:15.572618+00:00"
+}

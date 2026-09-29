@@ -1,0 +1,237 @@
+{
+  "app": "Slack",
+  "number": 21,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:55:47.248566+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://api.slack.com/\",\n    \"https://api.slack.com/authentication\",\n    \"https://api.slack.com/docs\",\n    \"https://api.slack.com/messaging\",\n    \"https://api.slack.com/apis\",\n    \"https://api.slack.com/tutorials\",\n    \"https://api.slack.com/changelog\",\n    \"https://slack.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://slack.com",
+    "https://api.slack.com/",
+    "https://api.slack.com/authentication",
+    "https://api.slack.com/docs",
+    "https://api.slack.com/messaging",
+    "https://api.slack.com/apis",
+    "https://api.slack.com/tutorials",
+    "https://api.slack.com/changelog",
+    "https://docs.slack.com/",
+    "https://developer.slack.com/",
+    "https://developers.slack.com/",
+    "https://slack.com/docs",
+    "https://slack.com/developers",
+    "https://slack.com/api",
+    "https://slack.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://slack.com/intl/en-in/contact-sales",
+    "https://slack.com/partner-offers",
+    "https://slack.com/intl/en-in/connect",
+    "https://slack.com/intl/en-in/pricing",
+    "https://slack.com/intl/en-in/partners",
+    "https://slack.com/intl/en-in/ai-agents",
+    "https://docs.slack.dev/reference",
+    "https://docs.slack.dev/quickstart",
+    "https://docs.slack.dev/ai/agent-quickstart",
+    "https://docs.slack.dev/tools/java-slack-sdk",
+    "https://docs.slack.dev/tools/node-slack-sdk",
+    "https://docs.slack.dev/authentication/tokens",
+    "https://docs.slack.dev/authentication/using-token-rotation",
+    "https://docs.slack.dev/authentication/installing-with-oauth",
+    "https://docs.slack.dev/authentication/using-pkce",
+    "https://docs.slack.dev/authentication/sign-in-with-slack/",
+    "https://docs.slack.dev/authentication/authorizing-with-postman",
+    "https://docs.slack.dev/tools/deno-slack-sdk/reference/slack-functions",
+    "https://docs.slack.dev/tools/deno-slack-sdk/reference/slack-functions?filter=Messaging",
+    "https://docs.slack.dev/tools/deno-slack-sdk/",
+    "https://docs.slack.dev/reference/events",
+    "https://docs.slack.dev/reference/methods",
+    "https://docs.slack.dev/reference/slack-status-api",
+    "https://docs.slack.dev/reference/methods/oauth.access",
+    "https://docs.slack.dev/reference/methods/oauth.v2.access",
+    "https://docs.slack.dev/tools/deno-slack-sdk/guides/getting-started",
+    "https://docs.slack.dev/legacy/legacy-authentication/legacy-oauth-scopes"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://api.slack.com/tutorials",
+      "reason": "page too thin (69 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://slack.com/intl/en-in/",
+      "requested_url": "https://slack.com",
+      "status": 200,
+      "title": "Slack | AI work platform and productivity tools",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.slack.dev/",
+      "requested_url": "https://api.slack.com/",
+      "status": 200,
+      "title": "Slack developer docs | Slack Developer Docs",
+      "chars": 1134,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "requested_url": "https://api.slack.com/authentication",
+      "status": 200,
+      "title": "Authentication overview | Slack Developer Docs",
+      "chars": 1466,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.slack.dev/messaging/",
+      "requested_url": "https://api.slack.com/messaging",
+      "status": 200,
+      "title": "Messaging | Slack Developer Docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/",
+      "requested_url": "https://api.slack.com/apis",
+      "status": 200,
+      "title": "Slack APIs | Slack Developer Docs",
+      "chars": 2937,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.slack.dev/changelog/",
+      "requested_url": "https://api.slack.com/changelog",
+      "status": 200,
+      "title": "Changelog | Slack Developer Docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/contact-sales",
+      "requested_url": "https://slack.com/intl/en-in/contact-sales",
+      "status": 200,
+      "title": "Contact sales | Slack",
+      "chars": 438,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/partner-offers",
+      "requested_url": "https://slack.com/partner-offers",
+      "status": 200,
+      "title": "Slack Partner Offers Marketplace | Slack",
+      "chars": 1049,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/connect",
+      "requested_url": "https://slack.com/intl/en-in/connect",
+      "status": 200,
+      "title": "Slack Connect: External communication and collaboration | Slack",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/pricing",
+      "requested_url": "https://slack.com/intl/en-in/pricing",
+      "status": 200,
+      "title": "Slack pricing for subscriptions: Find the right fit for your team | Slack",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Slack provides an API platform for messaging, automation, and apps using Web and Events APIs authenticated via OAuth 2.0 and tokens.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Slack apps use OAuth scopes and tokens (user tokens, bot tokens, and app tokens).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can download the Slack CLI and connect to their workspace to create a project quickly.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Java Slack SDK\",\n      \"Node Slack SDK\",\n      \"Python Slack SDK\",\n      \"Deno Slack SDK\"\n    ],\n    \"notes\": \"Slack provides a Web API with HTTP methods, an Events API for webhook/push delivery or Socket Mode, and multiple SDKs.\"\n  },\n  \"mcp\": {\n        \"exists\": true,\n        \"url\": \"https://docs.slack.dev/changelog/\",\n        \"notes\": \"Slack provides the Slack MCP Server and a plugin for AI tools.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.slack.dev/authentication/\",\n      \"claim\": \"Slack uses OAuth 2.0 and token management for authentication.\",\n      \"quote\": \"Whether you\u2019re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we\u2019ve got you covered.\"\n    },\n    {\n      \"url\": \"https://docs.slack.dev/\",\n      \"claim\": \"Developers can self-serve by installing the CLI and connecting to a workspace.\",\n      \"quote\": \"1 Install the Slack CLI Download the command-line tool for developing Slack apps.\"\n    },\n    {\n      \"url\": \"https://docs.slack.dev/apis/\",\n      \"claim\": \"Slack offers a Web API supplying HTTP methods and an Events API for push delivery.\",\n      \"quote\": \"The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality.\"\n    },\n    {\n      \"url\": \"https://docs.slack.dev/changelog/\",\n      \"claim\": \"Slack provides an MCP server and skills plugin.\",\n      \"quote\": \"We're excited to introduce the Slack MCP and Skills Plugin for AI tools, which bundles a set of skills that help you develop on the Slack platform alongside the Slack MCP Server.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.slack.dev/authentication/\",\n      \"quote\": \"Whether you\u2019re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we\u2019ve got you covered.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.slack.dev/\",\n      \"quote\": \"Create your first Slack app quickly.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.slack.dev/apis/\",\n      \"quote\": \"The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.slack.dev/changelog/\",\n      \"quote\": \"We're excited to introduce the Slack MCP and Skills Plugin for AI tools, which bundles a set of skills that help you develop on the Slack platform alongside the Slack MCP Server.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint_url": "https://slack.com",
+    "one_liner": "Slack provides an API platform for messaging, automation, and apps using Web and Events APIs authenticated via OAuth 2.0 and tokens.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Slack apps use OAuth scopes and tokens (user tokens, bot tokens, and app tokens)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can download the Slack CLI and connect to their workspace to create a project quickly."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [
+        "Java Slack SDK",
+        "Node Slack SDK",
+        "Python Slack SDK",
+        "Deno Slack SDK"
+      ],
+      "notes": "Slack provides a Web API with HTTP methods, an Events API for webhook/push delivery or Socket Mode, and multiple SDKs."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://docs.slack.dev/changelog/",
+      "notes": "Slack provides the Slack MCP Server and a plugin for AI tools."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.slack.dev/authentication/",
+        "claim": "Slack uses OAuth 2.0 and token management for authentication.",
+        "quote": "Whether you\u2019re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we\u2019ve got you covered.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.slack.dev/",
+        "claim": "Developers can self-serve by installing the CLI and connecting to a workspace.",
+        "quote": "1 Install the Slack CLI Download the command-line tool for developing Slack apps.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.slack.dev/apis/",
+        "claim": "Slack offers a Web API supplying HTTP methods and an Events API for push delivery.",
+        "quote": "The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.slack.dev/changelog/",
+        "claim": "Slack provides an MCP server and skills plugin.",
+        "quote": "We're excited to introduce the Slack MCP and Skills Plugin for AI tools, which bundles a set of skills that help you develop on the Slack platform alongside the Slack MCP Server.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.slack.dev/authentication/",
+        "quote": "Whether you\u2019re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we\u2019ve got you covered."
+      },
+      "access": {
+        "url": "https://docs.slack.dev/",
+        "quote": "Create your first Slack app quickly."
+      },
+      "api_surface": {
+        "url": "https://docs.slack.dev/apis/",
+        "quote": "The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality."
+      },
+      "mcp": {
+        "url": "https://docs.slack.dev/changelog/",
+        "quote": "We're excited to introduce the Slack MCP and Skills Plugin for AI tools, which bundles a set of skills that help you develop on the Slack platform alongside the Slack MCP Server."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:56:05.681907+00:00"
+}

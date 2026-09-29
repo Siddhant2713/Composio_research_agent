@@ -1,0 +1,135 @@
+{
+  "app": "Coda",
+  "number": 78,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:52:15.593163+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://coda.io/developers\",\n    \"https://coda.io/api\",\n    \"https://help.coda.io/en/articles/3241088-getting-started-with-coda-s-api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://coda.io/developers",
+    "https://coda.io/api",
+    "https://help.coda.io/en/articles/3241088-getting-started-with-coda-s-api",
+    "https://docs.coda.io/",
+    "https://developer.coda.io/",
+    "https://developers.coda.io/",
+    "https://api.coda.io/",
+    "https://coda.io/docs",
+    "https://coda.io/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.coda.io/en/articles/3241088-getting-started-with-coda-s-api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.coda.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.coda.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.coda.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.coda.io/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://coda.io/docs",
+      "reason": "page too thin (5 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "requested_url": "https://coda.io/developers",
+      "status": 200,
+      "title": "Superhuman Docs API (v1) Reference Documentation",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api",
+      "requested_url": "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api",
+      "status": 200,
+      "title": "Getting Started Guide: Coda API",
+      "chars": 3244,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The Superhuman Docs API (formerly Coda API) is a RESTful API that enables programmatic interaction with Superhuman Docs data.\",\n  \"auth\": null,\n  \"access\": null,\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"The API is described as a RESTful API.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Mentions the Superhuman Docs MCP server optimized for LLM usage patterns.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.superhuman.com/developers/apis/v1\",\n      \"claim\": \"The API is a RESTful API.\",\n      \"quote\": \"The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):\"\n    },\n    {\n      \"url\": \"https://docs.superhuman.com/developers/apis/v1\",\n      \"claim\": \"Mentions the Superhuman Docs MCP server.\",\n      \"quote\": \"If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the\\nSuperhuman Docs MCP server\\n.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://docs.superhuman.com/developers/apis/v1\",\n      \"quote\": \"The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.superhuman.com/developers/apis/v1\",\n      \"quote\": \"If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the\\nSuperhuman Docs MCP server\\n.\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://coda.io/developers",
+    "one_liner": "The Superhuman Docs API (formerly Coda API) is a RESTful API that enables programmatic interaction with Superhuman Docs data.",
+    "auth": null,
+    "access": null,
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": null,
+      "notes": "The API is described as a RESTful API."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Mentions the Superhuman Docs MCP server optimized for LLM usage patterns."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "claim": "The API is a RESTful API.",
+        "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "claim": "Mentions the Superhuman Docs MCP server.",
+        "quote": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the\nSuperhuman Docs MCP server\n.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "api_surface": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):"
+      },
+      "mcp": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the\nSuperhuman Docs MCP server\n."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T04:52:29.931577+00:00"
+}

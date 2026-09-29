@@ -1,0 +1,200 @@
+{
+  "app": "Vonage",
+  "number": 30,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:58:20.347179+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.vonage.com\",\n    \"https://developer.vonage.com/en/api\",\n    \"https://developer.vonage.com/en/documentation\",\n    \"https://dashboard.vonage.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developer.vonage.com",
+    "https://developer.vonage.com/en/api",
+    "https://developer.vonage.com/en/documentation",
+    "https://dashboard.vonage.com",
+    "https://docs.vonage.com/",
+    "https://developers.vonage.com/",
+    "https://api.vonage.com/",
+    "https://vonage.com/docs",
+    "https://vonage.com/developers",
+    "https://vonage.com/api",
+    "https://vonage.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b",
+    "https://developer.vonage.com/tutorials/silent-authentication/introduction",
+    "https://developer.vonage.com/sign-up?icid=tryitfree_api-developer-adp_nexmodashbdfreetrialsignup_nav",
+    "https://developer.vonage.com/tools",
+    "https://www.vonage.com/communications-apis/pricing",
+    "https://developer.vonage.com/video/client-sdks/overview",
+    "https://developer.vonage.com/api/verify",
+    "https://developer.vonage.com/api/application.v2",
+    "https://developer.vonage.com/voice/voice-api/webhook-reference",
+    "https://developer.vonage.com/api/pricing",
+    "https://developer.vonage.com/getting-started/overview",
+    "https://developer.vonage.com/getting-started/tools/postman",
+    "https://developer.vonage.com/getting-started/concepts/regulatory-certifications",
+    "https://developer.vonage.com/messages/concepts/getting-started/getting-started-fb"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://dashboard.vonage.com",
+      "reason": "page too thin (14 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.vonage.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.vonage.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.vonage.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://vonage.com/docs",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.vonage.com/sign-up?icid=tryitfree_api-developer-adp_nexmodashbdfreetrialsignup_nav",
+      "reason": "page too thin (14 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://www.vonage.com/communications-apis/pricing",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "requested_url": "https://developer.vonage.com",
+      "status": 200,
+      "title": "Vonage API Developer",
+      "chars": 4928,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.vonage.com/en/api",
+      "requested_url": "https://developer.vonage.com/en/api",
+      "status": 200,
+      "title": "API",
+      "chars": 4145,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.vonage.com/en/documentation",
+      "requested_url": "https://developer.vonage.com/en/documentation",
+      "status": 200,
+      "title": "Developer Documentation",
+      "chars": 4337,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b",
+      "requested_url": "https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b",
+      "status": 200,
+      "title": "Vonage API Developer",
+      "chars": 418,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.vonage.com/en/tutorials/silent-authentication/introduction",
+      "requested_url": "https://developer.vonage.com/tutorials/silent-authentication/introduction",
+      "status": 200,
+      "title": "Vonage API Developer",
+      "chars": 1591,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.vonage.com/en/tools",
+      "requested_url": "https://developer.vonage.com/tools",
+      "status": 200,
+      "title": "SDKs and Tools | Vonage API Developer",
+      "chars": 1413,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Vonage communication and network APIs enable developers to integrate voice, video, messaging, and identity verification capabilities into their applications.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Vonage APIs use API keys, secrets, and JWTs generated via the application configuration or Account API.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create an account on their own to start using the Vonage Communication APIs.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Node.js SDK\",\n      \"Python SDK\",\n      \"Java SDK\",\n      \"Ruby SDK\",\n      \"PHP SDK\",\n      \".NET SDK\"\n    ],\n    \"notes\": \"Vonage offers extensive REST APIs, server-side and client-side SDKs, webhooks, and CLI tools.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://developer.vonage.com/en/tools\",\n    \"notes\": \"Vonage provides MCP Server documentation and API bindings.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b\",\n      \"claim\": \"Account creation is self-serve for developers.\",\n      \"quote\": \"Create your account below (or sign in if you already have one) to get started with the Vonage Communication APIs.\"\n    },\n    {\n      \"url\": \"https://developer.vonage.com/en/tools\",\n      \"claim\": \"Vonage provides an MCP server and tools.\",\n      \"quote\": \"MCP Server Documentation\"\n    },\n    {\n      \"url\": \"https://developer.vonage.com/en/api\",\n      \"claim\": \"The platform includes Voice Webhooks.\",\n      \"quote\": \"Voice Webhooks\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developer.vonage.com/en/api\",\n      \"quote\": \"Create, manage and configure your applications and authentication.\"\n    },\n    \"access\": {\n      \"url\": \"https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b\",\n      \"quote\": \"Create your account below (or sign in if you already have one) to get started with the Vonage Communication APIs.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developer.vonage.com/en/api\",\n      \"quote\": \"Control all aspects of incoming and outgoing calls with NCCO in JSON format\"\n    },\n    \"mcp\": {\n      \"url\": \"https://developer.vonage.com/en/tools\",\n      \"quote\": \"MCP Server Documentation\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint_url": "https://developer.vonage.com",
+    "one_liner": "Vonage communication and network APIs enable developers to integrate voice, video, messaging, and identity verification capabilities into their applications.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Vonage APIs use API keys, secrets, and JWTs generated via the application configuration or Account API."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create an account on their own to start using the Vonage Communication APIs."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Node.js SDK",
+        "Python SDK",
+        "Java SDK",
+        "Ruby SDK",
+        "PHP SDK",
+        ".NET SDK"
+      ],
+      "notes": "Vonage offers extensive REST APIs, server-side and client-side SDKs, webhooks, and CLI tools."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: quoted line not found on https://developer.vonage.com/en/tools."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b",
+        "claim": "Account creation is self-serve for developers.",
+        "quote": "Create your account below (or sign in if you already have one) to get started with the Vonage Communication APIs.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developer.vonage.com/en/api",
+        "quote": "Create, manage and configure your applications and authentication."
+      },
+      "access": {
+        "url": "https://developer.vonage.com/en/events/register/san-francisco-techwalk-meetup?_storyblok=214001225038173&_storyblok_c=EventRegistration&_storyblok_version=&_storyblok_lang=default&_storyblok_release=0&_storyblok_rl=1787936587384&_storyblok_tk[space_id]=270183&_storyblok_tk[timestamp]=1787936587&_storyblok_tk[token]=8cc22f8cbbca29361a75f35281ecae5497ffe84b",
+        "quote": "Create your account below (or sign in if you already have one) to get started with the Vonage Communication APIs."
+      },
+      "api_surface": {
+        "url": "https://developer.vonage.com/en/api",
+        "quote": "Control all aspects of incoming and outgoing calls with NCCO in JSON format"
+      }
+    },
+    "unsupported_fields": [
+      "mcp: quoted line not found on https://developer.vonage.com/en/tools"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:58:36.003972+00:00"
+}

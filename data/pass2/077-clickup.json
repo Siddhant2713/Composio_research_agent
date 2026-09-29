@@ -1,0 +1,203 @@
+{
+  "app": "ClickUp",
+  "number": 77,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:52:04.414775+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://clickup.com/api\",\n    \"https://doc.clickup.com/d/h/ad-900/d424b9442a98f7e\",\n    \"https://help.clickup.com/hc/en-us/articles/6312151642391-Getting-started-with-ClickUp-API\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://clickup.com/api",
+    "https://doc.clickup.com/d/h/ad-900/d424b9442a98f7e",
+    "https://help.clickup.com/hc/en-us/articles/6312151642391-Getting-started-with-ClickUp-API",
+    "https://docs.clickup.com/",
+    "https://developer.clickup.com/",
+    "https://developers.clickup.com/",
+    "https://api.clickup.com/",
+    "https://clickup.com/docs",
+    "https://clickup.com/developers",
+    "https://clickup.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developer.clickup.com/docs/authentication",
+    "https://help.clickup.com/hc/en-us/",
+    "https://developer.clickup.com/reference",
+    "https://developer.clickup.com/docs/webhooks",
+    "https://help.clickup.com/",
+    "https://clickup.com/pricing",
+    "https://clickup.com/partners",
+    "https://clickup.com/plans/enterprise",
+    "https://clickup.com/partners/affiliates",
+    "https://clickup.com/compare/vs/salesforce-sales-cloud"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://doc.clickup.com/d/h/ad-900/d424b9442a98f7e",
+      "reason": "page too thin (7 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://help.clickup.com/hc/en-us/articles/6312151642391-Getting-started-with-ClickUp-API",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.clickup.com/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://api.clickup.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://help.clickup.com/hc/en-us/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://help.clickup.com/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developer.clickup.com",
+      "requested_url": "https://clickup.com/api",
+      "status": 200,
+      "title": "ClickUp",
+      "chars": 510,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.clickup.com/",
+      "requested_url": "https://developer.clickup.com/",
+      "status": 200,
+      "title": "ClickUp",
+      "chars": 510,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.clickup.com/",
+      "requested_url": "https://developers.clickup.com/",
+      "status": 200,
+      "title": "ClickUp",
+      "chars": 378,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://clickup.com/features/docs",
+      "requested_url": "https://clickup.com/docs",
+      "status": 200,
+      "title": "Docs in ClickUp | ClickUp",
+      "chars": 3759,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "requested_url": "https://developer.clickup.com/docs/authentication",
+      "status": 200,
+      "title": "Authentication",
+      "chars": 2800,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.clickup.com/reference/getaccesstoken",
+      "requested_url": "https://developer.clickup.com/reference",
+      "status": 200,
+      "title": "Get Access Token",
+      "chars": 198,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/webhooks",
+      "requested_url": "https://developer.clickup.com/docs/webhooks",
+      "status": 200,
+      "title": "Webhooks",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"ClickUp offers a Public API for building integrations, OAuth for authentication, webhooks for eventing, and an MCP server for connecting AI assistants.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Supports both personal API tokens (api_key) and OAuth2 Authorization Code flow for apps and integrations.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can log in, navigate to settings, and generate a personal API token or create a new app directly.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Provides a Public API specification, webhooks, and OAuth support.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Connect your AI with ClickUp using our MCP Server.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.clickup.com\",\n      \"claim\": \"ClickUp has a Public API, MCP server, webhooks, and OAuth support.\",\n      \"quote\": \"Build integrations and apps with our Public API.\\n\\t      Connect your AI with ClickUp using our MCP Server.\"\n    },\n    {\n      \"url\": \"https://developer.clickup.com/docs/authentication\",\n      \"claim\": \"ClickUp supports personal API tokens and OAuth2 flow.\",\n      \"quote\": \"For apps or integrations that other people use, use the OAuth flow, allowing users to authorize Workspaces for your app.\"\n    },\n    {\n      \"url\": \"https://developer.clickup.com/docs/webhooks\",\n      \"claim\": \"Webhooks allow subscribing to events in a Workspace.\",\n      \"quote\": \"Webhooks allow you to subscribe to events in your Workspace.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developer.clickup.com/docs/authentication\",\n      \"quote\": \"For apps or integrations that other people use, use the OAuth flow, allowing users to authorize Workspaces for your app.\"\n    },\n    \"access\": {\n      \"url\": \"https://developer.clickup.com/docs/authentication\",\n      \"quote\": \"Log in to ClickUp.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developer.clickup.com\",\n      \"quote\": \"Browse our Public API specification.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://developer.clickup.com\",\n      \"quote\": \"Connect your AI with ClickUp using our MCP Server.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://clickup.com/api",
+    "one_liner": "ClickUp offers a Public API for building integrations, OAuth for authentication, webhooks for eventing, and an MCP server for connecting AI assistants.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Supports both personal API tokens (api_key) and OAuth2 Authorization Code flow for apps and integrations."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://developer.clickup.com/docs/authentication."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Provides a Public API specification, webhooks, and OAuth support."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Connect your AI with ClickUp using our MCP Server."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.clickup.com",
+        "claim": "ClickUp has a Public API, MCP server, webhooks, and OAuth support.",
+        "quote": "Build integrations and apps with our Public API.\n\t      Connect your AI with ClickUp using our MCP Server.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.clickup.com/docs/authentication",
+        "claim": "ClickUp supports personal API tokens and OAuth2 flow.",
+        "quote": "For apps or integrations that other people use, use the OAuth flow, allowing users to authorize Workspaces for your app.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developer.clickup.com/docs/webhooks",
+        "claim": "Webhooks allow subscribing to events in a Workspace.",
+        "quote": "Webhooks allow you to subscribe to events in your Workspace.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developer.clickup.com/docs/authentication",
+        "quote": "For apps or integrations that other people use, use the OAuth flow, allowing users to authorize Workspaces for your app."
+      },
+      "api_surface": {
+        "url": "https://developer.clickup.com",
+        "quote": "Browse our Public API specification."
+      },
+      "mcp": {
+        "url": "https://developer.clickup.com",
+        "quote": "Connect your AI with ClickUp using our MCP Server."
+      }
+    },
+    "unsupported_fields": [
+      "access: quoted line not found on https://developer.clickup.com/docs/authentication"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:52:15.591930+00:00"
+}

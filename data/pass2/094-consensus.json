@@ -1,0 +1,144 @@
+{
+  "app": "Consensus",
+  "number": 94,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:10:15.580036+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://consensus.app\",\n    \"https://consensus.app/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://consensus.app",
+    "https://consensus.app/pricing",
+    "https://docs.consensus.app/",
+    "https://developer.consensus.app/",
+    "https://developers.consensus.app/",
+    "https://api.consensus.app/",
+    "https://consensus.app/docs",
+    "https://consensus.app/developers",
+    "https://consensus.app/api",
+    "https://consensus.app/developer"
+  ],
+  "second_hop_considered": [
+    "https://consensus.app/home/contact/sales/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://consensus.app",
+      "reason": "page too thin (68 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.consensus.app/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.consensus.app/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.consensus.app/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.consensus.app/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://consensus.app/docs",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://consensus.app/developers",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://consensus.app/pricing/",
+      "requested_url": "https://consensus.app/pricing",
+      "status": 200,
+      "title": "Pricing",
+      "chars": 556,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://consensus.app/home/contact/sales/",
+      "requested_url": "https://consensus.app/home/contact/sales/",
+      "status": 200,
+      "title": "Contact Sales - Consensus: AI Search Engine for Research",
+      "chars": 1021,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Consensus is an AI-powered search engine for research papers, mentioning enterprise API and MCP access via sales contact.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": null\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Enterprise API and MCP require filling out a form to talk with the sales team.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": null\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Enterprise MCP is mentioned as available by talking to sales.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://consensus.app/home/contact/sales/\",\n      \"claim\": \"Enterprise API/MCP is available through sales contact.\",\n      \"quote\": \"Fill out the form below to talk with our sales team about institutional licensing, enterprise API/MCP, or team plans.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://consensus.app/home/contact/sales/\",\n      \"quote\": \"Fill out the form below to talk with our sales team about institutional licensing, enterprise API/MCP, or team plans.\"\n    },\n    \"api_surface\": null,\n    \"mcp\": {\n      \"url\": \"https://consensus.app/home/contact/sales/\",\n      \"quote\": \"Fill out the form below to talk with our sales team about institutional licensing, enterprise API/MCP, or team plans.\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://consensus.app",
+    "one_liner": "Consensus is an AI-powered search engine for research papers, mentioning enterprise API and MCP access via sales contact.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "gated",
+      "notes": "Enterprise API and MCP require filling out a form to talk with the sales team."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Enterprise MCP is mentioned as available by talking to sales."
+    },
+    "buildability": {
+      "verdict": "hard",
+      "reasoning": "Credentials require approval, sales contact, or vendor provisioning, so an outside developer cannot start unaided. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://consensus.app/home/contact/sales/",
+        "claim": "Enterprise API/MCP is available through sales contact.",
+        "quote": "Fill out the form below to talk with our sales team about institutional licensing, enterprise API/MCP, or team plans.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://consensus.app/home/contact/sales/",
+        "quote": "Fill out the form below to talk with our sales team about institutional licensing, enterprise API/MCP, or team plans."
+      },
+      "mcp": {
+        "url": "https://consensus.app/home/contact/sales/",
+        "quote": "Fill out the form below to talk with our sales team about institutional licensing, enterprise API/MCP, or team plans."
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "api_surface: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:10:22.523299+00:00"
+}

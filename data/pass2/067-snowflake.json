@@ -1,0 +1,210 @@
+{
+  "app": "Snowflake",
+  "number": 67,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:35:58.290564+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.snowflake.com\",\n    \"https://docs.snowflake.com/en/developer-guide\",\n    \"https://docs.snowflake.com/en/sql-reference\",\n    \"https://docs.snowflake.com/en/developer-guide/sql-api/index\",\n    \"https://www.snowflake.com\",\n    \"https://www.snowflake.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.snowflake.com",
+    "https://docs.snowflake.com/en/developer-guide",
+    "https://docs.snowflake.com/en/sql-reference",
+    "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "https://www.snowflake.com",
+    "https://www.snowflake.com/pricing",
+    "https://developer.snowflake.com/",
+    "https://developers.snowflake.com/",
+    "https://api.snowflake.com/",
+    "https://snowflake.com/docs",
+    "https://snowflake.com/developers",
+    "https://snowflake.com/api",
+    "https://snowflake.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.snowflake.com/en/reference",
+    "https://docs.snowflake.com/en/sql-reference-classes",
+    "https://docs.snowflake.com/en/sql-reference-commands",
+    "https://docs.snowflake.com/en/sql-reference-functions",
+    "https://docs.snowflake.com/en/sql-reference-data-types",
+    "https://docs.snowflake.com/en/user-guide-getting-started",
+    "https://docs.snowflake.com/en/api-reference",
+    "https://docs.snowflake.com/fr/sql-reference",
+    "https://docs.snowflake.com/de/sql-reference",
+    "https://docs.snowflake.com/ja/sql-reference",
+    "https://docs.snowflake.com/ko/sql-reference",
+    "https://docs.snowflake.com/sql-reference/sql-dml",
+    "https://docs.snowflake.com/sql-reference/constructs",
+    "https://docs.snowflake.com/sql-reference/sql-ddl-summary",
+    "https://docs.snowflake.com/developer-guide/sql-api/reference",
+    "https://www.snowflake.com/en/contact-sales/",
+    "https://signup.snowflake.com/",
+    "https://www.snowflake.com/en/contact/",
+    "https://www.snowflake.com/en/ai-pulse/",
+    "https://www.snowflake.com/en/expedition/",
+    "https://signup.snowflake.com/?utm_cta=website-pricing-page-get-started-trial",
+    "https://www.snowflake.com/en/contact-sales/?utm_cta=website-pricing-page-talk-to-sales-contact-us",
+    "https://www.snowflake.com/data-cloud-academy-cost-management-bootcamp/?utm_cta=website-pricing-drive-more-efficiency-dca-cost-management-bootcamp",
+    "https://www.snowflake.com/en/developers/solutions-center/restaurant-sales-forecasting-and-anomaly-detection-using-snowflake-cortex-ml-functions/"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.snowflake.com/en/developer-guide",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.snowflake.com/en/",
+      "requested_url": "https://docs.snowflake.com",
+      "status": 200,
+      "title": "Snowflake Documentation",
+      "chars": 3354,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference",
+      "status": 200,
+      "title": "General reference | Snowflake Documentation",
+      "chars": 1889,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+      "requested_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+      "status": 200,
+      "title": "Snowflake SQL API | Snowflake Documentation",
+      "chars": 1707,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.snowflake.com/en/",
+      "requested_url": "https://www.snowflake.com",
+      "status": 200,
+      "title": "Snowflake AI Data Cloud",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.snowflake.com/en/pricing-options/",
+      "requested_url": "https://www.snowflake.com/pricing",
+      "status": 200,
+      "title": "Snowflake Pricing | Choose the Right Edition for Your Data Needs",
+      "chars": 3097,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.snowflake.com/en/developers/",
+      "requested_url": "https://developer.snowflake.com/",
+      "status": 200,
+      "title": "Snowflake for Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/reference",
+      "requested_url": "https://docs.snowflake.com/en/reference",
+      "status": 200,
+      "title": "Reference | Snowflake Documentation",
+      "chars": 415,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-classes",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-classes",
+      "status": 200,
+      "title": "SQL class reference | Snowflake Documentation",
+      "chars": 1702,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-commands",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-commands",
+      "status": 200,
+      "title": "SQL command reference | Snowflake Documentation",
+      "chars": 1414,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/sql-reference-functions",
+      "requested_url": "https://docs.snowflake.com/en/sql-reference-functions",
+      "status": 200,
+      "title": "Function and stored procedure reference | Snowflake Documentation",
+      "chars": 1593,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Snowflake AI Data Cloud provides a fully managed platform with a REST API (Snowflake SQL API) for accessing and updating data, managing deployments, and executing queries.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"The Snowflake SQL API supports OAuth or Key Pair for authentication.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Snowflake offers self-serve trial accounts as indicated by the 'Getting a Trial Account' and 'Get Started' options.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"The Snowflake SQL API is a REST API. No mention of GraphQL or webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.snowflake.com/en/developer-guide/sql-api/index\",\n      \"claim\": \"The Snowflake SQL API is a REST API used to access and update data.\",\n      \"quote\": \"The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database.\"\n    },\n    {\n      \"url\": \"https://docs.snowflake.com/en/developer-guide/sql-api/index\",\n      \"claim\": \"Authentication uses OAuth or Key Pair.\",\n      \"quote\": \"Use OAuth or Key Pair to authenticate with the Snowflake server.\"\n    },\n    {\n      \"url\": \"https://docs.snowflake.com/en/\",\n      \"claim\": \"Getting a trial account is available for first-time users.\",\n      \"quote\": \"Getting a Trial Account\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.snowflake.com/en/developer-guide/sql-api/index\",\n      \"quote\": \"Use OAuth or Key Pair to authenticate with the Snowflake server.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.snowflake.com/en/\",\n      \"quote\": \"Getting a Trial Account\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.snowflake.com/en/developer-guide/sql-api/index\",\n      \"quote\": \"The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.snowflake.com",
+    "one_liner": "Snowflake AI Data Cloud provides a fully managed platform with a REST API (Snowflake SQL API) for accessing and updating data, managing deployments, and executing queries.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "The Snowflake SQL API supports OAuth or Key Pair for authentication."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://docs.snowflake.com/en/."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": null,
+      "notes": "The Snowflake SQL API is a REST API. No mention of GraphQL or webhooks."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "claim": "The Snowflake SQL API is a REST API used to access and update data.",
+        "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "claim": "Authentication uses OAuth or Key Pair.",
+        "quote": "Use OAuth or Key Pair to authenticate with the Snowflake server.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "quote": "Use OAuth or Key Pair to authenticate with the Snowflake server."
+      },
+      "api_surface": {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+      }
+    },
+    "unsupported_fields": [
+      "access: quoted line not found on https://docs.snowflake.com/en/",
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:36:17.175769+00:00"
+}

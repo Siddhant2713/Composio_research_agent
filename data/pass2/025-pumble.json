@@ -1,0 +1,183 @@
+{
+  "app": "Pumble",
+  "number": 25,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:56:52.251421+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://pumble.com\",\n    \"https://pumble.com/help\",\n    \"https://help.pumble.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://pumble.com",
+    "https://pumble.com/help",
+    "https://help.pumble.com",
+    "https://docs.pumble.com/",
+    "https://developer.pumble.com/",
+    "https://developers.pumble.com/",
+    "https://api.pumble.com/",
+    "https://pumble.com/docs",
+    "https://pumble.com/developers",
+    "https://pumble.com/api",
+    "https://pumble.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://pumble.com/help/contact/sales/",
+    "https://pumble.com/pricing",
+    "https://pumble.com/register",
+    "https://pumble.com/teams/sales",
+    "https://pumble.com/help/contact/",
+    "https://pumble.com/features/notification-preferences",
+    "https://pumble.com/help/getting-started/"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.pumble.com",
+      "reason": "page too thin (69 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.pumble.com/",
+      "reason": "page too thin (20 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.pumble.com/",
+      "reason": "page too thin (69 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developers.pumble.com/",
+      "reason": "page too thin (69 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.pumble.com/",
+      "reason": "HTTP 401",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pumble.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pumble.com/register",
+      "reason": "page too thin (97 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://pumble.com/help/contact/",
+      "reason": "page too thin (109 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://pumble.com",
+      "requested_url": "https://pumble.com",
+      "status": 200,
+      "title": "Pumble\u2122 - FREE Business Communication Tool",
+      "chars": 4522,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://pumble.com/help/",
+      "requested_url": "https://pumble.com/help",
+      "status": 200,
+      "title": "Homepage - Pumble Help",
+      "chars": 766,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://pumble.com/help/contact/sales/",
+      "requested_url": "https://pumble.com/help/contact/sales/",
+      "status": 200,
+      "title": "Request a demo - Pumble Help",
+      "chars": 319,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://pumble.com/pricing",
+      "requested_url": "https://pumble.com/pricing",
+      "status": 200,
+      "title": "Pricing - Pumble\u2122",
+      "chars": 4962,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://pumble.com/teams/sales",
+      "requested_url": "https://pumble.com/teams/sales",
+      "status": 200,
+      "title": "How Sales teams use Pumble",
+      "chars": 2312,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Pumble is a team communication and messaging tool that provides chat channels, voice and video calls, integrations, and an MCP server for AI agents.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The pages mention integrations and custom apps, but do not specify the exact authentication mechanism used for third-party API calls.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can create a free account directly on the website without contacting sales.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The pages mention integrations and creating custom apps, but do not detail specific API interfaces such as REST, GraphQL, or webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://pumble.com\",\n    \"notes\": \"Pumble offers an MCP server to connect AI agents for summarizing conversations and automating updates.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://pumble.com\",\n      \"claim\": \"Pumble features an MCP server for AI agents.\",\n      \"quote\": \"Use Pumble\u2019s MCP server to optimize collaboration with AI agents.\"\n    },\n    {\n      \"url\": \"https://pumble.com\",\n      \"claim\": \"Users can create a free account self-serve.\",\n      \"quote\": \"Create FREE Account\"\n    },\n    {\n      \"url\": \"https://pumble.com/pricing\",\n      \"claim\": \"Pricing plans allow creating custom apps and integrations.\",\n      \"quote\": \"Integrate Pumble with other apps and create custom apps and scripts to automate custom actions.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://pumble.com\",\n      \"quote\": \"Create FREE Account\"\n    },\n    \"api_surface\": null,\n    \"mcp\": {\n      \"url\": \"https://pumble.com\",\n      \"quote\": \"Use Pumble\u2019s MCP server to optimize collaboration with AI agents.\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint_url": "https://pumble.com",
+    "one_liner": "Pumble is a team communication and messaging tool that provides chat channels, voice and video calls, integrations, and an MCP server for AI agents.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://pumble.com."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://pumble.com",
+      "notes": "Pumble offers an MCP server to connect AI agents for summarizing conversations and automating updates."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://pumble.com",
+        "claim": "Pumble features an MCP server for AI agents.",
+        "quote": "Use Pumble\u2019s MCP server to optimize collaboration with AI agents.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://pumble.com/pricing",
+        "claim": "Pricing plans allow creating custom apps and integrations.",
+        "quote": "Integrate Pumble with other apps and create custom apps and scripts to automate custom actions.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "mcp": {
+        "url": "https://pumble.com",
+        "quote": "Use Pumble\u2019s MCP server to optimize collaboration with AI agents."
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: quoted line not found on https://pumble.com",
+      "api_surface: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T03:57:10.555384+00:00"
+}

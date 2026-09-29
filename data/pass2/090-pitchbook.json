@@ -1,0 +1,103 @@
+{
+  "app": "PitchBook",
+  "number": 90,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:03:03.664141+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://pitchbook.com\",\n    \"https://pitchbook.com/contact/sales\",\n    \"https://pitchbook.com/products/pitchbook-desktop\",\n    \"https://pitchbook.com/news/reports\",\n    \"https://help.pitchbook.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://pitchbook.com",
+    "https://pitchbook.com/contact/sales",
+    "https://pitchbook.com/products/pitchbook-desktop",
+    "https://pitchbook.com/news/reports",
+    "https://help.pitchbook.com",
+    "https://docs.pitchbook.com/",
+    "https://developer.pitchbook.com/",
+    "https://developers.pitchbook.com/",
+    "https://api.pitchbook.com/",
+    "https://pitchbook.com/docs",
+    "https://pitchbook.com/developers",
+    "https://pitchbook.com/api",
+    "https://pitchbook.com/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://pitchbook.com",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pitchbook.com/contact/sales",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pitchbook.com/products/pitchbook-desktop",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://pitchbook.com/news/reports",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://help.pitchbook.com",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.pitchbook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.pitchbook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.pitchbook.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint_url": "https://pitchbook.com",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://pitchbook.com (HTTP 403); https://pitchbook.com/contact/sales (HTTP 403); https://pitchbook.com/products/pitchbook-desktop (HTTP 403); https://pitchbook.com/news/reports (HTTP 403); https://help.pitchbook.com (page too thin (0 chars)); https://docs.pitchbook.com/ (ConnectError: [Errno -2] Name or service not known)"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "support": {},
+    "unsupported_fields": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:05:30.276993+00:00"
+}

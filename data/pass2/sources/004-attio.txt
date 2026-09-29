@@ -1,0 +1,1380 @@
+===== https://attio.com
+TITLE: Attio: The CRM for agentic revenue
+ACCESSED: 2026-09-28
+
+GTM lessons from Elena Verna and more
+Welcome to agentic revenue.
+Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.
+Start for free
+Talk to sales
+Talk to sales
+Platform
+The intelligent system that never sleeps.
+Picks up leads at 2am. Catches renewals before they slip. Hands you the answer before you ask.
+Self-building
+Live from day one.
+Connect your inbox and calendar. Attio learns your business and builds itself around it, before your first agent even gets to work.
+Start for free
+Sarah Johnson
+Compose email
+Highlights
+Summary
+Sarah Johnson, the Head of IT, is leading the initiative to modernize their data infrastructure, which aligns with GreenLeaf’s growth and sustainability goals. A successful demo call on August 29 confirmed the need for Attio’s solutions, and the opportunity is moving forward with a 75% confidence level.
+LinkedIn
+sarahjohnson
+Upcoming
+Demo Call
+Aug 29, 10:40 AM
+THU
+29
+Company
+GreenLeaf Inc.
+San Francisco, CA
+Sales Outreach
+Step
+2
+Automated email
+Activity
+Michael Chang
+attended an
+in-person meeting
+6 hours ago
+Sarah Johnson
+attended an
+event
+2 days ago
+Michael Chang
+made an
+outbound phone call
+4 days ago
+The only CRM with
+Universal Context
+™
+It logs itself.
+Emails, calls, product, billing, captured automatically.
+Your tools finally talk.
+Granola, Slack, your whole stack, always in sync.
+Gets to know you.
+So each play is sharper than the last.
+Ask, and it's there.
+Any record, any answer, in a second.
+No agent left guessing.
+Working from the same facts as your team.
+Signals
+All of the signals, none of the noise.
+Ready to act on.
+See more
+Context
+Emails, calls, records, product usage, connected tools. All live.
+Agents + automations
+Ecosystem
+Signals
+All of the signals, none of the noise.
+Ready to act on.
+See more
+Context
+Emails, calls, records, product usage, connected tools. All live.
+Agents + automations
+An always-on revenue engine. Prospect, follow-up, research, running 24/7.
+Ecosystem
+Attio wherever you work. Browser, inbox, Slack, terminal, agents.
+Context
+Emails, calls, records, product usage, connected tools. All live.
+Connectivity
+Your whole stack, connected.
+Claude, Slack, Clay, Linear, Notion, and anything your team and agents run on.
+Explore the ecosystem
+SDK. API. MCP.
+Build anything on Attio.
+View docs
+Build to scale
+Run at any scale.
+Production-grade for your team and agents.
+10.9M
+MCP calls/month
+400M
+API calls/week
+76k
+active customer agents
+15M
+emails synced/day
+Customer stories
+Trusted by 30,000+ customers.
+From first agent to enterprise scale.
+Read more
+Artificial Intelligence:
+83% faster lead triage
+.
+How Granola turns product signals into revenue at scale
+.
+Artificial Intelligence
+83% faster lead triage
+.
+How Granola turns product signals into revenue at scale
+.
+Changelog
+Better as you grow.
+New features every week to keep pace with you.
+View all
+September 23, 2026
+Workflow history and agent log
+Full visibility into every run, down to the agent.
+September 23, 2026
+New blocks for workflows
+Turn conversations into action.
+September 23, 2026
+App updates
+Put more of your stack to work in workflows with new apps Resend and ClickUp.
+September 23, 2026
+A more intuitive Ask Attio
+Let Attio suggest what to ask next.
+Stay ahead of GTM.
+Product updates in your inbox.
+Agentic revenue runs on Attio.
+Talk to sales
+Talk to sales
+Start for free
+
+===== https://attio.com/platform/developers
+TITLE: Developer Platform | Attio
+ACCESSED: 2026-09-28
+
+[
+Developer Platform
+]
+Dream. Code. Ship.
+Connect your GTM stack with the REST API, App SDK, or Attio MCP.
+View docs
+Browse apps
+[
+Developer Platform
+]
+Dream. Code. Ship.
+Connect your GTM stack with the REST API, App SDK, or Attio MCP.
+View docs
+Browse apps
+[
+Developer Platform
+]
+Dream. Code. Ship.
+Connect your GTM stack with the REST API, App SDK, or Attio MCP.
+View docs
+Browse apps
+[ 0
+1
+]
+Create custom integrations with full read and write access.
+[ 0
+2
+]
+Listen for webhooks and take action programatically.
+[ 0
+3
+]
+Authenticate and authorize access with OAuth 2.0.
+[ 0
+1
+]
+Create custom integrations with full read and write access.
+[ 0
+2
+]
+Listen for webhooks and take action programatically.
+[ 0
+3
+]
+Authenticate and authorize access with OAuth 2.0.
+“
+I'm
+drawn
+to
+tools
+that
+believe
+in
+the
+builder
+economy
+—
+platforms
+that
+give
+you
+Lego
+blocks
+instead
+of
+rigid
+software.
+The
+Attio
+SDK
+gives
+the
+authority
+and
+autonomy
+back
+to
+builders.
+”
+“
+I'm
+drawn
+to
+tools
+that
+believe
+in
+the
+builder
+economy
+—
+platforms
+that
+give
+you
+Lego
+blocks
+instead
+of
+rigid
+software.
+The
+Attio
+SDK
+gives
+the
+authority
+and
+autonomy
+back
+to
+builders.
+”
+Nick Janes
+//
+Attio Partner
+[ 0
+1
+]
+Choose entry points like record actions, widgets, or text selection to run your app inside Attio.
+[ 0
+2
+]
+Create forms and define the shape and validation rules of your form data.
+[ 0
+3
+]
+Use server functions to fetch, update, or remove data from third parties.
+I really wanted to work with something hyper modern — the Attio SDK gives me that.
+Kacper Cygan
+/
+sequence
+[ 0
+4
+]
+Authenticate connections for users or entire workspaces between Attio and external parties.
+[ 0
+5
+]
+Receive external requests with webhooks to sync Attio or respond with data.
+[ 0
+6
+]
+Add ready-made UI components to ship polished interfaces for your app.
+[ 0
+1
+]
+Choose entry points like record actions, widgets, or text selection to run your app inside Attio.
+[ 0
+2
+]
+Create forms and define the shape and validation rules of your form data.
+[ 0
+3
+]
+Use server functions to fetch, update, or remove data from third parties.
+[ 0
+4
+]
+Authenticate connections for users or entire workspaces between Attio and external parties.
+[ 0
+5
+]
+Receive external requests with webhooks to sync Attio or respond with data.
+[ 0
+6
+]
+Add ready-made UI components to ship polished interfaces for your app.
+I really wanted to work with something hyper modern — the Attio SDK gives me that.
+Kacper Cygan
+/
+sequence
+[ 0
+1
+]
+Enable agent-driven workflows with full read and write access.
+[ 0
+2
+]
+Search, create, and manage data in Attio through structured tool calls.
+[ 0
+3
+]
+Reason across Attio and other systems with dynamic, multi-tool execution.
+[ 0
+4
+]
+Authenticate securely via OAuth with user-scoped permissions.
+[ 0
+5
+]
+Connect in any MCP client alongside any other MCP servers.
+The Attio MCP gave us instant access to Attio's full data model without custom API work.
+Siavash Ghorbani
+/
+Stilla
+[ 0
+1
+]
+Enable agent-driven workflows with full read and write access.
+[ 0
+2
+]
+Search, create, and manage data in Attio through structured tool calls.
+[ 0
+3
+]
+Reason across Attio and other systems with dynamic, multi-tool execution.
+[ 0
+4
+]
+Authenticate securely via OAuth with user-scoped permissions.
+[ 0
+5
+]
+Connect in any MCP client alongside any other MCP servers.
+The Attio MCP gave us instant access to Attio's full data model without custom API work.
+Siavash Ghorbani
+/
+Stilla
+12,881 pull requests merged in the past year
+12,881 pull requests merged in the past year
+12,881 pull requests merged in the past year
+“
+With
+the
+SDK,
+backend
+logic
+and
+frontend
+UI
+are
+seamlessly
+connected.
+It’s
+a
+joy
+to
+work
+with.
+”
+“
+With
+the
+SDK,
+backend
+logic
+and
+frontend
+UI
+are
+seamlessly
+connected.
+It’s
+a
+joy
+to
+work
+with.
+”
+Will Stenzel
+//
+Attio Partner
+Aircall
+Granola
+Linear
+Pandadoc
+Sequence
+See our open source Linear app on GitHub
+Aircall
+Granola
+Linear
+Pandadoc
+Check out our Linear app on GitHub
+Ready to build?
+https://
+docs.attio.com
+/sdk/
+Ready to build?
+https://
+docs.attio.com
+/sdk/
+
+===== https://docs.attio.com/docs/overview
+TITLE: Overview - Attio Docs
+ACCESSED: 2026-09-28
+
+Attio is a revolutionary CRM platform which is highly customisable, incredibly powerful and
+data-driven. In these guides, you can find everything you need to build powerful integrations,
+automations and data pipelines on top of Attio.
+Our docs cover guides, examples, references and code to help you build apps and share them with
+Attio’s customers or for your own workspace.
+The Attio Developer Platform consists of four parts:
+App SDK
+This allows developers to embed Typescript React applications within the Attio interface and run
+server functions with access to our REST API.
+REST API
+This allows developers to build apps that read and write information to and from Attio workspaces.
+You can also subscribe to events in realtime using webhooks.
+MCP
+Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and
+manage your Attio workspace.
+SQL
+Run SQL queries against your workspace data.
+Was this page helpful?
+Yes
+No
+
+===== https://docs.attio.com/rest-api/overview
+TITLE: Overview - Attio Docs
+ACCESSED: 2026-09-28
+
+Attio provides a public REST API which exchanges JSON over HTTPS. In this section, you will find
+guidance about working with the API.
+To get up and running, read our guide on
+how to authenticate requests
+.
+From there, feel free to explore other topics or jump straight to the
+reference documentation
+.
+Building an OAuth flow for your app
+Working within our rate limits
+Setting up and listening to webhooks
+Filtering and sorting record and entry API queries
+Paginating API responses
+If you’re looking to move beyond just the REST API and understand the Attio developer platform as a
+whole, you can find
+general documentation for Attio developers here
+.
+Was this page helpful?
+Yes
+No
+
+===== https://attio.com/pricing
+TITLE: Plans & Pricing | Attio
+ACCESSED: 2026-09-28
+
+From zero to IPO.
+Designed for every stage of your journey. Start today, no credit card required.
+Monthly
+Annual
+$
+0
+0
+Per user/month, billed
+monthly
+annually
+For individuals to explore Attio on their own.
+Real-time contact syncing
+Automatic data enrichment
+Up to 3 seats
+Start for free
+$
+44
+35
+Save
+20
+%
+Per user/month, billed
+monthly
+annually
+For small teams to get started together.
+Private lists
+Enhanced email sending
+Up to 10 seats
+Continue with Plus
+$
+99
+79
+Save
+20
+%
+Per user/month, billed
+monthly
+annually
+For growing teams to scale revenue with automation.
+Call Intelligence & sequences
+Permission controls
+Advanced reporting
+Continue with Pro
+Custom
+Billed annually
+For organizations needing advanced security and control.
+Unlimited objects
+Unlimited teams
+Security and admin controls
+Talk to sales
+Talk to sales
+Seat credits
+100 per user/mo
+500 per user/mo
+1,000 per user/mo
+2,500 per user/mo
+Workspace credits
+250 per workspace/mo
+1,500 per workspace/mo
+10,000 per workspace/mo
+Custom
+Add workspace credits
++ 5,000/month
+$85/mo
+$70/mo
+$85/mo
+$70/mo
+$85/mo
+$70/mo
++ 10,000/month
+$150/mo
+$120/mo
+$150/mo
+$120/mo
+$150/mo
+$120/mo
++ 25,000/month
+$330/mo
+$260/mo
+$330/mo
+$260/mo
+$330/mo
+$260/mo
++ 50,000/month
+$595/mo
+$475/mo
+$595/mo
+$475/mo
+$595/mo
+$475/mo
+Seats
+Up to 3
+Up to 10
+Unlimited
+Unlimited
+Objects
+Up to 3
+Up to 5
+Up to 12
+Unlimited
+Manual activity logging
+Custom relationship attributes
+Custom objects
+Records
+50,000
+250,000
+1,000,000
+Custom
+Record and entry templates
+Formula attributes
+Call Intelligence
+Ask Attio
+AI agents
+Integrations
+API and webhook access
+App SDK
+MCP server
+File storage
+50 GB
+50 GB
+Unlimited
+Unlimited
+Workflows
+Integration blocks
+Sequences
+Email and calendar sync
+1 account per user
+1 account per user
+2 accounts per user
+3+ accounts per user
+Email sharing
+Manage subject line and metadata visibility.
+Manage visibility of full email content for your workspace.
+Manage visibility of full email content for your entire workspace and individual users.
+Manage visibility of full email content for your entire workspace and individual users.
+Emails on records
+Individual email requests
+Email visibility on records
+Email limits
+200 emails/mo
+1,000 emails/mo
+Unlimited
+Unlimited
+Bulk email sending
+10 emails at once
+50 emails at once
+50 emails at once
+50 emails at once
+Remove 'Sent with Attio'
+Auto-labeling
+Auto-summaries
+Communication intelligence
+First interaction
+Last interaction
+Connection strength
+Strongest connection
+First email interaction
+Last email interaction
+First calendar interaction
+Last calendar interaction
+Next calendar interaction
+Company enrichment
+Name
+Description
+Logo
+Category
+Social media
+Location
+Employee count
+ARR
+Funding raised
+People enrichment
+Name
+Description
+Profile picture
+Social media
+Location
+Number of reports
+Up to 3 reports
+Up to 15 reports
+Up to 100 reports
+100+ reports
+Insight reports
+Funnel reports
+Segment by
+Targets
+Historical attributes
+Time comparisons
+Teams
+Up to 10
+Unlimited
+Access permissions
+None
+Basic
+Advanced
+Advanced
+Manage for workspace
+Manage by teams
+Manage by individuals
+Payment by invoice
+Protected recipients
+Limit CSV exports
+Single sign-on
+SCIM
+Help center
+Chat and email
+Priority support
+Migration service
+Talk to sales
+Talk to sales
+Talk to sales
+Compare plans.
+Everything you need to build the perfect relationship management tool for your team.
+Monthly
+Annual
+Credits
+Seat credits
+Free
+100 per user/mo
+Plus
+500 per user/mo
+Pro
+1,000 per user/mo
+Enterprise
+2,500 per user/mo
+Workspace credits
+Free
+250 per workspace/mo
+Plus
+1,500 per workspace/mo
+Pro
+10,000 per workspace/mo
+Enterprise
+Custom
+Add workspace credits
+Free
+Plus
+Pro
+Enterprise
+Workspace
+Seats
+Free
+Up to 3
+Plus
+Up to 10
+Pro
+Unlimited
+Enterprise
+Unlimited
+Objects
+Free
+Up to 3
+Plus
+Up to 5
+Pro
+Up to 12
+Enterprise
+Unlimited
+Records
+Free
+50,000
+Plus
+250,000
+Pro
+1,000,000
+Enterprise
+Custom
+Record and entry templates
+Free
+Plus
+Pro
+Enterprise
+Formula attributes
+Free
+Plus
+Pro
+Enterprise
+Call Intelligence
+Free
+Plus
+Pro
+Enterprise
+Ask Attio
+Free
+Plus
+Pro
+Enterprise
+AI agents
+Free
+Plus
+Pro
+Enterprise
+Integrations
+Free
+Plus
+Pro
+Enterprise
+API and webhook access
+Free
+Plus
+Pro
+Enterprise
+App SDK
+Free
+Plus
+Pro
+Enterprise
+MCP server
+Free
+Plus
+Pro
+Enterprise
+File storage
+Free
+50 GB
+Plus
+50 GB
+Pro
+Unlimited
+Enterprise
+Unlimited
+Automations
+Workflows
+Free
+Plus
+Pro
+Enterprise
+Integration blocks
+Free
+Plus
+Pro
+Enterprise
+Sequences
+Free
+Plus
+Pro
+Enterprise
+Email and calendar
+Email and calendar sync
+Free
+1 account per user
+Plus
+1 account per user
+Pro
+2 accounts per user
+Enterprise
+3+ accounts per user
+Email sharing
+Free
+Manage subject line and metadata visibility.
+Plus
+Manage visibility of full email content for your workspace.
+Pro
+Manage visibility of full email content for your entire workspace and individual users.
+Enterprise
+Manage visibility of full email content for your entire workspace and individual users.
+Emails on records
+Free
+Plus
+Pro
+Enterprise
+Individual email requests
+Free
+Plus
+Pro
+Enterprise
+Email visibility on
+
+===== https://attio.com/contact/sales
+TITLE: Talk to Sales | Attio
+ACCESSED: 2026-09-28
+
+“
+Right from the outset we've felt so supported by the team – all the way through discovery, onboarding, and then ongoing customer support.
+”
+Miguel Pinho
+Head of Technology · Seedcamp
+“
+Right from the outset we've felt so supported by the team – all the way through discovery, onboarding, and then ongoing customer support.
+”
+Miguel Pinho
+Head of Technology · Seedcamp
+
+===== https://attio.com/help/reference/imports-exports/migrate-data-from-another-crm?source=footer_salesforce
+TITLE: Migrate data from another CRM | Attio Help Center
+ACCESSED: 2026-09-28
+
+Help
+/
+Reference
+/
+Imports & exports
+/
+Migrate data from another CRM
+Table of Contents
+Import2 supported CRMs
+Source-specific guidance
+Prepare for migration
+Begin migration
+FAQ
+Available on
+plus
+,
+pro
+and
+enterprise
+plans.
+Only
+admins
+can perform Import2 migrations.
+Import companies, people, deals, custom objects, notes, tasks, and files to Attio from your previous CRM using Import2, a migration service that is free for Attio users.
+The list of supported CRMs is shared below. If you're migrating from a different CRM or another source, you can
+import your data via CSV
+or use
+Attio's API
+instead.
+Import2 supported CRMs
+Copy link
+You can use Import2 to migrate your data into Attio from the following platforms on any
+paid Attio plan
+:
+Act!
+ActiveCampaign
+Affinity (see
+more information below
+)
+Agile CRM
+Attio (from one workspace to another, see more information below)
+Capsule CRM
+Close
+Constant Contact
+ConvertKit
+Coperniq
+Copper
+Firmao
+Folk
+FowCRM
+Freshsales
+GoHighLevel
+Highrise
+HubSpot CRM
+Insightly
+Keap
+Klaviyo
+Less Annoying CRM
+MailChimp
+Monday
+MS Dynamics
+Nimble
+Nutshell
+OnePage CRM
+Parma
+Pipedrive
+Pipeline CRM
+Redtail CRM
+Salesforce (see more information below)
+Streak
+SugarCRM
+SuiteCRM
+Wealthbox
+WebCRM
+Zendesk Sell
+Zoho CRM
+Source-specific guidance
+Copy link
+Before proceeding to the general guidelines below, review these limitations for migrating from certain source CRMs.
+Migrating from Salesforce
+Copy link
+Import2 supports migrating Contacts, Accounts, Leads, and Opportunities from Salesforce to Attio. It is not currently possible to migrate Cases.
+Migrating from Affinity
+Copy link
+Consider these factors when migrating from Affinity:
+API limits
+: Check the API limit associated with your Affinity plan and the number of records you need to migrate. You should be able to migrate a record count equal to about 40% of your monthly API allotment in a single calendar month.
+Smart Fields
+: Exclude Affinity's
+Smart Fields
+from your migration. Attio has equivalent
+communication intelligence attributes
+that populate automatically from email and calendar sync. If you migrate data into Attio's
+enriched attributes
+, Attio will not enrich or update those attributes in the future.
+Note:
+If you would like to set a default stage for a status attribute, contact Import2 at
+help@import2.com
+, and they can set this up for you.
+If you would like to clean up unneeded records or attributes before migrating, or the above limitations will make the migration difficult for your needs, consider using
+Attio’s CSV importer
+to migrate your records and lists instead.
+Attio’s CSV importer does not support importing notes.
+If you migrate records and lists via CSV, you can still use Import2 to migrate notes.
+To proceed with this option, contact Import2 at
+help@import2.com
+and cc
+support@attio.com
+.
+Migrating from Attio
+Copy link
+Import2 can be used to migrate data from one Attio workspace to another Attio workspace. To bring emails and calendar events into the new workspace, you'll need to
+sync your Google or Microsoft account
+.
+Prepare for migration
+Copy link
+Before running any migration, complete these steps to ensure your data imports successfully.
+Note:
+Objects such as Companies, People, or Deals can only be mapped from your former CRM to objects in Attio, not to lists. If you want to import them into lists, you will need to use the
+CSV importer
+instead of Import2.
+Prepare for updating attributes
+Copy link
+Import2 will create new records in Attio from the records in your previous CRM, but it will not update attribute values on any records that have already been created in Attio.
+To migrate attribute values for all records from your previous CRM, first delete all existing records in Attio, including those created by mailbox sync. Follow these steps to disable mailbox sync, delete records, and then re-enable the sync after migration:
+Each member of your workspace who has synced a mailbox should remove it by
+following these steps
+.
+Delete all person and company records from Attio. Admins can do this in bulk from the Companies and People pages. To do this, navigate to
+Companies
+or
+People
+in the sidebar, clear all filters, check the first checkbox next to
+Company
+or
+Person
+, then go to
+More
+and
+Delete records
+.
+3.
+Resync emails and calendar events
+after performing the migration.
+Enable objects
+Copy link
+Enable any non-default standard objects in Attio (Deals, Workspaces, Users) that you want to migrate prior to running the migration. For example, to migrate opportunities, you should first
+enable the Deals standard object
+. Custom objects and attributes do not need to be created beforehand. They can be created automatically during migration.
+Check formatting
+Copy link
+To successfully migrate your data, ensure all values are formatted correctly for Attio's attributes. Some CRMs do not validate data, which can result in typos or invalid formatting. Attio requires valid formatting for successful imports.
+Phone numbers
+: Include the country code in 
+
+===== https://attio.com/partners
+TITLE: Partner Programs | Attio
+ACCESSED: 2026-09-28
+
+01 / App partners
+App partners.
+Build apps that power the next era of CRM.
+Learn more
+02 / Creator partners
+Creator partners.
+Build your brand, grow your audience.
+Learn more
+03 / Expert partners
+Expert partners.
+Help GTM teams build, scale and grow.
+Learn more
+Expert Partners
+“
+Attio
+connects
+me
+with
+teams
+that
+value
+speed,
+structure,
+and
+scale.
+Building
+flexible,
+high-impact
+systems
+on
+such
+a
+powerful
+product
+is
+a
+pleasure.”
+Giacomo Caranese
+,
+Co-founder, novlini
+Giacomo
+’s favorite features
+Email & calendar sync
+API
+Mobile app
+Riya Grover
+,
+Co-founder & CEO, Sequence
+App Partners
+Daniel Hull
+,
+Founder, 80x
+Creator Partners
+“
+Attio
+connects
+me
+with
+teams
+that
+value
+speed,
+structure,
+and
+scale.
+Building
+flexible,
+high-impact
+systems
+on
+such
+a
+powerful
+product
+is
+a
+pleasure.”
+Giacomo Caranese
+,
+Co-founder, novlini
+Expert Partners
+LinkedIn
+Keep up to date with what the team is building.
+X
+Stay in the loop with what we're working on.
+Blog
+Be the first to get new Attio updates.
+Changelog
+Stay on top of all releases and new features.
+
+===== https://attio.com/partners/app-partners
+TITLE: App Partner Program | Attio
+ACCESSED: 2026-09-28
+
+App SDK
+Develop Typescript React applications that run natively on Attio’s platform.
+Build with SDK
+REST API
+Develop apps that read and write information to and from workspaces.
+Build with REST API
+REST API
+SDK
+01
+Create your app
+C
+r
+e
+a
+t
+e
+y
+o
+u
+r
+a
+p
+p
+//
+Head over to our
+developer console
+and sign in with your Attio account. Create your app and give it a unique name.
+02
+Develop
+D
+e
+v
+e
+l
+o
+p
+//
+Use React, TypeScript, and our
+App SDK
+to build your app that runs natively inside of Attio.
+03
+Manage authentication
+M
+a
+n
+a
+g
+e
+a
+u
+t
+h
+e
+n
+t
+i
+c
+a
+t
+i
+o
+n
+//
+Connect to your service by configuring OAuth or access tokens.
+04
+Configure your listing
+C
+o
+n
+f
+i
+g
+u
+r
+e
+y
+o
+u
+r
+l
+i
+s
+t
+i
+n
+g
+//
+Give your app a logo, a description, and screenshots, to show users what it does.
+05
+Publish
+P
+u
+b
+l
+i
+s
+h
+//
+Submit your app for review via the developer console, and share it with your users.
+Learn more on docs.attio.com
+Visit the App Store to explore the apps and integrations that extend Attio’s functionality.
+Discover apps
+Sales engagement
+Email & calendar
+Data warehouses
+Customer support
+Billing & invoicing
+Product data
+Workspace
+Standard
+2,857
+Records
+Company
+Standard
+3,096
+Records
+Deal
+Standard
+5,490
+Records
+Attio App Partners
+“
+Attio’s
+developer
+experience
+is
+a
+breath
+of
+fresh
+air.
+The
+team
+is
+outstanding
+to
+work
+with
+–
+we’re
+thrilled
+for
+Sequence
+to
+be
+part
+of
+the
+Attio
+App
+Store.”
+Riya Grover
+·
+Co-founder & CEO, Sequence
+Riya’s favorite features
+Deals
+Workflows
+Notes
+“
+Attio’s
+developer
+experience
+is
+a
+breath
+of
+fresh
+air.
+The
+team
+is
+outstanding
+to
+work
+with
+–
+we’re
+thrilled
+for
+Sequence
+to
+be
+part
+of
+the
+Attio
+App
+Store.”
+Riya Grover
+·
+Co-founder & CEO, Sequence
+Frequently asked questions
+How do I get started?
+To get started, we recommend creating a
+developer account
+and familiarizing yourself with our
+API documentation
+.
+What makes someone an ideal Attio App Partner?
+The app partner program is open to all developers, although we’re especially interested in working with teams who have mutual customers with Attio and are looking to build an integration between our products.
+Can I monetize my app?
+We don’t offer native monetization as part of the App Store, but you are free to charge users of your app how you see fit.
+Expand all
+Creator partners
+Creator partners.
+Build your brand and grow your audience.
+Become a Creator Partner
+Expert partners
+Expert partners.
+Help GTM teams build, scale and grow.
+Become an Expert Partner
+
+===== https://attio.com/help/reference/attio-101
+TITLE: Attio 101 | Attio Help Center
+ACCESSED: 2026-09-28
+
+Help
+/
+Reference
+/
+Attio 101
+1
+Introduction
+Begin your journey with Attio.
+Read more
+2
+Introduction to navigating Attio
+Get to know your way around Attio.
+Read more
+3
+Introduction to email sync
+Sync emails and calendar events in minutes.
+Read more
+4
+Introduction to data importing
+How to import your data quickly.
+Read more
+5
+Attio's data model
+Key concepts for understanding how data works in Attio.
+Read more
+6
+Introduction to communication intelligence
+Unlock insights from your communications.
+Read more
+7
+Introduction to notes
+Collaborate in real time with notes.
+Read more
+8
+Introduction to tasks
+Manage your team’s to-dos efficiently.
+Read more
+9
+Introduction to workflows
+Automate nearly any process inside Attio.
+Read more
+10
+Attio glossary
+Learn key terms in Attio.
+Read more

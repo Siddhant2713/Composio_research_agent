@@ -1,0 +1,706 @@
+===== https://www.copper.com/
+TITLE: CRM Software Solutions Company for Service Businesses | Copper CRM
+ACCESSED: 2026-09-28
+
+Google Workspace
+Activity Feed
+Sales & Projects
+Mobile App
+Copper is trusted by 30,000+ companies of all sizes
+"I work in consulting and
+keeping my tech stack small is important
+. I don't want to spend all day clicking between apps just to get work done.
+Copper's smooth integration
+with
+Gmail
+is a godsend."
+Kristen S
+CEO
+Orderology
+Connect
+Win
+Deliver
+Repeat
+Connect with leads
+Whether it's referrals, paid ads, events or organic, wherever your leads come from, Copper can collect and take immediate action.
+Add every lead
+Use our contact form for website visitors, or scan business cards at events.
+Email series & automations
+Respond instantly to form submissions and send welcome or follow up emails.
+Google Workspace
+Add leads, track conversations, find files or manage tasks directly in Gmail and Google Calendar.
+LinkedIn
+Research and add prospects on LinkedIn (or any website) without switching tabs.
+Win deals
+Know where every lead is at in your sales process and move opportunities to the next stage. Sort by value, understand the win probability, and identify slipping deals.
+Pipelines
+Make sales more visual using drag-and-drop pipelines with AI-powered flags and alerts.
+Pipeline automations
+Automatically trigger emails or reminders when you move an opportunity to the next stage.
+Reporting
+Create custom reports to project revenue, identify customer trends, view team activity, and more.
+Contracts & proposals
+Draft in Google Docs, or integrate with tools like PandaDoc, DocuSign and QuickBooks for a seamless sales process.
+Deliver projects
+Kick off a new project directly from a closed opportunity. Say goodbye to handoff documents, your entire team can finally live in a single tool.
+Project management
+Duplicate your closed deals into a project to handle service delivery, onboarding and more.
+Tasks
+Assign tasks and follow-ups from a centralized task lists, or within projects.
+Task & workflow automation
+Stop doing admin work. Log calls, meetings, asks and activities without lifting a finger.
+Collaboration
+Bring the whole family – sales, project managers, creatives, finance, contractors and more.
+Create repeat business
+Loyal customers fuel long-term success. Stay engaged, follow up with ease, and never miss an opportunity to reconnect.
+Feed
+Get a bird's-eye view of your team's activity across customer emails, projects, tasks and more.
+Rekindle emails
+Reconnect with contacts you haven't heard from in a while. Automatically.
+Get feedback
+Once a project wraps up, automatically send a follow-up email to request a review or referral.
+Mobile app
+Move relationships forward while you're on the go.
+Templates
+Not sure where to start?
+We’ve got templates for that
+From AI email responses, to pipeline and form templates. Start with one of ours or create your own to save time.
+Customization
+Customize the info you track
+Create your own labels, tags, owners, and more, so everyone has context and everything stays organized.
+Mobile app
+Stay connected wherever you go
+Log calls and SMS automatically so every interaction is tracked and accounts are always up to date.
+Integrations
+Connect the tools you’re already using
+Copper's powerful integrations seamlessly connect with your favorite tools to bring in even more customer information.
+"With Copper{{copper}}, there was
+almost no setup time
+since it worked with Gmail{{gmail}}. Plus, there were all these
+integrations
+that we could use right away. We were sold."
+Learn how Polymath uses Copper
+"The Gmail integration is my favorite Copper feature. It makes it easy to add new leads, people, etc... I also love the task tool and how it integrates with Gmail and Calendar."
+Atira R.
+"I love the Google plugin. My business uses Google Workspace for just about everything we do, and the Copper + Google Workspace integration is fantastic."
+Daniel K.
+"Copper keeps track of all correspondence with your customers. It also sends you reminders via email and allows you to email your work colleagues. The layout is very user-friendly, and the information is accessible."
+Kilian E.
+"Got introduced to Copper for a CRM and it's chef's kiss. It naturally integrates with Google Workspace and has a cute little inbox plug in."
+Selena B.
+"As a small business I love that Copper can keep my emails and tasks organized. The large CRM platforms were too much. As my day is all email, Copper is just what I need."
+Liane C.
+"Copper CRM helps keep me focused and organized with my business. The pricing is fair and customer service has been great too. I've used it since 2016...and highly recommend it!"
+Kevin L.
+"Copper CRM piggy backs right on top of Gmail in a seamless way."
+Jeff L.
+"I love the fact that it integrates perfectly with Google Workspace. This has been an amazing experience for me since I’m always using Gmail, Drive, and Calendar."
+Otisa E.
+"Great CRM for Gmail users. Copper's unique angle is that it is tightly integrated with Gmail - so as you're emailing contacts, you can easily add those people and opportunities into y
+
+===== https://developer.copper.com
+TITLE: Getting started - Copper Developer API
+ACCESSED: 2026-09-28
+
+Copper Developer API
+¶
+The Copper Web API allows you to access and build your own applications that interact with Copper in more complex ways than the integrations we provide out of the box.
+The Copper Developer API ("Dev API") provides a RESTful interface with JSON-formatted responses to access most Copper resources. We are continuously working on expanding our API functionality, so stay tuned!
+Changelog 🆕
+¶
+We have added a public changelog, please click
+here
+.
+Domain Update ⚠️
+¶
+Please note that we've recently updated our domain to reflect an earlier application rebranding.
+Our developer api can be found at
+https://api.copper.com/developer_api/
+, previously it was at
+https://api.prosperworks.com/developer_api/
+.
+We are currently supporting auto-redirects for requests being made to the old domain and will continue to do so until early 2022.
+Please update your Dev API requests with the new domain as soon as possible.
+Change Policy
+¶
+Our Developer API Change Policy is available
+here
+.
+This policy defines how we will continue to support and maintain this Developer API going forward.
+Postman Resources
+¶
+To easily interact with the Copper Developer API, you may download our:
+Postman Collection
+Postman Environment
+Import the Collection
+¶
+To import the collection, open Postman and click Import, then select "Import From Link"
+Copy & Paste the following link and press the "Import" button:
+https://developer.copper.com/download/copper_postman_collection.json
+Import and Use the Environment
+¶
+To import the environment, open Postman and click Import, then select "Import From Link"
+Copy & Paste the following link and press the "Import" button:
+https://developer.copper.com/download/copper_postman_environment.json
+After importing the environment, set it as your active environment in the top right-hand corner:
+
+===== https://www.copper.com/pricing
+TITLE: Pricing | Copper CRM
+ACCESSED: 2026-09-28
+
+Usage
+Contacts
+Companies
+Tasks
+Projects & processes
+Sales opportunities
+Leads
+Custom fields
+Support
+Live chat
+Ask questions with a real person via our in-app chat
+Help Center
+Office Hours & Webinars
+Drop in to an interactive webinar hosted by a member of our Customer Success Team. Bring your specific questions, or listen in for tips shared with Copper customers
+Personal onboarding
+Work with an onboarding consultant to set up your Copper account. For eligible Business & Professional annual tier accounts
+Premium support
+Work with a customer success manager to develop success plans. For eligible Business & Professional annual tier accounts
+Mobile Apps
+iOS & Android
+Google Workspace integrations
+Google Chrome extension
+Bring Copper natively into Gmail and Google Calendar on desktop
+Gmail email, contact, and file sync
+Send and receive emails wherever you work
+Google Calendar sync
+Create and manage calendar events with Copper
+Google Contact Sync
+Automatically capture contact information from those you're talking to
+Google Drive integration
+Link documents from Google Drive in Copper records
+Google Sheets & Looker Studio integration
+Directly sync your Copper data for complex reporting
+Productivity
+Notes, activities & tasks
+Take detailed notes as you work for added context
+File uploading
+Easily view, manage, and send files
+Team collaboration
+Reminders
+Never forget or miss a todo with helpful nudges
+Contact & teammate suggestions
+Global activity feed
+AI email template generator
+Craft templates in your brand’s voice for any use case. Add dynamic merge fields for instant personalization
+AI email re-writer
+Make emails clearer or more engaging with AI-powered edits
+Task automation
+Automatically create a new task after an action takes place in Copper
+Workflow automation
+Integrations
+Our partnership with
+allows you to connect Copper to
+5,000+ other apps
+for workflow automation
+Zapier
+LinkedIn
+Add contacts from LinkedIn to Copper in 1-click
+MailChimp
+Sync contacts from Copper to MailChimp email campaigns
+DocuSign
+Auto-fill templates that make it easy to send and sign e-documents
+QuickBooks
+See any QuickBooks invoice status and amount on any record
+PandaDocs
+JustCall
+RingCentral
+Slack
+Receive important Copper notifications in any Slack channel
+Zendesk
+View support tickets on related records
+API & Embedded integration SDK
+Communication
+Email templates & merge fields
+Improve consistency when you answer frequent questions, greet new customers or promote your services
+Bulk email
+Send emails with personalized messages to multiple recipients
+Email automation
+Email open tracking
+Email click tracking
+Email series
+Contact Forms
+Forms
+Remove Copper branding
+"Powered by Copper" will not appear on your form
+Sales
+Customizable sales pipelines
+Sales pipeline templates
+Deal management
+Stay on top of hot deals with Copper's recommendations, which suggest next steps based on upcoming meetings, tasks and overdue email responses
+Revenue tracking
+Projects
+Customizable project pipelines
+Project pipeline templates
+Reporting
+Activity report
+Get visibility into your team's day-to-day activities
+Pipeline reports
+Custom reports
+Build insights from scratch across all Copper data
+Admin
+Data import & export
+Migrate or update existing records, or export data for in-depth reporting
+Sign in with Google
+Team permissions
+Restrict access to records and reports
+Single sign-on (Okta)
+Multi-currency
+Report on multiple currencies and get real time currency conversions
+2,500
+25
+15,000
+50
+Unlimited
+Unlimited
+"Copper CRM helps keep me focused and organized with my business. The pricing is fair and customer service has been great too. I've used it since 2016...and highly recommend it!"
+Kevin L.
+"The Gmail integration is my favorite Copper feature. It makes it easy to add new leads, people, etc... I also love the task tool and how it integrates with Gmail and Calendar."
+Atira R.
+"Great CRM for Gmail users. Copper's unique angle is that it is tightly integrated with Gmail - so as you're emailing contacts, you can easily add those people and opportunities into your CRM. This makes it very easy to use which saves a lot of time and makes CRM updates less of a chore."
+Andrew W.
+"I love the Google plugin. My business uses Google Workspace for just about everything we do, and the Copper + Google Workspace integration is fantastic."
+Daniel K.
+"I love the fact that it integrates perfectly with Google Workspace. This has been an amazing experience for me since I’m always using Gmail, Drive, and Calendar."
+Otisa E.
+"As a small business I love that Copper can keep my emails and tasks organized. The large CRM platforms were too much. As my day is all email, Copper is just what I need."
+Liane C.
+"Copper CRM piggy backs right on top of Gmail in a seamless way."
+Jeff L.
+"Copper keeps track of all correspondence with your customers. It also sends you reminders via email and allows you to email your work colleagues. The layout is very user-friendly, and the information is accessible."
+
+
+===== https://www.copper.com/contact
+TITLE: Contact Us | Copper CRM
+ACCESSED: 2026-09-28
+
+Support
+We have a support portal that has the answers to dozens of the most common questions about Copper!
+Check it out here.
+If you don't find what you need, please chat us through the Copper app.
+Sales
+Interested in learning more about Copper? Contact our product experts at
+sales@copper.com
+.
+Business Development
+Are you a reseller, affiliate, or association that would like to partner with Copper? Get connected with our Partner team at
+partners@copper.com.
+General Questions
+Have a general question for us? Contact us at
+info@copper.com.
+LET’S CHAT
+Who do you need to get in touch with?
+
+===== https://www.copper.com/signup
+TITLE: Signup | Copper CRM
+ACCESSED: 2026-09-28
+
+"The best project management tool and CRM"
+— Daniel C, Sales and Marketing Specialist
+"Easy to use and great CRM"
+— Federico M, Commercial Director and Financial Services
+"The best CRM if you use Google Workspace products!"
+— Erik V, Manager, Marketing and Advertising
+Start your free trial.
+Free 14-day trial
+No credit card required
+Continue with Google
+Copper only works with Gmail & Google Workspace.
+By signing up, I agree to Copper’s
+privacy policy
+&
+terms of service.
+
+===== https://www.copper.com/partners
+TITLE: Partners | Copper CRM
+ACCESSED: 2026-09-28
+
+Copper is trusted by 30,000+
+companies of all sizes
+‍
+You live in Google Workspace. So should your CRM.
+Are you an agency, content creator or service provider that focuses on small to medium size businesses? We want to partner with you! Whether you provide support in sales, marketing, development, IT, or simply manage a review site, we can help you scale your business.
+Referral partners
+Ideal for consultants who advise small business clients on CRM and productivity tools. Earn a 15% commission on both monthly and annual Copper subscriptions.
+Affiliate partners
+Perfect for content creators who recommend business tools to a broad audience. Earn competitive CPC or CPL commissions for driving traffic and leads.
+Integration partners
+Best for SaaS companies that want to integrate with Copper. We support natively embedded apps, API integrations, co-marketing, marketplace listings, and more.
+"
+As a Copper partner (and customer) for 8+ years, we’ve seen it all, and we can confidently say that Copper is the
+best CRM
+on the market for Google Workspace users. We’ve recommended and implemented Copper into hundreds of businesses over the past decade. To get the nitty gritty on specifically why we love it, check out our full
+Copper CRM review.
+"
+Alex Bass & Andra Vomir
+Founders, Efficient App
+Frequently asked questions
+Can’t find the answer here?
+‍
+Chat with support.
+What is Copper?
+Copper is a CRM built for businesses that run on Google Workspace. It’s designed to look and feel like the Google apps you already use, so your team can manage relationships, track pipelines, and run projects without ever leaving Gmail, Calendar, or Drive. Unlike traditional CRMs, Copper is lightweight, intuitive, and quick to adopt—no data entry headaches or steep learning curves.
+Are there any costs involved?
+No there isn't a cost to join, we just require that partners purchase once business license if a demo account is needed. We offer a discount on our listed price.
+What makes Copper CRM specifically designed for Google Workspace?
+Copper CRM is the premier choice for Google Workspace, offering seamless integration with Gmail, Calendar, and Drive. As the only CRM recommended for Google Workspace, it automates Gmail activity, enhances collaboration, and simplifies contact management. Copper's unique alignment with Google's tools sets it apart as the go-to CRM solution.
+How does Copper integrate with Google Workspace
+Copper is proud to be a Google Partner, a Recommended for Google Workspace app, and a Google-backed company. Our native Google Workspace integration is built around ease of use for our customers. Behind the scenes, Copper integrates with Gmail, Google Contacts, Google Drive and Google Calendar to sync the emails, files and calendar invites sent between your customers/prospects and team. From there, Copper’s Chrome extension layers in additional productivity tools directly into your Gmail and Google Calendar, so you never have to switch tabs. Copper also integrates with Google Sheets, Google Data Studio, Google Forms and Google Chat for even more seamless workflows.
+Does Copper work with Microsoft 365?
+Copper is deeply integrated with Google Workspace and is the only CRM recommended by Google. Because of that focus, Copper does not currently offer a native integration with Microsoft 365.
+Can I offer Copper CRM alongside other CRM solutions?
+Of course, we're not gate keepers. We're purpose-built for Google Workspace, so it makes sense for you to have alternative CRMs for other clients.
+How soon can I start earning revenue after joining the referral program?
+You can start earning revenue with Copper's referral program immediately after joining. With monthly payouts and a 90-day tracking cookie, your earnings are calculated and paid regularly, ensuring a consistent revenue stream.
+How do I apply, and what is the selection process for the referral and solutions partner programs?
+Apply for Copper's referral and solutions partner program by filling out the form; our team will follow up. The straightforward selection process requires a monthly check-in for the first 3 months, onboarding 1 client in 4 months, and completing a short course on Copper within the first month.
+Apply for the Copper Partner Program
+Ready to take the next step? Join us and experience the benefits of Copper CRM firsthand.
+Apply today
+
+===== https://www.copper.com/automate-sales
+TITLE: Automate Sales with Copper CRM | Boost Efficiency & Close More Deals | Copper CRM
+ACCESSED: 2026-09-28
+
+Copper is trusted by 30,000+
+companies of all sizes
+Email automations
+Effortlessly build relationships with automation that connects, follows up, and re-engages quiet contacts.
+Workflow automations
+Move your closed deals into a project to handle service delivery, onboarding, partnerships and more.
+Task automations
+Assign tasks and follow-ups from a centralized task lists, or within projects.
+"
+Copper’s automation features have completely changed the game for us.
+Follow-ups, tasks, even email outreach—it all runs on autopilot."
+Alex B.
+Sales Manager
+Speed to lead
+From form fill to opportunity
+Add a Copper form to your website to capture new leads, automatically send them a personalized follow-up email, and create a new sales opportunity.
+Task automation
+What's next? Your next task is already queued up
+Use task automation to create tasks based on your team's repeating work, so you never forget to take the next step.
+Calculations
+Let Copper do the math
+Create automations that calculate profits, commissions, and more. Feed the right metrics into Copper's reporting suite for more visibility.
+Rekindle emails
+Automated follow-ups that feel one-on-one
+Set up automatic friendly follow-ups that keeps leads warm. Copper sends gentle nudges that feel personal, not pushy.
+"Copper fits the way we work —
+it’s not overly complicated
+, but it’s
+powerful
+enough to
+manage everything from first contact to project delivery.
+"
+Learn how Kontent Partners uses Copper
+Recurring tasks
+Create a recurring task, set the frequency, and get reminders as it approaches.
+Pipeline flags
+Spot bottlenecks and surface high-value opportunities that need your attention.
+Email & file capture
+Effortlessly sync Gmail emails, files, and contacts to Copper, keeping your full relationship history in one place.
+Auto-enriched profiles
+Copper automatically enriches contact profiles with up-to-date company information, social profiles, and more.
+Suggested contacts
+Copper scrapes your email history to suggest new leads and contacts to add to the system.
+Email automation
+Send targeted email series to contacts when they fill out a form, reach a pipeline stage, or go silent too long.
+All your essential apps
+Copper's powerful integrations seamlessly connect with your favorite tools, unlocking a whole new level of functionality.
+Learn more
+LinkedIn
+Add new contacts to Copper from LinkedIn with one click, then automatically add them to a lead generation pipeline.
+Phone solutions
+Integrate your phone system to call contacts, track conversations and share call transcripts.
+"I love the automation. It's been a helpful tool in setting reminders and making sure I am following up with contacts."
+Jane D
+"It integrates with Google Drive and Slack perfectly, meaning we can automate what was previously a gamut of annoying manual tasks."
+Chris A
+"Copper is a great tool. It has been an amazing resource for organizing clients, projects, tasks, emails, much more."
+John S
+"Copper CRM piggy backs right on top of Gmail in a seamless way."
+Jeff L.
+"I LOVE Copper. It holds all the information we need to take care of clients seamlessly through the whole process."
+Pamela N
+"It adds to our daily routine workflow for communication and almost makes CRM automatic."
+Sherry Z
+"Copper is a great tool. It has been an amazing resource for organizing clients, projects, tasks, emails, much more."
+John S
+"I love the automation. It's been a helpful tool in setting reminders and making sure I am following up with contacts."
+Jane D
+"It adds to our daily routine workflow for communication and almost makes CRM automatic."
+Sherry Z
+"Copper CRM piggy backs right on top of Gmail in a seamless way."
+Jeff L.
+"It integrates with Google Drive and Slack perfectly, meaning we can automate what was previously a gamut of annoying manual tasks."
+Chris A
+"I LOVE Copper. It holds all the information we need to take care of clients seamlessly through the whole process."
+Pamela N
+Get started for free
+.
+Take Copper for a spin first. Pay and add your team later.
+Try Copper free
+Get a demo
+Free 14-day trial
+No credit card required
+Instant activation
+
+===== https://www.copper.com/manage-contacts
+TITLE: Manage contacts inside Gmail with Copper CRM | Copper CRM
+ACCESSED: 2026-09-28
+
+Copper is trusted by 30,000+
+companies of all sizes
+Contact forms
+Collect new leads and create opportunities from your website with custom fields for budgets, interests, and more.
+Business card scanner
+Snap a photo of a business card, anytime, anywhere and Copper will create a new contact.
+Chrome extension
+Copper makes suggestions on new contacts it finds in Gmail and Google Calendar.
+"What I like best about Copper{{copper}}is its
+seamless integration with Gmail Workspace
+. It feels like an extension of Gmail{{gmail}}, making it
+incredibly intuitive
+for teams already using Google tools.
+Very easy to use and user friendly.
+"
+John D
+in Marketing and Advertising
+Contact enrichment
+Skip manual data entry
+AI automatically enriches new contact records, gathering details like phone numbers, email addresses, and social media so you can say goodbye to entering that all by hand!
+Customization
+Customize the info you track
+Tag, filter and create fields for leads and contacts based on any criteria.
+Visibility
+Keep track of all touch points
+Get the big picture (and all the little details!). Copper tracks and displays a live activity feed of every interaction on your contacts’ profiles.
+Organize
+Organize every professional relationship
+Freelancers, journalists, vendors, clients... the list goes on. Copper makes keeping track of every business relationship effortless.
+"There was
+a lot of flexibility
+with Copper, and I knew that it could be built upon. We could have a simple pipeline today and a complex pipeline or multiple pipelines in the future… It’s
+very scalable.
+"
+Learn how Campfire labs uses Copper
+Favorites
+Have super-important accounts? Star them to make sure you get notified about updates.
+Email click tracking
+Easily monitor when a hot lead or customer clicks on links in your email, so you can send timely follow-ups.
+Custom fields
+Want to track more specific data about your contacts? Add custom fields to record special details.
+Activity feed
+See exactly what’s going on with a real-time feed of all the contact and account activities.
+Auto-enriched profiles
+Copper automatically enriches contact profiles with up-to-date company information, social profiles, and more.
+LinkedIn Chrome extension
+Add someone or update existing contact info directly from LinkedIn without switching tabs.
+All your essential apps
+Copper's powerful integrations seamlessly connect with your favorite tools, unlocking a whole new level of functionality.
+Learn more
+Mailchimp
+When new contacts are added to Copper, you can automatically add them to Mailchimp, or capture new newsletter subscribers in Copper as potential leads.
+Phone solutions
+Integrate your phone system to call contacts, track conversations, and share call transcripts.
+"Got introduced to Copper for a CRM and it's chef's kiss. It naturally integrates with Google Workspace and has a cute little inbox plug in."
+Selena B.
+"Copper CRM helps keep me focused and organized with my business. The pricing is fair and customer service has been great too. I've used it since 2016...and highly recommend it!"
+Kevin L.
+"As a small business I love that Copper can keep my emails and tasks organized. The large CRM platforms were too much. As my day is all email, Copper is just what I need."
+Liane C.
+"Copper CRM piggy backs right on top of Gmail in a seamless way."
+Jeff L.
+"Copper keeps track of all correspondence with your customers. It also sends you reminders via email and allows you to email your work colleagues. The layout is very user-friendly, and the information is accessible."
+Kilian E.
+"The Gmail integration is my favorite Copper feature. It makes it easy to add new leads, people, etc... I also love the task tool and how it integrates with Gmail and Calendar."
+Atira R.
+"I love the Google plugin. My business uses Google Workspace for just about everything we do, and the Copper + Google Workspace integration is fantastic."
+Daniel K.
+"Great CRM for Gmail users. Copper's unique angle is that it is tightly integrated with Gmail - so as you're emailing contacts, you can easily add those people and opportunities into your CRM. This makes it very easy to use which saves a lot of time and makes CRM updates less of a chore."
+Andrew W.
+"I love the fact that it integrates perfectly with Google Workspace. This has been an amazing experience for me since I’m always using Gmail, Drive, and Calendar."
+Otisa E.
+"Copper CRM piggy backs right on top of Gmail in a seamless way."
+Jeff L.
+"Great CRM for Gmail users. Copper's unique angle is that it is tightly integrated with Gmail - so as you're emailing contacts, you can easily add those people and opportunities into your CRM. This makes it very easy to use which saves a lot of time and makes CRM updates less of a chore."
+Andrew W.
+"Got introduced to Copper for a CRM and it's chef's kiss. It naturally integrates with Google Workspace and has a cute little inbox plug in."
+Selena B.
+"The Gmail integration is my favorite Copper feature. It makes it easy to add new le
+
+===== https://developer.copper.com/introduction/oauth/quickstart.html
+TITLE: Quickstart Guide - Copper Developer API
+ACCESSED: 2026-09-28
+
+OAuth2.0 Quickstart Guide
+¶
+Introduction
+¶
+This basic example demonstrates how to get started with Copper OAuth2.0.
+For a detailed documentation of each step,
+click here
+.
+Prerequisites
+¶
+Your application provides an HTTPS callback endpoint
+redirect_uri
+capable of receiving POST requests
+You have
+registered your application
+and received your
+client_id
+and
+client_secret
+credentials
+Integration
+¶
+Once you have set up your
+redirect_uri
+and obtained a
+client_id
+and
+client_secret
+,
+you're ready to kick off the OAuth2.0 authorization process.
+Start by adding a form to your web application that makes a GET request to
+https://app.copper.com/oauth/authorize
+:
+<
+form
+action
+=
+"https://app.copper.com/oauth/authorize"
+method
+=
+"GET"
+>
+<
+input
+type
+=
+"hidden"
+name
+=
+"response_type"
+value
+=
+"code"
+>
+<
+input
+type
+=
+"hidden"
+name
+=
+"client_id"
+value
+=
+"{client_id}"
+>
+<
+input
+type
+=
+"hidden"
+name
+=
+"redirect_uri"
+value
+=
+"{redirect_uri}"
+>
+<
+input
+type
+=
+"hidden"
+name
+=
+"scope"
+value
+=
+"developer/v1/all"
+>
+<
+button
+type
+=
+"submit"
+>
+Integrate with Copper!
+</
+button
+>
+</
+form
+>
+When the user submits this form, the authorization process begins.
+First, the user will be prompted to log in to their Copper account, followed by a request to authorize your application.
+Once the user clicks "Authorize", they will be redirected back to your application's
+redirect_uri
+via a POST request.
+Use the
+code
+parameter supplied in the request body, and exchange it for an access token:
+curl
+-X
+POST
+\
+-H
+"Content-Type: application/x-www-form-urlencoded"
+\
+-d
+"grant_type=authorization_code"
+\
+-d
+"code={code}"
+\
+-d
+"redirect_uri={redirect_uri}"
+\
+-d
+"client_id={client_id}"
+\
+-d
+"client_secret={client_secret}"
+\
+https://app.copper.com/oauth/token
+A successful response is a JSON document that looks like this:
+{
+"access_token"
+:
+"MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3"
+,
+"token_type"
+:
+"Bearer"
+,
+"scope"
+:
+"developer/v1/all"
+}
+Extract
+access_token
+and store it somewhere safe. You are now ready to make Dev API calls on behalf of the user
+by passing in
+access_token
+in an Authorization header!
+curl
+-H
+"Authorization: Bearer {access_token}"
+\
+https://api.copper.com/developer_api/v1/account

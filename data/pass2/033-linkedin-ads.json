@@ -1,0 +1,207 @@
+{
+  "app": "LinkedIn Ads",
+  "number": 33,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:59:33.017331+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://learn.microsoft.com/linkedin/marketing/\",\n    \"https://learn.microsoft.com/linkedin/marketing/quick-start\",\n    \"https://learn.microsoft.com/linkedin/shared/authentication/authentication\",\n    \"https://developer.linkedin.com/\",\n    \"https://www.linkedin.com/developers/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://learn.microsoft.com/linkedin/marketing",
+    "https://learn.microsoft.com/linkedin/marketing/quick-start",
+    "https://learn.microsoft.com/linkedin/shared/authentication/authentication",
+    "https://developer.linkedin.com/",
+    "https://www.linkedin.com/developers/",
+    "https://docs.microsoft.com/",
+    "https://developer.microsoft.com/",
+    "https://developers.microsoft.com/",
+    "https://api.microsoft.com/",
+    "https://microsoft.com/docs",
+    "https://microsoft.com/developers",
+    "https://microsoft.com/api",
+    "https://microsoft.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-09&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/media-planning/media-plan?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/getting-started?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide?view=li-lms-2026-09&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json",
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/developer-portal-tools?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/authentication/lms-generate-an-access-token?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/tips-to-get-started?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/marketing/restricted-use-cases?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/webhook-validation?view=li-lms-2026-09",
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/sample-applications",
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow",
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/client-credentials-flow?context=linkedin/context",
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+    "https://www.linkedin.com/developers/tools/oauth",
+    "https://business.linkedin.com/sales-solutions/partners/become-a-partner/terms-and-conditions",
+    "https://business.linkedin.com/marketing-solutions/marketing-partners/become-a-partner/marketing-developer-program/terms-and-conditions",
+    "https://developer.linkedin.com/product-catalog/sales/",
+    "https://www.linkedin.com/developers/news/featured-updates/q3-2025-partner-product-showcase",
+    "https://www.linkedin.com/developers/news/featured-updates/q2-2025-partner-product-showcase?src=li-other&veh=www.linkedin.com%7Cli-other",
+    "https://partner.microsoft.com/en-US/",
+    "https://support.microsoft.com/contactus/",
+    "https://partner.microsoft.com/en-us/membership",
+    "https://devblogs.microsoft.com/dotnet/ag-ui-dotnet-sdk",
+    "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "https://partner.microsoft.com/en-US/membership/cloud-solution-provider"
+  ],
+  "boilerplate_lines_removed": 8,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-09",
+      "requested_url": "https://learn.microsoft.com/linkedin/marketing",
+      "status": 200,
+      "title": "LinkedIn Marketing API Program - LinkedIn | Microsoft Learn",
+      "chars": 3613,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+      "requested_url": "https://learn.microsoft.com/linkedin/marketing/quick-start",
+      "status": 200,
+      "title": "Quick Start - LinkedIn | Microsoft Learn",
+      "chars": 4742,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+      "requested_url": "https://learn.microsoft.com/linkedin/shared/authentication/authentication",
+      "status": 200,
+      "title": "Authenticating with OAuth 2.0 Overview - LinkedIn | Microsoft Learn",
+      "chars": 3022,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.linkedin.com/",
+      "requested_url": "https://developer.linkedin.com/",
+      "status": 200,
+      "title": "LinkedIn Developer Solutions",
+      "chars": 758,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/",
+      "requested_url": "https://docs.microsoft.com/",
+      "status": 200,
+      "title": "Microsoft Learn: Build with answers in reach",
+      "chars": 1226,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/",
+      "requested_url": "https://developer.microsoft.com/",
+      "status": 200,
+      "title": "Microsoft Developer",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-09&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json",
+      "requested_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-09&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json",
+      "status": 200,
+      "title": "LinkedIn 3-Legged OAuth Flow - LinkedIn | Microsoft Learn",
+      "chars": 4760,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/media-planning/media-plan?view=li-lms-2026-09",
+      "requested_url": "https://learn.microsoft.com/en-us/linkedin/marketing/media-planning/media-plan?view=li-lms-2026-09",
+      "status": 200,
+      "title": "Manage Media Plans - LinkedIn | Microsoft Learn",
+      "chars": 4773,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+      "requested_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+      "status": 200,
+      "title": "Campaign Management Getting Started - LinkedIn | Microsoft Learn",
+      "chars": 4764,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/getting-started?view=li-lms-2026-09",
+      "requested_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/getting-started?view=li-lms-2026-09",
+      "status": 200,
+      "title": "Getting Started - Reporting - LinkedIn | Microsoft Learn",
+      "chars": 4777,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"The LinkedIn Marketing API Program offers public REST APIs utilizing OAuth 2.0 to create campaigns, report performance, manage leads, and grow company pages.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication, supporting both 3-legged and 2-legged OAuth flows.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can get started by creating a developer application in the Developer Portal and applying for API access.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"The platform offers REST APIs such as /rest/adAccounts and /audienceCounts.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"No Model Context Protocol (MCP) server specific to the LinkedIn Ads API is described in the documentation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication\",\n      \"claim\": \"Uses OAuth 2.0 for authorization and authentication.\",\n      \"quote\": \"The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.\"\n    },\n    {\n      \"url\": \"https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09\",\n      \"claim\": \"Steps to get started include creating a developer application in the Developer Portal.\",\n      \"quote\": \"Create a developer application in the Developer Portal.\"\n    },\n    {\n      \"url\": \"https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09\",\n      \"claim\": \"Exposes REST endpoints like POST https://api.linkedin.com/rest/adAccounts.\",\n      \"quote\": \"POST https://api.linkedin.com/rest/adAccounts\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication\",\n      \"quote\": \"The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.\"\n    },\n    \"access\": {\n      \"url\": \"https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09\",\n      \"quote\": \"Create a developer application in the Developer Portal.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09\",\n      \"quote\": \"POST https://api.linkedin.com/rest/adAccounts\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://learn.microsoft.com/linkedin/marketing",
+    "one_liner": "The LinkedIn Marketing API Program offers public REST APIs utilizing OAuth 2.0 to create campaigns, report performance, manage leads, and grow company pages.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication, supporting both 3-legged and 2-legged OAuth flows."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can get started by creating a developer application in the Developer Portal and applying for API access."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Credentials are self-serve (oauth2), but the pages do not establish the API surface, so integration work is harder to scope. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "claim": "Uses OAuth 2.0 for authorization and authentication.",
+        "quote": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "claim": "Steps to get started include creating a developer application in the Developer Portal.",
+        "quote": "Create a developer application in the Developer Portal.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+        "quote": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication."
+      },
+      "access": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-09",
+        "quote": "Create a developer application in the Developer Portal."
+      }
+    },
+    "unsupported_fields": [
+      "api_surface: quoted line not found on https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:59:50.006384+00:00"
+}

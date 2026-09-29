@@ -1,0 +1,178 @@
+{
+  "app": "Harvest",
+  "number": 80,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:53:03.858956+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://help.getharvest.com/api-v2\",\n    \"https://help.getharvest.com/api-v2/authentication/authentication/introduction\",\n    \"https://id.getharvest.com/developers\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://help.getharvest.com/api-v2",
+    "https://help.getharvest.com/api-v2/authentication/authentication/introduction",
+    "https://id.getharvest.com/developers",
+    "https://docs.getharvest.com/",
+    "https://developer.getharvest.com/",
+    "https://developers.getharvest.com/",
+    "https://api.getharvest.com/",
+    "https://getharvest.com/docs",
+    "https://getharvest.com/developers",
+    "https://getharvest.com/api",
+    "https://getharvest.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://help.getharvest.com/api-v2/authentication-api",
+    "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+    "https://www.getharvest.com/contact?from=helpcenter"
+  ],
+  "boilerplate_lines_removed": 8,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.getharvest.com/api-v2/authentication/authentication/introduction",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://id.getharvest.com/developers",
+      "reason": "page too thin (115 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.getharvest.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://getharvest.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://help.getharvest.com/api-v2/",
+      "requested_url": "https://help.getharvest.com/api-v2",
+      "status": 200,
+      "title": "Harvest API V2 Documentation",
+      "chars": 982,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/",
+      "requested_url": "https://help.getharvest.com/api-v2/authentication-api",
+      "status": 200,
+      "title": "Authentication \u2013 Harvest API V2 Documentation",
+      "chars": 45,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "requested_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "status": 200,
+      "title": "Authentication \u2013 Harvest API V2 Documentation",
+      "chars": 4789,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+      "requested_url": "https://help.getharvest.com/api-v2/clients-api/clients/contacts/",
+      "status": 200,
+      "title": "Client Contacts \u2013 Harvest API V2 Documentation",
+      "chars": 4830,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.getharvest.com/contact?from=helpcenter",
+      "requested_url": "https://www.getharvest.com/contact?from=helpcenter",
+      "status": 200,
+      "title": "Contact Help & Support | Harvest",
+      "chars": 274,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Harvest provides a V2 API utilizing personal access tokens or OAuth2 for productivity and project management automation.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"The API supports both Personal Access Tokens and a full OAuth2 Authentication flow.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Personal Access Tokens can be created directly from the Developers section of Harvest ID.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [],\n    \"notes\": \"The Harvest API V2 includes REST endpoints for clients, company settings, invoices, estimates, expenses, tasks, timesheets, projects, roles, users, reports, and paid time off.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/\",\n    \"claim\": \"Personal Access Token can be created from the Developers section of Harvest ID.\",\n      \"quote\": \"The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.\"\n    },\n    {\n      \"url\": \"https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/\",\n      \"claim\": \"OAuth2 application can be registered for integrations that other users can use.\",\n      \"quote\": \"If you are interested in building integrations that other users can use, you will need to register an OAuth2 Application, also known as an OAuth2 Client.\"\n    },\n    {\n      \"url\": \"https://help.getharvest.com/api-v2/\",\n      \"claim\": \"Various REST API endpoints exist for resources like clients, invoices, and timesheets.\",\n      \"quote\": \"Clients API\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/\",\n      \"quote\": \"Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.\"\n    },\n    \"access\": {\n      \"url\": \"https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/\",\n      \"quote\": \"The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://help.getharvest.com/api-v2/\",\n      \"quote\": \"Clients API\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://help.getharvest.com/api-v2",
+    "one_liner": "Harvest provides a V2 API utilizing personal access tokens or OAuth2 for productivity and project management automation.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "The API supports both Personal Access Tokens and a full OAuth2 Authentication flow."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Personal Access Tokens can be created directly from the Developers section of Harvest ID."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://help.getharvest.com/api-v2/."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Credentials are self-serve (oauth2), but the pages do not establish the API surface, so integration work is harder to scope. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "claim": "Personal Access Token can be created from the Developers section of Harvest ID.",
+        "quote": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "claim": "OAuth2 application can be registered for integrations that other users can use.",
+        "quote": "If you are interested in building integrations that other users can use, you will need to register an OAuth2 Application, also known as an OAuth2 Client.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "quote": "Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations."
+      },
+      "access": {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "quote": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID."
+      }
+    },
+    "unsupported_fields": [
+      "api_surface: quoted line not found on https://help.getharvest.com/api-v2/",
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:54:06.892374+00:00"
+}

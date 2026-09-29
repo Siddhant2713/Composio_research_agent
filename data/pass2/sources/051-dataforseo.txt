@@ -1,0 +1,783 @@
+===== https://docs.dataforseo.com/v3/
+TITLE: DataForSEO API v.3
+ACCESSED: 2026-09-28
+
+Introduction
+Welcome to DataForSEO API!
+This is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations. With DataForSEO you can get all the data you need while saving your time and budget.
+Getting started
+Follow our recommended learning path to master DataForSEO APIs.
+1. Kickstart Guide to our APIs
+2. Dashboard Guide
+3. Test with API Playground
+4. Free Unlimited Trial Info
+5. Sandbox Best Practices
+REST technology
+DataForSEO API is using the
+REST
+technology for interchanging data between your application and our service. The data exchange is made through the widely used HTTP protocol, which allows applying our API to almost all programming languages.
+Client libraries
+You can create your REST class or use the following ready-made classes:
+Recommended: officially supported PHP Client. Author – Vitaliy Lyabakh – jovixv
+Recommended: officially supported C# Client. Author – DataForSEO team
+Recommended: officially supported Java Client. Author – DataForSEO team
+Recommended: officially supported Python Client. Author – DataForSEO team
+Recommended: officially supported TypeScript Client. Author – DataForSEO team
+PHP REST Client build with cURL. Author – Fabio Agostinho Boris.
+Python REST Client. Author – DataForSEO.
+PHP, Python, C# and Postman examples
+Choose your preferred programming language or API testing tool.
+PHP code examples
+Python code examples
+C# code examples
+POSTMAN examples
+Online POSTMAN Documenter
+Data encoding
+All data you send to DataForSEO API should be
+UTF-8
+encoded.
+If you use one of the Clients listed in the first table,
+gzip
+will be the default format of data exchange. You will see
+Content-Encoding: gzip
+in the header.
+All the responses are returned in the
+JSON
+format by default, but we also support responses in the
+XML
+format – just append
+.xml
+to the end of your request. In addition to that, you can request HTML results from endpoints that return HTML-encoded results by appending
+.html
+to the end of the request’s URL path.
+For example, the following requests will return response encoded in XML or HTML accordingly:
+https://api.dataforseo.com/v3/appendix/user_data.xml
+https://api.dataforseo.com/v3/serp/google/organic/task_get/html/09061543-1535-0066-0000-6240830f56ba.html
+Rate limits
+Each of DataForSEO APIs has a certain rate limit, which you can find in the HTTP header of every endpoint.
+Rate limit HTTP headers we use:
+X-RateLimit-Limit
+– the rate limit ceiling per minute for the given endpoint;
+X-RateLimit-Remaining
+– the number of requests remaining in the current rate limit window.
+If your system requires rate limits to be increased, please contact our support team.
+Results storage
+The term for storing API results in our system depends on the API and method of data retrieval.
+Standard
+method: results are stored for 30 days
+*
+Live
+method: results are not stored
+*
+HTML
+results: results are stored for 7 days
+*
+for SERP API in both Standard and Live methods, the results in JSON format are stored for 30 days.
+To learn more about the terms of results storage,
+check this Help Center article
+.
+DataForSEO Help Center
+Need guidance? Visit our Help Center for integration tips, troubleshooting info, and product FAQs.
+• Live vs Standard method
+• What’s task ID?
+• Task completion & lists of completed tasks
+• Using filters in DataForSEO APIs
+• Set multiple tasks in one request
+• Webhooks & callbacks
+• SERP API best practices
+• Keyword Data API best practices
+• On-Page API best practices
+• Live endpoints best practices
+Additional resources
+LLM-friendly docs version
+YAML-formatted specification for all APIs
+DataForSEO API Wrapper
+To get detailed information about current system status, past and pending incidents, associated endpoints, incident gravity, and time to resolution, visit a dedicated
+DataForSEO Status Page.
+cURL
+php
+Node.js
+Python
+cSharp
+
+===== https://dataforseo.com/pricing
+TITLE: DataForSEO API v3 Pricing – Transparent Pay-As-You-Go Pricing Model
+ACCESSED: 2026-09-28
+
+DataForSEO API v3 Pricing – Transparent Pay-As-You-Go Pricing Model
+DataForSEO Pricing
+Transparent pricing for DataForSEO APIs
+SEE PRODUCT PRICING
+GET A PRICING QUOTE
+Pay for what you use
+With DataForSEO you pay only for the individual services you consume. Our pay-as-you-go pricing model is designed to help our customers minimize costs, increase resource efficiency, and build operational resilience.
+Note that the minimum payment amount is $50.
+API Pricing
+Look into the price of DataForSEO APIs and estimate the cost of data for your project.
+View
+Pricing Quote
+Request a custom pricing quote for DataForSEO APIs and Databases.
+View
+Control your spending
+DataForSEO account panel comes with a set of free cost management tools that will help you monitor your usage and spending, control your budgets, set limits, and more.
+Learn more
+DataForSEO APIs Pricing
+SERP API
+Keyword Data API
+Backlinks API
+Domain Analytics API
+On-Page API
+DataForSEO Labs API
+Business Data API
+Merchant API
+App Data API
+Content Analysis API
+AI Optimization API
+Get a Pricing Quote
+Width:
+Height:
+Embed code:
+Copy Code
+Preview:
+
+===== https://dataforseo.com
+TITLE: Powerful API Stack For Data-Driven SEO Tools – DataForSEO
+ACCESSED: 2026-09-28
+
+Powerful API Stack For Data-Driven SEO Tools – DataForSEO
+Powerful API Stack For
+Data-Driven Marketers
+We provide comprehensive SEO and digital marketing data solutions via API
+Try for free
+See pricing
+All the data your SEO software requires
+is now in one place
+DataForSEO APIs
+Explore our state-of-the-art APIs and find the perfect solution for your use case.
+Explore APIs
+DataForSEO Databases
+Get full access to the industry's biggest proprietary sources of current and historical SEO data.
+Explore DBs
+DataForSEO in Figures
+Our data is at the heart of what we do. We are confident that DataForSEO provides the most extensive, reliable, accurate, and granular SEO and search marketing insights available on the Internet.
+DataForSEO aggregates data from search engines, marketplaces, review platforms, and billions of other websites across the web to provide you with unique insights for building innovative digital marketing solutions.
+To you, we can offer a wide spectrum of accurate SEO, PPC, backlink and ecommerce data carefully segmented to fit even the most sophisticated use cases.
+Our Data
+Total Backlinks collected
+Updated last 30d:
+299230797
+Updated last 30d:
+6440906191
+Crawled last 24h:
+11271928480
+Save time and money with a convenient pay-per-use pricing model
+See pricing
+Champions of customer support
+available 24/7
+There is no question they can’t answer and no issue they can’t resolve. Our customer support team is ready to walk you through the entire integration process.
+Contact us
+Look behind the scenes
+Our Vision
+Our vision is to be a leader in data-driven marketing by leveraging data to equip businesses with the tools they need to create efficient and effective SEO strategies. Data is the new oil, and we are committed to providing the highest-quality fuel to power our clients’ SEO tools. Our focus is on developing innovative API solutions that make it easy and fast to convert data into actionable insights, enabling our clients to get the most out of their SEO efforts. We are committed to continuously improving our technology and services to ensure our clients have access to the best data-driven solutions available.
+Our Mission
+Our mission is to empower businesses with reliable data and intelligent analytics to create and optimize sustainable digital marketing strategies. We are committed to delivering cutting-edge technology that streamlines the SEO process, allowing our clients to stay ahead of the competition. With our user-friendly solutions, we strive to enable our clients to build effective SEO solutions in the simplest and most transparent way. We are dedicated to fostering long-term partnerships by providing exceptional customer support and adapting our offerings to meet the evolving needs of the dynamic digital landscape.
+Amplify your capabilities with our business solutions
+From building innovative SEO software solutions to fostering market research and ecommerce analytics, DataForSEO is made for what you do
+Rank Tracker is the primary tool used by website owners and SEO professionals to monitor search engine rankings of website’s pages for specific keywords.
+If you’re looking for a reliable solution to build sustainable rank tracking, visit our guide to developing a Rank Tracking tool with DataForSEO APIs.
+Learn how to build a Rank Tracking tool with DataForSEO.
+Find out how DataForSEO APIs Helped GMB Crush Build a Top-Notch Local SEO Tool.
+Backlink analysis tools showcase the backlink profile of any target and provide deep insights into a site’s backlinks, top pages, referring domains, and more.
+With DataForSEO Backlinks API, you can speed up the designing stage, and swiftly release a quality Backlink Checker powered by fresh and robust data.
+See what features you can build with DataForSEO Backlinks API
+Twinword Wins 35% More Paid Customers After Switching To DataForSEO APIs
+Reputation Management tools help users keep track of online mentions, and monitor customer reviews on various platforms, such as Yelp and Google Business Profile.
+Check our development guide and learn how to quickly design and release a robust reputation management software atop two powerful DataForSEO APIs.
+View our guide to building a Reputation Management Tool
+DataForSEO API Helps On the Map Marketing Go Up at the Time of a Downturn
+Keyword research is one of the most crucial processes in search engine optimization. It helps understand user intent and drive targeted traffic by identifying the queries that people search for.
+We’ve prepared a development guide to help you build your own keyword research tool based on the effective use of DataForSEO APIs.
+Find out how to develop your own Keyword Research App
+Fattoretto Agency Boosts Precision of FattoBoost with DataForSEO API
+Release in days, not weeks
+Integrating a new data source can take a lot of time and money. We accelerate this process by providing a user-friendly interface for controlling your API usage and spending.
+Well-rounded documentation
+DataForSEO offers a detai
+
+===== https://docs.dataforseo.com/v3/auth/
+TITLE: Authentication – DataForSEO API v.3
+ACCESSED: 2026-09-28
+
+Authentication
+from client import RestClient
+#You can download this file from here https://cdn.dataforseo.com/v3/examples/python/python_Client.zip
+
+#Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access
+client = RestClient("login", "password")
+
+#do something
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+namespace DataForSeoDemos
+{
+    public static partial class Demos
+    {
+        public static async Task cmn_key_id()
+        {
+            var httpClient = new HttpClient
+            {
+                BaseAddress = new Uri("https://api.dataforseo.com/"),
+
+                //Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access
+                DefaultRequestHeaders = { Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes("login:password"))) }
+            };
+
+            // do something
+        }
+    }
+}
+Create a free account
+with DataForSEO, then go to the
+API Access tab
+in the account dashboard to find your API login and password, which you’ll need to authenticate and use the DataForSEO APIs. Note that the API password is generated automatically by DataForSEO and is different from your account password.
+DataForSEO is using the
+Basic Authentication
+, which makes it possible to call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks.
+Regardless of the programming language, your unique API token should be passed
+in the ‘Authorization’ header
+within the request in the following format:
+Authorization: Basic login:password
+Instead of “login” and “password”, use your API credentials encoded in Base64.
+For instance, the Base64-encoded ‘login:password’ value will have the following format:
+bG9naW46cGFzc3dvcmQ=
+So the whole string will look as follows:
+Authorization: Basic bG9naW46cGFzc3dvcmQ=
+Check the examples for PHP, Python, and C# on the right to see how it works with a particular programming language.
+Note that it is not possible to pass the login and password in URL parameters. Also, you do not have to make a separate authentication call to obtain API credentials. Basic authentication is the only way to access DataForSEO API; credentials should always be passed in the header of the request.
+To authorize, use this code:
+# Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access 
+login="login" 
+password="password" 
+cred="$(printf ${login}:${password} | base64)" 
+curl --location --request GET "https://example.com" 
+--header "Authorization: Basic ${cred}"  
+--header "Content-Type: application/json"
+<?php
+require('RestClient.php');
+//You can download this file from here https://cdn.dataforseo.com/v3/examples/php/php_RestClient.zip
+
+try {
+    //Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access
+    $client = new RestClient('https://api.dataforseo.com/', null, 'login', 'password');
+
+    //do something
+
+} catch (RestClientException $e) {
+    echo "n";
+    print "HTTP code: {$e->getHttpCode()}n";
+    print "Error code: {$e->getCode()}n";
+    print "Message: {$e->getMessage()}n";
+    print  $e->getTraceAsString();
+    echo "n";
+    exit();
+}
+?>
+# Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access 
+const axios = require('axios');
+axios({
+    method: 'get',
+    url: 'https://example.com',
+    auth: {
+        username: 'login',
+        password: 'password'
+    }
+}).then(response => {
+    console.log(response.data);
+}).catch(error => {
+    console.log(error);
+});
+from client import RestClient
+#You can download this file from here https://cdn.dataforseo.com/v3/examples/python/python_Client.zip
+
+#Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access
+client = RestClient("login", "password")
+
+#do something
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+namespace DataForSeoDemos
+{
+    public static partial class Demos
+    {
+        public static async Task cmn_key_id()
+        {
+            var httpClient = new HttpClient
+            {
+                BaseAddress = new Uri("https://api.dataforseo.com/"),
+
+                //Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access
+                DefaultRequestHeaders = { Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes("login:password"))) }
+            };
+
+            // do something
+        }
+    }
+}
+cURL
+php
+Node.js
+Python
+cSharp
+
+===== https://docs.dataforseo.com/v3/appendix/webhook_resend/
+TITLE: appendix/webhook_resend – DataForSEO API v.3
+ACCESSED: 2026-09-28
+
+Webhook Resend
+Using this endpoint you can resend webhooks (pingbacks and postbacks) for up to 100 specified tasks.
+Note:
+Your account will not be double-charged for resending a webhook.
+Your account will not be charged for using this API
+POST
+https://api.dataforseo.com/v3/appendix/webhook_resend
+All POST data should be sent in JSON format (UTF-8 encoding). The task setting is done using the POST method. When setting a task, you should send all task parameters in the task array of the generic POST array.
+Description of the fields for sending a request:
+Field name
+Type
+Description
+id
+string
+task identifier
+unique task identifier in our system in the
+UUID
+format
+you can specify up to 100 identifiers;
+each identifier in the task array must be specified as a separate object
+‌‌As a response of the API server, you will receive
+JSON
+-encoded data containing a
+tasks
+array with the information specific to the set tasks.
+Field name
+Type
+Description
+version
+string
+the current version of the API
+status_code
+integer
+general status code
+you can find the full list of the response codes
+here
+Note:
+we strongly recommend designing a necessary system for handling related exceptional or error conditions
+status_message
+string
+general informational message
+you can find the full list of general informational messages
+here
+time
+string
+total execution time, seconds
+cost
+float
+total tasks cost, USD
+tasks_count
+integer
+the number of tasks in the
+tasks
+array
+tasks_error
+integer
+the number of tasks in the
+tasks
+array returned with an error
+tasks
+array
+array of tasks
+id
+string
+task identifier
+unique task identifier in our system in the
+UUID
+format
+status_code
+integer
+status code of the task
+generated by DataForSEO, can be within the following range: 10000-60000
+you can find the full list of the response codes
+here
+status_message
+string
+informational message of the task
+you can find the full list of general informational messages
+here
+time
+string
+execution time, seconds
+cost
+float
+cost of the task, USD
+result_count
+integer
+number of elements in the
+result
+array
+path
+array
+URL path
+data
+array
+contains the parameters passed in the URL of the GET request
+result
+array
+array of results
+the value of this array is always
+null
+;
+you can get the results by the preferred method of results delivery (pingback or postback) you specified when setting a task
+Instead of ‘login’ and ‘password’ use your credentials from https://app.dataforseo.com/api-access
+# Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access 
+login="login" 
+password="password" 
+cred="$(printf ${login}:${password} | base64)" 
+curl --location --request POST "https://api.dataforseo.com/v3/appendix/webhook_resend" 
+--header "Authorization: Basic ${cred}"  
+--header "Content-Type: application/json"
+--data-raw '[
+  {
+    "id": "08161139-0001-0066-1000-06491d097ed5"
+  }
+]'
+<?php
+// You can download this file from here https://cdn.dataforseo.com/v3/examples/php/php_RestClient.zip
+require('RestClient.php');
+$api_url = 'https://api.dataforseo.com/';
+// Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access
+$client = new RestClient($api_url, null, 'login', 'password');
+$post_array = array();
+// simple way to get a result
+$post_array[] = array(
+   "id" => "08161139-0001-0066-1000-06491d097ed5"
+);
+$post_array[] = array(
+   "id" => "08161340-0001-0066-1000-8b091c84af4f"
+);
+$post_array[] = array(
+   "id" => "08161703-0001-0066-1000-597aa65619fc"
+);
+try {
+   // POST /v3/appendix/webhook_resend
+   // the full list of possible parameters is available in documentation
+   $result = $client->post('/v3/appendix/webhook_resend', $post_array);
+   print_r($result);
+   // do something with post result
+} catch (RestClientException $e) {
+   echo "n";
+   print "HTTP code: {$e->getHttpCode()}n";
+   print "Error code: {$e->getCode()}n";
+   print "Message: {$e->getMessage()}n";
+   print  $e->getTraceAsString();
+   echo "n";
+}
+$client = null;
+?>
+const post_array = [];
+post_array.push({
+  "id": "08161139-0001-0066-1000-06491d097ed5"
+});
+post_array.push({
+  "id": "08161340-0001-0066-1000-8b091c84af4f"
+});
+post_array.push({
+  "id": "08161703-0001-0066-1000-597aa65619fc"
+});
+const axios = require('axios');
+axios({
+  method: 'post',
+  url: 'https://api.dataforseo.com/v3/appendix/webhook_resend',
+  auth: {
+    username: 'login',
+    password: 'password'
+  },
+  data: post_array,
+  headers: {
+    'content-type': 'application/json'
+  }
+}).then(function (response) {
+  var result = response['data']['tasks'];
+  // Result data
+  console.log(result);
+}).catch(function (error) {
+  console.log(error);
+});
+from random import Random
+from client import RestClient
+# You can download this file from here https://api.dataforseo.com/v3/_examples/python/_python_Client.zip
+client = RestClient("login", "password")
+post_data = dict()
+post_data[len(post_data)] = dict(
+    id="08161139-0001-0066-1000-06491d097ed5"
+)
+post_data[len(post_data)] = dict(
+    id="081
+
+===== https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api
+TITLE: What are pingbacks & postbacks and how to use them with DataForSEO API? – DataForSEO
+ACCESSED: 2026-09-28
+
+What are pingbacks & postbacks and how to use them with DataForSEO API?
+Getting Started
+Updated 05.09.2025
+Commonly, pingback is known as a callback function, and postback is referred to as a webhook or HTTP push. With DataForSEO API, the
+pingback
+function is like a notification sent to your server upon the completion of a task, while
+postback
+is a function that actually sends the results to your server.
+When you download examples for a necessary programming language from our documentation, you will find
+pingback_example
+and
+postback_example
+files in the folder.
+You can learn more about using Pingbacks and Postbacks in DataForSEO from this video tutorial, and our text guide below.
+How to set a task with the pingback option?
+Store the file (e.g. pingback_example.php) on your server.
+When setting a task, specify the path to the Pingback file on your server in the pingback_url parameter.
+Example:
+http://your-server.com/pingscript?id=$id
+http://your-server.com/pingscript?id=$id&tag=$tag
+Once the task is completed, a new file will be created on your server containing the ID of the completed task(s) and your parameter specified in the “tag” field.
+How to set a task with the postback option?
+Store the file (e.g. postback_example.php) on your server.
+When setting a task, specify the path to the Postback file on your server in the postback_url parameter.
+Example:
+http://your-server.com/postbackscript?id=$id
+http://your-server.com/postbackscript?id=$id&tag=$tag
+In SERP API and Merchant API v3, you also need to specify a postback_data parameter indicating the type of results you wish to receive (regular, advanced, html).
+Once the task is completed, we will send a POST request with the results of the task compressed in the gzip format to the path you specified in the “postback_url” field. In other words, a new file will be created on your server containing the actual results of the task(s) you have set.
+Note 1:
+In case of any issues on your server’s or database’s side that prevented you from receiving pingbacks/postbacks from our system, you can resend them using
+the Webhook Resend endpoint.
+When calling this endpoint, you can specify up to 100 task IDs. You won’t be double-charged for resending pingbacks/postbacks or for using this function.
+Note 2:
+IDs of the tasks set with the “postback_url” parameter will not be provided in the list of completed tasks by the corresponding Tasks Ready endpoint.
+DataForSEO uses certain IP addresses for sending pingbacks and postbacks to your server.
+Make sure the following IPs are not blocked:
+V3
+Pingbacks/postbacks (except for HTML)
+144.76.154.130
+144.76.153.113
+144.76.153.106
+94.130.155.89
+178.63.193.217
+94.130.93.29
+Pingbacks (HTML only)
+94.130.155.89
+V2
+Pingbacks/postbacks (except for HTML)
+195.201.63.107
+88.99.215.15
+Pingbacks (HTML only)
+94.130.155.89
+See also:
+How to use the Errors and Webhook Resend endpoints to resend pingbacks and postbacks >>
+Was this article helpful?
+Helpful
+Unhelpful
+More in Getting Started
+How to Track Per-Customer and Per-Project API Usage with Tag Parameter
+How to Retrieve and Export Your DataForSEO Tasks with the ID List Endpoint
+How to Test Google Web Scraping for Free with DataForSEO Sandbox
+Getting Started with DataForSEO Google Organic SERP API: Parameters, Endpoints, and Response Structure
+What is the difference between the offset and offset_token parameters?
+
+===== https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/
+TITLE: keywords_data/dataforseo_trends/subregion_interests/live – DataForSEO API v.3
+ACCESSED: 2026-09-28
+
+Setting Live ‘DataForSEO Trends Subregion Interests’ Tasks
+This endpoint will provide you with location-specific keyword popularity data from DataForSEO Trends. You can check keyword trends for Google Search, Google News, and Google Shopping.
+Using the data from this endpoint, you can understand how popular a keyword is across all locations, and compare which of the specified keywords is more popular within a certain location and across all locations. Note: if you specify a single keyword,
+interests_comparison
+object will be
+null
+.
+How our algorithm works:
+Our algorithm provides insights into the popularity of specific keywords based on their association with relevant web pages, news articles, or shopping listings, as well as the popularity of each relevant piece of content. We also combine this information with anonymous user web behavior data from various sources.
+Learn more on our Help Center.
+You will get information for every single keyword in an array.
+You can send up to 5 keywords in one
+keywords
+array. Our system will charge your account per each request, no matter what number of keywords an array has.
+Historical data for the
+web
+type: available from
+2004-01-01
+;
+Historical data for other types: available from
+2008-01-01
+.
+POST
+https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live
+Your account will be charged for each request.
+The cost can be calculated on the
+Pricing
+page.
+All POST data should be sent in the
+JSON
+format (UTF-8 encoding). The task setting is done using the POST method. When setting a task, you should send all task parameters in the task array of the generic POST array. You can send up to 2000 API calls per minute, each Live API call can contain only one task. The maximum number of requests that can be sent simultaneously is limited to 30.
+Visit
+DataForSEO Help Center
+to get practical tips for request handling depending on your Keyword Data API payload volume.
+Below you will find a detailed description of the fields you can use for setting a task.
+Description of the fields for setting a task:
+Field name
+Type
+Description
+keywords
+array
+keywords
+required field
+the maximum number of keywords you can specify: 5
+avoid symbols and special characters (e.g., UTF symbols, emojis);
+specifying non-Latin characters, you’ll get data for the countries where they are used
+learn more about rules and limitations of
+keyword
+and
+keywords
+fields in DataForSEO APIs in this
+Help Center article
+location_name
+string
+full name of search engine location
+optional field
+if you don't use this field, you will recieve global results
+if you use this field, you don't need to specify
+location_code
+you can receive the list of available locations of the search engine with their
+location_name
+by making a separate request to
+https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
+note that the data will be provided for the country the specified
+location_name
+belongs to;
+example:
+United Kingdom
+location_code
+integer
+search engine location code
+optional field
+if you don't use this field, you will recieve global results
+if you use this field, you don't need to specify
+location_name
+you can receive the list of available locations of the search engines with their
+location_code
+by making a separate request to
+https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
+note that the data will be provided for the country the specified
+location_code
+belongs to;
+example:
+2840
+type
+string
+dataforseo trends type
+optional field
+if you don't specify this field, the
+web
+type will be used by default
+possible values:
+web
+,
+news
+,
+ecommerce
+date_from
+string
+starting date of the time range
+optional field
+if you don't specify this field, the current day and month of the preceding year will be used by default
+minimal value for the
+web
+type:
+2004-01-01
+minimal value for other types:
+2008-01-01
+date format:
+"yyyy-mm-dd"
+example:
+"2019-01-15"
+date_to
+string
+ending date of the time range
+optional field
+if you don't specify this field, the today's date will be used by default
+date format:
+"yyyy-mm-dd"
+example:
+"2019-01-15"
+time_range
+string
+preset time ranges
+optional field
+if you specify
+date_from
+or
+date_to
+parameters, this field will be ignored when setting a task
+possible values for all
+type
+parameters:
+past_4_hours
+,
+past_day
+,
+past_7_days
+,
+past_30_days
+,
+past_90_days
+,
+past_12_months
+,
+past_5_years
+tag
+string
+user-defined task identifier
+optional field
+the character limit is 255
+you can use this parameter to identify the task and match it with the result
+you will find the specified
+tag
+value in the
+data
+object of the response
+‌
+As a response of the API server, you will receive
+JSON
+-encoded data containing a
+tasks
+array with the information specific to the set tasks.
+Description of the fields in the results array:
+Field name
+Type
+Description
+version
+string
+the current version of the API
+status_code
+integer
+general status code
+you can find the full list of the response codes
+here
+

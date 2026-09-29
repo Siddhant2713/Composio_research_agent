@@ -1,0 +1,736 @@
+===== https://www.zendesk.com/in/#georedirect
+TITLE: Transform Customer & Employee Service with AI Agents | Zendesk India
+ACCESSED: 2026-09-28
+
+AI-powered service platform
+Move beyond deflection. Deliver
+real resolutions.
+Self-improving AI agents that learn, adapt and outperform.
+On every channel, on any platform.
+Over 22,000 service teams trust Zendesk AI
+AI that gets
+smarter
+with every resolution.
+Achieve up to 80% automation with AI agents that continuously learn from every interaction, manage more complex workflows and provide better outcomes.
+Explore the platform
+Every conversation becomes a learning signal
+Zendesk AI turns signals into improvement
+Faster resolutions. Stronger loyalty. Better outcomes.
+Trillions of data points turned into billions of successful outcomes.
+22K+
+AI customers
+830M
+AI interactions
+4.8B
+resolutions delivered
+Zendesk + Forethought
+NEW
+Standalone AI agents for any platform
+Deploy self-improving AI agents in Zendesk or your existing service platform. Every resolution helps improve performance over time, without requiring you to switch your service stack.
+Request Forethought demo
+Learn more
+Designed for AI-first customer service
+A unified system that brings AI and human teamwork together to deliver high-quality resolutions across every channel and service model.
+Try it for free
+Learn more
+Manage high volume autonomously
+Launch in minutes, not months
+Scale without adding headcount
+Trust every AI-driven resolution
+Modernise voice with agentic AI
+Free your team from repetition. AI agents understand intent and sentiment, resolving tasks from start to finish without human intervention.
+Manage high volume autonomously
+Free your team from repetition. AI agents understand intent and sentiment, resolving tasks from start to finish without human intervention.
+Launch in minutes, not months
+Empower your team without the technical overhead. Connect your knowledge and go live in a few clicks. No scripting or developers required.
+Scale without adding headcount
+AI agents absorb the ticket load and handle 24/7 spikes, allowing your existing team to stay agile and focus on high-value work.
+Trust every AI-driven resolution
+Stay in control with built-in QA scoring for 100% of AI interactions. Ensure every automated answer is accurate, compliant and on-brand.
+Modernise voice with agentic AI
+Eliminate hold music and scripts. Voice AI handles routine authentication and resolutions naturally, freeing up your agents for deeper customer connections.
+Extend the power of AI-first service across your entire organisation.
+Employee Service
+Get AI-native employee service management without any of the unnecessary extras. Resolve internal requests instantly, eliminate complexity and delight employees.
+Try it for free
+Learn more
+Contact Centre
+Replace fragmented legacy stacks with a unified system that embeds AI across voice and digital. Deliver an enterprise-grade contact centre without the middleware or complexity.
+Contact sales
+Learn more
+Report
+Zendesk named a Leader in the 2025 Gartner® Magic Quadrant™ for the CRM Customer Engagement Centre
+Recognised for innovation, vision and consistent execution in AI-powered service.
+Read the report
+Built for businesses of all sizes
+From startups to enterprises, we deliver the specialised support you need to win.
+92
+%
+one-touch resolution rate
+15
+%
+overall decrease in average handling time
+“Our successful experience with Zendesk AI has given artificial intelligence credibility across all of our business. For many of us, it’s the first AI tool that lived up to the hype and actually delivered and was really straightforward for us to enable and test.”
+Raz Razaq
+Head of Customer Contact Experience Technology
+Read customer story
+92
+%
+one-touch resolution rate
+15
+%
+overall decrease in average handling time
+11
+%
+decrease in email average handling time (Zendesk AI)
+36
+%
+increase in AI agent volume
+30-40
+%
+automation rate
+“There’s a wealth of information in these AI agent conversation logs. We’re using them not just for support but also to improve our product and strategy, too.”
+Noah Kardos-Fein
+Director of Digital Support, Vimeo
+Read customer story
+36
+%
+increase in AI agent volume
+30-40
+%
+automation rate
+<
+30
+second chat/phone waiting times
+94
+%
+one-touch tickets
+“One day we’re going to get to a point where Openly will be an enterprise volume company, so having Zendesk in place now as a foundational piece is critical. You can integrate pretty much anything you want into Zendesk. As we grow, that will allow us to scale.”
+Tim Kyse
+Vice President of Customer Experience, Openly
+Read customer story
+<
+30
+second chat/phone waiting times
+94
+%
+one-touch tickets
+96
+%
+average CSAT
+49
+%
+YoY decrease in new tickets
+90-91
+%
+AI agent CSAT
+“AI hasn’t replaced the human touch at NOBULL – it’s amplified it. It’s helped us reimagine how we support customers and there’s real excitement in what’s next.”
+Bhav Raju
+Director of Customer Service, NOBULL
+Read customer story
+49
+%
+YoY decrease in new tickets
+90-91
+%
+AI agent CSAT
+92
+%
+one-touch resolution rate
+15
+%
+overall decrease in average handling time
+“Our successful experience with Zendesk A
+
+===== https://developer.zendesk.com/documentation/
+TITLE: Documentation Home | Zendesk Developer Docs
+ACCESSED: 2026-09-28
+
+Create a developer account
+Try out the Sunshine Platform with a free, 14-day trial account.
+Create an account
+Create your first ticket
+Get up and running on the Sunshine Platform using this 10-minute API quickstart guide.
+Get started
+Explore the Zendesk APIs
+Use Postman, a popular API testing tool, to explore the Zendesk APIs.
+Explore the APIs
+Deliver rich conversational experiences
+Use our Zendesk SDKs to add messaging to your web, mobile, and
+                social channels so customers can reach you instantly.
+Web
+Use the Web Widget API to configure the Web Widget settings and customize its appearance and functionality.
+Web Widget API reference
+Android
+Add Messaging to your project to engage with your users from your Android app.
+Get started
+iOS
+Add Messaging to your project to engage with your users from your iOS app.
+Get started
+Unity
+Add Messaging to your project to engage with your users from your Unity game.
+Get started
+New to messaging?
+Learn more about Messaging
+Guides to solve your problems
+Access, integrate, and extend your data anywhere with an
+                event-driven platform and robust APIs that let you build
+                anything—inside or outside of Zendesk.
+Create and manage tickets
+Ticketing system
+Build custom ticket forms, create tickets programmatically and learn how to use our APIs to work with tickets.
+Overview
+Manage your Knowledge Base
+Help Center
+Learn how to back up your knowledge base, or the ins and outs of our templating language, Curlybars.
+Overview
+Integrate your own call center solution
+Voice
+Integrate other telephony systems and learn how to update and create tickets based on calls and voicemails.
+Overview
+Learn how the Sell APIs work
+Sell
+Tap into Sell and build your own Sell-powered applications for the web, mobile and desktop.
+Overview
+Enable your app to act as a Chat agent
+Live Chat
+Use the Chat Conversations API to allow your application to act as a Zendesk Chat agent and interact with your website visitors.
+Overview
+Connect all of your customer data
+Sunshine helps you connect all your customer data for complete context—wherever it lives—and use our tools to build the best customer experiences.
+Custom objects
+Store and connect new data sources, like products and order history, for greater context about your customers.
+Getting started with custom objects
+Profiles
+Build customer profiles with data from third-party applications to create a more complete picture of your customers.
+Getting started with profiles
+Events
+Capture every customer interaction–like shopping cart, web, or mobile activity–to get a dynamic view of the customer journey.
+Getting started with events
+Build apps with any tech
+Zendesk apps are installed in the agent interface that extends
+                the functionality of the Sunshine Platform. We've got the tools
+                and frameworks to help you get started.
+Learn about the Apps Framework
+Learn how the Zendesk Apps framework (ZAF) lets you build integrations and custom features to extend the functionality of Sunshine.
+App developer guide
+Try the framework yourself
+In this 15-minute quick start, you'll use the Zendesk Apps framework to access, add comments to, and create tickets.
+Follow the quickstart guide
+Decide what type of app to make
+Understand the differences with client-side, server-side and integration apps.
+Choose your own app adventure
+Read the API Reference
+Zendesk's APIs are organized around REST principles. Our APIs
+                  have resource-oriented URLs, accepts form-encoded request
+                  bodies and return JSON-encoded responses.
+Read the API Reference
+
+===== https://developer.zendesk.com/api-reference/
+TITLE: API Reference Home | Zendesk Developer Docs
+ACCESSED: 2026-09-28
+
+API Reference
+Welcome to the Zendesk API reference docs. Whether you're an experienced developer and Zendesk user or just starting out, this is where you'll find the documentation you need.
+Most of our APIs are organized by product capabilities. You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as some features that span capabilities, such as omnichannel routing and custom data. For each API, you'll find information about who can authenticate requests, detailed descriptions of endpoints, example requests, and other essential information to help you unlock the full potential of Zendesk.
+Run in Postman
+To quickly get started with the Zendesk APIs, you can use the Zendesk Public Workspace on Postman. The collection includes all Zendesk APIs except the Sell and Sunshine Conversations APIs.
+Capabilities
+Ticketing
+Work with tickets, users and organizations and manage ticket workflows.
+Support API
+JIRA Integration API
+Help Center
+Help Center, Knowledge base and Community.
+Help Center API
+AI Agents
+Automate conversations and manage intelligent workflows.
+AI Agents API
+Messaging
+Unify messages from every channel into a single conversation and build interactive experiences.
+Conversations API
+Voice
+Call center software.
+Talk API
+Talk Partner Edition API
+Custom data
+Connect and understand all your customer data wherever it lives.
+Custom Objects API
+Legacy Custom Objects API
+Omnichannel
+Access features and functionality that span Zendesk channels.
+Omnichannel APIs
+Status
+Get a list of active incidents and scheduled maintenance that may affect Zendesk availability.
+Status API
+Live Chat
+Live chat and messaging.
+Chat API
+Real Time Chat API
+Chat Conversations API
+Sales CRM
+Sales force automation.
+Sell API
+Sync API
+Firehose API
+Search API
+Embedding Zendesk
+Web Widget
+Control data passed to and from the Web Widget
+Web Widget (Messaging) API
+Web Widget (Classic) API
+Answer Bot
+Provide Help Center article suggestions for an enquiry.
+Answer Bot API
+Android SDK
+Control data passed to and from the Android SDK
+Android SDK (Messaging) API
+iOS SDK
+Control data passed to and from the iOS SDK
+iOS SDK (Messaging) API
+Zendesk SDK for Unity
+Control data passed to and from the Zendesk SDK for Unity
+Zendesk SDK for Unity (Messaging) API
+Extending Zendesk
+Apps
+APIs to help you build apps for Zendesk Support, Sell and Chat
+Apps Core API
+Apps Support API
+Apps Sell API
+Apps Chat API
+Integration Services
+APIs and trigger events information for building integrations with Zendesk Integration Services (ZIS)
+ZIS Configs API
+Connections API
+ZIS Inbound Webhooks API
+ZIS Links API
+ZIS Registry API
+Trigger events reference
+
+===== https://www.zendesk.com/pricing/
+TITLE: Zendesk Pricing Plans | Starting from $19/month
+ACCESSED: 2026-09-28
+
+View pricing for:
+Pricing for the
+#1 AI customer service solution
+Monthly
+Annual
+20% off annual
+Support Team
+For teams that have outgrown a shared inbox and need core support essentials.
+$19
+agent/month paid yearly
+Buy now
+Starting with the basics
+Email and ticketing system
+Ticket routing
+Prebuilt analytics dashboards
+Pre-written responses
+Customer context
+Automations and triggers
+Suite Team
+For teams ready to unify support channels and automate resolutions with AI Agents.
+$55
+agent/month paid yearly
+Buy now
+Support Team features, plus:
+AI
+AI Agents
+AI
+Knowledge Base
+AI
+Action Builder
+Omnichannel routing
+Messaging and live chat
+Telephony
+Most Popular
+Suite Professional
+For teams optimizing support operations with advanced automation and AI-driven insights.
+$115
+agent/month paid yearly
+Buy now
+Suite Team features, plus:
+AI
+Admin Copilot
+AI
+App Builder
+AI
+Writing Tools
+AI
+Quick Reports
+Skills-based routing
+IVR phone tree
+Suite Enterprise + Copilot
+For teams needing advanced security, governance and the most proactive AI assistant.
+Talk to Sales
+Suite Professional features, plus:
+AI
+Intelligent Triage
+AI
+Auto Assist
+AI
+Generative AI for Voice
+Approval workflows
+Sandbox environment
+Custom agent roles
+Email and ticketing support
+Zendesk Ticketing brings email, messaging, phone, social, and more into a single place. With AI automations and simple admin tools, our scalable ticketing tool cuts support costs and drives fast results. No expertise needed.
+Work faster with ticket routing
+Enhance agent efficiency with omnichannel routing that automatically assigns tickets to the most qualified agents. Admins maintain control with less manual effort while delivering faster, better service.
+Action insights with prebuilt reporting dashboards
+Get up and running quickly with out-of-the-box analytics to help you analyze trends in ticket volume and agent performance across channels. Easily customize reports to uncover issues, forecast demand, and boost efficiency.
+Surface the best reply, every time
+Lend a helping hand with pre-written responses that answer common issues, and a centralized knowledge base for faster troubleshooting.
+Conversation history and customer context
+Provide agents with relevant details on the customer and surface a list of recent interactions with the customer so agents have the context they need to provide help.
+Build and customize workflows
+Save time with prebuilt, customizable ticketing workflows and adaptable automations—like alerts for unattended tickets or refund escalations to managers—resulting in greater bandwidth and faster resolutions.
+Resolve complex issues on any channel
+Resolve up to 80%+ of even the most complex service issues across any channel. Powered by agentic AI, our AI agents reason, adapt, take action then learn and self-improve to reach full resolution - all while following your business processes. No training, scripting or complex flows needed.
+AI agent builder
+Flexible APIs and integrations
+Reasoning controls
+Advanced reporting & insights
+Support for 80+ languages
+Power faster resolutions with connected knowledge
+Create, unify, and activate trusted content across AI, agents, and self-service so customers and employees get fast, accurate answers when it matters most.
+Accelerate resolution automation
+Design, integrate, and automate multi-step action flows across Zendesk and third-party systems. Action builder comes with a library of prebuilt connectors, customizable actions, and low-code tools that can be tailored to fit unique workflow needs.
+Route requests to right agent, automatically
+Omnichannel routing automatically directs customer or employee requests across multiple support channels, factoring in agent status, capacity, skill set, and ticket priority. It uses automation to connect individuals with the most suitable agent, regardless of channel.
+Messaging and live chat
+Support customers instantly or over time across your website, app, or social channels to deliver better service and build lasting relationships.
+Offer phone support to your customers
+Provide live phone support to your customers with toll-free and international numbers, voicemail, extensions, and more for the complete phone solution.
+Run your operations with an AI assistant
+Admin copilot proactively surfaces personalized insights and recommends workflows and set up improvements. Admins can ask questions and apply approved changes, optimizing operations without the busywork.
+Turn ideas into apps
+AI-powered App Builder turns ideas into apps using conversational prompts—no technical expertise required. Boost agent productivity with custom apps that streamline workflows, integrate with third party platforms and internal systems, and reduce manual work.
+Enhance your agent responses with AI writing tools
+Enhance your agent responses with AI writing tools. Let your agents expand or shorten replies or match the right tone every time with one click.
+Accelerate service insights with AI-powered reporting
+Create reports i
+
+===== https://www.zendesk.com/in/partner/
+TITLE: Partner with Zendesk | Sell, deploy and build customised solutions | Zendesk India
+ACCESSED: 2026-09-28
+
+Partner programmes
+Empower your business from day one by partnering with Zendesk and get ready to stand out, grow your revenue and expand into multiple markets.
+Apply now
+Log into Partner Connect
+Better results, together
+Grow from day one
+Build up business — reliably. Expand revenue, grow profits and extend your reach in new markets.
+Collaborate with the pros
+Enter into a trusted partnership. We support your sales engagements and marketing initiatives, and arm you with expert training.
+Innovate with ease
+Our award-winning solutions give you an edge. Leverage them to create differentiated services and customised integrations that build market share.
+Ways to partner
+Choose the paths that fit your business. Sell, deploy and build customised solutions with complementary programmes — all designed with you in mind.
+Resell
+Earn recurring revenues from your customers. Access bigger discounts and benefit from extra margin opportunities and incentives.
+Contact us
+Refer
+Get rewarded for recommending Zendesk. Just refer your clients, and we’ll do the rest.
+Contact us
+Implement
+Deploy solutions that transform your customer’s organisation and deliver impressive results.
+Contact us
+Technology
+Build an app, automation or integration, or connect data sources across your technology stack. Promote your app on the Zendesk Marketplace and become a
+Zendesk Technology Partner
+today.
+Contact us
+Nobody does it like Zendesk
+Happy customers
+Our goal is for customers to onboard fast and stay forever. Some 90% of Zendesk users take eight weeks or less to deploy, accelerating time to value.
+Leaders in a big market
+There’s opportunity ahead. Join us in building integrations and adding services that are force multipliers in growth markets.
+Apps customers actually use
+More than half of Zendesk customers use apps as part of their solution. On average, Marketplace apps generate over 33k installations every year.
+#
+1
+for Digital Customer Service
+<
+8
+weeks
+to deploy for 90% of Zendesk users
+33
+k
+new app installations on Marketplace every year
+Meet our partners
+Our partner ecosystem provides customer solutions, tailored for every need. Together, we’re building lifelong connections with customers.
+Find a partner
+Technology partners
+Technology partners expand the reach of Zendesk Suite to provide spot-on solutions for specific industries and use cases.
+Solution providers
+Solution providers help customers achieve their business goals, and faster. They bring consulting and sales expertise, and deep implementation experience.
+Business process outsourcers
+Business process outsourcers leverage the Zendesk platform to deliver top notch customer experience services.
+Global strategic partners
+Global strategic partners build practices that develop, design and implement transformational customer experience strategies.
+Additional resources
+Previous
+Partner Connect
+Log in
+Partner application
+Apply now
+Partner Directory
+Find partners
+Zendesk Marketplace
+Find apps and partners
+Documentation
+Developer documentation
+Next
+There’s nowhere to go but up
+Apply now
+
+===== https://www.zendesk.com/in/pricing/
+TITLE: Zendesk Pricing Plans | Starting from £19/month | Zendesk India
+ACCESSED: 2026-09-28
+
+View pricing for:
+Pricing for the
+#1 AI customer service solution
+Monthly
+Annual
+20% off annual
+Support Team
+For teams that have outgrown a shared inbox and need core support essentials
+US$ 19
+agent/month paid yearly
+Buy now
+Starting with the basics
+Email and ticketing system
+Ticket routing
+Prebuilt analytics dashboards
+Pre-written responses
+Customer context
+Automations and triggers
+Suite Team
+For teams ready to unify support channels and automate resolutions with AI agents
+US$ 55
+agent/month paid yearly
+Buy now
+Support Team features, plus:
+AI
+AI agents
+AI
+Knowledge base
+AI
+Action builder
+Omnichannel routing
+Messaging and live chat
+Telephony
+Most popular
+Suite Professional
+For teams optimising support operations with advanced automation and AI-driven insights
+US$ 115
+agent/month paid yearly
+Buy now
+Suite Team features, plus:
+AI
+Admin copilot
+AI
+App Builder
+AI
+Writing tools
+AI
+Quick reports
+Skills-based routing
+IVR phone menu
+Suite Enterprise + Copilot
+For teams needing advanced security, governance and the most proactive AI assistant.
+Talk to Sales
+Suite Professional features, plus:
+AI
+Intelligent triage
+AI
+Auto assist
+AI
+Generative AI for voice
+Approval workflows
+Sandbox environment
+Customised agent roles
+Email and ticketing support
+Zendesk Ticketing brings email, messaging, phone, social and more into a single place. With AI automations and simple admin tools, our scalable ticketing tool cuts support costs and drives fast results. No expertise needed.
+Work faster with ticket routing
+Enhance agent efficiency with omnichannel routing that automatically assigns tickets to the most qualified agents. Admins maintain control with less manual effort while delivering faster, better service.
+Action insights with prebuilt reporting dashboards
+Get up and running quickly with out-of-the-box analytics to help you analyse trends in ticket volume and agent performance across channels. Easily customise reports to uncover issues, forecast demand, and boost efficiency.
+Surface the best reply, every time
+Lend a helping hand with pre-written responses that answer common issues, and a centralised knowledge base for faster troubleshooting.
+Conversation history and customer context
+Provide agents with relevant details on the customer and surface a list of their recent interactions, so agents have the context they need to provide help.
+Build and customise workflows
+Save time with prebuilt, customisable ticketing workflows and adaptable automations – like alerts for unattended tickets or refund escalations to managers – resulting in greater bandwidth and faster resolutions.
+Resolve complex issues on any channel
+Resolve up to 80% of even the most complex service issues across any channel. Powered by agentic AI, our AI agents reason, adapt and take action, then learn and self-improve to achieve full resolution – all while following your business processes. No training, scripting or complex flows needed.
+AI agent builder
+Flexible APIs and integrations
+Reasoning controls
+Advanced reporting and insights
+Support for 80+ languages
+Power faster resolutions with connected knowledge
+Create, unify and activate trusted content across AI, agents and self-service so customers and employees get fast, accurate answers when it matters most.
+Accelerate resolution automation
+Design, integrate and automate multi-step action flows across Zendesk and third-party systems. Action builder comes with a library of prebuilt connectors, customisable actions and low-code tools that can be tailored to fit unique workflow needs.
+Route requests to the right agent, automatically
+Omnichannel routing automatically directs customer or employee requests across multiple support channels, factoring in agent status, capacity, skill set and ticket priority. It uses automation to connect individuals with the most suitable agent, regardless of channel.
+Messaging and live chat
+Support customers instantly or over time across your website, app or social channels to deliver better service and build lasting relationships.
+Offer phone support to your customers
+Provide live phone support to your customers with free and international numbers, voicemail, extensions and more for the complete phone solution.
+Run your operations with an AI assistant
+Admin copilot proactively surfaces personalised insights and recommends workflow and set-up improvements. Admins can ask questions and apply approved changes, optimising operations without the busywork.
+Turn ideas into apps
+AI-powered App Builder turns ideas into apps using conversational prompts – no technical expertise required. Boost agent productivity with customised apps that streamline workflows, integrate with third-party platforms and internal systems and reduce manual work.
+Enhance your agent responses with AI writing tools
+Enhance your agent responses with AI writing tools. Let your agents expand or shorten replies and hit the right tone every time with one click.
+Accelerate service insights with AI-powered reporting
+Create repor
+
+===== https://www.zendesk.com/in/contact/
+TITLE: Contact us | Zendesk India
+ACCESSED: 2026-09-28
+
+Contact us
+Get in touch with sales
+We’ll help you find the right solutions and pricing for your business. Fill out the form below and our team will get back to you shortly.
+Product and account support
+Always open for business. Find answers to common questions in our knowledge base.
+Visit Help Center
+Talk with us
+Give us a call at
+1-888-851-9456
+Available Mon-Fri, 8am-6pm ET (Excluding holidays)
+Our offices around the world
+Global HQ -
+MAP
+181 Fremont St.
+San Francisco, CA 94105
+zendesk.com
+Australia -
+MAP
+Level13, 550 Bourke Street,
+Melbourne, Victoria, 3000
+Australia
+zendesk.com/au
+Brazil -
+MAP
+Av. Dr. Chucri Zaidan, 920 - 14th floor, Marketplace Tower I
+São Paulo - SP
+04583-110, Brazil
+zendesk.com.br
+Denmark -
+MAP
+Njalsgade 72C, 2
+2300 København S
+Denmark
+zendesk.com/dk
+France -
+MAP
+Morning Trocadero
+7 Rue de Magdebourg
+75016 Paris
+France
+zendesk.fr
+Germany -
+MAP
+Paul-Lincke-Ufer 39/40 | Hof 4
+Aufgang 7, 2nd floor, 10999
+Berlin-Kreuzberg, Germany
+zendesk.de
+India, Bangalore -
+MAP
+43, Residency Rd
+Shanthala Nagar, Ashok Nagar
+Bengaluru, Karnataka 560025
+India
+zendesk.com/in
+India, Pune -
+MAP
+Zendesk Technologies Private Limited,
+Abil Boulevard, North Main Road,
+Koregaon Park, Besides Hotel Westin,
+Pune, Maharashtra 411001
+zendesk.com/in
+Ireland -
+MAP
+55 Charlemont Pl
+Saint Kevin's, Dublin
+D02 F985, Ireland
+Italy -
+MAP
+Via San Marco 21
+20121 - Milano
+Italy
+zendesk.com/it
+Japan -
+MAP
+〒104-0031
+東京都中央区京橋 2-2-1
+京橋エドグラン
+zendesk.co.jp
+Republic of Korea -
+MAP
+373 Gangnam-daero, Seocho-dong, Seocho-gu, Seoul, South Korea
+zendesk.kr
+Netherlands -
+MAP
+Strawinskylaan 4117 4th Floor
+1077 ZX Amsterdam, Netherlands
+zendesk.nl
+Philippines -
+MAP
+5th Ave, Taguig, Metro Manila, Philippines
+ask.philippines@zendesk.com
+Poland -
+MAP
+Marii Konopnickiej 29, 30-302 Kraków, Poland
+United Kingdom -
+MAP
+30 Eastbourne Terrace
+Paddington, London
+W2 6LA, UK
+zendesk.co.uk
+Singapore -
+MAP
+9 Straits View
+Marina One West Tower #10-08
+Singapore 018937
+zendesk.com/sg
+Spain
+zendesk.es
+Sweden
+zendesk.com/se
+USA, Madison -
+MAP
+25 W Main St
+Madison, WI 53703
+Thailand
+ask.thailand@zendesk.com
+Indonesia
+ask.indonesia@zendesk.com
+Malaysia
+ask.malaysia@zendesk.com
+Greater China Region Sales Support
+zendesk.tw
+zendesk.hk
+ask.gcr@zendesk.com
+Vietnam
+Contact Sales
+Portugal, Lisbon -
+MAP
+WeWork, R. Alexandre Herculano 50
+6th Floor 1250-011 Lisboa
+Portugal
+Estonia, Tallinn -
+MAP
+Vana-Lõuna tn 39-1, 10134
+US, Austin, Texas -
+MAP
+405 Comal St., Floor 6
+Austin, TX 78702

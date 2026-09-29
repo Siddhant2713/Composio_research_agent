@@ -1,0 +1,529 @@
+===== https://front.com
+TITLE: Front | Customer service platform — powered by AI, designed for humans
+ACCESSED: 2026-09-28
+
+Front | Customer service platform — powered by AI, designed for humans
+Complexity is where most customer support platforms tap out
+Teams lack shared context
+Scattered tools mean incomplete context and customers who have to repeat themselves
+AI stops at simple questions
+Other AI tools can only handle simple FAQs, not real-world, complex requests
+Resolution slows to a crawl
+Your agents shouldn't spend half their time fixing what AI got wrong
+Where cross-team customer operations stops crossing wires
+FRONT AI
+Resolve up to 70% of requests with AI, not just the low-hanging fruit
+Front AI takes on complex requests others escalate by automating responses, assisting teams, and analyzing quality across your entire operation. Every reply improves with each conversation.
+Explore Front AI
+CUSTOMER SUPPORT
+Complex tickets span departments, your system should too
+Tackle high-stakes inquiries with full customer context and shared visibility across every team and conversation. Route, escalate, or loop in the right team to resolve issues without dropping the ball.
+Front for customer support
+OPERATIONS
+Tame the inbox chaos and tackle the workflows your business depends on
+Coordinate across teams and systems from one centralized AI command center.  Eliminate bottlenecks and keep complex customer requests moving across your organization.
+Front for complex operations
+The more complex the operation, the clearer the choice.
+Front’s AI doesn’t just reply. It runs the operation. G2 proves who’s built for complex work.
+2026
+Capterra Customer Service Shortlist
+Where industry complexity meets operational control
+Customer Service Support
+Work across departments to tackle your gnarliest tickets with ease
+Explore more
+Inbound Sales
+Route requests, respond with speed, and nail the hand off every time
+Explore more
+Customer Success
+Where Success, Support, and Onboarding finally work as one
+Explore more
+Operations
+Orchestrate customer operations from one AI command center
+Explore more
+Account Management
+Manage complex accounts without the scramble across teams
+Explore more
+The Coordination Tax
+A report on the hidden cost of coordination in B2B customer operations
+Explore more
+9,300+ customers trust Front with the hard stuff
+“Front enabled us to transition from a one-dimensional Outlook email setup to a more dynamic platform with internal and external functionalities that we previously lacked.”
+Tony Peckham
+Global Operations Director
+“Front keeps everything trackable in one place. Our agents who’ve worked in support roles elsewhere say they love the way collaboration is handled in Front.”
+Liz Sanchez
+Senior Customer Support Manager
+“We use tagging automation extensively. It’s so flexible, yet powerful—it lets us see where the biggest pain points and inefficiencies are across the business.”
+Rum Walia
+Chief Operating Officer
+“After switching from Zendesk, we saw our productivity improve by 40% in our member support team managing email, text, and chat channels.”
+Joe Emison
+CTO & Co-founder
+We love that we can leave a comment on an email [in Front] and escalate it, and we know that nothing will get lost in Slack. We don’t need to open up tons of other tools like we used to
+Laura Ene
+Customer Success Team Lead
+Front drives efficiency: it removes unnecessary work so the team can focus on the critical 1% of exceptions that truly matter.
+Jordan Dunn
+Senior Manager, Strategic Customer Success
+Alt+Tab isn’t a workflow. Unify your whole stack.
+Connect your channels and most-used tools with Front’s 160+ integrations and no-code workflows bring your entire stack into one shared view.
+View all integrations
+Ready to tame the insanity? Come to Front.
+Request a demo
+Try for free
+Don't miss these
+
+===== https://dev.frontapp.com/docs/welcome
+TITLE: Welcome
+ACCESSED: 2026-09-28
+
+Whether you’re looking to build a custom integration just for your team or looking to publicly launch a Front integration, you’re in the right place! Our documentation can help you build everything from contact synchronizing to automated message triaging to custom messaging channels.
+Our documentation is designed to get you up and running quickly, with walkthroughs, code examples, Postman collections and more. We’re also available at
+Front Community
+to help with any questions or feedback!
+If you are building an app you intend to publish on our App Store, you must build this app in a developer account. If you are building an app for use in a specific customer instance, creating a separate developer account is optional. The developer account will provide you with an environment that does not include production data so it will be safer to test in. The production account, however, will ultimately be where you want your app to live for your company to use it.
+You can create a developer account by
+signing up here
+. You’ll get access to a free developer environment that will provide everything you need to begin building with our APIs. Developer accounts are limited to 3 teammates, so we recommend sharing credentials using a team email like engineering@ if you have more developers working on your team.
+📘
+You must use a unique email to create a developer account. If you already have a Front customer account, use a (+) alias if your email provider supports it (such as
+[email protected]
+) or use an email address that is not already associated with Front.
+After creating a developer account, read the
+Create, manage, and publish apps
+topic to learn how to create apps on the Front Platform.
+If you’re looking to partner with Front to launch a public integration to all Front customers, please see our guide to
+Partnering with Front
+. You can see what some of our other partners have already built at our
+Integrations page
+.
+If you are building an integration meant only for your own company or for one client, you can skip learning about the partnership process.
+We offer a developer community that provides the following benefits for anyone building integrations on Front:
+Developer Q&A
+—Ask questions about the API, and get answers. This is the primary means to receive technical guidance from our team or the community at large.
+Give feedback
+—Share your ideas with our Product team or vote on existing ones.
+API news
+—Stay informed of API updates, deprecations, and other important news. Make sure to
+Subscribe
+to this space.
+Product updates
+—Learn of new Front features.
+Developer Discussion
+—Connect with other Front developers to share ideas, tips & tricks, or best practices. Also, feel free to let us know how we can improve the developer experience (tools, docs, sample code, etc.) in this space.
+You can join at
+https://community.front.com
+!
+Front features APIs that cover a wide variety of functionality. You'll likely only need to use one of them, but some integration use cases are suited for a combination of the offerings.
+Name
+Description
+Core API
+Sync data between Front and external systems and perform backend operations that retrieve, create, modify, or delete resources in Front.
+Learn more
+MCP Server
+Access Front data and actions through the MCP protocol, allowing AI agents like Claude and ChatGPT to read and reply to conversations and other Front resources.
+Learn more
+Connectors
+Interact with third-party APIs and external systems with no-code connectors from Front that allow you to make external API requests or bring in additional context to Front conversations for your users to see.
+Learn more
+Plugin SDK
+Expose a hosted application in the Front UI. The plugin displays in a drawer alongside Front conversations or in the composer window itself, and can expose additional information and useful actions from external systems for Front users to leverage in their daily workflow.
+Learn more
+Channel API
+Add a new inbound/outbound conversation source in Front, such as social media messaging, SMS, custom chat, etc.
+Learn more
+Chat Widget
+Add a Front-powered chat box to your website.
+Learn more
+Links
+Add links to items in external systems to Front conversations.
+Learn more
+Our primary backend API that allows you to read, create, update, and delete a wide range of data across Front’s various entities, from Contacts to Comments to Tags. In general, if your use case involves programmatic syncing, export, or modification of Front data, the Core API is likely what you’re looking for. Our webhooks also make it possible to respond to real-time events as actions and updates happen in Front.
+A few examples of how the Core API is used today:
+Synchronizing Contacts into Front from a third party CRM
+Automatically drafting replies to incoming messages
+Exporting conversational metadata and analytics to a data warehouse
+Automatically assigning conversations to particular teammates
+Core API documentation
+Connectors provide a no-code or low-code means of 
+
+===== https://dev.frontapp.com/reference/introduction
+TITLE: Introduction
+ACCESSED: 2026-09-28
+
+Here is Front's Core API, a backend API that gives comprehensive control over all entities in Front from Contacts to Comments.
+Refer to the following guides to learn how to use the Core API:
+Getting Started
+Fundamentals
+Tools
+Sample Application
+API Terminology 101
+Front supports OAuth2.0 as well as API Tokens. To learn about authenticating with Front, see our guide on
+authentication
+.
+API calls will always work with
+https://api2.frontapp.com
+as the base URL. However, the API may return resource URLs that include your company's name, such as
+https://acme.api.frontapp.com
+.  If the API is returning URLs like those, you can call it either with
+api2.frontapp.com
+or
+acme.api.frontapp.com
+.
+To ensure an acceptable response time from our API and facilitate access for all customers, Front implements an overall rate limit as well as several "burst" limits for certain endpoints. For more on these limits, please see
+here
+.
+The API is designed to communicate with your server using JSON. All responses coming from the API will send data in a valid JSON object. If you need to send data to the API, your request should set the Content-Type HTTP header to application/json.
+Some endpoints also support multipart requests for file upload. For more details about it, please check our
+multipart request documentation
+.
+For some requests to get a large collection of resources, you can send search criteria in the query string via a parameter named
+q
+.
+Parameters for Conversations
+Parameters for  Events
+Parameters for  Contacts
+When you want to send files through the API, your request needs to be sent using the Content-Type HTTP header set to multipart/form-data.
+The JSON data you would normally send in the request body needs to be split in multiple form fields (one for each property) named after the property key. If the property is an array, the name should include the index of the data (ie: {"to": [
+[email protected]
+,
+[email protected]
+]} would be split in two fields named to[0], to[1]).
+📘
+Restriction on files (type and size) depends on the endpoint. If your request doesn't comply to those limitations, the response will contain an error describing the issue.
+All dates in the Front API are encoded as a number representing Unix time: It is the number of seconds that have elapsed since 00:00:00 UTC, January 1st 1970.
+Since Front is based on events that can occur during the same second, all the timestamps include leap seconds with a precision of 3 digits:
+1454453901.012
+.
+Read our
+deprecation policy
+to learn how Front communicates about changes that may affect your integrations.
+
+===== https://front.com/pricing
+TITLE: Front Pricing and Plans | Front
+ACCESSED: 2026-09-28
+
+Front Pricing and Plans | Front
+Pricing plans
+Build the best CX
+Plans for startups, enterprises, and everything in between.
+Billed Annually
+Save 24%
+Starter
+$25
+/seat/mo, up to 10 seats
+Essential capabilities to get started with single-channel support
+Key features include
+Shared inbox and ticketing
+AI Topics and up to 10 automation rules
+Basic analytics
+No-code public knowledge base
+AI add-ons available
+Try for Free
+Professional
+$65
+/seat/mo, up to 50 seats
+Enhanced automation and reporting for omnichannel support
+EVERYTHING IN STARTER, PLUS
+Omnichannel (email, SMS, social, etc.)
+Macros and up to 20 automation rules
+Advanced analytics
+Multiple workspaces, SSO, and SCIM
+AI add-ons available
+Request a Demo
+Enterprise
+most popular
+$105
+/seat/mo
+Advanced AI tools to accelerate resolution and elevate CX
+EVERYTHING IN PROFESSIONAL, PLUS
+Smart rules
+Unlimited rules and macros
+Multi-language knowledge base
+Custom roles and permissions
+AI Copilot, QA, and CSAT included
+Request a Demo
+Trusted by
+9,300+
+companies
+Key Features
+Starter
+Professional
+Enterprise
+Communication channels
+Unify email, chat, SMS, and more
+Single channel type
+Omnichannel (email, SMS, social, WhatsApp, etc.)
+Omnichannel (email, SMS, social, WhatsApp, etc.)
+Shared inboxes
+Manage conversations from a collaborative inbox
+Ticketing system
+Track, organize, and resolve requests
+Messaging & live chat
+Triage and resolve chat inquiries
+Yes, if single channel type
+AI Topics
+Understand your most common customer contact reasons
+AI Copilot
+Get answers, decide next steps, and draft replies
+add-on
+add-on
+Smart QA
+Automate QA with AI-powered scorecards and reporting for your review
+add-on
+add-on
+Smart CSAT
+Infer and track customer satisfaction scores without surveys
+add-on
+add-on
+AI Autopilot
+Automate complex customer work with our omnichannel AI agent
+add-on
+add-on
+add-on
+Workflow automation
+Tag, route, and more automatically
+Up to 10 rules
+Macros and up to 20 rules
+Unlimited macros and rules
+Workspaces
+Divide inboxes into separate spaces
+1
+Up to 5
+Unlimited
+Knowledge base
+Host a help center or internal docs
+Basic
+Customizable
+Customizable and multi-language
+Analytics and reporting
+Report on team performance, CSAT, and SLAs
+Basic
+Advanced
+Custom reports
+User management
+Control access, identity, and roles
+Basic
+SSO, SCIM
+SSO, SCIM, and custom roles
+Try for Free
+Request a Demo
+Request a Demo
+Request a Demo
+Front AI Add-ons
+Power up your plan with Front AI
+Meet Front AI: human-in-control AI that powers
+exceptional service on even your toughest tickets.
+Autopilot
+Run complex customer work with our omnichannel AI agent
+Starting at
+$0.05
+/conversation
+Talk to Sales
+Copilot
+Boost agent productivity with a real-time AI assistant
+$20
+/ seat / month as an add-on, or included in Enterprise
+Talk to Sales
+Smart QA
+Get a complete view of agent performance with automated, AI-powered QA
+$20
+/ seat / month as an add-on, or included in Enterprise
+Talk to Sales
+Smart CSAT
+Infer customer satisfaction ratings with AI auto-review for complete, objective feedback
+$10
+/ seat / month as an add-on, or included in Enterprise
+Talk to Sales
+Boundless saves 10k hours quarterly with Front AI
+Essentialist maintains 97% CSAT with Front AI
+Mixam replies 60% faster with Front AI
+Smart QA + Smart CSAT bundle
+Complete performance insights for $25 / seat / mo
+Talk to Sales
+add-ons
+More ways to extend the power of Front
+Get even more value out of Front with add-ons that help you deliver exceptional support at scale
+Native WhatsApp Channel
+popular
+Connect your WhatsApp Business numbers directly to Front
+Meta-billed WhatsApp costs + 20% admin fee
+Available on Professional and Enterprise
+Talk to Sales
+API Rate Limit Increase
+Increase your API rate limit to support the most complex workflows
+$200
+per 100 API requests/min per month
+Available on all plans
+Talk to Sales
+Services to help you scale
+Get set up for long-term success by partnering with our team of experts. Request a consultation to learn more about our service add-ons for Professional and Enterprise plans.
+Talk to Sales
+Tailored onboarding
+Ensure your team achieves immediate productivity with a personalized onboarding experience meticulously shaped around your unique workflows and business objectives.
+Solution design and technical consultation
+Platform optimization
+Training and change management best practices
+Build custom apps and integrations
+Compare plans
+Starter
+Try for Free
+Professional
+Try for Free
+Enterprise
+Request a Demo
+Unified Workspace
+Workspaces
+Workspaces are a way to divide up your inboxes into separate spaces with their own workflows, analytics and resources such as tags or message templates.
+1
+Up to 5
+Unlimited
+Shared inbox
+Track and manage important conversations, customized across specific inboxes, tags, and assignees
+Views
+Create real-time views to track important conversations in certain inboxes, tags, or assignees
+Assignments
+Gai
+
+===== https://front.com/partners/channel
+TITLE: Front Partner Program | SaaS Channel Partner
+ACCESSED: 2026-09-28
+
+Front Partner Program | SaaS Channel Partner
+Why partner with Front?
+Expand your services
+Grow your suite of offerings with a differentiated customer operations platform.
+Tap into unmatched TSD access
+Work with Front through the TSD relationships your business already uses and trusts.
+Drive new business
+Refer Front to your customer base and earn commissions that grow your business.
+Access dedicated resources
+Get comprehensive training, technical support, and co-marketing opportunities to develop your technology portfolio.
+Unlock tech & product benefits
+Receive priority support, a free Front account, and customized product demos to help you sell with confidence.
+Grow through marketing support
+Use co-marketing, lead sharing, and industry insights to strengthen customer conversations.
+“
+The Front partnership has been a real growth lever for our business. What stands out most is how invested their team is in our success, so every client we bring on is set up to win from day one.
+”
+Aarde Cosseboom
+CEO & Founder, Palomarr
+Ready to become a channel partner?
+Reach out to the Channel Team
+Step 1
+Submit the partner onboarding form through the Front Partner Portal.
+Step 2
+Your dedicated channel manager will reach out to schedule an intro call and set-up your account in the portal.
+Step 3
+It’s official! Our onboarding process gets you on the right track to success.
+
+===== https://front.com/teams/inbound-sales
+TITLE: Customer Operations Platform for Sales Teams | Front
+ACCESSED: 2026-09-28
+
+Customer Operations Platform for Sales Teams | Front
+Built to keep sales deals moving across teams and tools
+Visibility across quote requests and decisions
+See messages, internal coordination, and context in one place, so teams work faster.
+Control over high-impact sales workflows
+Accelerate routine work while staying in charge of pricing and approval decisions.
+Performance that never slows down
+Handle more quotes with speed and accuracy even as complexity grows.
+The AI command center designed to run complex sales cycles
+Get a single control center for every request, insight, and handoff
+Unite quote requests, threads, and follow-ups
+Complete sales context in one place
+Built on AI that gets smarter with every message
+Build AI workflows that clear the way for revenue-driving work
+Configure when AI handles issues and when it assists
+Sellers focus on the work that requires judgment
+Humans + AI keep sales running fast
+Loop in, align, and respond without the constant back-and-forth
+Shared drafts and real-time chat keep replies aligned
+A unified customer view accelerates approvals
+Prospects get fast quotes, not slowdowns
+Track performance for your team, AI, and the overall sales experience
+See workload and results for individual teams
+Understand the success of AI and automation
+Measure service quality with AI sentiment analysis
+Their AI can chat.
+Front AI can run a business.
+Front’s AI doesn’t just reply. It runs the operation. G2 proves who’s built for complex work.
+2026
+Best Customer Service Software
+The only platform built to run customer operations across teams and tools
+“
+In Zendesk, customer communication felt siloed: transferring conversations was cumbersome and inefficient. With Front, our response rates are significantly faster, and customers feel better cared for.
+”
+Eric Forden, Manager, Customer Experience
+Other
+ help desks
+Optimized to work with multiple teams
+Unified platform for shared and individual work
+AI you can trust to deliver exceptional service
+Lower total cost of ownership
+Strategic partnership and top-tier support
+Optimized to work with multiple teams
+Unified platform for shared and individual work
+AI you can trust to deliver exceptional service
+Lower total cost of ownership
+Strategic partnership and top-tier support
+“
+In Zendesk, customer communication felt siloed: transferring conversations was cumbersome and inefficient. With Front, our response rates are significantly faster, and customers feel better cared for.
+”
+Eric Forden, Manager, Customer Experience
+How real companies run work that spans teams
+"With Front, we are doing 400-600 automatic quotes per business day, and 100-200 per non-business day currently. This leads to more won business, and we’re closing more deals."
+Mike Nasceif Jr.
+DIRECTOR OF OPERATIONS
+“My team is spread across the country, and Front helps us stay connected, enabling effective communication, quick email distribution, and fast responses to both customers and colleagues all day long.”
+David Steinberger
+Inside Sales Manager
+"Front has been a game-changer for us in the way we work internally. Having good communication is crucial in an industry where the sales cycle involves multiple touch points, and prompt customer support is crucial."
+Justin Reisch
+DIRECTOR OF MARKETING
+"Just go for it. It’s going to work. I always recommend Front for any company with a strong account management and sales focus."
+Clément Ouizille
+Co-founder
+End the back-and-forth on every deal
+Request a demo
+Try for free
+
+===== https://front.com/partners/integration
+TITLE: Front Integration Partner Program
+ACCESSED: 2026-09-28
+
+Front Integration Partner Program
+Front partners with software and communication companies to integrate their solutions and deliver business results.
+Join thousands of fast-growing companies and developers building the future of customer communication on Front!
+Partner with us
+Front Integration Partner benefits
+Partners receive exclusive access to incentives, resources, and support.
+Standard
+Tech & product benefits
+Free sandbox developer account
+Technical support
+Marketing benefits
+Considered for select marketing activities
+Listed on Front’s integration marketplace
+Right to use the Front brand assets
+Plus
+Front’s plus tier offers the standard benefits plus the ones listed below. Inclusion in this tier is by invitation only.
+Tech & product benefits
+Premium technical support
+Product demo led by Front product specialist
+Previews into Platform & API roadmap
+Marketing benefits
+Two-way lead sharing
+Eligible for various co-marketing activities
+Select account mapping and co-selling opportunities
+Front has been a great partner to Aircall. Our shared success is a direct result of the strong joint solution we offer to mutual customers and spirit of collaboration between both organizations.
+Integrate your favorite apps — or build your own
+Take back your browser tabs. Integrate your apps, data, and channels into the same tool you use to message your customers.
+Ready to become an integration partner?
+Step 1
+Build your app on our platform
+Step 2
+Submit your integration
+Step 3
+Publish it in the Front app marketplace

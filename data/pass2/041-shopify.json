@@ -1,0 +1,238 @@
+{
+  "app": "Shopify",
+  "number": 41,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:15:44.390469+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://shopify.dev\",\n    \"https://shopify.dev/docs/api\",\n    \"https://shopify.dev/docs/apps/getting-started\",\n    \"https://shopify.dev/docs/apps/auth\",\n    \"https://partners.shopify.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://shopify.dev",
+    "https://shopify.dev/docs/api",
+    "https://shopify.dev/docs/apps/getting-started",
+    "https://shopify.dev/docs/apps/auth",
+    "https://partners.shopify.com",
+    "https://docs.shopify.dev/",
+    "https://developer.shopify.dev/",
+    "https://developers.shopify.dev/",
+    "https://api.shopify.dev/",
+    "https://shopify.dev/docs",
+    "https://shopify.dev/developers",
+    "https://shopify.dev/api",
+    "https://shopify.dev/developer"
+  ],
+  "second_hop_considered": [
+    "https://shopify.dev/docs/api/usage/authentication",
+    "https://shopify.dev/docs/api/customer-authentication/multipass",
+    "https://shopify.dev/docs/api/polaris",
+    "https://shopify.dev/docs/api/partner",
+    "https://shopify.dev/docs/api/webhooks",
+    "https://shopify.dev/docs/api/admin-graphql",
+    "https://shopify.dev/docs/apps/build/sales-channels",
+    "https://shopify.dev/docs/apps/build/events-webhooks",
+    "https://shopify.dev/docs/apps/build/products-and-pricing",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/id-tokens",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/delegate-api-access",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/implement-token-exchange",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/legacy/admin-custom-apps",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/legacy/app-bridge-2-setup",
+    "https://partners.shopify.com/signup?locale=en",
+    "https://www.shopify.com/partners/blog",
+    "https://www.shopify.com/partners/directory",
+    "https://partners.shopify.com/organizations",
+    "https://www.shopify.com/partners?country=us&lang=en",
+    "https://www.shopify.com/it/partner?country=it&lang=it"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.shopify.dev/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.shopify.dev/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.shopify.dev/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://shopify.dev/docs",
+      "requested_url": "https://shopify.dev",
+      "status": 200,
+      "title": "Shopify Dev Docs",
+      "chars": 3855,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/api",
+      "requested_url": "https://shopify.dev/docs/api",
+      "status": 200,
+      "title": "Shopify APIs, libraries, and tools",
+      "chars": 4994,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build",
+      "requested_url": "https://shopify.dev/docs/apps/getting-started",
+      "status": 200,
+      "title": "Build",
+      "chars": 4998,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "requested_url": "https://shopify.dev/docs/apps/auth",
+      "status": 200,
+      "title": "About app authentication",
+      "chars": 4990,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.shopify.com/partners",
+      "requested_url": "https://partners.shopify.com",
+      "status": 200,
+      "title": "Build. Earn. Grow. \u2013 Become a Shopify Partner Today - Shopify",
+      "chars": 3284,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "requested_url": "https://shopify.dev/docs/api/usage/authentication",
+      "status": 200,
+      "title": "Shopify API authentication",
+      "chars": 3416,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/api/customer-authentication/multipass",
+      "requested_url": "https://shopify.dev/docs/api/customer-authentication/multipass",
+      "status": 200,
+      "title": "Multipass",
+      "chars": 4988,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/api/polaris",
+      "requested_url": "https://shopify.dev/docs/api/polaris",
+      "status": 200,
+      "title": "Polaris references",
+      "chars": 3669,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/api/partner/latest",
+      "requested_url": "https://shopify.dev/docs/api/partner",
+      "status": 200,
+      "title": "Partner API reference",
+      "chars": 4992,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://shopify.dev/docs/api/webhooks/latest",
+      "requested_url": "https://shopify.dev/docs/api/webhooks",
+      "status": 200,
+      "title": "Webhooks",
+      "chars": 4992,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Shopify provides APIs, libraries, and tools including the GraphQL Admin API and Partner API to build apps and integrate with Shopify stores.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Shopify apps authenticate API calls by obtaining an access token via OAuth and sending it in the X-Shopify-Access-Token header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create new apps, use the Shopify CLI, and generate API clients and tokens directly through the Partner Dashboard.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Ruby\",\n      \"Node\",\n      \"PHP\",\n      \"Go\",\n      \".NET\"\n    ],\n    \"notes\": \"Shopify provides GraphQL Admin and Partner APIs, webhooks, and client libraries for multiple languages.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://shopify.dev/docs/api/usage/authentication\",\n      \"claim\": \"Shopify APIs use access tokens sent in headers.\",\n      \"quote\": \"To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access.\"\n    },\n    {\n      \"url\": \"https://shopify.dev/docs/api/partner/latest\",\n      \"claim\": \"API clients can be created through the Partner Dashboard.\",\n      \"quote\": \"You can create a new API client for your organization through the Partner Dashboard.\"\n    },\n    {\n      \"url\": \"https://shopify.dev/docs/api\",\n      \"claim\": \"Libraries and templates include options for Ruby, Node, PHP, Go, and .NET.\",\n      \"quote\": \"Libraries and templates include official and community API libraries for Ruby, Node, PHP, Go, and .NET, plus app templates and sample apps.\"\n    },\n    {\n      \"url\": \"https://shopify.dev/docs/api/webhooks/latest\",\n      \"claim\": \"Webhooks allow receiving notifications about events in a shop.\",\n      \"quote\": \"You can use webhook subscriptions to receive notifications about particular events in a shop.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://shopify.dev/docs/api/usage/authentication\",\n      \"quote\": \"To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access.\"\n    },\n    \"access\": {\n      \"url\": \"https://shopify.dev/docs/api/partner/latest\",\n      \"quote\": \"You can create a new API client for your organization through the Partner Dashboard.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://shopify.dev/docs/api\",\n      \"quote\": \"GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint_url": "https://shopify.dev",
+    "one_liner": "Shopify provides APIs, libraries, and tools including the GraphQL Admin API and Partner API to build apps and integrate with Shopify stores.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Shopify apps authenticate API calls by obtaining an access token via OAuth and sending it in the X-Shopify-Access-Token header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create new apps, use the Shopify CLI, and generate API clients and tokens directly through the Partner Dashboard."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": [
+        "Ruby",
+        "Node",
+        "PHP",
+        "Go",
+        ".NET"
+      ],
+      "notes": "Shopify provides GraphQL Admin and Partner APIs, webhooks, and client libraries for multiple languages."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://shopify.dev/docs/api/usage/authentication",
+        "claim": "Shopify APIs use access tokens sent in headers.",
+        "quote": "To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://shopify.dev/docs/api/partner/latest",
+        "claim": "API clients can be created through the Partner Dashboard.",
+        "quote": "You can create a new API client for your organization through the Partner Dashboard.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://shopify.dev/docs/api",
+        "claim": "Libraries and templates include options for Ruby, Node, PHP, Go, and .NET.",
+        "quote": "Libraries and templates include official and community API libraries for Ruby, Node, PHP, Go, and .NET, plus app templates and sample apps.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://shopify.dev/docs/api/webhooks/latest",
+        "claim": "Webhooks allow receiving notifications about events in a shop.",
+        "quote": "You can use webhook subscriptions to receive notifications about particular events in a shop.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://shopify.dev/docs/api/usage/authentication",
+        "quote": "To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access."
+      },
+      "access": {
+        "url": "https://shopify.dev/docs/api/partner/latest",
+        "quote": "You can create a new API client for your organization through the Partner Dashboard."
+      },
+      "api_surface": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:16:04.792012+00:00"
+}

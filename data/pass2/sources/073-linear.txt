@@ -1,0 +1,723 @@
+===== https://linear.app/developers
+TITLE: Linear Developers
+ACCESSED: 2026-09-28
+
+Getting Started
+GraphQL API
+Learn how to use the GraphQL API to query and mutate your data
+Authentication
+Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API
+Agents
+How to best integrate an AI agent into Linear
+TypeScript SDK
+Install the Linear SDK to use strongly typed models and operations
+Guides
+Upload a file
+Learn how to reference a file in markdown content, or upload with the API
+Create issues via URL
+Open issue creation with pre-filled fields from a URL
+CLI importer
+Import data from other services into Linear
+Resources
+Changelog
+Stay up to date with the latest changes to Linear and the API
+Brand Guidelines
+Resources and assets for presenting the Linear brand
+Agent Interaction Guidelines
+Principles and practices for designing agent interactions
+
+===== https://linear.app/docs
+TITLE: Linear Docs
+ACCESSED: 2026-09-28
+
+Popular
+Start Guide
+Learn how to use the app and follow best practices for software building
+Import Issues
+Quickly move issues from your existing issue tracker into Linear
+Projects
+Shape your product ideas and plan what to build next
+GitHub Automations
+Link issues and automate pull request workflows
+Linear basics
+Workflows
+Create new statuses and design custom issue workflows
+Select Issues
+Learn how to take actions on multiple issues at a time
+Issue Relations
+Indicate blocked, blocking, related, and duplicate issues
+Display Options
+Order, sort, and group issues and projects and customize views
+Triage
+Use a special inbox for issues from integrations and other teams
+Parent and Sub-Issues
+Break down larger tasks into smaller pieces of work
+Notifications
+Learn how to manage notifications and stay up to date
+Teams
+Create teams in your workspace to organize different types of work functions
+
+===== https://linear.app/pricing
+TITLE: Pricing – Linear
+ACCESSED: 2026-09-28
+
+Pricing
+Free
+$0
+Free for everyone
+Unlimited members
+2 teams
+250 issues
+Agent platform
+Linear Agent
+Get started
+Get started
+Basic
+$10 per user/month
+$10 per user/month
+Billed yearly
+All Free features +
+5 teams
+Unlimited issues
+Unlimited file uploads
+Admin roles
+Get started
+Get started
+Business
+$16 per user/month
+$16 per user/month
+Billed yearly
+All Basic features +
+Unlimited teams
+Private teams and guests
+Triage Intelligence
+Loops
+Code Intelligence
+Linear Insights
+Linear Asks
+Zendesk and Intercom integrations
+Get started
+Get started
+Contact sales
+Enterprise
+Custom
+Annual billing only
+All Business features +
+Invoice/PO billing
+SAML and SCIM
+Granular admin controls
+Enterprise-grade security
+Advanced org modeling
+Migration & onboarding support
+Priority support
+Account management
+Contact sales
+Trusted by more than
+40,000
+companies
+Customer stories
+→
+Features
+Free
+Basic
+Business
+Enterprise
+Change Plan
+Free
+Basic
+Business
+Enterprise
+Members
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+File upload
+10MB
+Unlimited
+Unlimited
+Unlimited
+Issues
+250
+issues
+Unlimited
+Unlimited
+Unlimited
+Teams
+2
+teams
+5
+teams
+Unlimited
+Unlimited
+Core
+Issues, projects, cycles, initiatives
+Customer requests
+API and webhook access
+Import and export
+Triage
+Pulse
+Issue sync
+Diffs
+Guided reviews
+Issue SLAs
+Triage responsibility
+Triage rules
+Releases
+15 pipelines
+Unlimited
+Sub-initiatives
+AI and agent workflows
+Agent platform
+MCP access
+Linear Agent
+Coding sessions
+**
+Loops
+**
+Code Intelligence
+Triage Intelligence
+Integrations
+Integrations
+Microsoft Teams integration
+Multiple tenants
+Support integrations
+Salesforce integration
+Add-on
+Team management
+Sub-teams
+1 level
+5 levels
+Private teams
+Guest accounts
+Analytics & Reporting
+Progress reports
+Insights
+Dashboards
+Linear Asks
+Slack intake
+Email intake
+Web forms
+Multiple Slack workspaces
+Private Slack channels
+Per-channel configurations
+Security
+SSO
+Google
+Google
+Google
+Google + SAML
+Admin roles
+Team owners
+Advanced authentication
+SCIM provisioning
+IP restrictions
+Domain claiming
+Audit log
+Third-party app management
+HIPAA compliance
+Support
+Priority support
+Account manager
+Custom terms
+Uptime SLA
+Get started
+Get started
+Get started
+Get started
+Get started
+Get started
+or
+contact sales
+Contact sales
+** Requires AI credits
+View docs
+Built for the future. Available today.
+Get started
+Contact sales
+Open app
+Download
+
+===== https://linear.app/contact
+TITLE: Contact us – Linear
+ACCESSED: 2026-09-28
+
+How can we help?
+Get in touch with our sales and support teams for demos, onboarding support, or product questions.
+Get in touch
+Community
+Connect with Linear users in Slack
+Join Slack
+↗
+General communication
+For other questions, email us
+hello@linear.app
++
+Documentation
+Features, integrations, and usage
+Linear Docs
+→
+Developers
+Extend Linear with our API and SDK
+Linear API
+→
+System
+All systems operational
+Check status
+↗
+
+===== https://linear.app/developers/oauth-2-0-authentication
+TITLE: OAuth 2.0 authentication – Linear Developers
+ACCESSED: 2026-09-28
+
+OAuth 2.0 authentication
+Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear.
+It is
+highly recommended
+you create a workspace for the purpose of managing the OAuth2 Application, as each admin user will have access.
+All OAuth2 applications were migrated to the new refresh token system on April 1, 2026.
+Specifically for CI and scheduled automation, refer to
+Client credentials token
+.
+Create an OAuth2 application
+⁠
+Create a new
+OAuth2 Application
+and configure the redirect callback URLs to your application.
+Redirect user access requests to Linear
+⁠
+When authorizing a user to the Linear API, redirect to an authorization URL with correct parameters and scopes:
+GET https://linear.app/oauth/authorize HTTP/1.1
+Name
+Description
+client_id
+(required) Client ID provided when you create the OAuth2 Application
+redirect_uri
+(required) Redirect URI
+response_type=code
+(required) Expected response type
+scope
+(required) Comma separated list of scopes:
+read
+- (Default) Read access for the user’s account. This scope will always be present.
+write
+- Write access for the user’s account. If your application only needs to create comments, use a more targeted scope
+issues:create
+- Allows creating new issues and their attachments
+comments:create
+- Allows creating new issue comments
+timeSchedule:write
+- Allows creating and modifying time schedules
+admin
+- Full access to admin level endpoints. You should never ask for this permission unless it’s absolutely needed
+See
+App authentication
+for agent-specific scopes such as
+app:assignable
+or
+app:mentionable
+.
+state
+(optional,
+recommended
+) Prevents CSRF attacks and should always be supplied. Read more about it
+here
+.
+prompt=consent
+(optional) The consent screen is displayed every time, even if all scopes were previously granted. This can be useful if you want to give users the opportunity to connect multiple workspaces.
+actor
+Define how the OAuth application should create issues, comments and other changes:
+user
+- (Default) Resources are created as the user who authorized the application. This option should be used if you want each user to do their own authentication
+app
+- Resources are created as the application. This option should be used for agents and service accounts or agents.
+PKCE
+⁠
+Linear supports the
+PKCE flow
+. To use this flow, you’ll need to include two additional parameters as part of your
+/authorize
+request:
+Name
+Description
+code_challenge
+(required) Code challenge you generated
+code_challenge_method
+(required) Either
+plain
+or
+S256
+, depending on whether the challenge is the plain verifier string or the SHA256 hash of the string
+Example
+⁠
+GET https://linear.app/oauth/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URL&state=SECURE_RANDOM&scope=read HTTP/1.1
+
+GET https://linear.app/oauth/authorize?client_id=client1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Foauth%2Fcallback&response_type=code&scope=read,write HTTP/1.1
+
+GET https://linear.app/oauth/authorize?client_id=client1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Foauth%2Fcallback&response_type=code&scope=read,write&code_challenge=challenge&code_challenge_method=S256 HTTP/1.1
+Handle the redirect URLs you specified in the OAuth2 Application
+⁠
+Once the user approves your application they will be redirected back to your application, with the OAuth authorization
+code
+in the URL params.
+Any
+state
+parameter you specified in step 2 will also be returned in the URL params and must match the value specified in step 2. If the values do not match, the request should not be trusted.
+Example
+⁠
+GET https://example.com/oauth/callback?code=9a5190f637d8b1ad0ca92ab3ec4c0d033ad6c862&state=b1ad0ca92 HTTP/1.1
+Exchange
+code
+for an access token
+⁠
+After receiving the
+code
+, you can exchange it for a Linear API access token:
+POST https://api.linear.app/oauth/token HTTP/1.1
+Pass parameters in body as
+URL-encoded form submission
+, where the
+Content-Type
+header must be
+application/x-www-form-urlencoded
+.
+Parameter
+Description
+code
+(required) Authorization code from the previous step
+redirect_uri
+(required) Same redirect URI which you used in the previous step
+client_id
+(required) Application’s client ID
+client_secret
+(required) Application’s client secret
+grant_type=authorization_code
+(required)
+PKCE
+⁠
+If you are using the PKCE flow, the parameters required by the
+/token
+endpoint are different:
+Name
+Description
+code
+(required) Authorization code from the previous step
+redirect_uri
+(required) Same redirect URI which you used in the previous step
+client_id
+(required) Application’s client ID
+client_secret
+(optional) Application’s client secret
+code_verifier
+(required) The code verifier for the PKCE request that you originally generated before the authorization request
+grant_type=authorization_code
+(required)
+Response
+⁠
+After a successful request, a valid access token and refresh token will be returned in the response. The access token is valid for 24 hours
+
+===== https://linear.app/developers/sdk-webhooks
+TITLE: Webhooks – Linear Developers
+ACCESSED: 2026-09-28
+
+Webhooks
+The SDK provides a helper class to help you start listening to Linear
+webhook events
+quickly.
+Use
+LinearWebhookClient
+to create a typed, signature-verified event listener that can be mounted on Bun, Fastify, Express, or other server frameworks, so you can start working with webhook events with minimal boilerplate.
+import express from "express";
+import { LinearWebhookClient } from "@linear/sdk/webhooks";
+
+// Example with Express
+const app = express();
+const webhookClient = new LinearWebhookClient("WEBHOOK_SECRET");
+
+// Create a handler
+const handler = webhookClient.createHandler();
+
+// Handle the webhook event
+handler.on("Issue", (payload) => {
+  console.log(payload.data.title);
+  ...
+});
+
+// Mount handler to server
+app.post("/hooks/linear", handler);
+Ensure no middleware (e.g., body parser) consumes the raw request body before the handler! Linear signs the exact raw body, so signature verification will fail if any parsing occurs beforehand.
+It also provides a helper to verify
+webhook signatures
+, in case you’d like to handle the webhook events manually:
+import { 
+  LinearWebhookClient,
+  LINEAR_WEBHOOK_SIGNATURE_HEADER, 
+  LINEAR_WEBHOOK_TS_FIELD
+} from '@linear/sdk/webhooks';
+ 
+const webhookClient = new LinearWebhookClient("WEBHOOK_SECRET");
+
+...
+
+// Example with Express
+app.use(
+  "/hooks/linear",
+  bodyParser.json({
+    verify: (req, res, buf) => {
+      webhookClient.verify(
+        buf,
+        req.headers[LINEAR_WEBHOOK_SIGNATURE_HEADER] as string,
+        JSON.parse(buf.toString())[LINEAR_WEBHOOK_TS_FIELD],
+      );
+    },
+  }),
+  (req, res, next) => {
+    // Handle the webhook event
+    next();
+  },
+);
+Previous
+Advanced usage
+Next
+Migrating from 1.x to 2.x
+
+===== https://linear.app/developers/oauth-app-manifests
+TITLE: OAuth application manifests – Linear Developers
+ACCESSED: 2026-09-28
+
+OAuth application manifests
+OAuth app manifests let developers define a Linear OAuth app as structured data instead of filling the form manually. This is useful for hosted platforms that want a reproducible setup flow, and for self-hosted or open-source projects that want to link to a pre-populated app configuration.
+Linear supports two equivalent formats:
+URL parameters for pre-populating the
+Create OAuth app
+page
+JSON manifest format for storing, validating, and sharing the same configuration
+Use URL parameters when you want to send someone directly to a pre-filled app setup page. Use the JSON manifest format when you want to store the configuration in a file, validate it locally, or generate it programmatically.
+Pre-populated OAuth application with URL parameters
+⁠
+Create a pre-populated OAuth application by adding allowed URL parameters to the workspace+agnostic version of the OAuth application creation form:
+https://linear.app/settings/api/applications/new
+Example:
+https://linear.app/settings/api/applications/new?distribution=public &display.description=Adds+Linear+issue+creation+to+Acme+Agent&display.iconUrl=https%3A%2F%2Facme.dev%2Flinear-agent-icon.png&developer.name=Acme&oauth.client_name=Acme+Agent&oauth.client_uri=https%3A%2F%2Facme.dev%2Flinear&oauth.redirect_uris=https%3A%2F%2Facme.dev%2Fapi%2Flinear%2Fcallback&oauth.redirect_uris=https%3A%2F%2Facme.dev%2Fapi%2Flinear%2Fcallback&oauth.grant_types=authorization_code&oauth.grant_types=client_credentials&webhook.enabled=true&webhook.url=https%3A%2F%2Facme.dev%2Fapi%2Flinear%2Fwebhook&webhook.resourceTypes=Issue&webhook.resourceTypes=Comment&webhook.resourceTypes=OAuthAuthorization
+Supported parameters
+⁠
+distribution
+⁠
+Whether the app should be available only in the current workspace or installable by other workspaces.
+Allowed values:
+private
+,
+public
+Default:
+private
+display.description
+⁠
+A short user-facing description of the application.
+Max length: 1000 characters
+display.iconUrl
+⁠
+An HTTP or HTTPS URL for the application icon shown during authorization and in settings.
+Format: absolute URL
+Recommendation: use an image at least 256×256px
+developer.name
+⁠
+The person or company responsible for the application.
+Required for a complete setup
+Min length: 2
+Max length: 80
+oauth.client_name
+⁠
+The user-visible name of the OAuth app.
+Required for a complete setup
+Min length: 2
+Max length: 80
+Must not contain
+Linear
+Must not contain
+http://
+or
+https://
+oauth.client_uri
+⁠
+The homepage or documentation URL for the application.
+Format: absolute HTTP or HTTPS URL
+Required for a complete setup
+oauth.redirect_uris
+⁠
+A redirect URI registered for the OAuth app. Repeat this parameter to provide multiple values.
+Format: absolute HTTP or HTTPS URL
+Required for a complete setup
+Repeatable: yes
+Minimum items: 1
+Maximum items: 32
+Values must be unique
+Example:
+oauth.redirect_uris=https://acme.dev/api/linear/callback oauth.redirect_uris=https://acme.dev/api/linear/callback/preview
+oauth.grant_types
+⁠
+The OAuth grant types the app supports. Repeat this parameter to provide multiple values.
+Allowed values:
+authorization_code
+,
+client_credentials
+Repeatable: yes
+authorization_code
+is always required
+Default when omitted in the manifest format:
+authorization_code
+Example:
+oauth.grant_types=authorization_code oauth.grant_types=client_credentials
+webhook.enabled
+⁠
+Whether webhook delivery is enabled for the app.
+Allowed values:
+true
+,
+false
+Default: enabled when a manifest webhook block is present
+webhook.url
+⁠
+The HTTPS endpoint that receives webhook events.
+Format: absolute HTTPS URL
+Must use
+https://
+The host must not be a loopback host, private-network host, or
+linear.app
+webhook.resourceTypes
+⁠
+The resource types the webhook should subscribe to. Repeat this parameter to provide multiple values.
+Repeatable: yes
+Minimum items: 1 when
+webhook.url
+is set
+Values must be unique
+Supported values:
+AgentSessionEvent
+AppUserNotification
+Attachment
+Comment
+Customer
+CustomerNeed
+Cycle
+Document
+Initiative
+InitiativeUpdate
+Issue
+IssueLabel
+IssueSLA
+OAuthAuthorization
+PermissionChange
+Project
+ProjectLabel
+ProjectUpdate
+Reaction
+Release
+ReleaseNote
+User
+Example:
+webhook.resourceTypes=Issue webhook.resourceTypes=Comment webhook.resourceTypes=OAuthAuthorization
+Notes
+⁠
+Repeated query parameters are used for array values such as
+oauth.redirect_uris
+,
+oauth.grant_types
+, and
+webhook.resourceTypes
+.
+Unsupported query parameters are ignored.
+If both dot-notation parameters and a
+manifest
+query parameter are provided, the JSON manifest takes precedence.
+JSON manifest format
+⁠
+The JSON manifest format is the canonical, versioned representation of the same OAuth app configuration.
+Example manifest
+⁠
+{ "$schema": "https://linear.app/.well-known/oauth-app-manifest.schema.json", "schemaVersion": "1.0.0", "distribution": "public", "display": { "description": "Adds Linear issue creation to Acme Agent.", "iconUrl": "https://acme.dev/linear-agent-icon.png" }, "developer": { "name": "Acme" }, "oauth":
+
+===== https://linear.app/developers/oauth-actor-authorization
+TITLE: OAuth actor authorization – Linear Developers
+ACCESSED: 2026-09-28
+
+OAuth actor authorization
+By default all Linear’s API authentication methods treat the authenticating user as the API actor. This means that actions performed with the OAuth token will appear to come from that user, this is usually what you want!
+Linear also supports an alternative authentication method with
+OAuth Actor Authorization
+– when authenticating this way the user will instead authorize installing the app within the workspace, actions performed with the received OAuth token will come from the app itself. This is particularly useful for agents and service accounts.
+To enable the actor authorization, add
+actor=app
+parameter to your
+OAuth authorization URL
+. The setting is tied to the authorization and its access token. In this mode, all mutations such as creating issues, comments, and status changes will be performed by the app.
+You can also add an optional user name and avatar to go with the application to have it rendered in
+User (via Application)
+format. This will help identify the user that performed the action in the 3rd party system that do not have a Linear account.
+To set the custom user name, set the
+createAsUser
+attribute with the user name and set
+displayIconUrl
+with the URL of the avatar in
+issueCreate
+or
+commentCreate
+mutations:
+mutation IssueCreate {
+  issueCreate(
+    input: {
+      title: "New exception"
+      description: "More detailed error report in markdown"
+      teamId: "9cfb482a-81e3-4154-b5b9-2c805e70a02d"
+      createAsUser: "Mark"
+      displayIconUrl: "http://path.to/image.png"
+    }
+  ) {
+    success
+    issue {
+      id
+      title
+    }
+  }
+}
+Note, we previously supported a similar
+actor=application
+as a mode – this was deprecated in favor of the behavior in
+actor=app
+. If your app already uses this option then you can continue to do so.
+Previous
+OAuth 2.0 authentication
+Next
+OAuth application manifests
+
+===== https://linear.app/developers/file-storage-authentication
+TITLE: File storage authentication – Linear Developers
+ACCESSED: 2026-09-28
+
+File storage authentication
+Files uploaded to Linear, such as images and attachments, are stored in Linear’s private cloud storage. You must authenticate to access these files. These files are accessible from the
+https://uploads.linear.app
+hostname.
+You can pass the same access token and
+authorization
+header as you would when making requests to our GraphQL API when requesting files from storage. This is usually the best option when downloading files in a server environment. An example request might look something like:
+curl https://uploads.linear.app/6db02bb9-fba2-473b-8f9d-f38188e84813/d20adbea-186d-4643-ad07-004bda7d099d  \
+  -X GET \
+  -H 'Authorization: Bearer 00a21d8b0c4e2375114e49c067dfb81eb0d2076f48354714cd5df984d87b67cc'
+Request Signed URLs
+⁠
+When using the GraphQL API, you can request that all URLs in responses pointing to file storage include a signature which allows temporary access to the file. This is achieved by passing the
+public-file-urls-expire-in
+header with an integer value representing the signature expiration in seconds.
+With the
+TypeScript SDK
+this header can be set directly on the client. Here is an example to receive signatures that are valid for 1 minute:
+const client = new LinearClient({
+  apiKey: process.env.LINEAR_API_KEY,
+  headers: {
+    "public-file-urls-expire-in": "60",
+  }
+});
+Previous
+OAuth application manifests
+Next
+Agent Interaction Guidelines (AIG)

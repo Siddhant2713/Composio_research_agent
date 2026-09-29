@@ -1,0 +1,339 @@
+===== https://www.gorgias.com/
+TITLE: The Conversational AI platform for Ecommerce | Gorgias
+ACCESSED: 2026-09-28
+
+Discover pricing
+Book a demo
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+AI Agent trained on your brand
+One conversation. Everywhere.
+One unified inbox across every channel, with live Shopify data and full customer context built into every conversation.
+High-quality answers. Measurable results.
+Engage. Guide. Convert.
+8.83× ROI
+“The AI upsells with a conversational tone that feels genuinely helpful, not pushy. It asks the right follow-up questions and improves AOV. It’s exactly how we train our human agents.”
+One AI Agent. Pre-sale to post-sale.
+Learn more
+->
+Pre-trained on 1B+ conversations
+Understands ecommerce, Shopify data, and customer intent from day one
+Your rules. Your AI.
+Apply your tone, policies, and SOPs with built-in guardrails
+Automate 60% of support
+Resolve inquiries automatically so your team can focus on high-impact work
+AI coaching, built in
+Proactive, real-time tips help agents improve with every conversation
+Proactive, not reactive AI
+Engage shoppers at the right moment with the right recommendations
+Knows when to escalate to your team
+Seamless hand-offs to human agents with context
+One inbox. Full store context.
+Learn more
+->
+One omnichannel inbox
+Email, chat, SMS, WhatsApp, Instagram, and Facebook in one view
+In-conversation actions
+Cancel, discount, or upsell directly inside the conversation
+Native Shopify integration
+Pull up any order, customer, or product without leaving the ticket
+300+ integrations
+Recharge, Klaviyo, Yotpo, and more connected out of the box
+Team collaboration
+Route, assign, and manage tickets across your team
+Revenue attribution reporting
+See exactly how much revenue your support team generates
+19.2x
+ROI on AI-driven sales interactions
+56%
+automation rate in <2 months
+10%
+reduction in total cost of ownership
+$500M+
+revenue driven through conversations
+17,000+
+ecommerce brands powered globally
+4.2x
+average return on investment
+"When we first started with Gorgias, our goal was to hit 30% automation in 30 days. We surpassed that and are now above 50% automation, and we’re still climbing."
+Courtney Bajek
+Customer Service Lead at Orthofeet
+Read the full story
+->
+OpenAI Partner
+Built on a direct OpenAI partnership. Deeper model access. AI fine-tuned for product recommendations, order management, and brand voice. A real integration.
+Built into Shopify’s DNA
+Shopify-invested. Orders, customers, and store data live inside Gorgias natively. One click to install. Zero data syncing.
+Platform stability
+Zero downtime during peak season. Handles high volumes and holiday surges without dropping a single conversation.
+Continuous innovation
+Commerce-first development. Every feature based on how Shopify brands actually work.
+Deepest integrations
+300+ integrations. Klaviyo, Recharge, Yotpo, and your entire stack. One click.
+Protected investment
+Scales with you. From 100 tickets a month to 100,000. Same platform.
+
+===== https://developers.gorgias.com/
+TITLE: gorgias-developers
+ACCESSED: 2026-09-28
+
+Integrate with Gorgias to support thousands of shop owners and grow your app audience. Or simply build a private app to empower your support team with the tools they need. Regardless of your end goal, follow these easy steps below to build an integration with us.
+Sign up for our
+Developer Portal
+to start our partnership. This step is required only if you plan to build a Public app.
+Refer to our
+API documentation
+to find all the information you need.
+We'll review it and let you know once it's approved and ready to be published in
+our App Store
+. For Private apps there is no need for approval. Go ahead and use it!
+Sign up for our monthly developer newsletter.
+It contains important updates about upcoming and breaking changes to the API.
+Sign Up
+
+===== https://docs.gorgias.com/en-US
+TITLE: Gorgias Help Center
+ACCESSED: 2026-09-28
+
+Gorgias Help Center
+Get more information
+Get started
+Resources
+AI Agent & automation features
+Knowledge
+Daily operations
+Account setup
+Integrations (Apps)
+Reporting
+
+===== https://www.gorgias.com/partner-program
+TITLE: Gorgias Partner Program
+ACCESSED: 2026-09-28
+
+Gorgias Partner Program
+Join our partner program
+Thank you for joining our partner program! Your submission has been received and we'll come back to you shortly.
+Oops! Something went wrong while submitting the form. Please try again.
+Services offering
+Grow your agency by adding to your service offering and get VIP access to the best in-class software to help your clients grow.
+Advanced training
+Full access to the Gorgias partner portal for your entire team to receive product and sales training.
+Marketing support
+We will help create awareness for your agency through co-marketing initiatives, speaking opportunities, sponsorships, client dinners, and much more.
+Revenue share
+For each new customer you bring, get rewarded with an industry leading revenue share.
+Lead sharing
+Generate leads through our partner marketplace and get prioritized leads whenever we have a customer that needs your services.
+Dedicated support
+Get a dedicated partner manager and a direct slack channel to stay in constant communication with our team and give the best support to your clients.
+"The Gorgias team has been an incredible Strategic Partner to MuteSix, helping our clients manage every aspect of the customer service process, a vital part of scaling and growing their brand. Top brands like Spongelle, Grunt Style, and Grassroots Coop use Gorgias to to monitor their Facebook and Instagram ad comments which also helps increase their ROAS and drive revenue"
+Adena Merabi
+Head of Partnerships @ Mutesix
+
+===== https://www.gorgias.com/demo
+TITLE: See what Gorgias can do for your Ecommerce
+ACCESSED: 2026-09-28
+
+See what Gorgias can do for your Ecommerce
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+
+===== https://www.gorgias.com/signup
+TITLE: Gorgias | Get Started with Free Trial
+ACCESSED: 2026-09-28
+
+Oops! Something went wrong while submitting the form.
+OR
+Sign up with Google
+By creating an account, you agree to our
+Terms of Service
+
+===== https://www.gorgias.com/pricing
+TITLE: Gorgias Pricing – Build the customer support suite that fits your needs
+ACCESSED: 2026-09-28
+
+Read case study
+Read case study
+Read case study
+Read case study
+Read case study
+"When we first started with Gorgias, our goal was to hit 30% automation in 30 days. We surpassed that and are now above 50% automation, and we’re still climbing."
+Courtney Bajek
+Customer Service Lead at Orthofeet
+Read the full story
+->
+
+===== https://www.gorgias.com/onboarding
+TITLE: Onboarding
+ACCESSED: 2026-09-28
+
+Onboarding
+-->
+Meet the Gorgias Onboarding Team
+Sasha Lall
+Customer Implementation Manager
+‍
+Meet the Gorgias Onboarding Team
+Ashleigh Kim
+Customer Implementation Manager
+‍
+Meet the Gorgias Onboarding Team
+Kyle Noble
+Customer Implementation Manager
+‍
+Meet the Gorgias Onboarding Team
+Richard Greenwald
+Enterprise Customer Implementation Manager
+Meet the Gorgias Onboarding Team
+Maria Dewez
+Customer Implementation Manager
+‍
+Data migration
+Low-stress data and email migration
+Switching tools doesn’t mean starting over. With our 1-click migration from Zendesk, you can bring over FAQs, past messages, Macros, users, tags, and ticket fields.
+‍
+Moving from Gmail or another helpdesk? We’ll handle the migration so you can be up and running within a week.
+Dedicated support
+Hands-on, 5-star implementation support
+Partner with a dedicated Implementation Manager with extensive experience onboarding brands like yours onto Gorgias. Meet 2-5 times to connect your channels and apps, build core workflows and automations, and learn the fundamentals of Gorgias.
+Plug and Play
+Easily connect all your tools and channels
+Bring all your conversations and data into Gorgias. Easily update orders, edit subscriptions, manage loyalty programs, and more — all within Gorgias.
+Powerful, turnkey integrations with
+100+ apps
+Open API to build and customize integrations
+Custom Solutions team to build integrations on your behalf (custom quote available upon request)
+Agent Training
+Onboard and certify your entire team
+Give your team the confidence to support customers from day one. With Gorgias Academy, you can drive productivity and platform adoption across your entire team (including with new or temporary hires).
+Certifications to validate skills and build trust
+Clear, structured learning paths
+Quizzes and AI Tutors to stay engaged
+Time-to-value
+Launch and see value immediately
+Our Implementation Managers are expert CX consultants that can get you up and running quickly. Average time to launch is 60 days, even for brands with multiple stores and complex setups. We work with you and all stakeholders to ensure your timeline is achieved.
+Enablement
+Gorgias is designed to be user-friendly and simple for your entire team to learn. Extend your onboarding and train your team with:
+Gorgias Academy training and certification
+Detailed, up-to-date Help Documentation
+Weekly webinars and masterclasses
+Monthly Town Halls with our Product Team
+In-product tips, tricks, and benchmarks
+Hands-on
+Work with an expert on weekly calls
+Custom
+Catered to your unique goals and queries
+Build together
+We build for you, teaching as we go
+Guarantee
+Get your money back if we miss
+Dr. Bronner’s Saves $100k/year and Automates 48% of Interactions
+"We used to use Salesforce but Gorgias integrates much better with Shopify and other ecommerce tools. While Salesforce needed heavy development, Gorgias connected to our entire stack with just a few clicks. Our team can now manage workflows without needing custom development — we save $100k/year by switching.”
+Emily McEnany, Senior CX Manager
+Read case study
+↗
+Jonas Paul Transformed CX Into an Efficient Channel for Support, Loyalty, and Sales
+“Working with the Gorgias team was fantastic. Richard, our Implementation Manager, and Shayan, our Customer Success Manager, were incredibly responsive and knowledgeable. We had set meetings and checklists to guide us through the experience. It made the transition quite seamless for us.”
+Lynsay Schrader, Lab and Customer Service Senior Manager
+Read case study
+↗
+Pajar Took Their Automation Rate from 0% to 45%
+“I was skeptical because 30% seems like a lot. But the white-glove service, weekly calls, and holding my hand through the process was really nice. We reached 30% before the 30 days.”
+Noémie Rousseau, Customer Service Manager
+Read case study
+↗
+1
+Learn
+Build our project roadmap. Define requirements, timeline, and obstacles.
+2
+Implement
+Configure AI Agent, set up ticket workflows, and train your team to use Gorgias.
+3
+Launch
+Go live! Gather insights and iterate with fast improvements.
+4
+Optimize
+Transition to post-implementation support for continuous improvements and optimizations.
+Data Migration
+Move data from your old system into Gorgias without data loss.
+50-in-50
+Get hands-on onboarding to reach 50% automation rate in 50 days.
+Custom Solutions
+Receive custom dashboards, automations, and integrations
+
+===== https://www.gorgias.com/tech-partner
+TITLE: Tech Partner - Gorgias
+ACCESSED: 2026-09-28
+
+Tech Partner - Gorgias
+-->
+Services offering
+Help your company boost its retention and NPS by adding Gorgias to your service offering and get VIP access to the best in-class software that helps your merchants deliver exceptional CX
+Advanced training
+Full access to the Gorgias partner portal for your entire team to receive product and sales training.
+Marketing support
+We will help create awareness for your agency through co-marketing initiatives, speaking opportunities, sponsorships, client dinners, and much more.
+Revenue share
+For each new customer you bring, get rewarded with an industry leading revenue share.
+Lead sharing
+Generate leads through our partner marketplace and get prioritized leads whenever we have a customer that needs your services.
+Dedicated support
+Get a dedicated partner manager and a direct slack channel to stay in constant communication with our team and give the best support to your clients.
+Submit a lead
+
+===== https://www.gorgias.com/partner-stories
+TITLE: Gorgias X Partners stories: How we shape the future of CX together
+ACCESSED: 2026-09-28
+
+Sort
+Inside Gorgias Partner Services: How Open Late Collective Scales AI Automation Past 40%
+September 9, 2026
+How Barrel and Gorgias Drive More Value For Their Ecommerce Clients
+August 24, 2026
+How Avenue Z Helps Enterprise Brands Scale Smart With Gorgias’s Conversational AI Platform
+August 24, 2026
+How Retailogists and Gorgias Provide Scalable Ecommerce Growth Through AI-Driven Support and Sales
+August 24, 2026
+Why Shopify Merchants Trust Domaine and Gorgias to Scale Ecommerce Support and Revenue
+August 24, 2026
+How buah Cut Response Times from 3 Days to 40 Seconds with Gorgias’s AI Agent
+March 6, 2025
+Uqora Uses Gorgias and Recharge to Delight Subscribers and Drive 8 Purchases Per Customer
+December 5, 2022
+How Tuesday Morning Cut CX Operational Costs by Over 50% With Gorgias
+May 6, 2025
+The Girlfriend Doctor answers subscription tickets 40% faster with Loop Subscription and Gorgias
+February 24, 2023
+How TalentPop Expanded its Customer Base by Partnering With Gorgias
+June 13, 2024
+How Rumpl Recouped $8,000 in Return Fees and Achieved 4.89 CSAT With Loop and Gorgias
+June 21, 2024
+How Pit Viper Achieved a 4.9 CSAT and Faster FRT With Gorgias and ShipBob
+June 30, 2023
+How mybacs Resolved Double the Tickets Without Increasing Headcount Using Gorgias
+February 19, 2025
+How Luksusbaby achieved 66% faster FRT and 45% ticket automation with Gorgias and D.TAILS
+September 28, 2023
+Kulani Kinis Saves $400k in Refunds Using Gorgias + Loop Integration
+November 1, 2022
+How LTVplus Helps Brands Offer World-Class Experiences With Gorgias
+December 15, 2022
+How Hindbag Cut Response Time in Half and Boosted Repeat Purchase Rate 12x with Gorgias and Loyoly
+December 4, 2024
+How Create CX and Gorgias Partner to Accelerate Growth With Flawless Customer Experiences
+December 13, 2022
+How Nude Project Resolves 74% of Tickets in One Touch with Gorgias’s AI Agent
+March 26, 2025

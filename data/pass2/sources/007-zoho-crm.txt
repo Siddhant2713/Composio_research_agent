@@ -1,0 +1,707 @@
+===== https://www.zoho.com/en-in/crm/
+TITLE: Zoho CRM | Top-rated Sales CRM Software by Customers
+ACCESSED: 2026-09-28
+
+The easiest AI CRM for growth.
+Intelligent automation meets intuitive design. Built with AI at its core,
+Zoho CRM
+supercharges your business to get ahead without the overhead.
+GET STARTED
+Visionary in 2025 Magic Quadrant™
+for Sales Force Automation Platforms
+Read more
+Get started with your
+flexible free trial
+Trusted by 300K+ businesses worldwide
+Supercharge your sales with
+Zia Agents
+Harness the power of a multi-agent platform that delivers the best of artificial intelligence and human experience.
+Explore agents
+Teams that work together, win together
+Multiple teams come together with sales to close deals. With Zoho CRM for Everyone, you can build unique, collaborative spaces for each team — all with some AI assistance, of course. Start winning more, together.
+Explore CRM for Everyone
+Teamspaces
+Zia Module Creation
+Zia Custom Design
+Set up a dedicated space for each team. Let teams work with the data they need and nothing else.
+New to CRM? No problem. Teams can create their own modules through simple prompts.
+Create detailed list views based on images. Upload a layout you like and generate a custom Canvas layout instantly.
+Staying relevant and driving innovation,
+since 2005
+Zoho CRM offers us technology that allows us to be more proactive and insight-driven, with all information in a single place. With our complete business under control, our productivity is up by 80% in the last year that we have been using Zoho.
+Thomas John
+Managing Director, Agappe
+Zoho CRM for Everyone is incredibly user-friendly and customizable. Its intuitive interface makes it easy to navigate. The reporting tools were also a standout, providing clear insights that helped us make informed decisions.
+Samer Zughul
+Managing Partner,
+Simplify9
+Zoho CRM helped us automate our processes after we implemented workflow rules. Privacy and security are essential for us, and Zoho addressed it all. This was a game changer.
+Olga Kovshanova
+Director, Minor Hotels
+I’m overall very satisfied with Zoho. The new CRM4E update has significantly enhanced the potential for effective team collaboration.
+Ari Daniel Hernandez Sanchez
+Marketing Director, Ava 7
+AI is here to assist.
+From rewriting emails to detecting anomalies, let Zia and ChatGPT help you get things done smarter.
+Discover Zia AI capabilities
+Engage with customers
+Contextual customer engagement in
+real-time,
+across every channel, to ensure rich experiences.
+Simplify customer engagement
+Stay informed
+Nuanced forecasting, performance management, and deep BI capabilities for the right insight at all times.
+Explore forecasting & BI
+Scale
+your sales
+Advanced workflows, cadences, and no-code functions to help you sell and scale efficiently.
+Explore workflow automation
+Canvas Design
+Studio
+Sales Force
+Automation
+Journey
+Orchestration
+CPQ
+Module 360
+Kiosk
+Studio
+Predictive
+AI & BI
+Advanced
+Analytics
+Agents
+Everything your
+business needs,
+with a neat
+360° view.
+GET STARTED
+See Pricing
+Obsessed with Privacy since 1999
+Uncompromized privacy & compliance.
+View all of our security certificates.
+Read more
+IS 642819: Information Security
+Management Certificate
+PM 732705: Privacy Information
+Management Certificate
+CLOUD 714132, PII 714133: Cloud Security
+Management Certificate
+CLOUD 714132, PII 714133: Personal Data in
+the Cloud Certificate
+Grow
+with Zoho
+27
+%
+Increased productivity
+Do more in less time
+50
+%
+Faster implementation
+Get started in no time
+71
+%
+Saved on licensing fees
+Big savings for a lifetime
+* Growth metrics reported by our customers in an internal survey.
+Take us for a spin!
+Quick Tour
+Watch Overview
+Frequently Asked Questions
+Can I integrate my favorite apps with
+Zoho CRM?
+Zoho CRM seamlessly integrates with over 1,000+ applications, and it takes no time to set up and get started. Check out Zoho Marketplace to find out which of your daily-drivers are ready to pair.
+How do I know what's the right edition for me?
+Try our
+Edition Selector
+and answer a few questions about your requirements for a CRM. Based on your choices, we'll recommend the edition that aligns best with your business goals.
+How flexible are the contracts?
+You are not bound by any contracts or commitments.
+Zoho CRM
+is a pay-as-you-go service (monthly or yearly), so you can make changes to your plan whenever you need to, and upgrade or downgrade at will.
+How do I migrate to
+Zoho CRM?
+You can comfortably switch to Zoho from any popular CRM service–even spreadsheets. You can also avail our Jumpstart service that includes everything from requirement gathering to setup and onboarding. Alongside, we have a dedicated program Enterprises looking to move, and we'll help you get started in no time.
+Explore Zwitch (Migration)
+Explore Jumpstart (Service)
+Contact EBS (Enterprise)
+Is Zoho CRM available for my industry?
+Zoho CRM is built to serve business of all kinds, and we cater to all industries and verticals. Explore our
+industry-specific solutions
+to learn more, and book a personalized demo to understand how
+Zoho CRM
+can be customized to
+
+===== https://www.zoho.com/crm/developer/
+TITLE: Zoho CRM | Developer Tools and API
+ACCESSED: 2026-09-28
+
+Transform Zoho CRM into an agent-executable platform
+Empower Zoho CRM with next-gen agentic automation. Configure an MCP server to enable AI agents to autonomously perform end-to-end tasks, removing repetitive manual steps across 950+ Zoho and third-party services.
+Learn more
+Run low-latency, event-driven UI actions with client scripts
+Client scripts empower you to extend and customize how users see and work with CRM data. Run powerful operations like background mail trigger, custom alerts and confirmations, lookup filters, and more, all in real time with client-side script execution
+Learn more
+Collate customer data from multiple sources for enhanced efficiency
+Bring in contextual data directly into the CRM platform using Queries. Pull data from CRM modules by selecting module and fields or using COQL queries, or fetch data from third party sources using REST APIs. Leverage built-in schema management and response serialization for effective data management.
+Learn more
+Connect customer data from every source
+Use Zoho CRM's REST APIs and SDKs to unify existing customer data from across different applications and databases. Capture every customer interaction, enhance your workflows with additional data, and maintain a single point of truth. Your customers expect personalized engagement and your sales teams need all the information they can get to create a memorable experience.
+Learn more
+Fetch data efficiently with GraphQL APIs
+GraphQL provides a more flexible and efficient way to access data and metadata within Zoho CRM. GraphQL allows you to request specific resources, fields of the resources and relationships of the resources, reducing redundant data and streamlining your development process.
+Learn more
+Act on data with functions
+Allow developers to write serverless, event-driven code that acts on your Zoho CRM data while running on the same infrastructure that manages your Zoho CRM data and configuration. Monitor function performance and failures from a dedicated dashboard and deploy with a single click.
+Learn more
+Embed Widgets into Zoho CRM's native interface
+Extend your Zoho CRM account's user interface by seamlessly connecting widget applications that act on Zoho CRM data and workflows in real-time. Use Zoho CRM's Widget SDK to build UI components with any open source web technology and contextually place them within Zoho CRM's pages, layouts, or buttons.
+Learn more
+Streamline metadata management using ZDK CLI
+Use ZDK CLI to retrieve supported configurations from your organization, make changes directly from the CLI, and push those changes back to your organization. You can also collaborate efficiently with fellow developers using your preferred VCS and reuse components across different Zoho CRM orgs.
+Learn more
+Develop modern apps for web and mobile
+Build role-specific apps for your customers, field teams, and employees and handle their specialized demands. Use Zoho CRM as your app's backend and let it sync and act on data in real-time without worrying about infrastructure or scaling needs. Easily control the deployment and distribution of these apps by either privately sharing it to users or publishing them publicly for everyone to access.
+Learn more
+Let your developers learn on the job
+The best way to train your developers and employees on Zoho CRM is to let them actually use it. The fully featured free Developer Edition is the perfect environment for users to learn their way around Zoho CRM's configuration, data model, and developer tools without risking access to any of your production data.
+Learn more
+Collaborate and deploy changes with confidence
+Check and track every change with 100% accuracy. Protect your production data and precious customer information from third-party developers while allowing them to work with your Zoho CRM meta data. Zoho CRM's sandbox gives administrators granular control over the changes they want to deploy while also enabling them to test every change before pushing them live.
+Learn more
+
+===== https://www.zoho.com/crm/developer/docs/api/v2/
+TITLE: Zoho CRM API | Online Help - Zoho CRM
+ACCESSED: 2026-09-28
+
+Zoho CRM V2 APIs
+Entity APIs
+Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.
+Bulk APIs
+Push and retrieve data from Zoho CRM in bulk using a set of asynchronous APIs.
+Notification APIs
+Get notified whenever a data change occurs inside your CRM.
+Query APIs
+Fetch records using the SELECT query (SQL syntax) from Zoho CRM.
+
+===== https://www.zoho.com/crm/developer/docs/widgets/
+TITLE: Widgets Overview | Online Help - Zoho CRM
+ACCESSED: 2026-09-28
+
+Widgets in Zoho CRM
+1. What is a Widget?
+Widgets are
+embeddable UI components
+that you can create and add to your Zoho CRM. You can use widgets to perform functions that utilize data from
+third-party applications
+. You can build widgets for Zoho CRM using our
+JS SDK.
+Widgets support
+ZRC
+, enabling seamless and consistent API calls using unified syntax.
+There are times when there is a need to use services from some off-the-shelves softwares that differ from a regular CRM. For instance, a dial-pad for calling someone. Although it is available as a separate software, it isn't conventionally available in a CRM. But fret not! Widgets in Zoho CRM are embeddable UI components that you can create on your own, using our
+JS Software Development Kit
+. These widgets can be used to perform certain functions that utilizes data from third-party applications seamlessly.
+Let's say you have certain metrics that you measure using an Analytics software. You need to open a new tab for analytics, and if you use other services, like monitoring your website, data from other services, etc, the things that you have to work with are separated into different parts. Through Widgets in Zoho CRM, you can use data from these services and display and use them to perform actions within the CRM. For instance, you can have a widget which displays a heatmap of the distribution of sales in a city. You can get an idea of the locations where the sales are booming and where they are not, and plan accordingly.
+2. Pre-requisites
+Widgets are available in
+Professional
+,
+Enterprise
+and
+Ultimate
+editions of Zoho CRM.
+Refer to
+this
+page for the supported browser versions.
+You should enable the
+Developer Permissions
+for the profile using which you want to access the Widgets. To enable the Developer Permissions, Go to
+Setup > Users and Control  > Security Control >
+select the Profile and enable
+Developer Permissions.
+3. Limits
+You can create a maximum of
+200
+Widgets in Enterprise Edition and
+200
+in Ultimate Edition.
+4. Types of Widgets
+The following are the
+types of Widgets
+that can be embedded in Zoho CRM.
+Widget in a Dashboard
+Widget in a Web tab
+Widget in a Custom Button
+Widget in a Custom Related List
+Widget in a Wizard
+Widget in a Signal
+Widget in Settings
+Widget in a Blueprint
+The provision to include external services to Zoho CRM helps to extend the functionalities of your application by a notch. Zoho CRM's Widgets, enable you to build embeddable UI components in the CRM and integrate them with the external application seamlessly.
+
+===== https://www.zoho.com/crm/developer/docs/functions/overview/introduction.html
+TITLE: Functions - An Overview | Zoho CRM | Developer Tools
+ACCESSED: 2026-09-28
+
+Understanding Zoho CRM Functions
+Learn what Zoho CRM Functions are, how they work, and when to use them.
+Zoho CRM Functions
+is a serverless platform that lets you write and run custom business logic directly within the CRM ecosystem. You can focus on your business logic without provisioning, scaling, or maintaining any infrastructure.
+The Core Concept:
+You write the script; Zoho CRM handles the rest.
+How It Works
+Functions executes your scripts in response to events, on a schedule, or via a direct HTTP call.
+Isolated Execution:
+Each execution runs in its own isolated environment with dedicated permissions, resource limits, and settings. This prevents one execution from affecting others or degrading the core CRM platform.
+Automatic Management:
+Zoho automatically manages the execution environment and scales resource allocation based on workload demand.
+Zero Overhead:
+No server configuration, no deployment pipeline, and no idle capacity costs.
+Scripts and Languages
+Functions supports four languages, giving teams the flexibility to write in whatever fits their stack:
+Language
+Best For
+Deluge
+Native CRM operations, Zoho service integrations, and quick automations.
+Python
+Data processing, ML pipelines, and teams with existing Python expertise.
+Node.js
+Async workflows and JavaScript-native teams.
+Java
+Enterprise logic and teams with existing Java codebases.
+Note:
+Deluge
+is the most deeply integrated language. It has direct access to
+zoho.crm.*
+built-in namespaces and native connectors to other Zoho services. Python, Node.js, and Java interact with CRM data via respective
+SDKs or ZRC
+calls instead.
+How Functions are Triggered and Associated
+A Function runs only when it is associated with a trigger. The trigger tells CRM
+when
+and
+where
+to execute the Function. When you create a Function, you choose a
+category
+that determines which triggers it can be associated with. The category defines the Function’s intent. It determines the input and output data, as well as where the Function can be used in CRM.
+Category
+Triggered by
+What it does
+Automation
+Workflow Rules, Blueprints, Approvals
+Runs automatically when a record event or condition is met.
+Button
+Custom Button on a record detail page, list page, etc.
+Runs when a user clicks the button; returns a message shown as a modal.
+Schedule
+Time-based interval (hourly, daily, weekly, custom)
+Runs on a schedule independent of any user action or CRM event.
+Standalone
+Another Function or an HTTP call
+General purpose such as being used by other Functions or exposed as a REST API endpoint for external applications.
+Related List
+Related list on a record page
+Returns an XML string that CRM renders as a related list on a record page.
+Signals
+Inbound webhook from an external system
+Raises a real-time notification in CRM.
+Validation Rule
+Record save event
+Validates field data before allowing the record to be saved.
+You associate a Function with its trigger during configuration. For example, you can do this in a Workflow Rule action, a Blueprint transition, or a Custom Button. The Function and trigger are linked there, not in the Function editor itself.
+For a full breakdown of each category, see
+Function Categories
+. For step-by-step instructions on wiring a Function to a trigger, see
+Associating Functions with CRM
+.
+Reliability and Management
+Isolation and Reliability
+Every Function execution runs with dedicated resource allocation, isolated from every other Function in your org. A misbehaving or long-running script cannot impact other Functions or the CRM platform itself.
+Built-in Revision History
+The Functions editor includes native version control.
+Every save creates a
+revision snapshot
+.
+You can browse the change history and
+restore any of the last 30 revisions
+directly from the editor.
+No external tooling needed for rollbacks.
+Where Functions Live
+All Functions are created, managed, and monitored from one place:
+Setup → Developer Hub → Functions
+From here you can create new Functions, open existing ones in the editor and view execution logs. See the
+Functions Editor
+for a walkthrough of the editor interface.
+When to Use Functions
+Functions extend the capabilities of built-in CRM automation features, such as Workflow Rules and Blueprints, to support more advanced requirements.
+Reach for Functions when you need to:
+Execute custom business logic
+that goes beyond field updates, email alerts, or standard workflow actions.
+Integrate with external systems
+by calling third-party REST APIs, sending data to ERP systems, synchronizing records with external databases, or processing webhooks from external services.
+Interact with other Zoho apps
+, such as creating a Zoho Books invoice from a won Deal, raising a Zoho Desk ticket from a CRM record, or updating a Zoho Projects task when a Deal stage changes.
+Process and transform data
+for tasks including validating field combinations, computing derived values, reformatting data before saving, and aggregating records across modules.
+Run batch operat
+
+===== https://www.zoho.com/developer/
+TITLE: Transform your ideas into solutions | Zoho Developer
+ACCESSED: 2026-09-28
+
+<
+What do you want to build?
+/>
+Zoho Developer helps you build custom apps, integrate systems, and create industry-specific solutions, enhanced with AI to automate work, orchestrate workflows, and deliver smarter, personalized experiences across your business apps.
+Build apps
+Create custom apps to address your business needs—anything from a to-do-list app to a bot that can access GitHub repositories.
+Learn more
+Build integrations
+Break data silos by integrating third-party tools with one another or with Zoho.
+Learn more
+Build extensions
+Get more done from your Zoho apps by extending its capabilities. You can also craft unique, custom functionalities for your business on top of Zoho.
+Learn more
+Build industry solutions
+Develop highly customized vertical systems to meet the needs of a specific industry using industry language.
+Learn more
+Build AI agents and agentic actions
+Design AI agents that understand your business context, talk to your data, and take action across Zoho and third-party apps.
+AI agents
+Agentic actions
+<
+Choose the tool that best fits your needs
+/ >
+Apps
+Creator
+Catalyst
+Integrations
+Flow
+Sigma
+Creator
+Catalyst
+PhoneBridge
+Zoho Api
+Zoho APIs
+Extensions
+Sigma
+Industry Solutions
+Vertical Studio
+Agents
+AI Agents
+Agentic Actions
+MCP
+<
+The developer toolbox
+/ >
+Flow
+An integration platform that enables you to connect business apps with hundreds of cloud applications without the need to code.
+Learn more
+AI Agents
+Create and deploy ready-to-use AI agents that work inside Zoho apps. Supports prompt-based creation and includes 1000+ tools from 50+ apps.
+Learn more
+Creator
+A low-code application development platform with visual builders, Creator empowers you to create web and mobile applications that can scale automatically.
+Learn more
+Sigma
+Sigma is an extension development platform where developers can build and host extensions for various Zoho applications. These extensions can be feature enhancements or third-party tool integrations.
+Learn more
+Vertical Studio
+A low-code cloud platform that domain experts can leverage to build industry-specific cloud solutions.
+Learn more
+MCP (Model Context Protocol)
+Turn natural language into real business outcomes by building agent-driven actions across your apps that connect LLMs like GPT or Claude to Zoho’s APIs, data, and actions, giving AI agents the context and control they need to execute real work.
+Learn more
+Catalyst by Zoho
+A full-stack development platform to build, test, host, deploy, and optimize solutions.
+Learn more
+PhoneBridge
+Integrate your PBX or contact center with Zoho. Become a PhoneBridge partner to access Zoho PhoneBridge APIs that can help you swiftly build your integration.
+Learn more
+Zoho api
+Zoho APIs
+Build integrations for Zoho using any programming language and infrastructure. Extract or input data in an XML or JSON format between Zoho and third-party apps.
+Explore Zoho APIs
+Interested in monetizing your solutions?
+Join our Marketplace partner program to list and sell your solutions on Zoho Marketplace.
+Learn more
+White label apps
+Rebrand Zoho to reflect your brand identity. Ideal for independent software vendors (ISVs), solution developers, and consultants who require a faster time to market.
+Learn more
+{ Connect
+(with)
+fellow; }
+Discover and interact with others who build with Zoho’s tools and platforms. Ask or answer questions, read about the latest updates, and more.
+Explore the Developer Community
+
+===== https://www.zoho.com/crm/zohocrm-pricing.html?source_from=crm_home
+TITLE: Zoho CRM Pricing and Editions - Free for 3 users
+ACCESSED: 2026-09-28
+
+X
+Team Users: A Quick Overview
+Organization vs. Team levels in
+Zoho CRM
+Data in
+Zoho CRM
+is organized into data modules, and your CRM users are granted access to the modules relevant to them. Modules and users are available at two levels — the
+organization (or org) level
+, and
+team level
+.
+Org modules
+contain data closely tied to your sales processes. The users who work on these modules are
+org users
+, and they have full-scale CRM access. This license is ideal for sales reps, sales managers, presales teams, and central CRM admins.
+Note:
+Any mention of just "users" in
+Zoho CRM
+refers to this type of user.
+Team modules
+contain niche data particular to specific teams that support the sales process at various stages. The users who work on these modules are
+team users
+. Outside of their team modules, they only have partial access to CRM data and functionality. This license is ideal for all non-sales users, like marketing, support, legal, finance, and others.
+The following table provides a short overview of what team users can (and cannot) do in both types of modules
+Organization modules
+What team users
+can do
+What team users
+cannot do
+What team users
+can do
+View and add notes, tags, attachments to records in up to 10 org modules
+Get view-only access to Zoho integration tabs
+View and create public custom views
+Interact with other users in Feeds
+Access Zoho CRM mobile apps
+What team users
+cannot do
+Own records or have any admin-level permissions
+Access or work with Reports and Dashboards
+Initiate calls/meetings
+Create or manage automation
+Access AI/Zia features
+Access Google/Microsoft integrations
+Team modules
+What team users
+can do
+What team users
+cannot do
+What team users
+can do
+Own and perform all operations on team module records
+Customize team modules and manage automations
+Associate webforms
+Send emails, mass emails, and use mail merge
+Manage custom views
+What team users
+cannot do
+Build and access reports and dashboards based on team modules
+Build custom functions, widgets, and access Sandbox
+Note:
+These features are available within team modules, but can only be accessed by fully licensed users
+Want to try team users?
+If you are a new user, you can
+sign up for a free trial of
+Zoho CRM
+and add team users from the Setup page.
+If you are an existing customer, or you're making your first purchase, you can buy team user licenses from the
+Add-ons page
+of the Zoho Store.
+Note:
+Teamspaces, team modules, and team users are available only in the new
+CRM For Everyone UI
+. If you are an existing customer, please ensure you have switched to the new UI before trying team users.
+For a more detailed overview of team users and their permissions,
+check this guide.
+100% free forever
+Monthly
+Annually
+save up to
+34
+%
+CRM
+CX Platform
+Free Tools
+Annually
+Save up to
+34
+%
+with yearly plans
+Monthly
+100% free forever
+CRM
+CX Platform
+Free Tools
+USD
+INR
+EUR
+GBP
+JPY
+SGD
+AUD
+AED
+SAR
+MXN
+ZAR
+NGN
+KES
+EGP
+CAD
+USD
+INR
+EUR
+GBP
+JPY
+SGD
+AUD
+AED
+SAR
+MXN
+ZAR
+NGN
+KES
+EGP
+CAD
+Standard
+Beginner-friendly
+₹
+800
+/user/month
+START FREE TRIAL
+Standard
+Features List
+Features List
+All the essentials:
+Workflows & assignment rules
+Automate your day-to-day activities with workflows.
+AI agents
+Build and deploy AI agents to automate sales activities.
+Cadences
+Automate multichannel lead follow-up sequences.
+Reports & dashboards
+Build custom reports and dashboards to view your business performance.
+Sales forecasting
+Set your team for long-term success with achievable goals and keep track of business performance.
+Self service kiosks
+A no-code customization tool to create custom screens, record actions, and execute custom functions.
+Professional
+Automation and AI
+₹
+1,400
+/user/month
+START FREE TRIAL
+Professional
+Features List
+Features List
+Everything in
+Standard +
+CPQ
+Match products to customer requirements and streamline quote management with built-in price rules.
+Email intelligence
+Get AI insights for emails, like contextual summaries, intent and sentiment analysis, and subject line suggestions.
+Process automation
+Build a step-by-step blueprint to guide your sales reps at every stage.
+Widgets
+Create widgets to perform functions that utilize data from third-party applications.
+Inventory management
+Manage all your invoices, sales and purchase orders, products, and vendors.
+Google Ads integration
+Plan your campaigns by connecting Google Ads with Zoho CRM
+Most Popular
+Enterprise
+Deep customizability
+₹
+2,400
+/user/month
+START FREE TRIAL
+Enterprise
+Features List
+Features List
+Everything in
+Professional +
+AI sales assistant
+Gain insights, predictions, and recommendations from Zia.
+Journey orchestration
+Build end-to-end customer journeys and delivering personalized experiences.
+Territory management
+Assign leads, customers, and accounts to sales reps based on product line, geography, and verticals.
+Custom functions
+Build low-code workflows to automate enterprise operations across different apps.
+Wizards
+Replace endless CRM forms with shorter, sequential forms using wizard
+
+===== https://www.zoho.com/crm/sales-force-automation/?source_from=crm_home
+TITLE: SFA | Simplifying sales, amplifying impact
+ACCESSED: 2026-09-28
+
+Instant Quotes, Flawless Pricing
+Simplify the entire quoting process. Generate accurate quotes instantly, automate pricing, and tailor proposals to each client's unique needs. No more manual calculations or guesswork—just quick, reliable quotes that move deals forward.
+Explore CPQ
+Smart boundaries, bigger wins
+Tailor your territories to match specific products, regions, or sales processes. Watch as your team operates with purpose and maximizes every opportunity using Zoho CRM. Territory management, streamlined for success.
+Learn more about territory
+management
+Data-driven, future ready
+Get the clarity to make timely decisions and keep your sales trajectory on track. Gain clear insights into your team's projected performance with data-driven accuracy. No guesswork here, just reliable data guiding your next move.
+Learn more about sales
+forecasting
+Pipelines that power growth
+Is your sales pipeline driving growth or slowing you down? With Zoho CRM, you can manage deals, accounts, and contacts all in one view to ensure seamless coordination across your team. Turn complex processes into smooth workflows, boost productivity, and make your pipeline truly work for you.
+Explore sales pipeline
+management
+Automated tasks for accelerated sales
+Sales are built on a bedrock of tedious, but crucial and essential tasks. Zoho CRM's Workflows takes over these necessary operations - automating everything from sending emails and follow-ups, to data management - so that your team can focus better on closing more deals, and creating more value.
+Explore workflow
+automation
+All your sales collateral is a click away
+Ensure your team has access to all possible sales collateral inside the product through Zoho CRM's document library. Upload documents, extend access to the right people, track changes, and win deals—all from inside Zoho CRM.
+Gamify sales and inspire healthy competition
+Foster friendly competition and channel your sales reps' inherent competitiveness with Motivator. Gamify goals and watch together your sales progress with a refreshing change from the mundane. Everyone wins.
+PREV
+AI
+NEXT
+Lead management
+
+===== https://www.zoho.com/crm/signup.html?plan=enterprise&source_from=crm_home
+TITLE: Sign up for Zoho CRM | 15-day free CRM trial – Try now!
+ACCESSED: 2026-09-28
+
+Zoho
+Have a Zoho Account?
+Login
+"Salesforce does a nice job of making people think all other CRMs lack functionality. We checked out Zoho and found that not only did it have all of the functionality Salesforce has, but the interface was much more thoughtful and well-designed. Our only challenge would really be changing platforms."
+Alex Tolbert
+CEO, Bernard Health
+Get started with your
+15
+-day free trial.
+Need assistance?
+Contact our toll free number
+8989898989
+Reach out to us
+sales@zohocorp.com
+
+===== https://www.zoho.com/crm/sales-force-automation/cpq.html?source_from=crm_home
+TITLE: Custom quoting simplified | CPQ
+ACCESSED: 2026-09-28
+
+Sales Force Automation
+CPQ
+Custom quoting simplified
+A great quote gets the ball rolling for a thriving partnership by establishing trust. Zoho CRM's CPQ functionality transforms complex quoting into an effortless process with smart tools for pricing, product bundles, and customer-specific solutions.
+Sign up for free
+Refine quotes on the fly with contextual agentic insights
+As you build personalized quotes, an agent can surface valuable insights about the buyer such as the general sentiment, any mentions of competitors, likely products to purchase, and other vital factors that could impact their purchasing decision. Leverage these insights to adjust discounts and product offerings to make the quote more meaningful and improve the chances of closing your deal.
+A quote done right moves more than numbers
+When done right, a quote can move decisions. Configure automated product bundles. Apply dynamic pricing rules and parameters. Create singular quotes for your customers with precision.
+Quote after quote
+Product suggestions so natural, they feel almost intuitive. With smart recommendations for complementary up sells and cross-sells, each suggestion feels like a personal conversation, not a transaction—which enhances the buying process while fashioning new opportunities.
+Provide tailored quotes for better fits
+With dynamic pricing and automated discount calculations, creating accurate, custom quotes is easy—for any customer, at any time. As prices shift or deals change, Zoho CRM adjusts seamlessly, so you can move quickly while maintaining confidence in the numbers you're presenting.
+Clarity on command
+With the quotes dashboard, you have greater control and clarity. Get a crystal-clear view of all your pre-built KPIs.
+Review the deals that need attention. Identify quotes on the verge of closing. Revive stalled discussions. Get accuracy you can rely on and the agility your team deserves. This is our guarantee.
+Steered to succeed
+Subtle and unassuming, our AI-driven prompts guide every conversation by suggesting the ideal products and framing the right questions.

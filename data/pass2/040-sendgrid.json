@@ -1,0 +1,203 @@
+{
+  "app": "SendGrid",
+  "number": 40,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:15:21.137761+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.sendgrid.com\",\n    \"https://www.sendgrid.com/docs/api-reference/\",\n    \"https://sendgrid.com/pricing/\",\n    \"https://signup.sendgrid.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://sendgrid.com",
+    "https://docs.sendgrid.com",
+    "https://www.sendgrid.com/docs/api-reference/",
+    "https://sendgrid.com/pricing/",
+    "https://signup.sendgrid.com/",
+    "https://developer.sendgrid.com/",
+    "https://developers.sendgrid.com/",
+    "https://api.sendgrid.com/",
+    "https://sendgrid.com/docs",
+    "https://sendgrid.com/developers",
+    "https://sendgrid.com/api",
+    "https://sendgrid.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+    "https://www.twilio.com/login",
+    "https://www.twilio.com/en-us/help/sales",
+    "https://www.twilio.com/en-us/user-authentication-identity",
+    "https://www.twilio.com/en-us/user-authentication-identity/verify",
+    "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+    "https://www.twilio.com/docs/sendgrid/api-reference/mail-send/mail-send",
+    "https://www.twilio.com/docs/sendgrid/for-developers/tracking-events/event",
+    "https://www.twilio.com/docs/sendgrid/api-reference/settings-inbound-parse",
+    "https://www.twilio.com/docs/sendgrid/api-reference/sendgrid-engagement-quality-api",
+    "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/authenticate-a-domain",
+    "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/get-the-default-authentication",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/list-all-authenticated-domains",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/update-an-authenticated-domain"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [
+    {
+      "requested_url": "https://signup.sendgrid.com/",
+      "reason": "page too thin (5 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.sendgrid.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.sendgrid.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.sendgrid.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://www.twilio.com/login",
+      "reason": "page too thin (6 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.twilio.com/en-us/sendgrid",
+      "requested_url": "https://sendgrid.com",
+      "status": 200,
+      "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "chars": 1644,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid",
+      "requested_url": "https://docs.sendgrid.com",
+      "status": 200,
+      "title": "Twilio SendGrid | SendGrid Docs | Twilio",
+      "chars": 4980,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+      "requested_url": "https://www.sendgrid.com/docs/api-reference/",
+      "status": 200,
+      "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+      "chars": 1508,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+      "status": 200,
+      "title": "Lookup API Pricing | Twilio",
+      "chars": 3553,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/help/sales",
+      "requested_url": "https://www.twilio.com/en-us/help/sales",
+      "status": 200,
+      "title": "Talk to Sales | Twilio",
+      "chars": 1339,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity",
+      "status": 200,
+      "title": "User Authentication & Identity | Twilio",
+      "chars": 4983,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+      "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+      "status": 200,
+      "title": "Verify API | Twilio",
+      "chars": 4985,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"SendGrid Email API for sending transactional and marketing emails at scale via REST and SMTP.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Uses an API key set in the environment or client configuration (e.g. SENDGRID_API_KEY).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The pages show code snippets to send email using an API key environment variable without indicating a manual approval gate or sales contact requirement.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [\n      \"C#\",\n      \"Go\",\n      \"Java\",\n      \"Node.js\",\n      \"PHP\",\n      \"Python\",\n      \"Ruby\"\n    ],\n    \"notes\": \"The SendGrid v3 Web API provides a REST interface and open-source SDKs are available.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No Model Context Protocol (MCP) server or service is described in the provided pages.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.twilio.com/docs/sendgrid\",\n      \"claim\": \"API key authentication is used for the SendGrid Mail Send API via environment variable.\",\n      \"quote\": \"sgMail.setApiKey(process.env.SENDGRID_API_KEY);\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/docs/sendgrid/api-reference\",\n      \"claim\": \"The SendGrid v3 Web API provides a REST interface.\",\n      \"quote\": \"The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.\"\n    },\n    {\n      \"url\": \"https://www.twilio.com/docs/sendgrid/api-reference\",\n      \"claim\": \"Open-source SDKs are provided for multiple languages including C#, Go, Java, Node.js, PHP, Python, and Ruby.\",\n      \"quote\": \"C# Go Java Node.js PHP Python Ruby\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://www.twilio.com/docs/sendgrid\",\n      \"quote\": \"sgMail.setApiKey(process.env.SENDGRID_API_KEY);\"\n    },\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://www.twilio.com/docs/sendgrid/api-reference\",\n      \"quote\": \"The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://sendgrid.com",
+    "one_liner": "SendGrid Email API for sending transactional and marketing emails at scale via REST and SMTP.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://www.twilio.com/docs/sendgrid."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": [
+        "C#",
+        "Go",
+        "Java",
+        "Node.js",
+        "PHP",
+        "Python",
+        "Ruby"
+      ],
+      "notes": "The SendGrid v3 Web API provides a REST interface and open-source SDKs are available."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "claim": "The SendGrid v3 Web API provides a REST interface.",
+        "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "claim": "Open-source SDKs are provided for multiple languages including C#, Go, Java, Node.js, PHP, Python, and Ruby.",
+        "quote": "C# Go Java Node.js PHP Python Ruby",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "api_surface": {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes."
+      }
+    },
+    "unsupported_fields": [
+      "auth: quoted line not found on https://www.twilio.com/docs/sendgrid",
+      "access: no support offered",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T04:15:44.388935+00:00"
+}

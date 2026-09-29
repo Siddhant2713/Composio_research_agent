@@ -1,0 +1,165 @@
+{
+  "app": "Otter AI",
+  "number": 92,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:07:30.379590+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://help.otter.ai\",\n    \"https://otter.ai\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://help.otter.ai",
+    "https://otter.ai",
+    "https://docs.otter.ai/",
+    "https://developer.otter.ai/",
+    "https://developers.otter.ai/",
+    "https://api.otter.ai/",
+    "https://otter.ai/docs",
+    "https://otter.ai/developers",
+    "https://otter.ai/api",
+    "https://otter.ai/developer"
+  ],
+  "second_hop_considered": [
+    "https://otter.ai/signup",
+    "https://otter.ai/pricing",
+    "https://otter.ai/sales-agent",
+    "https://otter.ai/partner-program"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://help.otter.ai",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.otter.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.otter.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.otter.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.otter.ai/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://otter.ai/docs",
+      "reason": "page too thin (36 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://otter.ai/developers",
+      "reason": "page too thin (36 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://otter.ai/signup",
+      "reason": "page too thin (60 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://otter.ai",
+      "requested_url": "https://otter.ai",
+      "status": 200,
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://otter.ai/pricing",
+      "requested_url": "https://otter.ai/pricing",
+      "status": 200,
+      "title": "Pricing | Otter.ai",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://otter.ai/sales-agent",
+      "requested_url": "https://otter.ai/sales-agent",
+      "status": 200,
+      "title": "Otter.ai - AI Sales Notetaker",
+      "chars": 2010,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://otter.ai/partner-program",
+      "requested_url": "https://otter.ai/partner-program",
+      "status": 200,
+      "title": "Otter.ai Partner Program | Technology & Reseller Partners",
+      "chars": 2078,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Otter.ai offers an AI meeting agent, transcription, insights, APIs, and webhooks for enterprise teams.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The pages mention Otter API & Webhooks under Enterprise, but do not describe the specific developer authentication mechanism.\"\n  },\n  \"access\": {\n    \"tier\": \"gated\",\n    \"notes\": \"Enterprise features like Otter API & Webhooks require contacting sales or scheduling a demo.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"The Enterprise plan lists Otter API & Webhooks as a feature, but does not provide details on REST or GraphQL interfaces.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://otter.ai\",\n    \"notes\": \"ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://otter.ai\",\n      \"claim\": \"Otter provides an MCP Server for AI tools.\",\n      \"quote\": \"ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows.\"\n    },\n    {\n      \"url\": \"https://otter.ai/pricing\",\n      \"claim\": \"Otter offers an API and Webhooks on the Enterprise tier.\",\n      \"quote\": \"Otter API & Webhooks\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://otter.ai/pricing\",\n      \"quote\": \"Schedule a demo\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://otter.ai/pricing\",\n      \"quote\": \"Otter API & Webhooks\"\n    },\n    \"mcp\": {\n      \"url\": \"https://otter.ai\",\n      \"quote\": \"ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows.\"\n    }\n  },\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://help.otter.ai",
+    "one_liner": "Otter.ai offers an AI meeting agent, transcription, insights, APIs, and webhooks for enterprise teams.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://otter.ai/pricing."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://otter.ai/pricing."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://otter.ai",
+      "notes": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://otter.ai",
+        "claim": "Otter provides an MCP Server for AI tools.",
+        "quote": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "mcp": {
+        "url": "https://otter.ai",
+        "quote": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows."
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: quoted line not found on https://otter.ai/pricing",
+      "api_surface: quoted line not found on https://otter.ai/pricing"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:10:06.258648+00:00"
+}

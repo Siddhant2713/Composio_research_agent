@@ -1,0 +1,206 @@
+{
+  "app": "MongoDB Atlas",
+  "number": 68,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:36:17.177359+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.mongodb.com/docs/atlas/api/\",\n    \"https://www.mongodb.com/docs/atlas/\",\n    \"https://www.mongodb.com/cloud/atlas/register\",\n    \"https://www.mongodb.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://mongodb.com/docs/atlas/api",
+    "https://www.mongodb.com/docs/atlas/api/",
+    "https://www.mongodb.com/docs/atlas/",
+    "https://www.mongodb.com/cloud/atlas/register",
+    "https://www.mongodb.com/pricing",
+    "https://docs.mongodb.com/",
+    "https://developer.mongodb.com/",
+    "https://developers.mongodb.com/",
+    "https://api.mongodb.com/",
+    "https://mongodb.com/docs",
+    "https://mongodb.com/developers",
+    "https://mongodb.com/api",
+    "https://mongodb.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+    "https://www.mongodb.com/docs/atlas/sdk/",
+    "https://www.mongodb.com/docs/get-started/",
+    "https://www.mongodb.com/docs/atlas/reference/",
+    "https://www.mongodb.com/docs/atlas/graphql-api/",
+    "https://www.mongodb.com/docs/current/core/backups/",
+    "https://www.mongodb.com/docs/atlas/partner-integrations/",
+    "https://www.mongodb.com/docs/atlas/backup-restore-cluster/",
+    "https://account.mongodb.com/account/sso/google?signupSource=&referer=",
+    "https://www.mongodb.com/docs/charts/pricing/",
+    "https://www.mongodb.com/docs/atlas/reference/flex-limitations/",
+    "https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/",
+    "https://www.mongodb.com/services/support/atlas-support-plans",
+    "https://www.mongodb.com/es/pricing",
+    "https://www.mongodb.com/pt-br/pricing",
+    "https://www.mongodb.com/company/contact",
+    "https://www.mongodb.com/company/partners",
+    "https://www.mongodb.com/company/contact/social-media-hub"
+  ],
+  "boilerplate_lines_removed": 2,
+  "fetch_failures": [],
+  "sources_fetched": [
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "requested_url": "https://mongodb.com/docs/atlas/api",
+      "status": 200,
+      "title": "Atlas Programmatic Access - Atlas - MongoDB Docs",
+      "chars": 4888,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/",
+      "requested_url": "https://www.mongodb.com/docs/atlas/",
+      "status": 200,
+      "title": "MongoDB Atlas: Multi-Cloud Database Service - Atlas - MongoDB Docs",
+      "chars": 3434,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/cloud/atlas/register",
+      "requested_url": "https://www.mongodb.com/cloud/atlas/register",
+      "status": 200,
+      "title": "Sign Up for MongoDB Atlas, Explore a Free Account | MongoDB",
+      "chars": 293,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/pricing",
+      "requested_url": "https://www.mongodb.com/pricing",
+      "status": 200,
+      "title": "Pricing | MongoDB",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/",
+      "requested_url": "https://docs.mongodb.com/",
+      "status": 200,
+      "title": "Welcome to the MongoDB Docs - MongoDB Documentation - MongoDB Docs",
+      "chars": 2334,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+      "requested_url": "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+      "status": 200,
+      "title": "Embedding and Reranking API Overview - Voyage AI by MongoDB - MongoDB Docs",
+      "chars": 4972,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/sdk/",
+      "requested_url": "https://www.mongodb.com/docs/atlas/sdk/",
+      "status": 200,
+      "title": "Atlas SDK - Atlas - MongoDB Docs",
+      "chars": 1275,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/get-started/",
+      "requested_url": "https://www.mongodb.com/docs/get-started/",
+      "status": 200,
+      "title": "Get Started - MongoDB Documentation - MongoDB Docs",
+      "chars": 4923,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/reference/",
+      "requested_url": "https://www.mongodb.com/docs/atlas/reference/",
+      "status": 200,
+      "title": "Reference - Atlas - MongoDB Docs",
+      "chars": 783,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/graphql-api/",
+      "requested_url": "https://www.mongodb.com/docs/atlas/graphql-api/",
+      "status": 200,
+      "title": "Manage Data on Your Atlas Cluster Using AWS AppSync Lambda Resolvers - Atlas - MongoDB Docs",
+      "chars": 3945,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"MongoDB Atlas Administration API and developer platform for managing multi-cloud database deployments.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The Embedding and Reranking API uses an Authorization header with a model API key using the Bearer token format.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for a free account and explore a free tier cluster.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [\n      \"Atlas Go SDK\"\n    ],\n    \"notes\": \"The platform provides a RESTful interface for the Embedding and Reranking API and an Administration API.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.mongodb.com/docs/atlas/api/\",\n      \"claim\": \"The platform provides an Atlas Administration API for programmatic tasks.\",\n      \"quote\": \"Programmatically perform administrative tasks on your cluster outside of the Atlas UI with the Atlas Administration API.\"\n    },\n    {\n      \"url\": \"https://www.mongodb.com/docs/voyageai/api-reference/overview/\",\n      \"claim\": \"Authentication uses Bearer token format with an API key.\",\n      \"quote\": \"All requests to the Embedding and Reranking API must include an Authorization header with your model API key using the Bearer token format.\"\n    },\n    {\n      \"url\": \"https://www.mongodb.com/docs/voyageai/api-reference/overview/\",\n      \"claim\": \"The API uses a RESTful interface.\",\n      \"quote\": \"The Embedding and Reranking API provides programmatic access to the latest Voyage AI embedding and reranking models through a RESTful interface.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://www.mongodb.com/docs/voyageai/api-reference/overview/\",\n      \"quote\": \"All requests to the Embedding and Reranking API must include an Authorization header with your model API key using the Bearer token format.\"\n    },\n    \"access\": {\n      \"url\": \"https://www.mongodb.com/cloud/atlas/register\",\n      \"quote\": \"Sign up for MongoDB Atlas, Explore a Free Account\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://www.mongodb.com/docs/voyageai/api-reference/overview/\",\n      \"quote\": \"The Embedding and Reranking API provides programmatic access to the latest Voyage AI embedding and reranking models through a RESTful interface.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://mongodb.com/docs/atlas/api",
+    "one_liner": "MongoDB Atlas Administration API and developer platform for managing multi-cloud database deployments.",
+    "auth": {
+      "method": "api_key",
+      "notes": "The Embedding and Reranking API uses an Authorization header with a model API key using the Bearer token format."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://www.mongodb.com/cloud/atlas/register."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": false,
+      "sdks": [
+        "Atlas Go SDK"
+      ],
+      "notes": "The platform provides a RESTful interface for the Embedding and Reranking API and an Administration API."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.mongodb.com/docs/atlas/api/",
+        "claim": "The platform provides an Atlas Administration API for programmatic tasks.",
+        "quote": "Programmatically perform administrative tasks on your cluster outside of the Atlas UI with the Atlas Administration API.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+        "claim": "Authentication uses Bearer token format with an API key.",
+        "quote": "All requests to the Embedding and Reranking API must include an Authorization header with your model API key using the Bearer token format.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+        "claim": "The API uses a RESTful interface.",
+        "quote": "The Embedding and Reranking API provides programmatic access to the latest Voyage AI embedding and reranking models through a RESTful interface.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+        "quote": "All requests to the Embedding and Reranking API must include an Authorization header with your model API key using the Bearer token format."
+      },
+      "api_surface": {
+        "url": "https://www.mongodb.com/docs/voyageai/api-reference/overview/",
+        "quote": "The Embedding and Reranking API provides programmatic access to the latest Voyage AI embedding and reranking models through a RESTful interface."
+      }
+    },
+    "unsupported_fields": [
+      "access: quoted line not found on https://www.mongodb.com/cloud/atlas/register",
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:36:37.309604+00:00"
+}

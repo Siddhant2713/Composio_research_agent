@@ -1,0 +1,181 @@
+{
+  "app": "Sherlock",
+  "number": 58,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:33:15.573685+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://github.com/sherlock-project/sherlock\",\n    \"https://github.com/sherlock-project/sherlock/blob/master/README.md\",\n    \"https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://github.com/sherlock-project/sherlock",
+    "https://github.com/sherlock-project/sherlock/blob/master/README.md",
+    "https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md",
+    "https://docs.github.com/",
+    "https://developer.github.com/",
+    "https://developers.github.com/",
+    "https://api.github.com/",
+    "https://github.com/docs",
+    "https://github.com/developers",
+    "https://github.com/api",
+    "https://github.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+    "https://github.com/pricing",
+    "https://github.com/partners",
+    "https://support.github.com?tags=dotcom-footer",
+    "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fsherlock-project%2Fsherlock&report=sherlock-project+%28user%29",
+    "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=sherlock-project%2Fsherlock",
+    "https://docs.github.com/en/authentication",
+    "https://docs.github.com/en/copilot/get-started/plans",
+    "https://support.github.com",
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/graphql",
+    "https://github.com/docs/onboarding-actions",
+    "https://github.com/docs/onboarding-actions/forks",
+    "https://github.com/docs/onboarding-actions/pulls"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://github.com/sherlock-project/sherlock/blob/master/README.md",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.github.com/",
+      "reason": "page too thin (16 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://support.github.com?tags=dotcom-footer",
+      "reason": "page too thin (70 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fsherlock-project%2Fsherlock&report=sherlock-project+%28user%29",
+      "reason": "page too thin (86 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "requested_url": "https://github.com/sherlock-project/sherlock",
+      "status": 200,
+      "title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks \u00b7 GitHub",
+      "chars": 4275,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.github.com/en",
+      "requested_url": "https://docs.github.com/",
+      "status": 200,
+      "title": "GitHub Docs",
+      "chars": 1116,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://api.github.com/",
+      "requested_url": "https://api.github.com/",
+      "status": 200,
+      "title": "",
+      "chars": 2395,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/docs",
+      "requested_url": "https://github.com/docs",
+      "status": 200,
+      "title": "GitHub Docs \u00b7 GitHub",
+      "chars": 1832,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+      "requested_url": "https://github.com/sherlock-project/sherlock/blob/master/LICENSE",
+      "status": 200,
+      "title": "sherlock/LICENSE at master \u00b7 sherlock-project/sherlock \u00b7 GitHub",
+      "chars": 1160,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/pricing",
+      "requested_url": "https://github.com/pricing",
+      "status": 200,
+      "title": "Pricing \u00b7 Plans for every developer \u00b7 GitHub",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://github.com/partners",
+      "requested_url": "https://github.com/partners",
+      "status": 200,
+      "title": "GitHub Partner Program \u00b7 GitHub",
+      "chars": 1650,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Sherlock is a command-line tool that hunts down social media accounts by username across 400+ social networks.\",\n  \"auth\": {\n    \"method\": \"none\",\n    \"notes\": \"Sherlock is a CLI tool and local package that does not use API authentication credentials.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The project is open source on GitHub and installable via pipx, pip, uv, or Docker.\"\n  },\n  \"api_surface\": {\n    \"rest\": false,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": null,\n    \"notes\": \"Sherlock is a command-line tool without a public developer API.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"The pages do not mention any Model Context Protocol integration.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://github.com/sherlock-project/sherlock\",\n      \"claim\": \"Sherlock is a CLI tool to hunt down social media accounts by username.\",\n      \"quote\": \"Hunt down social media accounts by username across 400+ social networks\"\n    },\n    {\n      \"url\": \"https://github.com/sherlock-project/sherlock\",\n      \"claim\": \"Installation can be done via pipx, pip, uv, or Docker.\",\n      \"quote\": \"pipx install sherlock-project\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://github.com/sherlock-project/sherlock\",\n      \"quote\": \"pipx install sherlock-project\"\n    },\n    \"api_surface\": null,\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://github.com/sherlock-project/sherlock",
+    "one_liner": "Sherlock is a command-line tool that hunts down social media accounts by username across 400+ social networks.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://github.com/sherlock-project/sherlock."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "claim": "Sherlock is a CLI tool to hunt down social media accounts by username.",
+        "quote": "Hunt down social media accounts by username across 400+ social networks",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {},
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: quoted line not found on https://github.com/sherlock-project/sherlock",
+      "api_surface: no support offered",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T04:33:30.211351+00:00"
+}

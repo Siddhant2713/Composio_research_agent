@@ -1,0 +1,228 @@
+{
+  "app": "Firecrawl",
+  "number": 56,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:32:48.436311+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.firecrawl.dev\",\n    \"https://www.firecrawl.dev/pricing\",\n    \"https://www.firecrawl.dev\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://firecrawl.dev",
+    "https://docs.firecrawl.dev",
+    "https://www.firecrawl.dev/pricing",
+    "https://www.firecrawl.dev",
+    "https://developer.firecrawl.dev/",
+    "https://developers.firecrawl.dev/",
+    "https://api.firecrawl.dev/",
+    "https://firecrawl.dev/docs",
+    "https://firecrawl.dev/developers",
+    "https://firecrawl.dev/api",
+    "https://firecrawl.dev/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.firecrawl.dev/api-reference/introduction",
+    "https://docs.firecrawl.dev/ai-onboarding",
+    "https://docs.firecrawl.dev/sdks/overview",
+    "https://www.firecrawl.dev/token-efficiency",
+    "https://www.firecrawl.dev/signin?view=signup",
+    "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "https://docs.firecrawl.dev/api-reference/endpoint/scrape",
+    "https://www.firecrawl.dev/auth.md",
+    "https://docs.firecrawl.dev/sdks/cli",
+    "https://docs.firecrawl.dev/sdks/node",
+    "https://www.firecrawl.dev/app/api-keys",
+    "https://www.firecrawl.dev/contact-sales",
+    "https://www.firecrawl.dev/use-cases",
+    "https://www.firecrawl.dev/pricing.md"
+  ],
+  "boilerplate_lines_removed": 6,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.firecrawl.dev/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.firecrawl.dev/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.firecrawl.dev/",
+      "reason": "page too thin (76 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.firecrawl.dev/",
+      "requested_url": "https://firecrawl.dev",
+      "status": 200,
+      "title": "Firecrawl - The web data API to search, scrape, and interact with the web at scale. \ud83d\udd25",
+      "chars": 4890,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/introduction",
+      "requested_url": "https://docs.firecrawl.dev",
+      "status": 200,
+      "title": "Introduction | Firecrawl",
+      "chars": 4960,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.firecrawl.dev/pricing",
+      "requested_url": "https://www.firecrawl.dev/pricing",
+      "status": 200,
+      "title": "Pricing | Firecrawl",
+      "chars": 4973,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.firecrawl.dev",
+      "requested_url": "https://www.firecrawl.dev",
+      "status": 200,
+      "title": "Firecrawl - The web data API to search, scrape, and interact with the web at scale. \ud83d\udd25",
+      "chars": 4890,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "requested_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "status": 200,
+      "title": "Introduction - Firecrawl Docs",
+      "chars": 2795,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/ai-onboarding",
+      "requested_url": "https://docs.firecrawl.dev/ai-onboarding",
+      "status": 200,
+      "title": "Build with AI | Firecrawl",
+      "chars": 4994,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/sdks/overview",
+      "requested_url": "https://docs.firecrawl.dev/sdks/overview",
+      "status": 200,
+      "title": "SDKs | Firecrawl",
+      "chars": 691,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.firecrawl.dev/token-efficiency",
+      "requested_url": "https://www.firecrawl.dev/token-efficiency",
+      "status": 200,
+      "title": "Firecrawl pays for itself | Token Efficiency Benchmark",
+      "chars": 1642,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.firecrawl.dev/signin?view=signup",
+      "requested_url": "https://www.firecrawl.dev/signin?view=signup",
+      "status": 200,
+      "title": "Firecrawl - The web data API to search, scrape, and interact with the web at scale. \ud83d\udd25",
+      "chars": 898,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Firecrawl is a web data API for AI agents and developers to search, scrape, map, crawl, and interact with the live web at scale.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authentication is performed via an API key supplied in the Authorization header as a Bearer token (e.g., Bearer fc-123456789).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create a free account for direct API access or get started immediately without an account for basic requests, with paid plans checking out instantly.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Python\",\n      \"Node.js\",\n      \"Go\",\n      \"Java\",\n      \"Ruby\",\n      \"Rust\",\n      \".NET\",\n      \"PHP\",\n      \"Elixir\",\n      \"CLI\"\n    ],\n    \"notes\": \"Provides a REST API, official SDKs in multiple languages, and a CLI tool.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Firecrawl offers an MCP server that connects tools via the Model Context Protocol.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/introduction\",\n      \"claim\": \"Authentication uses a Bearer token containing an API key.\",\n      \"quote\": \"For authentication, it\u2019s required to include an Authorization header. The header should contain Bearer fc-123456789, where fc-123456789 represents your API Key.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"claim\": \"Scrape requests can be made without an account or API key for starting out.\",\n      \"quote\": \"Scrape your first page now. No account or API key is required for this request.\"\n    },\n    {\n      \"url\": \"https://www.firecrawl.dev/pricing\",\n      \"claim\": \"Plans can be purchased instantly online without requiring a sales call.\",\n      \"quote\": \"Scale checks out instantly, no sales call needed.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/sdks/overview\",\n      \"claim\": \"Official SDKs are offered for multiple programming languages.\",\n      \"quote\": \"Official SDKs: Python SDK, Node SDK, Go SDK, Java SDK, Ruby SDK, Rust SDK, .NET SDK, PHP SDK, Elixir SDK, CLI\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"claim\": \"Firecrawl provides an MCP server supporting the Model Context Protocol.\",\n      \"quote\": \"MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/introduction\",\n      \"quote\": \"For authentication, it\u2019s required to include an Authorization header. The header should contain Bearer fc-123456789, where fc-123456789 represents your API Key.\"\n    },\n    \"access\": {\n      \"url\": \"https://www.firecrawl.dev/pricing\",\n      \"quote\": \"Scale checks out instantly, no sales call needed.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.firecrawl.dev/sdks/overview\",\n      \"quote\": \"Use an SDK to search, scrape, and interact with the web without managing raw HTTP requests.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"quote\": \"MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://firecrawl.dev",
+    "one_liner": "Firecrawl is a web data API for AI agents and developers to search, scrape, map, crawl, and interact with the live web at scale.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authentication is performed via an API key supplied in the Authorization header as a Bearer token (e.g., Bearer fc-123456789)."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create a free account for direct API access or get started immediately without an account for basic requests, with paid plans checking out instantly."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [
+        "Python",
+        "Node.js",
+        "Go",
+        "Java",
+        "Ruby",
+        "Rust",
+        ".NET",
+        "PHP",
+        "Elixir",
+        "CLI"
+      ],
+      "notes": "Provides a REST API, official SDKs in multiple languages, and a CLI tool."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Firecrawl offers an MCP server that connects tools via the Model Context Protocol."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "claim": "Authentication uses a Bearer token containing an API key.",
+        "quote": "For authentication, it\u2019s required to include an Authorization header. The header should contain Bearer fc-123456789, where fc-123456789 represents your API Key.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "claim": "Scrape requests can be made without an account or API key for starting out.",
+        "quote": "Scrape your first page now. No account or API key is required for this request.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.firecrawl.dev/pricing",
+        "claim": "Plans can be purchased instantly online without requiring a sales call.",
+        "quote": "Scale checks out instantly, no sales call needed.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "claim": "Firecrawl provides an MCP server supporting the Model Context Protocol.",
+        "quote": "MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "quote": "For authentication, it\u2019s required to include an Authorization header. The header should contain Bearer fc-123456789, where fc-123456789 represents your API Key."
+      },
+      "access": {
+        "url": "https://www.firecrawl.dev/pricing",
+        "quote": "Scale checks out instantly, no sales call needed."
+      },
+      "api_surface": {
+        "url": "https://docs.firecrawl.dev/sdks/overview",
+        "quote": "Use an SDK to search, scrape, and interact with the web without managing raw HTTP requests."
+      },
+      "mcp": {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "quote": "MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol"
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:33:02.668030+00:00"
+}

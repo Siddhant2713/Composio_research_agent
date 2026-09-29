@@ -1,0 +1,223 @@
+{
+  "app": "Asana",
+  "number": 75,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T06:17:09.657117+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.asana.com\",\n    \"https://developers.asana.com/docs\",\n    \"https://developers.asana.com/reference\",\n    \"https://developers.asana.com/docs/authentication\",\n    \"https://developers.asana.com/docs/get-started\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.asana.com",
+    "https://developers.asana.com/docs",
+    "https://developers.asana.com/reference",
+    "https://developers.asana.com/docs/authentication",
+    "https://developers.asana.com/docs/get-started",
+    "https://docs.asana.com/",
+    "https://developer.asana.com/",
+    "https://api.asana.com/",
+    "https://asana.com/docs",
+    "https://asana.com/developers",
+    "https://asana.com/api",
+    "https://asana.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.asana.com/reference",
+    "https://developers.asana.com/docs/quick-start",
+    "https://developers.asana.com/docs/getting-started-with-asana-oauth",
+    "https://developers.asana.com/docs/oauth",
+    "https://developers.asana.com/docs/oauth-scopes",
+    "https://developers.asana.com/reference/ac-api-reference",
+    "https://developers.asana.com/reference/webhooks",
+    "https://developers.asana.com/reference/getwebhook",
+    "https://developers.asana.com/reference/getwebhooks",
+    "https://developers.asana.com/reference/createwebhook",
+    "https://developers.asana.com/reference/updatewebhook",
+    "https://developers.asana.com/reference/deletewebhook",
+    "https://asana.com/sales",
+    "https://asana.com/pricing",
+    "https://asana.com/partners",
+    "https://asana.com/teams/sales",
+    "https://asana.com/partners/tech",
+    "https://app.asana.com/0/billing/pricing"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.asana.com/docs/get-started",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.asana.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.asana.com",
+      "requested_url": "https://developers.asana.com",
+      "status": 200,
+      "title": "Asana Docs",
+      "chars": 1451,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/docs/overview",
+      "requested_url": "https://developers.asana.com/docs",
+      "status": 200,
+      "title": "Build an app with Asana",
+      "chars": 4988,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/reference/rest-api-reference",
+      "requested_url": "https://developers.asana.com/reference",
+      "status": 200,
+      "title": "Overview",
+      "chars": 1464,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "requested_url": "https://developers.asana.com/docs/authentication",
+      "status": 200,
+      "title": "Authentication",
+      "chars": 4405,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://asana.com/developers",
+      "requested_url": "https://developer.asana.com/",
+      "status": 200,
+      "title": "Asana Developers - API, Documentation & Community Support \u2022 Asana",
+      "chars": 2183,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://app.asana.com/-/login",
+      "requested_url": "https://api.asana.com/",
+      "status": 200,
+      "title": "Log in - Asana",
+      "chars": 178,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/docs/quick-start",
+      "requested_url": "https://developers.asana.com/docs/quick-start",
+      "status": 200,
+      "title": "Quick start guide",
+      "chars": 4994,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/docs/getting-started-with-asana-oauth",
+      "requested_url": "https://developers.asana.com/docs/getting-started-with-asana-oauth",
+      "status": 200,
+      "title": "OAuth Code Samples / Libraries",
+      "chars": 2030,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/docs/oauth",
+      "requested_url": "https://developers.asana.com/docs/oauth",
+      "status": 200,
+      "title": "OAuth",
+      "chars": 4996,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.asana.com/docs/oauth-scopes",
+      "requested_url": "https://developers.asana.com/docs/oauth-scopes",
+      "status": 200,
+      "title": "OAuth scopes",
+      "chars": 4996,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Asana's public developer platform provides a REST API, webhooks, and app components, using OAuth 2.0 or personal access tokens for authentication.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Asana supports OAuth 2.0 as the preferred method for applications to access the API on behalf of a user, and also supports personal access tokens (PATs) and Service Accounts.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create a free account, test workspaces, request developer sandboxes, and create apps or personal access tokens directly via the developer console.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"The Asana API is a RESTful interface, and the platform also features webhooks and app components.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"No Model Context Protocol (MCP) server or capabilities are mentioned in the provided documentation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.asana.com/docs/oauth\",\n      \"claim\": \"OAuth 2.0 is supported for authentication\",\n      \"quote\": \"At its core, OAuth (\\\"Open Authorization\\\") is a mechanism for applications to access the Asana API on behalf of a user, all without the application having access to the user's username and password.\"\n    },\n    {\n      \"url\": \"https://developers.asana.com/docs/overview\",\n      \"claim\": \"Developers can self-serve credentials and test workspaces\",\n      \"quote\": \"Choose your test workspace. You can test in any of your existing workspaces, create a free account, or request a developer sandbox.\"\n    },\n    {\n      \"url\": \"https://developers.asana.com/reference/rest-api-reference\",\n      \"claim\": \"The API surface is RESTful\",\n      \"quote\": \"The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)\"\n    },\n    {\n      \"url\": \"https://developers.asana.com\",\n      \"claim\": \"Webhooks are supported\",\n      \"quote\": \"Automate tedious work in powerful, bespoke ways with our platform          features like rule actions, webhooks, and our API.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.asana.com/docs/oauth\",\n      \"quote\": \"At its core, OAuth (\\\"Open Authorization\\\") is a mechanism for applications to access the Asana API on behalf of a user, all without the application having access to the user's username and password.\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.asana.com/docs/overview\",\n      \"quote\": \"Choose your test workspace. You can test in any of your existing workspaces, create a free account, or request a developer sandbox.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.asana.com/reference/rest-api-reference\",\n      \"quote\": \"The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://developers.asana.com",
+    "one_liner": "Asana's public developer platform provides a REST API, webhooks, and app components, using OAuth 2.0 or personal access tokens for authentication.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Asana supports OAuth 2.0 as the preferred method for applications to access the API on behalf of a user, and also supports personal access tokens (PATs) and Service Accounts."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create a free account, test workspaces, request developer sandboxes, and create apps or personal access tokens directly via the developer console."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "The Asana API is a RESTful interface, and the platform also features webhooks and app components."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.asana.com/docs/oauth",
+        "claim": "OAuth 2.0 is supported for authentication",
+        "quote": "At its core, OAuth (\"Open Authorization\") is a mechanism for applications to access the Asana API on behalf of a user, all without the application having access to the user's username and password.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.asana.com/docs/overview",
+        "claim": "Developers can self-serve credentials and test workspaces",
+        "quote": "Choose your test workspace. You can test in any of your existing workspaces, create a free account, or request a developer sandbox.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "claim": "The API surface is RESTful",
+        "quote": "The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.asana.com",
+        "claim": "Webhooks are supported",
+        "quote": "Automate tedious work in powerful, bespoke ways with our platform          features like rule actions, webhooks, and our API.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.asana.com/docs/oauth",
+        "quote": "At its core, OAuth (\"Open Authorization\") is a mechanism for applications to access the Asana API on behalf of a user, all without the application having access to the user's username and password."
+      },
+      "access": {
+        "url": "https://developers.asana.com/docs/overview",
+        "quote": "Choose your test workspace. You can test in any of your existing workspaces, create a free account, or request a developer sandbox."
+      },
+      "api_surface": {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "quote": "The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)"
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T06:17:26.003579+00:00"
+}

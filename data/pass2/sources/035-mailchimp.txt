@@ -1,0 +1,440 @@
+===== https://mailchimp.com/developer/
+TITLE: Mailchimp Developer
+ACCESSED: 2026-09-28
+
+Build with Mailchimp
+Mailchimp’s developer tools provide everything you need to integrate your data with intelligent marketing tools and event-driven transactional email and SMS.
+Quick Start
+API Reference
+Documentation
+Mailchimp’s Marketing API powers timely, relevant marketing campaigns with custom data pulled directly from your app.
+Quick Start
+API Reference
+Documentation
+Mailchimp Transactional (formerly Mandrill) sends targeted and event-driven messages via the API or SMTP, fast—with best-in-class deliverability.
+Mailchimp Open Commerce (formerly Reaction Commerce) is an open source, API-first, modular commerce stack made for technical, growth-minded retailers.
+Quick Start
+GraphQL Playground
+Documentation
+You’ll be in good company
+When you build integrations with Mailchimp, you’re creating tools for a trusted and reliable platform that powers marketing, e-commerce, and more for millions of small businesses.
+14M
+Trusted by fourteen million customers and counting
+1B
+Rock-solid reliability delivers 1 billion emails daily
+300+
+Dev teams have launched over 300 Mailchimp integrations so far
+Mailchimp Integration Partner Program
+A helping hand to scale your Mailchimp Integration
+As an Integration Partner, you’ll have access to exclusive benefits, insights, and opportunities to grow your business.
+Learn More
+$1 Million to the Developer Community
+We’ve invested in the developer community with a fund to power the creation of new Mailchimp integrations. Keep an eye on the integrations directory to see what’s new!
+Browse Integrations
+On the Mailchimp side, the fact that the API allows us to send automated emails to catch potential customers that might otherwise be lost is a great feature.
+Santiago Paragarino, Senior Magento developer & Gonzalo Dominguez, Senior Engineer, Ebizmarts
+
+===== https://mailchimp.com/developer/marketing/api/
+TITLE: Mailchimp Marketing API Reference | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+API Root
+The API root resource links to all other resources available in the API. Calling the root directory also returns details about the Mailchimp user account.
+Account Exports
+Generate a new account export or download a finished account export.
+Audiences (BETA)
+Your Mailchimp audience is where you store and manage all of your omni-channel contacts. The Audiences Endpoints (BETA) is available for evaluation or testing purposes only, may contain bugs or errors, and may not be as reliable as other Mailchimp features. Intuit may modify or discontinue this feature at any time without notice. By accessing the endpoints you agree to the
+Audiences Endpoints (BETA) Terms of Use
+. Consent must be accurately mapped to the supported marketing consent values. Unsupported values - including opt-outs - must be updated manually. See
+Audiences Endpoints (BETA) Documentation
+for terms and additional details.
+Audiences (BETA)
+Contacts
+Manage contacts within a Mailchimp audience. The Audiences Endpoints (BETA) is available for evaluation or testing purposes only, may contain bugs or errors, and may not be as reliable as other Mailchimp features. Intuit may modify or discontinue this feature at any time without notice. By accessing the endpoints you agree to the
+Audiences Endpoints (BETA) Terms of Use
+. Consent must be accurately mapped to the supported marketing consent values. Unsupported values - including opt-outs - must be updated manually. See
+Audiences Endpoints (BETA) Documentation
+for terms and additional details.
+Authorized Apps
+Manage registered, connected apps for your Mailchimp account with the Authorized Apps endpoints.
+Automation flows (Previously Customer Journeys)
+Manage Automation flows
+Batch Operations
+Use batch operations to complete multiple operations with a single call.
+Batch Webhooks
+Manage webhooks for batch operations.
+Campaign Folders
+Organize your campaigns using folders.
+Campaigns
+Campaigns are how you send emails to your Mailchimp list. Use the Campaigns API calls to manage campaigns in your Mailchimp account.
+Campaigns
+Content
+Manage the HTML, plain-text, and template content for your Mailchimp campaigns.
+Campaigns
+Feedback
+Post comments, reply to team feedback, and send test emails while you're working together on a Mailchimp campaign.
+Campaigns
+Send Checklist
+Review the send checklist for your campaign, and resolve any issues before sending.
+Chimp Chatter Activity
+Get the latest Chimp Chatter activity from your account.
+Classic Automations
+Mailchimp's classic automations feature lets you build a series of emails that send to subscribers when triggered by a specific date, activity, or event. Use the API to manage workflows, emails, and queues for Classic Automations. Does not include Automation flows.
+Classic Automations
+Emails
+Manage individual emails in a classic automation workflow.
+Classic Automations
+Queue
+Manage list member queues for classic automation emails.
+Classic Automations
+Removed Subscribers
+Remove subscribers from a classic automation workflow.
+Connected Sites
+Manage sites you've connected to your Mailchimp account.
+Conversations
+Conversation tracking lets you view subscribers' replies to your campaigns in your Mailchimp account.
+Conversations
+Messages
+Manage messages in a specific campaign conversation.
+E-commerce Stores
+Connect your E-commerce Store to Mailchimp to take advantage of powerful reporting and personalization features and to learn more about your customers.
+E-commerce Stores
+Cart Lines
+Each Cart contains one or more Cart Lines, which represent a specific Product Variant that a Customer has added to their shopping cart.
+E-commerce Stores
+Carts
+Use Carts to represent unfinished e-commerce transactions. This can be used to create an Abandoned Cart workflow, or to save a consumer’s shopping cart pending a successful Order.
+E-commerce Stores
+Customers
+Add Customers to your Store to track their orders and to view E-Commerce Data for your Mailchimp lists and campaigns. Each Customer is connected to a Mailchimp list member, so adding a Customer can also add or update a list member.
+E-commerce Stores
+Order Lines
+Each Order contains one or more Order Lines, which represent a specific Product Variant that a Customer purchases.
+E-commerce Stores
+Orders
+Orders represent successful e-commerce transactions, and this data can be used to provide more detailed campaign reports, track sales, and personalize emails to your targeted consumers, and view other e-commerce data in your Mailchimp account.
+E-commerce Stores
+Product Images
+A Product Image represents a specific product image.
+E-commerce Stores
+Product Variants
+A Product Variant represents a specific item for purchase, and is contained within a parent Product. At least one Product Variant is required for each Product.
+E-commerce Stores
+Products
+E-commerce items for sale in your store need to be created as Products so you can add the items to a Cart or an Order. Each Product requires at least one Product Variant.
+E-commerce St
+
+===== https://mailchimp.com/developer/marketing/guides/quick-start/
+TITLE: Marketing API Quick Start Guide | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+Marketing API Quick Start
+At a glance
+This guide will give you everything you need to start using the Mailchimp Marketing API to manage audiences, control automation workflows, sync email activity with your database, and more. We’ll walk through generating your API key, installing the client library for your preferred language, and making your first API call—a simple request to the
+Ping endpoint
+.
+Create an account
+If you don't have a Mailchimp account already, you’ll need to
+create one
+in order to use the API.
+Generate your API key
+The simplest way to authenticate a request to the Marketing API is using
+an API key
+.
+Here’s how you can generate one for yourself:
+Navigate to the
+API Keys section
+of your Mailchimp account.
+Click
+Create New Key
+and give it a descriptive name that will remind you which application it’s used for.
+Copy the generated key immediately and store it in a secure location. You won’t be able to see or copy the key once you finish generating it.
+Note
+: It’s important to remember that your Mailchimp API key provides full account access, so you should keep it secure, as you would with a password. Because of the potential security risks associated with exposing account API keys, Mailchimp does not support client-side calls to the Marketing API using CORS requests, nor should API keys be used in mobile apps.
+If you’re creating integrations that require access to Mailchimp on behalf of other Mailchimp users, you’ll want to
+set up authentication via Oauth 2
+instead.
+Install the client library for your language
+You can make calls to the Marketing API with whichever method you usually use to make HTTP requests, but Mailchimp offers
+client libraries
+that make interacting with the API even simpler.
+To install the client library for your preferred language:
+# No client installation necessary; just using curl
+Make your first API call
+To test that you have everything set up correctly, we’ll make a simple request to the Ping endpoint. Hitting this endpoint acts as a health check on the Mailchimp API service; it won’t affect your account in any way.
+To find the value for the
+server
+parameter used in
+mailchimp.setConfig
+, log into your Mailchimp account and look at the URL in your browser. You’ll see something like
+https://us19.admin.mailchimp.com/
+; the
+us19
+part is the server prefix. Note that your specific value may be different.
+# install jq: https://stedolan.github.io/jq/download/
+
+dc="YOUR_DC"
+apikey="YOUR_API_KEY"
+
+curl -sS \
+  "https://${dc}.api.mailchimp.com/3.0/ping" \
+  --user "anystring:${apikey}" | jq -r
+If everything was set up correctly and the request to
+ping
+was a success, the response should look like the following:
+{
+   "health_status": "Everything's Chimpy!"
+}
+Next steps
+Now that you’re successfully making authenticated requests to the API with your API key and client library of choice, you’re ready to dive into the Mailchimp Marketing API.
+The first thing you may want to do is learn how to
+create your first audience
+and add new contacts to that audience using the API. You may also want to familiarize yourself with the
+Marketing API docs
+, which outline some of the common conventions you’ll run into across the API, or browse the extensive
+API Reference documentation
+.
+
+===== https://mailchimp.com/developer/transactional/api/
+TITLE: Mailchimp Transactional API Reference | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+Allowlists
+Add, list, or delete from your Rejection Allowlist.
+Exports
+Start an export, or get information on export jobs in progress.
+IPs
+Request and manage Dedicated IPs for your account, and set up reverse DNS.
+Inbound
+Manage your inbound domains and routes.
+Messages
+Send, schedule, or get information on your emails.
+Metadata
+Manage your custom metadata fields in your account.
+Rejects
+Add, list, or delete from your Rejection Denylist.
+Senders
+Manage or get information about your sending domains.
+Subaccounts
+Manage your subaccounts, including the abilitiy to pause and resume sending.
+Tags
+List, delete, or get information on your Tags and their sending statistics.
+Templates
+Manage templates created via the Mandrill UI or through the /templates endpoint.
+Templates (MC)
+Manage templates created via the Mailchimp UI.
+URLs
+Manage your tracking domains.
+Users
+Get information about your account, or ping Transactional.
+Webhooks
+Manage the webhooks in your account.
+
+===== https://mailchimp.com/developer/open-commerce/playground/
+TITLE: Mailchimp Open Commerce GraphQL Playground | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+Mailchimp Open Commerce GraphQL Playground | Mailchimp Developer
+Skip navigation
+GraphQL Playground
+Overview
+Guides
+Documentation
+GraphQL Playground
+Open playground in a new tab
+
+===== https://mailchimp.com/developer/integration-partner-program/
+TITLE: Mailchimp Integration Partner Program | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+Become a Mailchimp Integration Partner
+Unlock exclusive benefits and get your Mailchimp integration in front of millions of customers.
+Apply Now
+Benefits to give you a leg up on the competition
+We offer Integration Partners extra support and invaluable opportunities to boost their business with Mailchimp.
+1
+Reach millions of users
+Get your business in front of over 14 million active Mailchimp users with a listing in the
+Mailchimp Marketplace
+.
+2
+Get timely support
+Keep moving forward with 24/7 premium email support and 24/5 (Monday-Friday) live chat assistance.
+3
+Access partner branding
+Use the Mailchimp Integration Partner badge to promote your integration through digital channels.
+The Mailchimp API is comprehensive, reliable, and easy to use. It enables us to offer a robust integration that helps our mutual customers scale their businesses.
+Jayadev R, Product Manager, Automate.io
+Mailchimp Marketplace
+See what others have built
+Find inspiration amongst the 300+ Mailchimp integrations already developed by our partners.
+Browse the Marketplace
+MARKETING
+Mailmunch
+Automatically syncs exit intent and other opt-in forms with Mailchimp.
+DESIGN
+Canva
+Integrates Canva artwork and images directly with Mailchimp’s campaign builder.
+CONNECTOR SERVICES
+Integromat
+Inserts Mailchimp into automation workflows connecting over 650 apps and services.
+Integration Partner Program
+Learn the basics of integrating your software with Mailchimp, including authentication flows, typical architecture, and common API endpoints.
+Read the documentation
+To become a partner your integration must:
+Be built on the current version of the Mailchimp Marketing API
+Support OAuth 2 authentication
+Have had 25+ active users within the past 90 days
+Review the full list of requirements
+It’s easy to apply
+And it’s free. Two things everyone loves.
+Apply Now
+
+===== https://mailchimp.com/developer/transactional/guides/quick-start/
+TITLE: Transactional API Quick Start Guide | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+Transactional API Quick Start
+At a glance
+This guide will give you everything you need to start using the Mailchimp Transactional API to send fast, personalized transactional emails. We’ll cover creating a Mailchimp Transactional account, generating your API key, installing the client library for your preferred language, and making your first call to the Transactional API.
+Note
+: There are actually two routes for sending through Mailchimp Transactional: via the Transactional API, or via SMTP. If you’re just getting started with Mailchimp Transactional, you can check out
+the breakdown in the docs
+to figure out which route is right for you. If you’d prefer to send via SMTP, review credentials, configuration, and a full index of custom SMTP headers in the
+SMTP docs
+.
+Create an account
+If you don't have a Mailchimp Transactional account, you’ll need to
+create one
+in order to get started using the API. If you have a Mailchimp Standard plan or higher, you can enable Mailchimp Transactional from the
+Monthly plans or credits page of your account
+.
+Generate your API key
+You authenticate a request to the Transactional API using an API key.
+To generate one:
+Navigate to the
+Settings
+of your Mailchimp Transactional account and look for the
+API Keys
+section
+Click
+Create New Key
+and give it a description.
+Copy the generated key immediately and store it in a secure location. You won’t be able to see or copy the key once you finish generating it.
+Note
+: It’s important to remember that your Mailchimp Transactional API key provides full account access, so you should keep it secure, as you would a password.
+Install the client library for your language
+You can make calls to the Transactional API with whichever method you usually use to make HTTP requests, but Mailchimp offers
+client libraries
+that make interacting with the API even simpler.
+To install the client library for your preferred language:
+# No client installation necessary; just using curl
+Make your first API call
+To test that you have everything set up correctly, we'll make a simple request to the
+/users/ping
+endpoint. Hitting this endpoint acts as a health check on the Mailchimp Transactional API service, and will not affect your account in any way.
+curl -sS -X POST "https://mandrillapp.com/api/1.0/users/ping" \
+  --header 'Content-Type: application/json' \
+  --data-raw '{ "key": "YOUR_API_KEY" }'
+If the call was successful, the response you receive will be a string reading
+PONG!
+.
+Next steps
+Now that you’re successfully making authenticated requests to the API with your API key and client library of choice, you’re ready to dive into the Transactional API.
+We recommend starting with the
+Send Your First Transactional Email
+guide, which will walk you through, well, sending your first transactional email. You can also review the
+Mailchimp Transactional docs
+—details on authentication, reports, templates, and more—or browse the extensive
+API Reference documentation
+.
+
+===== https://mailchimp.com/developer/marketing/api/authorized-apps/
+TITLE: Authorized Apps | Mailchimp Marketing API Reference | Mailchimp Developer
+ACCESSED: 2026-09-28
+
+API Root
+The API root resource links to all other resources available in the API. Calling the root directory also returns details about the Mailchimp user account.
+Account Exports
+Generate a new account export or download a finished account export.
+Audiences (BETA)
+Your Mailchimp audience is where you store and manage all of your omni-channel contacts. The Audiences Endpoints (BETA) is available for evaluation or testing purposes only, may contain bugs or errors, and may not be as reliable as other Mailchimp features. Intuit may modify or discontinue this feature at any time without notice. By accessing the endpoints you agree to the
+Audiences Endpoints (BETA) Terms of Use
+. Consent must be accurately mapped to the supported marketing consent values. Unsupported values - including opt-outs - must be updated manually. See
+Audiences Endpoints (BETA) Documentation
+for terms and additional details.
+Audiences (BETA)
+Contacts
+Manage contacts within a Mailchimp audience. The Audiences Endpoints (BETA) is available for evaluation or testing purposes only, may contain bugs or errors, and may not be as reliable as other Mailchimp features. Intuit may modify or discontinue this feature at any time without notice. By accessing the endpoints you agree to the
+Audiences Endpoints (BETA) Terms of Use
+. Consent must be accurately mapped to the supported marketing consent values. Unsupported values - including opt-outs - must be updated manually. See
+Audiences Endpoints (BETA) Documentation
+for terms and additional details.
+Authorized Apps
+Manage registered, connected apps for your Mailchimp account with the Authorized Apps endpoints.
+Automation flows (Previously Customer Journeys)
+Manage Automation flows
+Batch Operations
+Use batch operations to complete multiple operations with a single call.
+Batch Webhooks
+Manage webhooks for batch operations.
+Campaign Folders
+Organize your campaigns using folders.
+Campaigns
+Campaigns are how you send emails to your Mailchimp list. Use the Campaigns API calls to manage campaigns in your Mailchimp account.
+Campaigns
+Content
+Manage the HTML, plain-text, and template content for your Mailchimp campaigns.
+Campaigns
+Feedback
+Post comments, reply to team feedback, and send test emails while you're working together on a Mailchimp campaign.
+Campaigns
+Send Checklist
+Review the send checklist for your campaign, and resolve any issues before sending.
+Chimp Chatter Activity
+Get the latest Chimp Chatter activity from your account.
+Classic Automations
+Mailchimp's classic automations feature lets you build a series of emails that send to subscribers when triggered by a specific date, activity, or event. Use the API to manage workflows, emails, and queues for Classic Automations. Does not include Automation flows.
+Classic Automations
+Emails
+Manage individual emails in a classic automation workflow.
+Classic Automations
+Queue
+Manage list member queues for classic automation emails.
+Classic Automations
+Removed Subscribers
+Remove subscribers from a classic automation workflow.
+Connected Sites
+Manage sites you've connected to your Mailchimp account.
+Conversations
+Conversation tracking lets you view subscribers' replies to your campaigns in your Mailchimp account.
+Conversations
+Messages
+Manage messages in a specific campaign conversation.
+E-commerce Stores
+Connect your E-commerce Store to Mailchimp to take advantage of powerful reporting and personalization features and to learn more about your customers.
+E-commerce Stores
+Cart Lines
+Each Cart contains one or more Cart Lines, which represent a specific Product Variant that a Customer has added to their shopping cart.
+E-commerce Stores
+Carts
+Use Carts to represent unfinished e-commerce transactions. This can be used to create an Abandoned Cart workflow, or to save a consumer’s shopping cart pending a successful Order.
+E-commerce Stores
+Customers
+Add Customers to your Store to track their orders and to view E-Commerce Data for your Mailchimp lists and campaigns. Each Customer is connected to a Mailchimp list member, so adding a Customer can also add or update a list member.
+E-commerce Stores
+Order Lines
+Each Order contains one or more Order Lines, which represent a specific Product Variant that a Customer purchases.
+E-commerce Stores
+Orders
+Orders represent successful e-commerce transactions, and this data can be used to provide more detailed campaign reports, track sales, and personalize emails to your targeted consumers, and view other e-commerce data in your Mailchimp account.
+E-commerce Stores
+Product Images
+A Product Image represents a specific product image.
+E-commerce Stores
+Product Variants
+A Product Variant represents a specific item for purchase, and is contained within a parent Product. At least one Product Variant is required for each Product.
+E-commerce Stores
+Products
+E-commerce items for sale in your store need to be created as Products so you can add the items to a Cart or an Order. Each Product requires at least one Product Variant.
+E-commerce St

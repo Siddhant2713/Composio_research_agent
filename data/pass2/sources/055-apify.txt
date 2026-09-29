@@ -1,0 +1,1648 @@
+===== https://docs.apify.com
+TITLE: Apify Documentation
+ACCESSED: 2026-09-28
+
+Apify Documentation
+Skip to main content
+Getting started
+Apify is all about Actors—a new way to package your code to make it easy to share, integrate, and build upon.
+What is an Actor
+Run an existing Actor
+Develop your own Actor
+Publish and monetize your Actor
+Platform
+The full reference of the Apify platform.
+Actors
+Develop, run, and share web scraping and automation tools in the cloud.
+Storage
+Store files and results of your web scraping jobs, and export it to various formats.
+Proxy
+Avoid blocking by smartly rotating datacenter and residential IP addresses.
+Schedules
+Automatically start Actors and saved tasks at specific times.
+Integrations
+Connect Actors with your favorite web apps and cloud services.
+Monitoring
+Check the performance of your Actors, validate data quality, and receive alerts.
+Collaboration
+Share Actors with other people, manage your organizations and permissions.
+Security
+Learn about Apify platform security and data protection.
+MCP
+Discover and use Actors with AI agents and LLMs via Apify MCP server.
+Apify API
+Interact with the Apify platform from your applications.
+API client for JavaScript
+API client for Python
+API reference
+Apify SDK
+Software toolkits for developing new Actors.
+SDK for JavaScript
+SDK for Python
+Apify CLI
+Control the Apify platform from terminal or shell scripts.
+CLI reference
+Apify Academy
+Free practical courses on web scraping and the Apify platform. Go from beginner to expert, all in one place.
+Web scraping for beginners
+Learn the basics of web scraping and how to develop your own scraper.
+Introduction to the Apify platform
+Learn the basics of the Apify platform and how to use it for your scraping projects.
+API scraping
+Learn how to efficiently extract data from web pages' APIs.
+Anti-scraping protections
+Understand the various anti-scraping measures and how to avoid them.
+Advanced web scraping
+Learn how to extract data from more complicated websites.
+Deploying your code to Apify
+Learn how to easily move your existing projects to the Apify platform.
+Go to Academy
+Open-source tools
+Crawlee
+Web crawling, scraping, and browser automation library for Node.js and Python with autoscaling and proxies.
+Star
+Fingerprint Suite
+Toolkit for generating and injecting realistic browser fingerprints into Playwright and Puppeteer.
+Star
+impit
+Rust-based HTTP client with browser impersonation. Bindings for Node.js, Python, and CLI.
+Star
+mcpc
+CLI client for the Model Context Protocol (MCP) for server exploration, scripting, and code mode.
+Star
+proxy-chain
+Node.js proxy server with SSL, authentication, and upstream proxy chaining.
+Star
+Actor whitepaper
+Open specification for Actors, the serverless microapps at the core of the Apify platform.
+Follow Apify on GitHub
+Actor templates
+Create new web scraping projects using ready-made templates for various programming languages and scraping libraries.
+Browse all templates
+Community & Help
+Discord
+Join our community to get news and connect with other Apify developers.
+Support
+Find answers to common questions or get help from the Apify support team.
+More reading
+Blog
+Company and product updates, tips and stories from the world of web scraping.
+Changelog
+See what's new on the Apify platform.
+Monetize your code
+Publish your Actors on Apify Store and earn regular passive income.
+Get started
+
+===== https://docs.apify.com/api/v2
+TITLE: Apify API | Apify Documentation
+ACCESSED: 2026-09-28
+
+Version: v2-2026-09-24T114302Z
+Download OpenAPI
+Apify API
+The Apify API (version 2) provides programmatic access to the
+Apify
+platform
+. The API is organized
+around
+RESTful
+HTTP endpoints.
+You can download the complete OpenAPI schema of Apify API in the
+YAML
+or
+JSON
+formats. The source code is also available on
+GitHub
+All requests and responses (including errors) are encoded in
+JSON
+format with UTF-8 encoding,
+with a few exceptions that are explicitly described in the reference.
+To access the API, we recommend using one of our API clients:
+Stable API clients:
+For
+Node.js
+, we recommend the
+apify-client
+NPM
+package
+For
+Python
+, we recommend the
+apify-client
+PyPI
+package
+Experimental API clients:
+For
+Java
+, we recommend the
+apify-client
+Maven central component
+For
+Rust
+, we recommend the
+apify-client
+crate
+For
+.NET
+, we recommend the
+apify-client
+Nuget package
+For
+PHP
+, we recommend the
+apify-client
+Packagist package
+For
+Go
+, we recommend the
+apify-client
+package
+The clients' functions correspond to the API endpoints and have the same
+parameters. This simplifies development of apps that depend on the Apify
+platform.
+Important Request Details
+Content-Type
+header: For requests with a JSON body, you must include the
+Content-Type: application/json
+header.
+Method override: You can override the HTTP method using the
+method
+query parameter. This is useful for clients that can only send
+GET
+requests. For example, to call a
+POST
+endpoint, append
+?method=POST
+to the URL of your
+GET
+request.
+Authentication
+You can find your API token on the
+Integrations
+page in the
+Apify Console.
+To use your token in a request, either:
+Add the token to your request's
+Authorization
+header as
+Bearer <token>
+E.g.,
+Authorization: Bearer xxxxxxx
+More info
+(Recommended).
+Add it as the
+token
+parameter to your request URL. (Less secure).
+Using your token in the request header is more secure than using it as a URL
+parameter because URLs are often stored
+in browser history and server logs. This creates a chance for someone
+unauthorized to access your API token.
+Never share your API token or password with untrusted parties!
+For more information, see our
+integrations
+documentation.
+Agentic payments
+AI agents can authenticate and pay for Actor runs without an Apify account
+using agentic payments. Instead of an API token, the request carries a
+payment credential that both authorizes and pays for the call. Apify supports
+the
+x402 protocol
+PAYMENT-SIGNATURE
+header) and
+Skyfire
+skyfire-pay-id
+header).
+Basic usage
+To run an Actor, send a POST request to the
+Run
+Actor
+endpoint using either the
+Actor ID code (e.g.
+vKg4IjxZbEYTYeW8T
+) or its name (e.g.
+janedoe~my-actor
+):
+https://api.apify.com/v2/actors/[actor_id]/runs
+If the Actor is not runnable anonymously, you will receive a 401 or 403
+response code
+This means you need to add your
+secret API
+token
+to the request's
+Authorization
+header (
+recommended
+) or as a
+URL query parameter
+?token=[your_token]
+(less secure).
+Optionally, you can include the query parameters described in the
+Run
+Actor
+section to customize your
+run.
+If you're using Node.js, the best way to run an Actor is using the
+Apify.call()
+method from the
+Apify
+SDK
+. It
+runs the Actor using the account you are currently logged into (determined
+by the
+secret API token
+).
+The result is an
+Actor run
+object
+and its output (if
+any).
+A typical workflow is as follows:
+Run an Actor or task using the
+Run
+Actor
+or
+Run
+task
+API endpoints.
+Monitor the Actor run by periodically polling its progress using the
+Get
+run
+API
+endpoint.
+Fetch the results from the
+Get
+items
+API endpoint using the
+defaultDatasetId
+, which you receive in the Run request response.
+Additional data may be stored in a key-value store. You can fetch them from
+the
+Get record
+API endpoint
+using the
+defaultKeyValueStoreId
+and the store's
+key
+Note
+: Instead of periodic polling, you can also run your
+Actor
+or
+task
+synchronously. This will ensure that the request waits for 300 seconds (5
+minutes) for the run to finish and returns its output. If the run takes
+longer, the request will time out and throw an error.
+Legacy
+/v2/acts/
+URL prefix
+The
+/v2/acts/
+prefix is deprecated but still fully functional, and
+such endpoint routes to the same handler as its
+/v2/actors/...
+counterpart.
+New integrations should use the canonical /v2/actors/ prefix,
+but existing clients keep working without changes.
+Response structure
+Most API endpoints return a JSON object with the
+data
+property:
+{
+"data"
+:
+{
+...
+}
+}
+However, there are a few explicitly described exceptions, such as
+Get dataset items
+or
+Key-value store
+Get record
+API endpoints, which return data in other formats.
+In case of an error, the response has the HTTP status code in the range of
+4xx or 5xx and the
+data
+property is replaced with
+error
+. For example:
+{
+"error"
+:
+{
+"type"
+:
+"record-not-found"
+,
+"message"
+:
+"Store was not found."
+}
+}
+See
+Errors
+for more details.
+Pagination
+All API endpoints that return a list of records
+(e.
+
+===== https://apify.com/pricing
+TITLE: Apify pricing - flexible plan + pay as you go · Apify
+ACCESSED: 2026-09-28
+
+Free
+$0
+$5
+to spend in Apify Store or on your own Actors
+$0.2 per compute unit
+Community support
+No Apify Store discount
+Start for free
+No credit card required.
+Starter
+$19
+/ month + pay as you go
+$19
+to spend in Apify Store or on your own Actors
+$0.2 per compute unit
+Chat support
+Bronze Apify Store discount
+Choose plan
+Scale
+$199
+/ month + pay as you go
+$199
+to spend in Apify Store or on your own Actors
+$0.16 per compute unit
+Priority chat support
+Silver Apify Store discount
+Choose plan
+Business
+$999
+/ month + pay as you go
+$999
+to spend in Apify Store or on your own Actors
+$0.13 per compute unit
+Account manager
+Gold Apify Store discount
+Choose plan
+Need a custom plan?
+Custom scraping solutions
+Scalable pricing
+SLAs with guaranteed data
+Dedicated team of experts
+Talk to us
+See all features and compare plans
+How pricing works
+Website Content Crawler
+LinkedIn Jobs Scraper
+Instagram Scraper
+Google Trends Scraper
+Build your own
+Enjoy $500 worth of free usage to build your own Actors and AI agents along with other benefits for 6 months.
+Learn more
+Be flexible with
+add-ons
+Add-on
+$5 / run
+Concurrent runs
+Allows multiple instances of an Actor to run simultaneously, enabling faster task processing and efficient resource use.
+Add to plan
+Add-on
+$1 / GB
+Actor RAM
+The amount of memory allocated to an Actor during its execution. It impacts the Actors capacity to handle data and perform tasks efficiently.
+Add to plan
+Add-on
+from $0.6 / IP
+Datacenter proxy
+Fast, cost-effective non-residential IPs from data centers, ideal for scraping less-protected websites and automation tasks.
+Add to plan
+Add-on
+$150 / hour
+Personal training
+Personal training support or guidance to help users effectively utilise the platform, optimise Actors, and achieve specific goals.
+Add to plan
+2x leads
+to drive business
+28M+ AI chats
+resolved for Intercom Fin
+800+ retailers
+monitored across the EU for compliance
+Free
+Starter
+Scale
+Business
+Enterprise
+Free
+$0
+Start for free
+Free
+Start for free
+Starter
+Choose plan
+Scale
+Choose plan
+Business
+Choose plan
+Enterprise
+Talk to us
+Prepaid usage
+to spend in Apify Store or on platform usage
+$5
+/ month
+$19
+/ month
++ pay as you go
+$199
+/ month
++ pay as you go
+$999
+/ month
++ pay as you go
+Unlimited
+Actor runs
+Compute units (CU)
+1 GB of RAM/hour
+$0.2
+/ CU
+$0.2
+/ CU
+$0.16
+/ CU
+$0.13
+/ CU
+Custom
+Actor RAM
+16
+GB
+64
+GB
+256
+GB
+512
+GB
+Custom
+Max concurrent runs
+5
+32
+128
+256
+Custom
+Rented Actors
+Limited
+Deducted from
+prepaid usage
+Deducted from
+prepaid usage
+Deducted from
+prepaid usage
+Custom
+Apify Store pricing
+Discount
+-
+Bronze
+Silver
+Gold
+Custom
+Proxy
+Residential proxies
+$8
+/ GB
+$8
+/ GB
+$7.5
+/ GB
+$7
+/ GB
+Custom
+Datacenter proxies
+5
+IPs
+included
+30
+IPs
+included
+then
+$1
+/ IP
+200
+IPs
+included
+then
+$0.8
+/ IP
+500
+IPs
+included
+then
+$0.6
+/ IP
+Custom
+Google SERP proxies
+$2.5
+/ 1,000 SERPs
+$2.5
+/ 1,000 SERPs
+$2
+/ 1,000 SERPs
+$1.7
+/ 1,000 SERPs
+Custom
+Unblocker
+$1.5
+/ 1,000 requests
+$1.5
+/ 1,000 requests
+$1.25
+/ 1,000 requests
+$1
+/ 1,000 requests
+Custom
+Other
+Personal tech training
+-
+$150
+/ hour
+1 hour
+/
+quarter
+1 hour
+/
+month
+Custom
+Support level
+Community
+Chat
+Priority chat
+Account manager
+Custom
+Single sign-on (SSO)
+-
+-
+-
+-
+Storage
+Dataset
+Timed storage
+1,000 GB-hours
+$1.00
+$1.00
+$0.90
+$0.80
+Custom
+1,000 reads
+$0.0004
+$0.0004
+$0.00036
+$0.00032
+Custom
+1,000 writes
+$0.005
+$0.005
+$0.0045
+$0.004
+Custom
+Key-value store
+Timed storage
+1,000 GB-hours
+$1.00
+$1.00
+$0.90
+$0.80
+Custom
+1,000 reads
+$0.005
+$0.005
+$0.0045
+$0.004
+Custom
+1,000 writes
+$0.05
+$0.05
+$0.045
+$0.04
+Custom
+1,000 lists
+$0.05
+$0.05
+$0.045
+$0.04
+Custom
+Request queue
+Timed storage
+1,000 GB-hours
+$4.00
+$4.00
+$3.60
+$3.20
+Custom
+1,000 reads
+$0.004
+$0.004
+$0.0036
+$0.0032
+Custom
+1,000 writes
+$0.01
+$0.01
+$0.009
+$0.008
+Custom
+Data transfer
+External/GB
+$0.20
+$0.20
+$0.19
+$0.18
+Custom
+Internal/GB
+$0.05
+$0.05
+$0.045
+$0.04
+Custom
+Apify for
+Startups
+Encouraging startups to grow by making use of online data at scale.
+Read more
+Universities
+We hope to see future generations take advantage of the vast amount of data available online.
+Read more
+Nonprofits
+We believe that online data can help your organization have more impact.
+Read more
+What is the prepaid platform usage, and how much do I need?
+The Apify platform has a number of services that are charged based on usages, such as Actors, proxies, data transfer, and storage. See
+pricing
+for the full list of platform services.
+Each subscription plan comes with a certain amount of prepaid platform usage that is used to pay for services. If your platform usage in a given billing cycle exceeds this prepaid amount, the excess usage will be added to your next invoice, and you'll get a notification. If you're on the free plan, your access to Apify's services will be blocked until the beginning of the next monthly cycle.
+Note that unused usage credits are not rolled over to the next billing cycle, and they expire at the end of the billing cycle.
+Can I try Apify for free?
+Absolutely! We offer a
+free plan
+that lets you use most of the features o
+
+===== https://docs.apify.com/
+TITLE: Apify Documentation
+ACCESSED: 2026-09-28
+
+Apify Documentation
+Skip to main content
+Getting started
+Apify is all about Actors—a new way to package your code to make it easy to share, integrate, and build upon.
+What is an Actor
+Run an existing Actor
+Develop your own Actor
+Publish and monetize your Actor
+Platform
+The full reference of the Apify platform.
+Actors
+Develop, run, and share web scraping and automation tools in the cloud.
+Storage
+Store files and results of your web scraping jobs, and export it to various formats.
+Proxy
+Avoid blocking by smartly rotating datacenter and residential IP addresses.
+Schedules
+Automatically start Actors and saved tasks at specific times.
+Integrations
+Connect Actors with your favorite web apps and cloud services.
+Monitoring
+Check the performance of your Actors, validate data quality, and receive alerts.
+Collaboration
+Share Actors with other people, manage your organizations and permissions.
+Security
+Learn about Apify platform security and data protection.
+MCP
+Discover and use Actors with AI agents and LLMs via Apify MCP server.
+Apify API
+Interact with the Apify platform from your applications.
+API client for JavaScript
+API client for Python
+API reference
+Apify SDK
+Software toolkits for developing new Actors.
+SDK for JavaScript
+SDK for Python
+Apify CLI
+Control the Apify platform from terminal or shell scripts.
+CLI reference
+Apify Academy
+Free practical courses on web scraping and the Apify platform. Go from beginner to expert, all in one place.
+Web scraping for beginners
+Learn the basics of web scraping and how to develop your own scraper.
+Introduction to the Apify platform
+Learn the basics of the Apify platform and how to use it for your scraping projects.
+API scraping
+Learn how to efficiently extract data from web pages' APIs.
+Anti-scraping protections
+Understand the various anti-scraping measures and how to avoid them.
+Advanced web scraping
+Learn how to extract data from more complicated websites.
+Deploying your code to Apify
+Learn how to easily move your existing projects to the Apify platform.
+Go to Academy
+Open-source tools
+Crawlee
+Web crawling, scraping, and browser automation library for Node.js and Python with autoscaling and proxies.
+Star
+Fingerprint Suite
+Toolkit for generating and injecting realistic browser fingerprints into Playwright and Puppeteer.
+Star
+impit
+Rust-based HTTP client with browser impersonation. Bindings for Node.js, Python, and CLI.
+Star
+mcpc
+CLI client for the Model Context Protocol (MCP) for server exploration, scripting, and code mode.
+Star
+proxy-chain
+Node.js proxy server with SSL, authentication, and upstream proxy chaining.
+Star
+Actor whitepaper
+Open specification for Actors, the serverless microapps at the core of the Apify platform.
+Follow Apify on GitHub
+Actor templates
+Create new web scraping projects using ready-made templates for various programming languages and scraping libraries.
+Browse all templates
+Community & Help
+Discord
+Join our community to get news and connect with other Apify developers.
+Support
+Find answers to common questions or get help from the Apify support team.
+More reading
+Blog
+Company and product updates, tips and stories from the world of web scraping.
+Changelog
+See what's new on the Apify platform.
+Monetize your code
+Publish your Actors on Apify Store and earn regular passive income.
+Get started
+
+===== https://docs.apify.com/sdk
+TITLE: Apify Documentation
+ACCESSED: 2026-09-28
+
+Apify Documentation
+Skip to main content
+Apify SDK for JavaScript
+The official library for creating Apify Actors in Python, with full lifecycle management, local storage, and event handling.
+Star
+Get started
+View reference
+npx apify-cli create my-crawler
+// The Apify SDK makes it easy to initialize the actor on the platform with the Actor.init() method,
+// and to save the scraped data from your Actors to a dataset by simply using the Actor.pushData() method.
+import
+{
+Actor
+}
+from
+'apify'
+;
+import
+{
+PlaywrightCrawler
+}
+from
+'crawlee'
+;
+await
+Actor
+init
+)
+;
+const
+crawler
+=
+new
+PlaywrightCrawler
+{
+async
+requestHandler
+{
+request
+,
+page
+,
+enqueueLinks
+}
+)
+{
+const
+title
+=
+await
+page
+title
+)
+;
+console
+log
+`
+Title of
+${
+request
+loadedUrl
+}
+is '
+${
+title
+}
+'
+`
+)
+;
+await
+Actor
+pushData
+{
+title
+,
+url
+:
+request
+loadedUrl
+}
+)
+;
+await
+enqueueLinks
+)
+;
+}
+}
+)
+;
+await
+crawler
+run
+[
+'https://crawlee.dev'
+]
+)
+;
+await
+Actor
+exit
+)
+;
+Apify SDK for Python
+The official library for creating Apify Actors in Python, with full lifecycle management, local storage, and event handling.
+Star
+Get started
+View reference
+apify create my-python-actor
+# The Apify SDK makes it easy to read the actor input with the Actor.get_input() method,
+# and to save the scraped data from your Actors to a dataset by simply using the Actor.push_data() method.
+from
+apify
+import
+Actor
+from
+bs4
+import
+BeautifulSoup
+import
+requests
+async
+def
+main
+)
+:
+async
+with
+Actor
+:
+actor_input
+=
+await
+Actor
+get_input
+)
+response
+=
+requests
+get
+actor_input
+[
+'url'
+]
+)
+soup
+=
+BeautifulSoup
+response
+content
+,
+'html.parser'
+)
+await
+Actor
+push_data
+{
+'url'
+:
+actor_input
+[
+'url'
+]
+,
+'title'
+:
+soup
+title
+string
+}
+)
+
+===== https://docs.apify.com/sdk/js/docs/overview
+TITLE: Apify SDK for JavaScript | SDK for JavaScript | Apify Documentation
+ACCESSED: 2026-09-28
+
+Version: 3.7
+Apify SDK for JavaScript
+The Apify SDK for JavaScript is the official library for creating
+Apify Actors
+using JavaScript or TypeScript. It provides useful features like Actor lifecycle management, local storage emulation, and Actor event handling.
+import
+{
+Actor
+}
+from
+'apify'
+;
+await
+Actor
+init
+)
+;
+const
+input
+=
+await
+Actor
+getInput
+)
+;
+console
+log
+input
+)
+;
+await
+Actor
+exit
+)
+;
+What are Actors
+Actors are serverless cloud programs capable of performing tasks in a web browser, similar to what a human can do. These tasks can range from simple operations, such as filling out forms or unsubscribing from services, to complex jobs like scraping and processing large numbers of web pages.
+Actors can be executed locally or on the
+Apify platform
+. The Apify platform lets you run Actors at scale and provides features for monitoring, scheduling, publishing, and monetizing them.
+Quick start
+To create and run Actors using Apify Console, check out
+Apify Console documentation
+. For creating and running JavaScript Actors locally, refer to the
+Actor lifecycle guide
+Explore the Guides section in the sidebar for a deeper understanding of the SDK's features and best practices.
+Installation
+The Apify SDK for JavaScript is typically installed when you create a new Actor project using the
+Apify CLI
+. To install it manually in an existing project, use:
+npm
+install
+apify
+API client alternative
+If you need to interact with the Apify API programmatically without creating Actors, use the
+Apify API client for JavaScript
+instead.
+
+===== https://docs.apify.com/sdk/python/docs/overview
+TITLE: Overview | SDK for Python | Apify Documentation
+ACCESSED: 2026-09-28
+
+Version: 4.0
+Overview
+The Apify SDK for Python is the official library for creating
+Apify Actors
+in Python. It provides everything you need to build an Actor and run it both locally and on the
+Apify platform
+. It handles the Actor lifecycle,
+storage
+access, platform events,
+Apify Proxy
+, pay-per-event charging, and more.
+import
+asyncio
+import
+httpx
+from
+bs4
+import
+BeautifulSoup
+from
+apify
+import
+Actor
+async
+def
+main
+)
+-
+>
+None
+:
+async
+with
+Actor
+:
+actor_input
+=
+await
+Actor
+get_input
+)
+or
+{
+}
+url
+=
+actor_input
+get
+'url'
+,
+'https://apify.com'
+)
+async
+with
+httpx
+AsyncClient
+)
+as
+client
+:
+response
+=
+await
+client
+get
+url
+)
+soup
+=
+BeautifulSoup
+response
+content
+,
+'html.parser'
+)
+data
+=
+{
+'url'
+:
+url
+,
+'title'
+:
+soup
+title
+string
+if
+soup
+title
+else
+None
+,
+}
+await
+Actor
+push_data
+data
+)
+if
+__name__
+==
+'__main__'
+:
+asyncio
+run
+main
+)
+)
+What are Actors?
+Actors are serverless programs that can do almost anything. From simple scripts and web scrapers to complex automation workflows, AI agents, or even always-on services that expose HTTP endpoints.
+They can run either locally or on the Apify platform, where you can scale their execution, monitor runs, schedule tasks, integrate them with other services, or even publish and monetize them. If you're new to Apify, learn more about the platform in the
+Apify documentation
+For more context, read the
+Actor whitepaper
+Features
+Run the full Actor lifecycle inside
+async with Actor:
+, covering init, exit, failures, status messages, rebooting, and metamorphing (
+Actor lifecycle
+).
+Read Actor input validated against your input schema with
+Actor.get_input()
+, including automatic decryption of secret fields (
+Actor input
+).
+Read and write datasets, key-value stores, and request queues, locally or on the platform (
+Working with storages
+).
+React to platform events such as system info, migration, and abort, and persist state across migrations and restarts (
+Actor events
+).
+Route requests through Apify Proxy with group selection, country targeting, and rotation, with session and tiered-proxy support (
+Proxy management
+).
+Start, call, and abort other Actors and tasks, and attach webhooks to run events (
+Interacting with other Actors
+,
+Webhooks
+).
+Monetize your Actor with pay-per-event charging (
+Pay-per-event
+).
+Reach the full
+Apify API
+through a preconfigured
+ApifyClient
+Accessing the Apify API
+).
+What you can build
+Almost any Python project can become an Actor, including projects for:
+Web scraping and crawling
+- The SDK is fully compatible with
+Crawlee
+, which makes Apify a natural place to deploy and scale your crawlers (see the
+Crawlee guide
+). It also works with other popular scraping libraries, such as
+Scrapy
+,
+Scrapling
+, or
+Crawl4AI
+Browser automation
+- Drive a real browser with
+Playwright
+or
+Selenium
+, or with higher-level tools such as
+Browser Use
+Web servers and APIs
+- Run a
+web server
+inside an Actor to serve HTTP requests, for example to expose your scraper as a live API.
+AI agents
+- Host agents built with your framework of choice (see the
+AI agents guide
+). Ready-made Actor templates cover
+LangGraph
+,
+CrewAI
+,
+PydanticAI
+,
+LlamaIndex
+, and
+Smolagents
+MCP servers
+- Deploy a Python MCP server as an Actor and make its tools available to any MCP client (see the
+MCP servers guide
+). Ready-made Actor templates cover the
+MCP server
+and
+MCP proxy
+Whatever you build, the Apify SDK doesn't lock you into a particular framework. Bring the libraries you already use, and let Apify run your project in the cloud.
+Quick start
+To create and run Actors using Apify Console, check out
+Apify Console documentation
+. For creating and running Python Actors locally, refer to the
+quick start guide
+Explore the Guides section in the sidebar for a deeper understanding of the SDK's features and best practices.
+Installation
+The Apify SDK for Python requires Python version 3.11 or above. It is typically installed when you create a new Actor project using the
+Apify CLI
+. To install it manually in an existing project, use:
+pip
+install
+apify
+API client alternative
+If you need to interact with the Apify API programmatically without creating Actors, use the
+Apify API client for Python
+instead.
+
+===== https://docs.apify.com/get-started
+TITLE: Get started | Platform | Apify Documentation
+ACCESSED: 2026-09-28
+
+Get started
+Apify is a cloud platform for web scraping, data extraction, and automation. Everything on it revolves around
+Actors
+- serverless programs that run in the cloud. This page explains how the platform fits together and where to start, whether you want to use existing tools or build your own.
+How Apify works
+An Actor takes a structured JSON input, performs a job - scraping a website, automating a browser, processing data - and stores its results on the platform. Results typically land in a structured dataset you can export or send elsewhere. You can start an Actor manually in Apify Console, call it through the
+API
+, or put it on a
+schedule
+Because every Actor shares this input > run > output model, they compose. One Actor's output can feed another, results flow into
+integrations
+like Make, Zapier, or n8n, and you can call any Actor from your code like a regular API.
+For how the platform is built, what happens during a run, and how workloads stay isolated, see
+Platform architecture
+How Actors get to Apify Store
+Apify Store
+holds thousands of public Actors built by Apify and the community. Each one started as code that a developer wrote, deployed to the platform, and published - optionally setting a price, since Store Actors can
+earn their developers money
+You can stand on either side of that exchange. Run other people's Actors to get data without writing code, or build your own - for yourself, your team, or as a product in Store.
+Run your first Actor
+The quickest way to understand the platform is to run something. Open
+Apify Store
+, pick an Actor, click
+Start
+, and watch the results arrive. No code required.
+Choose your path
+Pick the path that matches what you want to do. Each one walks you through the loop and points you to the right tutorials and concept pages in order:
+Run Actors
+- use existing Actors from Apify Store to get data or automate a task, no coding required.
+Build Actors
+- build, deploy, and publish your own Actor on the Apify platform.
+Common next steps
+Schedule an Actor to run automatically
+Trigger Actors from Zapier, Make, n8n, or your own API
+Connect an external AI agent to Apify
+Set up an organization for your team
+Publish and monetize your own Actor
+
+===== https://docs.apify.com/cli/docs/reference
+TITLE: Command reference | CLI | Apify Documentation
+ACCESSED: 2026-09-28
+
+Version: 1.10
+Command reference
+The Apify CLI provides tools for managing your Apify projects and resources from the command line. Use these commands to develop Actors locally, deploy them to Apify platform, manage storage, orchestrate runs, and handle account configuration.
+This reference guide documents available commands, their options, and common usage patterns, to efficiently work with Apify platform.
+General
+The general commands provide basic functionality for getting help and information about the Apify CLI.
+apify help
+DESCRIPTION
+Prints out
+help
+about a command, or all available commands.
+USAGE
+$ apify
+help
+[
+commandString
+]
+[
+--skill
+]
+ARGUMENTS
+commandString  The
+command
+to get
+help
+for.
+FLAGS
+--skill
+Print the Apify CLI agent skill
+guidance
+for
+driving
+`
+apify
+`
+from agents
+)
+apify upgrade
+DESCRIPTION
+Checks that installed Apify CLI version is up to date.
+USAGE
+$ apify upgrade
+[
+-f
+]
+[
+--version
+<
+value
+>
+]
+FLAGS
+-f,
+--force
+[
+DEPRECATED
+]
+This flag is now
+ignored, as running the
+command
+manually will always check
+for
+the latest version.
+--version
+=
+<
+value
+>
+The version of the CLI to upgrade to. If
+not provided, the latest version will be used.
+apify api
+DESCRIPTION
+Makes an authenticated HTTP request to the Apify API and prints the response.
+The endpoint can be a relative path
+e.g.
+"acts"
+,
+"v2/acts"
+, or
+"/v2/acts"
+)
+;
+the
+"v2/"
+prefix is added automatically
+if
+omitted.
+Use --list-endpoints to see all available API endpoints.
+USAGE
+$ apify api
+[
+methodOrEndpoint
+]
+[
+endpoint
+]
+[
+-d
+<
+value
+>
+]
+[
+--describe
+<
+value
+>
+|
+-l
+|
+-s
+<
+value
+>
+]
+[
+-H
+<
+value
+>
+]
+[
+-X GET
+|
+POST
+|
+PUT
+|
+PATCH
+|
+DELETE
+]
+[
+-p
+<
+value
+>
+]
+ARGUMENTS
+methodOrEndpoint  The API endpoint path
+e.g.
+"acts"
+,
+"v2/acts"
+,
+"/v2/users/me"
+)
+, or an HTTP method followed by the
+endpoint
+e.g.
+"GET /v2/users/me"
+)
+endpoint          The API endpoint path when the first
+argument is an HTTP method.
+FLAGS
+-d,
+--body
+=
+<
+value
+>
+The request body
+JSON string
+)
+Use
+"-"
+to
+read
+from stdin.
+--describe
+=
+<
+value
+>
+Print a reference
+for
+an endpoint
+path: its HTTP methods, summary, and path parameters.
+Leading slashes and a version prefix
+in
+the path are
+optional. For example,
+"actor-runs/{runId}"
+and
+"/v2/actor-runs/{runId}"
+are both accepted.
+-H,
+--header
+=
+<
+value
+>
+Additional HTTP header
+s
+)
+. Pass a
+single
+"key:value"
+string, or a JSON object like
+'{"X-Foo": "bar", "X-Baz": "qux"}'
+to send multiple
+headers. The flag can only be used once
+;
+use the JSON form
+for
+multiple headers.
+-l, --list-endpoints    List all available Apify API
+endpoints.
+-X,
+--method
+=
+<
+option
+>
+The HTTP method to use. Defaults
+to GET.
+<
+options: GET
+|
+POST
+|
+PUT
+|
+PATCH
+|
+DELETE
+>
+-p,
+--params
+=
+<
+value
+>
+Query parameters as a JSON object,
+e.g.
+'{"limit": 1, "desc": true}'
+-s,
+--search
+=
+<
+value
+>
+Filter results returned by
+--list-endpoints. The query is case-insensitive and
+split
+into tokens by spaces. For an endpoint to be returned,
+every token must appear
+in
+that endpoint's method, path,
+or summary.
+apify telemetry
+DESCRIPTION
+Enable or disable anonymous telemetry. We use this data to improve the CLI and
+the Apify platform.
+SUBCOMMANDS
+telemetry
+enable
+Enables telemetry.
+telemetry disable  Disables telemetry.
+apify telemetry enable
+DESCRIPTION
+Enables telemetry.
+USAGE
+$ apify telemetry
+enable
+apify telemetry disable
+DESCRIPTION
+Disables telemetry.
+USAGE
+$ apify telemetry disable
+Authentication & Account management
+Use these commands to manage your Apify account authentication, access tokens, and configuration settings. These commands control how you interact with Apify platform and manage sensitive information.
+apify auth
+DESCRIPTION
+Log in, log out, and inspect your stored Apify API token. Also available as
+`
+apify login
+`
+/
+`
+apify
+logout
+`
+SUBCOMMANDS
+auth login   Authenticates your Apify account and saves credentials
+to
+'~/.apify/auth.json'
+auth
+logout
+Removes authentication by deleting your API token and
+account information from
+'~/.apify/auth.json'
+auth token   Prints the current API token
+for
+the Apify CLI.
+apify auth login
+/
+apify login
+DESCRIPTION
+Authenticates your Apify account and saves credentials to
+'~/.apify/auth.json'
+All other commands use these stored credentials.
+Run
+'apify logout'
+to remove authentication.
+USAGE
+$ apify auth login
+[
+-m console
+|
+manual
+]
+[
+-t
+<
+value
+>
+]
+FLAGS
+-m,
+--method
+=
+<
+option
+>
+Method of logging
+in
+to Apify.
+<
+options: console
+|
+manual
+>
+-t,
+--token
+=
+<
+value
+>
+Apify API token.
+apify auth logout
+/
+apify logout
+DESCRIPTION
+Removes authentication by deleting your API token and account information from
+'~/.apify/auth.json'
+Run
+'apify login'
+to authenticate again.
+USAGE
+$ apify auth
+logout
+apify auth token
+DESCRIPTION
+Prints the current API token
+for
+the Apify CLI.
+USAGE
+$ apify auth token
+apify info
+DESCRIPTION
+Prints details about your currently authenticated Apify account.
+USAGE
+$ apify info
+apify secrets
+DESCRIPTION
+Manage locally stored secrets that can be referenced from
+'.actor/actor.json'

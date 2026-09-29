@@ -1,0 +1,394 @@
+===== https://developer.salesforce.com/developer-centers/commerce-cloud
+TITLE: Commerce Cloud | Developer
+ACCESSED: 2026-09-28
+
+Video
+Commerce Cloud Overview
+Get an overview of how to transform your ecommerce journey for more sales and stronger shopper relationships.
+Watch now
+Trail
+Discover Commerce Cloud
+Learn what Commerce Cloud is and understand the key differences between B2B, D2C, and B2C Commerce.
+Learn now
+Video
+B2C Commerce Overview
+Learn how B2C Commerce can help you connect to shoppers, maximize revenue, and drive efficiency.
+Watch Now
+Developer Guide
+Storefront Comparison
+Understand the key differences between the various B2C options and which APIs and tools you can use with each option.
+Read more
+Developer Guide
+Quick Start
+Try out some basic steps for using storefront options such as Composable Storefront and Storefront Reference Architecture (SFRA).
+Get started
+Developer Guide
+Developer Community
+Join a vibrant global community of developers to ask questions, collaborate, and learn more about B2C Commerce.
+Join now
+Developer Guide
+Get Started with B2C Commerce
+Understand the recommended developer workflow to efficiently create a performant site on the B2C Commerce platform.
+Read more
+Developer Guide
+B2C Commerce Architecture
+Get a technical overview of the key concepts, initial setup, and essential tools to build and manage your storefront.
+Read more
+Salesforce Help
+Merchandise Your Site
+Learn how to use Business Manager to set up your B2C Commerce data such as product and marketing information.
+Read more
+Developer Guide
+Agentforce Commerce Vibes
+Agentforce Commerce Vibes is a Visual Studio Code extension that helps you build, administer, and debug B2C storefront projects with AI-assisted chat and agent skills based on the Agentic B2C Developer Toolkit.
+Read more
+Developer Guide
+Storefront Next
+Create Storefront Next with modern web technologies, such as React 19 and Tailwind CSS, and host it on Managed Runtime. Get up and running with automated setup in Business Manager.
+Read more
+Developer Guide
+Composable Storefront
+Create a headless site with a fast and flexible architecture based on the Progressive Web App Kit and Managed Runtime.
+Read more
+Developer Guide
+Storefront Reference Architecture (SFRA)
+Build state-of-the-art shopping experiences faster with a mobile-optimized user experience and efficient, modern site architecture.
+Read more
+Developer Guide
+Hybrid Storefront
+To gradually migrate your site from SFRA to Composable Storefront, use a hybrid implementation.
+Read more
+AppExchange
+B2C Commerce on AppExchange
+Find apps and certified consulting organizations to extend your B2C Commerce site and accelerate development.
+Read more
+Salesforce Help
+B2C Commerce Release Notes
+Learn about new features and updates for B2C Commerce, API, SFRA Storefront, Composable Storefront, and Storefront Next.
+Read more
+Video
+Einstein Demo
+Learn how Commerce Cloud Einstein can power personalized shopping experiences across shopper touchpoints.
+Watch now
+Trail
+Deploy Einstein
+Add AI-powered search, product recommendations, and shopper insights to your B2C Commerce site.
+Start learning
+Developer Guide
+Einstein API
+Use B2C Commerce Einstein API to get personalized product recommendations.
+Read more
+Salesforce Help
+Einstein Guides
+Learn how to use AI-powered merchandising tools to deliver actionable insights and tailored shopper experiences.
+Read more
+Help
+Do I Have B2C, B2B, or D2C?
+Find out which product you’re using so that you can access the correct documentation and resources.
+Read more
+Developer Guide
+B2B and D2C Commerce
+Design a B2B or D2C Commerce solution that uses the power of Lightning Experience to meet your business needs.
+Get started
+Developer Guide
+Salesforce Commerce Extensions
+Extensions enable fine-grained customization of B2B and D2C storefront functionality to meet your unique business needs and improve the shopper experience.
+Read more
+Read more
+Sign up now
+
+===== https://www.salesforce.com/products/free-trial/developer/
+TITLE: Developer Edition with Agentforce and Data 360 | Salesforce
+ACCESSED: 2026-09-28
+
+Developer Edition with Agentforce and Data 360 | Salesforce
+Skip to content
+Oops, something went wrong. Please try again later.
+
+===== https://docs.salesforce.com/
+TITLE: Salesforce Docs Portal
+ACCESSED: 2026-09-28
+
+Salesforce Docs Portal
+Official Salesforce documentation in formats designed for agents, LLMs, and direct HTTP retrieval.
+Admin
+: Salesforce administrator and end-user help across Salesforce products.
+Architect
+: Salesforce architecture guidance for designing secure, reliable, and integrated solutions.
+Developer
+: Salesforce APIs, programming guides, SDKs, and reference documentation.
+Legacy Developer
+: Legacy Atlas-format Salesforce developer reference that is migrating to the Developer collection.
+MuleSoft
+: MuleSoft Anypoint Platform, connectors, DataWeave, runtime, and related tools.
+Tableau
+: Tableau Desktop, Server, Cloud, Prep, Public, APIs, and Blueprint documentation.
+
+===== https://developer.salesforce.com/
+TITLE: Developer Portal | Salesforce Developers | Developer
+ACCESSED: 2026-09-28
+
+Tune in
+Build with React on Salesforce: Multi-Framework Is Now GA.
+Ship production-ready React apps natively on Salesforce — with authentication, security, and governance built in. Here’s what changed in Multi-Framework since beta, and how to migrate.
+Read blog
+Introducing Salesforce Headless 360 Decoded.
+Build beyond the Salesforce UI and bring Salesforce to every agent, app, and experience. Learn how to build with Salesforce from the tools you already use, including coding agents, AI assistants, collaboration tools, MCP tools, and APIs.
+Watch now
+Video Series: React on Salesforce.
+Go beyond Lightning and build composable web experiences natively on Salesforce. Learn modern frontend development patterns from Salesforce Developer Advocates using React and other frameworks.
+Learn more
+Explore virtual events for developers.
+Join expert-led workshops, AMAs, and technical sessions to build skills, apply what works, and deliver real business outcomes.
+Browse events
+Salesforce Headless 360 Decoded
+Build beyond the Salesforce UI and bring Salesforce to every agent, app, and experience. Learn how to build with Salesforce from the tools you already use, including coding agents, AI assistants, collaboration tools, MCP tools, and APIs.
+Watch now
+Extend Data 360 with Code Extension
+Dive into a new video series to learn how to build and debug custom Python code locally, then deploy and monitor it in Data 360 using the Data 360 Code Extension SDK and Claude Code.
+Watch now
+React on Salesforce
+Learn how to get started building React apps on Salesforce, including setting up your environment, connecting to Salesforce data, and exploring modern front-end development workflows.
+Watch now
+Data 360 Activated
+Learn how to dismantle complex data silos and build a unified data foundation with Data 360.
+Watch now
+See all videos
+The Future of the Salesforce Developer in the Agentic AI Era
+The role isn’t shrinking. It’s being redefined, and the developers who see it clearly will define what comes next.
+Read the blog
+New in Salesforce Developer Edition: Agentforce Vibes IDE, Claude 4.5, MCP
+Salesforce Developer Edition now includes Agentforce Vibes IDE, Claude Sonnet 4.5, and Hosted MCP Servers – all free. Here’s what’s new.
+Read the blog
+Expose Custom Apex as a Hosted MCP Tool for Agents
+Shift from UI-first to agent-first with Headless 360. Learn how to expose your Apex logic as Salesforce Hosted MCP tools, allowing AI agents like Claude or Cursor to discover and invoke your business intelligence directly via the Model Context Protocol.
+Read the blog
+Agent Script Decoded: Intro to Agent Script Language Fundamentals
+Learn how to master Agent Script to build agents using hybrid reasoning: the perfect balance of deterministic logic and generative power.
+Read the blog
+See all posts
+Hands On with AIforce Workshop (APAC)
+October 7, 2026 • Online
+Register for the webinar
+Hands On with AIforce Workshop
+October 7, 2026 • Online
+Register for the webinar
+AIforce codeLive
+October 14, 2026 • Online
+Register for the webinar
+See all events
+Salesforce REST API
+Integrate Salesforce data into apps and perform complex operations on a large scale.
+Read more
+B2C Commerce API
+Ensure omnichannel flexibility by using a headless API to build custom apps, from full storefronts to merchant tools.
+Read more
+Marketing Cloud APIs
+Create your ideal integration with the Marketing Cloud REST and SOAP APIs.
+Read more
+Metadata API
+Customize, deploy, package, and upgrade application metadata.
+Read more
+Browse all APIs
+Agentforce
+Add AI capabilities to your applications with pro-code and low-code tools.
+Platform
+Extend Salesforce to build enterprise-grade apps that deliver amazing customer experiences.
+Data Cloud
+Connect, federate, and harmonize data from any source and build AI apps with relevant data and insights, right in the flow of work.
+Marketing Cloud
+Deliver new, data-first digital marketing experiences that inspire customer action and loyalty.
+Service Cloud
+Extend service solutions and deliver custom service experiences.
+Commerce Cloud
+Develop personalized commerce experiences on a fast, flexible platform.
+MuleSoft
+Unlock and integrate data from any system with MuleSoft to deliver critical, time-sensitive projects.
+Tableau
+Integrate visual analytics into your business applications with Tableau Next and Tableau.
+Slack
+Connect, simplify, and automate your work with Slack apps.
+View all products
+Sign up now
+
+===== https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/get-started.html
+TITLE: B2C Commerce Architecture | B2C Commerce | B2C Commerce | Salesforce Developers
+ACCESSED: 2026-09-28
+
+B2C Commerce Architecture
+We provide several resources to help you learn about Salesforce B2C Commerce.
+For a summary of the developer workflow, see
+Get Started with B2C Commerce
+.
+B2C Commerce provides the resources and processing for your ecommerce sites, called a storefront in the B2C Commerce documentation. You create and build your sites in your realm.
+A customer realm includes a primary instance group and a secondary instance group.
+Typically, you have a single realm. The realm contains instances on which to develop, test, and deploy your online storefront. A B2C Commerce instance is an application infrastructure. It includes web servers, application servers, and database servers. You usually have six B2C Commerce instances: three or more sandbox instances for code development, and three instances for site staging, testing, and deployment.
+Development instance: used for site configuration, data enrichment, and data import.
+Staging instance: used to test your site before deployment.
+Production instance: hosts the live site that is used by customers.
+A Merchant can control their storefront online merchandising, configuration, and customization options. The instance administrator for the merchant has direct control over password management, user permissions, and stopping or starting instances within their realm.
+In most cases, you have a single realm in which to develop, stage, and deploy multiple sites with different branding or locales. The people managing the storefront site don’t have to be in the same location. Sites can share product catalogs or have different catalogs.
+If you have different lines of business or global teams that each have their own processes or business policies, consider maintaining multiple realms. Also consider separate realms if you have distinct organizations with separate back-end integrations, schedules, or other concerns that make it advantageous to let each team manage their sites independently. Sites in the same realm can share the product catalog for product data. Sites in different realms can’t share data through the catalog structure. However, import data into different realms to share it.
+Example: Let’s say that you have sites with separate brands in Europe and the Pacific Rim. Optionally, configure a realm for the team managing the Pacific Rim sites and another realm for Europe.
+The primary instance group has three instances, which merchants use to add data, test code, and run live sites. A realm can have only one PIG per realm.
+The secondary instance group (SIG) contains your sandbox instances. The minimum number of sandboxes in a SIG is 3, and the maximum is 47.
+A B2C Commerce instance contains the tools and resources for customizing storefronts. Access an instance through your browser, or use Business Manager.
+There are four instance types: Sandbox, Staging, Development, and Production. Depending on the type, the instance is either in the realm’s primary instance group (PIG) or a secondary instance group (SIG).
+Sandboxes
+Staging
+Development
+Production
+Usage
+Used by customer developers to create and update storefront code. Used by customer developers to create and update storefront code.
+Merchandising work is done here.
+Simulates the production environment. Used as the final step in testing the intersection of content and code. Goes through the CDN provided by B2C Commerce, but doesn’t cache.
+Live instance used for storefront transactions. Connected to the CDN provided by B2C Commerce. If active merchandising is enabled, collects active data. Storefront toolkit is disabled.
+Location
+SIG
+PIG
+PIG
+PIG
+Data I/O
+Most system jobs are disabled for sandboxes.
+Data and code are uploaded to Staging and then replicated to Production or Development.
+Data and code are replicated from Staging. Data can be exported from the instance.
+Data and code are replicated from Staging. Active data is gathered from Production and imported into other instance types. Data can be exported from the instance and imported into Staging.
+Global Release
+Updated for: Preview and General Availability
+Updated for: General Availability
+Updated for: General Availability
+Updated for: General Availability
+Caching
+Caching is disabled. Full file system checks are performed.
+Caching is disabled. Full file system checks are performed.
+Caching is disabled. No file system checks are performed.
+Caching is enabled all the way through to the browser.
+Depending on the size of your team, one person can play more than one role.
+Role
+Instance Type
+Responsibilities
+Developer
+Sandbox, Staging
+A developer creates or modifies templates, pipelines, and scripts on a local machine and uploads them to a Sandbox instance to test. Ultimately, the developer is responsible for uploading code to the Staging instance. The developer can also export data added by merchandisers on the Staging instance to use as test data for the sandboxes. Developers never use the Development instance unless they are involved in the testing process fo
+
+===== https://developer.salesforce.com/docs/commerce/sfnext/guide/sfnext-get-started.html
+TITLE: Storefront Next | Salesforce Developers
+ACCESSED: 2026-09-28
+
+Build Modern and Scalable Storefronts with Storefront Next
+Storefront Next delivers a performant, reliable, and personalized storefront experience by using modern web technologies, such as React 19 and Tailwind CSS.
+Storefront Next uses React Router 7 framework mode, which renders pages on the server for initial page loads and reduces client-heavy processing in the browser. This server-driven processing boosts storefront shopping experience and client performance. With server-side personalization and user state management via cookies, Storefront Next delivers tailored content and data without sacrificing performance. Storefront Next uses Tailwind and shadcn/ui for CSS styling, which results in smaller storefront bundles and improved Core Web Vitals.
+Storefront Next provides these benefits.
+High-performance server rendering: Optimizes for Core Web Vitals through streaming server-side rendering (SSR) and intelligent hydration.
+Personalization-first: Delivers tailored content and data without sacrificing performance.
+AI-ready: Provides AI-assisted development with the
+Agentic B2C Developer Toolkit
+and AI-assisted shopping with Shopper Agent.
+Unified workflows: Bridges the gap between Page Designer for business users and pro-code routes for developers.
+Storybook integration: Accelerates development and enhances component quality through the Storybook component library and automated testing.
+In this section:
+Learn about the architecture and core concepts that power Storefront Next, and review browser compatibility requirements to ensure your storefront works across different platforms. Get up and running with Storefront Next by creating a new storefront or connecting an existing one to B2C Commerce.
+Get Started
+Customize your storefront and build the main shopping flows. Manage shopper identity, control access to your storefront environments, and deliver content and merchandise.
+Customize Storefront Next
+Build the Shopping Experience
+Manage Shopper Identity
+Present Content and Merchandise
+Secure Your Storefront
+CLI Reference
+Managed Runtime provides the cloud infrastructure to deploy, host, and monitor Storefront Next.
+Deploy and Manage Storefront Next on Managed Runtime
+Preview, Test, and Debug Storefront Next
+Optimize the Performance of Storefront Next
+Integrate Storefront Next with Analytics and Data Platforms
+To run Storefront Next alongside your existing SFRA or SiteGenesis storefront, use Hybrid Auth. This section covers hybrid storefront setup, routing configuration, and login and registration support for hybrid deployments.
+Use Storefront Next in a Hybrid Implementation
+When your storefront is ready for staging or production, launch it to make it accessible from a public web address. Configure routing rules in Business Manager for vanity or custom domains to direct traffic to the right environment.
+Launch Your Storefront Next
+Configure Routing Rules in Business Manager
+If you’re a PWA Kit developer and are building a Storefront Next storefront, learn about the differences in the technologies and architecture used in PWA Kit and Storefront Next. Storefront Next keeps the same B2C Commerce backend model as PWA Kit (SCAPI, SLAS, and Managed Runtime), but it shifts implementation patterns across the stack. The storefront architecture shifts from a client-heavy, hook-driven architecture in PWA Kit to a server-first architecture built on React Router 7, Vite, and TypeScript in Storefront Next.
+Migrate from PWA Kit to Storefront Next
+
+===== https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/quick-start-landing-page.html
+TITLE: Quick Start | B2C Commerce | B2C Commerce | Salesforce Developers
+ACCESSED: 2026-09-28
+
+B2C Commerce Quick Start
+Try out some basic steps for using a few of the B2C Commerce storefront options:
+Agentic MCP  Shopper Tools Quick Start (Pilot)
+Storefront Reference Architecture (SFRA) Getting Started
+(first get access to the
+Private GitHub Repos
+)
+Composable Storefront Quick Start
+B2C Commerce API and SDK Quick Start
+B2C Commerce Storefront Options
+Get Started with B2C Commerce
+
+===== https://developer.salesforce.com/docs/commerce/sfra/guide
+TITLE: Announcements | B2C Commerce Storefront Reference Architecture | Salesforce Developers
+ACCESSED: 2026-09-28
+
+Announcements
+In response to your feedback, we’ve completed the
+first phase
+of our developer documentation consolidation. This update streamlines the developer experience by reducing fragmentation across our core product guides.
+Unified Table of Contents (TOC): We combined the guides for
+B2C Commerce
+,
+B2C Commerce APIs (SCAPI)
+, and
+Composable Storefront
+into a single, shared TOC. Whether you’re working in B2C Commerce or building with Composable Storefront, selecting the
+Guides
+tab now presents the same comprehensive navigation tree.
+Centralized API Reference: We created a new parent reference page to simplify how you access technical specifications. This single landing page serves as your starting point to navigate to different sets of API specs, ensuring you no longer have to hunt for individual reference links across different sections.
+Release Notes access: We created a new parent release notes page to simplify how you access B2C Commerce, SCAPI, and Composable Storefront release notes.
+Accessing Guides: Navigate to any of the three product areas (B2C Commerce, SCAPI, or Composable Storefront) and select the
+Guides
+tab to view the unified content list.
+Accessing API Specs: Navigate to any of the three product areas (B2C Commerce, SCAPI, or Composable Storefront) and select the
+Reference
+tab. You can then choose the specific API specification you need from the centralized menu.
+Accessing Release Notes:  Navigate to the
+B2C Commerce Release Notes
+page. Or, for developer documentation release notes, you can navigate to the
+B2C Commerce Developer Documentation Release Notes
+page and then then choose the specific release notes from the list.
+While the navigation is now unified, the content itself hasn’t been physically moved. Your existing bookmarks should continue to function.
+You might notice that the URL in your browser varies depending on whether you access a topic through the new consolidated TOC or via a direct bookmark. Both paths lead to the same source material, ensuring your saved resources remain reliable.
+We remain committed to further improving your documentation experience and will continue to refine and merge technical topics in upcoming phases. We will notify you as additional updates and phases of this consolidation become available.
+
+===== https://developer.salesforce.com/docs/commerce/b2c-commerce/guide
+TITLE: Announcements | B2C Commerce | Salesforce Developers
+ACCESSED: 2026-09-28
+
+Announcements
+In response to your feedback, we’ve completed the
+first phase
+of our developer documentation consolidation. This update streamlines the developer experience by reducing fragmentation across our core product guides.
+Unified Table of Contents (TOC): We combined the guides for
+B2C Commerce
+,
+B2C Commerce APIs (SCAPI)
+, and
+Composable Storefront
+into a single, shared TOC. Whether you’re working in B2C Commerce or building with Composable Storefront, selecting the
+Guides
+tab now presents the same comprehensive navigation tree.
+Centralized API Reference: We created a new parent reference page to simplify how you access technical specifications. This single landing page serves as your starting point to navigate to different sets of API specs, ensuring you no longer have to hunt for individual reference links across different sections.
+Release Notes access: We created a new parent release notes page to simplify how you access B2C Commerce, SCAPI, and Composable Storefront release notes.
+Accessing Guides: Navigate to any of the three product areas (B2C Commerce, SCAPI, or Composable Storefront) and select the
+Guides
+tab to view the unified content list.
+Accessing API Specs: Navigate to any of the three product areas (B2C Commerce, SCAPI, or Composable Storefront) and select the
+Reference
+tab. You can then choose the specific API specification you need from the centralized menu.
+Accessing Release Notes:  Navigate to the
+B2C Commerce Release Notes
+page. Or, for developer documentation release notes, you can navigate to the
+B2C Commerce Developer Documentation Release Notes
+page and then then choose the specific release notes from the list.
+While the navigation is now unified, the content itself hasn’t been physically moved. Your existing bookmarks should continue to function.
+You might notice that the URL in your browser varies depending on whether you access a topic through the new consolidated TOC or via a direct bookmark. Both paths lead to the same source material, ensuring your saved resources remain reliable.
+We remain committed to further improving your documentation experience and will continue to refine and merge technical topics in upcoming phases. We will notify you as additional updates and phases of this consolidation become available.

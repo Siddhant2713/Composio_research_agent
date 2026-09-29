@@ -1,0 +1,212 @@
+{
+  "app": "Podio",
+  "number": 6,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:45:42.252003+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.podio.com/\",\n    \"https://podio.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://podio.com",
+    "https://developers.podio.com/",
+    "https://docs.podio.com/",
+    "https://developer.podio.com/",
+    "https://api.podio.com/",
+    "https://podio.com/docs",
+    "https://podio.com/developers",
+    "https://podio.com/api",
+    "https://podio.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://podio.com/signup?force_locale=en_US",
+    "https://developers.podio.com/authentication",
+    "https://podio.com/extensions",
+    "https://developers.podio.com/doc",
+    "https://company.podio.com/mobile",
+    "https://company.podio.com/contact",
+    "https://company.podio.com/partners"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://api.podio.com/",
+      "reason": "page too thin (53 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://podio.com",
+      "requested_url": "https://podio.com",
+      "status": 200,
+      "title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.podio.com/",
+      "requested_url": "https://developers.podio.com/",
+      "status": 200,
+      "title": "Developers - Podio API Documentation",
+      "chars": 1691,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fdocs",
+      "requested_url": "https://docs.podio.com/",
+      "status": 200,
+      "title": "Login | Podio",
+      "chars": 2044,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fdeveloper",
+      "requested_url": "https://developer.podio.com/",
+      "status": 200,
+      "title": "Login | Podio",
+      "chars": 2044,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fdevelopers",
+      "requested_url": "https://podio.com/developers",
+      "status": 200,
+      "title": "Login | Podio",
+      "chars": 2044,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fapi",
+      "requested_url": "https://podio.com/api",
+      "status": 200,
+      "title": "Login | Podio",
+      "chars": 2044,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://podio.com/signup?force_locale=en_US",
+      "requested_url": "https://podio.com/signup?force_locale=en_US",
+      "status": 200,
+      "title": "Podio",
+      "chars": 2046,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.podio.com/authentication",
+      "requested_url": "https://developers.podio.com/authentication",
+      "status": 200,
+      "title": "Authentication - Podio API Documentation",
+      "chars": 4267,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://podio.com/extensions",
+      "requested_url": "https://podio.com/extensions",
+      "status": 200,
+      "title": "Podio Extensions",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.podio.com/doc",
+      "requested_url": "https://developers.podio.com/doc",
+      "status": 200,
+      "title": "Podio API Documentation - Podio API Documentation",
+      "chars": 3696,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Podio provides a public REST-based programmatic interface supporting OAuth2 authentication for building applications and integrations.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Supports server-side, client-side, username & password, and app authentication flows returning access tokens sent via the Authorization header.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can grab an API key directly from their account settings page.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"PHP\",\n      \".NET\",\n      \"Ruby\",\n      \"Java\",\n      \"Python\",\n      \"Android\",\n      \"Objective-C\"\n    ],\n    \"notes\": \"The API includes comprehensive core areas such as Applications, Items, Tasks, and Hooks.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"No Model Context Protocol server or integration is mentioned in the documentation pages.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.podio.com/authentication\",\n      \"claim\": \"The API uses OAuth2 for authentication\",\n      \"quote\": \"The Podio API uses the OAuth2 protocol for authentication.\"\n    },\n    {\n      \"url\": \"https://developers.podio.com/\",\n      \"claim\": \"Developers can obtain an API key from account settings\",\n      \"quote\": \"grab an API key for each app you want to build from your account settings page.\"\n    },\n    {\n      \"url\": \"https://developers.podio.com/\",\n      \"claim\": \"The API supports webhooks\",\n      \"quote\": \"If you want to build event-driven applications, you have the ability to register webhooks in your Podio apps.\"\n    },\n    {\n      \"url\": \"https://developers.podio.com/\",\n      \"claim\": \"The API provides several language SDK wrappers\",\n      \"quote\": \"We currently provide wrappers for PHP, .NET, Ruby, Java, Python, Android and Objective-C which make working with common API operations very simple.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.podio.com/authentication\",\n      \"quote\": \"The Podio API uses the OAuth2 protocol for authentication.\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.podio.com/\",\n      \"quote\": \"Then you should review our Terms of API use and then grab an API key for each app you want to build from your account settings page.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.podio.com/\",\n      \"quote\": \"The Podio API is a complete programmable interface to all Podio functionality.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint_url": "https://podio.com",
+    "one_liner": "Podio provides a public REST-based programmatic interface supporting OAuth2 authentication for building applications and integrations.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Supports server-side, client-side, username & password, and app authentication flows returning access tokens sent via the Authorization header."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can grab an API key directly from their account settings page."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "PHP",
+        ".NET",
+        "Ruby",
+        "Java",
+        "Python",
+        "Android",
+        "Objective-C"
+      ],
+      "notes": "The API includes comprehensive core areas such as Applications, Items, Tasks, and Hooks."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.podio.com/authentication",
+        "claim": "The API uses OAuth2 for authentication",
+        "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.podio.com/",
+        "claim": "Developers can obtain an API key from account settings",
+        "quote": "grab an API key for each app you want to build from your account settings page.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.podio.com/",
+        "claim": "The API supports webhooks",
+        "quote": "If you want to build event-driven applications, you have the ability to register webhooks in your Podio apps.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.podio.com/",
+        "claim": "The API provides several language SDK wrappers",
+        "quote": "We currently provide wrappers for PHP, .NET, Ruby, Java, Python, Android and Objective-C which make working with common API operations very simple.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.podio.com/authentication",
+        "quote": "The Podio API uses the OAuth2 protocol for authentication."
+      },
+      "access": {
+        "url": "https://developers.podio.com/",
+        "quote": "Then you should review our Terms of API use and then grab an API key for each app you want to build from your account settings page."
+      },
+      "api_surface": {
+        "url": "https://developers.podio.com/",
+        "quote": "The Podio API is a complete programmable interface to all Podio functionality."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:45:54.904023+00:00"
+}

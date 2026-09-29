@@ -1,0 +1,377 @@
+===== https://docs.ecwid.com
+TITLE: Build with Ecwid apps | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Explore our guides and examples to integrate Ecwid Ecommerce
+Customize your store
+Get access to API with an app
+Learn app settings
+Develop public apps
+FAQ about public applications
+Submit your app idea
+Get human support
+Ask your questions and get answers from our API specialists.
+Contact Ecwid API support
+Get help with API docs, update your app settings and more.
+Join Slack community
+Connect and collaborate with the Ecwid team and fellow developers.
+Automate integrations
+Webhooks
+Automate your business logic
+Automation examples
+Check out code and flow for syncing orders or product stock
+Build websites
+Site templates
+Complete website overhaul
+Custom sections
+Building blocks for the website
+Customize storefront
+List of JS API calls
+Find full list of available JS API calls
+JS API: track events
+Use pre-built event handlers on the storefront
+JS API: manage cart and checkout
+Add or remove products from the cart, set customer's email, comments, and more
+JS API: Open page
+Create redirects to products or search results
+JS API: manage customers
+Check who is logged in, automate logouts and cookie consent
+JS API: Generate carts
+Create pre-filled carts as links and share them with your customers
+Create discounts
+Accept tips
+Add tips selector to the checkout
+Launch promos
+Highly customizeable discounts for your store
+Discount coupons
+Create personal offers for your customers
+Browse guides
+Sync new orders
+Export order data to external services
+Extra fields
+Collect additional data with orders
+Create orders with API calls
+Calculate order details and place orders in the store on behalf of your clients
+Payment API
+Connect any payment provider with your Ecwid store
+Shipping API
+Calculate online shipping rates at the checkout
+Ecwid API features
+
+===== https://developers.ecwid.com
+TITLE: Ecwid Developers | Build an e-commerce app for Ecwid merchants
+ACCESSED: 2026-09-28
+
+Ecwid Developers | Build an e-commerce app for Ecwid merchants
+Start building with the Ecwid API
+Develop innovative solutions that power the future of ecommerce.
+Customize a store’s functionality or design, create headless sites, or build powerful apps that empower merchants selling around the world.
+Get started
+Create any commerce experience
+Ecwid provides everything you need to develop custom storefronts, personalize shopping experience, or integrate with any external services.
+Apps
+Create apps to enhance and expand the functionality of Ecwid (Lightspeed eCom
+E-Series).
+Build an app
+Site templates
+Take control of store design and craft stunning templates that match your brand identity and make your brand stand out.
+Develop a template
+Webhooks
+Build automated business processes or sync the store data with an external service.
+Connect webhooks
+The opportunity for you?
+Be part of a solution
+Build powerful solutions that integrate with Ecwid — and become part of thousands of merchants’ online selling success — with access to our APIs, robust support and tools. The possibilities to develop for Ecwid are endless.
+Earn revenue
+Diversify your revenue streams and monetize your services to Ecwid’s growing user base. Increase your market reach and enter a new market by offering
+game-changing
+solutions to merchants selling around the world.
+Access
+world-class
+support and resources
+Elevate your business to new heights with educational resources, marketing materials, and dedicated sales and tech support.
+Tools and Resources
+Quickly build, test, and release your apps with our comprehensive toolkit for commerce development.
+Learn how
+Get developer support
+Ask your questions, get answers from our API specialists.
+Contact support
+Join Slack community
+Connect and collaborate with the Ecwid team and fellow developers.
+Join
+Learn API Reference
+Learn everything you need to know about managing the store data: products, orders, customers, and many more.
+Learn
+We use cookies or similar technologies to maintain security, enable user choice and improve our sites. We also set cookies for marketing purposes and to provide personalised content and advertising. You can reject all non-essential cookies by clicking “Reject all.”
+Accept all cookies
+Reject all
+
+===== https://docs.ecwid.com/
+TITLE: Build with Ecwid apps | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Explore our guides and examples to integrate Ecwid Ecommerce
+Customize your store
+Get access to API with an app
+Learn app settings
+Develop public apps
+FAQ about public applications
+Submit your app idea
+Get human support
+Ask your questions and get answers from our API specialists.
+Contact Ecwid API support
+Get help with API docs, update your app settings and more.
+Join Slack community
+Connect and collaborate with the Ecwid team and fellow developers.
+Automate integrations
+Webhooks
+Automate your business logic
+Automation examples
+Check out code and flow for syncing orders or product stock
+Build websites
+Site templates
+Complete website overhaul
+Custom sections
+Building blocks for the website
+Customize storefront
+List of JS API calls
+Find full list of available JS API calls
+JS API: track events
+Use pre-built event handlers on the storefront
+JS API: manage cart and checkout
+Add or remove products from the cart, set customer's email, comments, and more
+JS API: Open page
+Create redirects to products or search results
+JS API: manage customers
+Check who is logged in, automate logouts and cookie consent
+JS API: Generate carts
+Create pre-filled carts as links and share them with your customers
+Create discounts
+Accept tips
+Add tips selector to the checkout
+Launch promos
+Highly customizeable discounts for your store
+Discount coupons
+Create personal offers for your customers
+Browse guides
+Sync new orders
+Export order data to external services
+Extra fields
+Collect additional data with orders
+Create orders with API calls
+Calculate order details and place orders in the store on behalf of your clients
+Payment API
+Connect any payment provider with your Ecwid store
+Shipping API
+Calculate online shipping rates at the checkout
+Ecwid API features
+
+===== https://docs.ecwid.com/api-reference
+TITLE: REST API overview | REST API Reference | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.
+We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.
+Please note that our REST API has
+rate limits
+We accept up to
+600 requests per minute
+per token
+. If you exceed the limit, all subsequent requests will be ignored with an error 429 and a
+"Retry-After": N
+header (number
+N
+is a cooldown) . If more requests continue to come from a non-working token, Ecwid will block it for much longer after 20 requests per minute or a total of 600 requests with non-working tokens per IP.
+Ecwid API also supports
+gzip
+encoding through the
+"Accept-Encoding": "gzip"
+header.
+Get access to REST API
+If you don't yet have access to Ecwid API, follow the detailed instructions in these articles:
+Set up your dev environment in Ecwid
+Make your first API request
+Add more features to your custom app
+Get started with the popular API calls
+General store settings:
+Get store profile
+Update store profile
+Store reports
+Orders:
+Search orders
+Search abandoned carts
+Calculate order details
+Products:
+Search products
+Search product variations
+Search product reviews
+Customers:
+Search customers
+Search customer groups
+Update customer
+Categories:
+Search categories
+Assign products to the category
+Upload category image
+Discounts:
+Search promotions
+Create promotion
+Search discount coupons
+REST API error codes
+9 months ago
+
+===== https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields
+TITLE: Checkout extra fields | REST API Reference | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Checkout extra fields
+allow you to add highly customizable input fields, selectors, and tips/charges to the checkout.
+With checkout extra fields, you can:
+Collect additional customer data at the checkout and save it to the order details, for example, delivery comments.
+Set up a tips collection in your store.
+Collect additional hidden surcharges based on certain conditions, for example, specific shipping methods.
+Set up a referral or loyalty tracking.
+And many more!
+Choose one of three ways of adding extra fields to the checkout:
+Use a
+no-code solution
+built into the Ecwid admin.
+The functionality is limited to input fields, selectors, and a non-configurable datepicker.
+Set up a custom JavaScript file that dynamically adds checkout extra fields on the storefront. This way, you are not limited in available functionality, and can set up extra fields flexibly for each order depending on custom conditions.
+Add checkout extra fields with JavaScript
+Create and manage checkout extra fields with the REST API. This way, you also have access to all functionality and do not depend on the availability of your JavaScript file. However, these fields will always be the same for all orders in your store.
+Manage checkout extra fields with REST API
+Previous
+Delete payment option
+Add checkout extra fields with JavaScript
+
+===== https://docs.ecwid.com/api-reference/advanced/js-api-calls
+TITLE: JS API calls | REST API Reference | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Check out the
+Custom JavaScript code and Ecwid JS API
+article to get started with Ecwid JS API.
+Auto event triggers
+Ecwid.OnAPILoaded.add()
+Ecwid.OnCartChanged.add()
+Ecwid.OnConsentChanged.add()
+Ecwid.OnOrderPlaced.add()
+Ecwid.OnPageLoad.add()
+Ecwid.OnPageLoaded.add()
+Ecwid.OnPageSwitch.add()
+Ecwid.OnSetProfile.add()
+onTileLoaded.add()
+onTileUnloaded.add()
+Storefront and customers
+Ecwid.getOwnerId()
+Ecwid.getStorefrontLang()
+Ecwid.formatCurrency()
+Ecwid.getVisitorLocation()
+Ecwid.Customer.get()
+Ecwid.Customer.signout()
+Ecwid.getTrackingConsent()
+Ecwid.setTrackingConsent()
+Ecwid.openPage()
+Cart and checkout
+Ecwid.Cart.get()
+Ecwid.Cart.addProduct()
+Ecwid.Cart.removeProduct()
+Ecwid.Cart.removeProducts([])
+Ecwid.Cart.clear()
+Ecwid.Cart.calculateTotal()
+Ecwid.Cart.gotoCheckout()
+Ecwid.Cart.canGotoCheckout()
+Ecwid.Cart.setOrderComments()
+Ecwid.Cart.setCustomerEmail()
+Ecwid.Cart.setAddress()
+Ecwid.Cart.setBillingAddress()
+
+===== https://docs.ecwid.com/webhook-automations
+TITLE: Webhook automations overview | Webhook automations | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Quickstart with a code:
+Code example for webhook handling
+Connect webhooks
+Set up webhooks for your app
+Ecwid webhooks are
+automatic real-time notifications
+for apps about different events in the store. Webhooks are always sent as
+POST requests
+from Ecwid API to your server when something happens in a store, allowing you to automate practically any business process.
+To receive webhooks, you need a self-hosted endpoint working on your side called
+webhookUrl
+:
+Webhooks must be delivered as quickly as possible, so they only carry essential data about the event, for example, event details, store and item ID, timestamp, etc.
+When you receive a webhook from Ecwid API, you must send back a confirmation to stop Ecwid API from sending it again.
+See also
+How to process webhooks
+Event data in webhooks
+List of webhook events
+How to process webhooks
+
+===== https://docs.ecwid.com/get-started/api-glossary
+TITLE: API glossary | Ecwid Documentation
+ACCESSED: 2026-09-28
+
+Ecwid admin
+A one-for-all tool, where users can manage all aspects of their store: products, orders, customers, website, integrations, etc.
+Ecwid app
+Extension users can install to their Ecwid stores that adds some new functionality, integration, or a way to customize store content or design.
+Ecwid user
+Anyone who creates an Ecwid store is considered a user: site owners, merchants, and developers helping other users with managing their sites and business.
+Instant Site
+Website builder created by Ecwid that allows creating for both ecommerce and non-ecommerce sites.
+Instant Site Editor
+Native UI for building Ecwid websites available to all Ecwid users right from the Ecwid admin.
+Ecwid App Market
+Marketplace with applications that extend store functionality, add new ways of customization, or integrate a store with another service, for example, payment provider, CRM system, shipping rates calculator, etc.
+Go to App Market
+Custom app
+Private application for accessing Ecwid API in a specific store. Ecwid creates one custom app for any user who visits the app dashboard in Ecwid admin for the first time.
+Public app
+An app available in the
+Ecwid App Market
+. Learn more about publishing your app:
+Launch apps
+App dashboard
+Hidden page in Ecwid admin where developers can create new applications, check app settings, get access tokens, and request application updates.
+Go to the
+app dashboard
+Access scope
+Permission for the app to do a specific action or access some data in the store. For example, the
+read_orders
+scope allows the app to get information about orders placed in the store and the
+add_payment_method
+scope allows the app to add a new online payment method to the checkout.
+Learn more about access scopes
+API keys
+Unchangeable and unique credentials for app authentication and decoding some API requests.
+Every application has two API keys:
+client_id
+(app ID) and
+client_secret
+(app secret).
+App ID
+An app key used to identify the particular application. For public apps, the app ID often matches with the app name. In API, we refer to this ID as the app’s
+client_id
+App secret
+Unique authentication key of an app that must be kept hidden and secure as it grants access to app authentication. In documentation, reffered as
+client_secret
+Access tokens
+Secure app credentials for authorizing REST API requests. If an app is installed in several Ecwid stores, it has unique access tokens for every store. 
+
+There are two tokens:
+secret_token
+and
+public_token
+. Learn more about app access tokens:
+App settings
+App endpoint
+Link to a self-hosted server URL connected to the app that enables a specific feature. For example, the
+paymentUrl
+endpoint allows you to receive online payment requests from your store through the app.
+Previous
+Add more features to your custom app
+What is an Ecwid app

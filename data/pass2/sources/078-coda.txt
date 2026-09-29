@@ -1,0 +1,212 @@
+===== https://docs.superhuman.com/developers/apis/v1
+TITLE: Superhuman Docs API (v1) Reference Documentation
+ACCESSED: 2026-09-28
+
+Superhuman Docs API (v1) Reference Documentation
+Superhuman Docs API
+(
+1.6.0
+)
+Developer Support
+:
+care@superhuman.com
+URL:
+https://superhuman.com/developers
+License:
+Superhuman Developer Terms
+Terms of Service
+Introduction
+The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):
+List and search documents
+Create new docs and copy existing ones
+Share and publish docs
+Discover pages, tables, formulas, and controls
+Read, insert, upsert, update, and delete rows
+If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the
+Superhuman Docs MCP server
+. It's optimized for LLM usage
+patterns and often exposes more granular methods for accessing and modifying data.
+Getting Started
+Our
+Getting Started Guide
+helps you learn the
+basic of working with the API and shows a few ways you can use it. Check it out, and learn how to:
+Read data from tables and write back to them
+Build a one-way sync from one document to another
+Automate reminders
+Sync your Google Calendar to Superhuman Docs
+Changes to the API
+As we update and release newer versions of the API, we reserve the right to remove
+older APIs and functionality with a 3-month deprecation notice. We will post about such changes as well as announce
+new features in the
+Developers Central
+section of our Community,
+and update the
+API updates
+doc.
+Using the API
+The Superhuman Docs REST API is designed to be straightforward to use. You can use the language and platform of your choice to
+make requests. To get a feel for the API, you can also use a tool like
+Postman
+or
+Insomnia
+.
+API Endpoint
+This API uses a base path of
+https://coda.io/apis/v1
+.
+Resource IDs and Links
+Each resource instance retrieved via the API has the following fields:
+id
+: The resource's immutable ID, which can be used to refer to it within its context
+type
+: The type of resource, useful for identifying it in a heterogenous collection of results
+href
+: A fully qualified URI that can be used to refer to and get the latest details on the resource
+Most resources can be queried by their name or ID. We recommend sticking with IDs where possible, as names are
+fragile and prone to being changed by your doc's users.
+List Endpoints
+Endpoints supporting listing of resources have the following fields:
+items
+: An array containing the listed resources, limited by the
+limit
+or
+pageToken
+query parameters
+nextPageLink
+: If more results are available, an API link to the next page of results
+nextPageToken
+: If more results are available, a page token that can be passed into the
+pageToken
+query parameter
+The maximum page size may change at any time, and may be different for different endpoints.
+Please do not rely on it
+for any behavior of your application. If you pass a
+limit
+parameter that is larger than our maximum allowed limit,
+we will only return as many results as our maximum limit. You should look for the presence of the
+nextPageToken
+on the
+response to see if there are more results available, rather than relying on a result set that matches your provided limit.
+To fetch a subsequent page of results, pass the
+pageToken
+parameter. Set this parameter to the value given to you as the
+nextPageToken
+in a page response. If no value is provided, there are no more results available. You only need to pass the
+pageToken
+to get
+the next page of results, you don't need to pass any of the parameters from your original request, as they are all
+implied by the
+pageToken
+. Any other parameters provided alongside a
+pageToken
+will be ignored.
+Doc IDs
+While most object IDs will have to be discovered via the API, you may find yourself frequently wanting to get the
+ID of a specific document.
+Here's a handy tool that will extract it for you. (See if you can find the pattern!)
+Rate Limiting
+The Superhuman Docs API sets a reasonable limit on the number of requests that can be made per minute. Once this limit is
+reached, calls to the API will start returning errors with an HTTP status code of 429.
+These are the current rate limits. They are subject to change at any time without notice. For robustness,
+all API scripts should check for HTTP 429 Too Many Requests errors and back off and retry the request.
+Limits apply per-user across all endpoints that share the same limit and across all docs.
+Reading data (with the exceptions below): 100 requests per 6 seconds
+Writing data (POST/PUT/PATCH): 10 requests per 6 seconds
+Writing doc content data (POST/PUT/PATCH): 5 requests per 10 seconds
+Listing docs: 4 requests per 6 seconds
+Reading analytics: 100 requests per 6 seconds
+Consistency
+While edits made in Superhuman Docs are shared with other collaborators in real-time, it can take a few seconds for them to
+become available via the API. You may also notice that changes made via the API, such as updating a row, are not
+immediate. These endpoints all return an HTTP 202 status code, instead of a standard 200, indicating that the
+edit has been accepted a
+
+===== https://docs.superhuman.com/@oleg/getting-started-guide-coda-api
+TITLE: Getting Started Guide: Coda API
+ACCESSED: 2026-09-28
+
+Access your docs programmatically.
+It's easy to create and edit Superhuman Docs in your browser, but sometimes you need programmatic access to automate parts of your workflow. The Superhuman Docs API enables you to read and write data to your Superhuman Docs document using code.
+In this
+Getting Started Guide
+, we'll introduce you to the
+API
+⁠
+and share examples of how to do more with your documents using the API. This guide assumes that you are familiar with writing code.
+If you want to build an integration without writing code, check out the Zapier links in the quick links section below!
+Zapier
+⁠
+is an app that allows you to build workflows connecting two or more apps without code.
+What are examples of things you can do with the API?
+Sync data between a table in one Superhuman Docs document and a table in another Superhuman Docs doc.
+e.g. Syncing data between a company goal tracker to your team's roadmap.
+Set up automated reminders.
+e.g. Send your teammates emails or Slack messages when their tasks are overdue.
+Complement a
+Zap
+⁠
+you are setting up.
+e.g. Do a bulk import of data in another app to complement a Zap you are setting up.
+Set up a deep integration between another app and Superhuman Docs.
+e.g., Build out a database view of your calendar in Superhuman Docs and use it to track notes, action items, and more.
+If you have feedback on the API or you build something that can benefit the entire Superhuman Docs community,
+let us know
+⁠
+!
+Let's start with some examples
+For these examples, we'll be using
+Google Apps Script
+⁠
+(
+v8 runtime
+⁠
+), which lets you write code in a JavaScript-like syntax and use built-in libraries for many Google products, as well as the Coda API library. What's more, you can set up a schedule to run your scripts periodically, and best of all, it's freeーperfect for getting acquainted with the Superhuman Docs API.
+If you haven't used Apps Script before, don't worry! The syntax is straightforward, and you should be able to pick it up easily if you've used JavaScript or another procedural language like Python or Java. Of course, you can always use other mechanisms to host your scripts and access our API if you prefer not to use Apps Script.
+We recommend tackling these in order, but feel free to skip ahead once you've gotten through the first one.
+Guides
+Description
+Done?
+Add personal notes & takeaways
+Guides
+Description
+Done?
+Add personal notes & takeaways
+Start Here
+Learn the Coda API Basics
+[Add notes]
+Building a one-way sync
+Build a one-way sync between tables in two separate documents
+[Add notes]
+Automated reminders
+Set up automated email reminders based on table data
+[Add notes]
+Syncing a Google Calendar
+Sync your Google calendar to Coda & make the most of your time
+[Add notes]
+⁠
+Quick Links
+Superhuman Docs API Related
+⁠
+Reference Documentation
+⁠
+- for the full details of the API
+⁠
+Developer Central in the Superhuman Docs Community
+⁠
+- Discuss API related topics with other developers
+Superhuman Docs & Zapier -
+connect Superhuman Docs with other apps without code
+⁠
+Zapier
+⁠
+- Sign up for Zapier and check out common Docs integrations
+⁠
+Help documentation
+⁠
+- Learn how to get started with Superhuman Docs and Zapier
+Google Apps Script
+⁠
+Documentation Homepage
+⁠
+⁠

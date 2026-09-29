@@ -1,0 +1,782 @@
+===== https://slack.com/intl/en-in/
+TITLE: Slack | AI work platform and productivity tools
+ACCESSED: 2026-09-28
+
+Slack connects your team. Slackbot multiplies what they can do.
+Get started
+Find your subscription
+Trusted by top teams
+Pause animation
+Play animation
+Ask Slackbot
+Plan launches
+Run projects
+Chat with clients
+Automate tasks
+Ask Slackbot
+Plan launches
+Run projects
+Chat with clients
+Automate tasks
+Reimagine what’s possible with AI and agents.
+AI in Slack doesn’t make you think, it helps you do. It summarises and searches based on actual conversations, making every app and agent more helpful and contextually aware than ever.
+Pause animation
+Play animation
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Link may open in new tab
+Knowledge
+Get access to every file, decision and conversation, so you can build on past work instead of recreating it.
+Meet Slackbot: Your personal agent for work.
+Slackbot isn’t just any AI. It’s AI that knows you and your team. It coordinates work across your apps and agents so that one conversation can get work done.
+Learn more about Slackbot
+One search to rule them all.
+AI-powered search puts your company’s entire memory at your fingertips.
+Learn about AI-powered search
+Bring CRM data to the conversation.
+Customer insights now live alongside conversations, so deals keep moving forward.
+Learn about Salesforce in Slack
+97 mins
+Average time that users can save weekly with AI in Slack
+1
+People
+Slack’s conversational UI makes collaborating more approachable, whether you’re working with a colleague or an agent.
+It all starts with a channel.
+Channels are flexible, transparent spaces for working with your team, AI assistants and agents.
+Learn about channels
+When talking is easier than typing…
+…hop on a huddle, our built-in video tool. With AI in Slack, your meeting notes take themselves.
+Learn about huddles
+Bring conversations out of the inbox.
+Slack Connect lets you chat with clients and vendors in real time, directly from Slack. Email can’t compare.
+Learn about Slack connect
+‘Slack has been essential to our growth, our speed and our ability to stay aligned as we scale.’
+Kate Jenson,
+Head of Americas, Anthropic
+Process
+Automate daily stand-up meetings, project updates and approvals so your team can focus on growth instead of guesswork.
+Anyone can automate in Slack.
+By click or by code, Slack makes it easy for anyone to build time-saving automations of their own.
+Learn about workflows
+Manage projects and tasks.
+Track. Approve. Mark as complete. All without leaving the conversation.
+Learn about lists
+A simpler way to get started.
+Project manager’s block? Beginning a brief? There’s a template for that.
+See all templates
+35%
+increase in time saved due to automations for Slack users
+2
+Platform
+Our flexible, open platform is purpose-built for bringing the best agents and AI to every business, and can be tailored to fit however your teams work best.
+From Atlassian to Zoom.
+Google Drive. ChatGPT. Vercel. Box. Asana. Workday. You name it, it works in Slack.
+See all integrations
+Customise Slack to fit your needs.
+Our platform is flexible so that you can build solutions specific to your business.
+Learn about dev tools
+Work without worry.
+If it’s shared in Slack, it’s safe. Our security programme protects your data at every layer.
+Learn about security
+‘Work starts in conversation. That’s why we see Slack as the natural place to build our agents.’
+Guillermo Rauch,
+CEO, Vercel
+The most innovative companies run their business in Slack.
+Slackbot helps MrBeast to create viral videos.
+Slack helps Box bring agents to every employee
+Caraway brings all the right ingredients together In Slack
+Slack helps Rivian to do business in the fast lane
+Slackbot helps MrBeast to create viral videos.
+Slack helps Box bring agents to every employee
+Caraway brings all the right ingredients together In Slack
+Slack helps Rivian to do business in the fast lane
+Get started
+Find your subscription
+We’re in the business of growing businesses.
+90
+%
+of users say that Slack helps them to stay more connected
+4
+43
+The average number of apps used by teams in Slack
+3
+87
+%
+of users say that Slack helps them to collaborate more efficiently
+4
+Millions of people love to work in Slack.
+700M
+messages sent daily
+3
+4M
+Slack Connect users working directly with external teams each week
+3
+3M
+daily workflows
+3
+1.7M
+apps actively used each week
+3
+Don’t just take our word for it.
+Slack is a leader in over 303 G2 market reports.
+5
+Link may open in new tab
+Learn more
+Link may open in new tab
+Watch now
+Link may open in new tab
+Read now
+Link may open in new tab
+Read more
+Link may open in new tab
+Learn more
+Link may open in new tab
+Watch now
+Link may open in new tab
+Read now
+Link may open in new tab
+Read more
+1
+Based on an internal analysis during the pilot of AI in Slack features (channel recaps, thread summaries and AI search answers).
+2
+FY24 Customer Success Metrics. Base: Total n =
+
+===== https://docs.slack.dev/
+TITLE: Slack developer docs | Slack Developer Docs
+ACCESSED: 2026-09-28
+
+Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated, and Slack becomes the platform that powers your workday.
+New
+Create an agent
+Get started
+​
+Create your first Slack app quickly.
+MacOS/Linux
+Windows
+1
+Install the Slack CLI
+Download the command-line tool for developing Slack apps.
+curl -fsSL https://downloads.slack-edge.com/slack-cli/install.sh | bash
+2
+Connect to your workspace
+Log in and authenticate with your Slack workspace.
+slack login
+3
+Create a project
+Set up a new Bolt project from a starter template.
+slack create
+4
+Run your app
+See your app working in Slack.
+slack run
+FULL QUICKSTART GUIDE
+Explore sample apps
+​
+Jumpstart your projects with ready-to-use examples.
+SEE MORE SAMPLES
+Tools
+​
+Pick the tool that fits how you work.
+Slack CLI
+Slack Github Action
+Bolt for Java
+Java Slack SDK
+Bolt for JavaScript
+Node Slack SDK
+Bolt for Python
+Python Slack SDK
+VIEW ALL TOOLS
+Need help?
+​
+Our
+FAQ
+answers many common questions about using our APIs. If you can't find your answer there, you can reach our dedicated Developer Support team through our
+handy support system
+.
+
+===== https://docs.slack.dev/authentication/
+TITLE: Authentication overview | Slack Developer Docs
+ACCESSED: 2026-09-28
+
+Copy as markdown
+Authentication is a critical part of the development process, but it doesn’t have to be daunting. With the right tools and best practices, you’ll have a secure, smooth authentication flow. Whether you’re handling
+OAuth 2.0
+,
+verifying requests
+, or setting up
+Sign in with Slack
+, we’ve got you covered.
+Authentication basics
+​
+Before your app can access Slack data or interact with Slack workspaces, it must go through an authentication process. This involves obtaining the necessary tokens and permissions for your app to function properly. Slack apps use OAuth
+scopes
+to govern what they can access. These are added in the app settings when building an app. You will attach these scopes to your tokens. Check out
+tokens
+to learn more. You can rotate those tokens too! Find out how on the
+Using token rotation
+page.
+Key concepts
+​
+OAuth 2.0
+: Learn how to use OAuth 2.0 to securely authenticate users and request access tokens.
+Tokens
+: Understand the different types of tokens your app can use (user tokens, bot tokens, and app tokens) and how to manage them, as well as employ token rotation and expiry to keep things fresh.
+Security best practices
+: Learn about security practices for managing authentication, such as validating tokens, handling sensitive data, and protecting your app from unauthorized access.
+Reference
+​
+Scopes and Permissions
+: Find the right permissions for your app to ensure access is limited to only the necessary data.
+
+===== https://docs.slack.dev/messaging/
+TITLE: Messaging | Slack Developer Docs
+ACCESSED: 2026-09-28
+
+Copy as markdown
+Messages are at the core of how you communicate in Slack. They have many shapes and sizes and varying levels of complexity. They can exist merely to notify, or they can invite and await response.
+The core functionality of most Slack apps will involve the publication or consumption of messages. In this overview, we give you a quick trip through the basics of doing these things and an introduction to the terminology that surrounds messaging.
+These instructions pertain to content posted programmatically to Slack.
+For instructions on sending and reading messages within Slack itself, consult this
+help center article
+.
+The mechanics of messaging
+​
+There can be a huge variation in how messages appear. For example, this is a message:
+And so is this:
+At a basic level, messages are a series of attributes which describe and contain content.
+Slack apps can
+publish new messages
+, and
+retrieve
+or
+modify
+existing ones.
+Apps created with the Deno Slack SDK
+can also send messages with a variety of
+built-in Slack functions
+.
+Both types of apps have access to a range of
+formatting
+and
+interactivity
+options for controlling the look and feel of messages. You can read the overview guides for those topics to get a better sense of what is possible, but for now let's learn about the environment that messages exist in.
+Conversations
+​
+In Slack, messages inhabit conversations. A
+conversation
+is a catch-all term that covers
+public channels
+,
+private channels
+,
+direct message conversations
+, and
+group (or multi-party) direct message conversations
+.
+Slack apps can publish messages
+to all these types conversations, and can even create a
+direct message conversation
+between a user and the app itself.
+Different conversations will have varying levels of visibility and publishing permission, which is important when you're trying to create messages programmatically; we cover this more in our
+sending messages guide
+.
+With the right permissions, you can
+retrieve a conversation's message history
+, or individual messages within that history, which we cover in our
+retrieving messages guide
+.
+Ephemeral messages
+​
+While most messages will be visible to everyone within the
+conversation
+they're published in, apps also have the ability to show a message temporarily to one specific user.
+These are called
+ephemeral messages
+, and in most other respects they're like any other message - composed in the same way, published in much the same way, and viewed within the same types of conversations in Slack.
+The only differences are that only one user within that conversation will see them, and that they do not persist across reloads, between desktop and mobile apps, or across sessions. Once the session is closed (for example, the user reloads the app or logs out and back in), ephemeral messages will disappear and cannot be recovered.
+Use ephemeral messages when you want to send someone a context-sensitive message that isn't suitable for the wider conversation. For example, if a user invokes one of your app's
+slash commands
+that performs some action on a third-party service, an ephemeral message might be the most suitable way to inform that user of the success of the action.
+Ephemeral messages should only ever be sent in response to some user action, they must never be unexpected or unsolicited. If you want to send a message to a specific user in any other situation,
+send them a DM
+.
+Due to their ghostly nature, ephemeral messages cannot be retrieved via our APIs, nor will they show up in
+interaction payloads
+.
+Deleting or updating ephemeral messages is a bit more complicated — you can do it, but only in response to an
+interaction
+with the message itself.
+Read our guide
+to learn more about
+deleting
+or
+updating
+messages in response to interactions.
+Threading messages
+​
+Most messages stand alone, seen or unseen, inside a conversation. Some messages, however, generate such conversation that replies erupt forth, forming a thread in their wake.
+Slack apps can read and write messages in threads with ease. Before we explain how, let's tread some thread terminology:
+Before a message has any replies, we call it an
+unthreaded message
+.
+Once a message has replies, it becomes a
+parent message
+.
+Any child messages of that parent message are called
+threaded replies
+.
+The whole bundle of parent message and replies is referred to as a
+thread
+Each of the messages within a thread, whether parent or reply, is a
+threaded message
+.
+To learn how your app can spot and retrieve threaded messages, read our
+retrieving messages guide
+. Or if you want to find out how to publish messages as threaded replies, read our
+sending messages guide
+.
+Message structure and formatting
+​
+The base message is a plain, unformatted string of text — just like this paragraph.
+You can easily introduce a bit of
+boldness
+or some
+emphasis
+to make those messages easier to read and understand. You might also want to include some
+inline code
+, add an emoji 💡, or lay things out in a list:
+Add some bo
+
+===== https://docs.slack.dev/apis/
+TITLE: Slack APIs | Slack Developer Docs
+ACCESSED: 2026-09-28
+
+Copy as markdown
+Every Slack app and
+workflow
+has access to a range of APIs that provide access to read, write, and update many types of data in Slack.
+Read on to learn about our core APIs, and discover how to use them to make magic.
+Web API
+​
+The Web API supplies a collection of
+HTTP methods
+that underpin the majority of Slack app functionality.
+With over 100 methods available, it's impossible to explain
+everything
+that's possible with the Web API, but we're sure there's one right for your app.
+Our
+Web API
+guide explains the basic process of interacting with these methods. Once you've read up on that, dive into the
+list of available methods
+.
+Events API
+​
+The Events API is a streamlined way to build apps that respond to activities in Slack.
+Subscribe to the
+events
+you want from a range of possibilities. Build a Slack app that can
+react to those events
+usefully.
+Tell us where to send the events you carefully select and we'll push them to your app securely. We'll even retry when things don't work out.
+Read our
+Events API
+guide to learn how to subscribe to and handle events.
+Check out our
+Event delivery
+guide to explore your options with how to receive event payloads: via a public HTTP URL or using the magic of WebSocket via Socket Mode.
+If you don't wish to expose a public, static HTTP endpoint to communicate with Slack,
+Socket Mode
+can help.
+Slack Status API
+​
+The Slack Status API describes the health of the Slack product. When there's an incident, outage, or maintenance, the Slack Status API reflects all the information we have on the issue, including which features of Slack are affected and detailed updates over time.
+Atom and RSS Feed
+​
+Receive updates on the health of Slack services by subscribing to our Atom or RSS feeds. Use your favorite subscription tool to subscribe to
+https://slack-status.com/feed/atom
+or
+https://slack-status.com/feed/rss
+. You could even use the
+/feed
+command in Slack to subscribe to our Status feed — but it might not work if some parts of Slack are unavailable. An outside feed reader might be a better choice.
+Note that many readers check for updates only a few times an hour. Set your feed reader to poll for updates often (for example, once a minute) if you need to be notified immediately of a Slack issue.
+See the
+Slack Status API reference
+for endpoint information.
+Other APIs
+​
+Beyond the Web and Events APIs, we have a range of other niche APIs that are suitable for specific types of apps.
+Admin API
+are a subset of Web APIs that are geared towards automating and simplifying the administration of Slack organizations.
+SCIM API
+are available for user provisioning and management.
+Audit Logs API
+are tailored for building security information and event management tools.
+Legacy RTM API
+is an outmoded API that provides WebSocket access to some of the same functionality as the Web and Events APIs. We list it here for completeness even though it has been deprecated.
+
+===== https://docs.slack.dev/changelog/
+TITLE: Changelog | Slack Developer Docs
+ACCESSED: 2026-09-28
+
+Version
+4.8.0
+of the Slack CLI is here!
+The CLI falls back to
+manifest.json
+when the
+get-manifest
+hook is unavailable.
+We've added the
+slack manifest sync
+command to sync the app manifest between project and app settings.
+We've added a
+--manifest-source
+flag to the
+run
+and
+deploy
+commands.
+We've added support for the
+code_channels
+app manifest feature.
+We fixed an issue where interactive selection prompts left lingering rendered lines on screen after a selection is made.
+As of July 2026, we require that apps submitting to the Slack Marketplace have at least 10 installations on active workspaces, up from the temporary lower threshold. Your app needs to stay at 10 or more installed workspaces throughout the
+entire duration of the review
+.
+Version
+4.7.0
+of the Slack CLI has been released!
+We've added the
+slack app request
+command, which checks the status of your most recent request to have an app approved for install.
+We've added support for custom app icons. The
+slack run
+and
+slack deploy
+commands can now be used to upload an icon file.
+We've fixed the help template so hidden subcommands are no longer listed under their parent command.
+We're rolling out a wave of updates to agents on Slack, along with an important heads-up about the road ahead for the Assistant messaging experience.
+Agent updates and the deprecation of
+assistant_view
+​
+The Assistant messaging experience (
+assistant_view
+) will be deprecated in
+February 2027
+. The assistant-related methods that power it are being replaced by a new set of API methods: the
+Agent Sessions API
+. Agent sessions let users manage their conversations with your agent in one place, with a status, a title, and a stop button. The
+agents.sessions.setStatus
+and
+agents.sessions.rename
+API methods replace the
+assistant.threads.setStatus
+and
+assistant.threads.setTitle
+API methods, respectively. For now, your existing calls keep working through a compatibility bridge. See the
+Agent sessions
+guide to get started.
+The Agent messaging experience (
+agent_view
+) is already available, and we recommend moving to it now. If your app still uses
+assistant_view
+, follow the
+migration guide
+to move to the new experience. Read more in the guide to
+developing agents
+.
+What's new for agents
+​
+Alongside this announcement, we're releasing a set of improvements to the agent experience:
+Upgraded Tools tab
+: a newly renamed and revamped
+Agents & Tools
+tab helps users find popular agents with a new landing page.
+Improved thread experience
+: including multi-agent stacking, thread naming, a revamped thinking UI, and a native stop button for agent streams. When a user stops your agent, your app receives an
+agent_session_stopped
+event.
+Plan and Task card block updates
+: UI refinements to the
+plan
+and
+task card
+blocks agents use to show their work.
+Marketplace data in the About tab
+: an agent's Marketplace data now appears in its About tab.
+Agent sessions in the sidebar
+: A new sidebar with pin / archive / unread and live updates.
+An agent can answer a question in a thread, but some tasks become bigger than a single question. A coding agent may need to implement a change, share a prototype, and iterate on it. A research agent may need to gather information and work through decisions with the people involved. This kind of work needs more than a single response.
+Slack Code is how agents and people work together to build with AI in Slack, creating dedicated channels for more involved work. A channel is created from an existing conversation, context is carried forward, and agents and collaborators have a shared, visible place to work.
+Within a session, agents can publish artifacts for people to oversee and iterate on:
+Code diffs
+, so people can review what changed
+Block Kit views
+, for structured interactive experiences
+HTML previews
+, for prototypes and generated interfaces
+Canvases
+, for longer-form content and collaboration
+The work becomes multiplayer: teammates can join channels, review work, add context, and help make decisions, all while collaborating in the same session and with the same artifacts. Your agent manages the lifecycle, creating a channel when a task warrants one, sharing updates as the work progresses, and closing the session once the work is complete.
+Read on to learn more:
+Slack Code: where your team and agents build together
+Build with AI as a team using Slack Code
+We're excited to introduce the Slack MCP and Skills Plugin for AI tools, which bundles a set of skills that help you develop on the Slack platform alongside the
+Slack MCP Server
+. The plugin is currently available for Claude Code and Cursor.
+Installing the plugin sets up two things:
+Skills
+. Focused sets of instructions and references that your assistant loads automatically when a task calls for them. The plugin includes skills for Block Kit, scaffolding new apps, calling Web API methods, using the Slack CLI, composing messages, and searching Slack.
+Slack MCP Server connection
+. The Slack MCP server lets you and your agent
+
+===== https://slack.com/intl/en-in/contact-sales
+TITLE: Contact sales | Slack
+ACCESSED: 2026-09-28
+
+Contact our sales team
+We're happy to answer questions and get you acquainted with Slack.
+Schedule a demo
+Get pricing information
+Explore use cases for your team
+For technical issues and product questions, please visit our
+Help Centre
+.
+Incredible companies use Slack
+'With Slack, everything happens in one channel, and what used to take a couple of days is now resolved in a matter of hours.'
+Shikhar Saxena
+Group Product Manager, Meesho
+
+===== https://slack.com/intl/en-in/partner-offers
+TITLE: Slack Partner Offers Marketplace | Slack
+ACCESSED: 2026-09-28
+
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Link may open in new tab
+Sign in to access
+Partner offer listings are their own and may contain links to the partner’s website. Slack does not control the partner offer, pricing, availability, eligibility, terms, data handling practices or any goods or services sold on those websites nor is a listing in the marketplace an endorsement of such goods or service.
+
+===== https://slack.com/intl/en-in/connect
+TITLE: Slack Connect: External communication and collaboration | Slack
+ACCESSED: 2026-09-28
+
+Pause animation
+Play animation
+2x
+faster turnaround on creative reviews and approvals.
+2x faster turnaround on creative reviews and approvals.
+50%
+reduction in weekly meetings for teams working with contractors.
+50% reduction in weekly meetings for teams working with contractors.
+4x
+faster deal cycles for teams working with clients.
+4x faster deal cycles for a sales team working with clients
+1
+Claims and figures based on specific teams using Slack Connect at their companies. Results may vary at your organisation.
+Faster decision-making
+Email
+wasn’t built for project work. Slack Connect was. Get instant feedback from customers, hop on a video call with clients and get approvals from vendors – right where your team is already working.
+Get started with Slack Connect
+Control & Security
+Slack
+Connect is built on the same security and compliance as Slack itself, so you can work safely with anyone outside your company. You decide what partners can join, what they can see and share.
+Learn more about Slack’s enterprise-grade security
+AI in Slack
+Whether
+you are adding a new teammate to the project and need to catch them up, or need to recall the launch date of a project, AI can help. Find what is important, summarise it and do it faster than ever before.
+Learn more about AI
+Step 1: Create a channel.
+Create and name a new channel in Slack
+Step 2: Send the invite.
+Invite your partners, vendors or customers to the channel. Don't forget to let them know you sent it!
+Step 3: Your partners accept the invite.
+It’s easy and free for your partners to accept. You'll be notified when they join the channel.
+Step 4: Start working together.
+Send your first message and start to collaborate in real time.
+Built for roles of all types
+No matter which branch of the organisational chart you call home, you can make sure that your team’s communication is organised and efficient with Slack.
+Sales
+Close deals faster with prospects.
+Customer success
+Build stronger customer relationships.
+Service
+Resolve customer issues faster.
+Marketing
+Work faster with agency partners.
+Operations
+Work quickly with vendors and suppliers.
+Business development
+Work quickly with partners on joint initiatives.
+‘Slack is central to how our company collaborates, for increasing velocity, and is integral to building with our customers. We use Slack every day.’
+Read story
+“Getting approvals is a lot faster with Slack. And in our industry, being faster means you’re going to bring a product that’s on trend to market a lot quicker than normal.”
+Read story
+‘We hear back from our customers that we’re like an extension of their team, and part of that feeling definitely comes from the fact that we use Slack.’
+Read story
+Is Slack Connect free?
+All of Slack’s paid subscriptions include the ability to send a one-to-one message to someone outside your organisation via Slack Connect. Visit our
+pricing page
+for more information on paid Slack subscriptions
+If you are on the Enterprise+ subscription, external partners on a free subscription can join Slack Connect channels without having to upgrade or start a free trial. If you are on a different paid subscription, that’s not a problem! Once you’ve invited your partners to collaborate with Slack Connect, if they’re eligible, they’ll get a 90-day free trial of Slack’s Pro subscription.
+How do I start working with someone outside my company in Slack?
+While on a paid subscription, you can
+invite someone outside of your company
+to share a channel in Slack. Or, skip the channels for now and
+send an invitation to start exchanging direct messages
+– just like you would in other DMs!
+It really only takes a few clicks to start working closely with vendors, customers and more.
+Our sales team would be happy to help you get started.
+Where is my data stored and is it encrypted?
+Slack is hosted with Amazon Web Services and the default location is AWS US, however, data residency for Slack allows global teams to choose the region where certain types of data at rest are stored. Slack provides data encryption in transit and at rest. Read more about our approach to security here.
+How secure is my data in Slack?
+Slack is committed to keeping our infrastructure secure, redundant and reliable, while providing your team with tools to safely administer your environment. We are proud to exceed the industry standard when it comes to protecting your organisation, and we’ve outlined many of our security practices and certifications on our website.
+What's the different between Slack Connect and Slack Channels?
+Great question! Channels in Slack transform the way that you work with your colleagues. Similarly, Slack Connect makes it possible to work in channels with people from outside your company, as well. With Slack Connect, you don’t need to give people access to your whole Slack workspace – just the channels that you need to collaborate in.
+How is Slack Connect more secure than email?
+With Slack Connect, admins can maintain control over their organisation’s d
+
+===== https://slack.com/intl/en-in/pricing
+TITLE: Slack pricing for subscriptions: Find the right fit for your team | Slack
+ACCESSED: 2026-09-28
+
+The world’s leading businesses rely on Slack
+Recommended for you
+90 days of message history
+Messages are saved and searchable for 90 days. Upgrade to access the previous 12 months messages.
+Up to ten apps
+Choose from over 2,600 apps in the Slack App Directory – from Salesforce, Jira, Google Drive, ChatGPT and more.
+1:1 meetings
+Work together in real time through audio and video meetings (including screen sharing) using Slack huddles.
+1:1 external messages
+Securely work alongside people outside of your company through one-to-one direct messages using Slack Connect.
+Basic AI
+AI conversation summaries
+Slackbot (personal AI agent)
+AI workflow generation
+AI search
+AI daily recaps
+AI file summaries
+SAML-based single sign-on
+SCIM user management
+EMM integration support
+Native data loss prevention
+Recommended for you
+Unlimited message history
+Every message, file and conversation shared in Slack is saved and fully searchable.
+Unlimited app integrations
+Choose from over 2,600 apps in the Slack App Directory – from Salesforce, Jira, Google Drive, ChatGPT and more.
+Group meetings
+Work together in real time through audio and video meetings (including screen sharing) using Slack huddles.
+Group external messages
+Work securely with outside partners via DMs, group chats or dedicated channels with up to 250 orgs.
+Basic AI
+AI conversation summaries
+Catch up on channels in just a click. Get meeting summaries with transcripts, key takeaways and action items.
+Slackbot (personal AI agent)
+AI workflow generation
+AI search
+AI daily recaps
+AI file summaries
+SAML-based single sign-on
+SCIM user management
+EMM integration support
+Native data loss prevention
+Recommended for you
+Unlimited message history
+Every message, file and conversation shared in Slack is saved and fully searchable.
+Unlimited app integrations
+Choose from over 2,600 apps in the Slack App Directory – from Salesforce, Jira, Google Drive, ChatGPT and more.
+Group meetings
+Work together in real time through audio and video meetings (including screen sharing) using Slack huddles.
+Group external messages
+Work securely with outside partners via DMs, group chats or dedicated channels with up to 250 orgs.
+Advanced AI
+AI conversation summaries
+Catch up on channels in just a click. Get meeting summaries with transcripts, key takeaways and action items.
+Slackbot (personal AI agent)
+New
+Your personal AI agent that understands conversations, files and projects in Slack. Subscription limits apply.
+AI workflow generation
+Build workflows from a single prompt with the power of Slack AI and Workflow Builder.
+AI search
+Get clear answers from conversations and shared files – just type a question in your search bar. AI will handle the rest.
+AI daily recaps
+Get a daily digest of what’s happening across all of your teams and projects.
+AI file summaries
+Catch up on documents in a flash with smart AI summaries of files shared in Slack.
+SAML-based single sign-on
+Sign in with your IDP of choice. Supports 12 SSO options including Okta, Google and Azure.
+SCIM user management
+Slack supports member provisioning with SCIM. Use a connector app and supported identity provider.
+EMM integration support
+Native data loss prevention
+Recommended for you
+Unlimited message history
+Every message, file and conversation shared in Slack is saved and fully searchable.
+Unlimited app integrations
+Choose from over 2,600 apps in the Slack App Directory – from Salesforce, Jira, Google Drive, ChatGPT and more.
+Group meetings
+Work together in real time through audio and video meetings (including screen sharing) using Slack huddles.
+Group external messages
+Work securely with outside partners via DMs, group chats or dedicated channels with up to 250 orgs.
+Enterprise-grade AI
+AI conversation summaries
+Catch up on channels in just a click. Get meeting summaries with transcripts, key takeaways and action items.
+Slackbot (personal AI agent)
+New
+Your personal AI agent that understands conversations, files and projects in Slack. Subscription limits apply.
+AI workflow generation
+Build workflows from a single prompt with the power of Slack AI and Workflow Builder.
+Enterprise search
+Search across connected apps, databases and systems with enterprise search.
+AI daily recaps
+Get a daily digest of what’s happening across all of your teams and projects.
+AI file summaries
+Catch up on documents in a flash with smart AI summaries of files shared in Slack.
+Multiple SAML configurations
+Sign in with your IDP of choice. Supports 12 SSO options including Okta, Google and Azure.
+SCIM user management
+Slack supports member provisioning with SCIM. Use a connector app and supported identity provider.
+EMM integration support
+Control mobile data with Enterprise Mobility Management like VMware AirWatch or Ivanti MobileIron.
+Native data loss prevention
+Data loss prevention in Slack Connect scans messages and files sent by members of your organisation to reduce the risk of sharing confidential, malicious or personally identifiable content with external or

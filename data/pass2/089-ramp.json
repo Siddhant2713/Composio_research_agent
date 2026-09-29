@@ -1,0 +1,186 @@
+{
+  "app": "Ramp",
+  "number": 89,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:01:41.515365+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.ramp.com\",\n    \"https://docs.ramp.com/developers\",\n    \"https://docs.ramp.com/reference\",\n    \"https://docs.ramp.com/docs/authentication\",\n    \"https://ramp.com/developers\",\n    \"https://ramp.com/api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.ramp.com",
+    "https://docs.ramp.com/developers",
+    "https://docs.ramp.com/reference",
+    "https://docs.ramp.com/docs/authentication",
+    "https://ramp.com/developers",
+    "https://ramp.com/api",
+    "https://developer.ramp.com/",
+    "https://developers.ramp.com/",
+    "https://api.ramp.com/",
+    "https://ramp.com/docs",
+    "https://ramp.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://ramp.com/signup",
+    "https://ramp.com/pricing",
+    "https://ramp.com/partnerships",
+    "https://ramp.com/pe-partnerships",
+    "https://ramp.com/vc-partnerships",
+    "https://ramp.com/accounts-payable",
+    "https://ramp.com/services-partners"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.ramp.com",
+      "reason": "page too thin (22 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.ramp.com/developers",
+      "reason": "page too thin (22 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.ramp.com/reference",
+      "reason": "page too thin (22 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.ramp.com/docs/authentication",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://ramp.com/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.ramp.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://ramp.com/api",
+      "requested_url": "https://ramp.com/api",
+      "status": 200,
+      "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ramp.com/developer-tools",
+      "requested_url": "https://developer.ramp.com/",
+      "status": 200,
+      "title": "Developer Platform",
+      "chars": 1029,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ramp.com/signup",
+      "requested_url": "https://ramp.com/signup",
+      "status": 200,
+      "title": "Sign Up for Ramp \u2014 Apply for a Card in Minutes",
+      "chars": 207,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ramp.com/pricing",
+      "requested_url": "https://ramp.com/pricing",
+      "status": 200,
+      "title": "Ramp Pricing and Plans",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ramp.com/partnerships",
+      "requested_url": "https://ramp.com/partnerships",
+      "status": 200,
+      "title": "Why Partner With Ramp? Become a Ramp Partner or Affiliate | Ramp",
+      "chars": 2248,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ramp.com/pe-partnerships",
+      "requested_url": "https://ramp.com/pe-partnerships",
+      "status": 200,
+      "title": "Finance platform built for private equity firms | Ramp",
+      "chars": 2160,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://ramp.com/vc-partnerships",
+      "requested_url": "https://ramp.com/vc-partnerships",
+      "status": 200,
+      "title": "Partner with Ramp and drive value creation across your portfolio | Ramp",
+      "chars": 1980,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Ramp is an all-in-one finance platform providing corporate cards, expense management, bill payments, and accounting automation with modular developer APIs and an MCP server.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": null\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": null\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The developer tools page mentions APIs.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": null,\n    \"notes\": \"Ramp provides an MCP server for building agents.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://ramp.com/developer-tools\",\n      \"claim\": \"Ramp provides an MCP server and APIs.\",\n      \"quote\": \"Use Ramp\u2019s MCP server and APIs to create agents that do work for you.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://ramp.com/developer-tools\",\n      \"quote\": \"Use Ramp\u2019s MCP server and APIs to create agents that do work for you.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://ramp.com/developer-tools\",\n      \"quote\": \"Use Ramp\u2019s MCP server and APIs to create agents that do work for you.\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint_url": "https://docs.ramp.com",
+    "one_liner": "Ramp is an all-in-one finance platform providing corporate cards, expense management, bill payments, and accounting automation with modular developer APIs and an MCP server.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "The developer tools page mentions APIs."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Ramp provides an MCP server for building agents."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://ramp.com/developer-tools",
+        "claim": "Ramp provides an MCP server and APIs.",
+        "quote": "Use Ramp\u2019s MCP server and APIs to create agents that do work for you.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "api_surface": {
+        "url": "https://ramp.com/developer-tools",
+        "quote": "Use Ramp\u2019s MCP server and APIs to create agents that do work for you."
+      },
+      "mcp": {
+        "url": "https://ramp.com/developer-tools",
+        "quote": "Use Ramp\u2019s MCP server and APIs to create agents that do work for you."
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:03:03.663016+00:00"
+}

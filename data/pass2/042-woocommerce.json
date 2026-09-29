@@ -1,0 +1,213 @@
+{
+  "app": "WooCommerce",
+  "number": 42,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:16:04.793339+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://woocommerce.com/document/woocommerce-rest-api/\",\n    \"https://developer.woocommerce.com/\",\n    \"https://woocommerce.github.io/woocommerce-rest-api-docs/\",\n    \"https://woocommerce.com/document/getting-started-with-the-woocommerce-rest-api/\",\n    \"https://woocommerce.com/document/authentication/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://woocommerce.com/document/woocommerce-rest-api",
+    "https://developer.woocommerce.com/",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+    "https://woocommerce.com/document/getting-started-with-the-woocommerce-rest-api/",
+    "https://woocommerce.com/document/authentication/",
+    "https://docs.woocommerce.com/",
+    "https://developers.woocommerce.com/",
+    "https://api.woocommerce.com/",
+    "https://woocommerce.com/docs",
+    "https://woocommerce.com/developers",
+    "https://woocommerce.com/api",
+    "https://woocommerce.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://woocommerce.com/documentation/woocommerce/getting-started/",
+    "https://woocommerce.com/pricing/",
+    "https://woocommerce.com/partners/",
+    "https://woocommerce.com/contact-us/",
+    "https://woocommerce.com/my-account/contact-support/",
+    "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "https://woocommerce.com/for-agencies/",
+    "https://developer.woocommerce.com/2026/08/31/block-registration-skips-11-1/",
+    "https://developer.woocommerce.com/2026/01/23/call-for-testing-experimental-rest-api-caching-in-woocommerce-10-5/",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/v2.html",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/v1.html",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/wp-api-v2.html",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/wp-api-v1.html",
+    "https://woocommerce.com/document/woocommerce-analytics/"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://woocommerce.com/document/getting-started-with-the-woocommerce-rest-api/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://woocommerce.com/document/authentication/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.woocommerce.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.woocommerce.com/",
+      "reason": "page too thin (26 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://woocommerce.com/my-account/contact-support/",
+      "reason": "HTTP 403",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "requested_url": "https://woocommerce.com/document/woocommerce-rest-api",
+      "status": 200,
+      "title": "WooCommerce REST API Documentation - WooCommerce",
+      "chars": 3564,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.woocommerce.com/",
+      "requested_url": "https://developer.woocommerce.com/",
+      "status": 200,
+      "title": "The WooCommerce Developer Blog",
+      "chars": 4539,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "requested_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "status": 200,
+      "title": "WooCommerce REST API Documentation - WP REST API v3",
+      "chars": 4978,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://woocommerce.com/documentation/woocommerce/",
+      "requested_url": "https://docs.woocommerce.com/",
+      "status": 200,
+      "title": "WooCommerce Documentation - WooCommerce",
+      "chars": 2700,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://woocommerce.com/documentation/woocommerce/getting-started/",
+      "requested_url": "https://woocommerce.com/documentation/woocommerce/getting-started/",
+      "status": 200,
+      "title": "Getting started Documentation - WooCommerce",
+      "chars": 3418,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://woocommerce.com/pricing/",
+      "requested_url": "https://woocommerce.com/pricing/",
+      "status": 200,
+      "title": "WooCommerce Pricing Puts You In Control - WooCommerce",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://woocommerce.com/partners/",
+      "requested_url": "https://woocommerce.com/partners/",
+      "status": 200,
+      "title": "Partners - WooCommerce",
+      "chars": 2222,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://woocommerce.com/contact-us/",
+      "requested_url": "https://woocommerce.com/contact-us/",
+      "status": 200,
+      "title": "Contact us - WooCommerce",
+      "chars": 457,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"WooCommerce REST API connects your store to external systems and services using a key system and standard HTTP verbs integrated with the WordPress REST API.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Merchants and developers can generate REST API keys directly from their WordPress dashboard under WooCommerce > Settings > Advanced > REST API.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"WooCommerce is fully integrated with the WordPress REST API and supports webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://woocommerce.com/document/woocommerce-rest-api/\",\n      \"claim\": \"Authentication method uses API keys generated in WooCommerce settings.\",\n      \"quote\": \"Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.\"\n    },\n    {\n      \"url\": \"https://woocommerce.com/document/woocommerce-rest-api/\",\n      \"claim\": \"Steps to obtain API keys yourself via the WordPress dashboard.\",\n      \"quote\": \"Go to WooCommerce > Settings > Advanced > REST API\"\n    },\n    {\n      \"url\": \"https://woocommerce.github.io/woocommerce-rest-api-docs/\",\n      \"claim\": \"REST API is integrated with WordPress REST API supporting standard HTTP verbs and JSON.\",\n      \"quote\": \"WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://woocommerce.com/document/woocommerce-rest-api/\",\n      \"quote\": \"Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.\"\n    },\n    \"access\": {\n      \"url\": \"https://woocommerce.com/document/woocommerce-rest-api/\",\n      \"quote\": \"Go to WooCommerce > Settings > Advanced > REST API\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://woocommerce.github.io/woocommerce-rest-api-docs/\",\n      \"quote\": \"WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint_url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "one_liner": "WooCommerce REST API connects your store to external systems and services using a key system and standard HTTP verbs integrated with the WordPress REST API.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Merchants and developers can generate REST API keys directly from their WordPress dashboard under WooCommerce > Settings > Advanced > REST API."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "WooCommerce is fully integrated with the WordPress REST API and supports webhooks."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "claim": "Authentication method uses API keys generated in WooCommerce settings.",
+        "quote": "Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "claim": "Steps to obtain API keys yourself via the WordPress dashboard.",
+        "quote": "Go to WooCommerce > Settings > Advanced > REST API",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+        "claim": "REST API is integrated with WordPress REST API supporting standard HTTP verbs and JSON.",
+        "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection."
+      },
+      "access": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "Go to WooCommerce > Settings > Advanced > REST API"
+      },
+      "api_surface": {
+        "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+        "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:16:31.016903+00:00"
+}

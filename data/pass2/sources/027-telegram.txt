@@ -1,0 +1,1606 @@
+===== https://core.telegram.org
+TITLE: Telegram APIs
+ACCESSED: 2026-09-28
+
+Telegram APIs
+Telegram APIs
+We offer three kinds of APIs for developers. The
+Bot API
+allows you to easily create programs that use Telegram messages for an interface. The
+Telegram API and TDLib
+allow you to build your own customized Telegram clients. You are welcome to use both APIs free of charge. Lastly, the
+Gateway API
+allows any business, app or website to send verification codes through Telegram instead of traditional SMS.
+You can also add
+Telegram Widgets
+to your website.
+Designers are welcome to create
+Animated Stickers and Emoji
+or
+Custom Themes
+for Telegram.
+Bot API
+This API allows you to connect bots to our system.
+Telegram Bots
+are special accounts that do not require an additional phone number to set up. These accounts serve as an interface for code running somewhere on your server.
+To use this, you don't need to know anything about how our MTProto encryption protocol works — our intermediary server will handle all encryption and communication with the Telegram API for you. You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.
+Learn more about the Bot API here »
+Bot developers can also make use of our
+Payments API
+to accept
+payments
+from Telegram users around the world.
+TDLib – build your own Telegram
+Even if you're looking for maximum customization, you don't have to create your app from scratch. Try our
+Telegram Database Library
+(or simply TDLib), a tool for third-party developers that makes it easy to build fast, secure and feature-rich Telegram apps.
+TDLib takes care of all
+network implementation
+details,
+encryption
+local data storage
+, so that you can dedicate more time to design, responsive interfaces and beautiful animations.
+TDLib supports all Telegram features and makes developing Telegram apps a breeze on any platform. It can be used on Android, iOS, Windows, macOS, Linux and virtually any other system. The library is open source and compatible with virtually
+any programming language
+Learn more about TDLib here »
+Gateway API
+The Telegram Gateway API allows any business, app or website to send authorization codes through Telegram instead of traditional SMS – offering a powerful and convenient way to
+lower costs
+while increasing the
+security
+delivery speed
+of your codes to Telegram’s 1 billion monthly active users. Users will
+instantly receive
+messages with codes in a special chat inside Telegram.
+Telegram's Gateway API is completely free to test. Learn more here »
+Telegram API
+This API allows you to build your own customized Telegram clients. It is 100% open for all developers who wish to create Telegram applications on our platform. Feel free to study the open
+source code
+of existing Telegram applications for examples of how things work here. Don't forget to
+register
+your application in our system.
+Getting Started
+Security
+Optimization
+API methods
+Getting started
+Creating an application
+How to get your application identifier and create a new Telegram app.
+User authorization
+How to register a user's phone to start using the API.
+Two-factor authentication
+How to log in to a user's account if they have enabled 2FA, and how to change the password.
+QR code login
+QR code
+login flow.
+Passkeys
+Telegram allows creating a passkey on your device to instantly log in to Telegram with a PIN or biometric data like Face ID and fingerprints — instead of an SMS code.
+Error handling
+How to handle API return errors correctly.
+Handling different data centers
+How to connect to the closest DC access point for faster interaction with the API, and things to watch out for when developing a client.
+Handling updates
+How to subscribe to updates and handle them properly.
+Handling PUSH-notifications
+How to subscribe and handle them properly.
+Channels, supergroups, gigagroups and basic groups
+How to handle channels, supergroups, gigagroups, basic groups, and what's the difference between them.
+Forums
+Telegram allows creating forums with multiple distinct topics.
+Bots can also make use of topics, if enabled through
+@botfather
+Direct messages to channels
+Telegram supports direct messages to channels, which can also be used to suggest (even paid) channel posts.
+Channel statistics
+Telegram offers detailed statistics for channels and supergroups.
+Message views and read metrics
+How to report read state, channel post views, message read metrics and music listens.
+Calling methods
+Additional options for calling methods.
+Uploading and downloading files
+How to transfer large data batches correctly.
+Pagination
+How to fetch results from large lists of objects.
+Client configuration
+The MTProto API has multiple client configuration parameters that can be fetched with the appropriate methods.
+Calls
+Telegram supports E2E-encrypted one-to-one calls.
+Group calls
+Telegram supports E2E-encrypted group calls.
+Security
+Secret chats, end-to-end encryption
+End-to-end-encrypted messaging.
+Security guidelines
+Important checks required in your client application.
+Perfect 
+
+===== https://core.telegram.org/api
+TITLE: Telegram APIs
+ACCESSED: 2026-09-28
+
+Telegram APIs
+Telegram APIs
+We offer three kinds of APIs for developers. The
+Bot API
+allows you to easily create programs that use Telegram messages for an interface. The
+Telegram API and TDLib
+allow you to build your own customized Telegram clients. You are welcome to use both APIs free of charge. Lastly, the
+Gateway API
+allows any business, app or website to send verification codes through Telegram instead of traditional SMS.
+You can also add
+Telegram Widgets
+to your website.
+Designers are welcome to create
+Animated Stickers and Emoji
+or
+Custom Themes
+for Telegram.
+Bot API
+This API allows you to connect bots to our system.
+Telegram Bots
+are special accounts that do not require an additional phone number to set up. These accounts serve as an interface for code running somewhere on your server.
+To use this, you don't need to know anything about how our MTProto encryption protocol works — our intermediary server will handle all encryption and communication with the Telegram API for you. You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.
+Learn more about the Bot API here »
+Bot developers can also make use of our
+Payments API
+to accept
+payments
+from Telegram users around the world.
+TDLib – build your own Telegram
+Even if you're looking for maximum customization, you don't have to create your app from scratch. Try our
+Telegram Database Library
+(or simply TDLib), a tool for third-party developers that makes it easy to build fast, secure and feature-rich Telegram apps.
+TDLib takes care of all
+network implementation
+details,
+encryption
+local data storage
+, so that you can dedicate more time to design, responsive interfaces and beautiful animations.
+TDLib supports all Telegram features and makes developing Telegram apps a breeze on any platform. It can be used on Android, iOS, Windows, macOS, Linux and virtually any other system. The library is open source and compatible with virtually
+any programming language
+Learn more about TDLib here »
+Gateway API
+The Telegram Gateway API allows any business, app or website to send authorization codes through Telegram instead of traditional SMS – offering a powerful and convenient way to
+lower costs
+while increasing the
+security
+delivery speed
+of your codes to Telegram’s 1 billion monthly active users. Users will
+instantly receive
+messages with codes in a special chat inside Telegram.
+Telegram's Gateway API is completely free to test. Learn more here »
+Telegram API
+This API allows you to build your own customized Telegram clients. It is 100% open for all developers who wish to create Telegram applications on our platform. Feel free to study the open
+source code
+of existing Telegram applications for examples of how things work here. Don't forget to
+register
+your application in our system.
+Getting Started
+Security
+Optimization
+API methods
+Getting started
+Creating an application
+How to get your application identifier and create a new Telegram app.
+User authorization
+How to register a user's phone to start using the API.
+Two-factor authentication
+How to log in to a user's account if they have enabled 2FA, and how to change the password.
+QR code login
+QR code
+login flow.
+Passkeys
+Telegram allows creating a passkey on your device to instantly log in to Telegram with a PIN or biometric data like Face ID and fingerprints — instead of an SMS code.
+Error handling
+How to handle API return errors correctly.
+Handling different data centers
+How to connect to the closest DC access point for faster interaction with the API, and things to watch out for when developing a client.
+Handling updates
+How to subscribe to updates and handle them properly.
+Handling PUSH-notifications
+How to subscribe and handle them properly.
+Channels, supergroups, gigagroups and basic groups
+How to handle channels, supergroups, gigagroups, basic groups, and what's the difference between them.
+Forums
+Telegram allows creating forums with multiple distinct topics.
+Bots can also make use of topics, if enabled through
+@botfather
+Direct messages to channels
+Telegram supports direct messages to channels, which can also be used to suggest (even paid) channel posts.
+Channel statistics
+Telegram offers detailed statistics for channels and supergroups.
+Message views and read metrics
+How to report read state, channel post views, message read metrics and music listens.
+Calling methods
+Additional options for calling methods.
+Uploading and downloading files
+How to transfer large data batches correctly.
+Pagination
+How to fetch results from large lists of objects.
+Client configuration
+The MTProto API has multiple client configuration parameters that can be fetched with the appropriate methods.
+Calls
+Telegram supports E2E-encrypted one-to-one calls.
+Group calls
+Telegram supports E2E-encrypted group calls.
+Security
+Secret chats, end-to-end encryption
+End-to-end-encrypted messaging.
+Security guidelines
+Important checks required in your client application.
+Perfect 
+
+===== https://core.telegram.org/bots/api
+TITLE: Telegram Bot API
+ACCESSED: 2026-09-28
+
+Telegram Bot API
+Telegram Bot API
+The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.
+To learn how to create and set up a bot, please consult our
+Introduction to Bots
+Bot FAQ
+Recent changes
+Subscribe to
+@BotNews
+to be the first to know about the latest updates and join the discussion in
+@BotTalk
+August 24, 2026
+Bot API 10.3
+Rich Messages
+Added the class
+RichMessageButton
+representing a button in a
+RichMessage
+Added the class
+RichTextButton
+Added the classes
+RichBlockButtons
+InputRichBlockButtons
+Added the field
+is_compact
+to the classes
+RichBlockTable
+InputRichBlockTable
+Added the classes
+RichBlockExpandableBlockQuotation
+InputRichBlockExpandableBlockQuotation
+representing a block quotation, which can be expanded or collapsed back.
+Added the classes
+RichBlockDocument
+InputRichBlockDocument
+, containing a file.
+Added support for links of the form
+tg://document?id=
+for general file uploads in rich messages.
+Ephemeral messages
+Added the class
+EphemeralMessageParameters
+and replaced the parameters
+receiver_user_id
+callback_query_id
+in the methods
+sendMessage
+sendAnimation
+sendAudio
+sendDocument
+sendLivePhoto
+sendPhoto
+sendSticker
+sendVideo
+sendVideoNote
+sendVoice
+sendContact
+sendLocation
+sendVenue
+with the parameter
+ephemeral_message_parameters
+Added the parameter
+ephemeral_message_parameters
+to the method
+sendRichMessage
+Added the field
+replace_callback_query_message
+to the class
+EphemeralMessageParameters
+, which allows bots to show an ephemeral message in place of the original message.
+Supported upload of new files in
+editEphemeralMessageMedia
+Added the parameter
+show_caption_above_media
+to the method
+editEphemeralMessageCaption
+Added the parameter
+rich_message
+to the method
+editEphemeralMessageText
+Added the field
+can_send_welcome_messages
+to the classes
+ChatAdministratorRights
+ChatMemberAdministrator
+Added the parameter
+can_send_welcome_messages
+to the method
+promoteChatMember
+Reply markup
+Added the class
+DisabledButton
+and the field
+disabled
+to the class
+InlineKeyboardButton
+Added the field
+force_reply
+to the classes
+InlineKeyboardMarkup
+ReplyKeyboardMarkup
+General
+Added the parameters
+can_stop
+keep_on_stop
+to the methods
+sendMessageDraft
+sendRichMessageDraft
+Added updates about user stopping message generation, represented by the class
+MessageGenerationStopped
+and the field
+stopped_message_generation
+in the class
+Update
+Added the class
+CommunityChatJoined
+and the field
+community_chat_joined
+to the class
+Message
+for service messages about join of a chat from a community.
+Added the fields
+text
+entities
+is_private
+to the class
+UniqueGiftInfo
+July 14, 2026
+Bot API 10.2
+Rich Messages
+Added the class
+InputRichMessageMedia
+and the field
+media
+to the class
+InputRichMessage
+, allowing bots to explicitly specify media used in
+markdown
+or
+html
+formatting when sending a rich message.
+Added the class
+InputMediaVoiceNote
+, representing a voice message to be sent.
+Added the class
+InputRichBlockListItem
+, which represents an item in a list to be sent.
+Added the classes
+InputRichBlockParagraph
+InputRichBlockSectionHeading
+InputRichBlockPreformatted
+InputRichBlockFooter
+InputRichBlockDivider
+InputRichBlockMathematicalExpression
+InputRichBlockAnchor
+InputRichBlockList
+InputRichBlockBlockQuotation
+InputRichBlockPullQuotation
+InputRichBlockCollage
+InputRichBlockSlideshow
+InputRichBlockTable
+InputRichBlockDetails
+InputRichBlockMap
+InputRichBlockAnimation
+InputRichBlockAudio
+InputRichBlockPhoto
+InputRichBlockVideo
+InputRichBlockVoiceNote
+InputRichBlockThinking
+, which represent different types of blocks available to format an outgoing rich message.
+Added the field
+blocks
+to the class
+InputRichMessage
+, allowing bots to specify rich message formatting via block entities.
+Ephemeral Messages
+Introduced support for
+Ephemeral Messages
+, allowing bots to send group messages and receive commands that are visible only to a specific user and the bot.
+Added the field
+is_ephemeral
+to the class
+BotCommand
+Added the field
+receiver_user
+to the class
+Message
+Added the field
+ephemeral_message_id
+to the class
+Message
+Added the parameters
+receiver_user_id
+callback_query_id
+to the methods
+sendMessage
+sendAnimation
+sendAudio
+sendDocument
+sendLivePhoto
+sendPhoto
+sendSticker
+sendVideo
+sendVideoNote
+sendVoice
+sendContact
+sendLocation
+sendVenue
+Added the field
+ephemeral_message_id
+to the class
+ReplyParameters
+, allowing bots to reply to ephemeral messages.
+Marked the field
+message_id
+in the class
+ReplyParameters
+as optional if the field
+ephemeral_message_id
+is present.
+Added the methods
+editEphemeralMessageText
+editEphemeralMessageMedia
+editEphemeralMessageCaption
+, and
+editEphemeralMessageReplyMarkup
+allowing bots to edit ephemeral messages.
+Added the method
+deleteEphemeralMessage
+allowing bots to delete ephemeral messa
+
+===== https://core.telegram.org/api/srp
+TITLE: Two-factor authentication
+ACCESSED: 2026-09-28
+
+Two-factor authentication
+Two-factor authentication
+Telegram uses the
+Secure Remote Password protocol
+version 6a to implement 2FA.
+Example implementation:
+tdlib
+Checking the password with SRP
+To login to an account protected by a 2FA password or to perform some other actions (like changing channel owner), you will need to verify the user's knowledge of the current 2FA account password.
+To do this, first the client needs to obtain SRP parameters and the KDF algorithm to use to check the validity of the password via
+account.getPassword
+method. For now, only the
+passwordKdfAlgoSHA256SHA256PBKDF2HMACSHA512iter100000SHA256ModPow
+algorithm is supported, so we'll only explain that.
+Then, after the user provides a password, the client should generate an
+InputCheckPasswordSRP
+object using SRP and a specific KDF algorithm as shown below and pass it to appropriate method (e.g.
+auth.checkPassword
+in case of authorization).
+This extension of the
+SRP protocol
+uses the password-based
+PBKDF2
+with 100000 iterations using sha512 (
+PBKDF2HMACSHA512iter100000
+).
+PBKDF2 is used to additionally rehash the
+x
+parameter, obtained using a method similar to the one described in
+RFC 2945
+(
+H(s | H ( I | password | I) | s)
+instead of
+H(s | H ( I | ":" | password)
+) (see below).
+Here,
+|
+denotes concatenation and
++
+denotes the arithmetical operator
++
+In all cases where concatenation of numbers passed to hashing functions is done, the numbers must be used in big-endian form, padded to 2048 bits; all math is modulo
+p
+Instead of
+I
+salt1
+will be used (see
+SRP protocol
+).
+Instead of
+s
+salt2
+will be used (see
+SRP protocol
+).
+The main hashing function
+H
+is sha256:
+H(data) := sha256(data)
+The salting hashing function
+SH
+is defined as follows:
+SH(data, salt) := H(salt | data | salt)
+The primary password hashing function is defined as follows:
+PH1(password, salt1, salt2) := SH(SH(password, salt1), salt2)
+The secondary password hashing function is defined as follows:
+PH2(password, salt1, salt2) := SH(pbkdf2(sha512, PH1(password, salt1, salt2), salt1, 100000), salt2)
+Client-side, the following parameters are extracted from the
+passwordKdfAlgoSHA256SHA256PBKDF2HMACSHA512iter100000SHA256ModPow
+object, contained in the
+account.password
+object.
+g := algo.g
+p := algo.p
+The client is expected to check whether
+p
+is a safe 2048-bit prime (meaning that both
+p
+(p-1)/2
+are prime, and that
+2^2047 < p < 2^2048
+), and that
+g
+generates a cyclic subgroup of prime order
+(p-1)/2
+, i.e. is a quadratic residue
+mod p
+. Since
+g
+is always equal to 2, 3, 4, 5, 6 or 7, this is easily done using quadratic reciprocity law, yielding a simple condition on
+p mod 4g
+-- namely,
+p mod 8 = 7
+for
+g = 2
+;
+p mod 3 = 2
+for
+g = 3
+; no extra condition for
+g = 4
+;
+p mod 5 = 1 or 4
+for
+g = 5
+;
+p mod 24 = 19 or 23
+for
+g = 6
+; and
+p mod 7 = 3, 5 or 6
+for
+g = 7
+. After
+g
+p
+have been checked by the client, it makes sense to cache the result, so as to avoid repeating lengthy computations in future. This cache might be shared with one used for
+Authorization Key generation
+If the client has an inadequate random number generator, it makes sense to use the
+secure_random
+of account.password as additional seed.
+password := (user-provided password)
+salt1 := algo.salt1
+salt2 := algo.salt2
+g_b := srp_B
+srp_B
+srp_id
+are extracted from the
+account.password
+object.
+The
+k
+parameter is generated, both on client and server:
+k := H(p | g)
+The shared param
+u
+is generated: the client does this, and the server does the same with the
+g_a
+we will send him later (see below)
+u := H(g_a | g_b)
+The final parameters are generated client-side only:
+x := PH2(password, salt1, salt2)
+v := pow(g, x) mod p
+The server already has
+v
+, from when we set the password.
+A final shared param is generated, for commodity:
+k_v := (k * v) mod p
+Finally, the
+key exchange process
+starts on both parties.
+The client computes a 2048-bit number
+a
+(using sufficient entropy or the server's
+random
+; see above) and generates:
+g_a := pow(g, a) mod p
+The server computes a 2048-bit number
+b
+using sufficient entropy and generates the
+g_b
+parameter that was sent to us (see above).
+g_b := (k_v + (pow(g, b) mod p)) mod p
+Finally, the
+SRP session keys
+are generated:
+Client side:
+t := (g_b - k_v) mod p
+(positive modulo, if the result is negative increment by
+p
+)
+s_a := pow(t, a + u * x) mod p
+k_a := H(s_a)
+Server side:
+s_b := pow(g_a * (pow(v, u) mod p), b) mod p
+k_b := H(s_b)
+Since:
+g_b := (k_v + (pow(g, b) mod p)) mod p
+t := (g_b - k_v) mod p
+t :=  ((k_v + (pow(g, b) mod p)) - k_v) mod p
+t := pow(g, b) mod p
+s_a := pow(t, a + u * x) mod p
+s_a := pow(pow(g, b) mod p, a + u * x) mod p
+And:
+g_a := pow(g, a) mod p
+v := pow(g, x) mod p
+s_b := pow(g_a * (pow(v, u) mod p), b) mod p
+s_b := pow((pow(g, a) mod p) * (pow(pow(g, x) mod p, u) mod p), b) mod p
+s_b := pow(pow(g, a + x * u) mod p, b) mod p
+s_b := pow(pow(g, b) mod p, a + u * x) mod p
+s_a := pow(pow(g, b) mod p, a + u * x) mod p
+This means:
+s_b === s_a
+k_b === k_a
+Finally, as per
+
+===== https://core.telegram.org/api/auth
+TITLE: User Authorization
+ACCESSED: 2026-09-28
+
+User Authorization
+User Authorization
+Authorization is associated with a client's encryption key identifier:
+auth_key_id
+. No additional parameters need to be passed into methods following authorization.
+To log in as a
+bot
+, follow
+these instructions »
+The following alternative login flows are also available to users:
+QR code-based login flow »
+Passkey login flow »
+Sending a verification code
+Example implementations:
+Telegram for Android
+TDLib
+To show a nicely formatted and validated phone number field, the
+help.countriesList
+constructor can be obtained using the
+help.getCountriesList
+method.
+The
+help.countriesList
+config and other configuration values are then used as described
+here »
+Then, a text message containing an authorization code is sent to the user's phone using
+auth.sendCode
+However, this is not always the case, if future auth tokens are used:
+Future auth tokens
+When invoking
+auth.logOut
+on a previously authorized session, the server may return a
+future_auth_token
+, which should be stored in the local database.
+A
+future_auth_token
+is also contained in the
+auth.authorization
+returned when logging in.
+At all times, the future auth token database should contain at most 20 tokens: evict older tokens as new tokens are added to stay below this limit.
+When invoking
+auth.sendCode
+, all future auth tokens present in the database should be provided to
+codeSettings.logout_tokens
+If any of the future auth tokens matches the account we're trying to login into and the token hasn't expired:
+If
+2FA
+is not enabled,
+auth.sendCode
+will directly return an
+auth.sentCodeSuccess
+constructor with session info, indicating the session is authorized.
+If
+2FA
+is enabled,
+auth.sendCode
+will return a
+SESSION_PASSWORD_NEEDED
+RPC error, asking the user to
+enter the 2FA password
+, without sending any authorization code.
+Otherwise, the system will send an authorization code using the following logic:
+Code types
+codeSettings
+#ad253d78 flags:
+#
+allow_flashcall:
+flags
+.0?
+true
+current_number:
+flags
+.1?
+true
+allow_app_hash:
+flags
+.4?
+true
+allow_missed_call:
+flags
+.5?
+true
+allow_firebase:
+flags
+.7?
+true
+unknown_number:
+flags
+.9?
+true
+logout_tokens:
+flags
+.6?
+Vector
+<
+bytes
+> token:
+flags
+.8?
+string
+app_sandbox:
+flags
+.8?
+Bool
+=
+CodeSettings
+;
+auth.sentCodeTypeApp
+#3dbb5986 length:
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeSms
+#c000bba2 length:
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeCall
+#5353e5a7 length:
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeFlashCall
+#ab03c6d9 pattern:
+string
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeMissedCall
+#82006484 prefix:
+string
+length:
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeEmailCode
+#f450f59b flags:
+#
+apple_signin_allowed:
+flags
+.0?
+true
+google_signin_allowed:
+flags
+.1?
+true
+email_pattern:
+string
+length:
+int
+reset_available_period:
+flags
+.3?
+int
+reset_pending_date:
+flags
+.4?
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeSetUpEmailRequired
+#a5491dea flags:
+#
+apple_signin_allowed:
+flags
+.0?
+true
+google_signin_allowed:
+flags
+.1?
+true
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeFragmentSms
+#d9565c39 url:
+string
+length:
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeFirebaseSms
+#009fd736 flags:
+#
+nonce:
+flags
+.0?
+bytes
+play_integrity_project_id:
+flags
+.2?
+long
+play_integrity_nonce:
+flags
+.2?
+bytes
+receipt:
+flags
+.1?
+string
+push_timeout:
+flags
+.1?
+int
+length:
+int
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeSmsWord
+#a416ac81 flags:
+#
+beginning:
+flags
+.0?
+string
+=
+auth.SentCodeType
+;
+auth.sentCodeTypeSmsPhrase
+#b37794af flags:
+#
+beginning:
+flags
+.0?
+string
+=
+auth.SentCodeType
+;
+auth.sentCode
+#5e002502 flags:
+#
+type:
+auth.SentCodeType
+phone_code_hash:
+string
+next_type:
+flags
+.1?
+auth.CodeType
+timeout:
+flags
+.2?
+int
+=
+auth.SentCode
+;
+auth.sentCodeSuccess
+#2390fe44 authorization:
+auth.Authorization
+=
+auth.SentCode
+;
+auth.sentCodePaymentRequired
+#f8827ebf store_product:
+string
+phone_code_hash:
+string
+support_email_address:
+string
+support_email_subject:
+string
+premium_days:
+int
+currency:
+string
+amount:
+long
+=
+auth.SentCode
+;
+
+---functions---
+auth.sendCode
+#a677244f phone_number:
+string
+api_id:
+int
+api_hash:
+string
+settings:
+CodeSettings
+=
+auth.SentCode
+;
+auth.resendCode
+#cae47523 flags:
+#
+phone_number:
+string
+phone_code_hash:
+string
+reason:
+flags
+.0?
+string
+=
+auth.SentCode
+;
+auth.requestFirebaseSms
+#8e39261e flags:
+#
+phone_number:
+string
+phone_code_hash:
+string
+safety_net_token:
+flags
+.0?
+string
+play_integrity_token:
+flags
+.2?
+string
+ios_push_secret:
+flags
+.1?
+string
+=
+Bool
+;
+The
+auth.sendCode
+method has parameters for enabling/disabling use of flash calls and missed calls, and allows passing an SMS token that will be included in the sent SMS.
+For example, the latter is required in newer versions of Android, to use the
+Android SMS Retriever APIs
+The returned
+auth.sentCode
+object will contain multiple parameters:
+Name
+Type
+Description
+flags
+#
+Flags, see
+TL conditional fields
+type
+auth.SentCodeType
+Phone code type
+phone_code_hash
+string
+Phone code hash, to be stored and reused in later method calls
+next_type
+fla
+
+===== https://core.telegram.org/api/contacts
+TITLE: Contact list
+ACCESSED: 2026-09-28
+
+Contact list
+Contact list
+Working with contacts.
+Contacts deep links »
+can be used to bring the user to the contact list, optionally directly opening a specific section or action (search, sorting, adding a new contact, inviting friends or managing contacts).
+Importing phone contacts
+Schema:
+inputPhoneContact
+#6a1dc4be flags:
+#
+client_id:
+long
+phone:
+string
+first_name:
+string
+last_name:
+string
+note:
+flags
+.0?
+TextWithEntities
+=
+InputContact
+;
+importedContact
+#c13e3c50 user_id:
+long
+client_id:
+long
+=
+ImportedContact
+;
+popularContact
+#5ce14175 client_id:
+long
+importers:
+int
+=
+PopularContact
+;
+contacts.importedContacts
+#77d01c3b imported:
+Vector
+<
+ImportedContact
+> popular_invites:
+Vector
+<
+PopularContact
+> retry_contacts:
+Vector
+<
+long
+> users:
+Vector
+<
+User
+> =
+contacts.ImportedContacts
+;
+
+---functions---
+contacts.importContacts
+#2c800be5 contacts:
+Vector
+<
+InputContact
+> =
+contacts.ImportedContacts
+;
+To upload the local contact list to Telegram and see which contacts are already signed up on telegram, use
+contacts.importContacts
+, passing an array of
+inputPhoneContact
+constructors, containing:
+phone
+- The phone number in international format
+first_name
+- First name
+last_name
+- Last name, can be empty
+client_id
+- An arbitrary 64-bit integer (
+not
+the contact's Telegram user ID, since we do not have it yet); make sure there are no collisions between the client_ids passed to a single
+contacts.importContacts
+call (for example, use a simple incremental ID starting from 0)
+The method will return a
+contacts.importedContacts
+constructor, containing the following fields:
+imported
+- A list of successfully imported contacts that have an associated Telegram account as
+importedContact
+constructors.
+user_id
+is the Telegram user ID,
+client_id
+is the
+client_id
+associated to the contact, passed during the method call.
+Note that according to the user's
+privacy settings
+(specifically, the
+inputPrivacyKeyAddedByPhone
+privacy key), not all contacts which have an associated Telegram account may be returned here.
+users
+- Contains info about the Telegram users mentioned in
+imported
+popular_invites
+- Contains info about popular contacts: each
+popularContact
+constructor indicates that the contact with the specified
+client_id
+was imported
+imported
+times by that many Telegram users.
+retry_contacts
+- List of contact ids that could not be imported due to a server-side system limitation and have to be reimported with another call to
+contacts.importedContacts
+Resolve a phone number
+contacts.resolvedPeer
+#7f077ad9 peer:
+Peer
+chats:
+Vector
+<
+Chat
+> users:
+Vector
+<
+User
+> =
+contacts.ResolvedPeer
+;
+
+---functions---
+contacts.resolvePhone
+#8af94344 phone:
+string
+=
+contacts.ResolvedPeer
+;
+You can use
+contacts.resolvePhone
+to check if a phone number has an associated Telegram account, without importing it as a contact.
+If there is no Telegram account associated with the specified phone number,
+PHONE_NOT_OCCUPIED
+will be returned.
+The same error will be returned if the target account's
+privacy settings »
+(specifically, the
+inputPrivacyKeyAddedByPhone
+privacy key) prevent phone number lookups of their account.
+Make sure to implement client-side ratelimiting/debounce for this method, allowing at most 1 call every 3 seconds.
+Adding Telegram users as contacts
+Schema:
+users.userFull
+#3b6d152e full_user:
+UserFull
+chats:
+Vector
+<
+Chat
+> users:
+Vector
+<
+User
+> =
+users.UserFull
+;
+inputUser
+#f21158c6 user_id:
+long
+access_hash:
+long
+=
+InputUser
+;
+user
+#31774388 flags:
+#
+self:
+flags
+.10?
+true
+contact:
+flags
+.11?
+true
+mutual_contact:
+flags
+.12?
+true
+deleted:
+flags
+.13?
+true
+bot:
+flags
+.14?
+true
+bot_chat_history:
+flags
+.15?
+true
+bot_nochats:
+flags
+.16?
+true
+verified:
+flags
+.17?
+true
+restricted:
+flags
+.18?
+true
+min:
+flags
+.20?
+true
+bot_inline_geo:
+flags
+.21?
+true
+support:
+flags
+.23?
+true
+scam:
+flags
+.24?
+true
+apply_min_photo:
+flags
+.25?
+true
+fake:
+flags
+.26?
+true
+bot_attach_menu:
+flags
+.27?
+true
+premium:
+flags
+.28?
+true
+attach_menu_enabled:
+flags
+.29?
+true
+flags2:
+#
+bot_can_edit:
+flags2
+.1?
+true
+close_friend:
+flags2
+.2?
+true
+stories_hidden:
+flags2
+.3?
+true
+stories_unavailable:
+flags2
+.4?
+true
+contact_require_premium:
+flags2
+.10?
+true
+bot_business:
+flags2
+.11?
+true
+bot_has_main_app:
+flags2
+.13?
+true
+bot_forum_view:
+flags2
+.16?
+true
+bot_forum_can_manage_topics:
+flags2
+.17?
+true
+bot_can_manage_bots:
+flags2
+.18?
+true
+bot_guestchat:
+flags2
+.19?
+true
+id:
+long
+access_hash:
+flags
+.0?
+long
+first_name:
+flags
+.1?
+string
+last_name:
+flags
+.2?
+string
+username:
+flags
+.3?
+string
+phone:
+flags
+.4?
+string
+photo:
+flags
+.5?
+UserProfilePhoto
+status:
+flags
+.6?
+UserStatus
+bot_info_version:
+flags
+.14?
+int
+restriction_reason:
+flags
+.18?
+Vector
+<
+RestrictionReason
+> bot_inline_placeholder:
+flags
+.19?
+string
+lang_code:
+flags
+.22?
+string
+emoji_status:
+flags
+.30?
+EmojiStatus
+usernames:
+flags2
+.0?
+Vector
+<
+Username
+> stories_max_id:
+flags2
+.5?
+RecentStory
+color:
+flags2
+.8?
+PeerColor
+profile_color:
+flags2
+.9?
+PeerColor
+bot_active_users:
+flags2
+.12?
+int
+bot_verification_icon:
+flags2
+.14?
+long
+
+===== https://core.telegram.org/api/file-references
+TITLE: File references
+ACCESSED: 2026-09-28
+
+File references
+File references
+File references are strings of bytes that can be encountered in the
+file_reference
+fields of
+document
+photo
+objects.
+They must be cached by the client, along with the
+source
+where the document/photo object was found, in order to be refetched when the file reference expires.
+Example implementation of a reference database:
+MadelineProto
+android
+telegram desktop
+tdlib
+Automatic implementation
+Implementation and maintenance of the file reference database may be fully automated by using the
+file reference database map file
+To start, set up the following two tables:
+File reference table »
+:
+HashMap<FileId, bytes>
+File source table »
+:
+HashMap<FileId, Vector<FileSource>>
+Then, download and implement the
+map file »
+File reference table
+The file reference table can be represented by the following type:
+HashMap<FileId, bytes>
+This table maps a
+file ID »
+(which uniquely identifies a photo or a document) to a
+file reference »
+This table is populated by the
+incoming traversers »
+contained in the
+map file »
+The file reference can alternatively be stored, for example, in the document and photo DBs along with other metadata, or in any other way that uniquely associates a
+FileId
+to a file reference.
+File source table
+HashMap<FileId, Vector<FileSource>>
+It maps a
+file ID »
+to one or more
+file sources »
+This table is populated by the
+incoming traversers »
+contained in the
+map file »
+To reduce the size of the file source table, it's possible to only allow storing one file source per source type per file ID (max N file sources per file ID, for N file source types), or even just one file source per file ID (max 1 source per file ID).
+Map file
+Download latest JSON file reference map for the current layer »
+- The constructor predicate is serialized under the
+_
+key,
+bytes
+fields are serialized as
+{"_": "bytes", "bytes": "<base64 encoded value>"}
+Download latest serialized TL version of the file reference map for the current layer »
+See
+here »
+for the full TL schema of the map file.
+Subset of the schema:
+fileReferenceMap#72a99250 layer:int db_schema:string db_schema_json:string traversers_incoming:Vector<TraverserIncoming> traversers_outgoing:Vector<TraverserOutgoing> refresh_actions:Vector<RefreshAction> skipped_incoming_sources:Vector<SkippedSource> = FileReferenceMap;
+
+predicate#de3bc05a predicate:string is_constructor:Bool = Predicate;
+skippedSource#2b543f6f predicate:Predicate why:string = SkippedSource;
+The map file is composed of a single
+fileReferenceMap
+constructor, which contains:
+In the
+layer
+field, the layer version from which the map file was generated.
+db_schema
+db_schema_json
+fields with the TL
+database
+schema of
+FileId
+s and
+FileSource
+s.
+db_schema
+is text TL schema,
+db_schema_json
+is the same TL schema in the JSON format
+also used for the API schema »
+This DB schema is used for:
+File IDs »
+, used in the file reference DB as keys in the
+file reference table »
+file source table »
+File sources »
+, used in the file reference DB as values in the
+file source table »
+These TL schemas can be used as a guideline for the file reference and file source table DBMS schema, or by directly serializing file IDs and file source vectors if a simple string => string KV DB is used.
+See
+here »
+for the current TL schema of the file reference database.
+traversers_incoming
+contains
+incoming traversers »
+, used to extract and store
+file references »
+from incoming media constructors.
+traversers_outgoing
+contains
+outgoing traversers »
+, used to swap expired
+file references »
+from outgoing media method calls.
+refresh_actions
+contains
+refresh actions »
+, instructions used to refresh expired file references according to
+file sources »
+stored in the
+file source table
+skipped_incoming_sources
+contains skipped sources.
+These constructors indicate that the source should be ignored completely (including during codegen):
+skippedSource
+sources are used internally to make sure all file reference paths are still covered in some way during validation, including paths for ephemeral media like inline results, or for media without any associated source (for example, media uploaded using
+messages.uploadMedia
+but not yet sent anywhere obviously does not have any associated source).
+skippedSource.predicate
+- Indicates the ignored constructor or method.
+predicate.predicate
+contains the name, and
+predicate.is_constructor
+specifies whether it points to a constructor or to a method.
+skippedSource.why
+- A human-readable reason as to why this source should be ignored.
+Each skipped predicate has exactly one associated reason.
+The map file is automatically generated and validated by the
+file reference generator tool »
+; this tool can be manually run on newer or experimental layers, to generate the
+file reference database map file
+for a given API schema: see
+here »
+for more info.
+File IDs
+A
+file ID
+(in the context of the file reference DB) is an object that, when serialized to a string, can easily and u
+
+===== https://core.telegram.org/api/obtaining_api_id
+TITLE: Creating your Telegram Application
+ACCESSED: 2026-09-28
+
+Creating your Telegram Application
+Creating your Telegram Application
+We welcome all developers to use our
+API
+and source code to create Telegram-like messaging applications on our platform free of charge.
+In order to ensure consistency and security across the Telegram ecosystem,
+all third-party client apps
+must comply with the
+API Terms of Service
+Obtaining api_id
+In order to obtain an
+API id
+and develop your own application using the Telegram API you need to do the following:
+Sign up for Telegram using an official application.
+Log in to your Telegram core:
+https://my.telegram.org
+Go to
+"API development tools"
+and fill out the form.
+You will get basic addresses as well as the
+api_id
+api_hash
+parameters required for user authorization.
+For the moment each number can only have one api_id connected to it.
+We will be sending important developer notifications to the phone number that you use in this process, so please use an up-to-date number connected to your active Telegram account.
+Using the api_id
+Before using the MTProto Telegram API, please note that all API client libraries are strictly monitored to prevent abuse.
+If you use the Telegram API for flooding, spamming, faking subscriber and view counters of channels, you
+will be banned forever
+Due to excessive abuse of the Telegram API,
+all accounts
+that log in using unofficial Telegram API clients are automatically put
+under observation
+to avoid violations of the
+Terms of Service
+If you didn't violate the Terms of Service but your account does get banned after using the API, write to
+recover@telegram.org
+explaining what you intend to do with the API, asking to unban your account.
+Please note that emails are checked by a human, so automatically generated emails will be detected and banned.
+Using Telegram's open source code
+Everyone is welcome to use our open source code. We have included a sample API id with the code. This API id is limited on the server side and is not suitable for apps released to end-users — using it for anything but testing purposes will result in the API_ID_PUBLISHED_FLOOD error for your users. It is necessary that you obtain your
+own API id
+before you publish your app.
+Please remember to publish your code as well in order to comply with the GNU GPL licenses.

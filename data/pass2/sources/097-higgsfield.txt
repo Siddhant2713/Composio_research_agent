@@ -1,0 +1,598 @@
+===== https://higgsfield.ai/cli
+TITLE: Higgsfield CLI | AI Image & Video Generation for Any Agent
+ACCESSED: 2026-09-28
+
+Claude Code
+ChatGPT
+OpenClaw
+Hermes
+MCP
+CLI
+1
+Copy and send this to Claude Code
+Set up Higgsfield for me so I can generate images and videos from here.
+1. Install the CLI: run
+`npm i -g @higgsfield/cli`
+.
+2. Authenticate: run
+`higgsfield auth login`
+and complete the sign-in in the browser it opens.
+3. Install the companion skills: run
+`npx skills add higgsfield-ai/skills`
+.
+Once that's done, let me know when it's ready.
+2
+Connect and start creating
+Sign in, then ask Claude Code to generate an image or video
+GitHub
+How does MCP work?
+Marketing
+Faceless videos
+Website building
+Video generation
+Image generation
+Claude
+Create a complete UGC flow for this tumbler using the attached creator, from concept and script to a finished 9:16 video
+I’ll shape the product benefit into a natural creator concept, write a concise script, and carry the same avatar through the final widescreen video.
+The concept and script are ready. Now I’ll generate the creator performance with consistent product details and native captions.
+Higgsfield
+Generate a 15-second 9:16 UGC video using the attached creator and tumbler. Open with a relatable problem, demonstrate the cold-all-day benefit, use casual piece-to-camera delivery, and finish with a concise call to action
+Seedance 2
+9:16
+15s
+Audio
+Your UGC flow is complete — concept, script, creator performance, product close-up, captions, and a social-ready widescreen cut.
+Result
+424k
++134%
+104k
++95%
+Create with Higgsfield skills in
+Claude
+Give your Claude access to the most powerful image and video models
+Turn this green handbag ad into three campaign-ready variations. Refresh the talent, wardrobe, and upscale home setting while keeping the bag design, product-focused motion, framing, timing, and audio consistent
+Recreate
+Learn more
+Ad Multiplier
+Skill
+Create an editorial motion graphics faceless video about how the Mona Lisa became the world’s most famous painting
+Recreate
+Learn more
+Editorial Motion Graphics
+Use case
+Website
+Create a UGC ad video for this chips with this girl, showing its store page on screen
+Recreate
+Learn more
+SaaS UGC
+Skill
+Build the LOOMERE website from the attached coral polo shirt. Use celadon sage, warm ivory, pine ink, Cabinet Grotesk, and Inter Tight with one red accent. Show a coral thread becoming the polo and four pastel variants, with six chapters, a preorder modal, a knot logo, and a fabric-facts marquee
+Recreate
+Learn more
+Website Building
+Skill
+Create a stickman cartoon faceless video showing Odysseus's journey to Troy and back home
+Recreate
+Learn more
+Stickman cartoon
+Skill
+Create a complete UGC flow for this tumbler using the attached creator, from concept and script to a finished 9:16 video
+Recreate
+Learn more
+Product review UGC
+Skill
+Create a faceless video about a surprising historical fact with a strong hook, stylized visuals, voiceover, and subtitles
+Recreate
+Learn more
+Faceless Content
+Skill
+Every creative model,
+Inside Claude & ChatGPT
+Every creative model, inside
+Claude
+Give Claude access to the most powerful image and video models.
+Nano Banana Pro
+Google Omni Flash
+Seedance 2.5
+Seedream 5.0 Lite
+Seedance 2.0
+Kling 3
+GPT Image 2
+Soul 2.0
+Got any questions left?
+How does Higgsfield connect to AI agents?
+Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools. Once connected, your agent can generate images, create videos, train characters, and browse your creation history, all within a single session.
+Which agents are supported?
+Higgsfield MCP works with Claude (web, Cowork, and Claude Code), OpenClaw, Hermes Agent, and NemoClaw. Any agent or client that supports MCP can connect to Higgsfield.
+What models are available?
+Higgsfield gives your agent access to 30+ models including Soul, Cinema Studio, Flux, Seedream, Kling, Minimax Hailuo, Veo, and more. Your agent automatically selects the best model for the task, or you can specify one yourself.
+What can I create?
+Images up to 4K resolution, videos up to 15 seconds across multiple cinematic styles, consistent characters using Soul training, and more. You can generate from text prompts, reference images, or a combination of both.
+Do I need an API key?
+No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.
+How does pricing work?
+Higgsfield tools use the same credit system as the Higgsfield platform. Each generation costs credits based on the model and resolution. Your existing Higgsfield plan credits work seamlessly through any connected agent.
+How long does generation take?
+Images typically complete in a few seconds. Videos take longer depending on duration and model. All generation runs asynchronously, so your agent polls for results and delivers them as soon as they're ready.
+Can I use previous generations as input?
+Yes. You can browse your full generation history, reference any past image or video, and use it as a starting point for new creations. This m
+
+===== https://higgsfield.ai
+TITLE: Higgsfield AI — AI-native creative suite
+ACCESSED: 2026-09-28
+
+Open API Cashback
+Open API Cashback
+Your browser does not support the video.
+API Cashback: 100% back on every model, up to $100,000
+API Cashback
+100% back on every model, up to $100,000
+Open PRODUCTION SKILLS BUNDLE
+Open PRODUCTION SKILLS BUNDLE
+Your browser does not support the video.
+PRODUCTION SKILLS BUNDLE: 3D, VFX, editing, and design. Run it all from ChatGPT or Claude
+PRODUCTION SKILLS BUNDLE
+3D, VFX, editing, and design. Run it all from ChatGPT or Claude
+Open Higgsfield x GPT-6 Astra for Paid Ads
+Open Higgsfield x GPT-6 Astra for Paid Ads
+Your browser does not support the video.
+Higgsfield x GPT-6 Astra for Paid Ads: Market research to your next ad test - now on ChatGPT
+Higgsfield x GPT-6 Astra for Paid Ads
+Market research to your next ad test - now on ChatGPT
+Open Higgsfield Genjutsu
+Open Higgsfield Genjutsu
+Your browser does not support the video.
+Higgsfield Genjutsu: One upload in. Endless new visions out.
+Higgsfield Genjutsu
+One upload in. Endless new visions out.
+Your browser does not support the video.
+Sign up and get your
+extra discount
+Get unlimited Nano Banana Pro
+Unlock your extra discount
+Access to Seedance 2.5
+Get your discount
+Sign up and get your discount
+Seedance 2.5
+Top
+The most advanced video model
+Top
+Video
+Nano Banana Pro
+Generate high-quality visuals
+Image
+Higgsfield Genjutsu
+New
+One video, many versions
+New
+Higgsfield Plugin for ChatGPT
+Generate images and videos in ChatGPT
+Cinema Studio 4.0
+Create cinematic scenes effortlessly
+Supercomputer
+Agent powered by GPT-6 Astra
+Your browser does not support the video.
+Global Film Festival
+All submissions are live
+The shortlist is next
+Watch all films while the jury makes its picks
+The Tortoise and the Hare
+BË
+Benhamin ë²µ
+BESA
+OK
+OLL KORRECT
+Count of Three
+H
+Hakim
+Detour
+AC
+AIST Creator
+BALLAST
+LJ
+Le Jardinier
+AZUL COBALTO
+TP
+Tomas Pena
+Rest Face
+JS
+Jamil Safari
+Fallen Leaves
+JE
+Jacob Everett
+VARMINTS: Las Bodas Del Rio
+O
+outrealproduction
+The Kiss
+SH
+Supernova Holding
+Harmony
+HF
+Hebert Freire
+THE THREAD
+ES
+Evgeny Stadolnik
+Explore all projects
+Visual Effects
+Big-budget visual effects, from explosions to surreal transformations.
+Start generating
+Floating fall
+Recreate
+High flip
+Recreate
+Burning man
+Recreate
+Studio slide
+Recreate
+Incline
+Recreate
+Act natural
+Recreate
+Eyes in
+Recreate
+Street colossus
+Recreate
+Melting
+Recreate
+Wild ride
+Recreate
+Cutout
+Recreate
+World morphing
+Recreate
+Smash and grab
+Recreate
+Selfception
+Recreate
+Lacewalker
+Recreate
+View all presets
+New model
+Higgsfield Genjutsu
+Reality Manipulation — transfer motion into new scenes, or swap details while everything else stays as filmed.
+Start generating
+Learn more
+View all presets
+View all of Seedance 2.5
+Higgsfield Genjutsu
+Take the motion and recast it with your characters, locations, and products, or swap specific elements while keeping the rest untouched.
+View all presets
+Explore the inside of every project
+See all prompts, assets, and how each project was created
+H
+If you stop loving me, I'll die — I don't like dying, but for our love I'm ready to go that far
+by Higgsfield Studio
+Public
+H
+Cully Hill Boys
+by Higgsfield Studio
+Public
+H
+Red Flag
+by Higgsfield Studio
+Public
+H
+Kok Boru
+by Higgsfield Studio
+Public
+H
+Adiliada
+by Higgsfield Studio
+Public
+H
+ONEIRIC
+by Higgsfield Studio
+Public
+H
+ZEPHYR: Special
+by Higgsfield Studio
+Public
+H
+HELL GRIND
+by Higgsfield Studio
+Public
+Explore community
+Supercomputer
+One superagent for your entire creative stack
+Try Supercomputer
+
+===== https://docs.higgsfield.ai/docs
+TITLE: Higgsfield API - Higgsfield API Docs
+ACCESSED: 2026-09-28
+
+Higgsfield provides one integration point for generative media models. Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes.
+Run your first request
+Create credentials and complete a generation from submission to result.
+Get an API key
+Create and manage server-side credentials in Higgsfield Console.
+​
+Make a request
+Every model uses the same authentication and asynchronous request lifecycle. The JSON body depends on the selected model.
+Start with
+Genjutsu motion transfer
+. Replace the example media URLs with publicly accessible URLs for your own video and reference image. The source video must be at least 4 seconds long.
+Genjutsu
+SOUL V2
+curl
+--request
+POST
+\
+--url
+https://api.higgsfield.ai/higgsfield/genjutsu/motion-transfer/v1.0
+\
+--header
+"Authorization: Key ${
+HF_API_KEY_ID
+}:${
+HF_API_KEY_SECRET
+}"
+\
+--header
+"Content-Type: application/json"
+\
+--data
+'{
+"video_url": "https://example.com/input.mp4",
+"image_urls": ["https://example.com/input.jpg"]
+}'
+curl
+--request
+POST
+\
+--url
+https://api.higgsfield.ai/higgsfield-ai/soul/v2/standard
+\
+--header
+"Authorization: Key ${
+HF_API_KEY_ID
+}:${
+HF_API_KEY_SECRET
+}"
+\
+--header
+"Content-Type: application/json"
+\
+--data
+'{
+"prompt": "Editorial portrait in soft daylight"
+}'
+The API immediately returns a request identifier and links for checking or canceling the request.
+{
+"status"
+:
+"queued"
+,
+"request_id"
+:
+"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff"
+,
+"status_url"
+:
+"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/status"
+,
+"cancel_url"
+:
+"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/cancel"
+}
+​
+Choose your path
+Build a prototype
+Use the Python or TypeScript SDK to submit a request and wait for its result.
+Ship to production
+Learn the request lifecycle, polling, webhooks, errors, and limits.
+Upload media
+Upload input files to Higgsfield storage before generation.
+Output files are available for at least seven days. Download completed output to your own storage for long-term retention.
+Was this page helpful?
+Yes
+No
+
+===== https://higgsfield.ai/contact
+TITLE: Contacts • Higgsfield
+ACCESSED: 2026-09-28
+
+Get in Touch with
+Higgsfield
+Fast help on Discord
+Join our Discord community for quick answers, product support, and help from our core support team and community members.
+Billing Support
+For questions about charges, credits, subscriptions, or refunds, contact:
+support@higgsfield.ai
+
+===== https://higgsfield.ai/creator-partnership-program
+TITLE: Creator Partnership Program: Apply Now | Higgsfield
+ACCESSED: 2026-09-28
+
+Your browser does not support the video.
+Higgsfield AI Creator
+Partnership Program
+Join a community of the most ambitious AI creators
+Home to the creators shaping visual storytelling
+A full Higgsfield plan renewed every month, credit support, tips and hands-on help growing your audience, and a direct line to Higgsfield.
+Apply now
+See partner work
+Create without limits
+Full Higgsfield plan, renewed every month
+Extra credits for films and series
+New models and features before public release
+Grow and get noticed
+Affiliate program to earn from your reach
+Your work featured across Higgsfield channels
+Playbooks and hands-on advice from the team
+Never create alone
+A dedicated Higgsfield contact, anytime
+Curated partner community across 35+ countries
+Challenges, spotlights and collabs
+Your browser does not support the video.
+Klim Tukaev
+Film director and Higgsfield Creative Partner from Saint Petersburg. Known for cinematic, stop-motion-style AI work, with an ambition to build full-length films and series through AI. Featured work: "I WANT YOU."
+Your browser does not support the video.
+Tseily
+Filmmaker and creative director known for a signature cinematic film look, turning everyday footage into true cinema with Higgsfield.
+Your browser does not support the video.
+Aleksandra
+Aleksandra is an AI artist and art director who works at the intersection of fashion imagery and editorial design. Beyond her own practice, she runs Digital New Art, a course on AI-driven visual creation that has already graduated several cohorts, making her both a creator and one of the leading educators in the Russian-speaking AI art community.
+Your browser does not support the video.
+Daniel
+AI creator behind v.isionist, known for viral concept reels that pull millions of views. His Higgsfield work blends nostalgia-driven storytelling with bold, scroll-stopping visuals.
+Your browser does not support the video.
+Efe Akdemir
+Film director from Istanbul, working across commercial and AI. His narrative shorts are built end to end on Higgsfield, with character consistency held across full pieces.
+Your browser does not support the video.
+Stephan Vasement
+AI artist crafting atmospheric jewelry films and refined visual worlds on Higgsfield. His pieces blend fashion-grade aesthetics with dreamlike detail, turning product visuals into cinematic moments.
+Your browser does not support the video.
+clie2k
+Turkey-based AI filmmaker whose Higgsfield work feels like moving paintings: lone figures, fire and dusk, grief and memory rendered in rich film-grain texture.
+Your browser does not support the video.
+skinofmany
+AI visual artist from Lebanon building surreal, cinematic worlds on Higgsfield. His work has pulled in millions of views and caught the eye of major recording artists.
+Your browser does not support the video.
+Shamil
+Digital artist behind Artsopolis, a 590K-strong page of striking visual art. His Higgsfield work brings that same bold, stylized aesthetic into motion: cinematic reels built for maximum visual impact.
+50+ Models
+All-in-one suite with 50+ models
+.
+Our platform includes dedicated video, image, and audio models, along with proprietary tools built for creative scaling.
+Marketing Studio
+Scale your marketing output
+.
+Create UGC ads and commercials for any product or service with pre-built hooks and settings. Total flexibility for your marketing department
+Product
+App
+www.yourapp.com
+Cinema Studio
+Complete solution for your production studio
+.
+Shape every shot with precise control over camera, lens, and light with Cinema Studio
+Genre:
+Action
+Style:
+Orange Teal
+Camera:
+Studio Digital S35
+00:14:28
+gloria fight scene
+.mp4
+Your browser does not support the video.
+Character
+Gloria
+Prompt
+A cinematic action scene of a young woman riding a black motorcycle fast speed
+Camera style
+Zoom In
+Location
+American Street
+4.5 MB
+Complete solution for your production studio
+MCP & CLI
+Enhance your best workflows with MCP & CLI
+.
+Plug Higgsfield straight into the tools you already create with, like Claude, ChatGPT, Cursor and Figma. Generate, iterate, and build your whole workflow without ever leaving your setup.
+Agentic Engine
+Design smart, develop like a pro
+.
+Use Supercomputer's skills, connectors and automations to build, generate and market anything.
+Canvas
+One canvas to rule them all
+.
+Connect all your assets in one node-based canvas, and build your whole project in a single space.
+Character Studio
+Create your own characters that stay consistent everywhere
+.
+Upload photos from multiple angles to train your character. Then use that character consistently across new images and videos.
+50+ Models
+Marketing Studio
+Cinema Studio
+MCP & CLI
+Agentic Engine
+Canvas
+Character Studio
+All-in-one suite with 50+ models
+Our platform includes dedicated video, image, and audio models, along with proprietary tools built for creative scaling.
+Your browser does not support the video.
+Your browser does not support the video.
+Your browser does not support the video.
+Your browser d
+
+===== https://docs.higgsfield.ai/docs/authentication
+TITLE: Authentication - Higgsfield API Docs
+ACCESSED: 2026-09-28
+
+Create and manage API credentials in
+Higgsfield Console
+. Each credential consists of a key ID and a secret.
+Send both values in the
+Authorization
+header:
+Authorization
+:
+Key YOUR_KEY_ID:YOUR_KEY_SECRET
+curl
+https://api.higgsfield.ai/requests/REQUEST_ID/status
+\
+--header
+"Authorization: Key ${
+HF_API_KEY_ID
+}:${
+HF_API_KEY_SECRET
+}"
+The API also accepts the legacy
+hf-api-key
+and
+hf-secret
+headers. New integrations should use the
+Authorization
+header.
+​
+Keep credentials server-side
+Do not call the API directly from browser or mobile application code. Anyone who can inspect the application can extract its API secret and use your account.
+Store credentials in a secrets manager or encrypted environment variables.
+Use separate credentials for development and production.
+Never include credentials in URLs, logs, screenshots, or support messages.
+Rotate a credential immediately if it may have been exposed.
+​
+Authentication errors
+Missing, malformed, or invalid credentials return
+401 Unauthorized
+:
+{
+"detail"
+:
+"Invalid credentials"
+}
+Authentication identifies the account, but individual models may have separate access restrictions. A model unavailable to the authenticated account can return
+404
+,
+423
+, or
+503
+depending on its operational state.
+Was this page helpful?
+Yes
+No
+
+===== https://docs.higgsfield.ai/docs/api-reference/overview
+TITLE: API reference - Higgsfield API Docs
+ACCESSED: 2026-09-28
+
+The API reference is generated from the public OpenAPI specification. It includes model-specific generation schemas plus the shared status and cancellation operations.
+Base URL:
+https://api.higgsfield.ai
+All endpoints require the
+Authorization
+header
+.
+Use the generation endpoint available to your account. Use
+Get request status
+in the sidebar to retrieve state and output for an existing request. Use
+Cancel a queued request
+to stop work that has not started processing.
+For the complete integration flow, start with the
+Quickstart
+and
+Requests and lifecycle
+.
+Was this page helpful?
+Yes
+No

@@ -1,0 +1,231 @@
+{
+  "app": "Neo4j",
+  "number": 66,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:35:43.256499+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://neo4j.com/docs/api\",\n    \"https://neo4j.com/docs/driver-manual/current/\",\n    \"https://neo4j.com/docs/\",\n    \"https://neo4j.com/developer/\",\n    \"https://neo4j.com/cloud/platform/aura/\",\n    \"https://neo4j.com/pricing/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://neo4j.com/docs/api",
+    "https://neo4j.com/docs/driver-manual/current/",
+    "https://neo4j.com/docs/",
+    "https://neo4j.com/developer/",
+    "https://neo4j.com/cloud/platform/aura/",
+    "https://neo4j.com/pricing/",
+    "https://docs.neo4j.com/",
+    "https://developer.neo4j.com/",
+    "https://developers.neo4j.com/",
+    "https://api.neo4j.com/",
+    "https://neo4j.com/developers",
+    "https://neo4j.com/api"
+  ],
+  "second_hop_considered": [
+    "https://neo4j.com/docs/license",
+    "https://neo4j.com/docs/graphql/current/",
+    "https://neo4j.com/docs/java-reference/current/",
+    "https://neo4j.com/docs/getting-started/current/",
+    "https://neo4j.com/docs/api/java-driver/current/",
+    "https://neo4j.com/docs/api/python-driver/current/",
+    "https://neo4j.com/docs/reference/license/",
+    "https://neo4j.com/docs/operations-manual/current/authentication-authorization/",
+    "https://neo4j.com/docs/reference/",
+    "https://neo4j.com/docs/java-reference",
+    "https://neo4j.com/docs/getting-started/",
+    "https://neo4j.com/docs/spark/current/quickstart/",
+    "https://neo4j.com/contact-us/?ref=nav",
+    "https://neo4j.com/contact-us/",
+    "https://neo4j.com/partners/aws/",
+    "https://neo4j.com/partners/google/",
+    "https://neo4j.com/contact-us/?ref=subscription",
+    "https://neo4j.com/partners/microsoft/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://neo4j.com/docs/api",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://neo4j.com/cloud/platform/aura/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.neo4j.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.neo4j.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://neo4j.com/docs/create-applications/",
+      "requested_url": "https://neo4j.com/docs/driver-manual/current/",
+      "status": 200,
+      "title": "Create applications - Neo4j Documentation",
+      "chars": 1811,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/docs/",
+      "requested_url": "https://neo4j.com/docs/",
+      "status": 200,
+      "title": "Neo4j documentation - Neo4j Documentation",
+      "chars": 2078,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/developer/",
+      "requested_url": "https://neo4j.com/developer/",
+      "status": 200,
+      "title": "Developer center",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/pricing/",
+      "requested_url": "https://neo4j.com/pricing/",
+      "status": 200,
+      "title": "Cloud & self-hosted graph database platform pricing | Neo4j",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/docs/reference/license/",
+      "requested_url": "https://neo4j.com/docs/license",
+      "status": 200,
+      "title": "Licenses and disclaimers - Neo4j Documentation",
+      "chars": 683,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/docs/graphql/current/",
+      "requested_url": "https://neo4j.com/docs/graphql/current/",
+      "status": 200,
+      "title": "Introduction - Neo4j GraphQL Library",
+      "chars": 2957,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/docs/java-reference/current/",
+      "requested_url": "https://neo4j.com/docs/java-reference/current/",
+      "status": 200,
+      "title": "The Neo4j Java Reference v2026.09 - Java Reference",
+      "chars": 907,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/docs/getting-started/",
+      "requested_url": "https://neo4j.com/docs/getting-started/current/",
+      "status": 200,
+      "title": "Get started with Neo4j - Getting Started",
+      "chars": 1497,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://neo4j.com/docs/api/java-driver/current/",
+      "requested_url": "https://neo4j.com/docs/api/java-driver/current/",
+      "status": 200,
+      "title": "Overview (Neo4j Java Driver 6.3 API)",
+      "chars": 1537,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Neo4j is a graph database and data platform featuring query APIs, drivers, and a GraphQL library for building connected data applications.\",\n  \"auth\": {\n    \"method\": \"basic_auth\",\n    \"notes\": \"Examples use basic authentication tokens (username and password) to connect to Neo4j database instances.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"AuraDB offers a Free tier with no credit card required and self-serve plans such as AuraDB Professional.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": false,\n    \"sdks\": [\n      \"Python\",\n      \"Go\",\n      \"Java\",\n      \"JavaScript\",\n      \".NET\"\n    ],\n    \"notes\": \"Supports a Neo4j Query API for HTTP requests, a GraphQL Library, and official language drivers.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://neo4j.com/docs/create-applications/\",\n    \"notes\": \"Connect AI applications to Neo4j via Model Context Protocol.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://neo4j.com/pricing/\",\n      \"claim\": \"AuraDB Free is available with no credit card required.\",\n      \"quote\": \"AuraDB Free $0 Learn and Explore Graphs Start Learning (opens in new tab) No credit card or other payment method required\"\n    },\n    {\n      \"url\": \"https://neo4j.com/docs/create-applications/\",\n      \"claim\": \"The platform provides a Neo4j Query API for HTTP requests.\",\n      \"quote\": \"Execute Cypher\u00ae statements against a Neo4j server through HTTP requests.\"\n    },\n    {\n      \"url\": \"https://neo4j.com/docs/create-applications/\",\n      \"claim\": \"The platform supports Model Context Protocol to connect AI applications.\",\n      \"quote\": \"Connect AI applications to Neo4j via Model Context Protocol.\"\n    },\n    {\n      \"url\": \"https://neo4j.com/docs/create-applications/\",\n      \"claim\": \"The platform provides a GraphQL Library.\",\n      \"quote\": \"Use the GraphQL Library to have data treated as a graph natively from the frontend all the way to storage.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://neo4j.com/developer/\",\n      \"quote\": \"AUTH = (\\\"neo4j\\\", \\\"\\n\\\")\"\n    },\n    \"access\": {\n      \"url\": \"https://neo4j.com/pricing/\",\n      \"quote\": \"No credit card or other payment method required\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://neo4j.com/docs/create-applications/\",\n      \"quote\": \"Execute Cypher\u00ae statements against a Neo4j server through HTTP requests.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://neo4j.com/docs/create-applications/\",\n      \"quote\": \"Connect AI applications to Neo4j via Model Context Protocol.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://neo4j.com/docs/api",
+    "one_liner": "Neo4j is a graph database and data platform featuring query APIs, drivers, and a GraphQL library for building connected data applications.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://neo4j.com/developer/."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "AuraDB offers a Free tier with no credit card required and self-serve plans such as AuraDB Professional."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": false,
+      "sdks": [
+        "Python",
+        "Go",
+        "Java",
+        "JavaScript",
+        ".NET"
+      ],
+      "notes": "Supports a Neo4j Query API for HTTP requests, a GraphQL Library, and official language drivers."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://neo4j.com/docs/create-applications/",
+      "notes": "Connect AI applications to Neo4j via Model Context Protocol."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://neo4j.com/pricing/",
+        "claim": "AuraDB Free is available with no credit card required.",
+        "quote": "AuraDB Free $0 Learn and Explore Graphs Start Learning (opens in new tab) No credit card or other payment method required",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://neo4j.com/docs/create-applications/",
+        "claim": "The platform provides a Neo4j Query API for HTTP requests.",
+        "quote": "Execute Cypher\u00ae statements against a Neo4j server through HTTP requests.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://neo4j.com/docs/create-applications/",
+        "claim": "The platform supports Model Context Protocol to connect AI applications.",
+        "quote": "Connect AI applications to Neo4j via Model Context Protocol.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://neo4j.com/docs/create-applications/",
+        "claim": "The platform provides a GraphQL Library.",
+        "quote": "Use the GraphQL Library to have data treated as a graph natively from the frontend all the way to storage.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "No credit card or other payment method required"
+      },
+      "api_surface": {
+        "url": "https://neo4j.com/docs/create-applications/",
+        "quote": "Execute Cypher\u00ae statements against a Neo4j server through HTTP requests."
+      },
+      "mcp": {
+        "url": "https://neo4j.com/docs/create-applications/",
+        "quote": "Connect AI applications to Neo4j via Model Context Protocol."
+      }
+    },
+    "unsupported_fields": [
+      "auth: quoted line not found on https://neo4j.com/developer/"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:35:58.286908+00:00"
+}

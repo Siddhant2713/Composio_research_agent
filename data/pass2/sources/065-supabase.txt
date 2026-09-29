@@ -1,0 +1,860 @@
+===== https://supabase.com/docs
+TITLE: Supabase Docs
+ACCESSED: 2026-09-28
+
+Supabase Documentation
+Learn how to get up and running with Supabase through tutorials, APIs and platform resources.
+CLI
+Help me get set up with Supabase. Do the following:
+Install the Supabase CLI as a project dev dependency with
+npm install supabase --save-dev
+, so the version is pinned per project.
+Install the Supabase Plugin with
+npx plugins add supabase-community/supabase-plugin
+Review my project and determine whether Supabase is already initialized. If it is not initialized, run
+npx supabase init
+Suggest the most relevant next steps.
+npm
+supabase
+--save-dev
+plugins
+supabase-community/supabase-plugin
+Connect a framework
+Start with a quickstart guide to connect your project in minutes.
+React
+Next.js
+TanStack Start
+Astro
+Vue
+Nuxt
+SvelteKit
+SolidJS
+RedwoodJS
+Refine
+Hono
+iOS Swift
+Android Kotlin
+Expo React Native
+Flutter
+Python
+Reflex
+Laravel
+Ruby on Rails
+Spring Boot
+Build your backend
+Build with a complete backend platform, from your database to your application logic.
+Database
+Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more.
+Auth
+Add and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs.
+Storage
+Store, organize, transform, and serve large files—fully integrated with your Postgres database with Row Level Security access policies.
+Realtime
+Listen to database changes, store and sync user states across clients, broadcast data to clients subscribed to a channel, and more.
+Edge Functions
+Globally distributed, server-side functions to execute your code closest to your users for the lowest latency.
+Extend your database
+Extend your database with built-in tools for AI, APIs, scheduled jobs, and queues.
+AI & Vectors
+Cron
+Queues
+Data REST API
+GraphQL API
+Use a client library
+Use Supabase from the language and framework your application is built with.
+JavaScript
+Flutter
+Python
+C#
+Swift
+Kotlin
+Migrate to Supabase
+Bring your existing data, auth and storage to Supabase following our migration guides.
+Explore more resources about /guides/resources
+Explore more resources
+Amazon RDS
+Auth0
+Firebase Auth
+Firebase Storage
+Firestore Data
+Heroku
+MSSQL
+MySQL
+Neon
+Postgres
+Render
+Vercel Postgres
+Explore more
+Explore the tools, integrations, and guides that help you get more from Supabase.
+AI tools
+Develop with Supabase AI-first using plugins, MCP, and skills.
+Platform guides
+Learn more about the tools and services powering Supabase.
+Supabase CLI
+Use the CLI to develop, manage and deploy your projects.
+Management API
+Manage your Supabase projects and organizations.
+Integrations
+Explore a variety of integrations from Supabase partners.
+Supabase Library
+A collection of pre-built Supabase components to speed up your project.
+Troubleshooting
+Our troubleshooting guide for solutions to common Supabase issues.
+Self-host Supabase
+Get started with self-hosting Supabase.
+More on self-hosting about /guides/self-hosting
+More on self-hosting
+Auth
+Realtime
+Storage
+Analytics
+
+===== https://supabase.com/docs/reference
+TITLE: Supabase Docs
+ACCESSED: 2026-09-28
+
+API References
+The Supabase client libraries help you interact with Supabase products, such as the Postgres Database, Auth, and Realtime. They are available in several popular programming languages.
+Supabase also has a Management API to help with managing your Supabase Platform, and a CLI for local development and CI workflows.
+Client Libraries
+JavaScript
+Server
+Middleware
+Flutter
+C#
+Swift
+Kotlin
+Python
+Management API and CLI
+Management API
+CLI
+
+===== https://supabase.com/docs/guides/auth
+TITLE: Auth | Supabase Docs
+ACCESSED: 2026-09-28
+
+Auth
+Supabase Auth makes it easy to implement authentication and authorization in your app. We provide client SDKs and API endpoints to help you create and manage users.
+Your users can use many popular Auth methods, including password, magic link, one-time password (OTP), social login, and single sign-on (SSO).
+About authentication and authorization
+Authentication and authorization are the core responsibilities of any Auth system.
+Authentication
+means checking that a user is who they say they are.
+Authorization
+means checking what resources a user is allowed to access.
+Supabase Auth uses
+JSON Web Tokens (JWTs)
+for authentication. For a complete reference of all JWT fields, see the
+JWT Fields Reference
+. Auth integrates with Supabase's database features, making it easy to use
+for authorization.
+The Supabase ecosystem
+You can use Supabase Auth as a standalone product, but it's also built to integrate with the Supabase ecosystem.
+Auth uses your project's Postgres database under the hood, storing user data and other Auth information in a special schema. You can connect this data to your own tables using triggers and foreign key references.
+Auth also enables access control to your database's automatically generated
+REST API
+. When using Supabase SDKs, your data requests are automatically sent with the user's Auth Token. The Auth Token scopes database access on a row-by-row level when used along with
+RLS policies
+Get started
+Start here if you're new to Supabase Auth:
+Auth with email and password
+Sign up and sign in users with email and password.
+Server-side rendering
+Create a Supabase client for SSR frameworks like Next.js and SvelteKit.
+Which package to use
+supabase-js vs @supabase/ssr vs @supabase/server — which to use on the server.
+Row Level Security
+Use RLS policies to authorize data access from the client.
+Providers
+Supabase Auth works with many popular Auth methods, including Social and Phone Auth using third-party providers. See the following sections for a list of supported third-party providers.
+Social Auth
+Apple
+Azure (Microsoft)
+Bitbucket
+Discord
+Facebook
+Figma
+GitHub
+GitLab
+Google
+Kakao
+Keycloak
+LinkedIn
+Notion
+Slack
+Spotify
+Twitter
+Twitch
+WorkOS
+Zoom
+You can also add any OAuth2 or OIDC-compatible identity provider using
+Custom OAuth/OIDC Providers
+Phone Auth
+MessageBird
+Twilio
+Vonage
+Pricing
+Charges apply to Monthly Active Users (MAU), Monthly Active Third-Party Users (Third-Party MAU), and Monthly Active SSO Users (SSO MAU) and Advanced MFA Add-ons. For a detailed breakdown of how these charges are calculated, refer to the following pages.
+Pricing MAU
+How MAU usage is measured and billed.
+Pricing Third-Party MAU
+How third-party auth MAU is measured and billed.
+Pricing SSO MAU
+How SSO MAU usage is measured and billed.
+Advanced MFA - Phone
+How Advanced MFA Phone add-on usage is measured and billed.
+Next steps
+Once you've covered the basics, these guides help with other use cases and features:
+Email (Magic link or OTP)
+Sign up and sign in users with a Magic Link or email OTP instead of a password.
+Enterprise SSO
+Add Single Sign-On for enterprise applications with SAML 2.0.
+User sessions
+Control session lifetime, refresh tokens, and multi-device sign-in behavior.
+Third-party auth
+Use Clerk, Auth0, Firebase Auth, Cognito, or WorkOS JWTs with Supabase APIs.
+Multi-factor authentication
+Add a second factor to user sign-in with TOTP or phone.
+JWTs
+Understand how Supabase Auth issues and validates JWTs.
+Auth Hooks
+Customize Auth behavior with Postgres functions at key lifecycle points.
+
+===== https://supabase.com/pricing
+TITLE: Pricing & Fees | Supabase
+ACCESSED: 2026-09-28
+
+Predictable pricing,
+designed to scale
+Start building for free, collaborate with your team, then scale to millions of users
+Copy as Markdown
+Ask ChatGPT
+Ask Claude
+Free
+Perfect for passion projects & simple websites.
+Start for Free
+$
+0
+/ month
+Get started with:
+Unlimited API requests
+50,000 monthly active users
+500 MB database size
+Shared CPU • 500 MB RAM
+5 GB egress
+5 GB cached egress
+1 GB file storage
+Community support
+Free projects are paused after 1 week of inactivity. Limit of 2 active projects.
+Pro
+Most Popular
+For production applications with the power to scale.
+Get Started
+From
+$
+25
+/ month
+First project included. Additional projects from $10/mo.
+See how pricing scales
+Everything in the Free Plan, plus:
+100,000 monthly active users
+then $0.00325 per MAU
+8 GB disk size per project
+then $0.125 per GB
+250 GB egress
+then $0.09 per GB
+250 GB cached egress
+then $0.03 per GB
+100 GB file storage
+then $0.0213 per GB
+Email support
+Daily backups stored for 7 days
+7-day log retention
+Add Log Drains
+additional $60 per drain, per project
+Team
+Add features such as SSO, control over backups, and industry certifications.
+Get Started
+From
+$
+599
+/ month
+First project included. Additional projects from $10/mo.
+See how pricing scales
+Everything in the Pro Plan, plus:
+SOC2 & ISO 27001
+Project-scoped and read-only access
+HIPAA available as paid add-on
+SSO for Supabase Dashboard
+Priority email support & SLAs
+Daily backups stored for 14 days
+28-day log retention
+Enterprise
+For large-scale applications running Internet scale workloads.
+Contact Us
+Custom
+Designated Support manager
+Uptime SLAs
+Supports AWS PrivateLink
+24×7×365 premium enterprise support
+Private Slack channel
+Custom Security Questionnaires
+Compare Plans
+How compute pricing works
+Choose a plan, add projects, and see your total cost
+What is “compute”?
+About compute
+1. Choose your plan
+Pro
+Team
+Pro
+$
+25
+/month
+Everything in the Free Plan, plus:
+100K monthly active users
+8 GB disk size per project
+250 GB bandwidth
+Daily backups (7 day retention)
+Email support
+Paid plans include $10/mo in compute credits, enough to cover one Micro instance.
+2. Configure compute for your projects
+Add projects and adjust compute to estimate your monthly cost.
+Monthly estimate:
+Plan subscription
+$
+25
+Total Compute
+$
+Compute Credits
+- $
+Total
+About this estimate
+$
+25
+Micro
+Project
+$10
+Drag to adjust
+1 GB
+RAM /
+Shared compute
+/ Connections: Direct
+60
+, Pooler
+200
+Add Project
+Starts from
+$10
+/month
+Scale compute up to
+64 vCPUs and 256 GB RAM
+Learn about Compute add-ons
+Compute Size
+Price USD
+Compute
+Memory
+Connections: Direct
+Connections: Pooler
+First instance is free on paid plans
+Micro
+$10
+Shared compute
+1 GB
+60
+200
+Small
+$15
+Shared compute
+2 GB
+90
+400
+Medium
+$60
+Shared compute
+4 GB
+120
+600
+Large
+$110
+Dedicated · 2 vCPUs
+8 GB
+160
+800
+XL
+$210
+Dedicated · 4 vCPUs
+16 GB
+240
+1,000
+2XL
+$410
+Dedicated · 8 vCPUs
+32 GB
+380
+1,500
+4XL
+$960
+Dedicated · 16 vCPUs
+64 GB
+480
+3,000
+8XL
+$1,870
+Dedicated · 32 vCPUs
+128 GB
+490
+6,000
+12XL
+$2,800
+Dedicated · 48 vCPUs
+192 GB
+500
+9,000
+16XL
+$3,730
+Dedicated · 64 vCPUs
+256 GB
+500
+12,000
+>16XL
+Contact Us
+Custom
+Custom
+Custom
+Custom
+Compute Size
+Micro
+Price USD
+$10
+Compute
+Shared compute
+Memory
+1 GB
+Connections: Direct
+60
+Connections: Pooler
+200
+Plan
+Small
+Price USD
+$15
+Compute
+Shared compute
+Memory
+2 GB
+Connections: Direct (recommended)
+90
+Connections: Pooler (recommended)
+400
+Plan
+Medium
+Price USD
+$60
+Compute
+Shared compute
+Memory
+4 GB
+Connections: Direct (recommended)
+120
+Connections: Pooler (recommended)
+600
+Plan
+Large
+Price USD
+$110
+Compute
+Dedicated · 2 vCPUs
+Memory
+8 GB
+Connections: Direct (recommended)
+160
+Connections: Pooler (recommended)
+800
+Plan
+XL
+Price USD
+$210
+Compute
+Dedicated · 4 vCPUs
+Memory
+16 GB
+Connections: Direct (recommended)
+240
+Connections: Pooler (recommended)
+1,000
+Plan
+2XL
+Price USD
+$410
+Compute
+Dedicated · 8 vCPUs
+Memory
+32 GB
+Connections: Direct (recommended)
+380
+Connections: Pooler (recommended)
+1,500
+Plan
+4XL
+Price USD
+$960
+Compute
+Dedicated · 16 vCPUs
+Memory
+64 GB
+Connections: Direct (recommended)
+480
+Connections: Pooler (recommended)
+3,000
+Plan
+8XL
+Price USD
+$1,870
+Compute
+Dedicated · 32 vCPUs
+Memory
+128 GB
+Connections: Direct (recommended)
+490
+Connections: Pooler (recommended)
+6,000
+Plan
+12XL
+Price USD
+$2,800
+Compute
+Dedicated · 48 vCPUs
+Memory
+192 GB
+Connections: Direct (recommended)
+500
+Connections: Pooler (recommended)
+9,000
+Plan
+16XL
+Price USD
+$3,730
+Compute
+Dedicated · 64 vCPUs
+Memory
+256 GB
+Connections: Direct (recommended)
+500
+Connections: Pooler (recommended)
+12,000
+Plan
+>16XL
+Price USD
+Contact Us
+Compute
+Custom
+Memory
+Custom
+Connections: Direct (recommended)
+Custom
+Connections: Pooler (recommended)
+Custom
+Choose the best compute size for you
+Every project on the Supabase Platform comes with its own dedicated Postgres instance. Select the compute size that fits your needs.
+Compute instances are billed hourly and you can scale up or down at any time. Paid Plans come with
+$10
+/month in compute credits to cover one 
+
+===== https://supabase.com/docs/guides/getting-started/quickstarts/vue
+TITLE: Use Supabase with Vue | Supabase Docs
+ACCESSED: 2026-09-28
+
+Help me add Supabase to my Vue project. Create a Supabase project at
+npm init vue@latest my-app
+to scaffold the app.
+npm install @supabase/supabase-js
+Create
+.env.local
+and set
+VITE_SUPABASE_URL
+VITE_SUPABASE_PUBLISHABLE_KEY
+Create
+src/lib/supabaseClient.js
+to initialize the Supabase client.
+Update
+src/App.vue
+to fetch and display the instruments table using
+onMounted
+npm run dev
+and open http://localhost:5173.
+https://supabase.com/docs/guides/getting-started/quickstarts/vue.md
+table with some sample data. Then set only the privileges each Postgres role needs, add
+for enhanced security for database data by default, and create an RLS policy to make the data in the table publicly readable.
+Do these steps within your project's dashboard by copying and running the snippet in your project's
+section of the Dashboard and expose the specific tables or functions you want to access. To automatically grant access for new tables and functions in
+3. Create a Vue app
+Create a Vue app using the
+npm init
+command.
+npm
+init
+vue@latest
+my-app
+Supabase provides two ways to give AI tools context about your project: Agent Skills, which give your AI coding agent procedural knowledge, and the MCP server, which connects AI assistants to your Supabase project directly.
+is a curated set of instructions that give your AI agent procedural knowledge about working with Supabase.
+Install them so your AI coding agent can produce more accurate, reliable code using current Supabase patterns, such as authentication, server-side rendering, and database migrations, rather than relying solely on training data.
+The Supabase MCP server connects AI assistants to Supabase, so they can inspect your schema and act on your projects on your behalf. Find out how to add it to your client in
+5. Install the Supabase client library
+The fastest way to get started is to use the
+supabase-js
+client library which provides a convenient interface for working with Supabase from a Vue app.
+Navigate to the Vue app and install
+supabase-js
+cd
+my-app
+&&
+npm
+@supabase/supabase-js
+6. Declare Supabase environment variables
+Create a
+.env.local
+file and populate with your Supabase connection variables that you can get from the helper below, or
+.env.local
+VITE_SUPABASE_URL=<SUBSTITUTE_SUPABASE_URL>
+VITE_SUPABASE_PUBLISHABLE_KEY=<SUBSTITUTE_SUPABASE_PUBLISHABLE_KEY>
+To interact with data in database tables, you use the client libraries that wrap
+7. Create the Supabase client
+Create a
+/src/lib
+directory in your Vue app, create a file called
+supabaseClient.ts
+and add the following code to initialize the Supabase client:
+npm init vue@latest
+scaffolds a TypeScript project by default. If you chose a JavaScript-only project, use a
+.js
+extension instead and drop the type import.
+src/lib/supabaseClient.ts
+import
+{
+createClient
+
+===== https://supabase.com/docs/guides/getting-started/quickstarts/hono
+TITLE: Use Supabase with Hono | Supabase Docs
+ACCESSED: 2026-09-28
+
+Help me add Supabase to my Hono project. Create a Supabase project at
+npx supabase@latest bootstrap hono
+to scaffold the app with Supabase
+and SSR auth pre-configured.
+npm install
+to install dependencies.
+Copy
+.env.example
+.env
+, set your Supabase URL and publishable key,
+and enable anonymous sign-ins in the Auth settings.
+npm run dev
+and open http://localhost:5173.
+https://supabase.com/docs/guides/getting-started/quickstarts/hono.md
+table with some sample data. Then set only the privileges each Postgres role needs, add
+for enhanced security for database data by default, and create an RLS policy to make the data in the table publicly readable.
+Do these steps within your project's dashboard by copying and running the snippet in your project's
+section of the Dashboard and expose the specific tables or functions you want to access. To automatically grant access for new tables and functions in
+3. Create a Hono app
+Bootstrap the Hono example app from the Supabase Samples using the CLI.
+supabase@latest
+bootstrap
+hono
+Supabase provides two ways to give AI tools context about your project: Agent Skills, which give your AI coding agent procedural knowledge, and the MCP server, which connects AI assistants to your Supabase project directly.
+is a curated set of instructions that give your AI agent procedural knowledge about working with Supabase.
+Install them so your AI coding agent can produce more accurate, reliable code using current Supabase patterns, such as authentication, server-side rendering, and database migrations, rather than relying solely on training data.
+The Supabase MCP server connects AI assistants to Supabase, so they can inspect your schema and act on your projects on your behalf. Find out how to add it to your client in
+5. Install dependencies
+The
+package.json
+file in the project includes the necessary dependencies, including
+@supabase/supabase-js
+@supabase/ssr
+to help with server-side auth.
+npm
+6. Declare Supabase environment variables
+Copy the
+.env.example
+file to
+.env
+cp
+.env.example
+.env
+Update the values with your Supabase project URL and publishable key, which you can get from the helper below, or
+To interact with data in database tables, you use the client libraries that wrap
+7. Set up anonymous sign-ins
+This app signs users in anonymously, so
+enable anonymous sign-ins
+in the Auth settings.
+Anonymous sign-ins use the
+authenticated
+role, but the database setup in step 2 grants read access to the
+role only. Without the privilege and a matching policy for
+authenticated
+, the instruments query returns no rows. Run the following in the
+to grant the privilege and add the policy:
+authenticated;
+authenticated can read instruments
+se
+
+===== https://supabase.com/docs/guides/getting-started/quickstarts/flask
+TITLE: Use Supabase with Python | Supabase Docs
+ACCESSED: 2026-09-28
+
+Help me add Supabase to my Python Flask project. Create a Supabase project at
+Create a project directory and activate a virtual environment with
+python3 -m venv venv && source venv/bin/activate
+Install dependencies with
+pip install flask supabase
+Create
+.env
+and set
+SUPABASE_URL
+SUPABASE_PUBLISHABLE_KEY
+Install
+python-dotenv
+and create
+app.py
+with a Flask route that queries
+and renders the instruments table using the Supabase client.
+python app.py
+and open http://localhost:5000.
+https://supabase.com/docs/guides/getting-started/quickstarts/flask.md
+table with some sample data. Then set only the privileges each Postgres role needs, add
+for enhanced security for database data by default, and create an RLS policy to make the data in the table publicly readable.
+Do these steps within your project's dashboard by copying and running the snippet in your project's
+section of the Dashboard and expose the specific tables or functions you want to access. To automatically grant access for new tables and functions in
+3. Create a Python app with Flask
+Create a new directory for your Python app and set up a virtual environment.
+mkdir
+my-app
+&&
+cd
+my-app
+python3
+-m
+venv
+venv
+source
+venv/bin/activate
+Supabase provides two ways to give AI tools context about your project: Agent Skills, which give your AI coding agent procedural knowledge, and the MCP server, which connects AI assistants to your Supabase project directly.
+is a curated set of instructions that give your AI agent procedural knowledge about working with Supabase.
+Install them so your AI coding agent can produce more accurate, reliable code using current Supabase patterns, such as authentication, server-side rendering, and database migrations, rather than relying solely on training data.
+The Supabase MCP server connects AI assistants to Supabase, so they can inspect your schema and act on your projects on your behalf. Find out how to add it to your client in
+5. Install Flask and the Supabase client library
+The fastest way to get started is to use Flask for the web framework and the
+supabase-py
+client library which provides a convenient interface for working with Supabase from a Python app.
+Install both packages using pip.
+pip
+flask
+supabase
+6. Create environment variables file
+Create a
+.env
+file in your project root and populate it with your Supabase connection variables that you can get from the helper below, or
+.env
+SUPABASE_URL=<SUBSTITUTE_SUPABASE_URL>
+SUPABASE_PUBLISHABLE_KEY=<SUBSTITUTE_SUPABASE_PUBLISHABLE_KEY>
+To interact with data in database tables, you use the client libraries that wrap
+7. Create the Supabase client
+Install the
+python-dotenv
+package to load environment variables:
+pip
+python-dotenv
+Create an
+app.py
+file and initialize the Flask app and the Supabase client from your environment
+
+===== https://supabase.com/docs/guides/getting-started/quickstarts/nextjs
+TITLE: Use Supabase with Next.js | Supabase Docs
+ACCESSED: 2026-09-28
+
+Help me add Supabase to my Next.js project. Create a Supabase project at
+npx create-next-app -e with-supabase
+to scaffold the app.
+Rename
+.env.example
+.env.local
+and set
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+Create
+app/instruments/page.tsx
+createClient()
+from
+@/lib/supabase/server
+to query and display the instruments table.
+npm run dev
+and open http://localhost:3000/instruments.
+https://supabase.com/docs/guides/getting-started/quickstarts/nextjs.md
+table with some sample data. Then set only the privileges each Postgres role needs, add
+for enhanced security for database data by default, and create an RLS policy to make the data in the table publicly readable.
+Do these steps within your project's dashboard by copying and running the snippet in your project's
+section of the Dashboard and expose the specific tables or functions you want to access. To automatically grant access for new tables and functions in
+3. Create a Next.js app
+Use the
+create-next-app
+command and the
+with-supabase
+template, to create a Next.js app pre-configured with
+Cookie-based Auth
+TypeScript
+, and
+Tailwind CSS
+create-next-app@latest
+my-app
+-e
+with-supabase
+Supabase provides two ways to give AI tools context about your project: Agent Skills, which give your AI coding agent procedural knowledge, and the MCP server, which connects AI assistants to your Supabase project directly.
+is a curated set of instructions that give your AI agent procedural knowledge about working with Supabase.
+Install them so your AI coding agent can produce more accurate, reliable code using current Supabase patterns, such as authentication, server-side rendering, and database migrations, rather than relying solely on training data.
+The Supabase MCP server connects AI assistants to Supabase, so they can inspect your schema and act on your projects on your behalf. Find out how to add it to your client in
+5. Declare Supabase environment variables
+Rename
+.env.example
+.env.local
+and populate with your Supabase connection variables that you can get from the helper below, or
+.env.local
+NEXT_PUBLIC_SUPABASE_URL=<SUBSTITUTE_SUPABASE_URL>
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<SUBSTITUTE_SUPABASE_PUBLISHABLE_KEY>
+To interact with data in database tables, you use the client libraries that wrap
+6. Allow public access to the instruments page
+The
+with-supabase
+template redirects unauthenticated visitors to the sign-in page for most routes. The
+table is publicly readable, so update
+lib/supabase/proxy.ts
+to skip that redirect for
+/instruments
+Find this
+if
+statement:
+lib/supabase/proxy.ts
+if
+request
+nextUrl
+pathname
+!==
+/
+&&
+!
+user
+&&
+!
+request
+nextUrl
+pathname
+startsWith
+/login
+&&
+!
+request
+nextUrl
+pathname
+startsWith
+/auth
+{
+Add a condi

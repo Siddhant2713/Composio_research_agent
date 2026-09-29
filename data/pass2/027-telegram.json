@@ -1,0 +1,184 @@
+{
+  "app": "Telegram",
+  "number": 27,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:57:21.356345+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://core.telegram.org/api\",\n    \"https://core.telegram.org/method/\",\n    \"https://core.telegram.org/bots/api\",\n    \"https://core.telegram.org/access\",\n    \"https://core.telegram.org/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://core.telegram.org",
+    "https://core.telegram.org/api",
+    "https://core.telegram.org/method/",
+    "https://core.telegram.org/bots/api",
+    "https://core.telegram.org/access",
+    "https://docs.telegram.org/",
+    "https://developer.telegram.org/",
+    "https://developers.telegram.org/",
+    "https://api.telegram.org/",
+    "https://telegram.org/docs",
+    "https://telegram.org/developers",
+    "https://telegram.org/api",
+    "https://telegram.org/developer"
+  ],
+  "second_hop_considered": [
+    "https://core.telegram.org/api/srp",
+    "https://core.telegram.org/api/auth",
+    "https://core.telegram.org/api/contacts",
+    "https://core.telegram.org/api/file-references",
+    "https://core.telegram.org/api/obtaining_api_id",
+    "https://core.telegram.org/api/url-authorization",
+    "https://core.telegram.org/bots/webhooks"
+  ],
+  "boilerplate_lines_removed": 3,
+  "fetch_failures": [
+    {
+      "requested_url": "https://core.telegram.org/method/",
+      "reason": "page too thin (57 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://core.telegram.org/access",
+      "reason": "page too thin (57 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://core.telegram.org",
+      "requested_url": "https://core.telegram.org",
+      "status": 200,
+      "title": "Telegram APIs",
+      "chars": 4988,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/api",
+      "requested_url": "https://core.telegram.org/api",
+      "status": 200,
+      "title": "Telegram APIs",
+      "chars": 4988,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/bots/api",
+      "requested_url": "https://core.telegram.org/bots/api",
+      "status": 200,
+      "title": "Telegram Bot API",
+      "chars": 4812,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/api/srp",
+      "requested_url": "https://core.telegram.org/api/srp",
+      "status": 200,
+      "title": "Two-factor authentication",
+      "chars": 4974,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/api/auth",
+      "requested_url": "https://core.telegram.org/api/auth",
+      "status": 200,
+      "title": "User Authorization",
+      "chars": 4982,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/api/contacts",
+      "requested_url": "https://core.telegram.org/api/contacts",
+      "status": 200,
+      "title": "Contact list",
+      "chars": 4997,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/api/file-references",
+      "requested_url": "https://core.telegram.org/api/file-references",
+      "status": 200,
+      "title": "File references",
+      "chars": 4964,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://core.telegram.org/api/obtaining_api_id",
+      "requested_url": "https://core.telegram.org/api/obtaining_api_id",
+      "status": 200,
+      "title": "Creating your Telegram Application",
+      "chars": 2269,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Telegram offers developer APIs including the Bot API, Telegram API, and TDLib for building messaging applications, bots, and customized clients.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"The API uses api_id and api_hash parameters for user authorization.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for Telegram and obtain an API id by logging into my.telegram.org and filling out the API development tools form.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"TDLib\"\n    ],\n    \"notes\": \"The Bot API communicates via a simple HTTPS interface, and TDLib supports Android, iOS, Windows, macOS, Linux, and other systems.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://core.telegram.org/api/obtaining_api_id\",\n      \"claim\": \"Access tier is self-serve via my.telegram.org\",\n      \"quote\": \"Log in to your Telegram core: https://my.telegram.org Go to \\\"API development tools\\\" and fill out the form.\"\n    },\n    {\n      \"url\": \"https://core.telegram.org/api/obtaining_api_id\",\n      \"claim\": \"Auth uses api_id and api_hash\",\n      \"quote\": \"You will get basic addresses as well as the api_id and api_hash parameters required for user authorization.\"\n    },\n    {\n      \"url\": \"https://core.telegram.org\",\n      \"claim\": \"Bot API communicates via HTTPS\",\n      \"quote\": \"You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://core.telegram.org/api/obtaining_api_id\",\n      \"quote\": \"You will get basic addresses as well as the api_id and api_hash parameters required for user authorization.\"\n    },\n    \"access\": {\n      \"url\": \"https://core.telegram.org/api/obtaining_api_id\",\n      \"quote\": \"Log in to your Telegram core: https://my.telegram.org Go to \\\"API development tools\\\" and fill out the form.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://core.telegram.org\",\n      \"quote\": \"You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint_url": "https://core.telegram.org",
+    "one_liner": "Telegram offers developer APIs including the Bot API, Telegram API, and TDLib for building messaging applications, bots, and customized clients.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://core.telegram.org/api/obtaining_api_id."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can sign up for Telegram and obtain an API id by logging into my.telegram.org and filling out the API development tools form."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": null,
+      "sdks": [
+        "TDLib"
+      ],
+      "notes": "The Bot API communicates via a simple HTTPS interface, and TDLib supports Android, iOS, Windows, macOS, Linux, and other systems."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "claim": "Access tier is self-serve via my.telegram.org",
+        "quote": "Log in to your Telegram core: https://my.telegram.org Go to \"API development tools\" and fill out the form.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://core.telegram.org",
+        "claim": "Bot API communicates via HTTPS",
+        "quote": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "quote": "Log in to your Telegram core: https://my.telegram.org Go to \"API development tools\" and fill out the form."
+      },
+      "api_surface": {
+        "url": "https://core.telegram.org",
+        "quote": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API."
+      }
+    },
+    "unsupported_fields": [
+      "auth: quoted line not found on https://core.telegram.org/api/obtaining_api_id",
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:57:34.765856+00:00"
+}

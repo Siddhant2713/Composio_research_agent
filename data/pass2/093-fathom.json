@@ -1,0 +1,190 @@
+{
+  "app": "Fathom",
+  "number": 93,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:10:06.262549+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://fathom.video\",\n    \"https://fathom.video/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://fathom.video",
+    "https://fathom.video/pricing",
+    "https://docs.fathom.video/",
+    "https://developer.fathom.video/",
+    "https://developers.fathom.video/",
+    "https://api.fathom.video/",
+    "https://fathom.video/docs",
+    "https://fathom.video/developers",
+    "https://fathom.video/api",
+    "https://fathom.video/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.fathom.ai/solutions/sales",
+    "https://www.fathom.ai/partner-programs",
+    "https://www.fathom.ai/pricing?plan=teams",
+    "https://www.fathom.ai/integrations/salesforce",
+    "https://www.fathom.ai/pricing?plan=individuals",
+    "https://www.fathom.ai/qualified-portfolio-partners"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.fathom.video/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.fathom.video/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.fathom.video/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.fathom.video/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://fathom.video/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://fathom.video/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.fathom.ai/",
+      "requested_url": "https://fathom.video",
+      "status": 200,
+      "title": "Fathom AI Notetaker - Never Take Notes Again",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.fathom.ai/pricing",
+      "requested_url": "https://fathom.video/pricing",
+      "status": 200,
+      "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.fathom.ai/solutions/sales",
+      "requested_url": "https://www.fathom.ai/solutions/sales",
+      "status": 200,
+      "title": "Fathom for Sales Teams: AI Notes, CRM Sync & Coaching",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.fathom.ai/partner-programs",
+      "requested_url": "https://www.fathom.ai/partner-programs",
+      "status": 200,
+      "title": "Fathom's Partner Programs",
+      "chars": 2613,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.fathom.ai/pricing?plan=teams",
+      "requested_url": "https://www.fathom.ai/pricing?plan=teams",
+      "status": 200,
+      "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.fathom.ai/integrations/salesforce",
+      "requested_url": "https://www.fathom.ai/integrations/salesforce",
+      "status": 200,
+      "title": "Salesforce Integration: Sync Calls to Deals \u2013 Fathom",
+      "chars": 1086,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.fathom.ai/pricing?plan=individuals",
+      "requested_url": "https://www.fathom.ai/pricing?plan=individuals",
+      "status": 200,
+      "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Fathom is an AI meeting assistant and notetaker that provides transcripts, summaries, and integrations for teams and individuals.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The pages mention a Public API & MCP at developers.fathom.ai and Salesforce integration OAuth scopes, but do not specify the exact developer authentication mechanism.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"The platform offers a free plan and free sign-up options for individuals and teams.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": null,\n    \"sdks\": null,\n    \"notes\": \"The pages mention a Public API & MCP and Zapier, Make, and other automation integrations, but do not provide specific details on REST, GraphQL, webhooks, or SDKs.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"notes\": \"The pages mention Public API & MCP for building custom integrations and workflows at developers.fathom.ai.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.fathom.ai/pricing\",\n      \"claim\": \"Fathom provides a Public API & MCP.\",\n      \"quote\": \"Public API & MCP\"\n    },\n    {\n      \"url\": \"https://www.fathom.ai/pricing\",\n      \"claim\": \"Fathom offers a Free plan with instant sign up.\",\n      \"quote\": \"Free plan\\nUnlimited recordings, instant call summaries, integrations with LLMs & more.\\nSign up. Free forever. \u2192\"\n    },\n    {\n      \"url\": \"https://www.fathom.ai/integrations/salesforce\",\n      \"claim\": \"Salesforce integration mentions OAuth scopes.\",\n      \"quote\": \"Need the technical details? See the\\nSalesforce Integration Admin Guide\\nfor OAuth scopes, field mapping, and sync troubleshooting.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://www.fathom.ai/pricing\",\n      \"quote\": \"Free plan\\nUnlimited recordings, instant call summaries, integrations with LLMs & more.\\nSign up. Free forever. \u2192\"\n    },\n    \"api_surface\": null,\n    \"mcp\": {\n      \"url\": \"https://www.fathom.ai/pricing\",\n      \"quote\": \"Public API & MCP\\nBuild custom integrations and workflows. See more at developers.fathom.ai\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://fathom.video",
+    "one_liner": "Fathom is an AI meeting assistant and notetaker that provides transcripts, summaries, and integrations for teams and individuals.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "The platform offers a free plan and free sign-up options for individuals and teams."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "The pages mention Public API & MCP for building custom integrations and workflows at developers.fathom.ai."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.fathom.ai/pricing",
+        "claim": "Fathom offers a Free plan with instant sign up.",
+        "quote": "Free plan\nUnlimited recordings, instant call summaries, integrations with LLMs & more.\nSign up. Free forever. \u2192",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.fathom.ai/integrations/salesforce",
+        "claim": "Salesforce integration mentions OAuth scopes.",
+        "quote": "Need the technical details? See the\nSalesforce Integration Admin Guide\nfor OAuth scopes, field mapping, and sync troubleshooting.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://www.fathom.ai/pricing",
+        "quote": "Free plan\nUnlimited recordings, instant call summaries, integrations with LLMs & more.\nSign up. Free forever. \u2192"
+      },
+      "mcp": {
+        "url": "https://www.fathom.ai/pricing",
+        "quote": "Public API & MCP\nBuild custom integrations and workflows. See more at developers.fathom.ai"
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "api_surface: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T05:10:15.575689+00:00"
+}

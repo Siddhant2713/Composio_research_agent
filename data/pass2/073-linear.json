@@ -1,0 +1,207 @@
+{
+  "app": "Linear",
+  "number": 73,
+  "category": "Productivity and Project Management",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:44:20.116652+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.linear.app\",\n    \"https://linear.app/docs\",\n    \"https://linear.app/pricing\",\n    \"https://linear.app/contact\",\n    \"https://linear.app/login\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.linear.app",
+    "https://linear.app/docs",
+    "https://linear.app/pricing",
+    "https://linear.app/contact",
+    "https://linear.app/login",
+    "https://docs.linear.app/",
+    "https://developer.linear.app/",
+    "https://api.linear.app/",
+    "https://linear.app/developers",
+    "https://linear.app/api",
+    "https://linear.app/developer"
+  ],
+  "second_hop_considered": [
+    "https://linear.app/developers/oauth-2-0-authentication",
+    "https://linear.app/developers/sdk-webhooks",
+    "https://linear.app/developers/oauth-app-manifests",
+    "https://linear.app/developers/oauth-actor-authorization",
+    "https://linear.app/developers/file-storage-authentication",
+    "https://linear.app/signup",
+    "https://linear.app/contact/support",
+    "https://linear.app/contact/sales",
+    "https://linear.app/settings/plans"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://linear.app/login",
+      "reason": "page too thin (15 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.linear.app/",
+      "reason": "page too thin (34 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://linear.app/developers",
+      "requested_url": "https://developers.linear.app",
+      "status": 200,
+      "title": "Linear Developers",
+      "chars": 790,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/docs",
+      "requested_url": "https://linear.app/docs",
+      "status": 200,
+      "title": "Linear Docs",
+      "chars": 897,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/pricing",
+      "requested_url": "https://linear.app/pricing",
+      "status": 200,
+      "title": "Pricing \u2013 Linear",
+      "chars": 2354,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/contact",
+      "requested_url": "https://linear.app/contact",
+      "status": 200,
+      "title": "Contact us \u2013 Linear",
+      "chars": 424,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/developers/oauth-2-0-authentication",
+      "requested_url": "https://linear.app/developers/oauth-2-0-authentication",
+      "status": 200,
+      "title": "OAuth 2.0 authentication \u2013 Linear Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/developers/sdk-webhooks",
+      "requested_url": "https://linear.app/developers/sdk-webhooks",
+      "status": 200,
+      "title": "Webhooks \u2013 Linear Developers",
+      "chars": 1701,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/developers/oauth-app-manifests",
+      "requested_url": "https://linear.app/developers/oauth-app-manifests",
+      "status": 200,
+      "title": "OAuth application manifests \u2013 Linear Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/developers/oauth-actor-authorization",
+      "requested_url": "https://linear.app/developers/oauth-actor-authorization",
+      "status": 200,
+      "title": "OAuth actor authorization \u2013 Linear Developers",
+      "chars": 1872,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://linear.app/developers/file-storage-authentication",
+      "requested_url": "https://linear.app/developers/file-storage-authentication",
+      "status": 200,
+      "title": "File storage authentication \u2013 Linear Developers",
+      "chars": 1408,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Linear provides a GraphQL API, TypeScript SDK, and webhooks for third-party integrations, authenticated via OAuth 2.0 or personal API keys.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Linear supports OAuth 2.0 (including authorization code flow with PKCE and client credentials) as well as personal API keys.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create OAuth applications and personal API keys directly within their workspace settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": false,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"TypeScript SDK\"\n    ],\n    \"notes\": \"The developer API is GraphQL-based, complemented by webhooks and a TypeScript SDK.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"No MCP server endpoint or standalone Model Context Protocol server implementation is documented in the text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://linear.app/developers\",\n      \"claim\": \"Authentication methods include OAuth 2.0 or personal API keys, and a TypeScript SDK is available.\",\n      \"quote\": \"Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API\"\n    },\n    {\n      \"url\": \"https://linear.app/developers\",\n      \"claim\": \"GraphQL API is supported.\",\n      \"quote\": \"Learn how to use the GraphQL API to query and mutate your data\"\n    },\n    {\n      \"url\": \"https://linear.app/pricing\",\n      \"claim\": \"API and webhook access is included in core features.\",\n      \"quote\": \"API and webhook access\"\n    },\n    {\n      \"url\": \"https://linear.app/developers/sdk-webhooks\",\n      \"claim\": \"Webhooks are supported via a helper class.\",\n      \"quote\": \"The SDK provides a helper class to help you start listening to Linear webhook events quickly.\"\n    },\n    {\n      \"url\": \"https://linear.app/developers/oauth-2-0-authentication\",\n      \"claim\": \"Linear supports OAuth2 authentication.\",\n      \"quote\": \"Linear supports OAuth2 authentication, which is recommended if you\u2019re building applications to integrate with Linear.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://linear.app/developers\",\n      \"quote\": \"Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API\"\n    },\n    \"access\": {\n      \"url\": \"https://linear.app/developers/oauth-app-manifests\",\n      \"quote\": \"Create a pre-populated OAuth application by adding allowed URL parameters to the workspace+agnostic version of the OAuth application creation form: https://linear.app/settings/api/applications/new\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://linear.app/developers\",\n      \"quote\": \"Learn how to use the GraphQL API to query and mutate your data\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint_url": "https://developers.linear.app",
+    "one_liner": "Linear provides a GraphQL API, TypeScript SDK, and webhooks for third-party integrations, authenticated via OAuth 2.0 or personal API keys.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Linear supports OAuth 2.0 (including authorization code flow with PKCE and client credentials) as well as personal API keys."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create OAuth applications and personal API keys directly within their workspace settings."
+    },
+    "api_surface": {
+      "rest": false,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": [
+        "TypeScript SDK"
+      ],
+      "notes": "The developer API is GraphQL-based, complemented by webhooks and a TypeScript SDK."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://linear.app/developers",
+        "claim": "Authentication methods include OAuth 2.0 or personal API keys, and a TypeScript SDK is available.",
+        "quote": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://linear.app/developers",
+        "claim": "GraphQL API is supported.",
+        "quote": "Learn how to use the GraphQL API to query and mutate your data",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://linear.app/developers/sdk-webhooks",
+        "claim": "Webhooks are supported via a helper class.",
+        "quote": "The SDK provides a helper class to help you start listening to Linear webhook events quickly.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://linear.app/developers/oauth-2-0-authentication",
+        "claim": "Linear supports OAuth2 authentication.",
+        "quote": "Linear supports OAuth2 authentication, which is recommended if you\u2019re building applications to integrate with Linear.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://linear.app/developers",
+        "quote": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API"
+      },
+      "access": {
+        "url": "https://linear.app/developers/oauth-app-manifests",
+        "quote": "Create a pre-populated OAuth application by adding allowed URL parameters to the workspace+agnostic version of the OAuth application creation form: https://linear.app/settings/api/applications/new"
+      },
+      "api_surface": {
+        "url": "https://linear.app/developers",
+        "quote": "Learn how to use the GraphQL API to query and mutate your data"
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:44:34.088469+00:00"
+}

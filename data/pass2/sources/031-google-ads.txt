@@ -1,0 +1,1092 @@
+===== https://developers.google.com/google-ads
+TITLE: Google Ads  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.
+Get started on Google Ads
+Use Google Ads to drive installs, re-engagement, and lifetime value for your app.
+Learn about app promotion
+List your products and make them available for online and local shoppers to find and buy.
+Learn about Google Shopping
+Content API for Shopping
+Save time by automating your Google Ads campaign management. Build an application to interact directly with the Google Ads platform or write programmatic scripts.
+Google Ads API
+Google Ads Scripts
+Use webhook to send data from Google Ads to your CRM system.
+Lead form Webhook
+
+===== https://developers.google.com/google-ads/api/docs/get-started/introduction
+TITLE: Introduction  |  Google Ads API  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Introduction
+outlined_flag
+The Google Ads API is a programmatic interface for managing Google Ads accounts and campaigns, suitable for large or complex setups.
+Typical uses of the Google Ads API include automated account management, custom reporting, ad management based on inventory, and Smart Bidding strategy management.
+The Google Ads API is recommended for developers comfortable with writing code and managing their own software infrastructure.
+Google Ads scripts, BigQuery Data Transfer service, automated rules, bulk uploads, and Google Ads Editor are alternative tools for automating Google Ads for different needs and technical skill levels.
+The Google Ads API is the programmatic interface to Google Ads, used for managing large or
+complex Google Ads accounts and campaigns. You can build software that manages
+accounts from the customer level down to the keyword level. Some typical use
+cases include:
+Automated account management
+Custom reporting
+Ad management based on inventory
+Smart Bidding strategy management
+Is the Google Ads API the right product for me?
+Google provides multiple products to help automate Google Ads accounts. Here are
+some common scenarios and the list of Google products that might best
+fit your needs.
+Scenario
+Recommendation
+I am a developer who wishes to build my own software product, or
+    integrate with the Google Ads API. I am comfortable writing code, managing software
+    infrastructure including servers and database.
+Use the Google Ads API.
+I am a developer who is comfortable writing code, but prefer not to
+     manage my own software infrastructure.
+Use
+Google Ads scripts
+I am not a developer, but am willing to invest some time learning
+    programming to automate Google Ads.
+Use
+Google Ads scripts
+I am a data analyst (or similar role) who wants to download Google Ads
+    reports for further analysis.
+Use
+BigQuery Data Transfer service
+. Support is available for
+Google Ads transfers
+I am an MMM developer who wants to download Google Ads data for MMM development.
+Use the
+MMM Data Platform
+. While many advertisers rely on the Google Ads API for data pulls, this is not ideal for MMM development.
+I want to manage Google Ads in bulk, but don't want to write any code.
+Use
+automated rules
+,
+bulk uploads
+,
+    or
+Google
+    Ads Editor
+Next
+Quickstart
+arrow_forward
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-09-23 UTC.
+
+===== https://developers.google.com/google-ads/api/docs/upgrade
+TITLE: Upgrade your API version  |  Google Ads API  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Upgrade your API version
+outlined_flag
+Periodically upgrading to the newest major version of the Google Ads API is recommended, especially if a version is sunsetting or to use new features.
+To get started with an upgrade, update your client libraries to use the newest endpoint, review release notes for changes, and check tables for version-specific focus areas.
+The provided content includes specific changes for upgrading from v21 to v22, v20 to v21, v19 to v20, and v18 to v19, detailing renamed fields, new limits, removed elements, and service/component changes.
+Upgrading from v18 to v19 is specifically highlighted as v18 is sunset, requiring immediate action.
+Periodically, you might want to upgrade from an older major version of the
+Google Ads API to a newer major version. It could be because a version is sunsetting,
+or it could be because you want to use a new feature. We recommend that you
+always upgrade to the newest version.
+Check out our
+deprecation schedule
+to plan your
+upgrades. See our
+versioning guide
+to learn how
+versioning works.
+Here's a checklist to help you get started with the process of upgrading:
+Your endpoint will change when you change major versions. Update your
+client libraries
+to use the newest endpoint.
+Go through the
+release notes
+to see changes that
+were introduced in each release.
+Check out the
+release notes
+, for specific areas to
+focus on for the version to which you are upgrading.
+Check out the proto difference tables, like
+Proto differences between v24
+and v25
+v25
+This section describes all of the changes in the major version v25 and the
+minor versions v25.1 and v25.2.
+Proto differences between v24 and v25
+This table shows the protos that were added, removed, and changed in the Google Ads API
+v25 and v25.1 releases, as compared to the latest v24.2 release. You can click
+the links to view the protos in our
+GitHub repository
+You can view quick and full-context diffs in the
+Changed
+tab.
+v25/common/effective_automatic_goal.proto
+v25/enums/ad_sub_format_type.proto
+v25/enums/benchmarks_customer_percentile_tier.proto
+v25/enums/benchmarks_supplemental_data.proto
+v25/enums/brand_lift_measurement_type.proto
+v25/enums/conversion_lift_included_conversion_action_types.proto
+v25/enums/customer_lifecycle_optimization_goal_sub_type.proto
+v25/enums/incentive_offer_type.proto
+v25/enums/incentive_type.proto
+v25/enums/lift_measurement_flight_status.proto
+v25/enums/lift_metric_type.proto
+v25/enums/loyalty_membership.proto
+v25/enums/sentiment.proto
+v25/enums/survey_intended_action.proto
+v25/enums/survey_lift_flight_target_response_mode.proto
+v25/enums/survey_subject_type.proto
+v25/enums/third_party_conversion_attribution_integration_partner.proto
+v25/enums/video_crawl_source_platform.proto
+v25/errors/business_profile_location_sync_error.proto
+v25/resources/lift_measurement_age_range.proto
+v25/resources/lift_measurement_campaign.proto
+v25/resources/lift_measurement_config.proto
+v25/resources/lift_measurement_device.proto
+v25/resources/lift_measurement_flight.proto
+v25/resources/lift_measurement_gender.proto
+v25/resources/lift_measurement_video.proto
+v24/common/lifecycle_goals.proto
+v24/enums/customer_acquisition_optimization_mode.proto
+v24/errors/campaign_lifecycle_goal_error.proto
+v24/errors/customer_lifecycle_goal_error.proto
+v24/resources/campaign_lifecycle_goal.proto
+v24/resources/customer_lifecycle_goal.proto
+v24/services/campaign_lifecycle_goal_service.proto
+v24/services/customer_lifecycle_goal_service.proto
+v24
+v25
+Diffs
+/common/audience_insights_attribute.proto
+/common/audience_insights_attribute.proto
+Quick
+|
+Full
+/common/campaign_goal_settings.proto
+/common/campaign_goal_settings.proto
+Quick
+|
+Full
+/common/criteria.proto
+/common/criteria.proto
+Quick
+|
+Full
+/common/goal_common.proto
+/common/goal_common.proto
+Quick
+|
+Full
+/common/goal_setting.proto
+/common/goal_setting.proto
+Quick
+|
+Full
+/common/metrics.proto
+/common/metrics.proto
+Quick
+|
+Full
+/common/segments.proto
+/common/segments.proto
+Quick
+|
+Full
+/common/third_party_integration_partners.proto
+/common/third_party_integration_partners.proto
+Quick
+|
+Full
+/enums/asset_automation_type.proto
+/enums/asset_automation_type.proto
+Quick
+|
+Full
+/enums/asset_field_type.proto
+/enums/asset_field_type.proto
+Quick
+|
+Full
+/enums/benchmarks_source_type.proto
+/enums/benchmarks_source_type.proto
+Quick
+|
+Full
+/enums/content_creator_insights_supplemental_data.proto
+/enums/content_creator_insights_supplemental_data.proto
+Quick
+|
+Full
+/enums/conversion_action_category.proto
+/enums/conversion_action_category.proto
+Quick
+|
+Full
+/enums/conversion_action_type.proto
+/enums/conversion_action_type.proto
+Quick
+|
+Full
+/enums/conversion_value_rule_primary_dimension.proto
+/enums/conversion_value_rule_primary_dimension.proto
+Quick
+|
+Full
+/enums/criterion_type.proto
+/enums/criterion_type.proto
+Quick
+|
+Full
+/enums/goal_type.proto
+/enums/goal_type.proto
+Quick
+|
+Full
+/enums
+
+===== https://developers.google.com/google-ads/api/docs/oauth/overview
+TITLE: Use OAuth 2.0 to Access Google Ads API  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Use OAuth 2.0 to Access Google Ads API
+outlined_flag
+Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, allowing your app to access user accounts without handling login information.
+In addition to OAuth 2.0 credentials, a developer token is also required to make Google Ads API calls.
+While all Google-supported OAuth 2.0 scenarios work, this guide focuses on the most common ones for Google Ads API developers.
+The recommended OAuth 2.0 approach depends on your specific application scenario, such as integrating with existing Google APIs, managing your own accounts, or managing accounts on behalf of other users.
+Just like other Google APIs, Google Ads API also uses the
+OAuth 2.0
+protocol
+for authentication and authorization. OAuth 2.0
+enables your Google Ads API client app to access a user's Google Ads account without having
+to handle or store the user's login info.
+Broadly speaking, all the
+OAuth 2.0 authorization
+scenarios
+that Google supports also works with
+Google Ads API. However, we will focus on a handful of scenarios that are most common
+for Google Ads API developers.
+Scenario
+Recommended approach
+My app already uses one or more Google APIs. I have already built
+    support for OAuth 2.0 workflows for my app, and just need to add Google Ads API
+    functionality to my existing app.
+Make sure your authorized user or your service account has access
+        to the Google Ads API accounts you are making API calls to. Learn more about
+        the
+Google Ads access model
+Refer to the
+multi-user authentication workflow
+or the
+service account workflow
+depending on the approach you are using
+         with the rest of the Google APIs that your app is using.
+I am building an app that manages Google Ads accounts that I already have
+     access to. If I need to manage new Google Ads accounts in the future, I will
+     gain access to those accounts by linking them under my Google Ads Manager
+     account.
+OR
+Someone will
+invite
+me to manage those accounts.
+Use
+service account workflow
+If you have organizational policies that prevent you from using
+       service accounts, then use
+single-user authentication workflow
+as a fallback.
+I am building an app that manages Google Ads accounts on behalf of other
+    users. My app will build a user screen that lets the logged in users to
+    connect to their Google Ads accounts and authorize my app to manage those
+    accounts on their behalf.
+Use
+multi-user authentication
+To review and revoke access for third-party applications connected to your
+Google Account, visit your
+Google Account permissions page
+Next
+Access model overview
+arrow_forward
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-09-23 UTC.
+
+===== https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S957519740:1790567923906345
+TITLE: Sign in - Google Accounts
+ACCESSED: 2026-09-28
+
+Sign in - Google Accounts
+Loading
+Sign in
+Use your Google Account
+Email or phone
+Forgot email?
+Type the text you hear or see
+Not your computer? Use Guest mode to sign in privately.
+Learn more about using Guest mode
+Next
+Create account
+
+===== https://developers.google.com/
+TITLE: Google for Developers | Build with Gemini
+ACCESSED: 2026-09-28
+
+Build with
+Gemini
+Unlock AI models to build innovative apps and transform development workflows with tools across platforms.
+The fastest path from prompt to production app with Gemini.
+Experience our agent-first platform built for the next era of how you build, work, and automate.
+Build and scale your apps without needing to manage the infrastructure with Google Cloud Run.
+Build high-quality Android apps faster with Gemini in Android Studio.
+Develop next-generation apps and agents by integrating Google's most advanced reasoning and generative models and agent-first APIs.
+Discover how your web applications can perform AI tasks with browser-managed AI models and APIs.
+Build, scale, govern, and optimize enterprise agents.
+close
+GEMINI API
+Integrate Gemini directly into your apps
+Unleash the full potential of your applications by integrating Gemini's long context window and native multimodal reasoning to process massive codebases, complex media, and real-time agentic workflows with a single API.
+View documentation
+Python
+JavaScript
+Go
+Java
+REST
+More
+from
+google
+import
+genai
+client
+=
+genai
+Client
+()
+response
+=
+client
+models
+generate_content
+(
+model
+=
+"gemini-3.5-flash"
+,
+contents
+=
+"Explain how AI works in a few words"
+,
+)
+print
+(
+response
+text
+)
+import
+{
+GoogleGenAI
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
+const
+response
+=
+await
+ai
+models
+generateContent
+({
+model
+:
+"gemini-3.5-flash"
+,
+contents
+:
+"Explain how AI works in a few words"
+,
+});
+console
+log
+(
+response
+text
+);
+}
+await
+main
+();
+package
+main
+import
+(
+"context"
+"fmt"
+"log"
+"google.golang.org/genai"
+)
+func
+main
+()
+{
+ctx
+:=
+context
+Background
+()
+client
+,
+err
+:=
+genai
+NewClient
+(
+ctx
+,
+nil
+)
+if
+err
+!=
+nil
+{
+log
+Fatal
+(
+err
+)
+}
+result
+,
+err
+:=
+client
+Models
+GenerateContent
+(
+ctx
+,
+"gemini-3.5-flash"
+,
+genai
+Text
+(
+"Explain how AI works in a few words"
+),
+nil
+,
+)
+if
+err
+!=
+nil
+{
+log
+Fatal
+(
+err
+)
+}
+fmt
+Println
+(
+result
+Text
+())
+}
+package
+com.example
+;
+import
+com.google.genai.Client
+;
+import
+com.google.genai.types.GenerateContentResponse
+;
+public
+class
+GenerateTextFromTextInput
+{
+public
+static
+void
+main
+(
+String
+[]
+args
+)
+{
+Client
+client
+=
+new
+Client
+();
+GenerateContentResponse
+response
+=
+client
+models
+generateContent
+(
+"gemini-3.5-flash"
+,
+"Explain how AI works in a few words"
+,
+null
+);
+System
+out
+println
+(
+response
+text
+());
+}
+}
+curl
+"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-5-flash:generateContent"
+\
+-H
+"x-goog-api-key:
+$GEMINI_API_KEY
+"
+\
+-H
+'Content-Type: application/json'
+\
+-X
+POST
+\
+-d
+'{
+"contents": [
+{
+"parts": [
+{
+"text": "Explain how AI works in a few words"
+}
+]
+}
+]
+}'
+News & Announcements
+Raising the quality bar: Prepare for new Play standards in memory, code, and onboarding.
+Learn more
+Use build-time validation and modular architectures to make your agents production-ready.
+Learn more
+Google Play is evolving from a standard billing system to a flexible ecosystem built for high-quality experiences. Learn how to set the new standard for user experience and unlock lower rates.
+Learn more
+Discover the new Antigravity CLI and migrate by June 18
+Learn more
+Community & Events
+Google I/O Connect
+I/O Connect China
+Connect with fellow professional developers and Google experts, get inspired by the latest tools and tech, accelerate your development, and create cutting-edge applications.
+August 12-13 / Shanghai
+Google Cloud
+Build with Gemini
+Move beyond basic chatbots. Join Google Cloud experts for a hands-on day building, scaling, and deploying secure, production-ready AI agents.
+Aug - Oct / Multi-city
+Google Cloud
+Google Cloud Summit Doha
+Join the annual Google Cloud event to discover the latest technological innovations in AI, security, application development, collaboration, and more.
+September 22 / Doha, Qatar
+Build and manage in one place
+Access specialized AI workspaces, learn from 700+ hands-on codelabs, and manage projects from a centralized Builders Hub as you move from prototype to production.
+Join the program
+
+===== https://developers.google.com/google-ads/webhook/docs/overview
+TITLE: Overview  |  Lead Form Webhook  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Overview
+Advertisers using
+lead form
+extensions
+can leverage the
+webhook solution to receive leads directly into their preferred CRM solution.
+The webhook CRM solution lets you configure a URL path, which we then use to
+send all incoming lead data from the ad. Along with the URL, you provide a key
+which can be used to validate the sent leads.
+After the user clicks on an ad and submits the lead form, an HTTP POST request
+gets sent to the configured URL. The lead data then goes directly into your CRM
+of choice.
+Resources
+Implementation guide
+Set up a webhook integration for a lead form
+extension
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-08-20 UTC.
+
+===== https://developers.google.com/google-ads/api/docs/oauth/user-authentication
+TITLE: User authentication workflow  |  Google Ads API  |  Google for Developers
+ACCESSED: 2026-09-28
+
+User authentication workflow
+This guide discusses how to access the Google Ads API with user authentication. See the
+overview guide
+to learn more about various
+authentication options.
+The user authentication workflow involves employing an OAuth 2.0 flow to obtain
+human authorization to let your app manage their Google Ads accounts on their
+behalf. An OAuth 2.0 access token is issued once the authorization process
+completes, and the app can use the access token to make API calls to the user's
+Google Ads account. The OAuth 2.0 access token expires every hour, so it is a common
+practice to additionally request
+OAuth 2.0 offline access
+so that your app can refresh
+the authorization without further user interaction.
+There are two broad ways to build the user authentication workflow: single user
+authentication and multi-user authentication. Single user authentication is used
+as a fallback to the
+service account workflow
+,
+and is used when a single user has access to all the Google Ads accounts you need to
+manage using the Google Ads API. On the other hand, multi-user authentication is used
+when you have to manage accounts managed by multiple users, and need to build
+your own OAuth flow to authenticate your users.
+Previous
+arrow_back
+Service account workflow
+Next
+Single-user authentication workflow
+arrow_forward
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-09-23 UTC.
+
+===== https://developers.google.com/google-ads/api/docs/oauth/multi-party-approvals
+TITLE: Multi-party approvals (MPA)  |  Google Ads API  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Multi-party approvals (MPA)
+Multi-party approval (MPA) is a security feature for a Google Ads account designed
+to protect your account from unauthorized activity by requiring a second
+account administrator to verify sensitive changes. Sensitive actions like
+adding users or changing user roles will prompt other administrators of your
+account to approve these changes.
+This guide explains how multi-party approval works and how to manage
+multi-party approval requests in your account.
+Get started with multi-party approval
+Multi-party approval secures your account by requiring another administrator's
+approval for sensitive actions. This can help to block hijacking attempts and
+unauthorized actions from occurring on your account.
+Sensitive actions like adding a new user, removing an existing user, or
+changing user roles will require approval from a second administrator to
+complete. As security needs evolve, additional actions may also require this
+approval process.
+About the approval process
+When you make a sensitive change to a Google Ads account, a request is sent to
+all administrators within the hierarchy for approval. All eligible account
+administrators within your hierarchy will receive an in-product
+notification to review these changes.
+Direct administrators and owner managers of the requester receive individual
+notifications for each request, while others in the hierarchy receive a
+combined digest for multiple requests. Since emails aren't sent for these
+approvals, it's important to check your in-product notifications regularly.
+Account administrators have 20 days to approve or reject a request before it
+expires. Requests automatically expire if they aren't acted upon within
+20 days. If the action is still necessary, restart the process to generate
+a new approval request.
+There are three request statuses for multi-party approval. These statuses will
+show next to any actions taken in the account:
+Complete
+The action was reviewed and approved by an administrator. The action takes
+effect and the initiator is notified.
+Denied
+The action was reviewed and rejected by an administrator. The proposed
+action is blocked.
+Expired
+If no action is taken within 20 days, the action is rejected.
+Review multi-party approval requests
+You can review change requests on the
+Access and security
+page in your
+Google Ads account.
+Approve or reject a request
+After a request is submitted, another administrator must review and accept the
+request for it to take effect. Here's how to review your pending requests:
+Go to
+Access and security
+within the
+Admin
+menu.
+In the
+Pending invitations
+menu, select
+Review request
+Review the details of each request. Select
+Approve
+to approve the
+request, and
+Deny
+to reject it. You can manage added users in the
+Users
+tab under
+Access and security
+Revoke a request
+If you need to revoke a pending request that you initiated, follow the
+following steps. Note that you can only revoke a request if it hasn't already
+been approved or denied by another administrator.
+Go to
+Access and security
+within the
+Admin
+menu.
+In the
+Pending invitations
+menu, select
+Revoke Request
+next to a
+request you'd like to cancel.
+This will delete the notifications associated with the request for all other
+account administrators.
+Supported actions in the Google Ads API
+The Google Ads API supports multi-party approvals for three actions:
+Inviting a new user to an
+account
+Changing the user access level of an existing
+user
+Removing an existing user from the
+account
+A multi-party authorization request can be resolved or revoked using the
+MultiPartyAuthReviewService
+service.
+Approve or reject a request
+Another administrator must review and accept or reject the request for it to
+take effect. To approve or reject a request, call the
+MultiPartyAuthReviewService.ResolveMultiPartyAuthReview
+method using the credentials of the user who is authorized to resolve the
+request. This is typically a second administrator of the account.
+Populate a
+ResolveMultiPartyAuthReviewOperation
+object with:
+resource_name
+: The resource name of the multi-party review request to be
+resolved.
+status
+: Set to
+APPROVED
+to approve the request, or
+REJECTED
+to reject
+the request.
+Note that only an authorized user other than the original requester can approve
+or reject a request.
+Revoke a request
+If you need to revoke a pending request that you initiated, you can do so by
+calling the
+MultiPartyAuthReviewService.ResolveMultiPartyAuthReview
+method.
+This operation is similar to the approval workflows, except that this must be
+done with the credentials of the user who created the original request.
+Populate a
+ResolveMultiPartyAuthReviewOperation
+object with:
+resource_name
+: The resource name of the multi-party review request to be
+revoked.
+status
+: Set to
+REVOKED
+Retrieve pending requests
+You can retrieve the list of pending multi-party approval requests by running
+the foll
+
+===== https://developers.google.com/google-ads/api/docs/oauth/multi-user-authentication
+TITLE: Multi-user authentication workflow  |  Google Ads API  |  Google for Developers
+ACCESSED: 2026-09-28
+
+Multi-user authentication workflow
+outlined_flag
+To access the Google Ads API, configure your application to authenticate for the
+https://www.googleapis.com/auth/adwords
+scope.
+It is recommended to request OAuth offline access to make API calls on behalf of the user while they are offline.
+You should go through the OAuth App verification process and get your app certified.
+Once you obtain OAuth 2.0 credentials after authorizing a user, you can configure your client library using those credentials to make API calls to their accounts.
+In the multi-user authentication workflow, you build your own OAuth flow to
+authenticate your users. There are multiple app types discussed as part of the
+Google Identity documentation
+, and the Google
+Cloud Console project configuration you need to support that app type. All these
+app types are supported by Google Ads API. The additional technical details to keep in
+mind are:
+To access Google Ads API, you should configure your application to authenticate for
+the following scope:
+https://www.googleapis.com/auth/adwords
+Your app may have to make API calls on behalf of the user while they are
+offline. A common scenario is to download account metrics offline to
+generate reports and perform account analytics. For this reason, we
+recommend requesting
+OAuth offline access
+You should go through the
+OAuth App verification process
+and get your app certified.
+Client library configuration
+Once you authorize the user and obtain OAuth 2.0 credentials, you can configure
+the client library by following the instructions on the tab corresponding to
+your programming language.
+Java
+You can initialize your
+GoogleAdsClient
+instance at runtime, using the
+credentials you have obtained from the user whose accounts you are making
+API calls to.
+UserCredentials
+credentials
+=
+UserCredentials
+newBuilder
+()
+setClientId
+(
+OAUTH_CLIENT_ID
+)
+setClientSecret
+(
+OAUTH_CLIENT_SECRET
+)
+setRefreshToken
+(
+REFRESH_TOKEN
+)
+build
+();
+// Creates a GoogleAdsClient with the provided credentials.
+GoogleAdsClient
+client
+=
+GoogleAdsClient
+newBuilder
+()
+// Sets the OAuth credentials which provide Google Ads account
+// access.
+setCredentials
+(
+credentials
+)
+// Optional: sets the login customer ID.
+setLoginCustomerId
+(
+Long
+valueOf
+(
+LOGIN_CUSTOMER_ID
+))
+build
+();
+See the
+configuration guide
+for additional options.
+.NET
+You can initialize your
+GoogleAdsClient
+instance at runtime, using the
+credentials you have obtained from the user whose accounts you are making
+API calls to.
+GoogleAdsConfig
+googleAdsConfig
+=
+new
+GoogleAdsConfig
+()
+{
+LoginCustomerId
+=
+LOGIN_CUSTOMER_ID
+,
+OAuth2ClientId
+=
+OAUTH_CLIENT_ID
+,
+OAuth2ClientSecret
+=
+OAUTH_CLIENT_SECRET
+,
+OAuth2RefreshToken
+=
+REFRESH_TOKEN
+,
+};
+GoogleAdsClient
+googleAdsClient
+=
+new
+GoogleAdsClient
+(
+googleAdsConfig
+);
+See the
+configuration guide
+for additional options.
+Python
+You can initialize your
+GoogleAdsClient
+instance at runtime, using the
+credentials you have obtained from the user whose accounts you are making
+API calls to.
+from
+google.ads.googleads.client
+import
+GoogleAdsClient
+credentials
+=
+{
+"login_customer_id"
+:
+"INSERT_LOGIN_CUSTOMER_ID_HERE"
+,
+"refresh_token"
+:
+"REFRESH_TOKEN"
+,
+"client_id"
+:
+"OAUTH_CLIENT_ID"
+,
+"client_secret"
+:
+"OAUTH_CLIENT_SECRET"
+}
+client
+=
+GoogleAdsClient
+load_from_dict
+(
+credentials
+)
+See the
+configuration guide
+for additional options.
+PHP
+You can initialize your
+GoogleAdsClient
+instance at runtime, using the
+credentials you have obtained from the user whose accounts you are making
+API calls to.
+$oAuth2Credential = (new OAuth2TokenBuilder())
+->withClientId('INSERT_CLIENT_ID_HERE')
+->withClientSecret('INSERT_CLIENT_SECRET_HERE')
+->withRefreshToken('INSERT_REFRESH_TOKEN_HERE')
+->build();
+$googleAdsClient = (new GoogleAdsClientBuilder())
+->withOAuth2Credential($oAuth2Credential)
+->withLoginCustomerId('INSERT_LOGIN_CUSTOMER_ID_HERE')
+->build();
+See the
+configuration guide
+for additional options.
+Ruby
+You can initialize your
+GoogleAdsClient
+instance at runtime, using the
+credentials you have obtained from the user whose accounts you are making
+API calls to.
+client
+=
+Google
+::
+Ads
+::
+GoogleAds
+::
+GoogleAdsClient
+new
+do
+|
+config
+|
+config
+client_id
+=
+'INSERT_CLIENT_ID_HERE'
+config
+client_secret
+=
+'INSERT_CLIENT_SECRET_HERE'
+config
+refresh_token
+=
+'INSERT_REFRESH_TOKEN_HERE'
+config
+login_customer_id
+=
+'INSERT_LOGIN_CUSTOMER_ID_HERE'
+end
+See the
+configuration guide
+for additional options.
+Perl
+You can initialize your
+GoogleAdsClient
+instance at runtime, using the
+credentials you have obtained from the user whose accounts you are making
+API calls to.
+my
+$api_client
+=
+Google::Ads::GoogleAds::
+Client
+-
+>
+new
+({
+login_customer_id
+=
+>
+"INSERT_LOGIN_CUSTOMER_ID_HERE"
+});
+my
+$oauth2_applications_handler
+=
+$api_client
+-
+>
+get_oauth2_applications_handler
+();
+$oauth2_applications_handler
+-
+>
+set_client_id
+(
+"INSERT_CLIENT_ID"
+);
+$oauth2_

@@ -1,0 +1,390 @@
+===== https://developer.brex.com
+TITLE: Overview
+ACCESSED: 2026-09-28
+
+Brex
+is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay. Brex makes it easy for finance teams to control all of their spend, all in one place. Using the Brex API, you can power your internal tools and create custom workflows.
+Brex APIs use the
+REST
+architecture, are defined using the
+OpenAPI specification
+and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.
+Explore our guides and review our API documentation to see how you can integrate with Brex.
+Accounting API
+: View and manage accounting data
+Budgets API
+: Manage budgets and budget programs
+: View and manage card expenses data, receipt match and receipt uploads
+: View and manage fields and their options
+Onboarding API
+: Refer your customers and personal contacts to Brex and prefill signup information
+: Manage vendors and send ACH, domestic wires, and checks
+: Manage users, locations, departments, and cards
+: View your transactions, accounts, and statements
+Travel API
+: View trips made in Brex Travel
+Webhooks API
+: Send real-time notifications based on events
+Check out our
+quickstart guide
+to get up and running making your first Brex API call in just a few minutes. The rest of the guides and documentation provide more in-depth context.
+API Status
+https://status.brex.com
+to see API and Brex system status.
+Join us on Slack
+Have feedback, questions, or ideas?
+Join our Slack community
+to discuss your API integrations with Brex employees and other developers.
+
+===== https://developer.brex.com/
+TITLE: Overview
+ACCESSED: 2026-09-28
+
+Brex
+is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay. Brex makes it easy for finance teams to control all of their spend, all in one place. Using the Brex API, you can power your internal tools and create custom workflows.
+Brex APIs use the
+REST
+architecture, are defined using the
+OpenAPI specification
+and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.
+Explore our guides and review our API documentation to see how you can integrate with Brex.
+Accounting API
+: View and manage accounting data
+Budgets API
+: Manage budgets and budget programs
+: View and manage card expenses data, receipt match and receipt uploads
+: View and manage fields and their options
+Onboarding API
+: Refer your customers and personal contacts to Brex and prefill signup information
+: Manage vendors and send ACH, domestic wires, and checks
+: Manage users, locations, departments, and cards
+: View your transactions, accounts, and statements
+Travel API
+: View trips made in Brex Travel
+Webhooks API
+: Send real-time notifications based on events
+Check out our
+quickstart guide
+to get up and running making your first Brex API call in just a few minutes. The rest of the guides and documentation provide more in-depth context.
+API Status
+https://status.brex.com
+to see API and Brex system status.
+Join us on Slack
+Have feedback, questions, or ideas?
+Join our Slack community
+to discuss your API integrations with Brex employees and other developers.
+
+===== https://www.brex.com/support/brex-api
+TITLE: Brex API
+ACCESSED: 2026-09-28
+
+Brex API
+In this article
+In this article
+Workflow capabilities
+Safeguards and security
+Start building
+Developer support
+The
+Brex API
+is an automation layer that can be used to customize Brex workflows.
+Spend limits API:
+View and manage your Brex spend limits.
+Expenses API:
+View expense categories, capture, and report on spend.
+Fields API:
+Manage your Brex fields and field values.
+Payments API:
+Initiate ACH, check, and wire payments and manage vendors from your Brex business accounts.
+Team API:
+Manage users, departments, locations, and create virtual cards.
+Transactions API:
+Surface your company’s Brex transactional data in external apps or tools.
+Workflow capabilities
+Here are some actions you can automate on Brex using our APIs.
+Spend limits API
+Dynamically create spend limits with the ability to set limits, assign who can spend from it, and more.
+Instantly change spend limits, budget members, and more.
+View spend limit details including limits and spend.
+Access expense information, such as spend categories, memos, and receipts, edited by customers.
+Accurately capture and report on spend.
+Sync your fields from any third-party system to be used within Brex to simplify and automate your workflows.
+View, create and update fields and values that you want to use within Brex.
+Trigger vendor payments via ACH, wire, and check based on information in other internal systems so payments are initiated immediately.
+If you plan to send more than 1,000 payments per day, please contact developer-support@brex.com for more details on use of the payments API.
+Automatically create new vendors in Brex based on your records in other systems.
+Dynamically create virtual cards with spend limits for new employees or vendors.
+Change spend limits per card instantly.
+Lock any number of Brex employee or vendor cards with one line of code.
+Invite new Brex users or terminate them to keep Brex in sync with your HR system.
+Surface real-time financial data where you make business-critical decisions — e.g., see your current Brex transactions and balance in your own finance dashboard.
+View Brex data in external applications — e.g., pull transaction data into Google Sheets or Excel to create custom reports and charts.
+Build bespoke analytics tools and monitoring for fine-tuned expense tracking.
+Safeguards and security
+Here are some ways that we help to keep your Brex data secure through the API:
+Only account or card admins can create API tokens in the dashboard.
+You can restrict scopes to only allow the functionality you need to access via API.
+All account and card admins on the account receive an email confirmation every time a token is created or revoked.
+Start building
+Account and card admins can get started on the API by visiting
+Brex for Developers
+, our documentation hub, and reading through our documentation and example apps.
+Check your
+role permissions
+and if you’re authorized, generate a user token from your Brex dashboard following
+these instructions
+.
+Developer support
+Please email your support requests to developer-support@brex.com or
+join us on Slack
+.
+Chat
+
+===== https://developer.brex.com/guides/quickstart
+TITLE: Quickstart
+ACCESSED: 2026-09-28
+
+This guide will help you get up and running making your first Brex API call in just a few minutes. You will create a user token and make your first call against the Brex Team API to see the current user associated with that access token.
+This guide assumes you are a Brex customer with admin access to your dashboard.
+1. Generate your user token
+First, you'll need to create a user token that let's you access the APIs.
+Settings > Developer
+. You'll have to login as an account admin if you haven't already.
+Click
+Create Token
+.
+Create a name for your token such as
+Team API Quickstart
+. Next to "Users" select the "Read" option and then hit
+Create Token
+.
+The next screen will confirm your previous selections. Select
+Allow access
+.
+Your token is now created! Copy and store the token securely. You won't be able to see it again and you'll need it in the next step.
+Your browser does not support the video tag.
+For more details, see the
+user authentication guide
+.
+2. Make your first API Call
+With your user token, you can now make an API call. For this example, we'll query the
+Get current user
+endpoint that returns the user associated with the user token.
+To do so, add the header
+Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE>
+and make a
+GET
+request to
+https://api.brex.com/v2/users/me
+with your language/tool of choice.
+Below are a few examples in different implementations.
+curl
+curl
+-i
+-X
+GET
+\
+https://api.brex.com/v2/users/me
+\
+-H
+'Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE>'
+Javascript
+const
+resp
+=
+await
+fetch
+(
+`https://api.brex.com/v2/users/me`
+,
+{
+method:
+'GET'
+,
+headers: {
+Authorization:
+'Bearer <YOUR_TOKEN_FROM_STEP_1_HERE>'
+}
+}
+);
+const
+data
+=
+await
+resp.
+text
+();
+console.
+log
+(data);
+Postman
+Postman is a browser or desktop app used for API testing. It gives you a UI to easily test API calls without writing code. See our
+Postman guide
+on how to get set up and start making a call.
+Next steps
+Congratulations, you've made your first Brex API request! You're ready to dive deeper.
+Reading through the rest of the guides will familiarize you with important Brex API conventions and implementation concerns. The API references will give you a better understanding of what functionality is included in each API and whether they will meet the needs of your use case. If you need help, see our
+support page
+. Happy developing!
+
+===== https://developer.brex.com/examples/onboarding_examples
+TITLE: Onboarding API examples
+ACCESSED: 2026-09-28
+
+Onboarding API examples
+See the
+Referrals guide
+for a full end-to-end walkthrough. This page keeps a few short examples handy for quick testing.
+Create a referral
+POST https:
+//api.brex.com/v1/referrals
+REQUEST
+{
+"referral_code"
+:
+"partner_refcode"
+,
+"applicant"
+: {
+"first_name"
+:
+"John"
+,
+"last_name"
+:
+"Doe"
+,
+"email"
+:
+"john.doe@doeinc.com"
+},
+"business"
+: {
+"legal_name"
+:
+"Doe Inc"
+,
+"incorporation_type"
+:
+"C_CORP"
+,
+"website_url"
+:
+"https://doeinc.com"
+}
+}
+RESPONSE
+{
+"id"
+:
+"referral_123"
+,
+"referral_signup_url"
+:
+"https://brex.com/signup?pref_token=referral_123"
+,
+"expires_at"
+:
+"2026-04-14T10:30:00"
+,
+"status"
+:
+"UNCLAIMED"
+,
+"products"
+: [
+{
+"cash"
+: {
+"application"
+: {
+"status"
+:
+"NO_ACCOUNT"
+}
+}
+}
+]
+}
+The returned
+referral_signup_url
+is the link you share with the prospect.
+Get an update about a referral
+GET https:
+//api.brex.com/v1/referrals/referral_123
+RESPONSE
+{
+"id"
+:
+"referral_123"
+,
+"referral_signup_url"
+:
+"https://brex.com/signup?pref_token=referral_123"
+,
+"expires_at"
+:
+"2026-04-14T10:30:00"
+,
+"status"
+:
+"ACTIVE"
+,
+"products"
+: [
+{
+"cash"
+: {
+"application"
+: {
+"status"
+:
+"PROCESSING"
+}
+}
+}
+]
+}
+status: ACTIVE
+means the referral has been attributed to a Brex customer account.
+Create a document upload
+POST https:
+//api.brex.com/v1/referrals/referral_123/document_upload
+REQUEST
+{
+"type"
+:
+"ARTICLES_OF_INCORPORATION"
+}
+RESPONSE
+{
+"uri"
+:
+"https://s3.amazonaws.com/destination-link"
+,
+"id"
+:
+"document_123"
+}
+Upload the file to the returned presigned URL:
+PUT https:
+//s3.amazonaws.com/destination-link
+REQUEST
+* binary file content
+Process a delayed EIN document
+Use this after the referral is
+ACTIVE
+, the document type is
+IRS_EIN_CONFIRMATION
+, and the file has already been uploaded to S3.
+POST https:
+//api.brex.com/v1/referrals/referral_123/process_ein_document
+REQUEST
+{
+"document_id"
+:
+"document_123"
+}
+RESPONSE
+200
+OK

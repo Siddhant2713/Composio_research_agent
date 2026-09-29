@@ -1,0 +1,192 @@
+{
+  "app": "Discord",
+  "number": 26,
+  "category": "Communications and Messaging",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:57:10.556413+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://discord.com/developers/docs\",\n    \"https://discord.com/developers/applications\",\n    \"https://discord.com/developers\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://discord.com",
+    "https://discord.com/developers/docs",
+    "https://discord.com/developers/applications",
+    "https://discord.com/developers",
+    "https://docs.discord.com/",
+    "https://developer.discord.com/",
+    "https://developers.discord.com/",
+    "https://api.discord.com/",
+    "https://discord.com/docs",
+    "https://discord.com/api",
+    "https://discord.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://discord.com/licenses",
+    "https://discord.com/developers/social-sdk",
+    "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+    "https://docs.discord.com/developers/reference",
+    "https://docs.discord.com/developers/platform/webhooks",
+    "https://docs.discord.com/developers/discord-social-sdk/overview",
+    "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "https://discord.com/developers/contact-us",
+    "https://discord.com/developers/newsletter-sign-up"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://discord.com/developers/applications",
+      "reason": "page too thin (24 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.discord.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.discord.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.discord.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://discord.com",
+      "requested_url": "https://discord.com",
+      "status": 200,
+      "title": "Discord - Group Chat That\u2019s All Fun & Games",
+      "chars": 1530,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.discord.com/developers/intro",
+      "requested_url": "https://discord.com/developers/docs",
+      "status": 200,
+      "title": "Discord Developer Platform - Documentation - Discord",
+      "chars": 848,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://discord.com/developers",
+      "requested_url": "https://discord.com/developers",
+      "status": 200,
+      "title": "Discord for Developers",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://discord.com/licenses",
+      "requested_url": "https://discord.com/licenses",
+      "status": 200,
+      "title": "Licenses | Discord",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://discord.com/developers/social-sdk",
+      "requested_url": "https://discord.com/developers/social-sdk",
+      "status": 200,
+      "title": "Discord Social SDK",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+      "requested_url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+      "status": 200,
+      "title": "OAuth2 and Permissions - Documentation - Discord",
+      "chars": 2456,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "requested_url": "https://docs.discord.com/developers/reference",
+      "status": 200,
+      "title": "API Reference - Documentation - Discord",
+      "chars": 4984,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.discord.com/developers/platform/webhooks",
+      "requested_url": "https://docs.discord.com/developers/platform/webhooks",
+      "status": 200,
+      "title": "Webhooks - Documentation - Discord",
+      "chars": 1932,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Discord public developer API for building bots, apps, and integrations using REST and Webhooks.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Authenticates using bot tokens or OAuth2 bearer tokens/basic auth depending on the endpoint.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create bot users and apps directly in the Developer Portal.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Exposes REST endpoints and webhooks for integrations.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.discord.com/developers/reference\",\n      \"claim\": \"API uses a base URL and authentication methods including bot tokens.\",\n      \"quote\": \"Authenticating with the Discord API can be done in one of three ways: Using a bot token found on the Bot page within your app\u2019s settings.\"\n    },\n    {\n      \"url\": \"https://docs.discord.com/developers/platform/webhooks\",\n      \"claim\": \"Discord supports incoming webhooks and webhook events.\",\n      \"quote\": \"Discord supports two distinct types of webhooks that work in opposite directions: incoming webhooks for posting messages into Discord, and webhook events for receiving notifications from Discord when something happens in your app.\"\n    },\n    {\n      \"url\": \"https://docs.discord.com/developers/reference\",\n      \"claim\": \"REST base URL for Discord API.\",\n      \"quote\": \"Base URL https://discord.com/api\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.discord.com/developers/reference\",\n      \"quote\": \"Authenticating with the Discord API can be done in one of three ways: Using a bot token found on the Bot page within your app\u2019s settings.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.discord.com/developers/reference\",\n      \"quote\": \"Using a bot token found on the Bot page within your app\u2019s settings.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.discord.com/developers/reference\",\n      \"quote\": \"Base URL https://discord.com/api\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint_url": "https://discord.com",
+    "one_liner": "Discord public developer API for building bots, apps, and integrations using REST and Webhooks.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Authenticates using bot tokens or OAuth2 bearer tokens/basic auth depending on the endpoint."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create bot users and apps directly in the Developer Portal."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://docs.discord.com/developers/reference."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "Credentials are self-serve (api_key), but the pages do not establish the API surface, so integration work is harder to scope. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.discord.com/developers/reference",
+        "claim": "API uses a base URL and authentication methods including bot tokens.",
+        "quote": "Authenticating with the Discord API can be done in one of three ways: Using a bot token found on the Bot page within your app\u2019s settings.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.discord.com/developers/platform/webhooks",
+        "claim": "Discord supports incoming webhooks and webhook events.",
+        "quote": "Discord supports two distinct types of webhooks that work in opposite directions: incoming webhooks for posting messages into Discord, and webhook events for receiving notifications from Discord when something happens in your app.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.discord.com/developers/reference",
+        "quote": "Authenticating with the Discord API can be done in one of three ways: Using a bot token found on the Bot page within your app\u2019s settings."
+      },
+      "access": {
+        "url": "https://docs.discord.com/developers/reference",
+        "quote": "Using a bot token found on the Bot page within your app\u2019s settings."
+      }
+    },
+    "unsupported_fields": [
+      "api_surface: quoted line not found on https://docs.discord.com/developers/reference",
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:57:21.354873+00:00"
+}

@@ -16,11 +16,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
 
+from agent import audit
 from agent import sample as sampler
 from agent.audit import audit_record
 
@@ -177,10 +179,16 @@ def cmd_audit(args) -> None:
     if audit_path(pass_name).exists() and not args.force:
         out = json.loads(audit_path(pass_name).read_text())
 
+    paced = False
     for position, record in enumerate(chosen, 1):
         if record["name"] in out["apps"] and not args.force:
             print(f"[{position}/{len(chosen)}] {record['name']} — already audited")
             continue
+
+        # Stay under the judge's per-minute token budget rather than discovering it by 429.
+        if paced and audit.PACE_SECONDS:
+            time.sleep(audit.PACE_SECONDS)
+        paced = True
 
         claims = {
             field: {
@@ -346,7 +354,22 @@ def cmd_worked_example(args) -> None:
         raise SystemExit("no wrong->right example found yet (has pass2 been audited?)")
 
     candidates.sort(reverse=True)
-    score, name, field, was, now, v1, v2 = candidates[0]
+
+    # The automatic ranking rewards the judge changing its mind, and the judge rewards
+    # quotability rather than truth — so its top pick is a shortlist entry, not a verdict.
+    # `--app/--field` pins an example a human has actually checked against the page.
+    if args.app:
+        wanted = [c for c in candidates
+                  if c[1].lower() == args.app.lower()
+                  and (not args.field or c[2] == args.field)]
+        if not wanted:
+            raise SystemExit(
+                f"{args.app}/{args.field or 'any field'} is not a wrong->right candidate; "
+                f"candidates: {[(c[1], c[2]) for c in candidates[:8]]}"
+            )
+        score, name, field, was, now, v1, v2 = wanted[0]
+    else:
+        score, name, field, was, now, v1, v2 = candidates[0]
     section = field.split(".")[0]
 
     def raw_output(pass_name: str) -> str:
@@ -358,8 +381,10 @@ def cmd_worked_example(args) -> None:
         "app": name,
         "field": field,
         "why_this_example": (
-            "Pass 1 asserted this value with no line on any fetched page that says it; "
-            "Pass 2 had to quote a verifiable line, which changed the answer."
+            "Pass 1 asserted this value without being held to a line on the page. Pass 2 had "
+            "to quote a line and have it verified against the fetched text, which changed the "
+            "answer. Selected from the wrong->right shortlist and then checked by hand against "
+            "the source page."
         ),
         "pass1": {
             "answer": was,
@@ -441,6 +466,8 @@ def main() -> None:
     p.set_defaults(func=cmd_compare)
 
     p = sub.add_parser("worked-example")
+    p.add_argument("--app", help="Pin a specific, human-verified app instead of the top pick.")
+    p.add_argument("--field", help="Pin the field to document, e.g. mcp.exists.")
     p.set_defaults(func=cmd_worked_example)
 
     args = parser.parse_args()

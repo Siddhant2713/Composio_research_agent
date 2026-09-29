@@ -1,0 +1,206 @@
+{
+  "app": "Squarespace",
+  "number": 46,
+  "category": "Ecommerce",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:17:46.364841+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.squarespace.com\",\n    \"https://developers.squarespace.com/overview\",\n    \"https://developers.squarespace.com/authentication\",\n    \"https://developers.squarespace.com/commerce-apis\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.squarespace.com",
+    "https://developers.squarespace.com/overview",
+    "https://developers.squarespace.com/authentication",
+    "https://developers.squarespace.com/commerce-apis",
+    "https://docs.squarespace.com/",
+    "https://developer.squarespace.com/",
+    "https://api.squarespace.com/",
+    "https://squarespace.com/docs",
+    "https://squarespace.com/developers",
+    "https://squarespace.com/api",
+    "https://squarespace.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+    "https://developers.squarespace.com/quick-start",
+    "https://developers.squarespace.com/webhooks/overview",
+    "https://developers.squarespace.com/commerce-apis/oauth",
+    "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "https://developers.squarespace.com/commerce-apis/contacts-overview"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.squarespace.com/overview",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.squarespace.com/authentication",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.squarespace.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developer.squarespace.com/",
+      "reason": "page too thin (24 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://api.squarespace.com/",
+      "reason": "HTTP 401",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://squarespace.com/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.squarespace.com",
+      "requested_url": "https://developers.squarespace.com",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 1722,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/contacts",
+      "requested_url": "https://developers.squarespace.com/commerce-apis",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+      "requested_url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 1981,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.squarespace.com/quick-start",
+      "requested_url": "https://developers.squarespace.com/quick-start",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 3065,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.squarespace.com/webhooks/overview",
+      "requested_url": "https://developers.squarespace.com/webhooks/overview",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 2784,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/oauth",
+      "requested_url": "https://developers.squarespace.com/commerce-apis/oauth",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 4986,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "requested_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "status": 200,
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "chars": 3457,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Squarespace provides Commerce APIs, Reseller APIs, custom code specifications, and webhooks to build and publish external apps, custom themes, and integrations.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Squarespace supports both OAuth 2.0 and API keys for authenticating requests to its Commerce APIs.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can generate OAuth client IDs and secrets immediately using the self-service Developer Apps tab or generate API keys directly inside a Squarespace site's developer settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"The platform exposes REST endpoints, webhooks for event subscriptions, and custom code specifications.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"The pages mention AI compatibility for integrating API docs into Claude or ChatGPT, but do not describe a Model Context Protocol (MCP) server.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.squarespace.com/commerce-apis/oauth\",\n      \"claim\": \"Squarespace uses OAuth 2.0 for API authorization.\",\n      \"quote\": \"Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.\"\n    },\n    {\n      \"url\": \"https://developers.squarespace.com/changes/self-service-oauth-credential-management\",\n      \"claim\": \"Developers can self-serve OAuth credentials instantly.\",\n      \"quote\": \"Starting Monday, July 27, 2026, Squarespace is transitioning to a self-service model for OAuth credential management, empowering developers to build and maintain integrations with greater speed and autonomy.\"\n    },\n    {\n      \"url\": \"https://developers.squarespace.com/commerce-apis/contacts\",\n      \"claim\": \"REST endpoints are available for accessing commerce APIs.\",\n      \"quote\": \"GET https://api.squarespace.com /v1/contacts\"\n    },\n    {\n      \"url\": \"https://developers.squarespace.com/webhooks/overview\",\n      \"claim\": \"Webhooks are supported for system event notifications.\",\n      \"quote\": \"Instead of making repeated API calls, a client may subscribe to notifications from Squarespace for supported system events.\"\n    },\n    {\n      \"url\": \"https://developers.squarespace.com\",\n      \"claim\": \"AI compatibility allows integrating API docs into Claude or ChatGPT.\",\n      \"quote\": \"Integrate our API docs directly into Claude or ChatGPT.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.squarespace.com/commerce-apis/oauth\",\n      \"quote\": \"Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.squarespace.com/changes/self-service-oauth-credential-management\",\n      \"quote\": \"Instant Credential Generation: Generate OAuth client IDs and secrets immediately for development and testing.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.squarespace.com\",\n      \"quote\": \"REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint_url": "https://developers.squarespace.com",
+    "one_liner": "Squarespace provides Commerce APIs, Reseller APIs, custom code specifications, and webhooks to build and publish external apps, custom themes, and integrations.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Squarespace supports both OAuth 2.0 and API keys for authenticating requests to its Commerce APIs."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can generate OAuth client IDs and secrets immediately using the self-service Developer Apps tab or generate API keys directly inside a Squarespace site's developer settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "The platform exposes REST endpoints, webhooks for event subscriptions, and custom code specifications."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/oauth",
+        "claim": "Squarespace uses OAuth 2.0 for API authorization.",
+        "quote": "Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+        "claim": "Developers can self-serve OAuth credentials instantly.",
+        "quote": "Starting Monday, July 27, 2026, Squarespace is transitioning to a self-service model for OAuth credential management, empowering developers to build and maintain integrations with greater speed and autonomy.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.squarespace.com/webhooks/overview",
+        "claim": "Webhooks are supported for system event notifications.",
+        "quote": "Instead of making repeated API calls, a client may subscribe to notifications from Squarespace for supported system events.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.squarespace.com",
+        "claim": "AI compatibility allows integrating API docs into Claude or ChatGPT.",
+        "quote": "Integrate our API docs directly into Claude or ChatGPT.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.squarespace.com/commerce-apis/oauth",
+        "quote": "Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs."
+      },
+      "access": {
+        "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+        "quote": "Instant Credential Generation: Generate OAuth client IDs and secrets immediately for development and testing."
+      },
+      "api_surface": {
+        "url": "https://developers.squarespace.com",
+        "quote": "REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:18:12.900867+00:00"
+}

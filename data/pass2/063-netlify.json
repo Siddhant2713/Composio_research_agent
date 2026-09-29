@@ -1,0 +1,201 @@
+{
+  "app": "Netlify",
+  "number": 63,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:34:39.452336+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://docs.netlify.com/api\",\n    \"https://docs.netlify.com/api/get-started/\",\n    \"https://docs.netlify.com/site-deploys/api-tokens/\",\n    \"https://www.netlify.com/pricing/\",\n    \"https://app.netlify.com/signup\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://docs.netlify.com/api",
+    "https://docs.netlify.com/api/get-started/",
+    "https://docs.netlify.com/site-deploys/api-tokens/",
+    "https://www.netlify.com/pricing/",
+    "https://app.netlify.com/signup",
+    "https://docs.netlify.com/",
+    "https://developer.netlify.com/",
+    "https://developers.netlify.com/",
+    "https://api.netlify.com/",
+    "https://netlify.com/docs",
+    "https://netlify.com/developers",
+    "https://netlify.com/api",
+    "https://netlify.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/",
+    "https://app.netlify.com/applications",
+    "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+    "https://cli.netlify.com",
+    "https://app.netlify.com/user/applications",
+    "https://www.netlify.com/contact/sales/?attr=pricing",
+    "https://www.netlify.com/contact/sales?attr=homepage&ref=sales&id=cta-footer-sales",
+    "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-legacy-plans/billing-faq-for-legacy-plans/",
+    "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/pricing-for-ai-features/",
+    "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+    "https://visual-editor-reference.netlify.com",
+    "https://netlify.com/enterprise/contact/",
+    "https://developers.netlify.com/sdk/get-started/introduction/",
+    "https://developers.netlify.com/sdk/get-started/create-a-new-extension/",
+    "https://app.netlify.com/signup",
+    "https://developers.netlify.com/sdk/extension-ui/overview/"
+  ],
+  "boilerplate_lines_removed": 1,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.netlify.com/site-deploys/api-tokens/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://app.netlify.com/signup",
+      "reason": "page too thin (26 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://app.netlify.com/applications",
+      "reason": "page too thin (26 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://app.netlify.com/user/applications",
+      "reason": "page too thin (26 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "requested_url": "https://docs.netlify.com/api",
+      "status": 200,
+      "title": "Get started with the Netlify API | Netlify Docs",
+      "chars": 4979,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.netlify.com/pricing/",
+      "requested_url": "https://www.netlify.com/pricing/",
+      "status": 200,
+      "title": "Pricing and Plans | Netlify",
+      "chars": 4996,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.netlify.com/",
+      "requested_url": "https://docs.netlify.com/",
+      "status": 200,
+      "title": "Netlify Documentation | Netlify Docs",
+      "chars": 3843,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.netlify.com/sdk/",
+      "requested_url": "https://developer.netlify.com/",
+      "status": 200,
+      "title": "SDK | Netlify Developers",
+      "chars": 1008,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.netlify.com/",
+      "requested_url": "https://developers.netlify.com/",
+      "status": 200,
+      "title": "Scale & Ship Faster with a Composable Web Architecture | Netlify Developers",
+      "chars": 2173,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/",
+      "requested_url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/",
+      "status": 200,
+      "title": "Get started with Netlify CLI | Netlify Docs",
+      "chars": 4982,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+      "requested_url": "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+      "status": 200,
+      "title": "Integrating With Netlify: OAuth2 | Netlify",
+      "chars": 2180,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://cli.netlify.com",
+      "requested_url": "https://cli.netlify.com",
+      "status": 200,
+      "title": "Netlify CLI command reference | Netlify CLI command reference",
+      "chars": 4998,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Netlify provides a REST API and SDKs for developers to manage atomic deploys, sites, DNS, and workflows programmatically.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Netlify supports OAuth2 for public integrations and personal access tokens (PATs) for manual authentication and scripts.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can sign up for free or generate personal access tokens and OAuth applications directly through their Netlify user settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": [\n      \"Go Client\",\n      \"JS Client\",\n      \"Netlify SDK\"\n    ],\n    \"notes\": \"The platform exposes a public REST API along with Go and JavaScript clients, webhook support, and the Netlify SDK for extensions.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://docs.netlify.com/\",\n    \"notes\": \"Netlify MCP Server is available to share context and connect AI assistants to your Netlify account for seamless deployment workflows.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/\",\n      \"claim\": \"Netlify provides a REST API to manage deploys, forms, and DNS.\",\n      \"quote\": \"Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.\"\n    },\n    {\n      \"url\": \"https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/\",\n      \"claim\": \"Netlify uses OAuth2 for authentication.\",\n      \"quote\": \"Netlify uses OAuth2 for authentication.\"\n    },\n    {\n      \"url\": \"https://docs.netlify.com/\",\n      \"claim\": \"Netlify MCP Server exists to share context with AI assistants.\",\n      \"quote\": \"Netlify MCP Server\\nShare context & connect AI assistants to your Netlify account for seamless deployment workflows.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/\",\n      \"quote\": \"Netlify uses OAuth2 for authentication.\"\n    },\n    \"access\": {\n      \"url\": \"https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/\",\n      \"quote\": \"To generate a personal access token (PAT): Go to Select New access token\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/\",\n      \"quote\": \"Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://docs.netlify.com/\",\n      \"quote\": \"Netlify MCP Server\\nShare context & connect AI assistants to your Netlify account for seamless deployment workflows.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://docs.netlify.com/api",
+    "one_liner": "Netlify provides a REST API and SDKs for developers to manage atomic deploys, sites, DNS, and workflows programmatically.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Netlify supports OAuth2 for public integrations and personal access tokens (PATs) for manual authentication and scripts."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://docs.netlify.com/",
+      "notes": "Netlify MCP Server is available to share context and connect AI assistants to your Netlify account for seamless deployment workflows."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "claim": "Netlify uses OAuth2 for authentication.",
+        "quote": "Netlify uses OAuth2 for authentication.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.netlify.com/",
+        "claim": "Netlify MCP Server exists to share context with AI assistants.",
+        "quote": "Netlify MCP Server\nShare context & connect AI assistants to your Netlify account for seamless deployment workflows.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "Netlify uses OAuth2 for authentication."
+      },
+      "mcp": {
+        "url": "https://docs.netlify.com/",
+        "quote": "Netlify MCP Server\nShare context & connect AI assistants to your Netlify account for seamless deployment workflows."
+      }
+    },
+    "unsupported_fields": [
+      "access: quoted line not found on https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "api_surface: quoted line not found on https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:34:57.369419+00:00"
+}

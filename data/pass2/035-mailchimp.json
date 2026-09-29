@@ -1,0 +1,194 @@
+{
+  "app": "Mailchimp",
+  "number": 35,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T06:16:19.962985+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://mailchimp.com/developer/\",\n    \"https://mailchimp.com/developer/marketing/api/\",\n    \"https://mailchimp.com/developer/marketing/guides/quick-start/\",\n    \"https://mailchimp.com/developer/marketing/docs/oauth3/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://mailchimp.com/developer",
+    "https://mailchimp.com/developer/marketing/api/",
+    "https://mailchimp.com/developer/marketing/guides/quick-start/",
+    "https://mailchimp.com/developer/marketing/docs/oauth3/",
+    "https://docs.mailchimp.com/",
+    "https://developer.mailchimp.com/",
+    "https://developers.mailchimp.com/",
+    "https://api.mailchimp.com/",
+    "https://mailchimp.com/docs",
+    "https://mailchimp.com/developers",
+    "https://mailchimp.com/api"
+  ],
+  "second_hop_considered": [
+    "https://mailchimp.com/developer/transactional/api/",
+    "https://mailchimp.com/developer/open-commerce/playground/",
+    "https://mailchimp.com/developer/integration-partner-program/",
+    "https://mailchimp.com/developer/transactional/guides/quick-start/",
+    "https://mailchimp.com/developer/marketing/api/authorized-apps/",
+    "https://mailchimp.com/developer/marketing/api/batch-webhooks/",
+    "https://mailchimp.com/sales/",
+    "https://login.mailchimp.com/signup/?entrypoint=mandrill",
+    "https://mailchimp.com/developer/marketing/guides/mobile-sdk/",
+    "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+    "https://mailchimp.com/developer/marketing/guides/organize-contacts-with-tags/",
+    "https://mailchimp.com/developer/marketing/guides/sync-audience-data-webhooks/"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://docs.mailchimp.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.mailchimp.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://mailchimp.com/developer/",
+      "requested_url": "https://mailchimp.com/developer",
+      "status": 200,
+      "title": "Mailchimp Developer",
+      "chars": 1803,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api/",
+      "requested_url": "https://mailchimp.com/developer/marketing/api/",
+      "status": 200,
+      "title": "Mailchimp Marketing API Reference | Mailchimp Developer",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+      "requested_url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+      "status": 200,
+      "title": "Marketing API Quick Start Guide | Mailchimp Developer",
+      "chars": 3249,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/api/",
+      "requested_url": "https://mailchimp.com/developer/transactional/api/",
+      "status": 200,
+      "title": "Mailchimp Transactional API Reference | Mailchimp Developer",
+      "chars": 972,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/open-commerce/playground/",
+      "requested_url": "https://mailchimp.com/developer/open-commerce/playground/",
+      "status": 200,
+      "title": "Mailchimp Open Commerce GraphQL Playground | Mailchimp Developer",
+      "chars": 177,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/integration-partner-program/",
+      "requested_url": "https://mailchimp.com/developer/integration-partner-program/",
+      "status": 200,
+      "title": "Mailchimp Integration Partner Program | Mailchimp Developer",
+      "chars": 1843,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/guides/quick-start/",
+      "requested_url": "https://mailchimp.com/developer/transactional/guides/quick-start/",
+      "status": 200,
+      "title": "Transactional API Quick Start Guide | Mailchimp Developer",
+      "chars": 2957,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api/authorized-apps/",
+      "requested_url": "https://mailchimp.com/developer/marketing/api/authorized-apps/",
+      "status": 200,
+      "title": "Authorized Apps | Mailchimp Marketing API Reference | Mailchimp Developer",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Mailchimp provides developer tools including a Marketing API, Transactional API, and Open Commerce GraphQL API for building intelligent marketing, email, and commerce integrations.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API keys are the simplest way to authenticate requests to the Marketing and Transactional APIs, while OAuth 2 is available for integrations built for multiple users.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can create an account and generate an API key directly from their account settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"Supports REST (Marketing and Transactional APIs), GraphQL (Open Commerce), and webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": null\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://mailchimp.com/developer/marketing/guides/quick-start/\",\n      \"claim\": \"API key authentication method\",\n      \"quote\": \"The simplest way to authenticate a request to the Marketing API is using an API key.\"\n    },\n    {\n      \"url\": \"https://mailchimp.com/developer/marketing/guides/quick-start/\",\n      \"claim\": \"Self-serve account creation and API key generation\",\n      \"quote\": \"If you don't have a Mailchimp account already, you\u2019ll need to create one in order to use the API.\"\n    },\n    {\n      \"url\": \"https://mailchimp.com/developer/\",\n      \"claim\": \"REST and GraphQL API availability\",\n      \"quote\": \"Mailchimp Open Commerce (formerly Reaction Commerce) is an open source, API-first, modular commerce stack made for technical, growth-minded retailers.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://mailchimp.com/developer/marketing/guides/quick-start/\",\n      \"quote\": \"The simplest way to authenticate a request to the Marketing API is using an API key.\"\n    },\n    \"access\": {\n      \"url\": \"https://mailchimp.com/developer/marketing/guides/quick-start/\",\n      \"quote\": \"If you don't have a Mailchimp account already, you\u2019ll need to create one in order to use the API.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://mailchimp.com/developer/\",\n      \"quote\": \"Mailchimp Open Commerce (formerly Reaction Commerce) is an open source, API-first, modular commerce stack made for technical, growth-minded retailers.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://mailchimp.com/developer",
+    "one_liner": "Mailchimp provides developer tools including a Marketing API, Transactional API, and Open Commerce GraphQL API for building intelligent marketing, email, and commerce integrations.",
+    "auth": {
+      "method": "api_key",
+      "notes": "API keys are the simplest way to authenticate requests to the Marketing and Transactional APIs, while OAuth 2 is available for integrations built for multiple users."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create an account and generate an API key directly from their account settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "Supports REST (Marketing and Transactional APIs), GraphQL (Open Commerce), and webhooks."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+        "claim": "API key authentication method",
+        "quote": "The simplest way to authenticate a request to the Marketing API is using an API key.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+        "claim": "Self-serve account creation and API key generation",
+        "quote": "If you don't have a Mailchimp account already, you\u2019ll need to create one in order to use the API.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://mailchimp.com/developer/",
+        "claim": "REST and GraphQL API availability",
+        "quote": "Mailchimp Open Commerce (formerly Reaction Commerce) is an open source, API-first, modular commerce stack made for technical, growth-minded retailers.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+        "quote": "The simplest way to authenticate a request to the Marketing API is using an API key."
+      },
+      "access": {
+        "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+        "quote": "If you don't have a Mailchimp account already, you\u2019ll need to create one in order to use the API."
+      },
+      "api_surface": {
+        "url": "https://mailchimp.com/developer/",
+        "quote": "Mailchimp Open Commerce (formerly Reaction Commerce) is an open source, API-first, modular commerce stack made for technical, growth-minded retailers."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T06:16:33.543219+00:00"
+}

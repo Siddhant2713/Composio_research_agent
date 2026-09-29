@@ -1,0 +1,1431 @@
+===== https://api.docs.dealcloud.com
+TITLE: Dealcloud Developer Documentation - DealCloud API Docs
+ACCESSED: 2026-09-28
+
+Dealcloud Developer Documentation - DealCloud API Docs
+Dealcloud Developer Documentation
+Quick Start
+API References
+→
+Guides
+→
+SDK Documentation
+Python v1.X (Beta)
+→
+Intapp REST Client (Beta)
+→
+Python 0.1.9 (Legacy)
+→
+C#
+→
+
+===== https://www.intapp.com/dealcloud/?dc=1
+TITLE: The AI-powered deal and relationship intelligence platform
+ACCESSED: 2026-09-28
+
+Intapp DealCloud
+The deal and relationship intelligence platform for professional firms
+Drive smarter origination, stronger execution, and faster growth firmwide with AI-driven intelligence.
+Embedded in your workflows. Built for regulated markets.
+Schedule a demo
+Secure, compliant AI trusted by leading firms
+Read our client stories
+Conversational AI
+Surface insights instantly
+Ask questions in plain English. Get immediate answers from your firm’s DealCloud data.
+Schedule a demo
+Agentic AI
+Keep deals moving
+Accelerate execution with pre-built playbooks. Use agentic workflows to automate core tasks.
+Schedule a demo
+Turn relationships into revenue
+Private capital
+Systematize sourcing. Accelerate execution.
+Run the full investment lifecycle on one AI-powered platform built with industry-leading end-to-end workflows.
+Fundraising and IR:
+Manage LP relationships, pipelines, and capital activity in a controlled system of record.
+Deal sourcing and screening:
+Surface opportunities from intermediaries and firmwide networks. Focus on the deals most likely to close.
+Diligence and IC prep:
+Coordinate workstreams, automate approvals, and maintain audit-ready IC materials.
+Exit execution:
+Track buyer coverage, manage processes, and run disciplined exits.
+Learn more
+Read the case study
+Investment banking
+AI to power your pipeline and win rates
+Connected intelligence and workflows for better coverage, mandate capture, and execution.
+Coverage and relationship management:
+Track client relationships with AI and coordinate coverage across the firm.
+Origination and business development:
+Identify deals using market signals and execute targeted outreach.
+Deal pitching and execution:
+Prepare pitches with market intelligence and manage engagements through close.
+Performance analytics and strategy:
+Monitor opportunities firmwide and deploy resources strategically.
+Learn more
+Read the case study
+Legal
+Expand your network
+Win new clients and grow existing relationships.
+Pursuit management:
+Manage pursuits from lead to win with AI-driven signals and next-step recommendations.
+Key account programs:
+Connect the dots between client relationships and practice areas via AI to reveal cross-sell opportunities.
+Knowledge and proposal readiness:
+Produce winning proposals quickly with a centralized experience library and AI-assisted drafting.
+Marketing and campaign analytics:
+Plan and run targeted client campaigns using AI to improve precision and prioritize outreach.
+Learn more
+Read the case study
+Accounting
+AI-powered growth
+Win new work, expand accounts, and strengthen client engagement with connected intelligence and professional workflows.
+Pursuit and pipeline management:
+Track opportunities, coordinate cross-service-line pursuits, and focus on engagements most likely to close.
+Engagement delivery and collaboration:
+Monitor live engagements, team capacity, and milestones in real time to protect margins.
+Strategic client management:
+Identify expansion opportunities and align partners around targeted outreach backed by engagement data.
+Knowledge management:
+Centralize firm expertise and prior engagement experience to deploy the right capabilities to every pursuit.
+Learn more
+Read the case study
+Consulting
+AI-powered growth
+Win new work, expand accounts, and strengthen client engagement with connected intelligence and professional workflows.
+Pursuit and pipeline management:
+Track opportunities, coordinate cross-service-line pursuits, and focus on engagements most likely to close.
+Engagement delivery and collaboration:
+Monitor live engagements, team capacity, and milestones in real time to protect margins.
+Strategic client management:
+Identify expansion opportunities and align partners around targeted outreach backed by engagement data.
+Knowledge management:
+Centralize firm expertise and prior engagement 
+experience to deploy the right capabilities to every pursuit.
+Learn more
+Read the case study
+Agentic AI that knows your business
+DealCloud continuously analyzes relationships, communications, deal flow, matters, and engagements.
+It surfaces opportunity, flags risk, and recommends next steps — securely and in context.
+Relationship intelligence
+See every connection across your firm to identify opportunities.
+Zero-entry activity capture
+Automatically log interactions and meetings from Outlook.
+Workflow configurability
+Build flexible workflows that standardize best practices and enforce governance.
+Data foundation
+Manage complex business with prebuilt, industry-specific data models and schemas.
+Data enrichment
+Automatically enrich your data with Intapp Data and premium market feeds.
+Relationship intelligence
+Know who to call — and why
+AI uncovers warm paths, measures relationship strength, and guides outreach across deals, matters, and engagements.
+Relationship maps
+See connections across partners, bankers, investors, and clients.
+Relationship scores
+Prioritize coverage based on relationship strength and momentum.
+Outcome attribution
+Link mandates, d
+
+===== https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/api-reference
+TITLE: API Reference - DealCloud API Docs
+ACCESSED: 2026-09-28
+
+API Reference
+Complete reference for the
+RestClient
+class. The documentation targets
+intapp-rest-client 1.x
+; the package is available on
+PyPI
+(opens in a new tab)
+Constructor
+intapp_rest_client
+RestClient
+client
+RestClient
+base_url:
+str
+# Authentication (pick one)
+oauth2_config: Optional[OAuth2Config]
+None
+entra_config: Optional[EntraConfig]
+None
+okta_config: Optional[OktaConfig]
+None
+api_key: Optional[
+str
+]
+None
+api_key_header: str
+'X-API-Key'
+api_key_in_query: bool
+False
+api_key_query_param: str
+'api_key'
+basic_auth: Optional[
+tuple
+]
+None
+jwt_config: Optional[JWTConfig]
+None
+httpx_auth: Optional[Any]
+None
+# Common settings
+timeout: float
+120.0
+headers: Optional[Dict[
+str
+str
+]]
+None
+retry_config: Optional[RetryConfig]
+None
+log_level: LogLevel
+LogLevel.INFO,
+pool_config: Optional[ConnectionPoolConfig]
+None
+ssl_config: Optional[SSLConfig]
+None
+# Request tracking
+enable_request_id: bool
+True
+request_id_header: str
+'X-Request-ID'
+# Hooks
+pre_request_hook: Optional[Callable]
+None
+post_response_hook: Optional[Callable]
+None
+Parameters
+Parameter
+Type
+Default
+Description
+base_url
+str
+(required)
+Base URL for all requests
+oauth2_config
+OAuth2Config
+None
+OAuth2 configuration
+entra_config
+EntraConfig
+None
+Microsoft Entra ID config
+okta_config
+OktaConfig
+None
+Okta configuration
+api_key
+str
+None
+API key for authentication
+api_key_header
+str
+'X-API-Key'
+Header name for API key
+api_key_in_query
+bool
+False
+Put API key in query params
+api_key_query_param
+str
+'api_key'
+Query param name
+basic_auth
+tuple
+None
+(username, password) tuple
+jwt_config
+JWTConfig
+None
+JWT configuration
+httpx_auth
+Any
+None
+External httpx-auth provider
+timeout
+float
+120.0
+Request timeout (seconds)
+headers
+dict
+None
+Default headers
+retry_config
+RetryConfig
+None
+Retry configuration
+log_level
+LogLevel
+INFO
+Logging level
+pool_config
+ConnectionPoolConfig
+None
+Connection pool config
+ssl_config
+SSLConfig
+None
+SSL/TLS configuration (custom certs, CA bundle, verify)
+enable_request_id
+bool
+True
+Add request ID header
+request_id_header
+str
+'X-Request-ID'
+Request ID header name
+pre_request_hook
+Callable
+None
+Pre-request callback
+post_response_hook
+Callable
+None
+Post-response callback
+Synchronous Methods
+get()
+def
+get
+endpoint
+str
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Any
+Make a GET request and return JSON response.
+post()
+def
+post
+endpoint
+str
+json
+Optional
+[
+Any
+]
+None
+data
+Optional
+[
+Any
+]
+None
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Any
+Make a POST request and return JSON response.
+put()
+def
+put
+endpoint
+str
+json
+Optional
+[
+Any
+]
+None
+data
+Optional
+[
+Any
+]
+None
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Any
+Make a PUT request and return JSON response.
+patch()
+def
+patch
+endpoint
+str
+json
+Optional
+[
+Any
+]
+None
+data
+Optional
+[
+Any
+]
+None
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Any
+Make a PATCH request and return JSON response.
+delete()
+def
+delete
+endpoint
+str
+json
+Optional
+[
+Any
+]
+None
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Any
+Make a DELETE request and return JSON response.
+head()
+def
+head
+endpoint
+str
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Dict
+[
+str
+str
+]
+Make a HEAD request. Returns response headers as a dict (no body). Use for checking resource existence, Content-Length, or ETag.
+options()
+def
+options
+endpoint
+str
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+Dict
+[
+str
+Any
+]
+Make an OPTIONS request. Returns a dict with
+allowed_methods
+(list) and
+headers
+. Use for CORS or API discovery.
+get_raw()
+def
+get_raw
+endpoint
+str
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+httpx
+Response
+Make a GET request and return raw response object. Use for binary downloads.
+post_raw()
+def
+post_raw
+endpoint
+str
+json
+Optional
+[
+Any
+]
+None
+data
+Optional
+[
+Any
+]
+None
+files
+Optional
+[
+Dict
+]
+None
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+None
+**
+kwargs
+->
+httpx
+Response
+Make a POST request and return raw response object. Use for file uploads.
+request_raw()
+def
+request_raw
+method
+str
+endpoint
+str
+**
+kwargs
+->
+httpx
+Response
+Make a request with any HTTP method and return raw response.
+download_file()
+def
+download_file
+endpoint
+str
+destination
+Union
+[
+str
+Path
+BinaryIO
+],
+params
+Optional
+[
+Dict
+[
+str
+Any
+]]
+None
+headers
+Optional
+[
+Dict
+[
+str
+str
+]]
+
+===== https://api.docs.dealcloud.com/sdk/intapp-rest-client/getting-started/quickstart
+TITLE: Quick Start - DealCloud API Docs
+ACCESSED: 2026-09-28
+
+Quick Start
+Get up and running with the Intapp REST Client in minutes.
+Basic Usage
+Create a Client
+API Key
+OAuth2
+Basic Auth
+intapp_rest_client
+RestClient
+client
+RestClient
+base_url
+"https://api.example.com"
+api_key
+"your-api-key"
+Make Requests
+# GET request
+data
+client
+get
+"/api/v4/resources"
+print
+(data)
+# POST request with JSON body
+result
+client
+post
+"/api/v4/resources"
+, json
+{
+"name"
+"New Resource"
+"type"
+"example"
+})
+# PUT request
+updated
+client
+put
+"/api/v4/resources/123"
+, json
+{
+"name"
+"Updated Resource"
+})
+# DELETE request
+client
+delete
+"/api/v4/resources/123"
+Close the Client
+client
+close
+Context Manager (Recommended)
+Using a context manager ensures proper cleanup:
+intapp_rest_client
+RestClient
+with
+RestClient
+(base_url
+"https://api.example.com"
+, api_key
+"key"
+as
+client
+data
+client
+get
+"/api/v4/resources"
+# Client is automatically closed when exiting the block
+Async Usage
+For async applications:
+asyncio
+intapp_rest_client
+RestClient
+async
+def
+main
+():
+async
+with
+RestClient
+base_url
+"https://api.example.com"
+api_key
+"your-key"
+as
+client
+# Async GET
+data
+await
+client
+aget
+"/api/v4/resources"
+# Async POST
+result
+await
+client
+apost
+"/api/v4/resources"
+, json
+{
+"name"
+"New"
+})
+# Async DELETE
+await
+client
+adelete
+"/api/v4/resources/123"
+asyncio
+run
+main
+())
+Error Handling
+intapp_rest_client
+RestClient
+HttpError
+RequestError
+client
+RestClient
+(base_url
+"https://api.example.com"
+, api_key
+"key"
+try
+data
+client
+get
+"/api/v4/resources"
+except
+HttpError
+as
+e
+print
+f
+"HTTP
+{
+e.status_code
+}
+{
+e.message
+}
+"
+print
+f
+"Response body:
+{
+e.response_body
+}
+"
+if
+e
+is_rate_limited
+print
+f
+"Retry after:
+{
+e.retry_after
+}
+seconds"
+except
+RequestError
+as
+e
+print
+f
+"Network error:
+{
+e
+}
+"
+finally
+client
+close
+Common Patterns
+Query Parameters
+# GET with query parameters
+data
+client
+get
+"/api/v4/resources"
+, params
+{
+"page"
+1
+"limit"
+100
+"status"
+"active"
+})
+# Results in: GET /api/v4/resources?page=1&limit=100&status=active
+Custom Headers
+# Request with custom headers
+data
+client
+get
+"/api/v4/resources"
+, headers
+{
+"X-Custom-Header"
+"value"
+"Accept-Language"
+"en-US"
+})
+File Upload
+# POST with file upload
+with
+open
+"document.pdf"
+"rb"
+as
+f
+response
+client
+post_raw
+"/api/v4/files/upload"
+files
+{
+"file"
+: (
+"document.pdf"
+, f,
+"application/pdf"
+)}
+Binary Download
+# GET binary content
+response
+client
+get_raw
+"/api/v4/files/123/download"
+with
+open
+"downloaded.pdf"
+"wb"
+as
+f
+f
+write
+(response.content)
+Configure Retry Behavior
+intapp_rest_client
+RestClient
+RetryConfig
+client
+RestClient
+base_url
+"https://api.example.com"
+api_key
+"your-key"
+retry_config
+RetryConfig
+max_retries
+5
+backoff_factor
+2.0
+retryable_statuses
+429
+500
+502
+503
+504
+),
+respect_retry_after
+True
+💡
+The client automatically handles 429 (rate limit) and 5xx errors with exponential backoff.
+You don't need to write retry logic yourself!
+Streaming Pagination
+For large datasets, use streaming pagination to avoid loading everything into memory:
+# Process data in batches
+for
+batch
+in
+client
+get_paginated
+"/api/v4/data/rows/Company"
+page_size
+1000
+data_key
+"rows"
+):
+for
+row
+in
+batch
+process_row
+(row)
+Next Steps
+Authentication
+- All authentication methods
+Retry Configuration
+- Fine-tune retry behavior
+Async Operations
+- Async patterns and best practices
+Pagination
+- Streaming large datasets
+Streaming File Download
+- Memory-efficient file downloads
+Parallel Requests
+- Bulk GET/POST/PUT in parallel
+Installation
+Authentication
+
+===== https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication
+TITLE: Authentication - DealCloud API Docs
+ACCESSED: 2026-09-28
+
+Authentication
+The Intapp REST Client supports multiple authentication methods. Choose based on your API requirements.
+Authentication Methods
+Method
+Use Case
+Configuration
+OAuth2
+Most REST APIs
+OAuth2Config
+API Key
+Simple APIs
+api_key
+parameter
+Basic Auth
+Legacy systems
+basic_auth
+tuple
+JWT
+Token-based
+JWTConfig
+Entra ID
+Microsoft APIs
+EntraConfig
+Okta
+Enterprise SSO
+OktaConfig
+External
+Azure AD, AWS, etc.
+httpx_auth
+OAuth2 Client Credentials
+The most common authentication method for API integrations.
+intapp_rest_client
+RestClient
+OAuth2Config
+client
+RestClient
+base_url
+"https://api.example.com"
+oauth2_config
+OAuth2Config
+token_url
+"https://api.example.com/oauth/token"
+client_id
+"your_client_id"
+client_secret
+"your_secret"
+scope
+"data"
+# Optional
+# Tokens are automatically managed
+data
+client
+get
+"/api/v4/resources"
+OAuth2 Password Grant
+For APIs that require user credentials:
+intapp_rest_client
+OAuth2Config
+OAuth2GrantType
+config
+OAuth2Config
+token_url
+"https://api.example.com/oauth/token"
+client_id
+"your_client_id"
+client_secret
+"your_secret"
+grant_type
+OAuth2GrantType.PASSWORD,
+username
+"user@example.com"
+password
+"user_password"
+Token Management
+The client automatically handles:
+Token Acquisition
+: Fetches token on first request
+Token Caching
+: Reuses valid tokens
+Token Refresh
+: Refreshes before expiration (default: 30 seconds before)
+401 Handling
+: Automatically retries with fresh token
+# Configure refresh timing
+config
+OAuth2Config
+token_url
+"https://api.example.com/oauth/token"
+client_id
+"client_id"
+client_secret
+"secret"
+token_refresh_margin
+60
+# Refresh 60 seconds before expiry
+Advanced Token Control
+For custom token management workflows, the client stores the OAuth2 manager in the internal attribute
+_auth
+(only when using OAuth2). You can check refresh state, force refresh, or parse token responses:
+intapp_rest_client
+RestClient
+OAuth2Config
+client
+RestClient
+base_url
+"https://api.example.com"
+oauth2_config
+OAuth2Config
+(...)
+# When using OAuth2, client._auth is the OAuth2Manager instance
+oauth_manager
+client
+_auth
+# Check if token needs refresh
+if
+oauth_manager
+token_needs_refresh
+print
+"Token will be refreshed soon"
+# Force token refresh
+oauth_manager
+force_refresh_sync
+# Parse token responses from external sources (class method)
+intapp_rest_client
+OAuth2Manager
+token_data
+OAuth2Manager
+parse_token_response
+({
+"access_token"
+"..."
+"expires_in"
+3600
+"token_type"
+"Bearer"
+})
+⚠️
+client._auth
+is an internal attribute and may change in future versions. Prefer using the client's public API (e.g.
+get()
+post()
+) and let the client manage tokens automatically.
+API Key Authentication
+Header (Default)
+Query Parameter
+intapp_rest_client
+RestClient
+# API key in header (default: X-API-Key)
+client
+RestClient
+base_url
+"https://api.example.com"
+api_key
+"your-api-key"
+# Custom header name
+client
+RestClient
+base_url
+"https://api.example.com"
+api_key
+"your-api-key"
+api_key_header
+"Authorization"
+# or "Api-Key", etc.
+Basic Authentication
+For APIs using HTTP Basic Auth:
+intapp_rest_client
+RestClient
+client
+RestClient
+base_url
+"https://api.example.com"
+basic_auth
+"username"
+"password"
+JWT Authentication
+Generate and sign JWT tokens locally:
+intapp_rest_client
+RestClient
+JWTConfig
+client
+RestClient
+base_url
+"https://api.example.com"
+jwt_config
+JWTConfig
+secret_key
+"your-secret-key"
+algorithm
+"HS256"
+# HS256, RS256, ES256, etc.
+token_lifetime
+3600
+# seconds
+issuer
+"my-service"
+# Optional: iss claim
+audience
+"api.example.com"
+# Optional: aud claim
+custom_claims
+{
+# Additional claims
+"user_id"
+123
+"role"
+"admin"
+}
+💡
+JWT support requires the
+jwt
+extra:
+pip
+pip install intapp-rest-client[jwt]
+uv
+uv add intapp-rest-client[jwt]
+poetry
+poetry add intapp-rest-client -E jwt
+Supported Algorithms
+Algorithm
+Type
+Use Case
+HS256, HS384, HS512
+HMAC
+Shared secret
+RS256, RS384, RS512
+RSA
+Public/private key
+ES256, ES384, ES512
+ECDSA
+Elliptic curve
+PS256, PS384, PS512
+RSA-PSS
+Enhanced RSA
+Microsoft Entra ID (Azure AD)
+Built-in support for Microsoft identity platform:
+intapp_rest_client
+RestClient
+EntraConfig
+client
+RestClient
+base_url
+"https://api.example.com"
+entra_config
+EntraConfig
+tenant_id
+"your-tenant-id"
+client_id
+"your-client-id"
+client_secret
+"your-client-secret"
+scope
+"api://your-api/.default"
+Okta
+Built-in support for Okta:
+intapp_rest_client
+RestClient
+OktaConfig
+client
+RestClient
+base_url
+"https://api.example.com"
+okta_config
+OktaConfig
+domain
+"your-org.okta.com"
+client_id
+"your-client-id"
+client_secret
+"your-client-secret"
+scope
+"api-scope"
+Enterprise Authentication (httpx-auth)
+For other identity providers, use the
+httpx_auth
+
+===== https://api.docs.dealcloud.com/sdk/python/authentication
+TITLE: Authentication - DealCloud API Docs
+ACCESSED: 2026-09-28
+
+Creating a client and authenticating
+dealcloud_sdk
+'s main entrypoint is the
+DealCloud
+class. When it is instantiated, the object is scoped to a given DealCloud environment, by passing the site URL and API credentials as arguments:
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+site_url
+"client.dealcloud.com"
+client_id
+"12345"
+client_secret
+"your_client_secret"
+⚠️
+Whilst suitable for local development, the above implementation is insecure if you keep code in online repositories such as GitHub. Please see the below examples for more secure implementations.
+Securely loading credentials
+Using Environment Variables
+Where the environment variables contain the relevant values. These can be loaded from a .env file using the
+python-dotenv
+PyPi package
+(opens in a new tab)
+The default environment variable names are, these can be overridden if desired:
+DC_SDK_SITE_URL
+DC_SDK_CLIENT_ID
+DC_SDK_CLIENT_SECRET
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+().
+from_env
+To override the default environment variable names:
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+().
+from_env
+site_url_env_name
+"OVERRIDDEN_SITE_KEY"
+client_id_env_name
+"OVERRIDDEN_CLIENT_ID_KEY"
+client_secret_env_name
+"OVERRIDDEN_CLIENT_SECRET_KEY"
+Using JSON Config File
+Given a JSON file in the below format:
+{
+"site_url"
+"client.dealcloud.com"
+"client_id"
+12345
+"client_secret"
+"your_client_secret"
+}
+The DealCloud object can be created as below:
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+from_json
+"path/to/json_config_file.json"
+Similarly, if the credentials are stored as part of a larger JSON config file, a key path can be passed as the second argument, directing
+DealCloud
+to the path of the credentials in the wider JSON. For example:
+{
+"other"
+[
+1
+2
+3
+]
+"creds"
+{
+"dc"
+{
+"site_url"
+"client.dealcloud.com"
+"client_id"
+12345
+"client_secret"
+"your_client_secret"
+}
+}
+}
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+from_json
+"path/to/json_config_file.json"
+"creds.dc"
+Using YAML Config File
+Given a YAML file in the below format:
+site_url
+"client.dealcloud.com"
+client_id
+12345
+client_secret
+"your_client_secret"
+The DealCloud object can be created as below:
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+from_yaml
+"path/to/yaml_config_file.json"
+Similarly, if the credentials are stored as part of a larger YAML config file, a key path can be passed as the second argument, directing
+DealCloud
+to the path of the credentials in the wider YAML. For example:
+other
+-
+1
+-
+2
+-
+3
+creds
+dc
+site_url
+"client.dealcloud.com"
+client_id
+12345
+client_secret
+"your_client_secret"
+dealcloud_sdk
+DealCloud
+dc
+DealCloud
+from_yaml
+"path/to/yaml_config_file.json"
+"creds.dc"
+Installation
+Schema
+
+===== https://api.docs.dealcloud.com/sdk/csharp/authentication
+TITLE: Authentication - DealCloud API Docs
+ACCESSED: 2026-09-28
+
+Authentication
+DealCloudSDK
+'s main entrypoint is the
+Client
+class. When it is instantiated, the object is scoped to a given DealCloud environment, by passing the site URL and API credentials as arguments:
+using
+DealCloudSDK
+;
+var
+dc
+new
+Client
+"client.dealcloud.com"
+12345
+"secret"
+);
+⚠️
+Whilst suitable for local development, the above implementation is insecure if you keep code in online repositories such as GitHub. Please see the below examples for more secure implementations.
+Securely loading credentials using the IConfiguration interface
+The
+IConfiguration
+interface can be used to load configuration values for the DealCloudSDK, where the following parameters are available:
+siteUrl
+clientId
+clientSecret
+For example, using a JSON configuration file.
+using
+DealCloudSDK
+;
+using
+Microsoft
+Extensions
+Configuration
+;
+// initialise Ivar configuration object
+config
+new
+ConfigurationBuilder
+AddJsonFile
+"environment_config.json"
+Build
+();
+// initialise Client, using the IConfiguration object as an argument.
+var
+dc
+new
+Client
+(config);
+Installation
+Logging

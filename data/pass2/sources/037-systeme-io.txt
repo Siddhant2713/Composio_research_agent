@@ -1,0 +1,805 @@
+===== https://systeme.io
+TITLE: Systeme.io - The only tool you need to launch your online business
+ACCESSED: 2026-09-28
+
+Systeme.io - The only tool you need to launch your online business
+En
+⌄
+Start for free now
+En
+⌄
+Powering 500,000+ entrepreneurs
+Get your free account now!
+Click here
+Free forever
+No credit card required
+Doris S
+Corporate trainer
+"My online business management made effortless"
+I love how systeme.io combines email marketing, sales funnels, and course creation all in one platform. It’s super intuitive and saves me from juggling multiple tools
+Darina K
+Professional photographer
+"Excellent customer service"
+I love how many tools systeme.io offers in one program, which has allowed me to cancel several other apps and have a single space for my business. It makes the customer journey so much more positive...
+The only tool you need to launch your online business
+We make the whole process easier and faster so that you can focus on what’s important - growing your business
+Get started for free
+No credit card required
+Features
+Email marketing
+Website builder
+Affiliate management
+Marketing automation
+Online courses builder
+Community builder
+Sub-accounts
+Physical products
+SMS marketing
+Pipelines
+Webinars
+Creator stores
+White label
+Suggest a feature
+Resources
+Free tools
+Systeme.io logo files
+Systeme.io alternatives
+Template library
+Public API
+Help center
+Info
+Pricing
+Testimonials
+Free migration
+Become an affiliate
+Receive your award
+Free DNS setup
+Get certified
+Legal
+Privacy policy
+Terms and conditions
+Affiliate agreement
+© systeme.io. All rights reserved
+Create your free account
+Get my FREE account
+
+===== https://help.systeme.io
+TITLE: systeme.io Help Center
+ACCESSED: 2026-09-28
+
+systeme.io Help Center
+Loading
+systeme.io help pages
+Popular articles
+How to create and sell a physical product with systeme.io
+How to send your affiliates their links
+How to connect your domain to systeme.io
+How to integrate PayPal with systeme.io
+How to authenticate your domain name for email sending
+How to define your domain's homepage
+How to connect your GoDaddy domain to systeme.io
+How to contact systeme.io customer support
+Why aren't my emails being sent?
+How the systeme.io affiliate program works
+Affiliation
+12 articles
+12 articles
+7 articles
+Contact management
+9 articles
+38 articles
+Customer support
+8 articles
+Deliverability
+42 articles
+Editor
+36 articles
+Emails
+30 articles
+General
+95 articles
+Migrating to systeme.io
+8 articles
+Model Context Protocol (MCP)
+9 articles
+Payments
+22 articles
+37 articles
+
+===== https://developer.systeme.io/reference/api
+TITLE: Public API
+ACCESSED: 2026-09-28
+
+Welcome to this comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities programmatically. It is meticulously designed to offer a seamless integration experience, allowing you to manage contacts, tags, and a variety of other operations integral to our platform. Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.
+To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the "Public API keys" section. Once you have your key, you're all set to embark on your first API request journey!
+🚧
+Using the API from public pages is not advisable as it exposes the API key. This poses a significant security risk.
+The proper approach is to make API calls from a server-side environment to keep the API key secure. This way, we can avoid CORS issues and maintain the integrity of our system.
+To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the
+X-API-Key
+header of each request. Let us know which authentication methods you would like to see implemented next!
+Our Public API implements a rate-limiting system to maintain service stability and availability for all users. Here's how it works:
+Refill Rate
+: Your request quota is periodically replenished. The
+X-RateLimit-Refill
+header indicates when the next quota refill will occur.
+Limit Ceiling
+: There is a maximum quota limit, which is the total number of requests you can make within a given time frame. The
+X-RateLimit-Limit
+header shows this maximum number.
+Shared Quota
+: The request limit is collectively applied across all your API keys and tokens. The
+X-RateLimit-Remaining
+header informs you of the number of requests left in your current rate limit window.
+If you exceed the rate limit, you will receive a
+429
+Too Many Requests response status code. This indicates that you have sent too many requests in a given time frame. Along with this response, you will receive a
+Retry-After
+header indicating the number of seconds to wait before making a new request. We advise implementing appropriate error handling strategies in your application to manage these responses effectively.
+Our documentation is your roadmap to the Systeme.io Public API. It details the endpoints available, their respective URLs, the expected formats for requests and responses, and outlines the basic constraints to be aware of.
+Understanding Cursor-Based Pagination:
+Our API employs a cursor-based pagination system for efficiently navigating through large collections of resources. A cursor acts as a reference point, indicating the position in the dataset from which to retrieve the next set of results.
+How to Use Pagination:
+Starting Point:
+Use the
+startingAfter
+parameter to specify the ID of the last item you received. This sets the cursor for the next page of data.
+Control Record Count:
+The
+limit
+parameter allows you to control the number of records returned in each request. Tailor this to suit your data handling needs.
+Ordering:
+Specify the order of the data using the
+order
+parameter, with options for ascending (
+asc
+) or descending (
+desc
+) order. The default setting is descending (
+desc
+).
+Response Structure:
+Items Key:
+The response will include the retrieved data under the
+items
+key.
+Has More:
+A
+hasMore
+key is also provided, indicating whether additional pages of data are available.
+Efficient Data Retrieval:
+This pagination method ensures efficient and manageable data retrieval, especially when dealing with large datasets. It allows for seamless navigation through your resource collections, providing a user-friendly and intuitive way to access the data you need.
+Efficient Updates with Merge Patch:
+Our API supports the
+PATCH
+method with
+application/merge-patch+json
+content type for efficiently updating resources. This method allows partial updates to a resource, modifying only specified fields without the need to resend the entire resource.
+Example - Updating a Contact:
+To update a contact's details, you can send a
+PATCH
+request with a payload like the following:
+JSON
+{
+    "locale": "en",
+    "fields": [
+        {
+            "slug": "country",
+            "value": "US"
+        },
+        {
+            "slug": "phone_number",
+            "value": null
+        }
+    ]
+}
+In this example:
+The
+country
+field is updated to
+US
+.
+The
+phone_number
+is set to
+null
+, effectively removing any previously set value.
+Selective Modification:
+This approach is particularly useful for selectively modifying specific attributes of a resource, such as a contact, without affecting other existing data. It streamlines the update process, making it more efficient and user-friendly.
+To create a new tag, use the following
+curl
+command as a template:
+cURL
+
+===== https://systeme.io/pricing
+TITLE: Systeme.io Pricing — Free, Startup, Webinar, Unlimited Plans
+ACCESSED: 2026-09-28
+
+Systeme.io Pricing — Free, Startup, Webinar, Unlimited Plans
+En
+⌄
+Start for free now
+En
+⌄
+Choose your plan
+Monthly billing
+Annual billing
+2 months
+free
+Free migration
+Monthly billing
+Annual billing
+2 months
+free
+Free migration
+No credit card required
+Start for free
+No credit card required
+Start for free
+No credit card required
+Start for free
+No credit card required
+Start for free
+For teams
+No credit card required
+Book a call
+Compare plans & features
+Contacts
+null:
+null:
+null:
+null:
+Tags
+null:
+null:
+null:
+null:
+CRM Pipelines
+null:
+null:
+null:
+null:
+Emails sent
+null:
+null:
+null:
+null:
+Email campaigns
+null:
+null:
+null:
+null:
+Email newsletters
+null:
+null:
+null:
+null:
+Automation rules
+null:
+null:
+null:
+null:
+Workflows
+null:
+null:
+null:
+null:
+null:
+null:
+null:
+null:
+Sales funnels steps
+null:
+null:
+null:
+null:
+Deadline funnels
+null:
+null:
+null:
+null:
+Evergreen webinars
+null:
+null:
+null:
+null:
+A/B tests
+null:
+null:
+null:
+null:
+Custom domains
+null:
+null:
+null:
+null:
+File storage space
+null:
+null:
+null:
+null:
+1-click upsells
+null:
+null:
+null:
+null:
+Order bumps
+null:
+null:
+null:
+null:
+Transaction fees
+null:
+null:
+null:
+null:
+Websites
+null:
+null:
+null:
+null:
+Languages per website
+null:
+null:
+null:
+null:
+Sub-accounts
+null:
+null:
+null:
+null:
+Events
+null:
+null:
+null:
+null:
+Bookings
+null:
+null:
+null:
+null:
+Stripe integration
+null:
+null:
+null:
+null:
+Apple Pay integration
+null:
+null:
+null:
+null:
+Paypal integration
+null:
+null:
+null:
+null:
+Razorpay integration
+null:
+null:
+null:
+null:
+Flutterwave integration
+null:
+null:
+null:
+null:
+Mercado Pago integration
+null:
+null:
+null:
+null:
+Xendit integration
+null:
+null:
+null:
+null:
+Cash on delivery
+null:
+null:
+null:
+null:
+Blogs
+null:
+null:
+null:
+null:
+Blog posts
+null:
+null:
+null:
+null:
+Mobile optimized "Link-in-bio" page
+null:
+null:
+null:
+null:
+Mobile-optimized link in bio page
+null:
+null:
+null:
+null:
+Transaction fees
+null:
+null:
+null:
+null:
+Physical products
+null:
+null:
+null:
+null:
+Shipping management
+null:
+null:
+null:
+null:
+Inventory management
+null:
+null:
+null:
+null:
+Cash on delivery
+null:
+null:
+null:
+null:
+Physical product variants
+null:
+null:
+null:
+null:
+Coupon codes
+null:
+null:
+null:
+null:
+null:
+null:
+null:
+null:
+Students
+null:
+null:
+null:
+null:
+Student activity history
+null:
+null:
+null:
+null:
+Communities
+null:
+null:
+null:
+null:
+Community members
+null:
+null:
+null:
+null:
+Run your own affiliate program
+null:
+null:
+null:
+null:
+24/7 Email support
+null:
+null:
+null:
+null:
+1-on-1 kickstart coaching session
+null:
+null:
+null:
+null:
+Assistant accounts
+null:
+null:
+null:
+null:
+SMS
+null:
+null:
+null:
+null:
+Google Sheets
+null:
+null:
+null:
+null:
+Google Calendar
+null:
+null:
+null:
+null:
+Google Meet
+null:
+null:
+null:
+null:
+Zoom
+null:
+null:
+null:
+null:
+ActiveCampaign
+null:
+null:
+null:
+null:
+SendGrid
+null:
+null:
+null:
+null:
+Twilio SMS
+null:
+null:
+null:
+null:
+API requests per minute
+null:
+null:
+null:
+null:
+Free migration
+null:
+null:
+null:
+null:
+Early access to new features
+null:
+null:
+null:
+null:
+Monthly billing
+Yearly billing
+2 months free
+All plans include
+When we say "all-in-one", we really mean it
+Unlimited emailing
+Send unlimited emails to all of your contacts
+Unlimited file storage space
+Add an unlimited number of files to your webpages
+Unlimited students
+Other platforms limit the number of students you can have
+No transaction fees
+Accept payments using Stripe or PayPal at no extra cost
+Affiliate program
+Set up, manage, and integrate your own affiliate program with your funnels and websites
+Online support
+Feel at ease knowing there's a real person helping you out
+INTEGRATIONS
+Connect to the world's best payment gateways
+You are not alone! Our customer support team is here to help you
+With an average response time of under 2 hours, our support team will answer your questions 7 days a week
+Frequently asked questions about systeme.io pricing
+How does systeme.io pricing work and what do I get on each plan?
+systeme.io has four plans based primarily on contact limits. Free: 2,000 contacts, 3 sales funnels, 1 course, all features. Startup ($17/month): 5,000 contacts, unlimited funnels, 5 courses. Webinar ($47/month): 10,000 contacts, unlimited everything plus automated webinar feature. Unlimited ($97/month): unlimited contacts, all features, sub-accounts, and free migration service. All plans include unlimited email sends, 0% transaction fees, and the same set of core tools.
+Does systeme.io have a free plan and what are its limits?
+Yes — the free plan supports up to 2,000 contacts, 3 sales funnels, 1 blog, 1 course, 1 affiliate program, and 1 custom domain. Emails and file storage are unlimited. The free plan never expires and does not require a credit card. The only meaningful limits are on funnels and courses — if you need more than 3 funnels or 1 course, the Startup plan at $17/month is the next step.
+Which systeme.io pricing plan should I choose for my business size?
+Under 2,000 contacts: use the free plan — it costs nothing and covers most needs. 2,000 to 5,000 contacts: Startu
+
+===== https://systeme.io/sales-funnels
+TITLE: The easiest funnel builder you’ll ever use
+ACCESSED: 2026-09-28
+
+The easiest funnel builder you’ll ever use
+En
+⌄
+Start for free now
+En
+⌄
+The easiest funnel builder you'll ever use
+Grow your online business with a funnel builder that's fast and hassle-free
+Get my free account
+Sales funnels explained simply
+What is a sales funnel?
+A sales funnel is a sequence of pages that guides a visitor from their first contact with your business to a purchase. A typical funnel includes an opt-in page (captures the visitor's email), a sales page (presents an offer), a checkout page (collects payment), and a thank-you page (delivers the product or next step). The funnel automates the selling process, visitors move through it at any time of day, without you being present
+What is the systeme.io funnel builder?
+The
+systeme.io
+funnel builder is a drag-and-drop tool for creating multi-step sales funnels. You choose a funnel template, customize each page in the visual editor, connect your payment processor, set up email automation, and publish. The funnel builder is integrated with your email list, course platform, and affiliate program, so a purchase in your funnel automatically delivers the product, adds the buyer to your email list, and tracks affiliates, with no external tools or integrations required.
+Set up your funnel in minutes, and we'll do the rest
+Build sales funnels with an editor that's easy to use
+Speed up the process with our proven templates
+Integrate your email list, payment system, and membership sites
+Automate your funnel steps to trigger email sequences and give instant access to courses
+Set automated deadlines that redirect users when the timer hits zero
+Build pages in minutes
+You can start from scratch or select one of our proven templates to get started instantly, then customize every detail using our simple drag-and-drop editor
+Share your work instantly
+Send a complete copy of your funnel to clients or colleagues with a single click. They get the entire structure, design, and pop-ups imported into their account instantly
+Create deadline funnels
+Drive action and stop prospects from procrastinating by setting a specific time limit for your offer. When the timer hits zero, the system automatically redirects visitors to an "Offer ended" page.
+Boost conversions with A/B tests
+Test different headlines, designs, or offers by automatically splitting your traffic between two page variations to see which one gets more leads and sales
+Check your funnel stats
+Analyze your results with detailed statistics for every step of your funnel. Track page views, opt-in rates, and sales in real-time to identify exactly where to improve your conversions
+The only platform that has everything you need to launch, grow, and scale your online business
+Fully integrated
+Every feature in systeme.io works together to help save you time and effort
+Simple and fast
+With a tool that's made by entrepreneurs for entrepreneurs, we've simplified the business building process for you
+Affordable
+Get your free account or upgrade to any of our paid plans. It'll still be cheaper than what you were using
+People keep telling us all the time that our tool is powerful, yet easy to use
+The complete solution to grow your business online
+What if you could grow your business online without technical knowledge or expensive tools?
+All of these tools are critical if you want to keep up with your competitors. If you don't have them, you can't grow your business.
+Systeme.io has helped thousands of entrepreneurs kickstart their businesses with a platform that's easy to use and has every tool you need - all in the same place.
+Get my free account
+Frequently asked questions about the systeme.io funnel builder
+What is a sales funnel and how does systeme.io help me build one?
+A sales funnel is a series of web pages that moves a visitor from awareness to purchase. systeme.io's funnel builder lets you create these pages with a drag-and-drop editor, connect payment processors (Stripe or PayPal), set up upsell and downsell offers, and link to email automation — all from one dashboard. You start with a proven template and customise it for your offer. The funnel builder is available on all plans including the free plan (up to 3 funnels).
+How do I create my first sales funnel in systeme.io step by step?
+1. Go to Funnels in your dashboard and click "Create a funnel." 2. Choose a funnel type (lead capture, product sales, webinar, etc.) and select a template. 3. Click each step to edit the page in the drag-and-drop editor, change text, images, and offer details. 4. Connect your payment processor on the checkout step. 5. Set up an email automation to follow up with new leads or buyers. 6. Click Publish. Most first funnels can be live in under 2 hours.
+Can I sell digital products, courses, and services in the same funnel with systeme.io?
+Yes. A single systeme.io funnel can sell a digital product (PDF, template), grant access to an online course, book a coaching session via the calendar, and enrol the buyer in an email sequence, all automatically
+
+===== https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io
+TITLE: How to use the systeme.io public API (Application Programming Interface) | systeme.io Help Center
+ACCESSED: 2026-09-28
+
+Loading
+How to use the systeme.io public API (Application Programming Interface) | systeme.io Help Center
+Categories
+·
+General
+▾
+Affiliation
+Contact management
+Customer support
+Deliverability
+Editor
+Emails
+General
+Migrating to systeme.io
+Model Context Protocol (MCP)
+Payments
+General
+English
+العربية
+Čeština
+Dansk
+Deutsch
+Ελληνικά
+Español
+Français
+हिन्दी
+Magyar
+Bahasa Indonesia
+日本語
+Nederlands
+Norsk
+Polski
+Português
+Русский
+Slovenčina
+Slovenščina
+Shqip
+Српски
+Svenska
+ไทย
+Türkçe
+Українська
+中文
+How to use the systeme.io public API (Application Programming Interface)
+In this article, you will learn how to configure and use the
+systeme.io
+public API, including how to generate API keys and what actions you can perform.
+1. What is an API?
+The acronym API stands for "Application Programming Interface", a series of instructions by which a platform offers services to other platforms. It's a strategic gateway for external developers, enabling them to access specific functionality or data from a platform in a structured, secure way. It's like a set of ready-to-use tools that make it easy to build new applications, services, or combinations.
+In short,
+systeme.io
+opens up to other platforms to offer its services where it has added value.
+2. How does our public API work?
+Our API exposes a carefully selected set of features, enabling developers to interact with our platform transparently and efficiently. If you'd like to know more about how it works, you can read our official API documentation.
+3. How to generate your API keys
+API keys are unique identifiers that authenticate requests to our public API. They enable you to programmatically access and manage various resources on our platform.
+To connect an external integration, you first need to generate a secure API key. Click on your profile picture and select
+Settings
+(1). In the left menu, click
+MCP & API keys
+(2).
+Scroll down to the Public API keys section and click
+Create
+(3).
+Give your key a name, set an expiration date, and click
+Save
+(4).
+Note:
+To keep your API key active indefinitely, leave the 'Expiration' field empty.
+Your key is now ready.
+4. What can you do with our API?
+Our API opens up some interesting possibilities. Below you will find the main actions you can perform using our public API:
+a. Contacts, tags, and custom field management:
+Contacts:
+Create new contacts, update existing ones, list your audience with advanced filters, or delete contacts.
+Tags:
+Create, assign, list, and remove tags from contacts.
+Custom fields:
+Retrieve available contact custom fields and their identifiers (slugs) to correctly fill in contact information.
+b. Newsletters and campaigns management:
+Newsletters:
+Create new drafts, update existing ones, target audiences (using include/exclude tags), configure sender details, schedule or remove scheduling, send test emails, send newsletters directly, delete drafts, and fetch specific newsletters.
+Campaigns:
+Create, retrieve, update, and delete entire email campaigns, as well as individual campaign steps.
+c. Funnels and Page editor management:
+Create funnels, opt-in steps, and webinar funnels:
+Easily create new funnels, add opt-in steps to your funnels, and create webinar funnels with all the necessary webinar steps, including registration, thank you, and webinar broadcast pages.
+List and retrieve funnels:
+Browse through your existing funnels, opt-in steps, and webinar pages, or search for specific ones.
+Regenerate page content (webinar pages):
+Regenerate the full content of a webinar page.
+Page editor:
+Save generated page content directly to your funnel steps or website pages (full replace), retrieve JSON schemas for specific page types, and regenerate webinar page content.
+Notes:
+Currently, modifying (editing) funnels and funnel steps via MCP is not supported.
+Deleting funnels, funnel steps, and webinar pages through MCP is also not supported at this time
+AI can regenerate the content of a webinar page by replacing the full content, but small targeted edits are not currently supported.
+d. Price plans and coupon management:
+Create, edit, and delete:
+Generate new price plans and coupons, or partially update and delete existing ones.
+List and search
+: Browse through all your existing price plans and coupons, or fetch specific items by their ID.
+e. Courses and student management:
+Courses and students:
+Create, edit settings, delete, list, retrieve, activate, and deactivate courses. List course page templates and choose a theme for the course. Fetch a list of your existing courses and retrieve a list of students currently enrolled.
+Modules
+: Create, edit, delete, list, and retrieve modules.
+Lectures:
+Create, edit, delete, add delays, enable comments, list, retrieve, activate, and deactivate lectures.
+Enroll students:
+Programmatically enroll contacts into your individual courses.
+Note on courses:
+Support for course bundles will be added in future updates.
+f. Community management:
+Communities
+: Retrieve
+
+===== https://help.systeme.io/category/146-sales-funnel
+TITLE: systeme.io Help Center
+ACCESSED: 2026-09-28
+
+systeme.io Help Center
+Loading the category
+Categories
+·
+▾
+Affiliation
+Contact management
+Customer support
+Deliverability
+Editor
+Emails
+General
+Migrating to systeme.io
+Model Context Protocol (MCP)
+Payments
+Sort by popularity
+Sort A to Z
+Sort by recently updated
+How to create a funnel
+How to create and configure a price plan
+How to create an order form/payment page
+How to change a funnel's domain name
+How to link a sales funnel or a page to your external website
+My domain name is not approved
+How to share a sales funnel with other accounts
+How to change a page's URL path
+How to create an opt-in page
+How to change the favicon of your pages
+How to configure links between funnel pages
+How to activate payments by Stripe or Paypal
+How to create and add a coupon code to your order form
+How to create an upsell and a downsell
+How to add an order bump to an order form/payment page
+How to activate a funnel
+How to create a sales page
+How to move, duplicate & delete a page from a sales funnel
+How to build your contact list using a funnel
+What is a two-step order form?
+1
+2

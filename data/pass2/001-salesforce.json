@@ -1,0 +1,195 @@
+{
+  "app": "Salesforce",
+  "number": 1,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T06:14:17.607084+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developer.salesforce.com\",\n    \"https://developer.salesforce.com/signup\",\n    \"https://developer.salesforce.com/docs\",\n    \"https://developer.salesforce.com/docs/apis\",\n    \"https://partners.salesforce.com\",\n    \"https://trailhead.salesforce.com\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash",
+  "candidates_considered": [
+    "https://salesforce.com",
+    "https://developer.salesforce.com",
+    "https://developer.salesforce.com/signup",
+    "https://developer.salesforce.com/docs",
+    "https://developer.salesforce.com/docs/apis",
+    "https://partners.salesforce.com",
+    "https://trailhead.salesforce.com",
+    "https://docs.salesforce.com/",
+    "https://developers.salesforce.com/",
+    "https://api.salesforce.com/",
+    "https://salesforce.com/docs",
+    "https://salesforce.com/developers",
+    "https://salesforce.com/api",
+    "https://salesforce.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://partners.salesforce.com/",
+    "https://findpartners.salesforce.com/",
+    "https://www.salesforce.com/in/pricing/",
+    "https://www.salesforce.com/in/partners/",
+    "https://www.salesforce.com/in/sales/pricing/",
+    "https://www.salesforce.com/in/slack/pricing/",
+    "https://invite.salesforce.com/AIforceOct7",
+    "https://invite.salesforce.com/APACaiforceoct7",
+    "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "https://developer.salesforce.com/blogs",
+    "https://developer.salesforce.com/events",
+    "https://developer.salesforce.com/docs/apis",
+    "https://trailhead.salesforce.com/superbadges",
+    "https://www.salesforce.com/workforce-development/",
+    "https://trailhead.salesforce.com/sessions/users/new?type=tbidsignup",
+    "https://help.salesforce.com/services/auth/sso/trailheadlogincommunity?startURL=/s",
+    "https://help.salesforce.com/services/auth/sso/trailheadlogincommunity?startURL=/s/cases",
+    "https://ideas.salesforce.com/",
+    "https://docs.salesforce.com/llms.txt",
+    "https://docs.salesforce.com/index.html",
+    "https://mcp.docs.salesforce.com/about/",
+    "https://docs.salesforce.com/admin/index.html",
+    "https://docs.salesforce.com/tableau/index.html",
+    "https://docs.salesforce.com/mulesoft/index.html"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.salesforce.com/docs",
+      "reason": "page too thin (81 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://developer.salesforce.com/docs/apis",
+      "reason": "page too thin (51 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://partners.salesforce.com",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://partners.salesforce.com/",
+      "reason": "page too thin (0 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://findpartners.salesforce.com/",
+      "reason": "page too thin (44 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.salesforce.com/in/?ir=1",
+      "requested_url": "https://salesforce.com",
+      "status": 200,
+      "title": "Salesforce: The #1 AI CRM | Salesforce IN",
+      "chars": 4107,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developer.salesforce.com",
+      "requested_url": "https://developer.salesforce.com",
+      "status": 200,
+      "title": "Developer Portal | Salesforce Developers | Developer",
+      "chars": 4432,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.salesforce.com/products/free-trial/developer/",
+      "requested_url": "https://developer.salesforce.com/signup",
+      "status": 200,
+      "title": "Developer Edition with Agentforce and Data 360 | Salesforce",
+      "chars": 127,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://trailhead.salesforce.com",
+      "requested_url": "https://trailhead.salesforce.com",
+      "status": 200,
+      "title": "Trailhead | The fun way to learn",
+      "chars": 1334,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.salesforce.com/",
+      "requested_url": "https://docs.salesforce.com/",
+      "status": 200,
+      "title": "Salesforce Docs Portal",
+      "chars": 685,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.salesforce.com/in/pricing/",
+      "requested_url": "https://www.salesforce.com/in/pricing/",
+      "status": 200,
+      "title": "Salesforce Pricing: See Pricing Plans for All Salesforce Products | Salesforce IN",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.salesforce.com/in/partners/",
+      "requested_url": "https://www.salesforce.com/in/partners/",
+      "status": 200,
+      "title": "AI is easier with Salesforce Partners | Salesforce IN",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.salesforce.com/in/sales/pricing/",
+      "requested_url": "https://www.salesforce.com/in/sales/pricing/",
+      "status": 200,
+      "title": "Sales Cloud Pricing: Plans and Costs Guide | Salesforce IN",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Salesforce is the #1 AI CRM platform providing a unified set of applications powered by agentic AI and data.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The provided pages mention APIs and integrations (REST API, B2C Commerce API, Marketing Cloud APIs, Metadata API), but do not specify the exact developer authentication method used for them.\"\n  },\n  \"access\": {\n    \"tier\": \"unknown\",\n    \"notes\": \"The pages mention Developer Edition and free trials, but do not explicitly detail the credential-obtaining process for the developer/integration APIs.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": false,\n    \"sdks\": [],\n    \"notes\": \"The documentation mentions Salesforce REST API, B2C Commerce API, Marketing Cloud REST and SOAP APIs, and Metadata API.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://developer.salesforce.com\",\n    \"notes\": \"Salesforce Developer Edition includes Hosted MCP Servers and allows exposing custom Apex as a Hosted MCP tool for agents.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developer.salesforce.com\",\n      \"claim\": \"The platform provides a REST API\",\n      \"quote\": \"Salesforce REST API\"\n    },\n    {\n      \"url\": \"https://developer.salesforce.com\",\n      \"claim\": \"Developer Edition includes Hosted MCP Servers\",\n      \"quote\": \"Salesforce Developer Edition now includes Agentforce Vibes IDE, Claude 4.5, and Hosted MCP Servers \u2013 all free.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": null,\n    \"api_surface\": {\n      \"url\": \"https://developer.salesforce.com\",\n      \"quote\": \"Salesforce REST API\"\n    },\n    \"mcp\": {\n      \"url\": \"https://developer.salesforce.com\",\n      \"quote\": \"Salesforce Developer Edition now includes Agentforce Vibes IDE, Claude 4.5, and Hosted MCP Servers \u2013 all free.\"\n    }\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint_url": "https://salesforce.com",
+    "one_liner": "Salesforce is the #1 AI CRM platform providing a unified set of applications powered by agentic AI and data.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://developer.salesforce.com."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: quoted line not found on https://developer.salesforce.com."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [],
+    "support": {},
+    "unsupported_fields": [
+      "auth: no support offered",
+      "access: no support offered",
+      "api_surface: quoted line not found on https://developer.salesforce.com",
+      "mcp: quoted line not found on https://developer.salesforce.com"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T06:16:07.498252+00:00"
+}

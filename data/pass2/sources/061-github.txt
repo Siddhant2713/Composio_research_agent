@@ -1,0 +1,872 @@
+===== https://docs.github.com/en/rest
+TITLE: GitHub REST API documentation - GitHub Docs
+ACCESSED: 2026-09-28
+
+The REST API is now versioned.
+For more information, see "
+About API versioning
+."
+GitHub REST API documentation
+Create integrations, retrieve data, and automate your workflows with the GitHub REST API.
+Overview
+Quickstart
+Quickstart for GitHub REST API
+Learn how to get started with the GitHub REST API.
+Getting started with the REST API
+Learn how to use the GitHub REST API.
+Authenticating to the REST API
+You can authenticate to the REST API to access more endpoints and have a higher rate limit.
+Articles
+Category
+:
+All categories
+Learn about the REST API
+About the OpenAPI description for the REST API
+The GitHub REST API is fully described in an OpenAPI compliant document.
+Learn about the REST API
+About the REST API
+Get oriented to the REST API documentation.
+Learn about the REST API
+API Versions
+Learn how to specify which REST API version to use whenever you make a request to the REST API.
+Authenticate API requests
+Authenticating to the REST API
+You can authenticate to the REST API to access more endpoints and have a higher rate limit.
+Learn about the REST API
+Best practices for using the REST API
+Follow these best practices when using GitHub's API.
+Administer enterprises and billing
+Billing usage
+Use the REST API to get billing usage information.
+Learn about the REST API
+Breaking changes
+Learn about breaking changes that were introduced in each REST API version.
+Administer enterprises and billing
+Budgets
+Use the REST API to get budget information.
+Build apps and integrations
+Building a CI server
+Build your own CI system using the Status API.
+Showing 1-9 of 196
+
+===== https://docs.github.com/en/graphql
+TITLE: GitHub GraphQL API documentation - GitHub Docs
+ACCESSED: 2026-09-28
+
+GitHub GraphQL API documentation
+To create integrations, retrieve data, and automate your workflows, use the GitHub GraphQL API. The GitHub GraphQL API offers more precise and flexible queries than the GitHub REST API.
+Overview
+Quickstart
+About the GraphQL API
+The GitHub GraphQL API offers flexibility and the ability to define precisely the data you want to fetch.
+Introduction to GraphQL
+Learn useful terminology and concepts for using the GitHub GraphQL API.
+Forming calls with GraphQL
+Learn how to authenticate to the GraphQL API, then learn how to create and run queries and mutations.
+Articles
+Category
+:
+All categories
+Get started and make API calls
+About the GraphQL API
+The GitHub GraphQL API offers flexibility and the ability to define precisely the data you want to fetch.
+Explore the schema reference
+Actions
+Reference documentation for GraphQL schema types in the Actions category.
+Explore the schema reference
+Activity
+Reference documentation for GraphQL schema types in the Activity category.
+Explore the schema reference
+Branches
+Reference documentation for GraphQL schema types in the Branches category.
+Understand API changes and limits
+Breaking changes
+Learn about recent and upcoming breaking changes to the GitHub GraphQL API.
+Explore the schema reference
+Checks
+Reference documentation for GraphQL schema types in the Checks category.
+Explore the schema reference
+Code scanning
+Reference documentation for GraphQL schema types in the Code scanning category.
+Explore the schema reference
+Commits
+Reference documentation for GraphQL schema types in the Commits category.
+Explore the schema reference
+Copilot
+Reference documentation for GraphQL schema types in the Copilot category.
+Showing 1-9 of 56
+
+===== https://docs.github.com/en/apps
+TITLE: GitHub Apps documentation - GitHub Docs
+ACCESSED: 2026-09-28
+
+GitHub Apps documentation
+Go deeper with GitHub by integrating with our APIs and webhooks, customizing your GitHub workflow, and building and sharing apps with the community.
+Overview
+Quickstart
+GitHub Apps overview
+You can use GitHub Apps to extend the functionality of GitHub.
+Quickstart for building GitHub Apps
+Quickly build a GitHub App that comments on pull requests.
+About creating GitHub Apps
+GitHub Apps let you build integrations to automate processes and extend GitHub's functionality.
+Articles
+Category
+:
+All categories
+Authenticate with a GitHub App
+About authentication with a GitHub App
+Your GitHub App can authenticate as itself, as an app installation, or on behalf of a user.
+Understand GitHub Apps
+About creating GitHub Apps
+GitHub Apps let you build integrations to automate processes and extend GitHub's functionality.
+Maintain and share your app
+About GitHub App managers
+App managers can manage some or all of the GitHub App registrations owned by an account.
+List your app on GitHub Marketplace
+About GitHub Marketplace for apps
+Learn about GitHub Marketplace where you can share your apps with everyone.
+List your app on GitHub Marketplace
+About marketplace badges
+Learn about the badges that you may see for some apps listings on GitHub Marketplace.
+Register and configure a GitHub App
+About the setup URL
+You can specify a URL that users will be redirected to after they install a GitHub App.
+Register and configure a GitHub App
+About the user authorization callback URL
+You can specify URLs that users can be redirected to after they authorize a GitHub App.
+Understand GitHub Apps
+About using GitHub Apps
+Learn about what a GitHub App is and why you would use a GitHub App.
+Write code for a GitHub App
+About writing code for a GitHub App
+You need to write code to add functionality to your GitHub App.
+Showing 1-9 of 95
+
+===== https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsettings%2Fdevelopers
+TITLE: Sign in to GitHub · GitHub
+ACCESSED: 2026-09-28
+
+Sign in to GitHub · GitHub
+Skip to content
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+You can’t perform that action at this time.
+
+===== https://docs.github.com/en/authentication
+TITLE: Authentication documentation - GitHub Docs
+ACCESSED: 2026-09-28
+
+Authentication documentation
+Authenticate securely to GitHub with passwords, tokens, SSH keys, and more—and keep your account protected.
+Overview
+About authentication to GitHub
+You can securely access your account's resources by authenticating to GitHub, using different credentials depending on where you authenticate.
+Connecting to GitHub with SSH
+You can connect to GitHub using the Secure Shell Protocol (SSH), which provides a secure channel over an unsecured network.
+Managing commit signature verification
+GitHub will verify GPG, SSH, or S/MIME signatures so other people will know that your commits come from a trusted source. GitHub will automatically sign commits you make using the web interface.
+Articles
+Category
+:
+All categories
+Learn about authentication
+About anonymized URLs
+If you upload an image or video to GitHub, the URL of the image or video will be modified so your information is not trackable.
+Learn about authentication
+About authentication to GitHub
+You can securely access your account's resources by authenticating to GitHub, using different credentials depending on where you authenticate.
+Learn about authentication
+About commit signature verification
+Using GPG, SSH, or S/MIME, you can sign tags and commits locally. These tags or commits are marked as verified on GitHub so other people can be confident that the changes come from a trusted source.
+Learn about authentication
+About GitHub's IP addresses
+GitHub serves applications from multiple IP address ranges, which are available using the API.
+Learn about authentication
+About mandatory two-factor authentication
+Enable mandatory two-factor authentication to secure your account and maintain access to GitHub.com.
+Learn about authentication
+About passkeys
+Passkeys allow you to sign in safely and easily, without requiring a password and two-factor authentication.
+Learn about authentication
+About SSH
+Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit. You can also use an SSH key to sign commits.
+Learn about authentication
+About two-factor authentication
+Two-factor authentication (2FA) is an extra layer of security used when logging into websites or apps. With 2FA, you have to log in with your username and password and provide another form of authentication that only you know or have access to.
+Set up two-factor authentication
+Accessing GitHub using two-factor authentication
+With 2FA enabled, you'll be asked to provide your 2FA authentication code, as well as your password, when you sign in to GitHub.
+Showing 1-9 of 65
+
+===== https://docs.github.com/en/rest/quickstart
+TITLE: Quickstart for GitHub REST API - GitHub Docs
+ACCESSED: 2026-09-28
+
+In this article
+Quickstart for GitHub REST API
+Learn how to get started with the GitHub REST API.
+Copy markdown
+Tool navigation
+In this article
+Introduction
+This article describes how to quickly get started with the GitHub REST API using GitHub CLI,
+curl
+, or JavaScript. For a more detailed guide, see
+Getting started with the REST API
+.
+Using GitHub CLI in the command line
+GitHub CLI is the easiest way to use the GitHub REST API from the command line.
+Install GitHub CLI on macOS, Windows, or Linux. For more information, see
+Installation
+in the GitHub CLI repository.
+To authenticate to GitHub, run the following command from your terminal.
+gh auth login
+Select where you want to authenticate to:
+If you access GitHub at GitHub.com, select
+GitHub.com
+.
+If you access GitHub at a different domain, select
+Other
+, then enter your hostname (for example:
+octocorp.ghe.com
+).
+Follow the rest of the on-screen prompts.
+GitHub CLI automatically stores your Git credentials for you when you choose HTTPS as your preferred protocol for Git operations and answer "yes" to the prompt asking if you would like to authenticate to Git with your GitHub credentials. This can be useful as it allows you to use Git commands like
+git push
+and
+git pull
+without needing to set up a separate credential manager or use SSH.
+Make a request using the GitHub CLI
+api
+subcommand, followed by the path. Use the
+--method
+or
+-X
+flag to specify the method. For more information, see the
+GitHub CLI
+api
+documentation
+.
+This example makes a request to the "Get Octocat" endpoint, which uses the method
+GET
+and the path
+/octocat
+. For the full reference documentation for this endpoint, see
+REST API endpoints for meta data
+.
+gh api /octocat --method GET
+Using GitHub CLI in GitHub Actions
+You can also use GitHub CLI in your GitHub Actions workflows. For more information, see
+Using GitHub CLI in workflows
+.
+Authenticating with an access token
+Instead of using the
+gh auth login
+command, pass an access token as an environment variable called
+GH_TOKEN
+. GitHub recommends that you use the built-in
+GITHUB_TOKEN
+instead of creating a token. If this is not possible, store your token as a secret and replace
+GITHUB_TOKEN
+in the example below with the name of your secret. For more information about
+GITHUB_TOKEN
+, see
+Use GITHUB_TOKEN for authentication in workflows
+. For more information about secrets, see
+Using secrets in GitHub Actions
+.
+The following example workflow uses the
+List repository issues
+endpoint, and requests a list of issues in the
+octocat/Spoon-Knife
+repository.
+on:
+workflow_dispatch:
+jobs:
+use_api:
+runs-on:
+ubuntu-latest
+permissions:
+issues:
+read
+steps:
+-
+env:
+GH_TOKEN:
+${{
+secrets.GITHUB_TOKEN
+}}
+run:
+|
+          gh api https://api.github.com/repos/octocat/Spoon-Knife/issues
+Authenticating with a GitHub App
+If you are authenticating with a GitHub App, you can create an installation access token within your workflow:
+Store your GitHub App's client ID as a configuration variable. In the following example, replace
+APP_CLIENT_ID
+with the name of the configuration variable. You can find your client ID on the settings page for your app or through the API. For more information, see
+REST API endpoints for GitHub Apps
+. For more information about configuration variables, see
+Store information in variables
+.
+Generate a private key for your app. Store the contents of the resulting file as a secret. (Store the entire contents of the file, including
+-----BEG[REDACTED]
+.) In the following example, replace
+APP_PRIVATE_KEY
+with the name of the secret. For more information, see
+Managing private keys for GitHub Apps
+. For more information about secrets, see
+Using secrets in GitHub Actions
+.
+Add a step to generate a token, and use that token instead of
+GITHUB_TOKEN
+. Note that this token will expire after 60 minutes. For example:
+on:
+workflow_dispatch:
+jobs:
+track_pr:
+runs-on:
+ubuntu-latest
+steps:
+-
+name:
+Generate
+token
+id:
+generate-token
+uses:
+actions/create-github-app-token@v3
+with:
+client-id:
+${{
+vars.APP_CLIENT_ID
+}}
+private-key:
+${{
+secrets.APP_PRIVATE_KEY
+}}
+-
+name:
+Use
+API
+env:
+GH_TOKEN:
+${{
+steps.generate-token.outputs.token
+}}
+run:
+|
+          gh api https://api.github.com/repos/octocat/Spoon-Knife/issues
+Using Octokit.js
+You can use Octokit.js to interact with the GitHub REST API in your JavaScript scripts. For more information, see
+Scripting with the REST API and JavaScript
+.
+Create an access token. For example, create a personal access token or a GitHub App user access token. You will use this token to authenticate your request, so you should give it any scopes or permissions that are required to access that endpoint. For more information, see
+Authenticating to the REST API
+or
+Identifying and authorizing users for GitHub Apps
+.
+Warning
+Treat your access token like a password.
+To keep your token secure, you can store your token as a secret and run your script through GitHub Actions. For more information, see the
+Using
+
+===== https://docs.github.com/en/rest/about-the-rest-api/api-versions
+TITLE: API Versions - GitHub Docs
+ACCESSED: 2026-09-28
+
+In this article
+API Versions
+Learn how to specify which REST API version to use whenever you make a request to the REST API.
+Copy markdown
+In this article
+About API versioning
+The GitHub REST API is versioned. The API version name is based on the date when the API version was released. For example, the API version
+2026-03-10
+was released on Tue, 10 Mar 2026.
+Breaking changes are changes that can potentially break an integration. Breaking changes will be released in a new API version. We will provide advance notice before releasing breaking changes. Breaking changes include:
+Removing an entire operation
+Removing or renaming a parameter
+Removing or renaming a response field
+Adding a new required parameter
+Making a previously optional parameter required
+Changing the type of a parameter or response field
+Removing enum values
+Adding a new validation rule to an existing parameter
+Changing authentication or authorization requirements
+Any additive (non-breaking) changes will be available in all supported API versions. Additive changes are changes that should not break an integration. Additive changes include:
+Adding an operation
+Adding an optional parameter
+Adding an optional request header
+Adding a response field
+Adding a response header
+Adding enum values
+When a new REST API version is released, the previous API version will be supported for at least 24 more months following the release of the new API version.
+Specifying an API version
+You should use the
+X-GitHub-Api-Version
+header to specify an API version. For example:
+curl --header "X-GitHub-Api-Version:2026-03-10" https://api.github.com/zen
+Requests without the
+X-GitHub-Api-Version
+header will default to use the
+2022-11-28
+version.
+If you specify an API version that is no longer supported, you will receive a
+410 Gone
+response.
+Upgrading to a new API version
+Before upgrading to a new REST API version, you should read the changelog of breaking changes for the new API version to understand what breaking changes are included and to learn more about how to upgrade to that specific API version. For more information, see
+Breaking changes
+.
+When you update your integration to specify the new API version in the
+X-GitHub-Api-Version
+header, you'll also need to make any changes required for your integration to work with the new API version.
+Once your integration is updated, test your integration to verify that it works with the new API version.
+API version closing down
+API versions are supported for 24 months after a newer API version is released.
+While a version is within its support window but approaching  closing down, GitHub includes the following headers in API responses to help you prepare for migration:
+Deprecation
+— The date when the API version will be closing down, formatted as an HTTP date per
+RFC 7231
+. For example:
+Wed, 27 Nov 2019 14:34:29 GMT
+.
+Sunset
+— The date when the API version will be completely removed (retired), after which requests will return a
+410 Gone
+response. Follows
+RFC 8594
+. For example:
+Fri, 27 Nov 2020 14:34:29 GMT
+.
+After the support window ends:
+Requests that specify a closing down API version receive a
+410 Gone
+response.
+Requests that do not specify an API version default to the next oldest supported version, not the closing down version. If you rely on unversioned requests, you may observe behavioral changes as older versions are removed from support.
+For more information on migrating to a newer API version, see
+Breaking changes
+.
+Exceptions to standard versioning
+In rare cases, GitHub may make changes outside the normal API versioning cadence. These are exceptional interventions that do not alter the standard versioning guarantees for most integrators.
+Security, availability, and reliability issues
+Critical security vulnerabilities, data exposure risks, or severe reliability issues may require changes outside the normal release schedule. GitHub may release an unscheduled API version, backport fixes to supported versions, or in rare cases, introduce a breaking change to an existing version to protect users and platform integrity.
+GitHub will communicate such changes through release notes, changelogs, and direct communication explaining what changed and why. Where feasible, advance notice will be provided. Immediate action may be taken without advance notice when required.
+Low-usage services
+For certain services with very low usage, GitHub may deprecate functionality outside the standard versioning process. In these cases, GitHub will communicate the intent and reach out to affected integrators directly.
+Supported API versions
+The following REST API versions are currently supported.
+API version
+End of support date
+2026-03-10
+Not yet scheduled
+2022-11-28
+March 10, 2028
+You can also make an API request to get all of the supported API versions. For more information, see
+REST API endpoints for meta data
+.
+
+===== https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api
+TITLE: About the REST API - GitHub Docs
+ACCESSED: 2026-09-28
+
+In this article
+About the REST API
+Get oriented to the REST API documentation.
+Copy markdown
+In this article
+You can use GitHub's API to build scripts and applications that automate processes, integrate with GitHub, and extend GitHub. For example, you could use the API to triage issues, build an analytics dashboard, or manage releases.
+Each REST API endpoint is documented individually, and the endpoints are categorized by the resource that they primarily affect. For example, you can find endpoints relating to issues in
+REST API endpoints for issues
+.
+Getting started with the REST API
+If you are new to REST APIs
+, start with the Quickstart or Getting Started guide:
+Quickstart for GitHub REST API
+Getting started with the REST API
+If you are familiar with REST APIs
+but new to GitHub's REST API, see the authentication documentation:
+Authenticating to the REST API
+If you are building scripts or applications
+that use the REST API, the following guides can help:
+Scripting with the REST API and JavaScript
+Scripting with the REST API and Ruby
+Building a GitHub App that responds to webhook events
+Building a CLI with a GitHub App
+Automatically redelivering failed deliveries for a repository webhook
+For a list of libraries to facilitate scripting with the REST API, see
+Libraries for the REST API
+.
+If you are building scripts or applications that use the REST API, you might also be interested in using webhooks to get notified about events or a GitHub App to access resources on behalf of a user or in an organization. For more information, see
+About webhooks
+and
+Deciding when to build a GitHub App
+.
+Further reading
+Comparing GitHub's REST API and GraphQL API
+Best practices for using the REST API
+Keeping your API credentials secure
+Troubleshooting the REST API
+
+===== https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens
+TITLE: Endpoints available for GitHub App user access tokens - GitHub Docs
+ACCESSED: 2026-09-28
+
+In this article
+Endpoints available for GitHub App user access tokens
+Your GitHub App can make requests to the following REST endpoints with a user access token.
+Who can use this feature?
+You can use a user access token to access these endpoints using your GitHub App. For more information, see
+Authenticating with a GitHub App on behalf of a user
+.
+In this article
+actions
+GET
+/enterprises/{enterprise}/actions/cache/retention-limit
+PUT
+/enterprises/{enterprise}/actions/cache/retention-limit
+GET
+/enterprises/{enterprise}/actions/cache/storage-limit
+PUT
+/enterprises/{enterprise}/actions/cache/storage-limit
+GET
+/enterprises/{enterprise}/actions/oidc/customization/properties/repo
+POST
+/enterprises/{enterprise}/actions/oidc/customization/properties/repo
+DELETE
+/enterprises/{enterprise}/actions/oidc/customization/properties/repo/{custom_property_name}
+GET
+/organizations/{org}/actions/cache/retention-limit
+PUT
+/organizations/{org}/actions/cache/retention-limit
+GET
+/organizations/{org}/actions/cache/storage-limit
+PUT
+/organizations/{org}/actions/cache/storage-limit
+GET
+/orgs/{org}/actions/cache/usage
+GET
+/orgs/{org}/actions/cache/usage-by-repository
+GET
+/orgs/{org}/actions/hosted-runners
+POST
+/orgs/{org}/actions/hosted-runners
+GET
+/orgs/{org}/actions/hosted-runners/images/custom
+GET
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}
+DELETE
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}
+GET
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions
+GET
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}
+DELETE
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}
+GET
+/orgs/{org}/actions/hosted-runners/images/github-owned
+GET
+/orgs/{org}/actions/hosted-runners/images/partner
+GET
+/orgs/{org}/actions/hosted-runners/limits
+GET
+/orgs/{org}/actions/hosted-runners/machine-sizes
+GET
+/orgs/{org}/actions/hosted-runners/platforms
+GET
+/orgs/{org}/actions/hosted-runners/{hosted_runner_id}
+PATCH
+/orgs/{org}/actions/hosted-runners/{hosted_runner_id}
+DELETE
+/orgs/{org}/actions/hosted-runners/{hosted_runner_id}
+GET
+/orgs/{org}/actions/oidc/customization/properties/repo
+POST
+/orgs/{org}/actions/oidc/customization/properties/repo
+DELETE
+/orgs/{org}/actions/oidc/customization/properties/repo/{custom_property_name}
+GET
+/orgs/{org}/actions/oidc/customization/sub
+PUT
+/orgs/{org}/actions/oidc/customization/sub
+GET
+/orgs/{org}/actions/permissions
+PUT
+/orgs/{org}/actions/permissions
+GET
+/orgs/{org}/actions/permissions/artifact-and-log-retention
+PUT
+/orgs/{org}/actions/permissions/artifact-and-log-retention
+GET
+/orgs/{org}/actions/permissions/fork-pr-contributor-approval
+PUT
+/orgs/{org}/actions/permissions/fork-pr-contributor-approval
+GET
+/orgs/{org}/actions/permissions/fork-pr-workflows-private-repos
+PUT
+/orgs/{org}/actions/permissions/fork-pr-workflows-private-repos
+GET
+/orgs/{org}/actions/permissions/repositories
+PUT
+/orgs/{org}/actions/permissions/repositories
+PUT
+/orgs/{org}/actions/permissions/repositories/{repository_id}
+DELETE
+/orgs/{org}/actions/permissions/repositories/{repository_id}
+GET
+/orgs/{org}/actions/permissions/selected-actions
+PUT
+/orgs/{org}/actions/permissions/selected-actions
+GET
+/orgs/{org}/actions/permissions/self-hosted-runners
+PUT
+/orgs/{org}/actions/permissions/self-hosted-runners
+GET
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories
+PUT
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories
+PUT
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}
+DELETE
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}
+GET
+/orgs/{org}/actions/permissions/workflow
+PUT
+/orgs/{org}/actions/permissions/workflow
+GET
+/orgs/{org}/actions/policies
+POST
+/orgs/{org}/actions/policies
+GET
+/orgs/{org}/actions/policies/{policy_id}
+PUT
+/orgs/{org}/actions/policies/{policy_id}
+DELETE
+/orgs/{org}/actions/policies/{policy_id}
+GET
+/orgs/{org}/actions/runner-groups
+POST
+/orgs/{org}/actions/runner-groups
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}
+PATCH
+/orgs/{org}/actions/runner-groups/{runner_group_id}
+DELETE
+/orgs/{org}/actions/runner-groups/{runner_group_id}
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}/hosted-runners
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}
+DELETE
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners/{runner_id}
+DELETE
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners/{runner_id}
+GET
+/orgs/{org}/actions/runners
+GET
+/orgs/{org}/actions/runners/deprecations/{version}
+GET
+/orgs/{org}/actions
+
+===== https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens
+TITLE: Endpoints available for fine-grained personal access tokens - GitHub Docs
+ACCESSED: 2026-09-28
+
+In this article
+Endpoints available for fine-grained personal access tokens
+Your fine-grained personal access token can make requests to the following REST endpoints.
+In this article
+actions
+GET
+/organizations/{org}/actions/cache/retention-limit
+PUT
+/organizations/{org}/actions/cache/retention-limit
+GET
+/organizations/{org}/actions/cache/storage-limit
+PUT
+/organizations/{org}/actions/cache/storage-limit
+GET
+/orgs/{org}/actions/cache/usage
+GET
+/orgs/{org}/actions/cache/usage-by-repository
+GET
+/orgs/{org}/actions/hosted-runners
+POST
+/orgs/{org}/actions/hosted-runners
+GET
+/orgs/{org}/actions/hosted-runners/images/custom
+GET
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}
+DELETE
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}
+GET
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions
+GET
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}
+DELETE
+/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}
+GET
+/orgs/{org}/actions/hosted-runners/images/github-owned
+GET
+/orgs/{org}/actions/hosted-runners/images/partner
+GET
+/orgs/{org}/actions/hosted-runners/limits
+GET
+/orgs/{org}/actions/hosted-runners/machine-sizes
+GET
+/orgs/{org}/actions/hosted-runners/platforms
+GET
+/orgs/{org}/actions/hosted-runners/{hosted_runner_id}
+PATCH
+/orgs/{org}/actions/hosted-runners/{hosted_runner_id}
+DELETE
+/orgs/{org}/actions/hosted-runners/{hosted_runner_id}
+GET
+/orgs/{org}/actions/oidc/customization/properties/repo
+POST
+/orgs/{org}/actions/oidc/customization/properties/repo
+DELETE
+/orgs/{org}/actions/oidc/customization/properties/repo/{custom_property_name}
+GET
+/orgs/{org}/actions/oidc/customization/sub
+PUT
+/orgs/{org}/actions/oidc/customization/sub
+GET
+/orgs/{org}/actions/permissions
+PUT
+/orgs/{org}/actions/permissions
+GET
+/orgs/{org}/actions/permissions/artifact-and-log-retention
+PUT
+/orgs/{org}/actions/permissions/artifact-and-log-retention
+GET
+/orgs/{org}/actions/permissions/fork-pr-contributor-approval
+PUT
+/orgs/{org}/actions/permissions/fork-pr-contributor-approval
+GET
+/orgs/{org}/actions/permissions/fork-pr-workflows-private-repos
+PUT
+/orgs/{org}/actions/permissions/fork-pr-workflows-private-repos
+GET
+/orgs/{org}/actions/permissions/repositories
+PUT
+/orgs/{org}/actions/permissions/repositories
+PUT
+/orgs/{org}/actions/permissions/repositories/{repository_id}
+DELETE
+/orgs/{org}/actions/permissions/repositories/{repository_id}
+GET
+/orgs/{org}/actions/permissions/selected-actions
+PUT
+/orgs/{org}/actions/permissions/selected-actions
+GET
+/orgs/{org}/actions/permissions/self-hosted-runners
+PUT
+/orgs/{org}/actions/permissions/self-hosted-runners
+GET
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories
+PUT
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories
+PUT
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}
+DELETE
+/orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}
+GET
+/orgs/{org}/actions/permissions/workflow
+PUT
+/orgs/{org}/actions/permissions/workflow
+GET
+/orgs/{org}/actions/policies
+POST
+/orgs/{org}/actions/policies
+GET
+/orgs/{org}/actions/policies/{policy_id}
+PUT
+/orgs/{org}/actions/policies/{policy_id}
+DELETE
+/orgs/{org}/actions/policies/{policy_id}
+GET
+/orgs/{org}/actions/runner-groups
+POST
+/orgs/{org}/actions/runner-groups
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}
+PATCH
+/orgs/{org}/actions/runner-groups/{runner_group_id}
+DELETE
+/orgs/{org}/actions/runner-groups/{runner_group_id}
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}/hosted-runners
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}
+DELETE
+/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}
+GET
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners
+PUT
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners/{runner_id}
+DELETE
+/orgs/{org}/actions/runner-groups/{runner_group_id}/runners/{runner_id}
+GET
+/orgs/{org}/actions/runners
+GET
+/orgs/{org}/actions/runners/deprecations/{version}
+GET
+/orgs/{org}/actions/runners/downloads
+POST
+/orgs/{org}/actions/runners/generate-jitconfig
+POST
+/orgs/{org}/actions/runners/registration-token
+POST
+/orgs/{org}/actions/runners/remove-token
+GET
+/orgs/{org}/actions/runners/{runner_id}
+DELETE
+/orgs/{org}/actions/runners/{runner_id}
+GET
+/orgs/{org}/actions/runners/{runner_id}/labels
+POST
+/orgs/{org}/actions/runners/{runner_id}/labels
+PUT
+/orgs/{org}/actions/runners/{runner_id}/labels
+DELETE
+/orgs/{org}/actions/runners/{runner_id}/labels
+DELETE
+/orgs/{org}/actions/runners/{runner_id}/labels/{name}
+GET
+/orgs/{org}/actions/secrets
+GET
+/orgs/{org}/actions/secrets/public-key
+GET
+/orgs/{org}/actions/secrets/{secret_name}
+PUT
+/orgs/{org}

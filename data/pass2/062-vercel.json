@@ -1,0 +1,214 @@
+{
+  "app": "Vercel",
+  "number": 62,
+  "category": "Developer, Infra and Data platforms",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:34:17.116162+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://vercel.com/docs/rest-api\",\n    \"https://vercel.com/docs\",\n    \"https://vercel.com/docs/integrations/create-integration\",\n    \"https://vercel.com/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://vercel.com/docs/rest-api",
+    "https://vercel.com/docs",
+    "https://vercel.com/docs/integrations/create-integration",
+    "https://vercel.com/pricing",
+    "https://docs.vercel.com/",
+    "https://developer.vercel.com/",
+    "https://developers.vercel.com/",
+    "https://api.vercel.com/",
+    "https://vercel.com/developers",
+    "https://vercel.com/api",
+    "https://vercel.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+    "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+    "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+    "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+    "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+    "https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+    "https://vercel.com/docs/rest-api/sdk",
+    "https://vercel.com/docs/flags/flags-sdk-reference",
+    "https://vercel.com/docs/ai-gateway/authentication-and-byok",
+    "https://vercel.com/docs/plans",
+    "https://vercel.com/docs/ai-sdk",
+    "https://vercel.com/docs/webhooks/webhooks-api?from=graph&source_path=%2Fdocs%2Fintegrations%2Fcreate-integration&source_site=vercel-docs&relationship=outbound&surface=html",
+    "https://vercel.com/docs/pricing",
+    "https://vercel.com/docs/queues/sdk",
+    "https://vercel.com/docs/pricing/taxes",
+    "https://vercel.com/docs/plans/pro-plan"
+  ],
+  "boilerplate_lines_removed": 61,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.vercel.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.vercel.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "requested_url": "https://vercel.com/docs/rest-api",
+      "status": 200,
+      "title": "Vercel REST API Reference",
+      "chars": 2083,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs",
+      "requested_url": "https://vercel.com/docs",
+      "status": 200,
+      "title": "Vercel Documentation",
+      "chars": 4990,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs/integrations/create-integration",
+      "requested_url": "https://vercel.com/docs/integrations/create-integration",
+      "status": 200,
+      "title": "Create an Integration",
+      "chars": 4974,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/pricing",
+      "requested_url": "https://vercel.com/pricing",
+      "status": 200,
+      "title": "Vercel Pricing: Hobby, Pro, and Enterprise plans",
+      "chars": 4993,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+      "status": 200,
+      "title": "SSO Token Exchange | Vercel REST API",
+      "chars": 1500,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "status": 200,
+      "title": "List Auth Tokens | Vercel REST API",
+      "chars": 945,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/list-auth-tokens?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "status": 200,
+      "title": "List Auth Tokens | Vercel REST API",
+      "chars": 945,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=inbound&surface=html",
+      "status": 200,
+      "title": "SSO Token Exchange | Vercel REST API",
+      "chars": 1500,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "requested_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange?from=graph&source_path=%2Fdocs%2Frest-api&source_site=vercel-docs&relationship=outbound&surface=html",
+      "status": 200,
+      "title": "SSO Token Exchange | Vercel REST API",
+      "chars": 1500,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Vercel REST API enables programmatic interaction with your Vercel account, allowing deployment of web applications, management of domains, deployments, secrets, and environment variables.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"Vercel Access Tokens are used to authenticate and use the Vercel API, included in the Authorization header as a Bearer token.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can create and manage Access Tokens in their account settings.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"The API is exposed as an HTTP/1 and HTTP/2 service over SSL and follows the REST architecture.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://mcp.vercel.com\",\n    \"notes\": \"The Vercel MCP server allows agents to search docs, manage projects and deployments, and query Web Analytics.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"claim\": \"Vercel Access Tokens are required for authentication via Bearer token.\",\n      \"quote\": \"Vercel Access Tokens are required to authenticate and use the Vercel API.\"\n    },\n    {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"claim\": \"The API follows the REST architecture.\",\n      \"quote\": \"and follow the REST architecture.\"\n    },\n    {\n      \"url\": \"https://vercel.com/docs\",\n      \"claim\": \"The Vercel MCP server URL is provided for agents.\",\n      \"quote\": \"# Let your agent manage projects, deployments, and logs\\nnpx -y add-mcp https://mcp.vercel.com -g\"\n    },\n    {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"claim\": \"Access tokens can be created and managed in account settings.\",\n      \"quote\": \"Create and manage Access Tokens in your\\naccount settings\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"quote\": \"Vercel Access Tokens are required to authenticate and use the Vercel API.\"\n    },\n    \"access\": {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"quote\": \"Create and manage Access Tokens in your\\naccount settings\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://vercel.com/docs/rest-api\",\n      \"quote\": \"The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL\\nhttps://api.vercel.com\\nand follow the REST architecture.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://vercel.com/docs\",\n      \"quote\": \"Vercel MCP\\nBeta\\nLet your agent search the docs, manage projects and deployments, and query Web Analytics through the Vercel MCP server.\"\n    }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint_url": "https://vercel.com/docs/rest-api",
+    "one_liner": "Vercel REST API enables programmatic interaction with your Vercel account, allowing deployment of web applications, management of domains, deployments, secrets, and environment variables.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Vercel Access Tokens are used to authenticate and use the Vercel API, included in the Authorization header as a Bearer token."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Users can create and manage Access Tokens in their account settings."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": null,
+      "notes": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL and follows the REST architecture."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://mcp.vercel.com",
+      "notes": "The Vercel MCP server allows agents to search docs, manage projects and deployments, and query Web Analytics."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "claim": "Vercel Access Tokens are required for authentication via Bearer token.",
+        "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "claim": "The API follows the REST architecture.",
+        "quote": "and follow the REST architecture.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://vercel.com/docs",
+        "claim": "The Vercel MCP server URL is provided for agents.",
+        "quote": "# Let your agent manage projects, deployments, and logs\nnpx -y add-mcp https://mcp.vercel.com -g",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "claim": "Access tokens can be created and managed in account settings.",
+        "quote": "Create and manage Access Tokens in your\naccount settings",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://vercel.com/docs/rest-api",
+        "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API."
+      },
+      "access": {
+        "url": "https://vercel.com/docs/rest-api",
+        "quote": "Create and manage Access Tokens in your\naccount settings"
+      },
+      "api_surface": {
+        "url": "https://vercel.com/docs/rest-api",
+        "quote": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL\nhttps://api.vercel.com\nand follow the REST architecture."
+      },
+      "mcp": {
+        "url": "https://vercel.com/docs",
+        "quote": "Vercel MCP\nBeta\nLet your agent search the docs, manage projects and deployments, and query Web Analytics through the Vercel MCP server."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T04:34:39.448213+00:00"
+}

@@ -1,0 +1,219 @@
+{
+  "app": "higgsfield",
+  "number": 97,
+  "category": "AI, Research and Media-native",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T05:13:25.013843+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://higgsfield.ai/cli\",\n    \"https://higgsfield.ai\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://higgsfield.ai/cli",
+    "https://higgsfield.ai",
+    "https://docs.higgsfield.ai/",
+    "https://developer.higgsfield.ai/",
+    "https://developers.higgsfield.ai/",
+    "https://api.higgsfield.ai/",
+    "https://higgsfield.ai/docs",
+    "https://higgsfield.ai/developers",
+    "https://higgsfield.ai/api",
+    "https://higgsfield.ai/developer"
+  ],
+  "second_hop_considered": [
+    "https://higgsfield.ai/pricing",
+    "https://higgsfield.ai/contact",
+    "https://higgsfield.ai/creator-partnership-program",
+    "https://docs.higgsfield.ai/docs/authentication",
+    "https://docs.higgsfield.ai/docs/api-reference/overview",
+    "https://docs.higgsfield.ai/docs/api-reference/requests/get-request-status",
+    "https://docs.higgsfield.ai/docs/api-reference/requests/cancel-a-queued-request",
+    "https://docs.higgsfield.ai/docs/quickstart",
+    "https://docs.higgsfield.ai/docs/how-to/sdk"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.higgsfield.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.higgsfield.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.higgsfield.ai/",
+      "reason": "HTTP 405",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://higgsfield.ai/docs",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://higgsfield.ai/developers",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://higgsfield.ai/pricing",
+      "reason": "page too thin (53 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://higgsfield.ai/cli",
+      "requested_url": "https://higgsfield.ai/cli",
+      "status": 200,
+      "title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://higgsfield.ai",
+      "requested_url": "https://higgsfield.ai",
+      "status": 200,
+      "title": "Higgsfield AI \u2014 AI-native creative suite",
+      "chars": 3464,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs",
+      "requested_url": "https://docs.higgsfield.ai/",
+      "status": 200,
+      "title": "Higgsfield API - Higgsfield API Docs",
+      "chars": 2090,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://higgsfield.ai/contact",
+      "requested_url": "https://higgsfield.ai/contact",
+      "status": 200,
+      "title": "Contacts \u2022 Higgsfield",
+      "chars": 283,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-partnership-program",
+      "requested_url": "https://higgsfield.ai/creator-partnership-program",
+      "status": 200,
+      "title": "Creator Partnership Program: Apply Now | Higgsfield",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "requested_url": "https://docs.higgsfield.ai/docs/authentication",
+      "status": 200,
+      "title": "Authentication - Higgsfield API Docs",
+      "chars": 1286,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/api-reference/overview",
+      "requested_url": "https://docs.higgsfield.ai/docs/api-reference/overview",
+      "status": 200,
+      "title": "API reference - Higgsfield API Docs",
+      "chars": 593,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Higgsfield provides a public REST API and Model Context Protocol (MCP) server for generative image and video models.\",\n  \"auth\": {\n  \"method\": \"api_key\",\n  \"notes\": \"Uses a key ID and secret sent in the Authorization header as 'Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET'.\"\n  },\n  \"access\": {\n  \"tier\": \"self_serve\",\n  \"notes\": \"Developers can create and manage credentials directly in the Higgsfield Console.\"\n  },\n  \"api_surface\": {\n  \"rest\": true,\n  \"graphql\": false,\n  \"webhooks\": true,\n  \"sdks\": [\n    \"Python\",\n    \"TypeScript\"\n  ],\n  \"notes\": \"Provides a REST API with request endpoints, status checking, and webhooks.\"\n  },\n  \"mcp\": {\n  \"exists\": true,\n  \"url\": null,\n  \"notes\": \"Higgsfield provides an MCP server supporting agents like Claude, OpenClaw, and Hermes Agent.\"\n  },\n  \"evidence\": [\n  {\n    \"url\": \"https://higgsfield.ai/cli\",\n    \"claim\": \"Higgsfield uses MCP (Model Context Protocol) to let AI agents connect and run tasks.\",\n    \"quote\": \"Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.\"\n  },\n  {\n    \"url\": \"https://higgsfield.ai/cli\",\n    \"claim\": \"No API key is needed when connecting via MCP.\",\n    \"quote\": \"Do I need an API key? No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.\"\n  },\n  {\n    \"url\": \"https://docs.higgsfield.ai/docs\",\n    \"claim\": \"The platform provides REST endpoints and supports polling or webhooks for asynchronous results.\",\n    \"quote\": \"Higgsfield provides one integration point for generative media models. Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes.\"\n  },\n  {\n    \"url\": \"https://docs.higgsfield.ai/docs/authentication\",\n    \"claim\": \"API requests require an API key consisting of a key ID and secret.\",\n    \"quote\": \"Create and manage API credentials in Higgsfield Console. Each credential consists of a key ID and a secret.\"\n  },\n  {\n    \"url\": \"https://docs.higgsfield.ai/docs\",\n    \"claim\": \"Python and TypeScript SDKs are available for building prototypes.\",\n    \"quote\": \"Use the Python or TypeScript SDK to submit a request and wait for its result.\"\n  }\n  ],\n  \"support\": {\n  \"auth\": {\n    \"url\": \"https://docs.higgsfield.ai/docs/authentication\",\n    \"quote\": \"Create and manage API credentials in Higgsfield Console. Each credential consists of a key ID and a secret.\"\n  },\n  \"access\": {\n    \"url\": \"https://docs.higgsfield.ai/docs\",\n    \"quote\": \"Create and manage server-side credentials in Higgsfield Console.\"\n  },\n  \"api_surface\": {\n    \"url\": \"https://docs.higgsfield.ai/docs\",\n    \"quote\": \"Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes.\"\n  },\n  \"mcp\": {\n    \"url\": \"https://higgsfield.ai/cli\",\n    \"quote\": \"Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.\"\n  }\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint_url": "https://higgsfield.ai/cli",
+    "one_liner": "Higgsfield provides a public REST API and Model Context Protocol (MCP) server for generative image and video models.",
+    "auth": {
+      "method": "api_key",
+      "notes": "Uses a key ID and secret sent in the Authorization header as 'Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET'."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can create and manage credentials directly in the Higgsfield Console."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": false,
+      "webhooks": true,
+      "sdks": [
+        "Python",
+        "TypeScript"
+      ],
+      "notes": "Provides a REST API with request endpoints, status checking, and webhooks."
+    },
+    "mcp": {
+      "exists": true,
+      "url": null,
+      "notes": "Higgsfield provides an MCP server supporting agents like Claude, OpenClaw, and Hermes Agent."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (api_key) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://higgsfield.ai/cli",
+        "claim": "Higgsfield uses MCP (Model Context Protocol) to let AI agents connect and run tasks.",
+        "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://higgsfield.ai/cli",
+        "claim": "No API key is needed when connecting via MCP.",
+        "quote": "Do I need an API key? No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs",
+        "claim": "The platform provides REST endpoints and supports polling or webhooks for asynchronous results.",
+        "quote": "Higgsfield provides one integration point for generative media models. Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/authentication",
+        "claim": "API requests require an API key consisting of a key ID and secret.",
+        "quote": "Create and manage API credentials in Higgsfield Console. Each credential consists of a key ID and a secret.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs",
+        "claim": "Python and TypeScript SDKs are available for building prototypes.",
+        "quote": "Use the Python or TypeScript SDK to submit a request and wait for its result.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://docs.higgsfield.ai/docs/authentication",
+        "quote": "Create and manage API credentials in Higgsfield Console. Each credential consists of a key ID and a secret."
+      },
+      "access": {
+        "url": "https://docs.higgsfield.ai/docs",
+        "quote": "Create and manage server-side credentials in Higgsfield Console."
+      },
+      "api_surface": {
+        "url": "https://docs.higgsfield.ai/docs",
+        "quote": "Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes."
+      },
+      "mcp": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools."
+      }
+    },
+    "unsupported_fields": [],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T05:13:35.866788+00:00"
+}

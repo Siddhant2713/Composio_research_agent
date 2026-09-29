@@ -1,0 +1,352 @@
+===== https://www.waterfall.io/
+TITLE: Waterfall | One B2B data solution to connect them all
+ACCESSED: 2026-09-28
+
+GTM & Revenue leaders at top B2B companies use Waterfall
+Why Waterfall?
+3 reasons (plus a bonus) why these brands choose Waterfall
+1
+Quality
+1
+Quality
+Before
+Incomplete & Outdated Data
+You’re working with outdated information. Emails bounce and phone numbers disconnect. Contact profiles don’t match reality.
+After
+Cleaned, Structured and Verified Data
+Every profile verified in real-time. What you see is current, accurate and ready to use.
+2
+2
+Before
+Missing Contact Coverage
+You look for complete profiles across multiple platforms. One vendor has North America covered but not Europe, others give you emails but no phones - leaving you with prospects you can't actually reach.
+After
+Global Contact Coverage
+You pull verified contact data that's comprehensive globally. Email, phone, title, company - all accurate and together in one place.
+3
+Cost
+3
+Cost
+Before
+Multiple Vendors, Multiple Costs & Integrations
+You pay for the same missing, partial or inaccurate data multiple times across vendors. Credits expire and subscriptions require minimum commitments regardless of actual usage.
+After
+One Contract & Integration, Complete Access
+Pay only for what you actually use. No monthly commitments or short-term credit expiration - scale up or down whenever you need.
++
+Support
++
+Support
+Before
+Pending Tickets. Ignored Emails. Limited Product Input
+You submit tickets and wait days for answers. Your emails get buried in their inbox. Feature requests are prioritized by contract size, not urgency or potential business impact.
+After
+Direct Access to Founders & Engineers
+Message our team directly in Slack - no tickets, no waiting. Your feedback turns into features in days, and we prioritize by impact, not account size.
+Use cases
+How teams use Waterfall
+From GTM engineers and RevOps to PLG teams, here are the most effective ways our customers use Waterfall to improve data coverage and quality.
+curl --location 'https://api.waterfall.io/v1/prospector' \
+--header 'Content-Type: application/json' \
+--header 'x-waterfall-api-key: YOURKEY' \
+--data '{
+    "domain": "stripe.com",
+    "title_filter": "(marketing director)",
+    "verified_only":false,
+   
+   
+    "limit": 50
+}'
+View API doc
+Prospector API
+curl --location 'https://api.waterfall.io/v1/prospector' \
+--header 'Content-Type: application/json' \
+--header 'x-waterfall-api-key: YOURKEY' \
+--data '{
+    "domain": "stripe.com",
+    "title_filter": "(marketing director)",
+    "verified_only":false,
+   
+   
+    "limit": 50
+}'
+View API doc
+Contact Enrichment API
+curl --location 'https://api.waterfall.io/v1/prospector' \
+--header 'Content-Type: application/json' \
+--header 'x-waterfall-api-key: YOURKEY' \
+--data '{
+    "domain": "stripe.com",
+    "title_filter": "(marketing director)",
+    "verified_only":false,
+   
+   
+    "limit": 50
+}'
+View API doc
+Phone Enrichment API
+curl --location 'https://api.waterfall.io/v1/prospector' \
+--header 'Content-Type: application/json' \
+--header 'x-waterfall-api-key: YOURKEY' \
+--data '{
+    "domain": "stripe.com",
+    "title_filter": "(marketing director)",
+    "verified_only":false,
+   
+   
+    "limit": 50
+}'
+View API doc
+Job Changes API
+curl --location 'https://api.waterfall.io/v1/prospector' \
+--header 'Content-Type: application/json' \
+--header 'x-waterfall-api-key: YOURKEY' \
+--data '{
+    "domain": "stripe.com",
+    "title_filter": "(marketing director)",
+    "verified_only":false,
+   
+   
+    "limit": 50
+}'
+View API doc
+Contact Enrichment API
+API Overview
+Modular & Scalable GTM API
+Everything you need to build reliable data pipelines - from flexible architecture to dedicated developer support
+Unified data schema
+One clean, consistent data format for all your contacts and target accounts. No more field mapping headaches or schema changes.
+High rate limits
+Unlike typical waterfall enrichment vendors who struggle with rate limits, we handle high volumes seamlessly - whether you need 100 or 1,000 requests per minute.
+99.99% uptime
+True 99.99% uptime with built-in redundancy. With 30+ data vendors, we keep running even if multiple providers go down.
+Dedicated onboarding
+Direct access to our engineering team via Slack. Get implementation help, custom solutions, and <1hr response times from the people who built it.
+Transparent pricing
+Usage-based pricing with no surprises. Pay for what you use, scale as you grow, no hidden fees.
+CURL
+PYTHON
+NODE
+Quick start
+Copy
+curl --location 'https://api.waterfall.io/v1/prospector' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: your_key' \
+--data '{
+  "domain": "salesforce.com",
+  "title_filters": "(chief executive officer) OR (chief marketing officer) OR (chief operating officer) OR (chief revenue officer)",
+  "location_countries": ["United States","France","Canada"],
+  "limit": 10
+}'
+import requests
+
+url = "https://api.waterfall.io/v1/prospector"
+headers = {
+  "Content-Type": "application/json",
+  "x-api-key": "your_key"
+}
+data =
+
+===== https://www.waterfall.io/pricing
+TITLE: Pricing | How Waterfall.io pricing works
+ACCESSED: 2026-09-28
+
+The model
+Three rules that decide what you pay
+A miss costs nothing
+Billing
+We are charged by our vendors on every request we make on your behalf, including the ones that come back empty. You are not. A credit is deducted only when we hand back a verified result, so the risk of a low-coverage file sits with us rather than with your budget.
+One credit covers the whole waterfall
+A single request may pass through several of our 30+ sources before one returns a verified answer. You are charged once, for the answer. This is the structural difference from buying vendors directly, where each contract you add multiplies your cost per record whether or not that vendor was the one that found it.
+Rates are quoted against your data
+Commercials
+Per-credit rates depend on the endpoints you use and the volume you commit to. We quote after running a benchmark on a sample of your own records, because a list price set against someone else's file tells you nothing about what your file will cost.
+Why there is no public rate card
+Straight answer
+Because a per-record price is not comparable across vendors and we would rather not pretend otherwise. Two providers quoting the same cent-per-email can differ by a factor of three on what fraction of your file they actually resolve, and the cheaper one is usually the more expensive one once you divide by results. The number that matters is your cost per verified result on your records, and the only honest way to produce it is to run both against the same file. We will do that before quoting, and we will show you the working.
+What moves your cost per result
+The identifier you send
+A professional email or a LinkedIn URL resolves more often, and in fewer hops, than a name plus a company domain. Better inputs mean fewer paid-for misses upstream and a lower blended cost.
+Which endpoints you call
+Mobile numbers cost more than emails because the underlying data costs more. Job-change checks are cheap to run at scale because unchanged contacts are never billed.
+How hard your records are
+Enterprise contacts in North America resolve on the first source. Smaller companies, non-standard email patterns and coverage outside a vendor's home region go deeper into the waterfall — the same price to you, a different cost to us.
+What you commit to
+Per-credit rates fall with committed volume and term. Platforms reselling enrichment downstream are priced differently from teams enriching their own CRM, because the volume shape and the support load are different.
+Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.
+
+===== https://docs.waterfall.io/v1/introduction
+TITLE: Introduction - Waterfall.io API Documentation
+ACCESSED: 2026-09-28
+
+The Waterfall API is available at
+https://api.waterfall.io
+. All requests require an API key in the
+x-api-key
+header.
+Building with a coding agent
+— Claude Code, Codex, Cursor, Devin, or similar —
+or are one yourself?
+Start at
+Agent Skills
+and point it at the
+Waterfall API Skills repo
+, whether you want to call the API directly or generate integration code you own.
+​
+Endpoints
+Endpoint
+Type
+Description
+Prospector
+Async
+Find contacts at a target company by title and location filters. Returns emails, phones (optional), and employment history.
+Search Contact
+Sync
+Search contacts by company identity, title, department, seniority, or hire date. Returns profile data — contact channels not included.
+Search Company
+Sync
+Search companies by industry, headquarters country, and headcount range.
+Contact Enrichment
+Async
+Enrich a contact by LinkedIn, email, or name + domain. Returns verified email, phone (optional), title, and employment history.
+Phone Enrichment
+Async
+Find mobile and direct-dial numbers for a contact.
+Company Enrichment
+Async
+Enrich a company by domain, LinkedIn, or name. Returns full company profile.
+Company Reveal
+Sync
+Reveal company information from an IPv4 address. Beta.
+Company Titles
+Sync
+Get all active job titles at a company by domain or LinkedIn. Ideal for flexible title targeting and use alongside Search Contact title lists. Beta.
+Job Change Detection
+Sync
+Check if a contact is still at a given company. Returns status and a profile snapshot.
+Email Verification
+Sync
+Verify an email address and return deliverability status.
+Webhook JWKS
+Sync
+Fetch Ed25519 public keys for verifying signed webhook deliveries.
+Account Reporting
+Sync
+Retrieve usage counters at the account and key level.
+API Key Management
+Sync
+Create and manage sub-keys under a master key.
+
+===== https://www.waterfall.io/product/prospector
+TITLE: Prospector | Find contacts at your target accounts
+ACCESSED: 2026-09-28
+
+Methodology
+What makes Waterfall different
+Global Contact Coverage
+Our aggregation methodology combines 30+ different vendors, giving us superior coverage across all geographies and sectors. Whether you're targeting established or emerging markets, we can find contact data worldwide.
+Find Decision-Makers Instantly
+Quality
+Search for contacts at target accounts by job title and get verified emails and mobile numbers in a single real-time request. No more manual list building or switching between platforms - all contacts for any account delivered in one API response.
+Always accurate
+Accuracy
+Our real-time search engine coupled with Waterfall enrichment and verifications ensures contacts are always current and accurate - not outdated profile data from weeks ago.
+Pay Only for Profiles with Verified Emails
+Pricing
+We offer outcome-based pricing - Waterfall deducts credits only when we find profiles with verified emails, even though we incur costs fetching data from our vendors. You never pay for inaccurate information.
+What teams build with the Prospector API
+Scalable Contact Engine
+Build highly scalable contact search & discovery engine for your automated outbound motion
+CRM Contact Injection
+Find all relevant contacts at a given account and send them to your CRM for your reps to prospect, replacing Sales Nav or manual contact search
+Contact Monitoring
+Regularly check for net new contacts at target accounts by excluding existing contacts from your CRM
+Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.
+
+===== https://www.waterfall.io/product/contact-enrich
+TITLE: Contact enrich | Verified emails & profiles, instantly
+ACCESSED: 2026-09-28
+
+Methodology
+What makes Waterfall different
+Real-time Email Verification
+Quality
+Every email is verified at the moment of your request, not from cached databases. This ensures the lowest possible bounce rates for your campaigns.
+Unmatched Global Data Coverage from 30+ Sources
+Certain vendors specialize in specific regions or industries. Our aggregation methodology combines their strengths to deliver superior coverage across all geographies and sectors.
+Superior Email and Profile Finding Accuracy
+Accuracy
+5+ years of data processing experience means we handle every edge case, ensuring you get accurately matched data, not just technically valid emails or profiles that lead nowhere.
+Pay Only for Accurate Results.
+Pricing
+We offer outcome-based pricing — Waterfall deducts credits only when we return a verified email or a matched profile, even though we incur costs querying our vendors on every request. Empty results are free. One credit covers the whole waterfall however many sources it takes to reach the answer, so your cost per result falls as coverage rises instead of multiplying with every vendor you add.
+What teams build with the Contact Enrichment API
+Real-time Email Discovery
+Find real-time verified emails for prospects using their social media profiles or names and domains (Outbound)
+Auto Form Enrichment
+Auto enrich form submissions using emails for lead scoring (MQLs)
+MQL & Signup Profiling
+Find contact profiles behind the MQLs or sign ups both for personal and business emails (PLG)
+Event List Enrichment
+Enrich partial event and exhibition attendee lists to transform basic contact details into complete, actionable profiles
+Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.
+
+===== https://www.waterfall.io/product/contact-search
+TITLE: Contact search | Search any contact, at any company
+ACCESSED: 2026-09-28
+
+The core job
+How to turn a personal email address into a business profile
+Send the address you already have to a resolution API rather than matching it against a static database. Contact Search accepts a personal email — Gmail, Outlook, or any consumer domain — and returns the person behind it: current company, job title, seniority, LinkedIn profile and a verified work email. That single step is what turns an anonymous self-serve signup into a lead you can route, score and assign.
+Start from whatever identifier you actually have
+Most search tools require the one identifier they happen to index, which is rarely the one sitting in your record. Contact Search resolves from a personal email, a professional email, a social profile URL, or a name plus domain — whichever your row contains. The hardest and most common case is the personal address left behind by a self-serve signup, and it is the case this endpoint was built for.
+Resolved against live sources, then verified
+Accuracy
+A match is only useful if the person is still where the record says they are. Search runs against live sources rather than a periodic snapshot, and any email returned is verified before delivery — so a resolved profile is one you can route, score and write back to the CRM without a second check.
+Pay Only for Matching Profiles
+Pricing
+We offer outcome-based pricing — Waterfall deducts credits only when we return a matching profile, even though we incur costs querying our vendors on every request. Searches that come back empty are free, and one credit covers the whole waterfall however many sources it takes to resolve the identifier you sent.
+Four jobs that start with an identifier you cannot use yet
+Signup routing and lead scoring
+Self-serve signups arrive as personal Gmail and Outlook addresses with no company attached. Resolve them to a company, title and seniority and routing, scoring and territory assignment become possible at all — rather than everyone landing in the same unqualified bucket.
+Reverse lookup on unknown senders
+A form fill or a reply arrives from an address nobody recognises. Resolve it to a person, a title and a company before a rep spends time qualifying it by hand.
+Gap-filling on partial records
+Rows that arrived from an event list, a legacy import or an acquisition often carry one usable field and nothing else. Search resolves from whichever identifier survived, rather than requiring the one you no longer have.
+Identity resolution for AI agents
+An agent cannot reason about an account until it knows who it is looking at. One call, one schema, whatever identifier the workflow happens to hold — and a deterministic answer rather than a guess the model has to defend.
+Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.
+
+===== https://docs.waterfall.io/v1/authentication
+TITLE: Authentication - Waterfall.io API Documentation
+ACCESSED: 2026-09-28
+
+All requests are authenticated using
+x-api-key
+.
+x-api-key:
+<
+your-api-ke
+y
+>
+Base API URL is
+https://api.waterfall.io/v1/
+for v1 endpoints. Account reporter v2 uses
+/v2/account
+.
+​
+Best practices
+Store keys in environment variables.
+Rotate keys periodically.
+Use dedicated keys per team/workflow when possible.
+
+===== https://docs.waterfall.io/v1/book-demo
+TITLE: Get API & Sales Support - Waterfall.io API Documentation
+ACCESSED: 2026-09-28
+
+Get API & Sales Support - Waterfall.io API Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content

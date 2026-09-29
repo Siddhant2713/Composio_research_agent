@@ -1,0 +1,408 @@
+===== https://developers.pinterest.com
+TITLE: Pinterest Developers
+ACCESSED: 2026-09-28
+
+Pinterest Developers
+Skip to content
+One API to seamlessly integrate with Pinterest
+Securely plan content, manage ads, upload product feeds, and more.
+Get started
+Launch faster than ever!
+Pinterest MCP is on the way
+Learn More
+Launch faster than ever!
+Pinterest MCP is on the way
+Learn More
+Use cases
+Track Conversions
+Maximize conversion visibility on Pinterest by using Pinterest Conversions API, Pinterest Tag, or uploading conversion data.
+Create content
+Build apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards) on Pinterest.
+Build & Manage ads
+Use Pinterest API to manage ad campaigns, set up targeting, and report on campaign performance.
+Manage product catalogs
+Pinterest API for Shopping allows you to create and manage your product catalogs on Pinterest as well as create, manage and report on shopping ads.
+Analyze Pinterest data
+Pinterest API helps you ingest analytics data for content and ads directly from Pinterest into your data warehouse or analytics tools.
+Success stories
+Visit California shares personalized travel tips with Pinterest API
+Read more
+Join our community of developers
+Check it out
+Build faster with the Pinterest MCP
+Learn More
+Ready to build?
+Get started
+
+===== https://developers.pinterest.com/docs/getting-started/connect-app/
+TITLE: Pinterest Developers
+ACCESSED: 2026-09-28
+
+Pinterest Developers
+Skip to content
+Connect app
+Use with AI
+There are a few steps you need to take in order to connect your first app.
+Login or
+create a business account
+. This is the account you will use to administer your app.
+Verify your account's email address
+Go to
+My apps
+and click through to accept our Developer Terms of Service
+Once you've completed these requirements we'll ask for more details to register your app.
+Register your app details to get your app ID and secret key
+While logged into the Pinterest account you want to use to administer your app complete the following steps:
+Select
+Connect app
+and complete our request form with your app information.
+Submit your request for trial access.
+Application requests are reviewed each business day. As soon as your app has been reviewed you will receive an email notification letting you know if your app has been approved or denied access.
+If your app is approved for
+Trial access
+, you can log into your account and manage your app details on your My apps page. In your My apps view, you'll be able to find details such as your unique app ID and app secret.
+Review our guide on access tiers
+for more details on the application process and what to expect with each level of access.
+Configure your app's redirect URI
+We accept multiple redirect URIs when configuring your app. The value given for redirect_uri during OAuth authorization will be matched against the redirect URIs listed in your app profile. They must be an exact match to avoid any exceptions. The specified redirect URI must not cause the responding server to send a secondary redirect to yet another URI.
+Go to
+My apps
+and select
+Manage
+for the app you want to configure.
+On the
+Configure
+tab scroll to the
+Redirect URIs
+section and enter your desired URI
+Select
+Add
+to save your changes
+Build a working authentication flow based on OAuth 2
+For full details on the OAuth process, review our guide on
+Scopes & Authentication
+.
+The basic flow is as follows:
+Make an authorization request to our OAuth page in your browser
+Handle the OAuth redirect to the appropriate location (e.g. localhost for testing)
+Exchange the authorization code for an access token
+Store the access token and refresh it as needed
+Helpful resources
+We offer a range of Developer tools to help you get started with the Pinterest API quickly.
+API Quickstart
+: Quickly get code samples and scripts with our API quickstart repo.There you can:
+Put your app ID and app secret key in an environment script file
+Run the sample environment set-up script and verify the results
+Python SDK
+: Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling. Check it out here
+Product limited tokens
+: Once your app is approved for Trial access you can generate a token to test the API without setting up the Oauth flow.Test tokens expire after 24 hours and allow you to explore certain endpoints faster.
+Sandbox
+: Our sandbox environment allows you to make test calls without impacting the Pinterest product environment.
+Learn more about which endpoints support Sandbox and our Shopping Sandbox environment
+.
+NEXT
+Set up authentication and authorization
+Was this page helpful?
+
+===== https://developer.pinterest.com/
+TITLE: Pinterest Developers
+ACCESSED: 2026-09-28
+
+Pinterest Developers
+Skip to content
+One API to seamlessly integrate with Pinterest
+Securely plan content, manage ads, upload product feeds, and more.
+Get started
+Launch faster than ever!
+Pinterest MCP is on the way
+Learn More
+Launch faster than ever!
+Pinterest MCP is on the way
+Learn More
+Use cases
+Track Conversions
+Maximize conversion visibility on Pinterest by using Pinterest Conversions API, Pinterest Tag, or uploading conversion data.
+Create content
+Build apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards) on Pinterest.
+Build & Manage ads
+Use Pinterest API to manage ad campaigns, set up targeting, and report on campaign performance.
+Manage product catalogs
+Pinterest API for Shopping allows you to create and manage your product catalogs on Pinterest as well as create, manage and report on shopping ads.
+Analyze Pinterest data
+Pinterest API helps you ingest analytics data for content and ads directly from Pinterest into your data warehouse or analytics tools.
+Success stories
+Visit California shares personalized travel tips with Pinterest API
+Read more
+Join our community of developers
+Check it out
+Build faster with the Pinterest MCP
+Learn More
+Ready to build?
+Get started
+
+===== https://www.pinterest.com/docs/
+TITLE: Pat Johnson (docs) - Profile | Pinterest
+ACCESSED: 2026-09-28
+
+Pat Johnson (docs) - Profile | Pinterest
+Pat Johnson
+docs
+Follow
+Created
+Saved
+Explore
+When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.
+Log in
+Sign up
+Desserts
+,
+147
+Pins
+·
+,
+3mo
+Food
+,
+120
+Pins
+·
+,
+3mo
+Glass
+,
+41
+Pins
+·
+,
+3mo
+Urn waterfall
+,
+0
+Pins
+·
+,
+3mo
+Garden art
+,
+19
+Pins
+·
+,
+2y
+Crafts
+,
+51
+Pins
+·
+,
+2y
+Wall hangings
+,
+28
+Pins
+·
+,
+2y
+Quilting
+,
+24
+Pins
+·
+,
+2y
+Christmas
+,
+32
+Pins
+·
+,
+2y
+Painting
+,
+11
+Pins
+·
+,
+2y
+
+===== https://business.pinterest.com/en-in/pinterest-business-partners/
+TITLE: Pinterest Partners: Work With Approved Partners | Pinterest Business
+ACCESSED: 2026-09-28
+
+Work with experts in Pinterest media strategy, media buying and campaign management.
+Get help with onboarding first-party data so that you can use advanced targeting features.
+Build a stronger Pinterest presence with tools such as Pin schedulers and engagement dashboards.
+Scale your success with creative tools or work with an approved Pinterest design expert.
+Dig deeper into campaign performance with sophisticated solutions and custom reports.
+Make it easier for people to shop for your products with tools such as feed managers and custom experiences.
+Filter by
+Speciality
+Service model
+Pricing model
+
+===== https://business.pinterest.com/en-in/
+TITLE: Pinterest For Business: How to Market Your Brand | Pinterest Business
+ACCESSED: 2026-09-28
+
+Pinterest For Business: How to Market Your Brand | Pinterest Business
+Awareness
+Consideration
+Leads and sales
+Whether you’re new to Pinterest ads or hoping to optimise existing campaigns, we’re here to help. Talk to our account team for personalised tips and new campaign ideas.
+Request meeting
+→
+Pinterest Academy
+offers tactical, in-depth training—powered by our in-house experts. You can take courses, watch webinars or earn badges to show off your skills. Get more from your advertising and grow your success.
+Enrol now
+↗
+How do I use Pinterest for business?
+First,
+get a free business account
+. Then, take a look at our
+guide to getting started
+for tips about business tools and features.
+What is a business account?
+People use Pinterest to discover new brands and shop for their products. With a business account, you’ll have more tools to help reach these audiences and grow your business. For example, you’ll gain access to ads, analytics and custom audience insights. Business accounts are free, and you can set your own budget if you decide to run ads.
+Should I have a separate Pinterest account for my business?
+A business account gives you access to powerful tools such as ads and analytics. These features aren’t available on a standard Pinterest account, so you’ll need to make sure that you’re using a business account for any marketing goals. If you already have a personal account, you can
+convert it
+to a business account in a few simple steps. Or, you can
+sign up for a new account
+if you prefer to keep your personal and work accounts separate.
+What are the benefits of using Pinterest for my business?
+People come to Pinterest with an open mind. They’re excited to find new brands and products to shop for. With a Pinterest business account, you can get in front of the audience that you care about at any stage along this journey—then help to guide them into purchasing.
+Is it easy to sell on Pinterest?
+Shopping features are designed into many parts of our platform. This means that your products will fit right into people’s experience, instead of feeling out of place. You can learn more about shopping ads and products on our
+dedicated page
+.
+
+===== https://opensource.pinterest.com/
+TITLE: Open Source | Pinterest Open Source
+ACCESSED: 2026-09-28
+
+Open Source | Pinterest Open Source
+PINRemoteImage
+PINRemoteImage is the fast image downloading, caching and processing library which powers the Pinterest iOS app.
+PINCache
+PINCache is a performant disk and memory cache all rolled up into one.
+PINFuture
+PINFuture is an Objective-C implementation of the asynchronous primitive called "Future". It stands out by preserving type safety using Objective-C generics.
+Plank
+Plank is a command-line tool for generating robust immutable models from JSON Schemas for iOS, Android and Web. It will save you time writing boilerplate and eliminate model errors as your application scales in complexity.
+Texture
+Texture is an iOS framework built on top of UIKit that keeps even the most complex user interfaces smooth and responsive.
+XCHammer
+XCHammer generates Xcode projects from a Bazel Workspace.
+Gestalt
+Gestalt is a set of React UI components that enforces Pinterest’s design language. It is used to streamline communication between designers and developers by enforcing fundamental UI standards.
+pymemcache
+A comprehensive, fast, pure-Python memcached client.
+Knox
+Knox is a service for storing and rotation of secrets, keys and passwords used by other services.
+Secor
+Secor is a service persisting Kafka logs to Amazon S3, Google Cloud Storage, Microsoft Azure Blob Storage and Openstack Swift.
+Teletraan
+Teletraan is Pinterest's deploy system. It deploys hundreds of Pinterest internal services, supports tens of thousands of hosts and has been running in production for years.
+DoctorKafka
+DoctorKafka is a service for Kafka cluster auto healing and workload balancing. DoctorKafka can automatically detect broker failure and reassign the workload on the failed nodes to other nodes.
+Singer
+Singer is a high performance logging agent for uploading logs to Kafka which can be extended to support writing to other message transporters or storage systems.
+SnapPass
+A webapp that lets you share passwords securely; it's like Snapchat... for passwords.
+Querybook
+Querybook is a Big Data Querying UI, combining collocated table metadata and a simple notebook interface.
+
+===== https://www.pinterest.com/pinterest/
+TITLE: Pinterest (pinterest) - Profile | Pinterest
+ACCESSED: 2026-09-28
+
+Pinterest (pinterest) - Profile | Pinterest
+Explore
+When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.
+Log in
+Sign up
+Pinterest
+Christmas sweaters and how to style them
+Pinterest
+,
+19
+Pins
+·
+,
+1d
+Gifts that embrace the art of play
+Pinterest
+,
+34
+Pins
+·
+,
+1d
+Festive decor ideas for your first home
+Pinterest
+,
+62
+Pins
+·
+,
+1d
+Give the gift of experience
+Pinterest
+,
+47
+Pins
+·
+,
+2d
+Holiday decor ideas
+Pinterest
+,
+189
+Pins
+·
+,
+2d
+Try a new holiday manicure
+Pinterest
+,
+157
+Pins
+·
+,
+2d
+Your ultimate holiday starter pack
+Pinterest
+,
+123
+Pins
+·
+,
+2d
+Be a kitchen witch
+Pinterest Trends
++ 1
+,
+62
+Pins
+·
+,
+2mo
+Fall wallpapers
+Aesthetics
++ 1
+,
+76
+Pins
+·
+,
+3d
+Savory flavors of Latin America
+Food
++ 1
+,
+46
+Pins
+·
+,
+2w

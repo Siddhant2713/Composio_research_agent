@@ -1,0 +1,307 @@
+===== https://grain.com
+TITLE: Grain | The AI Notetaker Built for Growing Teams
+ACCESSED: 2026-09-28
+
+300+ reviews
+250+ testimonials
+The AI notetaker for
+agents
+and teams
+Grain captures and enriches your meetings, then delivers them to Claude, ChatGPT, or any AI tool so your agents can do the work. Start recording in minutes.
+Get started - free forever
+Book my demo
+Free forever
+Bots optional
+No credit card required
+Works with:
+Want help onboarding your team?
+Top teams use Grain to power their AI
+SOC 2 audited
+GDPR compliant
+Everything your AI agents and team need from meetings
+Grain is free to use, simple to set up, and cost-effective for your entire company.
+Universal capture
+Capture every meeting, everywhere.
+Context for AI
+Enrich your transcripts with the full picture, not just raw text.
+AI agent integrations
+Power your agents to do the work after the meeting.
+Team collaboration
+Accelerate team learning and alignment.
+Universal capture
+Capture your meetings, on any platform, with or without a bot
+Bot-less transcription
+Grain transcribes your computer's audio without meeting bots joining your call.
+Video recording with bots
+Get video recordings with the Grain bot in the meeting even when you can't attend.
+Capture rules
+Type notes, tag important moments, or clip segments to perfect your insights during your meeting.
+Context for AI
+Give your agents the full picture behind every meeting
+Enriched transcripts
+Transcripts with participant and cross-meeting context. Available in 100+ languages in clean Markdown.
+Your notes, in the context
+Add notes, clips, and action items during meetings that sync to the transcript and flow to your AI agents.
+Action-items & AI notes
+Action items and meeting summaries for every meeting shareable from Grain or sent straight to your inbox.
+AI agent integrations
+Put your meeting data to work in Claude, ChatGPT, or any AI tool
+One-click AI export
+Bulk download enriched Markdown transcripts or open them directly in Claude or ChatGPT.
+MCP Server & API
+Let your AI agents query transcripts, search across meetings, and access your full meeting history.
+Ask anything inside Grain
+Ask questions across your entire meeting library and get answers with precise citations in Grain.
+Team collaboration
+Keep your whole team in sync, automatically
+Sharing
+Share clips, projects, and full meeting recordings with teammates and clients so everyone can stay in sync.
+Teams
+Create teams for automatic group sharing. Only the right people get access automatically.
+CRM sync
+Sync notes and properties to HubSpot or Salesforce contacts and deals so your reps can skip the data entry.
+↗ Customer results
+Teams using Grain are hyper productive
+75%+
+Action items handled by agents
+Agents complete most follow-up tasks directly from Grain meeting context.
+8+
+hours saved
+Saved weekly per person
+Recaps, follow-ups, and CRM updates happen without manual work.
+3x
+faster
+From meeting to work done
+Teams finish follow-up work three times faster after each meeting.
+Based on Grain customer interviews, 2026
+Grain integrations + AI destinations
+Integrations with Claude, ChatGPT, Slack, HubSpot, Zapier, API and more make it effortless to get your meeting data wherever you need it.
+Explore Integrations
+Frequently Asked Questions
+What is Grain?
+Who is Grain for?
+How do I use Grain with my team?
+How much does Grain cost?
+What's included in the free plan?
+How much time do I save with Grain vs. manual note-taking?
+Is Grain secure and compliant?
+Do I need permission to record meetings with Grain?
+Does Grain share my data with AI providers?
+Can I delete my meetings and data from Grain?
+How do CRM integrations work?
+How does Grain compare to competitors like Fathom, Gong, or tl;dv?
+Why should we transcribe our meetings?
+What languages does Grain support?
+
+===== https://grain.com/pricing
+TITLE: Pricing | Grain
+ACCESSED: 2026-09-28
+
+Pricing
+Use Grain for free with your whole team. Upgrade for unlimited meetings, advanced AI & agent workflows, conversational intelligence, and additional features.
+‍
+Free
+View your team's meetings and try AI notes
+$0
+per seat/month
+billed annually
+$19
+per seat/month
+Get Started
+* All seats must be on Enterprise
+Everything in Starter
+20 meetings
+Popular
+Free
+View your team's meetings and try AI notes asd asdsadsadsad
+$0
+per seat/month
+billed annually
+$19
+per seat/month
+Get Started
+* All seats must be on Enterprise
+Everything in Starter
+Team performance insights
+Conversation & Revenue Intelligence
+AI Notes
+AI Notes
+Features
+Compare Plans
+Grain has everything you need and nothing you don't, without required annual contracts.
+Meet our customers
+“Grain is a coaching tool. It allows me to listen to my closers. I need the ability to see what they’re doing right or wrong so that I can coach them.”
+Tucker Hutchinson
+VP of Revenue
+Visit site ->
+"Better product than Gong/Chorus, for a fraction of the price. No brainer."
+Cailen DSa
+COO
+Visit site ->
+“Grain un-complicates call recording and conversation intelligence.”
+Colby Morgan
+Head of Sales and Customer Success
+Visit site ->
+"Been using Grain for a couple of months now on Reforge customer and course research. Capturing all the emotions and nuances adds so much depth."
+Brian Balfour
+Founder and CEO of Reforge
+Visit site ->
+“Grain makes sure that everyone has access to what our customers are saying and not just customer-facing teams.”
+Shareil Nariman
+Head of Customer Success
+Read more ->
+“As much as I love to write down lots of notes during a call, my goal as a researcher is to be highly engaging and attentive. Grain allows me to do that.”
+Emily Arciprete
+Sr. UX researcher
+Read more ->
+Frequently Asked Questions
+What is a "Workspace"?
+What are "Teams"?
+Who are "Members" in my workspace?
+What are the differences between Paid seats and Free viewer seats?
+Which team members do I pay for in my Grain workspace?
+Can I have a mix of Paid and Free viewer seats in my workspace?
+When will I get billed for my workspace?
+Can I get a refund if I remove members or cancel my plan?
+What happens if I pay for a plan but it doesn't work for me?
+Can I cancel or switch my plans anytime?
+How are my meetings shared with others?
+Can I allow others outside my workspace to view or edit my meetings?
+What meeting platforms does Grain support?
+Does Grain provide calendar support for both Google Workspace and Microsoft O365?
+What AI features does Grain include?
+Is Grain secure?
+Should I be concerned about my privacy?
+
+===== https://grain.com/conversation-intelligence
+TITLE: Win more with Grain Conversation Intelligence
+ACCESSED: 2026-09-28
+
+Sales Leaders
+Account Executives
+Sales Ops
+Customer Success
+Coach reps into
+Top Performers
+Develop top-tier sales talent by coaching with conversation data.
+Measure performance metrics and generate coaching scorecards for precise, valuable feedback your team needs.
+Stay on-top of your
+pipeline
+Drive deal momentum by integrating sales conversations with your CRM data.
+Analyze your deals with SPICED, spot winning patterns, and move more deals to closed-won.
+Give AEs their
+time back
+Generate follow-ups emails in one click using the context of your meeting.
+Instantly sync your meeting summary and SPICED data to your CRM.
+Spend
+less time
+in the CRM
+Automatically log meeting summaries, SPICED analysis, and Action Items in your CRM—so you can focus on closing deals, not updating records.
+Create & send smart
+follow-ups
+Turn conversations into conversions with AI-powered follow-ups. Generate personalized recap emails in seconds using the transcript of your meeting.
+On-demand call scoring & feedback
+See how you stack-up against best practices for each demo, and get improvement suggestions from Grain using your meeting data.
+Automate your
+CRM updates
+Keep your CRM clean and up to date—without lifting a finger.
+Automatically log meeting summaries, SPICED analysis, and next steps to use in your workflows.
+Forecast deals
+more accurately
+Monitor deal progression and identify at-risk opportunities for data-driven forecasts based on actual prospect interactions.
+Spot trends
+between Demos
+Discover what’s working—and what’s not—across your sales conversations.
+Analyze patterns from demo calls, refine messaging, and optimize your team’s approach to drive more conversions.
+Always accurate
+hand-off notes from Sales
+...even if the reps don’t do a great job.
+Automatically capture key details from demo to closing so you have the full context for each new customer.
+Organize and share
+key moments
+Share your customers love - or lack of it - across teams.
+Highlight, organize, and share customer insights to stay aligned on customer needs.
+Auto-extract
+CSAT, NPS, and more
+Seamlessly extract and organize mentions across all meetings and customers.
+Identify customer sentiment, feature requests, and success milestones all within Grain.
+Grain’s exactly what we needed. We’re paying a fraction of what Gong charged, and everything is so intuitive. It’s magic.
+Austin Jordano
+SVP of Sales @ Amplitude
+Native integrations with HubSpot, Salesforce, Zapier, Slack, and more make it effortless to share your customer meetings anywhere you need them.
+Made to work with all your favorite sales tools
+Explore Integrations
+How Grain stacks up
+Grain is best-in-class conversation intelligence software.
+Grain
+Summary Quality
+9.8
+Ease of use
+9.4
+Sales Coaching
+9.0
+Time to ROI
+<6 months
+Starting Pricing
+$15
+per user
+Commitment
+None
+Gong
+Summary Quality
+9.6
+Ease of use
+9.3
+Ease of use
+9.0
+Time to ROI
+12 months
+$100
+per user
+Starting Pricing
+Annual
+$9k min spend
+Commitment
+Clari
+Summary Quality
+9.2
+Ease of use
+9.1
+Ease of use
+8.4
+9 months
+Time to ROI
+$60
+per user
+Starting Pricing
+Annual
+$15k min spend
+Commitment
+Otter
+Summary Quality
+8.7
+Ease of use
+9.0
+Ease of use
+__
+6 months
+Time to ROI
+$10
+per user
+Starting Pricing
+None
+Commitment
+Fathom
+Summary Quality
+9.7
+Ease of use
+9.8
+Ease of use
+__
+< 6 months
+Time to ROI
+$19
+per user
+Starting Pricing
+None
+Commitment

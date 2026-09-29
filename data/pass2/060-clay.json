@@ -1,0 +1,217 @@
+{
+  "app": "Clay",
+  "number": 60,
+  "category": "Data, SEO and Scraping",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:33:47.433361+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://clay.com/docs\",\n    \"https://clay.com/pricing\",\n    \"https://clay.com/contact\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://clay.com",
+    "https://clay.com/docs",
+    "https://clay.com/pricing",
+    "https://clay.com/contact",
+    "https://docs.clay.com/",
+    "https://developer.clay.com/",
+    "https://developers.clay.com/",
+    "https://api.clay.com/",
+    "https://clay.com/developers",
+    "https://clay.com/api",
+    "https://clay.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.clay.com/partners",
+    "https://www.clay.com/clay-for-sales",
+    "https://app.clay.com/signup?source=nav",
+    "https://www.clay.com/partners/solutions",
+    "https://university.clay.com/docs-topics/getting-started",
+    "https://www.clay.com/pricing-calculator",
+    "https://www.clay.com/partners/integrations",
+    "https://developers.clay.com/quickstart"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developer.clay.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.clay.com/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://app.clay.com/signup?source=nav",
+      "reason": "page too thin (60 chars)",
+      "kind": "thin"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.clay.com/",
+      "requested_url": "https://clay.com",
+      "status": 200,
+      "title": "Clay | Build systems to grow revenue",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://university.clay.com/docs",
+      "requested_url": "https://clay.com/docs",
+      "status": 200,
+      "title": "Clay University | Documentation for Clay GTM Engineers",
+      "chars": 2328,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.clay.com/pricing",
+      "requested_url": "https://clay.com/pricing",
+      "status": 200,
+      "title": "Compare plans, features & costs | Clay.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.clay.com/contact",
+      "requested_url": "https://clay.com/contact",
+      "status": 200,
+      "title": "Contact us | Clay.com",
+      "chars": 188,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://university.clay.com/",
+      "requested_url": "https://docs.clay.com/",
+      "status": 200,
+      "title": "Clay University | The fastest way to master Clay",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.clay.com/",
+      "requested_url": "https://developers.clay.com/",
+      "status": 200,
+      "title": "Overview - Clay docs",
+      "chars": 1774,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.clay.com/partners",
+      "requested_url": "https://www.clay.com/partners",
+      "status": 200,
+      "title": "Partners programs | Clay.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.clay.com/clay-for-sales",
+      "requested_url": "https://www.clay.com/clay-for-sales",
+      "status": 200,
+      "title": "Clay for Sales Teams  | Clay.com",
+      "chars": 2406,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.clay.com/partners/solutions",
+      "requested_url": "https://www.clay.com/partners/solutions",
+      "status": 200,
+      "title": "Solutions Partner Program | Clay.com",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://university.clay.com/docs-topics/getting-started",
+      "requested_url": "https://university.clay.com/docs-topics/getting-started",
+      "status": 200,
+      "title": "Getting started - Clay Docs Topic",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Clay is an infrastructure platform and GTM orchestration layer to get data, run agentic workflows, and launch GTM plays.\",\n  \"auth\": {\n    \"method\": \"unknown\",\n    \"notes\": \"The provided developer and pricing pages mention API access and calling the API directly or via plugin, but do not specify the exact authentication mechanism (e.g., API key or OAuth token).\"\n  },\n  \"access\": {\n    \"tier\": \"mixed\",\n    \"notes\": \"Clay offers free and self-serve plans (Free, Launch, Growth) with actions and data credits, but advanced features like Clay API access and table queries are restricted to Enterprise plans.\"\n  },\n  \"api_surface\": {\n    \"rest\": null,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": [],\n    \"notes\": \"Webhook automation is mentioned as part of Growth plans and the platform provides a Clay CLI and API access.\"\n  },\n  \"mcp\": {\n    \"exists\": true,\n    \"url\": \"https://university.clay.com/docs-topics/getting-started\",\n    \"notes\": \"References to Clay MCP for Reps and MCP troubleshooting and FAQs indicate the existence of Model Context Protocol support.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.clay.com/\",\n      \"claim\": \"Clay provides infrastructure to get data, run agentic workflows, and launch GTM plays.\",\n      \"quote\": \"Infrastructure to get any data, run agentic workflows, and launch GTM plays.\"\n    },\n    {\n      \"url\": \"https://www.clay.com/pricing\",\n      \"claim\": \"Growth plan includes webhook automation.\",\n      \"quote\": \"Includes everything in Launch, plus CRM auto-sync and enrichment, HTTP API integrations, webhook automation, web intent signal tracking, audience pushes to ads platforms, and priority support.\"\n    },\n    {\n      \"url\": \"https://www.clay.com/pricing\",\n      \"claim\": \"Enterprise plan includes Clay API access.\",\n      \"quote\": \"Includes everything in Growth, plus unlimited Audiences across sources, unlimited row bulk enrichment, Clay API access, data warehouse syncs, SSO, RBAC permissions management, additional Ads audiences, and a dedicated Growth Strategist.\"\n    },\n    {\n      \"url\": \"https://developers.clay.com/\",\n      \"claim\": \"Developers can call the API directly or use the Clay CLI and plugin.\",\n      \"quote\": \"Call the API directly\"\n    },\n    {\n      \"url\": \"https://university.clay.com/docs-topics/getting-started\",\n      \"claim\": \"Clay provides MCP documentation.\",\n      \"quote\": \"Clay MCP for Reps vs. Agent Plugin\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://www.clay.com/pricing\",\n      \"quote\": \"Free \u2014 A low risk way to learn and experiment with Clay.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://www.clay.com/pricing\",\n      \"quote\": \"Includes everything in Launch, plus CRM auto-sync and enrichment, HTTP API integrations, webhook automation, web intent signal tracking, audience pushes to ads platforms, and priority support.\"\n    },\n    \"mcp\": {\n      \"url\": \"https://university.clay.com/docs-topics/getting-started\",\n      \"quote\": \"Clay MCP for Reps vs. Agent Plugin\"\n    }\n  },\n  \"confidence\": \"medium\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "https://clay.com",
+    "one_liner": "Clay is an infrastructure platform and GTM orchestration layer to get data, run agentic workflows, and launch GTM plays.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "mixed",
+      "notes": "Clay offers free and self-serve plans (Free, Launch, Growth) with actions and data credits, but advanced features like Clay API access and table queries are restricted to Enterprise plans."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": true,
+      "sdks": [],
+      "notes": "Webhook automation is mentioned as part of Growth plans and the platform provides a Clay CLI and API access."
+    },
+    "mcp": {
+      "exists": true,
+      "url": "https://university.clay.com/docs-topics/getting-started",
+      "notes": "References to Clay MCP for Reps and MCP troubleshooting and FAQs indicate the existence of Model Context Protocol support."
+    },
+    "buildability": {
+      "verdict": "moderate",
+      "reasoning": "A self-serve tier exists but important capabilities sit behind a gate. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.clay.com/",
+        "claim": "Clay provides infrastructure to get data, run agentic workflows, and launch GTM plays.",
+        "quote": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.clay.com/pricing",
+        "claim": "Growth plan includes webhook automation.",
+        "quote": "Includes everything in Launch, plus CRM auto-sync and enrichment, HTTP API integrations, webhook automation, web intent signal tracking, audience pushes to ads platforms, and priority support.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://www.clay.com/pricing",
+        "claim": "Enterprise plan includes Clay API access.",
+        "quote": "Includes everything in Growth, plus unlimited Audiences across sources, unlimited row bulk enrichment, Clay API access, data warehouse syncs, SSO, RBAC permissions management, additional Ads audiences, and a dedicated Growth Strategist.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://university.clay.com/docs-topics/getting-started",
+        "claim": "Clay provides MCP documentation.",
+        "quote": "Clay MCP for Reps vs. Agent Plugin",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Free \u2014 A low risk way to learn and experiment with Clay."
+      },
+      "api_surface": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Includes everything in Launch, plus CRM auto-sync and enrichment, HTTP API integrations, webhook automation, web intent signal tracking, audience pushes to ads platforms, and priority support."
+      },
+      "mcp": {
+        "url": "https://university.clay.com/docs-topics/getting-started",
+        "quote": "Clay MCP for Reps vs. Agent Plugin"
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered"
+    ],
+    "confidence": "medium"
+  },
+  "finished_at": "2026-09-28T04:34:01.973941+00:00"
+}

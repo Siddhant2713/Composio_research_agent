@@ -1,0 +1,408 @@
+===== https://www.zoho.com/cliq/
+TITLE: Team chat & communication software for businesses - Zoho Cliq
+ACCESSED: 2026-09-28
+
+Brands using Zoho Cliq
+Uninterrupted Work
+Your central hub for
+uninterrupted team collaboration
+Everything that matters, all in one place
+Connect without limitations
+Break down silos in your organization and connect with colleagues effortlessly. Be it internal communication or external communication with vendors and agencies, keep conversations flowing through chats, channels, and online meetings in Zoho Cliq.
+Communicate
+with ease
+Find the best time to start discussions. Communicate instantly and arrive at conclusions with synchronous communication tools like calls, or schedule your conversations and work with teammates across time zones using asynchronous voice and video messages.
+Collaborate with maximum productivity
+Keep your team on track and save time with better planning. Unlock the full potential of online meetings with a collaborative whiteboard and screen sharing. Manage your day-to-day tasks and stay on top of your schedule with the built-in calendar. Plus, meet all your deadlines with contextual reminders.
+Centralize conversations and information
+Maintain a centralized hub for your teams. With Zoho Cliq, you can give your employees access to people, data, and actions in the same space, while also displaying information from your key external apps through integrations.
+Customize your
+overall experience
+Make Zoho Cliq your own. With Cliq's admin panel, explore the range of customizations available for your business by setting up your own domain, brand assets, and themes. Have the app work the way you want with easy-to-build components in Cliq’s developer platform.
+Features that power your team's productivity
+AI-powered conversations
+Summarize chats instantly and save time.
+Seamless integrations
+Connect your favorite tools to stay productive.
+Workflow automation
+Automate repetitive tasks for better efficiency.
+Awards & Recognition
+Why Businesses love Zoho Cliq
+Zoho Cliq supports teams of all sizes, empowering almost
+500,000
+users globally
+We use Cliq every minute of every hour of every day. Without Cliq, our communication would have been a lot more difficult. Cliq has been the biggest surprise. We never even thought about bringing a product like that into printIQ, but once we started using it, the email traffic internally dropped significantly and now everyone is chatting all the time across the world over Cliq.
+Adrian Fleming
+Global Director of Sales, printIQ
+Zoho Cliq is not only a chat application, but also an information lifeline for the company. We can easily collaborate on multiple projects, attend meetings and screen-sharing sessions, and instantly exchange documents to bring out the best campaigns for our clients. It helps us feel that we are working together (physically) even when we are not.
+Xavier Tan
+Co-Founder, Heroes of Digital
+"One Business Solutions"
+Designed to
+suit your needs
+No matter the industry, communication is key. Zoho Cliq is designed to accommodate all kinds of teams and businesses.
+Enterprise
+With Cliq’s enterprise-grade security and admin controls, members of your organization can communicate securely.
+Hybrid work
+Connect with employees across time zones with online collaboration tools.
+Software
+Build and deploy software with Zoho Cliq’s built-in developer tools. Share code snippets, identify bugs, review progress, and iterate, all from the Cliq platform.
+Education
+Conduct trainings, courses, and webinars with virtual meetings, screen sharing, whiteboard collaboration, channels, and file sharing.
+Getting started with
+team communication is simple
+Zoho Cliq is easy to set up. Kick-start your internal
+communication in a few clicks.
+1. Sign up
+Create a new account by filling in your organization’s details.
+2. Set up
+Navigate to Cliq’s admin panel to get your organization account ready.
+3. Onboard
+Start onboarding your employees as users and start collaborating!
+Get personalized assistance
+Get Cliq
+for mobile
+Collaborate with your team even while you are away from your desktop with
+Zoho Cliq for mobile and wearables.
+Easy migration
+Migrating from your existing solution to Cliq is a breeze. Our
+help guides
+show you how to import your data so you can pick up right where you left off.
+Full-time support
+Looking for help or a product demo?
+Get in touch
+and we’ll be happy to assist you.
+Try Zoho Cliq for your business
+Sign up for free
+
+===== https://accounts.zoho.com/signin?servicename=AaaServer&context=&serviceurl=https%3A%2F%2Fapi-console.zoho.com%2F
+TITLE: Zoho Accounts
+ACCESSED: 2026-09-28
+
+Zoho Accounts
+Currently signed-in accounts will be listed here. You can keep multiple accounts signed-in on a browser as long as each of them are in different data centers.
+Try smart sign-in
+Change
+Next
+Back
+Can't access your device?
+Problem signing in?
+Sign in another way
+Contact Support
+Create Account
+Or
+Problem in verifying OTP?
+Send push to Arattai
+Continue
+STEP
+1
+OF 2
+Can't access your device?
+Use backup verification code
+Backup verification codes are 12-digit codes that are given to you when you set up multi-factor authentication.
+Sign in using passphrase
+Use passphrase to sign in to your OneAuth app
+Contact Support
+Please send us an email at
+support@zohoaccounts.com
+describing your issue so we can assist you.
+Contact Support
+Change
+Verify to access account
+You need to complete the following verification to sign in to your account.
+Verify using an available option
+You can use your configured first-factor mode. This could be password verification, email or mobile verification, or another equivalent option.
+???IAM.NEWSIGNIN.VERIFY.SEC.FACTOR???
+You can verify using an alternative MFA mode. If you haven't configured one, you can also use your MFA recovery options, such as a backup code or passphrase, if you have them.
+Enter an
+email address
+to receive instructions on how to prove your domain ownership.
+After following the instruction, Click
+Sign in
+button in the mail to continue signing in.
+Proceed
+Contact Support
+Sign in using
+Sign in
+to access
+Accounts
+Sign in with Apple
+Sign in with Google
+Sign in with Yahoo
+Sign in with Facebook
+Sign in with LinkedIn
+Sign in with X
+Sign in with Apple
+Sign in with Microsoft
+Sign in with Slack
+Sign in with Arattai
+Sign in with Github
+Sign in with Zoho
+You have not set a password for this account
+Set password now
+.
+Try Backup Verification Code
+If you are unable to sign in using SMS-based OTP, you can use backup verification codes to sign in.
+Try Now
+Sign in
+to access
+Accounts
+Proceed
+Sign in another way
+Redirecting in
+{0}
+s
+It seems you’ve uninstalled the OneAuth app on your primary device
+{0}.
+Please verify using other sign in modes.
+Show available options
+Change Password
+Set Password
+Terminate Sessions
+Apart from changing your password, you can perform the following action if you feel your account is compromised.
+Sessions Terminated
+Your Zoho account's old sessions were logged out as per your preference. Please sign-in with your new password to access your account.
+Go to Sign-in
+You will be automatically re-directed to sign-in page in
+s
+Change
+IP address restricted
+Contact Organization Admin
+Use this below email address to contact your organization admin for further clarification.
+Contact Support
+To remove the restriction and regain access to your account, contact our support team.
+Remove IP restriction
+Change
+Sign-in Blocked
+Your sign-in attempt is blocked due to the conditional access policy configured in your organization. If you need to access your account, you can temporarily exclude yourself from this policy
+This exclusion would apply only for
+2
+hours or until you sign out.
+Exclude Temporarily
+Contact Support
+Please send us an email at
+{0}
+describing your issue so we can assist you.
+Change
+You have a regional account in addition to your primary account. Choose which data center to sign in to.
+Remove IP restriction
+Trust this browser?
+Don't trust browsers on public or shared devices.
+Trust
+Not now
+Access Denied
+You've enabled Restrict Sign-in for your Zoho account. You can disable it in the OneAuth app.
+Try Again
+Don't have a Zoho account?
+Sign up now
+You no longer need to enter password. As enforced by your administrator, your OneAuth sign-in mode has been changed to
+Passwordless
+.
+If the entered password is correct, please try signing in using your email address. The username you have entered might be linked to a different account.
+Keep your account secure
+Zoho OneAuth is our new in-house multi-factor authentication app. Shield your Zoho account with
+OneAuth
+now.
+Cookies are disabled for your browser. Please enable cookies to continue.
+
+===== https://www.zoho.com/developer/
+TITLE: Transform your ideas into solutions | Zoho Developer
+ACCESSED: 2026-09-28
+
+<
+What do you want to build?
+/>
+Zoho Developer helps you build custom apps, integrate systems, and create industry-specific solutions, enhanced with AI to automate work, orchestrate workflows, and deliver smarter, personalized experiences across your business apps.
+Build apps
+Create custom apps to address your business needs—anything from a to-do-list app to a bot that can access GitHub repositories.
+Build integrations
+Break data silos by integrating third-party tools with one another or with Zoho.
+Build extensions
+Get more done from your Zoho apps by extending its capabilities. You can also craft unique, custom functionalities for your business on top of Zoho.
+Build industry solutions
+Develop highly customized vertical systems to meet the needs of a specific industry using industry language.
+Build AI agents and agentic actions
+Design AI agents that understand your business context, talk to your data, and take action across Zoho and third-party apps.
+AI agents
+Agentic actions
+<
+Choose the tool that best fits your needs
+/ >
+Apps
+Creator
+Catalyst
+Integrations
+Flow
+Sigma
+Creator
+Catalyst
+PhoneBridge
+Zoho Api
+Zoho APIs
+Extensions
+Sigma
+Industry Solutions
+Vertical Studio
+Agents
+AI Agents
+Agentic Actions
+MCP
+<
+The developer toolbox
+/ >
+Flow
+An integration platform that enables you to connect business apps with hundreds of cloud applications without the need to code.
+AI Agents
+Create and deploy ready-to-use AI agents that work inside Zoho apps. Supports prompt-based creation and includes 1000+ tools from 50+ apps.
+Creator
+A low-code application development platform with visual builders, Creator empowers you to create web and mobile applications that can scale automatically.
+Sigma
+Sigma is an extension development platform where developers can build and host extensions for various Zoho applications. These extensions can be feature enhancements or third-party tool integrations.
+Vertical Studio
+A low-code cloud platform that domain experts can leverage to build industry-specific cloud solutions.
+MCP (Model Context Protocol)
+Turn natural language into real business outcomes by building agent-driven actions across your apps that connect LLMs like GPT or Claude to Zoho’s APIs, data, and actions, giving AI agents the context and control they need to execute real work.
+Catalyst by Zoho
+A full-stack development platform to build, test, host, deploy, and optimize solutions.
+PhoneBridge
+Integrate your PBX or contact center with Zoho. Become a PhoneBridge partner to access Zoho PhoneBridge APIs that can help you swiftly build your integration.
+Zoho api
+Zoho APIs
+Build integrations for Zoho using any programming language and infrastructure. Extract or input data in an XML or JSON format between Zoho and third-party apps.
+Explore Zoho APIs
+Interested in monetizing your solutions?
+Join our Marketplace partner program to list and sell your solutions on Zoho Marketplace.
+White label apps
+Rebrand Zoho to reflect your brand identity. Ideal for independent software vendors (ISVs), solution developers, and consultants who require a faster time to market.
+{ Connect
+(with)
+fellow; }
+Discover and interact with others who build with Zoho’s tools and platforms. Ask or answer questions, read about the latest updates, and more.
+Explore the Developer Community
+
+===== https://www.zoho.com/cliq/signup.html
+TITLE: Zoho Cliq-Free Sign Up
+ACCESSED: 2026-09-28
+
+Get your team started.
+"We've customized Cliq to serve as a centralized information hub for employees, a tool to track daily goals for sales teams, and a way for upper management to create and share reports."
+Youa Yang
+Analyst Director, Spacetel
+
+===== https://www.zoho.com/cliq/contact-demo.html
+TITLE: Zoho Cliq - Contact Us | Demo Request
+ACCESSED: 2026-09-28
+
+Schedule a personalized demo
+Explore how Zoho Cliq can help bring your business communication, people and all tools in one unified platform.
+What you’ll gain from the session:
+A conversation with our Cliq experts to understand your business needs, and no commitment required
+Real-time examples tailored to your team
+Integration possibilities with your existing tools
+Clear next steps to evaluate Cliq effectively
+Give us a call
+(Call support is 24×5 for paid plans and 24×7 for enterprise. Toll-free in most regions; carrier charges may apply.)
+USA
++1(888) 900 9646
+India
++1800 572 3535
+UK
++44 (20) 35647890
+Australia
++61-2-80662898
+Germany
++49 8000229966
+France
++33 805542462
+Italy
++39 (0) 287103737
+Spain
++34 918368598
+Sweden
++46 201408150
+Netherlands
++31 707007083
+UAE
++971 4 513 6046
+*Most support numbers are toll-free, but your phone provider might apply additional charges based on your country/region.
+Popular topics
+Rest API & Authtoken
+Customize your Cliq
+Build your own - Cliq Platform
+All about Channels
+FAQ's
+
+===== https://www.zoho.com/developer/rest-api.html?src=developer-homepage
+TITLE: Zoho REST APIs | Zoho Developer
+ACCESSED: 2026-09-28
+
+Explore what's possible with Zoho APIs
+Discover a wide range of Zoho APIs and explore how you can leverage them to improve your workflows. Integrate Zoho services with your internal systems, third-party platforms, or custom apps.
+Browse Zoho APIs
+What do you want to build?
+Automate workflows in your own account
+Set up backend scripts, create scheduled jobs, or just test API endpoints with your own data.
+Get started by creating a self client. No need for redirect URIs or multi-step authorization flows.
+Get started with self client
+Build integrations for other users
+Let users use your integration by connecting their Zoho account.
+Get started by registering an OAuth client in the API console, and learn how to get delegated
+access from users through secure OAuth flows.
+REGISTER AN OAUTH CLIENT
+Built for developers
+Our REST API framework features power reliable, scalable integrations.
+Industry-standard authentication
+Zoho APIs are authenticated using the OAuth 2.0 standard, which supports every app type including web apps, JavaScript apps, mobile or desktop apps, and IoT devices.
+Learn how OAuth works
+Self client for automation & testing
+Set up app-to-app communication without any user interaction, or test API endpoints using our Self Client option. Simple authorization without the need of any redirect URIs.
+Try self client
+Built-in multi-region support
+Build once and deploy in every region. With multi-DC support, you can enable your app to be accessible for Zoho users in any region.
+Learn about multi-DC support
+Incremental authorization
+Don't want to ask for all permissions upfront from a user? Start with necessary permissions and request more when your app needs them.
+Learn about incremental authorization
+Ready to start building?
+Register your app, authenticate with OAuth 2.0, and start making API calls.
+Go to API Console
+Browse API Directory
+Frequently asked questions
+Do I need a Zoho account to use the APIs?
+Yes. You need a Zoho account to use Zoho APIs. You would also need to register your application and obtain the credentials. You can create a free account to get started.
+Create account
+What is Zoho API Console?
+The API console is where you register your application and manage your credentials. It's the starting point for accessing Zoho APIs.
+You can register different application types including:
+Web applications (server-based)
+JavaScript applications (client-based)
+Mobile and desktop applications
+IoT and limited-input devices (non-browser based)
+Self client (for automating and testing)
+Go to API Console
+How are Zoho APIs authenticated?
+Zoho APIs use OAuth 2.0, the industry-standard authorization protocol. Instead of sharing passwords, users authorize your app to access their data through secure token-based authentication.
+Zoho supports different OAuth flows based on the type of your application.
+Learn about OAuth flows
+Can I test the APIs without affecting my production data?
+Yes. You have two options.
+Sandbox environments:
+Many Zoho apps (CRM, Books, Desk, etc.) provide sandbox environments where you can test integrations safely without affecting live data.
+Self client:
+Generate tokens without any user-authorization flows to try out the API endpoints with your own account data.
+Learn about self client
+How do I get started with Zoho APIs?
+Here's a quick start path:
+Browse the API directory to find the Zoho products you want to integrate with.
+Register your app in the API console to get credentials.
+Authenticate using the appropriate OAuth flow for your app type.
+Make your first API call using the obtained access token.
+Where can I find the documentation for Zoho APIs?
+Each Zoho product has its own comprehensive API documentation. You can browse all available APIs by category in our API Directory and find documentation for each there.
+Browse API directory
+How do I support users in different regions accessing my app?
+Zoho users' accounts are present in different data centers across the globe. To enable users from different regions to access your app, you can configure multi-DC support from the API console. You need to configure region-specific endpoints in your app to accommodate for users in other regions.
+Learn about Multi DC support
+Do Zoho APIs have rate limits?
+Some Zoho APIs have rate limits that vary by product and subscription plan. For specific limits, check the documentation for the Zoho product you're integrating with.
+Browse API directory

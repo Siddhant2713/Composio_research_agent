@@ -1,0 +1,786 @@
+===== https://developers.facebook.com/documentation/business-messaging/whatsapp/overview
+TITLE: WhatsApp Business Platform | Meta for Developers
+ACCESSED: 2026-09-28
+
+What’s next for business messaging and AI? Watch the Conversations keynote.
+Watch now
+⁠
+WhatsApp Business Platform
+Drive revenue growth, boost efficiency, and deliver exceptional customer experiences with the WhatsApp Business Platform—our enterprise-grade APIs for messaging and calling.
+Get started
+Demo the API
+Preview an interactive experience showing how Jasper’s Market (our demo retail business) connects with customers using the WhatsApp Business Platform.
+Demo retail business
+Try the demo
+Download the sample app
+Select language
+Python
+JavaScript
+cURL
+import requests
+
+url = "https://graph.facebook.com/<API_VERSION>/<WHATSAPP_BUSINESS_PHONE_NUMBER_ID>/messages"
+headers = {
+    "Authorization": "Bearer <ACCESS_TOKEN>",
+    "Content-Type": "application/json",
+data = {
+    "messaging_product": "whatsapp",
+    "to": "<WHATSAPP_USER_PHONE_NUMBER>",
+    "type": "template",
+    "template": {
+        "name": "hello_world",
+        "language": {"code": "en_US"},
+                  
+response = requests.post(url, headers=headers, json=data, timeout=30)
+print(response.json())
+Essentials
+Start building conversational experiences that delight your customers
+About the platform
+Learn more about the key components of the platform and how things work together.
+Learn more
+Messaging
+Learn about the different message types and how to send them.
+Learn more
+Pricing
+Learn how pricing on the WhatsApp Business Platform works.
+Learn more
+Templates
+Learn how to create and manage template messages.
+Learn more
+Webhooks
+Learn what webhooks are and how they are a core component of Business Messaging.
+Learn more
+Authentication and authorization
+Learn how access controls and permissions work on the platform.
+Learn more
+About the APIs
+Learn about the APIs that are part of the WhatsApp Business Platform
+Cloud API
+Send and receive WhatsApp messages, make WhatsApp calls, and more from your business phone number.
+Learn more
+Marketing Messages API for WhatsApp
+Access new features not available on Cloud API and get automatic optimizations, so high engagement messages can reach more customers.
+Learn more
+Business Management API
+Programmatically manage your WhatsApp business account and its assets.
+Learn more
+New releases
+Explore our newest features and launches
+WhatsApp API Calling
+Seamless, secure, and personalized voice calling natively within WhatsApp chat to drive superior business outcomes.
+Learn more
+Groups API
+Drive sales and solve customer problems with groups on the WhatsApp Business Platform.
+Learn more
+API solutions for WhatsApp Business app users
+Use both the WhatsApp Business app and API with the same phone number to simplify onboarding and unlock new features to scale your business.
+Learn more
+Partner resources
+Build WhatsApp solutions for your business customers.
+Become a Tech Provider
+Follow this guide to onboard as a WhatsApp Tech Provider so that you can start providing messaging services to your clients.
+Learn more
+Onboard customers
+Learn how to build Embedded Signup; a flow to onboard customers directly from your website.
+Learn more
+MM API for WhatsApp Partner Guide
+Learn how to integrate with MM API for WhatsApp and onboard your customers to send marketing messages with optimizations.
+Learn more
+Not a developer?
+View the Partner Showcase to find a partner tailored to fit your business needs.
+Find a partner
+
+===== https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform
+TITLE: About the WhatsApp Business Platform | Meta for Developers
+ACCESSED: 2026-09-28
+
+About the WhatsApp Business Platform
+Aug 4, 2026
+The WhatsApp Business Platform enables businesses to communicate with customers at scale.
+This documentation is intended for developers using our APIs. If you are looking for information on other ways to use WhatsApp for your business see the
+WhatsApp Business site
+⁠
+Core APIs and capabilities
+WhatsApp Business Platform Cloud API
+The WhatsApp Business Platform Cloud API enables you to programmatically message and call on WhatsApp. You can use Cloud API to send users a variety of messages, from simple text messages to rich media and interactive messages.
+Cloud API includes:
+Messaging:
+Send text messages, rich media, and interactive messages
+Calling:
+Make and receive calls to customers
+Groups:
+Create, manage, and message WhatsApp group conversations
+WhatsApp messaging lets you send encrypted messages to customers. Use Cloud API to:
+Send order confirmations and shipping updates
+Share appointment availability and other reminders
+Send messages that recommend related or additional products
+Facilitate end-to-end transactions, from product discovery to payment
+Enable multi-factor authentication or one-time passwords to verify accounts and users
+Deliver custom interactive conversational experiences
+Learn more about message types on Cloud API.
+WhatsApp Business Platform Business Management API
+The WhatsApp Business Management API enables you to programmatically manage your WhatsApp platform assets:
+WhatsApp account management:
+Create accounts, add and remove phone numbers, link accounts together, and assign partner access.
+Messaging account management:
+Create accounts, manage templates for scalable messaging, and configure billing and payment methods.
+Business Management API also gives you access to account analytics like:
+Messaging analytics:
+The number and type of messages sent and delivered.
+Pricing analytics:
+Granular pricing breakdowns for delivered messages.
+Template analytics:
+Sent/read/delivered template metrics, alongside template message button clicks.
+Learn more about message templates.
+Learn more about managing business phone numbers.
+Learn more about account analytics.
+Marketing Messages API for WhatsApp
+MM API for WhatsApp is an API for sending optimized marketing messages on WhatsApp.
+When you send marketing messages through the MM API for WhatsApp, you can access new features not available on Cloud API and get automatic optimizations, so high engagement messages can reach more customers.
+The MM API for WhatsApp includes:
+Quality-based delivery:
+Up to 9% higher marketing message deliveries over Cloud API for high engagement content.
+Automated creative optimizations:
+Automatic enhancements to marketing creative to increase message performance.
+Performance benchmarks and recommendations:
+Comparison of read and click rates versus similar templates from businesses in your region.
+Conversion metrics:
+Measure marketing messages that lead users to perform app events such as ‘Add to Cart’, ‘Checkout Initiated’, or ‘Purchase’.
+Learn more about the Marketing Messages API for WhatsApp.
+Webhooks
+Webhooks deliver JSON payloads to your server for message status updates, incoming messages, asynchronous error handling, and many other notification utilities.
+The platform relies heavily on webhooks, as the contents of any message sent from a WhatsApp user to your business phone number is communicated via webhook, and all outgoing message delivery status updates are reported via webhook.
+Learn more about webhooks
+Meta Business Agent
+Meta Business Agent lets you configure and operate AI-powered agents on WhatsApp. Agents handle conversations with WhatsApp users autonomously, using knowledge sources you provide (FAQs, business info, product catalogs, files, and websites) and custom connectors to your external APIs.
+Meta Business Agent includes:
+Agent configuration:
+Set agent behavior, persona, language, and system instructions
+Knowledge management:
+Connect FAQs, business info, catalogs, files, and websites for the agent to reference
+Custom connectors:
+Integrate your external APIs so the agent can take actions like checking order status or booking appointments
+Thread control:
+Manage handoffs between the AI agent and human agents
+Evaluation and testing:
+Test agent responses and evaluate performance
+Learn more about Meta Business Agent
+Technical foundations
+HTTP protocol and API requests
+The WhatsApp Business Platform is built on
+Graph API
+and uses HTTP protocol. API requests include path, body, and header parameters.
+Example: Sending a text message using cURL
+curl 'https://graph.facebook.com/v17.0/106540352242922/messages' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer EAAJB...' \
+  -d '{
+    "messaging_product": "whatsapp",
+    "recipient_type": "individual",
+    "to": "+16505555555",
+    "type": "text",
+    "text": {
+      "preview_url": true,
+      "body": "Here's the info you requested! https://www.meta.c
+
+===== https://developers.facebook.com/docs/whatsapp/on-premises/sunset
+TITLE: On-Premises API Sunset - Documentation - Meta for Developers
+ACCESSED: 2026-09-28
+
+On-Premises API Sunset - Documentation - Meta for Developers
+On-Premises API sunset
+The final supported version of the On-Premise API client expired on October 23, 2025. On-Premises API can't be used to send messages to WhatsApp users anymore. Please use Cloud API on the
+WhatsApp Business Platform
+instead.
+Why Cloud API?
+Since its launch in 2022, Cloud API has seen strong adoption and better performance than On-Premises API. Some of the reasons for this include:
+Cost-effective
+: Reduced setup, hosting and maintenance costs. For example, some partners have experienced a
+90%+ reduction in infrastructure costs
+after moving to Cloud API.
+More Scalable
+: Cloud API is our fastest throughput platform, offering up to 1,000 messages per second (4x the level of On-Premises API).
+Better Reliability
+: Cloud API consistently experiences 99.9% uptime and < 5 seconds p99 latency. View our
+WhatsApp Business API Status Page
+for uptime and latency statuses.
+Secure and certified
+: Cloud API has enterprise-grade security features and certifications, including GDPR and LGPD compliance, SOC2 and SOC3 certification, and we are currently pursuing ISO 27001. See our
+Cloud API Compliance Center
+and our
+security
+and
+encryption
+whitepapers.
+Local storage options: Cloud API now supports
+local storage
+, giving you the option to control where message data is stored at rest.
+Cloud-only features: Cloud API offers more functionality than On-Premises API, with newly released functionality and upcoming functionality only available on Cloud API.
+With these enterprise-grade messaging foundations in place, we have decided to transition to a fully cloud-hosted WhatsApp Business Platform.
+Sunset timeline
+January 9, 2024
+Starting after the release of On-Premises API v2.53 in January 2024, all new feature updates will ship exclusively to Cloud API. The On-Premise API client will continue to receive quarterly version releases, but will only address bug fixes and security patches.
+July 1, 2024
+Business phone numbers can only be registered for use with Cloud API. Attempting to
+register a number for use with On-Premises API
+will return error code
+1005
+October 23, 2025
+The final version of On-Premises API (v2.63) will expire. Messages sent to or from business numbers still registered for use with On-Premises API will not be delivered.
+Terms and Conditions
+See
+Cloud API Terms
+
+===== https://developers.facebook.com/
+TITLE: Social technologies | Meta for Developers
+ACCESSED: 2026-09-28
+
+Social technologies | Meta for Developers
+Social technologies
+Build technologies that help people connect, find communities and grow businesses.
+Get started
+Explore all products
+Browse documentation
+Developer tools
+Get support
+What's new
+Build with us
+Learn more about our social technologies solutions that can help you create, grow and connect across Facebook, Instagram, Messenger, WhatsApp, and Threads.
+Facebook
+Messenger
+Instagram
+WhatsApp
+Threads
+SUCCESS STORIES
+200M+ businesses use our services every month to connect with customers and grow.
+Concepto Móvil
+Concepto Móvil boosts business solutions and aligns teams through Meta Certification.
+Learn more
+Universal Pictures
+Engaging fans through interactive multimedia messaging campaigns.
+Learn more
+Housing Development Finance Corporation
+Developing a faster, simpler and convenient way to help customers determine their home loan eligibility.
+Learn more
+View success stories
+Explore all our products
+Social technologies offer a wide range of solutions that can help you grow, build community and monetize your apps.
+Ads and Monetization
+Reach billions of people with Meta ads and monetization solutions to grow your business.
+Overview
+Artificial Intelligence
+Utilize industry-leading open and accessible AI tools for scale.
+Overview
+Authentication
+Implement convenient and secure authentication methods, supported by robust authorization protocols.
+Overview
+Business Messaging
+Do more with conversations by getting the right messages to the right people at the right time.
+Overview
+Gaming
+Access a suite of innovative gaming platforms and services.
+Overview
+Open Source
+Empower the community through open source technology.
+Overview
+Social Integrations
+Connect with and engage billions of people using our Meta technologies with our social integrations.
+Overview
+Explore all products
+Latest news
+SEPTEMBER 15, 2026
+Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent
+Your AI agent can now set up WhatsApp business messaging Getting a WhatsApp Business integration running means moving between the Developer Console, Business Manager, the API reference, and your editor, then pasting an access token somewhere it shouldn't live. It's a lot of setup before you write any real code.WhatsApp Business Tools MCP changes...
+Developer Tools, WhatsApp
+AUGUST 27, 2026
+Login with Facebook open beta: faster logins, less maintenance
+Login with Facebook is entering open beta on August 27, 2026, bringing a wave of improvements focused on one thing: fewer steps and less maintenance. Here is what is available in the open beta, what each feature does, and what it takes to adopt. Please see each section below for integration instructions. 1. Single Sign On (one tap) onAndroidandWeb...
+Business Tools, Platforms, Facebook, Facebook Login
+AUGUST 4, 2026
+Meta AI Developer Assistant Now Available for Developer Support
+Today, we’re bringing Meta AI Developer Assistant to the developer support experience on developers.facebook.com by rolling out a revamped developer support experience powered by Meta AI Developer Assistant. When you visit developers.facebook.com/support, you’ll find an AI-powered assistant ready to help you troubleshoot issues, navigate compliance...
+Developer Tools
+More on the blog
+Get our newsletter
+Sign up for monthly updates from Meta for Developers.
+Sign up
+
+===== https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/contacts/
+TITLE: Contacts messages webhook reference | Meta for Developers
+ACCESSED: 2026-09-28
+
+Contacts messages webhook reference
+Jun 17, 2026
+This reference describes trigger events and payload contents for the Messaging account
+messages
+webhook for messages containing one or more contacts.
+Triggers
+A WhatsApp user sends one or more contacts to a business.
+A WhatsApp user sends one or more contacts to a business via a Click to WhatsApp ad.
+Syntax
+Many contact properties may be omitted if the WhatsApp user chooses not to share them or if their device prevents sharing.
+  "object": "whatsapp_business_account",
+  "entry": [
+      "id": "<WHATSAPP_BUSINESS_ACCOUNT_ID>",
+      "changes": [
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "<BUSINESS_DISPLAY_PHONE_NUMBER>",
+              "phone_number_id": "<BUSINESS_PHONE_NUMBER_ID>"
+            },
+            "contacts": [
+                "profile": {
+                  "name": "<WHATSAPP_USER_PROFILE_NAME>"
+                },
+                "wa_id": "<WHATSAPP_USER_ID>",
+                "identity_key_hash": "<IDENTITY_KEY_HASH>" <!-- only included if identity change check enabled -->
+            ],
+            "messages": [
+                "from": "<WHATSAPP_USER_PHONE_NUMBER>",
+                "id": "<WHATSAPP_MESSAGE_ID>",
+                "timestamp": "<WEBHOOK_TRIGGER_TIMESTAMP>",
+                "type": "contacts",
+                "contacts": [
+                    "addresses": [
+                        "city": "<CONTACT_CITY>",
+                        "country": "<CONTACT_COUNTRY>",
+                        "country_code": "<CONTACT_COUNTRY_CODE>",
+                        "state": "<CONTACT_STATE>",
+                        "street": "<CONTACT_STREET>",
+                        "type": "<CONTACT_ADDRESS_TYPE>",
+                        "zip": "<CONTACT_ZIP>"
+                    ],
+                    "birthday": "<CONTACT_BIRTHDAY>",
+                    "emails": [
+                        "email": "<CONTACT_EMAIL>",
+                        "type": "<CONTACT_EMAIL_TYPE>"
+                    ],
+                    "name": {
+                      "formatted_name": "<CONTACT_FORMATTED_NAME>",
+                      "first_name": "<CONTACT_FIRST_NAME>",
+                      "last_name": "<CONTACT_LAST_NAME>",
+                      "middle_name": "<CONTACT_MIDDLE_NAME>",
+                      "suffix": "<CONTACT_NAME_SUFFIX>",
+                      "prefix": "<CONTACT_NAME_PREFIX>"
+                    },
+                    "org": {
+                      "company": "<CONTACT_ORG_COMPANY>",
+                      "department": "<CONTACT_ORG_DEPARTMENT>",
+                      "title": "<CONTACT_ORG_TITLE>"
+                    },
+                    "phones": [
+                        "phone": "<CONTACT_PHONE>",
+                        "wa_id": "<CONTACT_WHATSAPP_PHONE_NUMBER>",
+                        "type": "<CONTACT_PHONE_TYPE>"
+                    ],
+                    "urls": [
+                        "url": "<CONTACT_URL>",
+                        "type": "<CONTACT_URL_TYPE>"
+                    ]
+                ],
+
+                <!-- only included if message sent via a Click to WhatsApp ad -->
+                "referral": {
+                  "source_url": "<AD_URL>",
+                  "source_id": "<AD_ID>",
+                  "source_type": "ad",
+                  "body": "<AD_PRIMARY_TEXT>",
+                  "headline": "<AD_HEADLINE>",
+                  "media_type": "<AD_MEDIA_TYPE>",
+                  "image_url": "<AD_IMAGE_URL>",
+                  "video_url": "<AD_VIDEO_URL>",
+                  "thumbnail_url": "<AD_VIDEO_THUMBNAIL>",
+                  "ctwa_clid": "<AD_CLICK_ID>",
+                  "welcome_message": {
+                    "text": "<AD_GREETING_TEXT>"
+            ]
+          },
+          "field": "messages"
+      ]
+  ]
+Parameters
+<AD_CLICK_ID>
+String
+Click to WhatsApp ad click ID.
+The
+ctwa_clid
+property is omitted entirely for messages originating from an ad in WhatsApp Status (
+WhatsApp Status ad placements
+⁠
+).
+Aff-n8ZTODiE79d22KtAwQKj9e_mIEOOj27vDVwFjN80dp4_0NiNhEgpGo0AHemvuSoifXaytfTzcchptiErTKCqTrJ5nW1h7IHYeYymGb5K5J5iTROpBhWAGaIAeUzHL50
+<AD_GREETING_TEXT>
+String
+Click to WhatsApp ad greeting text.
+Hi there! Let us know how we can help!
+<AD_HEADLINE>
+String
+Click to WhatsApp ad headline.
+Chat with us
+<AD_ID>
+String
+Click to WhatsApp ad ID.
+120226305854810726
+<AD_IMAGE_URL>
+String
+Click to WhatsApp ad image URL. Only included if the ad is an image ad.
+https://scontent.xx.fbcdn.net/v/t45.1...
+<AD_MEDIA_TY
+
+===== https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/partner_solutions/
+TITLE: partner_solutions webhook reference | Meta for Developers
+ACCESSED: 2026-09-28
+
+partner_solutions webhook reference
+Jun 17, 2026
+This reference describes trigger events and payload contents for the Messaging account
+partner_solutions
+webhook.
+The
+partner_solutions webhook
+describes changes to the status of a
+Multi-Partner Solution
+Triggers
+A multi-partner solution is saved as a draft (solution_status:
+DRAFT
+).
+A multi-partner solution request is sent to a partner (solution_status:
+INITIATED
+).
+A multi-partner solution partner accepts a solution request (solution_status:
+ACTIVE
+).
+A multi-partner solution partner rejects a solution request (solution_status:
+REJECTED
+).
+A multi-partner solution partner requests deactivation of a solution.
+A multi-partner solution is deactivated (solution_status:
+DEACTIVATED
+).
+Syntax
+  "entry": [
+      "changes": [
+          "field": "partner_solutions",
+          "value": {
+            "event": "<EVENT>",
+            "solution_id": "<SOLUTION_ID>",
+            "solution_status": "<SOLUTION_STATUS>"
+      ],
+      "id": "<BUSINESS_PORTFOLIO_ID>",
+      "time": <WEBHOOK_TRIGGER_TIMESTAMP>
+  ],
+  "object": "whatsapp_business_account"
+Parameters
+<BUSINESS_PORTFOLIO_ID>
+String
+Business portfolio ID.
+506914307656634
+<EVENT>
+String
+Change event. Values can be:
+SOLUTION_CREATED
+- Indicates a new solution was saved as a draft or sent as a request to a partner.
+SOLUTION_UPDATED
+- Indicates an existing solution has been updated.
+SOLUTION_CREATED
+<SOLUTION_ID>
+String
+Solution ID.
+774485461512159
+<SOLUTION_STATUS>
+String
+Solution status. Values can be:
+ACTIVE
+- The solution partner accepted the solution request and the solution can now be used.
+DEACTIVATED
+- The solution is deactivated.
+DRAFT
+- The solution is drafted but an invitation request has not been sent to a partner.
+INITIATED
+- The solution is created and the invitation request sent, but it has not been accepted or rejected yet.
+PENDING_DEACTIVATION
+- The solution owner requested deactivation of the solution but the solution partner has yet to accept or decline the deactivation request.
+REJECTED
+- The solution partner has rejected the solution request.
+INITIATED
+<WEBHOOK_TRIGGER_TIMESTAMP>
+Integer
+Unix timestamp indicating when the webhook was triggered.
+1739321024
+Example
+  "entry": [
+      "changes": [
+          "field": "partner_solutions",
+          "value": {
+            "event": "SOLUTION_CREATED",
+            "solution_id": "774485461512159",
+            "solution_status": "INITIATED"
+      ],
+      "id": "506914307656634",
+      "time": 1739321024
+  ],
+  "object": "whatsapp_business_account"
+
+===== https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates/
+TITLE: Authentication-international rates | Meta for Developers
+ACCESSED: 2026-09-28
+
+Authentication-international rates
+May 21, 2026
+Specific countries have an
+authentication-international
+rate in our
+rate cards
+. If you send an authentication template message to a WhatsApp user whose country calling code is for a country that has an authentication-international rate, the delivered message will be billed the country’s authentication–international rate if:
+your business is
+eligible
+for authentication-international rates
+your business is based in another country (see
+Primary Business Location
+)
+the message was delivered on or after your
+start time
+for that country
+For example, if your business is based in Indonesia and you send an authentication template message to a WhatsApp user who has a +62 (Indonesia) country calling code, and the message is delivered, you will not be billed the authentication-international rate since you are based in the same country as the user. If your business is based in India, however, you will be billed the authentication-international rate, if you meet all of the criteria above.
+See
+Examples
+for additional example scenarios.
+Status
+messages
+webhooks that include pricing details and
+pricing analytics
+will indicate if a message or set of messages were billed the authentication-international rate.
+Eligibility
+If your business sends more than 750K messages outside of customer service windows in a moving 30-day period, across all of your Messaging accounts, with unique WhatsApp users whose country calling codes are for a country that has an authentication-international rate, it will be deemed eligible for authentication-international rates.
+Once deemed eligible, we will set your
+start times
+30 days out for each country that has an authentication-international rate. In addition, we will attempt to determine your
+primary business location
+using publicly-available information.
+We will then send you an
+eligibility email
+that includes these start times and the country that we set as your primary business location (if we were able to determine the country). This provides you with 30 days notice before authentication-international rates apply.
+Webhooks
+will also be triggered that include your start times and your primary business location (if we set it).
+Note that eligibility is permanent. Once your business is deemed eligible, all authentication template messages sent on or after your start time will be charged the authentication-international rate in markets where authentication-international rates apply.
+Markets with authentication-international rates
+The following markets have authentication-international rates:
+As announced May 27, 2026 - At least 9 additional markets will have authentication-international rates as of October 1, 2026. These markets are specified below with
+to-be rates published
+as of September 1, 2026. 
+As of September 1, 2026 - Meta will determine eligibility for authentication-international based on messages across these 18 markets.
+Learn more
+Market
+Launch date
+Indonesia
+June 1, 2024
+India
+July 1, 2024
+Egypt
+Feb. 1, 2025
+Malaysia
+Feb. 1, 2025
+Nigeria
+Feb. 1, 2025
+Pakistan
+Feb. 1, 2025
+Saudi Arabia
+Feb. 1, 2025
+South Africa
+Feb. 1, 2025
+United Arab Emirates
+Feb. 1, 2025
+Bangladesh
+Oct. 1, 2026
+Iraq
+Oct. 1, 2026
+Kazakhstan
+Oct. 1, 2026
+Kuwait
+Oct. 1, 2026
+Morocco
+Oct. 1, 2026
+Nepal
+Oct. 1, 2026
+Oman
+Oct. 1, 2026
+Sri Lanka
+Oct. 1, 2026
+Ukraine
+Oct. 1, 2026
+Please see
+Rate cards
+to see authentication-internatinoal rates in each market.
+Start times
+Start times are business- and country-specific timestamps. They indicate when newly-delivered authentication template messages are subject to authentication-international rates. Authentication template messages sent by your business and delivered to WhatsApp users in these countries
+on or after these dates
+only will be charged authentication-international rates.
+Start times are set when your business is first deemed eligible for authentication-international rates, and are 30 days from your eligibility date, so you will always have 30 days notice before the authentication-international rate applies.
+Start times are included in your
+eligibility email
+and
+webhooks
+. You can also get these times by requesting the
+auth_international_rate_eligibility
+field on any of your business’s Messaging accounts:
+Request
+curl 'https://graph.facebook.com/<API_VERSION>/<WABA_ID>?fields=auth_international_rate_eligibility' \
+-H 'Authorization: <ACCESS_TOKEN>'
+Request parameters
+<ACCESS_TOKEN>
+String
+Required.
+System token
+or
+business token
+EAAA...
+<API_VERSION>
+String
+Optional.
+Graph API version.
+v26.0
+<WABA_ID>
+String
+Required.
+Messaging account ID.
+102290129340398
+Response
+Upon success:
+  "id": "<WABA_ID>",
+  "auth_international_rate_eligibility": {
+    "start_time": <START_TIME>,
+    "exception_countries": [
+      <EXCEPTION_COUNTRY>,
+      <EXCEPTION_COUNTRY>,
+      ...
+    ]
+Response parameters
+<WABA_
+
+===== https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-customers-as-a-solution-partner/
+TITLE: Onboarding business customers as a Solution Partner | Meta for Developers
+ACCESSED: 2026-09-28
+
+Onboarding business customers as a Solution Partner
+Aug 5, 2026
+Embedded Signup v2 and v3 will be deprecated on October 15, 2026
+, including their public preview versions. Migrate your integration to
+v4
+before that date to avoid disruption. See
+Versions
+for the full upgrade path.
+This document describes the steps Solution Partners must perform to onboard new business customers who have completed the Embedded Signup flow.
+If you are a Solution Partner, a business customer who completes your implementation of the Embedded Signup flow cannot immediately use your app. They cannot access their WhatsApp assets or send and receive messages until you complete these steps.
+What you will need
+the business customer’s Messaging account ID (returned via
+session logging
+or
+API request
+)
+the business customer’s business phone number ID (returned via
+session logging
+or
+API request
+)
+your app ID (displayed at the top of the
+App Dashboard
+)
+your app secret (displayed in the
+App Dashboard
+>
+App settings
+>
+Basic
+panel)
+your credit line ID (displayed in
+Meta Business Suite
+>
+Business Settings
+>
+Business Info
+or returned via
+API request
+)
+your
+system user access token
+(“system token”)
+Also, if you want to test messaging capabilities using the customer’s business phone number, you will need a WhatsApp phone number that can already send and receive messages from other WhatsApp numbers.
+Perform all of the requests described below using server-to-server requests. Do not use client-side requests.
+Step 1: Exchange the token code for a business token
+Use the
+Access Token API
+to exchange the token code
+returned
+by Embedded Signup for a business integration system user access token (“business token”).
+Request
+curl --get 'https://graph.facebook.com/v21.0/oauth/access_token' \
+-d 'client_id=<APP_ID>' \
+-d 'client_secret=<APP_SECRET>' \
+-d 'code=<CODE>'
+Request parameters
+<APP_ID>
+Required.
+Your app ID. This is displayed at the top of the
+App Dashboard
+236484624622562
+<APP_SECRET>
+Required.
+Your app secret. You can get this from the
+App Dashboard
+>
+App Secret
+>
+Basic
+panel.
+614fc2afde15eee07a26b2fe3eaee9b9
+<CODE>
+Required.
+The code
+returned by Embedded Signup
+when the customer successfully completed the flow.
+AQBhlXsctMxJYbwbrpybxlo9tLPGy-QAmjBJA03jxLos43wxlBlrYozY5C33BXJULd133cOJf_5y6EkJZYMrAmW-EMj3Wdap9-NUM2nS4s8tC-ES7slBhh6QpCFM7-SzpI-iqsjqTGyxbUUW3AeaEyLkeZFIkBgcQ_SOxo9HShm20SDR5_n7AT9ZJ5dcgpqBQykNT-pQ8V7Ne9-sr6RLAWtJMF7-Zx6ABudRcWIN53tUTtquDVNuq3lrco4BlVQAv-54tR83Ae0ODN9Uet6j-BVLuetXhQCM3sz9RdgedlbxkidMbkztvYX1j7baOrJxyLyYGWYgbnUrKRQKCtWTsO5ekIGFgtbpS8UPJNqV6j8E5XKPJ8QA7ZFqzkB0s2O__J5FrjHzc_rDo1EuRbw98ihHDzQnvuXeHapEyfhLDJct0A
+Response
+Upon success:
+<BUSINESS_TOKEN>
+Response parameters
+<BUSINESS_TOKEN>
+The customer’s
+business token
+EAAAN6tcBzAUBOwtDtTfmZCJ9n3FHpSDcDTH86ekf89XnnMZAtaitMUysPDE7LES3CXkA4MmbKCghdQeU1boHr0QZA05SShiILcoUy7ZAb2GE7hrUEpYHKLDuP2sYZCURkZCHGEvEGjScGLHzC4KDm8tq2slt4BsOQE1HHX8DzHahdT51MRDqBw0YaeZByrVFZkVAoVTxXUtuKgDDdrmJQXMnI4jqJYetsZCP1efj5ygGscZBm4OvvuCYB039ZAFlyNn
+Step 2: Subscribe to webhooks on the customer’s WABA
+Using the business token from Step 1 and the customer’s WABA ID, subscribe your app to webhooks on the customer’s WABA.
+Use the
+POST /<WABA_ID>/subscribed_apps
+endpoint to subscribe your app to webhooks on the business customer’s Messaging account. If you want the customer’s webhooks to be sent to a different callback URL than the one set on your app, you have multiple
+webhook override
+options.
+Request
+curl -X POST 'https://graph.facebook.com/<API_VERSION>/<WABA_ID>/subscribed_apps' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>'
+Request parameters
+<BUSINESS_TOKEN>
+Required.
+The customer’s
+business token
+EAAAN6tcBzAUBOwtDtTfmZCJ9n3FHpSDcDTH86ekf89XnnMZAtaitMUysPDE7LES3CXkA4MmbKCghdQeU1boHr0QZA05SShiILcoUy7ZAb2GE7hrUEpYHKLDuP2sYZCURkZCHGEvEGjScGLHzC4KDm8tq2slt4BsOQE1HHX8DzHahdT51MRDqBw0YaeZByrVFZkVAoVTxXUtuKgDDdrmJQXMnI4jqJYetsZCP1efj5ygGscZBm4OvvuCYB039ZAFlyNn
+<WABA_ID>
+Required.
+The customer’s Messaging account ID.
+102290129340398
+Response
+Upon success:
+  "success": true
+Step 3: Share your credit line with the customer
+New steps for sharing your credit line with onboarded business customers are currently being tested. These steps will eventually replace this step, so if you wish to implement these steps now, see
+Alternate method for sharing your credit line
+Note
+: If you are using the
+whatsapp_credit_sharing_and_attach
+API, you must add your System User to the shared WhatsApp Business Accounts as a prerequisite. See
+add your System User to shared WhatsApp Business Accounts
+Once you have added the System user to the WhatsApp Business account, use the
+Credit Sharing API
+to share your credit line with an onboarded business customer.
+Request
+curl -X POST 'https://graph.facebook.com/<API_VERSION>/<EXTENDED_CREDIT_LINE_ID>/whatsapp_credit_shari

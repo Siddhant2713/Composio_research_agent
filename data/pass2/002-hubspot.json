@@ -1,0 +1,185 @@
+{
+  "app": "HubSpot",
+  "number": 2,
+  "category": "CRM and Sales",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:44:36.201687+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.hubspot.com/\",\n    \"https://developers.hubspot.com/docs/api/overview\",\n    \"https://developers.hubspot.com/docs/api/getting-started\",\n    \"https://developers.hubspot.com/docs/api/authentication\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://hubspot.com",
+    "https://developers.hubspot.com/",
+    "https://developers.hubspot.com/docs/api/overview",
+    "https://developers.hubspot.com/docs/api/getting-started",
+    "https://developers.hubspot.com/docs/api/authentication",
+    "https://docs.hubspot.com/",
+    "https://developer.hubspot.com/",
+    "https://api.hubspot.com/",
+    "https://hubspot.com/docs",
+    "https://hubspot.com/developers",
+    "https://hubspot.com/api",
+    "https://hubspot.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.hubspot.com/products/sales",
+    "https://offers.hubspot.com/contact-sales",
+    "https://www.hubspot.com/partners",
+    "https://www.hubspot.com/partners/app",
+    "https://www.hubspot.com/products/data",
+    "https://www.hubspot.com/company/contact",
+    "https://developers.hubspot.com/developer-content-sign-up",
+    "https://app.hubspot.com/signup-hubspot/crm?intent=developer",
+    "https://developers.hubspot.com/docs/api-reference/2026-03/overview"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.hubspot.com/docs/api/getting-started",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://developers.hubspot.com/docs/api/authentication",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.hubspot.com/",
+      "reason": "ConnectError: [Errno -5] No address associated with hostname",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.hubspot.com/",
+      "requested_url": "https://hubspot.com",
+      "status": 200,
+      "title": "HubSpot | Software & Tools for your Business - Homepage",
+      "chars": 3804,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.hubspot.com/",
+      "requested_url": "https://developers.hubspot.com/",
+      "status": 200,
+      "title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "chars": 3665,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "requested_url": "https://developers.hubspot.com/docs/api/overview",
+      "status": 200,
+      "title": "2026-09 API reference - HubSpot docs",
+      "chars": 1043,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.hubspot.com/products/sales",
+      "requested_url": "https://www.hubspot.com/products/sales",
+      "status": 200,
+      "title": "AI Sales Software for Pipeline & Closed Deals | HubSpot",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://offers.hubspot.com/contact-sales",
+      "requested_url": "https://offers.hubspot.com/contact-sales",
+      "status": 200,
+      "title": "Contact Sales | HubSpot's Software",
+      "chars": 1614,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.hubspot.com/partners",
+      "requested_url": "https://www.hubspot.com/partners",
+      "status": 200,
+      "title": "HubSpot Partner Programs",
+      "chars": 2577,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.hubspot.com/partners/technology",
+      "requested_url": "https://www.hubspot.com/partners/app",
+      "status": 200,
+      "title": "Technology Partner Program | HubSpot",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.hubspot.com/products/data",
+      "requested_url": "https://www.hubspot.com/products/data",
+      "status": 200,
+      "title": "Data Management Software for Scaling Businesses | HubSpot",
+      "chars": 3835,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"HubSpot CRM and sales platform offering REST APIs using date-based versioning for third-party integrations.\",\n  \"auth\": {\n    \"method\": \"other\",\n    \"notes\": \"The provided pages do not specify the exact authentication mechanism (such as API key or OAuth2) used for the REST API reference endpoints.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Pages show options to 'Get started free with HubSpot's free tools' and developer resources on the developer platform.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": null,\n    \"webhooks\": true,\n    \"sdks\": null,\n    \"notes\": \"The documentation mentions REST API references (e.g., /crm/objects/2026-09/contacts) and workflows mention webhooks.\"\n  },\n  \"mcp\": {\n    \"exists\": null,\n    \"notes\": \"The provided text does not mention the Model Context Protocol or an MCP server.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.hubspot.com/\",\n      \"claim\": \"HubSpot offers free tools to get started self-service.\",\n      \"quote\": \"Get started free with HubSpot's free tools\"\n    },\n    {\n      \"url\": \"https://developers.hubspot.com/docs/api-reference/latest/overview\",\n      \"claim\": \"HubSpot exposes REST APIs following a date-based versioning scheme.\",\n      \"quote\": \"GET /crm/objects/2026-09/contacts\"\n    },\n    {\n      \"url\": \"https://developers.hubspot.com/\",\n      \"claim\": \"HubSpot APIs and webhooks are used to automate workflows.\",\n      \"quote\": \"Use workflows, webhooks, and custom actions to execute the next step the moment data updates\u2014keeping users in flow and out of tool-hopping.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": null,\n    \"access\": {\n      \"url\": \"https://www.hubspot.com/\",\n      \"quote\": \"Get started free with HubSpot's free tools\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.hubspot.com/docs/api-reference/latest/overview\",\n      \"quote\": \"GET /crm/objects/2026-09/contacts\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"low\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint_url": "https://hubspot.com",
+    "one_liner": "HubSpot CRM and sales platform offering REST APIs using date-based versioning for third-party integrations.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Pages show options to 'Get started free with HubSpot's free tools' and developer resources on the developer platform."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: quoted line not found on https://developers.hubspot.com/docs/api-reference/latest/overview."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://www.hubspot.com/",
+        "claim": "HubSpot offers free tools to get started self-service.",
+        "quote": "Get started free with HubSpot's free tools",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.hubspot.com/",
+        "claim": "HubSpot APIs and webhooks are used to automate workflows.",
+        "quote": "Use workflows, webhooks, and custom actions to execute the next step the moment data updates\u2014keeping users in flow and out of tool-hopping.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "access": {
+        "url": "https://www.hubspot.com/",
+        "quote": "Get started free with HubSpot's free tools"
+      }
+    },
+    "unsupported_fields": [
+      "auth: no support offered",
+      "api_surface: quoted line not found on https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T03:44:56.248788+00:00"
+}

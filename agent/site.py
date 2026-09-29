@@ -331,6 +331,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     </table>
   </div>
   <p class="count" id="accNote"></p>
+  <div id="caveat"></div>
 
   <h3>The sample, marked</h3>
   <div class="tablewrap">
@@ -554,6 +555,36 @@ TEMPLATE = r"""<!DOCTYPE html>
     el("accNote").textContent = "Run `python -m agent.verification audit` to populate accuracy.";
   }
 
+  /* Why the headline number fell — stated on the page, not buried in the repo. */
+  var dec = (D.accuracy && D.accuracy.decomposition) || {};
+  if (dec.pass1 && dec.pass2 && dec.pass1.asserted && dec.pass2.asserted) {
+    el("caveat").innerHTML =
+      '<div class="human" style="border-left-color:var(--accent);background:var(--panel)">' +
+      "<p><b>Pass 2 scored lower overall, and that needs saying plainly.</b> " +
+      "The three fields the patch targeted did improve. The overall figure still fell, " +
+      "because Pass 2 answers <span class=\"mono\">unknown</span> more often and the auditor " +
+      "scores an abstention by asking whether the page confirms &ldquo;unknown&rdquo; — which " +
+      "is almost never true. Abstaining is therefore punished as hard as being wrong.</p>" +
+      '<div class="tablewrap" style="margin:10px 0"><table><thead><tr>' +
+      "<th>Rows</th><th>Pass 1</th><th>Pass 2</th></tr></thead><tbody>" +
+      "<tr><td>Where a value is <b>asserted</b></td><td>" +
+        dec.pass1.asserted.pct + "% <span class=\"muted small\">(n=" + dec.pass1.asserted.n +
+        ")</span></td><td>" + dec.pass2.asserted.pct + "% <span class=\"muted small\">(n=" +
+        dec.pass2.asserted.n + ")</span></td></tr>" +
+      "<tr><td>Where the record says <b>unknown</b></td><td>" +
+        dec.pass1.abstained.pct + "% <span class=\"muted small\">(n=" + dec.pass1.abstained.n +
+        ")</span></td><td>" + dec.pass2.abstained.pct + "% <span class=\"muted small\">(n=" +
+        dec.pass2.abstained.n + ")</span></td></tr>" +
+      "</tbody></table></div>" +
+      "<p class=\"small\"><b>A sharper limitation.</b> Requiring a quote proves a claim is " +
+      "<i>sourced</i>, not that it is <i>right</i>. For LinkedIn Ads the auditor rated Pass 2 " +
+      "an improvement, but Pass 2 had quoted one supporting line while the same page also said " +
+      "&ldquo;apply for Standard tier access&rdquo; — Pass 1's answer was the better one. " +
+      "Nothing in the design makes the model weigh disconfirming evidence, and the auditor " +
+      "shares that blind spot. Written up in " +
+      "<span class=\"mono\">verification/pass2_review.md</span>.</p></div>";
+  }
+
   /* sample table */
   var sample = (D.accuracy && D.accuracy.sample_rows) || [];
   if (sample.length) {
@@ -655,10 +686,55 @@ def main() -> None:
             "pass2": load(VERIFICATION_DIR / "accuracy_pass2.json", {}),
         }
     accuracy["sample_rows"] = sample_rows()
+    accuracy["decomposition"] = decomposition()
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(build(records, patterns, worked, accuracy))
     print(f"{len(records)} records -> {OUT} ({OUT.stat().st_size // 1024} KB)")
+
+
+SCALAR_FIELD_GETTERS = {
+    "auth.method": lambda r: (r.get("auth") or {}).get("method"),
+    "access.tier": lambda r: (r.get("access") or {}).get("tier"),
+    "mcp.exists": lambda r: (r.get("mcp") or {}).get("exists"),
+    "buildability.verdict": lambda r: (r.get("buildability") or {}).get("verdict"),
+}
+
+
+def decomposition() -> dict:
+    """Split each pass's score into rows that assert a value and rows that abstain.
+
+    The auditor judges an abstention by asking whether the page confirms "unknown", which is
+    almost never true — so abstaining is scored like being wrong. Publishing the split keeps
+    the headline number from being read as "Pass 2 is worse at answering".
+    """
+    out = {}
+    for pass_name in ("pass1", "pass2"):
+        audit = load(VERIFICATION_DIR / f"audit_{pass_name}.json", {}).get("apps", {})
+        records = {r["name"]: r for r in load(DATA_DIR / f"{pass_name}_full.json", [])}
+        if not audit or not records:
+            continue
+
+        buckets = {"asserted": [], "abstained": []}
+        for app, verdicts in audit.items():
+            record = records.get(app)
+            if not record:
+                continue
+            for field, getter in SCALAR_FIELD_GETTERS.items():
+                if field not in verdicts:
+                    continue
+                value = getter(record)
+                key = "abstained" if value in ("unknown", None) else "asserted"
+                buckets[key].append(verdicts[field]["confirmed"])
+
+        def score(marks):
+            if not marks:
+                return None
+            weighted = sum(1 if m == "yes" else 0.5 if m == "partial" else 0 for m in marks)
+            return {"pct": round(100 * weighted / len(marks), 1), "n": len(marks)}
+
+        out[pass_name] = {k: score(v) for k, v in buckets.items()}
+    return out
 
 
 def sample_rows() -> list[dict]:

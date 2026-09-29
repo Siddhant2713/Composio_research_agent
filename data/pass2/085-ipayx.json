@@ -1,0 +1,101 @@
+{
+  "app": "iPayX",
+  "number": 85,
+  "category": "Finance and Fintech",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T04:56:15.113420+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://ipayx.ai/docs\",\n    \"https://ipayx.ai/\",\n    \"https://ipayx.ai/contact\",\n    \"https://ipayx.ai/pricing\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://ipayx.ai/docs",
+    "https://ipayx.ai/",
+    "https://ipayx.ai/contact",
+    "https://ipayx.ai/pricing",
+    "https://docs.ipayx.ai/",
+    "https://developer.ipayx.ai/",
+    "https://developers.ipayx.ai/",
+    "https://api.ipayx.ai/",
+    "https://ipayx.ai/developers",
+    "https://ipayx.ai/api",
+    "https://ipayx.ai/developer"
+  ],
+  "second_hop_considered": [],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://ipayx.ai/docs",
+      "reason": "page too thin (59 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://ipayx.ai/",
+      "reason": "page too thin (59 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://ipayx.ai/contact",
+      "reason": "page too thin (59 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://ipayx.ai/pricing",
+      "reason": "page too thin (59 chars)",
+      "kind": "thin"
+    },
+    {
+      "requested_url": "https://docs.ipayx.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.ipayx.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.ipayx.ai/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://api.ipayx.ai/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [],
+  "no_public_docs": true,
+  "record": {
+    "number": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint_url": "https://ipayx.ai/docs",
+    "one_liner": null,
+    "auth": {
+      "method": "unknown",
+      "notes": "Documentation was reachable but client-rendered; no text to read."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Documentation pages responded successfully but render their content in the browser, so no text could be extracted and the credential path could not be read. This is a limit of this pipeline, not evidence of gating. Tried: https://ipayx.ai/docs (page too thin (59 chars)); https://ipayx.ai/ (page too thin (59 chars)); https://ipayx.ai/contact (page too thin (59 chars)); https://ipayx.ai/pricing (page too thin (59 chars)); https://docs.ipayx.ai/ (ConnectError: [Errno -2] Name or service not known); https://developer.ipayx.ai/ (ConnectError: [Errno -2] Name or service not known)"
+    },
+    "api_surface": null,
+    "mcp": null,
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "Documentation exists but is client-rendered, so nothing could be read to judge buildability. Deliberately not scored as unbuildable."
+    },
+    "evidence": [],
+    "support": {},
+    "unsupported_fields": [],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T04:58:07.128930+00:00"
+}

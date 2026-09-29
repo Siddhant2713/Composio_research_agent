@@ -1,0 +1,516 @@
+===== https://seranking.com/subscription.html
+TITLE: Subscription - SE Ranking
+ACCESSED: 2026-09-28
+
+Subscription - SE Ranking
+Get discovered across
+traditional search and AI answers
+Monthly
+Annually
+Save 20%
+Free migration with an annual subscription
+Core
+SEO + GEO for marketing teams with repeatable delivery
+$
+103.20
+$
+129.00
+/mo
+Start free 14-day trial
+No credit card required
+10
+projects &
+1
+manager seat
+2k
+keywords &
+100
+prompts to track daily
+5
+domains in GEO research
+250k
+pages per month in audit
+25K
+API credits &
+MCP
+access
+Need more capacity? We’ve got options when you need them.
+What’s inside:
+Rank tracking across major search engines
+Unlimited keyword, competitor, backlink research
+Website & on-page audit
+Data Studio / Matomo / GA / GSC integrations
+Growth
+Automation and collaboration for multi-client SEO + GEO
+$
+223.20
+$
+279.00
+/mo
+Start free 14-day trial
+No credit card required
+30
+projects &
+3
+manager seats
+5k
+keywords &
+250
+prompts to track daily
+15
+domains in GEO research
+2M
+pages per month in audit
+100K
+API credits &
+MCP
+access
+Need more capacity? We’ve got options when you need them.
+All Core features,
+plus
+:
+Historical data across project lifetime
+Guest links for easy collaboration
+Page changes monitoring
+Dedicated customer support
+Enterprise
+Custom SEO & GEO platform for large teams and complex tasks
+Flexible terms
+Custom limits and pricing
+Full API & advanced integrations
+Talk to sales
+Compare plans
+Account
+Projects
+10
+30
+Manager Seats
+1
+3
+Extra Manager Seats
+from $16
+from $16
+Project Insights
+Report Builder, reports
+10
+30
+Data export, rows
+50k
+100k
+Guest link
+SEO limits
+Keywords, daily
+2k
+5k
+Extra keywords
+from $22.40
+from $32
+Google Top 100 tracking
+Share of Voice
+Competitve and Keyword Research
+Keyword database expansion
+17.5k
+50k
+Historical Data
+6/mo
+All time
+Backlink Research & Monitoring
+Content Marketing, articles
+25
+50
+Extra articles
+from $39.20
+from $39.20
+GEO limits
+Prompts, daily
+100
+250
+LLMs to track
+5
+5
+AI Sources tracking
+Unlimited
+Unlimited
+AI Competitve Research, domains
+5
+15
+AI Competitve Research, reports
+Unlimited
+Unlimited
+Audit
+Pages per account
+250k
+2mln
+Max pages per project
+250k
+1mln
+On page checker & SERP analyzer
+50
+1,000
+Page changes monitoring
+Local Marketing
+Locations
+3
+3
+Extra locations
+from $18.40
+from $18.40
+Local & Map Rank Tracker, keywords
+1,500
+1,500
+Listing Management, directories
+100+ worldwide
+100+ worldwide
+GBP posts
+API & Integrations
+Data Studio / Matomo / GA4 / GSC
+MCP
+Projects API
+Research API, credits
+25K/mo
+100K/mo
+Support
+Education Resources (Academy, Help Center, Workshops)
+Onboarding
+Customer Success
+Compare plans
+Create the stack that matches your process
+Add more features as your workflow grows
+Manage client work end to end
+Add-on
+Agency Pack
+White-label reporting and client-facing tools built for agencies
++$
+69.00
+/mo
+Annual billing only
+30 projects
+30 projects
+50 projects
+100 projects
+30
+client seats
+White label for platform and reporting
+Unlimited schedule reporting & AI summaries
+Agency Catalog placement
+Lead Generator
+Uncover any brand’s AI visibility
+Add-on
+AI Search
+Track, analyze, and optimize brand visibility across leading AI platforms
++$
+71.20
+$
+89.00
+/mo
+Annual billing
+Monthly billing
+200 prompts
+200 prompts
+450 prompts
+1000 prompts
+AI Results Tracker: AI Overviews, AI Mode, Perplexity, ChatGPT
+Unlimited competitor research across AI Overviews, AI Mode, Perplexity, and ChatGPT
+Access to
+(
+200
+prompts): A strategic dashboard for tracking brand mentions, citations, and sentiment trends
+Automate data collection & reporting
+Add-on
+API
+Automate reporting, run bulk SEO analyses, and pull structured SEO data
++$
+45.00
+/mo
+Annual billing only
+3M credits
+3M credits
+12M credits
+60M credits
+Backlinks API
+Domain Analysis API
+Keyword Research API
+AI Search API
+Website Audit API
+Start free trial
+Measure the value of LLM visibility across your ecosystem
+Connect AI brand mentions with organic and social signals via Planable and the Data API—so you see what’s changing and what it drives
+SMM platform
+Social media management platform for planning, collaborating, analyzing & publishing across channels
+From
+$
+33.00
+/mo
+20% off when bundled with SE Ranking
+Talk to sales
+Multi-channel social media scheduling
+Team collaboration & approval workflows
+Content calendar & planning tools
+Analytics & performance reporting
+Brand asset library
+SEO DATA
+SE Ranking API
+Programmatic access to real-time SEO & GEO data via SE Ranking’s standalone API plan
+From
+$
+179.00
+/mo
+Annual billing only
+Volume discounts as you scale
+Talk to sales
+Analyze 12M backlinks / 120K domains / 15K AI Search queries & more
+Connect SE Ranking data to AI assistant tools with MCP
+Enrich your products and workflows with live SEO data
+Build SEO automations with Data Studio, n8n and Make
+FAQ
+Q
+What’s included in the free 14-day trial?
+A
+The free 14-day trial is fully functional and includes starter usage: up to 10 projects, 750 tracked keywords per day, 20 AI prompts per day, and AI competitive research for up to 3 domains (with unlimited reports). If you need more capacity, you can upgrade
+
+===== https://seranking.com/api-pricing.html
+TITLE: SE Ranking API Pricing: Free Trial, Wallet, Annual Plans
+ACCESSED: 2026-09-28
+
+SE Ranking API Pricing: Free Trial, Wallet, Annual Plans
+SEO and AI search data piped into your stack
+One API for keywords, backlinks, domains, audits, AI search, and more. Start pay as you go or commit annually for volume discounts.
+Free trial
+Test every API endpoint against your workflows and see how the data fits your internal processes.
+Free
+100K
+credits
+Start with free credits
+MCP included
+14-day trial to test every API endpoint
+Full API & MCP access from day one
+Test the complete SEO & GEO data suite
+Wallet
+Pay only for what you use without recurring fees. Works best for one-off projects or unpredictable volume.
+$
+50
+/mo
+250K
+credits
+Talk to an expert
+MCP included
+Top up API credits at any time, no commitment
+Scale usage on your own timeline
+Purchased credits never expire
+Standalone
+Most popular
+Standalone API access for teams with consistent volume and scaling needs. No web app subscription required.
+$
+179
+$
+200.00
+/mo
+Annual billing only
+1M
+credits/yr
+Talk to an expert
+MCP included
+Up to 57% off Wallet rates
+Volume-based pricing discounts
+Includes Data API only
+Enterprise
+Built for bigger companies that need high-volume data access, custom integrations, and infrastructure.
+Custom
+120M+
+credits/yr
+Talk to an expert
+MCP included
+High-volume pricing as low as at $30/1M credits
+Custom integrations development
+Custom RPS limits for your workload
+Already have a SE Ranking subscription? Try API Add-on!
+Add-on
+Requires subscription
+Extend your existing SE Ranking Core, Growth, or Enterprise plan with an API add-on.
+MCP included
+For SE Ranking customers who need automation
+Access to Data API + Project API
+Volume-based pricing discounts
++$
+45
+/mo
+Annual billing only
+250K
+credits/yr
+Add to subscription
+Full API access in every plan
+Power your reporting stack, AI agents, and automations with SEO and GEO data.
+Backlinks API
+Domain Research API
+Keyword Research API
+Website Audit API
+AI Search API
+Project Management API
+Want to know more about how credits are calculated?
+See the credit cost table →
+Query your data through AI assistants
+Pull live SEO and GEO data directly inside your AI tools. Included in every plan.
+5.5B
+keywords
+2.2B
+domain profiles
+188
+countries
+25.5M+
+AI prompts tracked
+MCP
+Connect SE Ranking to Claude, Cursor, Gemini, or any AI assistant. Ask questions in plain language and get answers powered by live SEO and GEO data.
+Start with 100K free credits
+Pre-built Claude Skills for structured workflows
+Use open-source
+Claude Skills
+built by SE Ranking to get a finished deliverable without writing long prompts from scratch.
+Content brief generator
+Takes a domain and topic, runs keyword research, SERP analysis, competitor analysis, and returns a writer-ready brief with an AI Search angle included.
+AI Search share of voice
+Pulls visibility data across ChatGPT, Perplexity, Gemini, AI Overviews, and AI Mode and returns a share-of-voice heatmap with topic-cluster ownership per competing brand.
+Technical SEO audit
+Runs a one-shot audit across crawlability, indexability, mobile, security, structured data, and JS rendering, then returns a top-10 fix list ranked by impact and effort.
+Browse all Skills on GitHub →
+Fit SE Ranking data into your stack and power your workflows
+Use ready-made integrations or build your own setup. No-code and AI-native workflows are both supported out of the box.
+Run one-off SEO and GEO research
+Analyze backlink profiles, research competitors, track AI search visibility, and more through direct API access or in AI agents via MCP. Fewer manual exports, and more answers faster.
+Automate internal workflows
+Feed live SEO and GEO data into your existing systems and automate content pipelines, backlink monitoring, client reporting, etc. Run your workflows automatically, at any scale.
+Embed data into your platform
+Integrate SEO and AI search data directly into your product UI as native features without building your own backend. Improve product engagement and get new monetization opportunities.
+Start with 100K free credits
+FAQ
+Q
+Is the API pay-per-use or prepaid?
+A
+Both, depending on the plan. Pay as you go is a one-time top-up: buy any credit pack, use it whenever you need it, and the credits never expire. Annual plans are billed upfront for the year, which is what makes the discounted rate possible, up to 57% lower than Wallet.
+Show more
+Show less
+Q
+Can I test the API on a free trial?
+A
+Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as  MCP server access. You also get access to the complete SEO and GEO suite by SE Ranking. No credit card required.
+Show more
+Show less
+Q
+Do unused credits roll over?
+A
+It depends on the plan:
+Wallet credits never expire. Buy a 250K pack today and use it two years from now.
+On annual plans (standalone and add-on), credits are provided upfront and expire at the end of the billing cycle. Unused credits don’t carry over. Any additional top-ups purchased on top of a subscription never expire.
+Free trial credits expire
+
+===== https://seranking.com/contact.html
+TITLE: SE Ranking: Contact Us
+ACCESSED: 2026-09-28
+
+SE Ranking: Contact Us
+Contact Us
+Please use the contact form below if you have any questions or if you need assistance.
+This site is protected by reCAPTCHA and the Google
+Privacy Statement
+and
+Terms of Service
+apply.
+Here we are
+United Kingdom
+United Kingdom
+Forest House Business Centre, 8 Gainsborough Road,
+London
+,
+E11 1HT
+SER Acquisition Inc
+USA
+USA
+1209 Orange Street, City Of Wilmington,
+County Of New Castle, Delaware
+,
+19801
+SER Acquisition Inc
+Thank you for contacting SE Ranking!
+This is an automated response confirming the receipt of your message.
+We are online Monday through Friday, from 9 AM till 12 PM GMT and our agent will respond to your email as soon as possible during our working hours.
+4.5 rating
+4.2
+5.0 rating
+4.8
+5.0 rating
+4.7
+5.0 rating
+4.7
+Why do businesses from 150+ countries choose us?
+Read testimonials
+Sebastian Weidner
+CEO at Rankingdoc
+The choice of SEO tools is huge and the range of services and prices is also wide. We were looking for a tool that supports us in our daily work in the best possible way, offers a high usability, extensive functionality and a fair price at the same time. SE Ranking meets these requirements perfectly and we do not want to miss this tool anymore in order to push the rankings of our customers.
+Jan B.
+Owner at JB Online Marketing
+Real value for great price
+Clear view of rankings and positions, site audit tool for quick scan and backlink checker are very useful. I use it a lot and also use the lead generator to get a free scan for potential clients which runs automated when they fill in the form. The dashboard gives you a good view of changes in traffic and positions. The marketing plan is a bit simple but it gives you some direction of what to do first on the website and you can also check the boxes when you finished a task which works very well
+Giannis Koutsopoulos
+CEO  at AboutHotelier
+Best seo tool a company could have
+SE Ranking is the best seo platform our company has used so far. The interface of the platform is great & user-friendly. The available options are many. From tracking rankings, monitoring backlinks, keyword research to competitor analysis and website audit, everything we need to optimize our sites is just one click away. Also, for any questions or anything else we needed, the live support team replied & helped me with straight away.
+Bram van den Heuvel
+CEO at Brijn Webproducts BV
+Excellent SEO tool for keeping track of customers
+I like the automatic reports best. They are very much customisable until customer level and of course have the ability to style it to your own. This makes it easier for us, as we don’t have to make them manually anymore. Apart from that the tools inside SE Ranking are great for a quick analyses or where you want, go in to the dept.
+Florian Bierschenk
+Online Marketing Manager at charly.education
+Good SEO Tool for small size business
+I was used to work with Tools like Sistrix, Ahrefs or Searchmetrics and did not know about SE Ranking before. But those tools were too cost-intensive for a small and quick start into SEO so I tried it out and I am quite satisfied with it. I like the ability to pay for certain services with credits, as I am not using them on a very frequent level, so it actually gives me greater flexibility to only use them when needed and not paying for them even when not using them.
+Nirina M. Razanamparany
+Software Engineer | Co-Founder at Code & Scale
+A very complete SEO Tool
+The tool is very complete: keywords planning and tracking, backlinks analysis, competitions research… A very few SEO software provides all those features in this price range. Although, the customer experience is optimal: the UI is clear and intuitive and SE Ranking’s people are very kind, empathic and helpful.
+I also loved that, before ever reaching out to ask for a trial account or set up a sales call, they have a demo account where you can actually play with the tool and see what the features look like beyond just a screenshot.
+Joe David
+Founder & Marketing Consultant at Rochallor Digital
+Most comprehensive SEO tool I’ve used
+I like the competition analysis tools, it provides paid and organic data, which gives me an idea on how to catch up and outrank the immediate competition for my clients. It also provides data for the potential traffic, which helps show clients the potential gains of the campaign. And with the marketing plan, I know what needs to be improved in order to get results for my clients.
+Harm Hendriks
+Owner at Premium Online
+Perfect fit for our marketing agency
+After trying a lot (10+ years of experience) SE ranking stands out on top of others because it combines everything we need for our clients. We do only provide the client with rankings, but also with the potential traffic (and revenue) of those ranking when they hit top 3 in Google. The tool let us provide the client with in depth analysis of the technical stuff ánd a marketing plan tool, so we can set goals and follow a checklist of monthly activities. An
+
+===== https://seranking.com/educational-partnership-program.html
+TITLE: SE Ranking Educational Partnership Program
+ACCESSED: 2026-09-28
+
+SE Ranking Educational Partnership Program
+Educational Partnership Program
+SE Ranking is offering access to its powerful and intuitive SEO platform. All for free
+Apply
+Nonprofit organizations
+Does your non-profit organization want to outrank every competitor on Google and is looking for the best tools to do it? We will be happy to help you by providing access to our SEO platform.
+Digital marketing schools
+Do you want to provide participants in your courses with the best knowledge and experience, helping them become top experts in marketing? We do too! Give them the opportunity to embark on their SEO journey with one of the best platforms around.
+What’s the deal?
+Become our educational/non-profit partner
+Get free access to top-rated SEO software
+Spread the word on how much value you get from us
+What we can provide*
+*The above options are subject to negotiation
+A branded landing page
+If your course has more than 30 participants, we can provide a branded landing page tailored specifically for it.
+Commission from every sale
+For educational profitable courses, we can link participants of your course to your SE Ranking affiliate account, allowing you to earn a 30% commission from every purchase they make.
+Free access to SE Ranking platform
+Tell us what your needs are and we’ll provide you with free access to SE Ranking for up to 3 months.
+Additional educational materials
+We’ll show you all the ins and outs of using the platform. Teachers will get a personal demo, students will participate in a branded webinar, plus everyone will get all the necessary links and how-to videos that will tell you everything you need to know about SE Ranking’s SEO tools.
+Support
+Our managers are always on hand and ready to help out with any questions you may have.
+Our educational partners are all over the world
+Contact us for more details
+This partnership is designed solely for non-profit purposes, which is why we have several restrictions that strictly prohibit:
+01
+Posting the URL of your branded landing page on third-party websites.
+02
+Distributing or transferring subscription plans to third-party students or teachers.
+03
+Distributing promotional codes intended for students to third parties.
+04
+Selling your or your students’ access to the SE Ranking platform.

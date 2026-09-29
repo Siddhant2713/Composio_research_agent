@@ -1,0 +1,169 @@
+{
+  "app": "LiveAgent",
+  "number": 16,
+  "category": "Support and Helpdesk",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:54:51.668691+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://www.liveagent.com/api/\",\n    \"https://support.liveagent.com/\",\n    \"https://www.liveagent.com/partners/\",\n    \"https://www.liveagent.com/\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://liveagent.com",
+    "https://www.liveagent.com/api/",
+    "https://support.liveagent.com/",
+    "https://www.liveagent.com/partners/",
+    "https://www.liveagent.com/",
+    "https://docs.liveagent.com/",
+    "https://developer.liveagent.com/",
+    "https://developers.liveagent.com/",
+    "https://api.liveagent.com/",
+    "https://liveagent.com/docs",
+    "https://liveagent.com/developers",
+    "https://liveagent.com/api",
+    "https://liveagent.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://www.liveagent.com/pricing/",
+    "https://www.liveagent.com/about/contact/",
+    "https://support.liveagent.com/840770-Complete-API-reference",
+    "https://support.liveagent.com/979899-Getting-Started",
+    "https://support.liveagent.com/369705-LiveAgent-pricing-page",
+    "https://support.liveagent.com/061754-How-to-make-REST-calls-in-PHP",
+    "https://support.liveagent.com/629047-Limitations-of-different-subscription-plans"
+  ],
+  "boilerplate_lines_removed": 0,
+  "fetch_failures": [
+    {
+      "requested_url": "https://www.liveagent.com/api/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://www.liveagent.com/partners/",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    },
+    {
+      "requested_url": "https://docs.liveagent.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developer.liveagent.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    },
+    {
+      "requested_url": "https://developers.liveagent.com/",
+      "reason": "ConnectError: [Errno -2] Name or service not known",
+      "kind": "unreachable"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://www.liveagent.com/",
+      "requested_url": "https://liveagent.com",
+      "status": 200,
+      "title": "LiveAgent - Help Desk Software & Live Chat",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://support.liveagent.com/",
+      "requested_url": "https://support.liveagent.com/",
+      "status": 200,
+      "title": "LiveAgent support portal",
+      "chars": 1219,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.liveagent.com/pricing/",
+      "requested_url": "https://www.liveagent.com/pricing/",
+      "status": 200,
+      "title": "Pricing | LiveAgent - Help Desk Software & Live Chat",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://www.liveagent.com/about/contact/",
+      "requested_url": "https://www.liveagent.com/about/contact/",
+      "status": 200,
+      "title": "Contact Us | LiveAgent - Help Desk Software & Live Chat",
+      "chars": 2863,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://support.liveagent.com/840770-Complete-API-reference",
+      "requested_url": "https://support.liveagent.com/840770-Complete-API-reference",
+      "status": 200,
+      "title": "Complete API reference",
+      "chars": 5000,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://support.liveagent.com/979899-Getting-Started",
+      "requested_url": "https://support.liveagent.com/979899-Getting-Started",
+      "status": 200,
+      "title": "Getting Started",
+      "chars": 2717,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://support.liveagent.com/369705-LiveAgent-pricing-page",
+      "requested_url": "https://support.liveagent.com/369705-LiveAgent-pricing-page",
+      "status": 200,
+      "title": "LiveAgent pricing page",
+      "chars": 282,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"LiveAgent is an all-in-one customer service platform providing help desk software, ticketing, live chat, call center, and a public REST API.\",\n  \"auth\": {\n    \"method\": \"api_key\",\n    \"notes\": \"API requests require an API key parameter (e.g., apikey=value).\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Users can start a 30-day free trial with no credit card required.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": false,\n    \"webhooks\": null,\n    \"sdks\": [],\n    \"notes\": \"Exposes a REST API with JSON response format by default.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"notes\": \"No mention of a Model Context Protocol server in the text.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://www.liveagent.com/\",\n      \"claim\": \"LiveAgent offers a 30-day free trial with no credit card required.\",\n      \"quote\": \"30-day free trial\"\n    },\n    {\n      \"url\": \"https://support.liveagent.com/5-Complete-API-reference\",\n      \"claim\": \"The API accepts an API key parameter for authentication.\",\n      \"quote\": \"You can get this in case your athentification with API key failed because of problem with API key in application.\"\n    },\n    {\n      \"url\": \"https://support.liveagent.com/5-Complete-API-reference\",\n      \"claim\": \"Return messages for the API are in JSON format by default.\",\n      \"quote\": \"Return messages are in JSON format by default.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://support.liveagent.com/5-Complete-API-reference\",\n      \"quote\": \"You can get this in case your athentification with API key failed because of problem with API key in application.\"\n    },\n    \"access\": {\n      \"url\": \"https://www.liveagent.com/\",\n      \"quote\": \"30-day free trial\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://support.liveagent.com/5-Complete-API-reference\",\n      \"quote\": \"Return messages are in JSON format by default.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint_url": "https://liveagent.com",
+    "one_liner": "LiveAgent is an all-in-one customer service platform providing help desk software, ticketing, live chat, call center, and a public REST API.",
+    "auth": {
+      "method": "unknown",
+      "notes": "Reported value was discarded: support cites unfetched url https://support.liveagent.com/5-Complete-API-reference."
+    },
+    "access": {
+      "tier": "unknown",
+      "notes": "Reported value was discarded: quoted line not found on https://www.liveagent.com/."
+    },
+    "api_surface": {
+      "rest": null,
+      "graphql": null,
+      "webhooks": null,
+      "sdks": null,
+      "notes": "Reported value was discarded: support cites unfetched url https://support.liveagent.com/5-Complete-API-reference."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "unknown",
+      "reasoning": "The fetched pages did not establish how a developer obtains credentials, so buildability cannot be judged. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [],
+    "support": {},
+    "unsupported_fields": [
+      "auth: support cites unfetched url https://support.liveagent.com/5-Complete-API-reference",
+      "access: quoted line not found on https://www.liveagent.com/",
+      "api_surface: support cites unfetched url https://support.liveagent.com/5-Complete-API-reference",
+      "mcp: no support offered"
+    ],
+    "confidence": "low"
+  },
+  "finished_at": "2026-09-28T03:55:02.476337+00:00"
+}

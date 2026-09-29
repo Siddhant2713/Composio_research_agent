@@ -1,0 +1,229 @@
+{
+  "app": "Meta Ads",
+  "number": 32,
+  "category": "Marketing, Ads, Email and Social",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3-flash-preview",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+  ],
+  "started_at": "2026-09-28T03:58:53.327611+00:00",
+  "raw_candidate_proposals": "{\n  \"urls\": [\n    \"https://developers.facebook.com/docs/marketing-apis\",\n    \"https://developers.facebook.com/docs/marketing-api/reference\",\n    \"https://developers.facebook.com/docs/marketing-api/get-started\",\n    \"https://developers.facebook.com/docs/marketing-api/guides\",\n    \"https://developers.facebook.com/docs/facebook-login\",\n    \"https://developers.facebook.com/apps/\",\n    \"https://developers.facebook.com/docs/development/register\",\n    \"https://developers.facebook.com/docs/marketing-api/conversions-api\"\n  ]\n}",
+  "candidate_proposal_model": "gemini-3.5-flash-lite",
+  "candidates_considered": [
+    "https://developers.facebook.com/docs/marketing-apis",
+    "https://developers.facebook.com/docs/marketing-api/reference",
+    "https://developers.facebook.com/docs/marketing-api/get-started",
+    "https://developers.facebook.com/docs/marketing-api/guides",
+    "https://developers.facebook.com/docs/facebook-login",
+    "https://developers.facebook.com/apps/",
+    "https://developers.facebook.com/docs/development/register",
+    "https://developers.facebook.com/docs/marketing-api/conversions-api",
+    "https://docs.facebook.com/",
+    "https://developer.facebook.com/",
+    "https://developers.facebook.com/",
+    "https://api.facebook.com/",
+    "https://facebook.com/docs",
+    "https://facebook.com/developers",
+    "https://facebook.com/api",
+    "https://facebook.com/developer"
+  ],
+  "second_hop_considered": [
+    "https://developers.facebook.com/docs/business-sdk",
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference/business/partners",
+    "https://developers.facebook.com/documentation/ads-commerce/conversions-api/guides/salesforce-webhooks",
+    "https://developers.facebook.com/documentation/ads-commerce/catalog/get-started/integrate-via-meta-sdk",
+    "https://developers.facebook.com/docs/graph-api/reference/user/accounts",
+    "https://developers.facebook.com/docs/graph-api/reference/user/adaccounts",
+    "https://developers.facebook.com/docs/graph-api/reference/user/promotable_events",
+    "https://developers.facebook.com/docs/development/register",
+    "https://developers.facebook.com/documentation/facebook-login/auth-vs-data",
+    "https://developers.facebook.com/documentation/facebook-login/guides/advanced/re-authentication",
+    "https://developers.facebook.com/documentation/facebook-login/web/accesstokens",
+    "https://developers.facebook.com/documentation/facebook-login/guides/access-tokens",
+    "https://developers.facebook.com/documentation/facebook-login/android/accesstokens",
+    "https://developers.facebook.com/documentation/facebook-login/access-tokens/security",
+    "https://developers.facebook.com/async/registration",
+    "https://developers.facebook.com/documentation/development/register.md",
+    "https://developers.facebook.com/documentation/development/features-reference",
+    "https://developers.facebook.com/documentation/development/features-reference/human-agent",
+    "https://developers.facebook.com/documentation/development/features-reference/oembed-read",
+    "https://developers.facebook.com/documentation/development/features-reference/live-video-api",
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/ads-webhooks/setup/get-started"
+  ],
+  "boilerplate_lines_removed": 5,
+  "fetch_failures": [
+    {
+      "requested_url": "https://developers.facebook.com/docs/marketing-api/guides",
+      "reason": "HTTP 404",
+      "kind": "http_error"
+    }
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+      "requested_url": "https://developers.facebook.com/docs/marketing-apis",
+      "status": 200,
+      "title": "Marketing API | Meta | Meta for Developers",
+      "chars": 1986,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+      "requested_url": "https://developers.facebook.com/docs/marketing-api/reference",
+      "status": 200,
+      "title": "Marketing API Reference | Meta for Developers",
+      "chars": 3958,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+      "requested_url": "https://developers.facebook.com/docs/marketing-api/get-started",
+      "status": 200,
+      "title": "Get started with the Marketing API | Meta for Developers",
+      "chars": 1799,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/facebook-login",
+      "requested_url": "https://developers.facebook.com/docs/facebook-login",
+      "status": 200,
+      "title": "Facebook Login | Meta for Developers",
+      "chars": 3328,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps%2F",
+      "requested_url": "https://developers.facebook.com/apps/",
+      "status": 200,
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "chars": 224,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/development/register",
+      "requested_url": "https://developers.facebook.com/docs/development/register",
+      "status": 200,
+      "title": "Register as a Meta Developer | Meta for Developers",
+      "chars": 1073,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/conversions-api",
+      "requested_url": "https://developers.facebook.com/docs/marketing-api/conversions-api",
+      "status": 200,
+      "title": "Conversions API | Meta for Developers",
+      "chars": 2367,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-sdk",
+      "requested_url": "https://developers.facebook.com/docs/business-sdk",
+      "status": 200,
+      "title": "Meta Business SDK | Meta for Developers",
+      "chars": 1075,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+      "requested_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+      "status": 200,
+      "title": "Authentication | Meta for Developers",
+      "chars": 4944,
+      "accessed_at": "2026-09-28"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+      "requested_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+      "status": 200,
+      "title": "Authorization | Meta for Developers",
+      "chars": 4946,
+      "accessed_at": "2026-09-28"
+    }
+  ],
+  "raw_extraction_output": "{\n  \"one_liner\": \"Meta Ads Marketing API endpoints and Graph API collection used to advertise across Meta technologies.\",\n  \"auth\": {\n    \"method\": \"oauth2\",\n    \"notes\": \"Every Marketing API call requires an access token as a parameter, obtained via user access tokens, system user tokens, or authorization code flows.\"\n  },\n  \"access\": {\n    \"tier\": \"self_serve\",\n    \"notes\": \"Developers can register and automatically get limited access by adding the Marketing API product to their app in the App Dashboard.\"\n  },\n  \"api_surface\": {\n    \"rest\": true,\n    \"graphql\": true,\n    \"webhooks\": null,\n    \"sdks\": [\n      \"Meta Business SDK\"\n    ],\n    \"notes\": \"The Marketing API is a collection of Graph API endpoints.\"\n  },\n  \"mcp\": {\n    \"exists\": false,\n    \"url\": null,\n    \"notes\": \"No Model Context Protocol server is mentioned in the documentation.\"\n  },\n  \"evidence\": [\n    {\n      \"url\": \"https://developers.facebook.com/documentation/ads-commerce/marketing-api\",\n      \"claim\": \"The Marketing API is a collection of Graph API endpoints.\",\n      \"quote\": \"The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication\",\n      \"claim\": \"Authentication uses access tokens.\",\n      \"quote\": \"Every Marketing API call requires an access token as a parameter.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization\",\n      \"claim\": \"Limited access is automatically granted when you add the Marketing API product to your app.\",\n      \"quote\": \"Automatically granted when you add the Marketing API product to your app.\"\n    },\n    {\n      \"url\": \"https://developers.facebook.com/documentation/development/register\",\n      \"claim\": \"Registration allows access to the App Dashboard and APIs.\",\n      \"quote\": \"Once you have registered you will have access to the App Dashboard and all of our products, SDKs, APIs, development tools, and developer documentation.\"\n    }\n  ],\n  \"support\": {\n    \"auth\": {\n      \"url\": \"https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication\",\n      \"quote\": \"Every Marketing API call requires an access token as a parameter.\"\n    },\n    \"access\": {\n      \"url\": \"https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization\",\n      \"quote\": \"Automatically granted when you add the Marketing API product to your app.\"\n    },\n    \"api_surface\": {\n      \"url\": \"https://developers.facebook.com/documentation/ads-commerce/marketing-api\",\n      \"quote\": \"The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.\"\n    },\n    \"mcp\": null\n  },\n  \"confidence\": \"high\"\n}",
+  "extraction_model": "gemini-3.5-flash-lite",
+  "record": {
+    "number": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "https://developers.facebook.com/docs/marketing-apis",
+    "one_liner": "Meta Ads Marketing API endpoints and Graph API collection used to advertise across Meta technologies.",
+    "auth": {
+      "method": "oauth2",
+      "notes": "Every Marketing API call requires an access token as a parameter, obtained via user access tokens, system user tokens, or authorization code flows."
+    },
+    "access": {
+      "tier": "self_serve",
+      "notes": "Developers can register and automatically get limited access by adding the Marketing API product to their app in the App Dashboard."
+    },
+    "api_surface": {
+      "rest": true,
+      "graphql": true,
+      "webhooks": null,
+      "sdks": [
+        "Meta Business SDK"
+      ],
+      "notes": "The Marketing API is a collection of Graph API endpoints."
+    },
+    "mcp": {
+      "exists": null,
+      "url": null,
+      "notes": "Reported value was discarded: no support offered."
+    },
+    "buildability": {
+      "verdict": "easy",
+      "reasoning": "Credentials are self-serve (oauth2) and the pages document a usable API surface. (Derived from access, auth and api_surface.)"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+        "claim": "The Marketing API is a collection of Graph API endpoints.",
+        "quote": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+        "claim": "Authentication uses access tokens.",
+        "quote": "Every Marketing API call requires an access token as a parameter.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+        "claim": "Limited access is automatically granted when you add the Marketing API product to your app.",
+        "quote": "Automatically granted when you add the Marketing API product to your app.",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/development/register",
+        "claim": "Registration allows access to the App Dashboard and APIs.",
+        "quote": "Once you have registered you will have access to the App Dashboard and all of our products, SDKs, APIs, development tools, and developer documentation.",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "support": {
+      "auth": {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+        "quote": "Every Marketing API call requires an access token as a parameter."
+      },
+      "access": {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+        "quote": "Automatically granted when you add the Marketing API product to your app."
+      },
+      "api_surface": {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+        "quote": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies."
+      }
+    },
+    "unsupported_fields": [
+      "mcp: no support offered"
+    ],
+    "confidence": "high"
+  },
+  "finished_at": "2026-09-28T03:59:33.016200+00:00"
+}

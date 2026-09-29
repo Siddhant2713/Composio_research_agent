@@ -1,0 +1,527 @@
+===== https://developer.clickup.com
+TITLE: ClickUp
+ACCESSED: 2026-09-28
+
+Develop innovative solutions with the ClickUp API
+Build integrations and apps with our Public API.
+	      Connect your AI with ClickUp using our MCP Server.
+API
+Browse our Public API specification.
+MCP
+Use ClickUp right from your AI assistant.
+Webhooks
+Trigger workflows from ClickUp events.
+OAuth
+Let people sign into their ClickUp account.
+Get started with the API
+Try the API
+Download the spec
+Get started with the MCP
+MCP setup instructions
+MCP tools
+Get support
+Contact ClickUp support
+Share your feedback
+
+===== https://developer.clickup.com/
+TITLE: ClickUp
+ACCESSED: 2026-09-28
+
+Develop innovative solutions with the ClickUp API
+Build integrations and apps with our Public API.
+	      Connect your AI with ClickUp using our MCP Server.
+API
+Browse our Public API specification.
+MCP
+Use ClickUp right from your AI assistant.
+Webhooks
+Trigger workflows from ClickUp events.
+OAuth
+Let people sign into their ClickUp account.
+Get started with the API
+Try the API
+Download the spec
+Get started with the MCP
+MCP setup instructions
+MCP tools
+Get support
+Contact ClickUp support
+Share your feedback
+
+===== https://developers.clickup.com/
+TITLE: ClickUp
+ACCESSED: 2026-09-28
+
+ClickUp
+Message supplied by app.component.ts
+Retry
+ClickUp is best experienced using our mobile app.
+Our web app has features so BIG, they won't fit on a small screen.
+Open in free mobile app
+Continue on web anyway
+ClickUp is best experienced using our mobile app.
+Our web app has features so BIG, they won't fit on a small screen.
+Open in free mobile app
+Continue on web anyway
+
+===== https://clickup.com/features/docs
+TITLE: Docs in ClickUp | ClickUp
+ACCESSED: 2026-09-28
+
+Docs in ClickUp | ClickUp
+DOCS IN CLICKUP
+Beautiful, collaborative docs right where you work
+Write together, stay aligned, and keep every doc one click from the work it supports.
+Get started. It's FREE
+No credit card.
+Free forever.
+No credit card.   Free forever.
+25,000+ reviews from
+Trusted by the best
+What changes when docs and work live together
+Without ClickUp Docs
+Knowledge scattered across apps no one checks
+Docs disconnected from the tasks they describe
+Hunting through folders for decisions made weeks ago
+Outdated files with no version history to trust
+With ClickUp Docs
+Every doc attached to the task it serves
+Real time collaboration
+Find any decision in seconds
+Full version history so nothing is ever truly lost
+Get started
+Docs that actually work the way your team does
+Connected. Collaborative. Lasting.
+CONNECTED
+Docs that live next to the work
+Every doc in ClickUp connects directly to the work it supports. Link a spec to a sprint, a brief to a campaign, a wiki to a team. When the work moves, the docs move with it.
+COLLABORATIVE
+Write together, decide faster
+Collaborate in real time—live cursors, inline comments, resolved threads. When feedback needs follow-through, convert any comment to a task in one click. No copying. No follow-up emails. Just done.
+LASTING
+Nothing gets lost. Nothing gets outdated.
+Version history tracks every change. The Docs Hub makes every doc searchable and filterable—by owner, date, or location. Your team's knowledge compounds instead of decaying.
+Your knowledge should live where your work does
+Join 3M+ teams who keep their knowledge where their work is. No credit card. Free forever.
+Get started. It's FREE
+AI-POWERED EFFICIENCY
+AI that knows your docs as well as your team does
+CLICKUP BRAIN
+AI that searches every doc to answer your questions
+Ask Brain anything—"What did we decide about the Q3 launch timeline?"—and get an answer pulled from your docs, comments, and wikis, with a link to the source. No digging through folders. No pinging teammates.
+SUPER AGENTS
+Your docs, updated without manual effort
+Super Agents pull updates from conversations, meetings, and completed tasks to keep your docs current automatically. Documentation happens in real time—not three weeks later when no one remembers the details.
+Get started
+Explore Super Agents
+Plus, everything you need to lead with confidence
+Nested pages
+Organize complex docs into structured subpages effortlessly.
+Version history
+Track every change and roll back to any previous state.
+Docs hub
+Search, sort, and filter all workspace docs from one place.
+Rich media
+Embed images, videos, code blocks, and presentations inline.
+Permissions
+Control exactly who can view, comment, or edit each doc.
+Templates
+Start from proven templates to get to good faster.
+THE CLICKUP PLATFORM
+Docs is just the beginning
+Docs is just the beginning. Explore everything ClickUp has to offer Wiki, Tasks, Chat, Whiteboards, Automations, Clips, and more, all connected and working together.
+Tasks
+Never lose track of work
+Board view
+Kanban-style workflow
+Gantt
+Timeline and dependencies
+Chat
+Real-time team messaging
+SyncUp
+Video meetings & huddles
+Inbox
+Centralize notifications
+Clips
+Screen recordings
+Dashboards
+Visualize your data
+Whiteboards
+Visual collaboration
+Wiki
+Knowledge base
+Forms
+Collect information
+Calendar
+Schedule and manage time
+Scheduling
+Automate calendar booking
+Automations
+Workflow automation
+Time tracking
+Monitor time spent
+All features
+Explore everything
+Security
+Everywhere
+SOC 2 TYPE II
+ISO 27001
+GDPR
+HIPAA
+24/7 support
+SOC 2 TYPE II
+ISO 27001
+GDPR
+HIPAA
+Never lose context again
+Get started. It's FREE
+No credit card. Free forever.
+No credit card. Free forever.
+SOC 2
+CERTIFIED
+ISO 27001
+CERTIFIED
+GDPR
+COMPLIANT
+HIPAA
+COMPLIANT
+
+===== https://developer.clickup.com/docs/authentication
+TITLE: Authentication
+ACCESSED: 2026-09-28
+
+To use the ClickUp API, you must authenticate every request.
+For personal use, authenticate with your
+personal API token
+.
+For apps or integrations that other people use, use the
+OAuth flow
+, allowing users to authorize Workspaces for your app.
+Include the token in the
+Authorization
+header of your requests.
+Both methods ensure that you and your users only have access to the information permitted by ClickUp.
+👍
+Use a personal API token for individual or testing purposes. Personal tokens begin with
+pk_
+.
+Add the token to the header:
+Authorization: {personal_token}
+. This is also needed to use the Try-It feature in the API docs.
+Log in to ClickUp.
+In the upper-right corner, click your avatar.
+Select
+Settings
+.
+In the sidebar, click
+Apps
+. Or click
+here
+to go directly to your settings.
+Under
+API Token
+, click
+Generate
+or
+Regenerate
+.
+👀
+You'll need to sign in to your ClickUp account in order to generate or regenerate a token.
+Click
+Copy
+to copy the personal token to your clipboard. Personal tokens never expire.
+To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources.
+OAuth resources and specs:
+Authentication:
+OAuth 2.0
+Grant Type:
+Authorization Code
+.
+Learn more
+.
+Authorization URL:
+https://app.clickup.com/api
+Access Token URL:
+https://api.clickup.com/api/v2/oauth/token
+👀
+ClickUp uses the
+authorization code
+grant type
+.
+Use your personal API key to use the Try-It feature in the API docs.
+Only
+Workspace
+owners or admins can create OAuth apps.
+Log in to ClickUp.
+In the upper-right corner, click your avatar.
+Select
+Settings
+.
+In the sidebar, click
+Apps
+.
+Click
+Create new app
+.
+Name the app and add a
+redirect URL
+.
+You'll receive a
+client_id
+and
+secret
+.
+Send users to this URL to connect their ClickUp account:
+https://app.clickup.com/api?client_id={client_id}&redirect_uri={redirect_uri}
+You can also add a
+state
+parameter:
+https://app.clickup.com/api?client_id={client_id}&redirect_uri={redirect_uri}&state={state}
+👀
+Non-SSL redirect URIs may not be supported in the future.
+Users will be redirected back to the
+redirect_uri
+with the authorization code after logging in.
+Users can authorize one or more Workspaces. Use the
+Get Authorized Teams (Workspaces)
+endpoint to see which Workspaces are authorized. Redirect users to the authorization URL to modify Workspace permissions.
+Use the
+Get Access Token
+endpoint with
+client_id
+,
+client_secret
+, and
+code
+to get the access token. This token is used in the
+Authorization: Bearer {access_token}
+header for all API requests made on behalf of the user.
+The access token currently does not expire. This is subject to change.
+Learn more about OAuth:
+OAuth.net
+OAuth Simplified
+Digital Ocean Intro to OAuth 2.0
+Updated
+7 months ago
+Did this page help you?
+Yes
+No
+
+===== https://developer.clickup.com/reference/getaccesstoken
+TITLE: Get Access Token
+ACCESSED: 2026-09-28
+
+Time
+Status
+User Agent
+Retrieving recent requests…
+Loading…
+200
+Shell
+Node
+Ruby
+PHP
+Python
+Loading…
+Click
+Try It!
+to start a request and see the response here!
+Or choose an example:
+application/json
+
+===== https://developer.clickup.com/docs/webhooks
+TITLE: Webhooks
+ACCESSED: 2026-09-28
+
+Webhooks allow you to subscribe to events in your
+Workspace
+. You can create a webhook to subscribe to events from a specific location in your
+Workspace
+.
+Webhooks are created using the user's auth token and therefore are tied to the user.
+If the user who created a webhook is disabled, the webhook remains but stops triggering. The system checks if the user is still part of the relevant hierarchy before triggering each webhook.
+ClickUp currently does not support dedicated IP addresses from which webhook events are sent.
+Each webhook event is signed with a shared secret that is unique to the webhook and returned when the webhook is created. This guarantees that the event is coming from ClickUp. More under
+Webhook Signature
+.
+Webhooks registrations are created using the
+Create Webhook endpoint
+. Each registration can be configured to subscribe to one or more events and a destination URL that ClickUp will send the event to. See more under
+Receiving Webhook Events
+further down the page.
+👍
+Use a service like
+https://smee.io/
+to test webhooks easily.
+You can use
+*
+as a wildcard to subscribe to all events.
+The ClickUp API v2 example app shows how to
+subscribe to webhooks
+.
+You can create a webhook to subscribe to events from a specific location in your
+Workspace
+.
+Only one location per Hierarchy level (Space, Folder, List, task) can be specified per webhook. The most specific location applies, so combining
+Space
+,
+Folder
+,
+List
+, or
+Task
+will subscribe to events for the lowest level of the Hierarchy.
+The following example subscribes to events for the
+List
+:
+JSON
+{
+  "space_id": 1234,
+  "list_id": 4567
+}
+The following example subscribes to events for the task:
+JSON
+{
+  "space_id": 1234,
+  "folder_id": 9876,
+  "list_id": 4567,
+  "task_id": "abc1234"
+}
+When an event your webhook is subscribed to occurs, ClickUp sends a
+POST
+request with event details to the URL you provided during webhook creation. If no protocol is specified, the default is
+https
+.
+🚧
+Non-SSL protocols may not be supported in the future. We recommend registering your webhook using
+https
+.
+Requests follow these criteria:
+Sent using the
+POST
+method.
+Content-Type
+is always
+application/json
+.
+Includes
+webhook_id
+,
+event
+name, and
+resource ID
+in the body.
+If available, a
+history_items
+array will describe the event.
+before
+and
+after
+are the values of the resource before and after the event.
+Use
+{{webhook_id}}:{{history_item_id}}
+as an idempotency key.
+POST https://yourdomain.com/webhook
+Content-Type: application/json
+
+Body:
+{
+  "event": "listUpdated",
+  "history_items": [
+    {
+      "id": "8a2f82db-7718-4fdb-9493-4849e67f009d",
+      "type": 6,
+      "date": "1642740510345",
+      ...
+      "source": null,
+      "user": {
+            "id": 183,
+            "username": "John",
+            ...
+      },
+      "before": "webhook payloads 2",
+      "after": "Webhook payloads round 2"
+    }
+  ],
+  "list_id": "162641285",
+  "webhook_id": "7fa3ec74-69a8-4530-a251-8a13730bd204"
+}
+See individual webhook payloads for more details or look at the ClickUp API v2 example app on how to
+process incoming webhook requests
+.
+history_items[x].user.id
+is an integer, not a string.
+Unset boolean values (e.g., Custom Field checkmarks) may be
+NULL
+instead of
+false
+.
+Custom Field values are not normalized; cast to the correct type as needed.
+taskCreated
+- Triggered when a new task is created.
+taskUpdated
+- Triggered when a task is updated. Adding an attachment to a task won't trigger the taskUpdated webhook, but uploading an attachment to a task comment will.
+taskDeleted
+- Triggered when a task is deleted.
+taskPriorityUpdated
+- Triggered when a task's priority is updated.
+taskStatusUpdated
+- Triggered when a task's status is updated.
+taskAssigneeUpdated
+- Triggered when an assignee is added or removed from a task.
+taskDueDateUpdated
+- Triggered when a task's due date is updated.
+taskTagUpdated
+- Triggered when a tag is added or removed from a task.
+taskMoved
+- Triggered when a task is moved to a new
+List
+.
+taskCommentPosted
+- Triggered when a comment is added to a task.
+taskCommentUpdated
+- Triggered when an existing comment on a task is updated.
+taskTimeEstimateUpdated
+- Triggered when a task's time estimate is added or updated.
+taskTimeTrackedUpdated
+- Triggered when time tracked on a task is added, updated, or deleted.
+View example task payloads
+listCreated
+- Triggered when a new List is created.
+listUpdated
+- Triggered when an existing List is updated.
+listDeleted
+- Triggered when a List is deleted.
+View example List payloads
+folderCreated
+- Triggered when a new
+Folder
+is created.
+folderUpdated
+- Triggered when an existing
+Folder
+is updated.
+folderDeleted
+- Triggered when a
+Folder
+is deleted.
+View example Folder payloads
+spaceCreated
+- Triggered when a new
+Space
+is created.
+spaceUpdated
+- Triggered when an existing
+Space
+is updated.
+spaceDeleted
+- Triggered when a
+Space
+is deleted.
+View example Space payloads
+goalCreated
+- Triggered when a new
+Goal
+is created.
+goalUpdated
+- Trig

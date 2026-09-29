@@ -1,0 +1,1283 @@
+===== https://www.helpscout.com/
+TITLE: Help Scout: The AI-driven support platform for customer-first brands
+ACCESSED: 2026-09-28
+
+Where support teams turn conversations into
+resolutions
+intelligence
+renewals
+signals
+word-of-mouth
+retention
+Go from just-keeping-up to service that drives growth. In Help Scout, teams work alongside AI to not only resolve conversations faster, but understand the larger story they’re telling.
+Start for Free
+Get a Demo
+Most AI support platforms force teams to compromise on service.
+With Help Scout, even the highest standards scale.
+Replies hit the mark
+Whether responses come from AI or a teammate, they’re reliably accurate, helpful, and on brand.
+Handoffs carry context
+When AI escalates topics reserved for your team to handle, they’re never left searching for clues.
+Trends surface early
+Proactive monitoring lets you act while there’s still time to get ahead of issues, so customers (and leadership) stay happy.
+Powering support for 12,000+ customer-first brands
+AI built for the right response, not just the fastest
+Help Scout's Compass AI Agent combines frontier models with insights learned from 3+ billion conversations. The result? Consistently accurate answers, smooth escalations, and judgment that reflects your own.
+Explore Agent
+Compass frees us up to create ‘wow moments’ for customers.
+eCatholic
+Read the story
+Inbox never loses the thread
+Working across teams and channels doesn’t have to be messy. Inbox brings email, SMS, social, chat, and voice into one clean space. Assignments happen automatically. Context carries through every handoff. And workflows keep it all organized.
+Explore Inbox
+We're on pace to double [revenue] this year because of how efficient we've gotten with Help Scout.
+Freightzy
+Read the story
+Move faster with the team you have
+Copilot speeds up the extra Inbox work that drags response time down. Generate drafts instead of checking past replies. Ask questions instead of searching your knowledge base. Get triage suggestions. It’s the assistant that makes everything easier.
+Explore Copilot
+AI Drafts helped us cut email response times by about a third, saving us the equivalent of roughly 2.5 FTEs annually. It helps our team move faster while keeping a human in the loop.
+King Arthur Flour
+Catch friction before it becomes a fire
+Closing out conversations is just the beginning. Signal shows you the story behind them, so you can get ahead of emerging issues, save drifting accounts, and see what basic reporting misses.
+Explore Signal
+We solved both staffing and scheduling challenges using the productivity report.
+Mixmax
+Read the story
+Why switch to Help Scout?
+More speed
+56
+%
+more replies sent in the first year
+Happier customers
+25
+%
+higher CSAT than industry averages
+Room to grow
+80
+%
+of companies stay for 4+ years
+Switching from a help desk
+Whether you’re butting heads with a bloated platform or looking to raise your standard of service, Help Scout is built for the way teams actually work.
+How teams use Help Scout  →
+Switching from Gmail or Outlook
+Teams relying on basic email are constantly guessing who has what, digging for context in old threads, and losing hours to manual organizing. All that goes away in Help Scout.
+Compare vs. Email  →
+Peace of mind for businesses with more to protect
+Help Scout is HIPAA and SOC 2 Type II compliant, so you can keep customer data secure without giving up the personal support they expect.
+Built for serving
+customers
+clients
+patients
+students
+partners
+suppliers
+policyholders
+over years
+See everything Help Scout makes easier for teams just like yours.
+Ecommerce
+Manufacturing & Logistics
+Insurance
+SaaS
+Financial Services
+Real Estate
+Professional Services
+Property Management
+Healthcare
+Education
+Stay sharp with the latest on CX
+Every day, we’re writing, teaching, and building for service-minded teams. Grab a guide, join a training, or listen to our podcast.
+15 years ago
+Help Scout started with a simple premise: support software should treat customers like people, not tickets. 3+ billion conversations later, that belief is more important than it’s ever been. But now it takes something different.
+AI has to solve customer problems faster
+and
+better. The customer relationship has to stay in view across channels, contacts, and handoffs. And insights have to show you what’s coming next, not just what already happened. Getting those right adds up to
+results
+the whole business can feel.
+If that’s how you're looking to grow, try Help Scout free. We’d love to see where it takes you.
+Ready to go?
+Learn the platform in less than an hour and become a power user in less than a day.
+Start for Free
+Get a Demo
+
+===== https://developer.helpscout.com/
+TITLE: Help Scout Developers - API Documentation
+      
+      | Help Scout Developers
+ACCESSED: 2026-09-28
+
+Getting Started
+Help Scout provides several tools for developers to make magic happen:
+Apps
+- display your own content as an internal sidebar application in the Inbox
+Beacon
+- live chat, help docs, and a customer portal all in one
+Inbox API
+- read and write data to Help Scout inboxes
+Chat API
+- read and answer live Beacon chats while they are still open
+Docs API
+- read and write data to your Docs sites
+Webhooks
+- get notified about activity in Help Scout
+We suggest spending time with
+Apps
+first, because it’s an easy way to create a lot of value for people on your team. You can be up and running in no time at all by following the
+Getting Started guide
+to display content in the Inbox sidebar quickly and securely.
+Building a Public Integration
+Will you be marketing your project to the public? Awesome! But before you launch anything, please read over our
+brand guidelines
+to make sure everything looks tip top. When it’s finished, be sure to
+let us know
+so we can tell everyone about it.
+
+===== https://developer.helpscout.com/help-desk-api/
+TITLE: Mailbox API Overview
+      
+      | Help Scout Developers
+ACCESSED: 2026-09-28
+
+Legacy Mailbox API 1.0 is deprecated
+Legacy Mailbox API 1.0 was deprecated on November 20, 2019. Please use
+Mailbox API 2.0
+going forward. If you have any questions or need help with the new API, please
+reach out
+.
+Overview
+Authentication
+This is an HTTPS-only API. Authentication is based on API Keys. Each API Key is associated with a Help Scout user. Results returned from various responses are based upon the role of the user to which the API key is tied.
+The API Key is passed via HTTP Basic Authentication and goes in the username field. A dummy password, such as X, goes in the password field.
+To try the API via curl on the command-line, the general form used would be:
+curl -u API_KEY:DUMMY_PASSWORD API_URL
+For instance, if your API key is 60783dd23ef, you would execute:
+curl -u 60783dd23ef:X https://api.helpscout.net/v1/mailboxes.json
+Endpoints
+All API requests are made to
+https://api.helpscout.net/
+and all requests are served over HTTPS.
+Formats
+Each endpoint specifies the response format in the URL. However, the API will only support JSON at this time.
+Request size
+Maximum allowed request size is 100kB by default. There are two exception - 10MB for
+Create attachment
+endpoint
+	and 256kB for
+Create conversation
+endpoint. The API will return response code 413 when the request size was exceeded.
+Rate Limiting
+Basic rate limiting
+Requests are limited to 200 requests per minute per account. All API keys associated with the same account count
+	against the minute rate limit. Response code 429 is returned when the throttle limit has been reached. A
+	"Retry-After" header is returned indicating how many seconds to wait until retry. Applicable to all requests
+Burst write rate limiting
+Write requests (
+POST, PUT, DELETE
+) have an additional limit of 12 requests every 5 seconds per account.
+	Read requests (
+GET
+) are not subject to this limit
+Response headers
+Header name
+X-RateLimit-Interval-*
+Length of the rate limiting interval in seconds
+X-RateLimit-Limit-*
+Maximum number of requests per interval
+X-RateLimit-Remaining-*
+Number of requests remaining in the current rate limit interval
+Example headers
+X-RateLimit-Interval-burst: 5
+X-RateLimit-Interval-minute: 60
+X-RateLimit-Limit-burst: 12
+X-RateLimit-Limit-minute: 200
+X-RateLimit-Remaining-burst: 12
+X-RateLimit-Remaining-minute: 199
+Maximum URL Length
+The maximum length for a URL is 4000 bytes.
+Response Envelopes
+The API returns one of three envelopes depending upon the request issued:
+Single Item Envelope
+Collections Envelope
+Error Envelope
+Single Item Envelope
+All dates/times are returned in ISO8601 format and in UTC timezone.
+Status: 200 OK
+{
+	"item": {
+		"id": 1234,
+		...
+		"createdAt": "2012-07-17T13:41:01Z"
+	}
+}
+Collections Envelope
+All dates/times are returned in ISO8601 format and in UTC timezone.  Collections return a maximum of 50 records per page.
+Status: 200 OK
+{
+	"page": 1,
+	"pages": 24,
+	"count": 1154,
+	"items": [
+		{
+			"id": 1234,
+			...
+			"createdAt": "2012-07-17T13:41:01Z"
+		},
+		{
+			"id": 5678,
+			...
+			"createdAt": "2012-07-15T08:12:15Z"
+		},
+		...
+	]
+}
+Error Envelope
+Status: 403 Forbidden
+{
+	"status": 403,
+	"message": "The specified resource was not found: '/v1/fake'"
+}
+
+===== https://docs.helpscout.com/
+TITLE: Help Scout Support
+ACCESSED: 2026-09-28
+
+Help Scout Support
+How can we help?
+No results found
+Getting Started
+Set Up Your Account
+Get to know Inbox, Beacon, and Docs, and get your emails forwarding
+9
+articles
+Work With Your Team
+Administration tips and collaboration tools
+7
+articles
+Help Scout For Your Industry
+See how Help Scout can help you delight customers, in any industry
+11
+articles
+Self Service Best Practices
+Help your customers help themselves
+15
+articles
+Account Management
+Company Settings
+Manage account wide settings like permissions, 2FA, SSO, content filtering, and more
+20
+articles
+Manage Users
+Help for managing user profiles and permissions
+7
+articles
+Payment and Billing
+Answer your questions about payment options and billing details
+10
+articles
+Reports
+Information on in-app reports with explanation of metrics
+12
+articles
+Inbox
+Copy Email to Help Scout
+Create auto-forwarding rules, connect contact forms, troubleshoot email delivery
+21
+articles
+Inbox  Settings
+Manage Inbox settings such as sending options and Inbox defaults
+22
+articles
+Work with Conversations
+Reply to conversations, forward emails, merge duplicates, and more
+33
+articles
+Productivity
+Workflows and views, add tags, respond to email notifications, search
+24
+articles
+Customer Management
+Manage customer profiles and properties
+8
+articles
+Mobile Apps
+Work in your Inbox from iOS or Android devices in mobile apps
+4
+articles
+Beacon
+Get Started with Beacon
+Learn about Beacon with live chat and proactive Messages
+6
+articles
+Beacon Settings
+Beacon options and advanced customization
+8
+articles
+Add Beacon to Your Site or App
+Guides for some of the more popular website builders and some general help
+8
+articles
+AI Answers
+Add AI chat that uses your content to instantly answer customer questions
+3
+articles
+Live Chat
+Learn about chat availability, saved replies, notifications, and assignments
+10
+articles
+Messages
+Proactively send targeted, in-app notifications to your customers
+10
+articles
+Docs
+Get Started With Docs
+Setting up collections and categories, creating new articles, and using Docs search
+8
+articles
+Manage Docs
+Using a custom domain, sorting content, and managing multiple sites
+15
+articles
+Customize Your Docs Site
+Styling your Docs articles and sites
+9
+articles
+Channels & Apps
+Analytics
+Integrations to help you analyze data from Help Scout
+8
+articles
+Apps
+Build custom apps and integrations using Help Scout's API and apps tools
+3
+articles
+Communication
+Apps that integrate other communications tools into Help Scout
+16
+articles
+Connectors
+Apps that help you connect Help Scout to other apps
+3
+articles
+CRM
+Integrations with Customer Relationship Management tools
+5
+articles
+Ecommerce
+Connect to ecommerce apps like Shopify, WooCommerce, and more
+5
+articles
+Marketing
+Keep your marketing and support teams in sync with these integrations
+4
+articles
+Support
+Integrate other support channels into Help Scout and manage it all in one place
+15
+articles
+
+===== https://www.helpscout.com/pricing/
+TITLE: Help Scout Pricing: Affordable Customer Support Software
+ACCESSED: 2026-09-28
+
+Deliver delightful support at every stage of growth
+Monthly
+Annual
+-
+16
+%
+Standard
+$
+25
+per user/mo
+For growing teams looking to automate more tasks and move beyond email.
+Try for Free
+Get core features like...
+Multiple Inboxes
+Live chat and SMS
+WhatsApp, Instagram, and Messenger
+Multiple knowledge bases
+One basic SLA policy
+Basic workflows
+Unlimited tags and saved replies
+AI Inbox assistant
+Plus
+Popular
+$
+45
+per user/mo
+For teams managing higher volume and complexity across multiple channels.
+Try for Free
+Everything in Standard and...
+Advanced workflows
+Two advanced SLA policies
+Secure customer portal
+Unlimited AI Drafts
+Round robin routing
+Salesforce, Jira, and HubSpot
+Internal teams
+Group conversations by company
+Pro
+$
+75
+per user/mo
+For teams that need the highest level of scale and security.
+Book a Demo
+Everything in Plus and...
+Unlimited workflows
+Unlimited SLA policies
+Multiple routing types
+SSO/SAML
+HIPAA compliance
+Up to 50 light users
+Dedicated onboarding specialist
+Strategic account manager
+Preferred pricing on Aircall
+AI Answers
+Add-on
+$
+0.75
+/
+resolution
+Scale capacity with an AI assistant that instantly resolves customer requests. Pay per resolution on a monthly basis.
+No dead ends
+Your team is always a click away for more complex asks.
+Easy setup
+Add your website or other sources to configure the AI in minutes.
+3-month free trial
+Try AI Answers at no cost so you can see its impact on response time.
+Pre-paid discounts available.
+Just need the basics? The
+Free plan
+includes 5 users, 1 Inbox, and 1 Docs site.
+The
+Free plan
+gives you 5 users, 1 Inbox, and 1 Docs site.
+Just need the basics?
+Start with Free
+How much can you save with AI Answers?
+AI Answers is an autonomous agent that resolves customer questions instantly. See the impact it can have on your bottom line and bandwidth.
+I want to save money
+I want to save time
+Year 1
+Year 2
+Year 3
+Total
+New hires without AI Answers
+$135,200
+$281,216
+$438,696
+$855,112
+New hires with AI Answers
+$0
+$0
+$146,232
+$146,232
+AI Answers cost
+$2,266
+$2,606
+$2,997
+$7,870
+Savings
+$132,933
+$278,609
+$289,467
+$701,009
+Savings (Year 1)
+$132,933
+Savings (3 year total)
+$701,009
+Return on Investment
+455
+%
+Compare all plans and features
+Free
+Start with Free
+Standard
+Try for Free
+Plus
+Try for Free
+Pro
+Book a Demo
+Users
+Users are members of your team in Help Scout.
+Up to 5
+Up to 25
+Up to 50
+Unlimited (minimum 10)
+Advanced permissions
+Control visibility and access at the company, team, or user level.
+Teams
+Assign conversations and monitor reports based on a group of users.
+Light users
+Let teammates view conversations and collaborate without taking up a full user seat. Maximums by plan: Plus (25), Pro (50).
+5 included
+15 included
+Inboxes
+Collaborate on customer conversations in a shared workspace. Maximums by plan: Free (1), Standard (20), Plus (50), Pro (unlimited).
+1
+2 (additional Inboxes $10/mo)
+5 (additional Inboxes $10/mo)
+10 (additional Inboxes $10/mo)
+Contacts
+Someone who received a reply from your team or had their question resolved by the AI assistant. Multiple conversations with the same person count as one contact.
+100/mo
+Unlimited
+Unlimited
+Unlimited
+Saved replies
+Create a library of FAQ responses you can search and insert in 2 clicks.
+10
+Unlimited
+Unlimited
+Unlimited
+Tags
+Use tags to label conversations, monitor trends, and start automations.
+10
+Unlimited
+Unlimited
+Unlimited
+Snooze
+Use snooze to set a date and time for a conversation to return to the top of your Inbox.
+Send later
+Schedule emails to arrive exactly when you want with send later.
+Views
+Groups conversations into lists based on criteria like status, assignments, and priority.
+Unlimited
+Unlimited
+Unlimited
+Customer profiles & history
+View customer data and conversation history in an auto-populated and editable sidebar.
+Custom fields
+Track up to 10 custom data points on each conversation for use in reporting and workflows.
+Customer properties
+Collect and display up to 50 additional customer data points that matter to your team.
+Company management
+Organize contacts and conversations by company to get a clear picture of the whole account.
+Routing
+Automatically assign conversations evenly across your team to balance the workload.
+Round robin
+Round robin + load balanced
+Email
+Manage customer emails as a team.
+Live chat
+Offer live chat anywhere on your website or in-app.
+SMS
+Send and receive texts from your Help Scout Inbox.
+Via integration
+Messenger
+Handle customer conversations through Facebook Messenger.
+Instagram
+Handle customer conversations through Instagram.
+Service Level Agreements (SLAs)
+Set and track response targets across conversations to keep work on schedule.
+1 basic policy
+2 advanced policies
+Unlimited
+WhatsApp
+Handle customer conversations through WhatsApp.
+Phone/voice
+Make and receive phone calls, logged in Help Scout.
+Via integration
+Via integration
+Via integration
+AI Assist
+Expand, shorten, edit, or translate text with AI.
+Unlimited
+Unlimited
+Unlimited
+AI Drafts
+Use AI to draft replies base
+
+===== https://developer.helpscout.com/webhooks/
+TITLE: Webhooks
+      
+      | Help Scout Developers
+ACCESSED: 2026-09-28
+
+Webhooks
+Webhooks enable Help Scout to call a script on your server when one or more events have happened. Webhooks can be thought of as event listeners or push notifications.
+Configuring webhooks can be done through the Help Scout user interface. Simply log in, click the gear icon (
+Settings
+) in the top right, go to
+Workspace > Apps
+, then select the Webhooks app.
+Available Events
+Each request body uses the object format linked in the table below.
+Type
+Event Name
+Request Header
+v2 Request Body
+Conversation
+Assigned
+convo.assigned
+v2 Conversation
+object
+Created
+convo.created
+v2 Conversation
+object
+Created (AI Answers)
+convo.ai-answers.created
+v2 Conversation
+object
+Deleted
+convo.deleted
+{id:
+id-of-convo-that-was-deleted
+}
+Merged
+convo.merged
+v2 Conversation
+object
+Moved
+convo.moved
+v2 Conversation
+object
+Status Updated
+convo.status
+v2 Conversation
+object
+Tags Updated
+convo.tags
+v2 Conversation
+object
+Custom Fields Updated
+convo.custom-fields
+v2 Conversation
+object
+Customer Reply
+convo.customer.reply.created
+v2 Conversation
+object
+Agent Reply
+convo.agent.reply.created
+v2 Conversation
+object
+Note Created
+convo.note.created
+v2 Conversation
+object
+Customer
+Created
+customer.created
+v2 Customer
+object
+Updated
+customer.updated
+v2 Customer
+object
+Deleted
+customer.deleted
+{id:
+id-of-customer-that-was-deleted
+}
+Ratings
+Rating Received
+satisfaction.ratings
+v2 Rating
+object
+Beacon Chat
+Created
+beacon.chat.created
+Chat
+object
+Customer Replied
+beacon.chat.customer.replied
+Chat
+object
+Agent Replied
+beacon.chat.agent.replied
+Chat
+object
+Assigned
+beacon.chat.assigned
+Chat
+object
+Ended
+beacon.chat.ended
+Chat
+object
+Tag
+Created
+tag.created
+v2 Tag
+object
+Updated
+tag.updated
+v2 Tag
+object
+Deleted
+tag.deleted
+{id:
+id-of-tag-that-was-deleted
+}
+Message
+Survey Response Received
+message.survey.response.received
+Survey Response
+object
+Organization
+Created
+organization.created
+Organization
+object
+Updated
+organization.updated
+Organization
+object
+Deleted
+organization.deleted
+{id:
+id-of-organization-that-was-deleted
+}
+User Status
+User Status Changed
+user.status.changed
+User Status
+object
+Please note that the
+customer.created
+webhook event is not filterable across specific inboxes, and will trigger on all customers created globally.
+Headers
+Each webhook includes two Help Scout headers:
+X-HelpScout-Event
+: Lists the event name for which this webhook event is being generated
+X-HelpScout-Signature
+: The computed signature generated by Help Scout. Used to know if the request is valid or not.
+Verifying
+Webhooks can be verified as coming from Help Scout by calculating a digital signature. Each webhook request contains an
+X-HelpScout-Signature
+header, which is generated using the given secret key, along with the json encoded payload data sent in the request.
+To verify if the request came from Help Scout, compute the HMAC hash and compare it to the header value sent in the request. If the computed signatures match, you can be sure the request was sent from Help Scout.
+Signatures are calculated based on the raw request body passed to your servers by Help Scout. This means that if non-ASCII characters are contained in the payload, you will need to calculate the signature based on the
+escaped, transliterated string passed to you by Help Scout. We recommend this as best practice in general, even for those primarily working with ASCII data.
+PHP
+<?php
+define
+(
+'WEBHOOK_SECRET_KEY'
+,
+'my-secret-key'
+);
+function
+isFromHelpScout
+(
+$data
+,
+$signature
+)
+{
+$calculated
+=
+base64_encode
+(
+hash_hmac
+(
+'sha1'
+,
+$data
+,
+WEBHOOK_SECRET_KEY
+,
+true
+));
+return
+$signature
+==
+$calculated
+;
+}
+$signature
+=
+$_SERVER
+[
+'X-HELPSCOUT-SIGNATURE'
+];
+$data
+=
+file_get_contents
+(
+'php://input'
+);
+if
+(
+isFromHelpScout
+(
+$data
+,
+$signature
+))
+{
+// do something
+}
+?>
+When using the Help Scout
+PHP library
+, this validation is automatically handled for you.
+C#
+Thanks to Chris Burch for their C# example code.
+publicclassHelpScoutAuthorization
+{
+privatestring
+_secret
+;
+publicHelpScoutAuthorization
+(
+string
+secret
+)
+{
+_secret
+=
+secret
+;
+}
+///<summary>
+/// Use signature to validate this message is from HelpScout
+///</summary>
+///<param name="jsonRequestBody">The JSON body</param>
+///<param name="signature">Typically from Request.Headers["X-HelpScout-Signature"]</param>
+publicbool
+IsFromHelpScout
+(
+string
+jsonRequestBody
+,
+string
+signature
+)
+{
+return
+(
+HashHmac
+(
+jsonRequestBody
+,
+_secret
+)
+==
+signature
+);
+}
+privatestring
+HashHmac
+(
+string
+message
+,
+string
+secret
+)
+{
+System
+.
+Text
+.
+Encoding
+encoding
+=
+System
+.
+Text
+.
+Encoding
+.
+UTF8
+;
+using
+(
+var
+hmac
+=
+new
+System
+.
+Security
+.
+Cryptography
+.
+HMACSHA1
+(
+encoding
+.
+GetBytes
+(
+secret
+)))
+{
+var
+messageByteArray
+=
+encoding
+.
+GetBytes
+(
+message
+);
+var
+hash
+=
+hmac
+.
+ComputeHash
+(
+messageByteArray
+);
+return
+System
+.
+Convert
+.
+ToBase64String
+(
+hash
+);
+}
+}
+}
+Ruby
+Thanks to our friends at
+Parse.com
+for the Ruby example below.
+Thanks to Leo Arnold at Givve for sending us a nice Gist with a Ruby vulnerability fix.
+#!/usr/bin/ruby -rrubygems
+#
+require
+'
+
+===== https://developer.helpscout.com/apps/getting-started/
+TITLE: Getting Started with the Developer Platform
+      
+      | Help Scout Developers
+ACCESSED: 2026-09-28
+
+Apps empower you to create Inbox sidebar extensions, making it possible to display your app’s content within an iframe in the conversation view sidebar. While you have the freedom to use any language, platform, or library to build  your app, we also offer a JavaScript SDK and a React UI Kit to streamline your development process.
+The sections below will guide you through setting up your first App 🚀
+Create App
+Building your sidebar app is flexible; it can be crafted using any language, library, or framework of your choosing.
+Create JavaScript App
+The subsequent sections illustrate different methods for creating a JavaScript app. These methods include utilizing our provided app template and manually setting up an app, with or without the use of Vite.
+Prerequisites
+The steps below will focus on building a JavaScript web app using our SDK. As a result, the following steps assume some familiarity with Node.js and npm.
+Quick setup with App template
+Get started quickly with the
+React-based app template
+. This template comes with our JavaScript SDK and UI Kit pre-installed. Simply open the GitHub repo and click the “Use this template” button.
+This template has everything to get you started, including sample code showcasing some of the JavaScript SDK and UI Kit features. 
+Once you’ve cloned your copy of the template locally, you can get started by installing the npm packages and starting the server:
+npm
+install
+npm run watch
+⏭️ Now that you have the app template running locally, skip down to the
+Help Scout App setup instructions
+to add the app to the sidebar.
+Manual setup
+Vite project setup
+If you prefer to start from scratch or use a different framework, we recommend using
+Vite
+to set up your JavaScript/TypeScript project. Follow their
+Getting Started Guide
+for a quick start and skip down to the
+Install Help Scout packages
+section once you have it set up.
+ℹ️ Note: SSL is required for all Apps so you’ll need to configure your Vite site with an SSL. We recommend using the
+vite-plugin-mkcert
+or
+@vitejs/plugin-basic-ssl
+Vite plugin.
+Manual npm setup
+We strongly recommend using one of the previous options (App Template or Vite) for a quicker and smoother setup. A manual setup of an npm web app may require numerous dependencies and configurations, which are beyond the scope of this document.
+However, if you still prefer a manual setup, follow these initial steps to create an npm package:
+Create a new directory for your new application and navigate into it:
+mkdir
+myawesomeapp
+cd
+myawesomeapp
+Initialize npm to create the
+package.json
+file for your app:
+npm init
+Follow the prompts to fill out the details about your project.
+💡 Tip: You can instead use
+npm init -y
+to skip the questionnaire
+Keep in mind that you’ll need to configure the web app further, which involves installing and setting up various dependencies. The specifics of this process will depend on your chosen stack and requirements.
+Install packages
+If you didn’t use the app template linked above, you’ll need to install the npm packages:
+Install the JavaScript SDK:
+npm
+install
+@helpscout/javascript-sdk
+Install the UI Kit
+npm
+install
+@helpscout/ui-kit
+Implement your App
+To implement a demo app with some of the available features, create or edit the
+App.tsx
+or
+App.jsx
+file to read:
+import
+React
+from
+"
+react
+"
+;
+import
+HelpScout
+from
+"
+@helpscout/javascript-sdk
+"
+;
+import
+{
+DefaultStyle
+,
+Heading
+,
+useSetAppHeight
+}
+from
+"
+@helpscout/ui-kit
+"
+;
+import
+{
+useEffect
+,
+useState
+}
+from
+"
+react
+"
+;
+function
+App
+()
+{
+const
+appRef
+=
+useSetAppHeight
+();
+const
+[
+userFirstName
+,
+setUserFirstName
+]
+=
+useState
+(
+"
+there
+"
+);
+useEffect
+(()
+=>
+{
+HelpScout
+.
+getApplicationContext
+().
+then
+(({
+user
+})
+=>
+setUserFirstName
+(
+user
+?.
+firstName
+||
+"
+there
+"
+)
+);
+},
+[]);
+return
+(
+<
+div
+className
+=
+"App"
+ref
+=
+{
+appRef
+}
+>
+<
+DefaultStyle
+/>
+<
+Heading
+level
+=
+"h1"
+>
+Hi
+{
+userFirstName
+}
+! 👋
+</
+Heading
+>
+</
+div
+>
+);
+}
+export
+default
+App
+;
+Start the app on a network available host
+💡 Tip: If you are using Vite, you can do that by running
+npm run build && npm run preview -- --host
+. Be sure to use one of the
+Network
+URLs (not the Local URL) as your callback URL.
+Create App without JavaScript
+If you prefer not to use JavaScript, you can create your app using any language, library, or framework of your choosing.
+For more information on how to access Help Scout data from your app, see the
+Getting Data from HelpScout without JavaScript guide
+.
+Install App
+Log into your Help Scout account as an administrator or account owner.
+Click the gear icon (
+Settings
+) in the top right, then head to
+Workspace > Apps
+.
+Click the “Create” button (on the top of the page).
+Click the “Create App” button (on the left sidebar).
+Complete the form using the following as a guide:
+App Name:
+My Awesome App
+Callback URL:
+Enter the URL of your web app
+— The URL host has to be
+network
+available (
+localhost
+or
+127.0.0.1
+will not work)
+Secret Key:
+Enter any value
+— If your app is
+validating the header signature
+, this is the ke
+
+===== https://developer.helpscout.com/help-desk-api/hooks/create/
+TITLE: Create Webhook
+      
+      | Help Scout Developers
+ACCESSED: 2026-09-28
+
+Legacy Mailbox API 1.0 is deprecated
+Legacy Mailbox API 1.0 was deprecated on November 20, 2019. Please use
+Mailbox API 2.0
+going forward. If you have any questions or need help with the new API, please
+reach out
+.
+Create Webhook
+REST Method:
+POST
+URL:
+https://api.helpscout.net/v1/
+hooks.json
+Content-Type:
+application/json
+Clients may create and configure up to one webhook per company. A webhook may be configured to receive multiple event notifications (e.g. conversation created, note added). Each request to this API will replace the existing webhook (if any) with the one specified in the request body.
+For more details about handling Help Scout's webhooks, see
+this overview
+.
+Request Fields
+Name
+Type
+Required
+Notes
+url
+String
+Y
+The callback URL where Help Scout will post your webhook events. This is the script or location where you'll handle the data received from Help Scout.
+events
+List
+Y
+The list of events to subscribe to; the full list is detailed
+here
+.
+secret
+String
+Y
+A randomly-generated (by you) string of 40 characters or less used to create signatures for each webhook method. Help Scout uses this secret key to generate a signature for each webhook message. When the message is received at your callback URL, you can calculate a signature and compare to the one Help Scout sends. If the signatures match, you know it's from Help Scout.
+Example Request
+{
+"url"
+:
+"https://example.com/helpscout"
+,
+"events"
+:
+[
+"convo.created"
+,
+"convo.customer.reply.created"
+,
+"convo.assigned"
+,
+"convo.deleted"
+,
+"convo.note.created"
+],
+"secret"
+:
+"mZ9XbGHodX"
+}
+Response
+Response
+Name
+Type
+Notes
+Header
+Status
+Integer
+201
+Header
+Location
+String
+A location header is returned, but the webhooks API does not support a GET end point at this time.
+Example Response
+Status: 201 Created
+Location: https://api.helpscout.net/v1/hooks/{id}.json
+
+===== https://docs.helpscout.com/collection/1543-getting-started
+TITLE: Getting Started - Help Scout Support
+ACCESSED: 2026-09-28
+
+Getting Started - Help Scout Support
+Most Popular Articles
+Get Your Email Into Help Scout
+The Beginner's Guide to Help Scout
+Help Scout Hack Pack
+Move From Zendesk to Help Scout
+An Admin's Guide to Help Scout
+Import Emails or Tickets Into Help Scout
+Guide to Switching Help Desks
+Explore Messages
+What Is A Shared Inbox?
+Move from Intercom to Help Scout
+No results found
